@@ -1,4 +1,4 @@
-package com.teamttdvlp.memolang.view.Activity.viewmodel
+package com.teamttdvlp.memolang.view.Activity.viewmodel.search_edit_flashcard
 
 import androidx.lifecycle.ViewModel
 

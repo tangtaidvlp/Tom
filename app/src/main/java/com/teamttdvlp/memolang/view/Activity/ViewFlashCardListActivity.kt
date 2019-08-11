@@ -1,6 +1,5 @@
 package com.teamttdvlp.memolang.view.Activity
 
-import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.teamttdvlp.memolang.R
@@ -11,7 +10,7 @@ import com.teamttdvlp.memolang.view.Activity.mockmodel.Flashcard
 import kotlinx.android.synthetic.main.activity_view_flash_card_list.*
 import com.teamttdvlp.memolang.databinding.ActivityViewFlashCardListBinding
 import com.teamttdvlp.memolang.view.Activity.helper.getActivityViewModel
-import com.teamttdvlp.memolang.view.Activity.viewmodel.ViewFlashCardViewModel
+import com.teamttdvlp.memolang.view.Activity.viewmodel.view_flashcard.ViewFlashCardViewModel
 
 class ViewFlashCardListActivity : BaseActivity<ActivityViewFlashCardListBinding, ViewFlashCardViewModel>() {
 
@@ -19,30 +18,30 @@ class ViewFlashCardListActivity : BaseActivity<ActivityViewFlashCardListBinding,
 
     override fun takeViewModel(): ViewFlashCardViewModel = getActivityViewModel()
 
-    lateinit var adapter : FlashcardRCVAdapter
+    lateinit var flashcardAdapter : FlashcardRCVAdapter
 
     override fun addViewControls() {
         val mockList = mockList()
-        adapter = FlashcardRCVAdapter(this@ViewFlashCardListActivity, mockList)
-        rcv_flashcard_list.adapter = adapter
+        flashcardAdapter = FlashcardRCVAdapter(this@ViewFlashCardListActivity, mockList)
+        rcv_flashcard_list.adapter = flashcardAdapter
         rcv_flashcard_list.layoutManager = LinearLayoutManager(this@ViewFlashCardListActivity, RecyclerView.VERTICAL, false)
     }
 
     override fun addViewEvents() {
-        adapter.setOnItemClickListener {
+        flashcardAdapter.setOnItemClickListener {
             quickStartActivity(EditFlashcardActivity::class.java)
         }
     }
 
     fun mockList () : ArrayList<Flashcard> {
-        val flashcard = Flashcard("Negotiate", "Đàm phán", "We negotiate for intergrate two force")
-        val flashcard1 = Flashcard("Something", "Cái gì đó", "We always do something to figure out the solution")
-        val flashcard2 = Flashcard("Figure out", "Tìm ra", "We always do something to figure out the solution")
-        val flashcard3 = Flashcard("Until", "Cho đến khi", "Fight until the end")
-        val flashcard4 = Flashcard("Glorious", "Vẻ Vang", "We're worthy to have that glorious victory")
-        val flashcard5 = Flashcard("Curious", "Tò mò", "Successful people is always curious")
-        val flashcard6 = Flashcard("Give in", "Buông xuôi", "Give in laziness make you down")
-        val flashcard7 = Flashcard("Procastinate", "Trì hoãn", "Procastinating something when and only if you can do it better then")
+        val flashcard = Flashcard(1,"Negotiate", "Đàm phán", "We negotiate for intergrate two force")
+        val flashcard1 = Flashcard(1,"Something", "Cái gì đó", "We always do something to figure out the solution")
+        val flashcard2 = Flashcard(1,"Figure out", "Tìm ra", "We always do something to figure out the solution")
+        val flashcard3 = Flashcard(1,"Until", "Cho đến khi", "Fight until the end")
+        val flashcard4 = Flashcard(1,"Glorious", "Vẻ Vang", "We're worthy to have that glorious victory")
+        val flashcard5 = Flashcard(1,"Curious", "Tò mò", "Successful people is always curious")
+        val flashcard6 = Flashcard(1,"Give in", "Buông xuôi", "Give in laziness make you down")
+        val flashcard7 = Flashcard(1,"Procastinate", "Trì hoãn", "Procastinating something when and only if you can do it better then")
         val mockDataList = ArrayList<Flashcard>()
         mockDataList.add(flashcard)
         mockDataList.add(flashcard1)
@@ -62,4 +61,5 @@ class ViewFlashCardListActivity : BaseActivity<ActivityViewFlashCardListBinding,
         mockDataList.add(flashcard7)
         return mockDataList
     }
+
 }

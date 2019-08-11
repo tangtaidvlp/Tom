@@ -1,29 +1,25 @@
 package com.teamttdvlp.memolang.view.Activity
 
-import android.view.View
 import android.view.View.GONE
+import android.view.View.VISIBLE
 import androidx.core.view.isVisible
-import androidx.lifecycle.ViewModelProviders
-import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.FirebaseUser
 import com.teamttdvlp.memolang.R
 import com.teamttdvlp.memolang.databinding.ActivitySignUpBinding
 import com.teamttdvlp.memolang.view.Activity.base.BaseActivity
 import com.teamttdvlp.memolang.view.Activity.helper.getActivityViewModel
 import com.teamttdvlp.memolang.view.Activity.helper.quickToast
-import com.teamttdvlp.memolang.view.Activity.viewmodel.SignUpViewModel
-import javax.inject.Inject
+import com.teamttdvlp.memolang.view.Activity.viewmodel.signup.OnSignUpListener
+import com.teamttdvlp.memolang.view.Activity.viewmodel.signup.SignUpViewModel
+import java.lang.Exception
 
 class SignUpActivity : BaseActivity<ActivitySignUpBinding, SignUpViewModel>() {
-
-    var auth: FirebaseAuth? = null
-    @Inject set
 
     override fun getLayoutId(): Int = R.layout.activity_sign_up
 
     override fun takeViewModel(): SignUpViewModel = getActivityViewModel()
 
-    override fun addViewEvents () {
-     dataBinding.apply {
+    override fun addViewEvents () { dataBinding.apply {
          btnSignUp.setOnClickListener {
              signUp()
          }
@@ -34,61 +30,66 @@ class SignUpActivity : BaseActivity<ActivitySignUpBinding, SignUpViewModel>() {
 
          btnCheckAgain.setOnClickListener {
              backgroundSignUpFail.visibility = GONE
+             signUpWidgetsGroup.visibility = VISIBLE
          }
 
-         edtId.setOnFocusChangeListener { _, isFocus ->
-            if (isFocus and txtErrorId.isVisible) txtErrorId.visibility = GONE
-         }
+        edtEmail.setOnFocusChangeListener { _, isFocus ->
+            if (isFocus and txtErrorEmail.isVisible) txtErrorEmail.visibility = GONE
+        }
 
-         edtPassword.setOnFocusChangeListener { _, isFocus ->
-             if (isFocus and txtErrorPassword.isVisible) txtErrorPassword.visibility = GONE
-         }
+        edtPassword.setOnFocusChangeListener { _, isFocus ->
+            if (isFocus and txtErrorPassword.isVisible) txtErrorPassword.visibility = GONE
+        }
 
-         edtName.setOnFocusChangeListener { _, isFocus ->
-             if (isFocus and txtErrorName.isVisible) txtErrorName.visibility = GONE
+        edtReenterPassword.setOnFocusChangeListener { _, isFocus ->
+             if (isFocus and txtReenterPassword.isVisible) txtErrorReenterPassword.visibility = GONE
          }
-     }
-    }
+    }}
 
+    override fun addEventsListener() { dataBinding.apply {
+        viewModel.setOnSignUpListener(object : OnSignUpListener {
+            override fun onSuccess(user: FirebaseUser) {
+                signUpWidgetsGroup.visibility = GONE
+                backgroundSignUpSuccessfully.visibility = VISIBLE
+            }
+
+            override fun onFailed(ex: Exception?) {
+                signUpWidgetsGroup.visibility = GONE
+                backgroundSignUpFail.visibility = VISIBLE
+            }
+        })
+    }}
 
     private fun signUp () {
         dataBinding.apply {
+            val email = edtEmail.text.toString()
+            val password = edtPassword.text.toString()
+            val reEnterPassword = edtReenterPassword.text.toString()
 
-            val id = edtId.text.toString()
-            val password = edtId.text.toString()
-            val name = edtName.text.toString()
-
-            if ( ! isInformationValid (id, password, name)) return
+            if ( ! isInformationValid (email, password, reEnterPassword)) return
 
             try {
-                auth!!.createUserWithEmailAndPassword(id, password)
-                    .addOnSuccessListener {
-                        backgroundSignUpSuccessfully.visibility = View.VISIBLE
-                    }
-                    .addOnFailureListener {
-                        backgroundSignUpFail.visibility = View.VISIBLE
-                    }
-            } catch (ex : NullPointerException) {
+                viewModel.signUp(email, password)
+            } catch (ex : Exception) {
                 quickToast("Error happened. Please check again")
             }
-
         }
     }
 
-    private fun isInformationValid(id : String, password : String, name : String) : Boolean{
+    private fun isInformationValid(email : String, password : String, reEnteredPassword : String) : Boolean{
         dataBinding.apply {
-            if (id == "") {
-                txtErrorId.visibility = View.VISIBLE
+            if (email == "") {
+                txtErrorEmail.visibility = VISIBLE
                 return false
             }
 
             if (password == "") {
-                txtErrorPassword.visibility = View.VISIBLE
+                txtErrorPassword.visibility = VISIBLE
                 return false
             }
 
-            if (name == "") {
-                txtErrorName.visibility = View.VISIBLE
+            if (password.trim() != reEnteredPassword.trim()) {
+                txtErrorReenterPassword.visibility = VISIBLE
                 return false
             }
 

@@ -5,7 +5,7 @@ import com.teamttdvlp.memolang.databinding.ActivityMenuBinding
 import com.teamttdvlp.memolang.view.Activity.base.BaseActivity
 import com.teamttdvlp.memolang.view.Activity.helper.getActivityViewModel
 import com.teamttdvlp.memolang.view.Activity.helper.quickStartActivity
-import com.teamttdvlp.memolang.view.Activity.viewmodel.MenuActivityViewModel
+import com.teamttdvlp.memolang.view.Activity.viewmodel.menu.MenuActivityViewModel
 import kotlinx.android.synthetic.main.activity_menu.*
 
 class MenuActivity : BaseActivity<ActivityMenuBinding, MenuActivityViewModel>() {

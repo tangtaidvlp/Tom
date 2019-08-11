@@ -57,6 +57,9 @@ dependencies {
     // Firebase Authentication
     implementation 'com.google.firebase:firebase-auth:18.1.0'
 
+    // Firebase Firestore
+    implementation 'com.google.firebase:firebase-firestore:20.2.0'
+
     // Facebook Authentication
     implementation 'com.facebook.android:facebook-login:[5,6)'
 

@@ -4,7 +4,7 @@ import com.teamttdvlp.memolang.R
 import com.teamttdvlp.memolang.databinding.ActivityEditFlashcardBinding
 import com.teamttdvlp.memolang.view.Activity.base.BaseActivity
 import com.teamttdvlp.memolang.view.Activity.helper.getActivityViewModel
-import com.teamttdvlp.memolang.view.Activity.viewmodel.EditFlashcardActivityViewModel
+import com.teamttdvlp.memolang.view.Activity.viewmodel.edit_flashcard.EditFlashcardActivityViewModel
 
 class EditFlashcardActivity : BaseActivity<ActivityEditFlashcardBinding, EditFlashcardActivityViewModel>() {
 
@@ -15,4 +15,5 @@ class EditFlashcardActivity : BaseActivity<ActivityEditFlashcardBinding, EditFla
     override fun addViewEvents() {
 
     }
+
 }

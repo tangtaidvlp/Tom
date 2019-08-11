@@ -1,6 +1,5 @@
 package com.teamttdvlp.memolang.view.Activity
 
-import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.teamttdvlp.memolang.R
@@ -9,11 +8,11 @@ import com.teamttdvlp.memolang.view.Activity.base.BaseActivity
 import com.teamttdvlp.memolang.view.Activity.helper.getActivityViewModel
 import com.teamttdvlp.memolang.view.Activity.helper.quickStartActivity
 import com.teamttdvlp.memolang.view.Activity.mockmodel.Flashcard
-import com.teamttdvlp.memolang.view.Activity.mockmodel.Language
-import com.teamttdvlp.memolang.view.Activity.viewmodel.LanguageViewModel
+import com.teamttdvlp.memolang.view.Activity.mockmodel.FlashcardSet
+import com.teamttdvlp.memolang.view.Activity.viewmodel.language.LanguageViewModel
 import com.teamttdvlp.memolang.databinding.ActivityLanguageBinding
 
-class LanguageActivity : BaseActivity<com.teamttdvlp.memolang.databinding.ActivityLanguageBinding, LanguageViewModel>() {
+class LanguageActivity : BaseActivity<ActivityLanguageBinding, LanguageViewModel>() {
 
     lateinit var adapter : LanguageRCVAdapter
 
@@ -26,9 +25,9 @@ class LanguageActivity : BaseActivity<com.teamttdvlp.memolang.databinding.Activi
     }
 
     override fun addViewControls() {
-        val mockList = ArrayList<Language>()
-        mockList.add(Language("English", "Vietnamese", getMockList()))
-        mockList.add(Language("China", "Vietnamese", getMockList()))
+        val mockList = ArrayList<FlashcardSet>()
+        mockList.add(FlashcardSet("English", "Vietnamese", getMockList()))
+        mockList.add(FlashcardSet("China", "Vietnamese", getMockList()))
         adapter = LanguageRCVAdapter(this@LanguageActivity, mockList)
         dataBinding.apply {
             rcvLanguageList.adapter = adapter
@@ -40,14 +39,14 @@ class LanguageActivity : BaseActivity<com.teamttdvlp.memolang.databinding.Activi
     }
 
     fun getMockList(): ArrayList<Flashcard> {
-        val flashcard = Flashcard("Negotiate", "Đàm phán", "We negotiate for intergrate two force")
-        val flashcard1 = Flashcard("Something", "Cái gì đó", "We always do something to figure out the solution")
-        val flashcard2 = Flashcard("Figure out", "Tìm ra", "We always do something to figure out the solution")
-        val flashcard3 = Flashcard("Until", "Cho đến khi", "Fight until the end")
-        val flashcard4 = Flashcard("Glorious", "Vẻ Vang", "We're worthy to have that glorious victory")
-        val flashcard5 = Flashcard("Curious", "Tò mò", "Successful people is always curious")
-        val flashcard6 = Flashcard("Give in", "Buông xuôi", "Give in laziness make you down")
-        val flashcard7 = Flashcard(
+        val flashcard = Flashcard(1,"Negotiate", "Đàm phán", "We negotiate for intergrate two force")
+        val flashcard1 = Flashcard(1,"Something", "Cái gì đó", "We always do something to figure out the solution")
+        val flashcard2 = Flashcard(1,"Figure out", "Tìm ra", "We always do something to figure out the solution")
+        val flashcard3 = Flashcard(1,"Until", "Cho đến khi", "Fight until the end")
+        val flashcard4 = Flashcard(1,"Glorious", "Vẻ Vang", "We're worthy to have that glorious victory")
+        val flashcard5 = Flashcard(1,"Curious", "Tò mò", "Successful people is always curious")
+        val flashcard6 = Flashcard(1,"Give in", "Buông xuôi", "Give in laziness make you down")
+        val flashcard7 = Flashcard(1,
             "Procastinate",
             "Trì hoãn",
             "Procastinating something when and only if you can do it better then"

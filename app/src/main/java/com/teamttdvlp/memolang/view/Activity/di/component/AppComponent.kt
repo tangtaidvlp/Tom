@@ -16,13 +16,4 @@ interface AppComponent {
 
     fun inject (app :  MemoLang)
 
-    @Component.Builder
-    interface Builder {
-
-        @BindsInstance
-        fun application(application: Application): Builder
-
-        fun build(): AppComponent
-    }
-
 }
