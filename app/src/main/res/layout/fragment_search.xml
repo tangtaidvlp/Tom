@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:context=".view.Fragment.SearchFragment">
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:background="#FFFFFF"
+            android:layout_height="match_parent">
+        <LinearLayout
+                android:id="@+id/lnLanguage"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:weightSum="13"
+                android:orientation="horizontal" android:layout_marginTop="8dp"
+                app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="8dp">
+
+            <TextView
+                    android:layout_width="20dp"
+                    android:textSize="14sp"
+                    android:layout_height="match_parent"
+                    android:text="Vietnamese"
+                    android:fontFamily="@font/segoeui"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:textColor="#4141FF"
+                    android:layout_weight="5.5"/>
+
+            <ImageButton
+                    android:layout_width="20dp"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerInside"
+                    android:background="@null"
+                    android:src="@drawable/button_swap_language"
+                    android:layout_weight="2"/>
+            <TextView
+                    android:layout_width="20dp"
+                    android:textSize="14sp"
+                    android:layout_height="match_parent"
+                    android:text="English"
+                    android:fontFamily="@font/segoeui"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:textColor="#4141FF"
+                    android:layout_weight="5.5"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:id="@+id/supportTxtTranslatedWordAnimation"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:layout_constraintEnd_toEndOf="@+id/txtTranslatedText"
+                app:layout_constraintTop_toBottomOf="@+id/lnTextToBeTranslated"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+                android:text="hello"
+                android:textSize="18sp"
+                android:background="#FFFFFF"
+                android:fontFamily="@font/segoeui"
+                android:paddingLeft="10dp"
+                android:minHeight="60dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtTranslatedText"
+                app:layout_constraintTop_toBottomOf="@+id/lnTextToBeTranslated"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+        <LinearLayout
+                app:layout_constraintTop_toBottomOf="@+id/lnLanguage"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginRight="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/lnTextToBeTranslated"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:weightSum="14"
+                android:layout_height="wrap_content">
+            <EditText
+                    android:id="@+id/edtTextToBeTranslated"
+                    android:hint="Tap here to enter text"
+                    android:layout_width="0dp"
+                    android:fontFamily="@font/segoeui"
+                    android:background="#FFFFFF"
+                    android:paddingLeft="10dp"
+                    android:layout_height="wrap_content"
+                    android:minHeight="50dp"
+                    android:layout_weight="13"
+                    android:maxHeight="80dp"/>
+            <Button
+                    android:id="@+id/btnClearText"
+                    android:alpha="0.3"
+                    android:text="x"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:background="@null"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+        <LinearLayout
+                android:id="@+id/lnCard"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                app:layout_constraintTop_toTopOf="@+id/guideline31"
+                app:layout_constraintBottom_toTopOf="@+id/guideline31"
+                app:layout_constraintStart_toStartOf="@+id/guideline32"
+                app:layout_constraintEnd_toStartOf="@+id/guideline32">
+            <include layout="@layout/card_layout" android:id="@+id/includeCard"/>
+        </LinearLayout>
+        <androidx.constraintlayout.widget.Guideline
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintGuide_percent="0.5"
+                android:id="@+id/guideline31"/>
+        <androidx.constraintlayout.widget.Guideline
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintGuide_percent="0.5"
+                android:id="@+id/guideline32" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
