@@ -46,4 +46,6 @@ abstract class BaseActivity <T : ViewDataBinding, V : ViewModel> : FragmentActiv
     open fun addViewControls() {}
 
     open fun addEventsListener() {}
+
+    open fun initProperties () {}
 }

@@ -2,6 +2,8 @@ package com.teamttdvlp.memolang.view.Activity
 
 import android.app.Activity
 import android.content.Intent
+import android.os.Bundle
+import android.transition.TransitionManager
 import com.facebook.CallbackManager
 import com.facebook.FacebookCallback
 import com.facebook.FacebookException
@@ -47,26 +49,31 @@ class AuthActivity :  BaseActivity<ActivityAuthBinding, AuthActivityViewModel>()
             btnFacebookSignIn.setOnClickListener {
                 viewModel.requestFacebookSignIn(this@AuthActivity)
             }
-
-            callbackManager = CallbackManager.Factory.create()
-            LoginManager.getInstance().registerCallback(callbackManager, object : FacebookCallback<LoginResult> {
-                override fun onSuccess(result: LoginResult?) {
-                    if (result == null) {
-                        quickToast("Error happened. Please check")
-                        return
-                    }
-                    viewModel.signInWithFacebook(result.accessToken)
-                }
-
-                override fun onCancel() {
-
-                }
-
-                override fun onError(error: FacebookException?) {
-
-                }
-            })
         }
+    }
+
+    override fun initProperties() {
+        callbackManager = CallbackManager.Factory.create()
+    }
+
+    override fun addEventsListener() {
+        LoginManager.getInstance().registerCallback(callbackManager, object : FacebookCallback<LoginResult> {
+            override fun onSuccess(result: LoginResult?) {
+                if (result == null) {
+                    quickToast("Error happened. Please check")
+                    return
+                }
+                viewModel.signInWithFacebook(result.accessToken)
+            }
+
+            override fun onCancel() {
+
+            }
+
+            override fun onError(error: FacebookException?) {
+
+            }
+        })
     }
 
     override fun onStart() {

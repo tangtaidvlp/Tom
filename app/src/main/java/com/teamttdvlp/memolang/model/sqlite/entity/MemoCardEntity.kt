@@ -7,9 +7,11 @@ import androidx.room.PrimaryKey
 import androidx.room.TypeConverters
 import com.teamttdvlp.memolang.model.sqlite.converter.DateTypeConverter
 import java.util.*
+import kotlin.random.Random
 
 @Entity(tableName = "MemoCard")
 class MemoCardEntity {
+
     @PrimaryKey
     @NonNull
     lateinit  var id : String
@@ -35,4 +37,5 @@ class MemoCardEntity {
     @ColumnInfo
     @TypeConverters(DateTypeConverter::class)
     lateinit var createdAt : Date
+
 }

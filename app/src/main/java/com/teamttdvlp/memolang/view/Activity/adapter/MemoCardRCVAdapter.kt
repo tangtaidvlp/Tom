@@ -8,9 +8,9 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.teamttdvlp.memolang.R
-import com.teamttdvlp.memolang.view.Activity.mockmodel.Flashcard
+import com.teamttdvlp.memolang.view.Activity.mockmodel.MemoCard
 
-class FlashcardRCVAdapter (var context : Context, var list : ArrayList<Flashcard>) : RecyclerView.Adapter<FlashcardRCVAdapter.ViewHolder> () {
+class MemoCardRCVAdapter (var context : Context, var list : ArrayList<MemoCard>) : RecyclerView.Adapter<MemoCardRCVAdapter.ViewHolder> () {
 
     private var onItemClickListener : OnItemClickListener? = null
 
@@ -27,16 +27,16 @@ class FlashcardRCVAdapter (var context : Context, var list : ArrayList<Flashcard
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val item = list[position]
-        holder.txtText.text = item.text
-        holder.txtTranslation.text = item.translation
+        holder.txtText.text = item.toBeTranslatedWord
+        holder.txtTranslation.text = item.translatedWord
         holder.btnEdit.setOnClickListener {
             onItemClickListener?.onClick(item)
         }
     }
 
-    fun setOnItemClickListener (onItemClickListener: (item: Flashcard) -> Unit) {
+    fun setOnItemClickListener (onItemClickListener: (item: MemoCard) -> Unit) {
         this.onItemClickListener = object : OnItemClickListener {
-            override fun onClick(item: Flashcard) {
+            override fun onClick(item: MemoCard) {
                 onItemClickListener(item)
             }
         }
@@ -49,6 +49,6 @@ class FlashcardRCVAdapter (var context : Context, var list : ArrayList<Flashcard
     override fun getItemCount(): Int = list.size
 
     interface OnItemClickListener {
-        fun onClick (item : Flashcard)
+        fun onClick (item : MemoCard)
     }
 }

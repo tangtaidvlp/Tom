@@ -4,8 +4,8 @@ import com.google.firebase.firestore.FieldValue
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.firestore.QuerySnapshot
 import com.teamttdvlp.memolang.view.Activity.helper.quickLog
-import com.teamttdvlp.memolang.view.Activity.mockmodel.Flashcard
 import com.teamttdvlp.memolang.view.Activity.mockmodel.FlashcardSet
+import com.teamttdvlp.memolang.view.Activity.mockmodel.MemoCard
 
 class OnlineFlashcardDBManager {
 
@@ -13,7 +13,7 @@ class OnlineFlashcardDBManager {
 
     private val FLASHCARD_ARRAY = "flashcards"
 
-    fun writeFlashcard (uid : String, flashcardSet: FlashcardSet, flashCard : Flashcard)  {
+    fun writeFlashcard (uid : String, flashcardSet: FlashcardSet, flashCard : MemoCard)  {
         val flashcardSetId = "${flashcardSet.sourceLang}-${flashcardSet.targetLang}"
         val userCollection = firestoreRef.collection("123")
         userCollection.whereEqualTo("id", flashcardSetId).get()
@@ -40,7 +40,7 @@ class OnlineFlashcardDBManager {
             }
     }
 
-    fun updateFlashcard (uid : String, flashcardSet : FlashcardSet, old : Flashcard, new : Flashcard) {
+    fun updateFlashcard (uid : String, flashcardSet : FlashcardSet, old : MemoCard, new : MemoCard) {
         val flashcardSetId = "${flashcardSet.sourceLang}-${flashcardSet.targetLang}"
         firestoreRef.collection("123").document(flashcardSetId).apply {
             update("flashcards", FieldValue.arrayRemove(old)).addOnCompleteListener { task ->
@@ -54,7 +54,6 @@ class OnlineFlashcardDBManager {
                             task2.exception?.printStackTrace()
                         }
                     }
-
                 } else {
                     quickLog("Remove Failed")
                     task.exception?.printStackTrace()
@@ -72,6 +71,18 @@ class OnlineFlashcardDBManager {
             }
             onGetOneFlashcardSet(allFlashcardSets)
         }
+    }
+
+    fun deleteFlashcard (uid : String, flashcard : MemoCard) {
+        firestoreRef.collection(uid).document(flashcard.type).update("flashcards", FieldValue.arrayRemove(flashcard))
+            .addOnCompleteListener{
+                if (it.isSuccessful) {
+                    quickLog("Delete card successful")
+                } else {
+                    quickLog("Delete card failed")
+                    it.exception?.printStackTrace()
+                }
+            }
     }
 
 }
