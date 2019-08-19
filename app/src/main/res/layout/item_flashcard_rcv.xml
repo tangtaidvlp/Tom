@@ -7,16 +7,20 @@
                                                    android:layout_height="wrap_content">
 
     <TextView
-            android:text="Negotiate"
-            android:layout_width="wrap_content"
+            android:id="@+id/txt_text"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:id="@+id/txt_text" app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginStart="19dp"
-            app:layout_constraintBottom_toBottomOf="parent" android:textSize="19sp" android:fontFamily="@font/segoeui"
-            android:textColor="@color/input_alert_color" android:layout_marginEnd="8dp"
-            app:layout_constraintEnd_toStartOf="@+id/btn_save" app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintVertical_bias="0.0" android:layout_marginTop="6dp"/>
+            android:layout_marginStart="19dp" android:layout_marginTop="6dp"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="@font/segoeui"
+            android:text="Negotiate"
+            android:textColor="@color/input_alert_color"
+            android:textSize="19sp"
+            android:maxLines="1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btn_view_list" app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"/>
     <TextView
             android:text="Đàm phán"
             android:layout_width="wrap_content"

@@ -1,6 +1,9 @@
 package com.teamttdvlp.memolang.view.Activity.helper
 
 import android.content.Intent
+import android.view.View
+import android.view.View.GONE
+import android.view.View.VISIBLE
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentActivity
@@ -13,6 +16,14 @@ fun FragmentActivity.quickStartActivity (target : Class<*>) {
 
 fun FragmentActivity.quickToast (message : String) {
     Toast.makeText(this, message, Toast.LENGTH_LONG).show()
+}
+
+fun View.disappear() {
+    visibility = GONE
+}
+
+fun View.appear() {
+    visibility = VISIBLE
 }
 
 inline fun <reified T : ViewModel> Fragment.getFragmentViewModel(noinline creator: (() -> T)? = null): T {
