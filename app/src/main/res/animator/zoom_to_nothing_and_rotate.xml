@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set
+        android:interpolator="@android:interpolator/accelerate_quint"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <objectAnimator
+            android:duration="@integer/zoom_to_nothing_and_rotate_duration">
+
+        <!--Zoom smaller-->
+        <propertyValuesHolder
+                android:valueType="floatType"
+                android:propertyName="scaleX"
+                android:valueFrom="1.0"
+                android:valueTo="0.2"/>
+
+        <propertyValuesHolder
+                android:valueType="floatType"
+                android:propertyName="scaleY"
+                android:valueFrom="1.0"
+                android:valueTo="0.2"/>
+
+        <!--Rotate-->
+        <propertyValuesHolder
+                android:valueType="intType"
+                android:propertyName="rotation"
+                android:valueFrom="0"
+                android:valueTo="90"/>
+    </objectAnimator>
+
+</set>

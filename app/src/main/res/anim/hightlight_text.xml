@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<set xmlns:android="http://schemas.android.com/apk/res/android">
+<set  xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <!--Scale a little bigger-->
     <scale
             android:pivotX="50%"
             android:pivotY="50%"
@@ -8,10 +9,10 @@
             android:fromXScale="1.0"
             android:toYScale="1.05"
             android:toXScale="1.05"
-            android:duration="150"
-            android:interpolator="@android:interpolator/fast_out_slow_in"
-    />
+            android:duration="@integer/highlight_text_duration"
+            android:interpolator="@android:interpolator/fast_out_slow_in"/>
 
+    <!--Scale back to normal size-->
     <scale
             android:pivotX="50%"
             android:pivotY="50%"
@@ -20,9 +21,10 @@
             android:toYScale="0.95239"
             android:toXScale="0.95239"
             android:startOffset="250"
-            android:duration="150"
+            android:duration="@integer/highlight_text_duration"
             android:interpolator="@android:interpolator/linear"/>
 
+    <!--Vibrate-->
     <rotate
         android:pivotX="50%"
         android:pivotY="50%"

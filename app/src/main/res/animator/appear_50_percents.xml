@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set
+        android:interpolator="@android:interpolator/linear"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <objectAnimator
+            android:duration="@integer/appear_50_percents_duration">
+
+        <propertyValuesHolder
+            android:valueFrom="0.0"
+            android:valueTo="0.5"
+            android:propertyName="alpha"
+            android:valueType="floatType"/>
+
+    </objectAnimator>
+
+</set>

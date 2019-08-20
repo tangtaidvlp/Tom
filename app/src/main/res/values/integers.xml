@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="zoom_from_nothing_to_oversize_then_normal_size_duration">400</integer>
+    <integer name="zoom_from_nothing_to_normal_size_duration">400</integer>
+    <integer name="zoom_to_nothing_and_rotate_duration">400</integer>
+    <integer name="move_right_and_fade_out_duration">400</integer>
+    <integer name="appear_50_percents_duration">100</integer>
+    <integer name="highlight_text_duration">100</integer>
+</resources>

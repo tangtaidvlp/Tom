@@ -9,6 +9,7 @@ import androidx.lifecycle.ViewModel
 import dagger.android.AndroidInjection
 import android.view.inputmethod.InputMethodManager.SHOW_IMPLICIT
 import android.content.Context.INPUT_METHOD_SERVICE
+import android.view.WindowManager
 import android.view.inputmethod.InputMethodManager
 import android.view.inputmethod.InputMethodManager.RESULT_UNCHANGED_SHOWN
 
@@ -29,10 +30,10 @@ abstract class BaseActivity <T : ViewDataBinding, V : ViewModel> : FragmentActiv
     abstract fun takeViewModel () : V
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        imm = getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
         performDataBinding()
         performDependenciesInjection()
+        super.onCreate(savedInstanceState)
+        imm = getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
         performCreateViewModel()
         initProperties()
         addViewControls()

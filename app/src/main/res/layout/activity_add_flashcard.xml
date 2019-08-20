@@ -10,8 +10,8 @@
                 android:id="@+id/img_saved_flashcard"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:scaleX="0"
-                android:scaleY="0"
+                android:scaleX="0.5"
+                android:scaleY="0.5"
                 android:src="@drawable/image_saved_flashcard"
                 android:visibility="visible"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -54,7 +54,7 @@
                     android:layout_marginStart="15dp"
                     android:layout_marginTop="11dp"
                     android:layout_marginEnd="15dp"
-                    android:layout_marginBottom="30dp"
+                    android:layout_marginBottom="80dp"
                     android:background="@drawable/round_less_round_white_background_with_border"
                     android:elevation="4dp"
                     android:ems="10"
@@ -279,7 +279,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="15dp"
-                    android:layout_marginTop="12dp"
+                    android:layout_marginTop="62dp"
                     android:layout_marginEnd="15dp"
                     android:layout_marginBottom="8dp"
                     android:fontFamily="@font/segoeui"
@@ -289,9 +289,7 @@
                     app:layout_constraintBottom_toTopOf="@+id/viewgroup_txt_source_lang"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/img_background"
-                    app:layout_constraintVertical_bias="0.0"/>
+                    app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"/>
             <TextView
                     android:id="@+id/txt_error_name2"
                     android:layout_width="0dp"
@@ -311,10 +309,10 @@
                     android:layout_width="0dp"
                     android:layout_height="50dp"
                     android:background="@color/light_yellow"
+                    app:layout_constraintBottom_toTopOf="@+id/txt_type"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-            />
+                    app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_bias="0.0"/>
             <ImageView
                     android:id="@+id/img_flashcard_icon"
                     android:layout_width="18dp"
