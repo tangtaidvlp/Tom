@@ -27,14 +27,6 @@ class MainActivity : AppCompatActivity() {
         var set1 = FlashcardSet("English", "Vietnamese", TestEverything().mockList())
         var set2 = FlashcardSet("Vietnamese", "English", TestEverything().mockList())
         var card = MemoCard("Daddy", "Cha", "en-vi", "Daddy is guy who helps us to be born", "Papa, Dad", "Noun")
-        quickStartActivity(MenuActivity::class.java)
-//        OnlineFlashcardDBManager().readAllFlashcard("123") {
-//            for (i in it) {
-//                quickLog("SL" + i.sourceLang)
-//                quickLog("TL" + i.targetLang)
-//                quickLog("Size " + i.flashcards.size)
-//            }
-//        }
-//        Navigation.findNavController(this, R.id.nav_main).navigate(R.id.searchFragment)
+        quickStartActivity(AuthActivity::class.java)
     }
 }

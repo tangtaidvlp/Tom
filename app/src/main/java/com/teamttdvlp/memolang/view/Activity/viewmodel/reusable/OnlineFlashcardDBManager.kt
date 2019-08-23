@@ -15,7 +15,7 @@ class OnlineFlashcardDBManager {
 
     fun writeFlashcard (uid : String, flashcardSet: FlashcardSet, flashCard : MemoCard)  {
         val flashcardSetId = "${flashcardSet.sourceLang}-${flashcardSet.targetLang}"
-        val userCollection = firestoreRef.collection("123")
+        val userCollection = firestoreRef.collection(uid)
         userCollection.whereEqualTo("id", flashcardSetId).get()
             .addOnSuccessListener { docs ->
                 val flashcardSetDoc = userCollection.document(flashcardSetId)
@@ -24,6 +24,7 @@ class OnlineFlashcardDBManager {
                     // Add a Flashcard
                     flashcardSetDoc.update(FLASHCARD_ARRAY, FieldValue.arrayUnion(flashCard))
                 } else {
+                    // Create new Set of Flashcard
                     flashcardSet.flashcards.add(flashCard)
                     flashcardSetDoc.set(flashcardSet).addOnCompleteListener { task ->
                         if (task.isSuccessful) {
@@ -42,7 +43,7 @@ class OnlineFlashcardDBManager {
 
     fun updateFlashcard (uid : String, flashcardSet : FlashcardSet, old : MemoCard, new : MemoCard) {
         val flashcardSetId = "${flashcardSet.sourceLang}-${flashcardSet.targetLang}"
-        firestoreRef.collection("123").document(flashcardSetId).apply {
+        firestoreRef.collection(uid).document(flashcardSetId).apply {
             update("flashcards", FieldValue.arrayRemove(old)).addOnCompleteListener { task ->
                 if (task.isSuccessful) {
                     quickLog("Remove Success")

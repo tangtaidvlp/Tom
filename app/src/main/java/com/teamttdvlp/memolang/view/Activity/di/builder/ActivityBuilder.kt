@@ -3,6 +3,7 @@ package com.teamttdvlp.memolang.view.Activity.di.builder
 import com.teamttdvlp.memolang.view.Activity.*
 import com.teamttdvlp.memolang.view.Activity.di.module.activity.AddFlashcardActivityModule
 import com.teamttdvlp.memolang.view.Activity.di.module.activity.AuthActivityModule
+import com.teamttdvlp.memolang.view.Activity.di.module.activity.SignUpActivityModule
 import dagger.Module
 import dagger.android.ContributesAndroidInjector
 
@@ -12,7 +13,7 @@ abstract class ActivityBuilder {
     @ContributesAndroidInjector(modules = [AuthActivityModule::class])
     abstract fun injectAuthActivity() : AuthActivity
 
-    @ContributesAndroidInjector
+    @ContributesAndroidInjector(modules = [SignUpActivityModule::class])
     abstract fun injectSignUpActivity() : SignUpActivity
 
     @ContributesAndroidInjector(modules = [AddFlashcardActivityModule::class])

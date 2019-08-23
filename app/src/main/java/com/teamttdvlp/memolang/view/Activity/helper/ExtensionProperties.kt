@@ -1,6 +1,7 @@
 package com.teamttdvlp.memolang.view.Activity.helper
 
 import android.util.Log
+import android.view.View
 import android.view.animation.Animation
 
 fun quickLog (message : String) {
@@ -21,4 +22,29 @@ fun Animation.addAnimationLister (onStart : ((Animation?) -> Unit)? = null, onEn
             onStart?.invoke(p0)
         }
     })
+}
+
+
+fun View.disappear() {
+    visibility = View.GONE
+}
+
+fun View.appear() {
+    visibility = View.VISIBLE
+}
+
+fun View.hide() {
+    visibility = View.INVISIBLE
+}
+
+fun View.isVisible () : Boolean{
+    return visibility == View.VISIBLE
+}
+
+fun View.isGone () : Boolean{
+    return visibility == View.GONE
+}
+
+fun View.isInvisible() : Boolean{
+    return visibility == View.INVISIBLE
 }

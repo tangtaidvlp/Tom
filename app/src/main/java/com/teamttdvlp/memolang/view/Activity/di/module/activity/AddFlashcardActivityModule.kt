@@ -16,11 +16,6 @@ import javax.inject.Named
 class AddFlashcardActivityModule() {
 
     @Provides
-    fun provideApp (app : MemoLang) : Context {
-        return app
-    }
-
-    @Provides
     fun provideHighlightTextAnim(activity: AddFlashcardActivity): Animation {
         return AnimationUtils.loadAnimation(activity, R.anim.hightlight_text)
     }

@@ -18,7 +18,7 @@ class SignUpManager {
                 Log.e(SIGN_UP_TAG, "signUpWithCredential:success: " + task.result!!.credential)
                 onSignUpListener?.onSuccess(auth.currentUser!!)
             } else {
-                Log.e(SIGN_UP_TAG, "signUpWithCredential:failure", task.exception)
+                Log.e(SIGN_UP_TAG, "signUpWithCredential:failure - " +  task.exception?.message)
                 onSignUpListener?.onFailed(task.exception)
             }
         }

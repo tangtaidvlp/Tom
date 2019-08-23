@@ -58,7 +58,6 @@ class AddFlashcardActivity : BaseActivity<ActivityAddFlashcardBinding, AddFlashC
         viewgroupCancelSaving.isClickable = true
         rcvChooseSourceLanguage.adapter = rcvChooseLanguageAdapter
         rcvChooseSourceLanguage.layoutManager = linearLayoutManager
-
     }}
 
     override fun addViewEvents() { dataBinding.apply {
@@ -114,8 +113,6 @@ class AddFlashcardActivity : BaseActivity<ActivityAddFlashcardBinding, AddFlashC
         }
 
         savedImageAppear.setTarget(imgSavedFlashcard)
-
-
         savedImageDisappear.setTarget(imgSavedFlashcard)
 
         val appearSet = AnimatorSet().apply { play(groupDisappear).before(savedImageAppear) }
@@ -165,10 +162,12 @@ class AddFlashcardActivity : BaseActivity<ActivityAddFlashcardBinding, AddFlashC
 
     @Inject
     fun initSelectedTextAnimation (selectedTextHighlightAnim : Animation) { dataBinding.apply {
-        selectedTextHighlightAnim!!.addAnimationLister(onStart = {
+        selectedTextHighlightAnim.addAnimationLister(
+            onStart = {
             val darkOrangeColor = ResourcesCompat.getColor(resources, R.color.dark_orange_text, null)
             selectedLanguageSessionTextView?.setTextColor(darkOrangeColor)
-        }, onEnd = {
+        },
+            onEnd = {
             selectedLanguageSessionTextView?.setTextColor(Color.BLACK)
         })
         this@AddFlashcardActivity.selectedTextHighlightAnim = selectedTextHighlightAnim
