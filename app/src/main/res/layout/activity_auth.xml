@@ -28,15 +28,17 @@
                     android:layout_height="80dp"
                     android:src="@drawable/circle_progress_bar"/>
         </androidx.appcompat.widget.LinearLayoutCompat>
+
         <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/viewgroup_sign_in_failed"
                 android:layout_width="match_parent"
                 android:layout_height="230dp"
                 android:alpha="1"
                 android:orientation="vertical"
-                android:visibility="gone" app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_bias="0.4">
+                app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_bias="0.4"
+                android:visibility="gone">
             <ImageView
                     android:id="@+id/img_background_sign_in_failed"
                     android:layout_width="match_parent"
@@ -53,7 +55,7 @@
                     app:layout_constraintVertical_bias="0.0"
                     app:srcCompat="@drawable/round_white_background"/>
             <TextView
-                    android:id="@+id/txt_notification"
+                    android:id="@+id/txt_successful_notification"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
@@ -87,9 +89,52 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.5"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/txt_notification"
+                    app:layout_constraintTop_toBottomOf="parent"
                     app:layout_constraintVertical_bias="1.0"/>
         </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/viewgroup_sign_in_successfully"
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+                android:alpha="1"
+                android:orientation="vertical"
+                android:visibility="gone" app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_bias="0.4">
+            <ImageView
+                    android:id="@+id/img_background_sign_in_successfully"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:alpha="0.8"
+                    android:background="@drawable/round_white_background"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0"
+                    app:srcCompat="@drawable/round_white_background"/>
+            <TextView
+                    android:id="@+id/txt_notification"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:fontFamily="@font/segoeui"
+                    android:text="Sign up successfully"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="21sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" android:layout_marginBottom="45dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_marginTop="45dp"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
         <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/viewgroup_sign_in_widgets"
                 android:layout_width="match_parent" android:layout_height="match_parent"
@@ -166,7 +211,7 @@
                             android:textSize="14sp"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toBottomOf="@id/txt_id"/>
+                            app:layout_constraintTop_toBottomOf="@id/txt_id" android:text="tangtaived@gmail.comsss"/>
                     <TextView
                             android:id="@+id/txt_error_id"
                             android:layout_width="match_parent"
@@ -203,14 +248,13 @@
                             android:elevation="4dp"
                             android:ems="10"
                             android:fontFamily="@font/segoeui"
-                            android:inputType="textPersonName|numberPassword"
+                            android:inputType="textPassword"
                             android:paddingStart="14dp"
                             android:paddingBottom="1dp"
-                            android:text="****************"
                             android:textSize="14sp"
                             app:layout_constraintEnd_toStartOf="@+id/edt_id"
                             app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toBottomOf="@id/txt_password"/>
+                            app:layout_constraintTop_toBottomOf="@id/txt_password" android:text="123456"/>
                     <TextView
                             android:id="@+id/txt_error_password"
                             android:layout_width="match_parent"

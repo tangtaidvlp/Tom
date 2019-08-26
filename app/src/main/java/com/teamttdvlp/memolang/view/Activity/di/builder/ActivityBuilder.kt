@@ -1,9 +1,7 @@
 package com.teamttdvlp.memolang.view.Activity.di.builder
 
 import com.teamttdvlp.memolang.view.Activity.*
-import com.teamttdvlp.memolang.view.Activity.di.module.activity.AddFlashcardActivityModule
-import com.teamttdvlp.memolang.view.Activity.di.module.activity.AuthActivityModule
-import com.teamttdvlp.memolang.view.Activity.di.module.activity.SignUpActivityModule
+import com.teamttdvlp.memolang.view.Activity.di.module.activity.*
 import dagger.Module
 import dagger.android.ContributesAndroidInjector
 
@@ -22,10 +20,10 @@ abstract class ActivityBuilder {
     @ContributesAndroidInjector
     abstract fun injectLanguageActivity() : LanguageActivity
 
-    @ContributesAndroidInjector
+    @ContributesAndroidInjector(modules = [EditFlashcardActivityModule::class])
     abstract fun injectEditFlashcardActivity() : EditFlashcardActivity
 
-    @ContributesAndroidInjector
+    @ContributesAndroidInjector(modules = [MenuActivityModule::class])
     abstract fun injectMenuActivity() : MenuActivity
 
     @ContributesAndroidInjector

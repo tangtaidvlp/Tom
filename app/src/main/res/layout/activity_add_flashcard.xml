@@ -12,7 +12,7 @@
                 android:layout_height="wrap_content"
                 android:scaleX="0.5"
                 android:scaleY="0.5"
-                android:src="@drawable/image_saved_flashcard"
+                android:src="@drawable/image_saved_flashcard_plus"
                 android:visibility="visible"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintHorizontal_bias="0.5"

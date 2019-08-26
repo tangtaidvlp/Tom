@@ -100,13 +100,13 @@
                             android:layout_height="wrap_content"
                             android:layout_marginStart="31dp"
                             android:layout_marginTop="20dp"
+                            android:layout_marginEnd="24dp"
                             android:fontFamily="@font/segoeui"
                             android:text="Email  "
                             android:textColor="#5F5F70"
                             android:textSize="16sp"
                             app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent"/>
+                            app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"/>
                     <EditText
                             android:id="@+id/edt_email"
                             android:layout_width="match_parent"
@@ -132,12 +132,12 @@
                             android:layout_height="wrap_content"
                             android:layout_marginStart="45dp"
                             android:layout_marginTop="2dp"
+                            android:layout_marginEnd="24dp"
                             android:text="Please enter your email"
                             android:textColor="@color/input_alert_color"
                             android:visibility="invisible"
                             app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toBottomOf="@id/edt_email"/>
+                            app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/edt_email"/>
 
                     <TextView
                             android:id="@+id/txt_password"
@@ -145,13 +145,13 @@
                             android:layout_height="wrap_content"
                             android:layout_marginStart="31dp"
                             android:layout_marginTop="2dp"
+                            android:layout_marginEnd="24dp"
                             android:fontFamily="@font/segoeui"
                             android:text="Password"
                             android:textColor="#5F5F70"
                             android:textSize="16sp"
                             app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toBottomOf="@id/txt_error_email"/>
+                            app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/txt_error_email"/>
                     <EditText
                             android:id="@+id/edt_password"
                             android:layout_width="match_parent"
@@ -176,7 +176,8 @@
                             android:layout_height="wrap_content"
                             android:layout_marginStart="45dp"
                             android:layout_marginTop="2dp"
-                            android:text="Please enter your password"
+                            android:layout_marginEnd="24dp"
+                            android:text="Password must have at least 6 characters"
                             android:textColor="@color/input_alert_color"
                             android:visibility="invisible"
                             app:layout_constraintEnd_toEndOf="parent"
@@ -188,6 +189,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginStart="31dp"
                             android:layout_marginTop="2dp"
+                            android:layout_marginEnd="24dp"
                             android:fontFamily="@font/segoeui"
                             android:text="Re-enter password"
                             android:textColor="#5F5F70"
@@ -219,6 +221,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginStart="45dp"
                             android:layout_marginTop="2dp"
+                            android:layout_marginEnd="45dp"
                             android:text="Your password does not match"
                             android:textColor="@color/input_alert_color"
                             android:visibility="invisible"
@@ -232,7 +235,6 @@
                             android:layout_marginStart="223dp"
                             android:layout_marginTop="12dp"
                             android:layout_marginEnd="223dp"
-                            android:layout_marginBottom="28dp"
                             android:background="@drawable/round_yellow_background"
                             android:fontFamily="@font/seguisb"
                             android:gravity="center"
@@ -240,11 +242,10 @@
                             android:text="Sign up" android:textAllCaps="false"
                             android:textColor="#ffffff"
                             android:textSize="16sp"
-                            app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toBottomOf="@id/txt_error_reenter_password"
-                            app:layout_constraintVertical_bias="1.0"/>
+                    />
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
             </androidx.constraintlayout.widget.ConstraintLayout>

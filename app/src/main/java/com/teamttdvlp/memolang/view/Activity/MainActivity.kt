@@ -28,5 +28,6 @@ class MainActivity : AppCompatActivity() {
         var set2 = FlashcardSet("Vietnamese", "English", TestEverything().mockList())
         var card = MemoCard("Daddy", "Cha", "en-vi", "Daddy is guy who helps us to be born", "Papa, Dad", "Noun")
         quickStartActivity(AuthActivity::class.java)
+
     }
 }

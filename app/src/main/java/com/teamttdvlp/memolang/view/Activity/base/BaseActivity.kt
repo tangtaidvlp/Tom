@@ -1,5 +1,6 @@
 package com.teamttdvlp.memolang.view.Activity.base
 
+import android.app.Activity
 import android.content.Context
 import android.os.Bundle
 import androidx.databinding.DataBindingUtil

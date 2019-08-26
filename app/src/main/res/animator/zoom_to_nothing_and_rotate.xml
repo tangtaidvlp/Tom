@@ -21,10 +21,10 @@
 
         <!--Rotate-->
         <propertyValuesHolder
-                android:valueType="intType"
+                android:valueType="floatType"
                 android:propertyName="rotation"
                 android:valueFrom="0"
-                android:valueTo="90"/>
+                android:valueTo="30"/>
     </objectAnimator>
 
 </set>

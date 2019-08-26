@@ -5,6 +5,7 @@ import android.animation.AnimatorSet
 import android.app.Activity
 import android.content.Intent
 import android.graphics.drawable.Drawable
+import android.view.Menu
 import android.view.animation.Animation
 import androidx.appcompat.content.res.AppCompatResources
 import androidx.core.animation.addListener
@@ -62,9 +63,11 @@ class AuthActivity :  BaseActivity<ActivityAuthBinding, AuthActivityViewModel>()
         }
 
         btnSignIn.setOnClickListener {
-            var id = edtId.text.toString()
-            var password = edtPassword.text.toString()
+            val id = edtId.text.toString()
+            val password = edtPassword.text.toString()
             if (!isInformationValid(id, password)) return@setOnClickListener
+            signInFailed = false
+            hideVirtualKeyboard()
             viewModel.signInWithEmailAndPassword(edtId.text.toString(), edtPassword.text.toString())
             signInAnimatorSet.start()
         }
@@ -110,12 +113,13 @@ class AuthActivity :  BaseActivity<ActivityAuthBinding, AuthActivityViewModel>()
     override fun addEventsListener() {
         viewModel.setOnSignInListener(object : OnSignInListener {
             override fun onSuccess(user: FirebaseUser) {
-                signInFailed = false
                 signInSuccessAnimatorSet.start()
             }
 
             override fun onFailed(ex: Exception?) {
                 signInFailed = true
+                //This is called in RotateForever animation below (in #initSignInAnimation() function)
+//                signInFailedAnimatorSet.start()
             }
         })
 
@@ -253,6 +257,42 @@ class AuthActivity :  BaseActivity<ActivityAuthBinding, AuthActivityViewModel>()
     }}
 
     @Inject
+    fun initSignInSuccessAnimations(
+        @Named("FromNothingToNormalSize") viewgroupSignInSuccessAppear : Animator,
+        @Named("FromNormalSizeToNothing") progressBarDisappear : Animator,
+        @Named("Waiting") delayTimeAnimator : Animator) { dataBinding.apply {
+
+        viewgroupSignInSuccessAppear.apply {
+            setTarget(viewgroupSignInSuccessfully)
+            addListener (onStart = {
+                viewgroupSignInSuccessfully.appear()
+            })
+        }
+
+        progressBarDisappear.apply {
+            setTarget(viewgroupImgSignInProgressBar)
+            addListener(onEnd = {
+                viewgroupImgSignInProgressBar.disappear()
+            })
+        }
+
+        // This animator delays time when to start to MenuActivity
+        // This make user can see the notification that they've signed in sucessfully
+        delayTimeAnimator.apply {
+            setTarget(viewgroupImgSignInProgressBar)
+            addListener(onEnd = {
+                quickStartActivity(MenuActivity::class.java)
+                finish()
+            })
+        }
+
+        val successAnimatorSet = AnimatorSet().apply {
+            play(progressBarDisappear).before(viewgroupSignInSuccessAppear)
+        }
+        signInSuccessAnimatorSet.play(successAnimatorSet).before(delayTimeAnimator)
+    }}
+
+    @Inject
     fun initCheckInfoAgainAnimations(
         @Named("Disappear100percents") groupSignInFailedDisappear : Animator,
         @Named("Appear100percents") groupSignInWidgetsAppear : Animator) { dataBinding.apply {
@@ -278,5 +318,6 @@ class AuthActivity :  BaseActivity<ActivityAuthBinding, AuthActivityViewModel>()
     fun initVibrateAnimation (@Named("Vibrate") vibrate : Animation) {
         this.vibrate = vibrate
     }
+
 }
 

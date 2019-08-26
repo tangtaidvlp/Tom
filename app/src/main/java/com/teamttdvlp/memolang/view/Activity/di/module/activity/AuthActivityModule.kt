@@ -1,6 +1,7 @@
 package com.teamttdvlp.memolang.view.Activity.di.module.activity
 
 import android.animation.Animator
+import android.animation.ValueAnimator
 import android.view.animation.Animation
 import android.view.animation.AnimationUtils
 import androidx.vectordrawable.graphics.drawable.AnimatorInflaterCompat
@@ -56,6 +57,14 @@ class AuthActivityModule {
     @Named("Vibrate")
     fun provideVibrate_Animation(activity: AuthActivity): Animation{
         return AnimationUtils.loadAnimation(activity, R.anim.vibrate)
+    }
+
+    @Provides
+    @Named("Waiting")
+    fun provideWaiting_Animatior(activity: AuthActivity): Animator{
+        return ValueAnimator.ofInt(0, 2).apply {
+            duration = 500
+        }
     }
 
 

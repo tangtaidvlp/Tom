@@ -4,6 +4,8 @@ import android.animation.Animator
 import android.animation.AnimatorSet
 import android.graphics.drawable.Drawable
 import android.view.animation.Animation
+import android.widget.EditText
+import android.widget.TextView
 import androidx.appcompat.content.res.AppCompatResources
 import androidx.core.animation.addListener
 import androidx.core.view.isVisible
@@ -64,8 +66,10 @@ class SignUpActivity : BaseActivity<ActivitySignUpBinding, SignUpViewModel>() {
 
         edtPassword.setOnFocusChangeListener { _, isFocus ->
             if (isFocus and txtErrorPassword.isVisible) {
-                txtErrorPassword.hide()
                 edtPassword.background = normalBorderRoundBackground
+                // Do this to make #txtErrorPassword have only 1 line, to make UI looks nice and have no flaw
+                txtErrorPassword.text = "Make password only have 1 line"
+                txtErrorPassword.hide()
             }
         }
 
@@ -95,50 +99,85 @@ class SignUpActivity : BaseActivity<ActivitySignUpBinding, SignUpViewModel>() {
         })
     }}
 
-    private fun signUp () {
-        dataBinding.apply {
-            val email = edtEmail.text.toString()
-            val password = edtPassword.text.toString()
-            val reEnterPassword = edtReenterPassword.text.toString()
 
-            if ( ! isInformationValid (email, password, reEnterPassword)) return
+    /**
+     * Support function
+     */
+    private fun signUp () { dataBinding.apply {
+        signUpFailed = false
 
-            signUpAnimatorSet.start()
-            try {
-                viewModel.signUp(email, password)
-            } catch (ex : Exception) {
-                quickToast("Error happened. Please check again")
+        val email = edtEmail.text.toString()
+        val password = edtPassword.text.toString()
+        val reEnterPassword = edtReenterPassword.text.toString()
+
+        if ( ! isInformationValid (email, password, reEnterPassword)) return
+
+        signUpAnimatorSet.start()
+        try {
+            viewModel.signUp(email, password)
+        } catch (ex : Exception) {
+            quickToast("Error happened. Please check again")
+        }
+    }}
+
+    private fun isAnInfoValid (info : String, inputField : EditText, errorText : TextView,
+                               vararg conditions : (info : String) -> Boolean) : Boolean{
+        var isValid = true
+        for (condition in conditions) {
+            isValid = condition(info)
+            if (!isValid) {
+                errorText.appear()
+                inputField.startAnimation(vibrate)
+                inputField.background = redBorderRoundBackground
+                break
+            } else {
+                // The errortext is visible means that the conditions has been met but the field is still alerted
+                if (errorText.isVisible) {
+                    inputField.background = normalBorderRoundBackground
+                    errorText.text = ""
+                    errorText.disappear()
+                }
             }
         }
+
+        return isValid
     }
 
     private fun isInformationValid(email : String, password : String, reEnteredPassword : String) : Boolean{
         dataBinding.apply {
-            var isValid = true
-            if (email == "") {
-                txtErrorEmail.appear()
-                edtEmail.startAnimation(vibrate)
-                edtEmail.background = redBorderRoundBackground
-                isValid = false
-            }
+            val isEmailValid = isAnInfoValid(email, edtEmail, txtErrorEmail,
+                {
+                    val isNotEmpty = it != ""
+                    if (!isNotEmpty) txtErrorEmail.text = "Please input your email"
+                    isNotEmpty
+                })
+            val isPasswordValid = isAnInfoValid(password, edtPassword, txtErrorPassword,
+                {
+                    val isNotEmpty = it != ""
+                    if (!isNotEmpty) txtErrorPassword.text = "Please input your password"
+                    isNotEmpty
+                },
+                {
+                    val isValid = (viewModel.isPasswordValid(password))
+                    if (!isValid) txtErrorPassword.text = "- Password must have at least 6 characters\n- Can not contain special character like !, @, #, ..."
+                    isValid
+                })
+            val isReenterPasswordValid = isAnInfoValid(reEnteredPassword, edtReenterPassword, txtErrorReenterPassword,
+                 {
+                    val isNotEmpty = it != ""
+                    if (!isNotEmpty) txtErrorReenterPassword.text = "Please input your password again"
+                    isNotEmpty
+                 },
+                 {
+                    val isMatch = (password.trim() == reEnteredPassword.trim())
+                     if (!isMatch) txtErrorReenterPassword.text = "Your password does not match"
+                     isMatch
+                 })
 
-            if (password == "") {
-                txtErrorPassword.appear()
-                edtPassword.startAnimation(vibrate)
-                edtPassword.background = redBorderRoundBackground
-                isValid = false
-            }
-
-            if (password.trim() != reEnteredPassword.trim()) {
-                txtErrorReenterPassword.appear()
-                edtReenterPassword.startAnimation(vibrate)
-                edtReenterPassword.background = redBorderRoundBackground
-                isValid = false
-            }
-
-            return isValid
+            return (isEmailValid) and  (isPasswordValid) and (isReenterPasswordValid)
         }
     }
+
 
 
     /**
