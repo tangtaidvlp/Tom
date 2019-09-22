@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:context=".view.activity.UseFlashcardActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white">
+
+        <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:background="@color/app_red"
+                android:elevation="5dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                    android:id="@+id/img_flashcard_icon"
+                    android:layout_width="15dp"
+                    android:layout_height="18dp"
+                    android:layout_marginStart="13dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/icon_flashcard"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                    android:id="@+id/txt_language_set_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="8dp"
+                    android:fontFamily="@font/segoeui"
+                    android:text="Language"
+                    android:textColor="#ffffff"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/img_background"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/img_flashcard_icon"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                    android:id="@+id/txt_language_set_name2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/segoeui"
+                    android:gravity="right|center_vertical"
+                    android:text="20"
+                    android:textColor="#ffffff"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/img_background"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/img_flashcard_icon"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0" />
+
+        </LinearLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/viewgroup_flashcard"
+                android:layout_width="0dp"
+                android:layout_height="130dp"
+                android:layout_marginStart="27dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="27dp"
+                android:background="@drawable/round_white_background"
+                android:elevation="4dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.526"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_hard_cards_left">
+
+            <TextView
+                    android:id="@+id/txt_front_card_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/segoeui"
+                    android:gravity="right"
+                    android:paddingTop="1dp"
+                    android:paddingRight="6dp"
+                    android:text="17"
+                    android:textColor="@color/use_flashcard_grey_text_color"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                    android:id="@+id/txt_front_card_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/seguisb"
+                    android:gravity="center"
+                    android:paddingStart="6dp"
+                    android:paddingTop="1dp"
+                    android:paddingEnd="6dp"
+                    android:text="The farther you go, the wiser you are"
+                    android:textColor="@color/use_flashcard_grey_text_color"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.constraintlayout.widget.Group
+                    android:id="@+id/group_front_card_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="invisible"
+                    app:constraint_referenced_ids="txt_front_card_number,txt_front_card_text" />
+
+            <TextView
+                    android:id="@+id/txt_back_card_using"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:fontFamily="@font/segoeui"
+                    android:gravity="center"
+                    android:paddingTop="1dp"
+                    android:paddingRight="6dp"
+                    android:text="If you go farther, you will be wiser"
+                    android:textColor="@color/use_flashcard_grey_text_color"
+                    app:layout_constraintBottom_toBottomOf="parent" />
+
+            <TextView
+                    android:id="@+id/txt_back_card_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/segoeui"
+                    android:gravity="right"
+                    android:paddingTop="1dp"
+                    android:paddingRight="6dp"
+                    android:text="17"
+                    android:textColor="@color/use_flashcard_grey_text_color"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                    android:id="@+id/txt_back_card_translation"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:fontFamily="@font/seguisb"
+                    android:gravity="center"
+                    android:paddingStart="6dp"
+                    android:paddingTop="1dp"
+                    android:paddingEnd="6dp"
+                    android:text="The farther you go, the wiser you are"
+                    android:textColor="@color/use_flashcard_grey_text_color"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toTopOf="@+id/txt_back_card_using"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.constraintlayout.widget.Group
+                    android:id="@+id/group_back_card_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible"
+                    app:constraint_referenced_ids=",txt_back_card_number,txt_back_card_using,txt_back_card_translation" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/viewgroup_card_other_info"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="27dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="27dp"
+                android:background="@drawable/round_white_background"
+                android:elevation="4dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/viewgroup_flashcard">
+
+            <TextView
+                    android:id="@+id/txt_title_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/seguisb"
+                    android:gravity="top|left"
+                    android:paddingLeft="10dp"
+                    android:text="Type:"
+                    android:textColor="@color/use_flashcard_grey_text_color"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_synonym" />
+
+            <TextView
+                    android:id="@+id/txt_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/segoeui"
+                    android:gravity="top|left"
+                    android:text="Noun"
+                    android:textColor="@color/use_flashcard_grey_text_color"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/txt_title_type"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_synonym" />
+
+            <TextView
+                    android:id="@+id/txt_title_synonym"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="9dp"
+                    android:layout_marginBottom="14dp"
+                    android:fontFamily="@font/seguisb"
+                    android:gravity="top|left"
+                    android:paddingLeft="10dp"
+                    android:text="Synonym:"
+                    android:textColor="@color/use_flashcard_grey_text_color"
+                    android:textSize="14sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                    android:id="@+id/txt_synonym"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginTop="9dp"
+                    android:layout_marginBottom="14dp"
+                    android:fontFamily="@font/segoeui"
+                    android:gravity="top|left"
+                    android:text="None"
+                    android:textColor="@color/use_flashcard_grey_text_color"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/txt_title_synonym"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+                android:id="@+id/btn_swipe_up"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="27dp"
+                android:layout_marginTop="20dp"
+
+                android:layout_marginEnd="27dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/round_white_background"
+                android:elevation="3.5dp"
+                android:fontFamily="@font/seguisb"
+                android:gravity="center"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:text="Swipe up"
+                android:textColor="#545454"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toTopOf="@+id/btn_swipe_up_aligner"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/viewgroup_flashcard"
+                app:layout_constraintVertical_bias="1.0" />
+
+        <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/btn_swipe_up_aligner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="27dp"
+                android:layout_marginTop="20dp"
+
+                android:layout_marginEnd="27dp"
+                android:layout_marginBottom="40dp"
+                android:clickable="false"
+                android:fontFamily="@font/seguisb"
+                android:gravity="center"
+                android:linksClickable="false"
+                android:longClickable="false"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:textColor="#545454"
+                android:textSize="16sp"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/viewgroup_flashcard"
+                app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+                android:id="@+id/btn_easy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="27dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="27dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/round_white_background"
+                android:elevation="3dp"
+
+                android:fontFamily="@font/seguisb"
+                android:gravity="center"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:text="Easy"
+                android:textColor="#07B600"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toTopOf="@+id/btn_hard"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btn_previous_card"
+                app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+                android:id="@+id/btn_hard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="27dp"
+                android:layout_marginEnd="27dp"
+                android:layout_marginBottom="40dp"
+                android:background="@drawable/round_white_background"
+                android:elevation="3dp"
+                android:fontFamily="@font/seguisb"
+                android:gravity="center"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:text="Hard"
+                android:textColor="#F0161B"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+                android:id="@+id/txt_hard_cards_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="2dp"
+                android:fontFamily="@font/segoeui"
+                android:text="Hard cards left:"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_cards_left" />
+
+        <TextView
+                android:id="@+id/txt_hard_cards_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/segoeui"
+                android:text="4"
+                android:textColor="@color/app_red"
+                app:layout_constraintStart_toEndOf="@+id/txt_hard_cards_left"
+                app:layout_constraintTop_toBottomOf="@+id/txt_cards_left" />
+
+        <TextView
+                android:id="@+id/txt_cards_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="6dp"
+                android:fontFamily="@font/segoeui"
+                android:text="Cards left:"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+        <TextView
+                android:id="@+id/txt_cards_left_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="6dp"
+                android:fontFamily="@font/segoeui"
+                android:text="14"
+                app:layout_constraintStart_toEndOf="@+id/txt_cards_left"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+        <TextView
+                android:id="@+id/btn_previous_card"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:layout_marginEnd="27dp"
+                android:background="@drawable/previous_button_background"
+                android:fontFamily="@font/seguisb"
+                android:paddingLeft="12dp"
+                android:paddingTop="3dp"
+                android:paddingRight="12dp"
+                android:paddingBottom="4.5dp"
+                android:text="Previous"
+                android:textColor="@android:color/white"
+                android:textSize="13sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/viewgroup_card_other_info" />
+
+        <androidx.constraintlayout.widget.Group
+                android:id="@+id/group_before_show_card"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                app:constraint_referenced_ids="btn_swipe_up,btn_swipe_up_aligner" />
+
+        <androidx.constraintlayout.widget.Group
+                android:id="@+id/group_after_show_card"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                app:constraint_referenced_ids="btn_hard,btn_easy,btn_previous_card,viewgroup_card_other_info" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

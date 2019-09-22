@@ -9,6 +9,11 @@ class UserEntity {
     @NonNull
     @PrimaryKey
     lateinit var id : String
+
     @NonNull
-    lateinit var displayName : String
+    lateinit var motherLanguage : String
+
+    @NonNull
+    lateinit var targetLanguage : String
+
 }

@@ -3,32 +3,37 @@ package com.teamttdvlp.memolang.model.sqlite.dao
 import androidx.room.Dao
 import androidx.room.Delete
 import androidx.room.Insert
+import androidx.room.OnConflictStrategy.REPLACE
 import androidx.room.Query
-import com.teamttdvlp.memolang.model.sqlite.entity.MemoCardEntity
+import com.teamttdvlp.memolang.model.model.Flashcard
+import com.teamttdvlp.memolang.model.sqlite.entity.FlashCardEntity
 
 @Dao
-abstract  class MemoCardDAO {
+abstract  class FlashcardDAO {
 
-        @Insert
-        abstract fun insertNewCard (card : MemoCardEntity)
+        @Insert(onConflict = REPLACE)
+        abstract fun insertNewCard (card : FlashCardEntity) : Long
+
+        @Insert(onConflict = REPLACE)
+        abstract fun insertSetOfCards (setOfCards : ArrayList<FlashCardEntity>)
+
         @Delete
-        abstract fun deleteCard (card : MemoCardEntity)
+        abstract fun deleteCard (card : FlashCardEntity)
 
-        @Query("DELETE FROM MemoCard WHERE id = :cardId")
+        @Query("DELETE FROM Flashcard WHERE id = :cardId")
         abstract fun deleteCardById (cardId  : String)
 
-        @Query("SELECT * FROM MemoCard WHERE id == :cardId")
-        abstract fun getCardById (cardId: String) : MemoCardEntity
+        @Query("SELECT * FROM Flashcard WHERE id IN (:ids) ORDER BY createdAt DESC")
+        abstract fun getCardsByIds (ids : ArrayList<Int>) : List<FlashCardEntity>
 
-        @Query("SELECT * FROM MemoCard" +
+        @Query("SELECT * FROM Flashcard" +
                 " WHERE kind == :kind")
-        abstract fun getAllCardByType (kind : String) : List<MemoCardEntity>
+        abstract fun getAllCardByType (kind : String) : List<FlashCardEntity>
 
-        @Query("SELECT * FROM MemoCard" +
-                " WHERE kind = :kind AND createdAt >= :createdTime ORDER BY  createdAt DESC LIMIT :count")
-        abstract fun getCardByTypeFromCreatedTime (kind : String, createdTime : Long, count : Int) : List<MemoCardEntity>
+        @Query("SELECT * FROM Flashcard")
+        abstract fun getAllCard () :  List<FlashCardEntity>
 
-        @Query("SELECT * FROM Memocard" +
+        @Query("SELECT * FROM Flashcard" +
                 " WHERE kind = :kind AND toBeTranslatedWord == :toBeTranslatedWord")
-        abstract fun getCardByToBeTranslatedWord (kind : String, toBeTranslatedWord : String) : MemoCardEntity
+        abstract fun getCardByToBeTranslatedWord (kind : String, toBeTranslatedWord : String) : FlashCardEntity
 }

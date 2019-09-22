@@ -7,7 +7,7 @@
 
     <fragment
               android:id="@+id/searchFragment"
-              android:name="com.teamttdvlp.memolang.view.Fragment.SearchFragment"
+              android:name="com.teamttdvlp.memolang.view.fragment.SearchFragment"
               android:label="fragment_search" tools:layout="@layout/fragment_search"/>
 
 </navigation>
