@@ -8,7 +8,7 @@ import android.view.animation.AnimationUtils
 import android.view.animation.LinearInterpolator
 import androidx.interpolator.view.animation.FastOutLinearInInterpolator
 import com.teamttdvlp.memolang.R
-import com.teamttdvlp.memolang.view.activity.helper.addAnimationLister
+import com.teamttdvlp.memolang.view.helper.addAnimationLister
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {

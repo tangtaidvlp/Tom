@@ -11,8 +11,8 @@ import androidx.recyclerview.widget.RecyclerView
 import androidx.vectordrawable.graphics.drawable.AnimatorInflaterCompat
 import com.teamttdvlp.memolang.R
 import com.teamttdvlp.memolang.view.activity.SearchVocabularyActivity
-import com.teamttdvlp.memolang.view.activity.adapter.ChooseLanguageRCVAdapter
-import com.teamttdvlp.memolang.view.activity.adapter.RecentSearchFlashcardRCVAdapter
+import com.teamttdvlp.memolang.view.adapter.ChooseLanguageRCVAdapter
+import com.teamttdvlp.memolang.view.adapter.RecentSearchFlashcardRCVAdapter
 import dagger.Module
 import dagger.Provides
 import javax.inject.Named

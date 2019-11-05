@@ -21,7 +21,7 @@ import com.teamttdvlp.memolang.databinding.FragmentSearchBinding
 import com.teamttdvlp.memolang.model.sqlite.entity.FlashCardEntity
 import com.teamttdvlp.memolang.model.sqlite.MemoLangSqliteDataBase
 import com.teamttdvlp.memolang.model.sqlite.entity.UserEntity
-import com.teamttdvlp.memolang.view.activity.helper.quickLog
+import com.teamttdvlp.memolang.view.helper.quickLog
 import java.text.SimpleDateFormat
 
 class SearchFragment : Fragment() {

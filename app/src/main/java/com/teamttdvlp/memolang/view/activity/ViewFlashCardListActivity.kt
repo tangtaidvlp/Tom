@@ -4,12 +4,12 @@ import android.content.Intent
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.teamttdvlp.memolang.R
-import com.teamttdvlp.memolang.view.activity.base.BaseActivity
+import com.teamttdvlp.memolang.view.base.BaseActivity
 import kotlinx.android.synthetic.main.activity_view_flash_card_list.*
 import com.teamttdvlp.memolang.databinding.ActivityViewFlashCardListBinding
 import com.teamttdvlp.memolang.model.model.Flashcard
-import com.teamttdvlp.memolang.view.activity.adapter.FlashcardRCVAdapter
-import com.teamttdvlp.memolang.view.activity.helper.getActivityViewModel
+import com.teamttdvlp.memolang.view.adapter.FlashcardRCVAdapter
+import com.teamttdvlp.memolang.view.helper.getActivityViewModel
 import com.teamttdvlp.memolang.model.model.FlashcardSet
 import com.teamttdvlp.memolang.viewmodel.view_flashcard.ViewFlashCardViewModel
 import java.lang.Exception

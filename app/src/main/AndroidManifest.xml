@@ -14,7 +14,6 @@
             android:supportsRtl="true"
             android:theme="@style/AppTheme_WithSplashScreen">
 
-        <activity android:name=".view.activity.UseFlashcardActivity" />
         <activity android:name=".view.activity.SetUpAccountActivity" />
 
         <meta-data
@@ -45,7 +44,9 @@
         <activity android:name=".view.activity.SignUpActivity" />
         <activity android:name=".view.activity.SearchEditFlashcardActivity" />
         <activity android:name=".view.activity.SearchVocabularyActivity" />
-        <activity android:name=".view.activity.AuthActivity" >
+<!--        <activity android:name=".view.activity.UseFlashcardActivity" />-->
+        <activity android:name=".view.activity.UseFlashcardActivity" >
+<!--        <activity android:name=".view.activity.AuthActivity" >-->
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />

@@ -3,7 +3,7 @@ package com.teamttdvlp.memolang.viewmodel.reusable
 import com.google.firebase.firestore.FieldValue
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.firestore.QuerySnapshot
-import com.teamttdvlp.memolang.view.activity.helper.quickLog
+import com.teamttdvlp.memolang.view.helper.quickLog
 import com.teamttdvlp.memolang.model.model.FlashcardSet
 import com.teamttdvlp.memolang.model.model.Flashcard
 import javax.inject.Inject

@@ -35,7 +35,7 @@
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintVertical_bias="0.35000002">
 
-                <com.teamttdvlp.memolang.view.activity.customview.ColorfulProgressBar
+                <com.teamttdvlp.memolang.view.customview.ColorfulProgressBar
                         android:id="@+id/clf_progressbar"
                         android:layout_width="160dp"
                         android:layout_height="160dp"

@@ -4,9 +4,9 @@ import com.google.firebase.auth.FirebaseAuth
 import com.teamttdvlp.memolang.R
 import com.teamttdvlp.memolang.databinding.ActivitySetUpAccountBinding
 import com.teamttdvlp.memolang.model.sqlite.repository.UserRepository
-import com.teamttdvlp.memolang.view.activity.base.BaseActivity
-import com.teamttdvlp.memolang.view.activity.helper.getActivityViewModel
-import com.teamttdvlp.memolang.view.activity.helper.quickStartActivity
+import com.teamttdvlp.memolang.view.base.BaseActivity
+import com.teamttdvlp.memolang.view.helper.getActivityViewModel
+import com.teamttdvlp.memolang.view.helper.quickStartActivity
 import com.teamttdvlp.memolang.viewmodel.reusable.OnlineUserDBManager
 import com.teamttdvlp.memolang.viewmodel.setup_account.SetUpAccountActivityViewModel
 import javax.inject.Inject

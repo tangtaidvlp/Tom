@@ -1,4 +1,4 @@
-package com.teamttdvlp.memolang.view.activity.helper
+package com.teamttdvlp.memolang.view.helper
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider

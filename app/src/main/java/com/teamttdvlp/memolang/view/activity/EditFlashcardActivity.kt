@@ -8,8 +8,8 @@ import androidx.core.animation.addListener
 import androidx.core.view.isGone
 import com.teamttdvlp.memolang.R
 import com.teamttdvlp.memolang.databinding.ActivityEditFlashcardBinding
-import com.teamttdvlp.memolang.view.activity.base.BaseActivity
-import com.teamttdvlp.memolang.view.activity.helper.*
+import com.teamttdvlp.memolang.view.base.BaseActivity
+import com.teamttdvlp.memolang.view.helper.*
 import com.teamttdvlp.memolang.model.model.Flashcard
 import com.teamttdvlp.memolang.model.sqlite.repository.FlashcardRepository
 import com.teamttdvlp.memolang.viewmodel.edit_flashcard.EditFlashcardActivityViewModel

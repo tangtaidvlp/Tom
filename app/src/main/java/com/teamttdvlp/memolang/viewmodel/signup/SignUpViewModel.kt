@@ -1,6 +1,6 @@
 package com.teamttdvlp.memolang.viewmodel.signup
 
-import com.teamttdvlp.memolang.view.activity.base.BaseViewModel
+import com.teamttdvlp.memolang.view.base.BaseViewModel
 import java.util.regex.Pattern
 
 class SignUpViewModel(var signUpManager : SignUpManager) : BaseViewModel () {

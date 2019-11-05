@@ -1,7 +1,7 @@
 package com.teamttdvlp.memolang.di.module.activity
 
 import com.teamttdvlp.memolang.view.activity.LanguageActivity
-import com.teamttdvlp.memolang.view.activity.adapter.LanguageRCVAdapter
+import com.teamttdvlp.memolang.view.adapter.LanguageRCVAdapter
 import dagger.Module
 import dagger.Provides
 

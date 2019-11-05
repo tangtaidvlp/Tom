@@ -1,4 +1,4 @@
-package com.teamttdvlp.memolang.view.activity.adapter
+package com.teamttdvlp.memolang.view.adapter
 
 import android.content.Context
 import android.view.LayoutInflater

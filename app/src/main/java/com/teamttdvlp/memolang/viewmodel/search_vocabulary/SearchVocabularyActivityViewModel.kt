@@ -6,7 +6,7 @@ import com.teamttdvlp.memolang.model.sqlite.converter.FlashcardConverter
 import com.teamttdvlp.memolang.model.sqlite.entity.UserSearchHistoryHolderEntity
 import com.teamttdvlp.memolang.model.sqlite.repository.FlashcardRepository
 import com.teamttdvlp.memolang.model.sqlite.repository.UserSearchHistoryRepository
-import com.teamttdvlp.memolang.view.activity.base.BaseViewModel
+import com.teamttdvlp.memolang.view.base.BaseViewModel
 import com.teamttdvlp.memolang.viewmodel.reusable.OnlineFlashcardDBManager
 import java.util.*
 

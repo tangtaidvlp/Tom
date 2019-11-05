@@ -24,8 +24,8 @@ import com.teamttdvlp.memolang.databinding.ActivityAuthBinding
 import com.teamttdvlp.memolang.model.model.User
 import com.teamttdvlp.memolang.model.sqlite.repository.FlashcardRepository
 import com.teamttdvlp.memolang.model.sqlite.repository.UserRepository
-import com.teamttdvlp.memolang.view.activity.base.BaseActivity
-import com.teamttdvlp.memolang.view.activity.helper.*
+import com.teamttdvlp.memolang.view.base.BaseActivity
+import com.teamttdvlp.memolang.view.helper.*
 import com.teamttdvlp.memolang.viewmodel.auth.AuthActivityViewModel
 import com.teamttdvlp.memolang.viewmodel.auth.AuthManager
 import com.teamttdvlp.memolang.viewmodel.auth.OnSignInListener

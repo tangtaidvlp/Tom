@@ -13,7 +13,7 @@ import com.teamttdvlp.memolang.model.sqlite.converter.UserConverter
 import com.teamttdvlp.memolang.model.sqlite.repository.UserRepository
 import com.teamttdvlp.memolang.model.sqlite.entity.UserEntity
 import com.teamttdvlp.memolang.model.sqlite.repository.FlashcardRepository
-import com.teamttdvlp.memolang.view.activity.base.BaseAndroidViewModel
+import com.teamttdvlp.memolang.view.base.BaseAndroidViewModel
 import com.teamttdvlp.memolang.viewmodel.reusable.OnlineFlashcardDBManager
 import com.teamttdvlp.memolang.viewmodel.reusable.OnlineUserDBManager
 

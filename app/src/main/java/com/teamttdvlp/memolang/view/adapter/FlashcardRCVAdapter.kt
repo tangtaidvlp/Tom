@@ -1,25 +1,29 @@
-package com.teamttdvlp.memolang.view.activity.adapter
+package com.teamttdvlp.memolang.view.adapter
 
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.teamttdvlp.memolang.R
 import com.teamttdvlp.memolang.model.model.Flashcard
 
-class RecentSearchFlashcardRCVAdapter (var context : Context, var list : ArrayList<Flashcard> = ArrayList()) : RecyclerView.Adapter<RecentSearchFlashcardRCVAdapter.ViewHolder> () {
+class FlashcardRCVAdapter (var context : Context, var list : ArrayList<Flashcard>) : RecyclerView.Adapter<FlashcardRCVAdapter.ViewHolder> () {
+
+    private var onEditButtonClickListener : OnItemClickListener? = null
 
     private var onItemClickListener : OnItemClickListener? = null
 
     class ViewHolder (item : View): RecyclerView.ViewHolder(item) {
         var txtText = item.findViewById<TextView>(R.id.txt_text)
         var txtTranslation = item.findViewById<TextView>(R.id.txt_language)
+        var btnEdit = item.findViewById<ImageView>(R.id.btn_view_list)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        val view = LayoutInflater.from(context).inflate(R.layout.item_recent_search_flashcard_rcv, parent, false)
+        var view = LayoutInflater.from(context).inflate(R.layout.item_flashcard_rcv, parent, false)
         return ViewHolder(view)
     }
 
@@ -28,7 +32,18 @@ class RecentSearchFlashcardRCVAdapter (var context : Context, var list : ArrayLi
         holder.txtText.text = item.toBeTranslatedWord
         holder.txtTranslation.text = item.translatedWord
         holder.itemView.setOnClickListener {
-                onItemClickListener?.onClick(item)
+            onItemClickListener?.onClick(item)
+        }
+        holder.btnEdit.setOnClickListener {
+            onEditButtonClickListener?.onClick(item)
+        }
+    }
+
+    fun setOnEditButtonClickListener (onEditButtonClickListener: (item: Flashcard) -> Unit) {
+        this.onEditButtonClickListener = object : OnItemClickListener {
+            override fun onClick(item: Flashcard) {
+                onEditButtonClickListener(item)
+            }
         }
     }
 
@@ -38,25 +53,6 @@ class RecentSearchFlashcardRCVAdapter (var context : Context, var list : ArrayLi
                 onItemClickListener(item)
             }
         }
-    }
-
-    fun setOnItemClickListener (onItemClickListener: OnItemClickListener) {
-        this.onItemClickListener = onItemClickListener
-    }
-
-    fun setData (dataList : ArrayList<Flashcard>) {
-        list = dataList
-        notifyDataSetChanged()
-    }
-
-    fun addFlashcardAtTheFirstPosition (newFlashcard : Flashcard) {
-        list.add(0, newFlashcard)
-        notifyItemInserted(0)
-    }
-
-    fun addFlashcard (newFlashcard : Flashcard) {
-        list.add(newFlashcard)
-        notifyItemInserted(list.size - 1)
     }
 
     override fun getItemCount(): Int = list.size

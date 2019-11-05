@@ -11,7 +11,6 @@ import androidx.interpolator.view.animation.FastOutSlowInInterpolator
 import androidx.vectordrawable.graphics.drawable.AnimatorInflaterCompat
 import com.teamttdvlp.memolang.R
 import com.teamttdvlp.memolang.view.activity.AuthActivity
-import com.teamttdvlp.memolang.view.activity.helper.quickLog
 import dagger.Module
 import dagger.Provides
 import javax.inject.Named

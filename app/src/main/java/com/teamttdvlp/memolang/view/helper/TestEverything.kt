@@ -1,4 +1,4 @@
-package com.teamttdvlp.memolang.view.activity.helper
+package com.teamttdvlp.memolang.view.helper
 
 import com.teamttdvlp.memolang.model.model.FlashcardSet
 import com.teamttdvlp.memolang.model.model.Flashcard

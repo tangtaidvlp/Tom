@@ -1,4 +1,4 @@
-package com.teamttdvlp.memolang.view.activity.customview
+package com.teamttdvlp.memolang.view.customview
 
 import android.animation.Animator
 import android.animation.AnimatorSet
@@ -19,7 +19,7 @@ import android.widget.LinearLayout
 import androidx.core.animation.addListener
 import androidx.interpolator.view.animation.FastOutSlowInInterpolator
 import com.teamttdvlp.memolang.R
-import com.teamttdvlp.memolang.view.activity.helper.quickLog
+import com.teamttdvlp.memolang.view.helper.quickLog
 import kotlin.math.*
 
 private const val UNVALUED = -1

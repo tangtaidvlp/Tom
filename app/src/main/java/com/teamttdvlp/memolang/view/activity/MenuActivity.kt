@@ -10,8 +10,8 @@ import androidx.core.net.ConnectivityManagerCompat
 import androidx.interpolator.view.animation.FastOutLinearInInterpolator
 import com.teamttdvlp.memolang.R
 import com.teamttdvlp.memolang.databinding.ActivityMenuBinding
-import com.teamttdvlp.memolang.view.activity.base.BaseActivity
-import com.teamttdvlp.memolang.view.activity.helper.*
+import com.teamttdvlp.memolang.view.base.BaseActivity
+import com.teamttdvlp.memolang.view.helper.*
 import com.teamttdvlp.memolang.viewmodel.menu.MenuActivityViewModel
 import kotlinx.android.synthetic.main.activity_menu.*
 import javax.inject.Inject

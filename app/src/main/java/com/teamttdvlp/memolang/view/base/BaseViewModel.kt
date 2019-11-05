@@ -1,4 +1,4 @@
-package com.teamttdvlp.memolang.view.activity.base
+package com.teamttdvlp.memolang.view.base
 
 import android.app.Application
 import androidx.lifecycle.ViewModel

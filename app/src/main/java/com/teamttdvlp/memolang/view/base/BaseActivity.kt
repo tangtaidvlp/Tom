@@ -1,4 +1,4 @@
-package com.teamttdvlp.memolang.view.activity.base
+package com.teamttdvlp.memolang.view.base
 
 import android.content.Context
 import android.os.Bundle
@@ -16,10 +16,10 @@ import com.teamttdvlp.memolang.R
 abstract class BaseActivity <T : ViewDataBinding, V : ViewModel> : FragmentActivity() {
 
     lateinit var dataBinding : T
-    private set
+        private set
 
     lateinit var viewModel : V
-    private set
+        private set
 
     private lateinit var imm : InputMethodManager
 
@@ -87,6 +87,10 @@ abstract class BaseActivity <T : ViewDataBinding, V : ViewModel> : FragmentActiv
     // Create Exit Transition For Activity
     open fun overrideExitAnim () {
         overridePendingTransition(0, R.anim.from_centre_to_right)
+    }
+
+    open fun addAnimationEvents() {
+
     }
 
 }

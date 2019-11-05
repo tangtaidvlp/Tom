@@ -2,7 +2,7 @@ package com.teamttdvlp.memolang.viewmodel.reusable
 
 import com.google.firebase.firestore.FirebaseFirestore
 import com.teamttdvlp.memolang.model.model.User
-import com.teamttdvlp.memolang.view.activity.helper.quickLog
+import com.teamttdvlp.memolang.view.helper.quickLog
 import javax.inject.Inject
 
 class OnlineUserDBManager @Inject constructor(var firestoreRef : FirebaseFirestore) {

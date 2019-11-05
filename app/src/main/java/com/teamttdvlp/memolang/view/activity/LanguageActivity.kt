@@ -4,13 +4,13 @@ import android.content.Intent
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.teamttdvlp.memolang.R
-import com.teamttdvlp.memolang.view.activity.adapter.LanguageRCVAdapter
-import com.teamttdvlp.memolang.view.activity.base.BaseActivity
-import com.teamttdvlp.memolang.view.activity.helper.getActivityViewModel
+import com.teamttdvlp.memolang.view.adapter.LanguageRCVAdapter
+import com.teamttdvlp.memolang.view.base.BaseActivity
+import com.teamttdvlp.memolang.view.helper.getActivityViewModel
 import com.teamttdvlp.memolang.viewmodel.language.LanguageViewModel
 import com.teamttdvlp.memolang.databinding.ActivityLanguageBinding
-import com.teamttdvlp.memolang.view.activity.helper.quickLog
-import com.teamttdvlp.memolang.view.activity.helper.quickStartActivity
+import com.teamttdvlp.memolang.view.helper.quickLog
+import com.teamttdvlp.memolang.view.helper.quickStartActivity
 import javax.inject.Inject
 
 

@@ -12,8 +12,8 @@ import androidx.core.view.isVisible
 import com.google.firebase.auth.FirebaseUser
 import com.teamttdvlp.memolang.R
 import com.teamttdvlp.memolang.databinding.ActivitySignUpBinding
-import com.teamttdvlp.memolang.view.activity.base.BaseActivity
-import com.teamttdvlp.memolang.view.activity.helper.*
+import com.teamttdvlp.memolang.view.base.BaseActivity
+import com.teamttdvlp.memolang.view.helper.*
 import com.teamttdvlp.memolang.viewmodel.signup.OnSignUpListener
 import com.teamttdvlp.memolang.viewmodel.signup.SignUpManager
 import com.teamttdvlp.memolang.viewmodel.signup.SignUpViewModel

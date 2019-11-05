@@ -3,7 +3,7 @@ package com.teamttdvlp.memolang.view.activity
 import android.animation.Animator
 import android.animation.AnimatorSet
 import android.graphics.Color
-import com.teamttdvlp.memolang.view.activity.base.BaseActivity
+import com.teamttdvlp.memolang.view.base.BaseActivity
 import com.teamttdvlp.memolang.viewmodel.add_flashcard.AddFlashCardActivityViewModel
 import com.teamttdvlp.memolang.databinding.ActivityAddFlashcardBinding
 import android.view.animation.*
@@ -14,8 +14,8 @@ import androidx.core.content.res.ResourcesCompat
 import androidx.core.view.isGone
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.teamttdvlp.memolang.view.activity.adapter.ChooseLanguageRCVAdapter
-import com.teamttdvlp.memolang.view.activity.helper.*
+import com.teamttdvlp.memolang.view.adapter.ChooseLanguageRCVAdapter
+import com.teamttdvlp.memolang.view.helper.*
 import com.teamttdvlp.memolang.model.model.Flashcard
 import com.teamttdvlp.memolang.model.model.Language
 import com.teamttdvlp.memolang.model.sqlite.MemoLangSqliteDataBase

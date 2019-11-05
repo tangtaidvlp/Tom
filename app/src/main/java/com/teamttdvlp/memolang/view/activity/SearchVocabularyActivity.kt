@@ -14,10 +14,10 @@ import com.teamttdvlp.memolang.model.model.Language
 import com.teamttdvlp.memolang.model.sqlite.MemoLangSqliteDataBase
 import com.teamttdvlp.memolang.model.sqlite.repository.FlashcardRepository
 import com.teamttdvlp.memolang.model.sqlite.repository.UserSearchHistoryRepository
-import com.teamttdvlp.memolang.view.activity.adapter.ChooseLanguageRCVAdapter
-import com.teamttdvlp.memolang.view.activity.adapter.RecentSearchFlashcardRCVAdapter
-import com.teamttdvlp.memolang.view.activity.base.BaseActivity
-import com.teamttdvlp.memolang.view.activity.helper.*
+import com.teamttdvlp.memolang.view.adapter.ChooseLanguageRCVAdapter
+import com.teamttdvlp.memolang.view.adapter.RecentSearchFlashcardRCVAdapter
+import com.teamttdvlp.memolang.view.base.BaseActivity
+import com.teamttdvlp.memolang.view.helper.*
 import com.teamttdvlp.memolang.viewmodel.reusable.OnlineFlashcardDBManager
 import com.teamttdvlp.memolang.viewmodel.search_vocabulary.SearchVocabularyActivityViewModel
 import java.util.*

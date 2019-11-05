@@ -2,7 +2,7 @@ package com.teamttdvlp.memolang.viewmodel.edit_flashcard
 
 import com.teamttdvlp.memolang.model.model.Flashcard
 import com.teamttdvlp.memolang.model.sqlite.repository.FlashcardRepository
-import com.teamttdvlp.memolang.view.activity.base.BaseViewModel
+import com.teamttdvlp.memolang.view.base.BaseViewModel
 import com.teamttdvlp.memolang.viewmodel.reusable.OnlineFlashcardDBManager
 import java.lang.Exception
 
