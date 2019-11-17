@@ -1,6 +1,6 @@
 package com.teamttdvlp.memolang.view.activity.iview
 
-interface AuthView {
+interface AuthView : View{
 
     fun onNoCardsLeft ()
 

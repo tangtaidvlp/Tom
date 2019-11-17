@@ -25,7 +25,7 @@ class UseFlashcardDoneActivity : BaseActivity<ActivityUseFlashcardDoneBinding, U
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        viewModel.setView(this)
+        viewModel.setUpView(this)
         viewModel.checkUserWellDone(getForgottenCardList())
     }
 

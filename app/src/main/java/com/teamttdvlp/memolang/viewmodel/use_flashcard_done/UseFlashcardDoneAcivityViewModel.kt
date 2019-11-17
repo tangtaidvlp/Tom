@@ -4,13 +4,7 @@ import com.teamttdvlp.memolang.model.model.Flashcard
 import com.teamttdvlp.memolang.view.activity.iview.UseFlashcardDoneView
 import com.teamttdvlp.memolang.view.base.BaseViewModel
 
-class UseFlashcardDoneAcivityViewModel : BaseViewModel() {
-
-    private lateinit var view : UseFlashcardDoneView
-
-    fun setView (view : UseFlashcardDoneView) {
-        this.view = view
-    }
+class UseFlashcardDoneAcivityViewModel : BaseViewModel<UseFlashcardDoneView>() {
 
     fun checkUserWellDone (foggottenCardsList : ArrayList<Flashcard>) {
         val isWellDone = foggottenCardsList.size == 0

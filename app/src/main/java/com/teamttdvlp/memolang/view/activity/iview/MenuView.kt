@@ -1,6 +1,6 @@
 package com.teamttdvlp.memolang.view.activity.iview
 
-interface MenuView {
+interface MenuView : View{
 
     fun onNoCardsLeft ()
 

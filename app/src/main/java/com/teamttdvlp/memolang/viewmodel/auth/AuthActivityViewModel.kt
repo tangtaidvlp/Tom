@@ -13,6 +13,7 @@ import com.teamttdvlp.memolang.model.sqlite.converter.UserConverter
 import com.teamttdvlp.memolang.model.sqlite.repository.UserRepository
 import com.teamttdvlp.memolang.model.sqlite.entity.UserEntity
 import com.teamttdvlp.memolang.model.sqlite.repository.FlashcardRepository
+import com.teamttdvlp.memolang.view.activity.iview.AuthView
 import com.teamttdvlp.memolang.view.base.BaseAndroidViewModel
 import com.teamttdvlp.memolang.viewmodel.reusable.OnlineFlashcardDBManager
 import com.teamttdvlp.memolang.viewmodel.reusable.OnlineUserDBManager
@@ -30,7 +31,7 @@ class AuthActivityViewModel (var onlineUserDBManager: OnlineUserDBManager,
                              var authManager: AuthManager,
                              var userRepository: UserRepository,
                              var flashcardRepository: FlashcardRepository,
-                             var app : Application) : BaseAndroidViewModel(app) {
+                             var app : Application) : BaseAndroidViewModel<AuthView>(app) {
 
 
     fun getGoogleSignInIntent () : Intent {

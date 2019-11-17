@@ -1,6 +1,6 @@
 package com.teamttdvlp.memolang.view.activity.iview
 
-interface UseFlashcardDoneView {
+interface UseFlashcardDoneView : View{
 
     fun showCongratulationText ()
 

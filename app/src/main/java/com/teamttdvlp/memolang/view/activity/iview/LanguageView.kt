@@ -1,6 +1,6 @@
 package com.teamttdvlp.memolang.view.activity.iview
 
-interface LanguageView {
+interface LanguageView : View {
 
     fun onNoCardsLeft ()
 

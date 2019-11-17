@@ -65,7 +65,7 @@ class UseFlashcardActivity : BaseActivity<ActivityUseFlashcardBinding, UseFlashc
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        viewModel.setView(this)
+        viewModel.setUpView(this)
         viewModel.setData(getFlashcardList())
         viewModel.beginUsing()
     }

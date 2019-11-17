@@ -6,6 +6,7 @@ import com.teamttdvlp.memolang.model.sqlite.converter.FlashcardConverter
 import com.teamttdvlp.memolang.model.sqlite.entity.UserSearchHistoryHolderEntity
 import com.teamttdvlp.memolang.model.sqlite.repository.FlashcardRepository
 import com.teamttdvlp.memolang.model.sqlite.repository.UserSearchHistoryRepository
+import com.teamttdvlp.memolang.view.activity.iview.SearchVocabularyView
 import com.teamttdvlp.memolang.view.base.BaseViewModel
 import com.teamttdvlp.memolang.viewmodel.reusable.OnlineFlashcardDBManager
 import java.util.*
@@ -14,7 +15,7 @@ class SearchVocabularyActivityViewModel(
     var database : MemoLangSqliteDataBase,
     var onlineFlashcardDBManager: OnlineFlashcardDBManager,
     var flashcardRepository: FlashcardRepository,
-    var userSearchHistoryRepository: UserSearchHistoryRepository) : BaseViewModel() {
+    var userSearchHistoryRepository: UserSearchHistoryRepository) : BaseViewModel<SearchVocabularyView>() {
 
     fun addFlashcardToOfflineDB (newCard : Flashcard, onInsertListener : (isSuccess : Boolean, cardId : Long, ex : Exception?) -> Unit) {
         flashcardRepository.insertFlashcard(newCard, onInsertListener)

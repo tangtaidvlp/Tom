@@ -8,10 +8,7 @@ import com.teamttdvlp.memolang.view.base.BaseViewModel
 import com.teamttdvlp.memolang.view.helper.quickLog
 import com.teamttdvlp.memolang.viewmodel.reusable.OnlineFlashcardDBManager
 
-class AddFlashCardActivityViewModel(var database : MemoLangSqliteDataBase, var onlineFlashcardDBManager: OnlineFlashcardDBManager, var flashcardRepository: FlashcardRepository) : BaseViewModel() {
-
-
-    private lateinit var view : AddFlashcardView
+class AddFlashCardActivityViewModel(var database : MemoLangSqliteDataBase, var onlineFlashcardDBManager: OnlineFlashcardDBManager, var flashcardRepository: FlashcardRepository) : BaseViewModel<AddFlashcardView>() {
 
 
     fun addFlashcardToOfflineDB (newCard : Flashcard, onInsertListener : (isSuccess : Boolean, cardId : Long, ex : Exception?) -> Unit) {
@@ -24,10 +21,6 @@ class AddFlashCardActivityViewModel(var database : MemoLangSqliteDataBase, var o
 
     fun checkIfFlashcardExisInOfflineDatabase (flashCard : Flashcard) {
 
-    }
-
-    fun setView (view : AddFlashcardView) {
-        this.view = view
     }
 
     fun addFlashcard (sourceLang : String, targetLang : String, text : String, translation : String, using : String) {

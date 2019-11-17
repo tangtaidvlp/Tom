@@ -10,8 +10,10 @@ import com.teamttdvlp.memolang.model.sqlite.converter.FlashcardConverter
 import com.teamttdvlp.memolang.model.sqlite.entity.FlashCardEntity
 import com.teamttdvlp.memolang.model.model.FlashcardSet
 import com.teamttdvlp.memolang.model.sqlite.MemoLangSqliteDataBase.Companion.MIGRATION_2_3
+import com.teamttdvlp.memolang.view.activity.iview.LanguageView
+import com.teamttdvlp.memolang.view.base.BaseAndroidViewModel
 
-class LanguageViewModel(app : Application) : AndroidViewModel(app) {
+class LanguageViewModel(app : Application) : BaseAndroidViewModel<LanguageView>(app) {
 
     private val database = Room.databaseBuilder(app, MemoLangSqliteDataBase::class.java, DB_NAME)
         .addMigrations(MIGRATION_2_3).build()

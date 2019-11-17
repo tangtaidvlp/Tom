@@ -9,8 +9,7 @@ import com.teamttdvlp.memolang.view.base.BaseViewModel
 import com.teamttdvlp.memolang.view.helper.selfMinusOne
 import com.teamttdvlp.memolang.view.helper.selfPlusOne
 
-class UseFlashcardActivityViewModel : BaseViewModel() {
-
+class UseFlashcardActivityViewModel : BaseViewModel<UseFlashcardView>() {
 
     val currentCard = ObservableField<Flashcard>()
 
@@ -24,8 +23,6 @@ class UseFlashcardActivityViewModel : BaseViewModel() {
     private val hardCardList = ArrayList<Flashcard>()
 
     private val cardListManager = CardListManager()
-
-    private lateinit var view : UseFlashcardView
 
 
     fun setData (cardList : ArrayList<Flashcard>) {
@@ -89,10 +86,6 @@ class UseFlashcardActivityViewModel : BaseViewModel() {
         return cardListManager.hasPrevious()
     }
 
-
-    fun setView (useFlashcardView : UseFlashcardView) {
-        this.view = useFlashcardView
-    }
 
     fun handleEasyCard () {
         cardLeftCount.selfMinusOne()

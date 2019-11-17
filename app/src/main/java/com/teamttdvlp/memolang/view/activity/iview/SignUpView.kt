@@ -1,6 +1,6 @@
 package com.teamttdvlp.memolang.view.activity.iview
 
-interface SignUpView {
+interface SignUpView : View{
 
     fun onNoCardsLeft ()
 

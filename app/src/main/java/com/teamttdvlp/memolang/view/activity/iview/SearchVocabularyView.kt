@@ -1,6 +1,6 @@
 package com.teamttdvlp.memolang.view.activity.iview
 
-interface SearchVocabularyView {
+interface SearchVocabularyView : View{
 
     fun onNoCardsLeft ()
 

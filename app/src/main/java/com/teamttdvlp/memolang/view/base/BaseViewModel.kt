@@ -4,12 +4,15 @@ import android.app.Application
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.AndroidViewModel
 import com.teamttdvlp.memolang.model.model.User
+import com.teamttdvlp.memolang.view.activity.iview.View
 
 /**
  * Bot of BaseViewModel and BaseAndroidViewModel must do exactly the samething, excluding BaseAndroidViewModel has application variable
  */
 
-abstract class BaseAndroidViewModel (app : Application) :  AndroidViewModel (app) {
+abstract class BaseAndroidViewModel <V : View> (app : Application) :  AndroidViewModel (app) {
+
+    protected lateinit var view : V
 
     fun createSingletonUser (id : String, motherLang : String, targetLang : String) {
         User.createInstance(id, motherLang, targetLang)
@@ -19,9 +22,16 @@ abstract class BaseAndroidViewModel (app : Application) :  AndroidViewModel (app
         return User.getInstance()
     }
 
+    fun setUpViews (view : V) {
+        this.view = view
+    }
+
 }
 
-abstract class BaseViewModel () : ViewModel () {
+abstract class BaseViewModel <V : View> () : ViewModel () {
+
+    protected lateinit var view : V
+
 
     fun createSingletonUser (id : String, motherLang : String, targetLang : String) {
         User.createInstance(id, motherLang, targetLang)
@@ -29,6 +39,10 @@ abstract class BaseViewModel () : ViewModel () {
 
     fun getSingletonUser () : User? {
         return User.getInstance()
+    }
+
+    fun setUpView (view : V) {
+        this.view = view
     }
 
 }

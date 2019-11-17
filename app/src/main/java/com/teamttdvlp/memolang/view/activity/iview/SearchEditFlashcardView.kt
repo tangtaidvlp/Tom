@@ -1,6 +1,6 @@
 package com.teamttdvlp.memolang.view.activity.iview
 
-interface SearchEditFlashcardView {
+interface SearchEditFlashcardView : View {
 
     fun onNoCardsLeft ()
 

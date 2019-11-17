@@ -6,6 +6,7 @@ import com.google.firebase.auth.FirebaseAuth
 import com.teamttdvlp.memolang.model.model.User
 import com.teamttdvlp.memolang.model.sqlite.repository.UserRepository
 import com.teamttdvlp.memolang.model.sqlite.converter.UserConverter
+import com.teamttdvlp.memolang.view.activity.iview.SetUpAccountView
 import com.teamttdvlp.memolang.view.base.BaseAndroidViewModel
 import com.teamttdvlp.memolang.viewmodel.auth.FIRST_TIMES_SIGNED_IN
 import com.teamttdvlp.memolang.viewmodel.auth.SIGN_IN_INFO
@@ -14,7 +15,10 @@ import com.teamttdvlp.memolang.viewmodel.reusable.OnlineUserDBManager
 /**
  * @see com.teamttdvlp.memolang.view.activity.SetUpAccountActivity
  */
-class SetUpAccountActivityViewModel(var authManager : FirebaseAuth, var userRepository : UserRepository, var onlineUserDBManager: OnlineUserDBManager, var app : Application) : BaseAndroidViewModel(app) {
+class SetUpAccountActivityViewModel(var authManager : FirebaseAuth
+                                    , var userRepository : UserRepository
+                                    , var onlineUserDBManager: OnlineUserDBManager
+                                    , var app : Application) : BaseAndroidViewModel<SetUpAccountView>(app) {
 
     fun writeUserToOfflineDatabase (user : User) {
         userRepository.insertUser(UserConverter.toUserEntity(user))

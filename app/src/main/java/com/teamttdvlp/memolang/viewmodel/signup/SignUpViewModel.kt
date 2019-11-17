@@ -1,9 +1,10 @@
 package com.teamttdvlp.memolang.viewmodel.signup
 
+import com.teamttdvlp.memolang.view.activity.iview.SignUpView
 import com.teamttdvlp.memolang.view.base.BaseViewModel
 import java.util.regex.Pattern
 
-class SignUpViewModel(var signUpManager : SignUpManager) : BaseViewModel () {
+class SignUpViewModel(var signUpManager : SignUpManager) : BaseViewModel<SignUpView>() {
 
     fun signUp (email : String, password : String) {
         signUpManager.signUp(email, password)

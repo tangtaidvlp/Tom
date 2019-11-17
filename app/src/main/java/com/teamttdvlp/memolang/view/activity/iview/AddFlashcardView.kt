@@ -1,6 +1,6 @@
 package com.teamttdvlp.memolang.view.activity.iview
 
-interface AddFlashcardView {
+interface AddFlashcardView : View {
 
     fun showTextInputError ()
 
