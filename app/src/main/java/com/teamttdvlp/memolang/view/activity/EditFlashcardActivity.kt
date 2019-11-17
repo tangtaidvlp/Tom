@@ -62,13 +62,13 @@ class EditFlashcardActivity : BaseActivity<ActivityEditFlashcardBinding, EditFla
                 val targetLang = type.removePrefix("$sourceLang-")
                 txtSourceLang.text = sourceLang
                 txtTargetLang.text = targetLang
-                edtText.setText(toBeTranslatedWord)
-                edtTranslation.setText(translatedWord)
+                edtText.setText(text)
+                edtTranslation.setText(translation)
                 edtUsing.setText(using)
                 OG_SourceLang = sourceLang
                 OG_TargetLang = targetLang
-                OG_Text = toBeTranslatedWord
-                OG_Translation = translatedWord
+                OG_Text = text
+                OG_Translation = translation
                 OG_Using = using
             }
         }

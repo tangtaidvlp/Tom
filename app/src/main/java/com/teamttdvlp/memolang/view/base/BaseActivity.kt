@@ -39,6 +39,7 @@ abstract class BaseActivity <T : ViewDataBinding, V : ViewModel> : FragmentActiv
         addViewControls()
         addViewEvents()
         addEventsListener()
+        addAnimationEvents()
     }
 
     override fun finish() {

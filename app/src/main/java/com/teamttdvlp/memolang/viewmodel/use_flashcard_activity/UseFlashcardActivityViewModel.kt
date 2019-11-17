@@ -2,41 +2,115 @@ package com.teamttdvlp.memolang.viewmodel.use_flashcard_activity
 
 import androidx.databinding.ObservableField
 import androidx.databinding.ObservableInt
+import com.teamttdvlp.memolang.model.activity.CardListManager
 import com.teamttdvlp.memolang.model.model.Flashcard
+import com.teamttdvlp.memolang.view.activity.iview.UseFlashcardView
 import com.teamttdvlp.memolang.view.base.BaseViewModel
+import com.teamttdvlp.memolang.view.helper.selfMinusOne
+import com.teamttdvlp.memolang.view.helper.selfPlusOne
 
-class UseFlashcardActivityViewModel : BaseViewModel(){
+class UseFlashcardActivityViewModel : BaseViewModel() {
 
-    var totalCards : ObservableInt = ObservableInt()
 
-    var hardCardLeft : ObservableInt = ObservableInt()
+    val currentCard = ObservableField<Flashcard>()
 
-    var cardList = ObservableField<ArrayList<Flashcard>>()
+    var cardLeftCount = ObservableInt()
 
-    var hardCardList = ObservableField<ArrayList<Flashcard>>()
+    var fogottenCardsCount = ObservableInt()
 
-    var presentCardPos = 0
+    var currentCardOrder = ObservableInt()
 
-    fun updateHardCardLeft() {
-        hardCardLeft.set(5)
+
+    private val hardCardList = ArrayList<Flashcard>()
+
+    private val cardListManager = CardListManager()
+
+    private lateinit var view : UseFlashcardView
+
+
+    fun setData (cardList : ArrayList<Flashcard>) {
+        cardListManager.setData(cardList)
     }
 
+
+    fun beginUsing() {
+        val firstCard = cardListManager.getFirstOne()
+        currentCard.set(firstCard)
+        currentCardOrder.set(1)
+        cardLeftCount.set(cardListManager.getSize())
+    }
+
+
+    fun moveToNextCard () {
+        if (thereIsCardLefts()) {
+            val nextCard = cardListManager.focusOnNextCardAndGetIt()
+            updateCurrentCard(nextCard)
+            updateCardOrder()
+        } else {
+            view.onNoCardsLeft()
+        }
+    }
+
+
+    fun moveToPreviousCard () {
+        if (hasPrevious()) {
+            val thePreviousCard = cardListManager.focusOnPrevCardAndGetIt()
+            updateCurrentCard(thePreviousCard)
+            cardLeftCount.selfPlusOne()
+            updateCardOrder()
+
+        }
+    }
+
+
+    fun thereIsCardLefts () : Boolean {
+        return cardListManager.hasNext()
+    }
+
+
+    fun checkIfThereIsPreviousCard () {
+        if (hasPrevious()) {
+            view.showPreviousCardButton()
+        } else {
+            view.hidePreviousCardButton()
+        }
+    }
+
+    fun updateCurrentCard (card : Flashcard) {
+        currentCard.set(card)
+    }
+
+
     fun hasNext () : Boolean {
-        return presentCardPos < cardList.get()!!.size - 1
+        return cardListManager.hasNext()
     }
 
     fun hasPrevious () : Boolean {
-        return presentCardPos > 0
+        return cardListManager.hasPrevious()
     }
 
-    fun getNextCard() : Flashcard {
-        presentCardPos += 1
-        return cardList.get()!!.get(presentCardPos)
+
+    fun setView (useFlashcardView : UseFlashcardView) {
+        this.view = useFlashcardView
     }
 
-    fun getPreviousCard() : Flashcard {
-        presentCardPos -= 1
-        return cardList.get()!!.get(presentCardPos)
+    fun handleEasyCard () {
+        cardLeftCount.selfMinusOne()
     }
 
+    fun handleHardCard () {
+        if (!hardCardList.contains(cardListManager.getCurrentCard())) {
+            fogottenCardsCount.selfPlusOne()
+            hardCardList.add(cardListManager.getCurrentCard())
+        }
+        cardListManager.handleHardCard()
+    }
+
+    fun getFoggotenCardList () : ArrayList<Flashcard> {
+        return hardCardList
+    }
+
+    fun updateCardOrder () {
+        currentCardOrder.set(cardListManager.currentIndex + 1)
+    }
 }

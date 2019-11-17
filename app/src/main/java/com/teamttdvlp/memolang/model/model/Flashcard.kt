@@ -4,8 +4,8 @@ import java.io.Serializable
 import java.util.*
 
 data class Flashcard (var id : Int = 0,
-                      var toBeTranslatedWord : String = "",
-                      var translatedWord : String = "",
+                      var text : String = "",
+                      var translation : String = "",
                       var  type : String = "",
                       var  using : String = "",
                       var synonym : String = "",

@@ -9,16 +9,18 @@ import com.teamttdvlp.memolang.view.base.BaseActivity
 import com.teamttdvlp.memolang.view.helper.getActivityViewModel
 import com.teamttdvlp.memolang.viewmodel.language.LanguageViewModel
 import com.teamttdvlp.memolang.databinding.ActivityLanguageBinding
-import com.teamttdvlp.memolang.view.helper.quickLog
+import com.teamttdvlp.memolang.model.model.Flashcard
 import com.teamttdvlp.memolang.view.helper.quickStartActivity
 import javax.inject.Inject
 
 
 const val FLASHCARD_SET_KEY = "flashcard_set"
 
+const val FLASHCARD_LIST_KEY = "flashcard_list"
+
 class LanguageActivity : BaseActivity<ActivityLanguageBinding, LanguageViewModel>() {
 
-    lateinit var adapter : LanguageRCVAdapter
+    lateinit var adapterLanguage : LanguageRCVAdapter
     @Inject set
 
     override fun getLayoutId(): Int {
@@ -29,25 +31,23 @@ class LanguageActivity : BaseActivity<ActivityLanguageBinding, LanguageViewModel
         return getActivityViewModel()
     }
 
-    override fun addViewControls() {
+    override fun addViewControls() { dataBinding.apply {
         viewModel.triggerGetAllSetOfCard {
-            quickLog(it.size.toString())
-            adapter.setData(it)
-            dataBinding.apply {
-                rcvLanguageList.adapter = adapter
-                rcvLanguageList.layoutManager = LinearLayoutManager(this@LanguageActivity, RecyclerView.VERTICAL, false)
-                adapter.setOnBtnViewListClickListener {
-                    val intent = Intent(this@LanguageActivity, ViewFlashCardListActivity::class.java)
-                    intent.putExtra(FLASHCARD_SET_KEY, it)
-                    startActivity(intent)
-                }
+            adapterLanguage.setData(it)
+            rcvLanguageList.adapter = adapterLanguage
+            rcvLanguageList.layoutManager = LinearLayoutManager(this@LanguageActivity, RecyclerView.VERTICAL, false)
+            adapterLanguage.setOnBtnViewListClickListener {
+                val intent = Intent(this@LanguageActivity, ViewFlashCardListActivity::class.java)
+                intent.putExtra(FLASHCARD_SET_KEY, it)
+                startActivity(intent)
             }
+
         }
 
-        adapter.setOnItemClickListener {
-            quickStartActivity(UseFlashcardActivity::class.java)
+        adapterLanguage.setOnItemClickListener {
+            sendFlashcardListToUseFlashcardActivity(it.flashcards)
         }
-    }
+    }}
 
     override fun overrideEnterAnim() {
         overridePendingTransition(R.anim.appear, R.anim.nothing)
@@ -55,6 +55,12 @@ class LanguageActivity : BaseActivity<ActivityLanguageBinding, LanguageViewModel
 
     override fun overrideExitAnim() {
         overridePendingTransition(R.anim.nothing,R.anim.disappear)
+    }
+
+    fun sendFlashcardListToUseFlashcardActivity (flashcardList : ArrayList<Flashcard>) {
+        val intent = Intent(this@LanguageActivity, UseFlashcardActivity::class.java)
+        intent.putExtra(FLASHCARD_LIST_KEY, flashcardList)
+        startActivity(intent)
     }
 
 }

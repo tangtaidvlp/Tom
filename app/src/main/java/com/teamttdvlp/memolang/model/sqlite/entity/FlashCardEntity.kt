@@ -15,9 +15,9 @@ class FlashCardEntity {
     @NonNull
     var id : Int = 0
     @NonNull
-    lateinit var translatedWord : String
+    lateinit var translation : String
     @NonNull
-    lateinit var toBeTranslatedWord : String
+    lateinit var text : String
     // Dịch từ ngôn ngữ nào sang ngôn ngữ nào
     // en-vi, vi-en, fi-vi
     @NonNull
@@ -25,10 +25,10 @@ class FlashCardEntity {
     lateinit var  using : String
     lateinit var synonym : String
     // Loại từ gì
-    // danh từ, tính từ,... viết bằng ngôn ngữ giống {toBeTranslatedWord}
+    // danh từ, tính từ,... viết bằng ngôn ngữ giống {text}
     @NonNull
     lateinit var kind : String
-    // cách đánh vần. viết theo ngôn ngữ giống {toBeTranslatedWord}
+    // cách đánh vần. viết theo ngôn ngữ giống {text}
     @NonNull
     lateinit var spelling : String
 

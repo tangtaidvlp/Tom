@@ -14,7 +14,7 @@ class LanguageRCVAdapter (var context : Context, var list : ArrayList<FlashcardS
 
     private var onBtnViewListListener : OnItemClickListener? = null
 
-    private var onItemClickListener : View.OnClickListener? = null
+    private var onItemClickListener : OnItemClickListener? = null
 
     class ViewHolder (item : View): RecyclerView.ViewHolder(item) {
         var txt_language = item.findViewById<TextView>(R.id.txt_language)
@@ -33,7 +33,7 @@ class LanguageRCVAdapter (var context : Context, var list : ArrayList<FlashcardS
             onBtnViewListListener?.onClick(item)
         }
         holder.txt_language.setOnClickListener {
-            onItemClickListener?.onClick(it)
+            onItemClickListener?.onClick(item)
         }
     }
 
@@ -45,17 +45,14 @@ class LanguageRCVAdapter (var context : Context, var list : ArrayList<FlashcardS
         }
     }
 
-    fun setOnBtnViewListClickListener (onBtnViewListListener: OnItemClickListener) {
-        this.onBtnViewListListener = onBtnViewListListener
-    }
-
-    fun setOnItemClickListener (onItemClickListener : (View?) -> Unit) {
-        this.onItemClickListener = object : View.OnClickListener {
-            override fun onClick(p0: View?) {
-                onItemClickListener(p0)
+    fun setOnItemClickListener (onItemClickListener : (FlashcardSet) -> Unit) {
+        this.onItemClickListener = object : OnItemClickListener {
+            override fun onClick(item: FlashcardSet) {
+                onItemClickListener(item)
             }
         }
     }
+
 
     fun setData (data : ArrayList<FlashcardSet>) {
         list = data

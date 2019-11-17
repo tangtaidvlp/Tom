@@ -9,8 +9,8 @@ object FlashcardConverter {
         return FlashCardEntity().apply {
             id = card.id
             createdAt = card.createdAt
-            translatedWord = card.translatedWord
-            toBeTranslatedWord = card.toBeTranslatedWord
+            translation = card.translation
+            text = card.text
             type = card.type
             using = card.using
             synonym = card.synonym
@@ -23,8 +23,8 @@ object FlashcardConverter {
         return Flashcard().apply {
             id = card.id
             createdAt = card.createdAt
-            translatedWord = card.translatedWord
-            toBeTranslatedWord = card.toBeTranslatedWord
+            translation = card.translation
+            text = card.text
             type = card.type
             using = card.using
             synonym = card.synonym
@@ -39,8 +39,8 @@ object FlashcardConverter {
             collection.add(Flashcard().apply {
                 id = card.id
                 createdAt = card.createdAt
-                translatedWord = card.translatedWord
-                toBeTranslatedWord = card.toBeTranslatedWord
+                translation = card.translation
+                text = card.text
                 type = card.type
                 using = card.using
                 synonym = card.synonym
@@ -57,8 +57,8 @@ object FlashcardConverter {
             collection.add(FlashCardEntity().apply {
                 id = card.id
                 createdAt = card.createdAt
-                translatedWord = card.translatedWord
-                toBeTranslatedWord = card.toBeTranslatedWord
+                translation = card.translation
+                text = card.text
                 type = card.type
                 using = card.using
                 synonym = card.synonym

@@ -5,9 +5,11 @@
         tools:context=".view.activity.UseFlashcardActivity">
 
     <data>
+        <import type="com.teamttdvlp.memolang.model.model.Flashcard"/>
+        <import type="android.view.View"/>
         <variable
-                name="viewModel"
-                type="com.teamttdvlp.memolang.viewmodel.use_flashcard_activity.UseFlashcardActivityViewModel" />
+            name="viewModel"
+            type="com.teamttdvlp.memolang.viewmodel.use_flashcard_activity.UseFlashcardActivityViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -39,35 +41,113 @@
                     android:gravity="right"
                     android:paddingTop="1dp"
                     android:paddingRight="6dp"
-                    android:text="17"
+                    android:text="@{String.valueOf(viewModel.currentCardOrder)}"
                     android:textColor="@color/use_flashcard_grey_text_color"
                     android:visibility="visible"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                    android:id="@+id/txt_front_card_text"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:alpha="1.0"
-                    android:fontFamily="@font/seguisb"
-                    android:gravity="center"
-                    android:paddingStart="6dp"
-                    android:paddingTop="1dp"
-                    android:paddingEnd="6dp"
-                    android:text="The farther you go, the wiser you are"
-                    android:textColor="@color/use_flashcard_grey_text_color"
-                    android:textSize="18sp"
-                    android:visibility="visible"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+                android:id="@+id/txt_front_card_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:alpha="1.0"
+                android:fontFamily="@font/seguisb"
+                android:gravity="center"
+                android:paddingStart="6dp"
+                android:paddingTop="1dp"
+                android:paddingEnd="6dp"
+                android:textColor="@color/use_flashcard_grey_text_color"
+                android:textSize="24sp"
+                android:visibility="visible"
+                android:text="@{viewModel.currentCard.text}"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/viewgroup_back_replica_front_flashcard"
+            android:layout_width="0dp"
+            android:layout_height="130dp"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="27dp"
+            android:background="@drawable/round_white_background"
+            android:elevation="5dp"
+            android:orientation="vertical"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.526"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_hard_cards_left">
+
+
+            <TextView
+                android:id="@+id/txt_back_replica_front_card_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:alpha="1.0"
+                android:fontFamily="@font/segoeui"
+                android:gravity="right"
+                android:paddingTop="1dp"
+                android:paddingRight="6dp"
+                android:text="@{String.valueOf(viewModel.currentCardOrder)}"
+                android:textColor="@color/app_red"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txt_back_replica_highlight_front_card_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:alpha="1.0"
+                android:fontFamily="@font/seguisb"
+                android:gravity="center"
+                android:paddingStart="6dp"
+                android:paddingTop="1dp"
+                android:paddingEnd="6dp"
+                android:text="@{viewModel.currentCard.text}"
+                android:textColor="@color/app_red"
+                android:textSize="24sp"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/txt_back_replica_front_card_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:alpha="1.0"
+                android:fontFamily="@font/seguisb"
+                android:gravity="center"
+                android:paddingStart="6dp"
+                android:paddingTop="1dp"
+                android:paddingEnd="6dp"
+                android:text="@{viewModel.currentCard.text}"
+                android:textColor="@color/app_red"
+                android:textSize="24sp"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/viewgroup_back_flashcard"
                 android:layout_width="0dp"
                 android:layout_height="130dp"
@@ -82,6 +162,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/txt_hard_cards_left">
 
+
             <TextView
                     android:id="@+id/txt_back_card_using"
                     android:layout_width="match_parent"
@@ -92,9 +173,9 @@
                     android:gravity="center"
                     android:paddingTop="1dp"
                     android:paddingRight="6dp"
-                    android:text="Đi một ngày đàng, học một sàng khôn"
+                    android:text="@{viewModel.currentCard.using}"
                     android:textColor="@color/use_flashcard_grey_text_color"
-                    android:visibility="visible"
+                    android:visibility="@{viewModel.currentCard.using != `` ? View.VISIBLE : View.GONE}"
                     app:layout_constraintBottom_toBottomOf="parent" />
 
             <TextView
@@ -106,32 +187,52 @@
                     android:gravity="right"
                     android:paddingTop="1dp"
                     android:paddingRight="6dp"
-                    android:text="17"
+                    android:text="@{String.valueOf(viewModel.currentCardOrder)"
                     android:textColor="@color/use_flashcard_grey_text_color"
-                    android:visibility="visible"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
-            <TextView
-                    android:id="@+id/txt_back_card_translation"
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:alpha="1.0"
-                    android:fontFamily="@font/seguisb"
-                    android:gravity="center"
-                    android:paddingStart="6dp"
-                    android:paddingTop="1dp"
-                    android:paddingEnd="6dp"
-                    android:text="Đi một ngày đàng, học một sàng khôn"
-                    android:textColor="@color/use_flashcard_grey_text_color"
-                    android:textSize="18sp"
-                    android:visibility="visible"
-                    app:layout_constraintBottom_toTopOf="@+id/txt_back_card_using"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/txt_back_hightlight_card_translation"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:alpha="1.0"
+            android:fontFamily="@font/seguisb"
+            android:gravity="center"
+            android:paddingStart="6dp"
+            android:paddingTop="1dp"
+            android:paddingEnd="6dp"
+            android:text="@{viewModel.currentCard.translation}"
+            android:textColor="@color/app_red"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/txt_back_card_using"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+                android:id="@+id/txt_back_card_translation"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:alpha="1.0"
+                android:fontFamily="@font/seguisb"
+                android:gravity="center"
+                android:paddingStart="6dp"
+                android:paddingTop="1dp"
+                android:paddingEnd="6dp"
+                android:text="@{viewModel.currentCard.translation}"
+                android:textColor="@color/use_flashcard_grey_text_color"
+                android:textSize="24sp"
+                android:visibility="visible"
+                app:layout_constraintBottom_toTopOf="@+id/txt_back_card_using"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 
         <RelativeLayout
@@ -204,7 +305,7 @@
                     app:layout_constraintVertical_bias="0.0" />
 
             <TextView
-                    android:id="@+id/txt_cards_left_amount"
+                    android:id="@+id/txt_cards_left_count"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
@@ -214,9 +315,9 @@
                     android:fontFamily="@font/segoeui"
                     android:gravity="right|center_vertical"
                     android:paddingBottom="3dp"
-                    android:text="20"
                     android:textColor="#ffffff"
                     android:textSize="16sp"
+                    android:text="@{String.valueOf(viewModel.cardLeftCount)}"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="@+id/img_background"
                     app:layout_constraintHorizontal_bias="0.0"
@@ -364,7 +465,7 @@
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="6dp"
                 android:fontFamily="@font/segoeui"
-                android:text="Hard cards left:"
+                android:text='@{"Forgotten card: " + viewModel.fogottenCardsCount}'
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/title_bar" />
 
@@ -375,29 +476,29 @@
                 android:layout_marginStart="5dp"
                 android:layout_marginTop="6dp"
                 android:fontFamily="@font/segoeui"
-                android:text="@{String.valueOf(viewModel.hardCardLeft)}"
                 android:textColor="@color/app_red"
                 app:layout_constraintStart_toEndOf="@+id/txt_hard_cards_left"
                 app:layout_constraintTop_toBottomOf="@+id/title_bar" />
 
         <TextView
-                android:id="@+id/btn_previous_card"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="18dp"
-                android:layout_marginEnd="27dp"
-                android:alpha="0.0"
-                android:background="@drawable/previous_button_background"
-                android:fontFamily="@font/seguisb"
-                android:paddingLeft="12dp"
-                android:paddingTop="3dp"
-                android:paddingRight="12dp"
-                android:paddingBottom="4.5dp"
-                android:text="Previous"
-                android:textColor="@android:color/white"
-                android:textSize="13sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/viewgroup_card_other_info" />
+            android:id="@+id/btn_previous_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="27dp"
+            android:alpha="0.0"
+            android:background="@drawable/previous_button_background"
+            android:fontFamily="@font/seguisb"
+            android:paddingLeft="12dp"
+            android:paddingTop="3dp"
+            android:paddingRight="12dp"
+            android:paddingBottom="4.5dp"
+            android:text="Previous"
+            android:textColor="@android:color/white"
+            android:textSize="13sp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/viewgroup_card_other_info" />
 
         <androidx.constraintlayout.widget.Group
                 android:id="@+id/group_front_card"
@@ -407,11 +508,11 @@
                 app:constraint_referenced_ids="viewgroup_front_flashcard,viewgroup_img_swipe_up" />
 
         <androidx.constraintlayout.widget.Group
-                android:id="@+id/group_back_card"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:visibility="gone"
-                app:constraint_referenced_ids="btn_hard,btn_easy,btn_previous_card,viewgroup_card_other_info,viewgroup_back_flashcard" />
+            android:id="@+id/group_back_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:constraint_referenced_ids="btn_hard,btn_easy,viewgroup_card_other_info,viewgroup_back_flashcard" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

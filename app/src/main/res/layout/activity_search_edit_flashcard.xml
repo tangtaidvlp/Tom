@@ -88,7 +88,7 @@
                 android:id="@+id/txt_using"
                 app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="1.0"
                 android:layout_marginEnd="24dp"
-                android:layout_marginTop="20dp" app:layout_constraintTop_toTopOf="@+id/txt_error_name6"
+                android:layout_marginTop="20dp" app:layout_constraintTop_toTopOf="@+id/txt_error_translation"
                 android:layout_marginStart="15dp"/>
         <TextView
                 android:text="Please enter your name"
@@ -119,7 +119,7 @@
                 android:text="Please enter your name"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:id="@+id/txt_error_name6"
+                android:id="@+id/txt_error_translation"
                 android:textColor="@color/input_alert_color"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="1.0"
@@ -131,7 +131,7 @@
                 android:text="Please enter your name"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:id="@+id/txt_error_name5"
+                android:id="@+id/txt_error_text"
                 android:textColor="@color/input_alert_color"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.0"

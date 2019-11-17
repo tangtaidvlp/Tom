@@ -3,6 +3,7 @@ package com.teamttdvlp.memolang.view.activity
 import android.animation.Animator
 import android.animation.AnimatorSet
 import android.graphics.Color
+import android.os.Bundle
 import com.teamttdvlp.memolang.view.base.BaseActivity
 import com.teamttdvlp.memolang.viewmodel.add_flashcard.AddFlashCardActivityViewModel
 import com.teamttdvlp.memolang.databinding.ActivityAddFlashcardBinding
@@ -20,12 +21,15 @@ import com.teamttdvlp.memolang.model.model.Flashcard
 import com.teamttdvlp.memolang.model.model.Language
 import com.teamttdvlp.memolang.model.sqlite.MemoLangSqliteDataBase
 import com.teamttdvlp.memolang.model.sqlite.repository.FlashcardRepository
+import com.teamttdvlp.memolang.view.activity.iview.AddFlashcardView
 import com.teamttdvlp.memolang.viewmodel.reusable.OnlineFlashcardDBManager
 import javax.inject.Inject
 import javax.inject.Named
 
 
-class AddFlashcardActivity : BaseActivity<ActivityAddFlashcardBinding, AddFlashCardActivityViewModel>() {
+class AddFlashcardActivity : BaseActivity<ActivityAddFlashcardBinding, AddFlashCardActivityViewModel>()
+                             ,AddFlashcardView {
+
 
     // After this time, saved flashcard will move right and disappear
     private val SAVED_FLASHCARD_APPEAR_INTERVAL = 400L
@@ -56,7 +60,7 @@ class AddFlashcardActivity : BaseActivity<ActivityAddFlashcardBinding, AddFlashC
     private lateinit var OG_Translation: String
     private lateinit var OG_Using: String
 
-    override fun getLayoutId(): Int  = R.layout.activity_add_flashcard
+
 
     lateinit var database : MemoLangSqliteDataBase
     @Inject set
@@ -66,6 +70,12 @@ class AddFlashcardActivity : BaseActivity<ActivityAddFlashcardBinding, AddFlashC
 
     lateinit var flashcardRepository: FlashcardRepository
     @Inject set
+
+
+
+
+    override fun getLayoutId(): Int  = R.layout.activity_add_flashcard
+
 
     override fun takeViewModel(): AddFlashCardActivityViewModel = getActivityViewModel {
         AddFlashCardActivityViewModel(database, onlineFlashcardManager, flashcardRepository)
@@ -79,6 +89,7 @@ class AddFlashcardActivity : BaseActivity<ActivityAddFlashcardBinding, AddFlashC
         OG_Using = edtUsing.text.toString()
     }}
 
+
     override fun addViewControls() { dataBinding.apply {
         /**
          *  The $viewgroupCancelSaving is clicked through
@@ -90,7 +101,7 @@ class AddFlashcardActivity : BaseActivity<ActivityAddFlashcardBinding, AddFlashC
         rcvChooseSourceLanguage.layoutManager = linearLayoutManager!!
         if (viewModel.getSingletonUser() != null) {
             txtSourceLang.text = viewModel.getSingletonUser()!!.motherLanguage
-            txtSourceLang.text = viewModel.getSingletonUser()!!.targetLanguage
+            txtTargetLang.text = viewModel.getSingletonUser()!!.targetLanguage
         } else {
             txtSourceLang.text = Language.ENGLISH
             txtTargetLang.text = Language.VIETNAMESE
@@ -104,8 +115,12 @@ class AddFlashcardActivity : BaseActivity<ActivityAddFlashcardBinding, AddFlashC
             val text = edtText.text.toString()
             val translation = edtTranslation.text.toString()
             val using = edtUsing.text.toString()
+            val sourceLang = txtSourceLang.text.toString()
+            val targetLang = txtTargetLang.text.toString()
             val type = txtSourceLang.text.toString() + "-" + txtTargetLang.text.toString()
             val newCard = Flashcard(0, text, translation, type, using)
+
+            viewModel.addFlashcard(sourceLang, targetLang, text, translation, using)
             viewModel.addFlashcardToOfflineDB(newCard) { isSuccess, insertedCardId, exception ->
                 if (isSuccess) {
                     animatorSetSaving.start()
@@ -173,10 +188,38 @@ class AddFlashcardActivity : BaseActivity<ActivityAddFlashcardBinding, AddFlashC
     }
 
     override fun onBackPressed() { dataBinding.apply {
-        if (viewgroupCancelSaving.isGone) {
+        if (viewgroupCancelSaving.isGone and (doesUserChangeInfo())) {
             btnCancel.performClick()
         }
     }}
+
+
+    // VIEW IMPLEMENTED METHODS
+
+    override fun showTextInputError() {
+        dataBinding.txtErrorText.appear()
+    }
+
+
+    override fun showTranslationInputError() {
+        dataBinding.txtErrorTranslation.appear()
+    }
+
+    override fun onAddFlashcardSuccess() {
+        animatorSetSaving.start()
+        hideVirtualKeyboard()
+        currentFocus?.clearFocus()
+    }
+
+
+    fun hideTextInputError() {
+        dataBinding.txtErrorText.disappear()
+    }
+
+    fun hideTranslationInputError() {
+        dataBinding.txtErrorTranslation.disappear()
+    }
+
 
     private fun doesUserChangeInfo () : Boolean { dataBinding.apply {
         val newSourceLang = txtSourceLang.text.toString()
@@ -187,6 +230,17 @@ class AddFlashcardActivity : BaseActivity<ActivityAddFlashcardBinding, AddFlashC
 
         return (OG_SourceLang != newSourceLang) || (OG_TargetLang != newTargetLang) || (OG_Text != newText) || (OG_Translation != newTranslation) || (OG_Using != newUsing)
     }}
+
+
+
+
+
+
+
+    // INJECTED METHOD
+
+
+
 
     @Inject
     fun initSaveAnimation (

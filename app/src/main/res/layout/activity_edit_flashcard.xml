@@ -48,7 +48,7 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="1.0"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="@+id/txt_error_name6"/>
+                    app:layout_constraintTop_toTopOf="@+id/txt_error_translation"/>
             <EditText
                     android:id="@+id/edt_using"
                     android:layout_width="0dp"
@@ -121,7 +121,7 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/txt_translation"/>
             <TextView
-                    android:id="@+id/txt_error_name6"
+                    android:id="@+id/txt_error_translation"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="15dp"
@@ -135,7 +135,7 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/edt_translation"/>
             <TextView
-                    android:id="@+id/txt_error_name5"
+                    android:id="@+id/txt_error_text"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="15dp"

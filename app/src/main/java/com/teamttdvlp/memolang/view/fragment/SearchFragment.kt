@@ -46,8 +46,8 @@ class SearchFragment : Fragment() {
         card.createdAt = SimpleDateFormat("dd-MM-yyyy").parse("16-8-2019")
         card.kind = "en-vi"
         card.spelling = "\\computer\\"
-        card.toBeTranslatedWord = "Computer"
-        card.translatedWord = "Máy Tính"
+        card.text = "Computer"
+        card.translation = "Máy Tính"
         card.synonym = "Calculator"
         card.type = "N"
         card.using  = "Computer is the most magic of human ever"

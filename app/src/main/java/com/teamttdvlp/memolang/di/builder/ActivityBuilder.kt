@@ -40,4 +40,7 @@ abstract class ActivityBuilder {
 
     @ContributesAndroidInjector(modules = [UseFlashcardActivityModule::class])
     abstract fun ịnjectUseFlashcardActivity() : UseFlashcardActivity
+
+    @ContributesAndroidInjector(modules = [UseFlashcardDoneActivityModule::class])
+    abstract fun injectUseFlashcardDoneActivity() : UseFlashcardDoneActivity
 }

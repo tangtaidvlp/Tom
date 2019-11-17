@@ -34,6 +34,6 @@ abstract  class FlashcardDAO {
         abstract fun getAllCard () :  List<FlashCardEntity>
 
         @Query("SELECT * FROM Flashcard" +
-                " WHERE kind = :kind AND toBeTranslatedWord == :toBeTranslatedWord")
-        abstract fun getCardByToBeTranslatedWord (kind : String, toBeTranslatedWord : String) : FlashCardEntity
+                " WHERE kind = :kind AND text == :text")
+        abstract fun getCardByToBeTranslatedWord (kind : String, text : String) : FlashCardEntity
 }

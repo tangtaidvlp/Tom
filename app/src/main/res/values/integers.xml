@@ -3,7 +3,7 @@
     <integer name="zoom_from_nothing_to_oversize_then_normal_size_duration">400</integer>
     <integer name="zoom_from_nothing_to_normal_size_duration">400</integer>
     <integer name="zoom_to_nothing_and_rotate_duration">400</integer>
-    <integer name="move_right_and_fade_out_duration">400</integer>
+    <integer name="move_right_and_fade_out_duration">500</integer>
     <integer name="appear_animation_duration">500</integer>
     <integer name="appear_50_percents_duration">100</integer>
     <integer name="appear_100_percents_duration">200</integer>

@@ -50,7 +50,7 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="1.0"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="@+id/txt_error_name6" />
+                    app:layout_constraintTop_toTopOf="@+id/txt_error_translation" />
 
             <EditText
                     android:id="@+id/edt_using"
@@ -74,21 +74,6 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/txt_using"
                     app:layout_constraintVertical_bias="0.0" />
-
-            <TextView
-                    android:id="@+id/txt_error_name7"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="15dp"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginEnd="15dp"
-                    android:text="Please enter your name"
-                    android:textColor="@color/input_alert_color"
-                    android:visibility="gone"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="1.0"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/edt_using" />
 
             <TextView
                     android:id="@+id/txt_translation"
@@ -127,34 +112,19 @@
                     app:layout_constraintTop_toBottomOf="@+id/txt_translation" />
 
             <TextView
-                    android:id="@+id/txt_error_name6"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="15dp"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginEnd="15dp"
-                    android:text="Please enter your name"
-                    android:textColor="@color/input_alert_color"
-                    android:visibility="gone"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="1.0"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/edt_translation" />
-
-            <TextView
-                    android:id="@+id/txt_error_name5"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="15dp"
-                    android:layout_marginTop="2dp"
-                    android:layout_marginEnd="15dp"
-                    android:text="Please enter your name"
-                    android:textColor="@color/input_alert_color"
-                    android:visibility="gone"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/viewgroup_txt_source_lang" />
+                android:id="@+id/txt_error_translation"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="15dp"
+                android:text="Translation can not be empty"
+                android:textColor="@color/input_alert_color"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edt_translation" />
 
             <TextView
                     android:id="@+id/txt_text"
@@ -171,6 +141,42 @@
                     app:layout_constraintHorizontal_bias="1.0"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/viewgroup_txt_source_lang" />
+
+            <EditText
+                android:id="@+id/edt_text"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="11dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/round_less_round_white_background_with_border"
+                android:elevation="4dp"
+                android:ems="10"
+                android:fontFamily="@font/seguisb"
+                android:inputType="textPersonName"
+                android:paddingStart="16dp"
+                android:paddingBottom="1dp"
+                android:textColor="#E84E16"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_text" />
+
+            <TextView
+                android:id="@+id/txt_error_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="15dp"
+                android:text="Text can not be empty"
+                android:textColor="@color/input_alert_color"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edt_text" />
 
             <androidx.constraintlayout.widget.ConstraintLayout
                     android:id="@+id/viewgroup_txt_source_lang"
@@ -266,27 +272,6 @@
                     app:layout_constraintStart_toStartOf="@+id/center_guideline"
                     app:layout_constraintTop_toBottomOf="@+id/txt_type" />
 
-            <EditText
-                    android:id="@+id/edt_text"
-                    android:layout_width="0dp"
-                    android:layout_height="40dp"
-                    android:layout_marginStart="15dp"
-                    android:layout_marginTop="11dp"
-                    android:layout_marginEnd="15dp"
-                    android:background="@drawable/round_less_round_white_background_with_border"
-                    android:elevation="4dp"
-                    android:ems="10"
-                    android:fontFamily="@font/seguisb"
-                    android:inputType="textPersonName"
-                    android:paddingStart="16dp"
-                    android:paddingBottom="1dp"
-                    android:textColor="#E84E16"
-                    android:textSize="14sp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/txt_text" />
-
             <TextView
                     android:id="@+id/txt_type"
                     android:layout_width="0dp"
@@ -304,21 +289,6 @@
                     app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
-
-            <TextView
-                    android:id="@+id/txt_error_name2"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="15dp"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginEnd="15dp"
-                    android:text="Please enter your name"
-                    android:textColor="@color/input_alert_color"
-                    android:visibility="gone"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/edt_text" />
 
             <ImageView
                     android:id="@+id/img_background"

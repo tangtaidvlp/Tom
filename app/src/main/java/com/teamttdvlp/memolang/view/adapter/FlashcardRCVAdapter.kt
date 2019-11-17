@@ -29,8 +29,8 @@ class FlashcardRCVAdapter (var context : Context, var list : ArrayList<Flashcard
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val item = list[position]
-        holder.txtText.text = item.toBeTranslatedWord
-        holder.txtTranslation.text = item.translatedWord
+        holder.txtText.text = item.text
+        holder.txtTranslation.text = item.translation
         holder.itemView.setOnClickListener {
             onItemClickListener?.onClick(item)
         }
