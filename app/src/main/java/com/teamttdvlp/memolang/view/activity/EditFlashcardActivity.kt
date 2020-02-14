@@ -4,22 +4,27 @@ import android.animation.Animator
 import android.animation.AnimatorSet
 import android.app.Activity
 import android.content.Intent
+import android.graphics.Color
+import android.os.Bundle
 import androidx.core.animation.addListener
 import androidx.core.view.isGone
 import com.teamttdvlp.memolang.R
 import com.teamttdvlp.memolang.databinding.ActivityEditFlashcardBinding
 import com.teamttdvlp.memolang.view.base.BaseActivity
 import com.teamttdvlp.memolang.view.helper.*
-import com.teamttdvlp.memolang.model.model.Flashcard
-import com.teamttdvlp.memolang.model.sqlite.repository.FlashcardRepository
-import com.teamttdvlp.memolang.viewmodel.edit_flashcard.EditFlashcardActivityViewModel
-import com.teamttdvlp.memolang.viewmodel.reusable.OnlineFlashcardDBManager
+import com.teamttdvlp.memolang.model.entity.flashcard.Flashcard
+import com.teamttdvlp.memolang.model.entity.Language.Companion.SOURCE_LANGUAGE
+import com.teamttdvlp.memolang.model.entity.Language.Companion.TARGET_LANGUAGE
+import com.teamttdvlp.memolang.database.sql.repository.FlashcardRepository
+import com.teamttdvlp.memolang.view.activity.iview.EditFlashcardView
+import com.teamttdvlp.memolang.viewmodel.EditFlashcardViewModel
+//import com.teamttdvlp.memolang.viewmodel.reusable.OnlineFlashcardDBManager
 import javax.inject.Inject
 import javax.inject.Named
 
 const val UPDATED_FLASHCARD = "updated_flashcard"
 
-class EditFlashcardActivity : BaseActivity<ActivityEditFlashcardBinding, EditFlashcardActivityViewModel>() {
+class EditFlashcardActivity : BaseActivity<ActivityEditFlashcardBinding, EditFlashcardViewModel>(), EditFlashcardView {
 
     // After this time, saved flashcard will move right and disappear
     private val SAVED_FLASHCARD_APPEAR_INTERVAL = 400L
@@ -30,6 +35,11 @@ class EditFlashcardActivity : BaseActivity<ActivityEditFlashcardBinding, EditFla
 
     private val animatorSetCancelSavingDisappear = AnimatorSet()
 
+    private val animatorSetChooseCardTypeAppear = AnimatorSet()
+
+    private val animatorSetChooseCardTypeDisappear = AnimatorSet()
+
+    private var isIPAKeyboardVisible: Boolean = false
 
 
     // These variables are used for checking if the user change card's informations
@@ -40,113 +50,186 @@ class EditFlashcardActivity : BaseActivity<ActivityEditFlashcardBinding, EditFla
     private lateinit var OG_Translation: String
     private lateinit var OG_Using: String
 
-    private lateinit var edittingCard: Flashcard
-
     lateinit var flashcardRepository: FlashcardRepository
     @Inject set
 
-    lateinit var onlineFlashcardManager: OnlineFlashcardDBManager
-    @Inject set
+//    lateinit var onlineFlashcardManager: OnlineFlashcardDBManager
+//    @Inject set
 
     override fun getLayoutId(): Int = R.layout.activity_edit_flashcard
 
-    override fun takeViewModel(): EditFlashcardActivityViewModel = getActivityViewModel() {
-        EditFlashcardActivityViewModel(onlineFlashcardManager, flashcardRepository)
+    override fun takeViewModel(): EditFlashcardViewModel = getActivityViewModel() {
+        EditFlashcardViewModel(/*onlineFlashcardManager,*/
+            flashcardRepository
+        )
+    }
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        viewModel.setUpView(this)
     }
 
     override fun initProperties() {
-        dataBinding.apply {
-            edittingCard = intent.getSerializableExtra(FLASHCARD_KEY) as Flashcard
-            edittingCard.apply {
-                val sourceLang = type.substring(0, type.indexOf("-", 0, true))
-                val targetLang = type.removePrefix("$sourceLang-")
-                txtSourceLang.text = sourceLang
-                txtTargetLang.text = targetLang
-                edtText.setText(text)
-                edtTranslation.setText(translation)
-                edtUsing.setText(using)
+        dB.apply {
+            val edittingCard : Flashcard = getData().apply {
+                val languageDetail = languagePair.split("-")
+                val sourceLang = languageDetail[SOURCE_LANGUAGE]
+                val targetLang = languageDetail[TARGET_LANGUAGE]
+
                 OG_SourceLang = sourceLang
                 OG_TargetLang = targetLang
                 OG_Text = text
                 OG_Translation = translation
                 OG_Using = using
             }
+            this@EditFlashcardActivity.viewModel.setOriginalCard(edittingCard)
+            dB.viewModel = this@EditFlashcardActivity.viewModel
         }
     }
 
-    override fun addViewControls() {
-        dataBinding.apply {
+    override fun addViewControls() { dB.apply {
+        val RED_COLOR = Color.parseColor("#F65046")
+        layoutAddFlashcard.edtText.setTextColor(RED_COLOR)
+        ipaKeyboard.setFocusedText(layoutAddFlashcard.edtPronunciation)
+    }}
 
+    override fun addViewEvents() { dB.apply {
+
+        ipaKeyboard.setOnBtnDoneClickListener {
+            hideIPAKeyboard()
         }
-    }
 
-    override fun addViewEvents() {
-        dataBinding.apply {
-
-            btnSave.setOnClickListener {
-                if (doesUserChangeInfo()) {
-                    val text = edtText.text.toString()
-                    val translation = edtTranslation.text.toString()
-                    val using = edtUsing.text.toString()
-                    val type = txtSourceLang.text.toString() + "-" + txtTargetLang.text.toString()
-                    val newCard = Flashcard(edittingCard.id, text, translation, type, using)
-                    viewModel.updateOfflineFlashcard(newCard) { isSuccess, insertedCardId, ex ->
-                        if (isSuccess) {
-                            newCard.id = insertedCardId.toInt()
-                            viewModel.updateOnlineFlashcard(
-                                edittingCard.type,
-                                edittingCard,
-                                newCard
-                            ) { isSuccessful, exception ->
-                                if (isSuccessful) {
-                                    quickLog("Update Online Success")
-                                } else {
-                                    quickLog("Update Online Failed")
-                                    exception?.printStackTrace()
-                                }
-                            }
-                            returnUpdatedFlashcardResult(newCard)
-                            animatorSetSaving.start()
-                            hideVirtualKeyboard()
-                            currentFocus?.clearFocus()
-                        } else {
-                            quickToast("Update flashcard in offline database failed. Please try again")
-                        }
-                    }
-
-
-                }
-            }
-
-            btnCancel.setOnClickListener {
-                if (doesUserChangeInfo()) {
-                    animatorSetCancelSavingAppear.start()
-                    hideVirtualKeyboard()
-                } else finish()
-            }
-
-            imgBlackBackgroundCancelSavingWidgets.setOnClickListener {
-                animatorSetCancelSavingDisappear.start()
-            }
-
-            btnCancelIt.setOnClickListener {
-                animatorSetCancelSavingDisappear.addListener(onEnd = {
-                    finish()
-                })
-                animatorSetCancelSavingDisappear.start()
-            }
-
+        ipaKeyboard.setOnDeviceVirtualKeyboardShow {
+            hideIPAKeyboard()
         }
-    }
+
+        layoutAddFlashcard.edtPronunciation.setOnClickListener {
+            showIPAKeyboard()
+        }
+
+        btnSave.setOnClickListener {
+            hideIPAKeyboard()
+            layoutAddFlashcard.apply {
+                val text = edtText.text.toString()
+                val translation = edtTranslation.text.toString()
+                val using = edtUsing.text.toString()
+                val sourceLang = txtSourceLang.text.toString()
+                val targetLang = txtTargetLang.text.toString()
+                val type = edtType.text.toString()
+                val pronunciation = edtPronunciation.text.toString()
+                this@EditFlashcardActivity.viewModel.updateCard(
+                    sourceLang,
+                    targetLang,
+                    type,
+                    text,
+                    translation,
+                    using,
+                    pronunciation
+                )
+            }
+        }
+
+        btnCancel.setOnClickListener {
+            if (doesUserChangeInfo()) {
+                animatorSetCancelSavingAppear.start()
+                hideVirtualKeyboard()
+            } else finish()
+        }
+
+        imgBlackBackgroundCancelSavingWidgets.setOnClickListener {
+            animatorSetCancelSavingDisappear.start()
+        }
+
+        btnCancelIt.setOnClickListener {
+            animatorSetCancelSavingDisappear.addListener(onEnd = {
+                finish()
+            })
+            animatorSetCancelSavingDisappear.start()
+        }
+
+        layoutAddFlashcard.edtType.setOnClickListener {
+            animatorSetChooseCardTypeAppear.start()
+        }
+
+        layoutChooseCardType.imgBlackBackgroundChooseCardType.setOnClickListener {
+            animatorSetChooseCardTypeDisappear.start()
+        }
+
+        layoutChooseCardType.rcvChooseCardType.setOnItemClickListener { type ->
+            layoutAddFlashcard.edtType.setText(type)
+            animatorSetChooseCardTypeDisappear.start()
+        }
+
+    }}
 
     override fun onBackPressed() {
-        dataBinding.apply {
-            if (viewgroupCancelSaving.isGone) {
+        dB.apply {
+            if (isIPAKeyboardVisible)
+                hideIPAKeyboard()
+            else if (viewgroupCancelSaving.isGone) {
                 btnCancel.performClick()
             }
         }
     }
 
+    fun getData () : Flashcard = intent.getSerializableExtra(FLASHCARD_KEY) as Flashcard
+
+    // VIEW IMPLEMENTED METHODS
+
+    private fun hideIPAKeyboard() { dB.apply {
+        isIPAKeyboardVisible = false
+        ipaKeyboard.hide()
+        ipaKeyboard.db.keyboardParent.isClickable = false
+        layoutAddFlashcard.ipaKeyboardPlaceholder.disappear()
+    }}
+
+    private fun showIPAKeyboard() { dB.apply {
+        ipaKeyboard.appear()
+        ipaKeyboard.db.keyboardParent.isClickable = true
+        isIPAKeyboardVisible = true
+        layoutAddFlashcard.ipaKeyboardPlaceholder.appear()
+        hideVirtualKeyboard()
+        Thread(kotlinx.coroutines.Runnable {
+            Thread.sleep(50)
+            runOnUiThread {
+                layoutAddFlashcard.scrollview.scrollToBottom()
+            }
+        }).start()
+        clearAllScreenFocus()
+    }}
+
+    private fun clearAllScreenFocus () {
+        dB.activityAddFlashcards.requestFocus()
+    }
+
+    override fun showTextInputError() {
+        dB.layoutAddFlashcard.txtErrorText.appear()
+    }
+
+    override fun showTranslationInputError() {
+        dB.layoutAddFlashcard.txtErrorTranslation.appear()
+    }
+
+    override fun onUpdateFlashcardSuccess(newCard : Flashcard) {
+        returnUpdatedFlashcardResult(newCard)
+        animatorSetSaving.start()
+        hideVirtualKeyboard()
+        currentFocus?.clearFocus()
+    }
+
+    fun hideTextInputError() {
+        dB.layoutAddFlashcard.txtErrorText.disappear()
+    }
+
+    fun hideTranslationInputError() {
+        dB.layoutAddFlashcard.txtErrorTranslation.disappear()
+    }
+
+
+    /**
+     * RECEIVER
+     * @see ViewFlashCardListActivity
+     */
 
     fun returnUpdatedFlashcardResult (updatedFlashcard : Flashcard) {
         val intent = Intent()
@@ -156,7 +239,7 @@ class EditFlashcardActivity : BaseActivity<ActivityEditFlashcardBinding, EditFla
 
 
     private fun doesUserChangeInfo(): Boolean {
-        dataBinding.apply {
+        dB.layoutAddFlashcard.apply {
             val newSourceLang = txtSourceLang.text.toString()
             val newTargetLang = txtTargetLang.text.toString()
             val newText = edtText.text.toString()
@@ -176,9 +259,9 @@ class EditFlashcardActivity : BaseActivity<ActivityEditFlashcardBinding, EditFla
     fun initSaveAnimation(
         @Named("ZoomToNothingAndRotate") groupDisappear: Animator,
         @Named("ZoomFromNothingToOversizeThenNormalSize") savedImageAppear: Animator,
-        @Named("MoveRightAndFadeOut") savedImageDisappear: Animator
+        @Named("MoveRightAndFadeOutAnimtr") savedImageDisappear: Animator
     ) {
-        dataBinding.apply {
+        dB.apply {
 
             groupDisappear.apply {
                 setTarget(viewgroupAddFlashcard)
@@ -198,11 +281,11 @@ class EditFlashcardActivity : BaseActivity<ActivityEditFlashcardBinding, EditFla
     @Inject
     fun initCancelSavingAnimation(
         @Named("FromNormalSizeToNothing") viewgroupCancelSavingDisappear: Animator,
-        @Named("Disappear50percents") blackBackgroundDisappear: Animator,
+        @Named("Disappear50Percents") blackBackgroundDisappear: Animator,
         @Named("FromNothingToNormalSize") viewgroupCancelSavingAppear: Animator,
-        @Named("Appear50percents") blackBackgroundAppear: Animator
+        @Named("Appear50Percents") blackBackgroundAppear: Animator
     ) {
-        dataBinding.apply {
+        dB.apply {
 
             viewgroupCancelSavingDisappear.setTarget(viewgroupCancelSaving)
             blackBackgroundDisappear.setTarget(imgBlackBackgroundCancelSavingWidgets)
@@ -215,5 +298,30 @@ class EditFlashcardActivity : BaseActivity<ActivityEditFlashcardBinding, EditFla
             animatorSetCancelSavingAppear.addListener(onStart = { groupCancelSavingWidgets.appear() })
         }
     }
+
+    @Inject
+    fun initChooseCardTypeAnimation (
+        @Named("FromNormalSizeToNothing") rcvChooseCardTypeDisappear : Animator,
+        @Named("Disappear50Percents") blackBackgroundDisappear : Animator,
+        @Named("FromNothingToNormalSize") rcvChooseCardTypeAppear : Animator,
+        @Named("Appear50Percents") blackBackgroundAppear : Animator) { dB.layoutChooseCardType.apply {
+
+        rcvChooseCardTypeDisappear.setTarget(rcvChooseCardType)
+        blackBackgroundDisappear.setTarget(imgBlackBackgroundChooseCardType)
+        animatorSetChooseCardTypeDisappear.play(rcvChooseCardTypeDisappear).before(blackBackgroundDisappear)
+        animatorSetChooseCardTypeDisappear.addListener (onEnd = {
+            rcvChooseCardType.disappear()
+            imgBlackBackgroundChooseCardType.disappear()
+        })
+
+        rcvChooseCardTypeAppear.setTarget(rcvChooseCardType)
+        blackBackgroundAppear.setTarget(imgBlackBackgroundChooseCardType)
+        animatorSetChooseCardTypeAppear.play(blackBackgroundAppear).before(rcvChooseCardTypeAppear)
+        animatorSetChooseCardTypeAppear.addListener(onStart = {
+            rcvChooseCardType.appear()
+            imgBlackBackgroundChooseCardType.appear()
+        })
+    }}
+
 
 }

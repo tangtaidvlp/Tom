@@ -16,7 +16,6 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
         val fadeIn = ObjectAnimator.ofFloat(txt_success, View.ALPHA, 0f, 1f).apply {
             duration = 250
             interpolator = LinearInterpolator()

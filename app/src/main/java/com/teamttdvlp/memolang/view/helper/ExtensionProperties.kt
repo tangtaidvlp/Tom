@@ -6,10 +6,13 @@ import android.util.Log
 import android.view.View
 import android.view.animation.Animation
 import android.widget.EditText
+import java.util.*
 
 fun quickLog (message : Any) {
     Log.e("QuickLog: ", message.toString())
 }
+
+fun not (expression : Boolean) : Boolean = !expression
 
 fun Animation.addAnimationLister (onStart : ((Animation?) -> Unit)? = null, onEnd : ((Animation?) -> Unit)? = null, onRepeat: ((Animation?) -> Unit)? = null) {
     setAnimationListener(object : Animation.AnimationListener {
@@ -30,7 +33,7 @@ fun Animation.addAnimationLister (onStart : ((Animation?) -> Unit)? = null, onEn
 fun EditText.addTextChangeListener (
     afterTextChanged : ((Editable?) -> Unit)? = null,
     beforeTextChanged : ((CharSequence?, Int, Int, Int) -> Unit)? = null,
-    onTextChanged : ((CharSequence?, Int, Int, Int) -> Unit)? = null ) {
+    onTextChanged : ((String, Int, Int, Int) -> Unit)? = null ) {
 
     addTextChangedListener(object : TextWatcher {
         override fun afterTextChanged(p0: Editable?) {
@@ -42,21 +45,24 @@ fun EditText.addTextChangeListener (
         }
 
         override fun onTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
-            onTextChanged?.invoke(p0, p1, p2, p3)
+            onTextChanged?.invoke(p0.toString(), p1, p2, p3)
         }
     })
 }
 
 
 fun View.disappear() {
+    if (visibility != View.GONE)
     visibility = View.GONE
 }
 
 fun View.appear() {
+    if (visibility != View.VISIBLE)
     visibility = View.VISIBLE
 }
 
 fun View.hide() {
+    if (visibility != View.INVISIBLE)
     visibility = View.INVISIBLE
 }
 

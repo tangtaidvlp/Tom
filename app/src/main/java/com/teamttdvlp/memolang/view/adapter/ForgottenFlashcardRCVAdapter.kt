@@ -8,7 +8,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.teamttdvlp.memolang.R
-import com.teamttdvlp.memolang.model.model.Flashcard
+import com.teamttdvlp.memolang.model.entity.flashcard.Flashcard
 
 class ForgottenFlashcardRCVAdapter (var context : Context, var list : ArrayList<Flashcard>) : RecyclerView.Adapter<ForgottenFlashcardRCVAdapter.ViewHolder> () {
 
@@ -16,8 +16,8 @@ class ForgottenFlashcardRCVAdapter (var context : Context, var list : ArrayList<
 
     class ViewHolder (item : View): RecyclerView.ViewHolder(item) {
         var txtText = item.findViewById<TextView>(R.id.txt_text)
-        var txtTranslation = item.findViewById<TextView>(R.id.txt_language)
-        var btnEdit = item.findViewById<ImageView>(R.id.btn_view_list)
+        var txtTranslation = item.findViewById<TextView>(R.id.txt_flashcard_count)
+        var btnEdit = item.findViewById<ImageView>(R.id.btn_delete)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {

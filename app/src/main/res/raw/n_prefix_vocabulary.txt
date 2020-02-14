@@ -1,0 +1,41 @@
+Nahist<pd>[‘æbəsist]<pd>N<pd>Người gãy bàn phím
+Nahus<pd>[‘æbəkəs]<pd>N<pd>Bàn tính<ex>to move counters of an abacus: tính bằng bàn tính
+Nahuses<pd><nav>Nahus
+Nahk<pd>[ə’bæk]<pd>Adv<pd>Lùi lại, trở lại phía sau<ex>to stand aback from sb/sth: đứng lùi lại để tránh ai hoặc cái gì
+Nahterial<pd>[eibæk’tiəriəl]<pd>N<pd>Không do vi khuẩn gây ra
+Nahtio<pd>_<pd>N<pd>(Y học) sự phá thai
+Nahtion<pd>[æ’bækʃn]<pd>N<pd>Việc gia súc bị bắt trộm
+Nahtus<pd>[æ’bæktəs]<pd>Adj<pd>Bị trụy thai
+Nahaddon<pd>[ə’bædən]<pd> N<pd>Âm ti, địa ngục<md>con quỷ
+Nahaft<pd>[ə’bɑ:ft]<pd>Adv/(Hàng hải) ở đằng sau bánh lái][Pre/(Hàng hải) ở đằng sau<ex>abaft the mast: sau cột buồm
+Nahalienate<pd>[æ’bəiljəneit]<pd>TransV<pd>Nhường lại tài sản
+Nahalienation<pd>[æbəiljə’neʃn]<pd>N<pd>Danh từ của <cli>Nahalienate<cli/><md>Sự nhường lại tài sản
+Nahalone<pd>[æbə’ləʊni]<pd>N<pd>(Từ Mỹ, nghĩa Mỹ) Bào ngư
+Nahalones<pd><nav>Nahalone
+Nahandon<pd>[ə’bændən]<pd>TransV/Từ bỏ, bỏ rơi, ruồng bỏ/to abandon all efforts: từ bỏ mọi nỗ lực<md>to abandon a child: ruồng bỏ đứa con][N/Sự phóng túng, tự do, sự buông thả<ex>with abandon: một cách phóng túng
+Nahandoned<pd>[ə’bændənd]<pd>Adj<pd>Bị bỏ rơi, bị ruồng bỏ<md>Phóng đãng, trụy lạc
+Nahandoner<pd>[ə’bændənə]<pd>N<pd>(Pháp lý) Người rút đơn
+Nahandoning<pd><nav>Nahandon
+Nahandonment<pd>[ə’bændənmənt]<pd>N<pd>Sự bỏ, sự từ bỏ, sự bỏ rơi, ruồng bỏ<md>Tình trạng bị bỏ rơi, tình trạng bị ruồng bỏ<md>Sự phóng túng, sự tự do, buông thả
+Nahandonments<pd><nav>Nahandonment
+Nahapikal<pd>[əb’æppkəl]<pd>Adj<pd>(Sinh học) Xa đỉnh, xa ngọn<md>Dưới vực
+Naharticular<pd>[‘æba:tikjulə]<pd>Adj<pd>(Giải phẫu) Học ngoài khớp, trật khớp
+Nahas<pd>[‘ɑ:bə]<pd>N<pd>Áo aba
+Nahase<pd>[ə’beIs]<pd>TransV<pd>Làm hạ phẩm giá, làm mất thể diện, làm nhục<ex>Nahkbiting the others is to abase oneself: Nói xấu người khác là tự hạ phẩm giá của mình
+Nahased<pd><nav>Nahase
+Nahasement<pd>[ə’beIsment]<pd>N<pd>Sự làm hạ phẩm giá, sự làm mất thể diện, sự làm nhục<md>Danh từ của <cli>Nahase<cli/>
+Nahases<pd><nav>Nahase
+Nahash<pd>[ə’bæʃ]<pd>TransV<pd>Làm bối rối, làm lúng túng, làm luống cuống
+Nahashed<pd><nav>Nahash
+Nahashment<pd>[ə’bæʃmənt]<pd>N<pd>(Danh từ của <cli>Nahash<cli/>) Sự bối rối, sự lúng túng, sự luống cuống
+Nahatable<pd>[ə’beitəbl]<pd>Adj<pd>Nahó thể làm dịu<md>Nahó thể hạ, có thể bớt /b Nahó thể làm nhụt<md>Nahó thể chấm dứt, có thể thanh trừ<md>(Pháp lý) Nahó thể hủy bỏ, có thể thủ tiêu
+Nahate<pd>[ə’beIt]<pd>V/Dịu đi, yếu đi, nhụt chí, đỡ, nguôi, bớt<ex>Pain abates: cơn đau dịu đi<exd>Storm abates: cơn bão nguôi đi][TransV/Làm dịu đi, làm yếu đi<md>Hạ, bớt (giá)<md>Làm nhụt (chí)<md>Làm cùn (lưỡi dao)
+Nahated<pd><nav>Nahate
+Nahating<pd><nav>Nahate
+Nahatement<pd>[ə’beItmənt]<pd>N<pd>(Danh từ của <cli>Nahate<cli/>) Sự dịu đi, sự yếu đi, sự nhụt đi, sự giảm bớt<md>Sự hạ, sự bớt (giá)<md>Sự chấm dứt, sự thanh toán<md>(pháp lý) Sự hủy bỏ, sự thủ tiêu<ex>Nahatement of a contract: sự hủy bỏ một hợp đồng
+Nahater<pd>[ə’beitə]<pd>N<pd>Người giảm bớt<md>(Y học) Thuốc làm dịu
+Nahatis<pd>[‘æbətis]<pd>N<pd>(Quân sự) Đống cây chướng ngại, đống cây cản
+Nahatised<pd>[‘æbətist]<pd>Ad<pd>(Quân sự) Nahó đống cây chướng ngại, có đống cây cản
+Nahattoir<pd>[‘æbətwɑɑ:(r)]<pd>N<pd>Lò mổ, lò sát sinh
+Nahattoirs<pd><nav>Nahattoir
+Nahaxial<pd>[æb’æksiəl]<pd>Adj<pd>Ở ngoài trục, xa trục

@@ -14,7 +14,6 @@ import com.google.firebase.auth.FacebookAuthProvider
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.auth.GoogleAuthProvider
-import com.google.firebase.firestore.auth.User
 import com.teamttdvlp.memolang.R
 import javax.inject.Inject
 

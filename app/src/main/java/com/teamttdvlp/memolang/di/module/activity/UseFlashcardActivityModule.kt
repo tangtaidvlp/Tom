@@ -12,7 +12,7 @@ import javax.inject.Named
 @Module
 class UseFlashcardActivityModule {
 
-    val animDuration = 500L
+    val animDuration = 200L
 
     val animInterpolator = DecelerateInterpolator()
 
@@ -32,23 +32,6 @@ class UseFlashcardActivityModule {
         }
     }
 
-    @Provides
-    @Named("Disappear100Percents")
-    fun provideFadeOutAnim (activity : UseFlashcardActivity) : Animator {
-        return AnimatorInflater.loadAnimator(activity, R.animator.disappear_100_percents).apply {
-            duration = 250
-            interpolator = animInterpolator
-        }
-    }
-
-    @Provides
-    @Named("Appear100Percents")
-    fun provideFadeInAnim (activity : UseFlashcardActivity) : Animator {
-        return AnimatorInflater.loadAnimator(activity, R.animator.appear_100_percents).apply {
-            duration = 250
-            interpolator = animInterpolator
-        }
-    }
 
     @Provides
     @Named("Float")
@@ -72,12 +55,6 @@ class UseFlashcardActivityModule {
     @Named("FromRightToCentreAndFadeIn")
     fun provideFromRightToCentre(activity: UseFlashcardActivity): Animator {
         return AnimatorInflater.loadAnimator(activity, R.animator.from_right_to_center_and_fade_in)
-    }
-
-    @Provides
-    @Named("MoveRightAndFadeOut")
-    fun provideMoveRightAndFadeOut (activity: UseFlashcardActivity): Animator {
-        return AnimatorInflater.loadAnimator(activity, R.animator.move_right_and_fade_out)
     }
 
     @Provides

@@ -1,7 +1,7 @@
 package com.teamttdvlp.memolang.di.module.activity
 
 import com.teamttdvlp.memolang.view.activity.LanguageActivity
-import com.teamttdvlp.memolang.view.adapter.LanguageRCVAdapter
+import com.teamttdvlp.memolang.view.adapter.RCV_LanguageAdapter
 import dagger.Module
 import dagger.Provides
 
@@ -9,8 +9,8 @@ import dagger.Provides
 class LanguageActivityModule {
 
     @Provides
-    fun provideLanguageRCVAdapter (activity: LanguageActivity) : LanguageRCVAdapter{
-        return LanguageRCVAdapter(activity)
+    fun provideLanguageRCVAdapter (activity: LanguageActivity) : RCV_LanguageAdapter{
+        return RCV_LanguageAdapter(activity)
     }
 
 }

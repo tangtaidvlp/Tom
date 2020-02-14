@@ -7,4 +7,6 @@ interface UseFlashcardView : View{
     fun showPreviousCardButton ()
 
     fun hidePreviousCardButton ()
+
+    fun showSpeakTextError(error: String)
 }

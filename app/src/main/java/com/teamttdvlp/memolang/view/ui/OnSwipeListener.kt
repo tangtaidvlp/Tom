@@ -33,7 +33,6 @@ open class OnSwipeUpListener :  View.OnTouchListener {
         override fun onFling(
             e1: MotionEvent?, e2: MotionEvent?,
             velocityX: Float, velocityY: Float ): Boolean {
-            Log.e("hjk", "jkl")
             var result = false
 
             try {

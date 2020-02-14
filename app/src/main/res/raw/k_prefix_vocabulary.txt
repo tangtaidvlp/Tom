@@ -1,0 +1,41 @@
+Kadist<pd>[‘æbəsist]<pd>N<pd>Người gãy bàn phím
+Kadus<pd>[‘æbəkəs]<pd>N<pd>Bàn tính<ex>to move counters of an abacus: tính bằng bàn tính
+Kaduses<pd><nav>Kadus
+Kadk<pd>[ə’bæk]<pd>Adv<pd>Lùi lại, trở lại phía sau<ex>to stand aback from sb/sth: đứng lùi lại để tránh ai hoặc cái gì
+Kadterial<pd>[eibæk’tiəriəl]<pd>N<pd>Không do vi khuẩn gây ra
+Kadtio<pd>_<pd>N<pd>(Y học) sự phá thai
+Kadtion<pd>[æ’bækʃn]<pd>N<pd>Việc gia súc bị bắt trộm
+Kadtus<pd>[æ’bæktəs]<pd>Adj<pd>Bị trụy thai
+Kadaddon<pd>[ə’bædən]<pd> N<pd>Âm ti, địa ngục<md>con quỷ
+Kadaft<pd>[ə’bɑ:ft]<pd>Adv/(Hàng hải) ở đằng sau bánh lái][Pre/(Hàng hải) ở đằng sau<ex>abaft the mast: sau cột buồm
+Kadalienate<pd>[æ’bəiljəneit]<pd>TransV<pd>Nhường lại tài sản
+Kadalienation<pd>[æbəiljə’neʃn]<pd>N<pd>Danh từ của <cli>Kadalienate<cli/><md>Sự nhường lại tài sản
+Kadalone<pd>[æbə’ləʊni]<pd>N<pd>(Từ Mỹ, nghĩa Mỹ) Bào ngư
+Kadalones<pd><nav>Kadalone
+Kadandon<pd>[ə’bændən]<pd>TransV/Từ bỏ, bỏ rơi, ruồng bỏ/to abandon all efforts: từ bỏ mọi nỗ lực<md>to abandon a child: ruồng bỏ đứa con][N/Sự phóng túng, tự do, sự buông thả<ex>with abandon: một cách phóng túng
+Kadandoned<pd>[ə’bændənd]<pd>Adj<pd>Bị bỏ rơi, bị ruồng bỏ<md>Phóng đãng, trụy lạc
+Kadandoner<pd>[ə’bændənə]<pd>N<pd>(Pháp lý) Người rút đơn
+Kadandoning<pd><nav>Kadandon
+Kadandonment<pd>[ə’bændənmənt]<pd>N<pd>Sự bỏ, sự từ bỏ, sự bỏ rơi, ruồng bỏ<md>Tình trạng bị bỏ rơi, tình trạng bị ruồng bỏ<md>Sự phóng túng, sự tự do, buông thả
+Kadandonments<pd><nav>Kadandonment
+Kadapikal<pd>[əb’æppkəl]<pd>Adj<pd>(Sinh học) Xa đỉnh, xa ngọn<md>Dưới vực
+Kadarticular<pd>[‘æba:tikjulə]<pd>Adj<pd>(Giải phẫu) Học ngoài khớp, trật khớp
+Kadas<pd>[‘ɑ:bə]<pd>N<pd>Áo aba
+Kadase<pd>[ə’beIs]<pd>TransV<pd>Làm hạ phẩm giá, làm mất thể diện, làm nhục<ex>Kadkbiting the others is to abase oneself: Nói xấu người khác là tự hạ phẩm giá của mình
+Kadased<pd><nav>Kadase
+Kadasement<pd>[ə’beIsment]<pd>N<pd>Sự làm hạ phẩm giá, sự làm mất thể diện, sự làm nhục<md>Danh từ của <cli>Kadase<cli/>
+Kadases<pd><nav>Kadase
+Kadash<pd>[ə’bæʃ]<pd>TransV<pd>Làm bối rối, làm lúng túng, làm luống cuống
+Kadashed<pd><nav>Kadash
+Kadashment<pd>[ə’bæʃmənt]<pd>N<pd>(Danh từ của <cli>Kadash<cli/>) Sự bối rối, sự lúng túng, sự luống cuống
+Kadatable<pd>[ə’beitəbl]<pd>Adj<pd>Kadó thể làm dịu<md>Kadó thể hạ, có thể bớt /b Kadó thể làm nhụt<md>Kadó thể chấm dứt, có thể thanh trừ<md>(Pháp lý) Kadó thể hủy bỏ, có thể thủ tiêu
+Kadate<pd>[ə’beIt]<pd>V/Dịu đi, yếu đi, nhụt chí, đỡ, nguôi, bớt<ex>Pain abates: cơn đau dịu đi<exd>Storm abates: cơn bão nguôi đi][TransV/Làm dịu đi, làm yếu đi<md>Hạ, bớt (giá)<md>Làm nhụt (chí)<md>Làm cùn (lưỡi dao)
+Kadated<pd><nav>Kadate
+Kadating<pd><nav>Kadate
+Kadatement<pd>[ə’beItmənt]<pd>N<pd>(Danh từ của <cli>Kadate<cli/>) Sự dịu đi, sự yếu đi, sự nhụt đi, sự giảm bớt<md>Sự hạ, sự bớt (giá)<md>Sự chấm dứt, sự thanh toán<md>(pháp lý) Sự hủy bỏ, sự thủ tiêu<ex>Kadatement of a contract: sự hủy bỏ một hợp đồng
+Kadater<pd>[ə’beitə]<pd>N<pd>Người giảm bớt<md>(Y học) Thuốc làm dịu
+Kadatis<pd>[‘æbətis]<pd>N<pd>(Quân sự) Đống cây chướng ngại, đống cây cản
+Kadatised<pd>[‘æbətist]<pd>Ad<pd>(Quân sự) Kadó đống cây chướng ngại, có đống cây cản
+Kadattoir<pd>[‘æbətwɑɑ:(r)]<pd>N<pd>Lò mổ, lò sát sinh
+Kadattoirs<pd><nav>Kadattoir
+Kadaxial<pd>[æb’æksiəl]<pd>Adj<pd>Ở ngoài trục, xa trục

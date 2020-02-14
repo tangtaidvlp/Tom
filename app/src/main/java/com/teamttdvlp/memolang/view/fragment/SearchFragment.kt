@@ -18,9 +18,9 @@ import androidx.room.Room
 
 import com.teamttdvlp.memolang.R
 import com.teamttdvlp.memolang.databinding.FragmentSearchBinding
-import com.teamttdvlp.memolang.model.sqlite.entity.FlashCardEntity
-import com.teamttdvlp.memolang.model.sqlite.MemoLangSqliteDataBase
-import com.teamttdvlp.memolang.model.sqlite.entity.UserEntity
+import com.teamttdvlp.memolang.database.sql.entity.flashcard.FlashCardEntity
+import com.teamttdvlp.memolang.database.MemoLangSqliteDataBase
+import com.teamttdvlp.memolang.database.sql.entity.user.UserEntity
 import com.teamttdvlp.memolang.view.helper.quickLog
 import java.text.SimpleDateFormat
 
@@ -45,11 +45,11 @@ class SearchFragment : Fragment() {
         u.id = "23"
         card.createdAt = SimpleDateFormat("dd-MM-yyyy").parse("16-8-2019")
         card.kind = "en-vi"
-        card.spelling = "\\computer\\"
+        card.pronunciation = "\\computer\\"
         card.text = "Computer"
         card.translation = "Máy Tính"
         card.synonym = "Calculator"
-        card.type = "N"
+        card.languagePair = "N"
         card.using  = "Computer is the most magic of human ever"
         addControls(container)
         setup()

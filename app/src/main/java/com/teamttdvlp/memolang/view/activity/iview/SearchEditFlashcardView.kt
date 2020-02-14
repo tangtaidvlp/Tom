@@ -2,9 +2,10 @@ package com.teamttdvlp.memolang.view.activity.iview
 
 interface SearchEditFlashcardView : View {
 
-    fun onNoCardsLeft ()
+    fun showTextInputError ()
 
-    fun showPreviousCardButton ()
+    fun showTranslationInputError ()
 
-    fun hidePreviousCardButton ()
+    fun onUpdateFlashcardSuccess ()
+
 }

@@ -1,218 +1,442 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools">
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:bind="http://schemas.android.com/apk/res-auto"
+    >
+
+    <data>
+
+        <variable
+            name="beingViewedFlashcard"
+            type="com.teamttdvlp.memolang.model.entity.flashcard.Flashcard" />
+        <variable
+            name="viewModelS"
+            type="com.teamttdvlp.memolang.viewmodel.SearchVocabularyViewModel" />
+    </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="#ffffff"
-            tools:context=".view.activity.SearchVocabularyActivity">
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        tools:context=".view.activity.SearchVocabularyActivity">
 
         <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/viewgroup_language_option"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:background="@color/app_less_blue"
-                android:elevation="5dp"
-                android:visibility="visible"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.0">
+            android:id="@+id/viewgroup_language_option"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/app_less_blue"
+            android:elevation="5dp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0">
 
             <androidx.constraintlayout.widget.Guideline
-                    android:id="@+id/center_vertical_guideline"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    app:layout_constraintGuide_begin="20dp"
-                    app:layout_constraintGuide_percent="0.5" />
+                android:id="@+id/center_vertical_guideline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="20dp"
+                app:layout_constraintGuide_percent="0.5" />
 
             <LinearLayout
-                    android:id="@+id/viewgroup_txt_source_lang"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginTop="8dp"
-                    android:gravity="center_vertical"
-                    android:orientation="horizontal"
-                    app:layout_constraintBottom_toTopOf="@+id/center_vertical_guideline"
-                    app:layout_constraintLeft_toLeftOf="parent"
-                    app:layout_constraintTop_toTopOf="@+id/center_vertical_guideline">
+                android:id="@+id/viewgroup_txt_source_lang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toTopOf="@+id/center_vertical_guideline"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/center_vertical_guideline">
 
                 <TextView
-                        android:id="@+id/txt_source_lang"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/segoeui"
-                        android:paddingBottom="3dp"
-                        android:text="English"
-                        android:textColor="#ffffff"
-                        android:textSize="17sp" />
+                    android:id="@+id/txt_source_lang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/segoeui"
+                    android:paddingBottom="3dp"
+                    android:text="English"
+                    android:textColor="#ffffff"
+                    android:textSize="17sp" />
 
                 <ImageView
-                        android:id="@+id/img_choose_source_lang"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="6dp"
-                        android:src="@drawable/white_down_arrow" />
+                    android:id="@+id/img_choose_source_lang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    android:src="@drawable/white_down_arrow" />
 
             </LinearLayout>
 
 
             <LinearLayout
-                    android:id="@+id/viewgroup_txt_target_lang"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginRight="20dp"
-                    android:gravity="center_vertical"
-                    android:orientation="horizontal"
-                    app:layout_constraintBottom_toTopOf="@+id/center_vertical_guideline"
-                    app:layout_constraintHorizontal_bias="1.0"
-                    app:layout_constraintLeft_toLeftOf="parent"
-                    app:layout_constraintRight_toRightOf="parent"
-                    app:layout_constraintTop_toTopOf="@id/center_vertical_guideline">
+                android:id="@+id/viewgroup_txt_target_lang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="20dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toTopOf="@+id/center_vertical_guideline"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="@id/center_vertical_guideline">
 
                 <TextView
-                        android:id="@+id/txt_target_lang"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/segoeui"
-                        android:paddingBottom="3dp"
-                        android:text="Vietnamese"
-                        android:textColor="#ffffff"
-                        android:textSize="17sp" />
+                    android:id="@+id/txt_target_lang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/segoeui"
+                    android:paddingBottom="3dp"
+                    android:text="Vietnamese"
+                    android:textColor="#ffffff"
+                    android:textSize="17sp" />
 
                 <ImageView
-                        android:id="@+id/img_choose_target_lang"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="6dp"
-                        android:src="@drawable/white_down_arrow" />
+                    android:id="@+id/img_choose_target_lang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    android:src="@drawable/white_down_arrow" />
 
             </LinearLayout>
 
 
             <ImageView
-                    android:id="@+id/btn_swap"
-                    android:layout_width="16dp"
-                    android:layout_height="16dp"
-                    android:background="@color/app_less_blue"
-                    android:src="@drawable/white_swap_button"
-                    app:layout_constraintBottom_toTopOf="@+id/center_vertical_guideline"
-                    app:layout_constraintLeft_toLeftOf="parent"
-                    app:layout_constraintRight_toRightOf="parent"
-                    app:layout_constraintTop_toTopOf="@+id/center_vertical_guideline" />
+                android:id="@+id/btn_swap_language"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:background="@color/app_less_blue"
+                android:src="@drawable/white_swap_button"
+                app:layout_constraintBottom_toTopOf="@+id/center_vertical_guideline"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/center_vertical_guideline" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <EditText
-                android:id="@+id/edt_text"
-                android:layout_width="0dp"
-                android:layout_height="150dp"
-                android:background="#ffffff"
-                android:elevation="5dp"
-                android:fontFamily="@font/segoeui"
-                android:gravity="top|left"
-                android:hint="Tap here to enter text"
-                android:maxLines="1"
-                android:overScrollMode="always"
-                android:paddingLeft="20dp"
-                android:paddingTop="16dp"
-                android:textColor="@color/quite_black_text"
-                android:textColorHint="@color/more_hard_hint_color"
-                android:textSize="19sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/viewgroup_language_option" />
+            android:id="@+id/edt_text"
+            android:layout_width="0dp"
+            android:layout_height="175dp"
+            android:background="#ffffff"
+            android:elevation="5dp"
+            android:fontFamily="@font/segoeui"
+            android:gravity="top|left"
+            android:hint="Tap here to enter text"
+            android:inputType="text"
+            android:overScrollMode="always"
+            android:paddingLeft="20dp"
+            android:paddingTop="15dp"
+            android:textColor="@color/quite_black_text"
+            android:textColorHint="@color/more_hard_hint_color"
+            android:textSize="19sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/viewgroup_language_option" />
 
         <TextView
-                android:id="@+id/txt_translation"
-                android:layout_width="0dp"
-                android:layout_height="0.1dp"
-                android:layout_marginTop="0.5dp"
-                android:background="#ffffff"
-                android:elevation="5dp"
-                android:fontFamily="@font/segoeui"
-                android:gravity="center_vertical"
-                android:hint="Your translation here"
-                android:maxLines="1"
-                android:paddingLeft="20dp"
-                android:textColor="@color/quite_black_text"
-                android:textColorHint="@color/hint_color"
-                android:textSize="19sp"
-                android:visibility="gone"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/edt_text" />
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintVertical_bias="0.5"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"/>
 
-        <ImageView
+        <TextView
+            android:id="@+id/txt_translation"
+            android:layout_width="0dp"
+            android:layout_height="0.1dp"
+            android:layout_marginTop="0.5dp"
+            android:background="#ffffff"
+            android:elevation="5dp"
+            android:fontFamily="@font/segoeui"
+            android:gravity="center_vertical"
+            android:hint="Your translation here"
+            android:maxLines="1"
+            android:paddingLeft="20dp"
+            android:paddingRight="5dp"
+            android:text="@{viewModelS.translation}"
+            android:textColor="@color/quite_black_text"
+            android:textColorHint="@color/hint_color"
+            android:textDirection="anyRtl"
+            android:textSize="19sp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edt_text" />
+
+        <TextView
+            android:id="@+id/txt_translating_text_animator"
+            android:layout_width="0dp"
+            android:layout_height="0.1dp"
+            android:layout_marginTop="0.5dp"
+            android:background="#ffffff"
+            android:elevation="5dp"
+            android:fontFamily="@font/segoeui"
+            android:gravity="center_vertical"
+            android:hint="Your translation here"
+            android:maxLines="1"
+            android:paddingLeft="20dp"
+            android:paddingRight="5dp"
+            android:text="@{viewModelS.translation}"
+            android:textColor="@color/quite_black_text"
+            android:textColorHint="@color/hint_color"
+            android:textDirection="anyRtl"
+            android:textSize="19sp"
+            android:visibility="gone"
+            bind:layout_constraintEnd_toEndOf="parent"
+            bind:layout_constraintStart_toStartOf="parent"
+            bind:layout_constraintTop_toBottomOf="@+id/edt_text" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/viewgroup_button_add_and_progress_bar"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/round_3dp_blue_background"
+            android:elevation="2dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@id/btn_tap_to_search"
+            app:layout_constraintRight_toRightOf="parent">
+
+            <ImageView
                 android:id="@+id/btn_add"
-                android:layout_width="45dp"
-                android:layout_height="51dp"
-                android:layout_marginEnd="6dp"
-                android:alpha="1"
-                android:elevation="5.5dp"
-                android:paddingTop="6dp"
-                android:src="@drawable/button_blue_add_new_flashcard"
-                android:visibility="gone"
-                app:layout_constraintBottom_toTopOf="@+id/rcv_recent_search_flashcards"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/rcv_recent_search_flashcards"
-                app:layout_constraintVertical_bias="1.0" />
-
-        <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/rcv_recent_search_flashcards"
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:layout_marginTop="5dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/txt_translation"></androidx.recyclerview.widget.RecyclerView>
-
-        <ImageView
-                android:id="@+id/img_black_background_choose_language"
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:alpha="0"
-                android:background="#000000"
-                android:elevation="6dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/round_3dp_blue_background"
+                android:padding="8dp"
+                android:src="@drawable/image_add"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
-        <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/rcv_choose_source_language"
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:layout_marginLeft="42dp"
-                android:layout_marginTop="84dp"
-                android:layout_marginRight="42dp"
-                android:layout_marginBottom="84dp"
-                android:background="@drawable/round_white_background"
-                android:elevation="6dp"
-                android:minWidth="100dp"
-                android:minHeight="300dp"
-                android:scaleX="0"
-                android:scaleY="0"
+            <ImageView
+                android:id="@+id/img_background_progress"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/round_3dp_blue_background"
+                android:visibility="gone"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.3" />
+                app:layout_constraintTop_toTopOf="parent" />
 
-        <androidx.constraintlayout.widget.Group
-                android:id="@+id/group_choose_language"
-                android:layout_width="wrap_content"
+            <ImageView
+                android:id="@+id/img_translating_circle_progress_bar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="8dp"
+                android:src="@drawable/image_loading"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcv_recent_search_flashcards"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_translation"
+            app:layout_constraintVertical_bias="1.0"></androidx.recyclerview.widget.RecyclerView>
+
+        <TextView
+            android:id="@+id/btn_tap_to_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="10dp"
+            android:alpha="0.75"
+            android:background="@drawable/round_5dp_less_blue_background"
+            android:elevation="2dp"
+            android:fontFamily="@font/seguisb"
+            android:paddingLeft="25dp"
+            android:paddingTop="5dp"
+            android:paddingRight="25dp"
+            android:paddingBottom="6dp"
+            android:text="Tap here to search"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+        <include
+            android:id="@+id/layout_choose_lang"
+            layout="@layout/support_choose_language"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:id="@+id/viewgroup_flashcard_added_notification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@color/app_less_blue"
+            android:elevation="5dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingStart="15dp"
+            android:paddingTop="8dp"
+            android:paddingEnd="15dp"
+            android:paddingBottom="7dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rcv_recent_search_flashcards"
+            app:layout_constraintVertical_bias="1.0">
+
+            <TextView
+                android:id="@+id/txt_added"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:visibility="gone"
-                app:constraint_referenced_ids="img_black_background_choose_language,rcv_choose_source_language" />
+                android:layout_weight="1"
+                android:fontFamily="@font/segoeui"
+                android:text="A flashcard is added"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/btn_edit"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/segoeuib"
+                android:gravity="right"
+                android:maxLines="1"
+                android:text="Edit"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/viewgroup_error_happened"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:alpha="0.0"
+            android:background="@color/app_less_blue"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingStart="15dp"
+            android:paddingTop="8dp"
+            android:paddingEnd="15dp"
+            android:paddingBottom="7dp"
+            android:visibility="gone"
+            android:elevation="3dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rcv_recent_search_flashcards"
+            app:layout_constraintVertical_bias="1.0">
+
+            <TextView
+                android:id="@+id/txt_trans_error_happened"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/segoeui"
+                android:text="Error happened while translating. Please retry !"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/btn_retry"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/segoeuib"
+                android:gravity="right"
+                android:maxLines="1"
+                android:text="Retry"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txt_lang_selection_errors"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:alpha="0.0"
+            android:background="@color/app_less_blue"
+            android:clickable="false"
+            android:fontFamily="@font/segoeui"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingStart="15dp"
+            android:paddingTop="8dp"
+            android:paddingEnd="15dp"
+            android:paddingBottom="7dp"
+            android:text="Your two languages are similar. Please check again"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rcv_recent_search_flashcards"
+            app:layout_constraintVertical_bias="1.0" />
+
+
+
+        <ImageView
+            android:id="@+id/btn_delete_all_text"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:elevation="5.5dp"
+            android:src="@drawable/image_btn_clear"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/viewgroup_language_option" />
+
+        <include
+            android:id="@+id/layout_card_info"
+            layout="@layout/support_see_card_info"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            bind:beingViewedCard="@{beingViewedFlashcard}" />
+
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
 </layout>

@@ -2,14 +2,13 @@ package com.teamttdvlp.memolang.di.module
 
 import androidx.room.Room
 import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.firestore.FirebaseFirestore
+//import com.google.firebase.firestore.FirebaseFirestore
 import com.teamttdvlp.memolang.di.MemoLang
-import com.teamttdvlp.memolang.model.sqlite.MemoLangSqliteDataBase
-import com.teamttdvlp.memolang.model.sqlite.MemoLangSqliteDataBase.Companion.DB_NAME
-import com.teamttdvlp.memolang.model.sqlite.MemoLangSqliteDataBase.Companion.MIGRATION_2_3
-import com.teamttdvlp.memolang.model.sqlite.repository.FlashcardRepository
-import com.teamttdvlp.memolang.model.sqlite.repository.UserRepository
-import com.teamttdvlp.memolang.model.sqlite.repository.UserSearchHistoryRepository
+import com.teamttdvlp.memolang.database.MemoLangSqliteDataBase
+import com.teamttdvlp.memolang.database.MemoLangSqliteDataBase.Companion.DB_NAME
+import com.teamttdvlp.memolang.database.sql.repository.FlashcardRepository
+import com.teamttdvlp.memolang.database.sql.repository.UserRepository
+import com.teamttdvlp.memolang.database.sql.repository.UserSearchHistoryRepository
 import com.teamttdvlp.memolang.viewmodel.auth.AuthManager
 import dagger.Module
 import dagger.Provides
@@ -44,11 +43,11 @@ class AppModule {
             .build()
     }
 
-    @Provides
-    @Singleton
-    fun provideFirestoreReference () : FirebaseFirestore {
-        return FirebaseFirestore.getInstance()
-    }
+//    @Provides
+//    @Singleton
+//    fun provideFirestoreReference () : FirebaseFirestore {
+//        return FirebaseFirestore.getInstance()
+//    }
 
 
     @Provides

@@ -3,6 +3,7 @@ package com.teamttdvlp.memolang.di.component
 import android.app.Application
 import com.teamttdvlp.memolang.di.MemoLang
 import com.teamttdvlp.memolang.di.builder.ActivityBuilder
+import com.teamttdvlp.memolang.di.module.AnimationModule
 import com.teamttdvlp.memolang.di.module.AppModule
 import dagger.BindsInstance
 import dagger.Component
@@ -11,7 +12,7 @@ import javax.inject.Singleton
 
 
 @Singleton
-@Component(modules = [AndroidInjectionModule::class, ActivityBuilder::class, AppModule::class])
+@Component(modules = [AndroidInjectionModule::class, ActivityBuilder::class, AppModule::class, AnimationModule::class])
 interface AppComponent {
 
     fun inject (app : MemoLang)

@@ -1,10 +1,13 @@
 package com.teamttdvlp.memolang.view.activity.iview
 
-interface EditFlashcardView : View{
+import com.teamttdvlp.memolang.model.entity.flashcard.Flashcard
 
-    fun onNoCardsLeft ()
+interface EditFlashcardView : View {
 
-    fun showPreviousCardButton ()
+    fun showTextInputError ()
 
-    fun hidePreviousCardButton ()
+    fun showTranslationInputError ()
+
+    fun onUpdateFlashcardSuccess (newFlashcard : Flashcard)
+
 }

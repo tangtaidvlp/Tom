@@ -39,7 +39,7 @@
                 android:text="Language"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/txt_language"
+                android:id="@+id/txt_flashcard_count"
                 android:layout_marginTop="10dp"
                 app:layout_constraintTop_toTopOf="parent"
                 android:textSize="16sp" android:textColor="#ffffff"

@@ -15,14 +15,13 @@ import com.teamttdvlp.memolang.R
 
 abstract class BaseActivity <T : ViewDataBinding, V : ViewModel> : FragmentActivity() {
 
-    lateinit var dataBinding : T
+    lateinit var dB : T
         private set
 
     lateinit var viewModel : V
         private set
 
     private lateinit var imm : InputMethodManager
-
 
     abstract fun getLayoutId () : Int
 
@@ -57,7 +56,7 @@ abstract class BaseActivity <T : ViewDataBinding, V : ViewModel> : FragmentActiv
     }
 
     private fun performDataBinding () {
-        dataBinding = DataBindingUtil.setContentView(this, getLayoutId())
+        dB = DataBindingUtil.setContentView(this, getLayoutId())
     }
 
     private fun performDependenciesInjection () {
@@ -95,3 +94,4 @@ abstract class BaseActivity <T : ViewDataBinding, V : ViewModel> : FragmentActiv
     }
 
 }
+

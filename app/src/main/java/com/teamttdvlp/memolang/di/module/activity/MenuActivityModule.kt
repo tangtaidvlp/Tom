@@ -15,15 +15,6 @@ import javax.inject.Named
 class MenuActivityModule {
 
     @Provides
-    @Named("AppearThenDisappearAnimation")
-    fun provideAppearAnim (activity: MenuActivity) : Animation {
-        return AnimationUtils.loadAnimation(activity, R.anim.appear_then_disappear).apply {
-            duration = 200
-            interpolator = FastOutLinearInInterpolator()
-        }
-    }
-
-    @Provides
     @Named("Menu_FromNormalSizeToNothing")
     fun provideFromNormalSizeToNothing_Animator(activity: MenuActivity): Animator {
         return AnimatorInflaterCompat.loadAnimator(

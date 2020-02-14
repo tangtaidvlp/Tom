@@ -1,434 +1,439 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+</androidx.constraintlayout.widget.ConstraintLayout>
+<!--<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:context="http://schemas.android.com/apk/res-auto"-->
+<!--        xmlns:tools="http://schemas.android.com/tools">-->
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@color/white"
-            tools:context=".view.activity.AuthActivity">
+<!--    <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:background="@color/white"-->
+<!--            tools:context=".view.activity.AuthActivity">-->
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/viewgroup_img_sign_in_progress_bar"
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:alpha="1.0"
-                android:background="@drawable/round_white_background"
-                android:scaleX="0.0"
-                android:scaleY="0.0"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.4">
+<!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--                android:id="@+id/viewgroup_img_sign_in_progress_bar"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="0dp"-->
+<!--                android:alpha="1.0"-->
+<!--                android:background="@drawable/round_10dp_white_background"-->
+<!--                android:scaleX="0.0"-->
+<!--                android:scaleY="0.0"-->
+<!--                context:layout_constraintBottom_toBottomOf="parent"-->
+<!--                context:layout_constraintLeft_toLeftOf="parent"-->
+<!--                context:layout_constraintRight_toRightOf="parent"-->
+<!--                context:layout_constraintTop_toTopOf="parent"-->
+<!--                context:layout_constraintVertical_bias="0.4">-->
 
-            <FrameLayout
-                    android:id="@+id/viewgroup_status"
-                    android:layout_width="160dp"
-                    android:layout_height="160dp"
-                    android:layout_marginTop="30dp"
-                    android:background="@drawable/round_white_background"
-                    android:elevation="6dp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintLeft_toLeftOf="parent"
-                    app:layout_constraintRight_toRightOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.35000002">
+<!--            <FrameLayout-->
+<!--                    android:id="@+id/viewgroup_status"-->
+<!--                    android:layout_width="160dp"-->
+<!--                    android:layout_height="160dp"-->
+<!--                    android:layout_marginTop="30dp"-->
+<!--                    android:background="@drawable/round_10dp_white_background"-->
+<!--                    android:elevation="6dp"-->
+<!--                    context:layout_constraintBottom_toBottomOf="parent"-->
+<!--                    context:layout_constraintLeft_toLeftOf="parent"-->
+<!--                    context:layout_constraintRight_toRightOf="parent"-->
+<!--                    context:layout_constraintTop_toTopOf="parent"-->
+<!--                    context:layout_constraintVertical_bias="0.35000002">-->
 
-                <com.teamttdvlp.memolang.view.customview.ColorfulProgressBar
-                        android:id="@+id/clf_progressbar"
-                        android:layout_width="160dp"
-                        android:layout_height="160dp"
-                        android:layout_marginRight="50dp"
-                        android:background="@drawable/round_white_background"
-                        app:radius="120dp" />
+<!--                <com.teamttdvlp.memolang.view.customview.ColorfulProgressBar-->
+<!--                        android:id="@+id/clf_progressbar"-->
+<!--                        android:layout_width="160dp"-->
+<!--                        android:layout_height="160dp"-->
+<!--                        android:layout_marginRight="50dp"-->
+<!--                        android:background="@drawable/round_10dp_white_background"-->
+<!--                        context:radius="120dp" />-->
 
-                <androidx.appcompat.widget.LinearLayoutCompat
-                        android:id="@+id/viewgroup_login_failed"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:alpha="0.0"
-                        android:background="@drawable/round_failed_login_background"
-                        android:gravity="center">
+<!--                <androidx.appcompat.widget.LinearLayoutCompat-->
+<!--                        android:id="@+id/viewgroup_login_failed"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:alpha="0.0"-->
+<!--                        android:background="@drawable/round_failed_login_background"-->
+<!--                        android:gravity="center">-->
 
-                    <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:src="@drawable/image_failed" />
+<!--                    <ImageView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:src="@drawable/image_failed" />-->
 
-                </androidx.appcompat.widget.LinearLayoutCompat>
+<!--                </androidx.appcompat.widget.LinearLayoutCompat>-->
 
-                <androidx.appcompat.widget.LinearLayoutCompat
-                        android:id="@+id/viewgroup_login_success"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:alpha="0.0"
-                        android:background="@drawable/round_success_login_background"
-                        android:gravity="center">
+<!--                <androidx.appcompat.widget.LinearLayoutCompat-->
+<!--                        android:id="@+id/viewgroup_login_success"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:alpha="0.0"-->
+<!--                        android:background="@drawable/round_success_login_background"-->
+<!--                        android:gravity="center">-->
 
-                    <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:src="@drawable/image_successful" />
+<!--                    <ImageView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:src="@drawable/image_successful" />-->
 
-                </androidx.appcompat.widget.LinearLayoutCompat>
+<!--                </androidx.appcompat.widget.LinearLayoutCompat>-->
 
-            </FrameLayout>
+<!--            </FrameLayout>-->
 
-            <TextView
-                    android:id="@+id/txt_processing"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="35dp"
-                    android:fontFamily="@font/segoeuisl"
-                    android:text="Processing"
-                    android:textColor="#9B9B9B"
-                    android:textSize="18sp"
-                    app:flow_horizontalBias="0.5"
-                    app:layout_constraintLeft_toLeftOf="parent"
-                    app:layout_constraintRight_toRightOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/viewgroup_status" />
+<!--            <TextView-->
+<!--                    android:id="@+id/txt_processing"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="35dp"-->
+<!--                    android:fontFamily="@font/segoeuisl"-->
+<!--                    android:text="Processing"-->
+<!--                    android:textColor="#9B9B9B"-->
+<!--                    android:textSize="18sp"-->
+<!--                    context:flow_horizontalBias="0.5"-->
+<!--                    context:layout_constraintLeft_toLeftOf="parent"-->
+<!--                    context:layout_constraintRight_toRightOf="parent"-->
+<!--                    context:layout_constraintTop_toBottomOf="@id/viewgroup_status" />-->
 
-            <TextView
-                    android:id="@+id/txt_failed"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="35dp"
-                    android:alpha="0.0"
-                    android:fontFamily="@font/segoeuisl"
-                    android:text="Your id or password is not correct"
-                    android:textColor="@color/text_error_color"
-                    android:textSize="18sp"
-                    app:flow_horizontalBias="0.5"
-                    app:layout_constraintLeft_toLeftOf="parent"
-                    app:layout_constraintRight_toRightOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/viewgroup_status" />
+<!--            <TextView-->
+<!--                    android:id="@+id/txt_failed"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="35dp"-->
+<!--                    android:alpha="0.0"-->
+<!--                    android:fontFamily="@font/segoeuisl"-->
+<!--                    android:text="Your id or password is not correct"-->
+<!--                    android:textColor="@color/text_error_color"-->
+<!--                    android:textSize="18sp"-->
+<!--                    context:flow_horizontalBias="0.5"-->
+<!--                    context:layout_constraintLeft_toLeftOf="parent"-->
+<!--                    context:layout_constraintRight_toRightOf="parent"-->
+<!--                    context:layout_constraintTop_toBottomOf="@id/viewgroup_status" />-->
 
-            <TextView
-                    android:id="@+id/txt_successful"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="35dp"
-                    android:alpha="0.0"
-                    android:fontFamily="@font/segoeuisl"
-                    android:text="Login successfully"
-                    android:textColor="@color/text_success_color"
-                    android:textSize="18sp"
-                    app:flow_horizontalBias="0.5"
-                    app:layout_constraintLeft_toLeftOf="parent"
-                    app:layout_constraintRight_toRightOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/viewgroup_status" />
+<!--            <TextView-->
+<!--                    android:id="@+id/txt_successful"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="35dp"-->
+<!--                    android:alpha="0.0"-->
+<!--                    android:fontFamily="@font/segoeuisl"-->
+<!--                    android:text="Login successfully"-->
+<!--                    android:textColor="@color/text_success_color"-->
+<!--                    android:textSize="18sp"-->
+<!--                    context:flow_horizontalBias="0.5"-->
+<!--                    context:layout_constraintLeft_toLeftOf="parent"-->
+<!--                    context:layout_constraintRight_toRightOf="parent"-->
+<!--                    context:layout_constraintTop_toBottomOf="@id/viewgroup_status" />-->
 
-        </androidx.constraintlayout.widget.ConstraintLayout>
+<!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/viewgroup_sign_in_widgets"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:alpha="1.0"
-                android:background="@android:color/white"
-                android:visibility="visible"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="1.0"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.0">
+<!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--                android:id="@+id/viewgroup_sign_in_widgets"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:alpha="1.0"-->
+<!--                android:background="@android:color/white"-->
+<!--                android:visibility="visible"-->
+<!--                context:layout_constraintBottom_toBottomOf="parent"-->
+<!--                context:layout_constraintEnd_toEndOf="parent"-->
+<!--                context:layout_constraintHorizontal_bias="1.0"-->
+<!--                context:layout_constraintStart_toStartOf="parent"-->
+<!--                context:layout_constraintTop_toTopOf="parent"-->
+<!--                context:layout_constraintVertical_bias="0.0">-->
 
-            <androidx.constraintlayout.widget.ConstraintLayout
-                    android:id="@+id/container_sign_in_successfullys"
-                    android:layout_width="match_parent"
-                    android:layout_height="290dp"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginTop="16dp"
-                    android:layout_marginEnd="20dp"
-                    android:alpha="1"
-                    android:orientation="vertical"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/txt_title">
+<!--            <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--                    android:id="@+id/container_sign_in_successfullys"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="290dp"-->
+<!--                    android:layout_marginStart="20dp"-->
+<!--                    android:layout_marginTop="16dp"-->
+<!--                    android:layout_marginEnd="20dp"-->
+<!--                    android:alpha="1"-->
+<!--                    android:orientation="vertical"-->
+<!--                    context:layout_constraintEnd_toEndOf="parent"-->
+<!--                    context:layout_constraintStart_toStartOf="parent"-->
+<!--                    context:layout_constraintTop_toBottomOf="@id/txt_title">-->
 
-                <ImageView
-                        android:id="@+id/background_sign_in_widgets"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_margin="0dp"
-                        android:alpha="0.8"
-                        android:background="@drawable/round_white_background"
-                        android:maxWidth="600dp"
-                        android:minWidth="600dp"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintVertical_bias="0.0"
-                        app:layout_constraintWidth_max="600dp"
-                        android:src="@drawable/round_white_background" />
+<!--                <ImageView-->
+<!--                        android:id="@+id/background_sign_in_widgets"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:layout_margin="0dp"-->
+<!--                        android:alpha="0.8"-->
+<!--                        android:background="@drawable/round_10dp_white_background"-->
+<!--                        android:maxWidth="600dp"-->
+<!--                        android:minWidth="600dp"-->
+<!--                        context:layout_constraintBottom_toBottomOf="parent"-->
+<!--                        context:layout_constraintEnd_toEndOf="parent"-->
+<!--                        context:layout_constraintStart_toStartOf="parent"-->
+<!--                        context:layout_constraintTop_toTopOf="parent"-->
+<!--                        context:layout_constraintVertical_bias="0.0"-->
+<!--                        context:layout_constraintWidth_max="600dp"-->
+<!--                        android:src="@drawable/round_10dp_white_background" />-->
 
-                <androidx.constraintlayout.widget.ConstraintLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="0dp"
-                        android:layout_marginBottom="8dp"
-                        android:alpha="1"
-                        android:maxWidth="600dp"
-                        android:orientation="vertical"
-                        app:layout_constraintBottom_toBottomOf="@+id/container_sign_in_successfullys"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.0"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintVertical_bias="0.0"
-                        app:layout_constraintWidth_max="600dp">
+<!--                <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_margin="0dp"-->
+<!--                        android:layout_marginBottom="8dp"-->
+<!--                        android:alpha="1"-->
+<!--                        android:maxWidth="600dp"-->
+<!--                        android:orientation="vertical"-->
+<!--                        context:layout_constraintBottom_toBottomOf="@+id/container_sign_in_successfullys"-->
+<!--                        context:layout_constraintEnd_toEndOf="parent"-->
+<!--                        context:layout_constraintHorizontal_bias="0.0"-->
+<!--                        context:layout_constraintStart_toStartOf="parent"-->
+<!--                        context:layout_constraintTop_toTopOf="parent"-->
+<!--                        context:layout_constraintVertical_bias="0.0"-->
+<!--                        context:layout_constraintWidth_max="600dp">-->
 
-                    <TextView
-                            android:id="@+id/txt_id"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="31dp"
-                            android:layout_marginTop="20dp"
-                            android:fontFamily="@font/segoeui"
-                            android:text="Id"
-                            android:textColor="#5F5F70"
-                            android:textSize="16sp"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent" />
+<!--                    <TextView-->
+<!--                            android:id="@+id/txt_id"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_marginStart="31dp"-->
+<!--                            android:layout_marginTop="20dp"-->
+<!--                            android:fontFamily="@font/segoeui"-->
+<!--                            android:text="Id"-->
+<!--                            android:textColor="#5F5F70"-->
+<!--                            android:textSize="16sp"-->
+<!--                            context:layout_constraintEnd_toEndOf="parent"-->
+<!--                            context:layout_constraintStart_toStartOf="parent"-->
+<!--                            context:layout_constraintTop_toTopOf="parent" />-->
 
-                    <EditText
-                            android:id="@+id/edt_id"
-                            android:layout_width="match_parent"
-                            android:layout_height="40dp"
-                            android:layout_marginStart="24dp"
-                            android:layout_marginTop="6dp"
-                            android:layout_marginEnd="24dp"
-                            android:background="@drawable/round_white_background_with_border"
-                            android:elevation="4dp"
-                            android:ems="10"
-                            android:fontFamily="@font/segoeui"
-                            android:inputType="textPersonName"
-                            android:paddingStart="14dp"
-                            android:paddingBottom="1dp"
-                            android:text="tangtaived@gmail.comsss"
-                            android:textSize="14sp"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toBottomOf="@id/txt_id" />
+<!--                    <EditText-->
+<!--                            android:id="@+id/edt_id"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="40dp"-->
+<!--                            android:layout_marginStart="24dp"-->
+<!--                            android:layout_marginTop="6dp"-->
+<!--                            android:layout_marginEnd="24dp"-->
+<!--                            android:background="@drawable/round_white_background_with_border"-->
+<!--                            android:elevation="4dp"-->
+<!--                            android:ems="10"-->
+<!--                            android:fontFamily="@font/segoeui"-->
+<!--                            android:inputType="textPersonName"-->
+<!--                            android:paddingStart="14dp"-->
+<!--                            android:paddingBottom="1dp"-->
+<!--                            android:text="tangtaived@gmail.comsss"-->
+<!--                            android:textSize="14sp"-->
+<!--                            context:layout_constraintEnd_toEndOf="parent"-->
+<!--                            context:layout_constraintStart_toStartOf="parent"-->
+<!--                            context:layout_constraintTop_toBottomOf="@id/txt_id" />-->
 
-                    <TextView
-                            android:id="@+id/txt_error_id"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="45dp"
-                            android:layout_marginTop="2dp"
-                            android:text="Please enter your id"
-                            android:textColor="@color/input_alert_color"
-                            android:visibility="invisible"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintStart_toEndOf="@+id/edt_id"
-                            app:layout_constraintTop_toBottomOf="@id/edt_id" />
+<!--                    <TextView-->
+<!--                            android:id="@+id/txt_error_id"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_marginStart="45dp"-->
+<!--                            android:layout_marginTop="2dp"-->
+<!--                            android:text="Please enter your id"-->
+<!--                            android:textColor="@color/input_alert_color"-->
+<!--                            android:visibility="invisible"-->
+<!--                            context:layout_constraintEnd_toEndOf="parent"-->
+<!--                            context:layout_constraintStart_toEndOf="@+id/edt_id"-->
+<!--                            context:layout_constraintTop_toBottomOf="@id/edt_id" />-->
 
-                    <TextView
-                            android:id="@+id/txt_password"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="31dp"
-                            android:layout_marginTop="26dp"
-                            android:fontFamily="@font/segoeui"
-                            android:text="Password"
-                            android:textColor="#5F5F70"
-                            android:textSize="16sp"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toBottomOf="@id/edt_id" />
+<!--                    <TextView-->
+<!--                            android:id="@+id/txt_password"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_marginStart="31dp"-->
+<!--                            android:layout_marginTop="26dp"-->
+<!--                            android:fontFamily="@font/segoeui"-->
+<!--                            android:text="Password"-->
+<!--                            android:textColor="#5F5F70"-->
+<!--                            android:textSize="16sp"-->
+<!--                            context:layout_constraintEnd_toEndOf="parent"-->
+<!--                            context:layout_constraintStart_toStartOf="parent"-->
+<!--                            context:layout_constraintTop_toBottomOf="@id/edt_id" />-->
 
-                    <EditText
-                            android:id="@+id/edt_password"
-                            android:layout_width="match_parent"
-                            android:layout_height="40dp"
-                            android:layout_marginStart="24dp"
-                            android:layout_marginTop="6dp"
-                            android:layout_marginEnd="24dp"
-                            android:background="@drawable/round_white_background_with_border"
-                            android:elevation="4dp"
-                            android:ems="10"
-                            android:fontFamily="@font/segoeui"
-                            android:inputType="textPassword"
-                            android:paddingStart="14dp"
-                            android:paddingBottom="1dp"
-                            android:text="123456"
-                            android:textSize="14sp"
-                            app:layout_constraintEnd_toStartOf="@+id/edt_id"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toBottomOf="@id/txt_password" />
+<!--                    <EditText-->
+<!--                            android:id="@+id/edt_password"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="40dp"-->
+<!--                            android:layout_marginStart="24dp"-->
+<!--                            android:layout_marginTop="6dp"-->
+<!--                            android:layout_marginEnd="24dp"-->
+<!--                            android:background="@drawable/round_white_background_with_border"-->
+<!--                            android:elevation="4dp"-->
+<!--                            android:ems="10"-->
+<!--                            android:fontFamily="@font/segoeui"-->
+<!--                            android:inputType="textPassword"-->
+<!--                            android:paddingStart="14dp"-->
+<!--                            android:paddingBottom="1dp"-->
+<!--                            android:text="123456"-->
+<!--                            android:textSize="14sp"-->
+<!--                            context:layout_constraintEnd_toStartOf="@+id/edt_id"-->
+<!--                            context:layout_constraintStart_toStartOf="parent"-->
+<!--                            context:layout_constraintTop_toBottomOf="@id/txt_password" />-->
 
-                    <TextView
-                            android:id="@+id/txt_error_password"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="45dp"
-                            android:layout_marginTop="2dp"
-                            android:text="Please enter your password"
-                            android:textColor="@color/input_alert_color"
-                            android:visibility="invisible"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toBottomOf="@id/edt_password" />
+<!--                    <TextView-->
+<!--                            android:id="@+id/txt_error_password"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_marginStart="45dp"-->
+<!--                            android:layout_marginTop="2dp"-->
+<!--                            android:text="Please enter your password"-->
+<!--                            android:textColor="@color/input_alert_color"-->
+<!--                            android:visibility="invisible"-->
+<!--                            context:layout_constraintEnd_toEndOf="parent"-->
+<!--                            context:layout_constraintStart_toStartOf="parent"-->
+<!--                            context:layout_constraintTop_toBottomOf="@id/edt_password" />-->
 
-                    <Button
-                            android:id="@+id/btn_sign_in"
-                            android:layout_width="0dp"
-                            android:layout_height="40dp"
-                            android:layout_marginStart="24dp"
-                            android:layout_marginTop="15dp"
-                            android:layout_marginEnd="24dp"
-                            android:layout_marginBottom="28dp"
-                            android:background="@drawable/round_yellow_background"
-                            android:elevation="3dp"
-                            android:fontFamily="@font/seguisb"
-                            android:gravity="center"
-                            android:maxWidth="10dp"
-                            android:text="Sign in"
-                            android:textAllCaps="false"
-                            android:textColor="#ffffff"
-                            android:textSize="16sp"
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toBottomOf="@id/txt_error_password"
-                            app:layout_constraintVertical_bias="0.0" />
-                </androidx.constraintlayout.widget.ConstraintLayout>
-            </androidx.constraintlayout.widget.ConstraintLayout>
+<!--                    <Button-->
+<!--                            android:id="@+id/btn_sign_in"-->
+<!--                            android:layout_width="0dp"-->
+<!--                            android:layout_height="40dp"-->
+<!--                            android:layout_marginStart="24dp"-->
+<!--                            android:layout_marginTop="15dp"-->
+<!--                            android:layout_marginEnd="24dp"-->
+<!--                            android:layout_marginBottom="28dp"-->
+<!--                            android:background="@drawable/round_yellow_background"-->
+<!--                            android:elevation="3dp"-->
+<!--                            android:fontFamily="@font/seguisb"-->
+<!--                            android:gravity="center"-->
+<!--                            android:maxWidth="10dp"-->
+<!--                            android:text="Sign in"-->
+<!--                            android:textAllCaps="false"-->
+<!--                            android:textColor="#ffffff"-->
+<!--                            android:textSize="16sp"-->
+<!--                            context:layout_constraintBottom_toBottomOf="parent"-->
+<!--                            context:layout_constraintEnd_toEndOf="parent"-->
+<!--                            context:layout_constraintStart_toStartOf="parent"-->
+<!--                            context:layout_constraintTop_toBottomOf="@id/txt_error_password"-->
+<!--                            context:layout_constraintVertical_bias="0.0" />-->
+<!--                </androidx.constraintlayout.widget.ConstraintLayout>-->
+<!--            </androidx.constraintlayout.widget.ConstraintLayout>-->
 
-            <LinearLayout
-                    android:id="@+id/linearLayout2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginStart="98dp"
-                    android:layout_marginTop="28dp"
-                    android:layout_marginEnd="97dp"
-                    android:orientation="horizontal"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/btn_facebook_sign_in">
+<!--            <LinearLayout-->
+<!--                    android:id="@+id/linearLayout2"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="center_horizontal"-->
+<!--                    android:layout_marginStart="98dp"-->
+<!--                    android:layout_marginTop="28dp"-->
+<!--                    android:layout_marginEnd="97dp"-->
+<!--                    android:orientation="horizontal"-->
+<!--                    context:layout_constraintEnd_toEndOf="parent"-->
+<!--                    context:layout_constraintStart_toStartOf="parent"-->
+<!--                    context:layout_constraintTop_toBottomOf="@+id/btn_facebook_sign_in">-->
 
-                <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:elegantTextHeight="false"
-                        android:fontFamily="@font/segoeuisl"
-                        android:freezesText="false"
-                        android:text="You don't have account ?"
-                        android:textAllCaps="false"
-                        android:textColor="#010423"
-                        android:textSize="14sp" />
+<!--                <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:elegantTextHeight="false"-->
+<!--                        android:fontFamily="@font/segoeuisl"-->
+<!--                        android:freezesText="false"-->
+<!--                        android:text="You don't have account ?"-->
+<!--                        android:textAllCaps="false"-->
+<!--                        android:textColor="#010423"-->
+<!--                        android:textSize="14sp" />-->
 
-                <TextView
-                        android:id="@+id/btn_sign_up"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="6dp"
-                        android:elegantTextHeight="false"
-                        android:fontFamily="@font/seguisb"
-                        android:freezesText="false"
-                        android:text="Sign up"
-                        android:textAllCaps="false"
-                        android:textColor="#010423"
-                        android:textSize="16sp" />
+<!--                <TextView-->
+<!--                        android:id="@+id/btn_sign_up"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginStart="6dp"-->
+<!--                        android:elegantTextHeight="false"-->
+<!--                        android:fontFamily="@font/seguisb"-->
+<!--                        android:freezesText="false"-->
+<!--                        android:text="Sign up"-->
+<!--                        android:textAllCaps="false"-->
+<!--                        android:textColor="#010423"-->
+<!--                        android:textSize="16sp" />-->
 
-            </LinearLayout>
+<!--            </LinearLayout>-->
 
-            <Button
-                    android:id="@+id/btn_google_sign_in"
-                    android:layout_width="0dp"
-                    android:layout_height="40dp"
-                    android:layout_marginStart="44dp"
-                    android:layout_marginTop="28dp"
-                    android:layout_marginEnd="44dp"
-                    android:background="@drawable/round_light_red_background"
-                    android:elevation="3dp"
-                    android:fontFamily="@font/seguisb"
-                    android:text="Google"
-                    android:textAllCaps="false"
-                    android:textColor="#ffffff"
-                    android:textSize="16sp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/textView2" />
+<!--            <Button-->
+<!--                    android:id="@+id/btn_google_sign_in"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="40dp"-->
+<!--                    android:layout_marginStart="44dp"-->
+<!--                    android:layout_marginTop="28dp"-->
+<!--                    android:layout_marginEnd="44dp"-->
+<!--                    android:background="@drawable/round_100dp_light_red_background"-->
+<!--                    android:elevation="3dp"-->
+<!--                    android:fontFamily="@font/seguisb"-->
+<!--                    android:text="Google"-->
+<!--                    android:textAllCaps="false"-->
+<!--                    android:textColor="#ffffff"-->
+<!--                    android:textSize="16sp"-->
+<!--                    context:layout_constraintEnd_toEndOf="parent"-->
+<!--                    context:layout_constraintStart_toStartOf="parent"-->
+<!--                    context:layout_constraintTop_toBottomOf="@+id/textView2" />-->
 
-            <Button
-                    android:id="@+id/btn_facebook_sign_in"
-                    android:layout_width="0dp"
-                    android:layout_height="40dp"
-                    android:layout_marginStart="44dp"
-                    android:layout_marginTop="15dp"
-                    android:layout_marginEnd="44dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/round_blue_background"
-                    android:elegantTextHeight="false"
-                    android:elevation="3dp"
-                    android:fontFamily="@font/seguisb"
-                    android:freezesText="false"
-                    android:text="Facebook"
-                    android:textAllCaps="false"
-                    android:textColor="#ffffff"
-                    android:textSize="16sp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/btn_google_sign_in" />
+<!--            <Button-->
+<!--                    android:id="@+id/btn_facebook_sign_in"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="40dp"-->
+<!--                    android:layout_marginStart="44dp"-->
+<!--                    android:layout_marginTop="15dp"-->
+<!--                    android:layout_marginEnd="44dp"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:background="@drawable/round_100dp_blue_background"-->
+<!--                    android:elegantTextHeight="false"-->
+<!--                    android:elevation="3dp"-->
+<!--                    android:fontFamily="@font/seguisb"-->
+<!--                    android:freezesText="false"-->
+<!--                    android:text="Facebook"-->
+<!--                    android:textAllCaps="false"-->
+<!--                    android:textColor="#ffffff"-->
+<!--                    android:textSize="16sp"-->
+<!--                    context:layout_constraintEnd_toEndOf="parent"-->
+<!--                    context:layout_constraintStart_toStartOf="parent"-->
+<!--                    context:layout_constraintTop_toBottomOf="@+id/btn_google_sign_in" />-->
 
-            <ImageView
-                    android:id="@+id/txt_title"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/segoepr"
-                    android:gravity="center"
-                    android:src="@drawable/image_text_login"
-                    android:textColor="@android:color/black"
-                    android:textSize="63sp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.06" />
+<!--            <ImageView-->
+<!--                    android:id="@+id/txt_title"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:fontFamily="@font/segoepr"-->
+<!--                    android:gravity="center"-->
+<!--                    android:src="@drawable/image_text_login"-->
+<!--                    android:textColor="@android:color/black"-->
+<!--                    android:textSize="63sp"-->
+<!--                    context:layout_constraintBottom_toBottomOf="parent"-->
+<!--                    context:layout_constraintEnd_toEndOf="parent"-->
+<!--                    context:layout_constraintStart_toStartOf="parent"-->
+<!--                    context:layout_constraintTop_toTopOf="parent"-->
+<!--                    context:layout_constraintVertical_bias="0.06" />-->
 
-            <TextView
-                    android:id="@+id/textView2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/segoeuisl"
-                    android:paddingBottom="3dp"
-                    android:text="or"
-                    android:textSize="16sp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/container_sign_in_successfullys" />
+<!--            <TextView-->
+<!--                    android:id="@+id/textView2"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:fontFamily="@font/segoeuisl"-->
+<!--                    android:paddingBottom="3dp"-->
+<!--                    android:text="or"-->
+<!--                    android:textSize="16sp"-->
+<!--                    context:layout_constraintEnd_toEndOf="parent"-->
+<!--                    context:layout_constraintStart_toStartOf="parent"-->
+<!--                    context:layout_constraintTop_toBottomOf="@+id/container_sign_in_successfullys" />-->
 
-            <TextView
-                    android:id="@+id/textView3"
-                    android:layout_width="0dp"
-                    android:layout_height="0.5dp"
-                    android:layout_marginStart="44dp"
-                    android:layout_marginEnd="22dp"
-                    android:background="@color/light_grey"
-                    app:layout_constraintBottom_toBottomOf="@+id/textView2"
-                    app:layout_constraintEnd_toStartOf="@+id/textView2"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="@+id/textView2" />
+<!--            <TextView-->
+<!--                    android:id="@+id/textView3"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="0.5dp"-->
+<!--                    android:layout_marginStart="44dp"-->
+<!--                    android:layout_marginEnd="22dp"-->
+<!--                    android:background="@color/light_grey"-->
+<!--                    context:layout_constraintBottom_toBottomOf="@+id/textView2"-->
+<!--                    context:layout_constraintEnd_toStartOf="@+id/textView2"-->
+<!--                    context:layout_constraintStart_toStartOf="parent"-->
+<!--                    context:layout_constraintTop_toTopOf="@+id/textView2" />-->
 
-            <TextView
-                    android:id="@+id/textView4"
-                    android:layout_width="0dp"
-                    android:layout_height="0.5dp"
-                    android:layout_marginLeft="22dp"
-                    android:layout_marginRight="44dp"
-                    android:background="@color/light_grey"
-                    app:layout_constraintBottom_toBottomOf="@+id/textView2"
-                    app:layout_constraintLeft_toRightOf="@id/textView2"
-                    app:layout_constraintRight_toRightOf="parent"
-                    app:layout_constraintTop_toTopOf="@+id/textView2" />
-        </androidx.constraintlayout.widget.ConstraintLayout>
+<!--            <TextView-->
+<!--                    android:id="@+id/textView4"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="0.5dp"-->
+<!--                    android:layout_marginLeft="22dp"-->
+<!--                    android:layout_marginRight="44dp"-->
+<!--                    android:background="@color/light_grey"-->
+<!--                    context:layout_constraintBottom_toBottomOf="@+id/textView2"-->
+<!--                    context:layout_constraintLeft_toRightOf="@id/textView2"-->
+<!--                    context:layout_constraintRight_toRightOf="parent"-->
+<!--                    context:layout_constraintTop_toTopOf="@+id/textView2" />-->
+<!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
-</layout>
+<!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
+<!--</layout>-->

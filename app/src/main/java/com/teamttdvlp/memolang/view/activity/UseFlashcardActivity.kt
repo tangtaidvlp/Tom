@@ -4,31 +4,30 @@ import android.animation.Animator
 import android.animation.AnimatorSet
 import android.animation.ValueAnimator
 import android.content.Intent
+import android.os.Build
 import android.os.Bundle
+import android.text.method.ScrollingMovementMethod
 import android.view.animation.AnimationUtils
 import androidx.core.animation.addListener
 import com.teamttdvlp.memolang.R
 import com.teamttdvlp.memolang.databinding.ActivityUseFlashcardBinding
-import com.teamttdvlp.memolang.model.model.Flashcard
+import com.teamttdvlp.memolang.model.entity.flashcard.Flashcard
 import com.teamttdvlp.memolang.view.activity.iview.UseFlashcardView
 import com.teamttdvlp.memolang.view.base.BaseActivity
 import com.teamttdvlp.memolang.view.helper.*
 import com.teamttdvlp.memolang.view.ui.OnSwipeUpListener
-import com.teamttdvlp.memolang.viewmodel.use_flashcard_activity.UseFlashcardActivityViewModel
+import com.teamttdvlp.memolang.viewmodel.UseFlashcardViewModel
 import javax.inject.Inject
 import javax.inject.Named
 
 const val FORGOTTEN_FLASHCARDS_LIST = "fgl"
 
-class UseFlashcardActivity : BaseActivity<ActivityUseFlashcardBinding, UseFlashcardActivityViewModel>(), UseFlashcardView {
+class UseFlashcardActivity : BaseActivity<ActivityUseFlashcardBinding, UseFlashcardViewModel>()
+                            ,UseFlashcardView {
 
-    private val RED_TEXT_COLOR : Int by lazy {
-        resources.getColor(R.color.app_red)
-    }
+    private var RED_TEXT_COLOR : Int = 0
 
-    private val NORMAL_TEXT_COLOR : Int by lazy {
-        resources.getColor(R.color.use_flashcard_grey_text_color)
-    }
+    private var NORMAL_TEXT_COLOR : Int = 0
 
 
     private val on_OPEN_FrontCardAppearAnimation = AnimatorSet ()
@@ -61,7 +60,7 @@ class UseFlashcardActivity : BaseActivity<ActivityUseFlashcardBinding, UseFlashc
 
     override fun getLayoutId(): Int = R.layout.activity_use_flashcard
 
-    override fun takeViewModel() : UseFlashcardActivityViewModel = getActivityViewModel()
+    override fun takeViewModel() : UseFlashcardViewModel = getActivityViewModel()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -71,12 +70,24 @@ class UseFlashcardActivity : BaseActivity<ActivityUseFlashcardBinding, UseFlashc
     }
 
     override fun initProperties() {
-        dataBinding.viewModel = viewModel
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            RED_TEXT_COLOR = getColor(R.color.app_red)
+            NORMAL_TEXT_COLOR = getColor(R.color.use_flashcard_grey_text_color)
+        } else {
+            RED_TEXT_COLOR = resources.getColor(R.color.app_red)
+            NORMAL_TEXT_COLOR = resources.getColor(R.color.use_flashcard_grey_text_color)
+        }
+
+        dB.viewModel = viewModel
     }
 
-    override fun addAnimationEvents() { dataBinding.apply {
+    override fun addViewControls() { dB.apply {
+        txtFrontCardText.movementMethod = ScrollingMovementMethod()
+    }}
 
-        on_NEXT_CardFrontCardAppearAnimation.addListener(onStart = {
+    override fun addAnimationEvents() { dB.apply {
+
+        on_NEXT_CardFrontCardAppearAnimation.addListener( onStart = {
             viewgroupFrontFlashcard.scaleX = 1.0f
             viewgroupFrontFlashcard.scaleY = 1.0f
             viewgroupFrontFlashcard.alpha = 1.0f
@@ -84,7 +95,6 @@ class UseFlashcardActivity : BaseActivity<ActivityUseFlashcardBinding, UseFlashc
 
             this@UseFlashcardActivity.viewModel.moveToNextCard()
             showPreviousCardButton()
-
         })
 
         on_PREV_CardBackCardDisappearAnimation.addListener(onEnd = {
@@ -105,7 +115,23 @@ class UseFlashcardActivity : BaseActivity<ActivityUseFlashcardBinding, UseFlashc
 
     }}
 
-    override fun addViewEvents() { dataBinding.apply {
+    override fun addViewEvents() { dB.apply {
+
+        btnYesQuit.setOnClickListener {
+            finish()
+        }
+
+        btnNoExit.setOnClickListener {
+            dialogExit.hide()
+        }
+
+        btnFrontSpeak.setOnClickListener {
+            this@UseFlashcardActivity.viewModel.speakSrcLangText(txtFrontCardText.text.toString())
+        }
+
+        btnBackSpeak.setOnClickListener {
+            this@UseFlashcardActivity.viewModel.speakTgtLangText(txtBackCardTranslation.text.toString())
+        }
 
         val swipeUpAnim = AnimationUtils.loadAnimation(this@UseFlashcardActivity, R.anim.move_up_fade_out_then_bottom_to_top_fade_out)
 
@@ -137,22 +163,29 @@ class UseFlashcardActivity : BaseActivity<ActivityUseFlashcardBinding, UseFlashc
 
     }}
 
+    override fun onBackPressed() {
+        dB.dialogExit.show()
+    }
 
     // VIEW PROCESSING
 
     override fun onNoCardsLeft() {
         quickToast("There is no cards left")
-        dataBinding.groupFrontCard.disappear()
+        dB.groupFrontCard.disappear()
         sendHardCardListToEndActivity()
         finish()
     }
 
     override fun showPreviousCardButton() {
-        dataBinding.btnPreviousCard.appear()
+        dB.btnPreviousCard.appear()
     }
 
     override fun hidePreviousCardButton() {
-        dataBinding.btnPreviousCard.disappear()
+        dB.btnPreviousCard.disappear()
+    }
+
+    override fun showSpeakTextError(error: String) {
+        quickToast(error)
     }
 
     fun sendHardCardListToEndActivity () {
@@ -173,14 +206,16 @@ class UseFlashcardActivity : BaseActivity<ActivityUseFlashcardBinding, UseFlashc
     @Inject
     fun init_ON_OPEN_CardFrontCardDisappearAnimation (
         @Named("Disappear100Percents") imgSwipeUpFadeOutAnimator : Animator,
+        @Named("Disappear100Percents") btnSpeakDisappearAnimator: Animator,
         @Named("Disappear100Percents") txtTextFadeOutAnimator : Animator,
         @Named("Disappear100Percents") txtCardNumberFadeOutAnimator : Animator,
-        @Named("FlipClose") flashcardFlipAnimator : Animator) { dataBinding.apply {
+        @Named("FlipClose") flashcardFlipAnimator : Animator) { dB.apply {
 
         imgSwipeUpFadeOutAnimator .setTarget(imgSwipeUp)
         flashcardFlipAnimator .setTarget(viewgroupFrontFlashcard)
+        btnSpeakDisappearAnimator.setTarget(btnFrontSpeak)
 
-        on_OPEN_FrontCardAppearAnimation.play(imgSwipeUpFadeOutAnimator).with(flashcardFlipAnimator)
+        on_OPEN_FrontCardAppearAnimation.playTogether(imgSwipeUpFadeOutAnimator,btnSpeakDisappearAnimator, flashcardFlipAnimator)
         on_OPEN_FrontCardAppearAnimation.addListener (
             onStart = {
                 groupFrontCard.appear()
@@ -194,22 +229,26 @@ class UseFlashcardActivity : BaseActivity<ActivityUseFlashcardBinding, UseFlashc
         @Named("FlipOpen") flashcardOPENAnimator : Animator,
         @Named("Appear100Percents") otherInfoAppear : Animator,
         @Named("Appear100Percents") button_PREV_iousAppear : Animator,
+        @Named("Appear100Percents") button_SpeakerAppear : Animator,
         @Named("Appear100Percents") buttonEasyAppear : Animator,
         @Named("Appear100Percents") buttonHardAppear : Animator
-    ) { dataBinding.apply {
+    ) { dB.apply {
 
         flashcardOPENAnimator.setTarget(viewgroupBackFlashcard)
         otherInfoAppear.setTarget(viewgroupCardOtherInfo)
         buttonEasyAppear.setTarget(btnEasy)
         buttonHardAppear.setTarget(btnHard)
         button_PREV_iousAppear.setTarget(btnPreviousCard)
+        button_SpeakerAppear.setTarget(btnBackSpeak)
 
         val navigateAppearSet= AnimatorSet().apply {
             play(buttonEasyAppear).with(buttonHardAppear)
         }
 
         val otherInfoAppearSet= AnimatorSet().apply {
-            play(otherInfoAppear).with(button_PREV_iousAppear)
+            play(otherInfoAppear).with(AnimatorSet().apply {
+                play(button_PREV_iousAppear).with(button_SpeakerAppear)
+            })
         }
 
         on_OPEN_BackCardDisappearAnimation.playSequentially(flashcardOPENAnimator, otherInfoAppearSet, navigateAppearSet)
@@ -228,11 +267,11 @@ class UseFlashcardActivity : BaseActivity<ActivityUseFlashcardBinding, UseFlashc
     fun init_ON_NEXT_CardFrontCardAppearAnimation (
         @Named("Float") flashcardFloatAnimator : Animator,
         @Named("Appear100Percents") buttonSwipeUpAppearAnimator : Animator,
-        @Named("Appear100Percents") txtTextAppearAnimator : Animator
-    ) {dataBinding.apply {
+        @Named("Appear100Percents") txtTextAppearAnimator : Animator,
+        @Named("Appear100Percents") btnSpeakAppearAnimator : Animator
+    ) {dB.apply {
 
         (flashcardFloatAnimator as ValueAnimator)
-
 
         flashcardFloatAnimator.apply {
 
@@ -255,34 +294,45 @@ class UseFlashcardActivity : BaseActivity<ActivityUseFlashcardBinding, UseFlashc
             duration = 100
         }
 
-        txtTextAppearAnimator.setTarget(dataBinding.txtFrontCardText)
+        txtTextAppearAnimator.setTarget(dB.txtFrontCardText)
 
-        flashcardFloatAnimator.setTarget(dataBinding.viewgroupFrontFlashcard)
+        flashcardFloatAnimator.setTarget(dB.viewgroupFrontFlashcard)
 
         buttonSwipeUpAppearAnimator.setTarget(imgSwipeUp)
 
-        on_NEXT_CardFrontCardAppearAnimation.play(flashcardFloatAnimator).with(buttonSwipeUpAppearAnimator).after(txtTextAppearAnimator)
+        btnSpeakAppearAnimator.setTarget(btnFrontSpeak)
+
+        on_NEXT_CardFrontCardAppearAnimation.play(flashcardFloatAnimator).with(buttonSwipeUpAppearAnimator).after(AnimatorSet().apply {
+            play(txtTextAppearAnimator).with(btnSpeakAppearAnimator)
+        })
 
         on_NEXT_CardAnimation.play(on_NEXT_CardBackCardDisappearAnimation).before(on_NEXT_CardFrontCardAppearAnimation)
+        on_NEXT_CardAnimation.addListener (onStart = {
+            txtFrontCardText.scrollY = 0
+        })
     }}
 
 
     @Inject
     fun init_ON_NEXT_EASY_CardBackCardDisappearAnimation (
-        @Named("MoveRightAndFadeOut") flashcardMoveOutAnimator : Animator,
+        @Named("MoveRightAndFadeOutAnimtr") flashcardMoveOutAnimator : Animator,
         @Named("Disappear100Percents") otherInfoDisappear : Animator,
         @Named("Disappear100Percents") button_PREV_iousDisappear : Animator,
+        @Named("Disappear100Percents") button_SpeakerDisappear : Animator,
         @Named("Disappear100Percents") buttonEasyDisappear : Animator,
         @Named("Disappear100Percents") buttonHardDisappear : Animator
-    ) { dataBinding.apply {
+    ) { dB.apply {
         flashcardMoveOutAnimator.setTarget(viewgroupBackFlashcard)
         otherInfoDisappear.setTarget(viewgroupCardOtherInfo)
         buttonEasyDisappear.setTarget(btnEasy)
         buttonHardDisappear.setTarget(btnHard)
         button_PREV_iousDisappear.setTarget(btnPreviousCard)
+        button_SpeakerDisappear.setTarget(btnBackSpeak)
 
         val otherInfoDisappearSet = AnimatorSet().apply {
-            play(otherInfoDisappear).with(button_PREV_iousDisappear)
+            play(otherInfoDisappear).with(AnimatorSet().apply {
+                play(button_PREV_iousDisappear).with(button_SpeakerDisappear)
+            })
         }
 
         val navigateDisappearSet = AnimatorSet().apply {
@@ -304,7 +354,8 @@ class UseFlashcardActivity : BaseActivity<ActivityUseFlashcardBinding, UseFlashc
     @Inject
     fun init_ON_NEXT_HARD_CardBackCardDisappearAnimation (
         @Named("Disappear100Percents") otherInfoDisappear : Animator,
-        @Named("Disappear100Percents") buttonpreviousDisappear : Animator,
+        @Named("Disappear100Percents") buttonPreviousDisappear : Animator,
+        @Named("Disappear100Percents") buttonSpeakerDisappear : Animator,
         @Named("Disappear100Percents") buttonEasyDisappear : Animator,
         @Named("Disappear100Percents") buttonHardDisappear : Animator,
 
@@ -313,14 +364,15 @@ class UseFlashcardActivity : BaseActivity<ActivityUseFlashcardBinding, UseFlashc
 
         @Named("FlipOpen") frontCardOpen : Animator,
         @Named("ScaleBiggerAndFadeOut") translationHighlight: Animator,
-        @Named("MoveRightAndFadeOut") frontCardMoveOut : Animator
+        @Named("MoveRightAndFadeOutAnimtr") frontCardMoveOut : Animator
 
-    ) { dataBinding.apply {
+    ) { dB.apply {
 
         otherInfoDisappear.setTarget(viewgroupCardOtherInfo)
         buttonEasyDisappear.setTarget(btnEasy)
         buttonHardDisappear.setTarget(btnHard)
-        buttonpreviousDisappear.setTarget(btnPreviousCard)
+        buttonPreviousDisappear.setTarget(btnPreviousCard)
+        buttonSpeakerDisappear.setTarget(btnBackSpeak)
 
         translationHighlight.setTarget(txtBackHightlightCardTranslation)
         backCardClose.apply {
@@ -337,7 +389,9 @@ class UseFlashcardActivity : BaseActivity<ActivityUseFlashcardBinding, UseFlashc
         }
 
         val otherInfoDisappearSet = AnimatorSet().apply {
-            play(otherInfoDisappear).with(buttonpreviousDisappear)
+            play(otherInfoDisappear).with(AnimatorSet().apply {
+                play(buttonPreviousDisappear).with(buttonSpeakerDisappear)
+            })
         }
 
         val navigateDisappearSet = AnimatorSet().apply {
@@ -374,15 +428,13 @@ class UseFlashcardActivity : BaseActivity<ActivityUseFlashcardBinding, UseFlashc
 
 
 
-
     // ON PREV
-
-
     @Inject
     fun init_ON_PREV_CardFrontCardAppearAnimation (
         @Named("FromRightToCentreAndFadeIn") flashcardMoveFromRightToCentre: Animator,
-        @Named("Appear100Percents") buttonSwipeUpAppear: Animator
-    ) {dataBinding.apply {
+        @Named("Appear100Percents") buttonSwipeUpAppear: Animator,
+        @Named("Appear100Percents") buttonSpeakAppear : Animator
+    ) {dB.apply {
 
         flashcardMoveFromRightToCentre.startDelay = 150
 
@@ -393,11 +445,13 @@ class UseFlashcardActivity : BaseActivity<ActivityUseFlashcardBinding, UseFlashc
                 viewgroupBackFlashcard.alpha = 1.0f
             })
 
-        flashcardMoveFromRightToCentre.setTarget(dataBinding.viewgroupFrontFlashcard)
+        flashcardMoveFromRightToCentre.setTarget(dB.viewgroupFrontFlashcard)
 
         buttonSwipeUpAppear.setTarget(imgSwipeUp)
 
-        on_PREV_CardFrontCardAppearAnimation.play(flashcardMoveFromRightToCentre).with(buttonSwipeUpAppear)
+        buttonSpeakAppear.setTarget(dB.btnFrontSpeak)
+
+        on_PREV_CardFrontCardAppearAnimation.play(buttonSpeakAppear).with(buttonSwipeUpAppear).after(flashcardMoveFromRightToCentre)
 
 
     }}
@@ -410,9 +464,10 @@ class UseFlashcardActivity : BaseActivity<ActivityUseFlashcardBinding, UseFlashc
         @Named("Disappear100Percents") flashcardDisappear: Animator,
         @Named("Disappear100Percents") otherInfoDisappear : Animator,
         @Named("Disappear100Percents") button_PREV_iousDisappear : Animator,
+        @Named("Disappear100Percents") button_SpeakDisappear : Animator,
         @Named("Disappear100Percents") buttonEasyDisappear : Animator,
         @Named("Disappear100Percents") buttonHardDisappear : Animator
-    ) { dataBinding.apply {
+    ) { dB.apply {
 
         (flashcardSink as ValueAnimator).addUpdateListener {
             viewgroupBackFlashcard.elevation = it.animatedValue as Float
@@ -423,10 +478,12 @@ class UseFlashcardActivity : BaseActivity<ActivityUseFlashcardBinding, UseFlashc
         buttonEasyDisappear.setTarget(btnEasy)
         buttonHardDisappear.setTarget(btnHard)
         button_PREV_iousDisappear.setTarget(btnPreviousCard)
-
+        button_SpeakDisappear.setTarget(btnBackSpeak)
 
         val otherInfoDisappearSet = AnimatorSet().apply {
-            play(otherInfoDisappear).with(button_PREV_iousDisappear)
+            play(otherInfoDisappear).with(AnimatorSet().apply {
+                play(button_PREV_iousDisappear).with(button_SpeakDisappear)
+            })
         }
 
         val navigateDisappearSet = AnimatorSet().apply {

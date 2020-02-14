@@ -1,0 +1,41 @@
+Cist<pd>[‘æbəsist]<pd>N<pd>Người gãy bàn phím
+Cus<pd>[‘æbəkəs]<pd>N<pd>Bàn tính<ex>to move counters of an abacus: tính bằng bàn tính
+Cuses<pd><nav>Cus
+Ck<pd>[ə’bæk]<pd>Adv<pd>Lùi lại, trở lại phía sau<ex>to stand aback from sb/sth: đứng lùi lại để tránh ai hoặc cái gì
+Cterial<pd>[eibæk’tiəriəl]<pd>N<pd>Không do vi khuẩn gây ra
+Ctio<pd>_<pd>N<pd>(Y học) sự phá thai
+Ction<pd>[æ’bækʃn]<pd>N<pd>Việc gia súc bị bắt trộm
+Ctus<pd>[æ’bæktəs]<pd>Adj<pd>Bị trụy thai
+Caddon<pd>[ə’bædən]<pd> N<pd>Âm ti, địa ngục<md>con quỷ
+Caft<pd>[ə’bɑ:ft]<pd>Adv/(Hàng hải) ở đằng sau bánh lái][Pre/(Hàng hải) ở đằng sau<ex>abaft the mast: sau cột buồm
+Calienate<pd>[æ’bəiljəneit]<pd>TransV<pd>Nhường lại tài sản
+Calienation<pd>[æbəiljə’neʃn]<pd>N<pd>Danh từ của <cli>Calienate<cli/><md>Sự nhường lại tài sản
+Calone<pd>[æbə’ləʊni]<pd>N<pd>(Từ Mỹ, nghĩa Mỹ) Bào ngư
+Calones<pd><nav>Calone
+Candon<pd>[ə’bændən]<pd>TransV/Từ bỏ, bỏ rơi, ruồng bỏ/to abandon all efforts: từ bỏ mọi nỗ lực<md>to abandon a child: ruồng bỏ đứa con][N/Sự phóng túng, tự do, sự buông thả<ex>with abandon: một cách phóng túng
+Candoned<pd>[ə’bændənd]<pd>Adj<pd>Bị bỏ rơi, bị ruồng bỏ<md>Phóng đãng, trụy lạc
+Candoner<pd>[ə’bændənə]<pd>N<pd>(Pháp lý) Người rút đơn
+Candoning<pd><nav>Candon
+Candonment<pd>[ə’bændənmənt]<pd>N<pd>Sự bỏ, sự từ bỏ, sự bỏ rơi, ruồng bỏ<md>Tình trạng bị bỏ rơi, tình trạng bị ruồng bỏ<md>Sự phóng túng, sự tự do, buông thả
+Candonments<pd><nav>Candonment
+Capikal<pd>[əb’æppkəl]<pd>Adj<pd>(Sinh học) Xa đỉnh, xa ngọn<md>Dưới vực
+Carticular<pd>[‘æba:tikjulə]<pd>Adj<pd>(Giải phẫu) Học ngoài khớp, trật khớp
+Cas<pd>[‘ɑ:bə]<pd>N<pd>Áo aba
+Case<pd>[ə’beIs]<pd>TransV<pd>Làm hạ phẩm giá, làm mất thể diện, làm nhục<ex>Ckbiting the others is to abase oneself: Nói xấu người khác là tự hạ phẩm giá của mình
+Cased<pd><nav>Case
+Casement<pd>[ə’beIsment]<pd>N<pd>Sự làm hạ phẩm giá, sự làm mất thể diện, sự làm nhục<md>Danh từ của <cli>Case<cli/>
+Cases<pd><nav>Case
+Cash<pd>[ə’bæʃ]<pd>TransV<pd>Làm bối rối, làm lúng túng, làm luống cuống
+Cashed<pd><nav>Cash
+Cashment<pd>[ə’bæʃmənt]<pd>N<pd>(Danh từ của <cli>Cash<cli/>) Sự bối rối, sự lúng túng, sự luống cuống
+Catable<pd>[ə’beitəbl]<pd>Adj<pd>Có thể làm dịu<md>Có thể hạ, có thể bớt /b Có thể làm nhụt<md>Có thể chấm dứt, có thể thanh trừ<md>(Pháp lý) Có thể hủy bỏ, có thể thủ tiêu
+Cate<pd>[ə’beIt]<pd>V/Dịu đi, yếu đi, nhụt chí, đỡ, nguôi, bớt<ex>Pain abates: cơn đau dịu đi<exd>Storm abates: cơn bão nguôi đi][TransV/Làm dịu đi, làm yếu đi<md>Hạ, bớt (giá)<md>Làm nhụt (chí)<md>Làm cùn (lưỡi dao)
+Cated<pd><nav>Cate
+Cating<pd><nav>Cate
+Catement<pd>[ə’beItmənt]<pd>N<pd>(Danh từ của <cli>Cate<cli/>) Sự dịu đi, sự yếu đi, sự nhụt đi, sự giảm bớt<md>Sự hạ, sự bớt (giá)<md>Sự chấm dứt, sự thanh toán<md>(pháp lý) Sự hủy bỏ, sự thủ tiêu<ex>Catement of a contract: sự hủy bỏ một hợp đồng
+Cater<pd>[ə’beitə]<pd>N<pd>Người giảm bớt<md>(Y học) Thuốc làm dịu
+Catis<pd>[‘æbətis]<pd>N<pd>(Quân sự) Đống cây chướng ngại, đống cây cản
+Catised<pd>[‘æbətist]<pd>Ad<pd>(Quân sự) Có đống cây chướng ngại, có đống cây cản
+Cattoir<pd>[‘æbətwɑɑ:(r)]<pd>N<pd>Lò mổ, lò sát sinh
+Cattoirs<pd><nav>Cattoir
+Caxial<pd>[æb’æksiəl]<pd>Adj<pd>Ở ngoài trục, xa trục

@@ -1,6 +1,7 @@
 package com.teamttdvlp.memolang.di.module.activity
 
 import android.animation.Animator
+import android.animation.AnimatorInflater
 import android.animation.ValueAnimator
 import android.view.animation.Animation
 import android.view.animation.AnimationUtils
@@ -11,8 +12,8 @@ import androidx.recyclerview.widget.RecyclerView
 import androidx.vectordrawable.graphics.drawable.AnimatorInflaterCompat
 import com.teamttdvlp.memolang.R
 import com.teamttdvlp.memolang.view.activity.SearchVocabularyActivity
-import com.teamttdvlp.memolang.view.adapter.ChooseLanguageRCVAdapter
-import com.teamttdvlp.memolang.view.adapter.RecentSearchFlashcardRCVAdapter
+import com.teamttdvlp.memolang.view.adapter.RCVChooseLanguageAdapter
+import com.teamttdvlp.memolang.view.adapter.RCVRecentSearchFlashcardAdapter
 import dagger.Module
 import dagger.Provides
 import javax.inject.Named
@@ -21,10 +22,18 @@ import javax.inject.Named
 class SearchVocabularyActivityModule  {
 
     @Provides
+    @Named("MoveUpAndAppear")
+    fun provideMoveUpAndAppear_Animator (activity: SearchVocabularyActivity) : Animator {
+        return AnimatorInflater.loadAnimator(activity
+            , R.animator.move_up_and_fade_in)
+    }
+
+
+    @Provides
     @Named("ViewGroupLanguageOptionShowAnimator")
     fun provideViewGroupLangOption_ShowAnimator(
         @Named("ViewGroupLangOptionHeight") viewgroupLangOptionHeight : Float,
-        duration : Long, interpolator: Interpolator) : ValueAnimator {
+        GBDRduration : Long, interpolator: Interpolator) : ValueAnimator {
         return ValueAnimator.ofInt(1, viewgroupLangOptionHeight.toInt()).apply {
             this.duration = duration
             this.interpolator = interpolator
@@ -170,6 +179,15 @@ class SearchVocabularyActivityModule  {
     }
 
     @Provides
+    @Named("Disappear100percents_")
+    fun provideDisappearCompletely_Animator(activity: SearchVocabularyActivity): Animator {
+        return AnimatorInflaterCompat.loadAnimator(
+            activity
+            , R.animator.disappear_100_percents
+        )
+    }
+
+    @Provides
     @Named("FromNothingToNormalSize_")
     fun provideViewgroupCancelSavingScaleBigger_Animator(activity: SearchVocabularyActivity): Animator {
         return AnimatorInflaterCompat.loadAnimator(
@@ -186,19 +204,39 @@ class SearchVocabularyActivityModule  {
         )
     }
 
+    @Provides
+    @Named("Appear100percents_")
+    fun provideAppearCompletely_Animator(activity: SearchVocabularyActivity): Animator {
+        return AnimatorInflaterCompat.loadAnimator(
+            activity
+            , R.animator.appear_100_percents
+        )
+    }
+
+    @Provides
+    @Named("TranslatingText")
+    fun provideTranslatingTextAnimation () : Animator {
+        return ValueAnimator.ofFloat(0f, 1f)
+    }
+
+    @Provides
+    @Named("RotateForever")
+    fun provideRotateForeverAnimation (context : SearchVocabularyActivity) : Animation {
+        return AnimationUtils.loadAnimation(context, R.anim.rotate_forever)
+    }
 
     /**
      * Provides Stuffs
      */
 
     @Provides
-    fun provideRecentSearchFlashcardAdapter (activity: SearchVocabularyActivity) : RecentSearchFlashcardRCVAdapter {
-        return RecentSearchFlashcardRCVAdapter(activity)
+    fun provideRecentSearchFlashcardAdapter (activity: SearchVocabularyActivity) : RCVRecentSearchFlashcardAdapter {
+        return RCVRecentSearchFlashcardAdapter(activity)
     }
 
     @Provides
-    fun provideChooseLanguageAdapter (activity: SearchVocabularyActivity) : ChooseLanguageRCVAdapter{
-        return ChooseLanguageRCVAdapter(activity)
+    fun provideChooseLanguageAdapter (activity: SearchVocabularyActivity) : RCVChooseLanguageAdapter{
+        return RCVChooseLanguageAdapter(activity)
     }
 
     @Provides
@@ -213,13 +251,13 @@ class SearchVocabularyActivityModule  {
     @Provides
     @Named("ViewGroupLangOptionHeight")
     fun provideViewGroupHeight (activity: SearchVocabularyActivity) : Float{
-        return activity.dataBinding.viewgroupLanguageOption.layoutParams.height.toFloat()
+        return activity.dB.viewgroupLanguageOption.layoutParams.height.toFloat()
     }
 
     @Provides
     @Named("EditTextTextHeight")
     fun provideTextViewTextHeight  (activity: SearchVocabularyActivity) : Float {
-        return activity.dataBinding.edtText.layoutParams.height.toFloat()
+        return activity.dB.edtText.layoutParams.height.toFloat()
     }
 
 
@@ -230,13 +268,13 @@ class SearchVocabularyActivityModule  {
 
     @Provides
     fun provideDuration () : Long {
-        return 700
+        return 350
     }
 
     @Provides
     @Named("AddButtonAnimationsDuration")
     fun provideAddButtonAnimations () : Long {
-        return 250
+        return 125
     }
 
 

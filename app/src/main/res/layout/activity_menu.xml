@@ -9,144 +9,109 @@
             tools:context=".view.activity.MenuActivity">
 
         <TextView
-                android:id="@+id/btn_log_out"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="11dp"
-                android:layout_marginBottom="8dp"
-                android:alpha="0.8"
-                android:fontFamily="@font/segoeui"
-                android:text="Log out"
-                android:textColor="#555555"
-                android:textSize="16sp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent" />
+            android:id="@+id/txt_offline_mode_notification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="7dp"
+            android:background="#6E6EFF"
+            android:fontFamily="@font/segoeui"
+            android:gravity="center"
+            android:padding="8.5dp"
+            android:text="You are in offline mode, searching is not available"
+            android:textColor="#ffffff"
+            android:textSize="14sp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
 
-        <TextView
-                android:id="@+id/txt_offline_mode_notification"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="7dp"
-                android:background="#6E6EFF"
-                android:fontFamily="@font/segoeui"
-                android:gravity="center"
-                android:padding="8.5dp"
-                android:text="You are in offline mode, searching is not available"
-                android:textColor="#ffffff"
-                android:textSize="14sp"
-                android:visibility="invisible"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.0" />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
-        <androidx.appcompat.widget.LinearLayoutCompat
-                android:id="@+id/linearLayoutCompat"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_margin="0dp"
-                android:layout_marginLeft="8dp"
-                android:layout_marginBottom="8dp"
-                android:gravity="center"
-                android:orientation="horizontal"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toTopOf="parent">
-
-            <ImageView
-                    android:id="@+id/btn_add_flashcard"
-                    android:layout_width="100dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="37dp"
-                    android:src="@drawable/button_menu_add_new_flashcard"
-                    android:transitionName="add_button" />
-
-            <ImageView
-                    android:id="@+id/btn_learn_flashcard"
-                    android:layout_width="100dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="15dp"
-                    android:layout_marginRight="15dp"
-                    android:src="@drawable/button_menu_learning_flashcard" />
-
-            <ImageView
-                    android:id="@+id/btn_search"
-                    android:layout_width="100dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="37dp"
-                    android:src="@drawable/button_menu_search" />
-
-        </androidx.appcompat.widget.LinearLayoutCompat>
-
-        <ImageView
-                android:id="@+id/img_black_background_sign_out"
+            <EditText
+                android:id="@+id/edt_eng_vi_dictionary"
                 android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:alpha="0.0"
-                android:background="@android:color/black"
-                android:elevation="4dp"
-                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_height="40dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/round_10dp_white_background_with_border"
+                android:elevation="2dp"
+                android:ems="10"
+                android:fontFamily="@font/segoeui"
+                android:hint="English-Vietnamese dictionary"
+                android:inputType="textPersonName"
+                android:paddingStart="16dp"
+                android:paddingBottom="1dp"
+                android:transitionName="Search_Edittext"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
-        <LinearLayout
-                android:id="@+id/viewgroup_sign_out"
-                android:layout_width="0dp"
+            <ImageView
+                android:id="@+id/btn_search"
+                android:layout_width="100dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="42dp"
-                android:layout_marginEnd="42dp"
-                android:background="@drawable/round_white_background"
-                android:elevation="4dp"
-                android:gravity="center"
-                android:orientation="vertical"
-                android:scaleX="0.0"
-                android:scaleY="0.0"
-                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="22dp"
+                android:src="@drawable/button_menu_search"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.4">
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/btn_learn_flashcard"
+                app:layout_constraintTop_toBottomOf="@+id/edt_eng_vi_dictionary" />
 
-            <TextView
-                    android:id="@+id/txt_title"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginTop="16dp"
-                    android:layout_marginEnd="20dp"
-                    android:layout_marginBottom="230dp"
-                    android:fontFamily="@font/segoeui"
-                    android:gravity="top"
-                    android:text="Your all stored data will be deleted and app will be closed"
-                    android:textColor="@color/browser_actions_title_color"
-                    android:textSize="16sp" />
-
-            <TextView
-                    android:id="@+id/btn_log_out_in_log_out_group"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="15dp"
-                    android:background="@drawable/z_btn_log_out"
-                    android:elevation="3dp"
-                    android:fontFamily="@font/seguisb"
-                    android:paddingStart="18dp"
-                    android:paddingEnd="18dp"
-                    android:paddingBottom="3dp"
-                    android:text="Log out"
-                    android:textAllCaps="false"
-                    android:textColor="@color/white"
-                    android:textSize="16sp" />
-        </LinearLayout>
-
-        <androidx.constraintlayout.widget.Group
-                android:id="@+id/group_sign_out"
-                android:layout_width="wrap_content"
+            <ImageView
+                android:id="@+id/btn_add_flashcard"
+                android:layout_width="100dp"
                 android:layout_height="wrap_content"
-                android:visibility="gone"
-                app:constraint_referenced_ids="viewgroup_sign_out,img_black_background_sign_out" />
+                android:layout_marginStart="22dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/button_menu_add_new_flashcard"
+                android:transitionName="add_button"
+                app:layout_constraintEnd_toStartOf="@+id/btn_learn_flashcard"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edt_eng_vi_dictionary" />
 
+            <ImageView
+                android:id="@+id/btn_learn_flashcard"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/button_menu_learning_flashcard"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edt_eng_vi_dictionary" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/linearLayoutCompat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="8dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintVertical_bias="0.0">
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+_
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

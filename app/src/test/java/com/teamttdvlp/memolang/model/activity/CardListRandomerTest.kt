@@ -1,6 +1,6 @@
 package com.teamttdvlp.memolang.model.activity
 
-import org.junit.Assert.*
+import com.teamttdvlp.memolang.model.CardListRandomer
 import org.junit.Test
 
 class CardListRandomerTest {
@@ -16,10 +16,10 @@ class CardListRandomerTest {
         testData.add(6)
         testData.add(7)
         testData.add(8)
-        val newData = CardListRandomer().processList(testData)
-        for (i in newData) {
-            println(i)
-        }
+//        val newData = CardListRandomer().processList(testData)
+//        for (i in newData) {
+//            println(i)
+//        }
     }
 
 }

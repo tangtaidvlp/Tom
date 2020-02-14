@@ -5,50 +5,100 @@
                                                    android:layout_width="match_parent"
                                                    android:layout_height="wrap_content">
 
-    <TextView
+    <ImageView
+        android:id="@+id/btn_delete"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="30dp"
+        android:padding="1dp"
+        android:src="@drawable/image_red_delete"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/img_delete_status"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:alpha="0.0"
+        android:padding="1dp"
+        android:src="@drawable/image_unchecked_delete"
+        app:layout_constraintBottom_toBottomOf="@+id/viewgroup_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/viewgroup_text"
+        app:layout_constraintVertical_bias="0.55" />
+
+    <LinearLayout
+        android:id="@+id/viewgroup_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="8dp"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_delete"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
             android:id="@+id/txt_text"
-            android:layout_width="0dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="19dp" android:layout_marginTop="6dp"
-            android:layout_marginEnd="8dp"
             android:fontFamily="@font/segoeui"
             android:text="Negotiate"
             android:textColor="@color/input_alert_color"
             android:textSize="19sp"
-            android:maxLines="1"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/btn_view_list" app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0"/>
-    <TextView
-            android:text="Đàm phán"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/txt_language"
+            app:layout_constraintEnd_toStartOf="@+id/btn_delete"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent" android:textSize="14sp" android:fontFamily="@font/segoeui"
-            android:textColor="@color/dark_blue_text"
-            android:layout_marginTop="1dp"
-            app:layout_constraintTop_toBottomOf="@+id/txt_text" app:layout_constraintVertical_bias="0.0"
-            android:layout_marginStart="19dp"
-            app:layout_constraintEnd_toStartOf="@+id/btn_view_list" app:layout_constraintHorizontal_bias="0.0"/>
-    <ImageView
-            android:layout_width="20dp"
-            android:layout_height="20dp"
-            android:layout_marginEnd="19dp" app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintVertical_bias="0.0" android:layout_marginTop="30dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintHorizontal_bias="1.0" android:background="@drawable/button_red_edit"
-            android:id="@+id/btn_view_list"/>
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/txt_translation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/segoeui"
+            android:text="Đàm phán"
+            android:textColor="@color/dark_blue_text"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+
     <TextView
-            android:layout_width="0dp"
-            android:layout_height="0.5dp"
-            android:id="@+id/line" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="19dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/txt_language"
-            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintVertical_bias="0.0" android:layout_marginTop="8dp" android:layout_marginStart="19dp"
-            android:background="#B0B1BA" android:layout_marginBottom="14dp"/>
+        android:id="@+id/line"
+        android:layout_width="0dp"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="14dp"
+        android:background="#B0B1BA"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewgroup_text"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btn_transparent_delete"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:alpha="0.0"
+        android:background="#000000"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

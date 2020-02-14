@@ -1,363 +1,368 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
-        xmlns:app="http://schemas.android.com/apk/res-auto">
-    <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            tools:context=".view.activity.SignUpActivity"
-            android:background="@drawable/background">
-
-        <androidx.appcompat.widget.LinearLayoutCompat
-                android:id="@+id/viewgroup_img_sign_up_progress_bar"
-                android:layout_width="128dp"
-                android:layout_height="128dp"
-                android:alpha="0.8"
-                android:background="@drawable/round_white_background"
-                android:gravity="center"
-                android:scaleX="0"
-                android:scaleY="0"
-                android:visibility="gone"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.4"
-                tools:layout_editor_absoluteX="206dp" tools:layout_editor_absoluteY="366dp">
-            <ImageView
-                    android:id="@+id/img_sign_up_progress_bar"
-                    android:layout_width="80dp"
-                    android:layout_height="80dp"
-                    android:src="@drawable/circle_progress_bar"/>
-        </androidx.appcompat.widget.LinearLayoutCompat>
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/viewgroup_sign_up"
-                android:layout_width="match_parent" android:layout_height="match_parent"
-                app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
-
-            <TextView
-                    android:id="@+id/txt_title"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="8dp"
-                    android:fontFamily="@font/signpainter_housescript_regular"
-                    android:gravity="center"
-                    android:text="Sign up"
-                    android:textColor="#ffffff"
-                    android:textSize="63sp"
-                    android:visibility="visible"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_bias="0.100000024"/>
-            <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="378dp"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginTop="25dp"
-                    android:layout_marginEnd="20dp"
-                    android:alpha="1"
-                    android:orientation="vertical"
-                    android:visibility="visible"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/txt_title"
-                    app:layout_constraintVertical_bias="0.0">
-                <ImageView
-                        android:id="@+id/img_background_sign_up"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_margin="0dp"
-                        android:alpha="0.8"
-                        android:background="@drawable/round_white_background"
-                        android:maxWidth="600dp"
-                        android:minWidth="600dp"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintVertical_bias="0.0"
-                        app:srcCompat="@drawable/round_white_background"/>
-                <androidx.constraintlayout.widget.ConstraintLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="0dp"
-                        android:layout_marginBottom="8dp"
-                        android:alpha="1"
-                        android:maxWidth="600dp"
-                        android:orientation="vertical"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintVertical_bias="0.0"
-                        app:layout_constraintWidth_max="600dp">
-
-                    <TextView
-                            android:id="@+id/txt_email"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="31dp"
-                            android:layout_marginTop="20dp"
-                            android:layout_marginEnd="24dp"
-                            android:fontFamily="@font/segoeui"
-                            android:text="Email  "
-                            android:textColor="#5F5F70"
-                            android:textSize="16sp"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"/>
-                    <EditText
-                            android:id="@+id/edt_email"
-                            android:layout_width="match_parent"
-                            android:layout_height="40dp"
-                            android:layout_marginStart="24dp"
-                            android:layout_marginTop="6dp"
-                            android:layout_marginEnd="24dp"
-                            android:background="@drawable/round_white_background_with_border"
-                            android:elevation="4dp"
-                            android:ems="10"
-                            android:fontFamily="@font/segoeui"
-                            android:inputType="textPersonName"
-                            android:paddingStart="14dp"
-                            android:paddingBottom="1dp"
-                            android:textSize="14sp"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toBottomOf="@id/txt_email"/>
-
-                    <TextView
-                            android:id="@+id/txt_error_email"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="45dp"
-                            android:layout_marginTop="2dp"
-                            android:layout_marginEnd="24dp"
-                            android:text="Please enter your email"
-                            android:textColor="@color/input_alert_color"
-                            android:visibility="invisible"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/edt_email"/>
-
-                    <TextView
-                            android:id="@+id/txt_password"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="31dp"
-                            android:layout_marginTop="2dp"
-                            android:layout_marginEnd="24dp"
-                            android:fontFamily="@font/segoeui"
-                            android:text="Password"
-                            android:textColor="#5F5F70"
-                            android:textSize="16sp"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/txt_error_email"/>
-                    <EditText
-                            android:id="@+id/edt_password"
-                            android:layout_width="match_parent"
-                            android:layout_height="40dp"
-                            android:layout_marginStart="24dp"
-                            android:layout_marginTop="6dp"
-                            android:layout_marginEnd="24dp"
-                            android:background="@drawable/round_white_background_with_border"
-                            android:elevation="4dp"
-                            android:ems="10"
-                            android:fontFamily="@font/segoeui"
-                            android:inputType="textPassword"
-                            android:paddingStart="14dp"
-                            android:paddingBottom="1dp"
-                            android:textSize="14sp"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toBottomOf="@id/txt_password"/>
-                    <TextView
-                            android:id="@+id/txt_error_password"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="45dp"
-                            android:layout_marginTop="2dp"
-                            android:layout_marginEnd="24dp"
-                            android:text="Password must have at least 6 characters"
-                            android:textColor="@color/input_alert_color"
-                            android:visibility="invisible"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toBottomOf="@id/edt_password"/>
-                    <TextView
-                            android:id="@+id/txt_reenter_password"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="31dp"
-                            android:layout_marginTop="2dp"
-                            android:layout_marginEnd="24dp"
-                            android:fontFamily="@font/segoeui"
-                            android:text="Re-enter password"
-                            android:textColor="#5F5F70"
-                            android:textSize="16sp"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toBottomOf="@id/txt_error_password"/>
-                    <EditText
-                            android:id="@+id/edt_reenter_password"
-                            android:layout_width="match_parent"
-                            android:layout_height="40dp"
-                            android:layout_marginStart="24dp"
-                            android:layout_marginTop="6dp"
-                            android:layout_marginEnd="24dp"
-                            android:background="@drawable/round_white_background_with_border"
-                            android:elevation="4dp"
-                            android:ems="10"
-                            android:fontFamily="@font/segoeui"
-                            android:inputType="textPassword"
-                            android:paddingStart="14dp"
-                            android:paddingBottom="1dp"
-                            android:textSize="14sp"
-                            app:layout_constraintEnd_toStartOf="@+id/edt_id"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toBottomOf="@id/txt_reenter_password"/>
-                    <TextView
-                            android:id="@+id/txt_error_reenter_password"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="45dp"
-                            android:layout_marginTop="2dp"
-                            android:layout_marginEnd="45dp"
-                            android:text="Your password does not match"
-                            android:textColor="@color/input_alert_color"
-                            android:visibility="invisible"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toBottomOf="@id/edt_reenter_password"/>
-                    <TextView
-                            android:id="@+id/btn_sign_up"
-                            android:layout_width="115dp"
-                            android:layout_height="40dp"
-                            android:layout_marginStart="223dp"
-                            android:layout_marginTop="12dp"
-                            android:layout_marginEnd="223dp"
-                            android:background="@drawable/round_yellow_background"
-                            android:fontFamily="@font/seguisb"
-                            android:gravity="center"
-                            android:maxWidth="10dp"
-                            android:text="Sign up" android:textAllCaps="false"
-                            android:textColor="#ffffff"
-                            android:textSize="16sp"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toBottomOf="@id/txt_error_reenter_password"
-                    />
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
-            </androidx.constraintlayout.widget.ConstraintLayout>
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/viewgroup_sign_up_successfully"
-                android:layout_width="match_parent"
-                android:layout_height="230dp"
-                android:alpha="1"
-                android:orientation="vertical"
-                android:visibility="gone"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"
-        >
-            <ImageView
-                    android:id="@+id/img_background_sign_up_successfully"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginEnd="20dp"
-                    android:alpha="0.8"
-                    android:background="@drawable/round_white_background"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_bias="0.0"
-                    app:srcCompat="@drawable/round_white_background"/>
-            <TextView
-                    android:id="@+id/txt_notification"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" android:layout_marginStart="8dp"
-                    android:layout_marginTop="45dp" android:layout_marginEnd="8dp"
-                    android:fontFamily="@font/segoeui" android:text="Sign up successfully"
-                    android:textAlignment="center" android:textColor="#000000" android:textSize="21sp"
-                    app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"/>
-            <TextView
-                    android:id="@+id/btn_back_to_sign_in"
-                    android:layout_width="wrap_content"
-                    android:layout_height="40dp"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginEnd="8dp"
-                    android:layout_marginBottom="46dp"
-                    android:background="@drawable/round_light_red_background"
-                    android:fontFamily="@font/seguisb"
-                    android:gravity="center"
-                    android:paddingStart="55dp" android:paddingEnd="55dp"
-                    android:text="Back to sign in" android:textAllCaps="false"
-                    android:textColor="#ffffff" android:textSize="16sp"
-                    app:layout_constraintBottom_toBottomOf="@+id/img_background_sign_up_successfully"
-                    app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_bias="1"/>
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/viewgroup_sign_up_fail"
-                android:layout_width="match_parent"
-                android:layout_height="230dp"
-                android:alpha="1"
-                android:orientation="vertical"
-                android:visibility="gone"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"
-        >
-            <ImageView
-                    android:id="@+id/img_background_sign_up_fail"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginEnd="20dp"
-                    android:alpha="0.8"
-                    android:background="@drawable/round_white_background"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_bias="0.0"
-                    app:srcCompat="@drawable/round_white_background"/>
-            <TextView
-                    android:id="@+id/txt_fail_notification"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" android:layout_marginStart="8dp"
-                    android:layout_marginTop="45dp" android:layout_marginEnd="8dp"
-                    android:fontFamily="@font/segoeui" android:text="Error happened, please try again"
-                    android:textAlignment="center" android:textColor="#000000" android:textSize="21sp"
-                    app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"/>
-            <TextView
-                    android:id="@+id/btn_check_again"
-                    android:layout_width="wrap_content"
-                    android:layout_height="40dp"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginEnd="8dp"
-                    android:layout_marginBottom="46dp"
-                    android:background="@drawable/round_light_red_background"
-                    android:fontFamily="@font/seguisb"
-                    android:gravity="center"
-                    android:paddingStart="55dp" android:paddingEnd="55dp"
-                    android:text="Check again" android:textAllCaps="false"
-                    android:textColor="#ffffff" android:textSize="16sp"
-                    app:layout_constraintBottom_toBottomOf="@+id/img_background_sign_up_fail"
-                    app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_bias="1"/>
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
     </androidx.constraintlayout.widget.ConstraintLayout>
-</layout>
+    <!--<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"-->
+<!--        xmlns:context="http://schemas.android.com/apk/res-auto">-->
+<!--    <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            tools:context=".view.activity.SignUpActivity"-->
+<!--            android:background="@drawable/background">-->
+
+<!--        <androidx.appcompat.widget.LinearLayoutCompat-->
+<!--                android:id="@+id/viewgroup_img_sign_up_progress_bar"-->
+<!--                android:layout_width="128dp"-->
+<!--                android:layout_height="128dp"-->
+<!--                android:alpha="0.8"-->
+<!--                android:background="@drawable/round_10dp_white_background"-->
+<!--                android:gravity="center"-->
+<!--                android:scaleX="0"-->
+<!--                android:scaleY="0"-->
+<!--                android:visibility="gone"-->
+<!--                context:layout_constraintBottom_toBottomOf="parent"-->
+<!--                context:layout_constraintLeft_toLeftOf="parent"-->
+<!--                context:layout_constraintRight_toRightOf="parent"-->
+<!--                context:layout_constraintTop_toTopOf="parent"-->
+<!--                context:layout_constraintVertical_bias="0.4"-->
+<!--                tools:layout_editor_absoluteX="206dp" tools:layout_editor_absoluteY="366dp">-->
+<!--            <ImageView-->
+<!--                    android:id="@+id/img_sign_up_progress_bar"-->
+<!--                    android:layout_width="80dp"-->
+<!--                    android:layout_height="80dp"-->
+<!--                    android:src="@drawable/circle_progress_bar"/>-->
+<!--        </androidx.appcompat.widget.LinearLayoutCompat>-->
+
+<!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--                android:id="@+id/viewgroup_sign_up"-->
+<!--                android:layout_width="match_parent" android:layout_height="match_parent"-->
+<!--                context:layout_constraintBottom_toBottomOf="parent" context:layout_constraintEnd_toEndOf="parent"-->
+<!--                context:layout_constraintStart_toStartOf="parent" context:layout_constraintTop_toTopOf="parent">-->
+
+<!--            <TextView-->
+<!--                    android:id="@+id/txt_title"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginBottom="8dp"-->
+<!--                    android:fontFamily="@font/signpainter_housescript_regular"-->
+<!--                    android:gravity="center"-->
+<!--                    android:text="Sign up"-->
+<!--                    android:textColor="#ffffff"-->
+<!--                    android:textSize="63sp"-->
+<!--                    android:visibility="visible"-->
+<!--                    context:layout_constraintBottom_toBottomOf="parent"-->
+<!--                    context:layout_constraintEnd_toEndOf="parent"-->
+<!--                    context:layout_constraintStart_toStartOf="parent"-->
+<!--                    context:layout_constraintTop_toTopOf="parent" context:layout_constraintVertical_bias="0.100000024"/>-->
+<!--            <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="378dp"-->
+<!--                    android:layout_marginStart="20dp"-->
+<!--                    android:layout_marginTop="25dp"-->
+<!--                    android:layout_marginEnd="20dp"-->
+<!--                    android:alpha="1"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:visibility="visible"-->
+<!--                    context:layout_constraintBottom_toBottomOf="parent"-->
+<!--                    context:layout_constraintEnd_toEndOf="parent"-->
+<!--                    context:layout_constraintStart_toStartOf="parent"-->
+<!--                    context:layout_constraintTop_toBottomOf="@+id/txt_title"-->
+<!--                    context:layout_constraintVertical_bias="0.0">-->
+<!--                <ImageView-->
+<!--                        android:id="@+id/img_background_sign_up"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:layout_margin="0dp"-->
+<!--                        android:alpha="0.8"-->
+<!--                        android:background="@drawable/round_10dp_white_background"-->
+<!--                        android:maxWidth="600dp"-->
+<!--                        android:minWidth="600dp"-->
+<!--                        context:layout_constraintBottom_toBottomOf="parent"-->
+<!--                        context:layout_constraintEnd_toEndOf="parent"-->
+<!--                        context:layout_constraintStart_toStartOf="parent"-->
+<!--                        context:layout_constraintTop_toTopOf="parent"-->
+<!--                        context:layout_constraintVertical_bias="0.0"-->
+<!--                        context:srcCompat="@drawable/round_10dp_white_background"/>-->
+<!--                <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_margin="0dp"-->
+<!--                        android:layout_marginBottom="8dp"-->
+<!--                        android:alpha="1"-->
+<!--                        android:maxWidth="600dp"-->
+<!--                        android:orientation="vertical"-->
+<!--                        context:layout_constraintBottom_toBottomOf="parent"-->
+<!--                        context:layout_constraintEnd_toEndOf="parent"-->
+<!--                        context:layout_constraintStart_toStartOf="parent"-->
+<!--                        context:layout_constraintTop_toTopOf="parent"-->
+<!--                        context:layout_constraintVertical_bias="0.0"-->
+<!--                        context:layout_constraintWidth_max="600dp">-->
+
+<!--                    <TextView-->
+<!--                            android:id="@+id/txt_email"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_marginStart="31dp"-->
+<!--                            android:layout_marginTop="20dp"-->
+<!--                            android:layout_marginEnd="24dp"-->
+<!--                            android:fontFamily="@font/segoeui"-->
+<!--                            android:text="Email  "-->
+<!--                            android:textColor="#5F5F70"-->
+<!--                            android:textSize="16sp"-->
+<!--                            context:layout_constraintEnd_toEndOf="parent"-->
+<!--                            context:layout_constraintStart_toStartOf="parent" context:layout_constraintTop_toTopOf="parent"/>-->
+<!--                    <EditText-->
+<!--                            android:id="@+id/edt_email"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="40dp"-->
+<!--                            android:layout_marginStart="24dp"-->
+<!--                            android:layout_marginTop="6dp"-->
+<!--                            android:layout_marginEnd="24dp"-->
+<!--                            android:background="@drawable/round_white_background_with_border"-->
+<!--                            android:elevation="4dp"-->
+<!--                            android:ems="10"-->
+<!--                            android:fontFamily="@font/segoeui"-->
+<!--                            android:inputType="textPersonName"-->
+<!--                            android:paddingStart="14dp"-->
+<!--                            android:paddingBottom="1dp"-->
+<!--                            android:textSize="14sp"-->
+<!--                            context:layout_constraintEnd_toEndOf="parent"-->
+<!--                            context:layout_constraintStart_toStartOf="parent"-->
+<!--                            context:layout_constraintTop_toBottomOf="@id/txt_email"/>-->
+
+<!--                    <TextView-->
+<!--                            android:id="@+id/txt_error_email"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_marginStart="45dp"-->
+<!--                            android:layout_marginTop="2dp"-->
+<!--                            android:layout_marginEnd="24dp"-->
+<!--                            android:text="Please enter your email"-->
+<!--                            android:textColor="@color/input_alert_color"-->
+<!--                            android:visibility="invisible"-->
+<!--                            context:layout_constraintEnd_toEndOf="parent"-->
+<!--                            context:layout_constraintStart_toStartOf="parent" context:layout_constraintTop_toBottomOf="@id/edt_email"/>-->
+
+<!--                    <TextView-->
+<!--                            android:id="@+id/txt_password"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_marginStart="31dp"-->
+<!--                            android:layout_marginTop="2dp"-->
+<!--                            android:layout_marginEnd="24dp"-->
+<!--                            android:fontFamily="@font/segoeui"-->
+<!--                            android:text="Password"-->
+<!--                            android:textColor="#5F5F70"-->
+<!--                            android:textSize="16sp"-->
+<!--                            context:layout_constraintEnd_toEndOf="parent"-->
+<!--                            context:layout_constraintStart_toStartOf="parent" context:layout_constraintTop_toBottomOf="@id/txt_error_email"/>-->
+<!--                    <EditText-->
+<!--                            android:id="@+id/edt_password"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="40dp"-->
+<!--                            android:layout_marginStart="24dp"-->
+<!--                            android:layout_marginTop="6dp"-->
+<!--                            android:layout_marginEnd="24dp"-->
+<!--                            android:background="@drawable/round_white_background_with_border"-->
+<!--                            android:elevation="4dp"-->
+<!--                            android:ems="10"-->
+<!--                            android:fontFamily="@font/segoeui"-->
+<!--                            android:inputType="textPassword"-->
+<!--                            android:paddingStart="14dp"-->
+<!--                            android:paddingBottom="1dp"-->
+<!--                            android:textSize="14sp"-->
+<!--                            context:layout_constraintEnd_toEndOf="parent"-->
+<!--                            context:layout_constraintStart_toStartOf="parent"-->
+<!--                            context:layout_constraintTop_toBottomOf="@id/txt_password"/>-->
+<!--                    <TextView-->
+<!--                            android:id="@+id/txt_error_password"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_marginStart="45dp"-->
+<!--                            android:layout_marginTop="2dp"-->
+<!--                            android:layout_marginEnd="24dp"-->
+<!--                            android:text="Password must have at least 6 characters"-->
+<!--                            android:textColor="@color/input_alert_color"-->
+<!--                            android:visibility="invisible"-->
+<!--                            context:layout_constraintEnd_toEndOf="parent"-->
+<!--                            context:layout_constraintStart_toStartOf="parent"-->
+<!--                            context:layout_constraintTop_toBottomOf="@id/edt_password"/>-->
+<!--                    <TextView-->
+<!--                            android:id="@+id/txt_reenter_password"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_marginStart="31dp"-->
+<!--                            android:layout_marginTop="2dp"-->
+<!--                            android:layout_marginEnd="24dp"-->
+<!--                            android:fontFamily="@font/segoeui"-->
+<!--                            android:text="Re-enter password"-->
+<!--                            android:textColor="#5F5F70"-->
+<!--                            android:textSize="16sp"-->
+<!--                            context:layout_constraintEnd_toEndOf="parent"-->
+<!--                            context:layout_constraintStart_toStartOf="parent"-->
+<!--                            context:layout_constraintTop_toBottomOf="@id/txt_error_password"/>-->
+<!--                    <EditText-->
+<!--                            android:id="@+id/edt_reenter_password"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="40dp"-->
+<!--                            android:layout_marginStart="24dp"-->
+<!--                            android:layout_marginTop="6dp"-->
+<!--                            android:layout_marginEnd="24dp"-->
+<!--                            android:background="@drawable/round_white_background_with_border"-->
+<!--                            android:elevation="4dp"-->
+<!--                            android:ems="10"-->
+<!--                            android:fontFamily="@font/segoeui"-->
+<!--                            android:inputType="textPassword"-->
+<!--                            android:paddingStart="14dp"-->
+<!--                            android:paddingBottom="1dp"-->
+<!--                            android:textSize="14sp"-->
+<!--                            context:layout_constraintEnd_toStartOf="@+id/edt_id"-->
+<!--                            context:layout_constraintStart_toStartOf="parent"-->
+<!--                            context:layout_constraintTop_toBottomOf="@id/txt_reenter_password"/>-->
+<!--                    <TextView-->
+<!--                            android:id="@+id/txt_error_reenter_password"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_marginStart="45dp"-->
+<!--                            android:layout_marginTop="2dp"-->
+<!--                            android:layout_marginEnd="45dp"-->
+<!--                            android:text="Your password does not match"-->
+<!--                            android:textColor="@color/input_alert_color"-->
+<!--                            android:visibility="invisible"-->
+<!--                            context:layout_constraintEnd_toEndOf="parent"-->
+<!--                            context:layout_constraintStart_toStartOf="parent"-->
+<!--                            context:layout_constraintTop_toBottomOf="@id/edt_reenter_password"/>-->
+<!--                    <TextView-->
+<!--                            android:id="@+id/btn_sign_up"-->
+<!--                            android:layout_width="115dp"-->
+<!--                            android:layout_height="40dp"-->
+<!--                            android:layout_marginStart="223dp"-->
+<!--                            android:layout_marginTop="12dp"-->
+<!--                            android:layout_marginEnd="223dp"-->
+<!--                            android:background="@drawable/round_yellow_background"-->
+<!--                            android:fontFamily="@font/seguisb"-->
+<!--                            android:gravity="center"-->
+<!--                            android:maxWidth="10dp"-->
+<!--                            android:text="Sign up" android:textAllCaps="false"-->
+<!--                            android:textColor="#ffffff"-->
+<!--                            android:textSize="16sp"-->
+<!--                            context:layout_constraintEnd_toEndOf="parent"-->
+<!--                            context:layout_constraintStart_toStartOf="parent"-->
+<!--                            context:layout_constraintTop_toBottomOf="@id/txt_error_reenter_password"-->
+<!--                    />-->
+
+<!--                </androidx.constraintlayout.widget.ConstraintLayout>-->
+<!--            </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+<!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+<!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--                android:id="@+id/viewgroup_sign_up_successfully"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="230dp"-->
+<!--                android:alpha="1"-->
+<!--                android:orientation="vertical"-->
+<!--                android:visibility="gone"-->
+<!--                context:layout_constraintBottom_toBottomOf="parent"-->
+<!--                context:layout_constraintEnd_toEndOf="parent"-->
+<!--                context:layout_constraintStart_toStartOf="parent" context:layout_constraintTop_toTopOf="parent"-->
+<!--        >-->
+<!--            <ImageView-->
+<!--                    android:id="@+id/img_background_sign_up_successfully"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_marginStart="20dp"-->
+<!--                    android:layout_marginEnd="20dp"-->
+<!--                    android:alpha="0.8"-->
+<!--                    android:background="@drawable/round_10dp_white_background"-->
+<!--                    context:layout_constraintBottom_toBottomOf="parent"-->
+<!--                    context:layout_constraintEnd_toEndOf="parent"-->
+<!--                    context:layout_constraintHorizontal_bias="0.0"-->
+<!--                    context:layout_constraintStart_toStartOf="parent"-->
+<!--                    context:layout_constraintTop_toTopOf="parent" context:layout_constraintVertical_bias="0.0"-->
+<!--                    context:srcCompat="@drawable/round_10dp_white_background"/>-->
+<!--            <TextView-->
+<!--                    android:id="@+id/txt_notification"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content" android:layout_marginStart="8dp"-->
+<!--                    android:layout_marginTop="45dp" android:layout_marginEnd="8dp"-->
+<!--                    android:fontFamily="@font/segoeui" android:text="Sign up successfully"-->
+<!--                    android:textAlignment="center" android:textColor="#000000" android:textSize="21sp"-->
+<!--                    context:layout_constraintEnd_toEndOf="parent" context:layout_constraintStart_toStartOf="parent"-->
+<!--                    context:layout_constraintTop_toTopOf="parent"/>-->
+<!--            <TextView-->
+<!--                    android:id="@+id/btn_back_to_sign_in"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="40dp"-->
+<!--                    android:layout_marginStart="8dp"-->
+<!--                    android:layout_marginTop="8dp"-->
+<!--                    android:layout_marginEnd="8dp"-->
+<!--                    android:layout_marginBottom="46dp"-->
+<!--                    android:background="@drawable/round_100dp_light_red_background"-->
+<!--                    android:fontFamily="@font/seguisb"-->
+<!--                    android:gravity="center"-->
+<!--                    android:paddingStart="55dp" android:paddingEnd="55dp"-->
+<!--                    android:text="Back to sign in" android:textAllCaps="false"-->
+<!--                    android:textColor="#ffffff" android:textSize="16sp"-->
+<!--                    context:layout_constraintBottom_toBottomOf="@+id/img_background_sign_up_successfully"-->
+<!--                    context:layout_constraintEnd_toEndOf="parent" context:layout_constraintStart_toStartOf="parent"-->
+<!--                    context:layout_constraintTop_toTopOf="parent" context:layout_constraintVertical_bias="1"/>-->
+<!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+<!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--                android:id="@+id/viewgroup_sign_up_fail"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="230dp"-->
+<!--                android:alpha="1"-->
+<!--                android:orientation="vertical"-->
+<!--                android:visibility="gone"-->
+<!--                context:layout_constraintBottom_toBottomOf="parent"-->
+<!--                context:layout_constraintEnd_toEndOf="parent"-->
+<!--                context:layout_constraintStart_toStartOf="parent" context:layout_constraintTop_toTopOf="parent"-->
+<!--        >-->
+<!--            <ImageView-->
+<!--                    android:id="@+id/img_background_sign_up_fail"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_marginStart="20dp"-->
+<!--                    android:layout_marginEnd="20dp"-->
+<!--                    android:alpha="0.8"-->
+<!--                    android:background="@drawable/round_10dp_white_background"-->
+<!--                    context:layout_constraintBottom_toBottomOf="parent"-->
+<!--                    context:layout_constraintEnd_toEndOf="parent"-->
+<!--                    context:layout_constraintHorizontal_bias="0.0"-->
+<!--                    context:layout_constraintStart_toStartOf="parent"-->
+<!--                    context:layout_constraintTop_toTopOf="parent" context:layout_constraintVertical_bias="0.0"-->
+<!--                    context:srcCompat="@drawable/round_10dp_white_background"/>-->
+<!--            <TextView-->
+<!--                    android:id="@+id/txt_fail_notification"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content" android:layout_marginStart="8dp"-->
+<!--                    android:layout_marginTop="45dp" android:layout_marginEnd="8dp"-->
+<!--                    android:fontFamily="@font/segoeui" android:text="Error happened, please try again"-->
+<!--                    android:textAlignment="center" android:textColor="#000000" android:textSize="21sp"-->
+<!--                    context:layout_constraintEnd_toEndOf="parent" context:layout_constraintStart_toStartOf="parent"-->
+<!--                    context:layout_constraintTop_toTopOf="parent"/>-->
+<!--            <TextView-->
+<!--                    android:id="@+id/btn_check_again"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="40dp"-->
+<!--                    android:layout_marginStart="8dp"-->
+<!--                    android:layout_marginTop="8dp"-->
+<!--                    android:layout_marginEnd="8dp"-->
+<!--                    android:layout_marginBottom="46dp"-->
+<!--                    android:background="@drawable/round_100dp_light_red_background"-->
+<!--                    android:fontFamily="@font/seguisb"-->
+<!--                    android:gravity="center"-->
+<!--                    android:paddingStart="55dp" android:paddingEnd="55dp"-->
+<!--                    android:text="Check again" android:textAllCaps="false"-->
+<!--                    android:textColor="#ffffff" android:textSize="16sp"-->
+<!--                    context:layout_constraintBottom_toBottomOf="@+id/img_background_sign_up_fail"-->
+<!--                    context:layout_constraintEnd_toEndOf="parent" context:layout_constraintStart_toStartOf="parent"-->
+<!--                    context:layout_constraintTop_toTopOf="parent" context:layout_constraintVertical_bias="1"/>-->
+<!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+<!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
+<!--</layout>-->

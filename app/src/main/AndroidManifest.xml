@@ -12,8 +12,9 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_2"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme_WithSplashScreen">
-        <activity android:name=".view.activity.SetUpAccountActivity" />
+        android:theme="@style/AppTheme_WithSplashScreen"
+        android:windowSoftInputMode="adjustNothing">
+<!--        <activity android:name=".view.activity.ReviewFlashcardEasyActivity"></activity>-->
 
         <meta-data
             android:name="com.facebook.sdk.ApplicationId"
@@ -35,18 +36,19 @@
                 <data android:scheme="@string/fb_login_protocol_scheme" />
             </intent-filter>
         </activity>
+        <activity android:name=".view.activity.ReviewFlashcardActivity" />
+        <activity android:name=".view.activity.SeeVocabularyActivity" />
+        <activity android:name=".view.activity.SearchEngVNDictionaryActivity" />
+        <activity android:name=".view.activity.LanguageActivity" />
         <activity android:name=".view.activity.AddFlashcardActivity" />
         <activity android:name=".view.activity.EditFlashcardActivity" />
         <activity android:name=".view.activity.MenuActivity" />
-        <activity android:name=".view.activity.LanguageActivity" />
         <activity android:name=".view.activity.ViewFlashCardListActivity" />
-        <activity android:name=".view.activity.SignUpActivity" />
         <activity android:name=".view.activity.SearchEditFlashcardActivity" />
         <activity android:name=".view.activity.SearchVocabularyActivity" />
-
-        <activity android:name=".view.activity.UseFlashcardDoneActivity"/>
+        <activity android:name=".view.activity.UseFlashcardDoneActivity" />
         <activity android:name=".view.activity.UseFlashcardActivity" />
-        <activity android:name=".view.activity.AuthActivity" >
+        <activity android:name=".view.activity.ReviewFlashcardEasyActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
