@@ -34,21 +34,6 @@ class ReviewFlashcardActivityModule {
     }
 
     @Provides
-    @Named("Float")
-    fun provideFloatAnim () : Animator {
-        return ValueAnimator.ofFloat(0f, 15f)
-    }
-
-    @Provides
-    @Named("MoveRight120%AndFadeOut")
-    fun provideMoveRightAndFadeOutAnim (activity: ReviewFlashcardActivity) : Animator {
-        return AnimatorInflater.loadAnimator(activity, R.animator.move_right_and_fade_out).apply {
-            duration = 400
-            interpolator = FastOutLinearInInterpolator()
-        }
-    }
-
-    @Provides
     @Named("ZoomTo0.5XAndFadeOut")
     fun provideZoomSmallerAndFadeOut(activity: ReviewFlashcardActivity) : Animator{
         return AnimatorInflater.loadAnimator(activity, R.animator.zoom_to_haft_and_fade_out).apply {

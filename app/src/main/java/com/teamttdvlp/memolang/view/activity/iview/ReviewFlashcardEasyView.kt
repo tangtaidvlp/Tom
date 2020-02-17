@@ -4,15 +4,23 @@ import com.teamttdvlp.memolang.model.entity.flashcard.Flashcard
 
 interface ReviewFlashcardEasyView : View {
 
-    fun showTestSubjectOnScreen (testSubject : Flashcard, ansElements : Array<String>, useUsingForTestSubject : Boolean)
+    companion object {
+        val CHARACTER_LIST = -1
+
+        val WORD_LIST = -2
+    }
+
+    fun showTestSubjectOnScreen (testSubject : Flashcard, useUsingForTestSubject : Boolean,
+                                                          ansElements : Array<String>, listType : Int)
 
     fun performCorrectAnsElemtsOrderAnims ()
 
     fun performIncorrectAnsElemtsOrderAnims ()
 
-    fun performPassAnims ()
+    fun performPassBehaviours ()
 
-    fun performNotPassAnim ()
+    fun performNotPassBehaviours ()
 
     fun endReviewing()
+    fun showNextCardAnims()
 }

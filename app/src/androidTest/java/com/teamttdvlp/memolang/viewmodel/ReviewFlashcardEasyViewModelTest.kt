@@ -29,11 +29,11 @@ class ReviewFlashcardEasyViewModelTest {
 
         }
 
-        override fun performPassAnims() {
+        override fun performPassBehaviours() {
 
         }
 
-        override fun performNotPassAnim() {
+        override fun performNotPassBehaviours() {
 
         }
 

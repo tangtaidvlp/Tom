@@ -86,8 +86,8 @@ class TestEverything {
 //            mockDataList.add(flashcard)
             mockDataList.add(flashcard1)
             mockDataList.add(flashcard2)
-//            mockDataList.add(flashcard4)
             mockDataList.add(flashcard3)
+            mockDataList.add(flashcard4)
 //            mockDataList.add(flashcard5)
             return mockDataList
         }
@@ -107,6 +107,17 @@ class TestEverything {
             }
 
             return result
+        }
+
+        fun mockAnswerElementList (answer : String) : Array<String> {
+            if (answer.contains(" ")) {
+                return Array<String>(answer.split(" ").size) {
+                    return@Array answer.split(" ")[it]
+                }
+            }
+            return Array<String>(answer.length) {
+                return@Array answer[it].toString()
+            }
         }
     }
 }

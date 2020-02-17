@@ -24,6 +24,7 @@ class ReviewFlashcardEasyViewModel : BaseViewModel<ReviewFlashcardEasyView>() {
         this.cardList = cardList
         currentCard = cardList.first()
         currentPos.set(0)
+        useCard(currentCard)
     }
 
     fun checkAnswer (userAnswer : String) {
@@ -31,7 +32,7 @@ class ReviewFlashcardEasyViewModel : BaseViewModel<ReviewFlashcardEasyView>() {
         val answerIsComplete = (userAnswer.length == cardAnswer.length)
         if (answerIsComplete) {
             if (userAnswer == cardAnswer) {
-                view.performPassAnims()
+                view.performPassBehaviours()
             } else {
                 view.performIncorrectAnsElemtsOrderAnims()
             }
@@ -57,10 +58,17 @@ class ReviewFlashcardEasyViewModel : BaseViewModel<ReviewFlashcardEasyView>() {
     }
 
     fun useCard (card : Flashcard) {
+        val listType = if (card.text.trim().contains(" "))
+                                        ReviewFlashcardEasyView.WORD_LIST
+                                else
+                                        ReviewFlashcardEasyView.CHARACTER_LIST
+
         view.showTestSubjectOnScreen(
-            card,
+            testSubject = card,
             ansElements = convertAnswerToElements(card.text),
-            useUsingForTestSubject = canUseUsingForTestSubject(card))
+            useUsingForTestSubject = canUseUsingForTestSubject(card),
+            listType = listType
+            )
     }
 
     fun convertAnswerToElements (input : String) : Array<String> {

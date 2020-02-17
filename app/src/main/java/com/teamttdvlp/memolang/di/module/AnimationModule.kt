@@ -2,6 +2,7 @@ package com.teamttdvlp.memolang.di.module
 
 import android.animation.Animator
 import android.animation.AnimatorInflater
+import android.animation.ValueAnimator
 import android.view.animation.Animation
 import android.view.animation.AnimationUtils
 import androidx.interpolator.view.animation.FastOutLinearInInterpolator
@@ -13,6 +14,23 @@ import javax.inject.Named
 
 @Module
 class AnimationModule {
+
+
+    @Provides
+    @Named("Float")
+    fun provideFloatAnim () : Animator {
+        return ValueAnimator.ofFloat(0f, 15f)
+    }
+
+    @Provides
+    @Named("MoveRight120%AndFadeOut")
+    fun provideMoveRightAndFadeOutAnim (context: MemoLang) : Animator {
+        return AnimatorInflater.loadAnimator(context, R.animator.move_right_and_fade_out).apply {
+            duration = 400
+            interpolator = FastOutLinearInInterpolator()
+        }
+    }
+
 
     @Provides
     @Named("AppearThenDisappearAnimation")

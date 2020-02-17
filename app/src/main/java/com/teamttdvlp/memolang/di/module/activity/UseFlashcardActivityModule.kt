@@ -32,16 +32,6 @@ class UseFlashcardActivityModule {
         }
     }
 
-
-    @Provides
-    @Named("Float")
-    fun provideFloatAnim () : Animator {
-        return ValueAnimator.ofFloat(0f, 15f).apply {
-            duration = animDuration
-            interpolator = animInterpolator
-        }
-    }
-
     @Provides
     @Named("Sink")
     fun provideSinkAnim () : Animator {

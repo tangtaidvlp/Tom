@@ -10,8 +10,9 @@ import androidx.annotation.Dimension.SP
 import androidx.interpolator.view.animation.FastOutSlowInInterpolator
 import com.teamttdvlp.memolang.R
 import com.teamttdvlp.memolang.view.helper.UnitConverter.DpToPixel
+import com.teamttdvlp.memolang.view.helper.dp
 
-class CharacterCell  : TextView {
+class Cell  : TextView {
 
     val ANIM_DURATION = 150L
 
@@ -19,12 +20,22 @@ class CharacterCell  : TextView {
         val DIRECTION_UP = -1
 
         val DIRECTION_DOWN = -2
+
+        val INPUT_CELL = -3
+
+        val OUTPUT_CELL = -4
     }
 
     private var onRestore : ((delayTime : Long) -> Unit)? = null
 
-    constructor(context: Context) : super(context) {
-
+    constructor(context: Context, cellType : Int) : super(context) {
+        if (cellType == INPUT_CELL) {
+            background = context.getDrawable(R.drawable.round_3dp_light_red_background)
+            setTextColor(Color.WHITE)
+        } else if (cellType == OUTPUT_CELL) {
+            background = context.getDrawable(R.drawable.round_3dp_white_background_with_dark_red_border)
+            setTextColor(Color.BLACK)
+        }
     }
 
     constructor(context: Context, attrSet : AttributeSet?) : super(context, attrSet) {
@@ -67,9 +78,7 @@ class CharacterCell  : TextView {
     }
 
     init {
-        background = context.getDrawable(R.drawable.round_3dp_light_red_background)
-        elevation = DpToPixel(5).toFloat()
-        setTextColor(Color.WHITE)
+        elevation = 3.dp().toFloat()
         setTextSize(SP, 20f)
         gravity = Gravity.CENTER
     }
