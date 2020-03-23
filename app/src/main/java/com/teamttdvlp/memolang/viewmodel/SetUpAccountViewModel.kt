@@ -36,9 +36,14 @@ class SetUpAccountViewModel(var authManager : FirebaseAuth
     }
 
     fun getUserInfoAndNavigateToMenu () {
-        userRepository.triggerGetUser { user ->
-            setSingletonUser( "", user!!.motherLanguage, user.targetLanguage)
-            getSingletonUser()!!.recentUseLanguages = user.recentUseLanguages
+        userRepository.triggerGetUser { userEntity ->
+            createUser( "", userEntity!!.motherLanguage, userEntity.targetLanguage)
+            getUser().apply {
+                recentUseLanguages = userEntity.recentUseLanguages
+                flashcardSetNames = userEntity.flashcardSetNames
+                customTypes = userEntity.customTypes
+                recentUseFlashcardSet  = userEntity.recentUseFlashcardSet
+            }
         }
         view.navigateToMenuScreen()
     }
@@ -56,8 +61,8 @@ class SetUpAccountViewModel(var authManager : FirebaseAuth
     }
 
     fun createUserInfo(motherLang: String, targetLang: String) {
-        setSingletonUser("", motherLang, targetLang)
-        writeUserToOfflineDatabase(getSingletonUser()!!)
+        createUser("", motherLang, targetLang)
+        writeUserToOfflineDatabase(getUser())
         saveSignedInStatus()
         view.navigateToMenuScreen()
     }

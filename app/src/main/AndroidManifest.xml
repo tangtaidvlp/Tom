@@ -37,18 +37,23 @@
             </intent-filter>
         </activity>
         <activity android:name=".view.activity.ReviewFlashcardActivity" />
-        <activity android:name=".view.activity.SeeVocabularyActivity" />
+        <activity android:name=".view.activity.SeeVocabularyActivity"
+            android:windowSoftInputMode="adjustPan"/>
         <activity android:name=".view.activity.SearchEngVNDictionaryActivity" />
-        <activity android:name=".view.activity.LanguageActivity" />
+        <activity android:name=".view.activity.ViewFlashcardSetActivity" />
         <activity android:name=".view.activity.AddFlashcardActivity" />
         <activity android:name=".view.activity.EditFlashcardActivity" />
-        <activity android:name=".view.activity.MenuActivity" />
+        <activity android:name=".view.activity.MenuActivity"
+            android:windowSoftInputMode="adjustPan"/>
         <activity android:name=".view.activity.ViewFlashCardListActivity" />
-        <activity android:name=".view.activity.SearchEditFlashcardActivity" />
-        <activity android:name=".view.activity.SearchVocabularyActivity" />
+<!--        <activity android:name=".view.activity.SearchEditFlashcardActivity" />-->
+        <activity android:name=".view.activity.SearchOnlineActivity"
+            android:windowSoftInputMode="adjustPan"/>
+
         <activity android:name=".view.activity.UseFlashcardDoneActivity" />
         <activity android:name=".view.activity.UseFlashcardActivity" />
-        <activity android:name=".view.activity.ReviewFlashcardEasyActivity">
+        <activity android:name=".view.activity.ReviewFlashcardEasyActivity" />
+        <activity android:name=".view.activity.SetUpAccountActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

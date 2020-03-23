@@ -7,55 +7,53 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#ffffff"
+        android:background="@drawable/background_menu_activity"
         tools:context=".view.activity.SearchEngVNDictionaryActivity">
 
-        <ImageView
-            android:id="@+id/btn_search"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:layout_marginEnd="15dp"
-            android:layout_marginBottom="20dp"
-            android:alpha="0.75"
-            android:elevation="6dp"
-            android:src="@drawable/image_search_dictionary"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="parent" />
-
-        <EditText
-            android:id="@+id/edt_eng_vi_dictionary"
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/vwgrp_en_vi_dictionary"
             android:layout_width="0dp"
-            android:layout_height="40dp"
-            android:layout_marginStart="15dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="15dp"
-            android:background="@drawable/round_10dp_white_background_with_border"
-            android:ems="10"
-            android:fontFamily="@font/segoeui"
-            android:hint="Type your text (English)"
-            android:inputType="textPersonName"
-            android:paddingStart="16dp"
-            android:paddingEnd="16dp"
-            android:paddingBottom="1dp"
-            android:textColorHint="@color/search_dictionary_hint_color"
-            android:textSize="18sp"
-            android:transitionName="Search_Edittext"
+            android:layout_height="35dp"
+            android:layout_marginStart="@dimen/common_margin_start"
+            android:layout_marginTop="@dimen/common_margin_top"
+            android:layout_marginEnd="@dimen/common_margin_end"
+            android:background="@drawable/round_3dp_yellow_search_bar_background"
+            android:weightSum="2"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent">
 
-        <ImageView
-            android:id="@+id/btn_delete_all_text"
-            android:layout_width="16dp"
-            android:layout_height="16dp"
-            android:layout_marginRight="10dp"
-            android:elevation="5.5dp"
-            android:src="@drawable/image_btn_clear"
-            app:layout_constraintBottom_toBottomOf="@id/edt_eng_vi_dictionary"
-            app:layout_constraintRight_toRightOf="@id/edt_eng_vi_dictionary"
-            app:layout_constraintTop_toTopOf="@id/edt_eng_vi_dictionary" />
+            <EditText
+                android:id="@+id/txt_eng_vi_dictionary"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:ems="10"
+                android:fontFamily="@font/segoeui"
+                android:hint="English-Vietnamese dictionary"
+                android:inputType="textPersonName"
+                android:paddingBottom="1dp"
+                android:textColorHint="#5E5533"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toStartOf="@id/btn_clear_all_text"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/btn_clear_all_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:src="@drawable/image_clear_all_text_black"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rcv_dictionary"
@@ -65,33 +63,49 @@
             android:layout_marginTop="10dp"
             android:layout_marginRight="15dp"
             android:layout_marginBottom="20dp"
-            android:background="@drawable/round_10dp_white_background_with_border"
             android:paddingStart="16dp"
             android:paddingEnd="16dp"
             android:visibility="gone"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/edt_eng_vi_dictionary"
+            app:layout_constraintTop_toBottomOf="@+id/vwgrp_en_vi_dictionary"
             app:layout_constraintVertical_bias="0.0" />
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rcv_recent_search_dic"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_marginLeft="15dp"
+            android:layout_marginLeft="25dp"
             android:layout_marginTop="10dp"
-            android:layout_marginRight="15dp"
+            android:layout_marginRight="25dp"
             android:layout_marginBottom="20dp"
             android:alpha="0.0"
-            android:background="@drawable/round_10dp_white_background_with_border"
-            android:paddingStart="16dp"
-            android:paddingEnd="16dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/edt_eng_vi_dictionary"
+            app:layout_constraintTop_toBottomOf="@+id/vwgrp_en_vi_dictionary"
             app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/btn_search"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/common_margin_end"
+            android:layout_marginBottom="20dp"
+            android:text="Tap"
+            android:gravity="center"
+            android:textColor="#FFCA7A"
+            android:textSize="17sp"
+            android:fontFamily="@font/segoeui"
+            android:paddingBottom="3dp"
+            android:background="@drawable/round_5dp_brown_of_land_background"
+            android:elevation="6dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent" />
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

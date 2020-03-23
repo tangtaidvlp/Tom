@@ -1,7 +1,7 @@
 package com.teamttdvlp.memolang.di.module.activity
 
 import com.teamttdvlp.memolang.view.activity.SearchEngVNDictionaryActivity
-import com.teamttdvlp.memolang.view.adapter.RCVRecentSearchDictionaryAdapter
+import com.teamttdvlp.memolang.view.adapter.RCVRecent_SearchDictionary_Adapter
 import com.teamttdvlp.memolang.view.adapter.RCVSearchDictionaryAdapter
 import dagger.Module
 import dagger.Provides
@@ -15,8 +15,8 @@ class SearchEngVNDictionaryModule {
     }
 
     @Provides
-    fun provideRCVRecentSearchDictHistoryAdapter (context : SearchEngVNDictionaryActivity) : RCVRecentSearchDictionaryAdapter {
-        return RCVRecentSearchDictionaryAdapter(context)
+    fun provideRCVRecentSearchDictHistoryAdapter (context : SearchEngVNDictionaryActivity) : RCVRecent_SearchDictionary_Adapter {
+        return RCVRecent_SearchDictionary_Adapter(context)
     }
 
 }

@@ -6,6 +6,7 @@ import com.teamttdvlp.memolang.model.TextSpeaker
 import com.teamttdvlp.memolang.model.entity.*
 import com.teamttdvlp.memolang.database.sql.repository.FlashcardRepository
 import com.teamttdvlp.memolang.database.sql.repository.UserSearchHistoryRepository
+import com.teamttdvlp.memolang.model.RecentAddedFlashcardManager
 import com.teamttdvlp.memolang.model.entity.flashcard.Flashcard
 import com.teamttdvlp.memolang.model.entity.vocabulary.Example
 import com.teamttdvlp.memolang.model.entity.vocabulary.TransAndExamp
@@ -42,7 +43,11 @@ const val PARTS_DEVIDER = "<pd>"
 const val USING_DETAILS_JOINT= "/"
 const val NAVIGATE_TAG = "<nav>"
 
-class SeeVocabularyActivityViewModel (var app : Application, var userSearchHistoryRepos: UserSearchHistoryRepository, var flashcardRepository: FlashcardRepository) : BaseAndroidViewModel<SeeVocabularyView>(app) {
+class SeeVocabularyActivityViewModel (
+                                    var app : Application,
+                                    var recentAddedFlashcardManager: RecentAddedFlashcardManager,
+                                    var userSearchHistoryRepos: UserSearchHistoryRepository,
+                                    var flashcardRepository: FlashcardRepository) : BaseAndroidViewModel<SeeVocabularyView>(app) {
 
     private val vocabulary = MutableLiveData<Vocabulary>()
 
@@ -67,9 +72,7 @@ class SeeVocabularyActivityViewModel (var app : Application, var userSearchHisto
                 )
             }
         } else if (vocaHasOnlyOneUsing) {
-            val using = vocaParts.get(TYPE) + PARTS_DEVIDER + vocaParts.get(
-                USING
-            )
+            val using = vocaParts.get(TYPE) + PARTS_DEVIDER + vocaParts.get(USING)
             usingList = List<String>(1) { using }
         }
 
@@ -149,23 +152,26 @@ class SeeVocabularyActivityViewModel (var app : Application, var userSearchHisto
         flashcardRepository.insertFlashcard(newCard, onInsertListener)
     }
 
-    fun addFlashcard (sourceLang : String, targetLang : String, type : String, text : String, translation : String, using : String, pronunciation : String) {
-        val langInfo = "$sourceLang-$targetLang"
+    fun addFlashcard (sourceLang : String, targetLang : String, setName : String,
+                      type : String, text : String,
+                      translation : String, example : String, meanExample : String, pronunciation : String) {
+        val langInfo = "$sourceLang - $targetLang"
         val newCard = Flashcard(
             0,
             text,
             translation,
-            langInfo,
-            using,
-            "",
+            langInfo, setName,
+            example,
+            meanExample,"",
             type,
-            pronunciation
-        )
+            pronunciation)
+
         addFlashcardToOfflineDB(newCard) { isSuccess, insertedCardId, exception ->
             if (isSuccess) {
                 view.onAddFlashcardSuccess()
                 newCard.id = insertedCardId.toInt()
                 addSearchedCardToHistory(newCard.id, newCard.createdAt)
+                recentAddedFlashcardManager.add(newCard)
             } else {
                 quickLog("Storing this flashcard to local storage failed. Please check again")
                 exception!!.printStackTrace()
@@ -175,5 +181,13 @@ class SeeVocabularyActivityViewModel (var app : Application, var userSearchHisto
 
     fun addSearchedCardToHistory (cardId : Int, searchedTime : Date) {
         userSearchHistoryRepos.addNewCard(cardId, searchedTime)
+    }
+
+    fun stopAllTextSpeaker() {
+        textSpeaker.shutDown()
+    }
+
+    fun getFlashcardSetNameList(): ArrayList<String> {
+        return User.getInstance().flashcardSetNames
     }
 }

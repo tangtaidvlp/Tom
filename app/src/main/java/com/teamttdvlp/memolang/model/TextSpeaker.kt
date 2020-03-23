@@ -3,10 +3,12 @@ package com.teamttdvlp.memolang.model
 import android.content.Context
 import android.speech.tts.TextToSpeech
 import android.speech.tts.TextToSpeech.*
+import android.speech.tts.UtteranceProgressListener
 import com.teamttdvlp.memolang.view.helper.quickLog
 import java.util.*
+import kotlin.collections.HashMap
 
-class TextSpeaker (context : Context, language : String) {
+class TextSpeaker (context : Context, language : String,  textCalled_AfterFinish_Initiating : String ="" ) {
 
     companion object {
         val LANG_NOT_SUPPORTED_ERR = "is not supported"
@@ -24,7 +26,9 @@ class TextSpeaker (context : Context, language : String) {
 
     var error : String? = null
 
-    private var tts : TextToSpeech
+    private lateinit var tts : TextToSpeech
+
+    private var onSpeakDone : (() -> Unit)? = null
 
     init {
         tts = TextToSpeech(context) { status ->
@@ -32,10 +36,31 @@ class TextSpeaker (context : Context, language : String) {
                 error = INIT_SPEAKER_FAILED
             } else {
                 setLanguage(clearLangSpecialFeature(language))
+                tts.setPitch(1f)
+                tts.setSpeechRate(0.75f)
+                tts.setOnUtteranceProgressListener(object : UtteranceProgressListener () {
+                    override fun onDone(utteranceId: String?) {
+                        onSpeakDone?.invoke()
+                    }
+
+                    override fun onError(utteranceId: String?) {
+
+                    }
+
+                    override fun onStart(utteranceId: String?) {
+
+                    }
+
+                })
+                tts.speak(textCalled_AfterFinish_Initiating, QUEUE_FLUSH, params)
             }
         }
-        tts.setPitch(1f)
-        tts.setSpeechRate(0.75f)
+    }
+
+    fun setOnSpeakTextDoneListener (onDone : () -> Unit) {
+        if (onSpeakDone != onDone) {
+            onSpeakDone = onDone
+        }
     }
 
     private fun setLanguage (language : String) {
@@ -60,12 +85,15 @@ class TextSpeaker (context : Context, language : String) {
         }
     }
 
+    val params = HashMap<String, String>().apply {
+        put(Engine.KEY_PARAM_UTTERANCE_ID, "MeanlessID")
+    }
     fun speak (text : String) {
-        tts.speak(text, QUEUE_FLUSH, null)
+        tts.speak(text, QUEUE_FLUSH, params)
     }
 
     // Convert from "Chinese (Simplified)" --> "Chinese"
-    fun clearLangSpecialFeature (lang : String) : String {
+    private fun clearLangSpecialFeature (lang : String) : String {
         var result = lang
         if ((lang.contains("(")) and (lang.contains(")"))) {
             val openParenthesis = lang.indexOf("(")
@@ -73,5 +101,9 @@ class TextSpeaker (context : Context, language : String) {
             result = result.removeRange(openParenthesis, closeParenthesis + 1).trim()
         }
         return result
+    }
+
+    fun shutDown() {
+        tts.shutdown()
     }
 }

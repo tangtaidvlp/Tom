@@ -14,5 +14,5 @@ fun findTextFormInAnother (text : String, motherText : String) : String {
 }
 
 fun canUseUsingForTestSubject (flashcard: Flashcard) : Boolean {
-    return flashcard.using.toLowerCase().contains(flashcard.text.toLowerCase().trim()) and flashcard.usingTranslation.isNotEmpty()
+    return flashcard.example.toLowerCase().contains(flashcard.text.toLowerCase().trim()) and flashcard.exampleMean.isNotEmpty()
 }

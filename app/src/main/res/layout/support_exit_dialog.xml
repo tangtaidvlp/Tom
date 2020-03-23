@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="5.1dp"
+    android:gravity="center"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/segoeui"
+        android:layout_marginStart="@dimen/common_dialog_margin_start"
+        android:layout_marginEnd="@dimen/common_dialog_margin_end"
+        android:background="@drawable/round_5dp_white_background"
+        android:paddingTop="10dp"
+        android:paddingBottom="15dp"
+        android:text="Press the back button again to exit"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="19sp" />
+
+</LinearLayout>

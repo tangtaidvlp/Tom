@@ -5,8 +5,12 @@ import androidx.databinding.ObservableField
 import androidx.databinding.ObservableInt
 import com.teamttdvlp.memolang.model.CardListManager
 import com.teamttdvlp.memolang.model.TextSpeaker
+import com.teamttdvlp.memolang.model.UseFCActivity_StatusManager
+import com.teamttdvlp.memolang.model.UseFCActivity_StatusManager.SpeakerStatus.Companion.SPEAK_TEXT_AND_TRANSLATION
+import com.teamttdvlp.memolang.model.UseFCActivity_StatusManager.SpeakerStatus.Companion.SPEAK_TEXT_ONLY
 import com.teamttdvlp.memolang.model.entity.flashcard.Flashcard
 import com.teamttdvlp.memolang.model.entity.Language
+import com.teamttdvlp.memolang.model.entity.Language.Companion.LANG_DIVIDER
 import com.teamttdvlp.memolang.view.activity.iview.UseFlashcardView
 import com.teamttdvlp.memolang.view.base.BaseAndroidViewModel
 import com.teamttdvlp.memolang.view.helper.selfMinusOne
@@ -25,6 +29,8 @@ class UseFlashcardViewModel (var context : Application): BaseAndroidViewModel<Us
 
     val languageInfo = ObservableField<String>()
 
+    val setName = ObservableField<String>()
+
     private val hardCardList = ArrayList<Flashcard>()
 
     private val cardListManager = CardListManager()
@@ -33,14 +39,32 @@ class UseFlashcardViewModel (var context : Application): BaseAndroidViewModel<Us
 
     private lateinit var tgtLangTextSpeaker : TextSpeaker
 
-    fun setData (cardList : ArrayList<Flashcard>) {
+    private lateinit var useFCActivityStatusManager : UseFCActivity_StatusManager
+
+    fun setData (cardList : ArrayList<Flashcard>, changeLanguageFlow : Boolean) {
+
         cardListManager.setData(cardList)
-        val langInfo = cardList.first().languagePair.split("-")
+
+        val langInfo = cardList.first().languagePair.split(LANG_DIVIDER)
         val sourceLang = langInfo.get(Language.SOURCE_LANGUAGE)
         val targetLang = langInfo.get(Language.TARGET_LANGUAGE)
         languageInfo.set("$sourceLang - $targetLang")
-        srcLangTextSpeaker = TextSpeaker(context, sourceLang.trim())
+        setName.set(cardList.first().setName)
+        useFCActivityStatusManager = UseFCActivity_StatusManager(context, cardList.first().setName)
+
+        val textSpokenFirst = if (doesTextNeedSpeakingAtStart()) {
+            cardListManager.getFirstOne().text
+        } else ""
+
+        srcLangTextSpeaker = TextSpeaker(context, sourceLang.trim(), textSpokenFirst)
         tgtLangTextSpeaker = TextSpeaker(context, targetLang.trim())
+
+    }
+
+    fun doesTextNeedSpeakingAtStart () : Boolean {
+        val speakerFunc = useFCActivityStatusManager.speakerStatusManager.getFunction()
+        val speakerIsOn = useFCActivityStatusManager.speakerStatusManager.getStatus()
+        return ((speakerFunc == SPEAK_TEXT_ONLY) or (speakerFunc == SPEAK_TEXT_AND_TRANSLATION)) and speakerIsOn
     }
 
     fun speakSrcLangText (text : String) {
@@ -64,24 +88,18 @@ class UseFlashcardViewModel (var context : Application): BaseAndroidViewModel<Us
         }
     }
 
+    fun moveToNextCard () {
+        val nextCard = cardListManager.focusOnNextCardAndGetIt()
+        updateCurrentCard(nextCard)
+        updateCardOrder()
+    }
+
     fun beginUsing() {
         val firstCard = cardListManager.getFirstOne()
         currentCard.set(firstCard)
         currentCardOrder.set(1)
         cardLeftCount.set(cardListManager.getSize())
     }
-
-
-    fun moveToNextCard () {
-        if (thereIsCardLefts()) {
-            val nextCard = cardListManager.focusOnNextCardAndGetIt()
-            updateCurrentCard(nextCard)
-            updateCardOrder()
-        } else {
-            view.onNoCardsLeft()
-        }
-    }
-
 
     fun moveToPreviousCard () {
         if (hasPrevious()) {
@@ -92,10 +110,9 @@ class UseFlashcardViewModel (var context : Application): BaseAndroidViewModel<Us
         }
     }
 
-    fun thereIsCardLefts () : Boolean {
+    fun checkThereIsCardLefts () : Boolean {
         return cardListManager.hasNext()
     }
-
 
     fun checkIfThereIsPreviousCard () {
         if (hasPrevious()) {
@@ -108,7 +125,6 @@ class UseFlashcardViewModel (var context : Application): BaseAndroidViewModel<Us
     fun updateCurrentCard (card : Flashcard) {
         currentCard.set(card)
     }
-
 
     fun hasNext () : Boolean {
         return cardListManager.hasNext()
@@ -137,5 +153,23 @@ class UseFlashcardViewModel (var context : Application): BaseAndroidViewModel<Us
 
     fun updateCardOrder () {
         currentCardOrder.set(cardListManager.currentIndex + 1)
+    }
+
+    fun getSpeakerFunction () : Int {
+        return useFCActivityStatusManager.speakerStatusManager.getFunction()
+    }
+
+    fun saveAllStatus (speakerFunction : Int, speakerStatus : Boolean) {
+        useFCActivityStatusManager.speakerStatusManager.saveFunction(speakerFunction)
+        useFCActivityStatusManager.speakerStatusManager.saveStatus(speakerStatus)
+    }
+
+    fun stopAllTextSpeaker() {
+        tgtLangTextSpeaker.shutDown()
+        srcLangTextSpeaker.shutDown()
+    }
+
+    fun getSpeakerStatus(): Boolean {
+        return useFCActivityStatusManager.speakerStatusManager.getStatus()
     }
 }

@@ -12,7 +12,7 @@ import com.teamttdvlp.memolang.R
 import com.teamttdvlp.memolang.view.helper.UnitConverter
 
 
-class MeanVocabularyTextView(context : Context) : TextView (context) {
+class MeanVocabularyTextView(context : Context) : androidx.appcompat.widget.AppCompatTextView (context) {
 
     companion object {
         val CONTENT_MARGIN_LEFT = UnitConverter.`10dp`

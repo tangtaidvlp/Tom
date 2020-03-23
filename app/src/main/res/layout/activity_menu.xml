@@ -3,98 +3,235 @@
         xmlns:tools="http://schemas.android.com/tools">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@android:color/white"
-            tools:context=".view.activity.MenuActivity">
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_menu_activity"
+        tools:context=".view.activity.MenuActivity">
 
-        <TextView
-            android:id="@+id/txt_offline_mode_notification"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="7dp"
-            android:background="#6E6EFF"
-            android:fontFamily="@font/segoeui"
-            android:gravity="center"
-            android:padding="8.5dp"
-            android:text="You are in offline mode, searching is not available"
-            android:textColor="#ffffff"
-            android:textSize="14sp"
-            android:visibility="invisible"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0" />
 
-        <androidx.constraintlayout.widget.ConstraintLayout
+        <ListView
+            android:id="@+id/lv_background"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginStart="@dimen/common_margin_start"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="@dimen/common_margin_end"
+            android:alpha="0.04"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/vwgrp_en_vi_dictionary" >
+
+        </ListView>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcv_recent_use_flashcards"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginStart="@dimen/common_margin_start"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="@dimen/common_margin_end"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/vwgrp_en_vi_dictionary"
+            android:orientation="vertical"
+            android:clipToPadding="false"
+            android:layoutAnimation="@anim/layout_animation_slide_from_right_side"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager">
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <ImageView
+            android:id="@+id/btn_menu_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/common_margin_start"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/vwgrp_en_vi_dictionary"
+            app:layout_constraintBottom_toBottomOf="@id/vwgrp_en_vi_dictionary"
+            android:src="@drawable/image_burger_button"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/vwgrp_en_vi_dictionary"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="@dimen/common_margin_top"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/round_5dp_black_background"
+            android:weightSum="2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/btn_menu_button"
             app:layout_constraintTop_toTopOf="parent">
 
-            <EditText
-                android:id="@+id/edt_eng_vi_dictionary"
+            <TextView
+                android:id="@+id/txt_eng_vi_dictionary"
                 android:layout_width="0dp"
-                android:layout_height="40dp"
-                android:layout_marginStart="30dp"
-                android:layout_marginEnd="30dp"
-                android:background="@drawable/round_10dp_white_background_with_border"
-                android:elevation="2dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
                 android:ems="10"
                 android:fontFamily="@font/segoeui"
                 android:hint="English-Vietnamese dictionary"
                 android:inputType="textPersonName"
-                android:paddingStart="16dp"
+                android:gravity="center_vertical"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
                 android:paddingBottom="1dp"
-                android:transitionName="Search_Edittext"
-                app:layout_constraintEnd_toEndOf="parent"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toStartOf="@id/img_search"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <ImageView
-                android:id="@+id/btn_search"
-                android:layout_width="100dp"
+                android:id="@+id/img_search"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="15dp"
-                android:layout_marginEnd="22dp"
-                android:src="@drawable/button_menu_search"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="1.0"
-                app:layout_constraintStart_toEndOf="@+id/btn_learn_flashcard"
-                app:layout_constraintTop_toBottomOf="@+id/edt_eng_vi_dictionary" />
-
-            <ImageView
-                android:id="@+id/btn_add_flashcard"
-                android:layout_width="100dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="22dp"
-                android:layout_marginTop="15dp"
                 android:layout_marginEnd="10dp"
-                android:src="@drawable/button_menu_add_new_flashcard"
-                android:transitionName="add_button"
-                app:layout_constraintEnd_toStartOf="@+id/btn_learn_flashcard"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/edt_eng_vi_dictionary" />
-
-            <ImageView
-                android:id="@+id/btn_learn_flashcard"
-                android:layout_width="100dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
-                android:src="@drawable/button_menu_learning_flashcard"
+                android:layout_weight="1"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.498"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/edt_eng_vi_dictionary" />
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:src="@drawable/image_magnifying_glass" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
 
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:id="@+id/txt_en_vi_dictionary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/segoeui"
+                android:text="English-Vietnamese dictionary"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                app:layout_constraintBottom_toBottomOf="@+id/btn_en_vi_dictionary"
+                app:layout_constraintEnd_toStartOf="@+id/btn_en_vi_dictionary"
+                app:layout_constraintTop_toTopOf="@+id/btn_en_vi_dictionary" />
+
+            <TextView
+                android:id="@+id/txt_quick_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/segoeui"
+                android:text="Quick add"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                app:layout_constraintBottom_toBottomOf="@+id/btn_quick_add"
+                app:layout_constraintEnd_toStartOf="@+id/btn_quick_add"
+                app:layout_constraintTop_toTopOf="@+id/btn_quick_add" />
+
+            <TextView
+                android:id="@+id/txt_add_flashcard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/segoeui"
+                android:text="Add flashcard"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                app:layout_constraintBottom_toBottomOf="@+id/btn_add_flashcard"
+                app:layout_constraintEnd_toStartOf="@+id/btn_add_flashcard"
+                app:layout_constraintTop_toTopOf="@+id/btn_add_flashcard" />
+
+            <TextView
+                android:id="@+id/txt_search_online"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/segoeui"
+                android:text="Search your text online"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                app:layout_constraintBottom_toBottomOf="@+id/btn_search_online"
+                app:layout_constraintEnd_toStartOf="@+id/btn_search_online"
+                app:layout_constraintTop_toTopOf="@+id/btn_search_online" />
+
+            <TextView
+                android:id="@+id/txt_use_flashcard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/segoeui"
+                android:text="Use your flashcards"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                app:layout_constraintBottom_toBottomOf="@+id/btn_use_flashcard"
+                app:layout_constraintEnd_toStartOf="@+id/btn_use_flashcard"
+                app:layout_constraintTop_toTopOf="@+id/btn_use_flashcard" />
+
+            <ImageView
+                android:id="@+id/btn_en_vi_dictionary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/button_en_vi_dictionary"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintTop_toBottomOf="@+id/btn_quick_add" />
+
+            <ImageView
+                android:id="@+id/btn_quick_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/button_quick_add"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/btn_add_flashcard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/button_add_flashcard"
+                android:transitionName="add_button"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btn_en_vi_dictionary" />
+
+            <ImageView
+                android:id="@+id/btn_search_online"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/button_search_online"
+                android:transitionName="add_button"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintTop_toBottomOf="@+id/btn_use_flashcard" />
+
+
+            <ImageView
+                android:id="@+id/btn_use_flashcard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/button_use_flashcard"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btn_add_flashcard" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
         <androidx.appcompat.widget.LinearLayoutCompat
             android:id="@+id/linearLayoutCompat"
@@ -112,6 +249,7 @@
             app:layout_constraintVertical_bias="0.0">
 
         </androidx.appcompat.widget.LinearLayoutCompat>
-_
+
+        _
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

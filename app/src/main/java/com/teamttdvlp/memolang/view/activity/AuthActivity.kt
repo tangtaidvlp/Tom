@@ -256,7 +256,7 @@ package com.teamttdvlp.memolang.view.activity
 //    private fun setUpSingletonUserInfo (user: User.MockUser?) {
 //        viewModel.apply {
 //            if (getSingletonUser() == null)
-//                setSingletonUser(user!!.id, user.recentTargetLanguage, user.recentSourceLanguage)
+//                createSingletonUser(user!!.id, user.recentTargetLanguage, user.recentSourceLanguage)
 //            writeUserToOfflineDatabase(getSingletonUser()!!)
 //            saveSignedInStatus()
 //        }
@@ -272,7 +272,7 @@ package com.teamttdvlp.memolang.view.activity
 //                val isNotTheFirstTimes_And_UserCannotBeNull = !isTheFirstTimes
 //                if (isTheFirstTimes) {
 //                    if (viewModel.getSingletonUser() == null)
-//                        viewModel.setSingletonUser(viewModel.getCurrentUser().uid, "", "")
+//                        viewModel.createSingletonUser(viewModel.getCurrentUser().uid, "", "")
 //                    quickStartActivity(SetUpAccountActivity::class.java)
 //                    finish()
 //                } else if (isNotTheFirstTimes_And_UserCannotBeNull) {

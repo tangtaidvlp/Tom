@@ -9,4 +9,5 @@ interface UseFlashcardView : View{
     fun hidePreviousCardButton ()
 
     fun showSpeakTextError(error: String)
+    
 }

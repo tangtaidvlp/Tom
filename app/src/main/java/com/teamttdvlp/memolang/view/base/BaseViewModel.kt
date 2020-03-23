@@ -14,11 +14,15 @@ abstract class BaseAndroidViewModel <V : View> (app : Application) :  AndroidVie
 
     protected lateinit var view : V
 
-    fun setSingletonUser (id : String = "", motherLang : String, targetLang : String) {
-        User.setInstanceInfo(id, motherLang, targetLang)
+    fun createUser (id : String = "", motherLang : String, targetLang : String) {
+        User.getInstance().apply {
+            this.id = id
+            this.recentSourceLanguage = targetLang
+            this.recentTargetLanguage = motherLang
+        }
     }
 
-    fun getSingletonUser () : User?{
+    fun getUser () : User {
         return User.getInstance()
     }
 
@@ -32,12 +36,15 @@ abstract class BaseViewModel <V : View> () : ViewModel () {
 
     protected lateinit var view : V
 
-
     fun createSingletonUser (id : String, motherLang : String, targetLang : String) {
-        User.setInstanceInfo(id, motherLang, targetLang)
+        User.getInstance().apply {
+            this.id = id
+            this.recentSourceLanguage = targetLang
+            this.recentTargetLanguage = motherLang
+        }
     }
 
-    fun getSingletonUser () : User? {
+    fun getSingletonUser () : User {
         return User.getInstance()
     }
 

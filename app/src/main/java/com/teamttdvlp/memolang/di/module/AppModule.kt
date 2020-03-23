@@ -9,6 +9,8 @@ import com.teamttdvlp.memolang.database.MemoLangSqliteDataBase.Companion.DB_NAME
 import com.teamttdvlp.memolang.database.sql.repository.FlashcardRepository
 import com.teamttdvlp.memolang.database.sql.repository.UserRepository
 import com.teamttdvlp.memolang.database.sql.repository.UserSearchHistoryRepository
+import com.teamttdvlp.memolang.model.RecentAddedFlashcardManager
+import com.teamttdvlp.memolang.view.activity.MenuActivity
 import com.teamttdvlp.memolang.viewmodel.auth.AuthManager
 import dagger.Module
 import dagger.Provides
@@ -43,12 +45,6 @@ class AppModule {
             .build()
     }
 
-//    @Provides
-//    @Singleton
-//    fun provideFirestoreReference () : FirebaseFirestore {
-//        return FirebaseFirestore.getInstance()
-//    }
-
 
     @Provides
     @Singleton
@@ -60,5 +56,12 @@ class AppModule {
     @Singleton
     fun providesFirebaseAuth () : FirebaseAuth{
         return FirebaseAuth.getInstance()
+    }
+
+
+    @Provides
+    @Singleton
+    fun provideRecentAddedCardManager (context : MemoLang, flashcardRepository: FlashcardRepository) : RecentAddedFlashcardManager {
+        return RecentAddedFlashcardManager(context, flashcardRepository)
     }
 }

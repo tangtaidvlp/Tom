@@ -12,6 +12,9 @@ class UserConverter {
                 motherLanguage = user.recentTargetLanguage
                 targetLanguage = user.recentSourceLanguage
                 recentUseLanguages = user.recentUseLanguages
+                flashcardSetNames = user.flashcardSetNames
+                recentUseFlashcardSet = user.recentUseFlashcardSet
+                customTypes = user.customTypes
             }
         }
 

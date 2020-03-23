@@ -18,8 +18,8 @@ abstract class ActivityBuilder {
     @ContributesAndroidInjector(modules = [AddFlashcardActivityModule::class])
     abstract fun injectAddFlashcardActivity() : AddFlashcardActivity
 
-    @ContributesAndroidInjector(modules = [LanguageActivityModule::class])
-    abstract fun injectLanguageActivity() : LanguageActivity
+    @ContributesAndroidInjector(modules = [ViewFlashcardSetActivityModule::class])
+    abstract fun injectLanguageActivity() : ViewFlashcardSetActivity
 
     @ContributesAndroidInjector(modules = [EditFlashcardActivityModule::class])
     abstract fun injectEditFlashcardActivity() : EditFlashcardActivity
@@ -30,14 +30,14 @@ abstract class ActivityBuilder {
     @ContributesAndroidInjector(modules = [ViewFlashcardListActivityModule::class])
     abstract fun injectViewFlashCardListActivity() : ViewFlashCardListActivity
 
-    @ContributesAndroidInjector(modules = [SearchEditFlashcardActivityModule::class])
-    abstract fun injectSearchEditFlashcardActivity() : SearchEditFlashcardActivity
+//    @ContributesAndroidInjector(modules = [SearchEditFlashcardActivityModule::class])
+//    abstract fun injectSearchEditFlashcardActivity() : SearchEditFlashcardActivity
 
     @ContributesAndroidInjector(modules = [SetUpAccountActivityModule::class])
     abstract fun ịnjectSetUpAccountActivity() : SetUpAccountActivity
 
-    @ContributesAndroidInjector(modules = [SearchVocabularyActivityModule::class])
-    abstract fun ịnjectSearchVocabularyActivity() : SearchVocabularyActivity
+    @ContributesAndroidInjector(modules = [SearchOnlineActivityModule::class])
+    abstract fun ịnjectSearchVocabularyActivity() : SearchOnlineActivity
 
     @ContributesAndroidInjector(modules = [UseFlashcardActivityModule::class])
     abstract fun ịnjectUseFlashcardActivity() : UseFlashcardActivity

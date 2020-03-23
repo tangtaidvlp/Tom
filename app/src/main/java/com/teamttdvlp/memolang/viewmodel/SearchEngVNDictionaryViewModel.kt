@@ -16,7 +16,7 @@ class SearchEngVNDictionaryViewModel (var app : Application, var userSearchHisto
 
     private val VOCA_INFO_DIVIDER = "[:]"
 
-    private val SEARCH_DICTIONARY_HISTORY = "SEARCHED_DICTIONARIES_HISTORY"
+    private val SEARCH_DICTIONARY_HISTORY = "SDH"
 
     private val HISTORY = "History"
 
@@ -48,7 +48,7 @@ class SearchEngVNDictionaryViewModel (var app : Application, var userSearchHisto
     }
 
     fun updateSearchHistoryOffline (newHistory : ArrayList<SearchVocaHistoryHolder>) {
-        val preference = app.getSharedPreferences("SEARCHED_DICTIONARIES_HISTORY", MODE_PRIVATE)
+        val preference = app.getSharedPreferences(SEARCH_DICTIONARY_HISTORY, MODE_PRIVATE)
         var historyTextForm = ""
         newHistory.forEach { holder ->
             val holderTextForm = holder.key + VOCA_INFO_DIVIDER + holder.content

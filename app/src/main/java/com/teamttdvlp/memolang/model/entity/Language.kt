@@ -9,12 +9,14 @@ class Language {
 
     companion object {
 
-        // First pos in languagePair detail
+        // First adapterPosition in languagePair detail
         public val SOURCE_LANGUAGE = 0
 
-        // Second pos in languagePair detail
+        // Second adapterPosition in languagePair detail
         public val TARGET_LANGUAGE = 1
 
+        // Language devider
+        public val LANG_DIVIDER = " - "
 
         val AFRIKAANS = "af"
         val ALBANIAN = "sq"

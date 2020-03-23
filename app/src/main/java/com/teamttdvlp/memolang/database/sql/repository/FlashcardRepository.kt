@@ -8,7 +8,7 @@ import com.teamttdvlp.memolang.database.sql.entity.flashcard.FlashCardEntity
 
 class FlashcardRepository  (database : MemoLangSqliteDataBase){
 
-    private val flashcardDAO = database.getMemoCardDAO()
+    private val flashcardDAO = database.getFlashcardDAO()
 
     /**
      * @param insertedCardId used to get the auto generate id of flashcard which is inserted to Offline Database

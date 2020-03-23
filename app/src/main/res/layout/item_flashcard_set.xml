@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        app:cardCornerRadius="10dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="false">
+
+            <ImageView
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:alpha="0.9"
+                android:background="@drawable/flashcard_set_background"
+                android:layout_width="0dp"
+                android:layout_height="0dp"/>
+
+            <TextView
+                android:id="@+id/txt_set_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/round_5dp_white_background"
+                android:fontFamily="@font/sitka_bold"
+                android:gravity="center"
+                android:paddingStart="15dp"
+                android:paddingTop="3dp"
+                android:paddingEnd="15dp"
+                android:paddingBottom="3dp"
+                android:text="English - Vietnamese"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/txt_card_count"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="11dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="15dp"
+                android:alpha="0.8"
+                android:fontFamily="@font/segoeui"
+                android:text="30"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <ImageView
+                android:id="@+id/btn_add_flashcard"
+                android:layout_width="17dp"
+                android:layout_height="17dp"
+                android:layout_marginEnd="18dp"
+                android:layout_marginBottom="15dp"
+                android:clickable="true"
+                android:padding="3dp"
+                android:src="@drawable/button_add_white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/btn_view_list"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <ImageView
+                android:id="@+id/btn_view_list"
+                android:layout_width="32dp"
+                android:layout_height="17dp"
+                android:layout_marginBottom="15dp"
+                android:clickable="true"
+                android:paddingEnd="15dp"
+                android:src="@drawable/button_view_white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <LinearLayout
+                android:id="@+id/vwgrp_using_options"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="9dp"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/btn_add_flashcard"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txt_set_name">
+
+                <LinearLayout
+                    android:id="@+id/vwgrp_use_flashcard"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <ImageView
+                        android:layout_width="18dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/image_use_flashcard_white" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginBottom="2dp"
+                        android:layout_weight="1"
+                        android:alpha="0.9"
+                        android:fontFamily="@font/segoeuisl"
+                        android:gravity="center_vertical"
+                        android:text="Use flashcards"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/vwgrp_review_flashcard_easy"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <ImageView
+                        android:layout_width="18dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/image_review_easy_white" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginBottom="2dp"
+                        android:layout_weight="1"
+                        android:alpha="0.9"
+                        android:fontFamily="@font/segoeuisl"
+                        android:gravity="center_vertical"
+                        android:text="Review flashcards (Easy)"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/vwgrp_review_flashcard_hard"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <ImageView
+                        android:layout_width="18dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/image_review_hard_white" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginBottom="2dp"
+                        android:layout_weight="1"
+                        android:alpha="0.9"
+                        android:fontFamily="@font/segoeuisl"
+                        android:gravity="center_vertical"
+                        android:text="Review flashcards (Hard)"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</layout>

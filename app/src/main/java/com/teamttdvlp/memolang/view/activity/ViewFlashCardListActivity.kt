@@ -19,6 +19,7 @@ import com.teamttdvlp.memolang.database.sql.repository.FlashcardRepository
 import com.teamttdvlp.memolang.view.activity.iview.ViewFlashcardListView
 import com.teamttdvlp.memolang.view.helper.appear
 import com.teamttdvlp.memolang.view.helper.disappear
+import com.teamttdvlp.memolang.view.helper.quickLog
 import com.teamttdvlp.memolang.viewmodel.ViewFlashCardListViewModel
 import java.lang.Exception
 import javax.inject.Inject
@@ -58,6 +59,12 @@ class ViewFlashCardListActivity : BaseActivity<ActivityViewFlashCardListBinding,
         dB.viewModel = viewModel
     }
 
+    override fun onStart() {
+        super.onStart()
+        // OnStart() runs when user back from EditFlashcardActivity to this Activity
+        stopPreventUserFromClickingItem()
+    }
+
     lateinit var viewFlashcardAdapter : RCVViewFlashcardAdapter
 
     override fun addViewControls() { dB.apply {
@@ -82,6 +89,8 @@ class ViewFlashCardListActivity : BaseActivity<ActivityViewFlashCardListBinding,
 
     override fun addViewEvents() { dB.apply {
         viewFlashcardAdapter.setOnItemClickListener { card ->
+            quickLog("Send id: ${card.id}")
+            preventUserFromClickingOtherItem()
             val intent = Intent(this@ViewFlashCardListActivity, EditFlashcardActivity::class.java)
             intent.putExtra(FLASHCARD_KEY, card)
             startActivityForResult(intent, EDIT_FLASHCARD_REQUEST_CODE)
@@ -90,10 +99,6 @@ class ViewFlashCardListActivity : BaseActivity<ActivityViewFlashCardListBinding,
         viewFlashcardAdapter.setOnDeleteButtonClickListener {
             viewFlashcardAdapter.turnOnDeleteMode()
             buttonDeleteAppearAnimator.start()
-        }
-
-        viewFlashcardAdapter.setOnEndDeleteModeListener {
-
         }
 
         btnDeleteSelectedCards.setOnClickListener {
@@ -118,12 +123,19 @@ class ViewFlashCardListActivity : BaseActivity<ActivityViewFlashCardListBinding,
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
+        quickLog("On Get Result")
         if ((requestCode == EDIT_FLASHCARD_REQUEST_CODE) and (resultCode == Activity.RESULT_OK)) {
             hasAChangeInList = true
-            val newFlashcard = data!!.getSerializableExtra(UPDATED_FLASHCARD) as Flashcard
-            val i = viewFlashcardAdapter.list.indexOf(newFlashcard)
-            viewFlashcardAdapter.list[i] = newFlashcard
-            viewFlashcardAdapter.notifyItemChanged(i)
+            val newUpdatedFlashcard = data!!.getSerializableExtra(UPDATED_FLASHCARD) as Flashcard
+            var updatedPosition = -1
+            quickLog("Received Id: $newUpdatedFlashcard")
+            for (card in viewFlashcardAdapter.list) {
+                if (card.id == newUpdatedFlashcard.id) {
+                    updatedPosition = viewFlashcardAdapter.list.indexOf(card)
+                }
+            }
+            viewFlashcardAdapter.list[updatedPosition] = newUpdatedFlashcard
+            viewFlashcardAdapter.notifyItemChanged(updatedPosition)
         }
     }
 
@@ -150,6 +162,14 @@ class ViewFlashCardListActivity : BaseActivity<ActivityViewFlashCardListBinding,
         setResult(Activity.RESULT_OK, intent)
     }
 
+    private fun preventUserFromClickingOtherItem () {
+        dB.imgPreventUserMultiItemClick.appear()
+    }
+
+    private fun stopPreventUserFromClickingItem() {
+        dB.imgPreventUserMultiItemClick.disappear()
+    }
+
 
     // INJECT ANIMATIONS
 
@@ -171,4 +191,6 @@ class ViewFlashCardListActivity : BaseActivity<ActivityViewFlashCardListBinding,
         buttonDeleteAppearAnimator.setTarget(dB.btnDeleteSelectedCards)
         buttonDeleteDisappearAnimator.setTarget(dB.btnDeleteSelectedCards)
     }
+
+
 }

@@ -24,5 +24,7 @@ interface ReviewFlashcardView : View {
 
     fun showTestSubjectOnScreen (testSubject : Flashcard, useUsingForTestSubject : Boolean)
 
-    fun showNextCardAnims()
+    fun nextCard(startDelay : Long = 0)
+
+    fun showSpeakTextError(error: String)
 }

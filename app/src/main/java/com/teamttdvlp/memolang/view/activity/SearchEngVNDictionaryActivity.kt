@@ -13,7 +13,7 @@ import com.teamttdvlp.memolang.model.entity.vocabulary.SearchVocaHistoryHolder
 import com.teamttdvlp.memolang.database.sql.repository.FlashcardRepository
 import com.teamttdvlp.memolang.database.sql.repository.UserSearchHistoryRepository
 import com.teamttdvlp.memolang.view.activity.iview.SearchEngVNDictionaryView
-import com.teamttdvlp.memolang.view.adapter.RCVRecentSearchDictionaryAdapter
+import com.teamttdvlp.memolang.view.adapter.RCVRecent_SearchDictionary_Adapter
 import com.teamttdvlp.memolang.view.adapter.RCVSearchDictionaryAdapter
 import com.teamttdvlp.memolang.view.base.BaseActivity
 import com.teamttdvlp.memolang.view.helper.addTextChangeListener
@@ -32,7 +32,7 @@ class SearchEngVNDictionaryActivity :
     lateinit var rcvSearchDictionaryAdapter : RCVSearchDictionaryAdapter
     @Inject set
 
-    lateinit var rcvRecentSearchDicAdapter : RCVRecentSearchDictionaryAdapter
+    lateinit var rcvRecentSearchDicAdapter : RCVRecent_SearchDictionary_Adapter
     @Inject set
 
     lateinit var userSearchHistoryRepository: UserSearchHistoryRepository
@@ -54,10 +54,8 @@ class SearchEngVNDictionaryActivity :
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         viewModel.setUpView(this)
-        window.getSharedElementEnterTransition().duration = 350
-        window.getSharedElementEnterTransition().interpolator = FastOutSlowInInterpolator()
         rcvDictionaryAppearAnimator.start()
-        dB.edtEngViDictionary.requestFocus()
+        dB.txtEngViDictionary.requestFocus()
     }
 
     override fun addViewControls() {
@@ -75,7 +73,7 @@ class SearchEngVNDictionaryActivity :
     override fun addViewEvents() { dB.apply {
 
         btnSearch.setOnClickListener {
-            edtEngViDictionary.requestFocus()
+            txtEngViDictionary.requestFocus()
             showVirtualKeyboard()   
         }
 
@@ -99,11 +97,11 @@ class SearchEngVNDictionaryActivity :
             sendContentToActivitySeeFlashcard(content)
         }
 
-        btnDeleteAllText.setOnClickListener {
-            edtEngViDictionary.setText("")
+        btnClearAllText.setOnClickListener {
+            txtEngViDictionary.setText("")
         }
 
-        edtEngViDictionary.addTextChangeListener (onTextChanged = { text, _ , _, _ ->
+        txtEngViDictionary.addTextChangeListener (onTextChanged = { text, _ , _, _ ->
             if (text == "") {
                 rcvRecentSearchDic.appear()
                 rcvDictionary.disappear()
@@ -118,7 +116,7 @@ class SearchEngVNDictionaryActivity :
 
     override fun onStart() {
         super.onStart()
-        dB.edtEngViDictionary.requestFocus()
+        dB.txtEngViDictionary.requestFocus()
     }
 
     override fun overrideEnterAnim () {

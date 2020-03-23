@@ -72,8 +72,8 @@ class SetUpAccountActivity : BaseActivity<ActivitySetUpAccountBinding, SetUpAcco
             val motherLang = txtMotherLanguage.text.toString()
             val targetLang = txtTargetLanguage.text.toString()
             viewModel.createUserInfo(motherLang, targetLang)
-            viewModel.getSingletonUser()!!.recentUseLanguages.add(targetLang)
-            viewModel.getSingletonUser()!!.recentUseLanguages.add(motherLang)
+            viewModel.getUser().addLanguageToRecentUseList(targetLang)
+            viewModel.getUser().addLanguageToRecentUseList(motherLang)
         }
 
         rcvChooseLanguageAdapter.setOnItemClickListener { lang ->

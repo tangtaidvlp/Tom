@@ -14,33 +14,33 @@
         <import type="android.view.View" />
 
     </data>
-    
+
     <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/activity_add_flashcards"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@color/white"
-            tools:context=".view.activity.EditFlashcardActivity">
+        android:id="@+id/activity_add_flashcards"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_menu_activity"
+        tools:context=".view.activity.EditFlashcardActivity">
 
         <ImageView
-                android:id="@+id/img_saved_flashcard"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:scaleX="0.5"
-                android:scaleY="0.5"
-                android:src="@drawable/image_saved_flashcard_red_edit"
-                android:visibility="visible"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintHorizontal_bias="0.5"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_bias="0.5"/>
+            android:id="@+id/img_saved_flashcard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleX="0.5"
+            android:scaleY="0.5"
+            android:src="@drawable/image_saved_flashcard_red_edit"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.5" />
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/viewgroup_add_flashcard"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#ffffff"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintLeft_toLeftOf="parent"
@@ -48,75 +48,6 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.0">
 
-
-            <ImageView
-                android:id="@+id/img_background"
-                android:layout_width="0dp"
-                android:layout_height="50dp"
-                android:background="@color/app_red"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <ImageView
-                android:id="@+id/img_flashcard_icon"
-                android:layout_width="18dp"
-                android:layout_height="18dp"
-                android:layout_marginStart="15dp"
-                android:layout_marginTop="3dp"
-                android:background="@drawable/icon_flashcard"
-                android:transitionName="add_button"
-                app:layout_constraintBottom_toBottomOf="@+id/txt_flashcard_count"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/txt_flashcard_count" />
-
-            <TextView
-                android:id="@+id/txt_flashcard_count"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginEnd="8dp"
-                android:fontFamily="@font/segoeui"
-                android:text="Edit flashcard"
-                android:textColor="#ffffff"
-                android:textSize="16sp"
-                app:layout_constraintBottom_toBottomOf="@+id/img_background"
-                app:layout_constraintEnd_toEndOf="@+id/img_background"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toEndOf="@+id/img_flashcard_icon"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <Button
-                android:id="@+id/btn_save"
-                android:layout_width="38dp"
-                android:layout_height="23dp"
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginEnd="15dp"
-                android:layout_marginBottom="8dp"
-                android:background="@drawable/button_red_save"
-                app:layout_constraintBottom_toBottomOf="@+id/img_background"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="1.0"
-                app:layout_constraintStart_toEndOf="@+id/txt_flashcard_count"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <Button
-                android:id="@+id/btn_cancel"
-                android:layout_width="38dp"
-                android:layout_height="23dp"
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginEnd="9dp"
-                android:layout_marginBottom="8dp"
-                android:background="@drawable/button_red_cancel"
-                app:layout_constraintBottom_toBottomOf="@+id/img_background"
-                app:layout_constraintEnd_toStartOf="@+id/btn_save"
-                app:layout_constraintHorizontal_bias="1.0"
-                app:layout_constraintStart_toEndOf="@+id/txt_flashcard_count"
-                app:layout_constraintTop_toTopOf="parent" />
 
             <androidx.constraintlayout.widget.Guideline
                 android:id="@+id/center_guideline"
@@ -128,96 +59,123 @@
             <include
                 android:id="@+id/layout_add_flashcard"
                 layout="@layout/support_add_flashcard"
-                bind:flashcard="@{viewModel.bindOGCard}"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
-                app:layout_constraintTop_toBottomOf="@+id/img_background"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintLeft_toLeftOf="parent"
-                android:layout_marginTop="12dp"/>
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                bind:flashcard="@{viewModel.bindOGCard}" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <ImageView
-                android:id="@+id/img_black_background_cancel_saving_widgets"
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:alpha="0.5"
-                android:background="#000000"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toTopOf="parent"/>
+            android:id="@+id/img_black_background_cancel_saving_widgets"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:alpha="0.5"
+            android:background="#000000"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/viewgroup_cancel_saving"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="42dp"
-                android:layout_marginRight="42dp"
-                android:background="@drawable/round_10dp_white_background"
-                android:minHeight="300dp"
-                android:scaleX="0"
-                android:scaleY="0" app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_bias="0.35000002">
+            android:id="@+id/viewgroup_cancel_saving"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="42dp"
+            android:layout_marginRight="42dp"
+            android:background="@drawable/round_10dp_white_background"
+            android:minHeight="300dp"
+            android:scaleX="0"
+            android:scaleY="0"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.35000002">
 
             <TextView
-                    android:id="@+id/txt_caption_1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginTop="16dp"
-                    android:fontFamily="@font/segoeui"
-                    android:text="All your change will be lost"
-                    android:textColor="@color/quite_black_text" app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.0" app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"/>
-            <TextView
-                    android:id="@+id/btn_cancel_it"
-                    android:layout_width="wrap_content" android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginEnd="8dp" android:layout_marginBottom="15dp"
-                    android:background="@drawable/x_round_button_background_dark_red_to_light_red"
-                    android:elevation="3dp"
-                    android:fontFamily="@font/seguisb"
-                    android:paddingStart="18dp"
-                    android:paddingEnd="18dp"
-                    android:paddingBottom="3dp"
-                    android:text="Ok"
-                    android:textColor="#ffffff"
-                    android:textSize="16sp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-            />
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
-        <androidx.constraintlayout.widget.Guideline android:id="@+id/right_side_vertical_guideline"
-                                                    android:layout_width="wrap_content"
-                                                    android:layout_height="wrap_content"
-                                                    android:orientation="vertical"
-                                                    app:layout_constraintGuide_percent="100"/>
-
-        <androidx.constraintlayout.widget.Group
-                android:id="@+id/group_cancel_saving_widgets"
+                android:id="@+id/txt_caption_1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:visibility="gone"
-                app:constraint_referenced_ids="viewgroup_cancel_saving,img_black_background_cancel_saving_widgets"/>
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/segoeui"
+                android:text="All your change will be lost"
+                android:textColor="@color/quite_black_text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
-        <include
-            android:id="@+id/layout_choose_card_type"
-            layout="@layout/support_choose_card_type"
-            android:layout_height="match_parent"
-            android:layout_width="match_parent"/>
+            <TextView
+                android:id="@+id/btn_cancel_it"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/x_round_button_background_dark_red_to_light_red"
+                android:elevation="3dp"
+                android:fontFamily="@font/seguisb"
+                android:paddingStart="18dp"
+                android:paddingEnd="18dp"
+                android:paddingBottom="3dp"
+                android:text="Ok"
+                android:textColor="#ffffff"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/right_side_vertical_guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="100" />
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/group_cancel_saving_widgets"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:constraint_referenced_ids="viewgroup_cancel_saving,img_black_background_cancel_saving_widgets" />
+
+        <com.teamttdvlp.memolang.view.customview.MyCustomDialog
+            android:id="@+id/dialog_choose_card_type"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:elevation="10dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            >
+
+            <com.teamttdvlp.memolang.view.customview.ChooseCardTypeRecyclerView
+                android:id="@+id/rcv_choose_card_type"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </com.teamttdvlp.memolang.view.customview.MyCustomDialog>
 
         <com.teamttdvlp.memolang.view.customview.IpaKeyboard
             android:id="@+id/ipa_keyboard"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:visibility="invisible"
             android:clickable="false"
+            android:visibility="invisible"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent" />

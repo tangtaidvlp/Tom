@@ -86,7 +86,7 @@ abstract class BaseActivity <T : ViewDataBinding, V : ViewModel> : FragmentActiv
 
     // Create Exit Transition For Activity
     open fun overrideExitAnim () {
-        overridePendingTransition(0, R.anim.from_centre_to_right)
+        overridePendingTransition(R.anim.nothing, R.anim.from_centre_to_right)
     }
 
     open fun addAnimationEvents() {

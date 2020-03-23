@@ -7,7 +7,9 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.teamttdvlp.memolang.R
+import com.teamttdvlp.memolang.view.helper.appear
 import com.teamttdvlp.memolang.view.helper.disappear
+import com.teamttdvlp.memolang.view.helper.notContains
 
 class RCVSimpleListAdapter (var context : Context) : RecyclerView.Adapter<RCVSimpleListAdapter.ViewHolder> () {
 
@@ -60,7 +62,7 @@ class RCVSimpleListAdapter (var context : Context) : RecyclerView.Adapter<RCVSim
 
 // The difference is that RCVSimpleListAdapter2's layout doesn't have
 // marginStart and marginEnd
-// So we can custom them by using padding in layout.xml
+// So we can custom them by example padding in layout.xml
 class RCVSimpleListAdapter2 (var context : Context) : RecyclerView.Adapter<RCVSimpleListAdapter2.ViewHolder> () {
 
     private var onItemClickListener : OnItemClickListener? = null
@@ -80,15 +82,34 @@ class RCVSimpleListAdapter2 (var context : Context) : RecyclerView.Adapter<RCVSi
     override fun onBindViewHolder(holder : ViewHolder, position: Int) {
         val item = list[position]
         holder.txt_language.text = item
-        if (position == list.size - 1) holder.txt_line.disappear()
+        if (position == list.size - 1) {
+            holder.txt_line.disappear()
+        } else {
+            holder.txt_line.appear()
+        }
         holder.itemView.setOnClickListener {
             onItemClickListener?.onClick(item)
         }
     }
 
-    fun setData (list : ArrayList<String>) {
-        this.list = list
+    fun setData (data : ArrayList<String>) {
+        this.list.clear()
+        this.list.addAll(data)
         notifyDataSetChanged()
+    }
+
+    fun addToFirst (newSet : String) {
+        if (list.notContains(newSet)) {
+            this.list.add(0, newSet)
+            notifyItemInserted(0)
+        }
+    }
+
+    fun add (newSet : String) {
+        if (list.notContains(newSet)) {
+            this.list.add(newSet)
+            notifyItemInserted(list.size - 1)
+        }
     }
 
     fun setOnItemClickListener (onItemClickListener: (item: String) -> Unit) {

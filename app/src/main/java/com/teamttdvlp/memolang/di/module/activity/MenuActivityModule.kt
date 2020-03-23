@@ -1,18 +1,37 @@
 package com.teamttdvlp.memolang.di.module.activity
 
 import android.animation.Animator
-import android.view.animation.Animation
-import android.view.animation.AnimationUtils
 import androidx.interpolator.view.animation.FastOutLinearInInterpolator
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import androidx.vectordrawable.graphics.drawable.AnimatorInflaterCompat
 import com.teamttdvlp.memolang.R
 import com.teamttdvlp.memolang.view.activity.MenuActivity
+import com.teamttdvlp.memolang.view.adapter.RCVRecent_USE_FlashcardAdapter
+import com.teamttdvlp.memolang.view.customview.MenuBackgroundListViewAdapter
 import dagger.Module
 import dagger.Provides
 import javax.inject.Named
+import javax.inject.Singleton
 
 @Module
 class MenuActivityModule {
+
+    @Provides
+    fun provideAdapterBackground (activity : MenuActivity) : MenuBackgroundListViewAdapter {
+        return MenuBackgroundListViewAdapter(activity)
+    }
+
+    @Provides
+    fun providerRecentUseFlashcardAdapter (activity : MenuActivity) : RCVRecent_USE_FlashcardAdapter{
+        return RCVRecent_USE_FlashcardAdapter(activity)
+    }
+
+    @Provides
+    fun provideLayoutManager (activity: MenuActivity) : RecyclerView.LayoutManager {
+        return LinearLayoutManager(activity, RecyclerView.VERTICAL, false)
+    }
+
 
     @Provides
     @Named("Menu_FromNormalSizeToNothing")

@@ -15,8 +15,6 @@ import android.widget.TextView
 import androidx.core.animation.addListener
 import androidx.core.content.res.ResourcesCompat
 import androidx.core.view.isVisible
-import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
 import com.teamttdvlp.memolang.model.entity.Language.Companion.SOURCE_LANGUAGE
 import com.teamttdvlp.memolang.model.entity.Language.Companion.TARGET_LANGUAGE
 import com.teamttdvlp.memolang.view.adapter.RCVChooseLanguageAdapter
@@ -24,8 +22,10 @@ import com.teamttdvlp.memolang.view.helper.*
 import com.teamttdvlp.memolang.database.MemoLangSqliteDataBase
 import com.teamttdvlp.memolang.database.sql.repository.FlashcardRepository
 import com.teamttdvlp.memolang.database.sql.repository.UserRepository
+import com.teamttdvlp.memolang.model.RecentAddedFlashcardManager
 import com.teamttdvlp.memolang.view.activity.iview.AddFlashcardView
 import com.teamttdvlp.memolang.view.adapter.RCVChooseLanguageAdapter.UserSavingAssitant.Companion.USER_REPOSITORY_POS
+import com.teamttdvlp.memolang.view.adapter.RCV_FlashcardSetNameAdapter
 //import com.teamttdvlp.memolang.viewmodel.reusable.OnlineFlashcardDBManager
 import javax.inject.Inject
 import javax.inject.Named
@@ -38,6 +38,8 @@ class AddFlashcardActivity : BaseActivity<ActivityAddFlashcardBinding, AddFlashC
         val SRC_LANG_KEY = "srcLang"
 
         val TGT_LANG_KEY = "tgtLang"
+
+        val ADD_FLASHCARD_RESULT_CODE = 2118
     }
 
     // The image will stay on screen for a while before disappearing
@@ -51,10 +53,6 @@ class AddFlashcardActivity : BaseActivity<ActivityAddFlashcardBinding, AddFlashC
 
     private val animatorSetChooseLangDisappear = AnimatorSet()
 
-    private val animatorSetChooseCardTypeAppear = AnimatorSet()
-
-    private val animatorSetChooseCardTypeDisappear = AnimatorSet()
-
     private var selectedLanguageTextView : TextView? = null
 
     private var isInChooseLanguageMode = false
@@ -67,21 +65,19 @@ class AddFlashcardActivity : BaseActivity<ActivityAddFlashcardBinding, AddFlashC
     lateinit var rcvRecentChosenLanguageAdapter: RCVChooseLanguageAdapter
     @Inject set
 
-    var linearLayoutManager : LinearLayoutManager = LinearLayoutManager(this, RecyclerView.VERTICAL, false)
-
-    lateinit var linearLayoutManager2: LinearLayoutManager
-        @Inject set
+    lateinit var rcvFlashcardSetNameAdapter : RCV_FlashcardSetNameAdapter
+    @Inject set
 
     lateinit var database : MemoLangSqliteDataBase
     @Inject set
-
-//    lateinit var onlineFlashcardManager: OnlineFlashcardDBManager
-//    @Inject set
 
     lateinit var flashcardRepository : FlashcardRepository
     @Inject set
 
     lateinit var userRepository : UserRepository
+    @Inject set
+
+    lateinit var recentAddedFlashcardManager : RecentAddedFlashcardManager
     @Inject set
 
     override fun getLayoutId(): Int  = R.layout.activity_add_flashcard
@@ -90,7 +86,8 @@ class AddFlashcardActivity : BaseActivity<ActivityAddFlashcardBinding, AddFlashC
         AddFlashCardViewModel(
             database,
             userRepository,
-            flashcardRepository
+            flashcardRepository,
+            recentAddedFlashcardManager
         )
     }
 
@@ -101,40 +98,38 @@ class AddFlashcardActivity : BaseActivity<ActivityAddFlashcardBinding, AddFlashC
     }
 
     override fun addViewControls() { dB.apply {
-
+        // Choose Language Recycler View
         rcvChooseLanguage.adapter = rcvChooseLanguageAdapter
-        rcvChooseLanguage.layoutManager = linearLayoutManager!!
         rcvChooseLanguageAdapter.assistant = RCVChooseLanguageAdapter.UserSavingAssitant()
         rcvChooseLanguageAdapter.assistant!!.addAssistant(USER_REPOSITORY_POS, userRepository)
 
-        layoutAddFlashcard.apply {
-            if (viewModel.getSingletonUser() != null) {
-                val requestedLangPair = getRequestedLangPair()
-                if (requestedLangPair == null) {
-                    val sourceLang = viewModel.getSingletonUser()!!.recentSourceLanguage
-                    val targetLang = viewModel.getSingletonUser()!!.recentTargetLanguage
-                    /**
-                     * NEED RECODING, use two way databinding to solve
-                     */
-                    viewModel.bindLanguageInfoToUI(sourceLang, targetLang)
-                } else {
-                    viewModel.bindLanguageInfoToUI(
-                        requestedLangPair.get(SOURCE_LANGUAGE),
-                        requestedLangPair.get(TARGET_LANGUAGE))
-                }
-            } else {
-//                viewModel.bindLanguageInfoToUI("", "")
-            }
+        val requestedLangPair = getRequestedLangPair()
+        if (requestedLangPair == null) {
+            val sourceLang = viewModel.getRecentSourceLanguage()
+            val targetLang = viewModel.getRecentTargetLanguage()
+            val currentUseSetName = viewModel.getRecentUseFlashcardSet()
+            /**
+             * NEED RECODING, use two way databinding to solve
+             */
+            viewModel.bindUserCurrentDataToUI (currentUseSetName, sourceLang, targetLang)
+        } else {
+            val currentUseSetName = viewModel.getRecentUseFlashcardSet()
+            viewModel.bindUserCurrentDataToUI (currentUseSetName,
+                requestedLangPair.get(SOURCE_LANGUAGE),
+                requestedLangPair.get(TARGET_LANGUAGE))
         }
 
+        // Recent Chosen Language RecyclerView
         rcvRecentChosenLanguage.adapter = rcvRecentChosenLanguageAdapter
-        rcvRecentChosenLanguage.layoutManager = linearLayoutManager2
         rcvRecentChosenLanguageAdapter.assistant = RCVChooseLanguageAdapter.UserSavingAssitant()
         rcvRecentChosenLanguageAdapter.assistant!!.addAssistant(USER_REPOSITORY_POS, userRepository)
-        rcvRecentChosenLanguageAdapter.setData(viewModel.getSingletonUser()!!.recentUseLanguages)
+        rcvRecentChosenLanguageAdapter.setData(viewModel.getFlashcardSetNameList())
+
+        // Choose Flashcard Set  Name Recycler View
+        layoutAddFlashcard.rcvFlashcardSetName.adapter = rcvFlashcardSetNameAdapter
+        rcvFlashcardSetNameAdapter.setData(viewModel.getSingletonUser().flashcardSetNames)
 
         layoutAddFlashcard.edtPronunciation.inputType = TYPE_NULL
-
         ipaKeyboard.setFocusedText(dB.layoutAddFlashcard.edtPronunciation)
     }}
 
@@ -152,24 +147,22 @@ class AddFlashcardActivity : BaseActivity<ActivityAddFlashcardBinding, AddFlashC
             hideIPAKeyboard()
         }
 
-        btnSave.setOnClickListener { layoutAddFlashcard.apply {
+        layoutAddFlashcard.btnAdd.setOnClickListener { layoutAddFlashcard.apply {
             hideIPAKeyboard()
 
             val text = edtText.text.toString()
             val translation = edtTranslation.text.toString()
-            val using = edtUsing.text.toString()
+            val example = edtExample.text.toString()
+            val meanExample  = edtMeanOfExample.text.toString()
             val type = edtType.text.toString()
             val pronunciation = edtPronunciation.text.toString()
             val sourceLang = txtSourceLang.text.toString()
             val targetLang = txtTargetLang.text.toString()
             val setName = edtSetName.text.toString()
 
-            viewModel.addFlashcard(sourceLang, targetLang, setName, type, text, translation, using, pronunciation)
-        }}
+            viewModel.addFlashcard(sourceLang, targetLang, setName, type, text, translation, example, meanExample, pronunciation)
 
-        btnCancel.setOnClickListener {
-            finish()
-        }
+        }}
 
         layoutAddFlashcard.apply {
             viewgroupTxtSourceLang.setOnClickListener {
@@ -196,17 +189,12 @@ class AddFlashcardActivity : BaseActivity<ActivityAddFlashcardBinding, AddFlashC
         }
 
         layoutAddFlashcard.edtType.setOnClickListener {
-            animatorSetChooseCardTypeAppear.start()
+            dialogChooseCardType.show()
         }
 
-        layoutChooseCardType.imgBlackBackgroundChooseCardType.setOnClickListener {
-            animatorSetChooseCardTypeDisappear.start()
-        }
-
-        layoutChooseCardType.rcvChooseCardType.setOnItemClickListener { type ->
-            layoutAddFlashcard.edtType.setText(type)
-            animatorSetChooseCardTypeDisappear.start()
-            dB.layoutAddFlashcard.edtText.requestFocus()
+        rcvChooseCardType.setOnItemClickListener { type ->
+            layoutAddFlashcard.edtType.text = type
+            dialogChooseCardType.hide()
         }
 
         layoutAddFlashcard.edtText.addTextChangeListener(onTextChanged = { text,_,_,_ ->
@@ -220,19 +208,50 @@ class AddFlashcardActivity : BaseActivity<ActivityAddFlashcardBinding, AddFlashC
                 hideTranslationInputError()
             }
         })
+
+        rcvFlashcardSetNameAdapter.setOnItemClickListener { setName ->
+            layoutAddFlashcard.edtSetName.setText(setName)
+            hideSetNameList()
+        }
+
+        rcvFlashcardSetNameAdapter.setOnCreateNewSet_ItemClick {
+            layoutAddFlashcard.edtSetName.setText("")
+            layoutAddFlashcard.edtSetName.requestFocus()
+            showVirtualKeyboard()
+            hideSetNameList()
+        }
+
+        layoutAddFlashcard.imgSetNameSpinner.setOnClickListener {
+            showSetNameList()
+        }
+
     }}
 
     override fun overrideEnterAnim() {
-        overridePendingTransition(R.anim.from_left_to_centre, R.anim.nothing)
+        overridePendingTransition(R.anim.appear, R.anim.nothing)
     }
 
     override fun onBackPressed() { dB.apply {
         if (isIPAKeyboardVisible) {
             hideIPAKeyboard()
         } else {
-            btnCancel.performClick()
+            super.onBackPressed()
         }
     }}
+
+    fun showSetNameList () {
+        dB.layoutAddFlashcard.rcvFlashcardSetName.
+                animate().alpha(1f).setDuration(100).setLiteListener( onStart = {
+                    dB.layoutAddFlashcard.rcvFlashcardSetName.appear()
+        })
+    }
+
+    fun hideSetNameList () {
+        dB.layoutAddFlashcard.rcvFlashcardSetName.
+        animate().alpha(0f).setDuration(100).setLiteListener( onEnd = {
+            dB.layoutAddFlashcard.rcvFlashcardSetName.disappear()
+        })
+    }
 
     fun getRequestedLangPair () : Array<String>? {
         var result : Array<String>? = null
@@ -284,10 +303,12 @@ class AddFlashcardActivity : BaseActivity<ActivityAddFlashcardBinding, AddFlashC
 
 
     override fun showTextInputError() {
+        dB.layoutAddFlashcard.edtText.requestFocus()
         dB.layoutAddFlashcard.txtErrorText.appear()
     }
 
     override fun showTranslationInputError() {
+        dB.layoutAddFlashcard.edtTranslation.appear()
         dB.layoutAddFlashcard.txtErrorTranslation.appear()
     }
 
@@ -315,7 +336,6 @@ class AddFlashcardActivity : BaseActivity<ActivityAddFlashcardBinding, AddFlashC
         }
         animatorSetChooseLangDisappear.start()
         rcvChooseLanguageAdapter.addLanguage(language)
-
     }
 
     // INJECTED METHOD
@@ -328,8 +348,8 @@ class AddFlashcardActivity : BaseActivity<ActivityAddFlashcardBinding, AddFlashC
         @Named("MoveRightAndFadeOutAnimtr") savedImageDisappear : Animator) { dB.apply {
 
         groupDisappear.apply {
-            setTarget(viewgroupAddFlashcard)
-            addListener(onEnd = { viewgroupAddFlashcard.disappear() })
+            setTarget(layoutAddFlashcard.root)
+            addListener(onEnd = { layoutAddFlashcard.root.disappear() })
         }
 
         savedImageAppear.setTarget(imgSavedFlashcard)
@@ -366,30 +386,6 @@ class AddFlashcardActivity : BaseActivity<ActivityAddFlashcardBinding, AddFlashC
             onEnd = {
                 isInChooseLanguageMode = true
             })
-    }}
-
-    @Inject
-    fun initChooseCardTypeAnimation (
-        @Named("FromNormalSizeToNothing") rcvChooseCardTypeDisappear : Animator,
-        @Named("Disappear50Percents") blackBackgroundDisappear : Animator,
-        @Named("FromNothingToNormalSize") rcvChooseCardTypeAppear : Animator,
-        @Named("Appear50Percents") blackBackgroundAppear : Animator) { dB.layoutChooseCardType.apply {
-
-        rcvChooseCardTypeDisappear.setTarget(rcvChooseCardType)
-        blackBackgroundDisappear.setTarget(imgBlackBackgroundChooseCardType)
-        animatorSetChooseCardTypeDisappear.play(rcvChooseCardTypeDisappear).before(blackBackgroundDisappear)
-        animatorSetChooseCardTypeDisappear.addListener (onEnd = {
-            rcvChooseCardType.disappear()
-            imgBlackBackgroundChooseCardType.disappear()
-        })
-
-        rcvChooseCardTypeAppear.setTarget(rcvChooseCardType)
-        blackBackgroundAppear.setTarget(imgBlackBackgroundChooseCardType)
-        animatorSetChooseCardTypeAppear.play(blackBackgroundAppear).before(rcvChooseCardTypeAppear)
-        animatorSetChooseCardTypeAppear.addListener(onStart = {
-            rcvChooseCardType.appear()
-            imgBlackBackgroundChooseCardType.appear()
-        })
     }}
 
     @Inject

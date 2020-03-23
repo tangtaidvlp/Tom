@@ -43,6 +43,8 @@
                 android:id="@+id/rcv_recent_chosen_language"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:maxHeight="250dp"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
                 android:background="@drawable/round_10dp_white_background" />
 
             <androidx.recyclerview.widget.RecyclerView
@@ -50,6 +52,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginTop="5dp"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
                 android:background="@drawable/round_10dp_white_background" />
 
         </androidx.appcompat.widget.LinearLayoutCompat>

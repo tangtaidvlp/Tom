@@ -1,15 +1,18 @@
 package com.teamttdvlp.memolang.viewmodel
 
+import android.app.Application
 import androidx.databinding.ObservableField
 import androidx.databinding.ObservableInt
+import com.teamttdvlp.memolang.model.TextSpeaker
 import com.teamttdvlp.memolang.model.canUseUsingForTestSubject
+import com.teamttdvlp.memolang.model.entity.Language
 import com.teamttdvlp.memolang.model.entity.flashcard.Flashcard
 import com.teamttdvlp.memolang.view.activity.iview.ReviewFlashcardView
-import com.teamttdvlp.memolang.view.base.BaseViewModel
+import com.teamttdvlp.memolang.view.base.BaseAndroidViewModel
 import com.teamttdvlp.memolang.view.helper.*
 import kotlin.random.Random
 
-class ReviewFlashcardViewModel : BaseViewModel<ReviewFlashcardView>() {
+class ReviewFlashcardViewModel(var app : Application) : BaseAndroidViewModel<ReviewFlashcardView>(app) {
 
     val currentPos = ObservableInt()
 
@@ -21,6 +24,8 @@ class ReviewFlashcardViewModel : BaseViewModel<ReviewFlashcardView>() {
 
     private val MAX_ANSWER_WRONG_TIMES = 3
 
+    val forgottenCardList = ArrayList<Flashcard>()
+
     val setName = ObservableField<String>()
 
     val cardLeftCount = ObservableInt ()
@@ -29,13 +34,19 @@ class ReviewFlashcardViewModel : BaseViewModel<ReviewFlashcardView>() {
 
     var answerLength = 0
 
+    private lateinit var answerTextSpeaker : TextSpeaker
+
     fun setUpInfo (cardList : ArrayList<Flashcard>) {
         this.cardList = cardList
         currentPos.set(0)
-        currentCard = cardList[0]
+        currentCard = cardList.first()
+        val sourceLang = currentCard.languagePair.split(Language.LANG_DIVIDER).get(Language.SOURCE_LANGUAGE)
+        val targetLang = currentCard.languagePair.split(Language.LANG_DIVIDER).get(Language.TARGET_LANGUAGE)
         setName.set(currentCard.setName)
         cardLeftCount.set(cardList.size)
+        answerTextSpeaker = TextSpeaker(app, sourceLang.trim())
         useCard(currentCard)
+
     }
 
     fun nextCard () {
@@ -50,6 +61,17 @@ class ReviewFlashcardViewModel : BaseViewModel<ReviewFlashcardView>() {
             cardLeftCount.set(cardList.size - currentPosVal)
         }
         resetAnswerWrongTimes()
+    }
+
+    fun speakAnswer (text : String) {
+        answerTextSpeaker.speak(text)
+        if (answerTextSpeaker.error != null) {
+            // We just want to show this error only once
+            // because although there is error, but text speaker still work
+            // I also don't know exactly how it work
+            view.showSpeakTextError(answerTextSpeaker.error + "")
+            answerTextSpeaker.error = null
+        }
     }
 
     private fun useCard (card : Flashcard) {
@@ -125,6 +147,25 @@ class ReviewFlashcardViewModel : BaseViewModel<ReviewFlashcardView>() {
         } else {
             view.showInvalidAnsBehaviours()
         }
+    }
+
+    fun processForgottenCard () {
+        addCurrentCardTo_ListOfForgottenCards()
+        moveCurrentCardToEndOfCardList()
+    }
+
+    private fun addCurrentCardTo_ListOfForgottenCards () {
+        if (forgottenCardList.notContains(currentCard)) {
+            forgottenCardList.add(currentCard)
+        }
+    }
+
+    private fun moveCurrentCardToEndOfCardList () {
+        cardList.add(currentCard)
+    }
+
+    fun getFoggotenCardList(): ArrayList<Flashcard> {
+        return forgottenCardList
     }
 }
 

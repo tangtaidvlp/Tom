@@ -3,7 +3,7 @@
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
-    <color name="input_alert_color">#FF4E43</color>
+    <color name="input_alert_color">#DC0000</color>
     <color name="dark_blue_text">#4B4D63</color>
     <color name="light_blue">#4141FF</color>
     <color name="light_yellow">#FFAB0C</color>
@@ -12,6 +12,7 @@
     <color name="app_blue">#4141FF</color>
     <color name="app_red">#F65546</color>
     <color name="dark_red">#F0161B</color>
+    <color name="dark_green">#0CB500</color>
     <color name="app_yellow">#FFB933</color>
     <color name="hint_color">#AEAFB9</color>
     <color name="more_hard_hint_color">#65666A</color>
@@ -26,6 +27,7 @@
     <color name="search_voca_card_info_text_color">#707070</color>
     <color name="search_dictionary_hint_color">#D0D0D0</color>
     <color name="border_color">#AEAFB9</color>
+    <color name="black">#000000</color>
 
 </resources>
 

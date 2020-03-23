@@ -19,17 +19,8 @@
             android:fontFamily="@font/segoeui"
             android:maxLines="1"
             android:text="Something here"
-            android:textColor="#000000"
-            android:textSize="18sp" />
-
-        <TextView
-            android:id="@+id/line"
-            android:layout_width="match_parent"
-            android:layout_height="0.5dp"
-            android:layout_marginTop="8dp"
+            android:textColor="#653F00"
             android:layout_marginBottom="14dp"
-            android:background="#B0B1BA" />
-
-
+            android:textSize="18sp" />
     </LinearLayout>
 </layout>

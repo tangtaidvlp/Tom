@@ -13,7 +13,7 @@ import com.teamttdvlp.memolang.R
 import com.teamttdvlp.memolang.view.customview.MeanVocabularyTextView.Companion.CONTENT_MARGIN_LEFT
 import com.teamttdvlp.memolang.view.helper.UnitConverter
 
-class ExampleVocabularyTextView(context : Context) : TextView (context) {
+class ExampleVocabularyTextView(context : Context) : androidx.appcompat.widget.AppCompatTextView (context) {
 
     init {
         setTextColor(Color.parseColor("#1F1F1F"))

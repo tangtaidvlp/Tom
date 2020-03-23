@@ -17,6 +17,7 @@ import com.teamttdvlp.memolang.model.entity.vocabulary.Using
 import com.teamttdvlp.memolang.model.entity.vocabulary.Vocabulary
 import com.teamttdvlp.memolang.database.sql.repository.FlashcardRepository
 import com.teamttdvlp.memolang.database.sql.repository.UserSearchHistoryRepository
+import com.teamttdvlp.memolang.model.RecentAddedFlashcardManager
 import com.teamttdvlp.memolang.view.activity.iview.SeeVocabularyView
 import com.teamttdvlp.memolang.view.adapter.RCVSimpleListAdapter2
 import com.teamttdvlp.memolang.view.base.BaseActivity
@@ -43,31 +44,29 @@ class SeeVocabularyActivity : BaseActivity<ActivitySeeVocabularyBinding, SeeVoca
     lateinit var rcvChooseExampleAdapter : RCVSimpleListAdapter2
     @Inject set
 
-    lateinit var layoutManager1 : RecyclerView.LayoutManager
-    @Inject set
-
-    lateinit var layoutManager2 : RecyclerView.LayoutManager
-    @Inject set
-
-    lateinit var layoutManager3 : RecyclerView.LayoutManager
-    @Inject set
-
+    lateinit var rcvChooseSetNameAdapter : RCVSimpleListAdapter2
+        @Inject set
 
     lateinit var flashcardRepository: FlashcardRepository
     @Inject set
 
     lateinit var userSearchHistoryRepository: UserSearchHistoryRepository
-        @Inject set
+    @Inject set
+
+    lateinit var recentAddedFlashcardManager: RecentAddedFlashcardManager
+    @Inject set
 
     private lateinit var usingList : Array<Using>
 
     private lateinit var transAndExampsList : Array<TransAndExamp>
+
 
     override fun getLayoutId(): Int = R.layout.activity_see_vocabulary
 
     override fun takeViewModel(): SeeVocabularyActivityViewModel = getActivityViewModel {
         SeeVocabularyActivityViewModel(
             this.application,
+            recentAddedFlashcardManager,
             userSearchHistoryRepository,
             flashcardRepository
         )
@@ -84,14 +83,11 @@ class SeeVocabularyActivity : BaseActivity<ActivitySeeVocabularyBinding, SeeVoca
     }
 
     override fun addViewControls() { dB.apply {
-
-        rcvChooseTranslation.layoutManager = layoutManager1
-        rcvChooseType.layoutManager = layoutManager2
-        rcvChooseExample.layoutManager = layoutManager3
-
         rcvChooseTranslation.adapter = rcvChooseTransAdapter
         rcvChooseType.adapter = rcvChooseTypeAdapter
         rcvChooseExample.adapter = rcvChooseExampleAdapter
+        rcvChooseSetName.adapter = rcvChooseSetNameAdapter
+        rcvChooseSetNameAdapter.setData(viewModel.getFlashcardSetNameList())
     }}
 
     override fun addViewEvents() { dB.apply {
@@ -105,18 +101,17 @@ class SeeVocabularyActivity : BaseActivity<ActivitySeeVocabularyBinding, SeeVoca
         }
 
         btnPanelAdd.setOnClickListener {
-            val text = txtPanelText.text.toString()
-            val translation = txtPanelTranslation.text.toString()
-            var example = txtPanelExample.text.toString()
-            if (example == "") {
-                example = edtPanelCustomExample.text.toString()
-            }
-            val type = txtPanelType.text.toString()
-            val pronunciation = txtPanelPronunciation.text.toString()
-            viewModel.addFlashcard(ENGLISH_VALUE, VIETNAMESE_VALUE, type, text, translation, example, pronunciation)
+            val setName = edtPanelSetName.text.toString()
+            val text = edtPanelText.text.toString()
+            val translation = edtPanelTranslation.text.toString()
+            var example = edtPanelExample.text.toString()
+            var meanExample = edtPanelMeanExample.text.toString()
+            val type = edtPanelType.text.toString()
+            val pronunciation = txtPronunciation.text.toString()
+            viewModel.addFlashcard(ENGLISH_VALUE, VIETNAMESE_VALUE, setName, type, text, translation, example, meanExample, pronunciation)
         }
 
-        imgBlackBgCardInfoPanel.setOnClickListener {
+        imgBlackBgAddFlashcardPanel.setOnClickListener {
             addFCPanelDisappear.start()
             rcvChooseType.disappear()
             rcvChooseExample.disappear()
@@ -130,47 +125,57 @@ class SeeVocabularyActivity : BaseActivity<ActivitySeeVocabularyBinding, SeeVoca
                     corresUsing = using
                     updateRCVChooseTrans(corresUsing)
                     updateRCVChooseExample(corresUsing.transAndExamps.first())
-                    txtPanelType.setText(corresUsing.type)
+                    edtPanelType.setText(corresUsing.type)
                     break
                 }
             }
-
             rcvChooseType.disappear()
             rcvChooseExample.disappear()
             rcvChooseTranslation.disappear()
+            rcvChooseSetName.disappear()
         }
 
-        rcvChooseTransAdapter.setOnItemClickListener { clickedTrans ->
-            for (tranAndEx in transAndExampsList) {
-                if (clickedTrans == tranAndEx.trans) {
-                    txtPanelTranslation.setText(clickedTrans)
-                    updateRCVChooseExample(tranAndEx)
+        rcvChooseTransAdapter.setOnItemClickListener { translation ->
+            for (transAndEx in transAndExampsList) {
+                if (translation == transAndEx.trans) {
+                    edtPanelTranslation.setText(translation)
+                    updateRCVChooseExample(transAndEx)
                 }
             }
             rcvChooseType.disappear()
             rcvChooseExample.disappear()
             rcvChooseTranslation.disappear()
+            rcvChooseSetName.disappear()
         }
 
-        rcvChooseExampleAdapter.setOnItemClickListener { clickedUsing ->
-            dB.txtPanelExample.setText(clickedUsing)
+        rcvChooseExampleAdapter.setOnItemClickListener { example ->
+            dB.edtPanelExample.setText(example)
             rcvChooseType.disappear()
             rcvChooseExample.disappear()
             rcvChooseTranslation.disappear()
+            rcvChooseSetName.disappear()
         }
 
-        txtPanelType.setOnClickListener {
+        rcvChooseSetNameAdapter.setOnItemClickListener { setName ->
+            dB.edtPanelSetName.setText(setName)
+            rcvChooseType.disappear()
+            rcvChooseExample.disappear()
+            rcvChooseTranslation.disappear()
+            rcvChooseSetName.disappear()
+        }
+
+        imgChooseTypeSpinner.setOnClickListener {
             if (!rcvChooseType.isVisible) {
                 rcvChooseType.appear()
             } else {
                 rcvChooseType.disappear()
             }
-
             rcvChooseExample.disappear()
             rcvChooseTranslation.disappear()
+            rcvChooseSetName.disappear()
         }
 
-        txtPanelTranslation.setOnClickListener {
+        imgChooseTranslationSpinner.setOnClickListener {
             if (!rcvChooseTranslation.isVisible) {
                 rcvChooseTranslation.appear()
             } else {
@@ -179,9 +184,10 @@ class SeeVocabularyActivity : BaseActivity<ActivitySeeVocabularyBinding, SeeVoca
 
             rcvChooseExample.disappear()
             rcvChooseType.disappear()
+            rcvChooseSetName.disappear()
         }
 
-        txtPanelExample.setOnClickListener {
+        imgChooseExampleSpinner.setOnClickListener {
             if (!rcvChooseExample.isVisible) {
                 rcvChooseExample.appear()
             } else {
@@ -190,8 +196,19 @@ class SeeVocabularyActivity : BaseActivity<ActivitySeeVocabularyBinding, SeeVoca
 
             rcvChooseTranslation.disappear()
             rcvChooseType.disappear()
+            rcvChooseSetName.disappear()
         }
 
+        imgChooseSetNameSpinner.setOnClickListener {
+            if (!rcvChooseSetName.isVisible) {
+                rcvChooseSetName.appear()
+            } else {
+                rcvChooseSetName.disappear()
+            }
+            rcvChooseTranslation.disappear()
+            rcvChooseType.disappear()
+            rcvChooseExample.disappear()
+        }
     }}
 
     override fun onBackPressed() {
@@ -215,11 +232,11 @@ class SeeVocabularyActivity : BaseActivity<ActivitySeeVocabularyBinding, SeeVoca
         if (vocabulary.usings != null) {
             for (using in vocabulary.usings!!) {
                 var isFirstMeanTextView = true
-                val newTxtPanelType = TypeVocabularyTextView(this@SeeVocabularyActivity)
+                val newedtPanelType = TypeVocabularyTextView(this@SeeVocabularyActivity)
                     .apply {
                         setText(using.type)
                     }
-                contentParent.addView(newTxtPanelType)
+                contentParent.addView(newedtPanelType)
 
                 for (meanAndEx in using.transAndExamps) {
                     val newTxtMean = MeanVocabularyTextView(this@SeeVocabularyActivity)
@@ -256,9 +273,8 @@ class SeeVocabularyActivity : BaseActivity<ActivitySeeVocabularyBinding, SeeVoca
 
     fun setUpAddFCPanel(vocabulary : Vocabulary) { dB.apply {
         usingList = vocabulary.usings!!
-        txtPanelPronunciation.text = vocabulary.pronunciation
-        txtPanelText.text = vocabulary.text
-        txtPanelType.text = usingList.first().type
+        edtPanelText.setText(vocabulary.text)
+        edtPanelType.setText(usingList.first().type)
 
         if (usingList != null) {
             val typeList = ArrayList<String>()
@@ -292,27 +308,17 @@ class SeeVocabularyActivity : BaseActivity<ActivitySeeVocabularyBinding, SeeVoca
             }
             rcvChooseExampleAdapter.setData(exampleList)
             updateTxtExample(exampleList.first())
-            turnOffCustomExampleMode()
         } else {
             updateTxtExample("")
-            turnOnCustomExampleMode()
         }
     }
 
-    fun turnOnCustomExampleMode () {
-        dB.edtPanelCustomExample.appear()
-    }
-
-    fun turnOffCustomExampleMode () {
-        dB.edtPanelCustomExample.disappear()
-    }
-
     fun updateTxtExample (example : String) {
-        dB.txtPanelExample.text = example
+        dB.edtPanelExample.setText(example)
     }
 
     fun updateTxtTrans (trans : String) {
-        dB.txtPanelTranslation.text = trans
+        dB.edtPanelTranslation.setText(trans)
     }
 
     // VIEW IMPLEMENTED METHODS
@@ -324,9 +330,7 @@ class SeeVocabularyActivity : BaseActivity<ActivitySeeVocabularyBinding, SeeVoca
     // INJECTED METHODS
 
     private val addFCPanelAppear : AnimatorSet = AnimatorSet()
-
     private val addFCPanelDisappear : AnimatorSet = AnimatorSet()
-
     private val addFCSuccessAnimator : AnimatorSet = AnimatorSet()
 
     @Inject
@@ -337,7 +341,7 @@ class SeeVocabularyActivity : BaseActivity<ActivitySeeVocabularyBinding, SeeVoca
         @Named("FromNormalSizeToNothing") panelDisappear: Animator
     ) { dB.apply {
 
-        blackBackgroundAppear.setTarget(imgBlackBgCardInfoPanel)
+        blackBackgroundAppear.setTarget(imgBlackBgAddFlashcardPanel)
         panelAppear.setTarget(panelAddFlashcard)
         addFCPanelAppear.play(blackBackgroundAppear).before(panelAppear)
         addFCPanelAppear.addListener (onStart = {
@@ -345,7 +349,7 @@ class SeeVocabularyActivity : BaseActivity<ActivitySeeVocabularyBinding, SeeVoca
             btnAdd.disappear()
         })
 
-        blackBackgroundDisappear.setTarget(imgBlackBgCardInfoPanel)
+        blackBackgroundDisappear.setTarget(imgBlackBgAddFlashcardPanel)
         panelDisappear.setTarget(panelAddFlashcard)
         addFCPanelDisappear.play(panelDisappear).before(blackBackgroundDisappear)
         addFCPanelDisappear.addListener (onEnd = {

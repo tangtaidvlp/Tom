@@ -7,4 +7,6 @@ interface SearchVocabularyView : View{
     fun showTranslatingProgressBar()
 
     fun onCheckConnectionWhenSearch(hasConnection : Boolean)
+
+    fun onAddFlashcardSuccess()
 }

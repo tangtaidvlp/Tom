@@ -16,6 +16,7 @@ import com.teamttdvlp.memolang.model.entity.flashcard.Flashcard
 import com.teamttdvlp.memolang.model.entity.Language.Companion.SOURCE_LANGUAGE
 import com.teamttdvlp.memolang.model.entity.Language.Companion.TARGET_LANGUAGE
 import com.teamttdvlp.memolang.database.sql.repository.FlashcardRepository
+import com.teamttdvlp.memolang.model.entity.Language.Companion.LANG_DIVIDER
 import com.teamttdvlp.memolang.view.activity.iview.EditFlashcardView
 import com.teamttdvlp.memolang.viewmodel.EditFlashcardViewModel
 //import com.teamttdvlp.memolang.viewmodel.reusable.OnlineFlashcardDBManager
@@ -72,7 +73,7 @@ class EditFlashcardActivity : BaseActivity<ActivityEditFlashcardBinding, EditFla
     override fun initProperties() {
         dB.apply {
             val edittingCard : Flashcard = getData().apply {
-                val languageDetail = languagePair.split("-")
+                val languageDetail = languagePair.split(LANG_DIVIDER)
                 val sourceLang = languageDetail[SOURCE_LANGUAGE]
                 val targetLang = languageDetail[TARGET_LANGUAGE]
 
@@ -80,7 +81,7 @@ class EditFlashcardActivity : BaseActivity<ActivityEditFlashcardBinding, EditFla
                 OG_TargetLang = targetLang
                 OG_Text = text
                 OG_Translation = translation
-                OG_Using = using
+                OG_Using = example
             }
             this@EditFlashcardActivity.viewModel.setOriginalCard(edittingCard)
             dB.viewModel = this@EditFlashcardActivity.viewModel
@@ -91,6 +92,8 @@ class EditFlashcardActivity : BaseActivity<ActivityEditFlashcardBinding, EditFla
         val RED_COLOR = Color.parseColor("#F65046")
         layoutAddFlashcard.edtText.setTextColor(RED_COLOR)
         ipaKeyboard.setFocusedText(layoutAddFlashcard.edtPronunciation)
+
+        layoutAddFlashcard.btnAdd.text = "Save"
     }}
 
     override fun addViewEvents() { dB.apply {
@@ -107,33 +110,27 @@ class EditFlashcardActivity : BaseActivity<ActivityEditFlashcardBinding, EditFla
             showIPAKeyboard()
         }
 
-        btnSave.setOnClickListener {
+        layoutAddFlashcard.btnAdd.setOnClickListener {
+            quickLog("nkhjk")
             hideIPAKeyboard()
+            hideVirtualKeyboard()
             layoutAddFlashcard.apply {
                 val text = edtText.text.toString()
                 val translation = edtTranslation.text.toString()
-                val using = edtUsing.text.toString()
+                val setName = edtSetName.text.toString()
+                val example = edtExample.text.toString()
+                val exampleMean = edtMeanOfExample.text.toString()
                 val sourceLang = txtSourceLang.text.toString()
                 val targetLang = txtTargetLang.text.toString()
                 val type = edtType.text.toString()
                 val pronunciation = edtPronunciation.text.toString()
                 this@EditFlashcardActivity.viewModel.updateCard(
-                    sourceLang,
-                    targetLang,
-                    type,
-                    text,
-                    translation,
-                    using,
-                    pronunciation
+                    sourceLang, targetLang,
+                    setName, type,
+                    text, translation,
+                    example, exampleMean, pronunciation
                 )
             }
-        }
-
-        btnCancel.setOnClickListener {
-            if (doesUserChangeInfo()) {
-                animatorSetCancelSavingAppear.start()
-                hideVirtualKeyboard()
-            } else finish()
         }
 
         imgBlackBackgroundCancelSavingWidgets.setOnClickListener {
@@ -151,12 +148,9 @@ class EditFlashcardActivity : BaseActivity<ActivityEditFlashcardBinding, EditFla
             animatorSetChooseCardTypeAppear.start()
         }
 
-        layoutChooseCardType.imgBlackBackgroundChooseCardType.setOnClickListener {
-            animatorSetChooseCardTypeDisappear.start()
-        }
 
-        layoutChooseCardType.rcvChooseCardType.setOnItemClickListener { type ->
-            layoutAddFlashcard.edtType.setText(type)
+        rcvChooseCardType.setOnItemClickListener { type ->
+            layoutAddFlashcard.edtType.text = type
             animatorSetChooseCardTypeDisappear.start()
         }
 
@@ -167,7 +161,10 @@ class EditFlashcardActivity : BaseActivity<ActivityEditFlashcardBinding, EditFla
             if (isIPAKeyboardVisible)
                 hideIPAKeyboard()
             else if (viewgroupCancelSaving.isGone) {
-                btnCancel.performClick()
+                if (doesUserChangeInfo()) {
+                    animatorSetCancelSavingAppear.start()
+                    hideVirtualKeyboard()
+                } else finish()
             }
         }
     }
@@ -210,6 +207,10 @@ class EditFlashcardActivity : BaseActivity<ActivityEditFlashcardBinding, EditFla
         dB.layoutAddFlashcard.txtErrorTranslation.appear()
     }
 
+    override fun endEditing() {
+        finish()
+    }
+
     override fun onUpdateFlashcardSuccess(newCard : Flashcard) {
         returnUpdatedFlashcardResult(newCard)
         animatorSetSaving.start()
@@ -244,7 +245,7 @@ class EditFlashcardActivity : BaseActivity<ActivityEditFlashcardBinding, EditFla
             val newTargetLang = txtTargetLang.text.toString()
             val newText = edtText.text.toString()
             val newTranslation = edtTranslation.text.toString()
-            val newUsing = edtUsing.text.toString()
+            val newUsing = edtExample.text.toString()
 
             return (OG_SourceLang != newSourceLang) || (OG_TargetLang != newTargetLang) || (OG_Text != newText) || (OG_Translation != newTranslation) || (OG_Using != newUsing)
         }
@@ -298,30 +299,5 @@ class EditFlashcardActivity : BaseActivity<ActivityEditFlashcardBinding, EditFla
             animatorSetCancelSavingAppear.addListener(onStart = { groupCancelSavingWidgets.appear() })
         }
     }
-
-    @Inject
-    fun initChooseCardTypeAnimation (
-        @Named("FromNormalSizeToNothing") rcvChooseCardTypeDisappear : Animator,
-        @Named("Disappear50Percents") blackBackgroundDisappear : Animator,
-        @Named("FromNothingToNormalSize") rcvChooseCardTypeAppear : Animator,
-        @Named("Appear50Percents") blackBackgroundAppear : Animator) { dB.layoutChooseCardType.apply {
-
-        rcvChooseCardTypeDisappear.setTarget(rcvChooseCardType)
-        blackBackgroundDisappear.setTarget(imgBlackBackgroundChooseCardType)
-        animatorSetChooseCardTypeDisappear.play(rcvChooseCardTypeDisappear).before(blackBackgroundDisappear)
-        animatorSetChooseCardTypeDisappear.addListener (onEnd = {
-            rcvChooseCardType.disappear()
-            imgBlackBackgroundChooseCardType.disappear()
-        })
-
-        rcvChooseCardTypeAppear.setTarget(rcvChooseCardType)
-        blackBackgroundAppear.setTarget(imgBlackBackgroundChooseCardType)
-        animatorSetChooseCardTypeAppear.play(blackBackgroundAppear).before(rcvChooseCardTypeAppear)
-        animatorSetChooseCardTypeAppear.addListener(onStart = {
-            rcvChooseCardType.appear()
-            imgBlackBackgroundChooseCardType.appear()
-        })
-    }}
-
 
 }

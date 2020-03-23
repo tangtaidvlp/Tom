@@ -7,12 +7,13 @@ import android.view.Gravity
 import android.view.ViewPropertyAnimator
 import android.widget.TextView
 import androidx.annotation.Dimension.SP
+import androidx.appcompat.widget.AppCompatTextView
 import androidx.interpolator.view.animation.FastOutSlowInInterpolator
 import com.teamttdvlp.memolang.R
 import com.teamttdvlp.memolang.view.helper.UnitConverter.DpToPixel
 import com.teamttdvlp.memolang.view.helper.dp
 
-class Cell  : TextView {
+class Cell  : AppCompatTextView {
 
     val ANIM_DURATION = 150L
 
@@ -30,11 +31,11 @@ class Cell  : TextView {
 
     constructor(context: Context, cellType : Int) : super(context) {
         if (cellType == INPUT_CELL) {
-            background = context.getDrawable(R.drawable.round_3dp_light_red_background)
+            background = context.getDrawable(R.drawable.round_3dp_black_background)
             setTextColor(Color.WHITE)
         } else if (cellType == OUTPUT_CELL) {
-            background = context.getDrawable(R.drawable.round_3dp_white_background_with_dark_red_border)
-            setTextColor(Color.BLACK)
+            background = context.getDrawable(R.drawable.round_3dp_white_background)
+            setTextColor(Color.parseColor("#583500"))
         }
     }
 

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txt_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/common_margin_start"
+        android:layout_marginEnd="@dimen/common_margin_end"
+        android:fontFamily="@font/seguisb"
+        android:gravity="center"
+        android:paddingTop="30dp"
+        android:paddingBottom="30dp"
+        android:text="Reverse language"
+        android:textColor="@color/black"
+        android:background="@drawable/round_5dp_black_alpha_8_percents_background"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/common_margin_start"
+        android:layout_marginTop="@dimen/common_margin_top"
+        android:layout_marginEnd="@dimen/common_margin_end"
+        android:fontFamily="@font/seguisb"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt_text">
+
+        <TextView
+            android:id="@+id/btn_change_flow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/common_margin_end"
+            android:layout_weight="1"
+            android:background="@drawable/round_5dp_black_alpha_8_percents_background"
+            android:fontFamily="@font/seguisb"
+            android:gravity="center"
+            android:paddingTop="5dp"
+            android:paddingBottom="3dp"
+            android:text="Yes"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txt_text" />
+
+        <TextView
+            android:id="@+id/btn_does_not_change_flow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/round_5dp_black_alpha_8_percents_background"
+            android:fontFamily="@font/seguisb"
+            android:gravity="center"
+            android:paddingTop="5dp"
+            android:paddingBottom="3dp"
+            android:text="No"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txt_text" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -4,12 +4,12 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
-        android:orientation="vertical"
+        android:clickable="false"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
         <TextView
-            android:id="@+id/txt_language"
+            android:id="@+id/txt_set_name"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="19dp"
@@ -33,6 +33,7 @@
             android:layout_height="17dp"
             android:layout_marginTop="18dp"
             android:layout_marginEnd="18dp"
+            android:clickable="true"
             android:background="@color/white"
             android:src="@drawable/button_red_add_flashcard"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -44,11 +45,12 @@
 
         <ImageView
             android:id="@+id/btn_view_list"
-            android:layout_width="17dp"
+            android:layout_width="32dp"
             android:layout_height="17dp"
             android:layout_marginTop="18dp"
-            android:layout_marginEnd="15dp"
-            android:background="@color/white"
+            android:layout_marginEnd="0dp"
+            android:clickable="true"
+            android:paddingEnd="15dp"
             android:src="@drawable/button_flashcard_list"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -68,7 +70,7 @@
             android:visibility="gone"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/txt_language">
+            app:layout_constraintTop_toBottomOf="@id/txt_set_name">
 
             <LinearLayout
                 android:id="@+id/vwgrp_use_flashcard"

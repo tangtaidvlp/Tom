@@ -10,4 +10,6 @@ interface EditFlashcardView : View {
 
     fun onUpdateFlashcardSuccess (newFlashcard : Flashcard)
 
+    fun endEditing()
+
 }

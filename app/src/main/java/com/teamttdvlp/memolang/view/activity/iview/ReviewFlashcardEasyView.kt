@@ -10,8 +10,8 @@ interface ReviewFlashcardEasyView : View {
         val WORD_LIST = -2
     }
 
-    fun showTestSubjectOnScreen (testSubject : Flashcard, useUsingForTestSubject : Boolean,
-                                                          ansElements : Array<String>, listType : Int)
+    fun onGetTestSubject (testSubject : Flashcard, useUsingForTestSubject : Boolean,
+                          ansElements : Array<String>, listType : Int)
 
     fun performCorrectAnsElemtsOrderAnims ()
 
@@ -22,5 +22,6 @@ interface ReviewFlashcardEasyView : View {
     fun performNotPassBehaviours ()
 
     fun endReviewing()
-    fun showNextCardAnims()
+
+    fun nextCard()
 }

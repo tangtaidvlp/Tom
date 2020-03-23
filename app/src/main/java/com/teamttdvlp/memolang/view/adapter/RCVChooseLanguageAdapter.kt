@@ -12,14 +12,19 @@ import com.teamttdvlp.memolang.model.entity.User
 import com.teamttdvlp.memolang.database.sql.entity.user.UserConverter
 import com.teamttdvlp.memolang.database.sql.repository.UserRepository
 import com.teamttdvlp.memolang.view.helper.notContains
+import com.teamttdvlp.memolang.view.helper.quickLog
 import java.lang.Exception
 import kotlin.collections.ArrayList
 
 class RCVChooseLanguageAdapter (var context : Context) : RecyclerView.Adapter<RCVChooseLanguageAdapter.ViewHolder> () {
 
+    private val MAX_ROW = 5
+
     private var onItemClickListener : OnItemClickListener? = null
 
-    private var list = Language.languageList
+    private var list = ArrayList<String>().apply {
+        addAll(Language.languageList)
+    }
 
     var assistant : Assistant? = null
 
@@ -51,8 +56,11 @@ class RCVChooseLanguageAdapter (var context : Context) : RecyclerView.Adapter<RC
 
     fun addLanguage (language : String) {
         if (list.notContains(language)) {
+            if (list.size == MAX_ROW) {
+                list.removeAt(0)
+            }
             list.add(language)
-            notifyItemInserted(list.size - 1)
+            notifyDataSetChanged()
         }
     }
 
@@ -61,7 +69,15 @@ class RCVChooseLanguageAdapter (var context : Context) : RecyclerView.Adapter<RC
     }
 
     fun setData (newData : ArrayList<String>) {
-        list = newData
+        list.clear()
+        if (newData.size > MAX_ROW) {
+            // Get MAX_ROW last items
+            for (i in newData.size - MAX_ROW..newData.size - 1) {
+                list.add(newData[i])
+            }
+        } else {
+            list.addAll(newData)
+        }
     }
 
     override fun getItemCount(): Int {
@@ -86,16 +102,9 @@ class RCVChooseLanguageAdapter (var context : Context) : RecyclerView.Adapter<RC
         override fun doExTask (item : Any) {
             if (item is String) {
             val userRepository = assistantList.get(USER_REPOSITORY_POS) as UserRepository
-            val saveUserRecentChosenLang : (String) -> Unit = {
-                User.getInstance()!!.recentUseLanguages.apply {
-                    if (this.notContains(item)) {
-                        add(0, item)
-                    } else {
-                        remove(item)
-                        add(0, item)
-                    }
-                }
-                userRepository.updateUser(UserConverter.toUserEntity(User.getInstance()!!))
+            val saveUserRecentChosenLang : (String) -> Unit = { language ->
+                User.getInstance().addLanguageToRecentUseList(language)
+                userRepository.updateUser(UserConverter.toUserEntity(User.getInstance()))
             }
             saveUserRecentChosenLang.invoke(item)
         }}
