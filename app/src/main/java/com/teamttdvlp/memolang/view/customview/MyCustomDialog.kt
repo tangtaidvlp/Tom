@@ -5,14 +5,12 @@ import android.animation.AnimatorInflater
 import android.content.Context
 import android.util.AttributeSet
 import android.view.View
-import android.widget.ImageView
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.animation.addListener
 import androidx.core.view.children
 import com.teamttdvlp.memolang.R
-import com.teamttdvlp.memolang.view.helper.appear
-import com.teamttdvlp.memolang.view.helper.disappear
-import com.teamttdvlp.memolang.view.helper.quickLog
+import com.teamttdvlp.memolang.view.helper.goGONE
+import com.teamttdvlp.memolang.view.helper.goVISIBLE
 
 class MyCustomDialog (context : Context, attrSet : AttributeSet) : ConstraintLayout(context, attrSet) {
 
@@ -33,7 +31,7 @@ class MyCustomDialog (context : Context, attrSet : AttributeSet) : ConstraintLay
     private var onShow  : (() -> Unit)? = null
 
     init {
-        view = inflate(context, R.layout.custom_dialert,this) as ConstraintLayout
+        view = inflate(context, R.layout.my_custom_dialog,this) as ConstraintLayout
         showBackgroundAnmtr = AnimatorInflater.loadAnimator(context, R.animator.appear_100_percents)
         hideBackgroundAnmtr = AnimatorInflater.loadAnimator(context, R.animator.disappear_100_percents)
         showBackgroundAnmtr.setTarget(view)
@@ -42,7 +40,7 @@ class MyCustomDialog (context : Context, attrSet : AttributeSet) : ConstraintLay
 
         showBackgroundAnmtr.addListener(
         onStart = {
-            appear()
+            goVISIBLE()
         },
         onEnd = {
             showAnmtrList.forEach {
@@ -52,7 +50,7 @@ class MyCustomDialog (context : Context, attrSet : AttributeSet) : ConstraintLay
         })
 
         hideBackgroundAnmtr.addListener (onEnd = {
-            disappear()
+            goGONE()
             onHide?.invoke()
         })
 
@@ -72,7 +70,7 @@ class MyCustomDialog (context : Context, attrSet : AttributeSet) : ConstraintLay
 
                 hideAnimator.setTarget(view)
                 hideAnimator.addListener (onEnd = {
-                    view.disappear()
+                    view.goGONE()
                     if (index == children.count() - 1) {
                         hideBackgroundAnmtr.start()
                     }})
@@ -80,7 +78,7 @@ class MyCustomDialog (context : Context, attrSet : AttributeSet) : ConstraintLay
 
                 showAnimator.setTarget(view)
                 showAnimator.addListener (onStart = {
-                    view.appear()
+                    view.goVISIBLE()
                 })
 
                 showAnmtrList.add(showAnimator)

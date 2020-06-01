@@ -4,10 +4,10 @@ interface UseFlashcardView : View{
 
     fun onNoCardsLeft ()
 
-    fun showPreviousCardButton ()
-
-    fun hidePreviousCardButton ()
-
     fun showSpeakTextError(error: String)
-    
+
+    fun lock_ShowPreviousCard_Function()
+
+    fun unlock_ShowPreviousCard_Function()
+
 }

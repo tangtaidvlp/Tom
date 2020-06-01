@@ -1,6 +1,6 @@
 package com.teamttdvlp.memolang.viewmodel
 
-import com.teamttdvlp.memolang.model.entity.flashcard.Flashcard
+import com.teamttdvlp.memolang.data.model.entity.flashcard.Flashcard
 import com.teamttdvlp.memolang.view.activity.iview.UseFlashcardDoneView
 import com.teamttdvlp.memolang.view.base.BaseViewModel
 

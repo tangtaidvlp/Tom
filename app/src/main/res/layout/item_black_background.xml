@@ -20,6 +20,6 @@
         android:layout_height="wrap_content"
         android:textSize="@dimen/translation_size"
         android:paddingTop="3dp"
-        android:background="@drawable/round_5dp_black_background"        />
+        android:background="@drawable/round_5dp_black_background"/>
 
 </LinearLayout>

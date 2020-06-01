@@ -10,6 +10,6 @@
             android:toXDelta="0%"/>
 
     <alpha android:toAlpha="1.0"
-           android:fromAlpha="0.8"/>
+           android:fromAlpha="0.0"/>
 
 </set>

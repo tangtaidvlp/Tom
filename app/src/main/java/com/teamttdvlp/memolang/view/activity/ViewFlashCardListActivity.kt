@@ -9,17 +9,12 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.teamttdvlp.memolang.R
 import com.teamttdvlp.memolang.view.base.BaseActivity
-import kotlinx.android.synthetic.main.activity_view_flash_card_list.*
 import com.teamttdvlp.memolang.databinding.ActivityViewFlashCardListBinding
-import com.teamttdvlp.memolang.model.entity.flashcard.Flashcard
+import com.teamttdvlp.memolang.data.model.entity.flashcard.Flashcard
 import com.teamttdvlp.memolang.view.adapter.RCVViewFlashcardAdapter
-import com.teamttdvlp.memolang.view.helper.getActivityViewModel
-import com.teamttdvlp.memolang.model.entity.flashcard.FlashcardSet
-import com.teamttdvlp.memolang.database.sql.repository.FlashcardRepository
+import com.teamttdvlp.memolang.data.model.entity.flashcard.FlashcardSet
 import com.teamttdvlp.memolang.view.activity.iview.ViewFlashcardListView
-import com.teamttdvlp.memolang.view.helper.appear
-import com.teamttdvlp.memolang.view.helper.disappear
-import com.teamttdvlp.memolang.view.helper.quickLog
+import com.teamttdvlp.memolang.view.helper.*
 import com.teamttdvlp.memolang.viewmodel.ViewFlashCardListViewModel
 import java.lang.Exception
 import javax.inject.Inject
@@ -29,34 +24,35 @@ const val FLASHCARD_KEY = "memocard"
 
 const val EDIT_FLASHCARD_REQUEST_CODE = 1801
 
-const val UPDATED_FLASHCARD_LIST_KEY = "card_list"
+const val FLASHCARD_SET = "flashcard_set"
 
-const val FLASHCARD_SET_NAME = "flashcard_type"
+const val UPDATED_FLASHCARD_SET  = "updaed_flcard_set"
 
 class ViewFlashCardListActivity : BaseActivity<ActivityViewFlashCardListBinding, ViewFlashCardListViewModel>()
                                  ,ViewFlashcardListView {
 
     private var hasAChangeInList = false
 
-    private var flashcardSetName : String? = null
+    private lateinit var currentViewedFlashcardSet : FlashcardSet
 
-    lateinit var flashcardRepository : FlashcardRepository
+    lateinit var viewModelProviderFactory : ViewModelProviderFactory
     @Inject set
 
     private lateinit var buttonDeleteAppearAnimator : Animator
 
     private lateinit var buttonDeleteDisappearAnimator : Animator
 
+    lateinit var viewFlashcardAdapter : RCVViewFlashcardAdapter
+
     override fun getLayoutId(): Int = R.layout.activity_view_flash_card_list
 
-    override fun takeViewModel(): ViewFlashCardListViewModel = getActivityViewModel() {
-        ViewFlashCardListViewModel(flashcardRepository)
-    }
+    override fun takeViewModel(): ViewFlashCardListViewModel = getActivityViewModel(viewModelProviderFactory)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        setStatusBarColor(resources.getColor(R.color.app_blue))
         viewModel.setUpView(this)
-        dB.viewModel = viewModel
+        dB.vwModel = viewModel
     }
 
     override fun onStart() {
@@ -65,31 +61,24 @@ class ViewFlashCardListActivity : BaseActivity<ActivityViewFlashCardListBinding,
         stopPreventUserFromClickingItem()
     }
 
-    lateinit var viewFlashcardAdapter : RCVViewFlashcardAdapter
-
     override fun addViewControls() { dB.apply {
-        var flashcardSet : FlashcardSet
         try {
-            flashcardSet = intent.getSerializableExtra(FLASHCARD_SET_KEY) as FlashcardSet
-            flashcardSetName = flashcardSet.name
+            currentViewedFlashcardSet = getViewedFlashcardSet()
         } catch (ex : Exception) {
             ex.printStackTrace()
-            flashcardSet = FlashcardSet("null")
+            currentViewedFlashcardSet = FlashcardSet("", "", "")
         }
+
         // Reverse here to make flashcard last in first out
-        val updatedList = ArrayList<Flashcard>().apply {
-            addAll(flashcardSet.flashcards.reversed())
-        }
-        viewFlashcardAdapter = RCVViewFlashcardAdapter(this@ViewFlashCardListActivity,updatedList)
-        rcv_flashcard_list.adapter = viewFlashcardAdapter
-        rcv_flashcard_list.layoutManager = LinearLayoutManager(this@ViewFlashCardListActivity, RecyclerView.VERTICAL, false)
-        this@ViewFlashCardListActivity.viewModel.setFlashcardSet(flashcardSet)
+        viewFlashcardAdapter = RCVViewFlashcardAdapter(this@ViewFlashCardListActivity, currentViewedFlashcardSet.flashcards)
+        rcvFlashcardList.adapter = viewFlashcardAdapter
+        rcvFlashcardList.layoutManager = LinearLayoutManager(this@ViewFlashCardListActivity, RecyclerView.VERTICAL, false)
+        viewModel.setFlashcardSet(currentViewedFlashcardSet)
     }}
 
 
     override fun addViewEvents() { dB.apply {
         viewFlashcardAdapter.setOnItemClickListener { card ->
-            quickLog("Send id: ${card.id}")
             preventUserFromClickingOtherItem()
             val intent = Intent(this@ViewFlashCardListActivity, EditFlashcardActivity::class.java)
             intent.putExtra(FLASHCARD_KEY, card)
@@ -108,7 +97,7 @@ class ViewFlashCardListActivity : BaseActivity<ActivityViewFlashCardListBinding,
                 viewFlashcardAdapter.deleteSelectedFlashcards()
                 val thereIsNoCardLeft = (viewFlashcardAdapter.list.size == 0)
                 if (thereIsNoCardLeft) {
-                    returnUpdatedData()
+                    returnUpdatedFlashcardSet()
                     finish()
                 } else {
                     viewFlashcardAdapter.turnOffDeleteMode()
@@ -123,21 +112,29 @@ class ViewFlashCardListActivity : BaseActivity<ActivityViewFlashCardListBinding,
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
-        quickLog("On Get Result")
         if ((requestCode == EDIT_FLASHCARD_REQUEST_CODE) and (resultCode == Activity.RESULT_OK)) {
             hasAChangeInList = true
             val newUpdatedFlashcard = data!!.getSerializableExtra(UPDATED_FLASHCARD) as Flashcard
-            var updatedPosition = -1
-            quickLog("Received Id: $newUpdatedFlashcard")
-            for (card in viewFlashcardAdapter.list) {
-                if (card.id == newUpdatedFlashcard.id) {
-                    updatedPosition = viewFlashcardAdapter.list.indexOf(card)
-                }
-            }
-            viewFlashcardAdapter.list[updatedPosition] = newUpdatedFlashcard
-            viewFlashcardAdapter.notifyItemChanged(updatedPosition)
+            updateCurrentViewedFlashcardList(newUpdatedFlashcard)
         }
     }
+
+    private fun updateCurrentViewedFlashcardList (updatedFlashcard : Flashcard) {
+        var updatedPosition = -1
+        for (card in viewFlashcardAdapter.list) {
+            if (card.id == updatedFlashcard.id) {
+                updatedPosition = viewFlashcardAdapter.list.indexOf(card)
+                break
+            }
+        }
+        viewFlashcardAdapter.list[updatedPosition] = updatedFlashcard
+        viewFlashcardAdapter.notifyItemChanged(updatedPosition)
+    }
+
+    private fun getViewedFlashcardSet () : FlashcardSet {
+        return intent.getSerializableExtra(FLASHCARD_SET_KEY) as FlashcardSet
+    }
+
 
     override fun onBackPressed() {
         if (viewFlashcardAdapter.isInDeleteMode) {
@@ -145,29 +142,25 @@ class ViewFlashCardListActivity : BaseActivity<ActivityViewFlashCardListBinding,
             buttonDeleteDisappearAnimator.start()
         } else {
             if (hasAChangeInList) {
-                returnUpdatedData()
+                returnUpdatedFlashcardSet()
             }
             super.onBackPressed()
         }
     }
 
-    private fun returnUpdatedData() {
+    private fun returnUpdatedFlashcardSet() {
         val intent = Intent()
-        val resultList = ArrayList<Flashcard>()
-        for (item in viewFlashcardAdapter.list.reversed()) {
-            resultList.add(item)
-        }
-        intent.putExtra(UPDATED_FLASHCARD_LIST_KEY, resultList)
-        intent.putExtra(FLASHCARD_SET_NAME, flashcardSetName)
+        currentViewedFlashcardSet.flashcards = viewFlashcardAdapter.list
+        intent.putExtra(UPDATED_FLASHCARD_SET, currentViewedFlashcardSet)
         setResult(Activity.RESULT_OK, intent)
     }
 
     private fun preventUserFromClickingOtherItem () {
-        dB.imgPreventUserMultiItemClick.appear()
+        dB.imgPreventUserMultiItemClick.goVISIBLE()
     }
 
     private fun stopPreventUserFromClickingItem() {
-        dB.imgPreventUserMultiItemClick.disappear()
+        dB.imgPreventUserMultiItemClick.goGONE()
     }
 
 
@@ -181,11 +174,11 @@ class ViewFlashCardListActivity : BaseActivity<ActivityViewFlashCardListBinding,
         buttonDeleteDisappearAnimator = fromNormalSizeToNothing
 
         buttonDeleteAppearAnimator.addListener (onStart = {
-            dB.btnDeleteSelectedCards.appear()
+            dB.btnDeleteSelectedCards.goVISIBLE()
         })
 
         buttonDeleteDisappearAnimator.addListener (onEnd = {
-            dB.btnDeleteSelectedCards.disappear()
+            dB.btnDeleteSelectedCards.goGONE()
         })
 
         buttonDeleteAppearAnimator.setTarget(dB.btnDeleteSelectedCards)

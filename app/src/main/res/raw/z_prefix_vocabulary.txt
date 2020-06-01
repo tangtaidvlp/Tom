@@ -1,41 +1,511 @@
-Zist<pd>[‘æbəsist]<pd>N<pd>Người gãy bàn phím
-Zus<pd>[‘æbəkəs]<pd>N<pd>Bàn tính<ex>to move counters of an abacus: tính bằng bàn tính
-Zuses<pd><nav>Zus
-Zk<pd>[ə’bæk]<pd>Adv<pd>Lùi lại, trở lại phía sau<ex>to stand aback from sb/sth: đứng lùi lại để tránh ai hoặc cái gì
-Zterial<pd>[eibæk’tiəriəl]<pd>N<pd>Không do vi khuẩn gây ra
-Ztio<pd>_<pd>N<pd>(Y học) sự phá thai
-Ztion<pd>[æ’bækʃn]<pd>N<pd>Việc gia súc bị bắt trộm
-Ztus<pd>[æ’bæktəs]<pd>Adj<pd>Bị trụy thai
-Zaddon<pd>[ə’bædən]<pd> N<pd>Âm ti, địa ngục<md>con quỷ
-Zaft<pd>[ə’bɑ:ft]<pd>Adv/(Hàng hải) ở đằng sau bánh lái][Pre/(Hàng hải) ở đằng sau<ex>abaft the mast: sau cột buồm
-Zalienate<pd>[æ’bəiljəneit]<pd>TransV<pd>Nhường lại tài sản
-Zalienation<pd>[æbəiljə’neʃn]<pd>N<pd>Danh từ của <cli>Zalienate<cli/><md>Sự nhường lại tài sản
-Zalone<pd>[æbə’ləʊni]<pd>N<pd>(Từ Mỹ, nghĩa Mỹ) Bào ngư
-Zalones<pd><nav>Zalone
-Zandon<pd>[ə’bændən]<pd>TransV/Từ bỏ, bỏ rơi, ruồng bỏ/to abandon all efforts: từ bỏ mọi nỗ lực<md>to abandon a child: ruồng bỏ đứa con][N/Sự phóng túng, tự do, sự buông thả<ex>with abandon: một cách phóng túng
-Zandoned<pd>[ə’bændənd]<pd>Adj<pd>Bị bỏ rơi, bị ruồng bỏ<md>Phóng đãng, trụy lạc
-Zandoner<pd>[ə’bændənə]<pd>N<pd>(Pháp lý) Người rút đơn
-Zandoning<pd><nav>Zandon
-Zandonment<pd>[ə’bændənmənt]<pd>N<pd>Sự bỏ, sự từ bỏ, sự bỏ rơi, ruồng bỏ<md>Tình trạng bị bỏ rơi, tình trạng bị ruồng bỏ<md>Sự phóng túng, sự tự do, buông thả
-Zandonments<pd><nav>Zandonment
-Zapikal<pd>[əb’æppkəl]<pd>Adj<pd>(Sinh học) Xa đỉnh, xa ngọn<md>Dưới vực
-Zarticular<pd>[‘æba:tikjulə]<pd>Adj<pd>(Giải phẫu) Học ngoài khớp, trật khớp
-Zas<pd>[‘ɑ:bə]<pd>N<pd>Áo aba
-Zase<pd>[ə’beIs]<pd>TransV<pd>Làm hạ phẩm giá, làm mất thể diện, làm nhục<ex>Zkbiting the others is to abase oneself: Nói xấu người khác là tự hạ phẩm giá của mình
-Zased<pd><nav>Zase
-Zasement<pd>[ə’beIsment]<pd>N<pd>Sự làm hạ phẩm giá, sự làm mất thể diện, sự làm nhục<md>Danh từ của <cli>Zase<cli/>
-Zases<pd><nav>Zase
-Zash<pd>[ə’bæʃ]<pd>TransV<pd>Làm bối rối, làm lúng túng, làm luống cuống
-Zashed<pd><nav>Zash
-Zashment<pd>[ə’bæʃmənt]<pd>N<pd>(Danh từ của <cli>Zash<cli/>) Sự bối rối, sự lúng túng, sự luống cuống
-Zatable<pd>[ə’beitəbl]<pd>Adj<pd>Zó thể làm dịu<md>Zó thể hạ, có thể bớt /b Zó thể làm nhụt<md>Zó thể chấm dứt, có thể thanh trừ<md>(Pháp lý) Zó thể hủy bỏ, có thể thủ tiêu
-Zate<pd>[ə’beIt]<pd>V/Dịu đi, yếu đi, nhụt chí, đỡ, nguôi, bớt<ex>Pain abates: cơn đau dịu đi<exd>Storm abates: cơn bão nguôi đi][TransV/Làm dịu đi, làm yếu đi<md>Hạ, bớt (giá)<md>Làm nhụt (chí)<md>Làm cùn (lưỡi dao)
-Zated<pd><nav>Zate
-Zating<pd><nav>Zate
-Zatement<pd>[ə’beItmənt]<pd>N<pd>(Danh từ của <cli>Zate<cli/>) Sự dịu đi, sự yếu đi, sự nhụt đi, sự giảm bớt<md>Sự hạ, sự bớt (giá)<md>Sự chấm dứt, sự thanh toán<md>(pháp lý) Sự hủy bỏ, sự thủ tiêu<ex>Zatement of a contract: sự hủy bỏ một hợp đồng
-Zater<pd>[ə’beitə]<pd>N<pd>Người giảm bớt<md>(Y học) Thuốc làm dịu
-Zatis<pd>[‘æbətis]<pd>N<pd>(Quân sự) Đống cây chướng ngại, đống cây cản
-Zatised<pd>[‘æbətist]<pd>Ad<pd>(Quân sự) Zó đống cây chướng ngại, có đống cây cản
-Zattoir<pd>[‘æbətwɑɑ:(r)]<pd>N<pd>Lò mổ, lò sát sinh
-Zattoirs<pd><nav>Zattoir
-Zaxial<pd>[æb’æksiəl]<pd>Adj<pd>Ở ngoài trục, xa trục
+@z /zed, (Mỹ) zi:/
+*  danh từ,  số nhiều Zs,  Z's,  (từ Mỹ,nghĩa Mỹ)
+- z
+- (toán học) ẩn số z
+
+@z-day /'zed,dei/
+*  danh từ
+- ngày quyết định
+
+@zaffer /'zæfə/
+*  danh từ
+- phẩm lục (coban oxyt, dùng làm chất màu)
+
+@zambo /zæmbou/
+*  danh từ
+- (Zambo) người lai da đen
+
+@zany /'zeini/
+*  danh từ
+- người ngu, người đần, người khờ dại
+- người thích làm trò hề
+- (sử học) vai hề phụ
+
+@zeal /zi:l/
+*  danh từ
+- lòng sốt sắng, lòng hăng hái; nhiệt tâm, nhiệt huyết
+=to show zeal for+ tỏ ra sốt sắng đối với, nhiệt tâm đối với
+
+@zealot /'zelət/
+*  danh từ
+- người cuồng tín; người quá khích
+
+@zealotism /'zelətizm/ (zealotry) /'zelətri/
+*  danh từ
+- lòng cuồng tín; tính quá khích
+
+@zealotry /'zelətizm/ (zealotry) /'zelətri/
+*  danh từ
+- lòng cuồng tín; tính quá khích
+
+@zealous /'zeləs/
+*  tính từ
+- sốt sắng, hắng hái; có nhiệt tâm, có nhiệt huyết
+
+@zealousness /'zeləsnis/
+*  danh từ
+- tính sốt sắng, tính hăng hái; nhiệt tâm
+
+@zebra /'zi:brə/
+*  danh từ
+- (động vật học) ngựa vằn
+=striped like a zebra+ có vằn
+
+@zebra markings /'zi:brə'mɑ:kiɳz/
+*  danh từ số nhiều
+- đường vằn
+
+@zebu /'zi:bu:/
+*  danh từ
+- (động vật học) bò u
+
+@zed /zed/
+*  danh từ
+- chữ Z
+
+@zee /zi:/
+*  danh từ
+- (từ Mỹ,nghĩa Mỹ) chữ Z
+
+@zemindar /'zemindɑ:/
+*  danh từ
+- (Anh-An) điền chủ, địa chủ
+
+@zenana /ze'nɑ:nə/
+*  danh từ
+- khuê phòng, chỗ phụ nữ ở (An)
+- vải mỏng để may quần áo đàn bà ((cũng) zenana cloth)
+!zenana mission
+- công tác phổ biến vệ sinh y tế trong giới phụ nữ (ở An độ)
+
+@zenith /'zeniθ/
+*  danh từ
+- (thiên văn học) thiên đỉnh
+- (nghĩa bóng) điểm cao nhất, cực điểm, tột đỉnh
+=to be at the zenith of+ lên đến cực điểm của
+=to have passed one's zenith+ đã qua thời kỳ oanh liệt nhất, đã qua thời kỳ thịnh vượng nhất
+
+@zenithal /'zeniθəl/
+*  tính từ
+- (thuộc) thiên đỉnh
+
+@zeolite /'zi:əlait/
+*  danh từ
+- (khoáng chất) Zeolit
+
+@zephyr /'zefə/
+*  danh từ
+- gió tây
+- (thơ ca) gió mát, gió hiu hiu, gió nhẹ
+- vải xêfia (một thứ vải mỏng nhẹ)
+- (thể dục,thể thao) áo thể thao, áo vận động viên (loại mỏng)
+
+@zepp /zep/
+*  danh từ
+- (Zepp) (thông tục) (viết tắt) của Zeppelin
+
+@zeppelin /'zepəlin/
+*  danh từ
+- khí cầu zepơlin
+
+@zero /'ziərou/
+*  danh từ
+- (toán học); (vật lý) zêrô, số không
+=absolute zero+ zêrô tuyệt đối
+=ten degrees belows zero+ mười độ dưới độ không
+- độ cao zêrô (máy bay)
+=at zero level+ sát mặt đất
+- trạng thái không, trạng thái hết hoàn toàn, trạng thái hết sạch; điểm thấp nhất
+=their hopes were reduced to zero+ hy vọng của chúng tiêu tan hết
+!zero hour
+- (quân sự) giờ bắt đầu tấn công
+- giờ quyết định
+
+@zest /zest/
+*  danh từ
+- điều thú vị, điều vui vẻ
+=story that lacks zest+ truyện không thú vị
+=to eat with zest+ ăn ngon miệng
+- vị ngon, mùi thơm; chất cho vào cho thêm hương vị
+=to add (give) a zest to+ tăng thêm chất lượng cho; làm cho thêm ngon thêm thú vị
+- sự say mê, sự thích thú
+=to enter into a plan with zest+ say mê bước vào một kế hoạch
+- (từ cổ,nghĩa cổ) vỏ cam, vỏ chanh (cho vào rượu, xúp... cho thêm hương vị)
+
+@zeus /zju:s/
+*  danh từ
+- (Zeus) (thần thoại,thần học) thần Dớt, thần vương
+
+@zibet /'zibet/
+*  danh từ
+- (động vật học) cầy giông
+
+@zigzag /'zigzæg/
+*  danh từ
+- hình chữ chi, đường chữ chi; hầm hào chữ chi
+=in zigzags+ hình chữ chi, ngoằn ngoèo
+*  tính từ phó từ
+- theo hình chữ chi, ngoằn ngoèo
+=zigzag road+ đường chữ chi, đường ngoằn ngoèo
+=to run zigzag up the hill+ chạy ngoằn ngoèo lên đồi
+*  nội động từ
+- chạy ngoằn ngoèo, chạy theo đường chữ chi
+*  ngoại động từ
+- làm thành đường chữ chi, làm cho chạy ngoằn ngoèo
+
+@zigzagging /'zigzægiɳ/ (zigzaggy) /'zigzægi/
+*  tính từ
+- theo hình chữ chi, ngoằn ngoèo
+=zigzagging coast+ bờ biển ngoằn ngoèo
+
+@zigzaggy /'zigzægiɳ/ (zigzaggy) /'zigzægi/
+*  tính từ
+- theo hình chữ chi, ngoằn ngoèo
+=zigzagging coast+ bờ biển ngoằn ngoèo
+
+@zinc /ziɳk/
+*  danh từ
+- kẽm
+=to coat with zinc+ mạ kẽm, tráng kẽm
+*  ngoại động từ
+- tráng kẽm, mạ kẽm
+=to zinc iron+ tráng kẽm lên sắt
+- lợp bằng kẽm
+=to zinc a roof+ lợp mái nhà bằng kẽm
+
+@zinc-block /'ziɳkblɔk/
+*  danh từ
+- (ngành in) bản kẽm
+
+@zinciferous /ziɳ'kifərəs/
+*  tính từ
+- có kẽm
+
+@zinco /'ziɳkou/
+*  danh từ & động từ
+- (thông tục) (như) zincograph
+
+@zincograph /'ziɳkougrɑ:f/
+*  danh từ
+- (ngành in) bản kẽm
+- (như) zincography
+*  ngoại động từ
+- in bằng bản kẽm
+- khắc (ảnh...) lên kẽm
+*  nội động từ
+- khắc lên kẽm
+
+@zincographer /'ziɳkougrəfə/
+*  danh từ
+- thợ in bản kẽm
+- thợ khắc bản kẽm
+
+@zincographic /,ziɳkou'græfik/
+*  tính từ
+- in bằng kẽm
+- khắc lên kẽm
+
+@zincography /ziɳ'kɔgrəfi/
+*  danh từ
+- thuật in bản kẽm; quá trình in bản kẽm
+- thuật khắc bản kẽm
+
+@zingiberaceous /,zindʤibə'reiʃəs/
+*  tính từ
+- (thực vật học) (thuộc) họ gừng
+
+@zinnia /'zinjə/
+*  danh từ
+- (thực vật học) cúc zinnia
+
+@zionism /'zaiənizm/
+*  danh từ
+- chủ nghĩa phục quốc (Do thái)
+
+@zionist /'zaiənist/
+*  danh từ
+- người theo chủ nghĩa phục quốc (Do thái)
+
+@zip /zip/
+*  danh từ
+- tiếng rít (của đạn bay); tiếng xé vải
+- (nghĩa bóng) sức sống, nghị lực
+*  nội động từ
+- rít, vèo (như đạn bay)
+=to zip past+ chạy vụt qua (xe); vèo qua, rít qua (đạn)
+
+@zip-fastener /'zipə/ (zip-fastener) /'zip,fɑ:snə/
+*  danh từ
+- khoá kéo (ở áo...)
+
+@zipper /'zipə/ (zip-fastener) /'zip,fɑ:snə/
+*  danh từ
+- khoá kéo (ở áo...)
+
+@zircon /'zə:kɔn/
+*  danh từ
+- (khoáng chất) ziricon
+
+@zirconium /zə:'kounjəm/
+*  danh từ
+- (hoá học) ziriconi
+
+@zither /'ziθə/ (zithern) /'ziθən/
+*  danh từ
+- đàn tam thập lục
+*  nội động từ
+- chơi đàn tam thập lục
+
+@zithern /'ziθə/ (zithern) /'ziθən/
+*  danh từ
+- đàn tam thập lục
+*  nội động từ
+- chơi đàn tam thập lục
+
+@zloty /'zlɔti/
+*  danh từ
+- đồng zlôti (tiền Ba lan)
+
+@zodiac /'zoudiæk/
+*  danh từ
+- (thiên văn học) hoàng đạo
+
+@zodiacal /zou'daikəl/
+*  tính từ
+- (thuộc) hoàng đạo
+=zodiacal light+ ánh sáng hoàng đạo
+
+@zoic /'zouik/
+*  tính từ
+- (địa lý,địa chất) có hoá thạch (đá, đất)
+
+@zollverein /'tsɔlfərain/
+*  danh từ
+- liên minh thuế quan
+
+@zonal /'zounl/
+*  tính từ
+- (thuộc) đới; (thuộc) khu vực
+- chia thành đới
+
+@zonate /'zouneit/
+*  tính từ
+- (thực vật học); (động vật học) có khoang, có khoanh màu
+
+@zone /zoun/
+*  danh từ
+- (địa lý,địa chất) đới
+=the torrid zone+ đới nóng, nhiệt đới
+=the temperate zone+ đới ôn hoà, ôn đới
+=the frigid zone+ đới lạnh, hàn đới
+- khu vực, miền; vùng
+=within the zone of submarine activity+ trong khu vực hoạt động của tàu ngầm
+=the zone of influence+ khu vực ảnh hưởng
+=the zone of operations+ khu vực tác chiến
+- (từ cổ,nghĩa cổ),  (thơ ca) dây nịt, dây dưng
+*  ngoại động từ
+- chia thành đới, chia thành khu vực, quy vùng
+=to zone a district for industry+ quy vùng một khu để xây dựng công nghiệp
+
+@zoneless /'zounlis/
+*  tính từ
+- không có khu vực
+
+@zoning /'zouniɳ/
+*  danh từ
+- sự chia thành đới, sự chia thành khu vực, sự quy vùng
+
+@zoo /zu:/
+*  danh từ
+- (thông tục) ((viết tắt) của zoological garden) vườn bách thú, vườn thú
+
+@zoobiological /,zouəbaiə'lɔdʤikəl/
+*  tính từ
+- (thuộc) sinh học động vật
+
+@zoobiology /,zouəbai'ɔlədʤi/
+*  danh từ
+- sinh học động vật
+
+@zoochemical /,zouə'kemikəl/
+*  tính từ
+- (thuộc) hoá học động vật
+
+@zoochemistry /,zouə'kemistri/
+*  danh từ
+- hoá học động vật
+
+@zoogeographical /,zouədʤiə'græfikəl/
+*  tính từ
+- (thuộc) địa lý động vật
+
+@zoogeography /,zouədʤi'ɔgrəfi/
+*  danh từ
+- địa lý động vật
+
+@zoographer /zou'ɔgrəfə/
+*  danh từ
+- nhà động vật học miêu tả
+
+@zoography /zou'ɔgrəfi/
+*  danh từ
+- động vật học miêu tả
+
+@zoolite /'zouəlait/
+*  danh từ
+- (địa lý,địa chất) đá động vật,  zoolit
+
+@zoological /,zouə'lɔdʤikəl/
+*  tính từ
+- (thuộc) động vật học
+=zoological garden+ vườn bách thú
+
+@zoologist /zou'ɔlədʤist/
+*  danh từ
+- nhà động vật học
+
+@zoology /zou'ɔlədʤi/
+*  danh từ
+- động vật học
+
+@zoom /zu:m/
+*  danh từ
+- tiếng kêu vù vu (của máy bay...)
+- sự làm cho bay vọt lên; sự bay vọt lên
+*  nội động từ
+- kêu vù vù
+- bay vọt lên (máy bay)
+
+@zoomorphic /,zounou'mɔ:fik/
+*  tính từ
+- (thuộc) biến thái động vật
+- có biến thái động vật
+
+@zoomorphism /,zounou'mɔ:fizm/
+*  danh từ
+- sự biến thái động vật
+
+@zoonomy /zou'ɔnəmi/
+*  danh từ
+- sinh lý học động vật
+
+@zoophaga /zou'ɔfəgə/
+*  danh từ số nhiều
+- vật ăn thịt động vật
+
+@zoophagan /zou'ɔfəgən/ (zoophagous) /zou'ɔfəgəs/
+*  tính từ
+- ăn thịt động vật
+
+@zoophagous /zou'ɔfəgən/ (zoophagous) /zou'ɔfəgəs/
+*  tính từ
+- ăn thịt động vật
+
+@zoophyte /'zoiuəfait/
+*  danh từ
+- động vật hình cây
+
+@zoopsychologic /,zouəsaikə'lɔdʤik/
+*  tính từ
+- (thuộc) tâm lý học động vật
+
+@zoopsychologist /,zouəsai'kɔlədʤist/
+*  danh từ
+- nhà tâm lý học động vật
+
+@zoopsychology /,zouəsai'kɔlədʤi/
+*  danh từ
+- tâm lý học động vật
+
+@zoospore /'zouəspɔ:/
+*  danh từ
+- (động vật học); (thực vật học) động bào tử
+
+@zoot suit /'zu:t'sju:t/
+*  danh từ
+- bộ quần áo dút (áo dài đến đầu gối, quần hẹp)
+
+@zootechnic /,zouə'teknik/
+*  tính từ
+- (thuộc) phép nuôi động vật, (thuộc) chăn nuôi
+
+@zootherapy /,zouə'θerəpi/
+*  danh từ
+- thuật trị bệnh động vật
+
+@zootomic /,zouə'tɔmik/
+*  tính từ
+- (thuộc) giải phẫu động vật
+
+@zootomist /zou'ɔtəmist/
+*  danh từ
+- nhà giải phẫu động vật
+
+@zootomy /zou'ɔtəmi/
+*  danh từ
+- khoa giải phẫu động vật
+
+@zoroastrian /,zɔrou'æstriən/
+*  tính từ
+- (tôn giáo) Zoroastrian thờ lửa
+*  danh từ
+- (tôn giáo) Zoroastrian tín đồ đạo thờ lửa
+
+@zoroastrianism /,zɔrou'æstriənizm/
+*  danh từ
+- Zoroastrianism đạo thờ lửa
+
+@zouave /zu:'ɑ:v/
+*  danh từ
+- (sử học) lính zuavơ (lính bộ binh ở An-giê-ri)
+
+@zounds /zaundz/
+*  thán từ
+- (từ cổ,nghĩa cổ) ối!, ủa!, ôi chao!
+
+@zygoma /zai'goumə/
+*  danh từ,  số nhiều zygomata
+*  (giải phẫu) xương gò má
+
+@zygomata /zai'goumətə/
+*  danh từ số nhiều của zygoma
+
+@zygomorphic /,zaigə'mɔ:fik/ (zygomorphous) /,zaigə'mɔ:fəs/
+*  tính từ
+- đối xứng hai bên
+
+@zygomorphous /,zaigə'mɔ:fik/ (zygomorphous) /,zaigə'mɔ:fəs/
+*  tính từ
+- đối xứng hai bên
+
+@zygospore /'zaigəspɔ:/
+*  danh từ
+- (thực vật học) bào tử tiếp hợp
+
+@zygote /'zaigout/
+*  danh từ
+- (thực vật học) hợp tử
+
+@zymase /'zaimeis/
+*  danh từ
+- (sinh vật học) zymaza
+
+@zymology /zai'mɔlədʤi/
+*  danh từ
+- khoa nghiên cứu men
+
+@zymometer /zai'mɔmitə/
+*  danh từ
+- máy đo độ lên men
+
+@zymosis /zai'mousis/
+*  danh từ
+- sự lên men
+
+@zymotechnics /,zaimə'tekniks/
+*  danh từ số nhiều
+- thuật làm lên men
+
+@zymotic /zai'mɔtik/
+*  tính từ
+- (y học) (thuộc) sự lên men

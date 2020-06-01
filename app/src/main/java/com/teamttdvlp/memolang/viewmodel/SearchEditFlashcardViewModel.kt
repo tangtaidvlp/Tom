@@ -1,7 +1,7 @@
 //package com.teamttdvlp.memolang.viewmodel
 //
 //import androidx.lifecycle.MutableLiveData
-//import com.teamttdvlp.memolang.model.entity.flashcard.Flashcard
+//import com.teamttdvlp.memolang.data.entity.model.flashcard.Flashcard
 //import com.teamttdvlp.memolang.database.sql.repository.FlashcardRepository
 //import com.teamttdvlp.memolang.view.activity.iview.SearchEditFlashcardView
 //import com.teamttdvlp.memolang.view.base.BaseViewModel

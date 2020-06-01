@@ -1,0 +1,3 @@
+@X-efficiency
+- (Econ) Hiệu quả X.
+= Là một tình huống, trong đó tổng chi phí của một hãng không thể giảm đến mức tối thiểu vì sản lượng thực tế từ các đầu vào xác định nhỏ hơn mức khả thi lớn nhất.

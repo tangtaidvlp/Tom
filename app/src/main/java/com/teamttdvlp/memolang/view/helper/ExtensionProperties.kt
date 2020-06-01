@@ -7,6 +7,7 @@ import android.view.View
 import android.view.animation.Animation
 import android.widget.EditText
 import java.util.*
+import kotlin.math.exp
 
 fun quickLog (message : Any) {
     Log.e("QuickLog: ", message.toString())
@@ -51,17 +52,17 @@ fun EditText.addTextChangeListener (
 }
 
 
-fun View.disappear() {
+fun View.goGONE() {
     if (visibility != View.GONE)
     visibility = View.GONE
 }
 
-fun View.appear() {
+fun View.goVISIBLE() {
     if (visibility != View.VISIBLE)
     visibility = View.VISIBLE
 }
 
-fun View.hide() {
+fun View.goINVISIBLE() {
     if (visibility != View.INVISIBLE)
     visibility = View.INVISIBLE
 }
@@ -76,4 +77,10 @@ fun View.isGone () : Boolean{
 
 fun View.isInvisible() : Boolean{
     return visibility == View.INVISIBLE
+}
+
+fun Any.but (expression: Boolean, statement : () -> Unit) {
+    if (expression) {
+        statement
+    }
 }

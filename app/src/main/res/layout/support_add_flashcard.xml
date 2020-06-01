@@ -6,7 +6,7 @@
     <data>
         <variable
             name="flashcard"
-            type="com.teamttdvlp.memolang.model.entity.flashcard.Flashcard" />
+            type="com.teamttdvlp.memolang.data.model.entity.flashcard.Flashcard" />
     </data>
 
     <ScrollView
@@ -20,7 +20,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <EditText
+                <EditText
                 android:id="@+id/edt_set_name"
                 android:layout_width="0dp"
                 android:layout_height="35dp"
@@ -31,13 +31,13 @@
                 android:translationZ="5dp"
                 android:fontFamily="@font/seguisb"
                 android:gravity="center_vertical"
-                android:hint="Set name (optional)"
+                android:hint="Set name (default)"
                 android:textColorHint="#777777"
                 android:inputType="textNoSuggestions|text"
                 android:paddingStart="16dp"
                 android:paddingEnd="26dp"
                 android:paddingBottom="1dp"
-                android:text="@{flashcard.setName}"
+                android:text="@{flashcard.setOwner}"
                 android:textColor="@color/white"
                 android:textSize="16sp"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -53,15 +53,37 @@
                 android:layout_marginTop="10dp"
                 android:background="@drawable/round_right_5dp_black_background"
                 android:elevation="10dp"
+                android:visibility="gone"
                 android:paddingStart="16dp"
                 android:paddingTop="10dp"
                 android:paddingEnd="16dp"
                 android:paddingBottom="10dp"
-                android:visibility="gone"
                 app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="@id/center_guideline"
                 app:layout_constraintTop_toBottomOf="@id/edt_set_name" />
+
+            <TextView
+                android:id="@+id/btn_create_new_set"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round_right_5dp_black_background"
+                android:layout_marginTop="5dp"
+                android:elevation="10dp"
+                android:text="+ Create new set"
+                android:visibility="gone"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:fontFamily="@font/seguisb"
+                android:paddingStart="16dp"
+                android:paddingTop="10dp"
+                android:paddingEnd="16dp"
+                android:paddingBottom="10dp"
+                android:gravity="center_vertical"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="@id/center_guideline"
+                app:layout_constraintTop_toBottomOf="@id/rcv_flashcard_set_name" />
 
             <TextView
                 android:id="@+id/btn_add"
@@ -121,7 +143,7 @@
                 android:ems="10"
                 android:fontFamily="@font/lucida_bright_regular"
                 android:gravity="center_vertical"
-                android:hint="Ex: /'helo/"
+                android:hint="Ex: /'memori:/"
                 android:inputType="textNoSuggestions"
                 android:paddingStart="8dp"
                 android:paddingBottom="1dp"
@@ -134,7 +156,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/txt_title_pronunciation" />
 
             <TextView
-                android:id="@+id/txt_language"
+                android:id="@+id/txt_title_front_language"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/common_margin_start"
@@ -142,17 +164,34 @@
                 android:layout_marginEnd="@dimen/common_margin_end"
                 android:alpha="0.8"
                 android:fontFamily="@font/sitka_bold"
-                android:text="Language"
+                android:text="Front language"
                 android:textColor="#000000"
                 android:textSize="16sp"
-                app:layout_constraintBottom_toTopOf="@+id/viewgroup_txt_source_lang"
+                app:layout_constraintBottom_toTopOf="@+id/viewgroup_txt_front_lang"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/edt_set_name" />
 
+            <TextView
+                android:id="@+id/txt_title_back_language"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="@dimen/common_margin_end"
+                android:alpha="0.8"
+                android:fontFamily="@font/sitka_bold"
+                android:text="Back language"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toTopOf="@+id/viewgroup_txt_front_lang"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@id/viewgroup_txt_back_lang"
+                app:layout_constraintTop_toBottomOf="@id/edt_set_name" />
+
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/viewgroup_txt_target_lang"
+                android:id="@+id/viewgroup_txt_back_lang"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/common_margin_start"
@@ -168,10 +207,10 @@
                 android:textSize="16sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/img_arrow"
-                app:layout_constraintTop_toBottomOf="@+id/txt_language">
+                app:layout_constraintTop_toBottomOf="@+id/txt_title_front_language">
 
                 <TextView
-                    android:id="@+id/txt_target_lang"
+                    android:id="@+id/txt_back_lang"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:clickable="false"
@@ -182,7 +221,7 @@
                     android:longClickable="false"
                     android:paddingStart="8dp"
                     android:paddingBottom="2dp"
-                    android:text="@{flashcard.languagePair.split(` - `)[1]}"
+                    android:text="@{flashcard.backLanguage}"
                     android:textColor="#000000"
                     android:textSize="16sp"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -203,7 +242,7 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/viewgroup_txt_source_lang"
+                android:id="@+id/viewgroup_txt_front_lang"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/common_margin_start"
@@ -212,10 +251,10 @@
                 android:background="@null"
                 app:layout_constraintEnd_toStartOf="@+id/img_arrow"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/txt_language">
+                app:layout_constraintTop_toBottomOf="@+id/txt_title_front_language">
 
                 <TextView
-                    android:id="@+id/txt_source_lang"
+                    android:id="@+id/txt_front_lang"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:clickable="false"
@@ -226,7 +265,7 @@
                     android:longClickable="false"
                     android:paddingStart="8dp"
                     android:paddingBottom="2dp"
-                    android:text="@{flashcard.languagePair.split(` - `)[0]}"
+                    android:text="@{flashcard.frontLanguage}"
                     android:textColor="#000000"
                     android:textSize="16sp"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -255,7 +294,7 @@
                 app:layout_constraintBottom_toTopOf="@+id/textView2"
                 app:layout_constraintEnd_toStartOf="@+id/center_guideline"
                 app:layout_constraintStart_toStartOf="@+id/center_guideline"
-                app:layout_constraintTop_toBottomOf="@+id/txt_language" />
+                app:layout_constraintTop_toBottomOf="@+id/txt_title_front_language" />
 
             <TextView
                 android:id="@+id/txt_error_text"
@@ -289,7 +328,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/viewgroup_txt_target_lang" />
+                app:layout_constraintTop_toBottomOf="@+id/viewgroup_txt_back_lang" />
 
             <ImageView
                 android:id="@+id/btn_choose_picture"
@@ -310,7 +349,7 @@
                 android:background="@null"
                 android:ems="10"
                 android:fontFamily="@font/seguisb"
-                android:hint="Ex: Hello"
+                android:hint="Ex: Memory"
                 android:inputType="textNoSuggestions"
                 android:paddingStart="8dp"
                 android:paddingBottom="1dp"
@@ -349,7 +388,7 @@
                 android:background="@null"
                 android:ems="10"
                 android:fontFamily="@font/seguisb"
-                android:hint="Ex: Xin chào"
+                android:hint="Ex: Ký ức"
                 android:inputType="textNoSuggestions"
                 android:paddingStart="8dp"
                 android:paddingBottom="1dp"
@@ -406,7 +445,7 @@
                 android:background="@null"
                 android:ems="10"
                 android:fontFamily="@font/seguisb"
-                android:hint="Ex: Say Hello to my friends"
+                android:hint="Ex: We used have beautiful memories"
                 android:inputType="textNoSuggestions"
                 android:paddingStart="8dp"
                 android:paddingBottom="1dp"
@@ -453,9 +492,9 @@
                 android:layout_marginStart="@dimen/common_margin_start"
                 android:layout_marginTop="1dp"
                 android:background="#000000"
-                app:layout_constraintEnd_toEndOf="@+id/viewgroup_txt_source_lang"
+                app:layout_constraintEnd_toEndOf="@+id/viewgroup_txt_front_lang"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/viewgroup_txt_source_lang" />
+                app:layout_constraintTop_toBottomOf="@+id/viewgroup_txt_front_lang" />
 
             <TextView
                 android:id="@+id/textView3"
@@ -463,9 +502,9 @@
                 android:layout_height="1dp"
                 android:layout_marginTop="1dp"
                 android:background="#000000"
-                app:layout_constraintEnd_toEndOf="@+id/viewgroup_txt_target_lang"
-                app:layout_constraintStart_toStartOf="@+id/viewgroup_txt_target_lang"
-                app:layout_constraintTop_toBottomOf="@+id/viewgroup_txt_target_lang" />
+                app:layout_constraintEnd_toEndOf="@+id/viewgroup_txt_back_lang"
+                app:layout_constraintStart_toStartOf="@+id/viewgroup_txt_back_lang"
+                app:layout_constraintTop_toBottomOf="@+id/viewgroup_txt_back_lang" />
 
 
             <TextView
@@ -560,11 +599,11 @@
                 android:background="@null"
                 android:ems="10"
                 android:fontFamily="@font/seguisb"
-                android:hint="Nói xin chào với các bạn tôi"
+                android:hint="Chúng ta đã từng có những ký ức đẹp"
                 android:inputType="textNoSuggestions"
                 android:paddingStart="8dp"
                 android:paddingBottom="1dp"
-                android:text="@{flashcard.exampleMean}"
+                android:text="@{flashcard.meanOfExample}"
                 android:textSize="16sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -590,7 +629,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="@+id/txt_error_translation" />
 
-            <TextView
+            <EditText
                 android:id="@+id/edt_type"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -604,16 +643,17 @@
                 android:inputType="textNoSuggestions"
                 android:paddingStart="8dp"
                 android:paddingBottom="1dp"
-                android:text="Verb"
+                android:hint="Noun"
                 android:textColor="#000000"
                 android:textSize="16sp"
+                android:text="@{flashcard.type}"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/txt_type" />
 
             <ImageView
-                android:id="@+id/imageView4"
+                android:id="@+id/img_choose_type_spinner"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingTop="10dp"

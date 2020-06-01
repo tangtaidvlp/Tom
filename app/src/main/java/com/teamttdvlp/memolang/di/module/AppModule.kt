@@ -1,17 +1,17 @@
 package com.teamttdvlp.memolang.di.module
 
+import android.app.Application
 import androidx.room.Room
-import com.google.firebase.auth.FirebaseAuth
-//import com.google.firebase.firestore.FirebaseFirestore
 import com.teamttdvlp.memolang.di.MemoLang
-import com.teamttdvlp.memolang.database.MemoLangSqliteDataBase
-import com.teamttdvlp.memolang.database.MemoLangSqliteDataBase.Companion.DB_NAME
-import com.teamttdvlp.memolang.database.sql.repository.FlashcardRepository
-import com.teamttdvlp.memolang.database.sql.repository.UserRepository
-import com.teamttdvlp.memolang.database.sql.repository.UserSearchHistoryRepository
-import com.teamttdvlp.memolang.model.RecentAddedFlashcardManager
-import com.teamttdvlp.memolang.view.activity.MenuActivity
-import com.teamttdvlp.memolang.viewmodel.auth.AuthManager
+import com.teamttdvlp.memolang.data.sql.MemoLangSqliteDataBase
+import com.teamttdvlp.memolang.data.sql.MemoLangSqliteDataBase.Companion.DB_NAME
+import com.teamttdvlp.memolang.model.repository.FlashcardRepos
+import com.teamttdvlp.memolang.model.repository.FlashcardSetRepos
+import com.teamttdvlp.memolang.model.repository.UserRepos
+import com.teamttdvlp.memolang.model.repository.UserUsingHistoryRepos
+import com.teamttdvlp.memolang.model.AddFlashcardSharedPreference
+import com.teamttdvlp.memolang.model.SearchOnlineSharedPreference
+import com.teamttdvlp.memolang.model.UserInfoStatusSharedPreference
 import dagger.Module
 import dagger.Provides
 import javax.inject.Singleton
@@ -19,22 +19,28 @@ import javax.inject.Singleton
 @Module
 class AppModule {
 
-    @Provides
+     @Provides
     @Singleton
-    fun providesUserRepository (dataBase: MemoLangSqliteDataBase) : UserRepository {
-        return UserRepository(dataBase)
+    fun providesUserRepository (dataBase: MemoLangSqliteDataBase) : UserRepos {
+        return UserRepos(dataBase)
     }
 
     @Provides
     @Singleton
-    fun providesFlashcardRepository (dataBase: MemoLangSqliteDataBase) : FlashcardRepository{
-        return FlashcardRepository(dataBase)
+    fun providesFlashcardRepository (dataBase: MemoLangSqliteDataBase) : FlashcardRepos{
+        return FlashcardRepos(dataBase)
     }
 
     @Provides
     @Singleton
-    fun provideUserSearchHistoryRepository (database : MemoLangSqliteDataBase) : UserSearchHistoryRepository {
-        return UserSearchHistoryRepository(database)
+    fun providesFlashcardSetRepository (dataBase: MemoLangSqliteDataBase) : FlashcardSetRepos{
+        return FlashcardSetRepos(dataBase)
+    }
+
+    @Provides
+    @Singleton
+    fun providesUserUsingHistoryReposity (dataBase: MemoLangSqliteDataBase) : UserUsingHistoryRepos{
+        return UserUsingHistoryRepos(dataBase)
     }
 
     @Provides
@@ -45,23 +51,29 @@ class AppModule {
             .build()
     }
 
-
     @Provides
     @Singleton
-    fun providesFirebaseAuthManager (firebaseAuth: FirebaseAuth, application: MemoLang) : AuthManager {
-        return AuthManager(firebaseAuth, application)
+    fun provideUserPrimaryInfoSharedPref (application: Application) : UserInfoStatusSharedPreference {
+        return UserInfoStatusSharedPreference(application)
     }
 
     @Provides
     @Singleton
-    fun providesFirebaseAuth () : FirebaseAuth{
-        return FirebaseAuth.getInstance()
+    fun provideAddFlashcardSharedPreference (application: Application) : AddFlashcardSharedPreference {
+        return AddFlashcardSharedPreference(application)
     }
-
 
     @Provides
     @Singleton
-    fun provideRecentAddedCardManager (context : MemoLang, flashcardRepository: FlashcardRepository) : RecentAddedFlashcardManager {
-        return RecentAddedFlashcardManager(context, flashcardRepository)
+    fun provideSearchOnlineSharedPreference (application: Application) : SearchOnlineSharedPreference {
+        return SearchOnlineSharedPreference(application)
     }
+
+    @Provides
+    @Singleton
+    fun providesApplication (application: MemoLang) : Application {
+        return application
+    }
+
+
 }

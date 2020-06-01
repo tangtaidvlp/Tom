@@ -32,3 +32,7 @@ fun String.replaceAt(pos : Int, newString : String) : String {
     return result
 }
 
+fun String.clearAll (text : String) : String{
+    return replace(text, "")
+}
+

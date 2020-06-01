@@ -1,41 +1,6367 @@
-Nahist<pd>[‘æbəsist]<pd>N<pd>Người gãy bàn phím
-Nahus<pd>[‘æbəkəs]<pd>N<pd>Bàn tính<ex>to move counters of an abacus: tính bằng bàn tính
-Nahuses<pd><nav>Nahus
-Nahk<pd>[ə’bæk]<pd>Adv<pd>Lùi lại, trở lại phía sau<ex>to stand aback from sb/sth: đứng lùi lại để tránh ai hoặc cái gì
-Nahterial<pd>[eibæk’tiəriəl]<pd>N<pd>Không do vi khuẩn gây ra
-Nahtio<pd>_<pd>N<pd>(Y học) sự phá thai
-Nahtion<pd>[æ’bækʃn]<pd>N<pd>Việc gia súc bị bắt trộm
-Nahtus<pd>[æ’bæktəs]<pd>Adj<pd>Bị trụy thai
-Nahaddon<pd>[ə’bædən]<pd> N<pd>Âm ti, địa ngục<md>con quỷ
-Nahaft<pd>[ə’bɑ:ft]<pd>Adv/(Hàng hải) ở đằng sau bánh lái][Pre/(Hàng hải) ở đằng sau<ex>abaft the mast: sau cột buồm
-Nahalienate<pd>[æ’bəiljəneit]<pd>TransV<pd>Nhường lại tài sản
-Nahalienation<pd>[æbəiljə’neʃn]<pd>N<pd>Danh từ của <cli>Nahalienate<cli/><md>Sự nhường lại tài sản
-Nahalone<pd>[æbə’ləʊni]<pd>N<pd>(Từ Mỹ, nghĩa Mỹ) Bào ngư
-Nahalones<pd><nav>Nahalone
-Nahandon<pd>[ə’bændən]<pd>TransV/Từ bỏ, bỏ rơi, ruồng bỏ/to abandon all efforts: từ bỏ mọi nỗ lực<md>to abandon a child: ruồng bỏ đứa con][N/Sự phóng túng, tự do, sự buông thả<ex>with abandon: một cách phóng túng
-Nahandoned<pd>[ə’bændənd]<pd>Adj<pd>Bị bỏ rơi, bị ruồng bỏ<md>Phóng đãng, trụy lạc
-Nahandoner<pd>[ə’bændənə]<pd>N<pd>(Pháp lý) Người rút đơn
-Nahandoning<pd><nav>Nahandon
-Nahandonment<pd>[ə’bændənmənt]<pd>N<pd>Sự bỏ, sự từ bỏ, sự bỏ rơi, ruồng bỏ<md>Tình trạng bị bỏ rơi, tình trạng bị ruồng bỏ<md>Sự phóng túng, sự tự do, buông thả
-Nahandonments<pd><nav>Nahandonment
-Nahapikal<pd>[əb’æppkəl]<pd>Adj<pd>(Sinh học) Xa đỉnh, xa ngọn<md>Dưới vực
-Naharticular<pd>[‘æba:tikjulə]<pd>Adj<pd>(Giải phẫu) Học ngoài khớp, trật khớp
-Nahas<pd>[‘ɑ:bə]<pd>N<pd>Áo aba
-Nahase<pd>[ə’beIs]<pd>TransV<pd>Làm hạ phẩm giá, làm mất thể diện, làm nhục<ex>Nahkbiting the others is to abase oneself: Nói xấu người khác là tự hạ phẩm giá của mình
-Nahased<pd><nav>Nahase
-Nahasement<pd>[ə’beIsment]<pd>N<pd>Sự làm hạ phẩm giá, sự làm mất thể diện, sự làm nhục<md>Danh từ của <cli>Nahase<cli/>
-Nahases<pd><nav>Nahase
-Nahash<pd>[ə’bæʃ]<pd>TransV<pd>Làm bối rối, làm lúng túng, làm luống cuống
-Nahashed<pd><nav>Nahash
-Nahashment<pd>[ə’bæʃmənt]<pd>N<pd>(Danh từ của <cli>Nahash<cli/>) Sự bối rối, sự lúng túng, sự luống cuống
-Nahatable<pd>[ə’beitəbl]<pd>Adj<pd>Nahó thể làm dịu<md>Nahó thể hạ, có thể bớt /b Nahó thể làm nhụt<md>Nahó thể chấm dứt, có thể thanh trừ<md>(Pháp lý) Nahó thể hủy bỏ, có thể thủ tiêu
-Nahate<pd>[ə’beIt]<pd>V/Dịu đi, yếu đi, nhụt chí, đỡ, nguôi, bớt<ex>Pain abates: cơn đau dịu đi<exd>Storm abates: cơn bão nguôi đi][TransV/Làm dịu đi, làm yếu đi<md>Hạ, bớt (giá)<md>Làm nhụt (chí)<md>Làm cùn (lưỡi dao)
-Nahated<pd><nav>Nahate
-Nahating<pd><nav>Nahate
-Nahatement<pd>[ə’beItmənt]<pd>N<pd>(Danh từ của <cli>Nahate<cli/>) Sự dịu đi, sự yếu đi, sự nhụt đi, sự giảm bớt<md>Sự hạ, sự bớt (giá)<md>Sự chấm dứt, sự thanh toán<md>(pháp lý) Sự hủy bỏ, sự thủ tiêu<ex>Nahatement of a contract: sự hủy bỏ một hợp đồng
-Nahater<pd>[ə’beitə]<pd>N<pd>Người giảm bớt<md>(Y học) Thuốc làm dịu
-Nahatis<pd>[‘æbətis]<pd>N<pd>(Quân sự) Đống cây chướng ngại, đống cây cản
-Nahatised<pd>[‘æbətist]<pd>Ad<pd>(Quân sự) Nahó đống cây chướng ngại, có đống cây cản
-Nahattoir<pd>[‘æbətwɑɑ:(r)]<pd>N<pd>Lò mổ, lò sát sinh
-Nahattoirs<pd><nav>Nahattoir
-Nahaxial<pd>[æb’æksiəl]<pd>Adj<pd>Ở ngoài trục, xa trục
+@n /en/
+*  danh từ,  số nhiều N's
+- n
+- (toán học) n (số bất định)
+!to the n
+- cho đến n, đến vô cùng, không giới hạn
+
+@n't /nt/
+*  phó từ
+- (thông tục) (như) not
+
+@nab /næb/
+*  ngoại động từ (từ lóng)
+- tóm cổ
+- bắt được quả tang
+
+@nabob /'neibɔb/
+*  danh từ
+- (sử học) quan thái thú ở Ân-ddộ
+- (từ cổ,nghĩa cổ) nhà triệu phú (ở Ân-ddộ) về
+
+@nacarat /'nækəræt/
+*  danh từ
+- màu đỏ tươi
+- vải đỏ; nhiễu đỏ
+
+@nacelle /nə'sel/
+*  danh từ
+- giỏ khí cầu
+- vỏ động cơ máy bay
+
+@nacreous /'neikrəs/ (nacreous) /'neikriəs/
+*  tính từ
+- lóng lánh như xà cừ; trắng đục như xà cừ
+
+@nacrous /'neikrəs/ (nacreous) /'neikriəs/
+*  tính từ
+- lóng lánh như xà cừ; trắng đục như xà cừ
+
+@nadir /'neidiə/
+*  danh từ
+- (thiên văn học) đế
+- điểm thấp nhất, "ddất đen"
+=his fortume was at its nadir+ vận nó gặp lúc bĩ nhất, vận nó xuống đến tận đất đen
+
+@nadiral /'neidiərəl/
+*  tính từ
+- (thiên văn học) (thuộc) thiên đế
+- (thuộc) điểm thấp nhất
+
+@naevi /'ni:vəs/
+*  danh từ,  số nhiều naevuses,  naevi
+- vết chàm (ở da)
+
+@naevus /'ni:vəs/
+*  danh từ,  số nhiều naevuses,  naevi
+- vết chàm (ở da)
+
+@nag /næg/
+*  danh từ
+- con ngựa nhỏ
+*  động từ
+- mè nheo, rầy la
+=to be always nag give at somebody+ lúc nào cũng mè nheo ai
+=to somebody into doing something+ rầy la ai cho đến lúc phải làm cái gì
+
+@nagger /'nægə/
+*  danh từ
+- người hay mè nheo, người hay rầy la
+
+@nagging /'nægiɳ/
+*  danh từ
+- mè nheo
+- sự rầy la
+*  tính từ
+- hay mè nheo, hay rầy la
+
+@naggish /'nægiʃ/
+*  tính từ
+- hay mè nheo; khá mè nheo
+
+@naggy /'nægiʃ/
+*  tính từ
+- hay mè nheo; khá mè nheo
+
+@naiad /'naiæd/
+*  danh từ
+- nữ thuỷ thần (thần thoại Hy lạp) ((cũng) water-nymph)
+- (thực vật học) rong từ
+
+@naif /nɑ:'i:f/
+*  tính từ
+- (từ hiếm,nghĩa hiếm) (như) naive
+
+@nail /neil/
+*  danh từ
+- móng (tay; chân); móng vuốt (thú vật)
+- cái đinh
+=to drive a nail+ đóng đinh
+- nên (đơn vị đo lường cổ, bằng khoảng 55cm)
+!hard as nails
+- (thể dục,thể thao) rắn rỏi; sung sức; được tập luyện kỹ
+- cứng rắn; tàn nhẫn
+!to fligh tooball and nail
+- (xem) tooth
+!to hit the [right] nail on the head
+- (xem) hit
+!a nail in one's coffin
+- cái có thể làm cho người ta chóng chết
+!to pay on the nail
+- trả ngay không lần lữa
+!right á náil
+- đúng lắm, hoàn toàn đúng
+*  ngoại động từ
+- đóng đinh; (nghĩa bóng) ghìm chặt
+=to nail up a window+ lấy đinh vít chặt cửa sổ lại
+=to nail one's eyes on something+ nhìn chăm chú (nhìn chòng chọc) vật gì
+=to stood nailed to the ground+ nó đứng như chôn chân xuống đất
+=to nail a blow+ giáng cho một đòn
+=to nail someone down to his promise+ bắt ai phải giữ lời hứa
+- (từ lóng) bắt giữ, tóm
+!to nail colours to mast
+- (xem) colour
+!to nail a lie to the counter (barn-door)
+- vạch trần sự dối trá
+
+@nail drawer /'neil'drɔ:ə/
+*  danh từ
+- kìm nhổ đinh
+
+@nail-biting /'neil,baitiɳ/
+*  danh từ
+- sự cắn móng tay
+- sự bồn chồn, sự bực dọc
+
+@nail-brush /'neilbrʌʃ/
+*  danh từ
+- bàn chải móng tay
+
+@nail-file /'neilfail/
+*  danh từ
+- cái giũa móng tay
+
+@nail-head /'neilhed/
+*  danh từ
+- đầu đinh
+
+@nail-polish /'neil,pɔliʃ/
+*  danh từ
+- thuốc màu bôi móng tay
+
+@nail-scissors /'neil,sizəz/
+*  danh từ số nhiều
+- kéo cắt móng tay
+
+@nailer /'neilə/
+*  danh từ
+- thợ làm đinh
+- đồ vật hoàn hảo; tay cừ khôi, người tài ba
+=he is a nailer at billiards+ hắn ta là một tay chơi bi a cừ khôi
+
+@nailery /'neiləri/
+*  danh từ
+- xưởng làm đinh
+
+@nainsook /'neinsuk/
+*  danh từ
+- vải nanxuc
+
+@naive /nɑ:'i:v/ (naive) /neiv/
+*  tính từ
+- ngây thơ, chất phác
+- ngờ nghệch, khờ khạo
+
+@naivety /nɑ:'i:vtei/ (na...vety) /nɑ:'i:vti/ (naivety) /'neivti/
+*  danh từ
+- tính ngây thơ, tính chất phác
+- tính ngờ nghệch, tính khờ khạo
+- lời nói ngây thơ, lời nói khờ khạo
+
+@naja /'neidʤə/
+*  danh từ
+- (động vật học) rắn mang bành
+
+@naked /'neikid/
+*  tính từ
+- trần, trần truồng, khoả thân, loã lồ
+=naked sword+ gươm trần (không có bao)
+=stark naked+ trần như nhộng
+- trụi, trơ trụi, rỗng không (bức tường, cây cối, cánh dồng)
+=naked trees+ cây trụi lá
+=a naked room+ căn buồng rỗng không
+- không che đậy, không giấu giếm, phô bày ra, hiển nhiên, rõ ràng
+=the naked truth+ sự thật hiển nhiên, rõ ràng
+- không thêm bớt
+=naked quotations+ lời trích dẫn không thêm bớt
+- không căn cứ
+=naked faith+ lòng tin không căn cứ
+
+@nakedness /'neikidnis/
+*  danh từ
+- sự trần truồng, sự trơ trụi, sự loã lồ
+- trạng thái không che đậy, trạng thái không giấu giếm, trạng thái rõ rành rành
+
+@namby-pambiness /'næmbi'pæmbinis/ (namby-pambyism) /'næmbi'pæmbiizm/
+-pambyism) /'næmbi'pæmbiizm/
+*  danh từ
+- sự nhạt nhẽo vô duyên; sự màu mè điệu bộ
+- tính đa sầu, đa cảm
+
+@namby-pamby /'næmbi'pæmbi/
+*  tính từ
+- nhạt nhẽo vô duyên; màu mè, điệu bộ
+- đa sầu, đa cảm
+*  danh từ
+- lời nói nhạt nhẽo vô duyên; câu chuyện nhạt nhẽo vô duyên
+- người nhạt nhẽo vô duyên; người màu mè, điệu bộ
+- văn uỷ mị, văn đa sầu đa cảm
+=a write of namby-pamby+ nhà viết văn uỷ mị, nhà viết văn toàn viết những chuyện đa sầu đa cảm
+- người đa sầu, đa cảm
+
+@namby-pambyism /'næmbi'pæmbinis/ (namby-pambyism) /'næmbi'pæmbiizm/
+-pambyism) /'næmbi'pæmbiizm/
+*  danh từ
+- sự nhạt nhẽo vô duyên; sự màu mè điệu bộ
+- tính đa sầu, đa cảm
+
+@name /neim/
+*  danh từ
+- tên, danh
+=maiden name+ tên thời con gái
+=I know him only by name+ tôi chỉ biết tên ông ta
+=under the name of+ mang tên, lấy tên
+=in the name of+ nhân danh; vì, vì quyền lợi của
+=in the name of the law+ nhân danh luật pháp
+=in one's own name+ nhân danh cá nhân; vì mình, vì quyền lợi bản thân
+=to call someone names+ réo đủ các thứ tên ra mà chửi rủa ai
+- danh nghĩa
+=a king in name+ vua trên danh nghĩa
+- (chỉ số ít) tiếng, tiếng tăm, danh tiếng
+=to make a name+ nổi tiếng
+=to have a good name+ có tiếng tốt
+=to have a name for courage+ nổi tiếng là dũng cảm
+- danh nhân
+=the great names of history+ những danh nhân trong lịch sử
+- dòng họ
+=the last of the Mac Donalds' name+ người cuối cùng của dòng họ Mác-Đô-nan
+!to give it a name
+- muốn (uống rượu, được món quà...) gì thì nói ra
+!to have not a penny to one's name
+- không có một đồng xu dính túi
+*  ngoại động từ
+- đặt tên; gọi tên
+=can you name all the flowers in this garden?+ anh có thể nói tên được tất cả các loại hoa trong vườn này không?
+- định rõ; nói rõ
+=to name the day+ định rõ ngày; định rõ ngày cưới (người con gái)
+=name a price+ hây nói giá đi, hây cho giá đi
+- chỉ định, bổ nhiệm
+=to be named for+ được bổ nhiệm làm (chức vụ gì...)
+!to name after; (Mỹ) to name for (from)
+- đặt theo tên (của người nào)
+=the town was named after Lenin+ thành phố được đặt tên là Lê-nin
+!not to be named on (in) the same day with
+- không thể sánh với, không thể để ngang hàng với
+=he is not to be named on the same day with his brother+ nó không thể nào sánh với anh nó được
+
+@name-caller /'neim,kɔ:lə/
+*  danh từ
+- người hay chửi rủa
+
+@name-calling /'neim,kɔ:liɳ/
+*  danh từ
+- sự chửi rủa, sự réo tên ra mà chửi
+
+@name-child /'neim'tʊaild/
+*  danh từ
+- đứa bé được đặt trùng tên (với người khác để tỏ lòng kính yêu)
+
+@name-day /'neimdei/
+*  danh từ
+- ngày tên thánh (lấy đặt cho ai)
+- ngày đặt tên (trong lễ rửa tội)
+
+@name-part /'neimpɑ:t/
+*  danh từ
+- tên nhân vật chính lấy đặt cho vở kịch
+
+@name-plate /'neimpleit/
+*  danh từ
+- biển đề tên (ở cửa)
+- (kỹ thuật) tấm nhân (tấm để nhân hiệu của nhà máy sản xuất, gắn ở sản phẩm)
+
+@nameless /'neimlis/
+*  tính từ
+- không tên, vô danh
+=a nameless grave+ nấm mồ vô danh
+=a person who shall be nameless told me the news+ một người mà tôi không muốn nói tên đã nói cho tôi biết tin đó
+- không tiếng tăm, không tên tuổi, không ai biết đến
+- không thể nói ra, không thể tả xiết; không thể đặt tên được, xấu xa, gớm guốc
+=a nameless longing+ niềm ao ước không thể tả xiết được
+=nameless vices+ những thói xấu gớm guốc
+
+@namely /'neimli/
+*  phó từ
+- là, ấy là
+
+@namesake /'neimseik/
+*  danh từ
+- người trùng tên; vật cùng tên
+
+@nance /'nænsi/
+*  danh từ (thông tục)+ (nance) /næns/
+- người ẻo lả như đàn bà
+- người tình dục đồng giới
+*  tính từ (thông tục)
+- ẻo lả như đàn bà (đàn ông, con trai)
+- tình dục đồng giới
+
+@nancy /'nænsi/
+*  danh từ (thông tục)+ (nance) /næns/
+- người ẻo lả như đàn bà
+- người tình dục đồng giới
+*  tính từ (thông tục)
+- ẻo lả như đàn bà (đàn ông, con trai)
+- tình dục đồng giới
+
+@nandu /'nændu/
+*  danh từ
+- (động vật học) đà điểu Mỹ
+
+@nanism /'neinizm/
+*  danh từ
+- chứng lùn
+
+@nankeen /næɳ'ki:n/ (nankin) /næn'kin/
+*  danh từ
+- vải trúc bâu Nam kinh
+- (số nhiều) quần trúc bâu Nam kinh
+- màu vàng nhạt
+
+@nanny /'næni/
+*  danh từ
+- ruấy khũi bõ
+- (như) nanny-goat
+
+@nanny-goat /'nænigout/
+*  danh từ
+- con dê cái ((cũng) nanny)
+
+@nap /næp/
+*  danh từ
+- giấc ngủ chợp, giấc trưa
+=to take (have) a nap+ đánh một giấc ngủ trưa
+=to snatch (steal) a nap+ a nap ngủ chợp đi một lát
+*  nội động từ
+- ngủ chợp một lát, ngủ trưa
+!to be caught napping
+- bị bất ngờ
+!to catch someone napping
+- bất chợt ai đang ngủ; bất chợt ai đang làm việc gì; bắt được ai đang lầm lỗi gì; làm một cú bất ngờ đối với ai
+*  danh từ
+- dệt tuyết
+*  ngoại động từ
+- (nghành dệt) làm cho lên tuyết
+*  danh từ
+- lối chơi bài napôlêông
+- sự đánh cá tất cả tiền vào một con ngựa; con ngựa mình dốc hết tiền vào để đánh cá
+!to go up
+- (nghĩa bóng) liều để thắng lớn, được ăn cả ngã về không)
+
+@napalm /nei'pɑ:m/
+*  danh từ
+- (quân sự) Napan
+=a napalm bomb+ bom napan
+*  động từ
+- ném bom napan
+
+@nape /neip/
+*  danh từ
+- gáy ((thường) the nape of the neck)
+
+@napery /'neipəri/
+*  danh từ
+- (từ cổ,nghĩa cổ); (Ê-cốt) khăn bàn, khăn ăn
+
+@naphtha /'næfθə/
+*  danh từ
+- ligroin
+- dầu mỏ
+
+@naphthalene /'næfθəli:n/ (napthalin) /'næfθəlin/
+*  danh từ
+- Naptalin
+
+@napkin /'næpkin/
+*  danh từ
+- khăn ăn
+- tả lót (của trẻ con)
+!to lay up in a napkin
+- xếp vào một nơi không dùng đến
+
+@napkin-ring /'næpkinriɳ/
+*  danh từ
+- vòng đánh dấu khăn ăn (của từng người)
+
+@napless /'næplis/
+*  tính từ
+- không có tuyết (hàng vải)
+
+@napoleon /nə'pouljən/
+*  danh từ
+- (sử học) đồng napôlêông (tiền vàng xưa của Pháp)
+- lối chơi bài napôlêông
+
+@napoo /næ'pu:/
+*  thán từ
+- (quân sự),  (từ lóng) tong rồi!, tiêu rồi!, phăng teo rồi!
+
+@nappy /'næpi/
+*  tính từ
+- (từ cổ,nghĩa cổ) có bọt; bốc mạnh (rượu bia)
+*  tính từ
+- có tuyết (hàng vải)
+*  danh từ (thông tục)
+- tã lót (của trẻ con)
+
+@napthalin /'næfθəli:n/ (napthalin) /'næfθəlin/
+*  danh từ
+- Naptalin
+
+@narce /'neikə/
+*  danh từ
+- xà cừ
+- (động vật học) con xà cừ
+
+@narced /'neikəd/
+*  tính từ
+- khảm xà cừ
+
+@narcissi /nɑ:'sisəs/
+*  danh từ,  số nhiều narcissuses,  narcissi
+- (thực vật học) hoa thuỷ tiên
+
+@narcissism /nɑ:'sisizm/
+*  danh từ
+- tính tự yêu mình; tính quá chú ý chăm sóc đến vẻ đẹp của mình
+
+@narcissist /nɑ:'sisist/
+*  danh từ
+- người tự yêu mình; người quá chú ý chăm sóc đến vẻ đẹp của mình
+
+@narcissistic /,nɑ:sə'sistik/
+*  tính từ
+- tự yêu mình; quá chú ý đến vẻ đẹp của mình
+
+@narcissus /nɑ:'sisəs/
+*  danh từ,  số nhiều narcissuses,  narcissi
+- (thực vật học) hoa thuỷ tiên
+
+@narcolepsy /'nɑ:kəlepsi/
+*  danh từ
+- (y học) chứng ngủ rũ
+
+@narcosis /nɑ:'kousis/
+*  danh từ (y học)
+- trạng thái mê man, trạng thái mơ mơ màng màng
+- giấc ngủ
+- sự gây mê
+
+@narcotic /nɑ:'kɔtik/
+*  tính từ
+- làm mơ mơ màng màng
+- (thuộc) thuốc mê; gây mê
+- (thuộc) thuốc ngủ; gây ngủ
+*  danh từ
+- thuốc mê; thuốc ngủ
+
+@narcotise /'nɑ:kətaiz/ (narcotise) /'nɑ:kətaiz/
+*  ngoại động từ
+- gây mê
+- cho uống thuốc ngủ; gây ngủ
+
+@narcotism /'nɑ:kətizm/
+*  danh từ
+- trạng thái mê man, trạng thái mơ mơ màng màng
+- sự gây ngủ
+- hiệu lực thuốc ngủ
+
+@narcotization /,nɑ:kətai'zeiʃn/
+*  danh từ
+- sự gây mê
+- sự cho uống thuốc ngủ; sự gây ngủ
+
+@narcotize /'nɑ:kətaiz/ (narcotise) /'nɑ:kətaiz/
+*  ngoại động từ
+- gây mê
+- cho uống thuốc ngủ; gây ngủ
+
+@nard /nɑ:d/
+*  danh từ
+- (thực vật học) cây cam tùng
+- chất thơm cam tùng
+
+@narghile /'nɑ:gili/
+*  danh từ
+- điếu ống
+
+@nark /nɑ:k/
+*  danh từ
+- (từ lóng) chỉ điểm, cớm, mật thám; cò mồi
+*  nội động từ
+- (từ lóng) làm chỉ điểm, làm mật thám; làm cò mồi
+
+@narrate /næ'reit/
+*  ngoại động từ
+- kể lại, thuật lại
+
+@narration /næ'reiʃn/
+*  danh từ
+- sự kể chuyện, sự tường thuật, sự thuật lại
+- chuyện kể, bài tường thuật
+
+@narrative /'nærətiv/
+*  danh từ
+- chuyện kể, bài tường thuật
+- thể văn kể chuyện, thể văn tường thuật
+*  tính từ
+- dưới hình thức kể chuyện; có tính chất tường thuật
+
+@narrator /næ'reitə/
+*  danh từ
+- người chuyện kể, người tường thuật
+
+@narrow /'nærou/
+*  tính từ
+- hẹp, chật hẹp, eo hẹp
+=a narrow strêt+ một phố hẹp
+=within narrow bounds+ trong phạm vi chật hẹp
+- hẹp hòi, nhỏ nhen
+=narrow mind+ trí óc hẹp hòi nhỏ nhen
+- kỹ lưỡng, tỉ mỉ
+=a narrow examination+ sự xem xét kỹ lưỡng
+!to have a narrow escape
+- (xem) escape
+!to have a narrow squeak (shave)
+- (thông tục) may mà thoát được, may mà tránh được
+!narrow victory
+- thắng lợi đạt được một cách khó khăn; sự thắng chật vật
+!narrow majority
+- đa số ít ỏi (số phiếu trong cuộc bầu cử)
+!the narrow bed (home, house)
+- nấm mồ
+*  danh từ,  (thường) số nhiều
+- khúc sông hẹp; đoạn đường phố hẹp; hẽm núi; cửa biển hẹp, cửa sông hẹp
+*  động từ
+- thu hẹp, làm hẹp lại, co lại, rút lại, thành hẹp hòi
+
+@narrow-fisted /'nærou'fistid/
+*  tính từ
+- hà tiện, keo kiệt; chi ly
+
+@narrow-minded /'nærou'maindid/
+*  tính từ
+- hẹp hòi, nhỏ nhen
+
+@narrow-mindedness /'nærou'maindidnis/
+*  danh từ
+- tính hẹp hòi, tính nhỏ nhen
+
+@narrowly /'nærouli/
+*  phó từ
+- chật hẹp, hẹp hòi ((nghĩa đen) & (nghĩa bóng))
+- kỹ lưỡng, tỉ mỉ, từng ly từng tí
+=to ưatch somebody narrowly+ để ý theo dõi ai từng lui từng tí
+- suýt, suýt nữa
+=he narrowly escaped drowing+ nó suýt chết đuối
+
+@narrowness /'nærounis/
+*  danh từ
+- sự chật hẹp
+- tính hẹp hòi, tính nhỏ nhen
+- tình trạng nghèo nàn, tình trạng eo hẹp
+
+@narwhal /'nɑ:wəl/
+*  danh từ
+- (động vật học) kỳ lân biển
+
+@nasal /'neizəl/
+*  tính từ
+- (thuộc) mũi
+=a nasal sound+ âm mũi
+=to suffer from nasal cartarh+ bị viêm chảy mũi
+*  danh từ
+- âm mũi
+
+@nasalise /'neizəlaiz/ (nasalise) /'neizəlaiz/
+*  động từ
+- phát âm theo giọng mũi; nói giọng mũi; mũi hoá
+
+@nasality /nei'zæliti/
+*  danh từ
+- tính chất âm mũi
+
+@nasalization /,neizəlai'zeiʃn/
+*  danh từ
+- sự phát âm theo giọng mũi; hiện tượng mũi hoá
+
+@nasalize /'neizəlaiz/ (nasalise) /'neizəlaiz/
+*  động từ
+- phát âm theo giọng mũi; nói giọng mũi; mũi hoá
+
+@nascency /'næsnsi/
+*  danh từ
+- trạng thái mới sinh, trạng thái mới mọc
+
+@nascent /'næsnt/
+*  tính từ
+- mới sinh, mới mọc
+
+@nasological /,neizə'lɔdʤikəl/
+*  tính từ
+- (thuộc) khoa nghiên cứu mũi
+
+@nasologist /nei'zɔlədʤist/
+*  danh từ
+- nhà nghiên cứu mũi
+
+@nasology /nei'zɔlədʤi/
+*  danh từ
+- khoa nghiên cứu mũi
+
+@nastiness /'nɑ:stinis/
+*  danh từ
+- tính bẩn thỉu; tính dơ dáy; sự kinh tởm
+- tính chất tục tĩu; sự thô tục; sự xấu xa ô trọc; sự dâm ô
+- tính xấu, tính khó chịu
+- tính cáu kỉnh, tính giận dữ; tính ác; tính hiểm
+
+@nasturtium /nəs'tə:ʃəm/
+*  danh từ
+- (thực vật học) cây sen cạn
+
+@nasty /'nɑ:sti/
+*  tính từ
+- bẩn thỉu; dơ dáy; kinh tởm, làm buồn nôn
+=a nasty smell+ mùi kinh tởm
+=a nasty taste+ vị buồn nôn
+- tục tĩu, thô tục; xấu xa, ô trọc; dâm ô
+=a nasty bôk+ sách khiêu dâm
+=nasty stories+ chuyện dâm ô
+- xấu, khó chịu, làm bực mình
+=nasty weather+ thời tiết khó chịu
+=a nasty bit of road+ một quâng đường xấu
+- cáu kỉnh, giận dữ; ác; hiểm
+=a nasty temper+ tính tình cáu kỉnh
+=a nasty remark+ một lời nhận xét ác
+=to play a nasty trick+ chơi một vố ác
+=a nasty look+ cái nhìn ác hiểm
+=a nasty sea+ biển hung dữ, biển động mạnh
+=nasty illness+ bệnh nặng, bệnh hiểm nghèo
+!a masty one
+- điều khó chịu; điều làm bực mình; vố ác, vố điếng người
+
+@natal /'neitl/
+*  tính từ
+- (thuộc) sinh
+=natal day+ ngày sinh
+=natal place+ nơi sinh, nơi chôn nhau cắt rốn
+
+@natality /'nei'tæliti/
+*  danh từ
+- tỷ lệ sinh đẻ
+
+@natation /nei'teiʃn/
+*  danh từ
+- sự bơi
+
+@natatorial /,neitə'tɔ:riəl/ (natatory) /'neitətəri/
+*  tính từ
+- (thuộc) bơi
+
+@nates /'neiti:z/
+*  danh từ số nhiều (giải phẫu)
+- đít, mông đít
+- thuỷ thị giác
+
+@natheless /'neiθlis/ (nathless) /'næθlis/
+*  phó từ
+- (từ cổ,nghĩa cổ); (thơ ca) tuy nhiên, tuy vậy
+
+@nathless /'neiθlis/ (nathless) /'næθlis/
+*  phó từ
+- (từ cổ,nghĩa cổ); (thơ ca) tuy nhiên, tuy vậy
+
+@natice grasses /'neitiv'grɑ:siz/
+*  danh từ số nhiều
+- cỏ dại, cỏ mọc tự nhiên
+
+@nation /'neiʃn/
+*  danh từ
+- dân tộc
+- nước, quốc gia
+
+@nation-wide /'neiʃnwaid/
+*  tính từ
+- toàn quốc, toàn dân
+
+@national /'neiʃənl/
+*  tính từ
+- (thuộc) dân tộc
+=the national liberation movement+ phong trào giải phóng dân tộc
+- (thuộc) quốc gia
+=the national assembly+ quốc hội
+=the national anthem+ quốc ca
+!national government
+- chính phủ liên hiệp
+!national newspapers
+- báo chí lưu hành khắp nước
+*  danh từ,  (thường) số nhiều
+- kiều dân, kiều bào
+
+@nationalise /'næʃnəlaiz/ (nationalise) /'næʃnəlaiz/
+*  ngoại động từ
+- quốc gia hoá
+- quốc hữu hoá
+- cho nhập quốc tịch
+
+@nationalism /'næʃnəlizm/
+*  danh từ
+- chủ nghĩa dân tộc
+
+@nationalist /'næʃnəlist/
+*  danh từ
+- người theo chủ nghĩa dân tộc
+*  tính từ
+- dân tộc chủ nghĩa
+
+@nationality /,næʃə'næliti/
+*  danh từ
+- tính chất dân tộc; tính chất quốc gia
+- dân tộc; quốc gia
+=men of all nationalities+ người của mọi dân tộc
+- quốc tịch
+=what is your nationality?+ anh thuộc quốc tịch nào?
+
+@nationalization /,næʃnəlai'zeiʃn/
+*  danh từ
+- sự quốc gia hoá
+- sự quốc hữu hoá
+=tge nationalization of the railways+ sự quốc hữu hoá đường sắt
+- sự nhập quốc tịch; sự cho nhập quốc tịch
+
+@nationalize /'næʃnəlaiz/ (nationalise) /'næʃnəlaiz/
+*  ngoại động từ
+- quốc gia hoá
+- quốc hữu hoá
+- cho nhập quốc tịch
+
+@nationally /'næʃnəli/
+*  phó từ
+- về mặt dân tộc; về mặt quốc gia
+- toàn quốc
+
+@nationhood /'neiʃnhud/
+*  danh từ
+- tính trạng là một dân tộc; tính chất là một quốc gia
+
+@native /'neitiv/
+*  tính từ
+- (thuộc) nơi sinh
+=native country; native place+ nơi sinh, quê hương
+- tự nhiên, bẩm sinh
+=native ability+ tài năng bẩm sinh, thiên tư
+- (thuộc) địa phương; (thuộc) thổ dân
+=native customs+ những phong tục của dân địa phương
+- tự nhiên (kim loại, khoáng chất)
+=native gold+ vàng tự nhiên
+*  danh từ
+- người sinh ở, người quê quán ở, người địa phương, thổ dân
+=a native of Hanoi+ người quê ở Hà nội
+- loài (vật, cây) địa phương, loài nguyên sản; thổ sản
+- sò nuôi (ở bờ biển Anh)
+
+@native sugar /'neitiv'ʃugə/
+*  danh từ
+- đường thô
+
+@native-born /'neitiv'bɔ:n/
+*  tính từ
+- sinh ở địa phương
+
+@natively /'neitivli/
+*  phó từ
+- vốn, bẩm sinh, tự nhiên, vốn sinh ra đã có
+- với tính chất nơi sinh
+=to speak English natively+ nói tiếng Anh với tính chất là tiếng mẹ đẻ của mình
+
+@nativity /nə'tiviti/
+*  danh từ
+- sự sinh đẻ
+- (tôn giáo) (the nativity) lễ Thánh đản
+- (the nativity) ảnh Chúa giáng sinh
+- số tử vi
+=to cast (calculate) nativities+ xem số tử vi, tính số tử vi
+
+@natrium /'neitriəm/
+*  danh từ
+- (hoá học) Natri
+
+@natter /'nætə/
+*  nội động từ (thông tục)
+- nói ba hoa
+- càu nhàu
+- nói lia lịa, nói liến thoắng
+
+@natterjack /'nætədʤæk/
+*  danh từ
+- (động vật học) cóc sọc vàng
+
+@nattery /'nætəri/
+*  tính từ
+- có tính cáu kỉnh
+
+@nattiness /'nætinis/
+*  danh từ
+- vẻ đẹp, vẻ chải chuốt; vẻ đỏm dáng, vẻ duyên dáng
+- sự khéo tay
+
+@natty /'næti/
+*  tính từ
+- đẹp, chải chuốt; đỏm dáng, duyên dáng
+- khéo tay
+
+@natural /'nætʃrəl/
+*  tính từ
+- (thuộc) tự nhiên, (thuộc) thiên nhiên
+=natural law+ quy luật tự nhiên
+=natural selection+ sự chọn lọc tự nhiên
+- (thuộc) thiên tính; bẩm sinh, trời sinh
+=natural gift+ thiên tư
+- tự nhiên, đương nhiên, tất nhiên, dĩ nhiên
+=a natural consequence+ hậu quả tất nhiên
+=it is natural that you should think so+ lẽ tất nhiên là anh phải nghĩ như vậy
+- tự nhiên, không giả tạo, không màu mè
+=natural manners+ cử chỉ tự nhiên
+- đẻ hoang (con)
+=a natural child+ đứa con hoang
+- mọc tự nhiên, dại
+=natural growth+ cây cỏ dại
+!one's natural life
+- tuổi thọ của con người
+*  danh từ
+- người bẩm sinh ngớ ngẩn, người bẩm sinh ngu đần
+- (âm nhạc) nốt thường
+- (âm nhạc) dấu hoàn
+- người có khiếu tự nhiên (về ngành gì)
+- điều thắng lợi tất nhiên; điều chắc chắn
+
+@naturalise /'nætʃrəlaiz/ (naturalise) /'nætʃrəlaiz/
+*  ngoại động từ
+- tự nhiên hoá
+- nhập tịch (từ, phong tục...)
+=many Chinese words have been naturalized in the Vietnamese language+ nhiều từ Hán được nhập tịch vào tiếng Việt
+- làm hợp thuỷ thổ (cây, vật)
+*  nội động từ
+- hợp thuỷ thổ (cây, vật)
+- nghiên cứu tự nhiên học
+
+@naturalism /'nætʃrəlizm/
+*  danh từ
+- tính tự nhiên, thiên tính
+- chủ nghĩa tự nhiên
+
+@naturalist /'nætʃərəlist/
+*  danh từ
+- nhà tự nhiên học
+- người theo chủ nghĩa tự nhiên
+
+@naturalistic /,nætʃrə'listik/
+*  tính từ
+- (thuộc) tự nhiên, căn cứ vào tự nhiên
+- (thuộc) khoa tự nhiên học
+- (thuộc) chủ nghĩa tự nhiên
+
+@naturalization /,nætʃrəlai'zeiʃn/
+*  danh từ
+- sự tự nhiên hoá
+- sự nhập quốc tịch; sự nhập tịch (ngôn ngữ)
+- sự làm cho hợp với thuỷ thổ (cây, vật)
+
+@naturalize /'nætʃrəlaiz/ (naturalise) /'nætʃrəlaiz/
+*  ngoại động từ
+- tự nhiên hoá
+- nhập tịch (từ, phong tục...)
+=many Chinese words have been naturalized in the Vietnamese language+ nhiều từ Hán được nhập tịch vào tiếng Việt
+- làm hợp thuỷ thổ (cây, vật)
+*  nội động từ
+- hợp thuỷ thổ (cây, vật)
+- nghiên cứu tự nhiên học
+
+@naturally /'nætʃrəli/
+*  phó từ
+- vốn, tự nhiên
+=to speak naturally+ nói tự nhiên
+=she is naturally musical+ cô ta vốn có năng khiếu về nhạc
+- đương nhiên, tất nhiên, cố nhiên
+
+@nature /'neitʃə/
+*  danh từ
+- tự nhiên, thiên nhiên, tạo hoá
+=the struggle with nature+ cuộc đấu tranh với thiên nhiên
+=according to the laws of nature+ theo quy luật tự nhiên
+=in the course of nature+ theo lẽ thường
+=to draw from nature+ (nghệ thuật) vẽ theo tự nhiên
+- trạng thái tự nhiên; trạng thái nguyên thuỷ
+- tính, bản chất, bản tính
+=good nature+ bản chất tốt, tính thiện
+- loại, thứ
+=things of this nature do not interest me+ những cái thuộc loại này không làm cho tôi thích thú
+=in (of) the nature of+ giống như, cùng loại với
+- sức sống; chức năng tự nhiên; nhu cầu tự nhiên
+=to ease (relieve) nature+ đi ỉa, đi đái; thoả mãn một nhu cầu tự nhiên
+- nhựa (cây)
+=full of nature+ căng nhựa
+!against (contrary to) nature
+- phi thường, siêu phàm, kỳ diệu
+!debt of nature
+- (xem) debt
+!to pay one's debt to nature
+- (xem) debt
+
+@nature study /'neitʃə'stʌdi/
+*  danh từ
+- sự nghiên cứu thiên nhiên
+
+@naught /nɔ:t/
+*  danh từ
+- (từ cổ,nghĩa cổ) không
+=to set at naught+ chế giễu; coi thường
+- (toán học) số không
+*  tính từ
+- (từ cổ,nghĩa cổ) vô tích sự, vô ích
+
+@naughtiness /nɔ:tinis/
+*  danh từ
+- tính hư, tính tinh nghịch
+- tính thô tục, tính tục tĩu, tính nhảm nhí
+
+@naughty /nɔ:ti/
+*  tính từ
+- hư, hư đốn, nghịch ngợm
+=a naughty boy+ thằng bé hư
+- thô tục, tục tĩu, nhảm
+=naughty words+ những lời nói tục tĩu
+=naughty books+ sách nhảm
+
+@naupathia /nɔ:'pæθiə/
+*  danh từ
+- sự say sóng
+
+@nausea /'nɔ:sjə/
+*  danh từ
+- sự buồn nôn; sự lộn mửa
+- sự kinh tởm, sự tởm
+
+@nauseate /'nɔ:sieit/
+*  nội động từ
+- buồn nôn, lộn mửa
+- tởm, kinh tởm, ghê
+- chán (cơm, nghề...)
+*  ngoại động từ
+- làm buồn nôn; làm lộn mửa
+- làm kinh tởm
+
+@nauseous /'nɔ:sjəs/
+*  tính từ
+- tanh tưởi, làm nôn mửa
+- tởm, gớm, gớm guốc, đáng ghê
+
+@nautch /nɔ:tʃ/
+*  danh từ
+- cuộc biểu diễn của vũ nữ nhà nghề (Ân-ddộ)
+
+@nautch-girl /nɔ:tʃgə:l/
+*  danh từ
+- vũ nữ nhà nghề (Ân-ddộ)
+
+@nautical /'nɔ:tikəl/
+*  tính từ
+- (thuộc) biển; (thuộc) hàng hải
+=nautical almanac+ lịch hàng hải
+
+@nautically /'nɔ:tikəli/
+*  phó từ
+- bằng đường biển, bằng đường hàng hải
+
+@nautili /'nɔ:tiləs/
+*  danh từ,  số nhiều của nautili,  nautiluses
+- (động vật học) ốc anh vũ
+- bạch tuộc
+
+@nautilus /'nɔ:tiləs/
+*  danh từ,  số nhiều của nautili,  nautiluses
+- (động vật học) ốc anh vũ
+- bạch tuộc
+
+@naval /'neivəl/
+*  tính từ
+- (thuộc) hải quân, (thuộc) thuỷ quân
+=naval officer+ sĩ quan hải quân
+=naval base+ căn cứ hải quân
+=naval battle+ thuỷ chiến
+=naval school+ trường hải quân
+=naval power+ lực lượng hải quân; cường quốc hải quân
+
+@nave /veiv/
+*  danh từ
+- trục bánh xe
+*  danh từ
+- gian giữa của giáo đường
+
+@navel /'neivəl/
+*  danh từ
+- rốn
+- trung tâm
+
+@navel orange /'neivəl'ɔrindʤ/
+*  danh từ
+- (nông nghiệp) cam naven
+
+@navel-cord /'neivəlstriɳ/ (navel-cord) /'neivəlkɔ:d/
+-cord) /'neivəlkɔ:d/
+*  danh từ
+- dây rốn
+
+@navel-string /'neivəlstriɳ/ (navel-cord) /'neivəlkɔ:d/
+-cord) /'neivəlkɔ:d/
+*  danh từ
+- dây rốn
+
+@navicert /'nævisə:t/
+*  danh từ
+- (hàng hải) giấy chứng nhận không vi phạm quy định về hàng lậu thời chiến
+- giấy quá cảnh (cho từng chuyến hàng)
+
+@navicular /nə'vikjulə/
+*  tính từ
+- hình thuyền
+=navicular bone+ (giải phẫu) xương thuyền (ở tay); xương ghe (ở chân)
+=navicular disease+ bệnh đau xương ghe (ở chân ngựa)
+*  danh từ
+- bệnh đau xương ghe (ở chân ngựa)
+
+@navigability /,nævigə'biliti/
+*  danh từ
+- tình trạng tàu bè đi lại được (sông, biển)
+- tình trạng có thể đi sông biển được (tàu bè)
+- tình trạng có thể điều khiển được (khí cầu)
+
+@navigable /'nævigəbl/
+*  tính từ
+- để tàu bè đi lại được (sông, biển)
+- có thể đi sông biển được (tàu bè)
+- có thể điều khiển được (khí cầu)
+
+@navigate /'nævigeit/
+*  động từ
+- lái (tàu, thuyền, máy bay...)
+- đi sông, đi biển, vượt biển, bay
+- đem thông qua
+=to navigate a bill through Parliament+ đem thông qua một dự luật ở quốc hội
+
+@navigation /,nævi'geiʃn/
+*  danh từ
+- nghề hàng hải, sự đi biển, sự đi sông
+=aerial navigation+ hàng không
+=inland navigation+ sự đi lại bằng đường sông lạch
+- tàu bè qua lại
+=navigation on the Red river+ số tàu bè qua lại trên sông Hồng
+
+@navigator /'nævigeitə/
+*  danh từ
+- nhà hàng gải, người đi biển; thuỷ thủ lão luyện
+- (hàng hải); (hàng không) hoa tiêu
+- (từ hiếm,nghĩa hiếm) thợ làm đất, thợ đấu ((cũng) navvy)
+
+@navvy /'nævi/
+*  danh từ
+- thợ làm đất, thợ đấu
+- (kỹ thuật) máy xúc, máy đào đất, máy nạo (vét) lòng sông
+!a mere navvy's work
+- một công việc chỉ đòi hỏi sức khoẻ không cần có kỹ thuật
+!to work like a navvy
+- làm việc vất vả cực nhọc; làm như trâu ngựa
+
+@navy /'neivi/
+*  danh từ
+- hải quân
+=Navy Department+ (từ Mỹ,nghĩa Mỹ) bộ hải quân
+!Secretary of the Navy
+- (từ Mỹ,nghĩa Mỹ) bộ trưởng bộ hải quân
+!Navy Day
+- ngày hải quân
+- (thơ ca) hạm đội
+
+@navy blue /'neivi/
+*  danh từ
+- màu xanh nước biển (màu đồng phục của hải quân)
+
+@navy list /'neivi'list/
+*  danh từ
+- (quân sự) danh sách sĩ quan hải quân
+
+@navy-blue /'neiviblu:/
+*  tính từ
+- xanh nước biển
+
+@navy-yard /'neivijɑ:d/
+*  danh từ
+- xưởng đóng tàu chiến
+
+@nay /nei/
+*  danh từ
+- (từ cổ,nghĩa cổ) sự từ chối, sự cự tuyệt, sự trả lời không
+=to say someone nay+ từ chối ai, không tán thành ai; cấm đoán ai
+=the nays have it+ số người không tán thành chiếm đa số
+=will not take nay+ nhất định không nhận sự cự tuyệt
+*  phó từ
+- (từ cổ,nghĩa cổ) không
+=nay I will not...+ không, tôi không muốn...
+- không những thế; hơn thế, mà lại còn; nói cho đúng hơn
+=I suspect nay I am certain that he is wrong+ tôi nghĩ hơn thế, tôi chắc chắn rằng hắn ta trái
+
+@naze /neiz/
+*  danh từ
+- (địa lý,ddịa chất) mũi đất
+
+@nazi /'nɑ:tsi/
+*  danh từ
+- đảng viên đảng Quốc xã (Đức)
+*  tính từ
+- Quốc xã
+
+@nazism /'nɑ:tsizm/
+*  danh từ
+- chủ nghĩa quốc xã
+
+@ne'er /neə/
+*  phó từ
+- (thơ ca) (viết tắt) của never
+
+@ne'er-do-well /'neədu:,wel/
+*  danh từ
+- người đoảng, người vô tích sự
+*  tính từ
+- đoảng, vô tích sự
+
+@neap /ni:p/
+*  danh từ+ (neap-tide) /neap-tide/
+- tuần nước xuống, tuần triều xuống
+*  tính từ
+- xuống, xuống thấp (nước thuỷ triều)
+*  ngoại động từ
+- (thường) dạng bị động mắc cạn (tàu, thuyền...)
+*  nội động từ
+- xuống thấp (thuỷ triều)
+
+@neap-tide /ni:p/
+*  danh từ+ (neap-tide) /neap-tide/
+- tuần nước xuống, tuần triều xuống
+*  tính từ
+- xuống, xuống thấp (nước thuỷ triều)
+*  ngoại động từ
+- (thường) dạng bị động mắc cạn (tàu, thuyền...)
+*  nội động từ
+- xuống thấp (thuỷ triều)
+
+@near /niə/
+*  tính từ
+- gần, cận
+=the school is quite near+ trường học rất gần
+=the Near East+ Cận đông
+=a near relution+ một người có họ gần
+=in the near future+ trong tương lai gần đây
+- thân
+=a near friend+ bạn thân
+- giống, sát
+=near resemblance+ sự giống lắm
+=a near translation+ bản dịch sát nghĩa
+- tỉ mỉ
+=near work+ công việc tỉ mỉ
+- chi ly, chắt bóp, keo kiệt
+=to be very near with one's money+ rất chi ly đối với đồng tiền
+- bên trái
+=the near side of the road+ bên trái đường
+=the near wheel of a car+ bánh xe bên trái
+=the near foreleg of a horse+ chân trái đằng trước của con ngựa
+*  phó từ
+- gần, ở gần; sắp tới, không xa
+=when success comes near more hardships are for and near+ xa gần khắp mọi nơi
+=near at hand+ gần ngay bên; gần tới nơi
+=near by+ ở gần, ở bên
+- chi ly, chắt bóp, keo kiệt
+=to live very near+ sống chắt bóp
+*  giới từ
+- gần, ở gần
+=to stanf near the fire+ đứng gần lò sưởi
+=the performance was drawing near its close+ buổi biểu diễn gần hết
+=day is near breaking+ trời gần sáng
+- gần giống, theo kịp
+=who comes near him in self-denial?+ ai theo kịp được anh ấy về tinh thần hy sinh?
+*  động từ
+- tới gần, đến gần, xích lại gần, nhích lại; sắp tới
+=the ship was nearing the land+ tàu sắp tới đất liền
+=to be nearing one's end+ sắp chết
+
+@near miss /'niəmis/
+*  danh từ
+- sự gần trúng đích (ném bom...)
+
+@near-by /'niəbai/
+*  tính từ
+- gần, gần bên, bên cạnh
+
+@near-sighted /'niə'saitid/
+*  tính từ
+- cận thị
+
+@near-sightedness /'niə'saitidnis/
+*  danh từ
+- tật cận thị
+
+@near-silk /'niəsilk/
+*  danh từ
+- tơ nhân tạo
+
+@nearly /'niəli/
+*  phó từ
+- gần, sắp, suýt
+=it is nearly time to start+ đã gần đến giờ khởi hành
+=to be nearly related to someone+ có họ gần với ai
+=to be nearly drowned+ suýt chết đuối
+- mặt thiết, sát
+=the matter concerns me nearly+ vấn đề có quan hệ mật thiết với tôi
+=to consider a question nearly+ xem xét sát một vấn đề
+
+@nearness /'niənis/
+*  danh từ
+- trạng thái ở gần
+- tính chi ly, tính chắt bóp, tính keo kiệt
+
+@neat /ni:t/
+*  tính từ
+- sạch gọn, ngăn nắp
+=a neat room+ một căn buồng sạch sẽ gọn gàng
+=as neat as a new pin+ sạch gọn như li như lau
+- rõ ràng, rành mạch; ngắn gọn
+=a neat handwriting+ chữ viết rõ ràng
+=a neat answer+ một câu trả lời ngắn gọn rõ ràng
+- khéo, tinh xảo (đồ vật)
+=a neat piece of handwork+ một đồ thủ công khéo
+- giản dị và trang nhã (quần áo)
+=a neat dress+ bộ quần áo giản dị và trang nhã
+- nguyên chất, không pha (ượu)
+=neat whisky+ rượu uytky không pha
+*  danh từ,  số nhiều không đổi
+- bò
+- trâu bò, thú nuôi
+
+@neat's-foot /'ni:tsfut/
+*  danh từ
+- chân bò (để ăn)
+
+@neat's-leather /'ni:ts,leðə/
+*  danh từ
+- da bò
+
+@neat's-tongue /'ni:tstʌɳ/
+*  danh từ
+- lưỡi bò (để ăn)
+
+@neat-handed /'ni:t,hændid/
+*  tính từ
+- khéo tay, khéo léo
+
+@neat-herd /'ni:thə:d/
+*  danh từ
+- người chăn bò
+
+@neaten /'ni:tn/
+*  ngoại động từ
+- dọn dẹp gọn ghẽ, làm cho ngăn nắp
+
+@neath /'ni:θ/
+*  giới từ
+- (thơ ca) dưới, ở dưới, bên dưới
+
+@neatness /'ni:tnis/
+*  danh từ
+- sự sạch gọn, sự gọn gàng, sự ngăn nắp
+- sự rõ ràng rành mạch; sự ngắn gọn
+- sự khéo léo, sự tinh xảo
+- sự giản dị trang nhã
+
+@neb /neb/
+*  danh từ
+- (Ê-cốt) mũi; mỏ; mõm
+- đầu ngòi bút, đầu bút chì; vòi, đầu nhọn (của vật gì)
+
+@nebula /'nebjulə/
+*  danh từ,  số nhiều nebulae
+- (thiên văn học) tinh vân
+- (y học) chứng mắt kéo mây
+
+@nebulae /'nebjulə/
+*  danh từ,  số nhiều nebulae
+- (thiên văn học) tinh vân
+- (y học) chứng mắt kéo mây
+
+@nebular /'nebjulə/
+*  tính từ
+- (thiên văn học) (thuộc) tinh vân
+=nebular theory (hypothesis)+ thuyết tinh vân
+
+@nebulosity /,nebju'lɔsiti/
+*  danh từ
+- mây mù
+- tính chất mờ đục
+
+@nebulous /'nebjuləs/
+*  tính từ
+- âm u, u ám
+- mờ đục
+- (thiên văn học) (thuộc) tinh vân; giống tinh vân
+
+@necessarian /ni,seri'teəriən/ (necessarian) /,nesi'seəriən/
+*  tính từ
+- (triết học) (thuộc) thuyết tất yếu, (thuộc) thuyết định mệnh
+*  danh từ
+- (triết học) người theo thuyết tất yếu, người theo thuyết định mệnh
+
+@necessarily /'nesisərili/
+*  phó từ
+- tất yếu, nhất thiết
+=not necessarily+ không nhất thiết, chưa hẳn chưa hẳn đã là
+
+@necessary /'nesisəri/
+*  tính từ
+- cần, cần thiết, thiết yếu
+=sleep is necessary to health+ giấc ngủ cần thiết cho sức khoẻ
+- tất nhiên, tất yếu
+=a necessary consequence+ hậu quả tất nhiên
+*  danh từ,  (thường) số nhiều
+- những thứ cần dùng
+=the necessaries of life+ những thứ cần dùng cho đời sống
+- (the necessary) (từ lóng) tiền cần thiết, việc cần thiết
+- (từ Mỹ,nghĩa Mỹ) nhà xí
+
+@necessitarian /ni,seri'teəriən/ (necessarian) /,nesi'seəriən/
+*  tính từ
+- (triết học) (thuộc) thuyết tất yếu, (thuộc) thuyết định mệnh
+*  danh từ
+- (triết học) người theo thuyết tất yếu, người theo thuyết định mệnh
+
+@necessitarianism /ni,seri'teəriənizm/
+*  danh từ
+- (triết học) thuyết tất yếu, thuyết định mệnh
+
+@necessitate /ni'sesiteit/
+*  ngoại động từ
+- bắt phải, đòi hỏi phải, cần phải có
+
+@necessitous /ni'sesitəs/
+*  tính từ
+- nghèo túng, túng bấn
+=to be in necessitous circumstance+ sống trong hoàn cảnh nghèo túng
+- cần thiết, không tránh khỏi
+- cấp bách, cấp thiết
+
+@necessity /ni'sesiti/
+*  danh từ
+- sự cần thiết, điều tất yếu, điều bắt buộc
+=in case of necessity+ trong trường hợp cần thiết
+=of necessity+ cần thiết, tất yếu
+=to be under the necessity of doing+ cần phải phải làm
+- (số nhiều) những thứ cần thiết, những thứ cần dùng
+=food and clothes are necessities af life+ cơm ăn áo mặc là những thứ cần dùng cho đời sống
+- ((thường) số nhiều) cảnh nghèo túng
+=to be in necessity+ nghèo túng
+=to help somebody in his necessities+ giúp đỡ ai trong hoàn cảnh nghèo túng
+!to bow to necessity
+- phải làm cho hoàn cảnh bắt buộc, phải chịu hoàn cảnh bắt buộc
+!to make a virtue of necessity
+- bất đắc dĩ phải làm điều không ưng mà cứ phải vui vẻ; đừng chẳng được mà vẫn cứ kể công; bắt chẳng được tha ra làm phúc
+!necessity is the mother of invention
+- có khó mới sinh khôn
+!necessity known no law
+- (xem) law
+
+@neck /nek/
+*  danh từ
+- cổ (người, súc vật; chai, lọ)
+=to break one's neck+ gãy cổ, chết vì gãy cổ
+=to have a stiff neck+ bị bệnh cứng cổ
+=the neck of a bottle+ cổ chai
+- thịt cổ (cừu)
+- chỗ thắt lại, chỗ hẹp lại (của một cái gì)
+- (từ lóng) tính táo tợn, tính liều lĩnh; người táo tợn, người liều lĩnh
+=what a neck!+ thằng táo tợn gớm!
+!to break the neck of
+- khắc phục được những phần khó khăn nhất (của một công việc...)
+!to get (catch, take) it in the neck
+- (từ lóng) bị đánh chết
+- bị một vố đau; bị quở trách trừng phạt nặng nề; bị thải hồi
+!to hảden the neck
+- dở bướng, cứng đầu cứng cổ
+!neck and neck
+- ngang nhau, không hơn nhau tí nào (chạy thi; đua ngựa)
+!neck or nothing
+- được ăn cả ngã về không; một mất một còn
+!to risk one's neck
+- liều mạng
+!to save one's neck]
+- thoát chết ((nghĩa đen) & (nghĩa bóng))
+!to stick (shoot) one's neck out
+- thách đánh
+!stiff neck
+- (nghĩa bóng) sự bướng bỉnh, sự ngoan cố, sự cứng đầu cứng cổ
+!to talk through [the back of] one's neck
+- (từ lóng) nói lung tung, nói bừa bãi
+!to trend on somebody's neck
+- (xem) tread
+!to win by a neck
+- về đích hơn một đầu (đua ngựa)
+*  ngoại động từ
+- (từ Mỹ,nghĩa Mỹ),  (từ lóng) ôm cổ; ôm ấp, âu yếm
+
+@neck-collar /'nek,kɔlə/
+*  danh từ
+- cổ cồn
+- vòng cổ (chó, ngựa...)
+
+@neck-mould /'nekmould/
+*  danh từ
+- (kiến trúc) đường chỉ viền quanh đầu cột
+
+@neckband /'nekbænd/
+*  danh từ
+- cổ áo
+
+@neckcloth /'nekklɔθ/
+*  danh từ
+- ca vát
+- khăn quàng cổ
+
+@neckerchief /'nekətʃif/
+*  danh từ
+- khăn quàng cổ
+
+@necking /'nekiɳ/
+*  danh từ
+- (kiến trúc) cổ cột (phần làm sát dưới đầu cột)
+- (từ Mỹ,nghĩa Mỹ),  (từ lóng) sự ôm ấp, sự âu yếm
+
+@necklace /'neklis/
+*  danh từ
+- chuỗi hạt (vàng, ngọc)
+
+@necklet /'neklit/
+*  danh từ
+- vòng cổ, kiềng, chuỗi hạt (vàng ngọc)
+- khăn quàng cổ bằng lông thú
+
+@necktie /'nektai/
+*  danh từ
+- ca vát
+
+@neckwear /'nekweə/
+*  danh từ
+- cổ cồn ca vát (nói chung)
+
+@necrologist /ne'krɔlədʤist/
+*  danh từ
+- người chép tiểu sử người chết
+
+@necrology /ne'krɔlədʤi/
+*  danh từ
+- danh sách người chết
+- tiếu sử người chết
+
+@necromancer /'nekroumænsə/
+*  danh từ
+- thầy đồng gọi hồn
+
+@necromancy /'nekroumænsi/
+*  danh từ
+- thuật gọi hồn
+
+@necrophagous /ne'krɔfəgəs/
+*  tính từ
+- ăn xác chết
+
+@necropolis /ne'krɔpəlis/
+*  danh từ
+- bâi tha ma, nghĩa địa
+
+@necropsy /'nekrəpsi/ (necroscopy) /ne'krɔskəpi/
+*  danh từ
+- sự mổ tử thi (để khám nghiệm)
+
+@necroscopy /'nekrəpsi/ (necroscopy) /ne'krɔskəpi/
+*  danh từ
+- sự mổ tử thi (để khám nghiệm)
+
+@necroses /ne'krousis/
+*  danh từ,  số nhiều necroses
+- (sinh vật học) sự chết hoại
+
+@necrosis /ne'krousis/
+*  danh từ,  số nhiều necroses
+- (sinh vật học) sự chết hoại
+
+@necrotic /ne'krɔtik/
+*  tính từ
+- (sinh vật học) chết hoại
+
+@necrotise /'nekrətaiz/ (necrotize) /'nekrətaiz/
+*  nội động từ
+- (sinh vật học) chết hoại
+
+@necrotize /'nekrətaiz/ (necrotize) /'nekrətaiz/
+*  nội động từ
+- (sinh vật học) chết hoại
+
+@nectar /'nektə/
+*  danh từ
+- (thần thoại,thần học) rượu tiên
+- rượu ngon
+- (thực vật học) mật hoa
+
+@nectarean /nek'teəriən/
+*  tính từ
+- thơm dịu như rượu tiên; dịu ngọt như mật hoa
+
+@nectariferous /,nektə'rifərəs /
+*  tính từ
+- (thực vật học) có mật
+=nectariferous flower+ hoa có mật
+
+@nectarine /'nektərin/
+*  danh từ
+- quả xuân đào
+- (thực vật học) cây xuân đào
+*  tính từ
+- (thơ ca) dịu ngọt như mật hoa
+
+@nectary /'nektəri/
+*  tính từ
+- (thơ ca) tuyến mật (ở hoa)
+
+@neddy /'nedi/
+*  danh từ
+- (thông tục) con lừa
+
+@need /ni:d/
+*  danh từ
+- sự cần
+=if need be+ nếu cần
+=in case of need+ trong trường hợp cần đến
+=there is no need to hury+ không cần gì phải vội
+=to have of something; to stand (to be) in need of something+ cần cái gì
+- tình cảnh túng thiếu; lúc khó khăn, lúc hoạn nạn
+=to feel the pinch of need+ cảm thấy sự gieo neo của túng thiếu
+- thứ cần dùng nhu cầu
+=can earn enough to satisfy one's needs+ có thể kiến đủ để thoả mãn tất cả những nhu cầu cho cuộc sống của mình
+- (số nhiều) sự đi ỉa, sự đi đái
+=to do one's needs+ đi ỉa, đi đái
+*  ngoại động từ
+- cần, đòi hỏi
+=do you need any help?+ anh có cần sự giúp đỡ không?
+=this question needs a reply+ câu hỏi này đòi hỏi phải được trả lời
+=this house needs repair+ cái nhà này cần sửa chữa
+*  nội động từ
+- cần
+=every work needs to be dome with care+ mọi việc đều cần được làm cẩn thận
+=you need not have taken tje trouble to bring the letter+ đáng lẽ anh không cần phải mang bức thư đến
+=I come?+ tôi có cần đến không?
+*  nội động từ (từ cổ,nghĩa cổ)
+- cần thiết
+=it needs not+ cái đó không cần thiết
+- lâm vào cảnh túng quẫn; gặp lúc hoạn nạn
+
+@needful /'ni:dful/
+*  tính từ
+- cần, cần thiết
+=to do what is needful+ làm những cái cần thiết
+*  danh từ
+- cái cần thiết
+=to do the needful+ làm những cái cần thiết; (thể dục,thể thao) lừa sút ghi bàn thắng (bóng đá)
+- (từ lóng) tiền
+
+@needfulness /'ni:dfulnis/
+*  danh từ
+- sự cần thiết; tính cần thiết
+
+@neediness /'ni:dinis/
+*  danh từ
+- cảnh túng thiếu
+
+@needle /'ni:dl/
+*  danh từ
+- cái kim; kim (la bàn...)
+=the eye of a needle+ lỗ kim
+=to thread a needle+ xâu kim
+- chỏm núi nhọn
+- lá kim (lá thông, lá tùng)
+- tinh thể hình kim
+- cột hình tháp nhọn
+- (the needle) (từ lóng) sự bồn chồn
+=to have (get) the needle+ cảm thấy bồn chồn
+!as sharp as a needle
+- (xem) sharp
+!to look for a needle in a bottle (bundle) of hay (in a haystack)
+- đáy biển mò kim
+!true as the needle to the pole
+- đáng tin cậy
+*  động từ
+- khâu
+- nhể (bằng kim); châm
+- lách qua, len lỏi qua
+=to needle one's way through a crwod+ lách qua một đám đông
+- kết tinh thành kim
+- (từ lóng) châm chọc, chọc tức; khích (ai làm gì
+- (từ Mỹ,nghĩa Mỹ),  (thông tục) thêm rượu mạnh (vào bia)
+
+@needle game /'ni:dl'geim/
+*  danh từ
+- trò chơi cay cú; cuộc đấu cay cú
+
+@needle match /'ni:dl'mætʃ/
+*  danh từ
+- cuộc đấu cay cú
+
+@needle-bath /'ni:dlbɑ:θ/
+*  danh từ
+- sự tắm bằng tia nước thật nhỏ
+- hương sen tia nước thật nhỏ
+
+@needle-bearing /'ni:dl,beəriɳ/
+*  danh từ
+- (kỹ thuật) ổ kim
+
+@needle-case /'ni:dlkeis/
+*  danh từ
+- ống kim
+
+@needle-craft /'ni:dlwə:k/ (needle-craft) /'ni:dlkrɑ:ft/
+-craft) /'ni:dlkrɑ:ft/
+*  danh từ
+- việc vá may
+
+@needle-lace /'ni:dlleis/
+*  danh từ
+- đăng ten ren bằng kim
+
+@needle-shaped /'ni:dlʃeipt/
+*  tính từ
+- hình kim
+
+@needleful /'ni:dlful/
+*  danh từ
+- đoạn chỉ xâu kim (mỗi lần)
+
+@needless /'ni:dlis/
+*  tính từ
+- không cần thiết, thừa, vô ích
+=needless work+ việc làm không cần thiết
+=needless trouble+ sự lo lắng không cần thiết
+=needless to say...+ không cần phải nói...
+
+@needlewoman /'nidl,wumən/
+*  danh từ
+- người đàn bà làm nghề vá may
+
+@needlework /'ni:dlwə:k/ (needle-craft) /'ni:dlkrɑ:ft/
+-craft) /'ni:dlkrɑ:ft/
+*  danh từ
+- việc vá may
+
+@needments /'ni:dmənts/
+*  danh từ số nhiều
+- những thứ cần dùng (đặc biệt là để đi du lịch)
+
+@needs /'ni:dz/
+- (xem) need
+
+@needy /'ni:di/
+*  tính từ
+- nghèo túng
+=a needy family+ một gia đình nghèo túng
+
+@nefarious /ni'feəriəs/
+*  tính từ
+- hung ác
+- bất chính
+
+@nefariousness /ni'feəriəsnis/
+*  danh từ
+- tính hung ác, tính ác hiểm
+- sự bất chính
+
+@negate /ni'geit/
+*  ngoại động từ
+- phủ định, phủ nhận
+- thừa nhận sự không tồn tại của
+
+@negation /ni'geiʃn/
+*  danh từ
+- sự phủ định, sự phủ nhận
+- sự cự tuyệt, sự từ chối
+- sự phản đối
+- sự không tồn tại
+- vật không có
+- cái tiêu cực
+
+@negative /'negətiv/
+*  tính từ
+- không; phủ định, phủ nhận, cự tuyệt, phản đối, từ chối; cấm đoán
+=to give a negative answers+ trả lời từ chối, trả lời không
+=negative sentence+ câu phủ định
+=negative criticism+ sự phê bình tiêu cực
+=negative evidence+ chứng cớ tiêu cực
+- (điện học),  (toán học); (nhiếp ảnh) âm
+=negative pole+ cực âm
+=negative sign+ dấu âm
+=negative proof+ bản âm
+*  danh từ
+- lời từ chối, lời cự tuyệt
+=the answers is in the negative+ câu trả lời là "không"
+- quyền phủ định, quyền phủ nhận, quyền phủ quyết
+- tính tiêu cực
+=he is a bundle of negatives+ nó mang nặng tính tiêu cực
+- (toán học) số âm
+- (điện học) cực âm
+- (nhiếp ảnh) bản âm
+- (ngôn ngữ học) từ phủ định
+*  ngoại động từ
+- phủ nhận; phủ định, cự tuyệt, bác bỏ
+=experiments negatived that theory+ thực nghiệm đã bác bỏ thuyết đó
+- phản đối, chống lại (lời phát biểu)
+- làm thành vô hiệu
+
+@negativeness /'negətivnis/ (negativity) /,negə'tiviti/
+*  danh từ
+- tính chất phủ định, tính chất phủ nhận, tính chất cự tuyệt, tính chất từ chối, tính chất phản đối; tính chất cấm đoán
+- tính chất tiêu cực
+
+@negativism /'negətivizm/
+*  danh từ
+- thuyết phủ định
+- chủ nghĩa tiêu cực
+
+@negativist /'negətivist/
+*  danh từ
+- người theo thuyết phủ định
+- người theo chủ nghĩa tiêu cực
+
+@negativity /'negətivnis/ (negativity) /,negə'tiviti/
+*  danh từ
+- tính chất phủ định, tính chất phủ nhận, tính chất cự tuyệt, tính chất từ chối, tính chất phản đối; tính chất cấm đoán
+- tính chất tiêu cực
+
+@negatory /'negətəri/
+*  tính từ
+- từ chối; phủ định
+
+@negatron /'negətrɔn/
+*  danh từ
+- (vật lý) negatron
+
+@neglect /ni'glekt/
+*  danh từ
+- sự sao lãng, sự cẩu thả, sự không chú ý
+=neglect of duty+ sự sao lãng bổn phận
+- sự bỏ bê, sự bỏ mặc
+=to be in a state of neglect+ ở trong tình trạng bị bỏ mặc không được trông nom đến
+- sự thời ơ, sự hờ hững
+=to treat somebosy with neglect+ thời ơ đối với ai
+*  ngoại động từ
+- sao lãng, không chú ý
+=to neglect one's studies+ sao lãng việc học hành
+=to neglect one's duties+ sao lãng bổn phận
+- bỏ bê, bỏ mặc
+- thờ ơ, hờ hững
+=to neglect one's friends+ thờ ơ đối với bạn bè
+
+@neglectful /ni'gektful/
+*  tính từ
+- sao lãng, cẩu thả, không chú ý
+=one should never be neglectful of one's duty+ không bao giờ được sao lãng bổn phận
+- hờ hững
+
+@neglectfulness /ni'gektfulnis/
+*  danh từ
+- sự sao lãng, sự cẩu thả, sự không chú ý
+- sự hờ hững
+
+@negligence /'neglidʤəns/
+*  danh từ
+- tính cẩu thả, tính lơ đễnh
+- việc cẩu thả; điều sơ suất
+- sự phóng túng (trong nghệ thuật)
+
+@negligent /'neglidʤənt/
+*  tính từ
+- cẩu thả, lơ đễnh
+=to be negligent in one's work+ cẩu thả trong công việc
+
+@negligibility /,neglidʤi'biliti/
+*  danh từ
+- tính không đáng kể
+
+@negligible /'neglidʤəbl/
+*  tính từ
+- không đáng kể
+=a negligible quantity+ một số lượng không đáng kể
+
+@negotiability /ni,gouʃjə'biliti/
+*  danh từ
+- tính có thể thương lượng được
+- tính có thể đổi thành tiền, tính có thể chuyển cho người khác để lấy tiền, tính có thể trả bằng tiền
+- tính có thể đi qua được (đường sá, sông), tính có thể vượt qua được (núi, vật chướng ngại...)
+
+@negotiable /ni'gouʃjəbl/
+*  tính từ
+- có thể thương lượng được
+- có thể đổi thành tiền, có thể chuyển nhượng cho người khác để lấy tiền, có thể trả bằng tiền (chứng khoán, hối phiếu, ngân phiếu)
+- có thể đi qua được (đường sá, sông...); có thể vượt qua được (núi, vật chướng ngại...)
+
+@negotiate /ni'gouʃieit/
+*  động từ
+- (thương nghiệp),  (chính trị) điều đình, đàm phán, thương lượng, dàn xếp
+=to negotiate a treaty+ đàm phán để ký một hiệp ước
+- đổi thành tiền, chuyển nhượng cho người khác để lấy tiền, trả bằng tiền (chứng khoán, hối phiếu, ngân phiếu)
+- vượt qua được (vật chướng ngại, khó khăn...)
+
+@negotiation /ni,gouʃi'eiʃn/
+*  danh từ
+- sự điều đình, sự đàm phán, sự thương lượng, sự dàn xếp
+=to enter into (upon) a negotiation with+ đàm phán với
+=to carry an negotiations+ tiến hành đàm phám
+=to break off negotiations+ cắt đứt cuộc đàm phán
+- sự đổi thành tiền, sự đổi lấy tiền, sự trả bằng tiền (chứng khoán, hối phiếu, ngân phiếu)
+- sự vượt qua (khó khăn...)
+
+@negotiator /ni'gouʃieitə/
+*  danh từ
+- người điều đình, người đàm phán
+- người giao dịch
+
+@negotiatress /ni'gouʃieitris/ (negotiatrix) /ni'gouʃieitriks/
+*  danh từ
+- người điều đình, người đàm phán (đàn bà)
+- người giao dịch (đàn bà)
+
+@negotiatrix /ni'gouʃieitris/ (negotiatrix) /ni'gouʃieitriks/
+*  danh từ
+- người điều đình, người đàm phán (đàn bà)
+- người giao dịch (đàn bà)
+
+@negress /'ni:gris/
+*  danh từ
+- đàn bà da đen, con gái da đen
+
+@negrillo /ne'grilou/
+*  danh từ,  số nhiều Negrillos
+- em bé da đen, trẻ con da đen
+- giống người da đen lùn (ở Châu phi)
+
+@negro /'ni:grou/
+*  danh từ
+- người da đen
+*  tính từ
+- đen, (thuộc) người da đen
+=negro ant+ kiến đen
+=a negro village+ một làng của người da đen
+
+@negro-head /'ni:grouhed/
+*  danh từ
+- thuốc lá sợi đen đóng bánh
+- cao su loại xấu
+
+@negroid /'ni:grɔid/ (Negroidal) /'ni:grɔidl/
+*  tính từ
+- (thuộc) người da đen
+
+@negroidal /'ni:grɔid/ (Negroidal) /'ni:grɔidl/
+*  tính từ
+- (thuộc) người da đen
+
+@negus /'ni:gəs/
+*  danh từ
+- rượu nêgut rượu vang thêm nước lã pha đường hâm nóng)
+
+@neigh /nei/
+*  danh từ
+- tiếng hí (ngựa)
+*  nội động từ
+- hí (ngựa)
+
+@neighbour /'neibə/
+*  danh từ
+- người hàng xóm, người láng giềng, người ở bên cạnh; vật ở cạnh
+=next-door neighbour+ người láng giềng ở sát vách
+- người đồng loại
+=be kind to your neighbour+ nên tử tế với người đồng loại
+*  động từ (song (ạy) kh upon,  with)
+- ở gần, ở bên, ở cạnh
+=the wood neighbours upon the lake+ khu rừng ở ngay cạnh hồ
+
+@neighboured /'neibəd/
+*  tính từ
+- có vùng lân cận
+=a beautifully neighboured town+ thành phố có vùng lân cận đẹp
+- có láng giềng, có hàng xóm
+=ill neighboured+ có láng giềng không tốt
+
+@neighbourhood /'neibəhud/
+*  danh từ
+- hàng xóm, láng giềng; tình hàng xóm
+=all the neighbourhood likes him+ tất cả bà con hàng xóm đều thích anh ta
+- tình trạng ở gần
+- vùng lân cận
+=the neighbourhood of a town+ vùng lân cận thành phố
+!in the neighbourhood
+- gần, chừng khoảng
+=in the neighbourhood of fifty kilometers+ chừng năm mươi kilômet
+
+@neighbouring /'neibəriɳ/
+*  tính từ
+- bên cạnh, láng giềng
+=the village+ làng bên
+=the neighbouring fields+ những cánh đồng bên cạnh
+
+@neighbourliness /'neibəlinis/
+*  danh từ
+- tình hàng xóm láng giềng thuận hoà
+
+@neighbourly /'neibəli/
+*  tính từ
+- ăn ở với xóm giềng thuận hoà
+
+@neighbourship /'neibəʃip/
+*  danh từ
+- tình trạng ở gần
+- tình hàng xóm láng giềng
+
+@neither /'naiðə, (Mỹ) 'ni:ðə/
+*  tính từ (từ Mỹ,nghĩa Mỹ)
+- không; không... này mà cũng không... kia
+=to take neither side in the dispute+ không đứng về bên nào trong cuộc tranh câi; không đứng về bên này mà cũng không đứng về bên kia trong cuộc tranh cãi
+*  phó từ (từ Mỹ,nghĩa Mỹ)
+- neither... nor... không... mà cũng không
+=neither good nor bad+ không tốt mà cũng không xấu
+=neither he nor I know+ cả nó lẫn tôi đều không biết
+*  liên từ (từ Mỹ,nghĩa Mỹ)
+- cũng không, mà cũng không
+=I know not, neither can I guess+ tôi không biết mà tôi cũng không đoán được
+*  danh từ (từ Mỹ,nghĩa Mỹ)
+- không cái nào (trong hai cái), không người nào (trong hai người); không cả hai; cả hai đều không
+=neither of them knows+ cả hai người đều không biết
+
+@nek /nek/
+*  danh từ
+- (Nam phi) đèo
+
+@nekton /'nektən/
+*  danh từ
+- (sinh vật học) sinh vật trôi
+
+@nelly /'neli/
+*  danh từ
+- (động vật học) chim hải âu lớn
+
+@nematode /'nemətoud/
+*  danh từ
+- (động vật học) giun tròn
+
+@nemesis /'nemisis/
+*  danh từ
+- nữ thần báo ứng
+- sự báo ứng, sự báo oán
+
+@nenuphar /'nenjufɑ:/
+*  danh từ
+- (thực vật học) cây súng
+- hoa súng
+
+@neocene /'ni:əsi:n/
+*  danh từ
+- (địa lý,ddịa chất) thế neoxen
+
+@neodymium /ni:ə'dimiəm/
+*  danh từ
+- (hoá học) Neoddim
+
+@neolithic /,ni:ou'liθik/
+*  tính từ
+- (thuộc) thời kỳ đồ đá mới
+
+@neologism /ni:'ɔlədʤizm/
+*  danh từ
+- từ mới
+- sự dùng từ mới
+
+@neologist /ni:'ɔlədʤist/
+*  danh từ
+- người hay dùng từ mới
+
+@neologize /ni:'ɔlədʤaiz/
+*  nội động từ
+- dùng từ mới
+
+@neology /ni:'ɔlədʤi/
+*  danh từ
+- sự dùng từ mới
+- từ mới
+
+@neon /'ni:ən/
+*  danh từ
+- nê-ông
+=neon light+ đèn nê-ông
+=neon sign+ đèn nê-ông quảng cáo
+
+@neophyte /'ni:oufait/
+*  danh từ
+- người mới bước vào nghề
+- (tôn giáo) người mới nhập đạo
+
+@neoplasm /'ni:əplæzm/
+*  danh từ
+- (y học) khối u, ung thư
+
+@neoplasty /'ni:əplæsti/
+*  danh từ
+- (y học) sự tạo hình mới, sự tạo hình mảng da
+
+@neoteric /,ni:ə'terik/
+*  tính từ
+- mới, hiện đại
+*  danh từ
+- nhà tư tưởng hiện đại, nhà văn hiện đại; người thừa nhận những tư tưởng mới
+
+@neotropical /,ni:ou'trɔpikəl/
+*  tính từ
+- (thuộc) Trung và Nam Mỹ; tìm thấy ở Trung và Nam Mỹ
+
+@neozoic /,ni:ou'zouik/
+*  tính từ
+- (địa lý,ddịa chất) Neozoi, tân sinh
+
+@nepenthe /ne'penθi/
+*  danh từ
+- (thơ ca) thuốc giải sầu
+
+@nepenthes /ne'penθi:z/
+*  danh từ
+- (như) nepenthe
+- (thực vật học) cây nắp ấm
+
+@nephew /'nevju:/
+*  danh từ
+- cháu trai (con của anh, chị, em)
+
+@nephology /ne'fɔlədʤi/
+*  danh từ
+- môn học về mây
+
+@nephrite /'nefrait/
+*  danh từ
+- (khoáng chất) Nefrit
+
+@nephritic /ne'fritik/
+*  danh từ
+- (thuộc) thân
+
+@nephritis /ne'fraitis/
+*  danh từ
+- (y học) viêm thận
+
+@nepotism /'nepətizm/
+*  danh từ
+- gia đình trị; thói kéo người nhà vào làm; thói bao che dung túng người nhà (ở các cơ quan)
+
+@nepotist /'nepətist/
+*  danh từ
+- người quen thói kéo người nhà vào làm; người quen thói bao che dung túng người nhà (ở các cơ quan)
+
+@neptune /'neptju:n/
+*  danh từ
+- (thần thoại,thần học) thần biển, hải thần
+- (nghĩa bóng) biển, đại dương
+- (thiên văn học) sao Hải vương
+
+@neptunian /nep'tju:njən/
+*  tính từ
+- (thuộc) thần biển
+- (thuộc) sao Hải vương
+- (địa lý,ddịa chất) do biển (tạo thành), do nước (tạo thành)
+
+@neptunium /nep'tju:njəm/
+*  danh từ
+- (hoá học) Neptuni
+
+@nereid /'niəriid/
+*  danh từ
+- nữ thần biển, hải tinh
+
+@neroli /'niərəli/
+*  danh từ
+- dầu hoa cam
+
+@nervate /'nə:veit/
+*  tính từ
+- (thực vật học) có gân (lá)
+
+@nervation /nə:'veiʃn/
+*  danh từ
+- (thực vật học) đường gân; cách phát gân (lá cây)
+
+@nerve /nə:v/
+*  danh từ
+- (giải phẫu) dây thần kinh
+- ((thường) số nhiều) thần kinh; trạng thái thần kinh kích động
+=to get on someone's nerves; to give someone the nerves+ chọc tức ai; làm cho ai phát cáu
+=to have s fit of nerves+ bực dọc, nóng nảy
+- khí lực, khí phách, dũng khí, can đảm, nghị lực
+=a man with iron nerves; a man with nerves of steel+ con người có khí phách cương cường; con người không gì làm cho xúc động được
+=to lose one's nerves+ mất tinh thần, hoảng sợ
+=to strain every nerve+ rán hết sức
+- (thông tục) sự táo gan, sự trơ tráo
+=to have the nerve to do something+ có gan làm gì
+- (thực vật học) gân (lá cây)
+- (nghĩa bóng) bộ phận chủ yếu, khu vực trung tâm, bộ phận đầu não
+!not to know what nerves are
+- điềm tĩnh, điềm đạm
+*  ngoại động từ
+- truyền sức mạnh (vật chất, tinh thần); truyền can đảm, truyền nhuệ khí
+!to nerve oneself
+- rán sức, lấy hết can đảm, tập trung nghị lực
+
+@nerve-centre /'nə:v,sentə/
+*  danh từ
+- (giải phẫu) trung khu thần kinh
+
+@nerve-knot /'nə:vnɔt/
+*  danh từ
+- (giải phẫu) hạch thần kinh
+
+@nerveless /'nə:vlis/
+*  tính từ
+- (giải phẫu) không có dây thần kinh
+- điềm tĩnh
+- không có khí lực, mềm yếu, nhu nhược; hèn
+- (thực vật học); (động vật học) không có gân (lá, cánh sâu bọ)
+- lòng thòng, yếu ớt (văn)
+
+@nervelessness /'nə:vlisnis/
+*  danh từ
+- (giải phẫu) sự không có dây thần kinh
+- tính điềm tĩnh
+- sự không có khí lực, tính mềm yếu, tính nhu nhược; tính hèn
+- (thực vật học); (động vật học) sự không có gân (lá, cánh sâu bọ)
+- tính lòng thòng, yếu ớt (văn)
+
+@nervine /'nə:vi:n/
+*  tính từ
+- (thuộc) dây thần kinh
+- bộ thận kinh (thuốc)
+*  danh từ
+- thuốc bổ thần kinh
+
+@nervism /'nə:vizm/
+*  danh từ
+- (sinh vật học) thuyết thần kinh
+
+@nervosity /'nə:vəsnis/ (nervosity) /nə:'vɔsiti/
+*  danh từ
+- tính nóng nảy; sự bực dọc, sự bồn chồn
+- trạng thái hốt hoảng, trạng thái bối rối
+- sức mạnh, khí lực
+
+@nervous /'nə:vəs/
+*  tính từ
+- (thuộc) thần kinh
+=the nervous system+ hệ thần kinh
+=nervous breakdown (debility, depression, exhaustion, prostraction)+ sự suy nhược thần kinh
+- dễ bị kích thích; nóng nảy, bực dọc; hay hoảng sợ; hay lo lắng, hay bồn chồn
+=most of the children are nervous in the dark+ hầu hết trẻ con thường hoảng sợ trong bóng tối
+=to feel nervous about something+ cảm thấy bồn chồn lo lắng về việc gì
+=nervous temperament+ tính nóng nảy
+- có dũng khí, có khí lực, mạnh mẽ
+=a man full of nervous energy+ một người đầy nghị lực cương cường
+- (văn học) hùng mạnh; cô đọng, khúc chiết
+=nervous style+ văn hùng mạnh; văn cô đọng khúc chiết
+
+@nervousness /'nə:vəsnis/ (nervosity) /nə:'vɔsiti/
+*  danh từ
+- tính nóng nảy; sự bực dọc, sự bồn chồn
+- trạng thái hốt hoảng, trạng thái bối rối
+- sức mạnh, khí lực
+
+@nervure /'nə:vjuə/
+*  danh từ
+- gân (lá cây, cánh sâu bọ)
+
+@nervy /'nə:vi/
+*  tính từ
+- (thông tục) nóng nảy, dễ cáu, bực dọc
+- giần giật (cử động); bồn chồn (vẻ)
+- (từ lóng) táo gan; trơ tráo
+- (từ lóng) khó chịu làm bực mình
+- (thơ ca) mạnh mẽ, có khí lực
+
+@nescience /'nesiəns/
+*  danh từ
+- sự không biết
+- (triết học) thuyết không thể biết
+
+@nescient /'nesiənt/
+*  tính từ
+- (nescient off) không biết
+- (triết học) (thuộc) thuyết không thể biết
+*  danh từ
+- (triết học) người theo thuyết không thể biết
+
+@nest /nest/
+*  danh từ
+- tổ, ổ (chim, chuột...)
+=a bird's nest+ tổ chim
+=a wasp's nest+ tổ ong bắp cày
+- nơi ẩn náu, sào huyệt (trộm cướp...)
+=a nest of pirates+ sào huyệt kẻ cướp
+- bộ đồ xếp lồng vào nhau
+=a nest of tables+ bộ bàn xếp lồng vào nhau
+=a nest of boxes+ bộ hộp xếp lồng vào nhau
+!to feather one's nest
+- (xem) feather
+!it's an ill bord that fouls its own nest
+- (tục ngữ) chẳng hay gì vạch áo cho người xem lưng
+*  nội động từ
+- làm tổ
+- tìm tổ chim, bắt tổ chim
+=to go nesting+ đi bắt tổ chim
+- ẩn núp, ẩn mình
+*  ngoại động từ
+- đặt vào ổ
+- ((thường) động tính từ quá khứ) xếp lồng vào nhau
+=nested boxes+ những hộp xếp lồng vào nhau
+- (kỹ thuật) lắp (mộng)
+
+@nest-egg /'nesteg/
+*  danh từ
+- trứng lót ổ (để nhử gà đến đẻ)
+- (nghĩa bóng) số tiền để gây vốn; số tiền dự trữ (phòng sự bất trắc...)
+
+@nestle /'nesl/
+*  nội động từ
+- nép mình, náu mình, rúc vào
+=the child nestled close to its mother+ đứa bé nép mình vào mẹ
+- (từ hiếm,nghĩa hiếm) làm tổ, làm ổ
+*  ngoại động từ
+- ấp ủ, ôm chặt, ghì chặt
+=to nestle a baby in one's arms+ ôm chặt cháu nhỏ trong cánh tay
+- nép (mình), náu (mình), rúc (người) vào
+=to nestle oneself in a haystack+ rúc vào trong đống cỏ khô
+
+@nestling /'nesliɳ/
+*  danh từ
+- chim non (chưa rời tổ)
+
+@nestor /'nestɔ:/
+*  danh từ
+- Ne-xto (nhân vật trong I-li-át của Hô-me)
+- ông già khôn ngoan; người cố vấn già mưu trí
+
+@net /net/
+*  danh từ
+- lưới, mạng (tóc, nhện...)
+=to cast (throw) a net+ quăng lưới
+- cạm, bẫy
+=to fall into a net+ rơi vào cạm bẫy, mắc bẫy
+- vải màn; vải lưới
+- mạng lưới
+*  ngoại động từ
+- bắt bằng lưới, đánh lưới
+=to net fish+ đánh cá bằng lưới
+=to net birds+ bẫy chim bằng lưới
+- thả lưới, giăng lưới, bủa lưới ((nghĩa đen) & (nghĩa bóng)), đánh bẫy
+- che phủ bằng lưới
+- đan (lưới, võng...)
+*  nội động từ
+- đánh lưới
+- đan lưới
+*  ngoại động từ
+- được lãi thực (là bao nhiêu)
+*  tính từ
+- thực
+=net price+ thực giá
+=net weight+ trọng lượng thực
+
+@netful /'netful/
+*  danh từ
+- lưới (đầy)
+
+@nether /'neðə/
+*  tính từ
+- (từ cổ,nghĩa cổ);(đùa cợt) dưới, ở dưới
+=the nether lip+ môi dưới
+!hard as a nether millstone
+- rắn như đá (trái tim)
+!nether garments
+- (xem) garment
+!nether man (person)
+- cẳng chân
+!nether world
+- âm ty
+- (từ hiếm,nghĩa hiếm) trái đất
+
+@netherlander /'neðələndə/
+*  danh từ
+- người Hà lan
+
+@netherlandish /'neðələndiʃ/
+*  tính từ
+- (thuộc) Hà lan
+
+@nethermost /'neðəmoust/
+*  tính từ
+- thấp nhất; ở dưới cùng
+
+@netting /'netiɳ/
+*  danh từ
+- lưới, mạng lưới
+- sự đánh lưới, sự giăng lưới
+- sự đan (lưới...)
+- nguyên liệu làm lưới; vải màn
+
+@nettle /'netl/
+*  danh từ
+- (thực vật học) cây tầm ma
+!to be on nettles
+- như ngồi phải gai
+!to grasp the nettle
+- dũng cảm đương đầu với khó khăn
+!grasp the nettle and it won't sting you
+- cứ dũng cảm đương đầu với khó khăn thì rồi mọi khó khăn sẽ vượt qua
+
+@nettle-rash /'netlræʃ/
+*  danh từ
+- (y học) chứng mày đay
+
+@nettlesome /'netlsəm/
+*  tính từ
+- chọc tức, làm phát cáu
+- dễ cáu, dễ tức
+
+@network /'netwə:k/
+*  danh từ
+- lưới, đồ dùng kiểu lưới
+=a network purse+ cái túi lưới đựng tiền
+- mạng lưới, hệ thống
+=a network of railways+ mạng lưới đường sắt
+=a network of canals+ hệ thống sông đào
+- (kỹ thuật) hệ thống mắc cáo
+- (raddiô) mạng lưới truyền thanh
+
+@neural /'njuərəl/
+*  tính từ
+- (thuộc) thần kinh
+
+@neuralgia /njuə'rældʤik/
+*  danh từ
+- (y học) chứng đau dây thần kinh
+
+@neuralgic /njuə'rældʤik/
+*  tính từ
+- (y học) (thuộc) chứng đau dây thần kinh
+
+@neurathenia /,njuərəs'θi:njə/
+*  danh từ
+- (y học) chứng suy nhược thần kinh
+
+@neurathenic /,njuərəs'θenik/
+*  tính từ
+- (y học) suy nhược thần kinh
+*  danh từ
+- (y học) người suy nhược thần kinh
+
+@neuritis /njuə'raitis/
+*  danh từ
+- (y học) viêm dây thần kinh
+
+@neurologist /njuə'rɔlədʤist/
+*  danh từ
+- nhà thần kinh học
+- thầy thuốc chuyên khoa thần kinh
+
+@neurology /njuə'rɔlədʤi/
+*  danh từ
+- khoa thần kinh, thần kinh học
+
+@neuropath /'njuərəpæθ/
+*  danh từ
+- người bị bệnh thần kinh
+
+@neuropathist /njuə'rɔpəθist/
+*  danh từ
+- thầy thuốc chuyên khoa bệnh thần kinh
+
+@neuropathology /,njuəroupə'θɔlədʤi/
+*  danh từ
+- (y học) bệnh học thần kinh
+
+@neuropterous /njuə'rɔptərəs/
+*  tính từ
+- (động vật học) (thuộc) bộ cánh gân (sâu bọ)
+
+@neuroses /njuə'rousis/
+*  danh từ,  số nhiều neuroses
+- (y học) chứng loạn thần kinh chức năng
+
+@neurosis /njuə'rousis/
+*  danh từ,  số nhiều neuroses
+- (y học) chứng loạn thần kinh chức năng
+
+@neurosurgeon /,njuərou'sə:dʤən/
+*  danh từ
+- (y học) nhà giải phẫu thần kinh
+
+@neurosurgery /,njuərou'sə:dʤəri/
+*  danh từ
+- (y học) khoa giải phẫu thần kinh
+
+@neurosurgical /,njuərou'sə:dʤikəl/
+*  tính từ
+- (y học) (thuộc) khoa giải phẫu thần kinh
+
+@neurotic /njuə'rɔtik/
+*  tính từ
+- loạn thần kinh chức năng
+- dễ bị kích thích thần kinh
+- tác động tới thần kinh, chữa bệnh thần kinh (thuốc)
+*  danh từ
+- người loạn thần kinh chức năng
+- thuốc chữa bệnh thần kinh
+
+@neuter /'nju:tə/
+*  tính từ
+- (ngôn ngữ học) trung, (thuộc) giống trung
+=neuter gender+ giống trung
+- (ngôn ngữ học) nội động (động từ)
+- (sinh vật học) vô tính
+- (thú y học) bị thiến, bị hoạn
+- trung lập
+=to stand neuter+ đứng trung lập, giữ thái độ trung lập
+*  danh từ
+- (ngôn ngữ học) từ trung tính (danh từ, đại từ...)
+- (ngôn ngữ học) nội động từ
+- (thực vật học) hoạ vô tính
+- (động vật học) sâu bọ vô tính; ong thợ, kiến thợ
+- (thú y học) súc vật bị thiến, súc vật bị hoạn
+- người trung lập; nước trung lập
+
+@neutral /'nju:trəl/
+*  tính từ
+- trung lập
+=neutral zone+ khu vực trung lập
+=neutral nation+ nước trung lập
+=to be (remain) neutral+ đứng trung lập, giữ thái độ trung lập
+- (hoá học) trung tính
+- (thực vật học),  (động vật học) vô tính
+- không có tính chất rõ rệt
+=a neutral colỏu (tint)+ màu không rõ rệt
+- (kỹ thuật) ở vị trí số không
+*  danh từ
+- nước trung lập; người trung lập
+- (kỹ thuật) số không (máy)
+
+@neutralise /'nju:trəlaiz/ (neutralise) /'nju:trəlaiz/
+*  ngoại động từ
+- (quân sự) trung lập hoá
+- (hoá học) trung hoà
+=to neutralize an acid+ trung hoà một axit
+- làm mất tác dụng, làm thành vô hiệu
+=to neutralize a poison+ làm chất độc mất tác dụng
+
+@neutralism /'nju:trəlizm/
+*  danh từ
+- chủ nghĩa trung lập
+
+@neutralist /'nju:trəlist/
+*  danh từ
+- người chủ nghĩa trung lập
+*  tính từ
+- (thuộc) chủ nghĩa trung lập
+
+@neutrality /nju:'træliti/
+*  danh từ
+- tính chất trung lập; thái độ trung lập
+- (hoá học) trung tính
+
+@neutralization /,nju:trəlai'zeiʃn/
+*  danh từ
+- (quân sự) sự trung lập hoá
+- (hoá học) sự trung hoà
+
+@neutralize /'nju:trəlaiz/ (neutralise) /'nju:trəlaiz/
+*  ngoại động từ
+- (quân sự) trung lập hoá
+- (hoá học) trung hoà
+=to neutralize an acid+ trung hoà một axit
+- làm mất tác dụng, làm thành vô hiệu
+=to neutralize a poison+ làm chất độc mất tác dụng
+
+@neutron /'nju:trɔn/
+*  danh từ
+- (vật lý) Nơtron
+
+@never /'nevə/
+*  phó từ
+- không bao giờ, không khi nào
+=never tell a lie!+ không bao giờ được nói dối!
+=never say die!+ không bao giờ được thất vọng
+=well, I never!; I never did!+ chà!, tôi chưa bao giờ nghe (thấy) (một điều như) thế
+- không, đừng
+=he answered never a word+ nó tuyệt nhiên không đáp lại một lời
+=that will never do+ cái đó không xong đâu, cái đó không ổn đâu
+=never mind!+ không sao cả!; không hề gì!; đừng bận tâm!
+=never a one+ không một người nào, không ai
+!better late than never
+- (xem) better
+!never so
+- dù là, dẫu là
+=were it never so late+ dù có muộn thế nào đi nữa
+!never too late to mend
+- muốn sửa chữa thì chả lo là muộn
+
+@never-ceasing /'nevə'si:siɳ/
+*  tính từ
+- không ngừng, không ngớt
+
+@never-dying /'nevə'daiiɳ/
+*  tính từ
+- bất tử, bất diệt
+
+@never-ending /'nevə'daiiɳ/
+*  tính từ
+- bất tận, không bao giờ hết
+
+@never-fading /'nevə'feidiɳ/
+*  tính từ
+- không bao giờ phai
+
+@never-to-be-forgotten /'nevətəbifə'gɔtn/
+*  tính từ
+- không bao giờ quên được
+
+@nevermind /'nevə'maind/
+*  danh từ
+- sự chú ý, sự quan tâm
+=to pay no nevermind+ không để ý
+- việc trách nhiệm
+=it's no nevermind of your+ không việc gì đến anh
+
+@nevermore /'nevə'mɔ:/
+*  phó từ
+- không bao giờ nữa, không khi nào nữa
+
+@nevertheless /,nevəðə'les/
+*  phó từ & liên từ
+- tuy nhiên, tuy thế mà
+
+@new /nju:/
+*  tính từ
+- mới, mới mẻ, mới lạ
+=the new year+ năm mới
+=a new suit of clothes+ một bộ quần áo mới; như mới
+=to do up like new+ sửa lại như mới
+=that sort of work is new to me+ loại công việc đó mới mẻ đối với tôi
+- khác hẳn
+=he has become a new man+ hắn trở thành một người khác hẳn
+- tân tiến, tân thời, hiện đại
+- mới nổi (gia đình, người)
+!new from
+- mới từ (nơi nào đến)
+=a teacher new from school+ một thầy giáo mới ở trường ra
+!new to
+- chưa quen
+=new to the work+ chưa quen việc
+!to turn ovevr a new lef
+- (xem) leaf
+*  phó từ
+- mới ((thường) trong từ ghép)
+=new laid eggs+ trứng mới đẻ
+
+@new look /'nju:'luk/
+*  danh từ
+- kiểu mới, mốt mới
+- (thông tục) vẻ hiện đại
+
+@new year /'nju:'jə:/
+*  danh từ
+- năm mới, tết
+=New Year's day+ ngày tết, tết
+=New year's eve+ đêm giao thừa
+=New Year's gifts+ quà tết
+=New Year's greetings [wishes]+ lời chúc tết
+
+@new-blown /'nju:bloun/
+*  tính từ
+- mới nở (hoa)
+
+@new-born /nju:bɔ:n/
+*  tính từ
+- mới sinh
+- tái tạo, đổi mới
+
+@new-built /'nju:bilt/
+*  tính từ
+- mới xây
+- xây lại
+
+@new-come /'nju:kəm/
+*  tính từ
+- mới đến
+
+@new-fangled /'nju:,fæɳgld/
+*  tính từ
+- mới, lạ
+
+@newcomer /'nju:'kʌmə/
+*  danh từ
+- người mới đến
+
+@newel /'nju:il/
+*  danh từ
+- (kiến trúc) trụ giữa cầu thang vòng
+- trụ chốt ở tay vịn cầu thang
+
+@newfoundland /nju:'faundlənd/
+*  danh từ
+- giống chó niufalan ((cũng) newfoundland dog)
+
+@newish /'nju:iʃ/
+*  tính từ
+- khá mới
+
+@newly /'nju:li/
+*  phó từ
+- mới
+=newly arrived+ mới đến
+
+@newly-wed /'nju:liwed/
+*  danh từ
+- người mới cưới
+
+@newness /'nju:nis/
+*  danh từ
+- tính chất mới, tính chất mới mẻ, tính chất mới lạ
+
+@news /nju:z/
+*  danh từ,  số nhiều dùng như số ít
+- tin, tin tức
+=good news+ tin mừng, tin vui, tin lành
+=bad news+ tin buồn, tin dữ
+=what's the news?+ có tin tức gì mới?
+=ill news flies apace; bad news travels quickly+ tin dữ lan nhanh
+=no news is good news+ không có tin tức gì là bình yên
+=thats's no news to me+ tôi đã biết tin đó rồi
+
+@news conference /'nju:z,kɔnfərəns/
+*  danh từ
+- cuộc họp báo
+
+@news story /'nju:s'stɔ:ri/
+*  danh từ
+- bài phóng sự, bài tường thuật
+
+@news-agency /nju:z,eidʤənsi/
+*  danh từ
+- hãng thông tin
+
+@news-agent /nju:z,eidʤənt/
+*  danh từ
+- người bán báo (ở quầy báo); người đại lý báo; người phát hành báo
+
+@news-analyst /'nju:z,ænəlist/
+*  danh từ
+- nhà bình luận thời sự
+
+@news-boy /nju:zbɔi/
+*  danh từ
+- em bé bán báo
+
+@news-camera-man /nju:z'kæmərəmæn/
+*  danh từ
+- (từ Mỹ,nghĩa Mỹ) phóng viên nhiếp ảnh; người quay phim thời sự
+
+@news-dealer /'nju:z,di:lə/
+*  danh từ
+- (từ Mỹ,nghĩa Mỹ) (như) news-agent
+
+@news-department /'nju:zdi,pɑ:tmənt/
+*  danh từ
+- cục thông tin
+
+@news-film /'nju:zfilm/
+*  danh từ
+- phim thời sự
+
+@news-gatherer /'nju:z,gæðərə/
+*  danh từ
+- (từ Mỹ,nghĩa Mỹ) phóng viên, ký giả, nhà báo
+
+@news-hawk /'nju:zhɔ:k/
+*  danh từ
+- (từ Mỹ,nghĩa Mỹ) (như) news-gatherer
+
+@news-hen /'nju:zhen/
+*  danh từ
+- (từ Mỹ,nghĩa Mỹ) phóng viên, nữ ký giả
+
+@news-letter /'nju:z'letə/
+*  danh từ
+- (sử học) thư có tin tức gửi thường xuyên về các tỉnh
+
+@news-man /nju:zmæn/
+*  danh từ
+- thông tín viên; phóng viên ký giả, nhà báo
+- người bán báo
+
+@news-reel /'nju:zri:l/
+*  danh từ
+- phim thời sự
+
+@news-room /'nju:zrum/
+*  danh từ
+- phòng đọc báo
+- (từ Mỹ,nghĩa Mỹ) phòng tin tức (trong toà soạn)
+
+@news-sheet /'nju:zʃi:t/
+*  danh từ
+- truyền đơn
+- (từ Mỹ,nghĩa Mỹ),  (thông tục) tờ báo
+
+@news-stand /'nju:zʃi:t/
+*  danh từ
+- quán bán báo, quầy bán báo
+
+@news-vendor /'nju:z,vendə/
+*  danh từ
+- người bán báo
+
+@newsbreak /nju:zbreik/
+*  danh từ
+- sự kiện quan trọng
+
+@newscast /'nju:zkɑ:st/
+*  danh từ
+- bản tin ở đài
+
+@newscaster /'nju:zkɑ:stə/
+*  danh từ
+- người phát thanh bản tin ở đài
+
+@newscasting /nju:z,kɑ:stiɳ/
+*  danh từ
+- sự phát thanh bản tin ở đài
+
+@newsmonger /'nju:z,mʌɳgə/
+*  danh từ
+- người hay phao tin
+
+@newspaper /'nju:z,peipə/
+*  danh từ
+- báo
+=daily newspaper+ báo hằng ngày
+
+@newspaper man /'nju:s,peipərizm/
+*  danh từ
+- nhà báo
+- chủ báo, chủ hãng thông tin
+
+@newspaperdom /'nju:s,peipədəm/
+*  danh từ
+- nghề làm báo
+- giới báo chí
+
+@newspaperese /,nju:speip'ri:z/
+*  danh từ
+- văn báo chí; văn phóng sự
+
+@newspaperism /'nju:s,peipərizm/
+*  danh từ
+- thế lực của báo chí
+
+@newsprint /'nju:zprint/
+*  danh từ
+- giấy in báo
+
+@newsy /'nju:zi/
+*  tính từ
+- (thông tục) lắm tin, nhiều tin
+*  danh từ
+- (từ Mỹ,nghĩa Mỹ) em bé bán báo
+
+@newt /nju:t/
+*  danh từ
+- (động vật học) sa giông
+
+@next /nekst/
+*  tính từ
+- sát, gần, ngay bên, bên cạnh
+=in the next house+ ở nhà bên
+- sau, ngay sau, tiếp sau
+=the next day+ ngày hôm sau
+=next week+ tuần lễ sau
+=next month+ tháng sau
+=next year+ năm sau
+=not till next time+(đùa cợt) lần sau xin chừa; xin khất đến lần sau
+=the house next to ours+ ngôi nhà gần nhà chúng tôi
+!next to nothing
+- hầu như không
+*  phó từ
+- sau, lần sau, tiếp sau, nữa
+=when shall we meet next?+ lần sau bao giờ ta lại gặp nhau?
+=what must I do next?+ tiếp sau đây tôi phải làm cái gì?
+=what next?+ còn gì nữa?, còn cái gì hơn nữa không?
+=what comes next?+ còn cái gì tiếp theo nữa?
+- ngay
+=the Tuesday next before Chrismas+ hôm thứ ba ngay trước ngày lễ Nô-en
+*  danh từ
+- gần bên, bên cạnh, sát nách
+=may I bring my chair next yours?+ tôi có thể để cái ghế của tôi sát bên ghế anh không?
+*  danh từ
+- người tiếp sau; cái tiếp sau, số (báo) sau...
+=the next to arrive+ người đến sau
+=next please!+ đến người tiếp sau!
+=to be continued in our next+ sẽ đăng tiếp vào số sau (báo)
+=I'll tell you of it in my next+ next tôi sẽ nói cho anh hay về điều đó ở thư sau
+
+@next-best /'nekst'best/
+*  tính từ
+- tốt thứ nhì
+
+@next-door /'nekst'dɔ:/
+*  tính từ
+- ngay bên cạnh, kế bên; sát vách
+=next-door neighbour+ người láng giềng ở sát vách
+=next-door to crime+ gần như là một tội ác
+
+@nexus /'neksəs/
+*  danh từ
+- mối quan hệ, mối liện hệ
+=the causal nexus+ quan hệ nhân quả
+
+@négligé /'neksəs/
+*  danh từ
+- mối quan hệ, mối liện hệ
+=the causal nexus+ quan hệ nhân quả
+
+@nib /nib/
+*  danh từ
+- đầu ngòi bút (lông ngỗng); ngòi bút (sắt...)
+- đầu mũi, mũi nhọn (giùi, dao trổ...)
+- mỏ (chim)
+- (số nhiều) mảnh hạt cacao nghiền
+- (kỹ thuật) chốt
+*  ngoại động từ
+- vót nhọn đầu (lông ngỗng) thành ngòi bút
+- làm ngòi cho (quản bút); cắm ngòi cho (quản bút), sửa ngòi cho (quản bút)
+- cắm đầu nhọn vào (vật gì)
+
+@nibble /'nibl/
+*  danh từ
+- sự gặm, sự nhắm
+- sự rỉa mồi (cá)
+=I felt a nibble at the bait+ tôi cảm thấy cá đang rỉa mồi
+- miếng gặm (lượng cỏ gặm một lần)
+*  động từ
+- gặm, nhắm
+- rỉa
+=the fish nibbled [at] the bait+ cá rỉa mồi
+- (nghĩa bóng) nhấm nhằn, ừ hữ, ầm ừ
+=to nibble at someone's suggestion+ ầm ừ trước sự gợi ý của ai
+- hay bắt bẻ; hay lý sự vụn
+
+@nice /nais/
+*  tính từ
+- (thông tục) thú vị, dễ chịu; tốt, hấp dẫn
+=a nice day+ một ngày đẹp
+=nice weather+ tiết trời đẹp
+=a nice walk+ một cuộc đi chơi thú vị
+=the room was nice and warm+ căn phòng ấm áp dễ chịu
+- xinh đẹp
+- ngoan; tốt, tử tế, chu đáo
+=how... of you to help me in my work!+ anh giúp đỡ tôi trong công việc, thật là tử tế quá
+- tỉ mỉ, câu nệ; khó tính, khảnh, cầu kỳ
+=don't be too nice about it+ không nên quá câu nệ về cái đó
+=to be too nice about one's food+ khảnh ăn
+- sành sỏi, tế nhị, tinh vi, kỹ
+=a nice audience+ những người xem sành sõi
+=to have a nice ear for music+ sành nhạc
+=a nice question+ một vấn đề tế nhị
+=a nice shade of meaning+ một ý tế nhị
+=a nice investigation+ một cuộc điều tra kỹ lưỡng
+=a nice observer+ người quan sát tinh tế
+-(mỉa mai) hay ho
+=you've got us into a nice mess!+ thật anh đã đẩy chúng tôi vào một hoàn cảnh hay ho gớm!
+- chính xác (cân)
+=weighed in the nicest scales+ được cân ở cái cân chính xác nhất
+- (dùng như phó từ)
+=nice [and]+ rất, lắm, tốt
+=socialist construction is going nice and fast+ xây dựng xã hội chủ nghĩa tiến rất nhanh
+=the way is a nice long one+ con đường dài lắm, con đường dài dằng dặc
+
+@nice-looking /'nais'lukiɳ/
+*  tính từ
+- xinh, đáng yêu
+
+@nicely /'naisli/
+*  phó từ
+- thú vị, dễ chịu, hay hay
+- xinh
+- tỉ mỉ, câu nệ, khó tính, khảnh
+- sành sỏi; tinh vi, tế nhị
+
+@niceness /'naisnis/
+*  danh từ
+- sự thú vị, sự dễ chịu
+- vẻ xinh, vẻ đáng yêu
+- tính tỉ mỉ, tính câu nệ, tính khảnh
+- sự sành sỏi, sự tế nhị, sự tinh vi
+
+@nicety /'naisiti/
+*  danh từ
+- sự chính xác; sự đúng đắn
+=to a nicety+ rất chính xác
+- sự tế nhị; sự tinh vi
+=a point (question) of great nicety+ một vấn đề rất tế nhị; một vấn đề cần phải đắn đo cân nhắc cho thật chính xác
+- (số nhiều) những chi tiết nhỏ, những chi tiết vụn vặt; những điều tế nhị tinh vi
+
+@niche /nitʃ/
+*  danh từ
+- (kiến trúc) hốc thường (thường để đặt tượng...)
+- (nghĩa bóng) chỗ thích hợp
+!niche in the temple of fame
+- quyền được người ta tưởng nhớ đến công lao
+*  ngoại động từ
+- đặt (tượng) vào hốc tường
+=thg to niche oneself+ nép; náu; ngồi gọn
+
+@nick /nik/
+*  danh từ
+- nấc, khía
+!in the nick [of time]
+- đúng lúc
+*  ngoại động từ
+- cắt, nấc, khía; làm mẻ (dao)
+- cắt gân đuôi (ngựa cho cụp xuống)
+- bắt kịp (xe lửa...); chộp, bắt quả tang, tóm đúng (kẻ trộm, kẻ cắp...)
+- đoán trúng (sự thật)
+- gieo (súc sắc) trúng số to
+- (từ lóng) ăn cắp, xoáy
+*  nội động từ
+- (nick in) chặn ngang (chạy đua)
+- (nick with) giao phối (động vật)
+
+@nick-nack /'niknæk/
+*  danh từ
+- đồ vật, đồ tập tàng
+
+@nickel /'nikl/ (nickelise) /'nikəlaiz/ (nickelize) /'nikəlaiz/
+*  ngoại động từ
+- mạ kền
+
+@nickel nurser /'nikl'nə:sə/
+*  danh từ
+- (từ Mỹ,nghĩa Mỹ),  (từ lóng) anh chàng keo kiệt, anh chàng bủn xỉn
+
+@nickel-plating /'nikl'nə:sə/ (nickelage) /'niklidʤ/
+*  danh từ
+- (kỹ thuật) sự mạ kền
+
+@nickelage /'nikl'nə:sə/ (nickelage) /'niklidʤ/
+*  danh từ
+- (kỹ thuật) sự mạ kền
+
+@nickelise /'nikl/ (nickelise) /'nikəlaiz/ (nickelize) /'nikəlaiz/
+*  ngoại động từ
+- mạ kền
+
+@nickelize /'nikl/ (nickelise) /'nikəlaiz/ (nickelize) /'nikəlaiz/
+*  ngoại động từ
+- mạ kền
+
+@nickname /'nikneim/
+*  danh từ
+- tên hiệu; tên riêng; tên nhạo, tên giễu
+*  ngoại động từ
+- đặt tên hiệu; đặt tên riêng; đặt tên giễu
+
+@nicotian /ni'kouʃjən/
+*  tính từ
+- (thuộc) thuốc lá
+*  danh từ
+- người hút thuốc lá
+
+@nicotine /'nikəti:n/
+*  danh từ
+- nicôtin
+
+@nicotinise /'nikətinaiz/ (nicotinise) /'nikətinaiz/
+*  ngoại động từ
+- tẩm nicôtin
+
+@nicotinism /'nikəti:nizm/
+*  danh từ
+- (y học) chứng nhiễm độc nicôtin
+
+@nicotinize /'nikətinaiz/ (nicotinise) /'nikətinaiz/
+*  ngoại động từ
+- tẩm nicôtin
+
+@nictate /'nikteit /
+*  nội động từ
+- nháy mắt, chớp mắt
+
+@nictating membrance /'nikteitiɳ'membrein/
+*  danh từ
+- (động vật học) màn nháy (ở mắt chim...)
+
+@nictation /nik'teiʃn/ (nictitation) /,nikti'teiʃn/
+*  danh từ
+- sự nháy mắt
+
+@nictitate /'niktiteit/
+*  ngoại động từ
+- (như) nictate
+
+@nictitation /nik'teiʃn/ (nictitation) /,nikti'teiʃn/
+*  danh từ
+- sự nháy mắt
+
+@nicy /'naisi/
+*  danh từ
+- nhuây kẹo que
+
+@nid-nod /'nidnɔd/
+*  nội động từ
+- lắc đầu, gà gật
+
+@niddering /'nidəriɳ/ (nidering) /'nidəriɳ/
+*  danh từ
+- (từ cổ,nghĩa cổ) người hèn; người hèn nhát
+*  tính từ
+- (từ cổ,nghĩa cổ) hèn; hèn nhát
+
+@niddle-noddle /'nidl,nɔdl/
+*  tính từ
+- lắc lư (đầu), lung lay
+*  động từ
+- lắc lư (đầu), lung lay
+
+@nide /naid/
+*  danh từ
+- ổ gà lôi đỏ
+
+@nidering /'nidəriɳ/ (nidering) /'nidəriɳ/
+*  danh từ
+- (từ cổ,nghĩa cổ) người hèn; người hèn nhát
+*  tính từ
+- (từ cổ,nghĩa cổ) hèn; hèn nhát
+
+@nidi /'naidəs/
+*  danh từ,  số nhiều nidi,  niduses
+- ổ trứng (sâu bọ...)
+- ổ bệnh
+- nguồn gốc, nơi phát sinh
+
+@nidificate /'nidifikeit/ (nidify) /'nidifai/
+*  nội động từ
+- làm tổ (chim)
+
+@nidification /,nidifi'keiʃn/
+*  danh từ
+- sự làm tổ
+
+@nidify /'nidifikeit/ (nidify) /'nidifai/
+*  nội động từ
+- làm tổ (chim)
+
+@nidus /'naidəs/
+*  danh từ,  số nhiều nidi,  niduses
+- ổ trứng (sâu bọ...)
+- ổ bệnh
+- nguồn gốc, nơi phát sinh
+
+@niece /ni:s/
+*  danh từ
+- cháu gái (con của anh, chị, em)
+
+@nielli /ni'elou/
+*  danh từ,  số nhiều niellos,  nielli
+- men huyền (để khảm đồ vàng bạc)
+- đồ vàng bạc khảm men huyền
+- thuật khảm men huyền (vào đồ vàng bạc)
+
+@niellist /ni'elist/
+*  danh từ
+- thợ khảm men huyền (vào đồ vàng bạc)
+
+@niello /ni'elou/
+*  danh từ,  số nhiều niellos,  nielli
+- men huyền (để khảm đồ vàng bạc)
+- đồ vàng bạc khảm men huyền
+- thuật khảm men huyền (vào đồ vàng bạc)
+
+@nielloed /ni'eloud/
+*  tính từ
+- khảm men huyền (vào đồ vàng bạc)
+
+@nifty /'nifti/
+*  tính từ
+- (từ Mỹ,nghĩa Mỹ),  (từ lóng) đúng mốt; diện sộp
+
+@niggard /'nigəd/
+*  danh từ
+- người hà tiện, người keo kiệt
+*  tính từ
+- (văn học); (thơ ca) hà tiện, keo kiệt
+
+@niggardly /'nigədli/
+*  tính từ & phó từ
+- hà tiện, keo kiệt
+
+@nigger /'nigə/
+*  danh từ (thường), quổi người da đen
+- màu nâu sẫm, màu sôcôla ((cũng) nigger brown)
+!to work like a nigger
+- làm việc cực nhọc
+
+@niggle /'nigl/
+*  nội động từ
+- tỉ mẩn, mất thì giờ về những chuyện vụn vặt
+
+@niggling /'nigliɳ/
+*  tính từ
+- tỉ mẩn, vụn vặt
+- bé nhỏ, chật hẹp
+- khó đọc, lí nhí, lủn mủn (chữ)
+
+@nigh /nai/
+*  tính từ,  phó từ & giới từ
+- (từ cổ,nghĩa cổ); thơ gần, ở gần
+
+@night /nait/
+*  danh từ
+- đêm, tối, cảnh tối tăm
+=the whole night+ suốt đêm, cả đêm
+=by night+ về đêm
+=at night+ ban đêm
+=night after night+ đêm đêm
+=night and day+ suốt ngày đêm không dứt
+=o' nights+ (thông tục) về đêm, ban đêm
+=tomorrow night+ đêm mai
+=at (in the) deal of night+ lúc nửa đêm, lúc đêm khuya thanh vắng
+=as black (dark) as night+ tôi như đêm
+=a dirty night+ một đêm mưa bão
+=to have (pass) a good night+ đêm ngủ ngon
+=to have (pass) a bad night+ đêm mất ngủ, một đêm ngủ không yên
+=night out+ tối được nghỉ, tối rảnh việc (người làm); (một) đêm đi chơi không về nhà
+=to make a night of it+ vui đùa, chơi bời, rượu chè cả đêm
+=to turn night into day+ lấy đêm làm ngày
+=the night of ignorance+ cảnh ngu dốt tối tăm
+
+@night spot /'naitspɔt/
+*  danh từ
+- (thông tục) (như) night-club
+
+@night stick /'naitstik/
+*  danh từ
+- (từ Mỹ,nghĩa Mỹ) gậy (để đi) tuần đêm (của cảnh sát)
+
+@night-bird /'naibə:d/
+*  danh từ
+- chim ăn đêm (cú)
+- người đi chơi đêm, kẻ ăn sương
+
+@night-blind /'naitblaind/ (nyctalopic) /,niktə'lɔpik/
+*  tính từ
+- mắc chứng quáng gà
+
+@night-blindness /'nait'blaindnis/
+*  danh từ
+- (y học) chứng quáng gà
+
+@night-brawl /'naitbrɔ:l/
+*  danh từ
+- sự quấy phá làm ầm ĩ ban đêm (ngoài đường phố)
+
+@night-cart /'naitkɑ:t/
+*  danh từ
+- xe đổ rác; xe đổ thùng (ban đêm)
+
+@night-chair /'naittʃeə/ (night-stool) /'naitstu:l/
+-stool) /'naitstu:l/
+*  danh từ
+- ghế ỉa đêm
+
+@night-clothes /'naitklouðz/
+*  danh từ
+- quần áo ngủ
+
+@night-club /'naitklʌb/
+*  danh từ
+- câu lạc bộ đêm
+
+@night-dress /'naitdres/ (night-robe) /'naitroub/
+-robe) /'naitroub/
+*  danh từ
+- áo ngủ (của đàn bà, trẻ con)
+
+@night-fighter /'nait,faitə/
+*  danh từ
+- (hàng không) máy bay khu trục đánh đêm
+
+@night-flower /'nait,fauə/
+*  danh từ
+- hoa nở về đêm
+
+@night-fly /'naitflai/
+*  danh từ
+- bướm đêm
+
+@night-flying /'nait,flaiiɳ/
+*  danh từ
+- (hàng không) sự bay đêm
+
+@night-glass /'naitglɑ:s/
+*  danh từ
+- ống nhòm dùng ban đêm (ở biển)
+
+@night-gown /'naitgaun/
+*  danh từ
+- áo ngủ (của đàn bà, trẻ con)
+
+@night-hag /'naithæg/
+*  danh từ
+- nữ yêu tinh
+- cơn ác mộng
+
+@night-hawk /'naithɔ:k/
+*  danh từ
+- (như) nightjar
+- kẻ ăn trộm
+- người đi chơi đêm
+
+@night-lamp /'naitlæmp/ (night-light) /'naitlait/
+-light) /'naitlait/
+*  danh từ
+- đèn ngủ
+
+@night-light /'naitlæmp/ (night-light) /'naitlait/
+-light) /'naitlait/
+*  danh từ
+- đèn ngủ
+
+@night-line /'naitlain/
+*  danh từ
+- cần câu đêm
+
+@night-long /'naitlɔɳ/
+*  tính từ
+- suốt đêm, thâu đêm
+
+@night-piece /'naitpi:s/
+*  danh từ
+- bức vẽ cảnh đêm
+
+@night-robe /'naitdres/ (night-robe) /'naitroub/
+-robe) /'naitroub/
+*  danh từ
+- áo ngủ (của đàn bà, trẻ con)
+
+@night-school /'naitsku:l/
+*  danh từ
+- lớp học ban đêm; trường học ban đêm
+
+@night-shift /'naitʃift/
+*  danh từ
+- ca đêm (ở nhà máy)
+- áo ngủ (của đàn ông)
+
+@night-soil /'naitsɔil/
+*  danh từ
+- phân bắc
+
+@night-stool /'naittʃeə/ (night-stool) /'naitstu:l/
+-stool) /'naitstu:l/
+*  danh từ
+- ghế ỉa đêm
+
+@night-suit /'naitsju:t/
+*  danh từ
+- quần áo ngủ
+
+@night-time /'naittaim/
+*  danh từ
+- ban đêm
+=in the night-time+ về đêm
+
+@night-walker /'nait,wɔ:kə/
+*  danh từ
+- người đi chơi đêm
+- người miên hành
+- gái điếm, gái chơi đêm; kẻ ăn sương
+
+@night-watch /'nait'wɔtʃ/
+*  danh từ
+- sự canh phòng ban đêm
+- tuần canh đêm, phiên gác đêm
+- người gác đêm; đội gác đêm
+- (số nhiều) những lúc trằn trọc mất ngủ (về đêm)
+
+@night-watchman /'nait'wɔtʃmən/
+*  danh từ
+- người gác đêm
+
+@night-work /'naitwə:k/
+*  danh từ
+- việc làm đêm
+
+@nightcap /'naitkæp/
+*  danh từ
+- màn ngủ
+- chén rượu uống trước khi đi ngủ
+- (từ Mỹ,nghĩa Mỹ) trận đấu chung kết; cuộc chạy đua chung kết
+
+@nightfall /'naitfɔ:l/
+*  danh từ
+- lúc sẩm tối, lúc chập tối, lúc hoàng hôn
+
+@nightingale /'naitiɳgeil/
+*  danh từ
+- (động vật học) chim sơn ca
+
+@nightjar /'naitdʤɑ:/ (nightingale) /'naitiɳgeil/ (fern-owl) /'fə:naul/
+-owl) /'fə:naul/
+*  danh từ
+- (động vật học) cú muỗi
+
+@nightly /'naitli/
+*  tính từ
+- về đêm, đêm đêm
+- (thơ ca) (thuộc) đêm; hợp với ban đêm
+*  phó từ
+- về đêm, đêm đêm
+
+@nightman /'naitmæn/
+*  danh từ
+- công nhân vệ sinh, người đổ thùng
+
+@nightmare /'naitmeə/
+*  danh từ
+- cơn ác mộng
+
+@nightmarish /'naitmeəriʃ/
+*  tính từ
+- như một cơn ác mộng
+
+@nightshade /'naitʃeid/
+*  danh từ
+- (thực vật học) cây ớt mả, cây lu lu đực
+- cây benladdon, cây cà dược
+- cây kỳ nham
+
+@nighty /'naiti/
+*  danh từ
+- (thông tục) quần áo ngủ
+
+@nigrescence /nai'gresəns/
+*  danh từ
+- màu hơi đen
+
+@nigrescent /nai'gresənt/
+*  tính từ
+- đen đen, hơi đen
+
+@nigritude /'naigritju:d/
+*  danh từ
+- màu đen
+
+@nihilism /'naiilizm/
+*  danh từ
+- (triết học) thuyết hư vô
+- (chính trị) chủ nghĩa vô chính phủ (Nga)
+
+@nihilist /'naiilist/
+*  danh từ
+- (triết học) người theo thuyết hư vô
+- (chính trị) người theo chủ nghĩa vô chính phủ (Nga)
+
+@nihilistic /,naii'listik/
+*  tính từ
+- (triết học) hư vô
+- (chính trị) (thuộc) chủ nghĩa vô chính phủ (Nga)
+
+@nihility /nai'iliti/
+*  danh từ
+- hư vô
+
+@nil /nil/
+*  danh từ
+- không
+=two goals to nil+ hai không, hai bàn thắng (bóng đá)
+
+@nilgai /'nilgai/ (nylghau) /'nilgɔ:/
+*  danh từ
+- (động vật học) linh dương mingai (Ân độ)
+
+@nilotic /nai'lɔtik/
+*  tính từ
+- (thuộc) sông Nil
+
+@nimbi /'nimbəs/
+*  danh từ,  số nhiều nimbuses,  nimbi
+- (khí tượng) mây mưa, mây dông
+- quầng (mặt trăng, mặt trời)
+- vầng hào quang (quanh đầu các thánh)
+
+@nimble /'nimbl/
+*  tính từ
+- lanh lẹ, nhanh nhẹn
+- linh lợi (trí óc); nhanh trí
+
+@nimble-fingered /'nimbl'fiɳgəd/
+*  tính từ
+- nhanh tay, khéo tay
+
+@nimble-footed /'nimbl'futid/
+*  tính từ
+- nhanh chân
+
+@nimble-witted /'nimbl'witid/
+*  tính từ
+- nhanh trí
+
+@nimbleness /'nimblnis/
+*  danh từ
+- sự lanh lẹ, sự nhanh nhẹn
+- tính lanh lợi; sự nhanh trí
+
+@nimbus /'nimbəs/
+*  danh từ,  số nhiều nimbuses,  nimbi
+- (khí tượng) mây mưa, mây dông
+- quầng (mặt trăng, mặt trời)
+- vầng hào quang (quanh đầu các thánh)
+
+@nimiety /'nimaiiti/
+*  danh từ
+- sự thừa, sự quá nhiều
+- điều thừa
+
+@niminy-piminy /'nimini'pimini/
+*  tính từ
+- điệu bộ màu mèo, õng ẹo
+
+@nincompoop /'ninkəmpu:p/
+*  danh từ
+- người ngốc nghếch, người khờ dại
+
+@nine /nain/
+*  tính từ
+- chín
+=nine times out of ten+ cứ mười lần thì có đến chín lần; thường thường
+=nine tenths+ chín phần mười, hầu hết
+!nine day's wonder
+- cái kỳ lạ nhất thời
+*  danh từ
+- số chín
+- (đánh bài) quân chín
+- (từ Mỹ,nghĩa Mỹ),  (thể dục,thể thao) đội bóng chín người
+- (the nine) (thần thoại,thần học) chín nàng thơ
+!to crack someone up to the nines
+- tâng bốc ai đến tận mây xanh, tán dương ai hết lời
+!to be dressed up to the nines
+- (xem) dress
+
+@ninefold /'nainfould/
+*  tính từ & phó từ
+- gấp chín lần
+
+@ninepins /'nainpinz/
+*  danh từ số nhiều
+- trò chơi ky chín con
+
+@nineteen /'nain'ti:n/
+*  tính từ
+- mười chín
+*  danh từ
+- số mười chín
+!to talk (go) nineteen to dozen
+- (xem) dozen
+
+@nineteenth /'nain'ti:nθ/
+*  tính từ
+- thứ mười chín
+*  danh từ
+- một phần mười chín
+- người thứ mười chín; vật thứ mười chín; ngày mười chín
+
+@ninetieth /'naintiiθ/
+*  tính từ
+- thứ chín mươi
+*  danh từ
+- một phần chín mươi
+- người thứ chín mươi; vật thứ chín mươi
+
+@ninety /'nainti/
+*  tính từ
+- chín mươi
+=ninety nine times out of a hundred+ cứ một trăm lần thì chín mươi lần; thường thường
+*  danh từ
+- số chín mươi
+- (số nhiều) (the nineties) những năm 90 (từ 90 đến 99 của thế kỷ); những năm tuổi trên 90 (từ 90 đến 99)
+
+@ninety-day wonder /'naintidei'wʌndə/
+*  danh từ
+- sĩ quan ba tháng (được đề bạt sau ba tháng huấn luyện)
+
+@ninny /'nini/
+*  danh từ
+- người ngờ nghệch, người ngu xuẩn, người dại dột; người nhu nhược
+
+@ninth /nainθ/
+*  tính từ
+- thứ chín
+*  danh từ
+- một phần chín
+- người thứ chín; vật thứ chín; ngày mồng chín
+
+@ninthly /'nainθli/
+*  phó từ
+- chín là
+
+@niobe /'naiəbi/
+*  danh từ
+- nữ thần Ni-ốp (thần thoại Hy lạp)
+- (thơ ca) người đàn bà đau khổ than khóc không bao giờ nguôi
+
+@niobium /nai'oubiəm/
+*  danh từ
+- (hoá học) iobi
+
+@nip /nip/
+*  danh từ
+- (viết tắt) của Nipponese
+- cốc rượu nhỏ
+=to tkae a nip+ uống một cốc rượu nhỏ
+=a nip of whisky+ một cốc nhỏ rượu uytky
+*  danh từ
+- cái cấu, cái véo, cái cắn, cái kẹp
+=to give someone a nip+ cấu (véo) ai
+- sự tê buốt, sự tê cóng; cơn giá rét cắt da cắt thịt
+- sự thui chột, sự lụi đi (cây cối vì giá rét)
+- (nghĩa bóng) lời nói cay độc, lời nói đay nghiến
+- (kỹ thuật) cái kìm, cái kẹp, cái mỏ cặp
+*  động từ
+- cắn, nay, cấu, véo, bấm, kẹp, quắp
+=to nip one's finger in the door+ kẹp ngón tay ở cửa
+- (nip off) ngắt
+=to nip off the flower bud+ ngắt nụ hoa
+- tàn phá, phá hoại; làm cho lụi đi, làm cho thui chột đi
+=to nip in the bud+ (nghĩa bóng) bóp chết ngay từ khi còn trứng nước
+- lạnh buốt; làm tê buốt, cắt da cắt thịt (gió, rét)
+=the wind nips hard this morning+ sáng hôm nay gió lạnh buốt
+- (từ lóng) bắt, tóm cổ, giữ lại
+- (từ lóng) xoáy, ăn cắp vặt
+- (kỹ thuật) bẻ gây, cắt đứt
+- (kỹ thuật) kẹp chặt
+!to nip along
+- chạy vội đi
+!to nip in
+- lẻn nhanh vào, chạy vụt vào
+- nói xen vào, ngắt lời
+!to nip out
+- lẻn nhanh ra, chạy vụt ra
+!to nip off
+- chạy vụt đi, chuồn thãng
+!to nip on ahead
+- chạy lên trước, chạy lên đầu
+!to nip up
+- nhặt vội
+- (từ lóng) trèo thoăn thoắt; bước lên thoăn thoắt
+
+@nipper /'nipə/
+*  danh từ
+- người cấu, người véo, vật cắn, vật nhay
+- răng cửa (ngựa); càng (cua)
+- (số nhiều) cái kìm, cái kẹp ((cũng) pair of nippers)
+- (số nhiều) kính cặp mũi
+- (thông tục) thằng lỏi con, thằng nhóc
+- (từ lóng) thằng ăn cắp, thằng cắt túi
+- (từ Mỹ,nghĩa Mỹ),  (thông tục) khoá tay, xích tay
+
+@nipping /'nipiɳ/
+*  tính từ
+- rét buốt, cóng cắt da cắt thịt
+- cay độc, chua cay, đay nghiến (lời nói)
+
+@nipple /'nipl/
+*  danh từ
+- núm vú, đầu vú cao su (ở bầu sữa trẻ con)
+- núm (ở da, thuỷ tinh, kim loại...)
+- mô đất (trên núi)
+- (kỹ thuật) miếng nối, ống nói (có chân ốc)
+
+@nipponese /,nipə'ni:z/
+*  tính từ
+- (thuộc) Nhật bản
+*  danh từ
+- người Nhật bản
+
+@nippy /'nipi/
+*  tính từ
+- lạnh, tê buốt
+- nhanh nhẹn, lanh lẹ, hoạt bát
+- cay sè (rượu)
+*  danh từ
+- (thông tục) cô phục vụ, cô hầu bàn (ở tiệm trà Lai-on-xơ ở Anh)
+
+@niryana /niə'vɑ:nə/
+*  danh từ
+- (tôn giáo) nát bàn
+
+@nisei /'ni:'sei/
+*  danh từ
+- người Mỹ nguồn gốc Nhật bản
+
+@nisi /'naisai/
+*  liên từ
+- (pháp lý) trừ phi
+=decree nisi+ quyết định (ly hôn...) có hiệu lực sau một thời gian trừ phi có lý do khác bác b
+
+@nit /nit/
+*  danh từ
+- trứng chấy, trứng rận
+
+@nitery /'naitəri/
+*  danh từ
+- (từ Mỹ,nghĩa Mỹ),  (từ lóng) hộp đêm
+
+@niton /'naitɔn/
+*  danh từ
+- (hoá học) Raddon
+
+@nitrate /'naitreit/
+*  danh từ
+- (hoá học) Nitrat
+*  nội động từ
+- (hoá học) Nitro hoá
+
+@nitration /nai'treiʃn/
+*  danh từ
+- (hoá học) sự nitro hoá
+
+@nitre /'naitə/
+*  danh từ
+- (hoá học) Kali nitrat
+
+@nitric /'naitrik/
+*  tính từ
+- (hoá học) Nitric
+=nitric acid+ axít nitric
+
+@nitrification /,naitrifi'keiʃn/
+*  danh từ
+- (hoá học) sự nitrat hoá
+
+@nitrify /'naitrifai/
+*  động từ
+- Nitrat hoá
+
+@nitrite /'naitrait/
+*  danh từ
+- (hoá học) Nitrit
+
+@nitrogen /'naitridʤən/
+*  danh từ
+- (hoá học) Nitơ
+
+@nitroglycerine /'naitrouglisə'ri:n/
+*  danh từ
+- (hoá học) Nitroglyxerin
+
+@nitrous /'naitrəs/
+*  tính từ
+- (hoá học) Nitrơ
+
+@nitty /'niti/
+*  tính từ
+- lắm trứng chấy, lắm trứng rận
+
+@nitwit /'nitwit/
+*  danh từ
+- người ngu đần
+
+@nitwitted /'nitwitid/
+*  tính từ
+- ngu đần
+
+@nix /niks/
+*  thán từ
+- (từ lóng) chú ý!, hãy cẩn thận!, hãy coi chừng!
+*  danh từ
+- (từ lóng) không, không một ai, không một cái gì
+=to work for nixes+ làm công không, luống công vô ích
+*  danh từ
+- thuỷ thần, hà bá
+
+@nixie /'niksi/
+*  tính từ
+- không, không chút nào; không hẳn
+=there are nixie clouds in the sky+ trên bầu trời không một vần mây
+=nixie man can do it+ không người nào có thể làm được cái đó
+=nixie one knows+ không ai biết
+=it is nixie joke+ không phải là chuyện đùa
+=it is nixie distance+ không mấy bước, không xa xôi gì
+=these remarks or rather nixie remarks+ những lời nhận xét hay nói cho đúng hơn những lời không hắn là nhận xét này
+- (nixie động tính từ hiện tại) không thể nào được
+=there is nixie denying that socialism is far superior to capitalism+ không thể nào phủ nhận được là chủ nghĩa xã hội ưu việt hơn chủ nghĩa tư bản
+!in no time
+- trong nháy mắt, chỉ một thoáng, chẳng bao lâu
+!no admittance except on business
+- không việc gì xin miễn vào
+!no compromise!
+- không thoả hiệp!
+!no surrender!
+- không đầu hàng!
+!no scribbing on the walls
+- không được vẽ bậy lên tường
+!no smoking!
+- cấm hút thuốc!
+
+@no /nou/
+*  phó từ
+- không
+=no, I don't think so+ không, tôi không nghĩ như vậy
+=whether he comes or no+ dù nó đến hay không
+=no some said than done+ nói xong là làm ngay
+=I say no more+ tôi không nói nữa
+=he is no longer here+ anh ta không còn ở đây nữa
+=he is no more+ anh ta không còn nữa (chết rồi)
+*  danh từ,  số nhiều noes
+- lời từ chối, lời nói "không" ; không
+=we can't take no for an answer+ chúng tôi không thể chấp nhận được câu trả lời từ chối
+- phiếu chống; người bỏ phiếu chống
+=the noes have it+ phiếu chống chiếm đa số; đa số bỏ phiếu chống
+=the ayes and the noes+ phiếu thuận và phiếu chống
+
+@no go /'nou'gou/
+*  danh từ
+- tình trạng bế tắc; tình thế không lối thoát
+=it's no_go+ (thông tục) thật là bế tắc, thật là vô kế khả thi
+
+@no one /'nouwʌn/
+*  danh từ
+- không người nào, không ai
+
+@no-bon /'noubɔn/
+*  phó từ
+- (quân sự),  (từ lóng) không tốt
+
+@no-good /'nougud/
+*  danh từ
+- (từ Mỹ,nghĩa Mỹ) người vô giá trị, người vô tích sự
+- vật vô giá trị, vật vô dụng
+
+@no-load /'nouloud/
+*  danh từ
+- (kỹ thuật) sự chạy không, sự không tải
+
+@no-man's-land /'noumænzlænd/
+*  danh từ
+- (quân sự) khu vực giữa hai trận tuyến
+- vòng đai trắng
+
+@no. /'nʌmbə/
+*  danh từ
+- (viết tắt) của number
+
+@noah's ark /'nouəz'ɑ:k/
+*  danh từ
+- (tôn giáo) thuyền Nô-ê (đóng để tị nạn trong nạn hồng thuỷ)
+- thuyền Nô-ê (đồ chơi trẻ con)
+
+@nob /nɔb/
+*  danh từ
+- (từ lóng) cái đầu
+- quan to, người quyền quý, người giàu sang
+*  ngoại động từ (thể dục,thể thao)
+- (từ lóng) đánh vào đầu (quyền Anh)
+
+@nobble /'nɔbl/
+*  ngoại động từ
+- (từ lóng) đánh què (ngựa thi) bỏ thuốc mê (cho ngựa thi)
+- lừa bịp, xoáy, ăn cắp
+- bắt, tóm cổ
+- đánh vào đầu
+- dùng thủ đoạn đề tranh thủ (ai)
+
+@nobby /'nɔbi/
+*  tính từ
+- (từ lóng) bảnh, sang, lịch s
+
+@nobel prize /'noubel'praiz/
+*  danh từ
+- giải thưởng Nô-ben
+
+@nobelist /nou'belist/
+*  danh từ
+- người được giải thưởng Nô-ben
+
+@nobiliary /nou'biljəri/
+*  tính từ
+- (thuộc) quý tộc, quý phái
+
+@nobility /nou'biliti/
+*  danh từ
+- tính cao quý, tính cao thượng, tính cao nhã, tính thanh cao
+- quý tộc, quý phái
+
+@noble /'noubl/
+*  tính từ
+- (thuộc) quý tộc, quý phái
+=to be of noble birth+ (thuộc) dòng dõi quý tộc
+- cao quý (người), cao thượng, cao nhã (văn)
+- huy hoàng, nguy nga (lâu đài...)
+- quý (đá, kim loại)
+- đáng kính phục, đáng khâm phục, ưu tú, xuất sắc
+=noble steep+ con ngựa hay, con tuấn mà
+*  danh từ
+- người quý tộc, người quý phái
+- (từ cổ,nghĩa cổ) đồng nốp (tiền Anh cũ giá trị bằng 6 silinh 8 penxơ)
+*  danh từ
+- (từ Mỹ,nghĩa Mỹ),  (từ lóng) tên cầm đầu bọn phá hoại cuộc đình công
+
+@noble-minded /'noubl'maindid/
+*  tính từ
+- cao thượng, hào hiệp
+
+@noble-mindedness /'noubl'maindidnis/
+*  danh từ
+- tâm hồn cao thượng, tính tình hào hiệp
+
+@nobleman /'noublmən/
+*  danh từ
+- người quý tộc, người quý phái
+
+@nobleness /nou'bles/
+*  danh từ
+- sự cao quý
+- tính cao thượng, tính cao nhã, tính hào hiệp
+
+@noblesse /nou'bles/
+*  danh từ
+- quý tộc
+
+@noblewoman /'noubl,wumən/
+*  danh từ
+- người đàn bà quý tộc, người đàn bà quý phái
+
+@nobly /'noubli/
+*  phó từ
+- cao thượng, hào hiệp
+- huy hoàng, nguy nga
+
+@nobody /'noubədi/
+*  danh từ
+- không ai, không người nào
+=I saw nobody+ tôi không nhìn thấy ai
+=nobody else+ không một người nào khác
+*  danh từ
+- người vô giá trị, người vô dụng, người bất tài, người tầm thường
+=to treat someone as a mere nobody+ xem thường ai; coi ai chẳng ra gì
+
+@nock /nɔk/
+*  danh từ
+- khấc nỏ (ở hai đầu cánh nỏ, để giữ dây nỏ); khấc tên (ở đầu cuối tên để đặt tên vào dây nỏ)
+*  ngoại động từ
+- khấc (cánh nỏ)
+- đặt (tên) vào dây cung
+
+@noctambulant /nɔk'tæmbjulənt/
+*  tính từ
+- hay đi chơi đêm
+- ngủ đi rong, miên hành
+
+@noctambulism /nɔk'tæmbjulizm/
+*  danh từ
+- tính hay đi chơi đêm
+- trạng thái ngủ đi rong, trạng thái miên hành
+
+@noctambulist /nɔk'tæmbjulist/
+*  danh từ
+- người hay đi chơi đêm
+- người ngủ đi rong, người miên hành
+
+@noctiflorous /,nɔkti'flɔ:rəs/
+*  tính từ
+- nở hoa về đêm (cây)
+
+@noctilucous /nɔk'tiljukəs/
+*  tính từ
+- sáng về đêm, dạ quang
+
+@noctivagant /nɔk'tivəgənt/ (noctivagous) /nɔk'tivəgəs/
+*  tính từ
+- đi lang thang ban đêm
+
+@noctivagous /nɔk'tivəgənt/ (noctivagous) /nɔk'tivəgəs/
+*  tính từ
+- đi lang thang ban đêm
+
+@noctivision /,nɔktə'viʤn/
+*  danh từ
+- khả năng nhìn thấy trong bóng bổi
+- truyền hình bằng tia ngoại đ
+
+@noctuid /'nɔktju:id/
+*  danh từ
+- (động vật học) bướm c
+
+@noctule /'nɔktju:l/
+*  danh từ
+- (động vật học) dơi gộc
+
+@nocturnal /nɔk'tə:nl/
+*  tính từ
+- (thuộc) đêm; về đêm
+=nocturnal birds+ chim ăn đêm
+
+@nocturne /'nɔktə:n/
+*  danh từ
+- (âm nhạc) khúc nhạc đêm
+- (hội họa) cảnh đêm
+
+@nocuous /'nɔkjuəs/
+*  tính từ
+- có hại
+- độc
+
+@nod /nɔd/
+*  danh từ
+- cái gật đầu; sự cúi đầu (chào); sự ra hiệu, sự ra lệnh
+=to give a nod of assent+ gật đầu bằng lòng (tán thành)
+=to answer with a nod+ trả lời bằng một cái gật đầu
+=to give someone a nod+ gật đầu (cúi đầu) chào ai
+=to have someone at one's nod+ có quyền sai khiến ai; có ai dưới quyền
+- sự gà gật
+!to be gone to the land of Nod
+- buồn ngủ díp mắt lại, ngủ gà ngủ gật
+- (từ lóng)
+=on the nod+ chịu tiền
+=to be served on the nod+ ăn chịu
+*  động từ
+- gật đầu; cúi đầu (chào); ra hiệu
+=he nodded to show that the understood+ anh ta gật đàu ra ý hiểu
+=to nod to someone+ gật đầu với ai; gật đầu chào ai
+=to nod assent (approval); to nod "yes"+ gật đầu bằng lòng (tán thành, đồng ý)
+=to nod someone to go+ ra hiệu cho ai đi đi
+=to havve a nod ding acquaintance with someone+ quen biết ai sơ sơ
+=to have a nodding acquaintance with somesubject+ biết qua loa về vấn đề gì
+- nghiêng, xiên
+=the wall nods to its fall+ bức tường nghiêng đi sắp đổ
+=colonialism nods to its fall+ chủ nghĩa thực dân bước vào thời kỳ suy vong
+- đu đưa, lắc lư (chòm lá, chòm lông...)
+- gà gật
+=ge sat nodding by the fire+ hắn ngồi gà gật bên lò sưởi
+- vô ý phạm sai lầm
+!Homer sometimes nods
+- Thánh cũng có khi lầm
+
+@nodal /'noudl/
+*  tính từ
+- (thuộc) nút
+=nodal point+ điểm nút
+
+@noddle /'nɔdl/
+*  danh từ
+- (thông tục) đầu
+*  ngoại động từ
+- (thông tục) gật (đầu); lắc lư (đầu)
+
+@noddy /'nɔdi/
+*  danh từ
+- chàng ngốc, người ngớ ngẩn, người khờ dại
+- (động vật học) nhạn biển anu
+
+@node /noud/
+*  danh từ
+- (thực vật học) mấu, đốt, mắt
+- (y học) cục u, bướu cứng
+- (toán học); (vật lý) giao điểm; nút
+
+@nodi /'noudəs/
+*  danh từ,  số nhiều nodi
+- nút, điểm nút, điểm chốt (của một vấn đề)
+
+@nodose /'noudous/
+*  tính từ
+- có nhiều mắt, có nhiều mấu
+- có nhiều cục u, có nhiều bướu cứng
+
+@nodosity /nou'dɔsiti/
+*  danh từ
+- trạng thái nhiều mắt; sự có nhiều mấu
+- (y học) cục u, bướu cứng
+
+@nodular /'nɔdjulə/
+*  tính từ
+- có nhiều mắt nhỏ, có nhiều mấu nhỏ; giống mắt nhỏ, giống mấu nhỏ
+- có nhiều u nhỏ; giống cục u nh
+
+@nodulated /'nɔdjuleitid/
+*  tính từ
+- có nhiều mắt nhỏ, có nhiều mấu nhỏ
+- có nhiều cục u nh
+
+@nodule /'nɔdju:l/
+*  danh từ
+- hòn nhỏ
+- (thực vật học) mắt nhỏ, mấu nhỏ
+- (y học) cục u nhỏ, bướu nh
+
+@nodulose /'nɔdjulous/ (nodulous) /'nɔdjuləs/
+*  tính từ
+- có nhiều mắt nhỏ, có nhiều mấu nhỏ
+- có nhiều cục u nhỏ, có nhiều bướu nh
+
+@nodus /'noudəs/
+*  danh từ,  số nhiều nodi
+- nút, điểm nút, điểm chốt (của một vấn đề)
+
+@noel /nou'el/
+*  danh từ
+- ngày lễ Nô-en
+
+@noetic /nou'etik/
+*  tính từ
+- (thuộc) lý trí, (thuộc) tinh thần
+- trừu tượng
+*  danh từ,  số ít hoặc số nhiều
+- khoa lý trí (nghiên cứu lý trí con người)
+
+@nog /nɔg/
+*  danh từ
+- rượu bia bốc (một loại bia mạnh)
+*  danh từ
+- cái chêm, mảnh chêm (bằng gỗ to bằng viên gạch, như loại xây vào tường dể lấy chỗ đóng đinh)
+- gốc cây gây còn lại; gốc cây gãy còn lại
+*  ngoại động từ
+- đóng mảnh chêm vào
+
+@noggin /'nɔgin/
+*  danh từ
+- ca nhỏ
+- Nôgin (đồ dùng đo lường bằng khoảng 0, 14 lít)
+
+@nohow /'nouhau/
+*  phó từ
+- không có cách nào, không một chút nào, hẳn không, tuyệt không
+=I can't do it nohow+ tôi không cách nào làm được cái đó
+- (thông tục) khó chịu, khó ở, không khoẻ
+=to feel nohow+ cảm thấy khó
+
+@noil /nɔil/
+*  danh từ
+- (nghành dệt) len xơ vụn
+
+@noise /nɔiz/
+*  danh từ
+- tiếng; tiếng ồn ào, tiếng om sòm, tiếng huyên náo
+=to make a noise+ làm ồn
+=to make a noise in the world+ nổi tiếng trên thế giới, được thiên hạ nói đến nhiều
+*  ngoại động từ
+- loan (tin), đồn
+=it was noised abroad that+ có tin đồn rằng
+
+@noise-killer /'nɔiz,kilə/
+*  danh từ
+- (kỹ thuật) bộ tiêu âm, bộ khử ồn
+
+@noiseless /'nɔizlis/
+*  tính từ
+- không có tiếng ồn ào, im lặng, yên ắng
+
+@noiselessness /'nɔizlisnis/
+*  danh từ
+- sự im lăng, sự yên ắng
+
+@noisette /nwɑ:'zet/
+*  danh từ
+- hoa hồng noazet
+
+@noisiness /'nɔizinis/
+*  danh từ
+- sự ồn ào, sự om sòm, sự huyên náo
+- (nghĩa bóng) tính chất loè loẹt, tính chất sặc sỡ (màu sắc...); tính chất đao to búa lớn (văn)
+
+@noisome /'nɔisəm/
+*  tính từ
+- độc hại cho sức khoẻ
+- hôi thối, khó chịu, kinh tởm (mùi)
+
+@noisomeness /'nɔisəmnis/
+*  danh từ
+- tính chất độc hại cho sức khoẻ
+- mùi hôi thối
+
+@noisy /'nɔizi/
+*  tính từ
+- ồn ào, om sòm, huyên náo
+=a noisy class-room+ một lớp học ồn ào
+=a noisy boy+ một đứa trẻ hay làm ồn ào
+- (nghĩa bóng) loè loẹt, sặc sỡ (màu sắc...); đao to búa lớn (văn)
+
+@nolens volens /'noulenz'voulenz/
+*  phó từ
+- dầu muốn hay không
+
+@nom de plume /'nʤ:mdə'plu:m/
+*  danh từ
+- bút danh (của một nhà văn)
+
+@nomad /'nɔməd/
+*  danh từ
+- dân du cư; người sống nay đây mai đó
+*  tính từ
+- nay đây mai đó; du cư
+
+@nomadic /nou'mædik/
+*  tính từ
+- nay đây mai đó; du cư
+=nomadic stage+ thời kỳ du cư
+
+@nomadise /'nɔmədaiz/ (nomadise) /'nɔmədaiz/
+*  nội động từ
+- sống nay đây mai đó; sống cuộc đời du cư
+
+@nomadism /'nɔmədizm/
+*  danh từ
+- đời sống du cư
+
+@nomadize /'nɔmədaiz/ (nomadise) /'nɔmədaiz/
+*  nội động từ
+- sống nay đây mai đó; sống cuộc đời du cư
+
+@nomenclative /'noumenkleitiv/
+*  tính từ
+- (thuộc) danh pháp
+- (thuộc) thuật ng
+
+@nomenclator /'noumenkleitə/
+*  danh từ
+- nhà nghiên cứu đặt têm gọi, nhà danh pháp
+- (từ cổ,nghĩa cổ) (La mã) người xướng danh các vị khách (trong các buổi tiếp tân); người chỉ dẫn chỗ ngồi cho khách (trong các buổi tiệc tùng)
+
+@nomenclature /nou'menklətʃə/
+*  danh từ
+- phép đặt tên gọi, danh pháp
+- thuật ngữ (của một ngành khoa học...)
+- (từ hiếm,nghĩa hiếm) mục lục
+
+@nominal /'nɔminl/
+*  tính từ
+- (thuộc) tên; danh
+=nominal list+ danh sách
+- chỉ có tên; danh nghĩa; hư
+=nominal head of state+ quốc trưởng danh nghĩa
+=nominal authority+ hư quyền
+- nhỏ bé không đáng kể
+=nominal price+ giá không đáng kể, giá rất thấp (so với giá thực)
+=nominal error+ sự sai sót không đáng kể
+- (ngôn ngữ học) danh từ, như danh từ, giống danh t
+
+@nominalism /'nɔminəlizm/
+*  danh từ
+- (triết học) thuyết duy danh
+
+@nominalist /'nɔminəlist/
+*  danh từ
+- (triết học) nhà duy danh
+
+@nominally /'nɔminəli/
+*  ngoại động từ
+- trên danh nghĩa
+
+@nominate /'nɔmineit/
+*  ngoại động từ
+- chỉ định, chọn, bổ nhiệm
+=to nominate someone to (for) a post+ chỉ định (bổ nhiệm) ai giữ một chức vụ
+- giới thiệu, cử
+!Nominating Convention
+- (từ Mỹ,nghĩa Mỹ) hội nghị đề cử người ra tranh ghế tổng thống
+- gọi tên, đặt tên, mệnh danh
+- (từ hiếm,nghĩa hiếm) định (nơi gặp gỡ, ngày...)
+
+@nomination /,nɔmi'neiʃn/
+*  danh từ
+- sự chỉ định, sự bổ nhiệm (người nào vào một chức vụ gì); quyền chỉ định, quyền bổ nhiệm
+- sự giới thiệu, sự đề cử (người ra ứng cử); quyền giới thiệu, quyền đề cử (người ra ứng cử)
+
+@nominatival /,nɔminə'taivəl/
+*  tính từ
+- (ngôn ngữ học) (thuộc) danh sách
+
+@nominative /'nɔminətiv/
+*  tính từ
+- (ngôn ngữ học) (thuộc) danh sách
+- được bổ nhiệm, được chỉ định; (thuộc) sự bổ nhiệm, (thuộc) sự chỉ định
+*  danh từ
+- (ngôn ngữ học) danh sách
+- chủ ng
+
+@nominator /'nɔmineitə/
+*  danh từ
+- người chỉ định, người bổ nhiệm (ai vào một chức vụ gì)
+- người giới thiệu, người đề cử (ai ra ứng cử)
+
+@nominee /,nɔmi'ni:/
+*  danh từ
+- người được chỉ định, người được bổ nhiệm (vào một chức vụ gì)
+- người được giới thiệu, người được đề cử (ra ứng cử)
+
+@non-abstainer /'nɔnəb'steinə/
+*  danh từ
+- người không kiêng rượu
+
+@non-acceptance /'nɔnək'septəns/
+*  danh từ
+- sự không nhận
+
+@non-access /'nɔn'ækses/
+*  danh từ
+- (pháp lý) tình trạng không thể ăn nằm với nhau được
+
+@non-additive /'nɔn'æditiv/
+*  tính từ
+- không cộng được
+
+@non-affiliated /'nɔnə'filieitid/
+*  tính từ
+- không sáp nhập
+=non-affiliated union+ (từ Mỹ,nghĩa Mỹ) nghiệp đoàn không sáp nhập với một tổ chức nghiệp đoàn nào
+
+@non-aggression pact /'nɔnə'greʃn'pækt/
+*  danh từ
+- hiệp ước không xâm phạm lẫn nhau
+
+@non-aggressive /'nɔnə'gresiv/
+*  tính từ
+- không xâm lược
+
+@non-aggressiveness /'nɔnə'gresivnis/
+*  danh từ
+- tính chất không xâm lược
+
+@non-alcoholic /'nɔn,ælkə'hɔlik/
+*  tính từ
+- không có (chất) rượu
+
+@non-aligned /'nɔnə'laind/
+*  tính từ
+- (chính trị) không liên kết
+=non-aligned countries+ các nước không liên kết
+
+@non-alignment /'nɔnə'lainmənt/
+*  danh từ
+- (chính trị) chính sách không liên kết
+
+@non-appearance /'nɔnə'piərəns/
+*  danh từ
+- (pháp lý) sự vắng mặt (trong phiên toà)
+
+@non-aqueous /'nɔn'eikwiəs/
+*  tính từ
+- không có nước, khô
+
+@non-attendance /'nɔnə'tendəns/
+*  danh từ
+- sự vắng mặt, sự không tham dự (hội nghị...)
+
+@non-attention /'nɔnə'tenʃn/
+*  danh từ
+- sự không chú ý
+
+@non-believer /'nɔnbi'li:və/
+*  danh từ
+- người không tín ngưỡng
+- người theo chủ nghĩa hoài nghi
+
+@non-belligerency /'nɔnbi'lidʤərənsi/
+*  danh từ
+- sự không tham chiến
+
+@non-belligerent /'nɔnbi'lidʤərənt/
+*  tính từ
+- không tham chiến
+*  danh từ
+- nước không tham chiến
+
+@non-com /'nɔn'kɔm/
+*  danh từ
+- (thực vật học) (viết tắt) của non-commissioned officer
+
+@non-combatant /'nɔn'kɔmbətənt/
+*  tính từ
+- (quân sự) không trực tiếp chiến đấu (như thầy thuốc, nhân viên văn phòng...)
+*  danh từ
+- (quân sự) người không trực tiếp chiến đấu (như thầy thuốc, nhân viên văn phòng...)
+
+@non-commissioned officer /'nɔnkə'miʃnd'ɔfisə/
+*  danh từ
+- (quân sự) hạ sĩ quan
+
+@non-committal /'nɔnkə'mitl/
+*  tính từ
+- không hứa hẹn, không cam kết, không tự thắt buộc; vô thưởng, vô phạt (câu trả lời...)
+
+@non-commutative /'nɔnkəm'mju:tətiv/
+*  danh từ
+- sự không hứa hẹn, sự không cam kết, sự không tự thắt buộc
+*  tính từ
+- không giao hoán, không đổi nhau
+
+@non-completion /'nɔnkəm'pli:ʃn/
+*  danh từ
+- sự không hoàn thành, sự không thi hành
+
+@non-compliance /'nɔnkəm'plaiəns/
+*  danh từ
+- sự từ chối, sự khước từ
+=non-compliance with an order+ sự từ chối không tuân theo một mệnh lệnh
+
+@non-compressible /'nɔnkəm'presəbl/
+*  tính từ
+- không thể ép được, không thể nén được
+
+@non-conducting /'nɔnkən'dʌktiv/ (non-conducting) /'nɔnkən'dʌktiɳ/
+-conducting) /'nɔnkən'dʌktiɳ/
+*  tính từ
+- (vật lý) không dẫn (nhiệt điện)
+
+@non-conductive /'nɔnkən'dʌktiv/ (non-conducting) /'nɔnkən'dʌktiɳ/
+-conducting) /'nɔnkən'dʌktiɳ/
+*  tính từ
+- (vật lý) không dẫn (nhiệt điện)
+
+@non-conductor /'nɔnkən,dʌktə/
+*  danh từ
+- (vật lý) chất không dẫn (nhiệt, điện)
+
+@non-contagious /'nɔnkən'teidʤəs/
+*  tính từ
+- không lây
+
+@non-cooperation /'nɔnkou,ɔpə'reiʃn/
+*  danh từ
+- sự không hợp tác
+
+@non-corrodible /'nɔnkə'roudəbl/
+*  tính từ
+- không bị gặm mòn
+
+@non-crystalline /'nɔn'kristəlain/
+*  tính từ
+- không kết tinh
+
+@non-effective /'nɔni'fektiv/
+*  tính từ
+- không hiệu nghiệm
+- (quân sự) không đủ sức khoẻ để ở quân đội
+*  danh từ
+- (quân sự) người không đủ sức khoẻ để ở quân đội
+
+@non-essential /'nɔni'senʃəl/
+*  tính từ
+- không bản chất
+- không trọng yếu, không cần thiết
+*  danh từ
+- chuyện không đâu, việc không cần thiết
+- người tầm thường, người không ra gì, người không ai cần đến; vật không cần thiết
+
+@non-existence /'nɔnig'zistəns/
+*  danh từ
+- sự không tồn tại
+
+@non-existent /'nɔnig'zistənt/
+*  tính từ
+- không có, không tồn tại
+
+@non-ferrous /'nɔn'ferəs/
+*  tính từ
+- màu (kim loại)
+=non-ferrous metal+ kim loại màu
+
+@non-flammable /'nɔn'flæməbl/
+*  tính từ
+- không cháy, không bắt lửa
+
+@non-freezing /'nɔn'fri:ziɳ/
+*  tính từ
+- không đông
+
+@non-fulfilment /'nɔnful'filmənt/
+*  danh từ
+- sự không thực hiện, sự không hoàn thành
+
+@non-inductive /'nɔnin'dʌktiv/
+*  tính từ
+- (vật lý) không tự cảm
+
+@non-interference /'nɔn,intə:'venʃn/ (non-interference) /'nɔn,intə'fiərəns/
+-interference) /'nɔn,intə'fiərəns/
+*  danh từ
+- sự không can thiệp
+
+@non-intervention /'nɔn,intə:'venʃn/ (non-interference) /'nɔn,intə'fiərəns/
+-interference) /'nɔn,intə'fiərəns/
+*  danh từ
+- sự không can thiệp
+
+@non-interventionalist /'nɔn,intə:'venʃnist/ (non-interventionalist) /'nɔn,intə:'venʃnəlist/
+-interventionalist) /'nɔn,intə:'venʃnəlist/
+*  danh từ
+- người chủ trương không can thiệp
+
+@non-interventionist /'nɔn,intə:'venʃnist/ (non-interventionalist) /'nɔn,intə:'venʃnəlist/
+-interventionalist) /'nɔn,intə:'venʃnəlist/
+*  danh từ
+- người chủ trương không can thiệp
+
+@non-lending /'nɔn'lendiɳ/
+*  tính từ
+- không cho mượn sách về nhà (thư viện)
+
+@non-literate /nɔn'litərit/
+*  tính từ
+- không có chữ viết
+
+@non-member /'nɔn,membə/
+*  danh từ
+- người không phải là hội viên
+
+@non-metal /'nɔn,metl/
+*  danh từ
+- (hoá học) á kim
+
+@non-observance /'nɔnəb'zə:vəns/
+*  danh từ
+- sự không tuân theo (luật pháp...)
+
+@non-partisan /nɔn,pɑ:ti'zæn/
+*  tính từ
+- không đảng phái
+- không thiên vị, vô tư
+
+@non-party /'nɔn'pɑ:ti/
+*  tính từ
+- không đảng phái
+
+@non-perishable /'nɔn'periʃəbl/
+*  danh từ,  (thường) số nhiều
+- thức ăn để lâu được
+
+@non-productive /'nɔnprə'dʌktiv/
+*  tính từ
+- không sản xuất
+- không sinh lợi
+
+@non-productiveness /'nɔn,prɔdʌk'tiviti/ (non-productiveness) /'nɔnprə'dʌktivnis/
+-productiveness) /'nɔnprə'dʌktivnis/
+*  danh từ
+- sự không sản xuất
+- tính không sinh lợi
+
+@non-productivity /'nɔn,prɔdʌk'tiviti/ (non-productiveness) /'nɔnprə'dʌktivnis/
+-productiveness) /'nɔnprə'dʌktivnis/
+*  danh từ
+- sự không sản xuất
+- tính không sinh lợi
+
+@non-professional /'nɔnprə'feʃənl/
+*  tính từ
+- không chuyên, tài tử, nghiệp dư
+*  danh từ
+- người không chuyên nghiệp
+
+@non-radioactive /'nɔn,reidiou'æktiv/
+*  tính từ
+- không phóng xạ
+
+@non-resident /'nɔn'rezidənt/
+*  tính từ
+- không lưu trú, không trú ngụ, không ở ngay nơi làm việc
+*  danh từ
+- người không lưu trú, người không trú ngụ, người không ở ngay nơi làm việc
+
+@non-resistance /'nɔnri'zistəns/
+*  danh từ
+- sự không kháng cự; sự chịu khuất
+
+@non-resistant /'nɔnri'zistənt/
+*  tính từ
+- không kháng cự
+*  danh từ
+- người không kháng c
+
+@non-resonant /'nɔn'reznənt/
+*  tính từ
+- không cộng hưởng
+
+@non-skid /'nɔn'skid/
+*  tính từ
+- non-skid tyre lốp xe không trượt (có khía...)
+
+@non-standard /'nɔn'stændəd/
+*  tính từ
+- không tiêu chuẩn
+
+@non-stop /'nɔ'stɔp/
+*  tính từ & phó từ
+- không đỗ lại, thẳng một mạch (xe cộ); không ngừng
+=non-stop train+ xe lửa chạy suốt
+=to fly non-stop from Hanoi to Moscow+ bay thẳng một mạch từ Hà nội đến Mát-xcơ-va
+=non-stop cinema+ rạp chiếu bóng chiếu suốt ngày đêm
+*  danh từ
+- xe chạy suốt (xe lửa, xe buýt)
+- cuộc chạy một mạch
+
+@non-symmetric /'nɔnsi'metrik/
+*  tính từ
+- không đối xứng
+
+@non-symmetry /'nɔn'simetri/
+*  danh từ
+- tính không đối xứng
+
+@non-synchronized /'nɔn'siɳkrənaizd/
+*  tính từ
+- không được làm đồng bộ; không khớp tiếng; không phối hợp
+
+@non-synchronous /'nɔn'siɳkrənəs/
+*  tính từ
+- không đồng bộ; không phối hợp
+
+@non-thermal /'nɔn'θə:məl/
+*  tính từ
+- phi nhiệt
+
+@non-toxic /'nɔn'tɔksik/
+*  tính từ
+- không độc
+
+@non-transferable /'nɔntræns'fə:rəbl/
+*  tính từ
+- không thể dời đi được, không thể di chuyển được; không thể chuyển nhượng được
+
+@non-transmitting /'nɔntrænz'mitiɳ/
+*  tính từ
+- không cho truyền qua
+
+@non-transparent /'nɔntræns'peərənt/
+*  tính từ
+- không trong suốt
+
+@non-union /'nɔn'ju:njən/
+*  tính từ
+- không gia nhập công đoàn (nghiệp đoàn); không phải đoàn viên công đoàn (nghiệp đoàn)
+=to employ non-union labour+ sử dụng những người lao động không phải là đoàn viên công đoàn
+- chống công đoàn (nghiệp đoàn)
+*  danh từ
+- (y học) sự tách rời, sự không dính vào nhau
+
+@non-unionist /'nɔn'ju:njənist/
+*  danh từ
+- người không gia nhập công đoàn (nghiệp đoàn); người không phải đoàn viên công đoàn (nghiệp đoàn)
+
+@nonage /'nounidʤ/
+*  danh từ
+- thời kỳ chưa thành niên
+=to be still in one's nonage+ còn nhỏ, chưa đến tuổi trưởng thành
+
+@nonagenarian /,nounidʤi'neəriən/
+*  tính từ
+- thọ chín mươi tuổi
+*  danh từ
+- người thọ chín mươi tuổi
+
+@nonary /'nounəri/
+*  tính từ
+- lấy cơ số 9 (hệ thống đếm)
+*  danh từ
+- nhóm 9
+
+@nonce /nɔns/
+*  danh từ
+- for the nonce trong dịp này, thời gian này, vào lúc này; lần này
+
+@nonce-word /nɔnswə:d/
+*  danh từ
+- từ đặt ra để dùng trong trường hợp này
+
+@nonchalance /'nɔnʃələns/
+*  danh từ
+- tính thờ ơ, tính hờ hững, sự lânh đạm, sự vô tình
+- tính trễ nãi, tính sơ suất; sự không chú ý, sự không cẩn thận
+
+@nonchalant /'nɔnʃələnt/
+*  tính từ
+- thờ ơ, hờ hững, lânh đạm, vô tình
+- trễ nãi, sơ suất; không chú ý, không cẩn thận
+
+@nonconformist /'nɔnkən'fɔ:mist/
+*  danh từ
+- người không theo lề thói
+- người không theo quốc giáo
+
+@nonconformity /'nɔnkən'fɔ:miti/
+*  danh từ
+- sự không theo lề thói
+- sự không theo quốc giáo; môn phái những người không theo quốc giáo (ở Anh)
+
+@nondescript /'nɔndiskript/
+*  tính từ
+- khó nhận rõ, khó tả, khó phân loại; không có đặc tính rõ rệt
+*  danh từ
+- không có đặc tính rõ rệt, người khó tả, vật khó tả, vật khó phân loại
+
+@none /nʌn/
+*  danh từ
+- không ai, chẳng một ai, không người nào; không vật gì
+=none of us was there+ không một người nào trong bọn chúng tôi có mặt tại đó
+=I want none of these things+ tôi không cần một cái gì trong các thứ này cả
+=his paintings are none none of the best+ những bức hoạ của anh ta không phải là những bức đẹp nhất
+=money I have none+ tiền tôi không có một đồng nào
+!none but
+- chỉ
+=to choose none but the best+ chỉ chọn cái tốt nhất
+!none other than
+- không ai khác chính là
+=the new arrived was none other than the President+ người nói đến chính là ông chủ tịch
+*  phó từ
+- không chút nào, tuyệt không
+=he was none too soon+ nó đến không phải là quá sớm đâu
+=I slept none last night+ đêm qua tôi chẳng chợp mắt chút nào
+!none the less
+- tuy nhiên, tuy thế mà
+
+@nonentity /nɔ'nentiti/
+*  danh từ
+- trạng thái không có, sự không tồn tại
+- người vô giá trị, vật vô giá trị
+- vật tưởng tượng
+- con số không
+
+@nonpareil /'nɔnpərel/
+*  tính từ
+- không sánh được, vô song, không bì được
+*  danh từ
+- người có một không hai, người không ai sánh kịp; vật có một không hai, vật không gì sánh kịp
+
+@nonplus /'nɔn'plʌs/
+*  danh từ
+- tình trạng bối rối, tình trạng lúng túng, tình trạng khó xử; tình trạng ngừng trệ
+=to be at a nonplus+ bối rối, lúng túng; ngừng trệ
+=to put (bring, reduce) someone to a nonplus+ làm cho ai lúng túng bối rối, làm cho ai khó ăn khó nói
+*  ngoại động từ
+- làm bối rối, làm lúng túng; làm sửng sốt, làm chưng hửng
+
+@nonsense /'nɔnsəns/
+*  danh từ
+- lời nói vô lý, lời nói vô nghĩa; chuyện vô lý; lời nói càn, lời nói bậy; hành động ngu dại, hành động bậy bạ
+=to talk nonsense+ nói càn, nói bậy; nói chuyện vô lý
+=nonsense!, tuff and nonsense!+ vô lý!, nói bậy!
+
+@nonsensical /nɔn'sensikəl/
+*  tính từ
+- vô lý, vô ý nghĩa, bậy bạ
+=don't be nonsensical!+ không được vô lý như vậy!, không được nói bậy bạ!
+
+@nonsensicality /nɔn,sensi'kæliti/
+*  danh từ
+- tính chất vô lý, tính chất bậy bạ ((cũng) nonsensicalness)
+- điều vô lý, điều bậy bạ
+
+@nonsensicalness /nɔn'sensikəlnis/
+*  danh từ
+- tính chất vô lý, tính chất bậy bạ ((cũng) nonsensicality)
+
+@nonsesuch /'nʌnsʌtʃ/ (nonsesuch) /'nʌnsʌtʃ/
+*  danh từ
+- người có một không hai, người không ai sánh kịp; vật có một không hai; vật không gì sánh kịp
+- (thực vật học) cây linh lăng hoa bia
+
+@nonsuch /'nʌnsʌtʃ/ (nonsesuch) /'nʌnsʌtʃ/
+*  danh từ
+- người có một không hai, người không ai sánh kịp; vật có một không hai; vật không gì sánh kịp
+- (thực vật học) cây linh lăng hoa bia
+
+@nonsuit /'nɔn'sju:t/
+*  danh từ
+- (pháp lý) sự bác đơn
+*  ngoại động từ
+- (pháp lý) bác đơn (của người nào)
+
+@nonviolence /'nɔn'vaiələnt/
+*  danh từ
+- sự bất bạo động, sự không dùng bạo lực
+
+@nonviolent /'non'vaiələnt/
+*  tính từ
+- bất bạo động, không dùng bạo lực
+
+@noodle /'nu:dl/
+*  danh từ
+- người ngớ ngẩn, người xuẩn ngốc, người khờ dại
+- (từ lóng) cái đầu
+*  danh từ,  (thường) số nhiều
+- (từ Mỹ,nghĩa Mỹ), mì dẹt
+
+@nook /nuk/
+*  danh từ
+- góc, xó, xó xỉnh
+=hiding in nooks and corners+ nấp ở những xó xỉnh
+- nơi ẩn náu hẻo lánh
+- góc thụt (của một căn phòng...)
+
+@noon /nu:n/
+*  danh từ
+- trưa, buổi trưa
+- (nghĩa bóng) đỉnh cao nhất (trong sự nghiệp...)
+
+@noonday /'nu:ndei/
+*  danh từ
+- buổi trưa, ban trưa, giữa trưa, giữa ban ngày
+
+@nooning /'nu:niɳ/
+*  danh từ
+- (từ Mỹ,nghĩa Mỹ) buổi trưa
+- giờ giải lao buổi trưa, giờ nghỉ buổi trưa
+
+@noontide /'nu:ntaid/ (noontime) /'nu:ntaim/
+*  danh từ
+- buổi trưa, ban trưa
+
+@noontime /'nu:ntaid/ (noontime) /'nu:ntaim/
+*  danh từ
+- buổi trưa, ban trưa
+
+@noose /nu:s/
+*  danh từ
+- thòng lọng
+- dây ràng buộc (của việc lập gia đình)
+!to put one's neck into the noose
+- đưa cổ vào tròng
+*  ngoại động từ
+- buộc thòng lọng
+- bắt bằng dây thòng lọng
+
+@nopal /'noupəl/
+*  danh từ
+- (thực vật học) cây tay tiên (một loại xương rồng)
+
+@nope /noup/
+*  phó từ
+- (từ Mỹ,nghĩa Mỹ),  (từ lóng) không
+
+@nor /nɔ:/
+*  phó từ & liên từ
+- mà... cũng không, và... không
+=neither good nor bad+ không tốt mà cũng không xấu
+=he can neither read nor write+ nó không biết đọc mà cũng không biết viết
+=he can't do it, nor can I, nor can you, nor can anybody+ nó không làm được cái đó, mà cả tôi, cả anh hay bất cứ một người nào cũng không làm được
+
+@nor'east /nɔ:r'i:st/
+*  danh từ & tính từ
+- (như) north-east
+
+@nor'easter /nɔ:r'i:stə/
+*  danh từ (như) north-easter
+
+@nor'west /'nɔ:θ'west/ (nor'west) /nɔ:'west/
+*  danh từ
+- phía tây bắc
+- miền tây bắc
+*  tính từ
+- tây bắc
+
+@nor'wester /nɔ:'westə/
+*  danh từ
+- (như) north-wester
+- mũ bằng vải dầu
+- cốc rượu mạnh
+
+@nordic /'nɔ:dik/
+*  tính từ
+- (thuộc) Bắc-Âu
+*  danh từ
+- người Bắc-Âu
+
+@noria /'nouriə/
+*  danh từ
+- guồng đạp nước
+
+@norland /'nɔ:θlənd/ (norland) /'nɔ:lənd/
+*  danh từ
+- miền bắc
+
+@norlander /'nɔ:ðənə/ (norlander) /'nɔ:ləndə/
+*  danh từ
+- người phương bắc
+
+@norm /nɔ:m/
+*  danh từ
+- quy tắc tiêu chuẩn
+- chỉ tiêu (trong sản xuất)
+
+@normal /'nɔ:məl/
+*  tính từ
+- thường, thông thường, bình thường
+=normal temperature+ độ nhiệt bình thường
+- tiêu chuẩn; ((toán học)) chuẩn tác
+=normal function+ hàm chuẩn tắc
+- (toán học) trực giao
+*  danh từ
+- tình trạng bình thường, mức bình thường
+=situation returns to normal+ tình hình trở lại bình thường
+- (toán học) pháp tuyến
+- (vật lý) lượng trung bình
+- (y học) thân nhiệt bình thường
+- (hoá học) dung dịch đương lượng
+
+@normalcy /'nɔ:məlsi/
+*  danh từ
+- (từ Mỹ,nghĩa Mỹ) (như) normality
+
+@normalise /'nɔ:məlaiz/ (normalise) /'nɔ:məlaiz/
+*  ngoại động từ
+- thông thường hoá, bình thường hoá
+- tiêu chuẩn hoá
+
+@normality /nɔ:'mæliti/
+*  danh từ
+- trạng thái thường, tính chất bình thường
+- tính tiêu chuẩn, tính chuẩn tắc
+
+@normalization /,nɔ:məlai'zeiʃn/
+*  danh từ
+- sự thông thường hoá, sự bình thường hoá
+- sự tiêu chuẩn hoá
+
+@normalize /'nɔ:məlaiz/ (normalise) /'nɔ:məlaiz/
+*  ngoại động từ
+- thông thường hoá, bình thường hoá
+- tiêu chuẩn hoá
+
+@normally /'nɔ:məli/
+*  phó từ
+- thông thường, như thường lệ
+
+@norman /'nɔ:mən/
+*  tính từ
+- (thuộc) người Nóoc-măng
+=the norman Conquest+ (sử học) cuộc chinh phục nước Anh của người Nóoc-măng
+=norman English+ tiếng Anh của người Nóoc-măng
+*  danh từ
+- người Nóoc-măng
+
+@normative /'nɔ:mətiv/
+*  tính từ
+- tiêu chuẩn
+- vạch ra tiêu chuẩn, vạch ra quy tắc
+
+@norse /nɔ:s/ (Norsk) /nɔ:sk/
+*  tính từ
+- (thuộc) Na-uy
+*  danh từ
+- tiếng Na-uy
+
+@norseman /'nɔ:smən/
+*  danh từ
+- người Na-uy
+
+@norsk /nɔ:s/ (Norsk) /nɔ:sk/
+*  tính từ
+- (thuộc) Na-uy
+*  danh từ
+- tiếng Na-uy
+
+@north /nɔ:θ/
+*  danh từ
+- hướng bắc, phương bắc, phía bắc
+=in the north+ ở phương bắc
+=to the north of+ ở phía bắc của
+- miền bắc
+- gió bấc
+*  tính từ
+- bắc, bấc
+=the north pole+ Bắc cực
+=the north wind+ gió bấc
+=the North star+ sao Bắc đẩu
+*  phó từ
+- về hướng bắc, ở phía bắc
+=going north+ đi về phía bắc
+=lying north+ ở phía bắc
+=north and south+ từ bắc chí nam
+
+@north-east /'nɔ:θ'i:st/
+*  danh từ
+- phía đông bắc
+- miền đông bắc
+*  tính từ
+- đông bắc
+*  phó từ
+- về hướng đông bắc
+
+@north-easter /'nɔ:θ'i:stə/
+*  danh từ
+- gió đông bắc
+
+@north-easterly /'nɔ:θ'i:stəli/
+*  tính từ
+- đông bắc
+*  phó từ
+- về hướng đông bắc; từ hướng đông bắc
+
+@north-eastern /'nɔ:θ'i:stən/
+*  tính từ
+- đông bắc
+
+@north-west /'nɔ:θ'west/ (nor'west) /nɔ:'west/
+*  danh từ
+- phía tây bắc
+- miền tây bắc
+*  tính từ
+- tây bắc
+
+@north-wester /'nɔ:θ'westə/
+*  phó từ
+- bề hướng tây bắc; từ hướng tây bắc
+*  danh từ+ (nor'wester) /nɔ:'westə/
+- gió tây bắc
+
+@north-westerly /'nɔ:θ'westəli/
+*  tính từ
+- tây bắc
+*  phó từ
+- về hướng tây bắc; từ hướng tây bắc
+
+@north-western /'nɔ:θ'westən/
+*  tính từ
+- tây bắc
+
+@norther /'nɔ:θə/
+*  danh từ
+- gió bấc (ở Mỹ)
+
+@northerly /'nɔ:ðəli/
+*  tính từ
+- bắc
+*  phó từ
+- về hướng bắc; từ hướng bắc
+
+@northern /'nɔ:ðən/
+*  tính từ
+- bắc
+=northern hemisphere+ bán cầu bắc
+
+@northerner /'nɔ:ðənə/ (norlander) /'nɔ:ləndə/
+*  danh từ
+- người phương bắc
+
+@northernermost /'nɔ:ðənmoust/
+*  tính từ
+- cực bắc
+
+@northing /'nɔ:θiɳ/
+*  danh từ
+- (hàng hải) sự hướng về phía bắc; sự tiến về phía bắc
+
+@northland /'nɔ:θlənd/ (norland) /'nɔ:lənd/
+*  danh từ
+- miền bắc
+
+@northward /'nɔ:θwəd/
+*  danh từ
+- hướng bắc
+*  tính từ & phó từ
+- về phía bắc
+
+@northwardly /'nɔ:θwədli/
+*  tính từ
+- bắc
+*  phó từ
+- (như) northwards
+
+@northwards /'nɔ:θwədz/ (norward) /'nɔ:wəd/ (norwards) /'nɔ:wədz/ (northwardly) /'nɔ:θwədli/
+*  phó từ
+- về hướng bắc; từ hướng bắc
+
+@norward /'nɔ:θwədz/ (norward) /'nɔ:wəd/ (norwards) /'nɔ:wədz/ (northwardly) /'nɔ:θwədli/
+*  phó từ
+- về hướng bắc; từ hướng bắc
+
+@norwards /'nɔ:θwədz/ (norward) /'nɔ:wəd/ (norwards) /'nɔ:wədz/ (northwardly) /'nɔ:θwədli/
+*  phó từ
+- về hướng bắc; từ hướng bắc
+
+@norwegian /nɔ:'wi:dʤən/
+*  tính từ
+- (thuộc) Na-uy
+*  danh từ
+- người Na-uy
+- tiếng Na-uy
+
+@nose /nouz/
+*  danh từ
+- mũi (người); mõm (súc vật)
+=aquiline nose+ mũi khoằm
+=flat nose+ mũi tẹt
+=turned up nose+ mũi hếch
+=the bridge of the nose+ sống mũi
+=to blead at the nose+ chảy máu mũi, đổ máu cam
+- khứu giác; sự đánh hơi
+=to have a good nose+ thính mũi
+- mùi, hương vị
+- đầu mũi (của một vật gì)
+!to bit (snap) someone's nose off
+- trả lời một cách sỗ sàng
+!to cut off one's nose to spite one's face
+- trong cơn bực tức với mình lại tự mình làm hại thân mình
+!to follow one's nose
+- đi thẳng về phía trước
+- chỉ theo linh tính
+!to keep someone's nose to the grindstone
+- (xem) grindstone
+!to lead someone by the nose
+- (xem) lead
+!to look down one's nose at
+- (xem) look
+!nose of wax
+- người dễ uốn nắn; người bảo sao nghe vậy
+!parson's nose; pope's nose
+- phao câu (gà...)
+!as plain as the nose on one's nose into other people's affairs
+- chõ mũi vào việc của người khác
+!to pay through the nose
+- phải trả một giá cắt cổ
+!to put someone's nose out of joint
+- choán chỗ ai, hất cẳng ai
+- làm cho ai chưng hửng, làm cho ai thất vọng, làm cho ai vỡ mộng
+!to speak through one's nose
+- nói giọng mũi
+!to tell (count) noses
+- kiểm diện, đếm số người có mặt
+- kiểm phiếu; lấy đa số để quyết định một vấn đề gì
+!to turn up one's nose at
+- hếch mũi nhại (ai)
+!right under one's nose
+- ngay ở trước mắt, ngay ở trước mũi mình
+*  động từ
+- ngửi, đánh hơi ((nghĩa đen) & (nghĩa bóng))
+=to nose out+ đánh hơi thấy, khám phá ra
+- dính vào, chõ vào, xen vào
+=to nose into other people's business+ chõ vào việc của người khác
+=to nose about+ lục lọi, sục sạo, thọc mạch
+- dí mũi vào, lấy mũi di di (cái gì)
+- (nose down) đâm bổ xuống (máy bay)
+!to nose one's way
+- lấn đường
+
+@nose-ape /'nouz'eip/ (nose-monkey) /'nouz'mʌɳki/
+-monkey) /'nouz'mʌɳki/
+*  danh từ
+- (động vật học) khỉ mũi dài
+
+@nose-bleed /'nouzbli:d/ (nose-bleeding) /'nouz,bli:diɳ/
+-bleeding) /'nouz,bli:diɳ/
+*  danh từ
+- sự chảy máu cam
+- sự đánh đổ máu mũi
+
+@nose-bleeding /'nouzbli:d/ (nose-bleeding) /'nouz,bli:diɳ/
+-bleeding) /'nouz,bli:diɳ/
+*  danh từ
+- sự chảy máu cam
+- sự đánh đổ máu mũi
+
+@nose-monkey /'nouz'eip/ (nose-monkey) /'nouz'mʌɳki/
+-monkey) /'nouz'mʌɳki/
+*  danh từ
+- (động vật học) khỉ mũi dài
+
+@nose-wiper /'nouz,waipə/
+*  danh từ
+- (từ lóng) khăn mùi soa, khăn xỉ mũi; khăn tay
+
+@nosebag /'nouzbæg/
+*  danh từ
+- giỏ thức ăn (đeo ở cổ ngựa)
+- (từ lóng) mặt nạ chông hơi độc
+- (từ lóng) tú đựng thức ăn sáng
+
+@nosedive /'nouzdaiv/
+*  danh từ
+- sự đâm bổ nhào, sự bổ nhào xuống (máy bay)
+*  nội động từ
+- đâm bổ xuống, bổ nhào xuống (máy bay)
+
+@nosegay /'nouzgei/
+*  danh từ
+- bó hoa thơm
+
+@nosepipe /'nouzpaip/
+*  danh từ
+- miệng (ống bể)
+- vòi (tiếp vào đầu ống nước để cho nước chảy ra đều)
+
+@noser /'nouzə/
+*  danh từ
+- gió ngược thổi mạnh
+
+@noserag /'nouzræg/
+*  danh từ
+- (từ lóng) khăn xỉ mũi
+
+@nosering /'nouzriɳ/
+*  danh từ
+- vòng đeo ở mũi (bò...)
+
+@nosewarmer /'nouz,wɔ:mə/
+*  danh từ
+- (từ lóng) tẩu thuốc lá, ống điếu ngắn
+
+@nosey /'nouzi/ (nosey) /nosey/
+*  tính từ
+- có mũi to
+- thành mũi (đối với mùi thối)
+- có mùi hôi thối
+- ngát, thơm (trà)
+- (từ lóng) hay sục sạo, tò mò, thọc mạch; hay can thiệp vào việc người khác
+!Nosy Parker
+- người hay can thiệp vào việc người khác; người lăng xăng
+
+@nosh /nɔʃ/
+*  danh từ
+- quà vặt, món ăn vặt
+*  nội động từ
+- ăn quà vặt; hay ăn vặt
+
+@nosher /nɔʃə/
+*  danh từ
+- người hay ăn vặt
+
+@nosology /nou'sɔlədʤi/
+*  danh từ
+- (y học) khoa phân loại bệnh
+
+@nostalgia /nɔs'tældʤiə/
+*  danh từ
+- nỗi nhớ nhà, lòng nhớ quê hương
+- nỗi luyến tiếc quá kh
+
+@nostalgic /nɔs'tældʤik/
+*  tính từ
+- nhớ nhà, nhớ quê hương
+- luyến tiếc quá kh
+
+@nostoc /'nɔstɔk/
+*  danh từ
+- (thực vật học) táo trứng ếch
+
+@nostril /'nɔstril/
+*  danh từ
+- lỗ mũi
+!to stink in someone's nostrils
+- làm cho ai kho chịu, làm cho ai tởm
+
+@nostrum /'nɔstrəm/
+*  danh từ
+- thuốc lang băm; phương thuốc vạn năng ((nghĩa đen) & (nghĩa bóng))
+
+@nosy /'nouzi/ (nosey) /nosey/
+*  tính từ
+- có mũi to
+- thành mũi (đối với mùi thối)
+- có mùi hôi thối
+- ngát, thơm (trà)
+- (từ lóng) hay sục sạo, tò mò, thọc mạch; hay can thiệp vào việc người khác
+!Nosy Parker
+- người hay can thiệp vào việc người khác; người lăng xăng
+
+@not /nɔt/
+*  phó từ
+- không
+=I did not say so+ tôi không hề nói như vậy
+=not without reason+ không phải là không có lý
+!as likely as not
+- hẳn là, chắc là
+=he'll be at home now, as likes as not+ hẳn là bây giờ nó có nhà
+!not but that (what)
+- (xem) but
+!not half
+- (xem) half
+!not less than
+- ít nhất cũng bằng
+!not more than
+- nhiều nhất cũng chỉ bằng
+!not only... but also
+- (xem) also
+!not once nor twice
+- không phải một hai lần; nhiều lần rồi, luôn luôn
+!not seldom
+- (xem) seldom
+!not that
+- không phải rằng (là)
+=not that I fear him+ không phải là tôi sợ n
+
+@notability /,noutə'biliti/
+*  danh từ
+- người có danh vọng, người có địa vị uy quyền
+- tính chất trứ danh; tính chất lớn lao, tính chất to tát, tính chất quan trọng
+- (từ cổ,nghĩa cổ) sự tần tảo
+
+@notable /'noutəbl/
+*  tính từ
+- có tiếng, trứ danh
+- đáng kể, đáng chú ý
+- (từ cổ,nghĩa cổ) tần tảo
+*  danh từ
+- người có danh vọng, người có địa vị uy quyền
+- thân hào, nhân sĩ
+!Assembly of Notables
+- hội đồng nhân sĩ (họp trong tình trạng khẩn cấp)
+
+@notably /'noutəbli/
+*  phó từ
+- đáng kể, đáng chú ý
+- đặc biệt, nhất là
+
+@notarial /nou'teəriəl/
+*  tính từ
+- (thuộc) công chứng viên; do công chứng viên lập ra (chứng thư...)
+
+@notary /'noutəri/
+*  danh từ
+- công chứng viên ((cũng) notary public)
+
+@notaryship /'noutəriʃip/
+*  danh từ
+- chức công chứng viên
+
+@notation /nou'teiʃn/
+*  danh từ
+- ký hiệu
+- (từ Mỹ,nghĩa Mỹ) lời chú thích, lời chú giải, lời ghi ch
+
+@notch /nɔtʃ/
+*  danh từ
+- vết khía hình V
+- (từ Mỹ,nghĩa Mỹ) hẽm núi, khe núi
+- (thông tục) mức, mức độ
+=prices have reached the highest notch+ giá cả đã lên tới mức cao nhất
+*  ngoại động từ
+- khía hình V
+- đánh dấu để ghi nhớ (tiền nợ, công điểm...)
+
+@notch wheel /'nɔtʃwi:l/
+*  danh từ
+- (kỹ thuật) bánh cốc
+
+@note /nout/
+*  danh từ
+- lời ghi, lời ghi chép
+=to make (take) notes+ ghi chép
+=I must look up my notes+ tôi phải xem lại lời ghi
+- lời ghi chú, lời chú giải
+- sự lưu ý, sự chú ý
+=worthy of note+ đáng chú ý
+=to take note of+ lưu ý đến
+- bức thư ngắn
+=to drop someone a note+ gửi cho ai một bức thư ngắn
+- (ngoại giao) công hàm
+=diplomatic note+ công hàm ngoại giao
+- phiếu, giấy
+=promisorry note+ giấy hẹn trả tiền
+- dấu, dấu hiệu, vết
+=a note of infamy+ vết nhục
+=note of interrogation+ dấu hỏi
+- tiếng tăm, danh tiếng
+=a man of note+ người có tiếng tăm, người tai mắt
+- (âm nhạc) nốt; phím (pianô)
+- điệu, vẻ, giọng, mùi
+=there is a note of anger in his voice+ giọng anh ta có vẻ giận dữ
+=his speech sounds the note of war+ bài nói của hắn sặc mùi chiến tranh
+*  ngoại động từ
+- ghi nhớ, chú ý, lưu ý, nhận thấy
+=note my words+ hãy ghi nhớ những lời nói của tôi
+- ghi, ghi chép
+- chú giải, chú thích
+
+@note magnifier /'nout'mægnifaiə/
+*  danh từ
+- (raddiô) máy tăng âm
+
+@note-paper /'nout,peipə/
+*  danh từ
+- giấy viết thư
+
+@note-shaver /'nout,ʃeivə/
+*  danh từ
+- (từ Mỹ,nghĩa Mỹ) người cho vay nặng lãi
+
+@notebook /'noutbuk/
+*  danh từ
+- sổ tay, sổ ghi chép
+
+@notecase /'noutkeis/
+*  danh từ
+- ví đựng giấy bạc
+
+@noted /'noutid/
+*  tính từ
+- nổi tiếng, có danh tiếng
+=a noted musician+ một nhạc sĩ nổi tiếng
+
+@noteless /'noutlis/
+*  tính từ
+- không ai biết đến, không ai để ý đến; không có gì đặc biệt, không có gì đáng ghi nh
+
+@noteworthy /'nout,wə:ði/
+*  tính từ
+- đáng chú ý, đáng để ý; đáng ghi nh
+
+@nothing /'nʌθiɳ/
+*  danh từ
+- sự không có, sự không tồn tại; cái không có
+- người vô dụng, người bất tài, người tầm thường; chuyện lặt vặt, chuyện tầm thường; vật rất tồi, vật tầm thường
+=the little nothings of life+ những chuyện lặt vặt của cuộc sống
+- con số không
+- không, không cái gì
+=nothing venture, nothing have+ không liều thì không được gì hết; không vào hang hổ thì làm sao bắt được hổ con
+=to come to nothing+ không đi đến đâu, không đi đến kết quả nào
+=to have nothing to do with+ không có quan hệ gì với, không dính dáng gì với
+=to be good for nothing+ không được tích sự gì
+=that is nothing to me+ cái đó không dính gì đến tôi, cái đó không can hệ gì đến tôi
+=he is nothing to me+ hắn ta không là gì cả đối với tôi; hắn ta không phải là họ hàng bè bạn gì với tôi
+=there is nothing in it+ chẳng có cái gì là đúng sự thật trong đó cả, chẳng có cài gì là quan trọng trong đó cả; chẳng có cái gì là giá trị trong đó cả
+=nothing doing+ thật xôi hỏng bỏng không; không được đâu
+=there is nothing doing+ không còn làm ăn gì được nữa, không còn xoay xở vào đâu được nữa
+!can make nothing of
+- không hiểu đầu đuôi; không giải quyết được; không dùng được, không xoay xở được, không xử trí được với
+!to dance on nothing
+- (xem) dance
+!for nothing
+- không gì mục đích gì, không được gì; bâng quơ
+!to make nothing of
+- (xem) make
+!to make nothing of doing something
+- không do dự làm một việc gì; làm một việc gì như thường lệ
+!to make nothing out of
+- không xoay xở gì được, không kiếm chác gì được
+!next to nothing
+- (xem) next
+!nothing but
+- không có cái gì ngoài; không là cái gì ngoài
+!there is nothing for it but
+- không còn cách gì khác ngoài
+*  phó từ
+- không chút nào, hẳn không, tuyệt nhiên không
+=it is nothing less than madness+ đúng là điên rồ không còn gì khác được nữa
+=nothing like so good nothing near so good+ không thể nào tốt được như thế
+
+@nothingness /'nʌθiɳnis/
+*  danh từ
+- hư vô, hư không
+- tính vô tài, tính vô giá trị, tính nhỏ mọn, tính tầm thường
+
+@notice /'noutis/
+*  danh từ
+- thông tri, yết thị, thông cáo
+=public notice+ yết thị cho công chúng
+=to put a notice in the papers+ đăng thông cáo trên báo
+=notice is hereby given that+ thông báo cho công chúng biết rằng
+- lời báo trước; sự báo trước; thời hạn
+=at short notice+ trong một thời hạn ngắn, với sự báo trước một ít lâu
+=at the shortest notice+ trong một thời hạn ngắn nhất; ngay lập tức
+=at a moment's notice+ notice ngay lập tức, tức khắc
+=loan at notice+ sự cho vay có thời hạn
+=deposit at short notice+ sự cho vay có thời hạn ngắn
+=to take one's notice+ được báo phải thôi việc
+=take notice that+ tôi báo trước cho anh biết rằng
+- đoạn ngắn, bài ngắn (trên báo; để thông báo, để bình phẩm một cuốn sách, một vở kịch)
+- sự chú ý, sự để ý, sự nhận biết
+=he did not take the slightest notice of me+ hắn không để ý đến tôi một chút nào
+=to come into notice+ làm cho phải chú ý đến
+=to bring something to someone's notice+ làm cho người nào biết đến (để ý đến) một việc gì
+=baby takes notice+ em bé tỏ vẻ biết
+*  ngoại động từ
+- chú ý, để ý, nhận biết
+=I ứan't noticing+ tôi không chú ý
+=to notice someone in the crowd+ nhận ra ai trong đám đông
+- báo trước (đuổi nhà, cho nghỉ việc...
+=to be noticed to wuit+ được báo trước phải dọn đi
+- nhận xét về (ai, cái gì)
+- chiếu cố, hạ cố; đối xử lễ độ với
+
+@notice-board /'noutisbɔ:d/
+*  danh từ
+- bảng yết thị, bảng thông báo
+
+@noticeable /'noutisəbl/
+*  tính từ
+- đáng chú ý, đáng để ý
+- có thể nhận thấy, có thể thấy r
+
+@notifiable /'noutifaiəbl/
+*  tính từ
+- có thể khai báo; phải khai báo ((thường) dùng trong trường hợp bệnh dịch)
+
+@notification /,noutifi'keiʃn/
+*  danh từ
+- sự báo, sự khai báo; sự thông báo
+
+@notify /'noutifai/
+*  ngoại động từ
+- báo, khai báo; thông báo, cho hay, cho biết
+=to notify someone of something+ báo cho ai biết việc gì
+=to notify someone of one's new address+ cho ai biết đại chỉ mới
+
+@notion /'nouʃn/
+*  danh từ
+- ý niệm, khái niệm
+=a vague notion of...+ một khái niệm mơ hồ về...
+=to have no notion of...+ chẳng có một ý niệm gì về...
+- ý kiến, quan điểm
+=such is the common notion+ đó là ý kiến chung, đó là quan điểm chung
+- ý định
+=he has no notion of resigning+ nó không có ý định từ chức
+- (từ Mỹ,nghĩa Mỹ) đồ dùng lặt vặt, tạp hoá
+=notion store+ (định ngữ) hàng tạp hoá
+
+@notional /'nouʃənl/
+*  tính từ
+- (thuộc) ý niệm, (thuộc) khái niệm; tư biện
+- tưởng tượng (vật)
+- hay mơ tưởng hão, ảo tưởng (người)
+- (ngôn ngữ học) chỉ khái niệm
+=notional words+ từ chỉ khái niệm, thực t
+
+@notionalist /'nouʃənlist/
+*  danh từ
+- nhà tư tưởng
+- nhà lý luận
+
+@notoriety /,noutə'raiəti/
+*  danh từ
+- trạng thái rõ ràng, trạng thái hiển nhiên, trạng thái ai cũng biết
+- (thường),  (nghĩa xấu) người nổi danh, người ai cũng biết
+
+@notorious /nou'tɔ:riəs/
+*  tính từ
+- rõ ràng, hiển nhiên, ai cũng biết
+=it is notorious that...+ thiên hạ ai cũng biết là...
+- (thường),  (nghĩa xấu) nổi danh, nổi tiếng; có tiếng xấu
+=a notorious swindler+ một kẻ lừa đảo nổi tiếng
+
+@notwithstanding /,nɔtwiθ'stændiɳ/
+*  phó từ
+- cũng cứ; ấy thế mà, tuy thế mà, tuy nhiên
+=there were remonstrances, but he presisted notwithstanding+ cao nhiều người can gián, ấy thế mà nó vẫn cứ khăng khăng
+*  danh từ
+- mặc dù, bất kể
+=notwithstanding the rain+ mặc dù trời mưa
+*  liên từ
+- (từ cổ,nghĩa cổ) tuy, dù
+=he went notwithstanding [that] he was ordered not to+ mặc dù người ta đã ra lệnh cho nó không được đi nó vẫn cứ đi
+
+@nougat /'nu:gɒ:/
+*  danh từ
+- kẹo nuga
+
+@nought /nɔ:t/
+*  danh từ
+- (toán học) số không
+- (từ cổ,nghĩa cổ); (thơ ca) không
+=a man of nought+ người bất tài, người vô giá trị, người không ra gì
+!to bring to nought
+- làm thất bại, phá huỷ, làm mất hết, làm tiêu tan
+!to come to nought
+- thất bại, không có kết quả, mất hết
+!to set nought
+- (xem) set
+
+@noun /naun/
+*  danh từ
+- (ngôn ngữ học) danh t
+
+@nourish /'nʌriʃ/
+*  ngoại động từ
+- nuôi, nuôi nấng, nuôi dưỡng
+- nuôi, ôm, ấp ủ (hoài bão, hy vọng, tình cảm)
+
+@nourishing /'nʌriʃiɳ/
+*  tính từ
+- b
+
+@nourishment /'nʌriʃmənt/
+*  danh từ
+- sự nuôi, sự nuôi dưỡng
+- đồ ăn, thực phẩm
+
+@nous /naus/
+*  danh từ
+- (triết học) trí tuệ, lý trí
+- (thông tục) sự hiểu điều phải trái, sự hiểu lẽ thường
+- (thông tục) tính tháo vát; óc thực tế
+
+@nouveau riche /'nu:vou'ri:ʃ/
+*  danh từ,  số nhiều nouveaux riches
+- kẻ mới phất
+
+@nouveaux riches /'nu:vou'ri:ʃ/
+*  danh từ,  số nhiều nouveaux riches
+- kẻ mới phất
+
+@nova /'nouvə/
+*  danh từ,  số nhiều novae,  novas
+- (thiên văn học) sao mới hiện
+
+@novae /'nouvə/
+*  danh từ,  số nhiều novae,  novas
+- (thiên văn học) sao mới hiện
+
+@novel /'nɔvəl/
+*  tính từ
+- mới, mới lạ, lạ thường
+=a novel idea+ một ý nghĩ mới lạ
+*  danh từ
+- tiểu thuyết, truyện
+=the novel+ thể văn tiểu thuyết
+
+@novelese /,nɔlə'li:z/
+*  danh từ
+- văn phong (của) tiểu thuyết rẻ tiền
+
+@novelette /,nɔvə'let/
+*  danh từ
+- (thường), vuồm truyện ngắn
+- (âm nhạc) tiểu phẩm
+
+@novelise /'nɔvəlaiz/ (novelise) /'nɔvəlaiz/
+*  ngoại động từ
+- viết thành tiểu thuyết, tiểu thuyết hoá
+
+@novelist /'nɔvə'list/
+*  danh từ
+- người viết tiểu thuyết
+
+@novelistic /,nɔvə'listik/
+*  tính từ
+- (thuộc) tiểu thuyết
+
+@novelization /,nɔvəlai'zeiʃn/
+*  danh từ
+- sự viết thành tiểu thuyết, sự tiểu thuyết hoá
+
+@novelize /'nɔvəlaiz/ (novelise) /'nɔvəlaiz/
+*  ngoại động từ
+- viết thành tiểu thuyết, tiểu thuyết hoá
+
+@novelty /'nɔvəlti/
+*  danh từ
+- tính mới, tính mới lạ, tính lạ thường
+- vật mới lạ, vật khác thường
+- (số nhiều) hàng mới (để trang sức, đồ ăn mặc, đồ trang trí nhà cửa)
+
+@november /nou'vembə/
+*  danh từ
+- tháng mười một
+
+@novennial /mou'venjəl/
+*  tính từ
+- chín năm một lần
+
+@novercal /mou'və:kəl/
+*  tính từ
+- (thuộc) dì ghẻ
+
+@novice /'nɔvis/
+*  danh từ
+- người tập việc; người mới học, người chưa có kinh nghiệm
+- (tôn giáo) tín đồ mới, người mới tu
+
+@noviciate /nou'viʃiit/ (novitiate) /nou'viʃiit/
+*  danh từ
+- thời kỳ tập việc, thời kỳ học việc
+- người tập việc, người học việc
+- (tôn giáo) thời kỳ mới tu
+- (tôn giáo) viện sơ tu
+
+@novitiate /nou'viʃiit/ (novitiate) /nou'viʃiit/
+*  danh từ
+- thời kỳ tập việc, thời kỳ học việc
+- người tập việc, người học việc
+- (tôn giáo) thời kỳ mới tu
+- (tôn giáo) viện sơ tu
+
+@now /nau/
+*  phó từ
+- bây giờ, lúc này, giờ đây, hiện nay, ngày nay
+=just (even, but) now+ đúng lúc này; vừa mới xong, ngay vừa rồi
+- ngay bây giờ, ngay tức khắc, lập tức
+=do it now!+ hây làm cái đó ngay tức khắc!
+=now or never+ ngay bây giờ hoặc không bao giờ hết
+- lúc ấy, lúc đó, lúc bấy giờ (trong lúc kể chuyện)
+=he was now crossing the mountain+ lúc bấy giờ anh ta cũng đang vượt qua núi
+- trong tình trạng đó, trong hoàn cảnh ấy, trong tình thế ấy
+- nay, mà, vậy thì (ở đầu câu)
+=now it was so dark that night+ mà đêm hôm đó trời tối lắm
+- hả, hãy... mà, nào; thế nào, này, hử
+=now listen to me!+ này hãy nghe tôi mà!
+=come now!+ này!, này!
+=now then, what are you doing?+ cậu đang làm gì thế hử?
+=no nonsense now now+ thôi đừng nói bậy nào!
+![every] now and again; [every] now and then
+- thỉnh thoảng
+!now... now; now... them
+- lúc thì... lúc thì
+=now hot, now cold+ lúc nóng, lúc lạnh
+*  liên từ
+- now (that) thấy rằng, xét thấy, vì, vì chưng, bởi chưng
+=now [that] the weather is warner, you can go out+ bởi chưng thời tiết đã ấm hơn, anh có thể đi ra ngoài được đấy
+*  danh từ
+- hiện tại, lúc này
+=to read the future in the now+ nhìn vào hiện tại mà đoán tương lai
+=up to (till, until) now+ đến nay
+
+@nowaday /'nauədei/
+*  tính từ
+- (thuộc) ngày nay, (thuộc) đời nay
+
+@nowadays /'nauədeiz/
+*  phó từ
+- ngày nay, đời nay, thời buổi này, thời buổi tân tiến này
+*  danh từ
+- ngày nay, đời nay, thời buổi này, thời buổi tân tiến này
+
+@noway /'nouwaiz/ (noway) /'nouwei/ (noways) /'nouweiz/
+*  phó từ
+- tuyệt không, không một chút nào, hẳn không
+
+@noways /'nouwaiz/ (noway) /'nouwei/ (noways) /'nouweiz/
+*  phó từ
+- tuyệt không, không một chút nào, hẳn không
+
+@nowhere /'nouweə/
+*  phó từ
+- không nơi nào, không ở đâu
+=it was nowhere to be found+ không tìm thấy cái đó ở đâu cả
+=to be (come in) nowhere+ (thể dục,thể thao) thua xa; không thấy tên đâu
+!nowhere near
+- không được đến
+=nowhere near 100+ không được đến một trăm
+
+@nowise /'nouwaiz/ (noway) /'nouwei/ (noways) /'nouweiz/
+*  phó từ
+- tuyệt không, không một chút nào, hẳn không
+
+@noxious /'nɔkʃəs/
+*  tính từ
+- độc, hại
+=noxious gas+ hơi độc
+=noxious chemicals+ chất độc hoá học
+
+@noxiousness /'nɔkʃəsnis/
+*  danh từ
+- tính độc, tính có hại
+
+@nozzle /'nɔzl/
+*  danh từ
+- miệng, vòi (ấm)
+- (từ Mỹ,nghĩa Mỹ),  (từ lóng) mũi, mồm
+
+@nuance /nju:'Ỵ:ns/
+*  danh từ
+- sắc thái
+
+@nub /nʌb/
+*  danh từ
+- cục nhỏ (than...) ((cũng) nubble)
+- cục u, bướu nhỏ
+- (thông tục) phần tinh tuý; điểm cơ bản, điểm trọng yếu
+=the nub of the matter+ điểm trọng yếu của vấn đề
+
+@nubble /'nʌbl/
+*  danh từ
+- cục nhỏ (than...) ((cũng) nub)
+
+@nubbly /'nʌbli/
+*  tính từ
+- thành cục nh
+
+@nubile /'nju:bil/
+*  tính từ
+- đến tuổi lấy chồng, tới tuần cập kê (con gái)
+
+@nubility /nju:'biliti/
+*  danh từ
+- tuổi kết hôn, tuổi lấy chồng, tuần cập kê
+
+@nucellus /nju:'seləs/
+*  danh từ
+- (thực vật học) phôi tâm
+
+@nuchal /'nju:kl/
+*  tính từ
+- (giải phẫu) (thuộc) gáy
+
+@nuciferous /nju:'sifərəs/
+*  tính từ
+- (thực vật học) có quả hạch
+
+@nucivorous /nju:'sivərəs/
+*  tính từ
+- (động vật học) ăn quả hạch
+
+@nucleale /'nju:klioul/ (nucleolus) /nju:'kli:ələs/
+*  danh từ
+- (sinh vật học) hạch nhân
+
+@nuclear /'nju:kliə/ (nucleate) /'nju:kliit/
+*  tính từ
+- (vật lý) (thuộc) hạt nhân
+=nuclear physics+ vật lý hạt nhân
+=nuclear weapons+ vũ khí hạt nhân
+=nuclear energy+ năng lượng hạt nhân
+- có nhân
+
+@nuclear power /'nju:kliə'pauə/
+*  danh từ
+- năng lượng hạt nhân (nguyên tử)
+- cường quốc nguyên tử, cường quốc hạt nhân
+
+@nuclear-powered /'nju:kliə'pauəd/
+*  tính từ
+- dùng năng lượng nguyên tử làm sức đẩy (tàu...)
+
+@nucleate /'nju:kliit - 'nju:klieit/
+- 'nju:klieit/
+*  tính từ
+- (như) nuclear
+*  ngoại động từ
+- cấu tạo hạt nhân (trong sự kết tinh...)
+
+@nucleation /,nju:kli'eiʃn/
+*  danh từ
+- sự cấu tạo hạt nhân
+
+@nuclei /'nju:kliəs/
+*  danh từ,  số nhiều nuclei
+- tâm, trung tâm ((nghĩa đen) & (nghĩa bóng))
+- (sinh vật học) nhân (tế bào)
+- (thực vật học) hạch (của quả hạch)
+- (vật lý) hạt nhân
+=atomic nucleus+ hạt nhân nguyên t
+
+@nucleic acid /nju:'kliik,æsid/
+*  danh từ
+- (hoá học); (sinh vật học) axit nucleic
+
+@nucleolus /'nju:klioul/ (nucleolus) /nju:'kli:ələs/
+*  danh từ
+- (sinh vật học) hạch nhân
+
+@nucleonics /,nju:kli'ɔniks/
+*  danh từ,  số nhiều dùng như số ít
+- kỹ thuật hạt nhân
+
+@nucleus /'nju:kliəs/
+*  danh từ,  số nhiều nuclei
+- tâm, trung tâm ((nghĩa đen) & (nghĩa bóng))
+- (sinh vật học) nhân (tế bào)
+- (thực vật học) hạch (của quả hạch)
+- (vật lý) hạt nhân
+=atomic nucleus+ hạt nhân nguyên t
+
+@nucule /'nju:kju:l/
+*  danh từ
+- (thực vật học) quả hạch con
+
+@nude /nju:d/
+*  tính từ
+- trần, trần truồng, khoả thân
+=nude stocking+ bít tất màu da chân
+- (thực vật học) trụi lá
+- (động vật học) trụi lông
+- (pháp lý) không có hiệu lực, vô giá trị
+=a nude contract+ một bản hợp đồng không có hiệu lực
+*  danh từ
+- (nghệ thuật) tranh khoả thân; tượng khoả thân
+- (the nude) người khoả thân; tình trạng khoả thân
+
+@nudeness /'nju:dnis/
+*  danh từ
+- tình trạng trần truồng, tình trạng khoả thân
+
+@nudge /nʌdʤ/
+*  danh từ
+- cú đánh bằng khuỷ tay, cú thúc bằng khuỷ tay
+=to give a nudge+ lấy khuỷ tay thúc cho một cái
+*  ngoại động từ
+- đánh bằng khuỷ tay, thúc bằng khuỷ tay
+
+@nudism /'nju:dizm/
+*  danh từ
+- chủ nghĩa khoả thân
+
+@nudist /'nju:dist/
+*  danh từ
+- người theo chủ nghĩa khoả thân
+
+@nudity /'nju:diti/
+*  danh từ
+- tình trạng trần truồng, sự trần trụi
+- (nghệ thuật) tranh khoả thân; tượng khoả thân
+
+@nuf /nʌf/ (nuff) /nʌf/
+*  thán từ
+- đủ
+=nuf said+ thế là đủ rồi!, hiểu rồi!
+
+@nugatory /'nju:gətəri/
+*  tính từ
+- vụn vặt, vô giá trị, vô dụng
+- vô hiệu, không có hiệu lực
+
+@nuggar /'nʌgə/
+*  danh từ
+- thuyền nuga (Ai-cập)
+
+@nugget /'nʌgit/
+*  danh từ
+- vàng cục tự nhiên; quặng vàng
+- (Uc) người vạm vỡ; con vật khoẻ chắc
+
+@nuisance /'nju:sns/
+*  danh từ
+- mối gây thiệt hại, mối gây khó chịu, mối làm phiền toái, mối làm rầy, mối làm phiền
+=he is a nuisance+ thằng cha hay làm phiền, thằng cha hay quấy rầy
+=to make oneself a nuisance to somebody+ quấy rầy ai, làm phiền ai
+=commit no nuisance+ cấm đổ rác, cấm phóng uế (yết thị)
+=what a nuisance!+ thật phiền!, thật rầy rà!, thật khó chịu!
+
+@null /nʌl/
+*  tính từ
+- vô hiệu, không có hiệu lực
+=null and void+ không còn hiệu lực nữa, không còn giá trị nữa (đạo luật, tờ di chúc, chứng thư, hiệp ước...)
+- vô dụng, vô giá trị
+- không có cá tính, không biểu lộ tâm tính
+- (toán học) bằng không, không
+*  danh từ
+- chữ dùng để đánh lạc hướng (trong mật mã)
+
+@nullah /'nʌlə/
+*  danh từ
+- dòng nước
+
+@nullification /,nʌlifi'keiʃn/
+*  danh từ
+- sự huỷ bỏ; sự làm thành vô hiệu
+
+@nullify /'nʌlifai/
+*  ngoại động từ
+- huỷ bỏ; làm thành vô hiệu
+
+@nullity /'nʌliti/
+*  danh từ
+- (pháp lý) tính vô hiệu
+- sự bất tài; sự vô dụng; sự vô giá trị
+- người bất tài; người vô dụng; người vô giá trị; vật vô dụng; vật vô giá trị;
+
+@numary /'nʌməri/ (nummulary) /'nʌmju:ləri/
+*  tính từ
+- (thuộc) tiền
+- bằng tiền
+
+@numb /nʌm/
+*  tính từ
+- tê, tê cóng
+=numb with cold+ tê cóng đi vì lạnh
+- tê liệt; chết lặng đi
+!numb hand
+- (từ lóng) người vụng về, lóng ngóng
+*  ngoại động từ
+- làm tê, làm tê cóng đi
+- làm tê liệt; làm chết lặng đi
+=to be numbed with grief+ chết lặng đi vì đau buồn
+
+@numb-fish /'nʌmfiʃ/
+*  danh từ
+- (động vật học) cá thụt
+
+@number /'nʌmbə/
+*  danh từ
+- số
+=even number+ số chãn
+=old number+ số lẻ
+=broken number+ phân số
+=a great number of+ nhiều
+=issued in numbers+ xuất bản từng đoạn, làm nhiều số
+=singular number+ (ngôn ngữ học) số ít
+=plural number+ (ngôn ngữ học) số nhiều
+- đám, bọn, nhóm, toán
+=he is not of our number+ nó không ở trong bọn chúng tôi
+- sự đếm số lượng
+=without number+ không thể đếm được, hằng hà sa số
+- (số nhiều) sự hơn về số lượng, số nhiều, đa số
+=to win by numbers+ thắng vì hơn về số lượng
+=he was by numbers+ thắng vì hơn về số lượng
+=he was compelled to yield to numbers+ nó bắt buộc phải chịu thua trước số đông
+- (thơ ca) nhịp điệu
+- (số nhiều) câu thơ
+- (số nhiều) số học
+=to be good at numbers+ giỏi về số học
+!to lose the number of one's mess
+- (quân sự),  (từ lóng) chết
+!number one
+- (thông tục) cá nhân, bản thân
+=to look only after number one+ chỉ chăm chăm chút chút bản thân
+- (quân sự),  (từ lóng) đại uý (hải quân)
+!his number goes up
+- (từ lóng) nó đã chầu trời rồi
+*  ngoại động từ
+- đếm
+=to number the stars+ đếm sao
+- (number among,  in,  with) kể vào, liệt vào, tính vào
+=I number him among my friends+ tôi kể anh ta vào số bạn tôi
+- đánh số, ghi số
+=these books are numbered from one to twenty+ những quyển sách này được đánh số từ một đến hai mươi
+- lên tới, gồm có, có số dân là (tổng số)
+=we numbered twenty in all+ chúng tôi tất cả gồm có hai mươi người
+=an army numbering eighty thousand+ một đạo quân lên tới 80 000 người
+=this village numbers 5,000+ làng này có đủ số dân là 5 000
+- thọ (bao nhiêu tuổi)
+=he numbers four score years+ cụ ấy thọ tám mươi
+!his years are numberef
+- anh ta cũng chẳng còn sống được bao lâu nữa
+
+@numberless /'nʌmbəlis/
+*  tính từ
+- vô sô, không đếm được, nhiều vô kể
+
+@numbness /'nʌmnis/
+*  danh từ
+- tình trạng tê, tình trạng tê cóng
+- tình trạng tê liệt, tình trạng chết lặng đi
+
+@numbskull /'nʌmskʌl/ (numbskull) /'nʌmskʌl/
+*  danh từ
+- người đần độn, người ngốc nghếch
+
+@numen /'nju:mən/
+*  danh từ,  số nhiều numina  /'nju:minə/
+- thần, ma (thần thoại La mã)
+
+@numenrable /'nju:mərəbl/
+*  tính từ
+- có thể đếm được
+
+@numeral /'nju:mərəl/
+*  tính từ
+- (thuộc) số
+*  danh từ
+- số, chữ số
+=Arabic numerals+ chữ số A-rập
+=Roman numerals+ chữ số La mã
+- (ngôn ngữ học) số t
+
+@numeration /,nju:mə'reiʃn/
+*  danh từ
+- phép đếm, phép đọc số
+- sự ghi số, sự đánh s
+
+@numerator /'nju:məreitə/
+*  danh từ
+- người đếm, người tính
+- (toán học) tử số (của một phân số)
+
+@numerical /nju:'merikəl/
+*  tính từ
+- (thuộc) số
+- bằng s
+
+@numerous /'nju:mərəs/
+*  tính từ
+- đông, đông đảo, nhiều
+=the numerous voice of the people+ tiếng nói của đông đảo nhân dân
+=a numerous class+ một lớp học đông
+- có vần, có nhịp điệu (văn, thơ)
+
+@numerously /'nju:mərəsli/
+*  phó từ
+- nhiều, đông đảo
+
+@numina /'nju:mən/
+*  danh từ,  số nhiều numina  /'nju:minə/
+- thần, ma (thần thoại La mã)
+
+@numismatic /,nju:miz'mætik/
+*  tính từ
+- (thuộc) tiền, (thuộc) việc nghiên cứu tiền đúc
+
+@numismatics /,nju:miz'mætiks/
+*  danh từ,  số nhiều dùng như số ít
+- khoa nghiên cứu tiền đúc
+- sự sưu tầm các loại tiền
+
+@numismatist /nju:'mizmətist/
+*  danh từ
+- người nghiên cứu tiền đúc
+- người sưu tầm các loại tiền
+
+@numismatology /nju:,mismə'tɔlədʤi/
+*  danh từ
+- khoa (nghiên cứu) tiền đúc
+
+@nummulary /'nʌməri/ (nummulary) /'nʌmju:ləri/
+*  tính từ
+- (thuộc) tiền
+- bằng tiền
+
+@nummulite /'nʌmju:lait/
+*  danh từ
+- (địa lý,ddịa chất) Numulit, trùng tiền
+
+@numnah /'nʌmnɑ:/
+*  danh từ
+- vải phủ yên ngựa
+- cái đệm yên ngựa
+
+@numskull /'nʌmskʌl/ (numbskull) /'nʌmskʌl/
+*  danh từ
+- người đần độn, người ngốc nghếch
+
+@nun /nʌn/
+*  danh từ
+- bà xơ, nữ tu sĩ, ni cô
+- (động vật học) chim áo dài
+
+@nun-buoy /'nʌnbɔi/
+*  danh từ
+- (hàng hải) phao neo
+
+@nunciature /'nʌnʃiətʃə/
+*  danh từ
+- chức đại sứ của giáo hoàng
+- toà đại sứ của giáo hoàng
+
+@nuncio /'nʌnʃiou/
+*  danh từ
+- đại sứ của giáo hoàng
+
+@nunnery /'nʌnəri/
+*  danh từ
+- nữ tu viện
+
+@nuptial /'nʌpʃəl/
+*  tính từ
+- (thuộc) hôn nhân; (thuộc) lễ cưới
+=the nuptial day+ ngày cưới
+*  danh từ
+- ((thường) số nhiều) lễ cưới
+
+@nurse /nə:s/
+*  danh từ
+- (động vật học) cá nhám
+*  danh từ
+- vú em, người bảo mẫu, người giữ trẻ
+- sự nuôi, sự cho bú, sự trông nom; sự được nuôi, sự được cho bú
+=a child at nurse+ trẻ nhỏ đang tuổi phải cho bú
+- nơi nuôi dưỡng, xứ sở, vườn ương ((nghĩa bóng)), cái nôi ((nghĩa bóng))
+=the nurse of liberty+ xứ sở của tự do
+- y tá, nữ y tá
+- (nông nghiệp) cây che bóng
+- (động vật học) ong thợ; kiến thợ
+*  ngoại động từ
+- cho bú, nuôi, trông nom (trẻ nhỏ)
+- bồng, ãm; nựng
+- săn sóc (người bệnh); chữa (bệnh)
+=he stays at home mursing his cold+ nó ở nhà để chữa cho hết cảm
+- chăm chút (cây con, mảnh vườn...); nâng niu (một việc gì...))
+- nuôi, nuôi dưỡng, ấp ủ (hy vọng, hận thù; phong trào văn nghệ...)
+- ngồi ôm lấy, ngồi thu mình bên (lồng ấp, đống lửa...)
+
+@nurse-child /'nə:stʃaild/
+*  danh từ
+- trẻ em còn bú, con thơ
+
+@nurse-pond /'nə:spɔnd/
+*  danh từ
+- ao nuôi cá
+
+@nurseling /'nə:sliɳ/ (nursling) /'nə:sliɳ/
+*  danh từ
+- trẻ con còn bú, con thơ
+- người được nâng niu chăm chút; vật được nâng niu
+- cây con
+
+@nursemaid /'nə:smeid/ (nurserymaid) /'nə:srimeid/
+*  danh từ
+- cô giữ trẻ, chị bảo mẫu
+
+@nursery /'nə:sri/
+*  danh từ
+- phòng dành riêng cho tre bú
+- nhà trẻ
+- ao nuôi cá
+- vườn ương
+- (nghĩa bóng) nơi đào tạo, nơi nuôi dưỡng (nghệ sĩ...)
+
+@nursery garden /'nə:sri'gɑ:dn/
+*  danh từ
+- vườn ương
+
+@nursery rhymes /'nə:sri'raimz/
+*  danh từ số nhiều
+- thơ ca cho trẻ nhỏ; thơ ca mẫu giáo
+
+@nursery school /'nə:sri'sku:l/
+*  danh từ
+- vườn trẻ
+
+@nurserymaid /'nə:smeid/ (nurserymaid) /'nə:srimeid/
+*  danh từ
+- cô giữ trẻ, chị bảo mẫu
+
+@nurseryman /'nə:srimən/
+*  danh từ
+- người trông nom vườn ương
+
+@nursing bottle /'nə:siɳ'bɔtl/
+*  danh từ
+- bình sữa (cho trẻ nhỏ)
+
+@nursing home /'nə:siɳhoum/
+*  danh từ
+- nhà thương, bệnh xá; nơi an dưỡng
+
+@nursling /'nə:sliɳ/ (nursling) /'nə:sliɳ/
+*  danh từ
+- trẻ con còn bú, con thơ
+- người được nâng niu chăm chút; vật được nâng niu
+- cây con
+
+@nurture /'nə:tʃə/
+*  danh từ
+- đồ ăn
+- sự nuôi dưỡng
+- sự giáo dục
+*  ngoại động từ
+- nuôi nấng, nuôi dưỡng
+- giáo dục
+
+@nut /nʌt/
+*  danh từ
+- (thực vật học) quả hạch
+- (từ lóng) đầu
+- (số nhiều) cục than nhỏ
+- (kỹ thuật) đai ốc
+- (từ lóng) người khó chơi; việc hắc búa, việc khó giải quyết
+=a hard nut to crack+ một thằng cha khó chơi; một công việc hắc búa khó nhai
+- (từ lóng) công tử bột
+- (từ lóng) người ham thích (cái gì)
+- (từ lóng) người điên rồ, người gàn dở
+!to be off one's nut
+- gàn dở, mất trí, hoá điên
+!to be nuts on; yo be dend nuts on
+- (từ lóng) mê, say mê, thích ham
+- cừ, giỏi
+*  nội động từ
+- to go nutting đi lấy quả hạch
+
+@nut-brown /'nʌtbraun/
+*  tính từ
+- nâu sẫm
+
+@nut-oil /'nʌtɔil/
+*  danh từ
+- dầu hạt phỉ
+
+@nut-tree /'nʌttri:/
+*  danh từ
+- (thực vật học) cây phỉ
+
+@nutate /'nju:'teit/
+*  nội động từ
+- lắc đầu
+- (thực vật học) vận động chuyển ngọn
+- (thiên văn học) chương động
+
+@nutation /nju:'teiʃn/
+*  danh từ
+- tật lắc đầu luôn luôn
+- (thực vật học) sự vận động chuyển ngọn
+- (thiên văn học) sự chương động
+
+@nutcracker /'nʌt,krækə/
+*  danh từ,  (thường) số nhiều
+- cái kẹp quả hạch
+- (động vật học) chim bổ hạt (họ quạ)
+=nutcracker face+ mặt có mũi và cằm nhọn; mặt có mũi và cằm gần nhau (do rụng hết răng)
+
+@nutmeat /'nʌtmi:t/
+*  danh từ
+- nhân hạt phỉ
+
+@nutmeg /'nʌtmeg/
+*  danh từ
+- hạt nhục đậu khấu
+
+@nutmeg-tree /'nʌtmegtri:/
+*  danh từ
+- (thực vật học) cây thực đậu khấu
+
+@nutria /'nju:triə/
+*  danh từ
+- (động vật học) chuột hải ly
+- bộ da chuột hải ly; bộ da lông chuột hải ly
+
+@nutrient /'nju:triənt/
+*  tính từ
+- bổ, dinh dưỡng, dùng làm chất nuôi dưỡng
+*  danh từ
+- chất dinh dưỡng, chất nuôi dưỡng
+
+@nutriment /'nju:trimənt/
+*  danh từ
+- đồ ăn bổ, chất ăn bổ; chất dinh dưỡng
+
+@nutrition /nju:'triʃn/
+*  tính từ
+- sự nuôi dưỡng, sự dinh dưỡng
+- đồ ăn bổ
+- (y học) khoa dinh dưỡng
+
+@nutritious /nju:'triʃəs/
+*  tính từ
+- bổ, có chất bổ; dinh dưỡng
+
+@nutritiousness /nju:'triʃəsnis/
+*  danh từ
+- tính chất bổ; sự có chất dinh dưỡng
+
+@nutritive /'nju:tritiv/
+*  tính từ
+- bổ; có chất bổ; dinh dưỡng
+- dùng làm thức ăn
+*  danh từ
+- chất dinh dưỡng, đồ ăn có chất b
+
+@nutshell /'nʌtʃel/
+*  danh từ
+- bỏ quả hạch
+- bình chứa nhỏ; nơi chứa gọn; chỗ ở nhỏ xíu
+- bản tóm tắt ngắn gọn
+=the whole thing in a nutshell+ tất cả sự việc tóm tắt gọn lại
+
+@nutty /'nʌti/
+*  tính từ
+- nhiều quả hạch
+- có mùi vị hạt phỉ
+- (từ lóng) say mê, thích
+=to be nutty on (upon) someone+ mê ai
+- (từ lóng) bảnh, diện
+- (từ lóng) đượm đà, hấp dẫn, thú vị (truyện)
+- (từ Mỹ,nghĩa Mỹ),  (từ lóng) điên, quẫn, mất trí
+
+@nuzzle /'nʌzl/
+*  động từ
+- hít, đánh hơi, ngửi (chó)
+- ủi, sục mõm vào; dí mũi vào
+- ủ, ấp ủ, rúc vào (trong lòng, trong chăn...)
+
+@nyctalopia /,niktə'loupiə/
+*  danh từ
+- (y học) chứng quáng gà
+- chứng sáng đêm (chỉ có thể trông thấy rõ về ban đêm)
+
+@nyctalopic /'naitblaind/ (nyctalopic) /,niktə'lɔpik/
+*  tính từ
+- mắc chứng quáng gà
+
+@nylghau /'nilgai/ (nylghau) /'nilgɔ:/
+*  danh từ
+- (động vật học) linh dương mingai (Ân độ)
+
+@nylon /'nailən/
+*  danh từ
+- ni lông
+- (số nhiều) quần áo lót ni lông; tất ni lông (đàn bà)
+
+@nymph /nimf/
+*  danh từ
+- (thần thoại,thần học) nữ thần (sông núi, cây cỏ)
+- (thơ ca) người con gái đẹp
+- (động vật học) con nhộng
+
+@nymphet /'nimfit/
+*  danh từ
+- nữ thần trẻ đẹp
+- cô gái đẹp khêu gợi
+- người đàn bà lẳng lơ
+
+@nympho /'nimfou/
+*  danh từ
+- (từ lóng) người đàn bà cuồng dâm
+
+@nympholepsy /'nimfəlepsi/
+*  danh từ
+- bệnh cuồng tưởng
+
+@nympholept /'nimfəlept/
+*  danh từ
+- người cuồng tưởng
+
+@nymphomaniac /,nimfə'meiniæk/
+*  danh từ
+- (y học) chứng cuồng dâm (của đàn bà)
+- (y học) người đàn bà cuồng dâm
+*  tính từ+ (nymphomaniacal) /,nimfə'meiniækəl/
+- (y học) cuồng dâm (đàn bà)
+
+@nymphomaniacal /,nimfə'meiniæk/
+*  danh từ
+- (y học) chứng cuồng dâm (của đàn bà)
+- (y học) người đàn bà cuồng dâm
+*  tính từ+ (nymphomaniacal) /,nimfə'meiniækəl/
+- (y học) cuồng dâm (đàn bà)
+
+@nystagmus /nis'tægməs/
+*  danh từ
+- (y học) chứng giật cầu mắt

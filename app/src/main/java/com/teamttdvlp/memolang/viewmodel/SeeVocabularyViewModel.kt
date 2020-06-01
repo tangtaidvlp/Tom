@@ -2,19 +2,29 @@ package com.teamttdvlp.memolang.viewmodel
 
 import android.app.Application
 import androidx.lifecycle.MutableLiveData
+import com.example.dictionary.model.TransAndExamp
+import com.teamttdvlp.memolang.data.model.other.new_vocabulary.Using
+import com.example.dictionary.model.Vocabulary
 import com.teamttdvlp.memolang.model.TextSpeaker
-import com.teamttdvlp.memolang.model.entity.*
-import com.teamttdvlp.memolang.database.sql.repository.FlashcardRepository
-import com.teamttdvlp.memolang.database.sql.repository.UserSearchHistoryRepository
-import com.teamttdvlp.memolang.model.RecentAddedFlashcardManager
-import com.teamttdvlp.memolang.model.entity.flashcard.Flashcard
-import com.teamttdvlp.memolang.model.entity.vocabulary.Example
-import com.teamttdvlp.memolang.model.entity.vocabulary.TransAndExamp
-import com.teamttdvlp.memolang.model.entity.vocabulary.Using
-import com.teamttdvlp.memolang.model.entity.vocabulary.Vocabulary
+import com.teamttdvlp.memolang.data.model.entity.flashcard.Flashcard
+import com.teamttdvlp.memolang.data.model.entity.flashcard.FlashcardSet
+import com.teamttdvlp.memolang.data.model.entity.language.Language.Companion.ENGLISH_VALUE
+import com.teamttdvlp.memolang.data.model.entity.language.Language.Companion.VIETNAMESE_VALUE
+import com.teamttdvlp.memolang.data.model.other.new_vocabulary.SingleMeanExample
+import com.teamttdvlp.memolang.data.model.other.new_vocabulary.TypicalRawVocabulary
+import com.teamttdvlp.memolang.data.model.other.vocabulary.MultiMeanExample
+import com.teamttdvlp.memolang.model.AddFlashcardExecutor
+import com.teamttdvlp.memolang.model.VocabularyConverter
+import com.teamttdvlp.memolang.model.repository.FlashcardSetRepos
+import com.teamttdvlp.memolang.model.repository.UserRepos
+import com.teamttdvlp.memolang.model.repository.UserUsingHistoryRepos
 import com.teamttdvlp.memolang.view.activity.iview.SeeVocabularyView
-import com.teamttdvlp.memolang.view.base.BaseAndroidViewModel
+import com.teamttdvlp.memolang.view.adapter.RCVSearchDictionaryAdapter
+import com.teamttdvlp.memolang.view.base.BaseViewModel
+import com.teamttdvlp.memolang.view.helper.clearAll
+import com.teamttdvlp.memolang.view.helper.foreachFromSecondElement
 import com.teamttdvlp.memolang.view.helper.quickLog
+import java.lang.Exception
 import java.util.*
 
 const val NAVIGATION_TAG = "<nav>"
@@ -39,155 +49,115 @@ const val USINGS_DIVIDER = "]["
 const val EXAMPLES_DEVIDER = "<exd>"
 const val MEAN_AND_EXAMPLE_GROUPS_DIVIDER = "<md>"
 const val MEAN_AND_EXAMPLE_JOINT= "<ex>"
+const val MEAN_AND_EXAMPLE_DEVIDER= ":"
 const val PARTS_DEVIDER = "<pd>"
 const val USING_DETAILS_JOINT= "/"
 const val NAVIGATE_TAG = "<nav>"
 
 class SeeVocabularyActivityViewModel (
                                     var app : Application,
-                                    var recentAddedFlashcardManager: RecentAddedFlashcardManager,
-                                    var userSearchHistoryRepos: UserSearchHistoryRepository,
-                                    var flashcardRepository: FlashcardRepository) : BaseAndroidViewModel<SeeVocabularyView>(app) {
+                                    var userRepos: UserRepos,
+                                    var flashcardSetRepos: FlashcardSetRepos,
+                                    var addFlashcardExecutor: AddFlashcardExecutor,
+                                    var userUsingHistoryRepos: UserUsingHistoryRepos) : BaseViewModel<SeeVocabularyView>() {
 
     private val vocabulary = MutableLiveData<Vocabulary>()
 
-    private val textSpeaker = TextSpeaker(app, Language.ENGLISH_VALUE)
+    private val textSpeaker = TextSpeaker(app, ENGLISH_VALUE)
+
+    private val vocabularyConverter : VocabularyConverter = VocabularyConverter()
 
     fun getVocabulary () : MutableLiveData<Vocabulary> = vocabulary
 
-    fun getVocabularyFromVocaInfo (vocaInfo : String) {
-        val item : Vocabulary
-        val vocaParts = vocaInfo.split(PARTS_DEVIDER)
+    fun getAll_RecentSearchedVocaList (onGetAllSearchHistory : (ArrayList<TypicalRawVocabulary>) -> Unit) {
+        userUsingHistoryRepos.getRecent_SearchedVocabularyList (onGetAllSearchHistory)
+    }
 
-        val vocaHasManyUsings = vocaInfo.contains(USINGS_DIVIDER)
-        val vocaHasOnlyOneUsing = !vocaHasManyUsings
-        var usingList : List<String>? = null
+    fun addVoca_ToRecentSearchedList (rawVocabulary: TypicalRawVocabulary) {
+        userUsingHistoryRepos.addToRecent_SearchedVocabularyList(rawVocabulary)
+    }
 
-        if (vocaHasManyUsings) {
-            val usingsArray = vocaParts.get(USINGS).split(USINGS_DIVIDER)
-            usingList = List<String>(usingsArray.size) { index ->
-                return@List usingsArray.get(index).replace(
-                    USING_DETAILS_JOINT,
-                    PARTS_DEVIDER
-                )
-            }
-        } else if (vocaHasOnlyOneUsing) {
-            val using = vocaParts.get(TYPE) + PARTS_DEVIDER + vocaParts.get(USING)
-            usingList = List<String>(1) { using }
-        }
+    fun saveSearchingHistory () {
+        userUsingHistoryRepos.saveUsingHistoryInfo()
+    }
 
-        val item_Usings = decodeUsingArray(usingList!!)
-        val item_text = vocaParts.get(TEXT)
-        val item_pronunciation = vocaParts.get(PRONUNCIATION)
-        item = Vocabulary(
-            item_text,
-            item_pronunciation,
-            item_Usings
-        )
+    fun convertToVocabularyAndSendToObserver (holder: TypicalRawVocabulary) {
+        val vocabulary = vocabularyConverter.convertToVocabulary(holder)
+        sendVocabularyToObserver(vocabulary)
+    }
 
-        sendVocabularyToObserver(item)
+    private fun sendVocabularyToObserver (vocabulary: Vocabulary) {
+        this.vocabulary.value = vocabulary
     }
 
     fun speak (text : String) {
         textSpeaker.speak(text)
     }
 
-    private fun sendVocabularyToObserver (voca : Vocabulary) {
-        vocabulary.value = voca
-    }
-
-    private fun decodeUsingArray(usingArray: List<String>): Array<Using>? {
-        val vocabularyUsings = Array<Using>(usingArray.size) { index ->
-
-            val using = usingArray.get(index)
-            val usingDetails = using.split(PARTS_DEVIDER)
-            val detailType = when(usingDetails.get(DETAIL_TYPE)) {
-                "V" -> "Nội động từ"
-                "TransV" -> "Ngoại động từ"
-                "Adj" -> "Tính từ"
-                "Acr" -> "Từ viết tắt"
-                "N" -> "Danh từ"
-                "Adv" -> "Trạng từ"
-                else -> usingDetails.get(DETAIL_TYPE)
-            }
-            val detailTrans = usingDetails.get(DETAIL_TRANSLATION)
-
-            val meanAndExGroupArray = detailTrans.split(MEAN_AND_EXAMPLE_GROUPS_DIVIDER)
-            val item_MeanAndExGroupArray = Array<TransAndExamp>(meanAndExGroupArray.size) { index ->
-                val meanAndExGroup = meanAndExGroupArray[index]
-
-                val groupDetail = meanAndExGroup.split(MEAN_AND_EXAMPLE_JOINT)
-                val mean = groupDetail.get(GROUP_MEAN)
-                val hasExample = (groupDetail.size == 2)
-
-                val meanAndExample =
-                    TransAndExamp(mean)
-                if (hasExample) {
-                    val examples = groupDetail.get(GROUP_EXAMPLES)
-                    val exampleArray = examples.split(EXAMPLES_DEVIDER)
-                    // Create Examples Array
-                    meanAndExample.examples = Array<Example>(exampleArray.size) { index ->
-                        val examInfo = exampleArray.get(index).split(":")
-                        val examHasMean = (examInfo.size == 2)
-                        val examText = examInfo.get(EXAMPLE_TEXT)
-                        val examMean = if (examHasMean) "   " + examInfo.get(EXAMPLE_MEAN)
-                                                   else ""
-                        return@Array Example(
-                            examText,
-                            examMean
-                        )
-                    }
-                }
-                return@Array meanAndExample
-            }
-            return@Array Using(
-                detailType,
-                item_MeanAndExGroupArray
-            )
-        }
-        return vocabularyUsings
-    }
-
-    fun addFlashcardToOfflineDB (newCard : Flashcard, onInsertListener : (isSuccess : Boolean, cardId : Long, ex : Exception?) -> Unit) {
-        flashcardRepository.insertFlashcard(newCard, onInsertListener)
-    }
-
-    fun addFlashcard (sourceLang : String, targetLang : String, setName : String,
+    fun addFlashcard (frontLanguage : String, backLanguage : String, setName : String,
                       type : String, text : String,
                       translation : String, example : String, meanExample : String, pronunciation : String) {
-        val langInfo = "$sourceLang - $targetLang"
-        val newCard = Flashcard(
-            0,
-            text,
-            translation,
-            langInfo, setName,
-            example,
-            meanExample,"",
-            type,
-            pronunciation)
 
-        addFlashcardToOfflineDB(newCard) { isSuccess, insertedCardId, exception ->
+        val newCard = Flashcard(id = 0, text = text, translation = translation,
+            frontLanguage = frontLanguage, backLanguage = backLanguage,
+            setOwner = setName, type = type, example = example, meanOfExample = meanExample,
+            pronunciation = pronunciation)
+
+        addFlashcardExecutor.addFlashcardAndUpdateFlashcardSet(newCard) { isSuccess, insertedCardId, exception ->
             if (isSuccess) {
                 view.onAddFlashcardSuccess()
                 newCard.id = insertedCardId.toInt()
-                addSearchedCardToHistory(newCard.id, newCard.createdAt)
-                recentAddedFlashcardManager.add(newCard)
+                addToRecentAddedFlashcardList(newCard)
+                userUsingHistoryRepos.addToRecent_AddedFlashcardList(newCard)
+                updateUserInfo(newCard)
             } else {
                 quickLog("Storing this flashcard to local storage failed. Please check again")
                 exception!!.printStackTrace()
             }
         }
+
     }
 
-    fun addSearchedCardToHistory (cardId : Int, searchedTime : Date) {
-        userSearchHistoryRepos.addNewCard(cardId, searchedTime)
+    private fun updateUserInfo(newCard : Flashcard) {
+        userUsingHistoryRepos.addToRecent_AddedFlashcardList(newCard)
+        if (newCard.type.isNotEmpty()) {
+            addToUserOwnCardTypes(newCard.type)
+        }
+        updateUserLastedUsedFlashcardSet(newCard.setOwner)
+    }
+
+    private fun addToRecentAddedFlashcardList (newCard: Flashcard) {
+        userUsingHistoryRepos.addToRecent_AddedFlashcardList(newCard)
+    }
+
+    private fun updateUserLastedUsedFlashcardSet (setName : String) {
+        getUser().lastest_Used_FlashcardSetName = setName
+        userRepos.updateUser(getUser())
+    }
+
+    fun getLastedUseFlashcardSetName () : String {
+        return getUser().lastest_Used_FlashcardSetName
+    }
+
+    private fun addToUserOwnCardTypes (cardType : String) {
+        getUser().addToCardTypeList(cardType)
     }
 
     fun stopAllTextSpeaker() {
         textSpeaker.shutDown()
     }
 
-    fun getFlashcardSetNameList(): ArrayList<String> {
-        return User.getInstance().flashcardSetNames
+    fun getAllEnglishVNFlashcardSets(onGet : (ArrayList<FlashcardSet>) -> Unit) {
+        flashcardSetRepos.getAll_CardSet_WithNOCardList { flashcardSetList ->
+            if (flashcardSetList != null) {
+                val engVNCardSetList = ArrayList<FlashcardSet>()
+                for (set in flashcardSetList) {
+                    if ((set.frontLanguage == ENGLISH_VALUE) and (set.backLanguage == VIETNAMESE_VALUE)) {
+                        engVNCardSetList.add(set)
+                    }
+                }
+                onGet.invoke(engVNCardSetList)
+            }
+        }
     }
 }

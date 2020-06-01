@@ -1,0 +1,928 @@
+@fabricate
+- (Tech) chế tạo; làm giả
+@Fabry Perot axis
+- (Tech) trục Fabri Perôt
+@Fabry Perot cavity
+- (Tech) cái hốc Fabri Perôt
+@Fabry Perot fringe
+- (Tech) vân Fabri Perôt
+@Fabry Perot interferometer
+- (Tech) giao thoa kế Fabri Perôt
+@Fabry Perot mode
+- (Tech) kiểu Fabri Perôt
+@facsimile = fax
+- (Tech) điện thư, bản viễn sao; bản truyền chân [TQ/ĐL], bản mô tả [ĐL]
+@facsimile equipment
+- (Tech) thiết bị điện thư
+@factor
+- (Tech) nhân tố, yếu tố; hệ số; thừa số, nhân số
+@factorial
+- (Tech) giai thừa; thuộc thừa số
+@factory automation
+- (Tech) tự động hóa cơ xưởng
+@fade-in
+- (Tech) hiện dần (hình/âm)
+@fade-out
+- (Tech) tắt dần (hình/âm)
+@fader
+- (Tech) bộ tiệm giảm
+@fading channel
+- (Tech) kênh biến hiện mờ dần
+@fading period
+- (Tech) chu kỳ biến hiện mờ dần
+@fail
+- (Tech) hư hỏng; mất (điện); thiếu
+@fail-safe system
+- (Tech) hệ thống phòng hư
+@failure
+- (Tech) hư hỏng; thất bại
+@failure detection
+- (Tech) phát hiện hư hỏng
+@failure logging
+- (Tech) ghi nhận sự hư hỏng
+@failure prediction
+- (Tech) sự dự đoán hư hỏng
+@failure rate
+- (Tech) tỷ suất hư hỏng, mức độ hư hỏng
+@fall time
+- (Tech) thời gian tụt hậu, thời gian giảm
+@fall-back
+- (Tech) trả lại, phục hồi; dự trữ; rút lui
+@false signal
+- (Tech) tín hiệu sai
+@fan antenna
+- (Tech) ăngten hình quạt
+@fan-in
+- (Tech) (lượng) gộp nhánh vào
+@fan-in loading
+- (Tech) tải vào
+@fan-out
+- (Tech) (lượng) phân nhánh ra
+@fan-out loading
+- (Tech) tải ra
+@FAQ = Frequently Asked Questions
+- (Tech) Những Câu Thường Hỏi
+@far end
+- (Tech) đầu xa
+@far-end crosstalk
+- (Tech) xuyên âm đầu xa
+@far-end crosstalk attenuation
+- (Tech) suy giảm xuyên âm đầu xa
+@far-end echo
+- (Tech) âm dội đầu xa
+@far-end echo canceller
+- (Tech) âm dội đầu xa
+@farad
+- (Tech) fara (đơn vị điện dung)
+@Faraday constant
+- (Tech) hằng số Faraday (Faraddê)
+@Faradaýs law
+- (Tech) định luật Faraday
+@faradic
+- (Tech) thuộc dòng điện sinh lý
+@faradmeter
+- (Tech) máy đo fara
+@Farnsworth (image dissector) tube
+- (Tech) ống tia điện tử phân tích hình Farnsworth
+@fast energy detector
+- (Tech) bộ phát hiện năng lượng nhanh
+@fast Fourier transformation (FFT)
+- (Tech) sự biến đổi Fourier (Fouriê) nhanh
+@fast-recovery diode
+- (Tech) đèn hai cực phục hồi nhanh
+@fault correction time
+- (Tech) thời gian hiệu chỉnh lỗi
+@fault detector
+- (Tech) bộ phát hiện lỗi
+@fault finder
+- (Tech) máy dò lỗi
+@fault signaling
+- (Tech) báo hiệu lỗi
+@fault simulator
+- (Tech) bộ mô phỏng lỗi
+@fault tolerance
+- (Tech) sự dung sai lỗi
+@fault-tolerant system
+- (Tech) hệ thống dung sai
+@fax (v)
+- (Tech) gửi điện thư (đt)
+@fax = facsimile
+- (Tech) điện thư, bản viễn sao; bản truyền chân [TQ/ĐL], bản mô tả [ĐL]
+@fax machine
+- (Tech) máy điện thư
+@fax modem
+- (Tech) môddem điện thư
+@feature
+- (Tech) đặc điểm; nét
+@feed
+- (Tech) cung cấp; nuôi dưỡng; tiếp sóng; đi tới, chạy tới; tiếp phiếu, tiếp băng
+@feed circuit
+- (Tech) mạch cung cấp
+@feed current
+- (Tech) dòng cung cấp, dòng dưỡng
+@feed mechanism
+- (Tech) cơ cấu cung cấp
+@feed spool
+- (Tech) cuộn cung cấp
+@feed-through capacitor
+- (Tech) bộ điện dung xuyên
+@feedback
+- (Tech) hồi tiếp, tiếp ngược, phản hồi, hồi quy
+@feedback control
+- (Tech) điều khiển hồi tiếp
+@feedback current
+- (Tech) dòng hồi tiếp
+@feedback loop
+- (Tech) vòng hồi tiếp
+@feedback shift register
+- (Tech) bộ ghi dịch chuyển hồi tiếp
+@feedback system
+- (Tech) hệ hồi tiếp
+@feeder
+- (Tech) dây tiếp sóng; bộ tiếp dưỡng; bộ tiếp giấy (máy in)
+@feedforward
+- (Tech) tiến tiếp, tiếp thuận
+@feedhorn
+- (Tech) loa chiếu xạ (ăngten)
+@feeding transformer
+- (Tech) bộ biến áp cấp điện
+@feedthrough
+- (Tech) xuyên tiếp, tiếp thông
+@FEFO (first ended-first out) algorithm
+- (Tech) thuật toán xong trước ra trước
+@Felici balance
+- (Tech) cân bằng Felici
+@female connector
+- (Tech) bộ nối âm, bộ liên kết âm
+@female receptacle
+- (Tech) ổ cắm âm
+@femto
+- (Tech) femtô (10 lũy thừa -15)
+@femtosecond
+- (Tech) femtô giây (10 lũy thừa -15 giây)
+@Fermi function
+- (Tech) hàm số Fermi
+@Fermi level
+- (Tech) mức Fermi
+@ferric oxide
+- (Tech) ôxit sắt tam (Fe2O3)
+@ferrimagnetic dielectric
+- (Tech) chất điện môi ferit từ
+@ferrimagnetic resonance
+- (Tech) cộng hưởng ferit từ
+@ferrite antenna
+- (Tech) ănten ferit
+@ferrite core
+- (Tech) lõi ferit, vòng ferit
+@ferrite film
+- (Tech) phim ferit
+@ferroelectric material
+- (Tech) chất sắt điện
+@ferrous oxide
+- (Tech) ôxit sắt nhị (FeO)
+@FET (field-effect transistor)
+- (Tech) trăngsito hiệu trường
+@fetch
+- (Tech) rút ra, gọi ra, thu, chỉ thị thu [ĐL]; tìm đem về, tìm tải/nạp
+@fetch protection bit
+- (Tech) bit bảo vệ chống rút ra
+@FF (Form Feed)
+- (Tech) ký tự tiếp mẫu (giấy in)
+@fiber
+- (Tech) sợi, chất sợi, sợi quang (optical fiber)
+@Fiber Digital Data Interface (FDDI)
+- (Tech) giao diện truyền dữ liệu qua sợi quang
+@fiber optics
+- (Tech) quang học sợi
+@fiber-optic cable
+- (Tech) cáp sợi quang
+@fiber-optic transmission
+- (Tech) sự truyền sợi quang
+@Fibonacci sequence
+- (Tech) dãy Fibonacci (Fibônachi), dãy lưỡng phân
+@Fibonacci series
+- (Tech) dãy Fibonacci (Fibônachi)
+@fiche
+- (Tech) tấm thẻ
+@fidelity
+- (Tech) độ trung thực
+@field
+- (Tech) trường; thực địa, ngoài trời; phạm vi; lĩnh vực
+@field alterable control element (FACE)
+- (Tech) phần tử điều khiển có trường khả biến
+@field effect phototransistor
+- (Tech) trăngsito quang hiệu trường
+@field programmable gate array (FPGA)
+- (Tech) mạng luận lý có trường khả chương
+@field separation character
+- (Tech) ký tự phân trường
+@field-effect modified transistor (FEMT)
+- (Tech) trăngsito biến đổi hiệu trường
+@field-effect transistor (FET)
+- (Tech) trăngsito hiệu trường
+@FIFO (first in - first out)
+- (Tech) vào trước ra trước
+@filament capacitance
+- (Tech) điện dung sợi nung
+@filament resistor
+- (Tech) cái điện trở sợi nung
+@filament transformer
+- (Tech) bộ biến áp sợi nung
+@file
+- (Tech) tập tin [TN], hồ sơ [NN]
+@file allocation table (FAT)
+- (Tech) bảng phân bố tập tin
+@file attribute
+- (Tech) cá tính tập tin
+@file description block
+- (Tech) khối mô tả tập tin
+@file directory
+- (Tech) thư mục tập tin
+@file format
+- (Tech) khuôn dạng tập tin
+@file identification block
+- (Tech) khối xác định tập tin
+@file manager
+- (Tech) chương trình quản lý tập tin
+@file name
+- (Tech) tên tập tin
+@file name extension
+- (Tech) tên tập tin nối dài
+@file server
+- (Tech) bộ phục vụ tập tin
+@file size
+- (Tech) kích cỡ tập tin
+@file storage
+- (Tech) bộ trữ tập tin
+@file structure
+- (Tech) cấu trúc tập tin
+@file system
+- (Tech) hệ thống quản lý tập tin
+@File Transfer Protocol (FTP)
+- (Tech) Quy Ước Chuyển Tập Tin
+@fill factor
+- (Tech) hệ số điền
+@fill-in data
+- (Tech) dữ kiện điền vào
+@filler
+- (Tech) chất độn, chất đổ đầy; chữ điền (vào)
+@film
+- (Tech) phim, màng mỏng
+@film optical sensing device for input to computers (FOSDIC)
+- (Tech) bộ cảm quang (đọc) phim nhập máy tính
+@film projector
+- (Tech) máy chiếu phim
+@film recorder
+- (Tech) máy ghi phim
+@film resistor
+- (Tech) cái điện trở màng
+@filter
+- (Tech) bộ lọc (quang/sóng); màn che; chương trình lọc
+@filter capacitor
+- (Tech) bộ điện dung lọc
+@filter choke
+- (Tech) cuộn cản lọc
+@filter discrimination
+- (Tech) sự phân biệt do bộ lọc
+@filter response
+- (Tech) dự đáp ứng bộ lọc
+@fine adjustment
+- (Tech) điều chỉnh tinh
+@fine-tune
+- (Tech) điều hưởng tinh, điều chỉnh vi cấp
+@finite difference method (FDM)
+- (Tech) phương pháp vi phân hữu hạn
+@finite element method (FEM)
+- (Tech) phương pháp phần tử hữu hạn
+@finite impulse response (FIR)
+- (Tech) sự đáp ứng xung lực hữu hạn
+@finite process
+- (Tech) tiến trình hữu hạn
+@finite sequence
+- (Tech) dãy hữu hạn
+@finite state machine
+- (Tech) máy có trạng thái hữu hạn
+@fire control radar
+- (Tech) radda điều khiển bắn
+@firing voltage
+- (Tech) diện áp bắt đầu phóng điện, điện áp mồi lửa
+@firmware
+- (Tech) kiên liệu, phần dẻo [TN]
+@first come first served
+- (Tech) đến trước được phục vụ trước
+@first come last served
+- (Tech) đến trước được phục vụ sau
+@first harmonic
+- (Tech) hàm điều hòa bậc nhất
+@first-in first-out (FIFO)
+- (Tech) vào trước ra trước
+@fixed disk
+- (Tech) đĩa cố định
+@fixed format
+- (Tech) khuôn dạng cố định
+@fixed-head disk
+- (Tech) đĩa có đầu đọc cố định
+@fixed-length block
+- (Tech) khối (có) độ dài cố định
+@fixed-length record
+- (Tech) bản ghi (có) độ dài cố định
+@fixed-point arithmetic
+- (Tech) tính toán điểm cố định, tính toán định điểm
+@fixed-point radix
+- (Tech) cơ số điểm cố định
+@fixed-radix notation
+- (Tech) ký hiệu cơ số cố định
+@flag
+- (Tech) cờ hiệu; ký hiệu, dấu hiệu; bộ chỉ báo; biểu tượng; bộ chắn sáng hình bóng (trong gương)
+@flag bit
+- (Tech) bit cờ hiệu
+@flag control
+- (Tech) kiểm soát cờ hiệu; kiểm soát bộ chỉ báo
+@flag field
+- (Tech) vùng cờ hiệu
+@flag operand
+- (Tech) toán tố cờ hiệu
+@flag register
+- (Tech) bộ ghi cờ hiệu
+@flash memory
+- (Tech) bộ nhớ flash, bộ nhớ khó phai
+@flat antenna
+- (Tech) ăngten phẳng
+@flat cable
+- (Tech) cáp dẹt
+@flat response
+- (Tech) đáp tuyến phẳng
+@flat TV tube
+- (Tech) ống tivi phẳng
+@flexible (printed) circuit
+- (Tech) mạch (in) mềm dẻo
+@flexible cable
+- (Tech) cáp mềm dẻo
+@flexible disk = floppy disk
+- (Tech) đĩa mềm
+@flicker
+- (Tech) chớp nháy (đt)
+@flight computer
+- (Tech) máy điện toán phi hành
+@flight simulator
+- (Tech) bộ mô phỏng phi hành
+@flip-chip
+- (Tech) chíp lật
+@flip-coil
+- (Tech) lõi lật
+@flip-flop
+- (Tech) mạch lật, mạch bấp bênh
+@flip-flop register
+- (Tech) bộ ghi lật
+@floating address
+- (Tech) địa chỉ thả nổi, địa chỉ động = symbolic address
+@floating computation
+- (Tech) phép toán phù động
+@floating grid
+- (Tech) lưới phù động
+@floating point
+- (Tech) điểm phù động, điểm lẻ
+@floating zero
+- (Tech) số không trong phép toán phù động
+@floating-diffusion amplifier
+- (Tech) bộ khuếch đại khuếch tán phù động
+@floating-gate avalanche-injection MOS
+- (Tech) MOS phun thác cổng phù động
+@floating-gate PROM
+- (Tech) PROM cổng phù động
+@floating-point arithmetic operation
+- (Tech) phép toán số học điểm phù động
+@floating-point calculation
+- (Tech) phép tính điểm phù động
+@floating-point data
+- (Tech) dữ liệu điểm phù động
+@floating-point number
+- (Tech) số với điểm phù động
+@floating-point processor
+- (Tech) bộ xử lý điểm phù động
+@flopover
+- (Tech) hiện tượng chạy lên xuống (trên màn hình)
+@floppy disk
+- (Tech) đĩa mềm
+@floppy disk drive (FDD)
+- (Tech) b¶ quay đĩa mềm
+@FLOPS (floating-point operations per second)
+- (Tech) số phép toán điểm phù động mỗi giây, đơn vị tốc độ diễn toán
+@floptical disk
+- (Tech) đĩa mềm quang
+@flow control
+- (Tech) điều khiển thông lượng
+@flow diagram
+- (Tech) lưu đồ, biểu đồ trình tự, lưu trình
+@flowchart
+- (Tech) lưu đồ; biểu đồ trình tự thao tác
+@flowchart symbol
+- (Tech) ký hiệu lưu đồ
+@flowchart template
+- (Tech) bảng vẽ mẫu lưu đồ
+@fluctuating current
+- (Tech) dòng ba động
+@flug connector
+- (Tech) đầu  nối (dây điện)
+@fluorescence
+- (Tech) huỳnh quang
+@fluorescent lamp
+- (Tech) đèn huỳnh quang
+@flush
+- (Tech) xóa sạch; chuyển hết ra ngoài (từ vùng nhớ ra điã)
+@flux
+- (Tech) thông lượng
+@flying spot scanning
+- (Tech) quét bằng điểm bay
+@flywheel
+- (Tech) bánh đà, bánh trớn
+@flywheel circuit
+- (Tech) mạch bánh đà
+@FM (frequency modulation)
+- (Tech) sự biến điệu tần sô
+@FM (frequency modulation) broadcasting
+- (Tech) phát thanh biến điệu tần số
+@FM (frequency modulation) detector
+- (Tech) bộ kiểm sóng biến điệu tần số, bộ giải điều tần
+@FM (frequency modulation) discriminator
+- (Tech) bộ tách sóng biến điệu tần số, bộ giải điều tần
+@FM (frequency modulation) dopler
+- (Tech) đôple biến điệu tần số
+@FM (frequency modulation) noise
+- (Tech) tiếng ồn biến điệu tần số
+@FM (frequency modulation) oscillator
+- (Tech) bộ dao động biến điệu tần số
+@FM (frequency modulation) receiver
+- (Tech) máy thu biến điệu tần số
+@FM (frequency modulation) wave
+- (Tech) sóng biến điệu tần số
+@FMP (Function Management Protocol)
+- (Tech) quy ước quản lý chức năng
+@focal
+- (Tech) tiêu (điểm)
+@focal length
+- (Tech) tiêu cự
+@focal plane
+- (Tech) mặt phẳng tiêu, tiêu diện
+@focal point
+- (Tech) tiêu điểm
+@focus
+- (Tech) tiêu điểm, điểm tập trung
+@focus coil
+- (Tech) cuộn dây tụ tiêu
+@focus servo system
+- (Tech) hệ thống trợ động tụ tiêu
+@focusing magnet
+- (Tech) nam châm tụ tiêu
+@foil capacitor
+- (Tech) bộ diện dung lá kim loại
+@folded dipole antenna
+- (Tech) ăngten lưỡng cực dẹt
+@font
+- (Tech) dạng chữ, phông chữ
+@font element
+- (Tech) phần tử phông chữ
+@font family
+- (Tech) họ phông chữ
+@font sample
+- (Tech) mẫu dạng chữ hưởng, mÅu phông ch»
+@footer
+- (Tech) lề dưới, phần chân trang
+@footnote
+- (Tech) ghi chú cuối trang
+@footprint
+- (Tech) dấu chân
+@foreground
+- (Tech) tiền cảnh, cận cảnh; nổi bật
+@foreground job
+- (Tech) công việc tiền cảnh
+@foreground mode
+- (Tech) chế dộ (xử lý) tiền cảnh
+@foreground process
+- (Tech) tiến trình tiền cảnh
+@fork tone modulation
+- (Tech) biến điệu bằng âm thoa
+@form
+- (Tech) dạng, kiểu, mẫu, khuôn
+@form factor
+- (Tech) kích cỡ thiết bị
+@form feed
+- (Tech) tiếp mẫu (giấy in)
+@form letter
+- (Tech) thư in sẵn đề mục
+@form-feed (FF) character
+- (Tech) ký tự tiếp mẫu (giấy in)
+@form-letter program
+- (Tech) chương trình tạo đề mục trên thư
+@formal
+- (Tech) hình thức; chính thức
+@formal argument
+- (Tech) đối số hình thức
+@formal language
+- (Tech) ký ngữ hình thức
+@formal logic
+- (Tech) luận lý hình thức
+@formal parameter
+- (Tech) thông số hình thức
+@formant frequency
+- (Tech) tần số đỉnh cộng hưởng
+@formant synthesis
+- (Tech) tổng hợp đỉnh cộng
+@format
+- (Tech) khuôn dạng, dạng thức, hình thức; định khuôn dạng (đ)
+@format character
+- (Tech) ký tự định khuôn dạng = layout character
+@format command
+- (Tech) lệnh định khuôn dạng
+@format conversion code
+- (Tech) mã đổi khuôn dạng
+@format instruction
+- (Tech) chỉ thi định khuôn dạng
+@format specification
+- (Tech) quy cách định khuôn dạng, đặc tả định khuôn dạng
+@format-control character
+- (Tech) ký tự điều khiển khuôn dạng
+@formatted data
+- (Tech) dữ liệu đóng khuôn
+@formatted disk
+- (Tech) đĩa đã định khuôn dạng
+@formatted display
+- (Tech) màn hình đã định khuôn dạng
+@formatted input-output statement
+- (Tech) câu lệnh vào ra đã định khuôn dạng
+@formatted record
+- (Tech) bản ghi đã định khuôn dạng
+@forms design
+- (Tech) thiết kế mẫu đơn
+@formula
+- (Tech) công thức (chế tạo); phương pháp; giải pháp
+@Forth
+- (Tech) chương ngữ Forth
+@FORTRAN (FORmula TRANslator)
+- (Tech) chương ngữ FORTRAN (bộ phiên dịch công thức)
+@fortuitous distortion
+- (Tech) biến dạng ngẫu phát
+@forward
+- (Tech) thuận, xuôi, hướng tiến
+@forward bias
+- (Tech) thiên áp thuận; dịch thuận
+@forward biased diode
+- (Tech) đèn hai cực có thiên áp thuận
+@forward biased junction
+- (Tech) tiếp giáp có thiên áp thuận
+@forward blocking voltage
+- (Tech) điện áp đóng thuận
+@forward chaining
+- (Tech) chuỗi suy luận thuận
+@forward compatibility
+- (Tech) tính tương thuận, tương thích tiến
+@forward conductance
+- (Tech) dẫn điện thuận
+@forward current
+- (Tech) dòng thuận
+@forward error correction
+- (Tech) sự hiệu chỉnh sai lầm nơi nhận
+@forward path
+- (Tech) đường thuận
+@forward pointer
+- (Tech) con trỏ thuận
+@forward reference
+- (Tech) tham khảo trước
+@forward scattered power
+- (Tech) công suất tán xạ tới
+@forward search
+- (Tech) tìm phía trước
+@forward signal
+- (Tech) tín hiệu đi tới
+@forward transfer function
+- (Tech) hàm số chuyển thuận
+@Fosteer Seeley discriminator
+- (Tech) bộ tách sóng Fosteer Seeley
+@Foster Seeley detector
+- (Tech) bộ kiểm sóng Foster Seeley
+@Foucault current
+- (Tech) dòng xoáy, dòng Foucault
+@Fourier analysis
+- (Tech) giải tích Fourier (Fuariê)
+@Fourier series
+- (Tech) chuỗi Fourier, cấp số Fourier
+@Fourier theorem
+- (Tech) định lý Fourier
+@Fourier transform
+- (Tech) biến hoán Fourier
+@Fourier's integral
+- (Tech) tích phân Fourier
+@fourth normal form (FNF/4NF)
+- (Tech) dạng chuẩn thứ tư
+@fourth-generation language
+- (Tech) chương ngữ thế hệ thứ tư
+@fractal
+- (Tech) phân dạng; phép toán tạo hình phân dạng
+@fractional
+- (Tech) thuộc phân số, một phần
+@fractional dimension
+- (Tech) chiếu từng phần
+@fractional part
+- (Tech) phần số lẻ, phần phân số
+@fragmentation
+- (Tech) sự tế phân, chia nhỏ; sự phân mảnh
+@frame
+- (Tech) sườn, khung, khuôn; mành/hình ảnh (truyền hình); cột; khối tin (cơ sở)
+@frame blanking
+- (Tech) xóa mành
+@frame buffer
+- (Tech) bộ nhớ đệm mành
+@frame check sequence
+- (Tech) trình tự kiểm mành
+@Frame Relay
+- (Tech) quy ước truyền thông tiếp mành
+@frame synchronize
+- (Tech) đồng bộ hoá mành
+@frame timebase
+- (Tech) chu kỳ quét mành
+@frame tracking
+- (Tech) truy mành [TV]
+@frame transfer device
+- (Tech) thiết bị truyền mành [TV]
+@framework
+- (Tech) sườn, khung, lõi
+@framing bit
+- (Tech) bít định mành
+@framing control
+- (Tech) sự kiểm mành
+@framing error
+- (Tech) lỗi mành
+@franklin
+- (Tech) franklin (Fr, đơn vị điện tích = 3,336 x 10 lũy thừa -10 coulomb)
+@Franklin antenna
+- (Tech) ăngten Franklin, ăngten cộng tuyến, ăngten đẳng vị tướng
+@Fraunhofer (diffraction) hologram
+- (Tech) ảnh toàn ký Fraunhofer
+@Fraunhofer diffraction
+- (Tech) nhiễu xạ Fraunhofer
+@Fraunhofer holography
+- (Tech) môn ảnh toàn ký Fraunhofer
+@free charge
+- (Tech) điện tích tự do
+@free electron
+- (Tech) điện tử tự do
+@free form
+- (Tech) hình thức tự do, thể tự do
+@free running counter
+- (Tech) máy đếm chạu tự do
+@free running frequency
+- (Tech) tần số dao động tự do
+@free running mode
+- (Tech) kiểu dao động tự do
+@free space field intensity
+- (Tech) cường độ trường không gian tự do
+@freeware
+- (Tech) hàng miễn phí, nhu liệu cho không
+@freeze
+- (Tech) làm đông đặc; làm định tĩnh
+@frequency
+- (Tech) tần số
+@frequency agility
+- (Tech) tính linh động tần số
+@frequency band
+- (Tech) dải tần số
+@frequency bridge
+- (Tech) cầu tần số
+@frequency channel
+- (Tech) kênh tần số
+@frequency control
+- (Tech) sự điều tần, điều chỉnh tần số
+@frequency conversion
+- (Tech) sự chuyển đổi tần
+@frequency demodulation
+- (Tech) sự hoàn điệu tần số
+@frequency demultiplier
+- (Tech) bộ giảm tần, bộ phân tích tần
+@frequency detection
+- (Tech) sự phát hiện tần số
+@frequency deviation
+- (Tech) độ lệch tần số; độ di tần
+@frequency discriminator
+- (Tech) bộ phân biệt tần số, bộ tách sóng biến điệu tần số
+@frequency distortion transmission impairment
+- (Tech) sự giảm chất lượng truyền dẫn do biến dạng tần số
+@frequency divider
+- (Tech) bộ phân tần số
+@frequency division multiplexing (FDM)
+- (Tech) bộ đa kênh phân tần số
+@frequency domain synthesis
+- (Tech) sự tổng hợp vùng tần số
+@frequency doubler
+- (Tech) bộ nhân đôi tần số
+@frequency drift
+- (Tech) sự chuyển dời tần số
+@frequency filtering
+- (Tech) lọc tần số
+@frequency function
+- (Tech) hàm tần số
+@frequency hopped (FH) spread spectrum signals
+- (Tech) tín hiệu phổ rộng với tần số thay đổi
+@frequency indicator
+- (Tech) bộ chỉ báo tần số
+@frequency interference
+- (Tech) giao thoa tần số
+@frequency inverse
+- (Tech) sự ngịch đảo tần số
+@frequency meter
+- (Tech) tần số kế, máy đo tần số
+@frequency modulated magnetron
+- (Tech) đèn từ khống biến điệu tần số
+@frequency modulation
+- (Tech) sự biến điệu tần số, điều tần
+@frequency modulator
+- (Tech) bộ biến điệu tần số
+@frequency monitor
+- (Tech) bộ kiểm tra tần số
+@frequency multiplier
+- (Tech) bộ nhân tần số
+@frequency multiplier klystron
+- (Tech) đèn tốc điều nhân tần
+@frequency pulling
+- (Tech) kéo tần số
+@frequency pushing
+- (Tech) đẩy tần số
+@frequency regulator
+- (Tech) bộ ổn tần
+@frequency response curve
+- (Tech) đáp tuyến tần số
+@frequency response equalization
+- (Tech) hiệu chỉnh đáp tuyến tần số
+@frequency sampling system
+- (Tech) hệ thống lấy mẫu tần số
+@frequency scanner
+- (Tech) bộ quét tần số
+@frequency selectivity
+- (Tech) độ chọn lọc tần số
+@frequency sensitive load
+- (Tech) gtải nhạy tần
+@frequency separator
+- (Tech) bộ phân tách tần số
+@frequency shift
+- (Tech) dịch chuyển tần số
+@frequency shift keying (FSK)
+- (Tech) gõ di tần
+@frequency spectrum
+- (Tech) phổ tần số
+@frequency stability
+- (Tech) độ ổn định tần số
+@frequency swing
+- (Tech) dao động tần số
+@frequency synthesizer
+- (Tech) bộ tổng hợp tần số
+@frequency translation
+- (Tech) sự chuyển dịch tần
+@frequency tripler
+- (Tech) bộ nhân ba tần số
+@frequency-division multiplex(ing)
+- (Tech) đa hợp phân tần
+@frequency-modulated cyclotron
+- (Tech) bộ gia tốc quay tròn biến điệu tần số
+@frequency-response characteristic
+- (Tech) đặc tính hưởng ứng tần số
+@frequency-to-number converter
+- (Tech) bộ đổi tần ra số
+@fresnel
+- (Tech) fresnen, têtrahec (10 lũy thừa 12 Hz)
+@Fresnel diffraction
+- (Tech) nhiễu xạ Fresnel
+@frictional electricity
+- (Tech) điện ma sát
+@fringe antenna
+- (Tech) ăngten biên
+@fringe area
+- (Tech) khu vực biên
+@fringe effect
+- (Tech) hiệu ứng biên = edge effect
+@fringe radiation
+- (Tech) bức xạ biên
+@front end
+- (Tech) đầu trước, phần tiếp ngoại vi
+@front panel
+- (Tech) bảng mặt trước
+@front-end computer
+- (Tech)máy điện toán đầu trước
+@front-end interface
+- (Tech) giao diện đầu trước
+@front-end processing
+- (Tech) xử lý tiếp ngoại vi
+@front-end processor (FEP)
+- (Tech) bộ xử lý đầu trước; chương trình xử lý đầu trước, chương trình tiền xử lý
+@front-end system
+- (Tech) hệ thống tiếp ngoại vi, hệ đầu trước
+@frozen state
+- (Tech) trạng thái đông đặc/ngưng bặt
+@full adder
+- (Tech) bộ cộng đầy đủ, bô đọc toàn phần
+@full duplex
+- (Tech) song công toàn vẹn, hai chiều toàn vẹn
+@full load
+- (Tech) tải đầy, nạp đầy
+@full operation
+- (Tech) vận hành trọn vẹn
+@full parabolic reflector
+- (Tech) cái phản xạ toàn parabol
+@full wave rectifier
+- (Tech) bộ chỉnh lưu toàn sóng
+@full-adder
+- (Tech) bộ cộng đầy đủ, bộ cộng toàn phần
+@full-read pulse
+- (Tech) xung đọc (toàn phần) = read(ding) pulse
+@full-satellite exchange
+- (Tech) tổng đài vệ tinh hoàn toàn
+@full-scale deflection
+- (Tech) làm lệch tối đa thang độ
+@full-text searching
+- (Tech) tìm trên trọn bản văn
+@full-wave dipole
+- (Tech) ngẫu cực toàn sóng/ba
+@full-wave doubler
+- (Tech) bộ bội áp toàn sóng
+@fully-transistorized
+- (Tech) hoàn toàn dùng trăngsito
+@function
+- (Tech) hàm (số); cơ năng, chức năng, công năng/dụng, tác dụng; vận hành, thao tác
+@function abstraction
+- (Tech) hàm trừu tượng
+@function box
+- (Tech) hộp cơ năng
+@function button
+- (Tech) nút cơ năng
+@function character
+- (Tech) ký tự cơ năng
+@function code
+- (Tech) mã cơ năng
+@function generation
+- (Tech) tạo hàm
+@function generator
+- (Tech) bộ tạo hàm số
+@function key
+- (Tech) phím cơ năng
+@function letter
+- (Tech) chữ cơ năng
+@function management protocol (FMP)
+- (Tech) quy ước quản lý cơ năng
+@function table
+- (Tech) bảng hàm
+@functional
+- (Tech) thuộc cơ năng/chức năng, thuộc hàm số
+@functional block
+- (Tech) khối cơ năng
+@functional description
+- (Tech) mô tả cơ năng
+@functional design
+- (Tech) thiết kế theo chức năng
+@functional diagram
+- (Tech) sơ đồ chức năng
+@functional element
+- (Tech) phần tử cơ năng
+@functional logic
+- (Tech) luận lý cơ năng
+@functional programming
+- (Tech) thảo chương theo hàm số
+@functional simulator
+- (Tech) bộ mô phỏng cơ năng
+@functional specification
+- (Tech) hoạch định cơ năng, quy cách theo chức năng
+@fundamental
+- (Tech) thuộc cơ bản/gốc [tt]
+@fundamental frequency
+- (Tech) tần số cơ bản
+@fundamental mode
+- (Tech) kiểu cơ bản
+@fundamental tone
+- (Tech) âm cơ bản
+@fundamental wave
+- (Tech) sóng cơ bản
+@fundamental wavelength
+- (Tech) độ dài sóng cơ bản
+@fuse
+- (Tech) cầu chì; ngòi nổ; nấu chảy (đ)
+@fuse holder
+- (Tech) cái kẹp cầu chì
+@fuse panel
+- (Tech) bảng cầu chì
+@fuse switch
+- (Tech) cái chuyển mạch có cầu chì
+@fuse wire
+- (Tech) dây cầu chì
+@fusible link
+- (Tech) mạch nối cầu chì
+@fusible wire
+- (Tech) dây cầu chì, dây nóng chảy
+@fusible-link memory
+- (Tech) bộ nhớ nối cầu chì
+@fusion process
+- (Tech) phương pháp nóng chảy
+@fusion zone
+- (Tech) vùng nóng chảy
+@fuzzy
+- (Tech) lờ mờ, mơ hồ
+@fuzzy logic
+- (Tech) lôgic mờ, luận lý mờ [Toán]
+@fuzzy set
+- (Tech) tập hợp mờ

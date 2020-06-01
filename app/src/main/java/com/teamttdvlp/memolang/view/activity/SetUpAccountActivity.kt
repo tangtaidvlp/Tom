@@ -6,15 +6,13 @@ import android.os.Bundle
 import android.view.View
 import android.widget.TextView
 import androidx.core.animation.addListener
-import androidx.recyclerview.widget.LinearLayoutManager
-import com.google.firebase.auth.FirebaseAuth
 import com.teamttdvlp.memolang.R
 import com.teamttdvlp.memolang.databinding.ActivitySetUpAccountBinding
-import com.teamttdvlp.memolang.database.sql.repository.UserRepository
 import com.teamttdvlp.memolang.view.activity.iview.SetUpAccountView
 import com.teamttdvlp.memolang.view.adapter.RCVChooseLanguageAdapter
 import com.teamttdvlp.memolang.view.base.BaseActivity
-import com.teamttdvlp.memolang.view.helper.appear
+import com.teamttdvlp.memolang.view.helper.ViewModelProviderFactory
+import com.teamttdvlp.memolang.view.helper.goVISIBLE
 import com.teamttdvlp.memolang.view.helper.getActivityViewModel
 import com.teamttdvlp.memolang.view.helper.quickStartActivity
 import com.teamttdvlp.memolang.viewmodel.SetUpAccountViewModel
@@ -24,16 +22,10 @@ import javax.inject.Named
 class SetUpAccountActivity : BaseActivity<ActivitySetUpAccountBinding, SetUpAccountViewModel>()
                             ,SetUpAccountView{
 
-    lateinit var firebaseAuth : FirebaseAuth
-    @Inject set
-
-    lateinit var userRepository: UserRepository
+    lateinit var viewModelProviderFactory: ViewModelProviderFactory
     @Inject set
 
     lateinit var rcvChooseLanguageAdapter : RCVChooseLanguageAdapter
-    @Inject set
-
-    lateinit var linearLayoutManager: LinearLayoutManager
     @Inject set
 
     private var beingFocusedTextView : TextView? = null
@@ -47,33 +39,25 @@ class SetUpAccountActivity : BaseActivity<ActivitySetUpAccountBinding, SetUpAcco
 
     override fun getLayoutId(): Int  = R.layout.activity_set_up_account
 
-    override fun takeViewModel(): SetUpAccountViewModel = getActivityViewModel {
-        SetUpAccountViewModel(
-            firebaseAuth,
-            userRepository,
-            application
-        )
-    }
+    override fun takeViewModel(): SetUpAccountViewModel = getActivityViewModel(viewModelProviderFactory)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         viewModel.setUpView(this)
-        viewModel.checkUserInfoBeenInitilized()
+        viewModel.checkUserInfoSetUpStatus()
     }
 
     override fun addViewControls() { dB.apply {
         layoutChooseLang.rcvChooseLanguage.adapter = rcvChooseLanguageAdapter
-        layoutChooseLang.rcvChooseLanguage.layoutManager = linearLayoutManager
     }}
 
     override fun addViewEvents() { dB.apply {
 
         btnDone.setOnClickListener {
-            val motherLang = txtMotherLanguage.text.toString()
-            val targetLang = txtTargetLanguage.text.toString()
-            viewModel.createUserInfo(motherLang, targetLang)
-            viewModel.getUser().addLanguageToRecentUseList(targetLang)
-            viewModel.getUser().addLanguageToRecentUseList(motherLang)
+            val defaultBackLanguage = txtCurrentUsedLanguage.text.toString()
+            val defaultFrontLanguage = txtCurrentLearnedLanguage.text.toString()
+            viewModel.createAndSaveUserInfoStatus(defaultFrontLanguage, defaultBackLanguage)
+            navigateToMenuScreen()
         }
 
         rcvChooseLanguageAdapter.setOnItemClickListener { lang ->
@@ -81,13 +65,13 @@ class SetUpAccountActivity : BaseActivity<ActivitySetUpAccountBinding, SetUpAcco
             animatorSetChooseLangDisappear.start()
         }
 
-        txtMotherLanguage.setOnClickListener {
-            beingFocusedTextView = txtMotherLanguage
+        txtCurrentUsedLanguage.setOnClickListener {
+            beingFocusedTextView = txtCurrentUsedLanguage
             animatorSetChooseLangAppear.start()
         }
 
-        txtTargetLanguage.setOnClickListener {
-            beingFocusedTextView = txtTargetLanguage
+        txtCurrentLearnedLanguage.setOnClickListener {
+            beingFocusedTextView = txtCurrentLearnedLanguage
             animatorSetChooseLangAppear.start()
         }
 
@@ -120,7 +104,7 @@ class SetUpAccountActivity : BaseActivity<ActivitySetUpAccountBinding, SetUpAcco
         rcvChooseLanguageAppear.setTarget(layoutChooseLang.viewgroupChooseLanguage)
         blackBackgroundAppear.setTarget(layoutChooseLang.imgBlackBackgroundChooseLanguage)
         animatorSetChooseLangAppear.play(blackBackgroundAppear).before(rcvChooseLanguageAppear)
-        animatorSetChooseLangAppear.addListener(onStart = {layoutChooseLang.groupChooseLanguage.appear()},
+        animatorSetChooseLangAppear.addListener(onStart = {layoutChooseLang.groupChooseLanguage.goVISIBLE()},
             onEnd = {
                 isInChooseLanguageMode = true
             })

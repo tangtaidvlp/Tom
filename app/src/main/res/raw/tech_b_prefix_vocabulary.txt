@@ -1,0 +1,1097 @@
+@babble
+- (Tech) xuyên âm đa kênh, nói chen nhiều kênh, hỗn xuyên âm [TQ]; nhiễu loạn
+@babbling network
+- (Tech) mạng xuyên âm đa kênh, mạng hỗn xuyên âm
+@back
+- (Tech) phía sau, ngược, lùi; lưng
+@back conduction
+- (Tech) dẫn ngược
+@back coupling
+- (Tech) ghép ngược
+@back dating
+- (Tech) ghi lại ngày trước
+@back end
+- (Tech) đầu sau, đoạn cuối
+@back feed
+- (Tech) cung cấp ngược lại
+@back lash potential
+- (Tech) điện thế lưới ngược
+@back lash
+- (Tech) voltage điện áp lưới ngược
+@back out of
+- (Tech) lùi ra khỏi, ngược về
+@back out
+- (Tech) hoàn nguyên; thao tác ngược; thủ tiêu
+@back page
+- (Tech) trang mặt sau
+@back panel
+- (Tech) bảng mặt sau (máy điện toán)
+@back propagation
+- (Tech) truyền lan ngược [NB]
+@back reference
+- (Tech) tham khảo ngược
+@back resistance
+- (Tech) điện trở ngược
+@back scattering
+- (Tech) tán xạ ngược
+@back scheduling
+- (Tech) lập thời biểu ngược
+@back slash
+- (Tech) gạch chéo ngược () = reverse slash
+@back space
+- hay backspace
+- (Tech, máy tính) phím xóa (lùi) trên bàn phím máy tính
+- chuyển cần máy chữ ngược lại một hoặc nhiều khoảng, bằng cách bấm vào một phím đặc biệt dành cho việc này
+- phím lùi, lùi bước
+
+@backspace
+- (Tech, máy tính) phím xóa (lùi) trên bàn phím máy tính
+- chuyển cần máy chữ ngược lại một hoặc nhiều khoảng, bằng cách bấm vào một phím đặc biệt dành cho việc này
+- phím lùi, lùi bước
+
+@back stroke
+- (Tech) chuyển động lùi
+@back voltage
+- (Tech) điện áp ngược
+@back-to-back diodes
+- (Tech) đèn hai cực đấu lưng
+@back-tracking method
+- (Tech) phương pháp truy tích ngược
+@backbone LAN (Local Area Network)
+- (Tech) LAN (Mạng Cục Bộ) cột trụ
+@backfire
+- (Tech) đánh lửa ngược; phá ngược; phản ứng ngược
+@background
+- (Tech) nền, cơ sở, phông; bối cảnh, hậu cảnh; thứ cấp, bổ trợ; ưu tiên thấp
+@background information
+- (Tech) thông tin cơ sở, tin tức nguồn cội
+@background job
+- (Tech) công việc thứ cấp, công việc bối cảnh
+@background mode
+- (Tech) chế độ thứ cấp
+@background noise
+- (Tech) tiếng ồn phông, tiến ồn bối cảnh, nhiễu loạn xung quanh
+@background printing
+- (Tech) in trong bối cảnh
+@background processing
+- (Tech) xử lý trong bối cảnh
+@background sound
+- (Tech) âm tạp, âm nền, âm bối cảnh
+@background task
+- hay background job
+- (Tech) công việc thứ cấp, công việc bối cảnh
+- công việc phụ
+- công việc thứ cấp
+- công việc ưu tiên thấp
+
+@background job
+- (Tech) công việc thứ cấp, công việc bối cảnh
+- công việc phụ
+- công việc thứ cấp
+- công việc ưu tiên thấp
+
+@backing memory
+- (Tech) bộ nhớ lưu
+@backing out
+- (Tech) hồi phục ngược [NB]
+@backing storage
+- (Tech) bộ trữ dự phòng
+@backing up system
+- (Tech) hệ thống sao trữ dự phòng
+@backing up
+- (Tech) dự phòng; sao lưu (d)
+@backlash
+- (Tech) khe, khoảng trống; dòng lưới ngược; phản xung [TQ]
+@backlight
+- (Tech) ánh sáng bối cảnh; chiếu sáng mặt sau, áng sáng chiếu hậu; đèn sau [TQ]
+@backlog
+- (Tech) công việc đổ dồn; sổ đặt hàng; dự trữ
+@backplane  = motherboard = system board
+- (Tech) bảng sau [TQ], bảng chính, bảng hệ thống
+@backrolling
+- (Tech) quấn ngược
+@backscattering
+- (Tech) tán xạ ngược
+@backslash
+- (Tech) dấu chéo ngược
+@backspace (BS)
+- (Tech) lùi một nấc, xóa ngược
+@backspace character
+- (Tech) ký tự lùi
+@backspace key
+- (Tech) phím lùi
+@BACKSPACE statement
+- (Tech) câu lệnh LÙI
+@backtab
+- (Tech) lùi cột
+@backtracking
+- (Tech) tìm ngược, truy tích nghịch
+@backup
+- (Tech) dự phòng; sao lưu (d/đ)
+@backup copy
+- (Tech) bản sao dự phòng
+@backup device
+- (Tech) thiết bị sao dự phòng
+@backup disk
+- (Tech) đĩa sao dự phòng
+@backup diskette
+- (Tech) đĩa nhỏ sao dự phòng
+@backup file
+- (Tech) tập tin sao dự phòng
+@backup media
+- (Tech) môi thể dự phòng
+@backward
+- (Tech) phía sau, mặt sau; lùi lại; ngược lại, trở lại đằng sau (đ)
+@backward equation
+- (Tech) phương trình thức lùi
+@backward pointer
+- (Tech) con trỏ ngược
+@backward search
+- (Tech) tìm ngược
+@backward signal
+- (Tech) tín hiệu nghịch hướng [NB]
+@backward signaling
+- (Tech) báo hiệu đằng sau
+@backward substitution
+- (Tech) thay thế lùi [NB]
+@backward voltage
+- (Tech) điện áp ngược
+@backward wave
+- (Tech) sóng phản hồi
+@bad disk
+- (Tech) đĩa hư
+@bad packet
+- (Tech) gói hư
+@bad sector
+- (Tech) cung hư
+@bad track
+- (Tech) đường hư
+@bad-connection test
+- (Tech) thử sự nối hư
+@badge
+- (Tech) dấu hiệu, huy hiệu, thẻ nhân viên
+@badge reader
+- (Tech) bộ đọc thẻ nhân viên
+@baffle
+- (Tech) ván ngăn
+@bailment
+- (Tech) ký thác, bảo lãnh
+@bakelite
+- (Tech) bakêlit (nhựa)
+@bakelized
+- (Tech) được tẩm bakêlit (nhựa)
+@balance
+- (Tech) cân bằng, thăng bằng; cái cân
+@balance control
+- (Tech) điều chỉnh cân bằng
+@balanced
+- (Tech) được cân bằng
+@balanced load
+- (Tech) tải cân bằng, tải đối xứng
+@balanced state
+- (Tech) trạng thái cân bằng
+@balancer
+- (Tech) bộ cân bằng
+@balancing
+- (Tech) làm cân bằng
+@balancing weight
+- (Tech) trọng lượng cân bằng, đối trọng
+@ball point mouse
+- (Tech) con chuột điểm cầu [TQ]
+@ball printer
+- (Tech) máy in trái cầu
+@ballast resistor
+- (Tech) cái điện trở ổn dòng
+@ballastron
+- (Tech) barête (ống ổn dòng)
+@ballistic
+- (Tech) thuộc đạn đạo; thuộc xạ kích; thuộc xung kích
+@ballistic method
+- (Tech) phương pháp đạn đạo
+@balloon antenna
+- (Tech) ăngten bong bóng, ăngten khí cầu
+@balun
+- (Tech) bộ biến thế cân bằng (từ vào đối xứng ra không đối xứng)
+@banana plug
+- (Tech) phích chuối
+@band
+- (Tech) dải, băng, dãy
+@band filter
+- (Tech) bộ lọc dải
+@band printer
+- (Tech) máy in băng
+@band selector
+- (Tech) bộ chọn dải sóng
+@band separator
+- (Tech) bộ phân chia dải
+@band switch
+- (Tech) cái chuyển băng
+@band theory
+- (Tech) lý thuyết dải năng lượng
+@bandwidth
+- (Tech) dải thông, bề rộng băng tần, dãy sóng
+@bang-bang control
+- (Tech) điều khiển kiểu đóng-mở [TQ]
+@bank
+- (Tech) nhóm, dãy, băng; ngân hàng
+@bank memory
+- (Tech) dãy bộ nhớ
+@bank processing unit
+- (Tech) bộ xử lý dãy
+@banking system
+- (Tech) hệ thống ngân hàng
+@banner
+- (Tech) tiêu đề (cột báo)
+@banner page
+- (Tech) trang tiêu đề
+@bantam tube
+- (Tech) đèn tí hon
+@bar
+- (Tech) thanh, băng dải; dấu; barơ (đơn vị áp suất)
+@bar chart
+- (Tech) biểu đồ thanh, biểu đồ dải
+@bar code
+- (Tech) mã thanh, mã dải
+@bar graph
+- (Tech) đồ thị thanh, đồ thị dải
+@bare board
+- (Tech) bảng trần (chưa gắn linh kiện)
+@bare cable
+- (Tech) cáp trần
+@bare conductor
+- (Tech) dây dẫn trần
+@bariated cathode
+- (Tech) âm cực phủ bari
+@barograph
+- (Tech) khí (quyển) áp ký
+@barometer
+- (Tech) khí (quyển) áp kế, phong vũ biểu
+@barrage
+- (Tech) triệt nhiễu; chướng ngại vật
+@barrel
+- (Tech) khối hình trống; thể viên trụ
+@barrel antenna
+- (Tech) ăngten hình trống, ăngten (cosec) bình phương
+@barretter
+- (Tech) bộ điện trở ổn dòng
+@barrier
+- (Tech) lớp chắn, hàng rào, chướng ngại
+@barycentric coordinate
+- (Tech) tọa dộ trọng tâm [NB]
+@base
+- (Tech) gốc, nền, cơ bản; cực gốc; chân; đui; cơ số = radix; đáy; đế (điện thoại); điểm tựa; trụ; kiềm (bazơ); kho (dữ kiện); đặt nền móng (đ)
+@base level
+- (Tech) mức cơ bản
+@base line
+- (Tech) đường đáy
+@base material
+- (Tech) nguyên liệu; chất nền mạch in
+@baseband
+- (Tech) dải gốc
+@baseless tube
+- (Tech) đèn không đế
+@baseline
+- (Tech) đường gốc, đường không; đường quét
+@basic
+- (Tech) cơ bản, căn bản, cơ sở
+@basic access
+- (Tech) truy cập cơ bản
+@basic address
+- (Tech) địa chỉ cơ bản
+@basic attribute set
+- (Tech) tập hợp thuộc tính cơ bản [NB]
+@basis function
+- (Tech) hàm số gốc
+@basis matrix
+- (Tech) ma trận gốc
+@basket coil
+- (Tech) cuộn dây hình rổ
+@bass
+- (Tech) âm thanh trầm
+@bass boost
+- (Tech) tăng (âm) trầm
+@bass-boost speaker
+- (Tech) loa tăng trầm
+@bass-reflex speaker
+- (Tech) loa phản trầm
+@bastard
+- (Tech) hỗn tạp, tạp chất
+@batch
+- (Tech) lô; mẻ, lứa; nhóm
+@batch access
+- (Tech) truy cập theo lô
+@batch command
+- (Tech) lệnh theo lô
+@batch file
+- (Tech) tập tin theo lô
+@batch job
+- (Tech) công việc theo lô
+@batch mode
+- (Tech) chế độ theo lô
+@batch operation
+- (Tech) vận hành theo lô
+@batch processing
+- (Tech) xử lý theo lô
+@batching
+- (Tech) định lô
+@battery
+- (Tech) bình điện, ắcquy; pin; nguồn điện
+@batwing antenna
+- (Tech) ăngten cánh dơi
+@batwing dipole
+- (Tech) ngẫu cực cánh dơi
+@baud
+- (Tech) bốt (số phần tử mã trong một giây); bốt (đơn vị tốc độ điện báo)
+@baud rate
+- (Tech) tốc độ bốt, tốc độ truyền [NB]
+@bay
+- (Tech) tủ, hộc; bộ
+@bayonet
+- (Tech) ngạnh lưỡi lê (đui đèn)
+@bayonet base
+- (Tech) đui ngạnh
+@bayonet socket
+- (Tech) đui ngạnh
+@bazooka
+- (Tech) bộ làm cân bằng
+@BCD (binary-coded decimal)
+- (Tech) số thập phân biên mã nhị phân
+@beacon
+- (Tech) máy tín tiêu/hiệu, trạm tín tiêu/hiệu, cái pha vô tuyến; tín tiêu/hiệu, pha vô tuyến; đài radda
+@bead
+- (Tech) viên, chuỗi hạt
+@bead capacitor
+- (Tech) bộ điện dung hình chuỗi
+@bead transistor
+- (Tech) đèn tinh thể hạt
+@beam
+- (Tech) chùm; chùm sáng, tia
+@beam angle
+- (Tech) góc chỉ hướng, góc chùm
+@beamwidth
+- (Tech) độ rộng chùm
+@bearer
+- (Tech) người đưa tin; bộ tuyền tin, bộ đưa tin (giữa hai thiết bị thông tin); vật chống đỡ
+@bearer capability
+- (Tech) khả năng bộ truyền tin
+@bearer service
+- (Tech) dịch vụ bộ truyền tin
+@bearing
+- (Tech) góc phương vị; định hướng; quan hệ; ổ trục
+@beat
+- (Tech) phách
+@beat amplitude
+- (Tech) biên độ phách
+@beating oscillator
+- (Tech) bộ dao động phách
+@beautifier
+- (Tech) bộ viết rõ, bộ viết đúng
+@beavertail antenna
+- (Tech) ăngten hình đuôi hải ly, ăngten (sóng) bình diện
+@beep
+- (Tech) tiếng bíp (phát từ máy)
+@beeper
+- (Tech) máy bíp, máy điện liên (liên lạc báo có điện thoại) = pager
+@beeper box
+- (Tech) máy bíp, điện liên
+@begin block
+- (Tech) khối bắt đầu
+@begin column
+- (Tech) cột bắt đầu
+@begin window
+- (Tech) bắt đầu cửa xổ [NB]
+@behave
+- (Tech) chạy, vận hành (máy) = run
+@behavior
+- (Tech) cách xử lý, chế độ; hành vi, trạng thái
+@bel
+- (Tech) ben (đơn vị tỉ lệ công suất theo thang đồi số)
+@BEL
+- (Tech) ký tự tiếng chuông
+@belief revision
+- (Tech) duyệt lại tín nhiệm (trí năng nhân tạo)
+@bell
+- (Tech) chuông
+@belt
+- (Tech) vòng đai, thắt lưng
+@benchmark
+- (Tech) tiêu chuẩn, cơ chuẩn; điểm chuẩn, điểm mốc; kiểm chuẩn
+@benchmark program
+- (Tech) chương trình kiểm chuẩn
+@benchmark test
+- (Tech) thử chuẩn, kiểm chuẩn
+@bend
+- (Tech) khuỷu; chỗ uốn; độ uốn; uốn (d)
+@beryllium oxide (BeO)
+- (Tech) ôxit berili(um)
+@best approximation
+- (Tech) ứớc lượng gần đúng nhất
+@best-fit method
+- (Tech) phương pháp lắp vừa nhất
+@beta
+- (Tech) bêta, hệ số khuếch dòng đèn tinh thể
+@bi-CMOS
+- (Tech) chất bán dẫn oxit kim thuộc bổ xung lưỡng cực
+@bi-directional
+- (Tech) hai hướng, hai chiều
+@biadaptive
+- (Tech) thích ứng kép = backward learning
+@bias
+- (Tech) thiên áp, điện áp lệch; thiên lưu; thiên từ; dời chỗ; lệch, dịch (d)
+@biasing
+- (Tech) định thiên; tăng thiên áp
+@bibliography
+- (Tech) mục lục thư tịch; thư tịch học; thư mục
+@biconical antenna
+- (Tech) ăngten hai chóp
+@biconjugate gradient method
+- (Tech) phương pháp thang độ liên hợp song đối
+@biconvex lens
+- (Tech) thấu kính hai mặt lõm
+@bid
+- (Tech) yêu cầu quyền phát tin [NB]
+@bidirectional
+- (Tech) thuộc song hướng, thuộc hai hướng
+@bidual
+- (Tech) song đối ngẫu
+@bifilar
+- (Tech) hai dây, dây chập đôi
+@bifurcation
+- (Tech) chỗ rẽ; phân nhánh/kỳ; trạng thái hai nhánh/lưỡng kỳ
+@bilateral
+- (Tech) hai chiều, hai bên, hai phía
+@bilevel resist
+- (Tech) lớp cản hai cấp
+@bilinear system
+- (Tech) hệ thống song tuyến [NB]
+@bill fee
+- (Tech) tính tiền
+@bill of materials
+- (Tech) danh mục vật liệu, phiếu vật tư
+@billboard antenna
+- (Tech) ăngten bảng
+@billion
+- (Tech) một tỷ, một ngàn triệu
+@bimetallic
+- (Tech) lưỡng kim thuộc
+@BIMOS (bipolar  metal oxide semiconductor)
+- (Tech) BIMOS (chất bán dẫn ôxít kim loại lưỡng cực)
+@BIMOS integrated circuit
+- (Tech) mạch tích hợp BIMOS
+@bin
+- (Tech) máy thu nhận; hộc
+@binary digit
+- (Tech) số tự nhị phân (0 hoặc 1)
+@binary
+- (Tech) đôi; thuộc nhị phân, cơ hai; thuộc nhị nguyên [TQ], thuộc nhị hạng [NB]; lưỡng thể
+@binary integer
+- (Tech) số nguyên nhị phân
+@binary logic
+- (Tech) luận lý nhị phân
+@binaural effect
+- (Tech) hiệu ứng nghe hai tai
+@binaural
+- (Tech) bằng hai tai
+@bind
+- (Tech) liên kết, nối
+@binder
+- (Tech) chất gắn; dây buộc; cuốn sổ
+@binit
+- (Tech) cơ số hai; đơn vị nhị phân
+@binocular
+- (Tech) bằng hai mắt
+@binomial
+- (Tech) nhị thức
+@biochip
+- (Tech) chip sinh tính
+@biocomputer
+- (Tech) máy điện toán sinh tính
+@bioelectric
+- (Tech) thuộc điện sinh vật
+@bioelectricity
+- (Tech) môn điện sinh vật
+@bioelectronics
+- (Tech) môn điện tử sinh vật
+@biosensor
+- (Tech) đầu cảm thụ sinh vật
+@biphase
+- (Tech) hai vị tướng
+@bipolar
+- (Tech) hai cực, song/lưỡng cực; lưỡng hạt (mang)
+@biquadratic
+- (Tech) trùng phương
+@biquinary
+- (Tech) cơ hai và năm
+@birefringent discriminator
+- (Tech) bộ phân biệt song chiết
+@biscuit
+- (Tech) bánh qui
+@bistable device
+- (Tech) bộ song ổn thái
+@bistable
+- (Tech) trạng thái song ổn, ổn kép
+@bistatic scattering
+- (Tech) tán xạ song phân [ĐL], tán xạ do hai vị trí (ăngten radda)
+@bit
+- (Tech) bit (đơn vị thông tin; đơn vị dung lượng ký ức); số nhị phân = binary digit
+@bit manipulation
+- (Tech) thao tác bit
+@bit-by-bit transfer
+- (Tech) truyền bit theo bit
+@bit-by-bit
+- (Tech) bit theo bit
+@bitmap
+- (Tech) hình chấm, bản đồ tổng hợp bit
+@bitmap display
+- (Tech) biểu thị bằng hình chấm/bitmap
+@bitmap font
+- (Tech) dạng chữ chấm (vuông)
+@bitwise
+- (Tech) phân theo bit
+@black and white film
+- (Tech) phim trắng đen
+@black and white television
+- (Tech) ti vi trắng đen
+@black body
+- (Tech) vật thể đen
+@black box
+- (Tech) hộp đen
+@black hole
+- (Tech) lỗ đen
+@black mica
+- (Tech) mica đen
+@black peak
+- (Tech) đỉnh đen
+@black
+- (Tech) mầu đen; làm đen (đ)
+@blackbody radiator
+- (Tech) bộ bức xạ vật thể đen
+@blackout
+- (Tech) mất liên lạc; cúp điện
+@blank
+- (Tech) mẫu kê khai; ký tư trống; khoảng trống/cách; để trống/trắng; xóa (đ)
+@blank address
+- (Tech) địa chỉ trống
+@blank card
+- (Tech) phiếu trắng
+@blank cell
+- (Tech) ô trống
+@blank character
+- (Tech) ký tự trống = space character
+@blank disk
+- (Tech) đĩa trống
+@blank line
+- (Tech) dòng trống, hàng trống
+@blank record
+- (Tech) bản ghi trống
+@blank tape
+- (Tech) băng trống
+@blanking
+- (Tech) xóa (d)
+@blast
+- (Tech) xóa, bộc phát; nổ nhanh
+@blasting
+- (Tech) qúa tải, qúa kích động; bộc phát
+@bleed
+- (Tech) dòng in, nhỉ ra (đ)
+@bleeder
+- (Tech) bộ phân áp; điện trở trích
+@blemish
+- (Tech) hư hỏng; dơ
+@blend
+- (Tech) pha trộn; hợp nhau; pha mầu (đ)
+@blesser
+- (Tech) chương trình chuyển hệ thống = system switcher
+@blind
+- (Tech) mù; chói; che đậy
+@blind area
+- (Tech) khu vực mù
+@blind spot
+- (Tech) điểm mù
+@blind zone
+- (Tech) vùng mù, vùng tối
+@blink
+- (Tech) chớp tắt, nhấp nháy (đ)
+@blinking cursor
+- (Tech) con trỏ nhấp nháy
+@blinking
+- (Tech) chớp tắt, nhấp nháy ()
+@block
+- (Tech) khối; bộ, ô; con trỏ vuông; tín hiệu chặn; nhóm (điện tử); ngăn chặn (đ)
+@block address
+- (Tech) địa chỉ khối
+@block cancel character
+- (Tech) ký tự bỏ khối
+@block check character
+- (Tech) ký tự kiểm khối
+@block data
+- (Tech) dữ kiện khối
+@block device
+- (Tech) thiết bị khối
+@block diagram
+- (Tech) sơ đồ khối
+@block gap
+- (Tech) khoảng cách (ký lục) khối = interblock gap
+@block ignore character
+- (Tech) ký tự bỏ qua khối
+@block cancel character
+- (Tech) ký tự hủy khối
+@block length
+- (Tech) độ dài khối
+@block mark
+- (Tech) dấu khối
+@block nesting
+- (Tech) lồng khối
+@block parity
+- (Tech) giải thuật kiểm toàn khối
+@block prefix
+- (Tech) tiếp đầu khối
+@block record
+- (Tech) bản ghi khối
+@block retrieval
+- (Tech) truy dụng khối
+@block search
+- (Tech) tìm khối
+@block signal
+- (Tech) tín hiệu chặn
+@block sort
+- (Tech) sắp xếp theo khối
+@block structure
+- (Tech) cấu trúc khối
+@block transfer
+- (Tech) chuyển từng khối một
+@blockette
+- (Tech) khối con
+@blocking factor
+- (Tech) hệ số kết khối
+@blocking layer
+- (Tech) lớp chặn
+@blocking
+- (Tech) khóa; chặn; kết khối
+@blocksize
+- (Tech) cỡ khối; cỡ khối kiện
+@blow
+- (Tech) thổi, quạt
+@blow up
+- (Tech) phóng lớn, phóng đại, khuếch trương; nổ
+@blower
+- (Tech) máy thổi
+@blue (electron) gun
+- (Tech) súng điện tử mầu lam
+@blue phosphor
+- (Tech) lân tinh mầu lam
+@blue primary
+- (Tech) mầu lam cơ bản
+@blurred picture
+- (Tech) hình nhòe
+@blurred
+- (Tech) nhòe
+@board
+- (Tech) bảng; bàn
+@bobbin
+- (Tech) cuộn cảm; cuộn dây; lõi
+@body
+- (Tech) thân; vật thể
+@boilerplate
+- (Tech) mẫu điền
+@bold italic
+- (Tech) đậm nghiêng (chữ)
+@bold
+- (Tech) đậm (chữ)
+@boldface
+- (Tech) mặt chữ đậm
+@bolometer
+- (Tech) bức/phúc xạ nhiệt kế [TQ], bôlô kế
+@bomb
+- (Tech) bỏ bom
+@bomb out
+- (Tech) bị hư tống ra
+@bombardment
+- (Tech) bắn phá (d)
+@bond
+- (Tech) liên kết, dán dính, kết nối
+@bonding
+- (Tech) sự kết nối
+@book
+- (Tech) sách; tâp; đơn vị luận lý
+@book size personal computer
+- (Tech) máy điện toán cá nhân khổ sách
+@Boolean
+- (Tech) thuộc Boole, luận lý
+@Boolean algebra
+- (Tech) đại số Boole, đại số luận lý
+@boom
+- (Tech) cần/giá treo (ống nói)
+@boominess
+- (Tech) cộng hưởng của hộp
+@boost
+- (Tech) tăng, khuếch đại (d)
+@booster
+- (Tech) máy tăng áp; bộ hỗ trợ; bộ tiền khuếch đại ăngten
+@boot
+- (Tech) nạp chương trình mồi, khởi động hệ thống
+@boot disk
+- (Tech) đĩa khởi động
+@boot sector
+- (Tech) cung khởi động
+@booth
+- (Tech) phòng, buồng
+@bootstrap
+- (Tech) mạch tự nâng; chương trình mồi, chương trình khởi động
+@bootstrap memory
+- (Tech) bộ nhớ mồi
+@bootstrap program
+- (Tech) chương trình khởi động, chương trình mồi
+@bootstrapping
+- (Tech) mắc mạch tự nâng; tự nâng; nạp chương trình mồi
+@border
+- (Tech) viền, khung
+@boreal pole
+- (Tech) cực bắc = north pole
+@borocarbon resistor
+- (Tech) cái điện trở bằng than = boron resistor
+@boron resistor
+- (Tech) cái điện trở bo (Br)
+@bottleneck
+- (Tech) đường hẹp; trở ngại; vận hành giới hạn
+@bottom
+- (Tech) đáy, phần dưới; làm đáy (đ)
+@bottom up
+- (Tech) từ dưới lên
+@bottoming
+- (Tech) tận dáy, đụng đáy
+@boucherization
+- (Tech) tẩm gỗ bằng sunfat đồng
+@boucherizing
+- hay boucherization
+- (Tech) tẩm gỗ bằng sunfat đồng
+@bound
+- (Tech) giới hạn; hạn chế; hạn độ; ràng buộc
+@boundary
+- (Tech) giới hạn, biên giới
+@box
+- (Tech) hộp
+@bps (bits per second)
+- (Tech) bps (bits mỗi giây)
+@brace
+- (Tech) thanh chống; chống (đ); gia cường (đ)
+@braces
+- (Tech) dấu ngoặc ôm
+@bracket standard
+- (Tech) tính vạn năng, tính kết hợp nhiều tiêu chuẩn [TV]
+@bracket
+- (Tech) dấu ngoặc; thanh chống
+@braid
+- (Tech) tết, bện (đ)
+@braided wire
+- (Tech) dây tết
+@brain
+- (Tech) bộ não; trí tuệ
+@brainstorming
+- (Tech) động não, thảo luận góp ý
+@brake
+- (Tech) hãm, thắng, phanh
+@branch
+- (Tech) nhánh (rẽ), cành; ngành; đại lý; rẽ nhánh (đ)
+@branch-and-bound algorithm
+- (Tech) giải thuật phân nhánh và giới hạn
+@branching
+- (Tech) rẽ nhánh
+@brass wire
+- (Tech) dây đồng thau
+@braun tube
+- (Tech) ống tia điện tử
+@braze
+- (Tech) hàn gia nhiệt, hàn vẩy
+@bread board
+- (Tech) bảng thử (mạch điện), mạch điện thí nghiệm
+@break
+- (Tech) cắt, ngắt, mở (d); công tắc; khe tối thiểu; mở mạch thình lình; cắt, ngắt, mở (đ)
+@break contact
+- (Tech) tiếp điểm cắt, công tắc nghỉ
+@breakdown
+- (Tech) đánh xuyên/thủng; hư hỏng, sư cố; đứt; suy giảm; đánh xuyên/thủng (đ)
+@breaker
+- (Tech) cái cắt mạch, cầu dao, cái ngắt điện
+@breaking device
+- (Tech) thiết bị ngắt
+@breaking
+- (Tech) cắt, ngắt (d)
+@breakover point
+- (Tech) điểm vượt qua
+@breakpoint
+- (Tech) điểm cắt, điểm dừng, điểm gián đoạn
+@breakup
+- (Tech) vỡ (d)
+@bremsstrahlung
+- (Tech) bức xạ hãm
+@bridge
+- (Tech) cầu; cầu đo; bắc/nối cầu (đ)
+@bridge circuit
+- (Tech) mạch cầu
+@bridge network
+- (Tech) mạng (hình) cầu
+@bridge transformer
+- (Tech) bộ biến điện hình cầu
+@bridgeware
+- (Tech) chuyển kiện, chương trình bắc cầu
+@bridging
+- (Tech) rẽ mạch; nối tắt
+@briefcase computer
+- (Tech) máy điện toán bỏ cặp
+@brightness contrast
+- (Tech) tương phản độ chói
+@brightness control
+- (Tech) điều chỉnh độ chói, kiểm soát độ chói
+@brightness
+- (Tech) độ chói; sáng
+@brilliance
+- (Tech) chói (d); độ chói
+@brittle program
+- (Tech) chương trình phụ thuộc máy
+@broad
+- (Tech) rộng
+@broadband
+- (Tech) dải sóng rộng
+@broadcast
+- (Tech) phát thanh hoặc truyền hình, quảng bá
+@broadcast band
+- (Tech) dải sóng quảng bá, băng tần quảng bá
+@broadcast program
+- (Tech) chương trình quảng bá
+@broadcast(ing) station
+- (Tech) đài quảng bá/phát tin
+@broadcaster
+- (Tech) nhân viên quảng bá; người phát thanh hoặc truyền hình
+@broadcasting
+- (Tech) quảng bá, phát thanh hoặc truyền hình
+@broadening
+- (Tech) mở rộng, nới rộng (d)
+@broadside
+- (Tech) bên hông/cạnh, biên
+@broadside radiation
+- (Tech) bức xạ ngang
+@broken
+- (Tech) gẫy khúc, gấp khúc
+@broken circuit
+- (Tech) mạch hở, mạch đứt
+@broken line
+- (Tech) đường gẫy
+@broker
+- (Tech) người môi giới
+@brownout
+- (Tech) dùng điện hạn chế
+@browse
+- (Tech) đọc lướt
+@brush angle
+- (Tech) góc chổi
+@brush
+- (Tech) chổi; cây cọ
+@brush contact resistance
+- (Tech) điện trở tiếp xúc chổi (điện)
+@brute-force technique
+- (Tech) kỹ thuật cưỡng chế
+@BS
+- (xem) backspace
+@bubble
+- (Tech) bọt, bong bóng, kỹ thuật chuỗi bọt (từ)
+@bubble chip
+- (Tech) phiến tinh thể bọt, chip bọt
+@bubble memory
+- (Tech) bộ nhớ (loại) bọt (từ)
+@bubble sort
+- (Tech) sắp xếp theo chuỗi bọt
+@bucket piston
+- (Tech) pittông chụp (xuống)
+@bucking coil
+- (Tech) cuộn dây đối
+@bucking voltage
+- (Tech) điện áp bù
+@bucking winding
+- (Tech) cuộn khử từ
+@budget forecasting model
+- (Tech) mẫu dự đoán ngân sách
+@buffer area
+- (Tech) khu vực đệm
+@buffer memory
+- (Tech) bộ nhớ đệm, bộ nhớ trung gian
+@buffer storage
+- (Tech) bộ trữ đệm, bộ trữ trung gian
+@buffer
+- (Tech) bộ đệm, tầng đệm
+@buffered channel
+- (Tech) kênh đệm
+@buffered interface
+- (Tech) giao diện đệm
+@buffering method
+- (Tech) phương pháp đệm
+@buffering
+- (Tech) chuyển hoán đệm; ổn xung
+@bug
+- (Tech) con bọ; lỗi, sai sót
+@bugging
+- (Tech) làm quấy rầy, tạo phiền nhiễu; đặt máy ghi âm bí mật
+@buggy
+- (Tech) đầy bọ, đầy lỗi
+@build-in font table
+- (Tech) bảng dạng chữ có sẵn
+@build-up time
+- (Tech) thời gian tăng trưởng, thời gian thiết lập
+@building block principle
+- (Tech) nguyên lý kết khối
+@building block
+- (Tech) khối hợp nhất, khối căn bản
+@built-in check
+- (Tech) kiểm tra tự chế
+@built-in font
+- (Tech) dạng chữ cài sẵn
+@built-in function
+- (Tech) cơ năng cài sẵn; hàm cài sẵn
+@built-in
+- (Tech) gắn vào; có sẵn, nội trang
+@bulb
+- (Tech) bóng đèn; bầu thủy tinh; ống (hàn thử biểu); hình củ
+@bulk
+- (Tech) khối; lớn; số đông
+@bulk current
+- (Tech) dòng khối
+@bulk delay
+- (Tech) trễ khối, đình trệ chung
+@bulk eraser
+- (Tech) bộ xóa dữ kiện, đầu xóa dữ kiện = degausser
+@bulk lifetime
+- (Tech) tuổi thọ
+@bulk memory
+- (Tech) bộ nhớ loại lớn
+@bulk processing
+- (Tech) xử lý gộp
+@bulk storage
+- (Tech) bộ trữ lớn
+@bullet
+- (Tech) viên đạn; dấu chấm to ở đầu hàng
+@bulletin board system (BBS)
+- (Tech) hệ thống bảng công báo
+@bulletin board
+- (Tech) bảng công báo
+@bump
+- (Tech) đụng mạnh
+@bumper
+- (Tech) cái cản
+@bunch
+- (Tech) nhóm; nhóm lại; tụ
+@buncher
+- (Tech) hốc tụ nhóm; bộ két chùm
+@bunching
+- (Tech) tụ nhóm (d)
+@bunching factor
+- (Tech) hệ số tụ nhóm
+@bunching voltage
+- (Tech) điện áp tụ nhóm
+@bundle
+- (Tech) bó, chùm, cả bộ
+@bundled
+- (Tech) cả bộ (gía bán)
+@bundled software
+- (Tech) nhu liệu kết bó
+@Bunsen photometer
+- (Tech) quang kế Bunsen
+@bureautics
+- (Tech) kỹ thuật văn phòng
+@buried
+- (Tech) chôn, ngầm (dưới đất)
+@buried cable
+- (Tech) cáp chôn, cáp ngầm (dưới đất)
+@buried layer
+- (Tech) lớp ngầm
+@burn-in
+- (Tech) đốt thí nghiệm, kiểm nghiệm vbằng nhiệt độ cao
+@burn-in period
+- (Tech) thời gian chạy thử
+@burn
+- (Tech) đốt cháy (đ)
+@burning
+- (Tech) đốt cháy, thiêu hủy
+@burnout power
+- (Tech) công suất thiêu cháy
+@burnout
+- (Tech) cháy; chập mạch
+@burst
+- (Tech) nổ; tín hiệu (xung); chớp sáng; từng loạt, từng khối
+@burst duration
+- (Tech) thời khoảng chớp màu (xung)
+@burst signal
+- (Tech) tín hiệu chớp (mầu)
+@bus
+- (Tech) buýt, bộ nối, mạch nối
+@bus architecture
+- (Tech) cấu trúc mạch nối
+@bus controller
+- (Tech) bộ điều khiển mạch nối
+@bus interface
+- (Tech) giao diện mạch nối
+@bus line
+- (Tech) dây trong mạch nối
+@bus multiplexing
+- (Tech) đa kết mạch nối
+@bus network
+- (Tech) mạng lưới mạch nối
+@bus protocol
+- (Tech) nghi thức mạch nối
+@bus system
+- (Tech) hệ thống mạch nối
+@busbar
+- (Tech) thanh nối điện (để nối các điểm cùng một điện thế)
+@business
+- (Tech) công việc; doanh nghiệp, kinh doanh
+@business computer
+- (Tech) máy điện toán kinh doanh
+@business game
+- (Tech) trò chơi kinh doanh
+@business graphics
+- (Tech) đồ họa kinh doanh
+@business software
+- (Tech) nhu liệu kinh doanh
+@busy
+- (Tech) bận [điện thoại]
+@busy flag
+- (Tech) cờ bận
+@busy line
+- (Tech) đường dây bận
+@busy relay
+- (Tech) bộ nối điện báo bận
+@busy signal
+- (Tech) tín hiệu báo bận
+@busy testing
+- (Tech) thử bận, thử chiếm dây [ĐL]
+@busy tone
+- (Tech) âm hiệu bận
+@butterfly circuit
+- (Tech) mạch bướm
+@button
+- (Tech) nút; núm
+@buzzer
+- (Tech) máy con ve
+@buzzer call
+- (Tech) gọi rè rè
+@buzzer signal
+- (Tech) tín hiệu rè rè
+@by-path
+- (Tech) đường rẽ; mạch rẽ
+@bypass
+- (Tech) đường vòng (song song); đi vòng (đ); bỏ qua (đ)
+@bypass capacitor
+- (Tech) bộ điện dung vòng
+@byte
+- (Tech) bai (8 bit)
+@byte pointer
+- (Tech) con trỏ bai
+@byte stuffing
+- (Tech) nhồi bai
+@byte synchronization
+- (Tech) đồng bộ bai
+@byte-addressable
+- (Tech) định vị bai được
+@byte-addressable storage
+- (Tech) bộ trữ có thể định vi bai
+@byte-aligned
+- (Tech) xếp theo bai

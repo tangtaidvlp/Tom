@@ -5,7 +5,7 @@
     <data>
         <variable
             name="beingViewedCard"
-            type="com.teamttdvlp.memolang.model.entity.flashcard.Flashcard" />
+            type="com.teamttdvlp.memolang.data.model.entity.flashcard.Flashcard" />
         <import type="android.view.View" />
     </data>
 
@@ -59,10 +59,10 @@
                         android:layout_marginTop="16dp"
                         android:fontFamily="@font/seguisb"
                         android:hint="Set name here"
-                        android:text="@{beingViewedCard.setName}"
+                        android:text="@{beingViewedCard.setOwner}"
                         android:textColor="#000000"
                         android:textSize="16sp"
-                        android:visibility="@{beingViewedCard.setName.isEmpty() ? View.GONE : View.VISIBLE }" />
+                        android:visibility="@{beingViewedCard.setOwner.isEmpty() ? View.GONE : View.VISIBLE }" />
 
                     <TextView
                         android:id="@+id/txt_pronunciation"
@@ -138,10 +138,10 @@
                         android:fontFamily="@font/segoeuii"
                         android:hint=" Mean of example here"
                         android:paddingEnd="12dp"
-                        android:text="@{beingViewedCard.exampleMean}"
+                        android:text="@{beingViewedCard.meanOfExample}"
                         android:textColor="#000000"
                         android:textSize="16sp"
-                        android:visibility="@{beingViewedCard.exampleMean.isEmpty() ? View.GONE : View.VISIBLE }" />
+                        android:visibility="@{beingViewedCard.meanOfExample.isEmpty() ? View.GONE : View.VISIBLE }" />
                 </LinearLayout>
 
             </ScrollView>

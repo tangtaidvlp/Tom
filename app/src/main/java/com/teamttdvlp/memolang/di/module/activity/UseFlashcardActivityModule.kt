@@ -18,7 +18,7 @@ class UseFlashcardActivityModule {
 
     @Provides
     @Named("FlipClose")
-    fun provideFlipCloseAnimator (activity: UseFlashcardActivity) : Animator {
+    fun provideFlipCloseAnimator (activity: UseFlashcardActivity) : Animator { 
         return AnimatorInflater.loadAnimator(activity, R.animator.from_normal_y_size_to_nothing).apply {
             interpolator = animInterpolator
         }

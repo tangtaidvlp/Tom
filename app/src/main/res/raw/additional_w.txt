@@ -1,0 +1,1994 @@
+@w.c
+- nhà vệ sinh, nhà xí máy (water-closet)
+@wabbling
+- xem wobbling
+@wadable
+* tính từ
+- có thể lội qua
+@wadeable
+- xem wadable
+@wafer-thin
+* tính từ
+- mỏng tanh (wafer)
+@wage-claim
+* danh từ
+- yêu sách về lương (sự tăng tiền lương do công đoàn đòi hỏi chủ trả cho thợ)
+@wage-worker
+* danh từ
+- người làm thuê
+@waggon-road
+* danh từ
+- đường xe ngựa; đường xe súc vật
+- xem waggon-way
+@waggon-way
+* danh từ
+- đường xe ngựa
+- (khoáng chất) khu chở quặng bằng gòong
+@waggonage
+* danh từ
+- sự chuyên chở bằng xe, tàu
+- tiền chuyên chở
+- đoàn tàu; dãy toa tàu
+@wagons-lits
+* danh từ
+- <đsắt> toa nằm
+@wailer
+* danh từ
+- người khóc mướn
+@wailing
+* tính từ
+- khóc than; than vãn
+= wailing voice+giọng than vãn
+@wailsome
+* tính từ
+- khóc than; than vãn
+- não nuột; thảm thiết; buồm thảm; thê lương
+@wainscoted
+* tính từ
+- có ván ốp ở chân tường
+@waise
+- Một hệ thống có cơ sở UNIX được nối với Internet;
+@waist-high
+* tính từ, adv
+- cao đủ để đến thắt lưng
+@waistband
+* danh từ
+- cạp (dải vải tạo thành chỗ eo lưng của quần áo, nhất là ở đầu quần hay váy)
+@waisted
+* tính từ
+- thắt eo, thóp lại ở eo (cái áo)
+- (tạo nên các tính từ kép) có một kiểu eo được chỉ rõ
+@waiting-lady
+* danh từ
+- thị nữ; nữ quan
+@waiting-list
+* danh từ
+- danh sách chờ đợi
+@wakefully
+* phó từ
+- thao thức, không thể ngủ được (người)
+- cảnh giác, tỉnh táo
+- ngủ ít, không ngủ được, thức trắng (về một đêm)
+@wakeless
+* tính từ
+- say; không thức giấc (giấc ngủ)
+@wakeman
+* danh từ; số nhiều wakemen
+- (từ cổ, nghĩa cổ) người canh giữ; người bảo vệ
+@wakener
+* danh từ
+- người đánh thức, người gọi dậy
+- (thông tục) cái bợp đầu; cú đánh bất ngờ; chuyện bất ngờ khó chịu
+@walk-in
+* tính từ
+- <Mỹ> khá to, có thể bước vào (cái tủ ly, tủ quần áo )
+- <Mỹ> có lối vào riêng (căn hộ)
+@walk-on
+* danh từ
+- <skhấu> vai phụ
+@walkable
+* tính từ
+- có thể đi bộ qua được
+@walkabout
+* danh từ
+- thời kỳ đi lang thang trong rừng cây của một thổ dân (ở Uc)
+- cuộc vi hành (cuộc đi dạo không chính thức trong đám quần chúng của một nhân vật quan trọng; nhất là một người trong hoàng gia)
+@walkie-hearie
+* danh từ
+- (từ Mỹ; (từ lóng)) điện đài xách tay
+@walking rein
+* danh từ
+- dây buộc vào bộ đai nhẹ của trẻ em nhỏ đang tập đi
+@walking-match
+* danh từ
+- (thể thao) cuộc thi đi bộ
+@walking-out
+* danh từ
+- sự đi ra ngoài (đi dạo)
+= walking-out dress+lễ phục (chủ yếu của gia nhân)
+@walking-shoes
+* danh từ số nhiều
+- giầy dã ngoại (gót thấp)
+@walkman
+* danh từ
+- máy cát-xét nhỏ có tai nghe có thể đeo và nghe khi đi dạo
+@walkmans
+* danh từ
+- máy cát-xét nhỏ có tai nghe có thể đeo và nghe khi đi dạo
+@walkway
+* danh từ
+- đường dành cho người đi bộ
+@wall-bars
+* danh từ số nhiều
+- (thể thao) thang thể dục; thang thẳng đứng
+@wall-plate
+* danh từ
+- (kiến trúc) rầm ngang; xà ngang
+@wall-stone
+* danh từ
+- đá xây nhà
+@wall-to-wall
+* phó từ,adj
+- phủ kín sàn (lớp lát sàn nhà)
+@walled
+* tính từ
+- có tường bao quanh; (từ lóng) như có tường bao quanh
+= walled lake+hồ trên núi có bờ dựng đứng
+- (lịch sử) có công sự bao bọc
+@waller
+* danh từ
+- thợ nề; thợ xây
+@wallie
+* danh từ
+- người hầu phòng; đầy tớ; gia nhân
+@walling
+* danh từ
+- sự xây tường
+- (kiến trúc) vật liệu xây tường; tường vách
+@wally
+* danh từ
+- <thgt> kẻ ngu ngốc, người ngớ ngẩn, người ngu đần, người dại dột
+@walrus moustache
+* danh từ
+- <thgt> ria quặp (ria rậm và dài rủ xuống ở hai bên mép)
+@wamble
+* danh từ
+- bước đi không vững, lảo đảo
+- sự chóng mặt; sự loạng choạng
+- cảm giác lợm giọng, buồn nôn
+* nội động từ
+- đi không vững, đi lảo đảo
+- chóng mặt; loạng choạng
+- cảm thấy lợm giọng, cảm thấy buồn nôn
+@wampus
+* danh từ
+- (từ lóng) kẻ đần độn; đồ thộn
+@wamus
+* danh từ
+- (từ Mỹ, nghĩa Mỹ) áo khoác vải thô
+@wand-bearer
+* danh từ
+- người cầm quyền trượng (trong các đám rước)
+@wandsman
+* danh từ; số nhiều wandsmen
+- người cầm quyền trượng
+- (tôn giáo) người trông coi nhà thờ
+@wank
+* động từ
+- thủ dâm
+* danh từ
+- sự thủ dâm, hành động thủ dâm
+@wanker
+* danh từ
+- người bất tài, người ngu đần, người lười biếng
+- người thủ dâm
+@wanly
+* tính từ
+- xanh xao; vàng vọt; nhợt nhạt (người, bề ngoài của anh ta )
+- uể oải, mệt mỏi, không thần sắc (người)
+@wanness
+* danh từ
+- sự xanh xao; sự vàng vọt; sự nhợt nhạt (người, bề ngoài của anh ta )
+- sự uể oải, sự mệt mỏi, tình trạng không thần sắc (người)
+@want-ads
+* danh từ
+- <Mỹ,thgt> rao vặt (ở trên báo...)
+@wantonly
+* phó từ
+- bướng, ngang ngạnh; cố tình (hành động)
+- tinh nghịch, nghịch gợm, đỏng đảnh; đùa giỡn
+- lố lăng, phóng đãng, dâm ô
+- bừa bãi, trái đạo đức
+- không khiêm tốn, không giản dị
+- tốt tươi, sum sê, um tùm, rất phong phú (sự sinh trưởng )
+@wapentake
+* danh từ
+- khu; địa hạt
+- toà án khu
+@war bonnet
+* danh từ
+- mũ lông chim (do các chiến binh của vài bộ lạc da đỏ Bắc Mỹ đội)
+@war chest
+* danh từ
+- <Mỹ> qũy chiến tranh (ngân qũy được quyên góp để chi phí cho một cuộc chiến tranh hay cuộc vận động nào đó)
+@war memorial
+* danh từ
+- đài tưởng niệm chiến tranh (để tôn vinh những người chết trong một cuộc chiến tranh)
+@war-dog
+* danh từ
+- (quân sự) chó trận; khuyển binh
+@war-lord
+* danh từ
+- tư lệnh (chỉ huy trưởng [quân sự])
+@war-man
+* danh từ; số nhiều war-men
+- (từ cổ, nghĩa cổ) chiến binh; chinh phu
+@war-weary
+* tính từ
+- bị kiệt quệ vì chiến tranh; mệt mỏi vì chiến tranh; chán chiến tranh
+@war-whoop
+* danh từ
+- hiệu lệnh xung phong
+@warbird
+* danh từ
+- (quân sự) (thông tục) máy bay chiến đấu
+- phi công lái máy bay chiến đấu
+@warding
+* danh từ
+- sự canh giữ; sự tuần tra
+- đội cảnh vệ; đội tuần tra
+- khe răng (chìa khoá)
+@wardrobe master
+* danh từ
+- người giữ trang phục của diễn viên ở một nhà hát
+@wardroom
+* danh từ
+- chỗ trên một tàu chiến, nơi tất cả các sự quan có phận sự, ăn và ở; trừ sự quan chỉ huy, phòng ăn ở tập thể
+@wards
+- hậu tố
+- như ward
+@warehouse-keeper
+* danh từ
+- người thủ kho; người quản lý kho
+@wareless
+* tính từ
+- (từ cổ, nghĩa cổ) không cẩn thận; không thận trọng; cẩu thả
+- (+ of) không biết đến
+@warhead
+* danh từ
+- đầu nổ của một tên lửa hay ngư lôi
+= equipped with a nuclear warhead+có lắp đầu đạn hạt nhân
+@warily
+* phó từ
+- thận trọng, cảnh giác, đề phòng (nguy hiểm, khó khăn có thể xảy ra)
+@warlock
+* danh từ
+- (từ cổ) thầy phù thủy
+@warm-heartedness
+* danh từ
+- sự nhiệt tình; sự tốt bụng
+@warming-down
+* danh từ
+- (thể thao) động tác điều hoà
+@warmly
+* phó từ
+- một cách ấm áp
+@warmness
+* danh từ
+- trạng thái ấm; sự ấm áp
+@warning-bell
+* danh từ
+- tiếng (hồi) chuông báo động
+- chuông cấp báo
+@warning-gun
+* danh từ
+- (hàng hải) pháo bắn tín hiệu; pháo lệnh
+@warning-piece
+* danh từ
+- xem warning-gun
+@warped
+* tính từ
+- bị biến dạng; bị bẻ cong
+- bị xuyên tạc; bị bóp méo
+@warragal
+- xem warrigal
+@warrener
+* danh từ
+- người trông coi chuồng thỏ; người nuôi thỏ
+- (từ cổ, nghĩa cổ) người trông coi rừng cấm
+@warrigal
+* danh từ
+- chó đinh gô; chó rừng (úc)
+- (nghĩa bóng) người man rợ (thổ dân)
+- ngựa rừng ở úc
+* tính từ
+- hoang dại; mọi rợ
+@warring
+* tính từ
+- đang đánh nhau; đang có chiến tranh
+- mâu thuẩn; xung khắc
+= warring passions+những đam mê giằng xé con người
+= warring elements+các yếu tố xung khắc (nước với lửa...)
+@warrior-steed
+* danh từ
+- (thơ ca) chiến mã
+@wart-hog
+* danh từ
+- lợn lòi (lợn rừng châu Phi có hai răng nanh to và bướu trên mặt)
+@wartime
+* danh từ
+- thời chiến (thời kỳ xảy ra một cuộc chiến tranh)
+- special regulations were introduced in wartime
+* danh từ
+- những quy định đặc biệt đã được đưa ra trong thời chiến
+= wartime rationing+sự hạn chế khẩu phần thời chiến
+= the shortages of wartime Britain+những thiếu thốn của nước Anh trong thời chiến
+@wash-and-wear
+* tính từ
+- giặt khô ngay không cần là
+@wash-day
+* danh từ
+- ngày giặt quần áo
+@wash-drawing
+* danh từ
+- việc vẽ bằng bút lông với màu nước đen hoặc không sặc sỡ
+@washbrew
+* danh từ
+- (tiếng địa phương) chè kiều mạch
+@washed
+* tính từ
+- được rửa sạch, được tắm sạch
+- được giặt sạch
+- (nghĩa bóng) xanh xao; mệt mỏi; kiệt sức
+- (quân sự) (thông tục) bị đánh tụt cấp bậc; bị mất danh hiệu sĩ quan
+@washed out
+* tính từ
+- bạc màu, phai màu (do giặt, rửa; vải, màu)
+- phờ phạc, mệt lử, xanh xao và mệt mỏi (người, vẻ bề ngoài của anh ta )
+@washed-out
+* tính từ
+- bạc màu, phai màu (do giặt, rửa; vải, màu)
+- phờ phạc, mệt lử, xanh xao và mệt mỏi (người, vẻ bề ngoài của anh ta)
+= she looks washed-out after her illness+cô ta trông phờ phạc sau trận ốm
+@washed-up
+* tính từ
+- bị tàn phá hoặc bị đánh bại; thất bại
+= their marriage was washed-up long before they separated+cuộc hôn nhân của họ đã tan vỡ từ lâu trước khi họ chia tay
+@washing-bill
+* danh từ
+- biên lai thanh toán giặt là
+@washing-book
+* danh từ
+- sổ theo dõi quần áo giặt
+@washing-powder
+* danh từ
+- bột giặt
+@washing-power
+* danh từ
+- bột giặt
+@washrag
+- (thông tục) khăn vải thô (dùng để kỳ lưng)
+@washwoman
+* danh từ
+- thợ giặt nữ
+@waspy
+* tính từ
+- xem waspish
+- đầy ongg bắp cày
+@wassail-bowl
+* danh từ
+- (từ cổ, nghĩa cổ) cốc rượu tiệc (như) wassail-cup
+@wassail-cup
+* danh từ
+- (từ cổ, nghĩa cổ) xem wassail-bowl
+@wassailer
+* danh từ
+- (từ cổ, nghĩa cổ) người hay nhậu nhẹt; tay nhậu
+- (từ cổ, nghĩa cổ) bợm rượu; sâu rượu
+@wassailing
+* danh từ
+- (từ cổ, nghĩa cổ) sự nhậu nhẹt; sự chè chén
+- (từ cổ, nghĩa cổ) tục lệ đi quanh các nhà hát mừng ngày Thiên chúa giáng sinh
+@waste product
+* danh từ
+- phế phẩm
+@waste-bin
+* danh từ
+- sọt giấy vụn, sọt rác
+@waste-paper
+* danh từ
+- giấy lộn; giấy bị xem như hư hỏng, giấy không còn hữu ích
+@waste-way
+* danh từ
+- (từ Mỹ, nghĩa Mỹ) mương tháo nước thải
+@wasted
+* tính từ
+- (từ Mỹ, nghĩa Mỹ; tiếng lóng) nghiện ma túy
+@wastefully
+* phó từ
+- gây ra lãng phí
+- hoang phí, tốn phí, ngông cuồng, sử dụng nhiều quá sự cần thiết
+@wasteland
+* danh từ
+- đất hoang, đất khô cằn; khu đất không thể sử dụng được, khu đất không sử dụng
+- hoang mạc
+- <bóng> cuộc sống khô cằn (cuộc sống không sáng tạo được gì về văn hoá hoặc tinh thần)
+@wasteless
+* tính từ
+- (từ hiếm, nghĩa hiếm) không cạn; vô tận
+@wastrie
+- xem wastry
+@wastry
+* danh từ
+- sự lãng phí; sự xa xỉ (như) wastrie
+@wasty
+* tính từ
+- không chắc; chóng hỏng
+- nhiều rác rưởi, nhiều tạp chất; không sạch
+@watch-bell
+* danh từ
+- (hàng hải) chuông báo giờ (trên tàu thủy)
+- (sử học) chuông báo động
+@watch-boat
+* danh từ
+- (hàng hải) ca nô tuần tiễu
+@watch-box
+* danh từ
+- chòi canh
+@watch-bracelet
+* danh từ
+- dây đồng hồ đeo tay
+@watch-cry
+* danh từ
+- (sử học) tiếng kêu tuần tra đêm
+- (số nhiều) điểm danh người gác
+- khẩu hiệu; châm ngôn
+@watch-dog
+* danh từ
+- chó giữ nhà
+- <bóng> người bảo vệ, người kiểm tra, người giám hộ
+@watch-fire
+* danh từ
+- lửa báo hiệu
+- lửa trại (lính)
+@watch-house
+* danh từ
+- (quân sự) trạm gác, chòi canh
+@watch-key
+* danh từ
+- chìa khoá lên dây đồng hồ
+@watch-light
+* danh từ
+- (hàng hải) lửa báo hiệu
+@watch-night service
+* danh từ
+- khoá lễ đêm giao thừa; lễ giao thừa
+@watch-spring
+* danh từ
+- lò xo đồng hồ
+@watchet
+* danh từ
+- (từ cổ, nghĩa cổ) màu xanh da trời
+- vải màu xanh
+@watchfully
+* phó từ
+- thận trọng, cảnh giác, đề phòng
+- canh chừng, theo dõi, quan sát kỹ
+- thức, thao thức, không ngủ
+@watching
+* danh từ
+- sự canh phòng; sự theo dõi; sự trông coi
+@watching brief
+* danh từ
+- bản tóm tắt hồ sơ của một luật sư có mặt tại toà trong một vụ kiện (trong đó thân chủ của ông ta không trực tiếp liên quan) để khuyên bảo người đó và bảo vệ quyền lợi của anh ta
+@watchless
+* tính từ
+- không được canh phòng, không được trông coi
+- cẩu thả; vô tư
+@watchmaking
+* danh từ
+- sự sản xuất đồng hồ
+@watchmen
+* danh từ
+- nhân viên bảo vệ (cơ quan, nhà máy, ngân hàng...nhất là vào ban đêm)
+- <cổ> trương tuần
+@watchwork
+* danh từ
+- máy đồng hồ
+@water-bag
+* danh từ
+- bao da (đựng rượu; nước)
+@water-bearer
+* danh từ
+- người chở nước
+@water-bird
+* danh từ
+- chim nước (có thể bơi hoặc lội trong nước, nhất là nước ngọt)
+@water-blister
+* danh từ
+- mụn nước; chỗ da phồng; chỗ mọng nước
+@water-boots
+* danh từ số nhiều
+- ủng cao su; ủng đi bùn
+@water-bucket
+* danh từ
+- xô lấy nước
+@water-bus
+* danh từ
+- tàu chở khách
+@water-can
+* danh từ
+- bi đông; bình toong
+- (thực vật học) tiếng lóng cây hoa súng, cây bông súng
+@water-cannon
+* danh từ
+- súng phun nước, vòi rồng (dùng để giải tán một đám đông bạo loạn )
+@water-carrier
+* danh từ
+- người chở nước
+- thùng chứa nước
+- phương tiện vận tải đường thủy; tàu; thuyền
+@water-clock
+* danh từ
+- đồng hồ nước (đồng hồ căn cứ theo dòng nước chảy mà tính thời gian)
+@water-color
+* danh từ
+- <snh> màu nước
+- tranh vẽ bằng màu nước
+@water-colourist
+* danh từ
+- hoạ sĩ vẽ thuốc nước
+@water-company
+* danh từ
+- công ty cấp nước
+@water-cool
+* ngoại động từ
+- (kỹ thuật) vậ dụng kỹ thuật làm lạnh bằng nước
+@water-cooler
+* danh từ
+- (kỹ thuật) bộ phận làm lạnh bằng nước; ra-đi-a-tơ; bộ tản nhiệt
+@water-cracker
+* danh từ
+- bánh qui khô; bánh mì khô; lương khô
+@water-cycle
+* danh từ
+- (thể dục, thể thao) xe đạp nước
+@water-drainage
+* danh từ
+- sự tiêu thủy; hệ thống thoát nước
+@water-drop
+* danh từ
+- giọt mưa
+- giọt nước mắt
+@water-flood
+* danh từ
+- lụt; lũ lụt
+- biển động
+@water-furrow
+* danh từ
+- rãnh thoát nước
+* nội động từ
+- đào rãnh thoát nước
+@water-gas
+* danh từ
+- hơi nước; hơi
+@water-hammer
+* danh từ
+- tiếng ọc ọc (tiếng đập trong ống dẫn nước khi mở hoặc tắt nước)
+@water-jump
+* danh từ
+- nơi con ngựa phải nhảy qua nước (một hàng rào có nước bên cạnh  trong nhảy biểu diễn, đua ngựa vượt rào )
+@water-lawyer
+* danh từ
+- (đùa cợt) cá mập
+@water-lead
+* danh từ
+- lối đi giữa băng
+@water-meadow
+* danh từ
+- cánh đồng cỏ phì nhiêu (vì từng thời kỳ lại ngập nước một con suối)
+@water-meter
+* danh từ
+- đồng hồ đo nước; thủy lượng kế
+@water-mouth
+* danh từ
+- (Xcôtlân) cửa sông
+@water-parting
+* danh từ
+- đường phân thủy
+@water-pistol
+* danh từ
+- súng nước (trò chơi của trẻ con)
+@water-pot
+* danh từ
+- bình đựng nước (bằng gốm)
+- bình tưới
+@water-pox
+* danh từ
+- bệnh thủy đậu
+@water-quake
+* danh từ
+- trận động đất đáy biển
+@water-rat
+* danh từ
+- <động> rái cá (động vật giống [như] con chuột, bơi ở dưới nước và sống trong hang bên bờ sông, bờ hồ...)
+@water-rate
+* danh từ
+- tiền nước (tiền phải trả cho việc sử dụng nước của một nơi cung cấp nước công cộng)
+@water-ski
+* danh từ
+- (thường snh) ván lướt nước
+@water-skiing
+* danh từ
+- (thể dục, thể thao) môn lướt ván nước
+@water-sking
+* danh từ
+- <thể> môn lướt ván nước
+@water-skis
+* danh từ số nhiều
+- (thể dục, thể thao) ván lướt (trên nước)
+@water-snake
+* danh từ
+- rắn nước
+@water-soak
+* ngoại động từ
+- ngâm nước; làm đẫm nước
+@water-softener
+* danh từ
+- thiết bị làm mềm nước cứng; chất làm mềm nước cứng
+@water-sprayer
+* danh từ
+- bình phun nước, máy phun nước
+@water-spring
+* danh từ
+- (thơ ca) suối
+@water-sprite
+* danh từ
+- thần nước, thần suối; hà bá
+@water-system
+* danh từ
+- con sông cùng các chi lưu
+- hệ thống dẫn nước
+@water-tap
+* danh từ
+- vòi nước
+@water-turbine
+* danh từ
+- tuốc bin nước; tuốc bin thủy lực
+@water-wave
+* danh từ
+- sóng biển
+- sự uốn tóc nguội, sự phi dê nguội
+@water-weed
+* danh từ
+- tảo; rong
+@waterborne
+* tính từ
+- chở bằng đường thuỷ (hàng hoá)
+- (y học) lây lan bằng nước uống, lan truyền qua việc dùng nước nhiễm trùng (bệnh tật)
+@waterboy
+* danh từ
+- (từ Mỹ, nghĩa Mỹ) đứa (bé) chở nước
+- (tiếng lóng) đứa xu nịnh; kẻ bợ đỡ
+@watered silk
+* danh từ
+- lụa vân (lụa có bề mặt bóng với những vân sóng không đều)
+@watering-house
+* danh từ
+- (từ cổ, nghĩa cổ) quán trọ; lữ điếm (cho xà ích)
+@waterlog
+* ngoại động từ
+- làm ngập nước; đánh chìm (tàu)
+- làm cho lầy lội
+- ngâm; đầm; làm ướt
+@watermanship
+* danh từ
+- nghề đưa đò
+- môn bơi thuyền nghệ thuật
+@waterpolo
+* danh từ
+- (thể dục,thể thao) bóng nước (trò chơi thi đấu giữa hai đội người bơi lội dưới nước tìm cách ném một quả bóng vào một khung thành)
+@waterskier
+* danh từ
+- người lướt ván nước, vận động viên lướt ván nước
+@wattage
+* danh từ
+- lượng điện năng được biểu hiện bằng oát
+@wattless
+* tính từ
+- (điện học) không có điện; không sinh điện
+@wave-like
+* tính từ
+- giống như sóng; tựa sóng
+* phó từ
+- như sóng
+@waveband
+* danh từ
+- băng tần (radio)
+@waved
+* tính từ
+- lượn sóng (tóc, nét vẽ...)
+@wavery
+* tính từ
+- xem wavering
+@waveson
+* danh từ
+- hàng trôi giạt sau khi tàu đắm
+@wavily
+* phó từ
+- theo dạng sóng
+@wawl
+* danh từ
+- (phương ngữ) tiếng rú, tiếng gầm, tiếng gào; tiếng la, tiếng thét, tiếng la ó
+* nội động từ
+- (phương ngữ) rú; gầm; gào; la; thét; la ó
+@wax-end
+* danh từ
+- chỉ vuốt nhựa
+@wax-light
+* danh từ
+- nến sáp
+@wax-tree
+* danh từ
+- cây sơn
+@waxed
+* tính từ
+- bôi sáp
+@waxy-flowered
+* tính từ
+- có hoa sáp; có hoa phấn
+@waxy-fruited
+* tính từ
+- có quả sáp; có quả phấn
+@waxy-leaved
+* tính từ
+- có lá sáp; có lá phấn
+@waxy-seeded
+* tính từ
+- có quả sáp; có quả phấn
+@way-up
+* tính từ
+- (từ Mỹ, nghĩa Mỹ; tiếng lóng) tuyệt vời; cực kì
+@waybill
+* danh từ
+- vận đơn (danh sách hành khách hoặc hàng hoá do một xe cộ chuyên chở, với nơi đến của khách hoặc hàng)
+@wayfare
+* danh từ
+- (từ cổ, nghĩa cổ) cuộc du lịch, cuộc chu du
+@waymark
+* danh từ
+- cột báo (trên đường); cột mốc; cột định hướng (như) waypost
+@waypost
+- xem waymark
+@wazir
+* danh từ
+- Tể tướng (ả Rập)
+@wcc
+* (viết tắt)
+- Hội đồng nhà thờ thế giới (World Council of Churches)
+@wea
+* (viết tắt)
+- Hiệp hội Giáo dục Công nhân (Workers'  Educational  Assocition)
+@weak-hearted
+* tính từ
+- nhút nhát
+- tốt bụng; nhân hậu; dễ mềm lòng
+@weak-mindedly
+* phó từ
+- thiếu quyết tâm, thiếu óc phán đoán
+- kém thông minh, đần
+@weak-mindedness
+* danh từ
+- sự thiếu quyết tâm, sự thiếu óc phán đoán
+- sự kém thông minh, sự đần
+@weak-sighted
+- xem weak-headed
+@weakliness
+* danh từ
+- tính chất ốm yếu
+@wealthily
+* phó từ
+- giàu, giàu có
+- phong phú
+@weaponeer
+* danh từ (quân sự)
+- chuyên gia về võ khí
+- kỹ sư mồi bom nguyên tử (chuẩn bị để ném)
+@weaponization
+* danh từ
+- (quân sự) sự trang bị vũ khí; sự vũ trang
+@weaponry
+* danh từ
+- các vũ khí
+@wear-proof
+* tính từ
+- bền; khó mòn; khó rách
+@wearies
+* danh từ
+- (thông tục) nỗi buồn; nỗi sầu muộn
+= I am getting the evening wearies+chiều về, tôi thấy buồn rười rượi
+@weariful
+* tính từ
+- mệt nhọc; buồn chán; tẻ nhạt
+- mệt mỏi; chán ngán
+@wearily
+* phó từ
+- rất mệt, mệt lử, kiệt sức (nhất là do cố gắng hoặc chịu đựng)
+- không còn quan tâm đến, không còn hứng thú về cái gì; chán cái gì
+- gây ra mệt mỏi, gây ra buồn chán
+- tỏ ra mệt mỏi
+@wearing
+* tính từ
+- làm cho mệt mỏi
+@wearying
+* tính từ
+- mệt mỏi; buồn chán
+@weasel word
+* danh từ
+- <Mỹ,thgt> từ, thành ngữ làm giảm bớt sức mạnh của điều đang nói, được dùng khi muốn tránh cam kết một tuyên bố dứt khoát
+@weasel-faced
+* tính từ
+- mặt chồn (có nét ranh mãnh khó ưa)
+@weather-board
+* danh từ
+- ván nghiêng để ngăn không cho mưa gió lọt vào (nhất là ván đóng ở chân cửa)
+@weather-boarding
+* danh từ
+- ván lá sách (loạt ván nghiêng, cái nọ trùm lên một phần cái bên dưới, gắn ở bên ngoài tường nhà để bảo vệ tường)
+@weather-brained
+- xem weather-headed
+@weather-chart
+* danh từ
+- bản đồ thời tiết
+@weather-eye
+* danh từ
+- khả năng dự đoán thời tiết
+- tính cẩn thận, thận trọng
+@weather-gage
+- xem weather-gauge
+@weather-gauge
+- xem weather-glass
+@weather-headed
+* tính từ
+- (từ cổ, nghĩa cổ) nhẹ dạ; xốc nổi
+@weather-map
+* danh từ
+- bản đồ thời tiết
+@weather-service
+* danh từ
+- cục thời tiết; nha khí tượng
+@weatherd
+* tính từ
+- chịu được gió bão (tàu thuyền)
+- (nghĩa bóng) được tôi luyện; từng trải (người)
+- dãi dầu sương gió
+@weatherproof
+* tính từ
+- có thể chịu được (mưa, gió, tuyết ); có thể ngăn được (mưa, gió, tuyết )
+@weaver-bird
+* danh từ
+- chim sâu (chim vùng nhiệt đới, đan kết lá cây, cỏ, cành con  làm tổ)
+@web-toed
+* tính từ
+- <động> có chân màng (như con vịt)
+@web-wheel
+* danh từ
+- lưỡi cưa đĩa
+@web-worm
+* danh từ
+- sâu kéo màng
+@webby
+* tính từ
+- thuộc mạng nhện; giống mạng nhện
+- (động vật) có màng; có màng bơi
+@webster
+* danh từ
+- (từ cổ, nghĩa cổ) thợ dệt
+@wedding breakfast
+* danh từ
+- tiệc cưới (bữa ăn đặc biệt cho cô dâu chú rể cùng với họ hàng, bạn bè  sau lễ cưới)
+@wedding-card
+* danh từ
+- thiếp mời đám cưới
+@wedding-feast
+* danh từ
+- tiệc cưới
+@wedgewise
+* phó từ
+- theo kiểu hình nêm
+@wedgy
+* tính từ
+- (từ hiếm) hình nêm
+@weds
+* (viết tắt)
+- thứ Tư (Wednesday)
+- viết tắt
+- thứ Tư (Wednesday)
+@wee-wee
+* danh từ
+- <thgt> nước đái; việc đái (dùng để nói với trẻ con hoặc do trẻ con dùng)
+* động từ
+- <thgt> đái
+@weedery
+* danh từ
+- cỏ dại (nghĩa chung)
+- ruộng đầy cỏ dại
+@weedgrown
+* tính từ
+- mọc đầy cỏ dại
+@weedhead
+* danh từ
+- (từ Mỹ,  (từ lóng)) người nghiện thuốc phiện, ma túy; dân làng bẹp
+@weeding
+* danh từ
+- sự nhổ cỏ; sự giẫy cỏ; sự làm cỏ
+- sự loại bỏ
+- (từ Mỹ,  (từ lóng)) sự ăn cắp vặt
+@weedkiller
+* danh từ
+- chất diệt cỏ dại
+@weedless
+* tính từ
+- sạch (không còn) cỏ dại
+@week-long
+* tính từ
+- suốt một tuần; trong thời hạn một tuần
+= week-long holiday+kỳ nghỉ phép 1 tuần lễ
+@week-old
+* tính từ
+- một tuần nay; đã được một tuần; tuần trước
+= a week-old child+đứa bé sinh được một tuần
+= week-old news+tin tuần trước
+@weekday
+* danh từ
+- ngày thường trong tuần (bất cứ ngày nào trừ ngày chủ nhật)
+@weekend
+* danh từ
+- cuối tuần (thứ bảy và chủ nhật)
+* động từ
+- đi nghỉ cuối tuần, đi thăm cuối tuần
+@weekender
+* danh từ
+- người đi nghỉ cuối tuần xa nhà
+- người đến thăm cuối tuần
+@weeny
+* tính từ
+- <thgt> nhỏ xíu
+@weeping-gas
+* danh từ
+- hơi cay; hơi làm chảy nước mắt
+@weeping-ripe
+* tính từ
+- sắp oà khóc; rớm nước mắt
+@weepingly
+* phó từ
+- có nước mắt; qua nước mắt
+@weepy
+* tính từ
+- muốn khóc
+- đẫm nước
+- làm người ta khóc, gây xúc cảm (bộ phim câu chuyện )
+@wef
+- có hiệu lực từ (văn bản )  (with effect from)
+@wefted
+* tính từ
+- (dệt) dệt
+@wei
+* danh từ
+- (lịch sử TrungHoa) Nhà Nguỵ (220 - 265 sau Công nguyên và 386 - 556 sau Công nguyên)
+* danh từ
+- (lịch sử TrungHoa) Nhà Nguỵ (220 - 265 sau Công nguyên và 386 - 556 sau Công nguyên)
+@weigh-beam
+* danh từ
+- đòn cân
+@weigh-clock
+* danh từ
+- đồng hồ quả lắc
+@weigh-house
+* danh từ
+- trạm cân đong hàng hoá
+@weigh-in
+* danh từ
+- cuộc kiểm tra trọng lượng của một võ sự quyền Anh, dô kề  ngay trước cuộc đấu, cuộc đua
+@weighbridge
+* danh từ
+- cân cầu đường (máy để cân có bệ gắn vào lòng đường, các xe cộ qua lại đỗ trên bệ đó để cân trọng lượng)
+@weighing-machine
+* danh từ
+- máy để cân người [vật] quá nặng không thể cân bằng cân thường được
+@weighing-scale
+* danh từ
+- cái cân đựa
+@weight-lifter
+* danh từ
+- <thể> người cử tạ
+@weight-plate
+* danh từ
+- đĩa cân
+@weightily
+* phó từ
+- rất nặng
+- đè nặng, nặng nề, chồng chất (lo âu )
+- cân nhắc, đòi hỏi phải suy nghĩ cẩn thận
+- quan trọng, có ảnh hưởng lớn, có uy thế lớn (người, việc )
+- vững, có sức thuyết phục, đanh thép (lý lẽ, lập luận...)
+- mạnh, chắc <văn>
+@weightlessness
+* danh từ
+- tình trạng phi trọng lượng
+- tìng trạng phi trọng lực
+@weirdie
+* danh từ
+- <thgt> người lập dị; người cư xử (ăn mặc ) lập dị, không bình thường
+@weirdly
+* phó từ
+- không tự nhiên, huyền bí, kỳ lạ
+- <thgt> không bình thường, khác thường, kỳ lạ, khó hiểu
+@weirdo
+* danh từ
+- <thgt> người lập dị; người cư xử (ăn mặc ) lập dị, không bình thường
+@weirdy
+* danh từ (từ Mỹ; (từ lóng))
+- người kì quặc; người gàn, dở hơi
+- sự việc kỳ lạ, ky dị
+@weitek
+- Tên một bộ đồng xử lý số được chế tạo cho các máy tính dùng vi xử lý Intel 803386 và 80486 Các bộ đồng xử lý này có khả năng hoạt động nhanh hơn so với Intel 80387 và 80487 SX Bộ đồng xử lý Weitek 4167 có thể thực hiện phép tính số học dấu phẩu động với tốc độ nhanh gấp ba đến năm lần so với 486 đơn độc
+@welder
+* danh từ
+- thợ hàn
+@weldless
+* tính từ
+- (kỹ thuật) không có mối hàn
+@welfare state
+* danh từ
+- (the Welfare State) hệ thống phúc lợi xã hội (hệ thống đảm bảo phúc lợi cho công dân bằng các phương tiện dịch vụ xã hội do nhà nước cung cấp; lương hưu, phụ cấp gia đình, chăm sóc y tế miễn phí )
+@welfare work
+* danh từ
+- công cuộc phúc lợi (các nỗ lực có tổ chức để đảm bảo phúc lợi của một nhóm người; người làm công trong một nhà máy, người nghèo, tàn tật )
+- <Mỹ> công tác xã hội
+@welfare worker
+* danh từ
+- người làm công tác xã hội
+@well-acquainted
+* tính từ
+- (+ with) quen thân (với nhau)
+- thông thạo (về gì đó)
+@well-affected
+* tính từ
+- có thiện cảm; tốt bụng hảo tâm
+- trung thành; đáng tin cậy
+- giả tạo; vờ vĩnh
+@well-armed
+* tính từ
+- được vũ trang đầy đủ
+@well-becoming
+* tính từ
+- thích hợp; ăn khớp
+@well-conducted
+* tính từ
+- có giáo dục; đoan chính; đoan trang; tế nhị; lịch thiệp
+- được điều hành (quản lý) tốt
+@well-connected
+* tính từ
+- có giao du với giới thượng lưu, có quan hệ với những người giàu có
+@well-cooked
+* tính từ
+- nấu ngon (về thức ăn)
+= well-cooked dinner+bữa ăn ngon
+- nướng (quay) chín
+@well-defined
+* tính từ
+- rành mạch; rạch ròi; hoàn toàn xác định
+@well-dress
+* tính từ
+- ăn mặc đẹp đẽ; ăn diện dỏm dáng; thanh lịch; trang nhã
+@well-established
+* tính từ
+- đứng vững, tồn tại trong một thời gian dài
+@well-formation
+* danh từ
+- (logich; ngôn ngữ) tính đúng đắn, tính chính xác
+@well-formed
+* tính từ
+- (logich; ngôn ngữ) đúng; đúng đắn; chính xác
+- (ngôn ngữ) đúng ngữ pháp; được đánh dấu
+= well-formed sentence+câu được đánh dấu, câu đúng ngữ pháp
+@well-grown
+* tính từ
+- cao to; phát triển
+@well-heeled
+* tính từ
+- <thgt> giàu có
+@well-natured
+* tính từ
+- hiền lành; tốt bụng
+@well-please
+* tính từ
+- rất vừa lòng, rất hài lòng
+@well-preserved
+* tính từ
+- không thể hiện các dấu hiệu của tuổi già, trông còn trẻ (người già)
+- ở trạng thái tốt (các vật cũ)
+@well-rounded
+* tính từ
+- tròn trịa, tròn trựnh một cách dễ thương (cơ thể con người)
+- rộng và đa dạng
+@well-thought-out
+* tính từ
+- được cân nhắc kỹ; có cơ sở (kế hoạch...)
+@well-thumbed
+* tính từ
+- có nhiều trang bị đánh dấu, có nhiều trang bị sờn (vì cuốn sách  được đọc quá thường xuyên)
+@well-versed
+* tính từ
+- (+in something) từng trải, biết nhiều
+@wellies
+* danh từ số nhiều
+- ủng cao su cao đến đầu gối
+@wellington
+* danh từ
+- giày ủng bằng cao su không thấm nước, thường cao tới gần đầu gối
+@wellington boot
+* danh từ
+- giày ủng bằng cao su không thấm nước, thường cao tới gần đầu gối
+@wellingtonia
+* danh từ
+- (thực vật) cây cù tùng
+@welly
+* danh từ
+- giày ủng bằng cao su không thấm nước, thường cao tới gần đầu gối
+@welsh dresser
+* danh từ
+- (Welsh dresser) loại tủ có các ngăn tủ và ngăn kéo ở phần dưới và các giá đựng ở phần trên
+@welsh rabbit
+* danh từ
+- món phó mát nóng chảy quết bánh mì nướng
+@welsh rarebit
+* danh từ
+- món phó mát nóng chảy quết bánh mì nướng
+@welshman
+* danh từ
+- người bản xứ của xứ Wales
+@welshwoman
+* danh từ
+- người phụ nữ bản xứ của xứ Wales
+@welterweight
+* danh từ
+- <thể> võ sự hạng bán trung (cân nặng trong khoảng từ 61 đến 66, 6 kg)
+@werewolves
+* danh từ
+- ma sói (người biến thành hoặc có khả năng biến hoá thành con chó sói, nhất là vào lúc trăng tròn trong các câu chuyện)
+@wesleyan
+* danh từ
+- thành viên của nhà thờ hội Giám lý do John Wesley sáng lập
+* tính từ
+- (thuộc) nhà thờ hội Giám lý; (thuộc) thành viên của nhà thờ hội Giám lý do John Wesley sáng lập
+@west central
+* danh từ
+- (viết tắt:  WC) Trung Tâm Tây
+@west country
+* danh từ
+- khu vực tây nam của nước Anh
+@westbound
+* tính từ
+- đi về phía tây, hướng về phía tây
+@westerlies
+* danh từ số nhiều
+- (hải) gió tây
+@westernisation
+* danh từ
+- sự Tây phương hoá, sự Âu hoá (nhất là về cách sống, tư duy, thể chế  của một nước, người  ở phương đông)
+@westernise
+* ngoại động từ
+- Tây phương hoá, Âu hoá (nhất là về cách sống, tư duy, thể chế  của một nước, người  ở phương đông)
+@westernization
+* danh từ
+- sự Tây phương hoá, sự Âu hoá (nhất là về cách sống, tư duy, thể chế  của một nước, người  ở phương đông)
+@westernize
+* ngoại động từ
+- Tây phương hoá, Âu hoá (nhất là về cách sống, tư duy, thể chế  của một nước, người  ở phương đông)
+@westland
+* danh từ
+- đất miền tây
+@wet dock
+* danh từ
+- vũng tàu đậu (vũng được bơm đầy nước để con tàu có thể nổi trong đó)
+@wet dream
+* danh từ
+- mộng tinh (giấc mơ về tình dục gây ra xuất tinh)
+@wet fish
+* danh từ
+- cá tươi
+@wet suit
+* danh từ
+- bộ đồ lặn, quần áo lặn
+@wet-time
+* danh từ
+- (từ lóng) thời gian bị trở ngại vì thời tiết xấu (trong xây dựng)
+@wetlands
+* danh từ, pl
+- khu vực đầm lầy
+@whacked
+* tính từ
+- <thgt> hết sức mệt mỏi, kiệt sức (người)
+@whale-fisher
+* danh từ
+- người đánh cá voi
+@wham
+* danh từ
+- <thgt> tiếng động của một cú đánh mạnh, bất ngờ
+- interj
+- ầm, rầm (diễn tả sự đụng mạnh, bất ngờ)
+* ngoại động từ
+- <thgt> đánh mạnh ai/cái gì
+- <thgt> di chuyển (cái gì) nhanh, di chuyển mạnh, di chuyển ầm ự
+@whatnot
+* danh từ
+- đồ linh tinh; thứ tầm thường (không ai để ý hoặc không có gì đặc biệt)
+- she'd put these whatnots in her hair as decoration
+- cô ấy gài những thứ linh tinh này lên tóc để trang điểm
+- tủ có kệ
+@wheat germ
+* danh từ
+- mầm lúa mì (lõi của hạt lúa mì, được lấy ra trong khi xay, là nguồn chứa vitamin)
+@wheat-bread
+* danh từ
+- bánh mì trắng
+@wheatcake
+* danh từ
+- <Mỹ> bánh xếp làm hoàn toàn bằng bột mì
+@wheatmeal
+* danh từ
+- bột chưa rây làm từ lúa mì
+@wheel-mounted
+* tính từ
+- đi xe
+@wheel-work
+* danh từ
+- (kỹ thuật) hệ thống truyền lực bằng bánh xe răng cưa
+@wheelbase
+* danh từ
+- (kỹ thuật) khoảng cách giữa trước với trục sau của xe gắn động cơ
+@wheelchair
+* danh từ
+- xe lăn (ghế tựa có bánh xe, trong đó ai không thể đi có thể tự di chuyển hoặc được đẩy đi; nhất là người tàn tật)
+@wheeler-dealer
+* danh từ
+- <Mỹ,thgt> người khéo mặc cả (thường là bất lương)
+@wheelie
+* danh từ
+- sự đi một bánh (hành động đi xe đạp hoặc mô tô trên một bánh sau, bánh trước nhấc khỏi mặt đất)
+@wheeling
+* danh từ
+- sự đi xe đạp
+- chỗ ngoặc
+- tình trạng đường xá
+= good wheeling+đường xá tốt
+@wheelsman
+* danh từ; số nhiều wheelsmen
+- người lái; người lái tàu thủy
+@wheen
+* tính từ
+- (xcôtlân) vài, một vài
+@whenso
+- (từ cổ, nghĩa cổ) xem whenever
+@whereout
+* phó từ
+- (từ cổ) từ đó; từ đấy
+@whereunder
+* tính từ
+- (cổ) dưới đó
+= the tree whereunder the animals may find shelter+Lùm cây dưới đó các con vật có thể tìm nơi ẩn náu
+@whilere
+* phó từ
+- (cổ) cách đây không lâu; mới đây
+@whimsey
+- xem whimsy
+@whipper
+* danh từ
+- người cầm roi
+* danh từgười hành hình
+- đao phủ
+@whipstaff
+* danh từ
+- cán roi
+@whirlybird
+* danh từ
+- (từ lóng) máy bay lên thẳng
+@whish
+* danh từ
+- tiếng rít (đạn, gió)
+@whiskey
+* danh từ
+- rượu uytky
+@whiskified
+* tính từ
+- sặc mùi rượu (người nghiện rượu)
+@white satin
+* danh từ
+- <lóng> rượu gin
+@white-bear
+* danh từ
+- (động từ) gấu trắng
+@white-blooded
+* tính từ
+- thiếu máu
+@white-coal
+* danh từ
+- than trắng,  thủy năng
+@white-collar
+* tính từ
+- (nói về công việc, người lao động...) không làm bằng chân tay; lao động trí óc
+= white-collar worker+nhân viên văn phòng
+@white-fish
+* danh từ
+- cá thịt trắng (như) cá hồi; cá moruy...
+- (động vật) cá hồi trắng, cá ngần
+@white-hot
+* tính từ
+- bị nung đỏ trắng
+- (nghĩa bóng) giận điên lên
+- (từ Mỹ,  (từ lóng)) bị truy nã vì trọng tội
+@white-skin
+* danh từ
+- người da trắng (người)
+@whitecap
+* danh từ
+- sóng bạc đầu
+@whited
+* tính từ
+- (từ hiếm) trắng ra, hoá trắng
+= whited sepulchre+kẻ đạo đức giả
+@whitehall
+* danh từ
+- đường phố có nhiều cơ quan của chính phủ (ở Luân Đôn)
+- Rumours are circulating in Whitehall
+- có tin đồn đang lan truyền ở khu Whitehall
+- chính phủ Anh
+= Whitehall is/are refusing to confirm the reports+Chính phủ Anh từ chối xác nhận các tin đồn
+@whitey
+* tính từ
+- trắng nhờ nhờ
+* danh từ
+- (từ Mỹ, khinh) tên da trắng (ngôn ngữ người da trắng)
+@whitherto
+* phó từ
+- (cổ) đâu; đi đâu
+@whitsun
+* danh từ
+- ngày chủ nhật lễ Hiện xuống và những ngày gần đó; tuần lễ Hiện xuống (cũng) Whit
+@whity
+* tính từ
+- trắng nhạt
+@whiz-kid
+* danh từ
+- người thành đạt rất nhanh; người lên như diều
+= the new manager is a real whiz-kid+ông giám đốc mới quả là lên như diều gặp gió
+@whizz
+* danh từ
+- tiếng rít, tiếng vèo (của đạn...)
+* nội động từ
+- rít, vèo
+@whizzer
+* danh từ
+- cái gì rít (réo) trên không
+- máy sấy (quay nhanh phát ra tiếng réo)
+@whole note
+* danh từ
+- nốt tròn (nốt nhạc viết dài nhất được dùng phổ biến, độ dài bằng hai nốt trắng)
+@wholehearted
+* tính từ
+- toàn tâm, toàn ý, một lòng một dạ
+@wholeheartedly
+* phó từ
+- toàn tâm toàn ý; một lòng một dạ; hết lòng
+@wholeheartedness
+* danh từ
+- sự toàn tâm toàn ý
+@whoo
+- interj
+- ồ! à! ôi! (chỉ ngạc nhiên hoặc đau buồn)
+@whorehouse
+* danh từ
+- (từ cổ) nhà thổ; lầu xanh
+@whoremaster
+- Cách viết khác : whoremonger
+@whoremonger
+- xem whore-master
+@whuff
+* nội động từ
+- thở phì phì; thở hồng hộc
+@whys
+* danh từ
+- lý do, lý do tại sao
+@wicking
+* danh từ
+- chất bấc; vật liệu làm bấc đèn
+@widder
+* danh từ
+- (thông tục) xem widow
+@widowerhood
+* danh từ
+- cảnh goá vợ; thời gian goá vợ
+* danh từ
+- cảnh goá vợ; thời gian goá vợ
+@wig-wag
+* động từ
+- (quân sự) (hàng hải) đánh tín hiệu bằng cờ
+* danh từ
+- sự đánh tín hiệu bằng cờ
+@wiggly
+* tính từ
+- (thông tục) lượn sóng (đường kẻ)
+@wigwam
+* danh từ
+- lều (của người da đỏ ở Mỹ)
+@wildlife
+* danh từ
+- (từ Mỹ) những thú vật, chim muông... hoang dã
+- wildlife conservation
+- sự bảo tồn những loài thú, chim rừng
+= wildlife sanctuary+khu bảo tồn động vật hoang dã
+@willowed
+* tính từ
+- trồng liễu; có nhiều liễu
+@wimp
+* danh từ
+- <thgt> người yếu đuối, người nhút nhát (nhất là đàn ông)
+@wimpish
+* tính từ
+- <thgt> ứng xử như một người nhút nhát
+@winceyette
+* danh từ
+- vải mềm (làm bằng sợi bông, hoặc bông pha len, dùng để may bộ đồ ngủ, áo ngủ...)
+@wind-breaker
+* danh từ
+- như wind-cheater
+@wind-fertilization
+* danh từ
+- (thực vật) sự thụ phấn nhờ gió
+@wind-firm
+* tính từ
+- chịu gió
+@wind-gun
+* danh từ
+- súng hơi
+@wind-pollinated
+* tính từ
+- (thực vật) thụ phấn nhờ gió
+@wind-pump
+* danh từ
+- bơm chạy bằng động cơ gió
+@wind-sleeve
+* danh từ
+- ống gió (ống vải bạt, hở ở hai đầu, phất phới ở trên đỉnh một cây sào để chỉ hướng gió; tại phi trường...)
+@wind-sock
+* danh từ
+- ống gió (ống vải bạt, hở ở hai đầu, phất phới ở trên đỉnh một cây sào để chỉ hướng gió; tại phi trường...)
+@wind-wept
+* tính từ
+- lộng gió
+- rối bù (tóc)
+@windily
+* phó từ
+- lộng gió, có nhiều gió; gây ra bởi gió
+- gió lộng, phơi ra trước gió (nhất là gió mạnh)
+- <y> đầy hơi
+- <thgt> dài dòng, trống rỗng, huênh hoang; ba hoa
+- <thgt> sợ hãi, lo lắng
+@winding-engine
+* danh từ
+- (mỏ) máy nâng; máy trục
+@window-box
+* danh từ
+- bồn hoa cửa sổ (ngăn hẹp dài ghép bên ngoài cửa sổ để trồng cây)
+@window-ledge
+* danh từ
+- bậu cửa sổ (ngưỡng cửa sổ ở mép dưới cửa sổ, ở bên trong hoặc ở bên ngoài)
+@window-shop
+* nội động từ
+- (thông tục) nhìn hàng trong tủ kính (không có ý định mua)
+@window-shopping
+* danh từ
+- sự xem hàng bày ô kính (nhìn hàng hoá bày trong ô kính nhà hàng mà thường không có ý định mua gì)
+@windowlight
+* danh từ
+- (từ Mỹ,  (từ lóng)) con mắt
+@windproof
+* tính từ
+- chịu gió
+@windscreen
+* danh từ
+- kính chắn gió xe hơi
+@windscreen wiper
+* danh từ
+- cần gạt nước (để chùi sạch nước mưa, tuyết...ở kính chắn gió của xe hơi)
+@windshield
+* danh từ
+- <Mỹ> kính chắn gió xe hơi
+- kính chắn gió xe máy
+@windshield wiper
+* danh từ
+- cần gạt nước (để chùi sạch nước mưa, tuyết...ở kính chắn gió của xe hơi)
+@windsurf
+* nội động từ
+- lướt trên ván buồm (thường go windsurfing)
+@windsurfer
+* danh từ
+- ván buồm (tấm ván, tựa như ván lướt có một cánh buồm)
+- người chơi ván buồm
+@windsurfing
+* danh từ
+- <thể> môn lướt ván buồm
+@windway
+* danh từ
+- (ngành mỏ) lò thông gió
+@wine bar
+* danh từ
+- quán rượu
+@wine-biscuit
+* danh từ
+- bánh qui sấy (để uống rượu)
+@wine-butler
+* danh từ
+- người bán căn tin
+@wine-house
+* danh từ
+- cửa hàng bàn rượu
+- (từ cổ) quán rượu
+@wine-taster
+* danh từ
+- người nếm rượu
+@wing-bearing
+* tính từ
+- có cánh (côn trùng)
+@wing-chair
+* danh từ
+- ghế bành có lưng tựa cao hai bên có hai trụ nhô lên
+@wing-nut
+* danh từ
+- ốc tai hồng (đai ốc có hai cánh để có thể vặn bằng ngón tay cái và một ngón tay vào đinh ốc hoặc bu lông)
+@wing-weary
+* tính từ
+- mỏi cánh (chim)
+- (bóng) mệt mỏi (trong chuyến du lịch); mỏi chân
+@wingding
+* danh từ
+- <Mỹ,thgt> bữa tiệc vui vẻ cuồng nhiệt
+@wingman
+* danh từ; số nhiều wingmen
+- máy bay yểm trợ, máy bay kèm sau, máy bay số
+- phi công yểm trợ, phi công số
+@wingy
+* tính từ
+- (thơ) có cánh; được chắp cánh
+@winkle-picker
+* danh từ
+- (thường snh) giày có mũi dài nhọn
+@winnings
+* danh từ, pl
+- tiền được cuộc, được bạc
+@wino
+* danh từ
+- <thgt> người nghiện rượu, kẻ nghiện rượu (đặc biệt là rượu rẻ tiền)
+@winter sports
+* danh từ
+- thể thao mùa đông (những môn thể thao trên tuyết hoặc trên băng; trượt tuyết, trượt băng )
+@winter-bud
+* danh từ
+- chồi mùa đông
+@winter-time
+* danh từ
+- mùa đông; thời kỳ mùa đông
+@winterise
+* ngoại động từ
+- <Mỹ> chuẩn bị (lương thực, rơm rạ, nhà cửa...) cho mùa đông
+@wintertime
+* danh từ
+- mùa đông; thời kỳ mùa đông
+= the days are shorter in the wintertime+về mùa đông, ngày trở nên ngắn hơn
+@wintrily
+* phó từ
+- lạnh
+@wipo
+* danh từ
+- Tổ chức quốc tế về quyền sở hữu trí tuệ (World Intellectual Property Organization)
+* danh từ
+- Tổ chức quốc tế về quyền sở hữu trí tuệ (World Intellectual Property Organization)
+@wire wool
+* danh từ
+- tấm bùi nhùi bằng dây sắt
+@wire-glass
+* danh từ
+- kính cốt thép
+@wire-stitch
+* ngoại động từ
+- cột chặt bằng dây thép
+@wire-walker
+* danh từ
+- diễn viên (xiếc) đi trên dây
+@wire-worm
+* danh từ
+- sâu ăn lá
+@wireman
+* danh từ
+- số nhiều wiremen
+- thợ bắt đường dây
+@wise guy
+* danh từ
+- <thgt> kẻ hợm đời (kẻ nói hoặc cư xử làm như anh ta biết nhiều hơn người khác)
+@wisehead
+* danh từ
+- (mỉa) làm bộ thông minh, kẻ tự cho mình hơn người
+@wisewoman
+* danh từ
+- mụ phù thủy; bà cốt
+- bà lang; bà đỡ; bà mụ
+@wishbone
+* danh từ
+- chạc xương đòn (xương chạc nằm khoảng giữa cổ và ngực của gia cầm)
+@wispy
+* tính từ
+- như làn, như dải, thành làn, thành dải; mỏng manh, lưa thưa
+@wisteria
+* danh từ
+- <thực> cây đậu tía (một trong nhiều loại cây leo có thân gỗ và hoa chùm dài rũ xuống màu trắng hoặc tím nhạt)
+@wistfully
+* phó từ
+- bâng khuâng, đăm chiêu; nuối tiếc, buồn bã
+- có vẻ thèm muốn, có vẻ khao khát
+@wistfulness
+* danh từ
+- sự bâng khuâng, sự đăm chiêu; sự nuối tiếc, sự buồn bã
+- sự có vẻ thèm muốn, sự có vẻ khao khát
+@witch-hazel
+* danh từ
+- <thực> cây phỉ (loại cây ở châu A hoặc ở Bắc Mỹ có hoa vàng)
+- chất nước chiếc từ vỏ cây phỉ (dùng để chữa các chỗ bầm tím hoặc chỗ sưng tấy trên da)
+@witch-hunt
+* danh từ
+- sự lùng tìm và diệt những người nghi là phù thủy
+- <bóng> cuộc điều tra để khủng bố những người không theo chính phái, cuộc điều tra để khủng bố những người có quan điểm không phổ biến
+@withholden
+- quá khứ phân từ (cổ) của withhold
+@withstood
+* ngoại động từ(withstood)+giữ vững, trụ lại, cưỡng lại, chịu đựng, chống lại
+@witter
+* nội động từ
+- <thgt> lải nhải, nói hoài (một chuyện không quan trọng)
+@wk
+* danh từ
+- tuần lễ (week)
+- công việc (work)
+@wmf
+- Một đuôi mở rộng của tên tệp chỉ rõ rằng tệp đó có chứa một hinfh đồ họa dưới cất giữ theo khuôn thức windows Metafile Format
+@wmo
+* (viết tắt)
+- Tổ chức khí tượng thế giới (World Meteorological Organization)
+- viết tắt
+- Tổ chức khí tượng thế giới (World Meteorological Organization)
+@wodge
+* danh từ
+- (+of something)  <thgt> một miếng lớn, một khối lượng lớn
+@wok
+* danh từ
+- cái xanh, chảo (chảo lớn có hình như chiếc bát, để nấu nướng; nhất là thức ăn Trung quốc)
+@wolf-whistle
+* danh từ
+- tiếng húyt sáo (do một người đàn ông phát ra để biểu lộ rằng anh ta thấy một người phụ nữ là hấp dẫn về tình dục)
+* nội động từ
+- (+at) húyt sáo (một người đàn ông)
+@womaniser
+* danh từ
+- người có quan hệ lăng nhăng, người có quan hệ không đứng đắn (người đàn ông có quan hệ tình dục với nhiều phụ nữ)
+@womanizer
+* danh từ
+- người có quan hệ lăng nhăng, người có quan hệ không đứng đắn (người đàn ông có quan hệ tình dục với nhiều phụ nữ)
+@wombat
+* danh từ
+- gấu túi (loài dã thú ở châu Uc giống con gấu nhỏ, con cái mang con trong một cái túi)
+@women's lib
+* danh từ
+- nam nữ bình quyền, giải phóng phụ nữ (quyền tự do của phụ nữ được hưởng các quyền về xã hội và kinh tế của phụ nữ ngang với nam giới)
+@women's libber
+* danh từ
+- <thgt> người đấu tranh cho lý tưởng 'nam nữ bình quyền', người bênh vực quyền của nữ giới
+@women's liberation
+* danh từ
+- nam nữ bình quyền, giải phóng phụ nữ (quyền tự do của phụ nữ được hưởng các quyền về xã hội và kinh tế của phụ nữ ngang với nam giới)
+@women's movement
+* danh từ
+- (the women's movement) phong trào giải phóng phụ nữ
+@wonder-story
+* danh từ
+- chuyện thần kì
+@wonderfully
+* phó từ
+- đáng ngạc nhiên
+- cực kỳ; đáng khâm phục
+@wood lot
+* danh từ
+- <Mỹ> lô đất để trồng cây, khu vườn cây
+@wood-burner
+* danh từ
+- người đốt than
+@wood-louse
+* danh từ
+- <động> con mối (loài sinh vật tựa côn trùng, không có cánh sống trong gỗ mục, đất ẩm...)
+@wood-pigeon
+* danh từ
+- <động> chim câu xanh (loài chim câu lớn sống hoang dã)
+@woodcraft
+* danh từ
+- sự thông thạo rừng, tài đi rừng
+@wooden-head
+* danh từ
+- thằng ngốc, đồ ngu
+@woodeness
+* danh từ
+- tình trạng cứng và vụng
+@woodenly
+* phó từ
+- cứng và vụng
+@woodenware
+* danh từ
+- thùng chậu bằng gỗ
+@woodlice
+* danh từ
+- <động> con mối (loài sinh vật tựa côn trùng, không có cánh sống trong gỗ mục, đất ẩm...)
+@woodmen
+* danh từ
+- người đẵn gỗ; tiều phu
+- nhân viên lâm nghiệp, thợ rừng, người làm nghề rừng
+@woodside
+* danh từ
+- bìa rừng
+@woodwind
+* danh từ
+- các nhạc cụ hơi làm bằng gỗ trong một ban nhạc
+- người chơi các nhạc cụ hơi làm bằng gỗ trong một ban nhạc
+@woodworm
+* danh từ
+- <động> con mọt
+- lỗ mọt khoét
+@woofer
+* danh từ
+- loa trầm (loa được thiết kế để phát ra các âm trầm một cách chính xác)
+@woolens
+* danh từ, pl
+- quần áo len (nhất là đan)
+@woollens
+* danh từ, pl
+- quần áo len (nhất là đan)
+@woolly-headed
+* tính từ
+- mơ hồ, không rõ ràng, không minh bạch (về một người, trí tuệ, lý lẽ, ý tưởng...của họ)
+@woozy
+* tính từ
+- <thgt> cảm thấy chóng mặt, cảm thấy buồn nôn như sau khi uống rượu quá nhiều
+- <thgt> tinh thần lẫn lộn, mụ người
+@word processing
+* danh từ
+- (viết tắt:  WP) sự xử lý văn bản
+@word processor
+* danh từ
+- (viết tắt:  WP) máy xử lý văn bản, trình xử lý văn bản
+@word-class
+* danh từ
+- (ngôn ngữ) cấu tạo từ
+@word-group
+* danh từ
+- (ngôn ngữ) cụm từ; từ tổ; ngữ
+@word-painter
+* danh từ
+- người nghệ sĩ ngôn từ; nhà thơ, nhà văn
+@wordformation
+* danh từ
+- (ngôn ngữ) cấu tạo từ
+@work of art
+* danh từ
+- tác phẩm nghệ thuật (tranh, thơ, toà nhà, tượng...)
+@work study
+* danh từ
+- hiệu quả học (hệ thống đánh giá lao động và phương pháp lao động, nhằm xem có thể làm được nhanh hơn hoặc hiệu quả hơn không)
+@work surface
+* danh từ
+- nơi bày thức ăn để nấu nướng (mặt phẳng trong nhà bếp ở trên tủ đựng thức ăn, tủ lạnh...dùng để chuẩn bị thức ăn...)
+@work top
+* danh từ
+- nơi bày thức ăn để nấu nướng (mặt phẳng trong nhà bếp ở trên tủ đựng thức ăn, tủ lạnh...dùng để chuẩn bị thức ăn...)
+@work-bench
+* danh từ
+- bàn làm việc của một thợ máy, thợ mộc
+@work-force
+* danh từ
+- lực lượng lao động
+@work-horse
+* danh từ
+- ngựa kéo, ngựa thồ
+- <bóng> người được những người khác trông cậy để làm nhiều công việc nặng nhọc
+@work-in
+* danh từ
+- hình thức phản đối của công nhân chiếm và điều hành một nhà máy...khi phải đóng cửa
+@work-load
+* danh từ
+- khối lượng công việc ai [phải] làm
+@work-mate
+* danh từ
+- bạn cùng nghề; bạn đồng nghiệp; cộng tác viên
+@work-out
+* danh từ
+- thời kỳ luyện tập thân thể với cường độ cao
+@work-to-rule
+* danh từ
+- đình công theo luật (hình thức phản đối của công nhân, trong đó họ tuân theo chặt chẽ các qui định của chủ và từ chối không chịu làm thêm giờ, ngoài giờ...)
+@workaholic
+* danh từ
+- <thgt> người tham công tiếc việc (người mê mải làm việc khó dừng lại được)
+@workaround
+- khắc phục
+@workbook
+* danh từ
+- sách bài tập
+@workforce
+* danh từ
+- lực lượng lao động
+@workgroup
+- nhóm làm việc
+@working capital
+* danh từ
+- vốn luân chuyển (vốn cần thiết để sử dụng cho việc điều hành một doanh nghiệp, chứ không đầu tư vào nhà cửa, thiết bị...)
+@working class
+* danh từ
+- (the working class) giai cấp công nhân
+@working-over
+* danh từ
+- sự đánh đập
+@workmen
+* danh từ
+- công nhân, người thợ (người đàn ông được thuê làm công việc chân tay hoặc (cơ khí))
+- người lao động (theo một cách được nói rõ)
+@workpeople
+* danh từ số nhiều
+- tầng lớp công nhân, những người lao động
+@workpiece
+* danh từ
+- vật chưa thành phẩm
+@worksheet
+* danh từ
+- giấy chấm công
+@workstation
+- trạm làm việc
+@world war
+* danh từ
+- chiến tranh thế giới, đại chiến thế giới (cuộc chiến tranh có nhiều nước tham gia)
+@world-beater
+* danh từ
+- người hoặc cái gì giỏi hơn, tốt hơn...tất cả các người hoặc cái gì khác
+@world-class
+* tính từ
+- cỡ thế giới, tốt vào loại nhất thế giới
+@world-famous
+* tính từ
+- nổi tiếng khắp thế giới
+@world-hater
+- như misanthrope
+@world-renowned
+* tính từ
+- như world-famous
+* tính từ
+- như world-famous
+@worldwide
+- toàn cầu
+@worm-cast
+* danh từ
+- đống đất nhỏ hình ống do giun đùn lên mặt đất
+@worm-like
+* tính từ
+- giống con sâu; dạng giun
+- khúm núm; bợ đỡ; xu nịnh
+@worn-out
+* tính từ
+- rất mòn và do đó không còn dùng được nữa
+- mệt lử, kiệt sức (người)
+@worried
+- thời quá khứ & động tính từ quá khứ của worry
+* tính từ
+- (+about somebody/something; that ) bồn chồn, lo nghĩ, cảm thấy lo lắng, tỏ ra lo lắng
+@worriedly
+* phó từ
+- bồn chồn, lo nghĩ, cảm thấy lo lắng, tỏ ra lo lắng
+@worrier
+* danh từ
+- người hay lo lắng
+@worrisome
+* tính từ
+- gây ra lo lắng, gây ra rắc rối, làm phiền
+@worrying
+* tính từ
+- gây ra lo lắng cho ai, gây lo nghĩ
+- nhiều lo lắng, nhiều lo nghĩ
+@worshiper
+* danh từ
+- <tôn> người thờ cúng
+- người tôn sùng, người sùng bái
+@worthful
+* tính từ
+- (từ hiếm) xứng đáng; được tôn tọng
+- quí; quí giá
+@worthily
+* phó từ
+- xứng đáng với, đáng làm
+- đáng coi trọng, đáng được kính trọng, đáng được cân nhắc
+- <đùa> đáng kính, đáng trọng, đáng được kính trọng, đáng được thừa nhận (nhất là về một người)
+- thích đáng; thích hợp
+- xứng đáng, tiêu biểu cho
+@worthwhile
+* tính từ
+- quan trọng, thú vị hoặc đáng bỏ thời gian, tiền của hoặc nỗ lực; đáng giá; bõ công
+= it's worthwhile taking the trouble to explain a job fully to new employees+bỏ công sức ra giải thích công việc cặn kẽ cho nhân viên mới là việc đáng làm
+= nursing is a very worthwhile career+y tá là một nghề rất đáng làm
+@wpb
+* (viết tắt)
+- <thgt> sọt đựng giấy lộn, sọt rác (waste-paper basket)
+@wpm
+- (vt của words per minute) số từ trên một phút (đánh máy, tốc ký...)
+@wrathfully
+* phó từ
+- tức giận, phẫn nộ, đầy thịnh nộ
+@wretchedly
+* phó từ
+- khốn khổ, rất bất hạnh, cùng khổ, đáng thương
+- làm đau khổ, gây ra sự bất hạnh, gây ra sự khổ sở
+- rất xấu, rất tồi, có chất lượng rất kém
+- <thgt> tồi tệ, thảm hại; đáng ghét (dùng để biểu lộ sự bực mình)
+@wringing
+* tính từ
+- ướt sũng (quần áo  quá ướt đến mức có thể vắt ra nhiều nước)
+@wringing wet
+* tính từ
+- ướt sũng (quần áo  quá ướt đến mức có thể vắt ra nhiều nước)
+@write-in
+* danh từ
+- việc bầu cho người không có tên trong danh sách bầu cử
+- người ứng cử bổ sung
+@writer's cramp
+* danh từ
+- sự mỏi tay, sự cứng đờ; cái đau của tay (do viết nhiều)
+@writing-cabinet
+* danh từ
+- văn phòng
+@wrong-foot
+* ngoại động từ
+- chặn (ai) không được chuẩn bị trước (nhất là trong thể thao)
+@wrongfully
+* tính từ
+- bất công, không công bằng, không đáng, vô lý
+- thiệt hại cho; tổn hại cho
+- <pháp> trái luật, phi pháp, bất hợp pháp, không đúng đắn
+@wt
+- vt của weight
+- cân nặng, trọng lượng
+@wto
+* (viết tắt)
+- Tổ chức mậu dịch quốc tế (World Trade Organization)
+- viết tắt
+- Tổ chức mậu dịch quốc tế (World Trade Organization)
+@wu
+* danh từ
+- (lịch sử TrungHoa) Nhà Ngô (thời Tam Quốc)
+* danh từ
+- (lịch sử TrungHoa) Nhà Ngô (thời Tam Quốc)
+@wwf
+* (viết tắt)
+- Quỹ quốc tế bảo vệ động vật hoang dã (World Wildlife Fund)
+- viết tắt
+- Quỹ quốc tế bảo vệ động vật hoang dã (World Wildlife Fund)
+@www
+- (world wide web)
+@wych-hazel
+* danh từ
+- <thực> cây phỉ (loại cây ở châu A hoặc ở Bắc Mỹ có hoa vàng)
+- chất nước chiếc từ vỏ cây phỉ (dùng để chữa các chỗ bầm tím hoặc chỗ sưng tấy trên da)
+@wysiwyg
+- thấy gì được nấy (What You See Is What You Get)

@@ -6,28 +6,15 @@ import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.teamttdvlp.memolang.R
-import com.teamttdvlp.memolang.database.sql.repository.FlashcardRepository
-import com.teamttdvlp.memolang.database.sql.repository.UserRepository
 import com.teamttdvlp.memolang.view.adapter.RCV_FlashcardSetAdapter
 import com.teamttdvlp.memolang.view.base.BaseActivity
 import com.teamttdvlp.memolang.viewmodel.ViewFlashcardSetViewModel
 import com.teamttdvlp.memolang.databinding.ActivityViewFlashcardSetBinding
-import com.teamttdvlp.memolang.model.entity.Language.Companion.LANG_DIVIDER
-import com.teamttdvlp.memolang.model.entity.flashcard.Flashcard
-import com.teamttdvlp.memolang.model.entity.Language.Companion.SOURCE_LANGUAGE
-import com.teamttdvlp.memolang.model.entity.Language.Companion.TARGET_LANGUAGE
+import com.teamttdvlp.memolang.data.model.entity.flashcard.FlashcardSet
 import com.teamttdvlp.memolang.view.activity.iview.ViewFlashcardSetView
 import com.teamttdvlp.memolang.view.adapter.RCV_FlashcardSetsBackground_Adapter
-import com.teamttdvlp.memolang.view.helper.disappear
-import com.teamttdvlp.memolang.view.helper.quickStartActivity
+import com.teamttdvlp.memolang.view.helper.*
 import javax.inject.Inject
-
-
-const val FLASHCARD_SET_KEY = "flashcard_set"
-
-const val FLASHCARD_LIST_KEY = "flashcard_list"
-
-const val LANGUAGE_REQUEST_CODE = 118
 
 class ViewFlashcardSetActivity : BaseActivity<ActivityViewFlashcardSetBinding, ViewFlashcardSetViewModel>()
                         ,ViewFlashcardSetView {
@@ -35,19 +22,15 @@ class ViewFlashcardSetActivity : BaseActivity<ActivityViewFlashcardSetBinding, V
     lateinit var flashcardSetAdapter : RCV_FlashcardSetAdapter
     @Inject set
 
-    lateinit var flashcardRepository: FlashcardRepository
+    lateinit var viewModelProviderFactory: ViewModelProviderFactory
     @Inject set
-
-    lateinit var userRepository: UserRepository
-    @Inject set
-
 
     override fun getLayoutId(): Int {
         return R.layout.activity_view_flashcard_set
     }
 
     override fun takeViewModel(): ViewFlashcardSetViewModel {
-        return ViewFlashcardSetViewModel(application, flashcardRepository, userRepository)
+        return getActivityViewModel(viewModelProviderFactory)
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -67,44 +50,46 @@ class ViewFlashcardSetActivity : BaseActivity<ActivityViewFlashcardSetBinding, V
         rcvBackground.adapter = RCV_FlashcardSetsBackground_Adapter(this@ViewFlashcardSetActivity)
     }}
 
-    fun loadFlashcard () {
-        viewModel.triggerGetAllSetOfCard {
-            flashcardSetAdapter.setData(it)
-            setBackgroundState()
-        }
+    private fun loadFlashcard () {
+//        viewModel.getAllFlashcardSets {
+//            flashcardSetAdapter.setData_But_OmitEmptySet(it!!)
+//            if (flashcardSetAdapter.itemCount > 0) {
+//                hideSuggesstionBackground()
+//            }
+//        }
     }
 
-    fun setBackgroundState () {
-        if (flashcardSetAdapter.itemCount > 0) {
-            dB.vwgrpSuggestion.disappear()
-            dB.rcvBackground.disappear()
-        }
+    private fun hideSuggesstionBackground () {
+        dB.vwgrpSuggestion.goGONE()
+        dB.rcvBackground.goGONE()
+    }
+
+    private fun showSuggestionBackground () {
+        dB.vwgrpSuggestion.goVISIBLE()
+        dB.rcvBackground.goVISIBLE()
     }
 
     override fun addViewEvents() { dB.apply {
         flashcardSetAdapter.setOnBtnViewListClickListener {
             val intent = Intent(this@ViewFlashcardSetActivity, ViewFlashCardListActivity::class.java)
             intent.putExtra(FLASHCARD_SET_KEY, it)
-            startActivityForResult(intent, LANGUAGE_REQUEST_CODE)
+            startActivityForResult(intent, VIEW_LIST_REQUEST_CODE)
         }
 
-        flashcardSetAdapter.setOnBtnAddClickListener { set ->
-            val intent = Intent(this@ViewFlashcardSetActivity, AddFlashcardActivity::class.java)
-            intent.putExtra(AddFlashcardActivity.SRC_LANG_KEY, set.flashcards.first().languagePair.split(LANG_DIVIDER).get(SOURCE_LANGUAGE))
-            intent.putExtra(AddFlashcardActivity.TGT_LANG_KEY, set.flashcards.first().languagePair.split(LANG_DIVIDER).get(TARGET_LANGUAGE))
-            startActivity(intent)
+        flashcardSetAdapter.setOnBtnAddClickListener { flashcardSet ->
+            AddFlashcardActivity.requestAddLanguage(this@ViewFlashcardSetActivity, flashcardSet)
         }
 
-        flashcardSetAdapter.setOnBtnUseFlashcardClickListener {
-            sendCardListTo(it.flashcards, UseFlashcardActivity::class.java)
+        flashcardSetAdapter.setOnBtnUseFlashcardClickListener { flashcardSet ->
+            UseFlashcardActivity.requestReviewFlashcard(this@ViewFlashcardSetActivity, flashcardSet)
         }
 
-        flashcardSetAdapter.setOnBtnReviewFlashcardHardClickListener {
-            sendCardListTo(it.flashcards, ReviewFlashcardActivity::class.java)
+        flashcardSetAdapter.setOnBtnReviewFlashcardHardClickListener { flashcardSet ->
+            ReviewFlashcardActivity.requestReviewFlashcard(this@ViewFlashcardSetActivity, flashcardSet)
         }
 
-        flashcardSetAdapter.setOnBtnReviewFlashcardEasyClickListener {
-            sendCardListTo(it.flashcards, ReviewFlashcardEasyActivity::class.java)
+        flashcardSetAdapter.setOnBtnReviewFlashcardEasyClickListener { flashcardSet ->
+           ReviewFlashcardEasyActivity.requestReviewFlashcard(this@ViewFlashcardSetActivity, flashcardSet)
         }
 
         btnCreateNewFlashcard.setOnClickListener {
@@ -124,38 +109,34 @@ class ViewFlashcardSetActivity : BaseActivity<ActivityViewFlashcardSetBinding, V
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
 
-        if ((requestCode == LANGUAGE_REQUEST_CODE) and (resultCode == Activity.RESULT_OK)) {
+        if ((requestCode == VIEW_LIST_REQUEST_CODE) and (resultCode == Activity.RESULT_OK)) {
             val dataBundle = data!!.extras!!
-            val updatedCardList = dataBundle.getSerializable(UPDATED_FLASHCARD_LIST_KEY) as ArrayList<Flashcard>
-            val updatedCardSetName = dataBundle.getString(FLASHCARD_SET_NAME, "")
-
-            val listIsAllCleared = (updatedCardList.size == 0)
+            val updatedFlashcardSet = dataBundle.getSerializable(UPDATED_FLASHCARD_SET) as FlashcardSet
+            val listIsAllCleared = (updatedFlashcardSet.flashcards.size == 0)
             if (listIsAllCleared) {
                 for ((pos, set) in flashcardSetAdapter.list.withIndex()) {
-                    if (set.name == updatedCardSetName) {
+                    if (set.name == updatedFlashcardSet.name) {
                         flashcardSetAdapter.list.remove(set)
                         flashcardSetAdapter.notifyItemRemoved(pos)
-                        viewModel.removeUserFlashcardSet(set.name)
+                        break
+                    }
+                }
+
+                val thereIsNoFlashcardSetOnScreen = (flashcardSetAdapter.list.size == 0)
+                if (thereIsNoFlashcardSetOnScreen) {
+                    showSuggestionBackground()
+                }
+            } else {
+                for ((pos, set) in flashcardSetAdapter.list.withIndex()) {
+                    val findOutCorrespondingList = (set.flashcards.first().setOwner == updatedFlashcardSet.name)
+                    if (findOutCorrespondingList) {
+                        flashcardSetAdapter.list[pos] = updatedFlashcardSet
+                        flashcardSetAdapter.notifyItemChanged(pos)
                         break
                     }
                 }
             }
-
-            for ((pos, set) in flashcardSetAdapter.list.withIndex()) {
-                val findOutCorresList = (set.flashcards.first().languagePair == updatedCardSetName)
-                if (findOutCorresList) {
-                    set.flashcards = updatedCardList
-                    flashcardSetAdapter.notifyItemChanged(pos)
-                    break
-                }
-            }
         }
-    }
-
-    private fun sendCardListTo (flashcardList : ArrayList<Flashcard>, targetActivity : Class<*>) {
-        val intent = Intent(this@ViewFlashcardSetActivity, targetActivity)
-        intent.putExtra(FLASHCARD_LIST_KEY, flashcardList)
-        startActivity(intent)
     }
 
 }

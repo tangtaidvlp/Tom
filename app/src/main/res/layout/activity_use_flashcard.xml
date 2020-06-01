@@ -5,7 +5,7 @@
         tools:context=".view.activity.UseFlashcardActivity">
 
     <data>
-        <import type="com.teamttdvlp.memolang.model.entity.flashcard.Flashcard"/>
+        <import type="com.teamttdvlp.memolang.data.model.entity.flashcard.Flashcard"/>
         <import type="android.view.View"/>
         <variable
             name="vwModel"
@@ -15,49 +15,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/background_menu_activity">
-
-        <ImageView
-            android:id="@+id/img_background_mountain"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/background_mountain"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"/>
-
-        <ImageView
-            android:id="@+id/img_background_sun"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/background_sun"
-            app:layout_constraintHorizontal_bias="0.6"
-            app:layout_constraintBottom_toTopOf="@id/img_background_mountain"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"/>
-
-        <TextView
-            android:id="@+id/edt_set_name"
-            android:layout_width="0dp"
-            android:layout_height="35dp"
-            android:layout_marginTop="11dp"
-            android:layout_marginBottom="80dp"
-            android:background="@drawable/round_right_5dp_black_background"
-            android:elevation="10dp"
-            android:translationZ="5dp"
-            android:fontFamily="@font/seguisb"
-            android:gravity="center_vertical"
-            android:paddingStart="16dp"
-            android:paddingEnd="16dp"
-            android:paddingBottom="1dp"
-            android:textColor="@color/white"
-            android:text="@{vwModel.setName}"
-            android:textSize="16sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintEnd_toEndOf="@id/center_guideline"
-            app:layout_constraintVertical_bias="0.0" />
+        android:background="@color/white">
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/center_guideline"
@@ -66,99 +24,211 @@
             android:orientation="vertical"
             app:layout_constraintGuide_percent="0.5" />
 
-        <ImageView
-            android:id="@+id/btn_turn_off_speaker"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/common_margin_top"
-            android:alpha="1.0"
-            android:gravity="center"
-            android:padding="5dp"
-            android:text="Give up"
-            android:src="@drawable/image_speaker_black"
-            android:textColor="@android:color/white"
-            android:textSize="14sp"
-            android:layout_marginRight="10dp"
-            app:layout_constraintRight_toLeftOf="@id/txt_cards_left_count_"
-            app:layout_constraintTop_toTopOf="parent" />
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/vwgrp_title"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:background="@drawable/background_app_gradient_blue"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/txt_set_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/segoeui"
+                android:gravity="center_vertical"
+                android:hint="Set name here"
+                android:includeFontPadding="false"
+                android:inputType="textNoSuggestions|text"
+                android:paddingEnd="16dp"
+                android:paddingBottom="1dp"
+                android:text="@{vwModel.setName}"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:translationZ="5dp" />
+
+            <ImageView
+                android:id="@+id/btn_speaker_setting"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="10dp"
+                android:alpha="1.0"
+                android:fontFamily="@font/seguisb"
+                android:gravity="center"
+                android:padding="4.5dp"
+                android:src="@drawable/image_speaker_setting"
+                app:layout_constraintRight_toLeftOf="@id/btn_turn_off_speaker"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
 
         <ImageView
-            android:id="@+id/btn_turn_on_speaker"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:layout_marginRight="10dp"
-            android:alpha="1.0"
-            android:visibility="gone"
-            android:fontFamily="@font/seguisb"
-            android:gravity="center"
-            android:padding="5dp"
-            android:src="@drawable/image_speaker_mute"
-            app:layout_constraintRight_toLeftOf="@id/txt_cards_left_count_"
-            app:layout_constraintTop_toTopOf="parent" />
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="12dp"
+            android:src="@drawable/image_button_flip_flashcard_set"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/vwgrp_title" />
 
-        <ImageView
-            android:id="@+id/btn_setting"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:layout_marginEnd="10dp"
-            android:alpha="1.0"
-            android:fontFamily="@font/seguisb"
-            android:gravity="center"
-            android:padding="4.5dp"
-            android:src="@drawable/image_setting"
-            app:layout_constraintRight_toLeftOf="@id/btn_turn_off_speaker"
-            app:layout_constraintTop_toTopOf="parent" />
+        <!--        Cards Left Count-->
 
         <TextView
-            android:id="@+id/txt_cards_left_count_"
+            android:id="@+id/txt_title_cards_left_count"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="@dimen/common_margin_top"
-            android:layout_marginEnd="@dimen/common_margin_end"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="5dp"
             android:layout_weight="1"
             android:fontFamily="@font/segoeui"
             android:gravity="right|center_vertical"
+            android:includeFontPadding="false"
+            android:paddingBottom="3dp"
+            android:text="Cards left count: "
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/vwgrp_title"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/txt_cards_left_count"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/seguisb"
+            android:gravity="right|center_vertical"
+            android:hint="3"
+            android:includeFontPadding="false"
             android:paddingBottom="3dp"
             android:text="@{String.valueOf(vwModel.cardLeftCount)}"
             android:textColor="@color/black"
-            android:textSize="16sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintTop_toTopOf="parent"
+            android:textSize="13sp"
+            app:layout_constraintBottom_toBottomOf="@id/txt_title_cards_left_count"
+            app:layout_constraintStart_toEndOf="@id/txt_title_cards_left_count"
+            app:layout_constraintTop_toTopOf="@id/txt_title_cards_left_count"
             app:layout_constraintVertical_bias="0.0" />
+
+        <!--        Passed cards count   -->
+        <TextView
+            android:id="@+id/txt_title_passed_card_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/segoeui"
+            android:gravity="right|center_vertical"
+            android:includeFontPadding="false"
+            android:paddingBottom="3dp"
+            android:text="Passed cards count: "
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txt_title_cards_left_count"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/txt_passed_card_count"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/seguisb"
+            android:gravity="right|center_vertical"
+            android:includeFontPadding="false"
+            android:paddingBottom="3dp"
+            android:text="@{String.valueOf(vwModel.cardLeftCount)}"
+            android:textColor="@color/orange_highlight_text"
+            android:textSize="13sp"
+            app:layout_constraintBottom_toBottomOf="@id/txt_title_passed_card_count"
+            app:layout_constraintStart_toEndOf="@id/txt_title_passed_card_count"
+            app:layout_constraintTop_toTopOf="@id/txt_title_passed_card_count"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <!--        Forgotten cards count   -->
+        <TextView
+            android:id="@+id/txt_title_forgotten_cards_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/segoeui"
+            android:gravity="right|center_vertical"
+            android:includeFontPadding="false"
+            android:paddingBottom="3dp"
+            android:text="Forgotten cards count: "
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txt_title_passed_card_count"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/txt_forgotten_cards_count"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/seguisb"
+            android:gravity="right|center_vertical"
+            android:includeFontPadding="false"
+            android:paddingBottom="3dp"
+            android:text="@{String.valueOf(vwModel.cardLeftCount)}"
+            android:textColor="@color/orange_highlight_text"
+            android:textSize="13sp"
+            app:layout_constraintBottom_toBottomOf="@id/txt_title_forgotten_cards_count"
+            app:layout_constraintStart_toEndOf="@id/txt_title_forgotten_cards_count"
+            app:layout_constraintTop_toTopOf="@id/txt_title_forgotten_cards_count"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <!--        Mặt trước-->
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/viewgroup_front_flashcard"
             android:layout_width="0dp"
-            android:layout_height="130dp"
+            android:layout_height="150dp"
             android:layout_marginStart="20dp"
             android:layout_marginTop="20dp"
             android:layout_marginEnd="20dp"
             android:background="@drawable/round_10dp_white_background"
-            android:elevation="5dp"
             android:orientation="vertical"
+            android:elevation="5dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.526"
+            app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/txt_forgotten_cards_count">
+            app:layout_constraintTop_toBottomOf="@+id/txt_title_forgotten_cards_count">
+
+            <ImageView
+                android:layout_width="13dp"
+                android:layout_height="13dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginRight="7dp"
+                android:elevation="6dp"
+                android:src="@drawable/image_circle_bright_blue"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
                 android:id="@+id/txt_front_card_number"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:alpha="1.0"
                 android:fontFamily="@font/segoeui"
                 android:gravity="right"
-                android:paddingTop="1dp"
-                android:paddingRight="6dp"
+                android:includeFontPadding="false"
+                android:paddingStart="8dp"
+                android:paddingTop="7dp"
                 android:text="@{String.valueOf(vwModel.currentCardOrder)}"
                 android:textColor="@color/use_flashcard_grey_text_color"
                 android:visibility="visible"
-                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
@@ -173,7 +243,7 @@
                 android:paddingEnd="6dp"
                 android:scrollbars="vertical"
                 android:text="@{vwModel.currentCard.text}"
-                android:textColor="@color/use_flashcard_grey_text_color"
+                android:textColor="@color/app_bright_blue"
                 android:textSize="24sp"
                 android:visibility="visible"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -183,35 +253,77 @@
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.0" />
 
-
         </androidx.constraintlayout.widget.ConstraintLayout>
 
-        <RelativeLayout
-            android:id="@+id/viewgroup_img_swipe_up"
-            android:layout_width="wrap_content"
+        <View
+            android:id="@+id/img_front_swipe_zone"
+            android:layout_width="0dp"
             android:layout_height="0dp"
-            android:layout_marginTop="200dp"
-            android:clickable="false"
-            android:gravity="center"
-            android:paddingLeft="100dp"
-            android:paddingRight="100dp"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/edt_set_name">
+            app:layout_constraintTop_toBottomOf="@id/viewgroup_front_flashcard"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <ImageView
+            android:id="@+id/btn_speak_front_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:src="@drawable/image_speaker_blue"
+            android:layout_marginTop="100dp"
+            android:text="Give up"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/viewgroup_front_flashcard" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/vwgrp_swipe_functions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="0.5"
+            android:orientation="horizontal"
+            android:layout_marginTop="120dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_speak_front_text">
 
             <ImageView
-                android:id="@+id/img_swipe_up"
+                android:id="@+id/img_swipe_up_to_flip"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/image_swipe_up"
+                app:layout_constraintBottom_toTopOf="@id/img_swipe_right_to_save"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/image_swipe_up" />
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/segoeui"
+                android:includeFontPadding="false"
+                android:text="Swipe up to"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
 
-        </RelativeLayout>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_flip_card_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/seguisb"
+                android:includeFontPadding="false"
+                android:text=" flip card"
+                android:textColor="@color/black"
+                android:textSize="16sp"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/viewgroup_back_replica_front_flashcard"
             android:layout_width="0dp"
-            android:layout_height="130dp"
+            android:layout_height="150dp"
             android:layout_marginStart="20dp"
             android:layout_marginTop="20dp"
             android:layout_marginEnd="20dp"
@@ -220,10 +332,20 @@
             android:orientation="vertical"
             android:visibility="gone"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.526"
+            app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/txt_forgotten_cards_count">
 
+
+            <ImageView
+                android:layout_width="13dp"
+                android:layout_height="13dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginRight="7dp"
+                android:elevation="6dp"
+                android:src="@drawable/image_circle_bright_blue"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
                 android:id="@+id/txt_back_replica_front_card_number"
@@ -233,10 +355,10 @@
                 android:fontFamily="@font/segoeui"
                 android:gravity="right"
                 android:paddingTop="1dp"
-                android:paddingRight="6dp"
+                android:paddingLeft="6dp"
                 android:text="@{String.valueOf(vwModel.currentCardOrder)}"
                 android:textColor="@color/app_red"
-                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
@@ -283,22 +405,32 @@
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
-
+        <!--        Mặt sau-->
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/viewgroup_back_flashcard"
             android:layout_width="0dp"
-            android:layout_height="130dp"
+            android:layout_height="150dp"
             android:layout_marginStart="20dp"
             android:layout_marginTop="20dp"
             android:layout_marginEnd="20dp"
             android:background="@drawable/round_10dp_white_background"
             android:elevation="5dp"
             android:orientation="vertical"
+            android:visibility="gone"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.526"
+            app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/txt_forgotten_cards_count">
 
+            <ImageView
+                android:layout_width="13dp"
+                android:layout_height="13dp"
+                android:layout_marginRight="7dp"
+                android:layout_marginBottom="7dp"
+                android:elevation="6dp"
+                android:src="@drawable/image_circle_grey"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
 
             <TextView
                 android:id="@+id/txt_back_card_using"
@@ -387,225 +519,56 @@
                 </androidx.constraintlayout.widget.ConstraintLayout>
             </ScrollView>
 
-
         </androidx.constraintlayout.widget.ConstraintLayout>
 
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/viewgroup_card_other_info"
+        <View
+            android:id="@+id/img_back_swipe_zone"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginEnd="20dp"
-            android:alpha="0.0"
-            android:background="@drawable/round_10dp_white_background"
-            android:elevation="4dp"
-            android:orientation="vertical"
-            android:paddingStart="4dp"
-            android:paddingTop="10dp"
-            android:paddingBottom="10dp"
+            android:layout_height="0dp"
+            android:visibility="gone"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/viewgroup_back_flashcard">
-
-            <TextView
-                android:id="@+id/txt_title_pronunciation"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="1dp"
-                android:fontFamily="@font/seguisb"
-                android:gravity="top|left"
-                android:paddingLeft="10dp"
-                android:text="Pronunciation:"
-                android:textColor="@color/use_flashcard_grey_text_color"
-                android:textSize="16sp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/txt_title_type" />
-
-            <TextView
-                android:id="@+id/txt_pronunciation"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="4dp"
-                android:fontFamily="@font/lucida_bright_regular"
-                android:gravity="top|left"
-                android:text="@{vwModel.currentCard.pronunciation}"
-                android:textColor="@color/use_flashcard_grey_text_color"
-                android:textSize="16sp"
-                app:layout_constraintBottom_toBottomOf="@+id/txt_title_pronunciation"
-                app:layout_constraintStart_toEndOf="@+id/txt_title_pronunciation"
-                app:layout_constraintTop_toTopOf="@+id/txt_title_pronunciation" />
-
-            <TextView
-                android:id="@+id/txt_title_type"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/seguisb"
-                android:gravity="top|left"
-                android:paddingLeft="10dp"
-                android:text="Type:"
-                android:textColor="@color/use_flashcard_grey_text_color"
-                android:textSize="16sp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.0" />
-
-            <TextView
-                android:id="@+id/txt_type"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="4dp"
-                android:fontFamily="@font/segoeui"
-                android:gravity="top|left"
-                android:text="@{vwModel.currentCard.type}"
-                android:textColor="@color/use_flashcard_grey_text_color"
-                android:textSize="16sp"
-                app:layout_constraintBottom_toBottomOf="@+id/txt_title_type"
-                app:layout_constraintStart_toEndOf="@+id/txt_title_type"
-                app:layout_constraintTop_toTopOf="@+id/txt_title_type" />
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
-        <RelativeLayout
-            android:id="@+id/vwgrp_btn_easy"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="15dp"
-            android:layout_marginEnd="20dp"
-            android:layout_marginBottom="20dp"
-            android:alpha="0.0"
-            android:background="@drawable/round_10dp_white_background"
-            android:elevation="3dp"
-            app:layout_constraintBottom_toTopOf="@+id/vwgrp_btn_hard"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/vwgrp_btn_previous_card"
-            app:layout_constraintVertical_bias="1.0">
-
-            <TextView
-                android:id="@+id/btn_easy"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/seguisb"
-                android:gravity="center"
-                android:paddingTop="8dp"
-                android:paddingBottom="8dp"
-                android:text="Easy"
-                android:textColor="@color/black"
-                android:textSize="16sp"
-                 />
-
-            <ImageView
-                android:layout_width="14sp"
-                android:layout_height="14sp"
-                android:layout_alignLeft="@id/btn_easy"
-                android:layout_alignTop="@id/btn_easy"
-                android:layout_alignBottom="@id/btn_easy"
-                android:layout_marginStart="14dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginBottom="8dp"
-                android:src="@drawable/image_green_circle_black_border" />
-
-        </RelativeLayout>
-
-
-        <RelativeLayout
-            android:id="@+id/vwgrp_btn_hard"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:layout_marginEnd="20dp"
-            android:alpha="0.0"
-            android:background="@drawable/round_10dp_white_background"
-            android:elevation="3dp"
-            android:layout_marginBottom="40dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent">
-
-            <TextView
-                android:id="@+id/btn_hard"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/seguisb"
-                android:gravity="center"
-                android:text="Hard"
-                android:textColor="@color/black"
-                android:textSize="16sp"
-                android:paddingTop="8dp"
-                android:paddingBottom="8dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent" />
-
-            <ImageView
-                android:layout_width="14sp"
-                android:layout_height="14sp"
-                android:layout_alignLeft="@id/btn_hard"
-                android:layout_alignTop="@id/btn_hard"
-                android:layout_alignBottom="@id/btn_hard"
-                android:layout_marginStart="14dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginBottom="8dp"
-                android:src="@drawable/image_red_circle_black_border" />
-
-        </RelativeLayout>
-
+            app:layout_constraintTop_toBottomOf="@id/viewgroup_back_flashcard"
+            app:layout_constraintBottom_toBottomOf="parent"/>
 
         <TextView
-            android:id="@+id/txt_forgotten_cards_count"
+            android:id="@+id/btn_hard"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="6dp"
-            android:textSize="15sp"
-            android:fontFamily="@font/segoeui"
-            android:text='@{"Forgotten card: " + vwModel.fogottenCardsCount}'
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/edt_set_name" />
-
-        <RelativeLayout
-            android:id="@+id/vwgrp_btn_previous_card"
-            android:layout_width="80dp"
-            android:layout_height="30dp"
-            android:layout_marginTop="18dp"
-            android:layout_marginRight="20dp"
-            android:alpha="0.0"
+            android:background="@drawable/round_100dp_bright_blue_background"
+            android:elevation="3dp"
+            android:fontFamily="@font/tw_century_regular"
+            android:gravity="center"
             android:visibility="gone"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/viewgroup_card_other_info">
+            android:alpha="0.0"
+            android:layout_marginTop="120dp"
+            android:includeFontPadding="false"
+            android:paddingStart="25dp"
+            android:paddingTop="6dp"
+            android:paddingEnd="25dp"
+            android:paddingBottom="6dp"
+            android:text="Do not remember"
+            android:textColor="@color/white"
+            android:textSize="23sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_speak_back_text" />
 
-            <TextView
-                android:id="@+id/btn_previous_card"
-                android:layout_width="80dp"
-                android:layout_height="30dp"
-                android:fontFamily="@font/seguisb"
-                android:gravity="center"
-                android:paddingLeft="12dp"
-                android:paddingTop="3dp"
-                android:paddingRight="12dp"
-                android:paddingBottom="4.5dp"
-                android:text="Previous"
-                android:textColor="@color/black"
-                android:textSize="14sp"/>
-
-            <ImageView
-                android:id="@+id/img_btn_previous_background"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@drawable/round_3dp_black_background"
-                android:alpha="0.03"/>
-
-        </RelativeLayout>
-
-
+        <ImageView
+            android:id="@+id/btn_speak_back_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:gravity="center"
+            android:src="@drawable/image_speaker_blue"
+            android:text="Give up"
+            android:textSize="14sp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/viewgroup_front_flashcard" />
 
         <com.teamttdvlp.memolang.view.customview.MyCustomDialog
             android:id="@+id/dialog_exit"
@@ -618,59 +581,66 @@
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
-            <include layout="@layout/support_exit_dialog"
+            <include
+                layout="@layout/support_exit_dialog"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintBottom_toBottomOf="parent"/>
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
         </com.teamttdvlp.memolang.view.customview.MyCustomDialog>
-
 
         <com.teamttdvlp.memolang.view.customview.MyCustomDialog
             android:id="@+id/dialog_setting"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:elevation="10dp"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent">
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
             <LinearLayout
-                android:orientation="vertical"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:layout_marginEnd="10dp"
-                android:padding="20dp"
-                android:gravity="center_vertical"
                 android:background="@drawable/round_5dp_white_background"
-                app:layout_constraintTop_toTopOf="parent"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:padding="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintBottom_toBottomOf="parent">
+                app:layout_constraintTop_toTopOf="parent">
 
                 <LinearLayout
-                    android:orientation="horizontal"
-                    android:layout_width="wrap_content"
-                    android:layout_height="30dp">
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:orientation="horizontal">
 
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:src="@drawable/image_speaker_black"/>
+                        android:src="@drawable/image_speaker_black" />
 
                     <androidx.appcompat.widget.AppCompatTextView
-                        android:layout_width="wrap_content"
+                        android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:textSize="16sp"
                         android:layout_marginLeft="10dp"
                         android:fontFamily="@font/seguisb"
+                        android:text="Speaker"
+                        android:layout_weight="1"
                         android:textColor="@color/black"
-                        android:text="Speaker"/>
+                        android:textSize="16sp" />
+
+                    <Switch
+                        android:id="@+id/switch_speaker"
+                        android:checked="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
 
                 </LinearLayout>
 
@@ -683,139 +653,42 @@
                         android:id="@+id/checkbox_speak_text_only"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:textSize="16sp"
-                        android:fontFamily="@font/segoeui"
-                        android:textColor="@color/black"
-                        android:gravity="center_vertical"
                         android:button="@drawable/check_box_circle_background"
+                        android:fontFamily="@font/segoeui"
+                        android:gravity="center_vertical"
                         android:layoutDirection="rtl"
-                        android:text="Speak text only"/>
+                        android:text="Speak text only"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
 
                     <RadioButton
                         android:id="@+id/checkbox_speak_translation_only"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:textSize="16sp"
-                        android:fontFamily="@font/segoeui"
-                        android:textColor="@color/black"
-                        android:gravity="center_vertical"
                         android:button="@drawable/check_box_circle_background"
+                        android:fontFamily="@font/segoeui"
+                        android:gravity="center_vertical"
                         android:layoutDirection="rtl"
-                        android:text="Speak translation only"/>
+                        android:text="Speak translation only"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
 
                     <RadioButton
                         android:id="@+id/checkbox_speak_both_text_and_trans"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:textSize="16sp"
-                        android:fontFamily="@font/segoeui"
-                        android:textColor="@color/black"
-                        android:gravity="center_vertical"
                         android:button="@drawable/check_box_circle_background"
+                        android:fontFamily="@font/segoeui"
+                        android:gravity="center_vertical"
                         android:layoutDirection="rtl"
-                        android:text="Speak both text and translation"/>
+                        android:text="Speak both text and translation"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
 
                 </RadioGroup>
-
-
 
             </LinearLayout>
 
         </com.teamttdvlp.memolang.view.customview.MyCustomDialog>
-
-        <androidx.constraintlayout.widget.Group
-            android:id="@+id/group_front_card"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:visibility="visible"
-            app:constraint_referenced_ids="viewgroup_front_flashcard,viewgroup_img_swipe_up" />
-
-        <androidx.constraintlayout.widget.Group
-            android:id="@+id/group_back_card"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:visibility="gone"
-            app:constraint_referenced_ids="vwgrp_btn_hard,vwgrp_btn_easy, viewgroup_card_other_info,viewgroup_back_flashcard" />
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/vwgrp_choose_language_flow"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@drawable/background_menu_activity"
-            android:clickable="true"
-            android:elevation="10dp"
-            android:translationZ="12dp">
-
-            <TextView
-                android:id="@+id/txt_text"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/common_margin_start"
-                android:layout_marginEnd="@dimen/common_margin_end"
-                android:background="@drawable/round_5dp_black_alpha_8_percents_background"
-                android:fontFamily="@font/seguisb"
-                android:gravity="center"
-                android:paddingTop="30dp"
-                android:paddingBottom="30dp"
-                android:text="Reverse language"
-                android:textColor="@color/black"
-                android:textSize="16sp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.4" />
-
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/common_margin_start"
-                android:layout_marginTop="@dimen/common_margin_top"
-                android:layout_marginEnd="@dimen/common_margin_end"
-                android:fontFamily="@font/seguisb"
-                android:gravity="center"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/txt_text">
-
-                <TextView
-                    android:id="@+id/btn_change_flow"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="@dimen/common_margin_end"
-                    android:layout_weight="1"
-                    android:background="@drawable/round_5dp_black_alpha_8_percents_background"
-                    android:fontFamily="@font/seguisb"
-                    android:gravity="center"
-                    android:paddingTop="8dp"
-                    android:paddingBottom="10dp"
-                    android:text="Yes"
-                    android:textColor="@color/black"
-                    android:textSize="16sp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/txt_text" />
-
-                <TextView
-                    android:id="@+id/btn_does_not_change_flow"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:background="@drawable/round_5dp_black_alpha_8_percents_background"
-                    android:fontFamily="@font/seguisb"
-                    android:gravity="center"
-                    android:paddingTop="8dp"
-                    android:paddingBottom="10dp"
-                    android:text="No"
-                    android:textColor="@color/black"
-                    android:textSize="16sp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/txt_text" />
-
-            </LinearLayout>
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

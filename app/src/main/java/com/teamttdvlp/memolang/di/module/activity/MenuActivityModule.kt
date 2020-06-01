@@ -8,6 +8,7 @@ import androidx.vectordrawable.graphics.drawable.AnimatorInflaterCompat
 import com.teamttdvlp.memolang.R
 import com.teamttdvlp.memolang.view.activity.MenuActivity
 import com.teamttdvlp.memolang.view.adapter.RCVRecent_USE_FlashcardAdapter
+import com.teamttdvlp.memolang.view.adapter.RCV_FlashcardSetAdapter
 import com.teamttdvlp.memolang.view.customview.MenuBackgroundListViewAdapter
 import dagger.Module
 import dagger.Provides
@@ -17,14 +18,15 @@ import javax.inject.Singleton
 @Module
 class MenuActivityModule {
 
+
     @Provides
     fun provideAdapterBackground (activity : MenuActivity) : MenuBackgroundListViewAdapter {
         return MenuBackgroundListViewAdapter(activity)
     }
 
     @Provides
-    fun providerRecentUseFlashcardAdapter (activity : MenuActivity) : RCVRecent_USE_FlashcardAdapter{
-        return RCVRecent_USE_FlashcardAdapter(activity)
+    fun providerFlashcardSetAdapter (activity : MenuActivity) : RCV_FlashcardSetAdapter{
+        return RCV_FlashcardSetAdapter(activity)
     }
 
     @Provides

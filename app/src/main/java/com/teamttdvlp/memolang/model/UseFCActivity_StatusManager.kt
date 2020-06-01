@@ -8,14 +8,14 @@ class UseFCActivity_StatusManager (context: Context, var setName : String) {
         SpeakerStatus(context, getFormattedSetName())
     }
 
-    fun selfRemove () {
-        speakerStatusManager.selfRemove()
-    }
-
     // This is just for making sure that there'll be no conflict in SharePreference loading
     // if user name the set with some text similar with Application property's name
     private fun getFormattedSetName () : String {
-        return "<%% $setName%>"
+        return "UseFC ${setName}Mng>"
+    }
+
+    fun selfRemove () {
+        speakerStatusManager.selfRemove()
     }
 
     class SpeakerStatus (context : Context, var setName: String) {

@@ -5,56 +5,79 @@
 
     <data>
         <variable
-            name="viewModel"
+            name="vwModel"
             type="com.teamttdvlp.memolang.viewmodel.ViewFlashCardListViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@drawable/background_menu_activity"
+            android:background="@color/white"
             tools:context=".view.activity.ViewFlashCardListActivity">
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/vwgrp_title"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:elevation="3dp"
+            android:translationZ="0.5dp"
+            android:background="@drawable/background_app_gradient_blue"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <TextView
+                android:id="@+id/txt_set_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:elevation="10dp"
+                android:translationZ="5dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/segoeui"
+                android:gravity="center_vertical"
+                android:layout_marginStart="12dp"
+                android:inputType="textNoSuggestions|text"
+                android:paddingEnd="16dp"
+                android:paddingBottom="1dp"
+                android:text="@{vwModel.beingViewedflashcardSet.name}"
+                android:textColor="@color/white"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:elevation="10dp"
+                android:translationZ="5dp"
+                android:fontFamily="@font/segoeui"
+                android:gravity="center_vertical"
+                android:layout_marginEnd="@dimen/common_margin_end"
+                android:inputType="textNoSuggestions|text"
+                android:layout_marginStart="10dp"
+                android:paddingBottom="1dp"
+                android:text="@{String.valueOf(vwModel.flashcardCount)}"
+                android:textColor="@color/white"
+                android:textSize="16sp"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rcv_flashcard_list"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:layout_marginTop="20dp"
+            android:background="@color/white"
             android:layout_marginBottom="10dp"
-            android:layout_marginStart="@dimen/common_margin_start"
-            android:layout_marginEnd="@dimen/common_margin_end"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/edt_set_name"
+            app:layout_constraintTop_toBottomOf="@+id/vwgrp_title"
             app:layout_constraintVertical_bias="0.0">
 
         </androidx.recyclerview.widget.RecyclerView>
 
-        <EditText
-            android:id="@+id/edt_set_name"
-            android:layout_width="0dp"
-            android:layout_height="35dp"
-            android:layout_marginTop="11dp"
-            android:layout_marginBottom="80dp"
-            android:background="@drawable/round_right_5dp_black_background"
-            android:elevation="10dp"
-            android:translationZ="5dp"
-            android:fontFamily="@font/seguisb"
-            android:gravity="center_vertical"
-            android:hint="Choose set or create new one"
-            android:inputType="textNoSuggestions|text"
-            android:paddingStart="16dp"
-            android:paddingEnd="16dp"
-            android:paddingBottom="1dp"
-            android:text="@{viewModel.beingViewedflashcardSet.name}"
-            android:textColor="@color/white"
-            android:textSize="16sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="@+id/center_guideline"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0" />
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/center_guideline"
@@ -67,43 +90,11 @@
             android:id="@+id/btn_delete_selected_cards"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="8dp"
-            android:layout_marginBottom="8dp"
             android:src="@drawable/button_bin_delete"
+            android:translationZ="4dp"
             android:visibility="gone"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
-
-        <TextView
-                android:text="@{String.valueOf(viewModel.flashcardCount)}"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/txt_flashcard_count"
-                android:layout_marginTop="10dp"
-                app:layout_constraintTop_toTopOf="parent"
-                android:textSize="16sp"
-                android:textColor="@color/black"
-                android:fontFamily="@font/segoeui"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintVertical_bias="0.0"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="1.0"
-                android:layout_marginEnd="@dimen/common_margin_end"/>
-
-        <TextView
-            android:id="@+id/txt_language_2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="10dp"
-            android:fontFamily="@font/segoeui"
-            android:text="@{viewModel.languageType}"
-            android:textColor="#ffffff"
-            android:textSize="16sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/img_flashcard_icon"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0" />
 
         <ImageView
             android:id="@+id/img_prevent_user_multi_item_click"

@@ -21,7 +21,7 @@ object UnitConverter {
     val `100dp`: Int
 
 
-    init {
+    init { 
         density = Resources.getSystem().displayMetrics.density
         `1dp` = DpToPixel(1)
         `5dp` = DpToPixel(5)

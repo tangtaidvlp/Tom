@@ -4,38 +4,23 @@
     <data>
         <variable
             name="flashcard"
-            type="com.teamttdvlp.memolang.model.entity.flashcard.Flashcard" />
+            type="com.teamttdvlp.memolang.data.model.entity.flashcard.Flashcard"/>
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
-        android:orientation="vertical"
+        android:background="@color/white"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-
-        <ImageView
-            android:id="@+id/btn_delete"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:layout_marginTop="25dp"
-            android:padding="8dp"
-            android:src="@drawable/image_clear_all_text_black"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0" />
-
 
         <LinearLayout
             android:id="@+id/viewgroup_text"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="6dp"
             android:layout_marginEnd="8dp"
             android:orientation="vertical"
+            android:layout_marginTop="14dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/btn_delete"
             app:layout_constraintHorizontal_bias="0.0"
@@ -50,7 +35,10 @@
                 android:fontFamily="@font/seguisb"
                 android:text="@{flashcard.text}"
                 android:textColor="@color/black"
-                android:textSize="19sp"
+                android:textSize="20sp"
+                android:hint="Text"
+                android:layout_marginStart="@dimen/common_margin_start"
+                android:includeFontPadding="false"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/btn_delete"
                 app:layout_constraintHorizontal_bias="0.0"
@@ -64,20 +52,38 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/segoeuisl"
                 android:text="@{flashcard.translation}"
+                android:hint="Translation"
+                android:includeFontPadding="false"
+                android:layout_marginStart="@dimen/common_margin_start"
                 android:textColor="@color/black"
-                android:textSize="16sp" />
+                android:textSize="15sp" />
 
         </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/btn_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:paddingStart="16dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingEnd="17dp"
+            android:src="@drawable/image_clear_all_text_black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
 
 
         <TextView
             android:id="@+id/line"
             android:layout_width="0dp"
             android:layout_height="0.5dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginBottom="14dp"
+            android:layout_marginTop="16dp"
             android:background="@color/black"
-            android:alpha="0.5"
+            android:alpha="0.15"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
@@ -87,11 +93,12 @@
 
         <ImageView
             android:id="@+id/img_delete_status"
-            android:layout_width="20dp"
-            android:layout_height="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:padding="1dp"
             android:alpha="0.0"
             android:src="@drawable/image_unchecked_delete"
+            android:layout_marginStart="@dimen/common_margin_start"
             app:layout_constraintBottom_toBottomOf="@+id/viewgroup_text"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
@@ -103,17 +110,18 @@
             android:id="@+id/txt_text_for_delete"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="39dp"
+            android:layout_marginStart="46dp"
             android:clickable="false"
-            android:layout_marginBottom="4dp"
             android:fontFamily="@font/seguisb"
             android:linksClickable="false"
             android:longClickable="false"
-            android:alpha="0.0"
             android:text="@{flashcard.text}"
+            android:hint="For delete here"
+            android:includeFontPadding="false"
             android:gravity="center_vertical"
             android:textColor="@color/black"
             android:textSize="19sp"
+            android:alpha="0.0"
             app:layout_constraintBottom_toBottomOf="@id/viewgroup_text"
             app:layout_constraintEnd_toStartOf="@+id/btn_delete"
             app:layout_constraintStart_toStartOf="parent"

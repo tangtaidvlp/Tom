@@ -6,10 +6,10 @@
     
     <data>
         <variable
-            name="viewModel"
+            name="vwModel"
             type="com.teamttdvlp.memolang.viewmodel.EditFlashcardViewModel" />
 
-        <import type="com.teamttdvlp.memolang.model.entity.Language"/>
+        <import type="com.teamttdvlp.memolang.data.model.entity.language.Language"/>
 
         <import type="android.view.View" />
 
@@ -65,7 +65,7 @@
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                bind:flashcard="@{viewModel.bindOGCard}" />
+                bind:flashcard="@{vwModel.bindOGCard}" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

@@ -1,0 +1,49 @@
+@Quadrant
+- (Econ) Góc toạ độ/ góc phần tư.
+@Quasiliquid asset
+- (Econ) Tài sản bán thanh toán.
+@Quick-disbursing fundss
+- (Econ) Tiền ký phát nhanh.
+@Quintile
+- (Econ) Thành năm phần bằng nhau.
+@Quadratic equation
+- (Econ) Phương trình bậc hai
+= Một phương trình chứa bình phương của một biến số như luỹ thừa cao nhất.
+@Quadratic utility function
+- (Econ) Hàm thoả dụng bậc hai.
+= Một HÀM THOẢ DỤNG mà dạng đại số của nó là dạng của một PHƯƠNG TRÌNH BẬC HAI.
+@Qualitative choice models
+- (Econ) Mô hình lựa chọn định tính.
+= Đây là các mô hình đã được đưa ra để giải quyết những dữ liệu phản ứng không liên tục, chẳng hạn như quyết định mua hay không mua xe ô tô, thay đổi việc làm, hoặc đi học đại học.
+@Quantity theory of money
+- (Econ) Lý thuyết định lượng về tiền tệ.
+= Lý thuyết về CẦU TIỀN TỆ đã tạo nên yếu tố quan trọng nhất của phân tích kinh tế vĩ mô trước của Keynes: Lý thuyết tổng quát về việc làm, lãi suất và tiền tệ (1936).
+@Quartile
+- (Econ) Tứ phân vị.
+= Một phương tiện xác định vị trí của dữ liệu hoặc phân phối mẫu.
+@Quasi-option value
+- (Econ) Giá trị của hợp đồng mua bán trước.
+= Xem OPTION VALUE.
+@Quasi-rent
+- (Econ) Tiền thuê giả.
+= Thu nhập của một người bán một loại hàng hoá hoặc dịch vụ quá mức và trên CHI PHÍ CƠ HỘI có thể xảy ra khi hàng hoá đó tạm thời được cung cấp với lượng cố định.
+@Quesnay, Francois
+- (Econ) (1694-1774).
+= Nhân vật chủ yếu trong nhóm các nhà kinh tế học Pháp ở thế kỷ XVIII được gọi là những người theo chủ nghĩa TRỌNG NÔNG. Là một bác sĩ phẫu thuật, tác phẩm của ông về kinh tế học xuất hiện trong BÁCH KHOA TOÀN THƯ năm 1756 và 1757, TẠP CHÍ NÔNG NGHIỆP, THƯƠNG NGHIỆP VÀ TÀI CHÍNH  năm 1765 và 1767, và BIỂU KINH TẾ (1758). LÀ người chống lại trường phái TRỌNG THƯƠNG, ông sớm ủng hộ các ưu điểm tự do cạnh tranh trong công nghiệp. Bài Biểu kinh tế đã đưa ra một mô hình trao đổi giữa ba giai cấp xã hội: địa chủ, công nhân nông nghiệp và cái gọi là giai cấp không sinh lợi. Chỉ nông nghiệp là có khả năng sản xuất số thặng dư so với các yêu cầu tiêu dùng và do đó là động lực thúc đẩy nền kinh tế. Biểu kinh tế đưa ra mô hình ĐẦU VÀO ĐẦU RA của nền kinh tế cho thấy thặng dư hoặc sản phẩm dòng được phân phối thế nào giữa 3 giai cấp. Như vậy nó là tiền thân của mô hình tái sản xuất của C.Mác và mô hình phức tạp hơn nhiều của WASSILY LEONTIEF. Quesnay đề xuất rằng do nông nghiệp là nguồn của cỉa cuối cùng, cho nên tài chính công cộng có thể đơn giản hoá rất nhiều bằng một thứ thếu duy nhất đánh vào nôn nghiệp. Sự ủng hộ của ông đối với tự do kinh doanh và cạnh tranh không hạn chế đã có ảnh hưởng đến kinh tế học cổ điển Anh và đặc biệt đến ADAM SMITH.
+@Quick assets ratio
+- (Econ) Tỷ lệ tài sản dễ chuyển hoán.
+= Đây là tỷ số tài sản dễ chuyển hoán với số nợ hiện đại. Tài sản dễ chuyển hoán là tiền mặt, phần lớn các đầu tư có kỳ hạn có thể thực hiện nhanh chóng và tài khoản các khoản phải thu trừ nợ khó đòi.
+@Quits
+- (Econ) Số người bỏ việc.
+= Những nhân viên tự nguyên rời bỏ công việc hiện tại để thay đổi công việc hoặc để rút khỏi lực lượng  lao động.
+@Quota
+- (Econ) Hạn nghạch.
+= Một giới hạn bắt buộc đặt ra đối với số lượng hàng hoá sản xuất hoặc mua.
+@Import / Export quota
+- (Econ) Hạn nghạch xuất khẩu / nhập khẩu.
+@Quoted companies
+- (Econ) Các công ty được niêm yết giá.
+= Những công ty mà vốn cổ phiếu có thể được bán tự do ở SỞ GIAO DỊCH CHỨNG KHOÁN. Ở London, việc giao dịch có được quy chế như vậy đòi hỏi phải đưa ra một thông báo giá của Uỷ ban niêm yết của Sở giao dịch chứng khoán.
+@Quotient rule
+- (Econ) Quy tắc thương số.
+= Một quy tắc để xác định đạo hàm của một hàm số theo một biến số, trong đó hàm số bao gồm thương (nghĩa là tỷ lệ) giữa hai hàm số riêng rẽ của biến số.

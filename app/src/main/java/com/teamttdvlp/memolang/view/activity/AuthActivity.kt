@@ -10,7 +10,7 @@ package com.teamttdvlp.memolang.view.activity
 //import androidx.appcompat.content.res.AppCompatResources
 //import androidx.core.animation.addListener
 //import androidx.core.view.isVisible
-//import com.facebook.CallbackManager
+//import com.facebook.CallbackManager 
 //import com.facebook.FacebookCallback
 //import com.facebook.FacebookException
 //import com.facebook.login.LoginManager

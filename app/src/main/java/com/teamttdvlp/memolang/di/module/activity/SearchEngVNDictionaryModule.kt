@@ -1,8 +1,11 @@
 package com.teamttdvlp.memolang.di.module.activity
 
+import com.teamttdvlp.memolang.data.model.other.new_vocabulary.Example
+import com.teamttdvlp.memolang.data.model.other.new_vocabulary.SingleMeanExample
 import com.teamttdvlp.memolang.view.activity.SearchEngVNDictionaryActivity
 import com.teamttdvlp.memolang.view.adapter.RCVRecent_SearchDictionary_Adapter
 import com.teamttdvlp.memolang.view.adapter.RCVSearchDictionaryAdapter
+import com.teamttdvlp.memolang.view.adapter.RCV_Generic_SimpleListAdapter
 import dagger.Module
 import dagger.Provides
 

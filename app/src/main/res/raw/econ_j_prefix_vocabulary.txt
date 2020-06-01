@@ -1,0 +1,73 @@
+@J curve
+- (Econ) Đường chữ J
+= Thời kỳ ngay sau khi đồng tiền của một quốc gia bị mất giá hay phá giá, quốc gia đó có thể trải qua một thời kỳ thâm hụt CÁN CÂN THANH TOÁN.
+@jelly capital
+- (Econ) Vốn mềm dẻo.
+= Cụm thuật ngữ miêu tả vốn khi ở phương diện lý thuyết người ta giả định rằng TỶ SỐ VỐN - LAO ĐỘNG có thể được thay đổi ngay lập tức.
+@Jevon, W.Stanley
+- (Econ) (1835-1882)
+= Một công chức và sau đó là một giáo sư đâu tiên tại trường đại học Owens, Manchester và sau đó tại trường đại học tổng hợp London, Jevon là một nhà kinh tế đầy năng lực có ý tưởng ban đầu rất vĩ đại, mặc dầu ông đã không phát triển hết những ý tưởng của mình một cách rất đầy đủ. Trong các tác phẩm chính của mình, Học thuyết kinh tế chính trị (1871), Jevon chủ yếu viết về những ý tưởng của TRƯỜNG PHÁI ÁO về phân tích giá trị thoả dụng biên và lý thuyết về vốn và lãi. Là một trong ba nhà sáng lập phương pháp độ thoả dụng biên, (những người khác là Merger và Walras), Jevon là người đầu tiên công bố học thuyết này vào năm 1862. Ông cũng đưa ra khái niệm độ phi thoả dụng của lao động. Ông gắn thời gian vào quá trình sản xuất và vào lý thuyết về vốn trước Bohm Bawerk. Ông coi đầu tư có hai khía cạnh, dung lượng vốn và thời gian đầu tư. Ông cho rằng tăng vốn đồng nghĩa với việc kéo dài thời gian đầu tư và rằng năng suất của vốn là một hàm số thời gian. Lãi suất thì phụ thuộc vào sản phẩm biên của vốn. Jevon cũng đóng góp nhiều vào vấn đề các số chỉ số. Ông xây dựng chỉ số giá cả bình quân gia quyền và thuyết chu kỳ thương mại với thuyết vùng nắng nóng của mình. Vùng nắng nóng bị ảnh hưởng đến thời tiết và ảnh hưởng đến mùa vụ cây trồng và do vậy ảnh hưởng đến nền kinh tế nói chung.
+@Jobber
+- (Econ) Người buôn bán chứng khoán.
+= Thuật ngữ trước khi có khái niệm vụ nổ lớn vào năm 1986, chỉ một nhà lập thị trường tại sở chứng khoán London.
+@Job cluster
+- (Econ) Nhóm nghề.
+= Một nhóm ổn định các nghề nghiệp hay công việc nằm trong một thị trường lao động nội bộ liên kết chặt chẽ với nhau đến mức chúng có cùng các đặc điểm quy định về lương bổng.
+@Job competition theory
+- (Econ) Thuyết về cạnh tranh việc làm.
+= Một ý định thay thế cạnh tranh lương bổng chính thống mà trong đó công nhân cạnh tranh với nhau để giành lấy việc làm bằng việc thay đổi  mức lương mà họ sẵn sàng làm việc.
+@Job creation
+- (Econ) Tạo việc làm.
+= Hành động được hiểu theo nghĩa rộng nhất là giảm số người thất nghiệp trong thời kỳ suy thoái, hoặc bằng cách giảm tốc độ người bị sa thải do dư thừa hoặc bằng cách tăng tốc độ người thất nghiệp tìm kiếm được việc làm.
+@Job acceptance schedule
+- (Econ) Biểu đồ số người chấp nhận công việc.
+@Job dublication
+- (Econ) Việc làm kép.
+= Điều này diễn ra khi một cá nhân đồng thời có hơn một việc làm và do vậy không phụ thuộc vào một nguồn thu nhập duy nhất.
+@Job evaluation
+- (Econ) Đánh giá việc làm.
+= Một quá trình mà trong đó các yếu tố khác nhau của một việc làm làm như kỹ năng, kiến thức tích luỹ, trách nhiệm và các điều kiện làm việc - được đánh giá, cho điểm và đưa ra một điểm chung cho việc làm đó.
+@Job search
+- (Econ) Tìm kiếm việc làm.
+= Là quá trình thu thập thông tin về những cơ hội việc làm và mức lương của mỗi cơ hội cơ hội việc làm đó trong thị trường lao động.
+@Job search channels
+- (Econ) Các kênh tìm việc.
+= Các phương pháp tìm việc hoặc nhận việc làm được phân loại thành chính quy và không chính quy.
+@Job shopping
+- (Econ) Chọn việc làm.
+= Một xu hướng trong giới công nhân trẻ, và đặc biệt trong số những người vị thành niên tìm kiếm việc làm thích hợp trên cơ sở thử nghiệm.
+@Johnson, Harry Gordon
+- (Econ) (1923-77)
+= Là nhà kinh tế học người Canada được bổ nhiệm là chủ nhiệm công trình về thuyết kinh tế tại Manchester năm 1956. Ônh dạy học tại Chicago, Trường Kinh tế London và Geneva. Ông là biên tập viên của nhiều thời báo khác nhau như Thời báo kinh tế, Tạp san Kinh tế chính trị và Kinh tế học quốc tế. Các tác phẩm nổi tiếng của ông bao gồm Thương mại quốc tế và tăng trưởng kinh tế, Những nghiên cứu về lý luận thuần tuý (1958), các tiểu luận tiếp theo về kinh tế học tiền tệ (1972), Kinh tế học và Xã hội (1975). Là thành viên của TRƯỜNG PHAÍ CHICAGO, ngoài những đóng góp ban đầu vào lĩnh vực cán cân thanh toán, thuế quan và thanh toán cho các yếu tố sản xuất, ông đã tổng hợp nhiều tác phẩm đương thời về kinh tế học quốc tế và kinh tế học tiền tệ quốc tế.
+@Joint probability distributions
+- (Econ) Các phân phối xác suất kết hợp.
+= Các phân phối xác suất mà cho biết xác suất với hai hay nhiều hơn các biến số nhận đồng thời những giá trị nhất định (hoặc nằm trong những khoảng nhất định).
+@Joint products
+- (Econ) Các sản phẩm liên kết.
+= Các hàng hoá có đặc tính là nếu có sự thay đổi trong tốc độ sản lượng của một sản phẩm thì sẽ đem lại sự thay đổi tương tự đối với các sản phẩm kia.
+@Joint profit maximination
+- (Econ) Tối đa hoá lợi nhuận chung.
+= Tối đa hoá lợi nhuận kết hợp của một nhóm doanh nghiệp.
+@Joint stock company
+- (Econ) Công ty cổ phần.
+= Công ty cổ phần đựơc thành lập mà không phải tuân theo những đòi hỏi phải cam kết nhiều vốn tài chính.
+@Joint venture
+- (Econ) Liên doanh.
+= Một tình huống trong đó cả khu vực công cộng và tư nhân hợp tác với nhau trong một hoạt động kinh tế; điều này đặc biệt phổ biến trong các nước kém phát triển nơi mà vốn rất khan hiếm trong khu vực tư nhân và các quỹ của chính phủ thương được dùng để phát triển công nghiệp hay dịch vụ ngân hàng…
+@Joint venture in European Countries
+- (Econ) Liên doanh ở các nước Đông Âu.
+= Một hình thức hợp tác kinh doanh quốc tế giữa các công ty Phương Tây và các công ty Đông Âu và là mô hình đâu tư nước ngoài chính ở các nước Đông Âu.
+@J - test
+- (Econ) Kiểm định J.
+= Một phép kiểm định được tạo ra để giải quyết các giả thiết không có biến chung trong khuôn khổ của mô hình hồi quy.
+@Juglar cycle
+- (Econ) Chu kỳ Juglar.
+= Một chu kỳ trong thương mại trong mức độ hoạt động kinh tế với thời gian từ 9 tới 10 năm.
+@Justice as fairness
+- (Econ) Chân lý như là công bằng.
+= Xem RAWLSIAN JUSTICE.
+@Just price
+- (Econ) Giá công bằng.
+= Một tiêu chuẩn đạo đức về giá trị của một hàng hoá hay dịch vụ - nghĩa là một mức giá mà được coi là đúng về đạo lý.
+@Junk bonds
+- (Econ) Trái phiếu lãi suất cao.

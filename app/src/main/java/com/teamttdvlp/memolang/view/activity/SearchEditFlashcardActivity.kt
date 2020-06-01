@@ -10,11 +10,11 @@
 //import com.teamttdvlp.memolang.view.base.BaseActivity
 //import com.teamttdvlp.memolang.viewmodel.SearchEditFlashcardViewModel
 //import com.teamttdvlp.memolang.databinding.ActivitySearchEditFlashcardBinding
-//import com.teamttdvlp.memolang.model.entity.flashcard.Flashcard
-//import com.teamttdvlp.memolang.model.entity.Language.Companion.SOURCE_LANGUAGE
-//import com.teamttdvlp.memolang.model.entity.Language.Companion.TARGET_LANGUAGE
+//import com.teamttdvlp.memolang.data.entity.model.flashcard.Flashcard
+//import com.teamttdvlp.memolang.data.entity.other.language.Language.Companion.SOURCE_LANGUAGE
+//import com.teamttdvlp.memolang.data.entity.other.language.Language.Companion.TARGET_LANGUAGE
 //import com.teamttdvlp.memolang.database.sql.repository.FlashcardRepository
-//import com.teamttdvlp.memolang.model.entity.Language.Companion.LANG_DEVIDER
+//import com.teamttdvlp.memolang.data.entity.other.language.Language.Companion.LANG_DEVIDER
 //import com.teamttdvlp.memolang.view.activity.iview.SearchEditFlashcardView
 //import com.teamttdvlp.memolang.view.helper.*
 ////import com.teamttdvlp.memolang.viewmodel.reusable.OnlineFlashcardDBManager

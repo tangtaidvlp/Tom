@@ -8,6 +8,7 @@ import android.view.animation.AnimationUtils
 import androidx.interpolator.view.animation.FastOutLinearInInterpolator
 import com.teamttdvlp.memolang.R
 import com.teamttdvlp.memolang.di.MemoLang
+import com.teamttdvlp.memolang.view.helper.dp
 import dagger.Module
 import dagger.Provides
 import javax.inject.Named
@@ -15,11 +16,10 @@ import javax.inject.Named
 @Module
 class AnimationModule {
 
-
     @Provides
     @Named("Float")
     fun provideFloatAnim () : Animator {
-        return ValueAnimator.ofFloat(0f, 15f)
+        return ValueAnimator.ofFloat(0f, 5.dp().toFloat())
     }
 
     @Provides

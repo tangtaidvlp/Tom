@@ -4,27 +4,31 @@ import android.app.Application
 import androidx.databinding.ObservableField
 import androidx.databinding.ObservableInt
 import com.teamttdvlp.memolang.model.TextSpeaker
-import com.teamttdvlp.memolang.model.canUseUsingForTestSubject
-import com.teamttdvlp.memolang.model.entity.Language
-import com.teamttdvlp.memolang.model.entity.flashcard.Flashcard
+import com.teamttdvlp.memolang.model.checkCanUseExampleForTestSubject
+import com.teamttdvlp.memolang.data.model.entity.flashcard.Flashcard
+import com.teamttdvlp.memolang.data.model.entity.flashcard.FlashcardSet
+import com.teamttdvlp.memolang.model.CardListLanguageReverser.Companion.reverse_ListCard_TextAndTranslation
+import com.teamttdvlp.memolang.model.ReviewActivitiesSpeakerStatusManager
+import com.teamttdvlp.memolang.model.ReviewActivitiesSpeakerStatusManager.SpeakerStatus.Companion.SPEAK_ANSWER_ONLY
+import com.teamttdvlp.memolang.model.ReviewActivitiesSpeakerStatusManager.SpeakerStatus.Companion.SPEAK_QUESTION_AND_ANSWER
 import com.teamttdvlp.memolang.view.activity.iview.ReviewFlashcardView
-import com.teamttdvlp.memolang.view.base.BaseAndroidViewModel
+import com.teamttdvlp.memolang.view.base.BaseViewModel
 import com.teamttdvlp.memolang.view.helper.*
 import kotlin.random.Random
 
-class ReviewFlashcardViewModel(var app : Application) : BaseAndroidViewModel<ReviewFlashcardView>(app) {
+class ReviewFlashcardViewModel(var app : Application) : BaseViewModel<ReviewFlashcardView>() {
 
     val currentPos = ObservableInt()
 
     private lateinit var currentCard : Flashcard
 
-    private lateinit var cardList : ArrayList<Flashcard>
+    private var cardList : ArrayList<Flashcard> = ArrayList()
 
     private var answerWrongTimes = 0
 
     private val MAX_ANSWER_WRONG_TIMES = 3
 
-    val forgottenCardList = ArrayList<Flashcard>()
+    private val forgottenCardList = ArrayList<Flashcard>()
 
     val setName = ObservableField<String>()
 
@@ -36,34 +40,66 @@ class ReviewFlashcardViewModel(var app : Application) : BaseAndroidViewModel<Rev
 
     private lateinit var answerTextSpeaker : TextSpeaker
 
-    fun setUpInfo (cardList : ArrayList<Flashcard>) {
-        this.cardList = cardList
-        currentPos.set(0)
-        currentCard = cardList.first()
-        val sourceLang = currentCard.languagePair.split(Language.LANG_DIVIDER).get(Language.SOURCE_LANGUAGE)
-        val targetLang = currentCard.languagePair.split(Language.LANG_DIVIDER).get(Language.TARGET_LANGUAGE)
-        setName.set(currentCard.setName)
-        cardLeftCount.set(cardList.size)
-        answerTextSpeaker = TextSpeaker(app, sourceLang.trim())
-        useCard(currentCard)
+    private lateinit var questionTextSpeaker : TextSpeaker
 
+    private lateinit var reviewFCActivity_StatusManager: ReviewActivitiesSpeakerStatusManager
+
+    fun setUpInfo (flashcardSet : FlashcardSet, reverseLanguages : Boolean) {
+        val questionLanguage : String
+        val answerLanguage : String
+
+        if (reverseLanguages) {
+            questionLanguage = flashcardSet.frontLanguage
+            answerLanguage = flashcardSet.backLanguage
+            reverse_ListCard_TextAndTranslation(flashcardSet.flashcards)
+        } else {
+            answerLanguage = flashcardSet.frontLanguage
+            questionLanguage = flashcardSet.backLanguage
+        }
+
+        this.cardList.clear()
+        this.cardList.addAll(flashcardSet.flashcards)
+        currentCard = flashcardSet.flashcards.first()
+
+        currentPos.set(0)
+
+        setName.set(currentCard.setOwner)
+        cardLeftCount.set(flashcardSet.flashcards.size)
+
+        reviewFCActivity_StatusManager = ReviewActivitiesSpeakerStatusManager(app, flashcardSet.name, setNameFormat = { setName ->
+            return@ReviewActivitiesSpeakerStatusManager "Review<$setName>"
+        })
+
+        val textSpokenFirst = if (doesTextNeedSpeakingAtStart()) {
+            if (checkCanUseExampleForTestSubject(currentCard)) {
+                this.cardList.first().meanOfExample
+            } else {
+                this.cardList.first().translation
+            }
+        } else ""
+
+        answerTextSpeaker = TextSpeaker(app, answerLanguage.trim())
+        questionTextSpeaker = TextSpeaker(app, questionLanguage.trim(), textSpokenFirst)
+        useCard(currentCard)
     }
 
     fun nextCard () {
         currentPos.selfPlusOne()
         val currentPosVal = currentPos.get()
-        val thereIsNoCardLeft = (currentPosVal >= cardList.size)
-        if (thereIsNoCardLeft) {
-            view.endReviewing()
-        } else {
-            currentCard = cardList.get(currentPosVal)
-            useCard(currentCard)
-            cardLeftCount.set(cardList.size - currentPosVal)
-        }
+        currentCard = cardList.get(currentPosVal)
+        useCard(currentCard)
+        cardLeftCount.set(cardList.size - currentPosVal)
+
         resetAnswerWrongTimes()
     }
 
-    fun speakAnswer (text : String) {
+    fun checkThereIs_NO_CardLeft () : Boolean {
+        val nextPosition = currentPos.get() + 1
+        return (nextPosition >= cardList.size)
+    }
+
+    fun speakAnswer (text : String, onSpeakDone : () -> Unit) {
+        answerTextSpeaker.setOnSpeakTextDoneListener(onSpeakDone)
         answerTextSpeaker.speak(text)
         if (answerTextSpeaker.error != null) {
             // We just want to show this error only once
@@ -74,10 +110,21 @@ class ReviewFlashcardViewModel(var app : Application) : BaseAndroidViewModel<Rev
         }
     }
 
+    fun speakQuestion (text : String) {
+        questionTextSpeaker.speak(text)
+        if (questionTextSpeaker.error != null) {
+            // We just want to show this error only once
+            // because although there is error, but text speaker still work
+            // I also don't know exactly how it work
+            view.showSpeakTextError(questionTextSpeaker.error + "")
+            questionTextSpeaker.error = null
+        }
+    }
+
     private fun useCard (card : Flashcard) {
         answerLength = card.text.length
         hint.set(convertToHint(card.text))
-        view.showTestSubjectOnScreen(card, canUseUsingForTestSubject(card))
+        view.showTestSubjectOnScreen(card, checkCanUseExampleForTestSubject(card))
     }
 
     fun submitAnswer (answer : String) {
@@ -164,8 +211,33 @@ class ReviewFlashcardViewModel(var app : Application) : BaseAndroidViewModel<Rev
         cardList.add(currentCard)
     }
 
-    fun getFoggotenCardList(): ArrayList<Flashcard> {
+    fun getForgottenCardList(): ArrayList<Flashcard> {
         return forgottenCardList
+    }
+
+    fun getSpeakerStatus(): Boolean {
+        return reviewFCActivity_StatusManager.speakerStatusManager.getStatus()
+    }
+
+    fun saveAllStatus (speakerFunction : Int, speakerStatus : Boolean) {
+        if (::reviewFCActivity_StatusManager.isInitialized) {
+            reviewFCActivity_StatusManager.speakerStatusManager.apply {
+                saveFunction(speakerFunction)
+                saveStatus(speakerStatus)
+            }
+        } else {
+            quickLog("ReviewFlashcardViewModel.kt:: reviewFCActivity_StatusManager is not initialized")
+        }
+    }
+
+    fun getSpeakerFunction () : Int {
+        return reviewFCActivity_StatusManager.speakerStatusManager.getFunction()
+    }
+
+    private fun doesTextNeedSpeakingAtStart () : Boolean {
+        val speakerFunc = reviewFCActivity_StatusManager.speakerStatusManager.getFunction()
+        val speakerIsOn = reviewFCActivity_StatusManager.speakerStatusManager.getStatus()
+        return ((speakerFunc == SPEAK_ANSWER_ONLY) or (speakerFunc == SPEAK_QUESTION_AND_ANSWER)) and speakerIsOn
     }
 }
 

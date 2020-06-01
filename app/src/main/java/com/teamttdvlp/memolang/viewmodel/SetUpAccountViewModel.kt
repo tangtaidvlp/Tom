@@ -1,70 +1,78 @@
 package com.teamttdvlp.memolang.viewmodel
 
-import android.app.Application
-import android.content.Context
-import android.content.Context.MODE_PRIVATE
-import com.google.firebase.auth.FirebaseAuth
-import com.teamttdvlp.memolang.model.entity.User
-import com.teamttdvlp.memolang.database.sql.repository.UserRepository
-import com.teamttdvlp.memolang.database.sql.entity.user.UserConverter
+import com.teamttdvlp.memolang.data.model.entity.flashcard.FlashcardSet
+import com.teamttdvlp.memolang.data.model.entity.flashcard.SetNameUtils
+import com.teamttdvlp.memolang.data.model.entity.user.User
+import com.teamttdvlp.memolang.model.repository.UserRepos
+import com.teamttdvlp.memolang.model.repository.UserUsingHistoryRepos
+import com.teamttdvlp.memolang.model.AddFlashcardSharedPreference
+import com.teamttdvlp.memolang.model.SearchOnlineSharedPreference
+import com.teamttdvlp.memolang.model.UserInfoStatusSharedPreference
+import com.teamttdvlp.memolang.model.repository.FlashcardSetRepos
 import com.teamttdvlp.memolang.view.activity.iview.SetUpAccountView
-import com.teamttdvlp.memolang.view.base.BaseAndroidViewModel
+import com.teamttdvlp.memolang.view.base.BaseViewModel
 
-//import com.teamttdvlp.memolang.viewmodel.auth.FIRST_TIMES_SIGNED_IN
-//import com.teamttdvlp.memolang.viewmodel.auth.SIGN_IN_INFO
-//import com.teamttdvlp.memolang.viewmodel.reusable.OnlineUserDBManager
 
 /**
  * @see com.teamttdvlp.memolang.view.activity.SetUpAccountActivity
  */
-class SetUpAccountViewModel(var authManager : FirebaseAuth
-                            , var userRepository : UserRepository
-//                                    , var onlineUserDBManager: OnlineUserDBManager
-                            , var app : Application) : BaseAndroidViewModel<SetUpAccountView>(app) {
+class SetUpAccountViewModel(
+    var userRepos : UserRepos,
+    var userUsingHistoryRepos: UserUsingHistoryRepos,
+    var flashcardSetRepos: FlashcardSetRepos,
+    var userInfoStatusSharedPreference: UserInfoStatusSharedPreference,
+    var addFlashcardSharedPreference: AddFlashcardSharedPreference,
+    var searchOnlineSharedPreference: SearchOnlineSharedPreference) : BaseViewModel<SetUpAccountView>() {
 
-    fun writeUserToOfflineDatabase (user : User) {
-        userRepository.insertUser(UserConverter.toUserEntity(user))
-    }
 
-
-    fun checkUserInfoBeenInitilized () {
-        val sharePref = app.getSharedPreferences(SIGN_IN_INFO, Context.MODE_PRIVATE)
-        val userHasSetUpInfoBefore = sharePref.getBoolean(FIRST_TIMES_SIGNED_IN, false)
-        if (userHasSetUpInfoBefore) {
+    fun checkUserInfoSetUpStatus () {
+        val userDidSetUpInfoBefore = userInfoStatusSharedPreference.didUserSetUpBasicInfoBefore()
+        if (userDidSetUpInfoBefore) {
             getUserInfoAndNavigateToMenu()
         }
     }
 
     fun getUserInfoAndNavigateToMenu () {
-        userRepository.triggerGetUser { userEntity ->
-            createUser( "", userEntity!!.motherLanguage, userEntity.targetLanguage)
-            getUser().apply {
-                recentUseLanguages = userEntity.recentUseLanguages
-                flashcardSetNames = userEntity.flashcardSetNames
-                customTypes = userEntity.customTypes
-                recentUseFlashcardSet  = userEntity.recentUseFlashcardSet
-            }
+        userRepos.triggerGetUser { user ->
+            initUser(user!!)
         }
         view.navigateToMenuScreen()
     }
 
-//    fun writeUserToOnlineDatabase (user : User) {
-//        onlineUserDBManager.writeUserInfo(user)
-//    }
+    private fun setUpUserDefaultInfo (defaultFrontCardLang : String, defaultBackCardLang : String) {
+        addFlashcardSharedPreference.currentFrontCardLanguage = defaultFrontCardLang
+        addFlashcardSharedPreference.currentBackCardLanguage = defaultBackCardLang
 
-    fun saveSignedInStatus () {
-        val sharePref = app.getSharedPreferences(SIGN_IN_INFO, MODE_PRIVATE)
-        sharePref.edit().apply {
-            putBoolean(FIRST_TIMES_SIGNED_IN, true)
-            apply()
-        }
+        searchOnlineSharedPreference.currentSourceLanguage = defaultFrontCardLang
+        searchOnlineSharedPreference.currentTargetLanguage = defaultBackCardLang
     }
 
-    fun createUserInfo(motherLang: String, targetLang: String) {
-        createUser("", motherLang, targetLang)
-        writeUserToOfflineDatabase(getUser())
-        saveSignedInStatus()
-        view.navigateToMenuScreen()
+    fun initUser (userInfo : User) {
+        setUser(userInfo)
+    }
+
+    fun createAndSaveUserInfoStatus(defaultFrontCardLanguage: String, defaultBackCardLanguage: String) {
+        setUpUserDefaultInfo(defaultFrontCardLanguage, defaultBackCardLanguage)
+        addToUser_UsedLanguageList(defaultFrontCardLanguage)
+        addToUser_UsedLanguageList(defaultBackCardLanguage)
+        createUserDefaultSetName(defaultFrontCardLanguage, defaultBackCardLanguage)
+        saveAll_Information()
+    }
+
+    private fun createUserDefaultSetName (frontLang : String, backLang : String) {
+        val defaultFlashcardSet = FlashcardSet("", frontLang, backLang)
+        getUser().lastest_Used_FlashcardSetName = defaultFlashcardSet.name
+        flashcardSetRepos.insert(defaultFlashcardSet)
+    }
+
+    private fun addToUser_UsedLanguageList(language : String) {
+        userUsingHistoryRepos.addToUsedLanguageList(language)
+    }
+
+    private fun saveAll_Information () {
+        userRepos.insertUser(getUser())
+        userUsingHistoryRepos.saveUsingHistoryInfo()
+        userInfoStatusSharedPreference.markUserInfo_IsSetUp()
     }
 
 }

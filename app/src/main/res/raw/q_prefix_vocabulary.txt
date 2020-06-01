@@ -1,41 +1,1935 @@
-Quist<pd>[‘æbəsist]<pd>N<pd>Người gãy bàn phím
-Quus<pd>[‘æbəkəs]<pd>N<pd>Bàn tính<ex>to move counters of an abacus: tính bằng bàn tính
-Quuses<pd><nav>Quus
-Quk<pd>[ə’bæk]<pd>Adv<pd>Lùi lại, trở lại phía sau<ex>to stand aback from sb/sth: đứng lùi lại để tránh ai hoặc cái gì
-Quterial<pd>[eibæk’tiəriəl]<pd>N<pd>Không do vi khuẩn gây ra
-Qutio<pd>_<pd>N<pd>(Y học) sự phá thai
-Qution<pd>[æ’bækʃn]<pd>N<pd>Việc gia súc bị bắt trộm
-Qutus<pd>[æ’bæktəs]<pd>Adj<pd>Bị trụy thai
-Quaddon<pd>[ə’bædən]<pd> N<pd>Âm ti, địa ngục<md>con quỷ
-Quaft<pd>[ə’bɑ:ft]<pd>Adv/(Hàng hải) ở đằng sau bánh lái][Pre/(Hàng hải) ở đằng sau<ex>abaft the mast: sau cột buồm
-Qualienate<pd>[æ’bəiljəneit]<pd>TransV<pd>Nhường lại tài sản
-Qualienation<pd>[æbəiljə’neʃn]<pd>N<pd>Danh từ của <cli>Qualienate<cli/><md>Sự nhường lại tài sản
-Qualone<pd>[æbə’ləʊni]<pd>N<pd>(Từ Mỹ, nghĩa Mỹ) Bào ngư
-Qualones<pd><nav>Qualone
-Quandon<pd>[ə’bændən]<pd>TransV/Từ bỏ, bỏ rơi, ruồng bỏ/to abandon all efforts: từ bỏ mọi nỗ lực<md>to abandon a child: ruồng bỏ đứa con][N/Sự phóng túng, tự do, sự buông thả<ex>with abandon: một cách phóng túng
-Quandoned<pd>[ə’bændənd]<pd>Adj<pd>Bị bỏ rơi, bị ruồng bỏ<md>Phóng đãng, trụy lạc
-Quandoner<pd>[ə’bændənə]<pd>N<pd>(Pháp lý) Người rút đơn
-Quandoning<pd><nav>Quandon
-Quandonment<pd>[ə’bændənmənt]<pd>N<pd>Sự bỏ, sự từ bỏ, sự bỏ rơi, ruồng bỏ<md>Tình trạng bị bỏ rơi, tình trạng bị ruồng bỏ<md>Sự phóng túng, sự tự do, buông thả
-Quandonments<pd><nav>Quandonment
-Quapikal<pd>[əb’æppkəl]<pd>Adj<pd>(Sinh học) Xa đỉnh, xa ngọn<md>Dưới vực
-Quarticular<pd>[‘æba:tikjulə]<pd>Adj<pd>(Giải phẫu) Học ngoài khớp, trật khớp
-Quas<pd>[‘ɑ:bə]<pd>N<pd>Áo aba
-Quase<pd>[ə’beIs]<pd>TransV<pd>Làm hạ phẩm giá, làm mất thể diện, làm nhục<ex>Qukbiting the others is to abase oneself: Nói xấu người khác là tự hạ phẩm giá của mình
-Quased<pd><nav>Quase
-Quasement<pd>[ə’beIsment]<pd>N<pd>Sự làm hạ phẩm giá, sự làm mất thể diện, sự làm nhục<md>Danh từ của <cli>Quase<cli/>
-Quases<pd><nav>Quase
-Quash<pd>[ə’bæʃ]<pd>TransV<pd>Làm bối rối, làm lúng túng, làm luống cuống
-Quashed<pd><nav>Quash
-Quashment<pd>[ə’bæʃmənt]<pd>N<pd>(Danh từ của <cli>Quash<cli/>) Sự bối rối, sự lúng túng, sự luống cuống
-Quatable<pd>[ə’beitəbl]<pd>Adj<pd>Quó thể làm dịu<md>Quó thể hạ, có thể bớt /b Quó thể làm nhụt<md>Quó thể chấm dứt, có thể thanh trừ<md>(Pháp lý) Quó thể hủy bỏ, có thể thủ tiêu
-Quate<pd>[ə’beIt]<pd>V/Dịu đi, yếu đi, nhụt chí, đỡ, nguôi, bớt<ex>Pain abates: cơn đau dịu đi<exd>Storm abates: cơn bão nguôi đi][TransV/Làm dịu đi, làm yếu đi<md>Hạ, bớt (giá)<md>Làm nhụt (chí)<md>Làm cùn (lưỡi dao)
-Quated<pd><nav>Quate
-Quating<pd><nav>Quate
-Quatement<pd>[ə’beItmənt]<pd>N<pd>(Danh từ của <cli>Quate<cli/>) Sự dịu đi, sự yếu đi, sự nhụt đi, sự giảm bớt<md>Sự hạ, sự bớt (giá)<md>Sự chấm dứt, sự thanh toán<md>(pháp lý) Sự hủy bỏ, sự thủ tiêu<ex>Quatement of a contract: sự hủy bỏ một hợp đồng
-Quater<pd>[ə’beitə]<pd>N<pd>Người giảm bớt<md>(Y học) Thuốc làm dịu
-Quatis<pd>[‘æbətis]<pd>N<pd>(Quân sự) Đống cây chướng ngại, đống cây cản
-Quatised<pd>[‘æbətist]<pd>Ad<pd>(Quân sự) Quó đống cây chướng ngại, có đống cây cản
-Quattoir<pd>[‘æbətwɑɑ:(r)]<pd>N<pd>Lò mổ, lò sát sinh
-Quattoirs<pd><nav>Quattoir
-Quaxial<pd>[æb’æksiəl]<pd>Adj<pd>Ở ngoài trục, xa trục
+@q /kju:/
+*  danh từ,  số nhiều Qs,  Q's,
+- q
+!mind you P's and Q's
+- (xem) P
+
+@q-boat /'mistəri'ʃip/ (q-boat) /'kju:bout/ (q-ship) /'kju:ʃip/
+*  danh từ
+- tàu nhử (tàu chiến giả làm tàu buôn để nhử tàu ngầm trong đại chiến I)
+
+@q-ship /'mistəri'ʃip/ (q-boat) /'kju:bout/ (q-ship) /'kju:ʃip/
+*  danh từ
+- tàu nhử (tàu chiến giả làm tàu buôn để nhử tàu ngầm trong đại chiến I)
+
+@qu. /'kwi/
+*  (viết tắt) của query
+
+@qua /kwei/
+*  liên từ
+- như, với tư cách là
+=to attend a conference not qua a delegate, but qua an oberver+ tham dự hội nghị không phải với tư cách là đại biểu mà với tư cách là người quan sát
+
+@quacdragesima /,kwɔdrə'dʤesimə/
+*  danh từ
+- ngày chủ nhật đầu trong tuần trai giới (đạo Thiên chúa) ((cũng) quacdragesima Sunday)
+
+@quacdragesimal /,kwɔdrə'dʤesiməl/
+*  tính từ
+- (tôn giáo) (thuộc) tuần trai giới
+- kéo dài bốn mươi ngày (tuần trai giới)
+
+@quack /kwæk/
+*  danh từ
+- tiếng kêu cạc cạc (vịt)
+*  nội động từ
+- kêu cạc cạc (vịt)
+- toang toác, nói quang quác
+*  danh từ
+- lang băm
+- kẻ bất tài nhưng làm bộ giỏi giang
+- (định ngữ) (thuộc) lang băm; có tính chất lang băm
+=quack remedies+ thuốc lang băm
+=quack doctor+ lang băm
+*  ngoại động từ
+- quảng cáo khoác lác (một vị thuốc...)
+
+@quack-quack /'kwæk'kwæk/
+*  danh từ
+- khuấy con vịt
+
+@quackery /'kwækəri/
+*  danh từ
+- thủ đoạn của anh bất tài, ngón lang băm
+- thủ đoạn của anh bất tài nhưng làm bộ giỏi giang
+
+@quackish /'kwækiʃ/
+*  tính từ
+- có tính chất lang băm
+
+@quacksalver /'kwæk,sælvə/
+*  danh từ
+- lang băm
+
+@quad /kwɔd/
+*  danh từ
+- (viết tắt) của quadrangle, sân trong (hình bốn cạnh, xung quanh có nhà, ở các trường đại học...)
+- (viết tắt) của quadrat
+
+@quadragenarian /,kwɔdrədʤi'neəriən/
+*  tính từ
+- bốn mươi tuổi
+*  danh từ
+- người bốn mươi tuổi
+
+@quadrangle /'kwɔ,dræɳgl/
+*  danh từ
+- hình bốn cạnh
+- sân trong (hình bốn cạnh, xung quanh có nhà, ở các trường đại học...) ((cũng) quad)
+
+@quadrangular /kwɔ'dræɳgjulə/
+*  tính từ
+- có bốn cạnh
+- (thuộc) hình bốn cạnh
+
+@quadrant /'kwɔdrənt/
+*  danh từ
+- (toán học) góc phần tư; cung phần tư
+
+@quadrat /'kwɔdrit/
+*  danh từ
+- (ngành in) Cađra ((cũng) quad)
+
+@quadrate /'kwɔdrit/
+*  tính từ
+- (giải phẫu) vuông; chữ nhật
+=quadrate bone+ xương vuông (ở đầu chin, rắn...)
+*  danh từ
+- (từ hiếm,nghĩa hiếm) hình vuông; khối chữ nhật
+- (giải phẫu) xương vuông
+- (từ cổ,nghĩa cổ),  (toán học) bình phương, bậc hai
+*  ngoại động từ (từ hiếm,nghĩa hiếm)
+- làm thành vuông
+- (toán học) quy vuông (quy thành hình vuông tương đương)
+- (+ with) làm cho xứng với, làm cho tương hợp với
+*  nội động từ
+- (+ with) xứng với, tương hợp với
+
+@quadratic /kwə'drætik/
+*  tính từ
+- (từ hiếm,nghĩa hiếm) vuông
+- bậc hai, toàn phương
+=quadratic equation+ bình phương bậc hai
+=quadratic fỏm+ dạng toàn phương
+*  danh từ
+- (toán học) phương trình bậc hai
+
+@quadrature /'kwɔdrətʃə/
+*  danh từ
+- (toán học) phép cầu phương
+=quadrature of the circle+ phép cầu phương một vòng tròn
+- (thiên văn học) vị trí góc vuông
+
+@quadrennial /kwɔ'dreniəl/
+*  tính từ
+- bốn năm một lần
+
+@quadric /'kwɔdrik/
+*  tính từ
+- (toán học) Quađric, bậc hai
+=quadric cone+ mặt nón bậc hai
+=quadric cylinder+ mặt trụ bậc hai
+*  danh từ
+- (toán học) Quađric
+=quadric of revolution+ quađric tròn xoay
+
+@quadriga /kwə'dri:gi:/
+*  danh từ,  số nhiều quadrigae
+- xe bốn ngựa (cổ La mã)
+
+@quadrigae /kwə'dri:gi:/
+*  danh từ,  số nhiều quadrigae
+- xe bốn ngựa (cổ La mã)
+
+@quadrilateral /,kwɔdri'lætərəl/
+*  tính từ
+- có bốn cạnh
+- bốn bên
+
+@quadrilingual /'kwɔdri'liɳgwəl/
+*  tính từ
+- dùng bốn thứ tiếng, bằng bốn thứ tiếng
+
+@quadrille /kwə'dril/
+*  danh từ
+- điệu cađri, điệu vũ bốn cặp
+- nhạc cho điệu cađri
+- lối chơi bài bốn người ((thế kỷ) 18)
+
+@quadrillion /kwɔ'driljən/
+*  danh từ
+- (Anh) triệu luỹ thừa bốn; (từ Mỹ,nghĩa Mỹ) nghìn triệu triệu
+
+@quadripartite /,kwɔdri'pɑ:tait/
+*  tính từ
+- gồm bốn phần, chia làm bốn phần
+- bốn bên (hội nghị...)
+
+@quadripole /'kwɔdripoul/
+*  danh từ
+- (điện học) mạng bốn đầu, mạng bốn cực
+
+@quadrisyllabic /'kwɔdrisi'læbik/
+*  tính từ
+- (ngôn ngữ học) có bốn âm tiết
+
+@quadrisyllable /'kwɔdri'siləbl/
+*  danh từ
+- (ngôn ngữ học) từ bốn âm tiết
+
+@quadrivalence /,kwɔdri'veilənsi/ (quadrivalence) /,kwɔdri'veiləns/
+*  danh từ
+- (hoá học) hoá trị bốn
+
+@quadrivalency /,kwɔdri'veilənsi/ (quadrivalence) /,kwɔdri'veiləns/
+*  danh từ
+- (hoá học) hoá trị bốn
+
+@quadrivalent /,kwɔdri'veilənt/
+*  tính từ
+- (hoá học) có hoá trị bốn
+
+@quadroon /kwɔ'dru:n/
+*  danh từ
+- người lai một phần tư, người lai đen một phần tư; vật lại một phần tư
+
+@quadrumanous /kwɔ'dru:mənəs/
+*  tính từ
+- (động vật học) có bốn tay
+
+@quadruped /'kwɔdruped/
+*  danh từ
+- (động vật học) thú bốn chân
+*  tính từ
+- (động vật học) có bốn chân
+
+@quadrupedal /kwɔ'dru:pidl/
+*  tính từ
+- (động vật học) có bốn chân
+- (động vật học) thú bốn chân
+
+@quadruple /'kwɔdrupl/
+*  tính từ
+- gấp bốn
+- gồm bốn phần
+=quadruple rhythm (time)+ (âm nhạc) nhịp bốn
+- bốn bên, tay tư
+=quadruple alliance+ đồng minh bốn nước
+*  danh từ
+- số to gấp bốn
+*  động từ
+- nhân bốn, tăng lên bốn lần
+
+@quadruplet /'kwɔdruplit/
+*  danh từ+ (quads) /kwɔdz/
+- (số nhiều) bốn đứa trẻ sinh tư ((thông tục) quads)
+*  danh từ
+- xe đạp bốn chỗ ngồi
+- bộ bốn
+
+@quadruplicate /kwɔ'dru:plikit/
+*  tính từ
+- nhân gấp bốn
+- sao lại bốn lần, chép lại bốn lần
+*  danh từ
+- (số nhiều) bốn bản giống nhau
+=in quadruplicate+ thành bốn bản giống nhau
+*  ngoại động từ
+- nhân gấp bốn
+- sao thành bốn bản giống nhau in thành bốn tấm (ảnh)
+
+@quadruplication /kwɔ,dru:pli'keiʃn/
+*  danh từ
+- sự nhân gấp bốn
+- sự sao thành bốn bản; sự in thành bốn tấm (ảnh)
+
+@quadruplicity /,kwɔdru'plisiti/
+*  danh từ
+- tính chất gấp bốn
+
+@quadruply /'kwɔdrupli/
+*  phó từ
+- gấp bốn
+
+@quads /'kwɔdruplit/
+*  danh từ+ (quads) /kwɔdz/
+- (số nhiều) bốn đứa trẻ sinh tư ((thông tục) quads)
+*  danh từ
+- xe đạp bốn chỗ ngồi
+- bộ bốn
+
+@quaestor /'kwi:stə/
+*  danh từ
+- ((từ cổ,nghĩa cổ) La mã) quan xuất nạp, quan coi quốc khố
+
+@quaestorial /kwi:s'tɔ:riəl/
+*  tính từ
+- (từ cổ,nghĩa cổ) (La mã) (thuộc) quan xuất nạp, (thuộc) quan coi quốc khố
+
+@quaff /kwɑ:f/
+*  danh từ
+- sự uống từng hơi dài; sự nốc cạn một hơi
+- (một) hơi (rượu, nước...)
+*  động từ
+- uống từng hơi dài; nốc cạn một hơi
+=to quaff [off] a glass of beer+ nốc cạn một hơi cốc bia
+
+@quag /kwæg/
+*  danh từ
+- đầm lầy, bãi lầy ((cũng) quagmire)
+
+@quagga /'kwægə/
+*  danh từ
+- (động vật học) lừa vằn
+
+@quaggy /'kwægi/
+*  tính từ
+- lầy, bùn
+
+@quagmire /'kwægmaiə/
+*  danh từ
+- (như) quag
+- (nghĩa bóng) tình trạng sa lầy
+
+@quagog /'kwɔ:hɔg/ (quahog) /'kwɔ:hɔg/
+*  danh từ
+- (động vật học) con trai vênut
+
+@quahaug /'kwɔ:hɔg/ (quahog) /'kwɔ:hɔg/
+*  danh từ
+- (động vật học) con trai vênut
+
+@quai d'orsay /,keidɔ:'sei/
+*  danh từ
+- bộ ngoại giao Pháp (trụ sở ở Ke-Đóoc-xay)
+
+@quail /kweil/
+*  danh từ
+- (động vật học) chim cun cút
+- (từ Mỹ,nghĩa Mỹ),  (từ lóng) nữ học sinh đại học
+*  nội động từ ((thường) + before,  to)
+- mất tinh thần, run sợ, nao núng
+=not to quail before someone's threats+ không run sợ trước sự đe doạ của ai
+*  ngoại động từ
+- (từ hiếm,nghĩa hiếm) làm mất tinh thần, làm run sợ, làm nao núng; khuất phục
+
+@quail-call /'kweilpaip/ (quail-call) /'kweilkɔ:l/
+*  danh từ
+- tiếng huýt giả tiếng chim cun cút (để nhử chim đánh bẫy)
+
+@quail-net /'kweilnet/
+*  danh từ
+- lưới bẫy chim cun cút
+
+@quail-pipe /'kweilpaip/ (quail-call) /'kweilkɔ:l/
+*  danh từ
+- tiếng huýt giả tiếng chim cun cút (để nhử chim đánh bẫy)
+
+@quaint /kweint/
+*  tính từ
+- có vẻ cổ cổ là lạ; nhìn hay hay là lạ
+=a quaint old village+ một làng cổ trông là lạ
+=a quaint dress+ một cái áo nhìn hay hay là lạ
+=quaint customs+ phong tục lạ
+- kỳ quặc
+=quaint methods+ phương pháp kỳ quặc
+- (từ cổ,nghĩa cổ) có duyên, xinh đẹp
+=my quaint Ariel+ nàng A-ri-en xinh đẹp của tôi (Sếch-xpia)
+
+@quaintness /'kweintnis/
+*  danh từ
+- vẻ cổ cổ là lạ; vẻ hay hay là lạ
+- tính độc đáo kỳ quặc
+- (từ cổ,nghĩa cổ) vẻ duyên dáng
+
+@quake /kweik/
+*  danh từ
+- sự rung
+- sự run, sự run rẩy
+- (thông tục) động đất
+*  nội động từ
+- rung
+- (+ with,  for) run, run rẫy
+=to quake with cold+ run lên vì rét
+=to quake for fear+ sợ run lên
+
+@quaker /'kweikə/
+*  danh từ
+- tín đồ phái Quây-cơ, tín đồ phái giáo hữu
+- (Quaker) (từ Mỹ,nghĩa Mỹ) (như) quaker-gun
+
+@quaker's meeting /'kweikəz'mi:tiɳ/
+*  danh từ
+- cuộc họp của phái Quây-cơ (thường ngồi trầm mặc, không nói)
+- cuộc họp trầm lặng
+
+@quaker-gun /'kweikə'gʌn/
+*  danh từ
+- (từ Mỹ,nghĩa Mỹ) súng đại bác giả (trên tàu chiến hoặc pháo đài; thường làm bằng gỗ) ((cũng) Quaker)
+
+@quakeress /'kweikəris/
+*  danh từ
+- nữ tín đồ phái Quây-cơ
+
+@quakerish /'kweikəriʃ/
+*  tính từ
+- giống như tín đồ phái Quây-cơ (trong cách ăn mặc, nói chung)
+
+@quakerism /'kweikərizm/
+*  danh từ
+- chủ nghĩa Quây-cơ
+
+@quaky /'kweiki/
+*  tính từ
+- rung động
+- run run, run rẩy
+
+@qualification /,kwɔlifi'keiʃn/
+*  danh từ
+- sự cho là; sự gọi là; sự định tính chất, sự định phẩm chất
+=the qualification of his policy as opportunist is unfair+ cho chính sách của ông ta là cơ hội thì không đúng
+- tư cách khả năng, điều kiện, tiêu chuẩn, trình độ chuyên môn (để đảm nhiệm một chức vụ...); (số nhiều) giấy tờ chứng nhận khả năng
+=the qualification for membership+ tiêu chuẩn gia nhập (một đoàn thể)
+=a doctor's qualifications+ những văn bằng chứng nhận của một bác sĩ
+- sự hạn chế; sự dè dặt
+=this statement is to be accepted with qualifications+ phải dè dặt đối với lời tuyên bố này
+
+@qualify /'kwɔlifai/
+*  ngoại động từ
+- cho là, gọi là; định tính chất, định phẩm chất
+=to qualify someone á an ace+ cho ai là cừ, cho ai là cô địch
+- làm cho có đủ tư cách, làm cho có đủ khả năng, làm cho có đủ tiêu chuẩn; chuẩn bị đầy đủ điều kiện (để đảm nhiệm một chức vị gì...)
+=to be qualificed for a post+ có đủ tư cách đảm nhiệm một chức vụ
+=qualifying examination+ kỳ thi sát hạch, kỳ thi tuyển lựa
+- hạn chế, dè dặt; làm nhẹ bớt
+=to qualify a statement+ tuyên bố dè dặt
+- pha nước vào (rượu mạnh);(đùa cợt) pha vào rượu (nước lã)
+- (ngôn ngữ học) hạn định
+*  nội động từ
+- (+ for) có đủ tư cách, có đủ khả năng, có đủ tiêu chuẩn
+- qua kỳ thi sát hạch, qua kỳ thi tuyển lựa, tuyên thệ (để đảm nhiệm chức vụ gì...)
+
+@qualitative /'kwɔlitətiv/
+*  tính từ
+- (thuộc) chất, (thuộc) phẩm chất
+=qualitative difference+ sự khác nhau về chất
+- định tính
+=qualitative analysis+ (hoá học) phân tích định tính
+
+@quality /'kwɔliti/
+*  danh từ
+- chất, phẩm chất
+=quality matters more than quantity+ chất quan trọng lượng
+=goods of good quality+ hàng hoá phẩm chất tốt
+- phẩm chất ưu tú, tính chất hảo hạng
+=to have quality+ ưu tú, hảo hạng, tốt lắm
+- đặc tính, nét đặc biệt; năng lực, tài năng
+=to give a taste of one's quality+ tỏ rõ năng lực của mình, cho thấy tài năng của mình
+- đức tính, tính tốt
+=to have many good qualities+ có nhiều đức tính tốt
+- loại, hạng
+=the best quality of cigar+ loại xì gà ngon nhất
+=a poor quality of cloth+ loại vải tồi
+- (từ cổ,nghĩa cổ), khuộc quiềm 6 lưu, tầng lớp trên
+=people of quality; the quality+ những người thuộc tầng lớp trên
+- (vật lý) âm sắc, màu âm
+
+@qualm /kwɔ:m/
+*  danh từ
+- sự buồn nôn, sự nôn nao; sự thấy khó chịu trong người
+- mối lo ngại, mối e sợ
+- nỗi băn khoăn dằn vật, nỗi day dứt
+=qualms of conscience+ nỗi day dứt của lương tâm
+
+@qualmish /'kwɔ:miʃ/
+*  tính từ
+- buồn nôn, nôn nao
+=to feel qualmish+ cảm thấy buồn nôn
+- cảm thấy lo ngại, cảm thấy e sợ
+- băn khoăn dằn vật (trong lương tâm); day dứt
+
+@qualmishness /'kwɔ:miʃnis/
+*  danh từ
+- sự buồn nôn, sự nôn nao
+- sự lo ngại, sự e sợ
+- sự băn khoăn dằn vật (trong lương tâm)
+
+@qualyficatory /'kwɔlifikətəri/
+*  tính từ
+- làm cho có đủ tư cách
+
+@qualyfied /'kwɔlifaid/
+*  tính từ
+- có đủ tư cách, có đủ khả năng, có đủ điều kiện, có đủ trình độ chuyên môn (để đảm nhiệm một chức vụ gì)
+- có hạn chế; có sửa đổi đôi chút; dè dặt
+=in a qualyfied statement+ một lời tuyên bố dè dặt
+=in a qualyfied sence+ theo nghĩa hẹp
+
+@qualyfier /'kwɔlifaiə/
+*  danh từ
+- người có đủ tư cách, người có đủ khả năng, người có đủ tiêu chuẩn (đảm nhiệm một chức vụ)
+- (ngôn ngữ học) từ hạn định (tính từ, phó từ...)
+
+@quand même /kỴ:ɳ'meim/
+*  phó từ
+- dù sao cũng mặc, dù sao cũng cứ
+
+@quandary /'kwɔndəri/
+*  danh từ
+- tình thế lúng túng khó xử, tình thế bối rối
+=to be in a quandary+ ở trong một tình thế lúng túng khó xử
+
+@quant /kwɔnt/
+*  danh từ
+- sào bịt đầu (sào chống thuyền có đầu bịt sắt)
+*  động từ
+- chống (thuyền) bằng sào bịt đầu
+
+@quanta /'kwɔntəm/
+*  danh từ,  số nhiều quanta
+- phần, mức, ngạch; lượng, định lượng
+=to fix the quantum of damages+ định mức thường thiệt hại
+=to have one's quantum of+ đã được dự phần, đã được hưởng phần
+- (vật lý) lượng tử
+=light quantum+ lượng tử ánh sáng
+=energy quantum+ lượng tử năng lượng
+- (định ngữ) (vật lý) (thuộc) lượng tử
+=quantum theory+ thuyết lượng tử
+=quantum effect+ hiệu ứng lượng tử
+
+@quantifiable /'kwɔntifaiəbl/
+*  tính từ
+- có thể xác định số lượng
+
+@quantification /,kwɔntifi'keiʃn/
+*  danh từ
+- sự xác định số lượng (của cái gì)
+
+@quantify /'kwɔntifai/
+*  ngoại động từ
+- xác định số lượng
+
+@quantitative /'kwɔntitətiv/
+*  tính từ
+- (thuộc) lượng, (thuộc) số lượng
+=quantitative change+ biến đổi về lượng
+- định lượng
+=quantitative analysis+ (hoá học) phân tích định lượng
+
+@quantity /'kwɔntiti/
+*  danh từ
+- lượng, số lượng, khối lượng
+- (số nhiều) số lớn, vô số, rất nhiều
+=quantities of people+ rất nhiều người
+!to buy in quantities
+- mua một số lớn, mua rất nhiều
+- (toán học); (vật lý) lượng
+=unknown quantity+ lượng chưa biết; (nghĩa bóng) người lạ, người mà không ai biết tung tích; người mà hành động không ai lường trước được
+=electric quantity+ điện lượng
+=quantity of heat+ nhiệt lượng
+- (vật lý) âm lượng
+- (số nhiều) (kiến trúc) chi tiết thiết kế thi công (một toà nhà...)
+!bilt of quantities
+- bảng chi tiết thiết kế thi công
+- (định ngữ) (kỹ thuật) hàng loạt
+=quantity productions+ sự sản xuất hàng loạt
+
+@quantity surveyor /'kwɔntitisə:'veiə/
+*  danh từ
+- (kiến trúc) người lên bản chi tiết thiết kế thi công
+
+@quantization /,kwɔnti'zeiʃn/
+*  danh từ
+- (vật lý) sự lượng tử hoá
+=space quantization+ sự lượng tử hoá không gian
+
+@quantize /'kwɔntaiz/
+*  ngoại động từ
+- (vật lý) lượng tử hoá
+
+@quantized /'kwɔntaizd/
+*  tính từ
+- (vật lý) đã lượng tử hoá
+
+@quantum /'kwɔntəm/
+*  danh từ,  số nhiều quanta
+- phần, mức, ngạch; lượng, định lượng
+=to fix the quantum of damages+ định mức thường thiệt hại
+=to have one's quantum of+ đã được dự phần, đã được hưởng phần
+- (vật lý) lượng tử
+=light quantum+ lượng tử ánh sáng
+=energy quantum+ lượng tử năng lượng
+- (định ngữ) (vật lý) (thuộc) lượng tử
+=quantum theory+ thuyết lượng tử
+=quantum effect+ hiệu ứng lượng tử
+
+@quaquaversal /,kweikwə'və:səl/
+*  tính từ
+- (địa lý,địa chất) chỉ khắp các hướng
+
+@quarantinable /'kwɔrənti:nəbl/
+*  tính từ
+- có thể cách ly, có thể giữ để kiểm dịch
+
+@quarantine /'kwɔrənti:n/
+*  danh từ
+- thời gian cách ly, thời gian kiểm dịch; sự cách ly, sự kiểm dịch (tàu mới đến bị nghi là có chở khách mắc bệnh dịch...)
+=to clear one's quarantine+ ở trong thời gian kiểm dịch
+=to be kept in quarantine for six months+ bị cách ly trong sáu tháng
+*  ngoại động từ
+- cách ly, giữ để kiểm dịch
+- khám xét theo luật lệ kiểm dịch
+
+@quarantine flag /'kwɔrənti:n,flæg/
+*  danh từ
+- cờ kiểm dịch (cờ vàng)
+
+@quarenden /'kwɔrəndən/ (quarender) /'kwɔrəndə/
+*  danh từ
+- táo quaren, táo sớm
+
+@quarender /'kwɔrəndən/ (quarender) /'kwɔrəndə/
+*  danh từ
+- táo quaren, táo sớm
+
+@quarrel /'kwɔrəl/
+*  danh từ
+- sự câi nhau; sự gây chuyện, sự sinh sự; mối tranh chấp
+=to pick (seek) a quarrel with somebody+ gây chuyện cãi nhau với ai
+- mối bất hoà
+- cớ để phàn nàn, cớ để rầy rà
+=to have no quarrel against (with) somebody+ không có gì đáng phàn nàn về ai
+!to espouse somebody's quarrel
+!to fight somebody's quarrel for him
+- đứng ra bênh vực người nào
+!to fasten quarrel upon somwbody
+- (xem) fasten
+!to fight in a good quarrel
+- đấu tranh cho lẽ phải, đấu tranh cho chính nghĩa
+!to find quarrel in a straw
+- hay bẻ hoẹ, hay bới bèo ra bọ
+!to make up a quarrel
+- giải hoà, hoà giải một mối bất hoà
+*  nội động từ
+- cãi nhau
+=to quarrel with somebody about (for) something+ câi nhau với ai về vấn đề gì
+- bất hoà, giận nhau
+- (+ with) đỗ lỗi, chê, phàn nàn
+!a bad workman quarrel with his tools
+- (tục ngữ) vụng múa chê đất lệch
+!to quarrel with one's brerad and butter
+- bỏ nghề đã nuôi sống mình; đi ngược lại với quyền lợi của chính mình
+
+@quarreler /'kwɔrələ/ (quarreller) /'kwɔrələ/
+*  danh từ
+- người hay câi nhau; người hay gây bỗ, người hay sinh sự
+
+@quarreller /'kwɔrələ/ (quarreller) /'kwɔrələ/
+*  danh từ
+- người hay câi nhau; người hay gây bỗ, người hay sinh sự
+
+@quarrelsome /'kwɔrəlsəm/
+*  tính từ
+- hay câi nhau; hay gây gỗ, hay sinh sự
+
+@quarrelsomeness /'kwɔrəlsəmnis/
+*  danh từ
+- tính hay câi nhau; tính hay gây gỗ, tính hay sinh sự
+
+@quarrier /'kwɔriə/ (quarryman) /'kwɔrimən/
+*  danh từ
+- công nhân mỏ đá, công nhân khai thác đá
+
+@quarry /'kwɔri/
+*  danh từ
+- con mồi; con thịt
+- (nghĩa bóng) người bị truy nã
+- mảnh kính hình thoi (ở cửa sổ mắt cáo...)
+- nơi lấy đá, mỏ đá
+- (nghĩa bóng) nguồn lấy tài liệu, nguồn lấy tin tức
+*  ngoại động từ
+- lấy (đá) ở mỏ đá, khai thác (đá) ở mỏ đá
+=to quarry marble+ khai thác đá hoa
+- (nghĩa bóng) moi, tìm tòi
+*  nội động từ
+- tìm tòi
+=to quarry in old manuscripts+ tìm tòi trong các bản thảo cũ
+
+@quarrying /'kwɔriiɳ/
+*  danh từ
+- sự khai thác đá, công việc khai thác đá
+
+@quarryman /'kwɔriə/ (quarryman) /'kwɔrimən/
+*  danh từ
+- công nhân mỏ đá, công nhân khai thác đá
+
+@quart /kwɔ:t - kɑ:t/
+- kɑ:t/
+*  danh từ
+- góc tư galông, lít Anh (bằng 1, 135 lít)
+- chai lít Anh, bình một lít Anh
+!to try to put a quart into a pint pot
+- (nghĩa bóng) lấy thúng úp voi
+*  danh từ
+- thế các (một thể đánh gươm)
+=to practises quart and tierce+ tập đánh gươn, tập đánh kiếm
+- (hàng hải) bộ bốn cây liên tiếp
+
+@quartan /'kwɔ:tn/
+*  tính từ
+- (y học) cách ba ngày (cơn sốt...)
+*  danh từ
+- (y học) sốt cách ba ngày
+
+@quartation /kwɔ:'teiʃn/
+*  danh từ
+- (hoá học) phép hợp ba phần bạc một phần vàng
+
+@quarter /'kwɔ:tə/
+*  danh từ
+- một phần tư
+=a quarter of a century+ một phần tư thế kỷ
+=for a quarter [of] the price; for quarter the price+ với một phần tư giá
+- mười lăm phút
+=a quarter to ten+ mười giờ kém mười lăm
+- quý (ba tháng); học kỳ ba tháng (trường học)
+- (Mỹ; Ca-na-đa) 25 xu, một phần tư đô la
+- góc "chân" (của con vật đã được phô ra); (số nhiều) góc phần xác (kẻ phản bội) bị phanh thây, hông (người, súc vật)
+=fore quarter+ phần trước
+=hind quarter+ phần sau
+=horse's [hind] quarters+ hông ngựa
+- phương, hướng, phía; nơi, miền; nguồn (tin tức...)
+=from every quarter+ từ khắp bốn phương
+=no help to be looked for in that quarter+ không mong đợi gì có sự giúp đỡ về phía đó
+=to have the news from a good quarter+ nhận được tin từ một nguồn đáng tin cậy
+- khu phố, xóm, phường
+=residential quarter+ khu nhà ở
+- (số nhiều) nhà ở
+=to take up one's quarters with somebody+ đến ở chung với ai
+- (số nhiều) (quân sự) nơi đóng quân, doanh trại
+=winter quarters+ nơi đóng quân mùa đông
+- (số nhiều) (hàng hải) vị trí chiến đấu trên tàu; sự sửa soạn chiến đấu
+=all hands to quarters!+ tất cả vào vị trí chiến đấu!
+=to beat to quarters+ ra lệnh tập họp vào vị trí chiến đấu
+=to sound off quarters+ nổi hiệu kèn rút khỏi vị trí chiến đấu
+- tuần trăng; trăng phần tư (vị trí của mặt trăng khi ở giữa tuần thứ nhất và tuần thứ hai, hoặc ở giữa tuần thứ ba và tuần thứ tư)
+- sự tha giết, sự tha chết (cho kẻ thù đầu hàng...)
+=to ask for quarter; to cry quarter+ xin tha giết
+=to receive quarter+ được tha tội chết, được tha giết
+- (hàng hải) hông tàu
+=with the wind on her starboard quarter+ với gió bên hông phải
+- góc ta (Anh) bằng 12, 70 kg); góc bồ (bằng 2, 90 hl)
+- (thể dục,thể thao) không chạy một phần tư dặm (dặm Anh)
+=to win the quarter+ thắng trong cuộc chạy 1 soành dặm (dặm Anh)
+!a bad quarter of an hour
+- một vài phút khó chịu
+!to beat up somebody's quarters
+!to bear up the quarters of somebody
+- đến thăm ai
+!at close quarters
+- ở ngay sát nách
+- (quân sự) giáp lá cà
+!to come (get) to close quarters
+- đến sát gần
+- đánh giáp lá cà
+!not a quarter so good as...
+- còn xa mời tốt bằng...
+*  ngoại động từ
+- cắt đều làm bốn, chia tư
+- phanh thây
+=to be condemned to be quartered+ phải chịu tội phanh thây
+- (quân sự) đóng (quân)
+- chạy khắp, lùng sục khắp (chó săn)
+
+@quarter binding /'kwɔ:tə,baindiɳ/
+*  danh từ
+- sự đóng (sách) gáy da (không đóng da ở các góc)
+
+@quarter hour /'kwɔ:təauə/
+*  danh từ
+- mười lăm phút đồng hồ
+
+@quarter sessions /'kwɔ:tə'seʃnz/
+*  danh từ
+- phiên toà họp hàng quý
+
+@quarter-bell /'kwɔ:təbel/
+*  danh từ
+- chuông (đồng hồ) cách 15 phút đánh một lần
+
+@quarter-day /'kwɔ:tədei/
+*  danh từ
+- ngày trả tiền hàng quý (lương, trợ cấp...); ngày đầu quý
+
+@quarter-deck /'kwɔ:tədek/
+*  danh từ
+- (hàng hải) sân lái (của tàu)
+- (the quarter-deck) các sĩ quan hải quân
+=to walk the quarter-deck+ là sĩ quan hải quân
+
+@quarter-final /'kwɔ:tə'fainl/
+*  tính từ
+- (thể dục,thể thao) tứ kết
+
+@quarter-mile /'kwɔ:təmail/
+*  danh từ
+- (thể dục,thể thao) cuộc chạy đua một phần tư dặm
+
+@quarter-miler /'kwɔ:tə,mailə/
+*  danh từ
+- (thể dục,thể thao) vận động viên chạy khoảng cách một phần tư dặm
+
+@quarter-plate /'kwɔ:təpleit/
+*  danh từ
+- kính ảnh khổ 3Ệ x 4Ệ insơ
+
+@quarterage /'kwɔ:təridʤ/
+*  danh từ
+- tiền trả hằng quý (lương, phụ cấp)
+
+@quarterback /'kwɔ:təbæk/
+*  danh từ
+- (thể dục,thể thao) tiền vệ (bóng đá)
+
+@quarterfinal /'kwɔ:tə'fainl/
+*  danh từ
+- (thể dục,thể thao) trạng tứ kết
+- (số nhiều) vòng tứ kết
+
+@quarterly /'kwɔ:təli/
+*  tính từ & phó từ
+- hàng quý, ba tháng một lần
+=quarterly payments+ tiền trả hàng quý
+*  danh từ
+- tạp chí xuất bản ba tháng một lần
+
+@quartermaster /'kwɔ:tə,mɑ:stə/
+*  danh từ
+- ((viết tắt) Q.M.) sĩ quan hậu cần của tiểu đoàn (bộ binh)
+=quartermaster general + cục trưởng cục quân nhu ((viết tắt) Q.M.G.)
+=quartermaster sergeant+ trung sĩ hậu cần (ở mỗi đại đội)
+- hạ sĩ quan phụ trách điện đài (hải quân)
+
+@quartern /'kwɔ:tən/
+*  danh từ
+- góc tư pin (một phần tư của pin,  (xem) pint)
+- ổ bánh mì bốn pao ((cũng) quartern loaf)
+- (từ Mỹ,nghĩa Mỹ) một phần tư
+
+@quarterstaff /'kwɔ:təstɑ:f/
+*  danh từ,  số nhiều quarterstaves
+- gậy (dài từ 1, 80 đến 2, 40 m, dùng làm vũ khí)
+
+@quartet /kwɔ:'tet/ (quartette) /kwɔ:'tet/
+*  danh từ
+- nhóm bốn (người, vật)
+- (âm nhạc) bộ tư bản nhạc cho bộ tư
+
+@quartette /kwɔ:'tet/ (quartette) /kwɔ:'tet/
+*  danh từ
+- nhóm bốn (người, vật)
+- (âm nhạc) bộ tư bản nhạc cho bộ tư
+
+@quarto /'kwɔ:tou/
+*  danh từ
+- khổ bốn (của một tờ giấy xếp làm bốn)
+- sách khổ bốn
+
+@quartz /kwɔ:ts/
+*  danh từ
+- (khoáng chất) thạch anh
+
+@quash /kwɔʃ/
+*  ngoại động từ
+- (pháp lý) huỷ bỏ, bác đi
+=to quash the verdic+ huỷ bỏ bản án
+- dập tắt, dẹp yên, đàn áp (một cuộc nổi loạn)
+
+@quashee /'kwɔʃi/
+*  danh từ
+- người da đen
+
+@quasi /'kwɑ:zi/
+*  phó từ
+- hầu như là, tuồng như là, y như thế
+*  liên từ
+- tức là, có nghĩa là
+
+@quassia /'kwɔʃə/
+*  danh từ
+- (thực vật học) cây bạch mộc
+- thuốc bạch mộc (thuốc đắng chế bằng vỏ, rễ cây bạch mộc)
+
+@quatercentenary /,kwætəsən'ti:nəri/
+*  danh từ
+- kỷ niệm bốn trăm năm
+
+@quaternary /kwə'tə:nəri/
+*  tính từ
+- (địa lý,địa chất) (thuộc) kỳ thứ tư
+- (hoá học) bậc bốn
+*  danh từ
+- nhóm bốn, bộ bốn
+- số bốn
+- (Quaternary) kỳ thứ tư; hệ thứ tư
+
+@quaternion /kwə'tə:njən/
+*  danh từ
+- bộ bốn
+- tập vở còn có bốn tờ giấy gập đôi
+- (toán học) Quatenion
+
+@quatrain /'kwɔtrein/
+*  danh từ
+- thơ bốn câu
+
+@quatrefoil /'kætrəfɔil/
+*  danh từ
+- (kiến trúc) kiểu trang trí hình hoa lá bốn thuỳ
+
+@quatrocento /,kwɑ:trou'tʃentou/
+*  danh từ
+- thế kỷ 15 (nghệ thuật Y)
+
+@quattrocentist /,kwɑ:trou'tʃəntist/
+*  danh từ
+- nghệ sĩ Y thế kỷ 15
+
+@quaver /'kweivə/
+*  danh từ
+- sự rung tiếng; tiếng nói rung
+- (âm nhạc) sự láy rền
+- (âm nhạc) nốt móc
+=quaver rest+ lặng móc
+*  động từ
+- rung (tiếng); nói rung tiếng
+- (âm nhạc) láy rền
+!to quaver out
+- nói rung tiếng, nói giọng rung rung
+
+@quavering /'kweivəriɳ/
+*  tính từ
+- rung rung (tiếng nói...)
+- láy rền (giọng hát)
+
+@quavery /'kweivəri/
+*  tính từ
+- rung rung
+
+@quay /ki:/
+*  danh từ
+- ke, bến (cảng)
+
+@quayage /'ki:idʤ/
+*  danh từ
+- thuế bến
+- hệ thống bến, dãy bến
+
+@quean /kwi:n/
+*  danh từ
+- (từ cổ,nghĩa cổ) đàn bà hư hỏng; cô gái trai lơ đĩ thoã
+- (Ê-cốt) cô gái
+
+@queasiness /'kwi:zinis/
+*  danh từ
+- sự buồn nôn, sự buồn mửa
+- sự khó tính; tính khảnh
+- tính dễ mếch lòng
+
+@queasy /'kwi:zi/
+*  tính từ
+- làm lộn mửa, làm buồn nôn (thức ăn)
+- dễ bị đau, dễ bị đầy (bụng)
+- cảm thấy lộn mửa, cảm thấy buồn nôn (người)
+- khó tính; khảnh
+- dễ mếch lòng
+
+@quebracho /kə'brɑ:tʃou/
+*  danh từ
+- cây mẻ rìu (cây lỗ rất cứng ở Mỹ)
+- vỏ cây mẻ rìu (dùng làm thuốc)
+
+@queen /kwi:n/
+*  danh từ
+- nữ hoàng, bà hoàng, bà chúa ((nghĩa đen) & (nghĩa bóng))
+=the Queen of England+ nữ hoàng Anh
+=the rose is the queen of flowers+ hoa hồng là chúa các loài hoa
+=Venice the queen of the Adriatic+ Vơ-ni-dơ thành phố đứng đầu vùng biển A-đri-a-tich
+- vợ vua, hoàng hậu
+- (đánh bài) quân Q
+- (đánh cờ) quân đam
+- con ong chúa; con kiến chúa
+=the queen bee+ con ong chúa
+!Queen Anne is dead!
+- người ta đã biết tỏng đi rồi, bây giờ mới nói!
+!queen of hearts
+- cô gái đẹp, người đàn bà đẹp
+*  ngoại động từ
+- chọn làm hoàng hậu; chọn làm nữ hoàng
+- (đánh cờ) nâng (quân thường) thành quân đam
+!to queen it
+- làm như bà chúa
+
+@queen's weather /'kwi:nz'weðə/
+*  danh từ
+- thời tiết đẹp
+
+@queenhood /'kwi:nhud/
+*  danh từ
+- địa vị nữ hoàng
+- địa vị hoàng hậu
+- thời gian trị vì của nữ hoàng
+
+@queenlike /'kwi:nli/ (queenlike) /'kwi:nlaik/
+*  tính từ
+- như bà hoàng; đường bệ
+=a queenly gesture+ một cử chỉ đường bệ
+- (thuộc) bà hoàng, xứng đáng với một bà hoàng
+=queenly robes+ những cái áo dài xứng đáng với một bà hoàng
+
+@queenliness /'kwi:nlinis/
+*  danh từ
+- tính chất bà hoàng; vẻ bà hoàng
+
+@queenly /'kwi:nli/ (queenlike) /'kwi:nlaik/
+*  tính từ
+- như bà hoàng; đường bệ
+=a queenly gesture+ một cử chỉ đường bệ
+- (thuộc) bà hoàng, xứng đáng với một bà hoàng
+=queenly robes+ những cái áo dài xứng đáng với một bà hoàng
+
+@queer /kwiə/
+*  tính từ
+- lạ lùng, kỳ quặc
+- khả nghi, đáng ngờ
+=there's something queer about him+ hắn ta có vẻ khả nghi
+- khó ở, khó chịu, chóng mặt
+=to feel queer+ cảm thấy khó chịu
+=to be queer+ (từ Mỹ,nghĩa Mỹ) bị ốm
+- (từ lóng) say rượu
+- giả (tiền)
+=queer money+ tiền giả
+- tình dục đồng giới
+!to be in Queen street
+- (từ lóng) mắc nợ; gặp lúc khó khăn; gặp việc rầy rà
+*  danh từ
+- người tình dục đồng giới
+- (từ Mỹ,nghĩa Mỹ),  (từ lóng) tiền giả
+*  ngoại động từ
+- (từ lóng) làm hại, làm hỏng
+=to queer someone's plan+ làm hỏng kế hoạch của ai
+=to queer the pitch for somebody+ chơi xỏ ai; phỗng tay trên ai
+- làm cho cảm thấy khó chịu
+- (từ Mỹ,nghĩa Mỹ) đẩy vào một tình thế lúng túng bất lợi
+
+@queerish /'kwiəriʃ/
+*  tính từ
+- hơi lạ lùng, hơi kỳ quặc
+- hơi khó ở, hơi khó chịu
+- (thông tục) yếu ớt, ốm yếu
+
+@queerness /'kwiənis/
+*  danh từ
+- tính lạ lùng, tính kỳ quặc
+
+@quell /kwel/
+*  ngoại động từ
+- (thơ ca) đàn áp, dập tắt, dẹp yên (cuộc nổi loạn...)
+- nén, chế ngự (mối cảm động, tình dục...)
+
+@quench /kwentʃ/
+*  ngoại động từ
+- (thơ ca),  (văn học) tắt, dập tắt (lửa, ánh sáng...)
+- làm hết (khát)
+=to quench one's thirst+ làm hết khát
+- nhúng (kim loại nóng đỏ) vào nước lạnh
+- làm nguội lạnh; nén
+=to quench someone's enthusiasm+ làm nguội lạnh nhiệt tình của ai, làm nhụt nhiệt tình của ai
+=to quench one's desire+ nén dục vọng
+- (từ lóng) bắt im, làm câm miệng
+!to quench smoking flax
+- (nghĩa bóng) chặn đứng một sự phát triển đang có hứa hẹn
+
+@quenchable /'kwentʃəbl/
+*  tính từ
+- có thể dập tắt (lửa...)
+- có thể làm cho hết (khát)
+- có thể nén (dục vọng...)
+
+@quencher /'kwentʃə/
+*  danh từ
+- cái để dập tắt; người dập tắt
+- (từ lóng) cái để uống, cái để giải khát ((thường) a modest quencher)
+
+@quenchless /'kwentʃlis/
+*  tính từ
+- không dập tắt được
+
+@quenelle /kə'nel/
+*  danh từ
+- cá băm viên, thịt băm viên
+
+@querist /'kwiərist/
+*  danh từ
+- người hỏi, người chất vấn
+
+@quern /kwə:n/
+*  danh từ
+- cối xay, quay tay
+=pepper quern+ cối xay hạt tiêu
+
+@querulous /'kweruləs/
+*  tính từ
+- hay than phiền
+- hay càu nhàu, cáu kỉnh
+
+@querulousness /'kweruləsnis/
+*  danh từ
+- tính hay than phiền
+- tính hay càu nhàu, tính cáu kỉnh
+
+@query /'kwiəri/
+*  danh từ
+- câu hỏi, câu chất vấn; thắc mắc
+- ((viết tắt),  qu.) thử hỏi, chẳng biết
+=query (qu.), has the letter been answered?+ chẳng biết bức thư đó đã được trả lời hay chưa?
+- dấu chấm hỏi
+*  nội động từ
+- (+ whether,  if) hỏi, hỏi xem, chất vấn
+- đặt câu hỏi; đánh dấu hỏi
+*  ngoại động từ
+- nghi ngờ, đặt vấn đề nghi ngờ, thắc mắc
+
+@quest /kwest/
+*  danh từ
+- sự truy tìm, sự truy lùng
+=in quest of+ tìm kiếm, truy lùng
+- (từ cổ,nghĩa cổ) cái đang tìm kiếm, cái đang truy lùng
+- (từ cổ,nghĩa cổ) sự điều tra; cuộc điều tra; ban điều tra
+=crowner's quest+ sự điều tra về một vụ chết bất thường
+*  nội động từ
+- đi tìm, lùng (chó săn)
+- (thơ ca) tìm kiếm
+!to quest about
+- đi lùng quanh
+
+@question /'kwestʃn/
+*  danh từ
+- câu hỏi
+=to put a question+ đặt một câu hỏi
+=to answers a question+ trả lời một câu hỏi
+- vấn đề; điều bàn đến, điều nói đến
+=a nice question+ một vấn đề tế nhị
+=the question is...+ vấn đề là...
+=that is not the question+ vấn đề không phải là thế, vấn đề không phải ở đó
+=this is out of the question+ không thành vấn đề, không phải là chuyện bàn đến nữa
+=the person in question+ người đang được nói đến
+=the matter in question+ việc đang được bàn đến
+=to come into question+ được thảo luận bàn bạc; thành vấn đề thảo luận bàn bạc
+!question!
+- xin đi vào đề! (trong hội nghị, nhắc người phát biểu nói lan man ngoài đề); có vấn đề đấy! (tỏ ý nghi ngờ sự việc do ai đang nói)
+=to put the question+ lấy biểu quyết
+- sự nghi ngờ
+=beyond all (out of, past without) question+ không còn nghi ngờ gì nữa
+=to call in question+ đặt thành vấn đề nghi ngờ
+=to make no question of...+ không may may nghi ngờ gì về...
+- (từ cổ,nghĩa cổ) sự tra tấn để bắt cung khai
+=to be put to the question+ bị tra tấn đề bắt cung khai
+!to beg the question
+- coi như vấn đề đưa ra là đã quyết định rồi (đã đúng rồi) chẳng cần phải thảo luận làm gì
+*  ngoại động từ
+- hỏi, hỏi cung
+- nghi ngờ; đặt thành vấn đề
+=to question the honesty of somebody+ nghi ngờ tính lương thiện (chân thật) của ai
+=it cannot be questioned but [that]+ không thể còn nghi ngờ gì nữa là, chắc chắn là
+- điều tra, nghiên cứu, xem xét (sự việc, hiện tượng)
+
+@question-mark /'kwestʃnmɑ:k/ (questionnaire) /questionnaire/
+*  danh từ
+- dấu hỏi
+
+@question-stop /'kwestʃnmɑ:k/ (questionnaire) /questionnaire/
+*  danh từ
+- dấu hỏi
+
+@questionable /'kwestʃənəbl/
+*  tính từ
+- đáng ngờ, đáng nghi ngờ
+
+@questionary /'kwestʃənəri/
+*  danh từ
+- (từ hiếm,nghĩa hiếm) (như) questionnaire
+
+@questioner /'kwestʃənə/
+*  danh từ
+- người hỏi, người chất vấn
+
+@questionless /'kwestʃnlis/
+*  tính từ
+- không còn nghi ngờ gì nữa, chắc chắn rõ ràng
+
+@questionnaire /,kwestiə'neə/
+*  danh từ
+- bản câu hỏi (để điều tra, để thăm dò ý kiến)
+
+@quetzal /ket'sɑ:l/
+*  danh từ
+- (động vật học) chim đuôi seo (ở Trung mỹ)
+- đồng ketxan (tiền Goa-ta-ma-la)
+
+@queue /kju:/
+*  danh từ
+- đuôi sam
+- hàng (người, xe ô tô ở ngã tư khi có đèn đỏ...) xếp nối đuôi
+=to stand in a queue+ xếp hàng nối đuôi nhau
+*  nội động từ
+- ((thường) + up) xếp hàng nối đuôi nhau
+=to queue up for a tram+ xếp hàng nối đuôi nhau để lên xe điện
+*  ngoại động từ
+- tết (tóc thành đuôi sam)
+
+@qui vive /ki:'vi:v/
+*  danh từ
+- on the qui_vive giữ thế, giữ miếng; cảnh giác
+
+@quibble /'kwibl/
+*  danh từ
+- lối chơi chữ
+- cách nói nước đôi; cách nói lảng; lý sự cùn, cách nói nguỵ biện
+*  nội động từ
+- chơi chữ
+- nói nước đôi; nói lảng; lý sự cùn, nguỵ biện
+
+@quibbler /'kwiblə/
+*  danh từ
+- người hay chơi chữ
+- người hay nói nước đôi; người hay nói lảng; người hay lý sự cùn, người hay nguỵ biện
+
+@quibbling /'kwibliɳ/
+*  danh từ
+- sự chơi chữ
+- sự nói nước đôi; sự nói lảng; sự hay lý sự cùn, sự nguỵ biện
+
+@quick /kwik/
+*  danh từ
+- thịt mềm (dưới móng tay, móng chân, trong vết thương)
+- tâm can, ruột gan; chỗ nhạy cảm nhất
+=the insult stung him to the quick+ lời lăng mạ làm anh đau nhói tâm can
+=to cut (touch) to the quick+ chạm vào chỗ nhạy cảm nhất, chạm nọc
+- (the quick) (từ cổ,nghĩa cổ) những người còn sống
+=the quick and the dead+ những người còn sống và những người đã chết
+!to the quick
+- đến tận xương tuỷ
+=to be a radical to the quick+ là người cấp tiến đến tận xương tuỷ, là người cấp tiến trăm phần trăm
+*  tính từ
+- nhanh, mau
+=a quick train+ chuyến xe lửa (tốc hành) nhanh
+=be quick+ nhanh lên
+- tinh, sắc, thính
+=a quick eye+ mắt tinh
+=a quick ear+ tai thính
+- tính linh lợi, hoạt bát, nhanh trí, sáng trí
+=a quick mind+ trí óc linh lợi
+=a quick child+ một em bé sáng trí
+=quick to understand+ tiếp thu nhanh
+- nhạy cảm, dễ
+=to be quick to take offence+ dễ phật lòng, dễ giận
+=to be quick of temper+ dễ nổi nóng, nóng tánh
+- (từ cổ,nghĩa cổ) sống
+=to be with quick child; to be quick with child+ có mang sắp đến ngày sinh (thai đã đạp ở trong bụng)
+=quick hedge+ hàng rào cây xanh
+!let's have a quick one
+- chúng ta uống nhanh một cốc đi
+*  phó từ
+- nhanh
+=don't speak so quick+ đừng nói nhanh thế
+
+@quick break /'kwik'bred/
+*  danh từ
+- bánh nướng ngay được
+
+@quick step /'kwikstep/
+*  danh từ
+- (quân sự) bước nhanh (dùng trong hành quân (xem) quick-time)
+*  danh từ
+- điệu nhảy fôctrôt nhanh
+
+@quick-change /'kwiktʃeindʤ/
+*  tính từ
+- (sân khấu) thay đổi quần áo nhanh, hoá trang nhanh (để đóng một vai khác trong cùng một vở)
+
+@quick-eared /'kwik'iəd/
+*  tính từ
+- thính tai
+
+@quick-eyed /'kwik'aid/
+*  tính từ
+- tinh mắt, nhanh mắt
+
+@quick-feeze /'kwikfri:z/
+*  ngoại động từ
+- ướp lạnh nhanh (đồ ăn để giữ phẩm chất)
+*  nội động từ
+- đông nhanh (đồ ăn)
+
+@quick-firer /'kwik,faiərə/
+*  danh từ
+- (quân sự) súng bắn nhanh
+
+@quick-firing /'kwik,faiəriɳ/
+*  tính từ
+- (quân sự) bắn nhanh (sáng)
+
+@quick-sighted /'kwik'saitid/
+*  tính từ
+- tinh mắt, nhanh mắt
+
+@quick-tempered /'kwik'tempəd/
+*  tính từ
+- nóng tính, dễ cáu
+
+@quick-time /'kwik'taim/
+*  danh từ
+- (quân sự) tốc độ hành quân nhanh (6km một giờ)
+
+@quick-witted /'kwik'witid/
+*  tính từ
+- nhanh trí, ứng đối nhanh
+
+@quicken /'kwikən/
+*  ngoại động từ
+- làm tăng nhanh, đẩy mạnh
+- làm sống lại, làm tươi lại
+- làm hoạt động, làm nhộn lên, làm sôi nổi lên
+- kích thích, gợi lên, nhen lên; khêu (ngọn lửa)
+=to quicken one's appetite+ kích thích sự thèm ăn
+*  nội động từ
+- tăng tốc độ nhanh hơn
+=the pulse quickened+ mạch đập nhanh hơn
+- sống lại, tươi lại
+- hoạt động, nhộn lên, sôi nổi lên
+- bắt đầu cảm thấy thai đạp trong bụng (người đàn bà có mang)
+
+@quickie /'kwiki/
+*  danh từ
+- (thông tục) phim làm ẩu (cốt chỉ để đảm bảo chi tiết sản xuất phim hàng năm)
+- (từ Mỹ,nghĩa Mỹ) công việc làm ăn (cốt chỉ để đảm bảo chỉ tiêu)
+- (từ Mỹ,nghĩa Mỹ) cốc rượu pha vội
+
+@quicklime /'kwiklaim/
+*  danh từ
+- vôi sống
+
+@quickly /'kwikli/
+*  phó từ
+- nhanh, nhanh chóng
+
+@quickness /'kwiknis/
+*  danh từ
+- sự nhanh, sự mau chóng
+- sự tinh, sự thính (mắt, tai...)
+- sự linh lợi, sự nhanh trí
+- sự đập nhanh (mạch)
+- sự dễ nổi nóng
+=quickness of temper+ tính dễ nổi nóng
+
+@quicksand /'kwiksænd/
+*  danh từ
+- cát lún, cát lầy, cát chảy
+
+@quickset /'kwikset/
+*  danh từ
+- cây trồng làm bằng hàng rào (thường là cây táo gai)
+- hàng rào cây xanh, hàng rào táo gai
+*  tính từ
+- quickset hedge hàng rào cây xanh
+
+@quicksilver /'kwik,silvə/
+*  danh từ
+- thuỷ ngân
+- (nghĩa bóng) tính hiếu động; tính hoạt bát nhanh nhẹn
+=to have quicksilver in one's veins+ rất hiếu động; hoạt bát nhanh nhẹn
+*  ngoại động từ
+- tráng thuỷ (gương)
+
+@quictlaim /'kwitkleim/
+*  danh từ
+- sự từ bỏ quyền
+
+@quid /kwid/
+*  danh từ
+- viên thuốc lá, miếng thuốc lá (để nhai)
+- (từ lóng) (số nhiều không đổi) đồng bảng Anh
+
+@quid pro quo /'kwidprou'kwou/
+*  danh từ
+- bật bồi thường; miếng trả lại
+- (từ hiếm,nghĩa hiếm) điều lầm lẫn, điều lẫn lộn
+
+@quiddity /'kwiditi/
+*  danh từ
+- bản chất, thực chất
+- lý sự cùn; lời bắt bẻ sợi tóc chẻ tư
+
+@quidnunc /'kwidnʌɳk/
+*  danh từ
+- người hay phao tin bịa chuyện; người hay ngồi lê đôi mách
+- (từ Mỹ,nghĩa Mỹ) người tọc mạch
+
+@quiescence /kwai'esns/ (quiescency) /kwai'esnsi/
+*  danh từ
+- sự im lìm, sự yên lặng
+
+@quiescency /kwai'esns/ (quiescency) /kwai'esnsi/
+*  danh từ
+- sự im lìm, sự yên lặng
+
+@quiescent /kwai'esnt/
+*  tính từ
+- im lìm, yên lặng
+=quiescent sea+ biển lặng
+=be quiescent!+ im đi!
+
+@quiet /'kwaiət/
+*  tính từ
+- lặng, yên lặng, yên tĩnh
+- trầm lặng
+- nhã (màu sắc)
+=quiet colours+ màu nhã
+- thái bình, yên ổn, thanh bình; thanh thản
+=quiet times+ thời đại thái bình
+=quiet conscience+ lương tâm thanh thản
+- thầm kín, kín đáo
+=to harbour quiet resentment+ nuôi một mối oán hận thầm kín
+=to keep something quiet+ giữ kín một điều gì
+- đơn giản, không hình thức
+=a quiet dinner-party+ bữa cơm thết đơn giản thân mật
+=a quiet weeding+ lễ cưới đơn giản không hình thức
+*  danh từ
+- sự yên lặng, sự yên tĩnh, sự êm ả
+=in the quiet of night+ trong đêm khuya thanh vắng
+=a few hours of quiet+ một vài giờ phút êm ả
+- sự yên ổn, sự thanh bình, sự thanh thản
+=to live in quiet+ sống trong cảnh thanh bình
+*  ngoại động từ
+- làm êm, làm dịu, làm nín, vỗ về
+=to quiet a fretful child+ dỗ một em bé đang quấy
+*  nội động từ
+- (+ down) trở lại yên tĩnh, lắng xuống
+=the city quieted down+ thành phố trở lại yên tĩnh
+
+@quieten /'kwaiətn/
+*  ngoại động từ & nội động từ
+- (như) quiet
+
+@quietly /'kwiətli/
+*  phó từ
+- yên lặng, yên tĩnh, êm ả
+- yên ổn, thanh bình, thanh thản
+
+@quietness /'kwaiətnis/
+*  danh từ
+- sự yên lặng, sự yên tĩnh, sự êm ả
+- sự trầm lặng
+- sự nhã (màu sắc)
+- cảnh yên ổn, cảnh thanh bình, sự thanh thản
+
+@quietude /'kwaiitju:d/
+*  danh từ
+- sự yên tĩnh
+- sự thanh thản
+
+@quietus /kwai'i:təs/
+*  danh từ
+- sự từ trần, sự chết
+=to get one's quietus+ chết
+- (từ lóng) đòn đánh cho chết hẳn, phát đạn bắn cho chết hẳn
+=to give someone his quietus+ giết chết ai, đánh cho ai một đòn chết hẳn
+- (từ hiếm,nghĩa hiếm) giấy biên nhận (để thu hết tiền...)
+- (từ Mỹ,nghĩa Mỹ) trạng thái bất động
+
+@quill /kwil/
+*  danh từ
+- ống lông (lông chim)
+- lông cánh; lông đuôi ((cũng) quill feather)
+- lông nhím
+- bút lông ngỗng ((cũng) quill pen); phao bằng ống lông (để đi câu); tăm bằng ống lông; cái gảy đàn bằng ống lông
+- ông chỉ, thoi chỉ
+- (âm nhạc) cái sáo
+- thanh quế
+- vỏ canh ki na cuộn vỏ đỏ
+!to drive a quill
+-(đùa cợt) làm nghề viết văn
+- làm nghề cạo giấy
+*  ngoại động từ
+- cuộn thành ống
+- cuộn chỉ vào ống
+
+@quill-driver /'kwil,draivə/
+*  danh từ
+-(đùa cợt) nhà căn; nhà báo
+- thư ký, người cạo giấy ((nghĩa bóng))
+
+@quillet /'kwilit/
+*  danh từ
+- (từ cổ,nghĩa cổ) lý sự cùn; lời bắt bẻ sợi tóc chẻ làm tư
+
+@quilling /'kwiliɳ/
+*  danh từ
+- nếp xếp hình tổ ong (ren, đăng ten...); vải xếp nếp hình tổ ong
+
+@quilt /kwilt/
+*  danh từ
+- mền bông; mền đắp, chăn
+*  ngoại động từ
+- chần, may chần (mền, chăn...)
+- khâu (thư, tiền...) vào giữa hai lần áo
+- thu nhập tài liệu để biên soạn (sách)
+- (từ lóng) đánh, nện cho một trận
+
+@quinary /'kwainəri/
+*  tính từ
+- gồm năm cái; xếp năm cái một
+
+@quinate /'kwaineit/
+*  tính từ
+- (thực vật học) có năm lá chét (lá)
+
+@quince /kwins/
+*  danh từ
+- quả mộc qua
+- (thực vật học) cây mộc qua
+
+@quincenterany /'kwindʤen'ti:nəri/ (quincenterany) /,kwinsen'ti:nəri/
+*  tính từ
+- (thuộc) kỷ niệm năm trăm năm
+*  danh từ
+- lễ kỷ niệm năm trăm năm
+
+@quincuncial /kwin'kʌnʃəl/
+*  tính từ
+- sắp xếp theo hình nanh sấu (bốn ở góc, một ở giữa)
+
+@quincunx /'kwinkʌɳks/
+*  danh từ
+- cách sắp xếp nanh sấu
+
+@quingentenary /'kwindʤen'ti:nəri/ (quincenterany) /,kwinsen'ti:nəri/
+*  tính từ
+- (thuộc) kỷ niệm năm trăm năm
+*  danh từ
+- lễ kỷ niệm năm trăm năm
+
+@quinia /kwi'ni:n/ (quinia) /'kwiniə/
+*  danh từ
+- (dược học) Quinin
+
+@quinic /'kwinik/
+*  tính từ
+- (hoá học) Quinic
+=quinic acid+ axit quinic
+
+@quinine /kwi'ni:n/ (quinia) /'kwiniə/
+*  danh từ
+- (dược học) Quinin
+
+@quinism /'kwinizm/
+*  danh từ
+- bệnh ù tai vì uống quá nhiều quinin
+- chứng ngộ độc quinin
+
+@quinize /'kwinaiz/
+*  ngoại động từ
+- cho uống quinin
+
+@quinquagenarian /,kwiɳkwədʤi'neəriən/
+*  danh từ
+- người năm mươi tuổi
+
+@quinquagenary /,kwiɳkwə'dʤi:nəri/
+*  tính từ
+- (thuộc) kỷ niệm năm mươi năm
+
+@quinquagesima /,kwinkwə'dʤesimə/
+*  danh từ
+- (tôn giáo) ngày chủ nhật trước tuần chay (50 ngày trước lễ Phục sinh) ((cũng) quinquagesima Sunday)
+
+@quinquagular /kwiɳ'kwæɳgjulə/
+*  tính từ
+- có năm góc
+
+@quinquennia /kwiɳ'kweniəm/
+*  danh từ,  số nhiều quinquennia
+- thời gian năm năm
+
+@quinquennial /kwiɳ'kweniəl/
+*  tính từ
+- lâu năm năm, kéo dài năm năm
+- năm năm một lần
+*  danh từ
+- thời gian năm năm
+
+@quinquennium /kwiɳ'kweniəm/
+*  danh từ,  số nhiều quinquennia
+- thời gian năm năm
+
+@quinquepartite /,kwiɳkwə'pɑ:tait/
+*  tính từ
+- chia làm năm; gồm năm bộ phận
+- (chính trị) năm bên, tay năm
+
+@quinquina /kwiɳ'kwainə/
+*  danh từ
+- cây canh ki na
+
+@quinquivalence /,kwiɳkwə'veilənsi/ (quinquivalence) /,kwiɳkwə'veiləns/
+*  danh từ
+- (hoá học) hoá trị năm
+
+@quinquivalency /,kwiɳkwə'veilənsi/ (quinquivalence) /,kwiɳkwə'veiləns/
+*  danh từ
+- (hoá học) hoá trị năm
+
+@quinquivalent /,kwiɳkwə'veilənt/
+*  tính từ
+- (hoá học) có hoá trị năm
+
+@quins /kwinz/
+*  danh từ số nhiều
+- (từ Mỹ,nghĩa Mỹ),  (thông tục) năm đứa trẻ sinh năm
+
+@quinsy /'kwinzi/
+*  danh từ
+- (y học) viêm họng, viêm hạch hạnh có mủ
+
+@quint /kwint/
+*  danh từ
+- (âm nhạc) quâng năm; âm năm
+- (đánh bài) bộ năm cây liên tiếp
+
+@quintal /'kwintl/
+*  danh từ
+- tạ (Anh = 50, 8 kg,  Mỹ = 45, 36 kg)
+
+@quintan /'kwintən/
+*  tính từ
+- (y học) cách bốn ngày (cơn sốt)
+*  danh từ
+- (y học) sốt cách bốn ngày
+
+@quintessence /kwin'tesns/
+*  danh từ
+- tinh chất; tinh tuý, tinh hoa
+- (triết học) nguyên tố thứ năm
+
+@quintessential /,kwinti'senʃəl/
+*  tính từ
+- (thuộc) phần tinh chất, (thuộc) phần tinh tuý, (thuộc) phần tinh hoa
+- (triết học) (thuộc) nguyên tố thứ năm
+
+@quintet /kwin'tet/ (quintette) /kwin'tet/
+*  danh từ
+- bộ năm, nhóm năm
+- (âm nhạc) bộ năm; bản nhạc cho bộ năm
+- (từ Mỹ,nghĩa Mỹ) đội bóng rổ năm người
+
+@quintette /kwin'tet/ (quintette) /kwin'tet/
+*  danh từ
+- bộ năm, nhóm năm
+- (âm nhạc) bộ năm; bản nhạc cho bộ năm
+- (từ Mỹ,nghĩa Mỹ) đội bóng rổ năm người
+
+@quintillion /kwin'tiljən/
+*  danh từ
+- (Anh) mười luỹ thừa ba mươi
+- (Mỹ,  Pháp) mười luỹ thừa mười tám
+
+@quints /kwints/
+*  danh từ
+- (từ Mỹ,nghĩa Mỹ) (viết tắt) của quintuplets ((xem) quintuplet)
+
+@quintuple /'kwintjupl/
+*  tính từ
+- gấp năm
+*  danh từ
+- số to gấp năm
+*  động từ
+- nhân năm, tăng lên năm lần
+
+@quintuplet /'kwintjuplit/
+*  danh từ
+- đứa trẻ sinh năm
+- (số nhiều) năm đứa trẻ sinh năm
+- bộ năm, nhóm năm
+
+@quintuplicate /kwin'tju:plikit/
+*  tính từ
+- nhân gấp năm
+- sao lại năm lần, chép lại năm lần
+- năm bản giống nhau
+=in quintuplicate+ thành năm bản giống nhau
+*  ngoại động từ
+- nhân gấp năm
+- sao thành năm bản giống nhau; in thành năm tấm (ảnh)
+
+@quip /kwip/
+*  danh từ
+- lời châm biếm, lời nói chua cay
+- lời nói nước đôi
+
+@quire /'kwaiə/
+*  danh từ
+- thếp giấy (24 tờ)
+=in quires+ chưa đóng (thành quyển)
+*  danh từ & động từ
+- (như) choir
+
+@quirinal /'kwirinəl/
+*  danh từ
+- chính phủ Y
+
+@quirk /kwə:k/
+*  danh từ
+- lời giễu cợt, lời châm biếm
+- lời thoái thác; mưu thoái thác, lời nói nước đôi
+- nét chữ uốn cong, nét chữ kiểu cách; nét vẽ kiểu cách
+- (kiến trúc) đường xoi
+
+@quirt /kwit/
+*  danh từ
+- roi da cán ngắn (để đi ngựa)
+*  ngoại động từ
+- quất bằng roi da
+
+@quisle /'kwizl/
+*  nội động từ
+- hợp tác với kẻ xâm chiếm; phản bội
+
+@quisling /'kwizliɳ/
+*  danh từ
+- người hợp tác với kẻ xâm chiếm; kẻ phản bội
+
+@quit /kwit/
+*  tính từ
+- vị ngữ thoát khỏi, giũ sạch được
+=to get quit of somebody+ thoát hẳn không bị ai quấy rầy nữa, tống khứ được ai
+=to get quit of one's debts+ thoát nợ, giũ sạch nợ nần
+*  ngoại động từ quitted (từ Mỹ,nghĩa Mỹ),  (thông tục) quit
+- bỏ, rời, buông
+=to quit hold of+ bỏ ra buông ra
+=to quit office+ bỏ việc
+- (từ Mỹ,nghĩa Mỹ) thôi, ngừng, nghỉ
+=quit that!+ thôi đừng làm việc ấy nữa!
+=to quit work+ nghỉ việc
+- rời đi, bỏ đi
+=to have notice to quit+ nhận được giấy báo dọn nhà đi
+- (thơ ca) trả lại, đáp lại, báo đền lại; trả sạch, thanh toán hết
+=to quit love with hate+ lấy oán trả ơn
+=death quits all scores+ chết là hết nợ
+- (từ cổ,nghĩa cổ) cư xử, xử sự
+=quit you like men+ hãy xử sự như một con người
+- (từ cổ,nghĩa cổ) to quit onself on thanh toán hết, giũ sạch được, thoát khỏi được
+
+@quitch /kwitʃ/
+*  danh từ
+- (thực vật học) cỏ băng ((cũng) quitch grass)
+
+@quite /kwait/
+*  phó từ
+- hoàn toàn, hầu hết, đúng là
+=quite new+ hoàn toàn mới mẻ
+=not quite finished+ chưa xong hẳn
+=quite other+ rất khác, khác hẳn
+=to be quite a hero+ đúng là một anh hùng
+- khá
+=quite a long time+ khá lâu
+=quite a few+ một số kha khá
+- đúng, đồng ý, phải (trong câu đáp)
+=quite so+ đúng thế
+=yes, quite+ phải, đúng đấy
+!he (she) isn't quite
+- ông ta (bà ta) không phải là người lịch sự
+
+@quits /kwits/
+*  tính từ
+- vị ngữ trả xong, thanh toán xong (nợ, thù)
+=we are quits now+ chúng ta xong nợ nhá
+!to cry quits
+- đồng ý hoà
+!double or quits
+- được ăn đôi thua mất cả (trò chơi ăn tiền)
+
+@quittance /'kwitəns/
+*  danh từ
+- giấy chứng thu, biên lai
+- sự đền bù, sự báo đền; sự báo thù, sự trả thù
+- (từ cổ,nghĩa cổ); (thơ ca) sự giải thoát cho, sự miễn xá cho
+!omittance is not quittance
+- quên chưa đòi chưa phải là thoát (nợ)
+
+@quitter /'kwitə/
+*  danh từ
+- (từ Mỹ,nghĩa Mỹ) người bỏ việc, người trốn việc
+
+@quiver /'kwivə/
+*  danh từ
+- bao đựng tên
+!to have an arrow left in one's quiver
+- (xem) arrow
+!a quite full of children
+- gia đình đông con
+!to have one's quiver full
+- đông con
+*  danh từ
+- sự rung, sự run
+- tiếng rung, tiếng run
+*  nội động từ
+- rung; run
+=voice quivers+ giọng nói run run
+*  ngoại động từ
+- vỗ nhẹ, đập nhẹ (cánh)
+
+@quiverful /'kwivəful/
+*  danh từ
+- bao tên (đầy)
+-(đùa cợt) gia đình đông con
+
+@quixote /'kwiksət/
+*  danh từ
+- người hào hiệp viển vông, chàng Đông-ki-sốt
+
+@quixotic /kwik'sɔtik/
+*  tính từ
+- hào hiệp viển vông, như Đông-ki-sốt
+
+@quixotics /'kwiksətizm/ (quixotics) /kwik'sɔtiks/ (quixotry) /'kwiksətri/
+*  danh từ
+- tính hào hiệp viển vông
+
+@quixotism /'kwiksətizm/ (quixotics) /kwik'sɔtiks/ (quixotry) /'kwiksətri/
+*  danh từ
+- tính hào hiệp viển vông
+
+@quixotry /'kwiksətizm/ (quixotics) /kwik'sɔtiks/ (quixotry) /'kwiksətri/
+*  danh từ
+- tính hào hiệp viển vông
+
+@quiz /kwiz/
+*  danh từ
+- (từ Mỹ,nghĩa Mỹ) kỳ thi kiểm tra nói (miệng), kỳ thi vấn đáp; câu hỏi kiểm tra nói (miệng), câu hỏi thi vấn đáp
+- cuộc thi (ở đài phát thanh, đài truyền hình)
+*  ngoại động từ
+- (từ Mỹ,nghĩa Mỹ) kiểm tra nói (miệng) quay vấn đáp (học sinh)
+*  danh từ
+- người hay trêu ghẹo chế nhạo
+- người hay nhìn tọc mạch
+- (từ hiếm,nghĩa hiếm) người lố bịch, người kỳ quặc
+- (từ hiếm,nghĩa hiếm) cái dùng để chế giễu (như hình nộm, tranh vẽ, lời nói...)
+*  ngoại động từ
+- trêu chọc, chế giễu, chế nhạo
+- nhìn chòng chọc, nhìn tọc mạch; nhìn chế giễu
+- (từ hiếm,nghĩa hiếm) nhìn qua ống nhòm, nhìn qua kính một mắt
+
+@quizzee /kwi'zi:/
+*  danh từ
+- (từ Mỹ,nghĩa Mỹ),  (thông tục) người thi vấn đáp; học sinh bị kiểm tra nói (miệng), học sinh bị quay vấn đáp
+
+@quizzeer /'kwizə/
+*  danh từ
+- (từ Mỹ,nghĩa Mỹ),  (thông tục) người quay vấn đáp (học sinh)
+
+@quizzical /'kwizikəl/
+*  tính từ
+- hay trêu chọc, hay chế giễu, hay chế nhạo
+- lố bịch, buồn cười, kỳ quặc
+
+@quizzing-glass /'kwiziɳglɑ:s/
+*  danh từ
+- (từ cổ,nghĩa cổ) kính một mắt
+
+@quod /kwɔd/
+*  danh từ
+- (từ lóng) nhà tù, nhà pha
+*  ngoại động từ
+- (từ lóng) bỏ tù, giam vào nhà pha
+
+@quoin /kɔin/
+*  danh từ
+- góc tường
+- đá xây ở góc, gạch xây ở góc
+- cái chèn, cái chêm
+*  ngoại động từ
+- chèn, chêm
+
+@quoit /kɔit/
+*  danh từ
+- cái vòng (để ném thi vào đàn vịt...)
+- (số nhiều) trò chơi ném vòng
+=to plays quoits+ chơi trò chơi ném vòng
+*  động từ
+- (từ hiếm,nghĩa hiếm) ném như một cái vòng
+- chơi trò chơi ném vòng
+
+@quondam /'kwɔndæm/
+*  tính từ
+- xưa, xưa kia, thuở trước
+=a quondam friend+ người bạn thuở trước
+
+@quonset hut /'kwɔnsit'hʌt/
+*  danh từ
+- (từ Mỹ,nghĩa Mỹ) nhà tôn lắp tháo được (thường để làm trại lính)
+
+@quorum /'kwɔ:rəm/
+*  danh từ
+- số đại biểu quy định (cần thiết để biểu quyết một vấn đề)
+
+@quota /'kwoutə/
+*  danh từ
+- phần (phải đóng góp hoặc được chia)
+- chỉ tiêu
+
+@quotable /'kwoutəbl/
+*  tính từ
+- có thể trích dẫn; đáng trích dẫn
+
+@quotation /kwou'teiʃn/
+*  danh từ
+- sự trích dẫn; đoạn trích dẫn
+- giá thị trường công bố (thị trường chứng khoán)
+- bản dự kê giá
+=a quotation for building a house+ bản dự kê giá xây một ngôi nhà
+- (ngành in) Cađra
+
+@quotation-marks /kwou'teiʃn,mɑ:ks/
+*  danh từ
+- dấu ngoặc kép
+
+@quotative /'kwoutətiv/
+*  tính từ
+- (thuộc) sự trích dẫn; để trích dẫn
+- thích trích dẫn
+
+@quote /kwout/
+*  danh từ
+- (thông tục) lời trích dẫn; đoạn trích dẫn
+- (số nhiều) dấu ngoặc kép
+*  ngoại động từ
+- trích dẫn (đoạn văn...)
+- đặt giữa dấu ngoặc kép
+- định giá
+
+@quoth /kwouθ/
+*  ngoại động từ
+- (từ cổ,nghĩa cổ) đã nói (chỉ ngôi 1 và ngôi 3,  số ít thời quá khứ)
+=quoth he: "Nevermore!"+ nó nói "chẳng bao giờ nữa"
+
+@quotidian /kwɔ'tidiən/
+*  tính từ
+- hằng ngày
+- tầm thường
+*  danh từ
+- (y học) sốt hằng ngày
+
+@quotient /'kwouʃənt/
+*  danh từ
+- (toán học) số thương

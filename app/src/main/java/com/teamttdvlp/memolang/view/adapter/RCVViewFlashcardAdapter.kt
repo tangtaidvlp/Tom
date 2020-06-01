@@ -13,7 +13,7 @@ import androidx.core.view.isVisible
 import androidx.recyclerview.widget.RecyclerView
 import com.teamttdvlp.memolang.R
 import com.teamttdvlp.memolang.databinding.ItemFlashcardRcvBinding
-import com.teamttdvlp.memolang.model.entity.flashcard.Flashcard
+import com.teamttdvlp.memolang.data.model.entity.flashcard.Flashcard
 import com.teamttdvlp.memolang.view.helper.*
 
 class RCVViewFlashcardAdapter (var context : Context, var list : ArrayList<Flashcard>) : RecyclerView.Adapter<RCVViewFlashcardAdapter.ViewHolder> () {
@@ -32,13 +32,32 @@ class RCVViewFlashcardAdapter (var context : Context, var list : ArrayList<Flash
 
     private var viewHolderMark = 0
 
+    private val EXTRA_COUNT = 3
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val dB = ItemFlashcardRcvBinding.inflate(LayoutInflater.from(context), parent, false)
         return ViewHolder(dB, viewHolderMark++, context)
     }
 
     override fun onBindViewHolder(vHder: ViewHolder, position: Int) {
-        quickLog("OnBindViewHolder $position")
+        val goToEmptySpace = position > list.size - 1
+        if (goToEmptySpace) {
+            vHder.dB.root.goINVISIBLE()
+            return
+        } else {
+            // Because viewholder is reused
+            // So, when RecyclerView reuses Viewholder which was made INVISIBLE before
+            // on Normal Item. That's a big bug
+            vHder.dB.root.goVISIBLE()
+        }
+
+        if (position == list.size - 1) {
+            vHder.dB.line.goINVISIBLE()
+            vHder.dB.root.elevation = 3.dp().toFloat()
+            (vHder.dB.root.layoutParams as RecyclerView.LayoutParams).bottomMargin = 3.dp()
+            vHder.dB.root.requestLayout()
+        }
+
         val flashcard = list[position]
         vHder.bind(flashcard)
 
@@ -87,7 +106,7 @@ class RCVViewFlashcardAdapter (var context : Context, var list : ArrayList<Flash
         }
     }
 
-    override fun getItemCount(): Int = list.size
+    override fun getItemCount(): Int = list.size + EXTRA_COUNT
 
     fun setOnEndDeleteModeListener (onEnd : () -> Unit) {
         this.onEndDeleteModeListener = {
@@ -138,7 +157,6 @@ class RCVViewFlashcardAdapter (var context : Context, var list : ArrayList<Flash
         for (vh in viewHolderList) {
             vh.turnOnDeleteMode()
         }
-        quickLog("Size: " + viewHolderList.size)
     }
 
     fun turnOffDeleteMode () {
@@ -170,7 +188,7 @@ class RCVViewFlashcardAdapter (var context : Context, var list : ArrayList<Flash
 
         val UNCHECKED_DELETE_IMAGE : Drawable
 
-        val `39dp` : Float
+        val `28dp` : Float
 
         init {
             if (itemViewHeight == -1) dB.root.doOnPreDraw {
@@ -178,7 +196,7 @@ class RCVViewFlashcardAdapter (var context : Context, var list : ArrayList<Flash
                 quickLog("ItemViewHeight: $itemViewHeight")
             }
 
-            `39dp` = 39.dp().toFloat()
+            `28dp` = 28.dp().toFloat()
             CHECKED_DELETE_IMAGE = context.getDrawable(R.drawable.image_checked_delete)!!
             UNCHECKED_DELETE_IMAGE = context.getDrawable(R.drawable.image_unchecked_delete)!!
             initAnimations()
@@ -206,7 +224,7 @@ class RCVViewFlashcardAdapter (var context : Context, var list : ArrayList<Flash
                 dB.txtTextForDelete.alpha = 0f
                 dB.imgDeleteStatus.alpha = 0f
 
-                dB.btnSwitchDeleteState.disappear()
+                dB.btnSwitchDeleteState.goGONE()
             }
         }
 
@@ -214,10 +232,10 @@ class RCVViewFlashcardAdapter (var context : Context, var list : ArrayList<Flash
             val isNot_InDeleteMode = not(btnSwitchDeleteState.isVisible)
 
             if (isNot_InDeleteMode) {
-                viewgroupText.translationX = `39dp`
+                viewgroupText.translationX = `28dp`
                 imgDeleteStatus.alpha = 1.0f
                 btnDelete.alpha = 0.0f
-                btnSwitchDeleteState.appear()
+                btnSwitchDeleteState.goVISIBLE()
                 viewgroupText.alpha = 0f
                 txtTextForDelete.alpha = 1f
             }
@@ -246,7 +264,7 @@ class RCVViewFlashcardAdapter (var context : Context, var list : ArrayList<Flash
             val showStatusDelete_Alpha = ObjectAnimator.ofFloat(dB.imgDeleteStatus, View.ALPHA, 0f, 1f)
             showStatusDelete_Alpha.duration = 100
 
-            val textMoveLeftToRight = ObjectAnimator.ofFloat(dB.viewgroupText, View.TRANSLATION_X, 0f, `39dp`)
+            val textMoveLeftToRight = ObjectAnimator.ofFloat(dB.viewgroupText, View.TRANSLATION_X, 0f, `28dp`)
             textMoveLeftToRight.duration = 100
 
             val hideButtonDelete_Alpha = ObjectAnimator.ofFloat(dB.btnDelete, View.ALPHA, 1f, 0f)
@@ -267,7 +285,7 @@ class RCVViewFlashcardAdapter (var context : Context, var list : ArrayList<Flash
                     this@ViewHolder.itemView.isClickable = false
                 },
                 onEnd =  {
-                    dB.btnSwitchDeleteState.appear()
+                    dB.btnSwitchDeleteState.goVISIBLE()
                 })
         }
 
@@ -278,7 +296,7 @@ class RCVViewFlashcardAdapter (var context : Context, var list : ArrayList<Flash
             val showButtonDelete_Alpha = ObjectAnimator.ofFloat(dB.btnDelete, View.ALPHA, 0f, 1f)
             showButtonDelete_Alpha.duration = 100
 
-            val textMoveRightToLeft = ObjectAnimator.ofFloat(dB.viewgroupText, View.TRANSLATION_X, `39dp`, 0f)
+            val textMoveRightToLeft = ObjectAnimator.ofFloat(dB.viewgroupText, View.TRANSLATION_X, `28dp`, 0f)
             textMoveRightToLeft.duration = 100
 
             val showTranslationAndText = ObjectAnimator.ofFloat(dB.viewgroupText, View.ALPHA, 0f, 1f)
@@ -295,7 +313,7 @@ class RCVViewFlashcardAdapter (var context : Context, var list : ArrayList<Flash
             turnOffDeleteModeAnimator.addListener (
                 onEnd =  {
                     this@ViewHolder.itemView.isClickable = true
-                    dB.btnSwitchDeleteState.disappear()
+                    dB.btnSwitchDeleteState.goGONE()
                     itemOnEndDeleteModeListener?.invoke()
                 })
         }

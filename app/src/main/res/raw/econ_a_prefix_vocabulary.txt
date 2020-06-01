@@ -1,0 +1,591 @@
+@Automatic fiscal policy
+- (Econ) Chính sách thu chi ngân sách tự động.
+@Assets motives
+- (Econ) Những động cơ tài sản.
+@Abatement cost
+- (Econ) Chi phí kiểm soát; chi phí chống (ô nhiễm)
+= Chi phí làm giảm sự khó chịu như ô nhiễm hay tắc đường.
+@Ability and earnings
+- (Econ) Năng lực và thu nhập
+= Thước đo về khả năng và trình độ (học vấn) có tương quan chặt chẽ với nhau, làm tăng khả năng là phần lớn lợi tức được ước tính do giáo dục trên thực tế cũng chính là lợi tức do năng  lực
+@Ability to pay
+- (Econ) Khả năng chi trả.
+@Ability to pay theory
+- (Econ) Lý thuyết về khả năng chi trả
+= Một lý thuyết về cách đánh thuế theo đó gánh nặng về thuế nên được phân bổ theo khả năng chi trả; và một hệ thống thuế kiểu luỹ tiến, tỷ lệ hay luỹ thoái, tuỳ thuộc vào thước đo được sử dụng và độ dốc giả định của đồ thị thoả dụng biên của thu nhập.
+@Abnormal profits
+- (Econ) Lợi nhuận dị thường
+= Xem SUPER-NORMAL PROFITS
+@Abscissa
+- (Econ) Hoành độ
+= Giá trị trên trục hoành (trục X) của một điểm trên đồ thị hai chiều.
+@Absenteeism
+- (Econ) Trốn việc, sự nghỉ làm không có lý do
+= Sự nghỉ làm, mặc dù các điều khoản của hợp đồng lao động yêu cầu người lao động phải đi làm và hợp đồng vẫn còn giá trị.
+@Absentee landlord
+- (Econ) Địa chủ (chủ bất động sản) cách biệt
+= Người chủ sở hữu đất hoặc nhà sống ở một nơi xa bất động sản của mình, thu tiền thuê và quản lý việc kinh doanh của mình thông qua trung gian hay người đại diện.
+@Absolute advantage
+- (Econ) Lợi thế tuyệt đối.
+= Xem Comparative Advantage.
+@Absolute cost advantage
+- (Econ) Lợi thế nhờ phí tổn tuyệt đối.
+= Một khái niệm đề cập tới những lợi thế của các hãng đã thiết lập, vì thế các hãng này có thể duy trì chi phí trung bình thấp hơn so với các hãng mới nhập ngành không phụ thuộc vào mức sản lượng. (Xem Barriers to entry)
+@Absolute income hypothesis
+- (Econ) Giả thuyết thu nhập tuyệt đối.
+= Giả thuyết này cho rằng các chi phí cho tiêu dùng (C) là một hàm số của thu nhập khả dụng của cá nhân (Yd): C = C (Yd).
+@Absolute monopoly
+- (Econ) Độc quyền tuyệt đối.
+= Xem Monopoly.
+@Absolute prices
+- (Econ) Giá tuyệt đối.
+= Giá đo bằng tiền ngược với với giá tương đối. Đó là giá của các hàng hoá, dịch vụ được biểu diễn trực tiếp dưới dạng số lượng của đơn vị tiền tệ. Xem Price
+@Absolute scarcity
+- (Econ) Khan hiếm tuyệt đối .
+= Xem Scarcity
+@Absolute value
+- (Econ) Giá trị tuyệt đối.
+= Giá trị của một biến bỏ qua dấu của nó.
+@Absorption approach
+- (Econ) Phương pháp hấp thu.
+= Phương pháp phân tích tác động của sự phá giá hoặc giảm tỷ giá hối đoái của một nước đối với cán cân thương mại.
+@Abstinence
+- (Econ) Nhịn chi tiêu.
+= Một thuật ngữ miêu tả sự cần thiết giảm bớt tiêu dùng hiện tại để tích luỹ tư bản.
+@Accelerated depreciation
+- (Econ) Khấu hao nhanh, khấu hao gia tốc.
+= Xem DEPRECIATION
+@Accelerating inflation
+- (Econ) Lạm phát gia tốc.
+= Sự tăng vọt tỷ lệ lạm phát. Nếu chính phủ cố giữ tỷ lệ thất nghiệp dưới mức tỷ lệ thất nghiệp tự nhiên thì việc đó sẽ dẫn tới lạm phát gia tốc.
+@Accelerator
+- (Econ) Gia số
+= Xem Accelerator principle.
+@Accelerator coefficient
+- (Econ) Hệ số gia tốc.
+= Một bội số theo đó đầu tư mới sẽ tăng lên khi có sự thay đổi về sản lượng.
+@Accelerator effect
+- (Econ) Hiệu ứng gia tốc.
+@Accelerator principle
+- (Econ) Nguyên lý gia tốc.
+= Nguyên lý cho rằng mức đầu tư ròng phụ thuộc vào mức thay đổi dự kiến về sản lượng.
+@Acceptance
+- (Econ) chấp nhận thanh toán.
+= Hành vi chấp nhận một hối phiếu do cá nhân hay cơ quan nhận hối phiếu thực hiện, bao gồm ký hối phiếu và thường ký trên mặt hối phiếu.
+@Accepting house
+- (Econ) Ngân hàng nhận trả.
+= Một trong số các NGÂN HÀNG THƯƠNG MẠI có trụ sở tại London, với mục đích thu tiền hoa hồng ngân hàng này nhận trả các hối phiếu, nghĩa là chấp nhận thanh toán chúng khi đáo hạn.
+@Accesion rate
+- (Econ) Tỷ lệ gia tăng lao động.
+= Số lượng những người thuê mới mỗi tháng tính theo tỷ lệ phần trăm tổng số việc làm do Bộ lao động Mỹ thống kê.
+@Accesions tax
+- (Econ) Thuế quà tặng.
+= Thuế đánh vào quà tặng và tài sản thừa kế.
+@Access/space trade - off model
+- (Econ) Mô hình đánh đổi không gian hay mô hình tiếp cận.
+= Một mô hình lý thuyết được sử dụng (chủ yếu) trong phân tích địa điểm dân cư ở các vùng đô thị, giải thích các hình thái vị trí do đánh đổi giữa khả năng tiếp cận của một địa điểm tới trung tâm của vùng và không gian của địa điểm đó.
+@Accommodating monetary policy
+- (Econ) Chính sách tiền tệ điều tiết.
+= Xem VALIDATED INFLATION
+@Accommodation transactions
+- (Econ) Các giao dịch điều tiết.
+= Trong CÁN CÂN THANH TOÁN, một loại giao dịch tư bản do CÁC CƠ QUAN TIỀN TỆ áp dụng hoặc điều hành để làm đối trọng lại tình trạng tín dụng hoặc tình trạng nợ nần nảy sinh trong các GIAO DỊCH TỰ ĐỊNH.
+@Account
+- (Econ) Tài khoản.
+= 1.Một ghi chép giao dịch giữa hai bên giao dịch có thể là hai bộ phận của một doanh nghiệp và là yếu tố cơ bản trong tất cả các hệ thống giao dịch kinh doanh. 2.Các giai đoạn, thường là hai tuần, theo đó năm kinh doanh của SỞ CHỨNG KHOÁN LONDON được chia ra và qua các giai đoạn này, việc thanh toán các giao dịch trừ giao dịch chứng khoán viền vàng được tiến hành.
+@Accrued expenses
+- (Econ) Chi phí phát sinh (tính trước).
+= Thương mục trong tài khoản của một công ty được ghi như một khoản nợ của các dịch vụ đã sử dụng nhưng chưa được thanh toán.
+@Achieving Society, the.
+- (Econ) Xã hội thành đạt.
+= Đây là tiêu đề của một cuốn sách do giáo sư David C. Mc. Clelland của trường đại học Harvard (Princeton, NJ, 1962) xuất bản, trong đó ông định nghĩa khái niệm động cơ thành đạt để đo ý nghĩ tưởng tượng và mức độ của các ý tưởng mới mà ông coi là nhân cách cần thiết đối với các CHỦ DOANH NGHIỆP và vì vậy có ý nghĩa đối với SỰ PHÁT TRIỂN KINH TẾ.
+@Across-the-board tariff changes
+- (Econ) Thay đổi thuế quan đồng loạt.
+= Một tình huống khi tất cả thuế quan của một nước được tăng hoặc giảm theo tỷ lệ phần trăm ngang bằng.
+@Action lag
+- (Econ) Độ trễ của hành động.
+= Mức độ trễ giữa việc quyết định một chính sách (đặc biệt trong kinh tế học vĩ mô) và việc thực hiện chính sách đó.
+@Active balance
+- (Econ) Dư nghạch.
+= Trong lý thuyết tiền tệ, một vài mô hình giả thiết chia một cung ứng tiền tệ thành DƯ NGHẠCH, đó là tiền dự trữ được đưa vào quay vòng trong các thời kỳ được xác định bởi các khoảng thời gian giữa các kỳ thanh toán, và NGHẠCH NHÀN RỖI là tiền dự trữ không được sử dụng để thanh toán thường xuyên.
+@Activity analysis
+- (Econ) Phân tích hoạt động.
+= Xem LINEAR PROGRAMMING.
+@Activity rate
+- (Econ) Tỷ lệ lao động.
+= Xem LABOUR FORCE PARTICIPATION RATE.
+@Adaptive expectation
+- (Econ) Kỳ vọng thích nghi; kỳ vọng phỏng theo
+= Sự hình thành kỳ vọng về giá trị tương lai của một biến số chỉ dựa trên các giá trị trước đó của biến liên quan.
+@Adding up problem
+- (Econ) Vấn đề cộng tổng.
+= Xem EULER'S THEREM
+@Additional worker hypothesis
+- (Econ) Giả thuyết công nhân thêm vào.
+= Theo lập luận này, thu nhập thực tế của gia đình giảm trong thời kỳ suy thoái theo chu kỳ sẽ gây ra HIỆU ỨNG THU NHẬP.
+@Addition rule
+- (Econ) Quy tắc cộng.
+= Một quy tắc để xác định ĐẠO HÀM của một hàm đối với một biến số, trong đó hàm này bao gồm phép cộng tuyến tính của 2 hàm riêng biệt hoặc nhiều hơn trở lên của các biến.
+@Additive utility function
+- (Econ) Hàm thoả dụng phụ trợ.
+= Một dạng hàm thoả dụng : U=Ua +Ub+Uc . Trong đó U là độ thoả dụng a,b,c ;a hàng hoá thay thế trong các hệ thống chi tiêu tuyến tính, các nhóm hàng hoá này không thể thay thế cho nhau.
+@Address principle
+- (Econ) Nguyên lý địa chỉ.
+= Trong nền kinh tế KẾ HOẠCH HOÁ  như ở Liên Xô trước đây, mỗi mục tiêu chiến lược đều có một tổ chức hoặc địa chỉ chịu trách nhiệm thực hiện mục tiêu đó
+@Adjustable peg regime
+- (Econ) Chế độ điều chỉnh hạn chế.
+@Adjustable peg system
+- (Econ) Hệ thống neo tỷ giá hối đoái có thể điều chỉnh.
+= Hệ thống này được quỹ tiền tệ quốc tế (IMF) đưa ra tại hội nghị Bretton Woods và đề cập đến một bộ TỶ GIÁ HỐI ĐOÁI CỐ ĐỊNH  hay được neo mà về cơ bản là cố định nhưng cho phép điều chỉnh hoặc thay đổi với lượng nhỏ theo cả 2 hướng.
+@Adjustment cost
+- (Econ) Chi phí điều chỉnh sản xuất.
+@Adjustment lag
+- (Econ) Độ trễ điều chỉnh.
+= Thời gian cần thiết để một biến, ví dụ như DUNG LƯỢNG VỐN, điều chỉnh theo những thay đổi trong các yếu tố quyết định của nó. (Xem PARTIAL ADJUSTMENT, CAPITAL STOCK ADJUSTMENT PRINCIPLE).
+@Adjustment process
+- (Econ) Quá trình điều chỉnh
+= Thuật ngữ chung chỉ các cơ chế điều chỉnh hoạt động trong nền kinh tế thế giới nhằm loại bỏ những mất cân đối trong thanh toán với nước ngoài. Những cơ chế liên quan đến BẢN VỊ VÀNG, CHẾ ĐỘ BẢN VỊ HỐI ĐOÁI, THỪA SỐ NGOẠI THƯƠNG, TỶ GIÁ HỐI ĐOÁI THẢ NỔI.
+@Administered prices
+- (Econ) Các mức giá bị quản chế.
+=  Các mức giá được hình thành do quyết định có ý thức của cá nhân hay hãng nào đó chứ không phải do các yếu tố tác động của thị trường.
+@Administrative lag
+- (Econ) Độ trễ do hành chính
+= Một trong những độ trễ về thời gian ảnh hưởng đến hiệu lực của một CHÍNH SÁCH TIỀN TỆ. Đó là khoảng thời gian từ lúc các cơ quan có thẩm quyền nhận thấy cần có hành động đến khi tiến hành thực sự hành động đó.
+@Advalorem tax
+- (Econ) Thuế theo giá trị.
+= Một loại thuế dựa trên giá trị giao dịch. Đó thường là tỷ lệ phần trăm khi giá bán lẻ, sỉ, hay quá trình sản xuất, và là dạng phổ biến của THUẾ DOANH THU.
+@Advance
+- (Econ) Tiền ứng trước.
+= Một khoản vay hoặc dựa vào luồng tiền đã xác định hoặc dự kiến. (Xem BANK LOAN).
+@Advance Corporation Tax (ACT)
+- (Econ) Thuế doanh nghiệp ứng trước.
+= Là một khoản ứng trước THUẾ DOANH NGHIỆP và được ghi vào tài khoản bên nợ của doanh nghiệp đối với loại thuế này. Đó là một phương tiện để có thể thu thuế doanh nghiệp sớm hơn.
+@Advance refunding
+- (Econ) Hoàn trả trước.
+=  KỸ THUẬT QUẢN LÝ CÔNG NỢ mới được chính phủ liên bang, các chính quyền địa phương và tiểu bang của Mỹ sử dụng.
+@Advanced countries
+- (Econ) Các nước phát triển, các nước đi đầu.
+@Adverse balance
+- (Econ) Cán cân thâm hụt.
+= THÂM HỤT CÁN CÂN THANH TOÁN.
+@Adverse selection
+- (Econ) Lựa chọn trái ý; Lựa chọn theo hướng bất lợi.
+= Vấn đề gặp phải trong nghành bảo hiểm.
+@Advertising
+- (Econ) Quảng cáo.
+= Hoạt động của một hãng nhằm thúc đẩy việc bán sản phẩm của mình, mục tiêu chính là tăng số lượng người tiêu dùng thích những sản phẩm của hãng hơn những hãng khác.
+@Advertising - sale ratio
+- (Econ) Tỷ lệ doanh số-quảng cáo.
+= Tỷ lệ chi phí quảng cáo của các hãng trên tổng doanh thu bán hàng.
+@AFL-CIO
+- (Econ) Xem AMERICAN FEDERATION OF LABOR.
+@Age-earning profile
+- (Econ) Biểu quan hệ thu nhập theo tuổi
+= Mối quan hệ giữa thu nhập và tuổi. Biểu diễn quá trình thu nhập theo tuổi đơn giản nhất là một đường nằm ngang đi từ số 0 đến độ tuổi rời trường học, khoảng cách của các bước được quyết định bởi trình độ học vấn.
+@Agency for International Development
+- (Econ) Cơ quan phát triển quốc tế.
+= Xem INTERNATIONAL DEVELOPMENT CO-OPERATION AGENCY
+@Agency shop
+- (Econ) Nghiệp đoàn.
+= Yêu cầu công nhân tham gia tuyển dụng không phải gia nhập công đoàn nhưng phải đóng công đoàn phí.
+@Agglomeration economies
+- (Econ) Tính kinh tế nhờ kết khối.
+= Các khoản tiết kiệm chi phí trong một hoạt động kinh tế do các xí nghiệp hay các hoạt động gần vị trí của nhau.
+@Aggregate concentration
+- (Econ) Sự tập trung gộp.
+= Biểu đồ chi tiết về SỐ LƯỢNG CỦA SẢN PHẨM QUỐC GIA RÒNG có thể được mua ở mỗi mức giá chung.
+@Adverse supply shock
+- (Econ) Cú sốc cung bất lợi.
+@Aggregate demand
+- (Econ) Cầu gộp; Tổng cầu
+@Aggregate demand curve
+- (Econ) Đường cầu gộp; Đường tổng cầu
+@Aggregate demand shedule
+- (Econ) Biểu cầu gộp; Biểu tổng cầu
+@Aggregate expenditure
+- (Econ) Chi tiêu gộp.
+= Là tổng số chi tiêu danh nghĩa cho hàng hoá và dịch vụ trong một nền kinh tế.
+@Aggregate income
+- (Econ) Thu nhập gộp; Tổng thu nhập
+= Xem INTERNATION INCOME
+@Aggregate output
+- (Econ) Sản lượng gộp.
+= Xem INTERNATION INCOME
+@Aggregate production function
+- (Econ) Hàm sản xuất gộp.
+= Mối quan hệ giữa lưu lượng sản lượng trong toàn nền kinh tế (Y), tổng lực lượng lao động (L) và tổng lượng vốn (K), các đầu vào tham gia trực tiếp vào sản xuất. Hàm này có thể được mở rộng để bao hàm cả ĐẤT ĐAI và CÔNG NGHỆ VỚI danh nghĩa là đầu vào.
+@Aggregate supply curve
+- (Econ) Đường cung gộp; Đường tổng cung.
+@Aggregation problem
+- (Econ) Vấn đề về phép gộp.
+= Vấn đề  xác định hành vi kinh tế vĩ mô có thể đạt dự báo từ hành vi của các đơn vị kinh tế vi mô nổi bật.
+@Agrarian revolution
+- (Econ) Cách mạng nông nghiêp.
+= Tình huống trong đó sản lượng nông nghiệp tăng lên rõ rệt nhờ những thay đổi về tổ chức và kỹ thuật.
+@Agricultural earnings
+- (Econ) Các khoản thu từ nông nghệp.
+= Khoản thu từ nông nghiệp thường khó định lượng, đặc biệt trong nền nông nghiệp tự túc hoặc ở những nơi thu nhập đưpực trả bằng hiện vật nghĩa là nông sản.
+@Agricultural exports
+- (Econ) Nông sản xuất khẩu
+= Các sản phẩm nông nghiệp làm ra để xuất khẩu chứ không phải cho mục đích tự cung tự cấp hay cho thị trường trong nước
+@Agricultural lag
+- (Econ) Đỗ trễ của nông nghiệp
+= Là thời gian giữa sản xuất nông nghiệp thực tế và sản xuất nông nghiệp tiềm năng Ở CÁC NƯỚC ĐANG PHÁT TRIỂN.
+@Agricultural livies
+- (Econ) Thuế nông nghiệp.
+= Xem EC Agricultural levies.
+@Agricultural reform
+- (Econ) Cải cách nông nghiệp.
+= Một trong những hạn chế đối với PHÁT TRIỂN KINH TẾ là việc sử dụng các biện pháp sơ khai, không hiệu quả trong nông nghiệp. Các ngành ở nông thôn ở những nước kém phát triển cung cấp thực phẩm ngày ngày càng tăng cho dân cư thành phố. Các phương pháp cũ, thô sơ thì kém hiệu quả , còn kỹ thuật cơ giới hoá hiện đại thì không thích hợp. Vì vậy một dạng cải cách là áp dụng loại công nghệ nông nghiệp thích hợp.
+@Agricultural sector
+- (Econ) Khu vực nông nghiệp.
+= Khu vực hoặc một bộ phận dân số tham gia vào nghề nông, cung cấp lương thực, nguyên liệu thô như bông, gỗ cho tiêu dùng trong nước và xuất khẩu.
+@Agricultural Stabilization and Conservation Service
+- (Econ) ASCS - Nha ổn định và bảo tồn nông nghiệp.
+=  Cơ quan quản lý địa phương của CÔNG TY TÍN DỤNG HÀNG HOÁ CỦA MỸ
+@Agricultural subsidies
+- (Econ) Khoản trợ cấp nông nghiệp.
+= Khoản tiền trả cho nông dân với mục đích khuyến khích sản xuất lương thực thực phẩm và trợ giúp thu nhập của nông dân.
+@Agricultural Wage Boards
+- (Econ) Các hội đồng tiền công trong nông nghiệp.
+= Các cơ quan do pháp luật quy định mức lương tối thiểu  đối với những người làm nông nghiệp ở Anh, xứ Wales và Scotland cùng một cách chính thức như các hội đồng tiền công.
+@Aid
+- (Econ) Viện trợ
+= Xem FOREIGN AID.
+@Aitken estimator
+- (Econ) Ước lượng số Aitken.
+= Xem Generalized Least Squares.
+@Alienation
+- (Econ) Sự tha hoá
+= Thuật ngữ được C.MÁC sử dụng để miêu tả tình trạng tinh thần của công nhân trong một xã hôi tư bản.
+@Allais Maurice (1911)
+- (Econ) Nhà kinh tế học người Pháp đã được nhận giải thưởng Nobel về kinh tế học năm 1988. Allais là một kỹ sư, bằng cách tự học về kinh tế chủ yếu trong thời kỳ Đức xâm chiếm Pháp suốt Chiến tranh thế giới thứ 2, khi đó ông ít được tiếp cận với các ấn phẩm nước ngoài. Mặc dù vậy, ông đã thành công trong việc tự xây dựng được những nền tảng to lớn về lý thuyết CÂN BẰNG TỔNG THỂ HIỆN ĐẠI và KINH TẾ HỌC PHÚC LỢI. Ông được coi là người cha đẻ và người dẫn đầu trí tuệ của trường phái biên học ở Pháp, đã sản sinh ra nhiều nhà kinh tế học nổi tiếng như Debreu. Mặc cho xu hướng thiên về lý thuyết mạnh mẽ, Allais vẫn cho rằng các mô hình lý thuyết được xây dựng để trả lời những câu hỏi thực tiễn và nên được kiểm nghiệm qua thực tế. Thành tích của ông được nhận giải Nobel chủ yếu là thành tựu nghiên cứu sơ bản về kinh tế học và đóng góp cơ bản của ông là các công thức toán học vĩ đại về cân bằng thị trường và tính chất hiệu quả của các thị trường. Nghiên cứu của ông về phân tích động thái vĩ mô tiền tệ và lý thuyết rủi ro cũng rất nổi bật. Mãi đến khi kiểm tra thực nghiệm về học thuyết độ thoả dụng kỳ vọng của VON NEUMANN-MORGENSTERN ông mới được nổi tiếng, thực nghiệm đó có tiêu đề là nghịch lý Allais. Ông đã chỉ ra rằng sự lựa chọn của các cá nhân khi được yêu cầu sắp xếp một cặp dự án rủi ro đều sắp xếp một cách hệ thống và lặp lại (như các nghiên cứu khác đã lựa chọn) mâu thuẫn với dự đoán tối đa hoá độ thoả dụng dự kiến. Các công trình của ông là Nghiên cứu về nguyên lý Kinh tế -1943 (sau còn được tái bản với tiêu đề Xử lý Kinh tế đơn thuần-1952) và Kinh tế và lợi nhuận(1947).
+@Allen , Sir roy George Douglas(1906-1983)
+- (Econ) 1906-Ông dạy ở trường kinh tế London từ năm 1928, làm việc ở bộ Tài Chính Anh và năm 1944 được phong là giáo sư thống kê học tại trường Đại học London. Các ấn phẩm chủ yếu của ông bao gồm: Phân tích toán học cho các nhà kinh tế học(1938); Thống kê học cho các nhà kinh tế học(1949); Kinh tế học thuộc toán (1956); Học thuyết kinh tế vĩ mô - Xử lý bằng toán học (1967). Năm 1934 ông có đóng góp to lớn cho học thuyết người tiêu dùng khi ông cho xuất bản một bài báo cùng với J.R.HICKS, bằng cách sử dụng các đường bàng quan, bài báo chỉ ra rằng để giải thích sự dốc xuống dưới của đường cầu sẽ là việc giả định đầy đủ rằng hàng hoá có thể được phân loại theo thứ tự.
+@Allocate
+- (Econ) Phân bổ, ấn định
+@Allocation funtion
+- (Econ) Chức năng phân bổ
+= Mật bộ phận của chính sách chi tiêu và thuế của chính phủ liên quan tới việc chi phối cung cấp hàng hoá và dịch trong một nền kinh tế.
+@Allocative efficiency
+- (Econ) Hiệu quả phân bổ.
+= Việ sản xuất ra tổ hợp sản phẩm tốt nhất hay tối ưu các sản phẩm bằng các kết hợp hiệu qủa nhất các đầu vào.
+@Allowances and expences for corporation tax
+- (Econ) Khấu trừ và chi phí đôí với thuế công ty.
+= Những chi phí cho phép nhất định khi được khấu trừ từ doanh thu của công ty là phần thu nhập bị đánh thuế.
+@Allowances and expencess for income tax
+- (Econ) Khấu trừ và chi phí đôí với thuế thu nhập.
+= Hệ thống thuế thu nhập bao gồm hệ thống các khoản khấu trừ và chi phí. Chúng được trừ từ tổng thu nhập để xác định chịu thuế.
+@Almon lag
+- (Econ) Độ trễ Almon.
+= Một kiểu trễ phân phối trong đó trọng số các giá trị liên tục của biến số trễ theo sau một do một đa thức gây ra.
+@Alpha coeficient
+- (Econ) Hệ số Alpha
+= Xem CAPITAL ASSET PRINCING MODEL.
+@Alternative technology
+- (Econ) Công nghệ thay thế.
+= Thuật ngữ dùng để chỉ kiểu công nghệ có một vài hoặc tất cả thuộc tính sau: sử dụng tối thiểu tài nguyên không tái tạo được, gây ô nhiễm thấp nhất đối với môi trường, tự cấp tự túc theo vùng hoặc theo địa phương không có sự bóc lột hoặc cô lập các cá nhân. (Xem INTERMEDIATE TECHNOLOGY, APPROPIATE TECHNOLOGY, INTERMEDIATE TECHNOLOGY DEVELOPMENT GROUP).
+@Altruism
+- (Econ) Lòng vị tha.
+= Sự quan tâm tới phúc lợi của người khác.
+@Amalgamation
+- (Econ) Sự hợp nhất.
+= Xem MERGER.
+@America Depository Receipt
+- (Econ) ADR - Phiếu gửi tiền Mỹ.
+= Chứng khoán mà một ngân hàng Mỹ thường phát hành cho các cư dân Mỹ, dựa vào việc cơ quan NẮM GIỮ CÁC CỔ PHIẾU thường của một công ty ngoại quốc. Người giữ ADR có quyền hưởng cổ tức của công ty ngoại quốc. Bản thân ADR có thể trao đổi được. Ưu điểm của việc làm này là THỊ TRƯỜNG VỐN được mở rộng đối với các công ty không phải của Mỹ trong khi đó có thể đáp ứng được mong muốn của người Mỹ về một loại cổ phiếu nặng để trao đổi. (Một ADR có thể được đóng trọn gói để có quyền với nhiều chứng khoán thường).
+@America Federation of Labuor
+- (Econ) ALF - Liên đoàn lao động Mỹ.
+= Được thành lập trong thời kỳ từ năm 1881 đến 1886, liên đoàn này tập trung các công đoàn lớn ở Mỹ lại với nhau.
+@America selling price
+- (Econ) Giá bán kiểu Mỹ.
+= Đây là một hệ thống trong đó thuế quan của Mỹ đối với một số mặt hàng nhập khẩu được tính trên cơ sở giá trị của mặt hàng thay thế trong nước so với giá trị của hàng nhập khẩu. (Xem GENERAL AGREEMENT ON TARIFFS AND TRADE).
+@American Stock Exchange
+- (Econ) Sở giao dịch chứng khoán Mỹ (ASE hay AMEX).
+= SỞ GIAO DỊCH có tổ chức lớn thứ hai ở Mỹ, tiến hành mua bán gần 1/10 tổng số cổ phiếu được mua bán ở Mỹ. Sở giao dịch là cơ sở vật chất cho các giao dịch CHỨNG KHOÁN diễn ra. Sở giao dịch chứng kháon Mỹ đã có từ lâu và bắt đầu từ khi những người môi giới gặp nhau ở ngoài phố để mua bán các cổ phần chứng khoán. Đó là nguồn gốc của một cái tên khác của nó :Sở giao dịch lề đường. Tín hiệu bằng tay được dùng đẻ thông báo cho nhân viên giao dịch. Đến tận thế kỷ XX, Sở giao dịch chứng khoán Mỹ mới chuyển vào phòng.(Xem STOCK MARKET).
+@Amortization
+- (Econ) Chi trả từng kỳ.
+= Phương thức thanh toán nợ trên cơ sở trả dần. Thỉnh thoảng chi trả từng kỳ được sử dụng như thuật ngữ thay thế cho khấu hao.
+@Amplitude
+- (Econ) Biên độ
+= Thuật ngữ sử dụng trong một CHU KỲ KINH DOANH để miêu tả khoảng cách giữa điểm cực đại và cực tiểu của bất kỳ chu kỳ nào.
+@Amtorg
+- (Econ) Cơ quan mậu dịch thường trú của Liên Xô.
+= Cơ quan ngoại thương của Liên Xô trước đây. CÓ cơ quan chi nhánh tại nhiều nước.
+@Analysis of variance
+- (Econ) ANOVA - Phân tích phương sai
+= Phân chia độ biến động tổng thể trong một biến số phụ thuộc (với độ biến động tổng thể được định nghĩa là tổng của bình phương của các độ lệch so với trung bình của biến) thành các cấu thành được tính cho biến động của các biến số riêng hay NHÓM BIẾn GIẢI THÍCH  và những biến không được giải thích hay biến động DƯ/
+@Anarchy
+- (Econ) Tình trạng vô chính phủ.
+= Học thuyết cho rằng các sự kiện chính trị và xã hội của các cá nhân không nên bị kìm hãm bởi bất cứ sự can thiệp nào của chính phủ. Đó là một quan điểm cực đoan hơn quan điểm chủ nghĩa tự do, vẫn còn cho phép sử dụng quyền lực độc tài để điều hành các hoạt động mà các cá nhân không thể tự hoàn thành một cách có hiệu quả được.
+@Allowance
+- (Econ) Phần tiền trợ cấp.
+@Anchor argument
+- (Econ) Luận điểm về cái neo.
+= Một trong các vấn đề liên quan đến biến  động tự do của TỶ GIÁ HỐI ĐOÁI  là luận điểm cho răng tỷ giá hối đoái tự do sẽ làm giảm thâm hụt với bên ngoài và vì vậy tước đoạt của các cơ quan tiền tệ cái neo (chính trị) nhằm hạn chế tiền tệ mở rộng. Đối lập với luận điểm này là việc bỏ chiếc neo tiền tệ của tỷ giá hối đoái cố định là một việc tốt vì nó chỉ cảc trở những nhà hoạch định chính sách  mới được bầu bằng cách không cho họ hoàn toàn tự do với CHÍNH SÁCH TIỀN TỆ.
+@Animal spirits
+- (Econ) Tinh thần bầy đàn; Tâm lý hùa theo
+= Một cách ký giải cho ĐẦU TƯ  phản bác các mô hình toán học vì chúng ít tác dụng. Thay vào đó là phân tích đầu tư băt nguồn từ thuộc tính làm theo của các chủ doanh nghiệp. Cụm thuật ngữ này được J.M.Keynes sử dụng lần đầu tiên trong LÝ THUYẾT TỔNG QUÁT VỀ VIỆC LÀM, LÃI SUẤT VÀ TIỀN (1936). Nhưng từ đó đã được Joan Robinson phổ biến rộng rãi.
+@Analysis (stats)
+- (Econ) Phân tích.
+= Risk analysis: phân tích rủi ro. Scenario analysis:Phân tích kịch bản. Sensitivity analysis: Phân tích độ nhạy.
+@Annecy Round
+- (Econ) Vòng đàm phán Annecy.
+= Vòng thứ hai (1949) của cuộc đàm phán thương mại theo HIỆP ƯỚC CHUNG VỀ THUẾ QUAN VÀ MẬU DỊCH (GATT).
+@Annual allowances
+- (Econ) Miễn thuế hàng năm.
+= Xem CAPITAL ALLOWANCE.
+@Annual capital charge
+- (Econ) Chi phí vốn hàng năm.
+= Một kỹ thuật thẩm định dự án vốn có sử dụng chiết khấu và công nhân rằng việc sử dụng vốn đòi hỏi trả tiền lãi đối với lượng vốn sử dụng và khấu hao.
+@Annuity
+- (Econ) Niên kim.
+= Lời hứa trả một khoản nào đó mỗi thời kỳ trong một số các thời kỳ mà khoản trả cho mỗi thời kỳ là cố định.
+@Annuity market
+- (Econ) Thị trường niên kim.
+@Anomaliess pay
+- (Econ) Tiền trả công bất thường.
+= Sự ngắt quãng trong mối liên kết chính thức giữa mức lương của các nhóm thương lượng khác nhau nhờ áp dụng CHÍNH SÁCH THU NHẬP.
+@Anticipated inflation
+- (Econ) Lạm phát được dự tính.
+= Xem EXPECTED INFLATION.
+@Anti-trust
+- (Econ) Chống lũng đoạn.
+= Một cụm thuật ngữ của Mỹ chỉ hệ thống pháp luật nhằm kiểm soát sự tăng trưởng quyền lực đối với thị trường của các hãng. Cụm thuật ngữ này không chỉ liên quan tới chính sách chống độc quyền mà cả các hoạt động kìm hãm của các hãng riêng lẻ, các nhóm công ty hợp nhất (Tờrớt) và nhóm các công ty cộng tác (Catel).
+@Appreciation
+- (Econ) Sự tăng giá trị.
+= Tăng về giá trị của tài sản, đối lập lại là sự mất giá trị. Một tài sản có thể tăng giá trị bởi vì giá của nó (và do giá thị trường của nó) tăng do lạm phát hay thay đổi về cầu tài sản đó dẫn tới mức độ khan hiếm. (Xem MONEY APPRECIATION).
+@Apprenticeship
+- (Econ) Học việc.
+= Xem GENERAL TRAINING.
+@Anti-export bias
+- (Econ) Thiên lệch / Định kiến chống xuất khẩu.
+@Appropriate products
+- (Econ) Các sản phẩm thích hợp.
+= Nói chung được dùng để chỉ những sản phẩm thích hợp cho sử dụng ở các nước đang phát triển.
+@Appropriate technology
+- (Econ) Công nghệ thích hợp.
+= Việc ứng dụng một công nghệ thích hợp với yếu tố sẵn có. (Xem ALTERNATIVE TECHNOLOGY. INTERMEDIATE TECHNOLOGY, INTERMEDIATE TECHNOLOGY DEVELOPMENT GROUP).
+@Appropriation account
+- (Econ) Tài khoản phân phối lãi.
+= Các doanh nghiệp duy trì các tài khoản này cho thấy lợi nhuận sau khi trả thuế được phân phối hay sử dụng như thế nào. (Xem ALLOWANCES AND EXPENSES CORPORATION TAX, ALLOWANCES AND EXPENSES INCOME TAX, TAXABLE INCOME.
+@Approval voting
+- (Econ) Bỏ phiếu tán thành; bỏ phiếu phê chuẩn.
+= Một dạng ra quyết định trong đó mỗi cá nhân bỏ phiếu cho một nhóm phương án mà người đó tán thành. (Xem BORDA COUNT, CONDORCET CRITERION, SOCIAL DECISION RULE. SOCIAL WELFARE FUNCTION).
+@Apriori
+- (Econ) Tiên nghiệm.
+= Một cụm thuật ngữ miêu tả quá trình suy luận phán đoán từ giả thuyết ban đầu cho đến kết luận. Phương pháp này có thể đối lập với cách tiếp cận dựa trên những cứ liệu rút ra từ thực tế quan sát.
+@Aquinas St Thomas
+- (Econ) (1225-1274)
+= Một học giả người Ý, ông là người có đóng góp chính vào tư tưởng kinh tế của hàn lâm viện. Xét về kinh tế học, ông thừa nhận phần lớn học thuyết của Aristotle, bao gồm khái niệm về giá công bằng. Ông cũng phân biệt GIÁ CẢ và GIÁ TRỊ, đối tượng của rất nhiêù cách diễn giải khác nhau. Ý tưởng về giá trị hay giá công bằng không khác hơn giá thông thường (cạnh tranh) vốn có ở một mặt hàng và giá được đưa ra vượt quá mức giá này là sự vi phạm quy tắc đạo đức. Thương mại vốn xấu xa nhưng được bào chữa bởi HÀNG HÓA CÔNG CỘNG. Tương tự, của cải tài sản và hành động của chính phủ được biện hộ bởi hàng hoá công cộng. Cho vay nặng lãi bị chỉ trích là khoản thu cho việc sử dụng tiền mà không có giá trị sử dụng. Những đóng góp chủ yếu của ông đối với lịch sử tư tưởng kinh tế được bao quát trong cuốn SUMMA THEOLOGICA của ông.
+@Arbitrage
+- (Econ) Kinh doanh dựa vào chênh lệch giá; buôn chứng khoán
+= Một nghiệp vụ bao gồm việc mua bán một tài sản, ví dụ một hàng hoá hay tiền tệ ở hai hay nhiều thị trường, giữa chúng có sự khác nhau hay chênh lệch về giá.
+@Arbitration
+- (Econ) Trọng tài
+= Sự can thiệp của một bên thứ ba vào một TRANH CHẤP VỀ CÔNG NGHIỆP theo yêu cầu của các bên tranh cãi và đưa ra những gợi ý cho việc giải quyết tranh chấp, sau đó sẽ rằng buộc cả hai bên (Xem CONCILI-ATION, FINAL OFFER ARBITRATION).
+@Arc elasticity of demand
+- (Econ) Độ co giãn hình cung của cầu
+= Xem ELASTICITY OF DEMAND
+@ARCH
+- (Econ) Kiểm nghiệm ARCH.
+= Để chỉ phương sai của sai số thay đổi điều kiện tự nhiên giảm, là một trắc nghiệm để phân biệt giữa tương quan chuỗi trong điều kiện xáo trộn và hiệu ứng nảy sinh từ sự biến đổi của xáo động được gọi là hiệu ứng ARCH.
+@ARCH effect
+- (Econ) Hiệu ứng ARCH.
+=  Xem ARCH.
+@Aristotle
+- (Econ) (384-322 BC)-Aristotle (384-322 trước công nguyên)
+= Nhà triết học HY LẠP, các công trình của ông bao gồm cả các vấn đề kinh tế và trong những bài viết của ông có thể thấy những phân tích về sản xuất, phân phối và trao đổi. Trong phân tích về trao đổi, ông phân biệt giữa giá trị sử dụng và giá trị trao đổi
+@Arithmetic mean
+- (Econ) Trung bình số học.
+= Xem MEAN.
+@Arithmetic progression
+- (Econ) Cấp số cộng.
+= Một dãy số hay những biểu thức đại sổ trong đó mỗi thàn phần mang một mối liên hệ cộng thêm đối với mỗi thành phần đứng trước và sau nó.
+@Arrow.KennethJ
+- (Econ) (1921-).
+= Nhà kinh tế học người Mỹ đồng giải Nobel về kinh tế học với huân tước John Hicks năm 1972. Ông được biết đến nhiều nhất do công trình về các hệ thống CÂN BẰNG TỔNG QUÁT và trình bày về các điều kiện toán học cần thiết cho một hệ thống như vậy để được nghiệm có ý nghĩa về kinh tế. Ông cũng có công trình tiên phong về việc ra quyết định trong những điều kiện không chắc chắn. Trong cuốn SỰ LỰA CHỌN XÃ HỘI VÀ CÁC GIÁ TRỊ CÁ NHÂN (1951), ông trình bày kinh tế học phúc lợi với một tình trạng tiến thoái lưỡng nan, khi dựa trên cơ sở những giả định đảm bảo sự tự chủ của người tiêu dùng cộng thêm sự hợp lý, ông chứng minh rằng không thể xác định được sự xếp hạng xã hội về các phương án lựa chọn tương ứng với sự xếp hạng của các cá nhân, và như vậy cũng không thể đưa ra được CHỨC NĂNG PHÚC LỢI XÃ HỘI . Chức năng này liên quan một cách tích cực tới lựa chọn cá nhân, xã hội không thể quyết định nó muốn gì. Arrow cũng có công trong việc đưa vào học thuyết tăng trưởng giả thuyết học qua hành với tư cách là một nguồn tăng năng suất. Các ấn phẩm chính của ông là : Nghiên cứu trong lý thuyết toán học về dự trữ và sản xuất (1958); Sự lựa chọn xã hội và các giá trị cá nhân (1951); Các tiểu luận về lý thuyết chịu rủi ro (1970); Phân tích dựa trên tổng hợp (với F.H.Hahn) (1971).
+@A shares
+- (Econ) Cổ phiếu A.(Cổ phiếu hưởng lãi sau).
+= Xem FINANCIAL CAPITAL.
+@Asiab Development Bank
+- (Econ) Ngân hàng phát triển châu Á.
+= Uỷ ban kinh tế châu Á và Viễn Đông của Liên hợp quốc khuyến cáo thành lập ngân hàng này để khuyến khích tăng trưởng kinh tế và hợp tác châu Á và Viễn Đông, để thúc đẩy kinh tế ở các nước đang phát triển trong vùng. Ngân hàng phát triển châu Á được thành lập năm 1966. Nguồn vốn ban đầu là nhờ đóng góp của các nước trong khu vực với sự giúp đỡ của Mỹ, CHLB Đức, Anh và Canada.
+@Assessable Income or profit
+- (Econ) Thu nhập hoặc lợi nhuận chịu thuế.
+= Xem TAXABLE INCOME, ALLOWANCES AND EXPENSES FOR CORPORATION TAX, ALLOWANCES AND EXPENSES FOR INCOME TAX.
+@Assessable profit
+- (Econ) Lợi nhuận chịu thuế.
+= Xem TAXABLE INCOME.
+@Asset
+- (Econ) Tài sản.
+= Một thực thể có giá trị thị trương hoặc giá trị trao đổi, và là bộ phận cấu thành CỦA CẢI hay tài sản của chủ sở hữu.
+@Asset stripping
+- (Econ) Tước đoạt tài sản.
+= Việc một công ty thôn tính bán những tài sản của CÔNG TY NẠN NHÂN sau khi thu mua. Điều này có thể thực hiện để có mức lợi nhuận đáng kể khi tài sản đã bị đánh giá thấp ở SỎ GIAO DỊCH CHỨNG KHOÁN.
+@Assignment problem
+- (Econ) Bài toán kết nối.
+= Tên được đặt cho câu hỏi liệu việc kết nối một biến chính sách, ví dụ CHÍNH SÁCH TIỀN TỆ một cách duy nhất để đạt được một mục tiêu chính sách, ví dụ cán cân thanh toán quốc tế dưới các chế độ về tỷ giá HỐI ĐOÁI có thể được hay không. Kết luận là không thể làm được như vậy.
+@Assisted areas
+- (Econ) Các vùng được hỗ trợ
+= Các vùng trong nước mà ở đó hoạt động kinh tế hoạt động kinh tế được hỗ trợ bởi chính sách chi tiêu và thuế của chính phủ. Xem DEPRESSED AREAS, REGIONAL EMPLOYMENT PREMIUM, REGIONAL DEVELOPMENT GRANT.
+@Association of International Bond Dealers
+- (Econ) Hiệp hội những người buôn bán trái khoán quốc tế.
+= Cơ quan thành lập năm 1969, thu thập và cho niêm yết lợi nhuận và báo giá thị trường hiện hành với các loại phát hành của TRÁI KHOÁN CHÂU ÂU.
+@Association of South East Asian Nations (ASEAN)
+- (Econ) Hiệp hội các nước Đông nam Á.
+= Hiệp hội được các Bộ trưởng ngoại giao Indonesia, Malaysia, Phillipines, Singapore và Thái Lan thành lập năm 1967. Mục đích chung của hiệp hội là thúc đẩy tăng trưởng kinh tế, tiến bộ xã hội và phát triển văn hoá ở khu vực Đông Nam Á.
+@Assurance
+- (Econ) Bảo hiểm xác định
+= Một loại bảo hiểm liên quan đến tình huống trong đó bảo hiểm cho sự kiện không thể tránh khỏi. Điều này có thể do hợp đồng liên quan tới việc trả một khoản xác định vào một ngày nào đó hoặc là vì cái chết của người được bảo hiểm.
+@Asset stocks and services flows
+- (Econ) Dữ trữ tài sản và luồng dịch vụ.
+@Asymmetric infornation
+- (Econ) Thông tin bất đối xứng; Thông tin không tương xứng.
+= Sự khác nhau về thông tin mà các bên tham gia giao dịch trên thị trường có được. Xem INSIDER - OUTSIDER MODELS.
+@Asymptote
+- (Econ) Đường tiệm cận.
+= Giá trị mà biến phụ thuộc của một hàm tiến đến khi biến tự do trở nên rất lớn hoặc rất nhỏ.
+@Asymptotic distribution
+- (Econ) Phân phối tiệm cận.
+= PHÂN PHÔI XÁC XUẤT mà một biến THỐNG KÊ hướng tới khi kích thước của mẫu tiến tới vô cùng. Khái niệm rất hữu ích trong đánh giá các đặc thù của chọn mẫu trong kinh tế lượng.
+@Atomistic competition
+- (Econ) Cạnh tranh độc lập.
+= Một cơ cấu thị trường trong đó số lượng các hãng rất lớn, do đó mỗi hãng cạnh tranh một cách độc lập. (Xem PERFECT COMPETITION).
+@Attribute
+- (Econ) Thuộc tính.
+= Một nét đặc trưng hay thuộc tính của hàng hoá. Xem CHARACTERISICS THEORY.
+@Auctioneer
+- (Econ) Người bán đấu giá.
+= Một thuật ngữ chung chỉ nhân viên bán đấu giá, tại đó những người mua tương lai đấu với nhau bằng cách đặt giá, vật đấu giá sẽ thuộc về người nào đặt giá cao nhất.
+@Auction markets
+- (Econ) Các thị trường đấu giá.
+= Một thị trường có tổ chức tại đó giá cả được điều chỉnh liên tục theo biến đổi của cung và cầu. Nét đặc trưng cơ bản của các thị trường đấu giá là các hạng mục hàng hoá được chuẩn hoá, mua bán vô danh và đủ số lượng để đảm bảo hành vi cạnh tranh.
+@Auctions
+- (Econ) Đấu giá.
+= Một kiểu thị trường trong đó người mua tiềm tàng đặt giá cho hàng hoá chứ không phải đơn thuần trả theo.
+@Augmented Dickey Fuller test
+- (Econ) ADF - Kiểm định Dickey Fuller bổ sung.
+= Kiểm định này là một phiên bản của kiểm định Dickey Fuller đối với một đơn vị gốc khi tiêu thức xáo động là tương quan theo chuỗi sau khi đã xem xét sự khác nhau trong quá trình tĩnh khác (DSP).
+@Augmented Phillips curve
+- (Econ) Đường Phillips bổ sung.
+= Việc đưa biến giá cả vào đường Phillips gốc đã dịch chuyển học thuyết một các hiệu quả từ một giải thích về tiền công bằng tiền thành cách giải thích theo nghĩa thực tế.
+@Austrian school
+- (Econ) Trường phái kinh tế Áo.
+= Tên trường phái này được sử dụng để chỉ các nhà kinh tế học từ Menger, Wieser và Bohm-Bawerk trở đi, họ phần lớn nghiên cứu ở Viên và theo một kiểu phân tích riêng biệt.
+@Autarky
+- (Econ) Tự cung tự cấp.
+= Tình trạng trong đó một nước tự tách khỏi thương mại quốc tế bằng những hạn chế như thuế quan nhằm tự túc, thường do nguyên nhân làm việc hoặc chính trị.
+@Autarky economy
+- (Econ) Nền kinh tế tự cung tự cấp
+@Autocorrelation
+- (Econ) Sự tự tương quan.
+= Xem SERIAL CORRELATION.
+@Automatic stabilizers
+- (Econ) Các biện pháp ổn định tự động.
+= Các mối quan hệ làm giảm biên độ của biến động chu kỳ trong một nền kinh tế mà không cần hành động trực tiếp của chính phủ.
+@Automation
+- (Econ) Tự động hoá.
+= Trong khi được sử dụng theo nhiều cách, cụm thuật ngữ tự động hoá nói chung được coi là đồng nghĩa với việc thay thế lao động bằng quá trình tự động.
+@Autonomous expenditure
+- (Econ) Khoản chi tiêu tự định.
+= Các khoản chi tiêu được coi là độc lập với mức thu nhập.
+@Induced expenditure
+- (Econ) Khoản chi tiêu phụ thuộc (vào mức thu nhập).
+@Autonomous consumption
+- (Econ) Tiêu dùng tự định.
+@Autonomous investment
+- (Econ) Đầu tư tự định.
+@Autonomous investment demand
+- (Econ) Nhu cầu đầu tư tự định.
+@Autonomous transactions
+- (Econ) Giao dịch tự định
+= Cụm thuật ngữ này được dùng trong học thuyết về CÁN CÂN THANH TOÁN để xác định những loại giao dịch diễn ra tự phát vì lý do lợi nhuận từ phía các hãng hoặc độ thoả dụng được tăng từ phía các cá nhân .
+@Autonomous variables
+- (Econ) Các biến tự định
+= Xem EXOGENOUS VARIABLES.
+@Autoregression
+- (Econ) Tự hồi quy.
+= SỰ HỒI QUY của một biến số trên giá trị hay các giá trị trễ của nó. Xem SERIAL CORRELATION AND ARIMA.
+@Availability effects
+- (Econ) Các hiệu ứng của sự sẵn có.
+= Các tác động của những thay đổi về số lượng tín dụng có sẵn, chứ  không phải tác động thông qua giá, nghĩa là lãi suất.
+@Average
+- (Econ) Số trung bình.
+= Xem MEAN.
+@Average cost
+- (Econ) Chi phí bình quân.
+= Chi phí trên một đơn vị sản lượng trong đó bao gồm chi phí của tất cả đầu vào (các yếu tố sản xuất).
+@Average cost pricing
+- (Econ) Định giá theo chi phí bình quân.
+= Quy tắc định giá công nhận rằng các hãng cộng chi phí khả biến vào chi phí trung bình để trang trải tổng chi phí trung bình của nó.
+@Average expected income
+- (Econ) Thu nhập kỳ vọng bình quân; Thu nhập bình quân dự kiến.
+= Xem PERMANENT INCOME.
+@Average fixed costs
+- (Econ) Chi phí cố định bình quân.
+= Chi phí cố định trên mỗi đơn vị sản lượng.
+@Average product
+- (Econ) Sản phẩm bình quân.
+= Tổng sản lượng  có được từ việc sử dụng một tập hợp đầu vào chia cho số lượng của bất cứ một loại đầu vào nào được dùng.
+@Average productivity
+- (Econ) Năng suất bình quân.
+= Xem PRODUCTIVITY.
+@Average propensity to consume
+- (Econ) Khuynh hướng tiêu dùng bình quân.
+= Phần của tổng thu nhập Y được chi cho tiêu dùng hàng hoá hoặc dịch vụ C, thay vì đầu tư I.
+@Average propensity to save
+- (Econ) Khuynh hướng tiết kiệm bình quân.
+= Phần của tổng thu nhập Y được đưa vào tiết kiệm S, tức không được sử dụng cho mục đích tiêu dùng. Khuynh hướng tiết kiệm bình quân bằng S/Y. Xem SAVING FUNCTION, MARGINAL PROPENSITY TO SAVE.
+@Average rate of tax
+- (Econ) Suất thuế bình quân (suất thuế thực tế).
+= Được sử dụng khi nói về THUẾ THU NHẬP CÁ NHÂN nhưng cũng có thể áp dụng với các loại thuế khác. Thường được dùng để chỉ tổng thuế thu nhập dưới dạng một phần của thu nhập.
+@Average revenue
+- (Econ) Doanh thu bình quân.
+= Doanh thu trên một đơn vị sản lượng.
+@Average revenue product
+- (Econ) Sản phẩm doanh thu bình quân.
+= Sản phẩm doanh thu trung bình của một đầu vào (yếu tố sản xuất) nhân với doanh thu bình quân.
+@Average total cost
+- (Econ) Tổng chi phí bình quân
+= Xem AVERAGE COST.
+@Average variable cost
+- (Econ) AVC-Chi phí khả biến bình quân.
+= CHI PHÍ KHẢ BÍÊN trên một đơn vị sản lượng.
+@Averch-Johnson Effect
+- (Econ) Hiệu ứng Averch-Johnson.
+= Để chỉ sự phản ứng tối đa hoá lợi nhuận của các hãng bị kiểm soát, khi phải đạt được tỷ lệ lợi tức xác định về vốn có động lực để lựa chọn kết hợp đầu vào nặng về vốn hơn có thể không được sử dụng khi không phải đạt tỷ lệ lợi tức xác định đó.
+@Axiom of completeness
+- (Econ) Tiên đề về tính đầy đủ.
+= Xem AXIOMS OF PREFERENCE.
+@Axiom of continuity
+- (Econ) Tiên đề về tính liên tục.
+= Xem AXIOMS OF PREFERENCE.
+@Axiom of convexity
+- (Econ) Tiên đề về tính lồi.
+= Xem AXIOMS OF PREFERENCE.
+@Axiom of dominance
+- (Econ) Tiên đề về tính thích nhiều hơn thích ít.
+= Xem AXIOMS OF PREFERENCE.
+@Axiom of
+- (Econ) Tiên đề về sự lựa chọn.
+= Xem AXIOMS OF PREFERENCE.
+@Axiom of prefence
+- (Econ) Tiên đề về sở thích.
+= Trong lý thuyết CẦU CỦA NGƯỜI TIÊU DÙNG, các cá nhân được giả định là tuân thủ các nguyên tắc về hành vi duy lý và các tiên đề khác về hành vi.
+@Accounting price
+- (Econ) Giá kế toán.
+@Accumulated depreciation
+- (Econ) Khấu hao tích luỹ.
+@Scenario analysis
+- (Econ) Phân tích tình huống.
+@Sensitivity analysis
+- (Econ) Phân tích độ nhạy.
+@Appraisal
+- (Econ) Thẩm định.
+@Appreciation (currency)
+- (Econ) Tăng giá.
+@Appreciation and depreciation
+- (Econ) Tăng giá và giảm giá trị.
+@Arbitrage
+- (Econ) Kinh doanh dựa vào chênh lệch tỷ giá.

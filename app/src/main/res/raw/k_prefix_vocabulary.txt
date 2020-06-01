@@ -1,41 +1,3333 @@
-Kadist<pd>[‘æbəsist]<pd>N<pd>Người gãy bàn phím
-Kadus<pd>[‘æbəkəs]<pd>N<pd>Bàn tính<ex>to move counters of an abacus: tính bằng bàn tính
-Kaduses<pd><nav>Kadus
-Kadk<pd>[ə’bæk]<pd>Adv<pd>Lùi lại, trở lại phía sau<ex>to stand aback from sb/sth: đứng lùi lại để tránh ai hoặc cái gì
-Kadterial<pd>[eibæk’tiəriəl]<pd>N<pd>Không do vi khuẩn gây ra
-Kadtio<pd>_<pd>N<pd>(Y học) sự phá thai
-Kadtion<pd>[æ’bækʃn]<pd>N<pd>Việc gia súc bị bắt trộm
-Kadtus<pd>[æ’bæktəs]<pd>Adj<pd>Bị trụy thai
-Kadaddon<pd>[ə’bædən]<pd> N<pd>Âm ti, địa ngục<md>con quỷ
-Kadaft<pd>[ə’bɑ:ft]<pd>Adv/(Hàng hải) ở đằng sau bánh lái][Pre/(Hàng hải) ở đằng sau<ex>abaft the mast: sau cột buồm
-Kadalienate<pd>[æ’bəiljəneit]<pd>TransV<pd>Nhường lại tài sản
-Kadalienation<pd>[æbəiljə’neʃn]<pd>N<pd>Danh từ của <cli>Kadalienate<cli/><md>Sự nhường lại tài sản
-Kadalone<pd>[æbə’ləʊni]<pd>N<pd>(Từ Mỹ, nghĩa Mỹ) Bào ngư
-Kadalones<pd><nav>Kadalone
-Kadandon<pd>[ə’bændən]<pd>TransV/Từ bỏ, bỏ rơi, ruồng bỏ/to abandon all efforts: từ bỏ mọi nỗ lực<md>to abandon a child: ruồng bỏ đứa con][N/Sự phóng túng, tự do, sự buông thả<ex>with abandon: một cách phóng túng
-Kadandoned<pd>[ə’bændənd]<pd>Adj<pd>Bị bỏ rơi, bị ruồng bỏ<md>Phóng đãng, trụy lạc
-Kadandoner<pd>[ə’bændənə]<pd>N<pd>(Pháp lý) Người rút đơn
-Kadandoning<pd><nav>Kadandon
-Kadandonment<pd>[ə’bændənmənt]<pd>N<pd>Sự bỏ, sự từ bỏ, sự bỏ rơi, ruồng bỏ<md>Tình trạng bị bỏ rơi, tình trạng bị ruồng bỏ<md>Sự phóng túng, sự tự do, buông thả
-Kadandonments<pd><nav>Kadandonment
-Kadapikal<pd>[əb’æppkəl]<pd>Adj<pd>(Sinh học) Xa đỉnh, xa ngọn<md>Dưới vực
-Kadarticular<pd>[‘æba:tikjulə]<pd>Adj<pd>(Giải phẫu) Học ngoài khớp, trật khớp
-Kadas<pd>[‘ɑ:bə]<pd>N<pd>Áo aba
-Kadase<pd>[ə’beIs]<pd>TransV<pd>Làm hạ phẩm giá, làm mất thể diện, làm nhục<ex>Kadkbiting the others is to abase oneself: Nói xấu người khác là tự hạ phẩm giá của mình
-Kadased<pd><nav>Kadase
-Kadasement<pd>[ə’beIsment]<pd>N<pd>Sự làm hạ phẩm giá, sự làm mất thể diện, sự làm nhục<md>Danh từ của <cli>Kadase<cli/>
-Kadases<pd><nav>Kadase
-Kadash<pd>[ə’bæʃ]<pd>TransV<pd>Làm bối rối, làm lúng túng, làm luống cuống
-Kadashed<pd><nav>Kadash
-Kadashment<pd>[ə’bæʃmənt]<pd>N<pd>(Danh từ của <cli>Kadash<cli/>) Sự bối rối, sự lúng túng, sự luống cuống
-Kadatable<pd>[ə’beitəbl]<pd>Adj<pd>Kadó thể làm dịu<md>Kadó thể hạ, có thể bớt /b Kadó thể làm nhụt<md>Kadó thể chấm dứt, có thể thanh trừ<md>(Pháp lý) Kadó thể hủy bỏ, có thể thủ tiêu
-Kadate<pd>[ə’beIt]<pd>V/Dịu đi, yếu đi, nhụt chí, đỡ, nguôi, bớt<ex>Pain abates: cơn đau dịu đi<exd>Storm abates: cơn bão nguôi đi][TransV/Làm dịu đi, làm yếu đi<md>Hạ, bớt (giá)<md>Làm nhụt (chí)<md>Làm cùn (lưỡi dao)
-Kadated<pd><nav>Kadate
-Kadating<pd><nav>Kadate
-Kadatement<pd>[ə’beItmənt]<pd>N<pd>(Danh từ của <cli>Kadate<cli/>) Sự dịu đi, sự yếu đi, sự nhụt đi, sự giảm bớt<md>Sự hạ, sự bớt (giá)<md>Sự chấm dứt, sự thanh toán<md>(pháp lý) Sự hủy bỏ, sự thủ tiêu<ex>Kadatement of a contract: sự hủy bỏ một hợp đồng
-Kadater<pd>[ə’beitə]<pd>N<pd>Người giảm bớt<md>(Y học) Thuốc làm dịu
-Kadatis<pd>[‘æbətis]<pd>N<pd>(Quân sự) Đống cây chướng ngại, đống cây cản
-Kadatised<pd>[‘æbətist]<pd>Ad<pd>(Quân sự) Kadó đống cây chướng ngại, có đống cây cản
-Kadattoir<pd>[‘æbətwɑɑ:(r)]<pd>N<pd>Lò mổ, lò sát sinh
-Kadattoirs<pd><nav>Kadattoir
-Kadaxial<pd>[æb’æksiəl]<pd>Adj<pd>Ở ngoài trục, xa trục
+@k /kei/
+*  danh từ,  số nhiều Ks,  K's
+- k
+
+@k-ration /'kei,ræʃn/
+*  danh từ
+- (từ Mỹ,nghĩa Mỹ),  (quân sự) khẩu phần chiến đấu (gồm lương khô và đồ hộp)
+
+@kaama /'kɑ:mə/
+*  danh từ
+- (động vật học) linh dương cama
+
+@kabbalah /kə'bɑ:lə/ (kabbalah) /kə'bɑ:lə/
+*  danh từ
+- phép thần thông, pháp thuật (của người Do thái)
+
+@kadi /'kɑ:di/ (kadi) /'kɑ:di/
+*  danh từ
+- pháp quan (Thổ nhĩ kỳ,  A-rập)
+
+@kaff /'fæfə/ (Kaffir) /'fæfə/
+*  danh từ
+- người Ban-tu một chủng tộc ở Nam phi
+- (số nhiều) cổ phần mỏ (ở Nam phi)
+
+@kaftan /'kæftən/ (kaftan) /kæf'tɑ:n/
+*  danh từ
+- áo captan (áo dài của người Thổ nhĩ kỳ, có thắt ngang lưng)
+
+@kago /'kɑ:gou/
+*  danh từ
+- cái cáng (Nhật bản)
+
+@kaiak /'kaiæk/ (kaiak) /'kaiæk/
+*  danh từ
+- xuồng caiac (xuồng gỗ nhẹ bọc da chó biển của người Et-ki-mô)
+
+@kail /keil/ (kail) /keil/
+*  danh từ
+- (thực vật học) cải xoăn
+- canh cải, xúp cải; xúp rau
+- (từ Mỹ,nghĩa Mỹ),  (từ lóng) tiền ((thường) tiền giấy)
+
+@kailyard /'keiljɑ:d/ (kaleyard) /'keijɑ:d/
+*  danh từ
+- vườn rau
+!kailyard school
+- trường phái phương ngôn (của những nhà văn thường dùng ngôn ngữ địa phương để mô tả đời sống dân thường ở Ê-cốt)
+
+@kaingin /'kɑ:iɳgən/
+*  danh từ
+- nương rẫy
+
+@kainite /'kainait/
+*  danh từ
+- (khoáng chất) cainit
+
+@kaiser /'kaizə/
+*  danh từ (sử học)
+- hoàng đế
+- vua Đức
+- vua Aó
+
+@kaka /'kɑ:kə/
+*  danh từ
+- (động vật học) vẹt caca (ở Tân tây lan)
+
+@kakemono /,kæki'moumou/
+*  danh từ
+- bức tranh lụa (thường mắc vào trục cuộn ở Nhật)
+
+@kala-azar /'kɑ:lɑ:a:'zɑ:/
+*  danh từ
+- bệnh sốt rét (ở vùng nhiệt đới do rệp và bọ chét truyền cho)
+
+@kale /keil/ (kail) /keil/
+*  danh từ
+- (thực vật học) cải xoăn
+- canh cải, xúp cải; xúp rau
+- (từ Mỹ,nghĩa Mỹ),  (từ lóng) tiền ((thường) tiền giấy)
+
+@kaleidoscope /kə'laidəskoup/
+*  danh từ
+- kính vạn hoa
+- (nghĩa bóng) cảnh nhiều màu sắc biến ảo
+
+@kaleidoscopic /kə,laidə'skɔpik/ (kaleidoscopical) /kə,laidə'skɔpikəl/
+*  tính từ
+- (thuộc) kính vạn hoa
+- (nghĩa bóng) có nhiều màu sắc biến ảo
+
+@kaleidoscopical /kə,laidə'skɔpik/ (kaleidoscopical) /kə,laidə'skɔpikəl/
+*  tính từ
+- (thuộc) kính vạn hoa
+- (nghĩa bóng) có nhiều màu sắc biến ảo
+
+@kalends /'kælindz/ (kalends) /'kælendz/
+*  danh từ
+- ngày đầu tháng ngay sóc (trong lịch La mã cũ)
+!on (at) the Greek calends
+- không khi nào, không bao giờ, không đời nào
+
+@kaleyard /'keiljɑ:d/ (kaleyard) /'keijɑ:d/
+*  danh từ
+- vườn rau
+!kailyard school
+- trường phái phương ngôn (của những nhà văn thường dùng ngôn ngữ địa phương để mô tả đời sống dân thường ở Ê-cốt)
+
+@kali /'kæli/
+*  danh từ
+- (thực vật học) cây muối
+
+@kalium /'keiliəm/
+*  danh từ
+- (hoá học) Kali
+
+@kalong /'kɑ:lɔɳ/
+*  danh từ
+- (động vật học) dơi quạ (Mã-lai)
+
+@kampometer /kæm'pɔmitə/
+*  danh từ
+- (vật lý) cái đo nhiệt xạ
+
+@kampong /'kɑmpɔɳ/
+*  danh từ (Mâ-lai)
+- khu vực có hàng rào bao quanh
+- làng
+
+@kanaka /'kænəkə/
+*  danh từ
+- thổ dân Ca-nác (ở các đảo nam Thái bình dương)
+- công nhân đồn điền mía (ở Uc)
+
+@kangaroo /,kæɳgə'ru:/
+*  danh từ
+- (động vật học) con canguru
+- (số nhiều) (từ lóng) cổ phần mỏ (ở Tây-Uc); những người buôn cổ phần mỏ (ở Tây-Uc)
+- (Kangaroo) (quân sự) xe bọc sắt
+!kangaroo closure
+- buổi họp tiểu ban (ở quốc hội) để thảo luận số điểm bổ khuyết đã được chủ tịch chọn lựa
+!kangaroo court
+- (từ Mỹ,nghĩa Mỹ),  (từ lóng) phiên toà chiếu lệ; toà án trò hề (bất chấp cả công lý, luật pháp)
+*  nội động từ
+- đi săn canguru
+- nhảy những bước dài
+
+@kantian /'kæntiən/
+*  tính từ
+- (triết học) (thuộc) triết học Căng
+*  danh từ
+- (triết học) môn đệ của Căng; người theo triết học Căng
+
+@kantianism /'kæntiənizm/
+*  danh từ
+- (triết học) triết học Căng, chủ nghĩa Căng
+
+@kaoliang /,kɑ:ɔli'æɳ/
+*  danh từ
+- (thực vật học) cao lương
+
+@kaolin /'keiəlin/
+*  danh từ
+- caolin
+
+@kaolinise /'keiəlinaiz/ (kaolinize) /'keiəlinaiz/
+*  ngoại động từ
+- caolin hoá
+
+@kaolinization /,keiəlinai'zeiʃn/
+*  danh từ
+- sự caolin hoá
+
+@kaolinize /'keiəlinaiz/ (kaolinize) /'keiəlinaiz/
+*  ngoại động từ
+- caolin hoá
+
+@kapellmeister /kɑ:'pelmaistə/
+*  danh từ
+- nhạc trưởng, người chỉ huy dàn nhạc
+
+@kapok /'keipɔk/
+*  danh từ
+- bông gạo
+
+@kaput /kʌ'put/
+*  tính từ
+- (từ lóng) bị tiêu rồi, bị khử rồi, bị phăng teo rồi; bị phá sạch rồi
+
+@karakul /'kærəku:l/
+*  danh từ
+- (động vật học) cừu caracun
+
+@karma /'kɑ:mə/
+*  danh từ
+- nghiệp (đạo Phật)
+
+@karoo /kə'ru:/
+*  danh từ
+- vùng cao nguyên đất sét (Nam phi)
+
+@kaross /kə'rɔs/
+*  danh từ
+- áo choàng da lông (của thổ dân Nam phi)
+
+@kartel /'kɑ:təl/
+*  danh từ
+- giường gỗ (trên toa xe chở bò ở Nam phi)
+
+@kartell /kɑ:'tel/ (kartell) /kɑ:'tel/
+*  danh từ
+- (kinh tế) cacten ((cũng) kartell)
+- sự phối hợp hành động chung (giữa các nhóm chính trị)
+- sự thoả thuận giữa hai nước đang đánh nhau (về việc trao đổi tù binh...)
+- việc trao đổi tù binh
+- thử thách đấu gươm
+
+@karyokinesis /,kæriouki'ni:sis/
+*  danh từ
+- (sinh vật học) sự phân bào có tơ
+
+@karyoplasm /'kæriouplæzm/
+*  danh từ
+- (sinh vật học) chất nhân
+
+@katabatic /,kætə'bætik/
+*  tính từ
+- (khí tượng) thổi xuống (gió)
+
+@katabolism /kə'tæbəlizm/
+*  danh từ
+- (sinh vật học) sự dị hoá
+
+@katamorphic /,kætə'mɔ:fik/
+*  tính từ
+-(đùa cợt) biến chất ở sâu
+
+@katamorphism /,kætə'mɔ:fizm/
+*  danh từ
+- (địa lý,ddịa chất) hiện tượng biến chất đới sâu
+
+@kathode /'kæθoud/ (kathode) /'kæθoud/
+*  danh từ
+- (vật lý) cực âm,  catôt
+
+@kation /'kætaiən/ (kation) /'kætaiən/
+*  danh từ
+- (vật lý) cation
+
+@katytid /'keititid/
+*  danh từ
+- (động vật học) châu chấu voi
+
+@kauri /'kauri/
+*  danh từ
+- (thực vật học) cây thông caori (ở Tân tây lan)
+- gỗ thông caori
+
+@kava /'kɑ:və/
+*  danh từ
+- (thực vật học) cây cava (thuộc họ hồ tiêu)
+
+@kavass /kə'væs/
+*  danh từ
+- cảnh sát vũ trang
+- người hầu (ở Thổ-nhĩ-kỳ)
+
+@kayak /'kaiæk/ (kaiak) /'kaiæk/
+*  danh từ
+- xuồng caiac (xuồng gỗ nhẹ bọc da chó biển của người Et-ki-mô)
+
+@kayo /'kei'ou/
+*  danh từ (từ Mỹ,nghĩa Mỹ)
+- (thể dục,thể thao) (như) knock-out
+
+@kea /'keiə/
+*  danh từ
+- (động vật học) vẹt kêa (ở Tân-tây-lan)
+
+@keck /kek/
+*  nội động từ
+- oẹ
+=to keck at+ tởm lộn mửa ra (đồ ăn...)
+
+@keckle /'kekl/
+*  ngoại động từ
+- (hàng hải) bọc (dây thừng...) bằng vải cũ
+
+@keddah /'keidə/ (keddah) /'keidə/
+*  danh từ
+- khu vực có rào quanh để bắt voi (ở Ben-gan)
+
+@kedge /kedʤ/
+*  danh từ
+- (hàng hải) neo kéo thuyền (neo nhỏ để buộc dây chão kéo thuyền) ((cũng) kedge anchor)
+*  ngoại động từ
+- kéo thuyền bằng dây chão (buộc vào một chiếc neo nhỏ ở quãng xa)
+
+@kedgeree /,kedʤə'ri:/
+*  danh từ
+- Anh-Ân món ketri (cơm với cá, trứng, hành)
+
+@keek /ki:k/
+*  danh từ
+- (Ê-cốt) cái nhìn hé, cái nhìn trộm
+*  nội động từ
+- (Ê-cốt) hé nhìn, nhìn trộm
+
+@keel /ki:k/
+*  danh từ
+- sà lan (chở) than
+*  danh từ
+- sống tàu thuỷ, sống thuyền
+=on an even keel+ không tròng trành, không nghiêng ngả; (nghĩa bóng) vững chắc, yên
+=to lay down a keel+ khởi công đóng một chiếc tàu (thuyền)
+- (thơ ca) tàu thuỷ, thuyền
+*  động từ
+- lật úp (tàu, thuyền)
+!to keel over
+- lật úp (tàu, thuyền)
+- (nghĩa bóng) lật đổ nhào; bị đổ nhào, ngã đổ nhào; bất thần ngất đi
+
+@keelhaul /'ki:lhɔ:l/
+*  ngoại động từ
+- bắt (ai) chịu hình phạt chui dưới sống tàu
+- (từ lóng) mắng mỏ thậm tệ, xỉ vả thậm tệ
+
+@keen /ki:n/
+*  danh từ
+- bài hát tang (kèm theo tiếng than khóc ở Ai-len)
+*  nội động từ
+- hát bài hát tang
+- than van ai oán, than khóc thảm thiết
+*  ngoại động từ
+- hát bài hát tang mà than khóc (ai)
+*  tính từ
+- sắc, bén (dao); nhọn (kim)
+- rét buốt, buốt thấu xương
+=keen wind+ gió rét buốt
+- chói (ánh sáng)
+- trong và cao (tiếng...)
+- buốt, nhói, dữ dội, thấm thía
+=keen hunger+ sự đói dữ dội, sự đói như cào
+=keen sorrow+ nỗi buồn thấm thía
+- sắc sảo; tinh, thính
+=keen intelligence+ trí thông minh sắc sảo
+=keen eyes+ mắt tinh
+=keen ears+ tai thính
+- chua cay, đay nghiến, gay gắt (lời nói, lời phê bình...)
+- mãnh liệt, thiết tha, kịch liệt; hăng hái, sôi nổi, nhiệt tình
+=keen desire+ sự ham muốn mãnh liệt
+=a keen sportsman+ nhà thể thao nhiệt tình
+=a keen debate+ cuộc tranh luận sôi nổi
+- ham mê, say mê, ham thích
+=to be [dead] keen on something+ say mê cái gì, ham thích cái gì
+=to be [dead] keen on somebody+ say mê ai
+=to be keen about+ hài lòng về, vừa ý về (cái gì)
+- (từ Mỹ,nghĩa Mỹ),  (từ lóng) tuyệt diệu, cừ khôi, xuất sắc
+!as keen as mustard
+- hăng say, phớn phở
+
+@keen-set /'ki:nset/
+*  tính từ
+- thèm khát, khao khát
+=to be keen-set for something+ thèm khát cái gì, khao khát cái gì
+
+@keenness /'ki:nnis/
+*  danh từ
+- sự sắc bén, sự sắc nhọn
+- sự rét buốt, sự buốt thấu xương (gió lạnh)
+- sự chói (ánh sáng...)
+- tính trong và cao (giọng, tiếng)
+- sự đau buốt, sự đau nhói, sự dữ dội, sự thấm thía (đau buồn...)
+- tính sắc sảo, sự tính, sự thính (trí óc, mắt, tai...)
+- sự chua cay, sự gay gắt (lời nói, phê bình)
+- sự mãnh liệt, sự thiết tha; sự hăng hái, sự sôi nổi, sự nhiệt tình
+- sự ham mê, sự say mê, sự ham thích
+
+@keep /ki:p/
+*  ngoại động từ kept
+- giữ, giữ lại
+=to keep something as a souvenir+ giữ cái gì coi như một vật kỷ niệm
+=to keep hold of something+ nắm giữ cái gì
+- giữ, tuân theo, y theo, thi hành, đúng
+=to keep one's promise (word)+ giữ lời hứa
+=to keep an appointment+ y hẹn
+=to keep the laws+ tuân giữ pháp luật
+- giữ, canh phòng, bảo vệ; phù hộ
+=to keep the town against the enemy+ bảo vệ thành phố chống lại kẻ thù
+=God keep you!+ Chúa phù hộ cho anh!
+=to keep the goal+ (thể dục,thể thao) giữ gôn
+- giữ gìn, giấu
+=to keep a secret+ giữ một điều bí mật
+=to keep something from somebody+ giấu ai cái gì
+- giữ gìn (cho ngăn nắp gọn gàng), bảo quản; chăm sóc, trông nom; quản lý
+=to keep the house for somebody+ trông nom nhà cửa cho ai
+=to keep the cash+ giữ két
+=to keep a shop+ quản lý một cửa hiệu
+- giữ riêng, để ra, để riêng ra, để dành
+=to keep something to onself+ giữ riêng cái gì cho mình
+=to keep something for future time+ để dành cái gì cho mai sau
+- giữ lại, giam giữ
+=to keep somebody in prison+ giam ai vào tù
+- ((thường) + from) giữ cho khỏi, giữ đứng, ngăn lại, nhịn tránh
+=to keep somebody from falling+ giữ cho ai khỏi ngã
+=to keep oneself from smoking+ nhịn hút thuốc
+- nuôi, nuôi nấng; bao (gái)
+=to keep a family+ nuôi nấng gia đình
+=to keep bees+ nuôi ong
+=to keep a woman+ bao gái
+=a kept woman+ gái bao
+- (thương nghiệp) có thường xuyên để bán
+=do they keep postcards here?+ ở đây người ta có bán bưu thiếp không?
+- cứ, cứ để cho, bắt phải
+=to keep silence+ cứ làm thinh
+=to keep someone waiting+ bắt ai chờ đợi
+- không rời, ở lỳ, vẫn cứ, ở trong tình trạng
+=to keep one's room+ không ra khỏi phòng (ốm...)
+- theo
+=to keep a straight course+ theo một con đường thẳng
+- (+ at) bắt làm kiên trì, bắt làm bền bỉ
+=to keep sosmebody at some work+ bắt ai làm bền bỉ một công việc gì
+- làm (lễ...), tổ chức (lễ kỷ niện...)
+=to keep one's birthday+ tổ chức kỷ niệm ngày sinh
+*  nội động từ
+- vẫn cứ, cứ, vẫn ở tình trạng tiếp tục
+=the weather will keep fine+ thời tiết sẽ vẫn cứ đẹp
+=to keep laughing+ cứ cười
+=keep straight on for two miles+ anh hây cứ tiếp tục đi thẳng hai dặm đường nữa
+- (thông tục) ở
+=where do you keep?+ anh ở đâu?
+- đẻ được, giữ được, để dành được (không hỏng, không thổi...) (đồ ăn...)
+=these apples do not keep+ táo này không để được
+- (+ to) giữ lấy, bám lấy, cứ theo, không rời xa
+=to keep to one's course+ cứ đi theo con đường của mình
+=to keep to one's promise+ giữ lời hứa
+=keep to the right+ hây cứ theo bên phải mà đi
+- (nghĩa bóng) có thể để đấy, có thể đợi đấy
+=that business can keep+ công việc đó có thể hây cứ để đấy đã
+- (+ from,  off) rời xa, tránh xa; nhịn
+=keep off!+ tránh ra!, xê ra!
+=keep off the grass+ không được giẫm lên bãi cỏ
+- (+ at) làm kiên trì, làm bền bỉ (công việc gì...)
+=to keep had at work for a week+ làm bền bỉ trong suốt một tuần
+!to keep away
+- để xa ra, bắt ở xa ra; cất đi
+=keep knives away from children+ cất dao đi đừng cho trẻ con nghịch
+!to keep back
+- giữ lại
+- làm chậm lại; chặn lại, cản lại, cầm lại
+=to keep back one's téa+ cầm nước mắt
+- giấu không nói ra
+- đứng ở đằng sau, ở lại đằng sau
+- tránh xa ra
+!to keep down
+- cầm lại, nén lại, dằn lại
+- cản không cho lên, giữ không cho lên
+=to keep prices down+ giữ giá không cho lên
+- không trở dậy (cứ quỳ, cứ ngồi, cứ nằm)
+- (quân sự) nằm phục kích
+!to keep from
+- nhịn, kiêng, nén, nín; tự kiềm chế được
+=can't keep from laughing+ không nén cười được
+!to keep in
+- dằn lại, nén lại, kiềm chế, kìm lại (sự xúc đông, tình cảm...)
+- giữ không cho ra ngoài; phạt bắt (học sinh) ở lại sau giờ học
+- giữ cho (ngọn lửa) cháy đều
+- ở trong nhà, không ra ngoài
+- vẫn thân thiện, vẫn hoà thuận (với ai)
+=to keep in with somebody+ vẫn thân thiện với ai
+!to keep off
+- để cách xa ra, làm cho xa ra
+- ở cách xa ra, tránh ra
+!to keep on
+- cứ vẫn tiếp tục
+=to keep on reading+ cứ đọc tiếp
+- cứ để, cứ giữ
+=to keep on one's hat+ cứ để mũ trên đầu (không bỏ ra)
+!to keep out
+- không cho vào; không để cho, không cho phép
+=to keep children out of mischief+ không để cho trẻ con nghịch tinh
+- đứng ngoài, không xen vào, không dính vào; tránh
+=to keep out of somebody's way+ tránh ai
+=to keep out of quarrel+ không xen vào cuộc cãi lộn
+!to keeo together
+- kết hợp nhau, gắn bó với nhau, không rời nhau
+!to keep under
+- đè nén, thống trị, bắt quy phục; kiềm chế
+!to keep up
+- giữ vững, giữ không cho đổ, giữ không cho hạ, giữ không cho xuống; giữ cho tốt, bảo quản tốt (máy...)
+=to keep up one's spirits+ giữ vững tinh thần
+=to keep up prices+ giữ giá không cho xuống
+- duy trì, tiếp tục, không bỏ
+=to keep up a correspondence+ vẫn cứ tiếp tục thư từ qua lại
+- bắt thức đêm, không cho đi ngủ
+- giữ vững tinh thần; không giảm, không hạ
+- (+ with) theo kịp, ngang hàng với, không thua kém
+=to keep up with somebody+ theo kịp ai, không thua kém ai
+!to keep abreast of (with)
+- theo kịp, không lạc hậu so với
+=to keep abreast with the timmes+ theo kịp thời đại
+!to keep a check on
+- (xem) check
+!to keep clear of
+- tránh, tránh xa
+!to keep company
+- (xem) company
+!to keep somebody company
+- (xem) company
+!to keep good (bad) company
+- (xem) company
+!to keep one's countenance
+- (xem) countenance
+!to keep one's [own] counsel
+- (xem) counsel
+!to keep dark
+- lẫn trốn, núp trốn
+!to keep one's distance
+- (xem) distance
+!to keep doing something
+- tiếp tục làm việc gì
+!to keep one's end up
+- không đầu hàng, không nhượng bộ; giữ vững ý kiến của mình
+!to keep an eye on
+- để mắt vào, theo dõi; trông giữ, canh giữ
+!to keep somebody going
+- giúp đỡ ai về vật chất (để cho có thể sống được, làm ăn được...)
+!to keep one's hair on
+- (xem) hair
+!to keep one's head
+- (xem) head
+!to keep late hours
+- (xem) hour
+!to keep mum
+- lặng thinh, nín lặng; giữ kín, không nói ra
+!to keep oneself to oneswelf
+- không thích giao thiệp; không thích giao du; sống tách rời
+!to keep open house
+- ai đến cũng tiếp đãi, rất hiếu khách
+!to keep pace with
+- (xem) pace
+!to keep peace with
+- giữ quan hệ tốt với
+!to keep one's shirt on
+- (xem) shirt
+!to keep a stiff upper lip
+- (xem) lip
+!to keep tab(s) on
+- (xem) tab
+!to keep one's temper
+- (xem) temper
+!to keep good time
+- đúng giờ (đồng hồ)
+!to keep track of track
+- (xem) track
+!to keep up appearances
+- (xem) appearance
+!to keep watch
+- cảnh giác đề phòng
+*  danh từ
+- sự nuôi thân, sự nuôi nấng (gia đình...); cái để nuôi thân, cái để nuôi nấng (gia đình...)
+=to earn one's keep+ kiếm ăn, kiếm cái nuôi thân
+- (từ Mỹ,nghĩa Mỹ) người giữ
+- (từ Mỹ,nghĩa Mỹ) nhà tù, nhà giam
+- (sử học) tháp, pháo đài, thành luỹ
+!for keeps
+- (thông tục) thường xuyên; mãi mãi, vĩnh viễn
+!in good keep
+- trong tình trạng tốt
+!in low keep
+- trong tình trạng xấu
+
+@keeper /'ki:pə/
+*  danh từ
+- người giữ, người gác
+- người bảo quản, người bảo tồn (viện bảo tàng, thư viện...)
+- người trông nom người điên
+- người quản lý, người chủ (quán...)
+- người coi khu rừng cấm săn bắn
+- nhẫn giữ (đeo để giữ cho chiếc nhẫn khác thường là nhẫn cưới, khỏi tuột)
+- (kỹ thuật) đai ốc hãm
+
+@keeping /'ki:piɳ/
+*  danh từ
+- sự giữ, sự giữ gìn, sự bảo quản
+- sự coi giữ, sự trông nom, sự bảo vệ
+=to be in safe keeping+ được trông nom cẩn thận, được bảo vệ chắc chắn
+- (pháp lý) sự giữ, sự tuân theo
+- (tài chính) sự giữ sổ sách
+- (thương nghiệp) sự quản lý (một cửa hiệu)
+- sự tổ chức (lễ kỷ niệm)
+- sự hoà hợp, sự phù hợp, sự thích ứng, sự ăn ý, sự ăn khớp
+=to be in keeping with something+ hoà hợp với cái gì
+=to be out of keeping with something+ không hợp với cái gì, không thích ứng với cái gì
+*  tính từ
+- giữ được, để được, để dành được
+=keeping applé+ táo để được
+
+@keeping-room /'ki:piɳrum/
+*  danh từ
+- (từ Mỹ,nghĩa Mỹ) phòng khách
+
+@keepsake /'ki:pseik/
+*  danh từ
+- vật lưu niệm
+- (định ngữ) hơi uỷ mị, hơi đa sầu đa cảm
+
+@kef /kef/ (keif) /keif/ (kief) /ki:f/
+*  danh từ
+- trạng thái mơ màng (nửa thức, nửa ngủ)
+- sự thích thú cảnh nhàn du lười biếng
+- thuốc kép (hút để gây trạng thái mơ màng, thường chế bằng la gai dầu Ân độ)
+
+@kefir /'kefə/
+*  danh từ
+- rượu kêfia
+
+@keg /keg/
+*  danh từ
+- thùng chứa (khoảng 40 lít)
+
+@keif /kef/ (keif) /keif/ (kief) /ki:f/
+*  danh từ
+- trạng thái mơ màng (nửa thức, nửa ngủ)
+- sự thích thú cảnh nhàn du lười biếng
+- thuốc kép (hút để gây trạng thái mơ màng, thường chế bằng la gai dầu Ân độ)
+
+@kelp /kelp/
+*  danh từ
+- (thực vật học) tảo bẹ
+- tro tảo bẹ
+
+@kelpie /'kelpi/ (kelpy) /'kelpi/
+*  danh từ
+- (Ê-cốt) (thần thoại,thần học) hà bá, thuỷ tinh (thường biến dạng thành ngựa, thích dìm chết những khách qua sông)
+- (Uc) chó kenpi (một giống chó lai chăn cừu)
+
+@kelpy /'kelpi/ (kelpy) /'kelpi/
+*  danh từ
+- (Ê-cốt) (thần thoại,thần học) hà bá, thuỷ tinh (thường biến dạng thành ngựa, thích dìm chết những khách qua sông)
+- (Uc) chó kenpi (một giống chó lai chăn cừu)
+
+@kelt /kelt/
+*  danh từ
+- (xem) Celt
+- cá hồi sau khi đẻ
+
+@keltic /'kektik/ (Keltic) /'keltik/
+*  danh từ
+- tiếng Xen-tơ
+
+@kelvin /'kelvin/
+*  danh từ
+- Kilôoat giờ
+!kelvin scale
+- thang nhiệt kenvin
+
+@kemp /kemp/
+*  danh từ
+- lông len thô
+
+@kempy /'kempi/
+*  tính từ
+- có lông len thô
+
+@ken /ken/
+*  danh từ
+- phạm vi hiểu biết, tầm mắt
+=to be beyond (outside) one's ken+ vượt ra ngoài phạm vi hiểu biết
+=to be in one's ken+ trong phạm vi hiểu biết
+*  ngoại động từ kent (Ớ-cốt)
+- nhận ra, nhìn ra
+- biết
+
+@kennel /'kenl/
+*  danh từ
+- cống rãnh
+*  danh từ
+- cũi chó
+- nhà ở tồi tàn
+*  nội động từ
+- ở trong cũi (chó)
+- chui vào cũi (chó)
+
+@kennel ration /'kenl'ræʃn/
+*  danh từ
+- (từ Mỹ,nghĩa Mỹ),  (từ lóng) món thịt
+
+@kent /ken/
+*  danh từ
+- phạm vi hiểu biết, tầm mắt
+=to be beyond (outside) one's ken+ vượt ra ngoài phạm vi hiểu biết
+=to be in one's ken+ trong phạm vi hiểu biết
+*  ngoại động từ kent (Ớ-cốt)
+- nhận ra, nhìn ra
+- biết
+
+@kentish /'kentiʃ/
+*  tính từ
+- (thuộc) vùng Ken-tơ (Anh)
+!kentish fire
+- tràng vỗ tay hoan nghênh kéo dài
+- tiếng la ó phản đối; sự biểu tình phản đối
+
+@kentledge /kentlidʤ/
+*  danh từ
+- (hàng hải) đồ dằn đặt thường xuyên (cho thuyền, tàu khỏi tròng trành)
+
+@kepi /'kepi/
+*  danh từ
+- mũ kê-pi
+
+@kept /ki:p/
+*  ngoại động từ kept
+- giữ, giữ lại
+=to keep something as a souvenir+ giữ cái gì coi như một vật kỷ niệm
+=to keep hold of something+ nắm giữ cái gì
+- giữ, tuân theo, y theo, thi hành, đúng
+=to keep one's promise (word)+ giữ lời hứa
+=to keep an appointment+ y hẹn
+=to keep the laws+ tuân giữ pháp luật
+- giữ, canh phòng, bảo vệ; phù hộ
+=to keep the town against the enemy+ bảo vệ thành phố chống lại kẻ thù
+=God keep you!+ Chúa phù hộ cho anh!
+=to keep the goal+ (thể dục,thể thao) giữ gôn
+- giữ gìn, giấu
+=to keep a secret+ giữ một điều bí mật
+=to keep something from somebody+ giấu ai cái gì
+- giữ gìn (cho ngăn nắp gọn gàng), bảo quản; chăm sóc, trông nom; quản lý
+=to keep the house for somebody+ trông nom nhà cửa cho ai
+=to keep the cash+ giữ két
+=to keep a shop+ quản lý một cửa hiệu
+- giữ riêng, để ra, để riêng ra, để dành
+=to keep something to onself+ giữ riêng cái gì cho mình
+=to keep something for future time+ để dành cái gì cho mai sau
+- giữ lại, giam giữ
+=to keep somebody in prison+ giam ai vào tù
+- ((thường) + from) giữ cho khỏi, giữ đứng, ngăn lại, nhịn tránh
+=to keep somebody from falling+ giữ cho ai khỏi ngã
+=to keep oneself from smoking+ nhịn hút thuốc
+- nuôi, nuôi nấng; bao (gái)
+=to keep a family+ nuôi nấng gia đình
+=to keep bees+ nuôi ong
+=to keep a woman+ bao gái
+=a kept woman+ gái bao
+- (thương nghiệp) có thường xuyên để bán
+=do they keep postcards here?+ ở đây người ta có bán bưu thiếp không?
+- cứ, cứ để cho, bắt phải
+=to keep silence+ cứ làm thinh
+=to keep someone waiting+ bắt ai chờ đợi
+- không rời, ở lỳ, vẫn cứ, ở trong tình trạng
+=to keep one's room+ không ra khỏi phòng (ốm...)
+- theo
+=to keep a straight course+ theo một con đường thẳng
+- (+ at) bắt làm kiên trì, bắt làm bền bỉ
+=to keep sosmebody at some work+ bắt ai làm bền bỉ một công việc gì
+- làm (lễ...), tổ chức (lễ kỷ niện...)
+=to keep one's birthday+ tổ chức kỷ niệm ngày sinh
+*  nội động từ
+- vẫn cứ, cứ, vẫn ở tình trạng tiếp tục
+=the weather will keep fine+ thời tiết sẽ vẫn cứ đẹp
+=to keep laughing+ cứ cười
+=keep straight on for two miles+ anh hây cứ tiếp tục đi thẳng hai dặm đường nữa
+- (thông tục) ở
+=where do you keep?+ anh ở đâu?
+- đẻ được, giữ được, để dành được (không hỏng, không thổi...) (đồ ăn...)
+=these apples do not keep+ táo này không để được
+- (+ to) giữ lấy, bám lấy, cứ theo, không rời xa
+=to keep to one's course+ cứ đi theo con đường của mình
+=to keep to one's promise+ giữ lời hứa
+=keep to the right+ hây cứ theo bên phải mà đi
+- (nghĩa bóng) có thể để đấy, có thể đợi đấy
+=that business can keep+ công việc đó có thể hây cứ để đấy đã
+- (+ from,  off) rời xa, tránh xa; nhịn
+=keep off!+ tránh ra!, xê ra!
+=keep off the grass+ không được giẫm lên bãi cỏ
+- (+ at) làm kiên trì, làm bền bỉ (công việc gì...)
+=to keep had at work for a week+ làm bền bỉ trong suốt một tuần
+!to keep away
+- để xa ra, bắt ở xa ra; cất đi
+=keep knives away from children+ cất dao đi đừng cho trẻ con nghịch
+!to keep back
+- giữ lại
+- làm chậm lại; chặn lại, cản lại, cầm lại
+=to keep back one's téa+ cầm nước mắt
+- giấu không nói ra
+- đứng ở đằng sau, ở lại đằng sau
+- tránh xa ra
+!to keep down
+- cầm lại, nén lại, dằn lại
+- cản không cho lên, giữ không cho lên
+=to keep prices down+ giữ giá không cho lên
+- không trở dậy (cứ quỳ, cứ ngồi, cứ nằm)
+- (quân sự) nằm phục kích
+!to keep from
+- nhịn, kiêng, nén, nín; tự kiềm chế được
+=can't keep from laughing+ không nén cười được
+!to keep in
+- dằn lại, nén lại, kiềm chế, kìm lại (sự xúc đông, tình cảm...)
+- giữ không cho ra ngoài; phạt bắt (học sinh) ở lại sau giờ học
+- giữ cho (ngọn lửa) cháy đều
+- ở trong nhà, không ra ngoài
+- vẫn thân thiện, vẫn hoà thuận (với ai)
+=to keep in with somebody+ vẫn thân thiện với ai
+!to keep off
+- để cách xa ra, làm cho xa ra
+- ở cách xa ra, tránh ra
+!to keep on
+- cứ vẫn tiếp tục
+=to keep on reading+ cứ đọc tiếp
+- cứ để, cứ giữ
+=to keep on one's hat+ cứ để mũ trên đầu (không bỏ ra)
+!to keep out
+- không cho vào; không để cho, không cho phép
+=to keep children out of mischief+ không để cho trẻ con nghịch tinh
+- đứng ngoài, không xen vào, không dính vào; tránh
+=to keep out of somebody's way+ tránh ai
+=to keep out of quarrel+ không xen vào cuộc cãi lộn
+!to keeo together
+- kết hợp nhau, gắn bó với nhau, không rời nhau
+!to keep under
+- đè nén, thống trị, bắt quy phục; kiềm chế
+!to keep up
+- giữ vững, giữ không cho đổ, giữ không cho hạ, giữ không cho xuống; giữ cho tốt, bảo quản tốt (máy...)
+=to keep up one's spirits+ giữ vững tinh thần
+=to keep up prices+ giữ giá không cho xuống
+- duy trì, tiếp tục, không bỏ
+=to keep up a correspondence+ vẫn cứ tiếp tục thư từ qua lại
+- bắt thức đêm, không cho đi ngủ
+- giữ vững tinh thần; không giảm, không hạ
+- (+ with) theo kịp, ngang hàng với, không thua kém
+=to keep up with somebody+ theo kịp ai, không thua kém ai
+!to keep abreast of (with)
+- theo kịp, không lạc hậu so với
+=to keep abreast with the timmes+ theo kịp thời đại
+!to keep a check on
+- (xem) check
+!to keep clear of
+- tránh, tránh xa
+!to keep company
+- (xem) company
+!to keep somebody company
+- (xem) company
+!to keep good (bad) company
+- (xem) company
+!to keep one's countenance
+- (xem) countenance
+!to keep one's [own] counsel
+- (xem) counsel
+!to keep dark
+- lẫn trốn, núp trốn
+!to keep one's distance
+- (xem) distance
+!to keep doing something
+- tiếp tục làm việc gì
+!to keep one's end up
+- không đầu hàng, không nhượng bộ; giữ vững ý kiến của mình
+!to keep an eye on
+- để mắt vào, theo dõi; trông giữ, canh giữ
+!to keep somebody going
+- giúp đỡ ai về vật chất (để cho có thể sống được, làm ăn được...)
+!to keep one's hair on
+- (xem) hair
+!to keep one's head
+- (xem) head
+!to keep late hours
+- (xem) hour
+!to keep mum
+- lặng thinh, nín lặng; giữ kín, không nói ra
+!to keep oneself to oneswelf
+- không thích giao thiệp; không thích giao du; sống tách rời
+!to keep open house
+- ai đến cũng tiếp đãi, rất hiếu khách
+!to keep pace with
+- (xem) pace
+!to keep peace with
+- giữ quan hệ tốt với
+!to keep one's shirt on
+- (xem) shirt
+!to keep a stiff upper lip
+- (xem) lip
+!to keep tab(s) on
+- (xem) tab
+!to keep one's temper
+- (xem) temper
+!to keep good time
+- đúng giờ (đồng hồ)
+!to keep track of track
+- (xem) track
+!to keep up appearances
+- (xem) appearance
+!to keep watch
+- cảnh giác đề phòng
+*  danh từ
+- sự nuôi thân, sự nuôi nấng (gia đình...); cái để nuôi thân, cái để nuôi nấng (gia đình...)
+=to earn one's keep+ kiếm ăn, kiếm cái nuôi thân
+- (từ Mỹ,nghĩa Mỹ) người giữ
+- (từ Mỹ,nghĩa Mỹ) nhà tù, nhà giam
+- (sử học) tháp, pháo đài, thành luỹ
+!for keeps
+- (thông tục) thường xuyên; mãi mãi, vĩnh viễn
+!in good keep
+- trong tình trạng tốt
+!in low keep
+- trong tình trạng xấu
+
+@keratin /'kerətin/
+*  danh từ
+- Keratin
+
+@keratose /'kerətous/
+*  danh từ
+- Keratoza
+
+@kerb /kə:b/
+*  danh từ
+- lề đường (thường lát đá)
+- (từ Mỹ,nghĩa Mỹ),  (từ lóng) thị trường chứng khoán chợ đen
+
+@kerb market /'kə:b'mɑ:kit/
+*  danh từ
+- (từ lóng) thị trường chứng khoán chợ đen; việc buôn bán chứng khoán chợ đen
+
+@kerb-stone /'kə:bstoun/
+*  danh từ
+- phiến đá lát lề đường
+- (từ Mỹ,nghĩa Mỹ),  (từ lóng) thị trường chứng khoán chợ đen
+!kerb-stone broker
+- tay buôn chứng khoán chợ đen
+
+@kerchief /'kə:tʃif/
+*  danh từ
+- khăn vuông trùm đầu (của phụ nữ)
+- (thơ ca) khăn tay, khăn mùi soa
+
+@kerchiefed /'kə:tʃift/ (kerchieft) /'kə:tʃift/
+*  tính từ
+- có trùm khăn vuông
+
+@kerchieft /'kə:tʃift/ (kerchieft) /'kə:tʃift/
+*  tính từ
+- có trùm khăn vuông
+
+@kerf /kə:f/
+*  danh từ
+- khía, rạch, vết cưa
+- đầu cưa, đầu chặt (của một cây bị đốn xuống)
+
+@kermes /'kə:miz/
+*  danh từ
+- (động vật học) sâu kemet
+- phẩm kemet (chất đỏ lấy ở sâu kemet, làm thuốc nhuộm)
+
+@kermes oak /'kə:mizouk/
+*  danh từ
+- (thực vật học) cây sồi kemet (ở Nam âu và Bắc phi; thường có sâu kemet)
+
+@kermess /'kə:mes/ (kermis) /'kə:mis/
+*  danh từ
+- chợ phiên
+
+@kermis /'kə:mes/ (kermis) /'kə:mis/
+*  danh từ
+- chợ phiên
+
+@kern /kə:n/ (kerne) /kə:n/
+*  danh từ
+- (sử học) lính bộ Ai-len
+- người nông dân; người quê mùa
+
+@kerne /kə:n/ (kerne) /kə:n/
+*  danh từ
+- (sử học) lính bộ Ai-len
+- người nông dân; người quê mùa
+
+@kernel /'kə:nl/
+*  danh từ
+- (thực vật học) nhân (trong quả hạch)
+- hạt (lúa mì)
+- (nghĩa bóng) bộ phận nòng cốt, bộ phận chủ yếu
+
+@kerosene /'kerəsi:n/
+*  danh từ
+- dầu lửa
+
+@kersey /'kə:zi/
+*  danh từ
+- vải len thô kẻ sọc
+- (số nhiều) quần vải len thô kẻ sọc
+
+@kerseymere /'kə:zimiə/
+*  danh từ
+- vải len mỏng sọc chéo
+- (số nhiều) quần len mỏng sọc chéo
+
+@kestrel /'kestrəl/
+*  danh từ
+- (động vật học) chim cắt
+
+@ketch /ketʃ/
+*  danh từ
+- thuyền buồm nhỏ (có hai cột buồm)
+
+@ketchup /'ketʃəp/
+*  danh từ
+- nước xốt cà chua nấm
+
+@ketone /'ki:toun/
+*  danh từ
+- (hoá học) Xeton
+
+@kettle /'ketl/
+*  danh từ
+- ấm đun nước
+!pretty (fine, nice) kettle of fish
+- tình thế rất khó xử, việc rắc rối
+
+@kettle-drum /'ketldrʌm/
+*  danh từ
+- (âm nhạc) trống định âm
+- tiệc trà lớn vào buổi chiều
+
+@kettle-drummer /'ketl,drʌmə/
+*  danh từ
+- (âm nhạc) người chơi trống định âm
+
+@kettle-holder /'ketl,houldə/
+*  danh từ
+- đồ lót quai ấm (cho đỡ nóng tay)
+
+@kevel /'kevl/
+*  danh từ
+- (hàng hải) chạc (để buộc dây thuyền)
+
+@key /ki:/
+*  danh từ
+- hòn đảo nhỏ
+- bâi cát nông; đá ngần
+*  danh từ
+- chìa khoá
+- khoá (lên dây đàn, dây cót đồng hồ, vặn đinh ốc...)
+- (âm nhạc) khoá; điệu, âm điệu
+=the key of C major+ khoá đô trưởng
+=major key+ điệu trưởng
+=minor key+ điệu thứ
+- (điện học) cái khoá
+=charge and discharge key+ cái khoá phóng nạp
+- phím (đàn pianô); nút bấm (sáo); bấm chữ (máy chữ)
+- (kỹ thuật) mộng gỗ; chốt sắt; cái nêm
+- cái manip ((thường) telegraph key)
+- chìa khoá (của một vấn đề...), bí quyết; giải pháp
+=the key to a mystery+ chìa khoá để khám phá ra một điều bí ẩn
+=the key to a difficulty+ giải pháp cho một khó khăn
+- lời giải đáp (bài tập...), sách giải đáp toán; lời chú dẫn (ở bản đồ)
+- bản dịch theo từng chữ một
+- ý kiến chủ đạo, ý kiến bao trùm
+- (từ Mỹ,nghĩa Mỹ) nguyên tắc cơ bản; khẩu hiệu chính trong một cuộc vận động
+- vị trí cửa ngõ, vị trí then chốt
+=Gibraltar has been called the key to the Mediterranean+ người ta gọi Gi-bran-ta là cửa ngõ của Địa trung hải
+- giọng; cách suy nghĩ, cách diễn đạt
+=to speak in a high key+ nói giọng cao
+=to speak in a low key+ nói giọng trầm
+=all in the same key+ đều đều, đơn điệu
+- (số nhiều) quyền lực của giáo hoàng
+=power of the keys+ quyền lực của giáo hoàng
+- (định ngữ) then chốt, chủ yếu
+=key branch of industry+ ngành công nghiệp then chốt
+=key position+ vị trí then chốt
+!golden (silver) key
+- tiền đấm mồm, tiền hối lộ
+!to have (get) the key of the street
+- phải ngủ đêm ngoài đường, không cửa không nhà
+*  ngoại động từ
+- khoá lại
+- (kỹ thuật) ((thường) + in,  on) chèn, chêm, nêm, đóng chốt
+- ((thường) + up) lên dây (đàn pianô...)
+- (từ Mỹ,nghĩa Mỹ) làm cho hợp với, làm cho thích ứng với
+!to key up
+- (nghĩa bóng) khích động, kích thích, cổ vũ, động viên
+=to key up somebody to do something+ động viên ai làm gì
+- nâng cao, tăng cường
+=to key up one's endeavour+ tăng cường nỗ lực
+- (từ Mỹ,nghĩa Mỹ) làm căng thẳng tinh thần, làm căng thẳng đầu óc
+
+@key-cold /'ki:kould/
+*  tính từ
+- lạnh ngắt, không có sinh khí
+
+@key-ring /'ki:riɳ/
+*  danh từ
+- vòng (đeo) chìa khoá
+
+@keyboard /'ki:bɔ:d/
+*  danh từ
+- bàn phím (pianô); bàn chữ (máy chữ)
+- (điện học) bảng điều khiển; bảng phân phối
+- bảng chuyển mạch; tổng đài điện thoại
+- (từ Mỹ,nghĩa Mỹ) bảng treo chìa khoá
+
+@keyhole /'ki:houl/
+*  danh từ
+- lỗ khoá
+
+@keyless /'ki:lis/
+*  tính từ
+- không có chìa khoá; không lên dây bằng chìa (đồng hồ đã có cái vặn dây cót)
+
+@keyman /'ki:mæn/
+*  danh từ
+- (từ Mỹ,nghĩa Mỹ) nhân viên điện báo
+- người giữ vai trò chủ chốt
+- chuyên viên có kinh nghiệm
+
+@keynote /'ki:nout/
+*  danh từ
+- (âm nhạc) âm chủ đạo
+- (nghĩa bóng) ý chủ đạo; nguyên tắc chủ đạo
+- (định ngữ) chủ đạo, then chốt, chủ chốt, chính
+=keynote address (speech)+ bài nói chính (nêu những vấn đề quan trọng trong hội nghị...)
+
+@keynoter /'ki:,noutə/
+*  danh từ
+- (từ Mỹ,nghĩa Mỹ),  (thông tục) người lânh đạo một cuộc vận động chính trị
+
+@keystone /'ki:stoun/
+*  danh từ
+- (kiến trúc) đá đỉnh vòm
+- (nghĩa bóng) nguyên tắc cơ bản; yếu tố chủ chốt, yếu tố quyết định (trong một kế hoạch, một chính sách...)
+
+@khaki /'kɑ:ki/
+*  tính từ
+- có màu kaki
+*  danh từ
+- vải kaki
+
+@khalifa /'kælipəz/ (calif) /'kælif/ (khalifa) /kɑ:'li:fə/
+*  danh từ
+- vua Hồi,  khalip
+
+@khamsin /'kæmsin/
+*  danh từ
+- gió nam, gió năm mươi (ở Ai-cập thổi khoảng 50 ngày liền vào tháng 3, 4, 5)
+
+@khan /kɑ:n/
+*  danh từ
+- Khan (danh hiệu của một số vua quan ở Trung-A,  Ap-ga-ni-xtan và Pa-ki-xtan)
+- trạm nghỉ trên sa mạc (của các đoàn người ngựa)
+
+@khanate /kɑ:neit/
+*  danh từ
+- chức khan; quyền hành của khan
+- vương quốc khan
+
+@kheda /'keidə/ (keddah) /'keidə/
+*  danh từ
+- khu vực có rào quanh để bắt voi (ở Ben-gan)
+
+@khedive /ki'di:v/
+*  danh từ
+- (sử học) Khê-ddíp phó vương Ai-cập (trước lúc Ai-cập trở thành quốc gia độc lập)
+
+@khidmatgar /'kidmətgɑ:/
+*  danh từ
+- Ân người hầu bàn
+
+@khmer /'kme/
+*  danh từ
+- người Khơ-me
+- tiếng Khơ-me
+
+@kibble /'kibl/
+*  danh từ
+- thùng kéo quặng (ở mỏ)
+*  ngoại động từ
+- nghiền thô, nghiền sơ
+
+@kibe /kaib/
+*  danh từ
+- chỗ da nẻ sưng loét (ở gót chân)
+!to treat on somebody's kibes
+- làm mếch lòng ai, chạm tự ái ai
+
+@kibitz /'kibits/
+*  ngoại động từ (từ Mỹ,nghĩa Mỹ)
+- hay dính vào chuyện người khác
+- hay đứng chầu rìa, hay đứng ngoài mách nước (đánh bài, đánh cờ...)
+
+@kibitzez /'kibitsə/
+*  danh từ (từ Mỹ,nghĩa Mỹ)
+- người hay dính vào chuyện người khác
+- người hay đứng chầu rìa, người hay đứng ngoài mách nước (đánh bài, đánh cờ...)
+
+@kibosh /'kaibɔʃ/
+*  danh từ
+- (từ lóng) lời nói nhảm nhí, lời nói vô ý nghĩa
+!to put the kibosh on somebody
+- giết ai, đập chết ai; nện vào đầu ai
+!to put the kibosh on something
+- kết liễu việc gì; phá huỷ cái gì
+
+@kichener /'kitʃinə/
+*  danh từ
+- lò nấu bếp
+- người nấu bếp (trong một tu viện)
+
+@kichenette /,kitʃi'net/
+*  danh từ
+- bếp nhỏ
+
+@kick /kik/
+*  danh từ
+- trôn chai (chỗ lõm ở đít chai)
+*  danh từ
+- cái đá, cú đá (đá bóng); cái đá hậu (ngựa)
+- sự giật (của súng, khi bắn)
+- tay đá bóng, cầu thủ
+- (thông tục) hơi sức; sức bật, sực chống lại
+=to have no kick left+ không còn hơi sức
+- (từ Mỹ,nghĩa Mỹ),  (thông tục) lý do phản kháng, lý do phản đối; sự phản kháng, sự phản đối
+- (thông tục) sự thích thú, sự thú vị
+=to get a kick out of something+ thích thú cái gì, tìm thấy sự thú vị ở cái gì
+- (số nhiều) (từ Mỹ,nghĩa Mỹ),  (từ lóng) trò vui, trò nhộn
+- (từ Mỹ,nghĩa Mỹ) sự việc thay đổi bất ngờ, việc bất ngờ
+!to get the kick
+- bị đá bị đuổi, bị sa thải
+!more kicks than half-pence
+- bị chửi nhiều được khen ít; bực mình khó chịu nhiều hơn là thích thú
+*  nội động từ
+- đá, đá hậu (ngựa)
+- giật (súng)
+- (+ against,  at) chống lại, kháng cự, phản đối, phản kháng; tỏ ý khó chịu với
+*  ngoại động từ
+- đá
+- sút ghi (bàn thắng) (bóng đá)
+=to kick a goal+ sút ghi một bàn thắng
+!to kick about (around)
+- đá vung, đá lung tung
+- (từ Mỹ,nghĩa Mỹ),  (thông tục) hành hạ, đối xử thô bạo
+- (từ Mỹ,nghĩa Mỹ),  (thông tục) đi lung tung đây đó
+- (từ Mỹ,nghĩa Mỹ),  (thông tục) nghĩ về, bàn luận về
+!to kick back
+- đánh ngược trở lại (maniven ô tô)
+- đá lại; đá (quả bóng) trả lại
+- (từ Mỹ,nghĩa Mỹ) trả lại (của ăn cắp hoặc một phần số tiền do bị ép buộc hay thoả thuận riêng mà phải nhận...)
+!to kick in
+- đá bung (cửa)
+- (từ Mỹ,nghĩa Mỹ),  (từ lóng) góp phần, đóng góp
+- (từ Mỹ,nghĩa Mỹ),  (từ lóng) chết
+!to kick off
+- đá bật đi
+=to kick off one's shoes+ đá bật giày ra
+- (thể dục,thể thao) bắt đầu ra bóng, bắt đầu ra trận đấu bóng đá
+!to kick out
+- đá ra; tống cổ ra
+!to kick up
+- đá tung lên
+=to kick up dust+ đá tung bụi lên
+- gây nên
+=to kick up a noise+ làm ồn lên
+!to kick against the pricks
+- (nghĩa bóng) kháng cự vô ích chỉ chuốc lấy cái đau đớn vào thân
+!to kick the bucket
+- (xem) bucket
+!to kick one's heels
+- (xem) heel
+!to kick over the traces
+- kháng cự lại, không chịu sự kiềm thúc gò ép
+!to kick somebody upstairs
+-(đùa cợt) đề bạt ai cốt để tống khứ đi
+!to kick up one's heels
+- (xem) heel
+
+@kick-off /'kik'ɔ:f/
+*  danh từ
+- (thể dục,thể thao) quả ra bóng mở đầu (bóng đá)
+- (thông tục) sự bắt đầu
+
+@kick-starter /'kik,stɑ:tə/
+*  danh từ
+- cần khởi động (mô tô)
+
+@kick-up /'kik'ʌp/
+*  danh từ (từ Mỹ,nghĩa Mỹ),  (thông tục)
+- sự om sòm
+- cuộc cãi lộn om sòm
+
+@kickback /'kikbæk/
+*  danh từ
+- sự phản ứng mãnh liệt
+- (từ Mỹ,nghĩa Mỹ) sự trả lại (của ăn cắp hoặc một phần số tiền do bị ép buộc hay thoả thuận riêng mà phải nhận...)
+
+@kicker /'kikə/
+*  danh từ
+- người đá
+- con ngựa hầu đá
+- tay đá bóng, cầu thủ bóng đá
+- người hay gây chuyện om sòm; người hay cãi lại; người hay càu nhàu
+- (kỹ thuật) thanh đẩy; đầu máy đẩy sau
+
+@kickshaw /'kikʃɔ:/
+*  danh từ
+- vật nhỏ mọn, vật tầm thường
+- món ăn bày vẽ (thường ngụ ý khinh bỉ, chê bai)
+
+@kid /kid/
+*  danh từ
+- con dê non
+- da dê non (làm găng tay, đóng giày...)
+- (từ lóng) đứa trẻ con, thằng bé
+*  động từ
+- đẻ (dê)
+*  danh từ
+- (từ lóng) sự lừa phỉnh, ngón chơi khăm
+*  ngoại động từ
+- (từ lóng) lừa phỉnh, chơi khăm
+*  danh từ
+- chậu gỗ nhỏ
+- cặp lồng gỗ (ngày xưa dùng đựng đồ ăn cho thuỷ thủ)
+
+@kid glove /'kid'glʌv/
+*  danh từ
+- găng bằng da dê non
+!with kid_gloves
+- nhẹ nhàng, tế nhị
+=to handle with kid_gloves+ xử sự khéo léo tế nhị, đối xử nhẹ nhàng
+
+@kid-glove /'kidglʌv/
+*  tính từ
+- khảnh, cảnh vẻ
+- sợ lao động, lẩn tránh công việc hằng ngày
+
+@kid-skin /'kidskin/
+*  danh từ
+- da dê non
+
+@kiddle /'kidl/
+*  danh từ
+- lưới chắn (ở sông để đánh cá)
+
+@kiddy /'kidi/
+*  danh từ
+- (từ lóng) đứa trẻ con, thằng bé
+
+@kidnap /'kidnæp/
+*  ngoại động từ
+- bắt cóc (thường để tống tiền)
+
+@kidnapper /'kidnæpə/
+*  danh từ
+- kẻ bắt cóc
+
+@kidney /'kidni/
+*  danh từ
+- (giải phẫu) quả cật, quả bầu dục (lợn, bò... làm đồ ăn)
+- tính tình, bản chất, tính khí; loại, hạng
+=a man of that kidney+ người thuộc cái hạng như vậy; người có tính khí như vậy
+=to be of the same kidney+ cùng một tính khí; cùng một guộc
+- khoai tây củ bầu dục ((cũng) kidney potato)
+
+@kidney bean /'kidni'bi:n/
+*  danh từ
+- (thực vật học) đậu tây
+- đậu lửa
+
+@kie-kie /'ki:ki:/
+*  danh từ
+- cây ki-ki (một loại cây leo ở Tân-tây-lan, lá dùng làm giỏ)
+
+@kief /kef/ (keif) /keif/ (kief) /ki:f/
+*  danh từ
+- trạng thái mơ màng (nửa thức, nửa ngủ)
+- sự thích thú cảnh nhàn du lười biếng
+- thuốc kép (hút để gây trạng thái mơ màng, thường chế bằng la gai dầu Ân độ)
+
+@kier /'kiə/
+*  danh từ
+- thùng chuội vải
+
+@kieselguhr /'ki:zəlguə/
+*  danh từ
+- (khoáng chất) kizengua, đất tảo cát
+
+@kilderkin /'kildəkin/
+*  danh từ
+- thùng quactan (chứa khoảng 80 lít)
+
+@kill /kil/
+*  ngoại động từ
+- giết, giết chết, làm chết, diệt ((nghĩa đen) & (nghĩa bóng))
+=to be killed on the spot+ bị giết ngay tại chỗ
+=to kill one's time+ giết thì giờ
+=to kill a colour+ làm chết màu
+- ngả, giết làm thịt (một con bò...)
+- tắt (máy...); làm át, làm lấp (tiếng...)
+=the drums kill the string+ tiếng trống làm át tiếng đàn dây
+- làm tiêu tan, làm hết (hy vọng...)
+- làm khỏi, trừ diệt (bệnh, đau...)
+- làm thất bại, làm hỏng; bác bỏ
+=to kill a bill+ bác bỏ một dự luật (ở quốc hội...)
+- làm phục lăn, làm choáng người, làm thích mê, làm cười vỡ bụng
+=got up (dolled up, dressed) to kill+ diện choáng người làm cho thiên hạ phục lăn
+=the story nearly killed me+ câu chuyện làm cho tôi cười gần chết
+- gây tai hại, làm chết dở
+=to kill somebody with kindness+ vì ân cần tử tế quá mà gây tai hại cho ai
+- (thể dục,thể thao) bạt một cú quyết định (quần vợt); chận đứng (bóng đá)
+- (kỹ thuật) ăn mòn
+*  nội động từ
+- giết, giết chết
+- giết thịt được
+=pigs do not kill well at that age+ lợn vào tuổi này giết thịt chưa được tốt
+!to kill off
+- giết sạch, tiêu diệt
+!to kill by inches
+- giết dần, giết mòn
+!to kill two birds with one stone
+- (xem) bird
+!to laugh fit to kill
+- (từ Mỹ,nghĩa Mỹ) cười vỡ bụng
+*  danh từ
+- sự giết
+- thú giết được (trong cuộc đi săn)
+
+@kill-devil /'kil,devl/
+*  danh từ
+- mồi quay (mồi câu giả quay tròn ở dưới nước)
+
+@kill-time /'kiltaim/
+*  danh từ
+- trò tiêu khiển, việc làm cho tiêu thì giờ
+
+@killer /'kilə/
+*  danh từ
+- người giết, kẻ giết người
+- dụng cụ giết thịt (súc vật)
+- (động vật học) cá heo ((cũng) killer whale)
+
+@killer whale /'kiləweil/
+*  danh từ
+- (động vật học) cá heo ((cũng) killer)
+
+@killick /'kilik/ (killock) /'kilɔk/
+*  danh từ (hàng hải)
+- đá neo (hòn đá lớn dùng để neo thuyền)
+- neo nhỏ
+- (từ lóng) lính thuỷ
+
+@killing /'kiliɳ/
+*  danh từ
+- sự giết chóc, sự tàn sát
+- (từ Mỹ,nghĩa Mỹ),  (thông tục) món lãi vớ bở; sự thành công bất thình lình
+*  tính từ
+- giết chết, làm chết
+- làm kiệt sức, làm bã người
+- (thông tục) làm phục lăn, làm thích mê đi, làm choáng người; làm cười vỡ bụng
+
+@killingly /'kiliɳli/
+*  phó từ
+- (thông tục) làm phục lăn, làm thích mê đi, làm choáng người; làm cười vỡ bụng
+
+@killjoy /'kildʤɔi/
+*  danh từ
+- người làm mất vui, người phá đám
+
+@killock /'kilik/ (killock) /'kilɔk/
+*  danh từ (hàng hải)
+- đá neo (hòn đá lớn dùng để neo thuyền)
+- neo nhỏ
+- (từ lóng) lính thuỷ
+
+@kiln /kiln/
+*  danh từ
+- lò (nung vôi, gạch...)
+
+@kiln-dry /kilntaim/
+*  ngoại động từ
+- nung trong lò (vôi, gạch...)
+
+@kilo /'ki:lou/
+*  danh từ,  (viết tắt) của kilogram; kilometre
+
+@kiloampere /'ki:lou,æmpeə/
+*  danh từ
+- kilôampe
+
+@kilocalorie /'kilou,kæləri/
+*  danh từ
+- kilôcalo
+
+@kilocycle /'kilou,saikl/
+*  danh từ
+- kilôxic
+
+@kilogram /'kiləgræm/ (kilogramme) /'kiləgræm/
+*  danh từ
+- kilôgam
+
+@kilogramme /'kiləgræm/ (kilogramme) /'kiləgræm/
+*  danh từ
+- kilôgam
+
+@kilogrammeter /,kiləgræm'mi:tə/ (kilogrammeter) /,kiləgræm'mi:tə/
+*  danh từ
+- kilôgammet
+
+@kilogrammetre /,kiləgræm'mi:tə/ (kilogrammeter) /,kiləgræm'mi:tə/
+*  danh từ
+- kilôgammet
+
+@kiloliter /'kilou,litə/ (kiloliter) /'kilou,litə/
+*  danh từ
+- kilôlit
+
+@kilolitre /'kilou,litə/ (kiloliter) /'kilou,litə/
+*  danh từ
+- kilôlit
+
+@kilometer /'kilə,mi:tə/
+*  danh từ
+- (từ Mỹ,nghĩa Mỹ) kilômet
+
+@kilometre /'kilə,mi:tə/
+*  danh từ
+- kilômet
+
+@kilometric /,kilə'metrik/
+*  tính từ
+- (thuộc) kilômet; đo bằng kilômet
+
+@kilovolt /'kiləvoult/
+*  danh từ
+- kilôvon
+
+@kilowatt /'kiləwɔt/
+*  danh từ
+- kilôoat
+
+@kilowatt-hour /'kiləwɔt,auə/
+*  danh từ
+- kilôoat giờ
+
+@kilt /kilt/ (filibeg) /'filibeg/
+*  danh từ
+- váy (của người miền núi và lính Ê-cốt)
+*  ngoại động từ
+- vén lên (váy)
+- xếp nếp (vải)
+
+@kilter /'kiltə/
+*  danh từ
+- (từ Mỹ,nghĩa Mỹ) thứ tự, trật tự
+=out of kilter+ không có thứ tự
+=in kilter+ có thứ tự
+
+@kiltie /'kilti/ (kilty) /'kilti/
+*  danh từ
+- lính mặc quân phục có váy (Ê-cốt)
+
+@kilty /'kilti/ (kilty) /'kilti/
+*  danh từ
+- lính mặc quân phục có váy (Ê-cốt)
+
+@kimono /ki'mounou/
+*  danh từ,  số nhiều kimonos
+- áo kimônô (Nhật)
+
+@kin /kin/
+*  danh từ
+- dòng dõi, dòng họ, gia đình
+=to come of good kin+ sinh ra ở một gia đình tốt
+- bà con thân thiết, họ hàng
+=to be near of kin+ là bà con gần
+*  tính từ vị ngữ
+- có họ là bà con thân thích
+=we are kin+ chúng tôi có họ với nhau
+=to be kin to someone+ có họ với ai, là bà con thân thích với ai
+
+@kinchin /'kintʃin/
+*  danh từ
+- (từ lóng) đứa bé con, thằng bé
+!kinchin lay
+- thói rình ăn cắp tiền của trẻ con
+
+@kincob /'kiɳkəb/
+*  danh từ
+- vải kim tuyến kincôp (Ân độ)
+
+@kind /kaind/
+*  danh từ
+- loài giống
+=the rabbit kind+ giống thỏ
+- loại, hạng, thứ
+=people of all kinds+ người đủ mọi hạng
+=something of the kind+ không phải cái loại như vậy, không có cái gì như vậy, không phải như vậy
+- cái cùng loại, cái đúng như vậy
+=to repay in kind+ trả lại cái đúng như vậy
+=to relay someone's insolence in kind+ lấy thái độ láo xược mà đáp lại thái độ láo xược của ai
+- cái đại khái giống như, cái gần giống; cái tàm tạm gọi là
+=to feel a kind of remorse+ cảm thấy một cái gì như là hối hận
+=coffee of a kind+ cái tàm tạm gọi là cà phê
+- bản tính
+=top act after one's kind+ hành động theo bản tính
+- tính chất
+=to differ in degree but not in kind+ khác nhau về mức độ chứ không phải về tính chất
+- hiện vật
+=to pay in kind+ trả bằng hiện vật
+!kind of
+- (thông tục) phần nào, chừng mực nào
+=I kind of expected it+ tôi cũng mong chờ cái đó phần nào
+*  tính từ
+- tử tế, ân cần, có lòng tốt xử lý, để gia công; mềm (quặng)
+!to be so kind as to...
+- xin hãy làm ơn...
+
+@kind-hearted /'kaind'hɑ:tid/
+*  tính từ
+- tốt bụng, có lòng tốt
+
+@kindergarener /'kində,gɑ:tnə/ (kindergarener) /'kində,gɑ:tnə/
+*  danh từ
+- em học sinh mẫu giáo; bé đi vườn trẻ
+- cô mẫu giáo
+
+@kindergarner /'kində,gɑ:tnə/ (kindergarener) /'kində,gɑ:tnə/
+*  danh từ
+- em học sinh mẫu giáo; bé đi vườn trẻ
+- cô mẫu giáo
+
+@kindergarten /'kində,gɑ:tn/
+*  danh từ
+- lớp mẫu giáo, vườn trẻ
+
+@kindle /'kindl/
+*  ngoại động từ
+- đốt, nhen, nhóm (lửa...)
+- làm ánh lên, làm rực lên, làm ngời lên
+- nhen lên, khơi, gợi, gây
+=to kindle somebody's anger+ khơi sự tức giận của ai
+=to kindle somebody's interest+ gợi sự thích thú của ai
+- kích thích, khích động, xúi giục
+=to kindle someone to do something+ khích động ai làm gì
+*  nội động từ
+- bắt lửa, bốc cháy
+- ánh lên, rực lên, ngời lên
+=eyes kindled with happiness+ đôi mắt ngời lên vì sung sướng
+- (nghĩa bóng) bị khích động, bừng bừng
+
+@kindliness /'kaindlinis/
+*  danh từ
+- lòng tốt
+- sự dễ chịu (của khí hậu); vẻ đẹp (của phong cảnh)
+
+@kindling /'kindliɳ/
+*  danh từ
+- sự nhen lửa, sự nhóm lửa
+- ((cũng) số nhiều) củi đóm (để nhen lửa), mồi nhen lửa
+
+@kindling-wood /'kindliɳwud/
+*  danh từ
+- củi đóm
+
+@kindly /'kaindli/
+*  tính từ
+- tử tế, tốt bụng
+=a kindly hear+ một tấm lòng tốt
+- thân ái, thân mật
+- dễ chịu (khí hậu...)
+- (từ cổ,nghĩa cổ) gốc ở, vốn sinh ở
+=a kindly Scott+ một người gốc ở Ê-cốt
+*  phó từ
+- tử tế, ân cần
+- thân ái
+=to speak kindly+ nói một cách thân ái
+- vui lòng, làm ơn (xã giao hoặc mỉa)
+=will (would) you kindly tell me the time?+ xin ông vui lòng cho biết bây giờ mấy giờ?
+- dễ dàng, tự nhiên; lấy làm vui thích
+=to take kindly to one's duties+ bắt tay vào nhiệm vụ một cách dễ dàng
+
+@kindness /'kaindnis/
+*  danh từ
+- sự tử tế, sự ân cần; lòng tốt
+=to do something out of kindness+ vì lòng tốt mà làm việc gì
+=to show someone great kindness+ rất tốt đối với ai, rất tử tế đối với ai
+- điều tử tế, điều tốt
+=to do someone a kindness+ làm điều tốt đối với ai
+- sự thân ái
+
+@kindred /'kindrid/
+*  danh từ
+- bà con anh em, họ hàng thân thích
+- quan hệ họ hàng
+- (nghĩa bóng) sự giống nhau về tính tình
+*  tính từ
+- cùng một tông; họ hàng bà con
+=kindred tribes+ những bộ lạc cùng một tông
+- cùng một nguồn gốc; giống nhau, tương tự
+=kindred languages+ những ngôn ngữ cùng chung một nguồn gốc
+=dew, frost and kindred phenomena+ sương, sương giá và các hiện tượng tương tự
+
+@kine /kain/
+*  danh từ
+- (từ cổ,nghĩa cổ) số nhiều của cow
+
+@kinema /'kinimə/
+*  danh từ
+- (từ cổ,nghĩa cổ) (như) cinema
+
+@kinematic /,kaini'mætik/ (kinematical) /,kaini'mætikəl/
+*  tính từ
+- (vật lý) (thuộc) động học
+
+@kinematical /,kaini'mætik/ (kinematical) /,kaini'mætikəl/
+*  tính từ
+- (vật lý) (thuộc) động học
+
+@kinematics /,kaini'mætiks/
+*  danh từ,  số nhiều dùng như số ít
+- (vật lý) chuyển động học
+
+@kinematograph /,kaini'mætəgrɑ:f/
+*  danh từ & động từ
+- (từ cổ,nghĩa cổ) (như) cinematograph
+
+@kinescope /'kiniskoup/
+*  danh từ
+- kinetcôp
+
+@kinetic /kai'netik/
+*  tính từ
+- (thuộc) động lực; do động lực
+=kinetic energy+ động năng
+- (thuộc) động lực học
+
+@kinetics /kai'netiks /
+*  danh từ,  số nhiều dùng như số ít
+- động học
+=physical kinetics+ động lực học vật lý
+=chemical kinetics+ động lực học hoá học
+
+@king /kiɳ/
+*  danh từ
+- vua, quốc vương
+!King's bounty
+- trợ cấp của nhà vua cho các bà mẹ đẻ sinh ba
+!King's colour
+- lá cờ của nhà vua
+- (nghĩa bóng) vua (đại tư bản...)
+=an oil king+ vua dầu lửa
+- chúa tể (loài thú, loài chim)
+=king of beast+ chúa tể các loài thú (sư tử)
+=king of birds+ chúa tể các loài chim (đại bàng)
+=king of metals+ vàng
+- (đánh cờ) quân tướng, quân chúa
+- (đánh bài) lá bài K
+- loại tốt nhất; loại to, loại lớn (hoa quả)
+!King's highway
+- con đường chính (thuỷ bộ)
+!Kings' (Queen's) weather
+- thời tiết đẹp vào những ngày lễ lớn
+!the King of day
+- mặt trời
+!the King of glory)of heaven, of kings)
+- (tôn giáo) Chúa
+!the King of Terrors
+- thần chết
+!to turn King's (Queen's) evidence
+- (xem) evidence
+!tragedy king
+- diễn viên đóng vai vua (trong các bi kịch)
+*  nội động từ
+- làm vua, trị vì
+- làm như vua, làm ra vẻ vua
+*  ngoại động từ
+- tôn lên làm vua
+!to king it
+- làm như vua, làm ra vẻ vua
+
+@king's evil /'kiɳz'i:vl/
+*  danh từ
+- (y học) tràng nhạc
+
+@king's peg /'kiɳzpeg/
+*  danh từ
+- cốc rượu sâm banh pha cônhắc
+
+@king's ransom /'kiɳz'rænsəm/
+*  danh từ
+- món tiền lớn
+
+@king-crab /'kiɳkræb/
+*  danh từ
+- (động vật học) con sam
+
+@king-size /'kiɳsaiz/
+*  danh từ
+- cỡ lớn, cỡ to hơn cỡ thông thường
+
+@king-sized /'kiɳsaizd/
+*  tính từ
+- có cỡ lớn, có cỡ to hơn cỡ thông thường
+
+@kingbird /'kiɳbə:d/
+*  danh từ
+- (động vật học) chim thuỵ hồng
+
+@kingbolt /'kiɳboult/ (kingpin) /'kiɳpin/
+*  danh từ
+- chốt cái, chốt chính
+
+@kingcraft /'kiɳkrɑ:ft/
+*  danh từ
+- thuật trị vì
+
+@kingcup /'kiɳkʌp/
+*  danh từ
+- cây mao lương hoa vàng
+
+@kingdom /'kiɳdəm/
+*  danh từ
+- vương quốc
+=the United kingdom+ vương quốc Anh
+=the kingdom of heaven+ thiên đường
+- (sinh vật học) giới
+=the animal kingdom+ giới động vật
+- (nghĩa bóng) lĩnh vực
+=the kingdom of thought+ lĩnh vực tư tưởng
+
+@kingdom-come /'kiɳdəmkʌm/
+*  danh từ
+- (từ lóng) thế giới bên kia, nơi cực lạc
+=to go to kingdom-come+ sang thế giới bên kia, về nơi cực lạc
+
+@kingfisher /'kiɳ,fiʃə/
+*  danh từ
+- (động vật học) chim bói cá
+
+@kinglet /'kiɳlit/
+*  danh từ
+- nhuốm & vua con
+- (động vật học) chim tước mào vàng
+
+@kinglike /'kiɳlaik/
+*  tính từ
+- như một ông vua
+
+@kingly /'kiɳli/
+*  tính từ
+- vương giả, đường bệ; đế vương; xứng đáng một ông vua
+
+@kingpin /'kiɳpin/
+*  danh từ
+- (như) kingbolt
+- (nghĩa bóng) trụ cột, nòng cốt, nhân vật chính
+
+@kingpost /'kiɳpoust/
+*  danh từ
+- cột dỡ nóc (nối xà ngang với nóc)
+
+@kingship /'kiɳʃip/
+*  danh từ
+- địa vị làm vua
+- vương quyền
+
+@kink /kiɳk/
+*  danh từ
+- nút, chỗ thắt nút; chỗ xoắn (ở dây, dây cáp...)
+- sự lệch lạc (về tư tưởng, tính nết...)
+- (từ Mỹ,nghĩa Mỹ) tính lập dị; tính đỏng đảnh
+- (từ Mỹ,nghĩa Mỹ) cái mắc mớ gây khó khăn cho công việc
+- chứng vẹo cổ
+*  động từ
+- thắt nút; xoắn lại (dây...)
+
+@kinkajou /'kiɳkədʤu:/
+*  danh từ
+- (động vật học) gấu trúc potôt
+
+@kinkiness /'kiɳkinis/
+*  danh từ
+- sự quăn, sự xoắn (tóc)
+- (thông tục) tính lập dị; tính đỏng đảnh
+
+@kinky /'kiɳki/
+*  tính từ
+- quăn, xoắn (tóc)
+- (thông tục) lập dị; đỏng đảnh
+
+@kinless /'kinlis/
+*  tính từ
+- không bà con, không thân thích; không gia đình
+
+@kino /'ki:nou/
+*  danh từ
+- chất kinô (nhựa một số cây dùng làm thuốc và để thuộc da)
+
+@kinsfolk /'kinzfouk/
+*  danh từ
+- những người trong gia đình; bà con anh em; họ hàng thân thích
+
+@kinship /'kinʃip/
+*  danh từ
+- mối quan hệ họ hàng
+- sự giống nhau về tính chất
+
+@kinsman /'kinzmən/
+*  danh từ
+- người bà con (nam)
+
+@kinswoman /'kinz,wumən/
+*  danh từ
+- người bà con (nữ)
+
+@kintal /'kintl/
+*  danh từ (từ cổ,nghĩa cổ)
+- (như) quintal
+
+@kiosk /ki'ɔsk/ (kiosque) /ki'ɔsk/
+*  danh từ
+- quán (bán sách, giải khát...)
+- buồng điện thoại công cộng
+
+@kiosque /ki'ɔsk/ (kiosque) /ki'ɔsk/
+*  danh từ
+- quán (bán sách, giải khát...)
+- buồng điện thoại công cộng
+
+@kip /kip/
+*  danh từ
+- da súc vật non (cừu, bê...)
+- (từ Mỹ,nghĩa Mỹ) kíp (đơn vị trọng lượng bằng 453, 59 kg)
+- (từ lóng) nhà trọ
+- chỗ ở
+- giường
+*  nội động từ
+- ngủ
+
+@kipper /'kipə/
+*  danh từ
+- cá trích muối hun khói
+- cá hồi đực trong mùa đẻ
+- (từ lóng) gã, chàng trai
+- (quân sự),  (từ lóng) ngư lôi
+*  ngoại động từ
+- ướp muối và hun khói (cá trích, cá hồi...)
+
+@kirk /kə:k/
+*  danh từ
+- (Ê-cốt) nhà thờ; giáo hội
+=the Kirk of Scotland+ nhà thờ Ê-cốt
+
+@kirsch /'kiəʃ/ (kirschwasser) /'kiəʃ,vɑ:sə/
+*  danh từ
+- rượu anh đào dại
+
+@kirschwasser /'kiəʃ/ (kirschwasser) /'kiəʃ,vɑ:sə/
+*  danh từ
+- rượu anh đào dại
+
+@kirtle /'kə:tl/
+*  danh từ (từ cổ,nghĩa cổ)
+- áo dài
+- váy
+
+@kismet /'kismet/
+*  danh từ
+- số phận, số mệnh
+
+@kiss /kis/
+*  danh từ
+- cái hôn
+- sự chạm nhẹ (của hai hòn bi-a đang lăn)
+- kẹo bi đường
+!to snatch (steal) a kiss
+- hôn trộm
+!stolen kisses are sweet
+- (tục ngữ) của ăn vụng bao giờ cũng ngon
+*  ngoại động từ
+- hôn
+- (nghĩa bóng) chạm khẽ, chạm lướt (sóng, gió)
+=the waves kiss the sand beach+ sóng khẽ lướt vào bãi cát
+- chạm nhẹ (những hòn bi đang lăn)
+!to kiss away tears
+- hôn để làm cho nín khóc
+!to hiss and be friends
+- làm lành hoà giải với nhau
+!to kiss the book
+- hôn quyển kinh thánh khi làm lễ tuyên thệ
+!to kiss the dust
+- tự hạ mình, khúm núm quỵ luỵ
+- bị giết
+!to kiss good-bue
+- hôn tạm biệt, hôn chia tay
+!to kiss the ground
+- phủ phục, quỳ mọp xuống (để tạ ơn...)
+- (nghĩa bóng) bị đánh bại, bị hạ, bị đánh gục
+!to kiss one's hand to someone
+- vẫy vẫy gửi với một cái hôn tay với ai
+!to kiss hands (the hand)
+- hôn tay (vua... khi nhậm chức hoặc khi yết kiến...)
+!to kiss the rod
+- nhẫn nhục chịu đựng trừng phạt nhục hình
+
+@kiss-curl /'kiskə:l/
+*  danh từ
+- mớ tóc quăn (ở trán)
+
+@kiss-in-the-ring /'kisinðə'riɳ/
+*  danh từ
+- trò chơi chạy đuổi và hôn nhau (giữa trai gái)
+
+@kiss-me-quick /'kismi'kwik/
+*  danh từ
+- mũ hớt (của phụ nữ, đội lui hẳn về phía sau đầu)
+- mớ tóc quăn (trên trán)
+
+@kissable /'kisəbl/
+*  tính từ
+- đáng hôn, trông muốn hôn
+
+@kisser /'kisə/
+*  danh từ
+- người hôn
+- (từ Mỹ,nghĩa Mỹ),  (từ lóng) cái mồm; môi; cái mặt
+
+@kissing /'kisiɳ/
+*  danh từ
+- sự hôn; sự ôm hôn
+
+@kissing kind /'kisiɳkaind/
+*  tính từ
+- thân mật đén mức có thể ôm hôn
+
+@kit /kit/
+*  danh từ
+- (viết tắt) của kitten
+- mèo con
+*  danh từ
+- thùng gỗ; chậu gỗ
+*  danh từ
+- (từ hiếm,nghĩa hiếm) đàn viôlông nhỏ
+*  danh từ
+- đồ đạc quần áo (của bộ đội...); hành lý (đi du lịch); đồ lề (đi săn bắn, đi câu...)
+- dụng cụ làm việc, bộ đồ nghề
+=a carpenter's kit+ bộ đồ thợ mộc
+- túi đựng đồ đạc quần áo (của bộ đội...); túi (đầy)
+!the whole kit [and caboodle]
+- cả bọn, cả lũ
+*  động từ
+- trang bị đồ đạc quần áo; sắm sửa đồ lề
+- sắm sửa đồ nghề
+
+@kit-bag /'kitbæg/
+*  danh từ
+- túi đựng đồ đạc quần áo (của bộ đội, của người đi du lịch...)
+
+@kit-cat /'kitkæt/
+*  danh từ
+- Kit-cat Club câu lạc bộ của đảng Uých
+- hội viên câu lạc bộ đảng Uých
+=kit-cat portrait+ chân dung nửa người (trông thấy cả hai bàn tay)
+
+@kitchem-maid /'kitʃinmeid/ (kitchen-wench) /'kitʃinwentʃ/
+-wench) /'kitʃinwentʃ/
+*  danh từ
+- chị phụ bếp
+
+@kitchen garden /'kitʃin'gɑ:dən/
+*  danh từ
+- vườn rau
+
+@kitchen midden /'kitʃin'midn/
+*  danh từ
+- (khảo cổ học) đống rác bếp
+
+@kitchen physic /'kitʃin'fizik/
+*  danh từ
+- phương thuốc ăn (cứ ăn nhiều ăn tốt là khoẻ)
+
+@kitchen police /'kitʃinpə'li:s/
+*  danh từ (từ Mỹ,nghĩa Mỹ),  (quân sự)
+- nhóm nấu ăn, nhóm anh nuôi
+- công việc của nhóm nấu ăn
+
+@kitchen ware /'kitʃinweə/
+*  danh từ
+- đồ dùng nấu bếp (nồi, chão...)
+
+@kitchen-range /'kitʃinreindʤ/
+*  danh từ
+- lò nấu bếp
+
+@kitchen-stuff /'kitʃinstʌf/
+*  danh từ
+- thức nấu ăn; rau
+
+@kitchen-wench /'kitʃinmeid/ (kitchen-wench) /'kitʃinwentʃ/
+-wench) /'kitʃinwentʃ/
+*  danh từ
+- chị phụ bếp
+
+@kite /kait/
+*  danh từ
+- cái diều
+- (động vật học) diều hâu
+- (nghĩa bóng) kẻ tham tàn; kẻ bịp bợm, quân bạc bịp
+- (thương nghiệp),  (từ lóng) văn tự giả; hối phiếu giả
+- (hàng hải) cánh buồm cao nhất (chỉ giương lên khi có gió nhẹ)
+- (quân sự),  (từ lóng) máy bay
+!to fly a kite
+- thả diều
+- (nghĩa bóng) thăm dò ý kiến
+- (thương nghiệp),  (từ lóng) lấy tiền bằng văn tự giả; lấy tiền bằng hối phiếu giả
+*  nội động từ
+- bay lên như diều
+- (thương nghiệp),  (từ lóng) lấy tiền bằng văn tự giả; lấy tiền bằng hối phiếu giả
+*  ngoại động từ
+- làm bay lên như diều
+- (thương nghiệp),  (từ lóng) chuyển thành văn tự giả; chuyển thành hối phiếu giả
+
+@kite-balloon /'kaitbə,bu:n/
+*  danh từ
+- (quân sự) khi cầu thủ do thám
+
+@kite-flying /'kait,flaiiɳ/
+*  danh từ
+- sự thả diều
+- (nghĩa bóng) sự thăm dò ý kiến
+- (thương nghiệp),  (từ lóng) sự lấy tiền bằng văn tự giả; sự lấy tiền bằng hối phiếu giả
+
+@kith /kiθ/
+*  danh từ
+- bè bạn, người quen biết
+=kith and kin+ bè bạn họ hàng
+
+@kittchen /'kitʃin/
+*  danh từ
+- nhà bếp
+
+@kitten /'kitn/
+*  danh từ
+- mèo con
+- cô gái đỏng đảnh, cô gái õng ẹo
+*  ngoại động từ
+- đẻ (mèo)
+
+@kittenish /'kitniʃ/
+*  tính từ
+- (thuộc) mèo con; như mèo con
+- đùa nghịch loăng quăng như mèo con
+- đỏng đảnh, õng ẹo (cô gái)
+
+@kittiwake /'kitiweik/
+*  danh từ
+- (động vật học) mòng biển xira
+
+@kittle /'kitl/
+*  tính từ
+- khó khăn, khó xử (vấn đề, trường hợp...)
+- khó tính, hay giận, khó chơi (người)
+!kittle cattle
+- (nghĩa bóng) những người khó chơi; những việc khó xử
+
+@kitty /'kiti/
+*  danh từ
+- nhuây khót vốn chung; vốn góp (đánh bài, hoặc làm việc gì...)
+
+@kiwi /'ki:wi:/
+*  danh từ
+- (động vật học) chim kivi
+- (hàng không),  (từ lóng) nhân viên "không bay" (phụ trách các việc ở dưới đất)
+- kivi (thông tục) người Tân-tây-lan
+
+@klansman /'klʌksə/ (klansman) /'klænzmən/
+*  danh từ
+- (từ Mỹ,nghĩa Mỹ),  (thông tục) đảng viên đảng 3K
+
+@klaxon /'klæksn/
+*  danh từ
+- còi điện (xe ô tô)
+
+@kleptomania /,kleptou'meinjə/
+*  danh từ
+- thói ăn cắp vặt, thói tắt mắt
+
+@kleptomaniac /,kleptou'meiniæk/
+*  danh từ
+- người ăn cắp vặt, người tắt mắt
+
+@klipspringer /'klip,spriɳə/
+*  danh từ
+- (động vật học) linh dương Nam phi
+
+@kloof /klu:f/
+*  danh từ
+- hẽm núi; thung lũng (ở Nam phi)
+
+@kluxer /'klʌksə/ (klansman) /'klænzmən/
+*  danh từ
+- (từ Mỹ,nghĩa Mỹ),  (thông tục) đảng viên đảng 3K
+
+@klystron /'klistrɔn/
+*  danh từ
+- (vật lý) klytron
+=reflex klystron+ klytron phản xạ
+
+@knack /næk/
+*  danh từ, ít khi dùng số nhiều
+- sở trường, tài riêng; sự thông thạo; sự khéo tay
+=to have the knack of something+ làm việc gì khéo léo; có tài riêng làm việc gì
+=there is a knack in it+ việc này phải làm rồi mới thạo được
+- mẹo, khoé (để làm gì)
+- thói quen, tật (trong khi viết, khi nói...)
+
+@knacker /'nækə/
+*  danh từ
+- người chuyên mua ngựa già để giết thịt
+- người chuyên buôn tàu (nhà...) cũ để phá lấy vật liệu
+
+@knackery /'nækəri/
+*  danh từ
+- lò làm thịt ngựa già
+
+@knag /'nægi/
+*  danh từ
+- mắt (gỗ)
+
+@knaggy /'nægi/
+*  tính từ
+- nhiều mắt (gỗ)
+
+@knap /næp/
+*  ngoại động từ
+- đập (đá lát đường...) bằng búa
+- (tiếng địa phương) đập vỡ, đập bể
+*  danh từ (tiếng địa phương)
+- đỉnh đồi
+- gò, đồi nhỏ
+
+@knapper /'næpə/
+*  danh từ
+- người đập đá
+
+@knapsack /'næpsæk/
+*  danh từ
+- ba lô
+
+@knapweed /'næpwi:d/
+*  danh từ
+- (thực vật học) cây xa cúc
+
+@knar /nɑ:/
+*  danh từ
+- mắt, mấu (ở thân cây, rễ cây)
+
+@knave /neiv/
+*  danh từ
+- kẻ bất lương, kẻ đểu giả, đồ xỏ lá ba que
+- (đánh bài) quân J
+- (từ cổ,nghĩa cổ) người hầu
+
+@knavery /'neivəri/
+*  danh từ
+- sự bất lương, tính đểu giả, tính xỏ lá ba que
+- hành động bất lương, hành vi đểu giả
+- trò tinh quái, trò nghịch ác
+
+@knavish /'neiviʃ/
+*  tính từ
+- lừa đảo, lừa bịp; đểu giả, xỏ lá ba que
+=knavish tricks+ thủ đoạn lừa bịp
+- (từ cổ,nghĩa cổ) tinh quái, nghịch ác
+
+@knead /ni:d/
+*  ngoại động từ
+- nhào lộn (bột để làm bánh, đất sét...)
+- (nghĩa bóng) trộn lẫn vào, hỗn hợp vào
+- xoa bóp; đấm bóp, tầm quất
+
+@kneading machine /'ni:diɳmə,ʃi:n/
+*  danh từ
+- máy nhào bột
+
+@kneading-trough /'ni:diɳtrɔf/
+*  danh từ
+- máng (để) nhào bột
+
+@knee /ni:/
+*  danh từ
+- đầu gối
+=up to one's knee+ đến tận đầu gối
+- chỗ đầu gối quần
+=the trousers bulge at the knees+ quần phồng ra ở chỗ đầu gối
+- (kỹ thuật) khuỷu, khớp xoay
+- chân quỳ hình thước thợ ((cũng) knee bracket); thanh (sắt, gỗ) uốn gãy góc
+!to bend the knee to somebody
+- quỳ gối trước ai
+!to bow the knee before somebody
+- chịu phục tùng ai, chịu khuất phục trước người nào
+!to bring someone to his knees
+- bắt ai phải quỳ gối, bắt ai phải đầu hàng
+!to get ogg one's knees
+- đứng dậy (sau khi quỳ)
+!to give (offer) a knee to somebody
+- giúp đỡ ai, phụ tá ai
+- (thể dục,thể thao) đỡ (một võ sĩ quyền Anh) cho quỳ xuống giữa hai hiệp đấu
+!to go on one's knees
+- quỳ gối
+!to go on one's knees to somebody
+- quỳ gối trước ai, quỵ luỵ ai, van nài ai
+!on one's knees
+- quỳ gối, quỵ luỵ, van nài, hạ mình
+!on hands and knees
+- bỏ
+!it is on the knees of the gods
+- còn chưa rõ, chưa biết, chưa chắc chắn
+*  ngoại động từ
+- hích bằng đầu gối, đụng bằng đầu gối
+- làm chắc (khung...) bằng sắt thước thợ
+- (thông tục) làm phồng (quần) ở chỗ đầu gối
+
+@knee-boot /'ni:bu:t/
+*  danh từ
+- giày ống (đến tận gần đầu gối)
+
+@knee-breeches /'ni:,britʃiz/
+*  danh từ số nhiều
+- quần ngắn đến tận gần đầu gối (khác với quần sóoc)
+
+@knee-cap /'ni:kæp/
+*  danh từ
+- (giải phẫu) xương bánh chè (ở đầu gối) ((cũng) knee-pan)
+- miếng đệm đầu gối (vải, cao su hoặc da để bảo vệ đầu gối) ((cũng) knee-pad)
+
+@knee-deep /'ni:'di:p/
+*  tính từ
+- sâu đến tận đầu gối
+
+@knee-high /'ni:'hai/
+*  tính từ
+- cao đến đầu gối
+!knee-high to a mosquito (a grasshopper, a duck)
+-(đùa cợt) bé tí, lùn tịt
+
+@knee-hole /'ni:houl/
+*  danh từ
+- chỗ đút đầu gối (chỗ trống ở giữa hai ngăn tủ ở bàn viết để cho đầu gối vào
+=knee-hole table+ bàn tủ (bàn giấy có hai ngăn tủ hai bên, ở giữa có chỗ trống để khi ngồi cho đầu gối vào)
+
+@knee-jerk /'ni:dʤə:k/
+*  danh từ
+- (y học) phản xạ bánh chè
+
+@knee-joint /'ni:dʤɔint/
+*  danh từ
+- (giải phẫu) khớp đầu gối
+- (kỹ thuật) mối ghép đòn khuỷ
+
+@knee-pad /'ni:pæd/
+*  danh từ
+- miếng đệm đầu gối (vải, cao su hoặc da để bảo vệ đầu gối) ((cũng) knee-cap)
+
+@knee-pan /'ni:pæn/
+*  danh từ
+- (giải phẫu) xương bánh chè (ở đầu gối) ((cũng) knee-cap)
+
+@kneel /ni:l/
+*  nội động từ
+- quỳ, quỳ xuống ((cũng) to kneel down)
+=to kneel to somebody+ quỳ gối trước ai, quỳ lạy ai
+
+@kneeling position /'ni:liɳpə'ziʃn/
+*  danh từ
+- (quân sự) tư thế quỳ bắn
+
+@knell /nel/
+*  danh từ
+- hồi chuông báo tử
+- điềm cáo chung, điềm tận số (của một chế độ, một tập đoàn...)
+*  động từ
+- rung lên ai oán, kêu lên buồn thảm
+- báo điềm cáo chung, báo điềm tận số
+- (từ cổ,nghĩa cổ) đánh hồi chuông báo tử
+
+@knelt /ni:l/
+*  nội động từ
+- quỳ, quỳ xuống ((cũng) to kneel down)
+=to kneel to somebody+ quỳ gối trước ai, quỳ lạy ai
+
+@knew /nou/
+*  động từ knew; known
+- biết; hiểu biết
+=to know about something+ biết về cái gì
+=to know at least three languages+ biết ít nhất ba thứ tiếng
+=to know how to play chess+ biết đánh cờ
+- biết, nhận biết; phân biệt được
+=to know somebody at once+ nhận biết được ai ngay lập tức
+=to know one from another+ phân biệt được cái này với cái khác
+- biết, quen biết
+=to know by sight+ biết mặt
+=to know by name+ biết tên
+=to get to know somebody+ làm quen được với ai
+- ((thường) + of) biết, biết tin, biết rõ về
+=do you know of his return?+ anh đã biết tin ông ta trở về chưa?
+=I know of an excellent restaurant near here+ tôi biết gần đây có một tiệm ăn rất tốt
+- đã biết mùi, đã trải qua
+=to know misery+ đã trải qua cái cảnh nghèo khổ
+- (kinh thánh) đã ăn nằm với (một người đàn bà)
+!all one knows
+- (thông tục) (với) tất cả khả năng của mình, (với) tất cả sự hiểu biết của mình; hết sức mình
+=to try all one knows+ cố gắng hết sức mình, thử làm với tất cả khả năng của mình
+!before you know where you are
+- (thông tục) ngay, không chậm trễ, trong chốc lát, một cách nhanh chóng
+!to know black from white
+!to know chalk from cheese
+!to know a hawk from a handsaw
+!to know one's way about
+- biết rõ sự tình; biết phân biệt trắng đen; biết cặn kẽ, biết rõ ngọn ngành
+!to know better
+- (xem) better
+=I know better [than that]+ tôi biết thừa đi rồi, tôi còn biết rõ hơn thế nữa kia
+!to know better than...
+- không ngốc mà lại...
+!to know one's own business
+- không dính vào việc của người khác
+!to know something (somebody) as a person knows his ten fingers; to know something (somebody) as well as a beggar knows his bag; to know something (somebody) like a book; to know something (somebody) like the palm of one's hands
+- biết cặn kẽ cái gì (ai); biết rõ cái gì (ai) như lòng bàn tay mình
+!to know one's own mind
+- biết rõ ý định của mình; kiên quyết, không dao động
+!to know what one is about
+- biết phải làm gì; hành động một cách khôn ngoan
+!not to know what from which
+- không biết cái gì với cái gì
+!to know everything is to know nothing
+- (tục ngữ) cái gì cũng biết là không biết cái gì cả
+!not that I know of
+- theo tôi biết thì không
+*  danh từ (thông tục)
+- to be in the know biết rõ sự việc, biết rõ vấn đề; biết điều mà mọi người chưa biết
+
+@knick-knack /'niknæk/
+*  danh từ
+- đồ trang sức lặt vặt, đồ trang trí lặt vặt; đồ lặt vặt
+
+@knick-knackery /'niknækəri/
+*  danh từ
+- những đồ trang sức lặt vặt, những đồ trang trí lặt vặt; những đồ lặt vặt (nói chung)
+- nghề buôn bán đồ trang sức lặt vặt, nghề buôn bán đồ trang trí lặt vặt; nghề buôn bán đồ lặt vặt
+
+@knickerbocker /'nikəbɔkə/
+*  danh từ
+- người dân Nui-óoc
+
+@knickerbockers /'nikəbɔkəz/ (knickers) /'nikəz/
+*  danh từ số nhiều
+- quần chẽn gối
+
+@knickers /'nikəz/
+*  danh từ số nhiều
+- (thông tục) (như) knickerbockers
+- quần lót chẽn gối (của phụ nữ)
+
+@knife /naif/
+*  danh từ,  số nhiều knives
+- con dao
+- (y học) dao mổ
+=the knife+ phẫu thuật; cuộc mổ
+=to go under the knife+ bị mổ
+- (kỹ thuật) dao cắt gọt, dao nạo
+!before you can say knife
+- đột ngột, rất nhanh không kịp kêu lên một tiếng
+!to get (have) one's knife into somebody
+- tấn công ai mânh liệt, đả kích ai kịch kiệt
+!knife and fork
+- sự ăn
+- người ăn
+=to be a good (poor) knife and fork+ là một người ăn khoẻ (yếu)
+=to lay a good knife anf fork+ ăn uống ngon lành; ăn khoẻ
+!war to the knife
+- chiến tranh ác liệt, chiến tranh một mất một còn
+!you could cut it with a knife
+- đó là một cái có thực, đó là một cái cụ thể có thể sờ mó được
+*  ngoại động từ
+- đâm bằng dao; chém bằng dao; cắt bằng dao
+- (từ Mỹ,nghĩa Mỹ) dùng thủ đoạn ám muội để làm thất bại ((thường) là về mặt chính trị)
+
+@knife-board /'naifbɔ:d/
+*  danh từ
+- bàn rửa dao
+- ghế nóc xe (ghế đôi kê theo chiều dọc trên nóc xe buýt)
+
+@knife-boy /'naifbɔi/
+*  danh từ
+- em bé rửa dao
+
+@knife-edge /'naifedʤ/
+*  danh từ
+- lưỡi dao
+- cạnh dao (khối tựa hình lăng trụ ở cái cân)
+
+@knife-grinder /'naif,graində/
+*  danh từ
+- người mài dao, người mài dao rong
+- dụng cụ mài dao
+
+@knife-machine /'naifmə,ʃi:n/
+*  danh từ
+- máy rửa dao
+
+@knife-polish /'naif,pɔliʃ/
+*  danh từ
+- phấn chùi dao
+
+@knife-rest /'naifrest/
+*  danh từ
+- giá để dao (ở bàn ăn)
+
+@knife-sharpener /'naif,ʃɑ:pnə/
+*  danh từ
+- cái liếc dao, cái để mài dao
+
+@knife-switch /'naifswitʃ/
+*  danh từ
+- (điện học) cầu dao
+
+@knigh-errant /'nait'erənt/
+*  danh từ
+- chàng hiệp sĩ giang hồ
+- (nghĩa bóng) người hào hiệp viển vông (như Đông-Ky-sốt)
+
+@knigh-errantry /'nait'erəntri/
+*  danh từ
+- tính giang hồ hiệp sĩ
+- (nghĩa bóng) tính hào hiệp viển vông (như Đông-Ky-sốt)
+
+@knight /nait/
+*  danh từ
+- hiệp sĩ (thời trung cổ ở Châu âu)
+- người được phong tước hầu (ở Anh)
+- (sử học), (Anh) đại biểu (của một) hạt (ở nghị viện) ((cũng) knight of the shire)
+- kỵ sĩ (trong quân đội cổ La mã)
+- (đánh cờ) quân cờ "ddầu ngựa"
+!knight bachelor
+- hiệp sĩ thường (chưa được phong tước)
+!knight commander
+- hiệp sĩ đã được phong tước
+!knight of the brush
+-(đùa cợt) hoạ sĩ
+!knight of the cleaver
+-(đùa cợt) người bán thịt
+!knight of the fortune
+- kẻ phiêu lưu, kẻ mạo hiểm
+!knight of industry
+- tay đại bợm
+!knight of the knife
+- (từ cổ,nghĩa cổ), (đùa cợt) kẻ cắp
+!knight of the needle (shears, thimble)
+- (từ cổ,nghĩa cổ), (đùa cợt) thợ may
+!knight of the pencil (pen, quill)
+-(đùa cợt) nhà văn; nhà báo
+!knight of the pestle
+- (từ cổ,nghĩa cổ) nhà bào chế, dược sĩ
+!knight of the post
+- người sống bằng nghề làm nhân chứng láo
+!knight of the road
+- người đi chào hàng
+- kẻ cướp đường
+!knight of the whip
+-(đùa cợt) người đánh xe ngựa
+*  ngoại động từ
+- phong tước hầu (ở Anh)
+
+@knightage /nait/
+*  danh từ
+- đoàn hiệp sĩ
+
+@knighthood /'naithud/
+*  danh từ
+- tầng lớp hiệp sĩ
+- tinh thần hiệp sĩ
+- tước hầu
+
+@knightliness /'naitlinis/
+*  danh từ
+- tinh thần hiệp sĩ, tinh thần thượng võ; tính nghĩa hiệp, tính hào hiệp
+
+@knightly /'naitli/
+*  tính từ
+- có tinh thần hiệp sĩ, thượng võ; nghĩa hiệp, hào hiệp
+
+@knit /nit/
+*  động từ knitted,  knit
+- đan (len, sợi...)
+- ((thường) together) nối chặt, gắn chặt, thắt chặt, kết chặt
+=mortar knits bricks together+ vừa kết chặt các hòn gạch lại với nhau
+- ((thường) together) liên kết chặt chẽ, ràng buộc chặt chẽ (trên cơ sở quyền lợi chung, do hôn nhân...)
+- ((thường) động tính từ quá khứ) có cấu trúc vững chắc, có cấu trúc chặt chẽ
+=a closely knit argument+ lý lẽ chặt chẽ
+- cau, nhíu (lông mày), nhăn (trán)
+=to knit one's brows+ cau mày
+!to knit up
+- mạng lại chỗ rách, đan lại chỗ rách (ở bít tất...)
+- kết chặt, thắt chặt mối ràng buộc
+- kết thúc (cuộc tranh luận...)
+
+@knitter /'nitə/
+*  danh từ
+- may đan (len, sợi); máy dệt kim
+- người đan (len, sợi)
+
+@knitting /'nitiɳ/
+*  danh từ
+- việc đan len
+- hàng len, đồ đan; hàng dệt kim
+
+@knitting-machine /'nitiɳmə,ʃi:n/
+*  danh từ
+- máy đan (len, sợi), máy dệt kim
+
+@knitting-needle /'nitiɳ,ni:dl/
+*  danh từ
+- kim đan, que đan
+
+@knitwear /'nitweə/
+*  danh từ
+- đồ đan, quần áo đan; hàng dệt kim
+
+@knitwork /'nitwə:k/
+*  danh từ
+- công việc đan
+- đồ đan; hàng dệt kim
+
+@knives /naif/
+*  danh từ,  số nhiều knives
+- con dao
+- (y học) dao mổ
+=the knife+ phẫu thuật; cuộc mổ
+=to go under the knife+ bị mổ
+- (kỹ thuật) dao cắt gọt, dao nạo
+!before you can say knife
+- đột ngột, rất nhanh không kịp kêu lên một tiếng
+!to get (have) one's knife into somebody
+- tấn công ai mânh liệt, đả kích ai kịch kiệt
+!knife and fork
+- sự ăn
+- người ăn
+=to be a good (poor) knife and fork+ là một người ăn khoẻ (yếu)
+=to lay a good knife anf fork+ ăn uống ngon lành; ăn khoẻ
+!war to the knife
+- chiến tranh ác liệt, chiến tranh một mất một còn
+!you could cut it with a knife
+- đó là một cái có thực, đó là một cái cụ thể có thể sờ mó được
+*  ngoại động từ
+- đâm bằng dao; chém bằng dao; cắt bằng dao
+- (từ Mỹ,nghĩa Mỹ) dùng thủ đoạn ám muội để làm thất bại ((thường) là về mặt chính trị)
+
+@knob /nɔb/
+*  danh từ
+- quả đám (ở cửa, tủ...)
+- bướu u, chỗ phồng
+- hòn, cục, viên (than, đường...)
+- (từ Mỹ,nghĩa Mỹ) gò, đồi nhỏ
+- (kỹ thuật) đầu (biên); nút bấm, núm
+- (từ lóng) cái đầu
+!with knobs on
+-(mỉa mai);(đùa cợt) nói hay đấy, nói dễ nghe đấy; cừ đấy
+- thế chưa hết đâu, còn nữa đấy, còn chán
+*  ngoại động từ
+- mắc quả đấm (cửa)
+- làm nút bấm, làm núm
+- làm sưng u, làm nổi bướu
+*  nội động từ
+- ((thường) + out) u lên, nổi bướu
+
+@knobble /'nɔbl/
+*  danh từ
+- u nhỏ, bướu nhỏ
+
+@knobbly /'nɔbli/
+*  tính từ
+- có u nhỏ, có bướu nhỏ
+*  tính từ
+- có u, có bướu
+- (từ Mỹ,nghĩa Mỹ) có gò, có đồi nhỏ
+
+@knobstick /'nɔbstik/
+*  danh từ
+- gậy tày, dùi cui
+- (từ lóng) kẻ phản bội trong cuộc bãi công; kẻ phá bãi công
+
+@knock /nɔk/
+*  danh từ
+- cú đánh, cú va chạm
+=a knock on the head+ cú đánh vào đầu
+- tiếng gõ (cửa)
+=a knock at the door+ tiếng gõ cửa
+- (từ Mỹ,nghĩa Mỹ),  (từ lóng) lời phê bình kịch liệt, lời chỉ trích gay gắt
+- (kỹ thuật) tiếng nổ lọc xọc (máu bị jơ hoặc hỏng)
+!to get the knock
+- bị thất bại, bị đánh bại
+- (sân khấu) bị khán giả chê
+!to take the knock
+- (từ lóng) bị sa sút, bị nghèo khổ
+*  ngoại động từ
+- đập, đánh, va đụng
+=to knock somebody on the head+ đạp vào đầu ai
+=to something to pieces+ đạp vụn cái gì
+=to knock one's head against something+ đụng đầu vào cái gì
+- (từ lóng) làm choáng người, gây ấn tượng sâu sắc, làm ngạc nhiên hết sức
+- (từ Mỹ,nghĩa Mỹ),  (từ lóng) phê bình kịch liệt, chỉ trích gay gắt
+*  nội động từ
+- gõ (cửa)
+=to knock at the door+ gõ cửa
+- (kỹ thuật) kêu lọc xọc, nổ lọc xọc (máy bị jơ hoặc hỏng)
+!to knock about (around)
+- đánh liên hồi, gõ liên hồi
+- hành hạ, làm khổ, làm ngược đãi (ai)
+- đi lang thang, sống lang thang, sống được chăng hay chớ
+!to knock against
+- va phải, đụng phải
+- tình cờ, chạm trán, tình cờ gặp (ai)
+!to knock back
+- (từ lóng) uống
+!to knock down
+- đánh ngâ, húc ngã; phá đổ (nhà...); bắn rơi (máy bay...)
+- đánh quỵ; hạ (uy thế của ai...)
+- gõ búa xuống bàn ra hiệu quyết định bán (bán đấu giá)
+- (thông tục) yêu cầu (ai hát một bài...)
+- dỡ (máy...) thành từng bộ phận nhỏ (cho gọn khi chuyên chở)
+- (thông tục) hạ (giá...)
+!to knock off
+- đánh bật đi, đánh văng đi, đánh tung lên
+- nghỉ, ngừng (việc); ngừng làm việc
+- giải quyết nhanh, làm mau
+=to knock off buisiness+ giải quyết nhanh công việc
+=to knock off some verses+ làm mau mấy câu thơ
+- rút bớt, bớt đi
+=to knock off a sum from the bill+ bớt một số tiền lớn ở hoá đơn
+- (từ lóng) ăn cắp, xoáy (cái gì)
+- (từ lóng) chết
+!to knock out
+- gõ (tẩu cho tàn thuốc) bật ra
+- (thể dục,thể thao) đánh nốc ao, hạ đo ván (quyền Anh)
+- đánh gục, đánh bại (kẻ địch)
+- (thông tục) làm vội (một kế hoạch...)
+!to knock together
+- tập hợp vội vàng, vơ váo vào với nhau; ghép vội vào với nhau
+!to knock under
+- đầu hàng, hàng phục, chịu khuất phục, chịu thua
+!to knock up
+- đánh bay lên, đánh tốc lên
+- gõ cửa đánh thức (ai) dậy
+- làm vội vàng, giải quyết vội vàng, thu xếp vội vàng (việc gì)
+- làm kiệt sức, làm mệt lử; kiệt sức, mệt lử
+- (từ Mỹ,nghĩa Mỹ),  (từ lóng) làm cho có mang
+- (thể dục,thể thao) ghi nhanh, thắng nhanh (điểm)
+!to knock the bottom out of an argument x bottom to knock into a cocked hat x cocked hat to knock on the head
+- (nghĩa bóng) làm thất bại, làm hỏng (kế hoạch...); chặn đứng (một âm mưu...)
+!to knock somebody's head off
+- (nghĩa bóng) thắng ai một cách dễ dàng
+!to knock somebody into the middle of next week
+- đánh ai ngã lăn quay
+!to knock somebody off his pins
+- làm cho ai choáng người, làm cho ai điếng người
+
+@knock-about /'nɔkəbaut/
+*  tính từ
+- (sân khấu) nhộn, ồn ào (tiết mục, trò)
+- lang thang, lêu lổng
+- giày vò được, dầu dâi được (quần áo)
+*  danh từ
+- (sân khấu) tiết mục vui nhộn ồn ào; trò vui nhộn ồn ào; người diễn tiết mục vui nhộn ồn ào
+- sự lang thang lêu lổng
+- (từ Mỹ,nghĩa Mỹ) thuyết yat loại nhỏ
+- (từ Mỹ,nghĩa Mỹ) cuộc đánh nhau, cuộc ẩu đả
+
+@knock-down /'nɔk'daun/
+*  tính từ
+- đánh gục, đánh quỵ (đòn, cú đấm)
+- tối thiểu, có thể bán được (giá bán đấu giá)
+*  danh từ
+- cú đánh gục, cú đánh quỵ
+- cuộc ẩu đả
+
+@knock-kneed /'nɔkni:d/
+*  tính từ
+- có chân vòng kiềng
+
+@knock-knees /'nɔkni:z/
+*  danh từ
+- đâu gối khuỳnh vào (đi chân vòng kiềng)
+
+@knock-out /'nɔkaut/
+*  tính từ
+- (thể dục,thể thao) nốc ao, hạ đo ván (cú đấm quyền Anh)
+*  danh từ
+- (thể dục,thể thao) cú nốc ao, cú đo ván (quyền Anh)
+- sự thông đồng giả dìm giá (trong một cuộc bán đấu giá, để sau đó đem bán lại cho nhau); kẻ thông đồng giả dìm giá (trong một cuộc bán đấu giá)
+- (từ lóng) người cừ khôi, người lỗi lạc, người xuất sắc; vật kỳ lạ, vật khác thường
+
+@knocker /'nɔkə/
+*  danh từ
+- người đánh, người đập; người gõ cửa
+- vòng sắt để gõ cửa, búa gõ cửa (treo sãn ở cửa)
+- (từ Mỹ,nghĩa Mỹ) người phê bình kịch liệt, người chỉ trích gay gắt
+- ma báo mỏ (người ta tin rằng nó gõ ở đâu thì chỗ ấy có quặng)
+!up to the knocker
+- (từ lóng) hoàn hảo, hoàn mỹ
+
+@knockhead /'nɔkhed/
+*  nội động từ
+- cúi lạy sát đất, quỳ lạy; khấu đầu lạy tạ
+
+@knoll /noul/
+*  danh từ
+- đồi nhỏ, gò
+*  nội động từ
+- (từ cổ,nghĩa cổ) rung (chuông)
+*  ngoại động từ (từ cổ,nghĩa cổ)
+- rung (chuông)
+- đánh chuông điểm (giờ)
+- rung chuông gọi
+
+@knop /nɔp/
+*  danh từ (từ cổ,nghĩa cổ)
+- (như) knob
+- nụ hoa
+
+@knot /nɔt/
+*  danh từ
+- nút, nơ
+=to make a knot+ thắt nút, buộc nơ
+- (nghĩa bóng) vấn đề khó khăn
+=to tie oneself [up] in (into) knots+ gây cho bản thân những khó khăn phức tạp
+- điểm nút, điểm trung tâm, đầu mối (một câu chuyện...)
+- mắt gỗ, đầu mấu; đốt, khấc (ngón tay...)
+- nhóm, tốp (người); cụm; (cây)
+=to gather in knots+ họp lại thành nhóm
+- u, cái bướu
+- cái đệm vai (để vác nặng) ((thường) porter's knot)
+- mối ràng buộc
+=the nuptial knot+ mối ràng buộc vợ chồng, nghĩa vợ chồng
+!to tie the nuptial knot
+- lấy nhau
+- (hàng hải) dặm, biển, hải lý
+*  ngoại động từ
+- thắt nút (dây), buộc chặt bằng nút; thắt nơ
+- nhíu (lông mày)
+- kết chặt
+- làm rối, làm rối beng
+*  nội động từ
+- thắt nút lại
+
+@knot-grass /'nɔtgra:s/
+*  danh từ
+- (thực vật học) nghề chim
+
+@knottiness /'nɔtnis/
+*  danh từ
+- tình trạng có nhiều nút
+- tình trạng có nhiều mắt, tình trạng có nhiều đầu mấu
+- (nghĩa bóng) tình trạng rắc rối, sự khó khăn; sự nan giải; sự khó giải thích
+
+@knotting /'nɔtiɳ/
+*  danh từ
+- đường viền bằng chỉ kết; ren tua bằng chỉ bện
+
+@knotty /'nɔti/
+*  tính từ
+- có nhiều nút
+- có nhiều mắt (gỗ); có nhiều đầu mấu
+- (nghĩa bóng) rắc rối, khó khăn; nan giải, khó giải thích
+=a question+ một vấn đề nan giải
+
+@knotwork /'nɔtwə:k/
+*  danh từ
+- (kiến trúc) hình trang trí dây bện
+- đồ ren tua bằng chỉ bện
+
+@knout /naut/
+*  danh từ
+- roi da (ở nước Nga xưa)
+*  ngoại động từ
+- đánh bằng roi da, quất bằng roi da
+
+@know /nou/
+*  động từ knew; known
+- biết; hiểu biết
+=to know about something+ biết về cái gì
+=to know at least three languages+ biết ít nhất ba thứ tiếng
+=to know how to play chess+ biết đánh cờ
+- biết, nhận biết; phân biệt được
+=to know somebody at once+ nhận biết được ai ngay lập tức
+=to know one from another+ phân biệt được cái này với cái khác
+- biết, quen biết
+=to know by sight+ biết mặt
+=to know by name+ biết tên
+=to get to know somebody+ làm quen được với ai
+- ((thường) + of) biết, biết tin, biết rõ về
+=do you know of his return?+ anh đã biết tin ông ta trở về chưa?
+=I know of an excellent restaurant near here+ tôi biết gần đây có một tiệm ăn rất tốt
+- đã biết mùi, đã trải qua
+=to know misery+ đã trải qua cái cảnh nghèo khổ
+- (kinh thánh) đã ăn nằm với (một người đàn bà)
+!all one knows
+- (thông tục) (với) tất cả khả năng của mình, (với) tất cả sự hiểu biết của mình; hết sức mình
+=to try all one knows+ cố gắng hết sức mình, thử làm với tất cả khả năng của mình
+!before you know where you are
+- (thông tục) ngay, không chậm trễ, trong chốc lát, một cách nhanh chóng
+!to know black from white
+!to know chalk from cheese
+!to know a hawk from a handsaw
+!to know one's way about
+- biết rõ sự tình; biết phân biệt trắng đen; biết cặn kẽ, biết rõ ngọn ngành
+!to know better
+- (xem) better
+=I know better [than that]+ tôi biết thừa đi rồi, tôi còn biết rõ hơn thế nữa kia
+!to know better than...
+- không ngốc mà lại...
+!to know one's own business
+- không dính vào việc của người khác
+!to know something (somebody) as a person knows his ten fingers; to know something (somebody) as well as a beggar knows his bag; to know something (somebody) like a book; to know something (somebody) like the palm of one's hands
+- biết cặn kẽ cái gì (ai); biết rõ cái gì (ai) như lòng bàn tay mình
+!to know one's own mind
+- biết rõ ý định của mình; kiên quyết, không dao động
+!to know what one is about
+- biết phải làm gì; hành động một cách khôn ngoan
+!not to know what from which
+- không biết cái gì với cái gì
+!to know everything is to know nothing
+- (tục ngữ) cái gì cũng biết là không biết cái gì cả
+!not that I know of
+- theo tôi biết thì không
+*  danh từ (thông tục)
+- to be in the know biết rõ sự việc, biết rõ vấn đề; biết điều mà mọi người chưa biết
+
+@know-all /'nou'ɔ:l/
+*  danh từ
+- người cái gì cũng biết; người tự cho cái gì cũng biết
+
+@know-how /'nouhau/
+*  danh từ
+- sự biết làm; khả năng biết làm thế nào
+- bí quyết sản xuất, phương pháp sản xuất
+
+@know-nothing /'nou,nʌθiɳ/
+*  danh từ
+- người ngu dốt, người không biết gì
+- (triết học) người theo thuyết không thể biết
+
+@know-nothingism /'nou,nʌθiɳizm/
+*  danh từ
+- (triết học) thuyết không thể biết
+
+@knowable /'nouəbl/
+*  tính từ
+- có thể biết được
+- có thể nhận thức được; có thể nhận ra được
+
+@knowing /'nouiɳ/
+*  tính từ
+- hiểu biết, thạo
+=to assume a knowing air+ làm ra vẻ thạo
+- tính khôn, ranh mãnh, láu
+=a knowing fellow+ một anh chàng tinh khôn
+- (thông tục) diện, bảnh, sang
+=a knowing hat+ một cái mũ bành
+
+@knowingly /'nouiɳli/
+*  phó từ
+- chủ tâm, cố ý, có dụng ý
+- hiểu biết
+- tính khôn, ranh mãnh
+
+@knowledge /'nɔlidʤ/
+*  danh từ
+- sự biết
+=to have no knowledge of+ không biết về
+=to my knowledge+ theo tôi biết
+=it came to my knowledge that+ tôi được biết rằng
+=without my knowledge+ tôi không hay biết
+=not to my knowledge+ theo tôi biết thì không
+- sự nhận biết, sự nhận ra
+=he has grown out of all knowledge+ nó lớn quá không nhận ra được nữa
+- sự quen biết
+=my knowledge of Mr. B is slight+ tôi chỉ quen sơ sơ ông B
+- sự hiểu biết, tri thức, kiến thức; học thức
+=to have a good knowledge of English+ giỏi tiếng Anh
+=wide knowledge+ kiến thức rộng
+=in every branch of knowledge+ trong mọi lĩnh vực tri thức
+=knowledge is power+ tri thức là sức mạnh
+- tin, tin tức
+=the knowledge of victory soon spread+ tin chiến thắng đi lan nhanh
+
+@knowledgeable /'nɔlidʤəbl/
+*  tính từ
+- (thông tục) thông thạo, biết nhiều
+
+@known /nou/
+*  động từ knew; known
+- biết; hiểu biết
+=to know about something+ biết về cái gì
+=to know at least three languages+ biết ít nhất ba thứ tiếng
+=to know how to play chess+ biết đánh cờ
+- biết, nhận biết; phân biệt được
+=to know somebody at once+ nhận biết được ai ngay lập tức
+=to know one from another+ phân biệt được cái này với cái khác
+- biết, quen biết
+=to know by sight+ biết mặt
+=to know by name+ biết tên
+=to get to know somebody+ làm quen được với ai
+- ((thường) + of) biết, biết tin, biết rõ về
+=do you know of his return?+ anh đã biết tin ông ta trở về chưa?
+=I know of an excellent restaurant near here+ tôi biết gần đây có một tiệm ăn rất tốt
+- đã biết mùi, đã trải qua
+=to know misery+ đã trải qua cái cảnh nghèo khổ
+- (kinh thánh) đã ăn nằm với (một người đàn bà)
+!all one knows
+- (thông tục) (với) tất cả khả năng của mình, (với) tất cả sự hiểu biết của mình; hết sức mình
+=to try all one knows+ cố gắng hết sức mình, thử làm với tất cả khả năng của mình
+!before you know where you are
+- (thông tục) ngay, không chậm trễ, trong chốc lát, một cách nhanh chóng
+!to know black from white
+!to know chalk from cheese
+!to know a hawk from a handsaw
+!to know one's way about
+- biết rõ sự tình; biết phân biệt trắng đen; biết cặn kẽ, biết rõ ngọn ngành
+!to know better
+- (xem) better
+=I know better [than that]+ tôi biết thừa đi rồi, tôi còn biết rõ hơn thế nữa kia
+!to know better than...
+- không ngốc mà lại...
+!to know one's own business
+- không dính vào việc của người khác
+!to know something (somebody) as a person knows his ten fingers; to know something (somebody) as well as a beggar knows his bag; to know something (somebody) like a book; to know something (somebody) like the palm of one's hands
+- biết cặn kẽ cái gì (ai); biết rõ cái gì (ai) như lòng bàn tay mình
+!to know one's own mind
+- biết rõ ý định của mình; kiên quyết, không dao động
+!to know what one is about
+- biết phải làm gì; hành động một cách khôn ngoan
+!not to know what from which
+- không biết cái gì với cái gì
+!to know everything is to know nothing
+- (tục ngữ) cái gì cũng biết là không biết cái gì cả
+!not that I know of
+- theo tôi biết thì không
+*  danh từ (thông tục)
+- to be in the know biết rõ sự việc, biết rõ vấn đề; biết điều mà mọi người chưa biết
+
+@knuckle /'nʌkl/
+*  danh từ
+- khớp đốt ngón tay
+- khuỷ, đốt khuỷ (chân giò lơn, cừu...)
+- (kỹ thuật) khớp nối
+!to get a rap on (over) the knuckles
+- bị đánh vào đốt ngón tay
+- (nghĩa bóng) bị mắng mỏ, bị trách phạt
+!near the knuckle
+- (thông tục) gần đi đến chỗ thô thục bất lịch sự (câu chuyện, câu nói đùa...)
+*  ngoại động từ
+- cốc (bằng ngón tay)
+- ấn bằng ngón tay gặp lại
+*  nội động từ
+- tì đốt ngón tay xuống đất (để bắn bi)
+!to knuckle down; to knuckle under
+- đầu hàng, chịu khuất phục
+!to knuckle down to one's work
+- tích cực (kiên quyết) bắt tay vào việc
+
+@knuckle-joint /'nʌkldʤɔint/
+*  danh từ
+- khớp đốt
+- (kỹ thuật) khớp nối
+
+@knucklebone /'nʌklboun/
+*  danh từ
+- xương đốt
+- xương khuỷu
+- (số nhiều) trò chơi đốt xương
+
+@knuckleduster /'nʌkl,dʌstə/
+*  danh từ
+- quả đấm sắt (để đánh nhau)
+
+@knur /nə:/ (knurr) /nə:/
+*  danh từ
+- đầu mấu, mắt (cây)
+- quả bóng gỗ (trong một số trò chơi)
+
+@knurl /nə:l/
+*  danh từ
+- dầu mấu, chỗ u lên, chỗ lồi lên
+- núm xoay (ở máy chữ)
+- (kỹ thuật) khía; cục nổi tròn (ở kim loại)
+
+@knurled /nə:ld/
+*  tính từ
+- có khía, có những cục nổi tròn (ở kim loại)
+
+@knurr /nə:/ (knurr) /nə:/
+*  danh từ
+- đầu mấu, mắt (cây)
+- quả bóng gỗ (trong một số trò chơi)
+
+@koala /kou'a:lə/
+*  danh từ
+- (động vật học) gấu túi
+
+@kobold /kə'bould/
+*  danh từ
+- con ma tinh nghịch (truyện cổ tích Đức)
+- ma mỏ
+
+@kodak /'koudæk/
+*  danh từ
+- máy ảnh côdda
+*  ngoại động từ
+- chụp bằng máy côdda
+- chụp nhanh, ghi nhanh
+
+@koel /'kouil/
+*  danh từ
+- (động vật học) chim cu cu Ân
+
+@koh-i-noor /'kouinuə/
+*  danh từ
+- viên kim cương côino (nổi tiếng của Ân độ, bị Anh chiếm đoạt từ 1849)
+- cái tráng lệ, cái lộng lẫy; cái đẹp tuyệt trần (có một không hai)
+
+@kohl /koul/
+*  danh từ
+- phấn côn (một thứ phấn đen đánh mi mắt của người A-rập)
+
+@kohlrabi /'koul'rɑ:bi/
+*  danh từ
+- (thực vật học) su hào
+
+@kola /'koulə/
+*  danh từ
+- (thực vật học) cây côla
+
+@kolinsky /kə'linski/
+*  danh từ
+- bộ lông chồn Xi-bia
+
+@kolkhoz /kɔl'kɔ:z/
+*  danh từ
+- nông trường tập thể
+
+@koodoo /'ku:du:/ (kudu) /'ku:du:/
+*  danh từ
+- (động vật học) linh dương cuddu (Nam-phi)
+
+@kook /kuk/
+*  danh từ
+- (từ Mỹ,nghĩa Mỹ),  (từ lóng) người lập dị, người gàn
+
+@kookie /'kuki/ (kooky) /'kuki/
+*  tính từ
+- (từ Mỹ,nghĩa Mỹ),  (từ lóng) lập dị, gàn
+
+@kopec /'koupek/ (kopeck) /'koupek/
+*  danh từ
+- đồng côpêch (tiền Liên-xô)
+
+@kopeck /'koupek/ (kopeck) /'koupek/
+*  danh từ
+- đồng côpêch (tiền Liên-xô)
+
+@kopje /'kɔpi/
+*  danh từ
+- đồi, gò (ở Nam phi)
+
+@koran /kɔ'rɑ:n/
+*  danh từ
+- kinh co-ran (đạo Hồi)
+
+@koranic /kɔ'rænik/
+*  tính từ
+- (thuộc) kinh co-ran; trong kinh co-ran
+
+@korean /kə'riən/
+*  tính từ
+- (thuộc) Triều tiên
+*  danh từ
+- người Triều tiên
+- tiếng Triều tiên
+
+@kotow /'kau'tau/ (kotow) /'kau'tau/
+*  danh từ
+- sự quỳ lạy, sự cúi lạy sát đất, sự khấu đầu lạy tạ
+- (nghĩa bóng) sự khúm núm, sự quỵ luỵ
+*  nội động từ
+- quỳ lạy, cúi lạy sát đất, khấu đầu lạy tạ
+- (nghĩa bóng) khúm núm, quỵ luỵ
+=to kowtow to someone+ quỳ lạy ai; khúm núm quỵ luỵ ai
+
+@koumintang /'kwoumin'tæɳ/
+*  danh từ
+- quốc dân đảng (Trung quốc)
+
+@koumiss /'ku:mis/ (kumiss) /'ku:mis/
+*  danh từ
+- rượu sữa ngựa
+
+@kourbash /'kuəbæʃ/
+*  danh từ
+- roi tra (dùng để tra tấn, ở Thổ nhĩ kỳ,  Ai cập)
+
+@kowtow /'kau'tau/ (kotow) /'kau'tau/
+*  danh từ
+- sự quỳ lạy, sự cúi lạy sát đất, sự khấu đầu lạy tạ
+- (nghĩa bóng) sự khúm núm, sự quỵ luỵ
+*  nội động từ
+- quỳ lạy, cúi lạy sát đất, khấu đầu lạy tạ
+- (nghĩa bóng) khúm núm, quỵ luỵ
+=to kowtow to someone+ quỳ lạy ai; khúm núm quỵ luỵ ai
+
+@kraal /krɑ:l/
+*  danh từ
+- làng có rào quanh (của thổ dân
+- khu đất chăn nuôi có rào
+
+@kraft /krɑ:ft/
+*  danh từ
+- giấy gói hàng loại dày ((cũng) kraft paper)
+
+@krait /krait/
+*  danh từ
+- (động vật học) rắn cạp nong
+
+@kraken /'krɑ:kən/
+*  danh từ
+- (thần thoại,thần học) loài thuỷ quái (ở Na-uy)
+
+@krans /krɑ:ns/
+*  danh từ
+- vách đá cheo leo (ở Nam phi)
+
+@kremlin /'kremlin/
+*  danh từ
+- điện Crem-lanh
+=the kremlin+ chính phủ Liên xô
+
+@kromesky /krə'meski/
+*  danh từ
+- món crômeki (thịt gà thái nhỏ rán cuộn mỡ)
+
+@krone /'krounə/
+*  danh từ
+- đồng curon (bằng bạc ở Đan mạch,  Na uy,  Thuỵ điển,  Aó; bằng vàng ở Đức xưa, giá trị là 10 mác)
+
+@kroo /kru:/ (Krou) /kru:/ (Kru) /kru:/
+*  danh từ
+- người Cru (người da đen bờ biển Li-bê-ri-a)
+
+@krou /kru:/ (Krou) /kru:/ (Kru) /kru:/
+*  danh từ
+- người Cru (người da đen bờ biển Li-bê-ri-a)
+
+@kru /kru:/ (Krou) /kru:/ (Kru) /kru:/
+*  danh từ
+- người Cru (người da đen bờ biển Li-bê-ri-a)
+
+@krypton /'kriptɔn/
+*  danh từ (hoá học)
+- Kripton
+
+@ku-klux-klan /'kju:klʌks'klæn/
+*  danh từ
+- đảng 3K (ở Mỹ)
+
+@ku-klux-klaner /'kju:klʌks'klænə/
+*  danh từ
+- đảng viên 3K
+
+@kudos /'kju:dɔs/
+*  danh từ
+- (từ lóng) tiếng tăm, danh tiếng; quang vinh
+
+@kudu /'ku:du:/ (kudu) /'ku:du:/
+*  danh từ
+- (động vật học) linh dương cuddu (Nam-phi)
+
+@kukri /'kukri/
+*  danh từ
+- dao quằm lớn
+
+@kulak /ku:'lɑ:k/
+*  danh từ
+- phú nông,  cu-lắc (Nga)
+
+@kumiss /'ku:mis/ (kumiss) /'ku:mis/
+*  danh từ
+- rượu sữa ngựa
+
+@kvass /kvɑ:s/
+*  danh từ
+- nước cơvat (một loại giải khát hơi chua của Liên xô)
+
+@kyanization /,kaiənai'zeiʃn/
+*  danh từ
+- phép xử lý (gỗ) bằng thuỷ ngân clorua (để chống mốc)
+
+@kyanize /'kaiənaiz/
+*  ngoại động từ
+- xử lý (gỗ) bằng thuỷ ngân clorua (để chống mốc)
+
+@kylin /'kailin/
+*  danh từ
+- con kỳ lân
+
+@kyloe /'kailou/
+*  danh từ
+- bò cailu (giống bò nhỏ sừng dài ở Ê-cốt)
+
+@kymograph /'kaiməgrɑ:f/
+*  danh từ
+- máy ghi sóng
+
+@kymographic /,kaimə'græfik/
+*  tính từ
+- (thuộc) máy ghi sóng; ghi bằng máy ghi sóng
+
+@kyphos /'kaifəs/
+*  danh từ
+- (y học) bướu gù
+
+@kyphosis /kai'fousis/
+*  danh từ
+- (y học) tật gù
+
+@kyphotic /kai'fɔtik/
+*  tính từ
+- (y học) gù

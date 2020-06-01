@@ -1,8 +1,6 @@
 package com.teamttdvlp.memolang.di.module.activity
 
 import android.animation.Animator
-import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
 import androidx.vectordrawable.graphics.drawable.AnimatorInflaterCompat
 import com.teamttdvlp.memolang.R
 import com.teamttdvlp.memolang.view.activity.SetUpAccountActivity
@@ -18,12 +16,6 @@ class SetUpAccountActivityModule {
     fun provideRCVChooseLanguageAdapter (context : SetUpAccountActivity) : RCVChooseLanguageAdapter {
         return RCVChooseLanguageAdapter(context)
     }
-
-    @Provides
-    fun provideLinearLayoutManager (context : SetUpAccountActivity) : LinearLayoutManager{
-        return LinearLayoutManager(context, RecyclerView.VERTICAL, false)
-    }
-
 
     // ANIMATIONS
 

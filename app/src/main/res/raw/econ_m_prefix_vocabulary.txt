@@ -1,0 +1,585 @@
+@Maturity
+- (Econ) Đến hạn thanh toán.
+@Multi-collinearity
+- (Econ) Đa cộng tuyến.
+@M1 and MMức cung tiền M1 và M0.
+- (Econ)
+@Macmillan Committee
+- (Econ) Uỷ ban Macmillan.
+= Uỷ ban điều tra của Anh được thành lập năm 1929 với tên gọi Uỷ ban Tài chính và Công nghiệp, do H.P Macmillan (sau này là Huân tước) làm chủ tịch, nhằm nghiên cứu hệ thống tài chính và ngân hàng trong các nghiệp vụ trong nước và quốc tế của nó, và nhằm đưa ra những khuyến nghị về việc làm thế nào để hệ thống này có thể thúc đẩy việc phát triển nội thương và ngoại thương và việc tuyển dụng lao động.
+@Macmillan gap
+- (Econ) Lỗ hổng Macmillan.
+= Xem Macmillan Committee.
+@Mc Guire Act
+- (Econ) Đạo luật Mc Guire.
+= Sự sửa đổi vào năm 1952 đối với đạo luật về Uỷ ban thương mại Liên bang Hoa kỳ, đạo luật Mc Guire được ban hành nhằm cưỡng chế các nhà bán lẻ không ký kết các thoả thuận về cách định giá cũng như những người có ký kết thoả thuận phải định giá trên nguyên tắc thương mại công bằng.
+@Macroeconomics
+- (Econ) Kinh tế học vĩ mô.
+= Là khoa học nghiên cứu hành vi của toàn bộ nền kinh tế nói chung.
+@Macroeconomics demand schedule
+- (Econ) Biểu cầu mang tính kinh tế học vĩ mô.
+@Majority rule
+- (Econ) Quy tắc đa số.
+= Là một hình thức LỰA CHÓN TẬP THỂ hoặc QUY TẮC QUYẾT ĐỊNH XÃ HỘI mà theo đó bất kỳ đề nghị nào được sự ủng hộ của hơn một nửa số người biểu quyết sẽ được chọn.
+@Malleable capital
+- (Econ) Vốn uyển chuyển
+= Là một giả định về bản chất của vốn hiện vật thường sử dụng trong kinh tê học cổ điển, theo đó các vật liêu hình thành nên một cỗ máy cụ thể có thể được thay đổi ngay lập tức và không hề tốn kém thành một cỗ máy khác.
+@Malthus, Rev. Thomas Robert
+- (Econ) (1766-1834).
+= Malthus là một mục sư và cũng là một giáo sư môn lịch sử hiện đại và kinh tế chính trị (là người đầu tiên được cấp danh hiệu này tại Anh). Tuy nhiên, ông cũng có những đóng góp cho việc phân tích tiền tệ và cho học thuyết về tình trạng dư thừa và tham gia và một cuộc tranh luận nổi tiếng với người bạn của ông lad Ricardo, Ông được biết đến nhiều nhất với tư tưởng là tác giả của Tiểu luận về nguyên tác dân số (1798). Trong tác phẩm nay, ông thách thức quan điểm truyền thống của các nhà kinh tế học dân số cho rằng dân số đông và ngỳ càng gia tăng đông nghĩa với sự giàu có và ông lập luân rằng dân số sẽ tăng lên cho đến khi đạt tới mức ràng buộc về cung cấp lương thực. Ông cho rằng dân số có xu hướng gia tăng theo cấp số nhân và nguồn lương thực lại tăng theo cấp số cộng. Sự tăng dân số có thể được kìm hãm hoặc là một cách tích cực (nghĩa là qua số tử vong tăng lên) thông qua những hình thức như chiến tranh, bệnh dịch … hoặc một cách tiêu cực (nghĩa là qua việc sinh đẻ ít đi) thông qua các hình thức như hạn chế bằng đạo đức, kết hôn muộn… Học thuyết này của Malthus về tiền lương đặt ra một mức lương không thay đổi ở một mức tồn tại. Trái với dự đoán của ông, cả dân số và mức lương đều có xu hướng gia tăng ở các nước công nghiệp phát triển; sở dĩ như vậy là do tiến bộ khoa học kỹ thuật, mà Malthus đã đánh giá thấp vai trò của nó đối với việc quản giảm tỷ lệ sinh đẻ khi thu nhập tăng và đối với việc khai thác các vùng đất mới. Nỗi ám ảnh về vấn của Malthus cho đến nay vẫn còn tồn tại ở các nước chậm phát triển khi họ muốn nhập khẩu các loại thuốc mà đã đem lại cho nước công nghiệp phát triển những tỷ lệ tử vong tương ứng với các tỷ lệ sinh đẻ của nước đang phát triển. Vấn đề này cũng được một số nhà sinh thaí học đưa ra trên phạm vi toàn cầu khi họ cần tiên đoán rằn dân số và sản lượng công nghiệp tăng sẽ khiến cho thế giới bị cạn kiệt các nguồn tài nguyên.
+@Malthus's law of population
+- (Econ) Quy luật dân số của Malthus.
+= Xem IRON LAW OF WAGE.
+@Management
+- (Econ) Ban quản lý.
+= Là những nhân viên trong một hãng có quyền thay mặt cho các chủ sở hữu kiểm soát các hoạt động của hãng.
+@Management buyout
+- (Econ) Thu mua bằng nghiệp vụ quản lý.
+= Là việc ban quản lý thu mua các tài sản của một công ty.
+@Management board
+- (Econ) Ban quản lý / Hội đồng quản trị.
+@Managed or dirty floating
+- (Econ) Sự thả nổi có quản lý hay không thuần khiết.
+@Management science
+- (Econ) Khoa học quản lý.
+= Trong khuôn khổ của việc nghiên cứu doanh nghiệp, môn học này áp dụng các nguyên tắc khoa học nhằm hỗ trợ cho việc đạt được hiệu quả hoạt động trong việc thực hiện các mục tiêu kinh doanh.
+@Manager controlled firm
+- (Econ) Hãng do nhà quản lý kiểm soát.
+= Là một công ty không có một cổ đông hoặc một nhóm cổ đông nào chiếm được tỷ lệ biểu quyết đủ cao để nắm quyền kiểm soát các chính sách của công ty.
+@Managerial capitalism
+- (Econ) Chủ nghĩa tư bản thiên về quản lý.
+= Việc tổ chức nền kinh tế thành các tập đoàn lớn, trong đó quyền  định đoạt các nguồn lực nằm trong tay một tầng lớp quản lý có thể xác định được tách biệt khỏi giới chủ sở hữu tài sản và hầu như không chịu sự kiểm soát của họ.
+@Managerial discretion
+- (Econ) Sự tuỳ tiện trong quản lý.
+= Là khả năng của các nhà quản lý của một công ty thực hiện những mục tiêu mà họ tự thấy là có lợi hơn cho họ.
+@Managerial revolution
+- (Econ) Cuộc cách mạng quản lý.
+= Là một khái niệm gắn với ý tưởng của Galbraith cho rằng quyền lực kinh tế đã chuyển từ vốn sang chủ sở hữu của các bí quyết kỹ thuật, tức là tầng lớp quản lý.
+@Managerial slack
+- (Econ) Sự lỏng lẻo trong quản lý.
+= Xem X - EFFICIENCY.
+@Managerial theories of the firm
+- (Econ) Các học thuyết về hãng thiên về quản lý.
+= Là các học thuyết bắt nguồn từ quan niệm cho rằng CHỦ NGHĨA TƯ BẢN đương thời được đặc trưng bởi sự khống chế trong khu vực sản xuất của các tập đoàn lớn, nơi mà quyền sở hữu và quyền kiểm soát được phân tách rõ ràng giữa các cổ đông và các nhà quản lý.
+@Managerial utility function
+- (Econ) Hàm thoả dụng trong quản lý.
+= Mối quan hệ này quy định cụ thể những luận chứng mà thứ tự ưu tiên của các nhà quản lý của doanh nghiệp phụ thuộc vào đó.
+@Marginal cost
+- (Econ) Chi phí cận biên.
+= Là chi phí tăng thêm cho việc sản xuất thêm một đơn vị sản lượng.
+@Marginal cost of labor
+- (Econ) Chi phí cận biên cho lao động.
+@Marginal cost pricing
+- (Econ) Định giá theo chi phí cận biên.
+= Là một phương pháp định giá của các hãng tư nhân hoặc các công ty nhà nước theo đó được xác định bằng chi phí biên.
+@Marginal firm
+- (Econ) Xuất biên?
+@Marginal income tax rate
+- (Econ) Mức thuế suất cận biên đánh vào thu nhập.
+@Marginal principle
+- (Econ) Nguyên lý cận biên.
+@Marginal product of labors
+- (Econ) Sản phẩm cận biên của lao động.
+@Marginal propensity to comsume (MPC)
+- (Econ) Thiên hướng tiêu dùng cận biên.
+= Là mức thay đổi trong tiêu dùng do tăng thêm một đơn vị thu nhập.
+@Marginal propensity to import
+- (Econ) Thiên hướng nhập khẩu cận biên.
+= Là mức thay đổi nhập khẩu do thay đổi một đơn vị thu nhập.
+@Marginal propensity to save (MPS)
+- (Econ) Thiên hướng tiết kiệm cận biên.
+= Là mức thay đổi tiết kiệm do thay đổi một đơn vị thu nhập.
+@Marginal rate of substitution (MRS)
+- (Econ) Tỷ lệ thay thế cận biên.
+= Trong học thuyết về cầu của người tiêu dùng, tỷ lệ thay thế biên đề cập đến số lượng của một loại hàng hoá, để bù đắp cho người tiêu dùng đối với việc từ bỏ số lượng một loại hàng hoá khác sao cho vẫn có được mức phúc lợi (thoả dụng ) như trước.
+@Marginal rate of transformation
+- (Econ) Tỷ lệ chuyển đổi cận biên.
+= Là giá trị biểu hiện bằng số của độ dốc của đường GIỚI HẠN KHẢ NĂNG SẢN XUẤT.
+@Marginal revenue
+- (Econ) Doanh thu cận biên.
+= Là mức thay đổi trong tổng doanh thu phát sinh từ việc bán thêm một đơn vị sản lượng.
+@Marginal revenue product of labor
+- (Econ) Mức doanh thu cận biên của lao động.
+@Managing director
+- (Econ) Giám đốc điều hành.
+= Là một người được bổ nhiệm là giám đốc một công ty trách nhiệm hữu hạn, có trách nhiệm chính là điều hành các hoạt động hàng ngày của công ty.
+@Manoilescu argument
+- (Econ) Lập luận Manoilescu.
+= Là một phiên bản, do nhà kinh tế Manoilescu đưa ra, về luận chứng về NGÀNH CÔNG NGHIỆP NON TRẺ, dựa vào nhận định rút ra từ thực tế rằng mức lương trung bình  trong khu vực chế tạo ở một nước chậm phát triển cao hơn mức lương trung bình trong khu vực nông nghiệp mặc dù năng suất lao động có thể như nhau.
+@Manpower policy
+- (Econ) Chính sách về nhân lực.
+= Là một nỗ lực nhằm tăng cường hoạt động của thị trường lao động, và nếu có thể, là sự đánh đổi giữa thất nghiệp và lam phát.
+@Manual workers
+- (Econ) Lao động chân tay.
+= Là những nhân viên làm các công việc chân tay và được trả tiền công theo tuần.
+@Margin, at the
+- (Econ) tại biên
+= Trong kinh tế học, tại biên có nghĩa là tại điểm mà đơn vị sản phẩm cuối cùng được sản xuất hoặc tiêu thụ.
+@Marginal
+- (Econ) Cận biên, gia lượng.
+= Một đơn vị biên là đơn vị tăng thên\m của một cái gì đó, chẳng hạn như với CHI PHÍ BIÊN, ĐỘ THOẢ DỤNG BIÊN..
+@Marginal analysis
+- (Econ) Phân tích cận biên.
+= Xem NEO - CLASSICAL ECONOMICS
+@Marginal cost of funds schedule
+- (Econ) Biểu đồ chi phí cận biên của vốn.
+= Là biểu đồ xác định chi tiết chi phí thực sự của vốn tài chính của doanh nghiệp.
+@Marginal damage cost
+- (Econ) Chi phí thiệt hại cận biên.
+= Là chi phí tăng thêm cho một thiệt hại phát sinh, thường do ô nhiễm gây ra, từ một đơn vị tăng thêm của hoạt động gây hại.
+@Marginal disutility
+- (Econ) Độ phi thoả dụng cận biên.
+= Là độ phi thoả dụng tăng thêm phát sinh từ một thay đổi nhỏ trong một biến số nào đó.
+@Marginal efficiency of capital
+- (Econ) Hiệu suất cận biên của vốn.
+= Là TỶ LỆ CHIẾT KHẤU độc nhất có thể khiến cho giá trị hiện tại của lợi ích ròng dự kiến từ một tài sản vốn bằng đúng với giá cung cấp nó khi giá cung cấp tài sản đó không hề tăng.
+@Marginal efficiency of capital schedule
+- (Econ) Biểu đồ hiệu suất biên của vốn.
+= Là biểu đồ trình bày chi tiết mối quan hệ cân bằng dài hạn giữa số vốn cần có và lãi suất.
+@Marginal efficiency of investment
+- (Econ) Hiệu suất cận biên của đầu tư.
+= Còn gọi là tỷ súât lợi tức nội hoàn. Là tỷ lệ chiết khấu làm cho giá trị hiện tại của lợi tức ròng dự kiến từ một tài sản vốn bằng đúng giá cung cấp của nó trong trường hợp mức giá này được công nhận sẽ tăng lên trong ngắn hạn.
+@Marginal efficiency of investment schedule
+- (Econ) Biểu đồ hiệu suất cận biên của đầu tư.
+= Là đường cầu về đầu tư. Là biểu đồ trình bày chi tiết mối quan hệ giữa hiệu suất biên của đầu tư và tỷ lệ lãi suất.
+@Marginal per capita reinvestment quotient criterio
+- (Econ) Tiêu chuẩn về thương số tái đầu tư cận biên theo đầu người.
+= Là một tiêu chuẩn về đầu tư với mục tiêu tối đa hoá thu nhập bình quân đầu người tại một thời điểm trong tương lai.
+@Marginal physical product
+- (Econ) Sản phẩm vật chất cận biên.
+= Là mức tăng thêm tổng sản lượng nhờ việc sử dụng thêm một đơn vị lao động và có thể dẫn xuất từ hàm sản xuất, với điều kiện các yếu tố khác không đổi.
+@Marginal product
+- (Econ) Sản phẩm cận biên.
+= Là sản lượng tăng thêm do sử dụng thêm một đơn vị đầu vào.
+@Marginal productivity doctrine
+- (Econ) Học thuyết về năng suất cận biên.
+= Học thuyết này cho rằng một chủ sử dụng lao động mong muốn tối đa hoá lợi nhuận của mình sẽ chịu sự chi phối của quy luật về năng suất biên giảm dần, theo đó các đơn vị lao động lần lượt được sử dụng sẽ tạo ra các đơn vị SẢN LƯỢNG giảm dần tương ứng.
+@Marginal propensity to tax
+- (Econ) Thiên hướng đánh thuế cận biên.
+= Là mức thay đổi trong thu nhập về thuế do thay đổi một đơn vị thu nhập.
+@Marginal propensity to withdraw
+- (Econ) Thiên hướng rút tiền cận biên.
+= Là mức thay đổi những khoản rút tiền do thay đổi một đơn vị thu nhập.
+@Marginal rate of tax
+- (Econ) Thuế suất cận biên.
+= Là mức thuế đối với một đơn vị thu nhập tăng thêm, nhưng khái niện này cũng được áp dụng tương đương với việc tăng thêm của chi tiêu, của quà tặng.
+@Marginal rate of technical substitution
+- (Econ) Tỷ suất thay thế kỹ thuật cận biên; thế suất kỹ thuật cận biên.
+= Là tỷ lệ thay thế kỹ thuật biên của hai yếu tố đầu vào.
+@Marginal revenue product
+- (Econ) Sản phẩm doanh thu cận biên.
+= Là sản phẩm vật chất biên nhân với doanh thu biên từ việc bán thêm một đơn vị sản phẩm nhờ việc sử dụng thêm một đơn vị đầu vào.
+@Marginal user cost
+- (Econ) Chi phí sử dụng cận biên.
+= Trong kinh tế học tài nguyên, đó là lợi ích ròng (việc định giá một đơn vị tài nguyên, tức là giá của nó trừ đi chi phí khai thác) mà thế hệ tương lai không có được do thế hệ hiện tại đã sử dụng một đơn vị tài nguyên hữu hạn.
+@Marginal utility
+- (Econ) Độ thoả dụng cận biên.
+= Là độ thoả dụng phụ thêm có được từ việc thêm một đơn vị của bất kỳ loai hàng hoá nào.
+@Marginal utility of income
+- (Econ) Độ thoả dụng cận biên của thu nhập.
+= Xem Marginal utility of money.
+@Marginal utility of money
+- (Econ) Độ thoả dụng cận biên của tiền.
+= Là tỷ lệ gia tăng thoả dụng của một cá nhân khi ngân sách của riêng người đó (thu nhập) tăng thêm 1 đơn vị.
+@Marginal value product of capital
+- (Econ) Sản phẩm giá trị biên của vốn.
+@Marginal value product of labor
+- (Econ) Sản phẩm giá trị biên của lao động.
+@Margin requirement
+- (Econ) Yêu cầu về mức chênh lệch.
+= Là tỷ lệ giá trị thị trường của 1 chứng khoán mà người mua có thể vay được khi mua chứng khoán đó.
+@Market
+- (Econ) Thị trường.
+= Thông thường, đó là bất kỳ khung cảnh nào trong đó diễn ra việc mua bán các loại hàng hoá và dịch vụ.
+@Market classification
+- (Econ) Phân loại thị trường.
+= Có rất nhiều cách khác nhau để phân loại thị trường.
+@Market clearing
+- (Econ) Điểm thị trường bán sạch.
+@Market demand curve
+- (Econ) Đường cầu của thị trường.
+= Là tổng hợp của một loạt các đường cầu riêng rẽ đối với một loại hàng hoá.
+@Market demand curve for labour
+- (Econ) Đường cầu của thị trường đối với lao động.
+= Với một mức giá bán sản phẩm không đổi, đường cầu của thị trường hay của một nghành sản xuất chính là sự tổng hợp theo chiều ngang các đường DOANH THU SẢN PHẨM BIÊN của các doanh nghiệp tham gia.
+@Market economy
+- (Econ) Nền kinh tế thị trường
+= Là một hệ thống kinh tế trong đó các quyết định về việc phân bổ nguồn lực và sản xuất được diễn ra trên cơ sở các mức giá được xác định qua những giao dịch tự nguyện giữa các nhà sản xuất, người  tiêu dùng, công nhân và chủ sở hữu các yếu tố sản xuất.
+@Market failure
+- (Econ) Sự khiếm khuyết của thị trường; Sự trục trặc của thị trường.
+= Là việc một hệ thống các thị trường tư nhân không có khả năng cung cấp một số mặt hàng nhất định cho dù là một phần nhỏ hay với mức độ hợp lý nhất định hoặc tối ưu nhất.
+@Market forces
+- (Econ) Các tác nhân thị trường.
+= Là những tác nhân phát sinh từ quan hệ tự do giữa cung và cầu của thị tường dẫn đến việc phải điều chỉnh giá bán và/hoặc số lượng được giao dịch.
+@Market imperfection
+- (Econ) Sự không hoàn hảo của thị trường.
+= Là bất kỳ sự sai lệch nào khỏi các điều kiện cần thiết để có được cạnh tranh hoàn hảo.
+@Market mechanism
+- (Econ) Cơ chế thị trường.
+@Marketing
+- (Econ) Marketing
+= Là một thuật ngữ dùng để chỉ những hoạt động của các doanh nghiệp liên quan đến việc bán và phân phối sản phẩm.
+@Marketing boards.
+- (Econ) Các ban Marketing.
+= Các ban này được thành lập tại một số nước châu Phi, và chúng đáp ứng được nhiều mục đích khác nhau. Chúng mang lại cho các tiểu nông một thị trường chắc chắn và ổn định đối với các sản phẩm của họ và vì sau đó hàng hóa được bán trên quy mô lớn trên các thị trường quốc tế nên các nhà chức trách có được cơ sở hợp lý hơn để mặc cả giá bán hợp lý.
+@Market maker
+- (Econ) Hãng lập thị.
+= Là tên gọi xuất hiện tại SỞ GIAO DỊCH CHỨNG KHOÁN London kể từ năm 1986, đặt cho hãng tạo ra được một thị trương mua bán các loại chứng khoán khác nhau thông qua việc luôn sẵn sàng mua hoặc bán những loại chứng khoán này.
+@Market orientation
+- (Econ) Định hướng theo thị trường.
+= Là việc các nhà sản xuất có xu hướng đặt nhà máy của họ gần thị trường tiêu thụ sản phẩm chứ không phải ở nơi khác, chẳng hạn như gần nguông nguyên liệu.
+@Market oriented reform
+- (Econ) Cải cách theo định hướng thị trường.
+@Market power
+- (Econ) Quyền lực thị trường; Sức mạnh đối với thị trường.
+= Là việc nhóm người mua hoặc bán có khả năng tác động đến giá cả của sản phẩm hoặc dịch vụ mà họ đang mua bán.
+@Market premium rate
+- (Econ) Tỷ lệ chênh lệch giá.
+@Black market premium rate
+- (Econ) Tỷ lệ chênh lệch giá trên thị trường chợ đen.
+@Market share
+- (Econ) Thị phần
+= Là tỷ trọng của tổng số hàng hoá bán trên thị trường của một doanh nghiệp.
+@Market socialism
+- (Econ) Chủ nghĩa xã hội theo cơ chế thị trường.
+= Là một hệ thống kinh tế xã hội chủ nghĩa nhưng lại nhường quyền điều hành các hoạt động hàng ngày của nền kinh tế  cho cơ chế thị trường.
+@Markov process
+- (Econ) Quá trình Markov.
+= Là một quá trình liên kết giá trị hiện tại của một biến số với những giá trị trước đó của chính nó và một sai số ngẫu nhiên.
+@Markowitz, Harry
+- (Econ) (1927-)
+= Là một nhà kinh tế người Mỹ đồng đoạt giải Nobel về kinh tế năm 1990 (cùng với M.Miller và W.F.Sharp). Công việc quan trọng mà ông thực hiện trong những năm 1950 đã đặt nền móng cho học thuyết hiện đại về DANH MỤC ĐẦU TƯ. Học thuyết ban đầu của ông về sự lựa chọn danh mục đầu tư được dựa trên mô hình chuẩn tắc dành cho các nhà quản lý đầu tư. Đóng góp quan trọng của ông là việc phát triển thuyết nghiệp vụ được tính toán chính xác về sự lựa chọn danh mục đầu tư trong điều kiện không chắc chắn. Markowitz chỉ ra rằng trong những điều kiện nhất định, sự lựa chọn danh mục đầu tư của một nhà đầu tư bị hạn chế ở việc cân bằng giữa lợi tức dự kiến thu đượ từ danh mục đầu tư đó với sai số của nó. Về mặt nguyên tắc, sự lựa chọn phức tạp giữa nhiều tài sản với những thuộc tính khác nhau của chúng được xem như một bài toán không gian hai chiều, thường gọi là phép phân tích phương sai trung bình. Các ấn phẩm lớn trung bình của Markowitz bao gồm: Sự lựa chọn danh mục đầu tư: Sự đa dạng hoá có hiệu quả đầu tư, Wiley (1959), và Phép phân tích phương sai - trung bình trong việc lựa chọn danh mục đầu tư và các thị trường vốn, Blackwell (1987)>
+@Parallel market premium rate
+- (Econ) Tỷ lệ chênh lệch giá của thị trường song hành.
+@Market structure
+- (Econ) Cơ cấu thị trường.
+@Mark-up
+- (Econ) Phần thêm vào giá vốn; Phần thêm vào chi phí khả biến.
+= Là một phần cộng thêm vào các chi phí khả biến trung bình để hình thành giá bán do người bán xác định nhằm trang trải các chi phí cố định và có được lợi nhuận.
+@Marshall, Alfred
+- (Econ) (1842-1924)
+= Là nhà kinh tế học người Anh mà cả sự nghiệp của mình đã dành cho công việc của một giáo sư kinh tế tại đaih học Cambridge (1885-1908).Ông coi yếu tố giá thành sản xuất quan trọng không kém gì độ thoả dụng trong học thuyết về giá trị của ông. Ý tưởng cơ bản trong công việc của ông là khả năng của cung và cầu trong việc tạo ra những mưc giá cân bằng trên thị trường. Marshall được ví như cầu nối giữa học thuyết kinh tế cổ điển với học thuyết tân cổ điển của Jevon và học thuyết về cân bằng tổng quát của Walras. Các tác phẩm của Marshall không chỉ có ảnh hưởng đáng kể đến chính sách kinh tế cho đến hiện nay mà còn gây ảnh hưởng đáng kể đến các thế hệ nhà kinh tế của Anh.
+@Marshall Aid
+- (Econ) Viện trợ Marshall.
+= Là viện trợ của Mỹ và Canada cho Anh và các nước khác để trợ giúp họ phục hồi nền kinh tế sau chiến tranh thế giới thứ hai.
+@Marshallian demand curve
+- (Econ) Đường cầu Marshall
+= Là đường cầu được sử dụng rộng rãi nhất trong đó phản ứng của lượng cầu đối với mức giá chịu ảnh hưởng của cả hiệu ứng thu nhập lẫn hiệu ứng thay thế.
+@Marshall - Lerner condition
+- (Econ) Điều kiện Marshall - Lerner.
+= Trong những điều kiện nhất định, việc phá gía đồng tiền có thể cải thiện được cán cân thanh toán. Điều kiên Marshall - Lerner là một điều kiện giống như vậy.
+@Marshall plan
+- (Econ) Kế hoạch Marshall
+= Xem EUROPEAN RECOVERY PROGRAMME.
+@Marx, Karl
+- (Econ) (1818-1883)
+= Là nhà triết học, Xã hội học, sử học, lý luận chính trị học, kinh tế học người Đức. Từ 1849, sống tại Anh với sự giúp đỡ của ăng-ghen, một nhà tư bản công nghiệp. Chịu ảnh hưởng sâu sắc tư tưởng Hê-ghen và từ đó đưa ra luận thuyết về xã hội tư bản, và luận điểm tổng hợp về chủ nghĩa cộng sản. Những tiên đoán của C.Mác về chủ nghĩa tư bản vẫn chưa trở thành hiện thực nhưng những thành tựu của Mác là hết sức to lớn đã khiến chi Mác đạt tới đỉnh cáo của một nhà phân tích kinh tế.
+@C.mácist economics
+- (Econ) Kinh tế học Mac xít.
+= Là một trường phái tư duy kinh tế có mục đích phân tích sự phát triển kinh tế và xã hội của hệ thống kinh tế tư bản chủ nghĩa.
+@Materials balance principle
+- (Econ) Nguyên lý cân bằng vật chất.
+= Là một nguyên tác trong kinh tế học môi trường, theo đó khối lượng chất thải ra môi trường từ quá trình sản xuất được coi là xấp xỉ khối lượng các tài nguyên được sử dụng để sản xuất ra hàng hoá.
+@Material forces of production
+- (Econ) Lực lượng sản xuất vật chất.
+= Là cụm thuật ngữ được C.Mác sử dụng để xác định nền tảng kinh tế thực tế của một xã hội.
+@Mathematical expectation
+- (Econ) Kỳ vọng toán học.
+= Xem EXPECTED VALUE.
+@Matrix
+- (Econ) Ma trận.
+@Maturity
+- (Econ) Đến hạn, hết hạn.
+= Là ngày mà khoản nợ của người phát hành trái phiếu đến hạn phải thanh toán hoặc là ngày đến hạn thanh toán tiền nợ gốc.
+@Maximax
+- (Econ) Tối đa hoá cực đại.
+= Là một quy tắc trong lý thuyết RA QUYẾT ĐỊNH để giúp cho việc lựa chọn trong những điều kiện không chắc chắn.
+@Maximin
+- (Econ) Tối đa hoá cực tiểu.
+= Là một quy tắc trong lý thuyết RA QUYẾT ĐỊNH để giúp cho việc lựa chọn trong những điều kiện không chắc chắn.
+@Maximum
+- (Econ) Giá trị cực đại.
+= Là giá trị lớn nhất của một hàm số hoặc của biến số.
+@Maximum likelihood
+- (Econ) Hợp lý cực đại.
+= Là một cụm thuât ngữ mô tả kỹ thuật ước lượng kinh tê lượng chung bao gồm việc tối đa hoá hàm hợp lý của những quan sát mẫu về các giá trị của các tham số của các phương trình đang được ước tính.
+@Meade, James Edward
+- (Econ) (1907- )
+= Là trưởng phòng kinh tế thuộc văn phòng nội các Anh từ năm 1940 đến năm 1945, giáo sư kinh tế học thuộc trường Kinh tế London từ năm 1947 đến năm 1957, giáo sư kinh tế chính trị thuộc trường Đại học Cambridge từ năm 1957 đến năm 1969. Ông được trao tặng giải thưởng Nobel về kinh tế học vào năm 1977. Những tác phẩm nổi tiếng của ông là: Học thuyết về chính sách kinh tế: Cán cân thanh toán (1951), Hệ thống thương mại quốc tế (1952); Học thuyết về chính sách quốc tế….và các hệ thống khác nhau về kinh doanh và trả lương cho công nhân (1986). Tác phẩm nổi tiếng nhất của ông thuộc về lĩnh vực chính sách và học thuyết thương mại quốc tê. Những vấn đề của các chính sách ỔN ĐỊNH HOÁ trong NỀN KINH TẾ MỞ là trọng tâm của những tác phẩm đầu tiên của ông, đặc biệt là những điều kiện để có được một sự cân bằng trong nền kinh tế trong nước và trong giao dịch với nước ngoài. Ông nhấn mạnh đến những mâu thuẫn về chính sách có thể xảy ra giữa cán cân thương mại quốc tế với cán cân tổng cung và tổng cầu trong nước trong một hệ thống tỷ giá hối đoái cố định. Ông cũng tiến hành phân tích về kinh tế học phúc lợi của liên minh thuế quan và thuế quan trong những điều kiện mà sự cạnh tranh hoàn hảo sẽ không dẫn đến khả năng tối đa hoá phúc lợi.
+@Mean
+- (Econ) Trung bình
+= Một số đo thường được sử dụng để tính xu hướng tập trung của một biến số, có thể dùng để tính cho một mẫu nhất định hoặc toàn bộ tổn thể.
+@Means tested benefits
+- (Econ) Trợ cấp theo mức trung bình.
+= Là những trợ cấp mà chỉ có thể nhận được nếu như thu nhập của người xin được hưởng trợ cấp đó thấp hơn một giá trị nhất định.
+@Mean-variance analysis
+- (Econ) Phân tích trung bình - phương sai.
+= Là phương pháp tìm ra DANH MỤC các tài sản có hiệu quả cao.
+@Measurement error
+- (Econ) Sai số đo lường.
+= Xem ERRORS IN VARIABLES.
+@Median
+- (Econ) Trung vị.
+= Một số đo xu hướng tập trung.
+@Median location principle
+- (Econ) Nguyên lý định vị trung bình.
+= Là một quy tắc dùng để tìm ra địa điểm mà tại đó tổng khối lượng vận chuyển cần phải thực hiện để phục vụ cho một nhóm các thị trường phân tán về vị trí địa lý có giá trị tối thiểu.
+@Median Vote Theorem
+- (Econ) Định lý cử tri trung dung.
+= Là một định lý liên quan đến sự LỰA CHỌN TẬP THỂ trong một xã hội dân chủ, nó dự đoán rằng các chính trị gia hầu hết đều sẽ đại diện cho quan điểm của những cử tri ở trung tâm của phổ chính trị hoặc xã hội đó.
+@Mediation
+- (Econ) Hoà giải.
+= Là sự can thiệp vào CUỘC TRANH CHẬP LAO ĐỘNG bởi một bên thứ ba độc lập khách quan, là bên xem xét lập luận của cả hai phía và đưa ra khuyến nghị để giải quyết tranh chấp.
+@Medium of exchange
+- (Econ) Phương tiện trao đổi.
+= Là bất kỳ tài sản hoặc phương tiện nào có chức năng trung gian trong quá trình trao đổi, nghĩa là một vật mà người bán hang hoặc cung cấp dịch vụ chấp nhận để thay thế, không phải cho bản thân nó mà là vơí ý thức rằng nó có thể sử dụng để trong những cuộc trao đổi để mua bất kỳ cái gì mà anh ta cần.
+@Median Voter
+- (Econ) Cử tri trung dung.
+@Medium term financial strategy (MTFS)
+- (Econ) Chiến lược tài chính trung hạn.
+= Là một chính sách do chính phủ Anh đề xướng trong kế hoạch ngân sách năm 1980 theo đó các tỷ lệ tăng mức cung tiền giảm dần hàng năm được ấn định nhằm kiềm chế lạm phát. Vào tháng 10/1985, chiến lược này trên thực tế đã bị từ bỏ khi mục tiêu đặt ra cho đồng Sterling M3, bản vị tiền được ưa chuộng bị đình lại.
+@Menger, Carl
+- (Econ) (1840-1921)
+= Là nhà kinh tế người Áo, người sáng lập ra trường phái Áo. Ông là một trong những tác giả của học thuyết về giá trị ĐỘ THOẢ DỤNG BIÊN, còn những người khác độc lập nghiên cứu học thuyết này là Jevons và Walras. Menger lập luận rằng giá trị mức gia tăng của một hàng hoá khi có cung, được thể hiện bởi công dụng kém quan trọng nhất mà mức gia tăng đó được sử dụng. Ông cũng xây dựng nên một học thuyết quy trách nhiệm về phân phối (tức là thù lao cho yếu tố sản xuất) theo đó giá trị và ía cả của phương tiện sản xuất bắt nguồn từ vai trò của chúng trong việc sản xuất các mặt hàng cần mua trước tiên nghĩa là hàng tiêu dùng. Giá trị phát sinh từ độ thoả dụng và từ các chi phí sản xuất cho phép; giá trị không bắt nguồn từ các chi phí sản xuất, đặc biệt là lao động chứ không theo quan điểm, chẳng hạn như KINH TẾ HỌC CỔ ĐIỂN ANH. Tác phẩm lớn của ông mang tựa đề Grundsatze Der Volkwirtschaftslehre.
+@Mercantilism
+- (Econ) Chủ nghĩa trọng thương.
+= Triết lý kinh tế của các nhà buôn và các chính khách thế kỷ XVI và XVII. Tư tưởng này phụ thuộc vào một nhà nước mạnh và can thiệp sâu vào hoạt động kinh tế.
+@Merchant bank
+- (Econ) Ngân hàng nhà buôn
+= Là một nhóm trong số các thể chế tài chính ở Anh tiến hành một loạt các hoạt động đa dạng về tài chính hoặc liên quan đến tài chính.
+@Merger
+- (Econ) Sát nhập.
+= Là việc hai doanh nghiệp sat nhập lại với nhau, trong đó các cổ đông của hai bên công ty đồng ý kết hợp góp vốn của mình lại để hình thành một công ty mới.
+@Menu cost of inflation
+- (Econ) Chi phí thực đơn của lạm phát.
+@Merit goods
+- (Econ) Hàng khuyến dụng; Hàng có lợi.
+= Là một mặt hàng mà xét về bản chất được coi là đáng để tiêu dùng.
+@Merit bad
+- (Econ) Hàng không khuyến dụng.
+= Là một loại hàng hoá mà người ta lập luận răng không nên khuyến khích tiêu dùng hoặc cấm tiêu dùng cho dù nhiều người vẫn thích thứ hàng hoá đó.
+@Methodology
+- (Econ) Phương pháp luận.
+= Là một thuật ngữ thường được sử dụng một cách không chặt chẽ trong kinh tế học để mô tả cách thức mà các nhà kinh tế sử dụng trong cách phân tích vấn đề.
+@Metzler case
+- (Econ) Tình huống Metzler.
+= Là tình huống trong học thuyết THUẾ QUAN được nhà kinh tế Metzler phân tích, theo đó việc đánh thuế vào mặt hàng nhập khẩu sẽ cải thiện tỷ giá thương mại theo hướng không chỉ tỷ giá trao đổi ngoài nước mà ngay cả tỷ giá trao đổi trong nước tính cả thuế quan cũng được cải thiện.
+@M-form enterprise
+- (Econ) Doanh nghiệp dạng M
+= Là hình thức tổ chức nội bộ rất phổ biến được các công ty lớn áp dụng nhằm phối hợp nhằm đối phó với tình trạng QUẢN LÝ LỎNG LẺO.
+@Microeconomics
+- (Econ) Kinh tế học vi mô.
+= Là thuật ngữ sử dụng để mô tả những phần trong phân tích kinh tế quan tâm đến hành vi của những đơn vị đơn lẻ, cụ thể là những người tiêu dùng và các doanh nghiệp.
+@Microfoundations
+- (Econ) Các cơ sở vi mô.
+= Là nỗ lực tìm ra được những mối qun hệ về hành vi của kinh tế học vĩ mô từ những mô hình hành vi của các cá thể mà kinh tế học vi mô đã bàn đến.
+@Miller - Tydings Act of Đạo luật Miller - Tydings năm 1937.
+- (Econ) Là đạo luật về buôn bán công bằng, định ra quyền của một nhà sản xuất Mỹ trong việc quy định những mức giá bán lẻ tối thiểu cho các mặt hàng có nhãn hiệu thương mại và được đăng ký vào năm 1972, quốc hội đã tuyên bố những đạo luật trên đều vô hiệu.
+@Minimax regret
+- (Econ) Quy tắc tối thiểu hoá mức độ đáng tiếc tối đa.
+= Là một quy tắc trong lý thuyết về quá trình ra quyết định trong những diều kiện không chắc chắn.
+@Minimum
+- (Econ) Giá trị tối thiểu.
+= Giá trị nhỏ nhất của một biến hay một hàm.
+@Minimum efficient scale
+- (Econ) Quy mô hiệu quả tối thiểu.
+= L:à quy mô của một nhà máy hoặc doanh nghiệp mà tại đó các chi phí trung bình dài hạn đạt được ở mức tối thiểu.
+@Minimum employment target
+- (Econ) Mục tiêu tối thiểu về việc làm.
+= Trong các kế hoạch phát triển của cácc nước chậm phát triển thường xác định những mức chỉ tiêu tối thiểu về việ làm.
+@Minimum lending rate (MLR)
+- (Econ) Lãi suất cho vay tối thiểu.
+= Cụm thuật ngữ được đưa vào tháng 10/1971 để thay thế cho cụm thuật ngữ lãi suất ngân hàng, tên gọi của lãi suất mà ngân hàng Anh sẽ hỗ trợ bằng các khoản tiền vay hoạc bằng cách tái chiết khấu các hối phiếu cho các NGÂN HÀNG CHIẾT KHẤU do thiếu vốn trên thị trường tiền tệ buộc phải tới ngân hàng trung ương như là NGƯỜI CHO VAY CỨU CÁNH CUỐI CÙNG. Vào tháng 8/1981 MLR đã bị xóa bỏ, dù vẫn còn quy định sễ sử dụng nó trong những trường hợp khẩn cấp.
+@Minimum wage
+- (Econ) Tiền lương tối thiểu.
+@Minimum wage legislation
+- (Econ) Luật về mức lương tối thiểu.
+= Các luật nhằm vải thiện điều kiện sống của người công nhân bằng cách ấn định một mức thấp nhất đối với lương theo giờ mà các doanh nghiệp trả cho công nhân.
+@Minority control
+- (Econ) Quyền kiểm soát tối thiểu.
+= Là khả nưng của một cá nhân hoặc một tổ chức nắm được quyền kiểm soát một công ty, mặc dù sở hữu ít hơn 51% số cổ phiếu thông thường được quyền bỏ phiếu của công ty.
+@Mint
+- (Econ) Nhà máy đúc tiền.
+= Là nơi tiền kim loại được sản xuất ra.
+@Mis-specification
+- (Econ) Thông số sai lệch.
+= Xem Specification error.
+@Mixed estimation
+- (Econ) Phương pháp ước tính hỗn hợp.
+= Là phương pháp ước tính trong đó có sử dụng thông tin phụ.
+@Mixed good
+- (Econ) Hàng hoá hỗn hợp.
+= Là loại hàng hoá mà lợi ích có được từ việc tiêu dùng nó không chỉ thuộc về một cá nhân mà còn được san sẻ cho nhiều người.
+@Mixed market economy
+- (Econ) Nền kinh tế thị trường hỗn hợp.
+= Là một hệ thống kết hợp các doanh nghiệp tư nhân mang tính cạnh tranh với một mức độ kiểm soát nhất định từ trung ương.
+@Mode
+- (Econ) Mốt.
+= Là thước đo xu hướng tập trung của một biến số.
+@Model
+- (Econ) Mô hình
+= LA một khuông mẫu chính quy hoặc không chính quy của phép phân tích nhằm rút ra tù những hiện tượng phức tạp của thế giới thực tại những đặc điểm của một hệ thống kinh tế có ý nghĩa quan trọng trong việc giúp nắm giữ được những mối quan hệ về hành vi, thể chế và kỹ thuật là nền tẳng của hệ thống đó.'
+@Modern quantity theory of money
+- (Econ) Thuyết định lượng tiền tệ hiện đại.
+= Xem MONETARISM, MONEY, THE DEMAND FOR.
+@Modern sector
+- (Econ) Khu vực hiện đại.
+= Một tên gọi khác của khu vực công nghiệp, hoặc đôi khi dùng để gọi khu vực chính phủ.
+@Mode of production
+- (Econ) Phương thức sản xuất.
+= Là cụm thuật ngữ mà C.Mác dùng để chỉ cơ sở kinh tế của xã hội, là yếu tố mà ông cho rằng có ảnh hưởng lớn nhất trong việc quyết định cơ cấu xã hội.
+@Modigliani, Franco
+- (Econ) (1918-)
+= Là nhà kinh tế học người Mỹ gốc Italia được trao giải thưởng Nobel kinh tế vào năm 1985 chính nhờ tác phẩm về hàm tiêu dùng, trong đó sáng tạo lớn nhất của ông là giả thiết về chu kỳ sống. Modigliani cũng có những đóng góp quan trọng vào học thuyết tư bản, đặc biệt là về chi phí tư bản trong học thuyết MODIGLIANI - MULLER. Xem CAPITAL STRUCTURE.
+@Modigliani-Miller theory of cost of capital
+- (Econ) Học thuyết về chi phí tư bản của Modigliani-Miller.
+= Xem CAPITAL STRUCTURE.
+@Modulus
+- (Econ) Giá trị tuyệt đối.
+= Xem ABSOLUTE VALUE.
+@Moments
+- (Econ) Mô men
+= Là một thuật ngữ mô tả THỐNG KÊ tổng có tác dụng để biểu thị đặc điểm hình dạng và vị trí của một PHÂN PHỐI XÁC SUẤT, hoặc một mẫu số liệu.
+@Monetarism
+- (Econ) Chủ nghĩa trọng tiền.
+= Là một trường phái tư duy kinh tế lập luận rằng những xáo trộn trong lĩnh vực tiền tệ là nguyên nhân chủ yếu của sự bất ổn trong nền kinh tế.
+@Money multiplier
+- (Econ) Số nhân tiền tệ.
+= 1)Xem CREDIT MULTIPLIER. 2)Là hệ số của mức cung tiền thực tế trong phương trình thu nhập dạng đơn giản rút gọn trong mô hình kinh tế vĩ mô.
+@Mixed economy
+- (Econ) Nền kinh tế hỗn hợp.
+@Mix of fiscal and money policy
+- (Econ) Sự kết hợp giữa chính sách thuế khoá và tiền tệ.
+@Money price
+- (Econ) Giá của tiền.
+= Xem PRICE.
+@Money stock
+- (Econ) Dung lượng tiền.
+= Là một cách gọi khác của cung tiền.
+@Mobility of labor
+- (Econ) Tính luân chuyển của lao động.
+@Monetarists
+- (Econ) Những người theo thuyết trọng tiền.
+@Monetary accommodation
+- (Econ) Sự điều tiết tiền tệ.
+@Monetary aggregate
+- (Econ) Cung tiền (M1,M2,M3).
+@Monetary base
+- (Econ) Cơ số tiền tệ.
+@Monetary overhang
+- (Econ) Sự sử dụng quá nhiều tiền mặt.
+@Monetary standard
+- (Econ) Bản vị tiền tệ.
+@Monetary Union
+- (Econ) Liên minh tiền tệ.
+@Money supply
+- (Econ) Cung tiền.
+= Là số lượng tiền trong một nền kinh tế, có nhiều định nghĩa khác nhau liên quan đến các tài sản có khả năng chuyển hoán mà được coi là tiền tệ.
+@Money terms
+- (Econ) (Biểu thị giá trị) bằng tiền.
+= Là việc biểu hiện những giá trị của một loại hàng hoá theo tiền trên danh nghĩa - hay nó cách khác là bao gồm cả những thay đổi trong mức giá chung.
+@Monoculture
+- (Econ) Độc canh
+= Là tập quán canh tác một loại hoa màu trên một diện tích đất đai nhất định, tập quán này xuất hiện tại Anh trước cách mạng ruộng đất và hiện vẫn còn phổ biến ở các vùng nhiệt đới.
+@Monopolies and Merger Act in1965.
+- (Econ) Đạo luật về độc quyền và sát nhập năm 1965.
+= Đạo luật này có hai quan điểm mới quan trọng trong chính sách cạnh tranh của Anh. Thứ nhất, CÁC CUỘC SÁT NHẬP lớn đều phải chịu sự điều tra của cơ quan hữu trách lúc đó có tên là Uỷ ban về độc quyền. Thứ hai là quy định cho Uỷ ban về độc quyền có quyền điều tra chung về các vụ việc liên quan đến cung cấp các dịch vụ cũng như cung cấp hàng hoá.
+@Monopolies and Merger Commission
+- (Econ) Uỷ ban về độc quyền và Sát nhập.
+= Tổng giám đốc vè thương mại công bằng và Bộ thương mại và công nghiệp là những người có thể đưa các HÃNG ĐỘC QUYỀN VÀ CÁC VỤ SÁT NHẬP ra điều tra tại Uỷ ban về độc quyền và sát nhập, một tổ chức xét xử hành chính độc lập được thành lập vào năm 1973 thay thế cho Uỷ ban về độc quyền trước đó được thành lập vào năm 1948.
+@Monopolies and Restrictive Practices (Inquiry and
+- (Econ) Đạo luật Độc quyền và những thông lệ hạn chế (Điều tra và Kiểm soát) 1948.
+= Đạo luật này đánh dấu sự ra đời một chính sách về cạnh tranh của Anh với việc thành lập Uỷ ban về độc quyền và những thông lệ hạn chế.
+@Monopolistic Competition
+- (Econ) Cạnh tranh độc quyền.
+= Là một học thuyết do E.H.Chamberlin (THUYẾT VỀ CẠNH TRANH VÀ ĐỘC QUYỀN, nhà xuất bản Harvard University, 1933) và J.Robinson (Kinh tế học về cạnh tranh không hoàn hảo, Macmillan,1933) khởi xướng.
+@Monopoly
+- (Econ) Độc quyền.
+= Theo nghĩa chính xác nhất của cụm thuật ngữ này thì một doanh nghiệp được coi là độc quyền nếu nó là nhà cung cấp duy nhất một loạt sản phẩm đồng nhất mà không có mặt hàng nào có thể thay thế và có rất nhiều người mua.
+@Monopoly power
+- (Econ) Quyền lực độc quyền.
+= Là khả năng của một doanh nghiệp hoặc một nhóm các doanh nghiệp trong việc tác động đến giá cả thị trường của một loại hàng hóa hoặc dịch vụ mà họ bán.
+@Monetized economy
+- (Econ) Nền kinh tế tiền tệ hoá.
+@Money illusion
+- (Econ) Ảo tưởng về tiền.
+@Money market equilibrium
+- (Econ) Sự cân bằng của thị trường tiền tệ.
+@Monopoly profit
+- (Econ) Lợi nhuận độc quyền.
+= Xem SUPER-NORMAL PROFITS
+@Monopsony
+- (Econ) Độc quyền mua.
+= Theo nghĩa chặt chẽ thì một nhà độc quyền mua là người mua duy nhất đối với một yếu tố sản xuất.
+@Monte Carlo method
+- (Econ) Phương pháp Monte Carlo.
+= Là một kỹ thuật nhằm khám phá ra những tính chất nhỏ của mẫu của các Ước tính kinh tế lượng.
+@Moonlighting
+- (Econ) Sự làm thêm
+= Xem UNDEREMPLOYED WORKERS.
+@Moral hazard
+- (Econ) Mối nguy đạo đức; Sự lạm tín.
+= Là ảnh hưởng của một số loại hình nhất định của các hệ thống bảo hiểm trong việc gây ra sự chênh lệc giữa chi phí biên cá nhân của một hành động và Chi phí biên xã hội của hành động đó, do vậy dẫn đến việc phân bổ các nguồn lực không tối ưu.
+@Mortgage
+- (Econ) Thế chấp.
+= Là một sự thu xếp về mặt pháp lý theo đó một hình thức sở hữu một loại tài sản nào đó được người đi vay chuyển cho người cho vay như một sự bảo đảm đối với khoản vay đó.
+@Most favoured nation clause
+- (Econ) Điều khoản tối huệ quốc.
+= Là điều khoản trong một hợp đồng thương mại quốc tế quy định rầng các bên tham gia hợp đồng có nghĩa vụ phải dành cho nhau sự đối xử mà họ dành cho  bất kỳ nước nào khác trong lĩnh vực thuế XUẤT NHẬP KHẨU và trong các quy định khác về thương mại.
+@Moving average
+- (Econ) Trung bình động.
+= Là một phương pháp nhằm loại bớt những biến động số liệu.
+@Multicollitnearity
+- (Econ) Tính đa cộng tuyến.
+= Là một bài toán kinh tế lượng trong đó hai hoặc nhiều BIẾN SỐ GIẢI THÍCH trong một phân tích hồi quy có tương quan mật thiết với nhau.
+@Multilateral aid
+- (Econ) Viện trợ đa phương
+= Là viện trợ bằng tiền hoặc hiện vật do một nhóm các nước cùng nhau cung cấp hoặc thông qua một tổ chức quốc tế cho một nhóm các nước khác.
+@Multilateral Investment Guarantee Agency (MIGA)
+- (Econ) Cơ quan bảo hiểm đầu tư Đa phương.
+= Là một thành viên của Ngân hàng thế giới. MIGA được hình thành lập vào năm 1988 với chức năng chuyên trách là khuyến khích đầu tư cổ phần và các đầu tư trực tiếp vào các nước đang phát triển.
+@Multilateral trade
+- (Econ) Thương mại đa phương
+= Là hình thức thương mại giữa một số nước với nhau, những lượng hàng xuất và nhập của các nước này không cân bằng giữa từng cặp nước với nhau, mặc dù nước nào cũng có xu hướng cân bằng trong tổng chi ngoại thương và tổng thu ngoại thương.
+@Multinational corporation
+- (Econ) Công ty đa quốc gia.
+= Là một doanh nghiệp lớn đóng trụ sở tại một nước nhưng lại điều hành các công ty con thuộc sở hữu hoàn toàn hoặc một phần của học ở các nước khác.
+@Multiplant economies
+- (Econ) Tính kinh tế nhờ vận hành nhiều nhà máy.
+= Là việc giảm được tổng chi phí trung bình nhờ vận hành nhiều hơn một nhà máy.
+@Multiplant operations
+- (Econ) Sự vận hành đa nhà máy.
+= Những yếu tố thông thường khuyến khích hình thức hoạt động nói trên là các thị trường phân tán về mặt địa lý cùng với chi phí vận chuyển cao, tính kinh tế về chi phí vốn cho sự hoạt động đa nhà máy và mức độ linh hoạt cao hơn trong việc đáp ứng những đòi hỏi của nhu cầu mà hình thức hoạt động đa nhà máy có thể có được. Xem Multiplant economies.
+@Multiple correlation coefficient
+- (Econ) Hệ số đa tương quan.
+= Xem Coefficient determi-nation.
+@Multiple regression
+- (Econ) Hồi quy bội số.
+= Xem REGRESSION ANALYSIS.
+@Multiplier
+- (Econ) Số nhân.
+= Là tỷ số thay đổi trong thu nhập với thay đổi ban đầu trong chi tiêu mà tạo ra thay đổi thu nhập nói trên.
+@Multiplier - accelerator interaction
+- (Econ) Tác động qua lại giữa số nhân - gia tốc.
+= Một phương pháp dùng để giải thích những biến động trong mức độ phát triển của hoạt động kinh tế - CHU KỲ KINH DOANH - vốn phụ thuộc vào những tác động qua lại giữa SỐ NHÂN và GIA TỐC.
+@Multiplier - accelerator model
+- (Econ) Mô hình gia tốc theo thừa số / hệ số nhân.
+@Multiproduct firm
+- (Econ) Hãng sản xuất đa sản phẩm
+= Là một doanh nghiệp kết hợp các yếu tố sản xuất với nhau để sản xuất ra nhiều loại sản phẩm.
+@Multiplier coefficient
+- (Econ) Hệ số khuyếch đại.
+@Multisector growth model
+- (Econ) Mô hình tăng trưởng đa ngành.
+= Là mô hình được sử dụng trong lý thuyết tăng trưởng theo đó cho phép sản xuất nhiều loại hàng hoá.
+@Multivariate analysis
+- (Econ) Phân tích đa biến số.
+= Là một phân tích (thường là mang tính thống kê) trong đó có từ hai biến số trở lên.
+@Mundell - Fleming model
+- (Econ) Mô hình Mundell - Fleming.
+= Là một Mô hình do hai nhà kinh tế học Mundell và Fleming xây dựng một cách độc lập, nó cho thấy tác động mở rộng của các biến số chính sách, CHÍNH SÁCH TÀI CHÍNH và CHÍNH SÁCH TIỀN TỆ đều biến đổi tuỳ thuộc vào chế độ tỷ giá hối đoái được giả định.
+@Mutually exclusive projects
+- (Econ) Các dự án loại từ lẫn nhau.
+= Đây là nói tới tình huống trong đó có hai hoặc nhiều dự án không thể cùng thực thi vì chúng cần có một đầu vào mà chỉ có thể được dùng cho một dự án.
+@Mutually exclusive
+- (Econ) Loại từ lẫn nhau.

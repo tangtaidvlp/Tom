@@ -1,0 +1,15 @@
+@Yield on external debt
+- (Econ) Lãi trên nợ nước ngoài.
+@Yield on investment
+- (Econ) Lợi nhuận từ đầu tư.
+@Y-efficiency
+- (Econ) Hiệu quả Y.
+= Hiệu quả trong đó các cơ hội thu lợi nhuân trên thị trường được khai thác.
+@Yeild
+- (Econ) Lợi tức.
+= Tỷ lệ thu hàng năm đối với một chứng khoán được tính bằng tỷ lệ % so với thị giá hiện tại.
+@Yeild gap
+- (Econ) Chênh lệch lợi tức.
+= Mức khác biệt giữa lợi tức trung bình đối với cổ phần và tỷ lệ thu hồi tương ứng đối với các chứng khoán dài hạn có lãi suất cố định.
+@Yeild gap on securities
+- (Econ) Chênh lệch lợi tức chứng khoán.

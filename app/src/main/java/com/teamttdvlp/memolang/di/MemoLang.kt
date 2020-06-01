@@ -24,4 +24,7 @@ class MemoLang : Application(), HasAndroidInjector {
             .inject(this)
     }
 
+    override fun onTerminate() {
+        super.onTerminate()
+    }
 }

@@ -1,6 +1,6 @@
 package com.teamttdvlp.memolang.view.activity.iview
 
-import com.teamttdvlp.memolang.model.entity.flashcard.Flashcard
+import com.teamttdvlp.memolang.data.model.entity.flashcard.Flashcard
 
 interface ReviewFlashcardView : View {
 
@@ -24,7 +24,7 @@ interface ReviewFlashcardView : View {
 
     fun showTestSubjectOnScreen (testSubject : Flashcard, useUsingForTestSubject : Boolean)
 
-    fun nextCard(startDelay : Long = 0)
+    fun nextCard(startDelay : Long)
 
     fun showSpeakTextError(error: String)
 }

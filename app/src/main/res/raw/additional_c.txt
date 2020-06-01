@@ -1,0 +1,9895 @@
+
+@c.in.c
+- (vt của Commander-in-chief) Tổng tư lệnh
+@c/c
+* (viết tắt)
+- bản sao (carbon copy)
+- viết tắt
+- bản sao (carbon copy)
+@c/o
+- (vt của care of) nhờ...chuyển hộ (ghi ở thư từ)
+@caa
+- (vt của Civil Aviation Authority) Cục hàng không dân dụng
+@cab-driver
+* danh từ
+- tài xế tắc-xi
+@cabalist
+- xem cabala
+@cabalistically
+- xem cabalistic
+@caballero
+* danh từ
+- số nhiều caballeros
+- hiệp sĩ Tây Ban Nha
+- kỵ sĩ
+@cabana
+* danh từ
+- cái nhà nhỏ
+- cái lều
+@cabbagy
+- xem cabbage
+@cabio
+* danh từ
+- (động từ) cá móp, cá lớp
+@cable stitch
+* danh từ
+- mũi đan giống như dây thừng xoắn
+@cable television
+* danh từ
+- truyền hình cáp
+@cable-laid
+* tính từ
+- làm bằng ba cái dây thừng xoắn lại
+@cabler
+- xem cable
+@cabob
+* danh từ
+- chả nướng
+@cabochon
+* danh từ
+- ngọc mài tròn
+@cabriole
+* danh từ
+- bước nhảy ba lê đùi chạm nhau
+@cachinnator
+- xem cachinnate
+@cachucha
+* danh từ
+- điệu vũ casusa (Tây Ban Nha)
+@cacique
+* danh từ
+- tù trưởng (thổ dân Mỹ)
+- lãnh tụ địa phương (ở Tây Ban Nha,  Nam Mỹ)
+@cack-handed
+* tính từ
+- vụng về
+@cackler
+- xem cackle
+@cacodemon
+* danh từ
+- quỷ ác
+@cacodemonic
+* danh từ
+- thuộc qủy ác
+@cacodylic
+* tính từ
+- thuộc cacođin
+@cacogenesis
+* danh từ
+- (sinh học) sự thoái hoá giống
+@cacogenic
+* tính từ
+- thoái hoá về giống
+@cacogenics
+* tính từ
+- sự nghiên cứu thoái hoá về giống
+@cacophonously
+- xem cacophonous
+@cad/cam
+- (vt của Computer-Aided Design/Computer-Aided Manufacturing) Thiết kế/Sản xuất có máy tính trợ giúp
+@cadaver
+* danh từ
+- xác chết, tử thi
+@cadaverously
+- xem cadaverous
+@cadd
+- thiết kế và vẽ bằng máy tính
+@caddis-fly
+* danh từ
+- một loại côn trùng nhỏ sống gần nước
+@caddishly
+- xem cad
+@caddo
+* danh từ
+- số nhiều caddos,  caddo
+- người Cát-đô (người da đỏ ở Mỹ)
+@cadenza
+* danh từ
+- đoạn nhạc được độc tấu ở cuối một phần trong một bản côngxectô
+@cadetship
+- xem cadet
+@cadmic
+- xem cadmium
+@caducean
+* tính từ
+- thuộc y hiệu (dấu hiệu hai con rắn quấn nhau)
+@caduceus
+* danh từ
+- số nhiều caducei
+- (y học) y hiệu (dấu hiệu hai con rắn quấn nhau)
+@caducibranchiate
+* tính từ
+- (động vật) có mang rụng sớm (có mang nhất thời)
+@caecal
+* tính từ
+- thuộc ruột thịt; manh tràng; nhánh cụt
+@caecium
+* danh từ
+- (hoá học) xezi
+@caenogenesis
+* danh từ
+- (sinh học) sự phát sinh tính mới; sự phát triển thích nghi chuyển tiếp
+@caesar
+* danh từ
+- danh hiệu của các hoàng đế La Mã từ Augustus đến Hadrian
+@caesarean
+* danh từ
+- xem Caesarean section
+- danh từ
+@caesarism
+* danh từ
+- chế độ độc tài quân sự
+@caesio
+* danh từ
+- (động vật) cá chàm
+@caesious
+* tính từ
+- xanh lơ; lục xám
+@caespitose
+* tính từ
+- mọc cụm, mọc thành bụi
+@caesural
+- xem caesura
+@caesuric
+- xem caesura
+@cafard
+* danh từ
+- nổi u sầu
+@caffeinated
+- xem caffeine
+@cagily
+* phó từ
+- không cởi mở, kín đáo
+@cagoule
+* danh từ
+- áo không thấm nước và có mũ che dính liền
+@cahier
+* danh từ
+- bản điều trần
+@cahoots
+* danh từ
+- (to be in cahoots with somebody) (từ Mỹ,nghĩa Mỹ) mưu mô cái gì bất lương với ai; móc ngoặc với ai
+@cai
+- dạy học có máy tính trợ giúp
+@caique
+* danh từ
+- thuyền nhẹ, tàu buồm nhỏ
+@cairned
+- xem cairn
+@cajolingly
+- xem cajole
+@cakewalker
+- xem cakewalk
+@cal
+* (viết tắt)
+- Học tập với sự trợ giúp của máy tính (Computer- aided learning)
+@calamitously
+- xem calamitous
+@calash
+* danh từ
+- xe ngựa mui gập
+- xe độc mã nhẹ
+@calathide
+* danh từ
+- số nhiều calathidium
+- (thực vật) cụm hoa
+@calcaneum
+* danh từ; số nhiều calcanea
+- xem calcaneus
+@calcaneus
+* danh từ
+- số nhiều calcanei
+- xương gót; cựa chim
+@calcanial
+* tính từ
+- thuộc xương gót, thuộc cựa (chim)
+@calcar
+* danh từ
+- (sinh học) cựa
+= calcar avis+cựa chim
+@calcarate
+* tính từ
+- có cựa
+@calcareously
+- xem calcareous
+@calcic
+* tính từ
+- chứa đựng can xi hay vôi
+@calcicole
+* danh từ
+- cây mọc trên đất vôi
+* tính từ
+- mọc trên đất vôi
+@calcific
+* tính từ
+- chứa đựng hay tạo nên sự hoá vôi
+@calcigerous
+* tính từ
+- chứa muối canxi
+@calcimine
+* danh từ
+- vôi quét tường
+* ngoại động từ
+- quét tường
+@calcinize
+* ngoại động từ
+- làm thành đá vôi
+* nội động từ
+- biến thành đá vôi
+@calciphile
+* tính từ,  n
+- cây mọc trên đất ưa vôi
+@calciphobe
+* danh từ
+- cây kỵ đất vôi
+@calciphyte
+* danh từ
+- thực vật mọc trên đất vôi
+@calcitic
+- xem calcite
+@calcivorous
+* tính từ
+- ăn vôi; sống trên đất vôi
+@calculatingly
+- xem calculating
+@calculative
+- xem calculation
+@caldera
+* danh từ
+- (địa lý) hõm chảo (miệng núi lửa rất to),  canđêra
+@caldren
+* danh từ
+- chảo hơi, nồi hơi
+@calendal
+- xem calends
+@calenture
+* danh từ
+- (y học) bệnh sốt nhiệt đới
+@calf love
+* danh từ
+- chuyện yêu đương trẻ con
+* danh từ
+- buồng điện thoại
+@calf-bone
+* danh từ
+- (giải phẫu) xương mác
+@calf-length
+* danh từ
+- quần lửng bó giò
+@calicle
+* danh từ
+- (thực vật) đài phụ
+@calicoprinting
+* danh từ
+- việc in hoa trên vải
+@calid
+* tính từ
+- (từ cổ, nghĩa cổ) nóng
+@calidarium
+* danh từ
+- số nhiều calidaria
+- phòng tắm nước nóng (từ cổ La Mã)
+@californium
+* danh từ
+- (hoá học) califoni
+@caliginous
+* tính từ
+- mờ mịt, tối
+@caliology
+* danh từ
+- khoa nghiên cứu tổ chim
+@calipash
+* danh từ
+- màng lót mai (rùa)
+@calipee
+* danh từ
+- màng lót yếm (rùa)
+@calisthenic
+- xem calisthenics
+@calisthenics
+* danh từ
+- môn thể dục mềm dẻo
+@call girl
+* danh từ
+- gái điếm (thường gọi bằng điện thoại)
+@call-in
+* danh từ
+- như phone-in
+@call-loan
+* danh từ
+- tiền cho mượn trả lúc nào người cho mượn muốn
+@calla
+* danh từ
+- cũng calla  lili
+- (thực vật) cây thủy vu
+@callable
+* tính từ
+- có thể gọi được
+- có thể trả ngay được (tiền nợ)
+@callan
+* danh từ
+- người thiếu niên, người trẻ tuổi
+@calligrapher
+* danh từ
+- người viết chữ đẹp
+* danh từ
+- người viết chữ đẹp
+@calligraphic
+- xem calligraphy
+@calligraphist
+* danh từ
+- xem calligrapher
+- danh từ
+@callose
+* danh từ
+- caloza
+@callously
+* phó từ
+- tàn nhẫn, nhẫn tâm
+@callout
+- ô gọi
+@callowness
+- xem callow
+@calobiosis
+* danh từ
+- (sinh học) đời sống tựa
+- permanent calobiosis
+- đời sống tựa vĩnh viễn
+= temporary calobiosis+đời sống tựa tạm thời
+@calor gas
+* danh từ
+- bình ga
+@caloradiance
+* danh từ
+- sự bức xạ nhiệt; sự toả nhiệt
+@calorically
+- xem caloric
+@calorigenic
+* tính từ
+- sinh nhiệt
+@calorimetrically
+- xem calorimeter
+@caloyer
+* danh từ
+- tu sĩ Hy Lạp giáo
+@calque
+* danh từ
+- dịch sao phỏng
+@calumniatory
+* tính từ
+- vu khống
+@calumniously
+- xem calumnious
+@calvados
+* danh từ
+- loại rượu táo ở Normandy, nước Pháp
+@calvaria
+* danh từ
+- vòm sọ; nắp sọ
+@calving
+* danh từ
+- sự đẻ (bò)
+@calvities
+* danh từ số nhiều
+- bệnh hói
+@calvous
+* tính từ
+- hói, trọc
+@calx
+* danh từ
+- số nhiều calxes,  calces
+- tro để lại sau khi nấu kim loại
+@calycex
+* danh từ
+- <thực> đài (hoa)
+- <phẫu> khoang hình ốc
+@calyciflorous
+* tính từ
+- có nhị- tràng đính đài
+@calyciform
+* tính từ
+- dạng đài
+@calycine
+* tính từ
+- thuộc đài
+@calycle
+* danh từ
+- (thực vật) đài phụ; áo
+@calyculate
+* tính từ
+- (thực vật) có đài phụ
+@calyculus
+* danh từ
+- số nhiều calyculi
+- cấu trúc hình cốc
+- (thực vật) chồi, đài phụ
+@calypso
+* danh từ
+- bài ca về một đề tài nóng bỏng (thu hút sự quan tâm của nhiều người)
+@calypsonian
+- xem calypso
+@camarilla
+* danh từ
+- nhóm cố vấn bí mật của nhà vua
+- bè đảng
+@cambial
+- xem cambium
+@cambiform
+* tính từ
+- (thực vật) dạng thể bào tượng tầng
+@cambiogenetic
+* tính từ
+- phát sinh tượng tầng
+@camera-obscura
+* danh từ
+- hộp nhìn hình chiếu
+- phòng nhìn hình chiếu
+@camera-shy
+* tính từ
+- không thích cho người khác chụp ảnh/quay phim mình
+@cameration
+* danh từ
+- sự chia ô; sự chia ngăn
+@camerlengo
+* danh từ; số nhiều camerlengos
+- (tôn giáo) giáo chủ thị thần
+@camisado
+* danh từ
+- số nhiều camisados
+- (từ cổ, nghĩa cổ) cuộc tấn công ban đêm
+@camouflager
+- xem camouflage
+@camp bed
+* danh từ
+- giường xếp, giường gấp
+@camp follower
+* danh từ
+- thường dân đi theo một đơn vị, thường dân lai vãng ở nơi đóng quân
+@camp-ground
+* danh từ
+- nơi cắm trại
+- nơi hội họp tôn giáo ngoài trời
+@camp-shaft
+* danh từ
+- (kỹ thuật) trục phân phối; trục cam
+@camp-wood
+* danh từ
+- (thực vật) cây gỗ cứng
+@campanologist
+- xem campanology
+@camper
+* danh từ
+- người cắm trại
+@campestral
+* tính từ
+- thôn dã
+- ngoài đồng trống
+@camphene
+* danh từ
+- (hoá học) camfen
+@camphor-tree
+* danh từ
+- cây long não
+@camphoraceous
+- xem camphor
+@camphorated-oil
+* danh từ
+- dầu long não
+@camphoric
+- xem camphor
+@camping
+* danh từ
+- sự cắm trại
+= do you like camping?+anh có thích cắm trại hay không?
+@campsite
+* danh từ
+- địa điểm cắm trại
+@camptocarpous
+* tính từ
+- có quả cong
+@camptodrome
+* tính từ
+- theo đường cong
+@campy
+- xem camp
+@campylotropus
+* danh từ
+- (thực vật) có noãn
+@camra
+* (viết tắt)
+- Chiến dịch vận động làm bia theo hình thức truyền thống (Campaign for Real Ale)
+@canajan
+* danh từ
+- tiếng Anh ở Canada
+@canaliculus
+* danh từ
+- số nhiều canaliculi
+- ống nhỏ; rãnh nhỏ; đường kính nhỏ
+@canape
+* danh từ
+- bánh dùng chung với thức uống tại một buổi tiệc
+@canari
+* danh từ
+- (thực vật) cây trám
+- black canari
+- cây trám đen
+= whitte canari+cây trám trắng
+@cancelable
+- xem cancel
+@canceler
+- xem cancel
+@cancriform
+* danh từ
+- dạng cua
+@cancrinite
+* danh từ
+- (khoáng chất) cancrinit
+@candescently
+- xem candescence
+@candidly
+* phó từ
+- thật thà, thẳng thắn
+@candle-berry
+* danh từ
+- (thực vật) cây có sáp
+@candlenut
+* danh từ
+- (thực vật) quả lai
+@candlepower
+* danh từ
+- (vật lý) nến
+= sixty candlepower lamp+đèn 60 nến
+@candler
+- xem candle
+@candlewick
+* danh từ
+- vải bông xù
+@candlewood
+* danh từ
+- (thực vật) gỗ thắp đèn được thay nến
+@candy-floss
+* danh từ
+- que kẹo
+- vật hấp dẫn nhưng không có giá trị
+@candy-tuft
+* danh từ
+- <thực> cây thập tự
+@caner
+- xem cane
+@canescent
+* tính từ
+- trở nên bạc; trở nên trắng
+= canescent leaves+lá trắng xám
+@caning
+* danh từ
+- sự đánh đòn, trận đòn
+@canna
+* danh từ
+- (thực vật) cây chuối hoa
+@cannabic
+- xem cannabis
+@cannabis
+* danh từ
+- cây gai dầu
+- ma túy làm từ cây gai dầu
+@cannelloni
+* danh từ
+- bánh làm bằng thịt trộn gia vị
+@canner
+- xem can
+@cannibalization
+* danh từ
+- sự ăn thịt người
+@cannily
+- xem canny
+@cannonry
+* danh từ
+- một loạt pháo
+- pháo binh
+@cannula
+* danh từ
+- số nhiều cannulas,  cannulae
+- (y học) ống thông dò
+@cannulate
+* động từ
+- đưa ống thông dò vào cơ thể
+@canon-lawyer
+* danh từ
+- người lo về luật giáo hội
+@canoness
+* danh từ
+- nữ tu sĩ
+- nữ mục sư
+@canonically
+- xem canonical
+@canonicity
+- xem canonical
+@canonistic
+- xem canonist
+@canonistical
+- xem canonist
+@canonizer
+- xem canonize
+@canoodling
+* danh từ
+- sự mơn trớn; sự vuốt ve
+@canorously
+- xem canorous
+@cant-dog
+* danh từ
+- cái móc
+@cantabile
+* phó từ, adj
+- như hát, giống hát
+@cantaloup(e)
+* danh từ
+- (thực vật) dưa đỏ
+@cantankerously
+- xem cantankerous
+@canthal
+* tính từ
+- (thuộc) đuôi mắt
+@cantharid
+* danh từ
+- (động vật) bọ phỏng
+@cantharidin
+* danh từ
+- (hoá học) canthariđin
+@cantharis
+* danh từ
+- số nhiều cantharides
+- bọ phỏng
+@cantilena
+* danh từ
+- (âm nhạc) (văn học)
+- cantilen
+@cantillate
+* động từ
+- ngâm tụng
+@cantillation
+* danh từ
+- sự ngâm tụng
+@cantina
+* danh từ
+- quán rượu nhỏ (Nam Mỹ)
+@canting
+* tính từ
+- đạo đức giả; giả vờ làm như mộ đạo; ngụy quân tử
+- kêu la thảm thiết
+@cantingly
+- xem cant
+@cantingness
+- xem cant
+@cantonal
+- xem canton
+@cantonese
+* danh từ
+- tiếng Quảng Đông (Trung Quốc)
+@cantorial
+- xem cantor
+@cantus
+* danh từ
+- điệu hát theo hình thức đã xác định
+- giai điệu chính hay giọng hát chính trong nhạc đồng ca thế kỷ XVl - XVll
+@canzona
+* danh từ
+- (âm nhạc) canzon
+@canzonet
+- Cách viết khác : canzonetta
+@capableness
+- xem capable
+@capably
+* phó từ
+- thành thạo, khéo léo
+@capaciously
+- xem capacious
+@capacitation
+- xem capacitate
+@capacitively
+- xem capacitance
+@capelin
+* danh từ
+- cũng caplin
+- (động vật) cá ốt vảy nhỏ
+@capercailie
+* danh từ
+- gà rừng
+@capilliform
+* tính từ
+- dạng lông
+@capillitium
+* danh từ
+- (sinh học) mạng
+@capita
+* danh từ số nhiều
+- per capita
+- theo đầu người
+@capital-intensive
+* tính từ
+- cần nhiều vốn, đòi hỏi phải có vốn lớn
+@capital-profit
+* danh từ
+- lợi nhuận do vốn đưa đến
+@capital-ship
+* danh từ
+- chiếc tàu chiến chính
+@capital-sum
+* danh từ
+- tổng số tiền
+@capitalistically
+- xem capitalistic
+@capitalizable
+- xem capitalize
+@capitative
+- xem capitation
+@capitole
+* danh từ
+- trụ sở Quốc hội Hoa Kỳ
+@capitulant
+- xem capitulate
+@capitularly
+- xem capitular
+@capitulator
+- xem capitulate
+@capitulatory
+- xem capitulation
+@capitulum
+* danh từ
+- số nhiều capitula
+- (thực vật) đầu; mõm
+- cụm hoa dạng đầu
+@caplin
+* danh từ
+- cũng capelin
+- (động vật) cá ốt vảy nhỏ
+@caporal
+* danh từ
+- thuốc lá loại xoàng
+- hạ sĩ
+@cappuccino
+* danh từ
+- (tiếng Y) cà phê sữa
+@capriciously
+* phó từ
+- thất thường, gàn
+@caprification
+* danh từ
+- (thực vật) sự thụ phấn kín; sự thụ phấn hoa vả
+@caproic-acid
+* danh từ
+- (hoá học) axit caproic
+@caprylic-acid
+* danh từ
+- (hoá học) axit caprilic
+@caps
+* danh từ
+- những chữ cái hoa
+@capsaicin
+* danh từ
+- (hoá học) capxaixin
+@captiously
+* phó từ
+- xoi mói, quỷ quyệt
+@captivator
+- xem captivate
+@caput
+* danh từ
+- đầu
+- chương, tiết
+@capybara
+* danh từ
+- loài gặm nhấm Nam Mỹ giống chuột lang
+@car-boot sale
+* danh từ
+- sự bán đi những thứ không cần dùng nữa
+@car-ferry
+* danh từ
+- phà hoặc máy bay dùng để chở xe qua sông
+@car-park
+* danh từ
+- bãi đậu xe
+@car-port
+* danh từ
+- chỗ đậu xe có mái che
+@carabao
+* danh từ
+- trâu (Mã-lai)
+@carabid
+* danh từ
+- (động vật) họ bọ kỳ
+@caracal
+* danh từ
+- (động vật) linh miêu
+@caracul
+* danh từ
+- cừu caracun
+- da lông cừu caracun
+@caramelization
+- xem caramelize
+@caramelize
+* ngoại động từ
+- biến thành caramen
+@caravan-site
+* danh từ
+- khu vực tạm thời dành cho các đoàn hành thương
+@carbamate
+* danh từ
+- (hoá học) cacbamat
+@carbamide
+* danh từ
+- (hoá học) urê; cacbamit
+@carbamino
+* tính từ
+- thuộc axit cacbamit
+@carbamyl
+- Cách viết khác : carbamoyl
+@carbinol
+* danh từ
+- cacbinola; rượu melitic
+@carbocyclic
+* danh từ
+- (hoá học) cacboxiclic
+@carbolic acid
+* danh từ
+- <hóa> phenol
+@carbomb
+* danh từ
+- xe ô tô chở bom
+@carbon black
+* danh từ
+- bột đen dùng để chế tạo phẩm màu hoặc cao su
+@carbon dating
+* danh từ
+- phương pháp xác định niên đại bằng cacbon
+@carbon-copy
+* danh từ
+- bản sao bằng giấy than (chép tay, đánh máy)
+@carbon-date
+- xem carbon dating
+@carbonado
+* danh từ
+- số nhiều carbonados
+- thịt, cá nướng than trước khi nấu
+* ngoại động từ
+- nướng than thịt cá
+@carbonation
+- xem carbonate
+@carbonator
+- xem carbonate
+@carbonizer
+- xem carbonize
+@carbonous
+- xem carbon
+@carbonyl
+* danh từ
+- (hoá học) cacbonila
+@carbonylic
+* tính từ
+- thuộc carbonila
+@carboxyl
+* danh từ
+- (hoá học) cacboxila
+@carburation
+* danh từ
+- sự thấm cacbon (cho sắt)
+@carburetion
+- xem carburet
+@carburetor
+* danh từ
+- (kỹ thuật) bộ chế hoà khí; cacbuaratơ
+@carcajou
+* danh từ
+- (động từ) con lửng Mỹ
+@carcanet
+* danh từ
+- (từ cổ) (nghĩa cổ) vòng ngọc đeo ở cổ tay hay trên đầu
+@carcinogenesis
+- xem carcinogen
+@carcinogenic
+- xem carcinogen
+@carcinogenicity
+- xem carcinogen
+@carcinoid
+* danh từ
+- hạch có dạng ung thư
+@carcinology
+* danh từ
+- ung thư học
+@carcinomatoid
+- xem carcinoma
+@carcinomatosis
+* danh từ
+- tình trạng ung thư biểu bì
+@carcinomatous
+- xem carcinoma
+@card-carrying
+* tính từ
+- (đảng viên) đã nộp đảng phí
+@card-catalogue
+* danh từ
+- danh mục xếp theo phiếu
+@card-punch
+* danh từ
+- máy đục bìa
+@cardinal-beetle
+* danh từ
+- (động vật) bọ cánh cứng đỏ
+@cardinalate
+* danh từ
+- chức hồng y giáo chủ
+@cardinality
+* danh từ
+- (toán học) số các yếu tố trong một tập hợp
+@cardinalship
+- xem cardinal
+@cardiogram
+* danh từ
+- như electrocardiogram
+@cardiograph
+* danh từ
+- máy đo nhịp tim
+@cardiography
+* danh từ
+- sự ghi tâm đồ
+@cardiolith
+* danh từ
+- sỏi tim
+@cardiological
+- xem cardiology
+@cardiologist
+* danh từ
+- bác sự chuyên khoa tim
+@cardiopathy
+* danh từ
+- (y học) bệnh tim
+@cardiopulmonary
+* tính từ
+- (y học) thuộc tim phổi
+@cardiotonic
+* tính từ
+- (y học) trợ tim
+@cardiovascular
+* tính từ
+- (thuộc) tim và mạch máu; tim mạch
+@cardoon
+* danh từ
+- rau cađông
+@careener
+- xem careen
+@career girl
+* danh từ
+- cô gái thích thăng tiến nghề nghiệp hơn là lấy chồng
+@carefully
+* phó từ
+- cẩn thận, chu đáo
+@carelessly
+* phó từ
+- cẩu thả, thiếu thận trọng, bất cẩn
+@caresser
+- xem caress
+@caressingly
+- xem caress
+@caressive
+- xem caress
+@caretaker
+* danh từ
+- người trông nom nhà cửa (khi chủ vắng mặt)
+@carex
+* danh từ
+- số nhiều carices
+- cây cói túi
+@carfare
+* danh từ
+- tiền vé
+@carful
+* danh từ
+- một xe đầy
+@cariama
+* danh từ
+- (động vật) gà nước Nam Mỹ
+@carib
+* danh từ
+- người Caribê (Bắc Mỹ)
+- tiếng Caribê
+@cariban
+* danh từ
+- thành viên nhóm da đỏ Caribê
+- tiếng Caribê
+@cariboo
+- Cách viết khác : caribou
+@caribou
+* danh từ
+- như cariboo
+* danh từ
+- như cariboo
+@caricatural
+* tính từ
+- mang tính chất biếm hoạ; xuyên tạc
+@carina
+* danh từ; số nhiều carinas,  carinae
+- xương lưỡi hái; cánh thìa; đường sống; gờ
+@carinate
+- Cách viết khác : carinated
+@caring
+* tính từ
+- chu đáo
+* tính từ
+- chu đáo
+@carioca
+* danh từ
+- người ở Rio đơ Gia-nei-rô
+- biến tấu của điệu nhạc xăm ba
+@cariosity
+- xem carious
+@carmagnole
+* danh từ
+- bài ca cacmanhon thời cách mạng tư sản Pháp
+- điệu vũ cacmanhon
+@carmelite
+* danh từ
+- giáo sự thuộc một dòng tu thành lập năm 1155
+@carnallite
+* danh từ
+- (khoáng chất) cacnalit
+@carnally
+- xem carnal
+@carnassial
+* tính từ
+- thuộc răng nhai thịt
+* danh từ
+- răng nhai thịt
+@carnauba
+* danh từ
+- cây cacnauba (loại cọ Braxin)
+- sáp
+@carnet
+* danh từ
+- sự cho phép lái xe qua biên giới (để cắm trại)
+@carnitine
+* danh từ
+- (khoáng chất) cacnitin
+@carnivorously
+- xem carnivorous
+@carnivorousness
+- xem carnivorous
+@carnotite
+* danh từ
+- (khoáng chất) cacnotit
+@carob
+* danh từ
+- hạt carob (được dùng thay cho sôcôla)
+@caroler
+- xem carol
+@caroline
+* tính từ
+- ở thời Saclơ đại đế
+- ở thời các vua Saclơ (Anh)
+@carolingian
+* tính từ
+- (thuộc) triều đại Frank được Charlemagne tìm thấy
+* danh từ
+- người thuộc triều đại này
+@carpellary
+- xem carpel
+@carpellate
+* tính từ
+- có lá noãn
+@carpet sweeper
+* danh từ
+- chổi quét thấm, máy hút bụi ở thảm
+@carpet-rod
+* danh từ
+- que sắt để giữ thảm ở các cầu thang
+@carpet-shark
+* danh từ
+- loại cá mập da lấm chấm (Tây Thái-bình -dương)
+@carpeting
+* danh từ
+- vật liệu làm thảm
+- thảm nói chung
+- sự mắng nhiếc thậm tệ
+= He gave me a real carpeting+Anh ta mắng nhiếc tôi thậm tệ
+@carpogonium
+* danh từ
+- số nhiều carpogonia
+- (thực vật) túi tạo quả
+- túi giao tử cái
+@carpophore
+* danh từ
+- (thực vật) cuống lá noãn, cuống lá bào tử
+@carport
+* danh từ
+- nhà để xe
+@carpospore
+* danh từ
+- (thực vật) bào tử quả
+@carposporic
+* tính từ
+- thuộc bào tử quả
+@carrack
+* danh từ
+- chiếc tàu hình vuông (từ cổ)
+@carrefour
+* danh từ
+- ngã tư
+@carrel
+* danh từ
+- phòng làm việc cá nhân (ở thư viện)
+@carriage-builder
+* danh từ
+- thợ làm thùng xe, thợ đóng xe ngựa
+@carriage-clock
+* danh từ
+- đồng hồ quả lắc mang đi đường
+@carriage-dog
+* danh từ
+- con chó chạy theo xe
+@carriage-fellow
+* danh từ
+- hành khách có hành lý
+@carrick-bend
+* danh từ
+- cái nút để nối hai dây thừng
+@carrier-bag
+* danh từ
+- túi bằng giấy hoặc chất dẻo để đựng hàng hoá
+@carry-on
+* danh từ
+- sự ồn ào ầm ự
+@carry-out
+* danh từ
+- cửa hàng bán thức ăn mang về
+@carsick
+* tính từ
+- buồn nôn khi ngồi trong xe đang chạy
+@carsickness
+- xem carsick
+@cartable
+- xem cart
+@cartogram
+* danh từ
+- biểu đồ diện tích
+@cartomancer
+* danh từ
+- người chuyên bói bài
+@cartoonish
+- xem cartoon
+@cartouche
+* danh từ
+- sự trang hoàng theo hình xoắn ốc
+- vòng tròn hình ô-van khắc tên và tước hiệu của vua Ai Cập
+@caruncular
+- xem caruncle
+@carunculate
+- xem caruncle
+@carvel-built
+* tính từ
+- (thuyền) làm bằng ván sàn (không phải ván gối lên nhau)
+@carven
+* danh từ
+- (sử học) thuyền buồm nhỏ (của Tây-ban-nha (thế kỷ) 16, 17)
+@carver-up
+* danh từ
+- sự phân chia, sự chia cắt
+@carwash
+* danh từ
+- khu vực để rửa xe
+@caryatidal
+- xem caryatid
+@casa
+* danh từ
+- (từ tây nam Mỹ) cái nhà
+@casaba
+* danh từ
+- như cassaba
+- (thực vật) cây dưa vàng
+@casbah
+* danh từ
+- cũng casabah
+- thành; cung điện (Bắc Phi)
+@case grammar
+* danh từ
+- ngữ pháp cấu trúc
+@case-book
+* danh từ
+- sổ ghi những công việc đã giải quyết
+@case-goods
+* danh từ
+- hàng đóng hộp (rượu, bia)
+@case-hardened
+* tính từ
+- lão luyện, từng trải
+@case-law
+* danh từ
+- đường lối xét xử dựa trên án lệ
+@case-load
+* danh từ
+- tập thể những người phụ thuộc vào trách nhiệm của một bác sự (hoặc một người làm công tác xã hội)
+@case-of-conscience
+* danh từ
+- vấn đề khó xử đối với lương tâm
+@case-stated
+* danh từ
+- trường hợp đã được xác định về pháp luật chờ cấp trên quyết định
+@case-study
+* danh từ
+- sự nghiên cứu dựa trên đối tượng và hoàn cảnh cụ thể
+@caseation
+* danh từ
+- bệnh chết thối; bệnh hoại tử
+@casemated
+- xem casemate
+@casemented
+- xem casement
+@caseshot
+* danh từ
+- loạt đạn như mưa
+@casework
+* danh từ
+- sự nghiên cứu dựa trên nhóm đối tượng cụ thể
+@caseworker
+- xem casework
+@cash crop
+* danh từ
+- cây trồng để thu hoa lợi
+@cash desk
+* danh từ
+- bàn thu tiền
+@cash dispenser
+* danh từ
+- <ngân hàng> máy phát tiền
+@cash flow
+* danh từ
+- vòng quay tiền mặt, chu kỳ tiền mặt
+@cash register
+* danh từ
+- máy tính tiền
+@cash-flow
+- xem cash flow
+@cashaw
+* danh từ
+- (thực) cây đào lộn hột
+@cashcard
+* danh từ
+- <ngân hàng> thẻ cho vào máy để lãnh tiền mặt
+@cashless
+- xem cash
+@casqued
+- xem casque
+@cassandra
+* danh từ
+- người báo trước tai hoạ
+- người không ai nghe những lời cảnh báo đúng đắn
+@cassata
+* danh từ
+- kem có trái cây và hạnh nhân
+@cassia
+* danh từ
+- rượu lý đen
+@cassiopediun
+* danh từ
+- (thiên văn) sao thiên hậu
+@cassiterite
+* danh từ
+- caxiterit
+@cassoulet
+* danh từ
+- ra-gu thịt và đậu
+@cast-house
+* danh từ
+- xưởng đúc
+@castability
+* danh từ
+- tính đúc được; độ chảy loãng
+@castalian
+* tính từ
+- thuộc nguồn suối núi Thi sơn
+@castellation
+- xem castellated
+@caster-sugar
+* danh từ
+- như castor  sugar
+- đường kính
+@castrater
+- xem castrate
+@castrato
+* danh từ
+- số nhiều castrati
+- ca sĩ bị thiến từ lúc còn nhỏ để giữ cho giọng nữ cao
+@castrator
+- xem castrate
+@casually
+* phó từ
+- tình cờ, ngẫu nhiên
+- thất thường
+@casuistic
+* tính từ
+- có tính cách ngụy biện, giả tạo
+@casuistically
+- xem casuistic
+@casus belli
+* danh từ
+- biến cố khai mào một cuộc chiến tranh
+@cat's cradle
+* danh từ
+- trò chơi buộc dây thành vòng tròn giữa các ngón tay
+@cat's eye
+* danh từ
+- hàng đinh phản chiếu ánh sáng trên đường lộ khi trời tối
+@cat's-ear
+* danh từ
+- (thực vật) cây cúc tai mèo
+@cat-house
+* danh từ
+- (từ Mỹ, tục tĩu) nhà thổ
+@cat-ice
+* danh từ
+- băng mỏng
+@cat-sup
+* danh từ
+- nước xốt cà chua nấm
+@cat-tail
+* danh từ
+- (thực vật) cây hương bồ
+@catabolic
+- xem catabolism
+@catabolically
+- xem catabolism
+@catachresis
+* danh từ
+- số nhiều catachreses
+- việc dùng chữ sai
+@cataclasis
+* danh từ
+- số nhiều cataclases
+- sự phá vụn, cà nát
+@cataclastic
+* tính từ
+- vụn nát
+@cataclysmic
+- xem cataclysm
+@catadioptrics
+* danh từ
+- (vật lý) phản truyền học
+@catadromous
+* tính từ
+- di cư xuôi dòng; di cư ra biển
+@catalase
+* danh từ
+- (hoá học) catalaza
+@catalectic
+* tính từ
+- (ngôn ngữ) thiếu âm tiết cuối
+@catalo
+* danh từ; số nhiều catalos,  cataloes
+- giống bò do bò hoang giao cấu với bò nhà sinh ra
+@catalog
+- Cách viết khác : catalogue
+@catalpa
+* danh từ
+- (thực vật) cây đinh tán
+@catalyse
+* ngoại động từ
+- gây xúc tác
+@catalytically
+- xem catalytic
+@catamite
+* danh từ
+- thanh niên theo tính dục đồng giới
+@catamount
+* danh từ
+- giống mèo rừng
+@cataphora
+* danh từ
+- hiện tượng có quan hệ ngữ pháp với nhóm từ ở sau
+@cataphoretic
+* tính từ
+- thuộc điện chuyển
+@cataplexy
+* danh từ
+- sự tê liệt nhất thời
+@catarrhally
+- xem catarrh
+@catarrhine
+* tính từ
+- (động vật) thuộc về bộ khỉ mủi hẹp
+@catastrophically
+* phó từ
+- thảm khốc, thê thảm
+@catastrophist
+- xem catastrophism
+@catatonia
+* danh từ
+- chứng căng trương lực
+- sự rối loạn tâm lý
+@catawba
+* danh từ
+- người Catauba (da đỏ châu Mỹ)
+- tiếng Catauba
+- rượu Catauba
+@catboat
+* danh từ
+- thuyền một buồm
+@catburglar
+* danh từ
+- tên kẻ trộm trèo tường
+@catch'em-alive-o
+* danh từ
+- giấy dính (để) bẩy ruồi
+@catch-crop
+* danh từ
+- mùa phụ
+@catch-title
+* danh từ
+- tên tắt quyển sách
+@catchable
+- xem catch
+@catchfly
+* danh từ
+- (thực vật) cây bắt ruồi
+@catchphrase
+* danh từ
+- câu nói nổi tiếng, lúc đầu do một người làm trò vui, một nhà chính trị sử dụng, rồi về sau làm cho liên tưởng đến người đó; khẩu hiệu
+@catchpoll
+* danh từ
+- người thu thuế
+@cate
+* danh từ
+- (từ cổ, nghĩa cổ) thức ăn công phu
+@catechesis
+* danh từ
+- số nhiều catecheses
+- lối dạy bằng cách hỏi và đáp
+@catechin
+* danh từ
+- (hoá học) catechin
+@catechism
+* danh từ
+- (tôn giáo) sách giáo lý vấn đáp
+- cách dạy bằng vấn đáp
+- bản câu hỏi
+@catechistic
+- xem catechist
+@catechistical
+- xem catechist
+@catechization
+- xem catechize
+@catechizer
+- xem catechize
+@catechol
+* danh từ
+- (hoá học) catechin
+- (hoá học) pyrocatechin
+@catechu
+* danh từ
+- chất cao su
+@catechumen
+* danh từ
+- người mới học đạo
+@categorically
+* phó từ
+- thẳng thừng, dứt khoát
+@categorizable
+- xem categorize
+@categorization
+- xem categorize
+@catenulate
+* tính từ
+- bố trí thành chuỗi
+@catenuliform
+* tính từ
+- có hình thức chuỗi; dạng chuỗi
+@catfish
+* danh từ
+- cá trê
+@cathay
+* danh từ
+- (từ cổ, nghĩa cổ) Trung Quốc
+@cathead
+* danh từ
+- bộ phận đầu mũi thuyền để buộc dây neo
+- tời neo
+- xà mũi tàu
+@cathedra
+* danh từ
+- chỗ ngồi của ông giám mục
+@catheter
+* danh từ
+- ống thông đường tiểu
+@catheterization
+- xem catheterize
+@catheterize
+* động từ
+- thông cho (ai, cái gì)
+@cathexis
+* danh từ
+- số nhiều cathexes
+- sự truyền nghị lực, tinh thần vào một người
+@cathode ray
+- tia âm cực
+@cathode-ray tube
+- ống phóng tia âm cực
+@cathodic
+- xem cathode
+@cathodically
+- xem cathode
+@catholically
+- xem catholic
+@catholicon
+* danh từ
+- thuốc chữa vạn bệnh
+@cationic
+- xem cation
+@catkin-like
+* tính từ
+- dạng đuôi sóc
+@catmit
+* danh từ
+- cây bạc hà mèo (hoa màu xanh da trời có mùi lôi cuốn loài mèo)
+@catsuit
+* danh từ
+- áo khoác dài từ cổ tới chân
+@cattery
+* danh từ
+- trại nuôi mèo
+@cattily
+- xem catty
+@cattle-cake
+* danh từ
+- kho chứa thức ăn gia súc
+@cattle-grid
+* danh từ
+- tấm lưới nằm trên mặt đường để ngăn súc vật qua lại
+@catwalk
+* danh từ
+- lối đi hẹp
+- lối đi men cầu (cho công nhân đứng sửa...)
+@caucasian
+* tính từ
+- thuộc về chủng tộc người da trắng
+- thuộc người Cáp-ca
+* danh từ
+- người Cáp-ca
+@caudad
+* phó từ
+- về phía đuôi
+@caudally
+- xem caudal
+@caudation
+- xem caudate
+@caudex
+* danh từ
+- số nhiều caudices,  caudexes
+- (thực vật) thân (cây gỗ)
+@cauline
+* tính từ
+- thuộc thân cây; mọc ở phần trên thân cây (lá)
+@caulis
+* danh từ
+- số nhiều caules
+- thân cỏ
+@causable
+- xem cause
+@causally
+- xem causal
+@causationism
+* danh từ
+- (triết học) nhân quả luận
+@causatively
+- xem causative
+@causerie
+* danh từ
+- cuộc nói chuyện thân mật
+@caustic-potash
+* danh từ
+- (hoá học) calihidroxit
+@cautiously
+* phó từ
+- cẩn thận, thận trọng
+@cav
+- tốc độ góc không đổi
+@cavalla
+* danh từ
+- (động vật) cá viên
+@cavatina
+* danh từ
+- (âm nhạc) khúc cavatin
+@caveman
+* danh từ
+- người ở hang; người thượng cổ
+- kẻ cư xử thô bạo với đàn bà; kẻ vũ phu
+@caver
+- xem cave
+@cavernicolous
+* tính từ
+- ở hang (thú vật)
+@cavernously
+- xem cavernous
+@cavesson
+* danh từ
+- vòng mũi (để vực ngựa)
+- rọ mõm (cừu non)
+@cavetto
+* danh từ
+- số nhiều cavetti
+- (kiến trúc) đường lòng máng (mặt cắt là một phần tư đường tròn)
+@caviler
+- xem cavil
+@cavitary
+* tính từ
+- (sinh học) thuộc khoang; có những khoang xuất hiện trong cơ thể
+@cavitate
+- xem cavitation
+@cavort
+* động từ
+- nhảy lên vì vui mừng
+@cavy
+* danh từ
+- loài gặm nhấm nhỏ ở Nam Mỹ (chuột lang)
+@cay
+* danh từ
+- đảo thấp nhỏ
+@cb
+* (viết tắt)
+- làn sóng phục vụ quảng đại quần chúng (Citizens' band)
+@cbc
+* (viết tắt)
+- Công ty phát thanh Canada (Canadian Broadcasting Corporation)
+@cbe
+* (viết tắt)
+- sự quan thống lĩnh của đế chế Anh (Commander of the British Empire)
+@cbi
+* (viết tắt)
+- Hiệp hội kỹ nghệ Anh quốc (Confederation of British Industry)
+@cbs
+* (viết tắt)
+- Mạng lưới phát thanh Columbia (Columbia Broadcasting System)
+@cbt
+- huấn luyện trên cơ sở máy tính
+- Dùng phương pháp dạy học bằng máy tính (CAI) để huấn luyện các tay nghề đặc biệt, như thao tác trên máy tiện điều khiển bằng kỹ thuật số chẳng hạn
+@cc
+* (viết tắt)
+- centimet khối, phân khối (cubic centimetre)
+- bản sao (carbon copy)
+@ccitt
+- Uỷ ban tư vấn quốc tế về điện thoại và điện báo
+@cd
+- đựa compact
+@cd-i
+- Một tiêu chuẩn về đựa compact
+@cd-rom
+- bộ nhớ chỉ đọc ra dùng đựa compact
+@cdev
+- dụng cụ panen điều khiển
+@cdr
+* (viết tắt)
+- thiếu tá (Commander)
+@cdt
+* (viết tắt)
+- giờ ban ngày ở khu vực trung tâm (Central Daylight Time)
+@ce
+* (viết tắt)
+- Giáo hội Anh quốc (Church of England)
+@ceasefire
+* danh từ
+- như cease-fire
+* danh từ
+- như cease-fire
+@ceaselessly
+* phó từ
+- không ngớt, liên tục
+@cecal
+* tính từ
+- thuộc ruột tịt, ruột bịt, manh tràng
+@cecidium
+* danh từ
+- mụn; vú; u
+- nốt sần (lá)
+@ceilidh
+* danh từ
+- cuộc họp mặt thân mật để nghe nhạc, khiêu vũ
+@ceilinged
+- xem ceiling
+@ceilometer
+* danh từ
+- dụng cụ qui định tầng mây cao nhất
+@celandine
+* danh từ
+- một loại cây dại có hoa màu vàng
+@celebrant
+* danh từ
+- linh mục chủ trì lễ ban thánh thể
+@celebrator
+- xem celebrate
+@celebratory
+- xem celebrate
+@celebrityhood
+- xem celebrity
+@celeriac
+* danh từ
+- (thực vật) cây cần tây
+@celesta
+* danh từ
+- đàn celesta (loại nhạc cụ có phím bằng thép, khi gõ lên phím, đàn phát ra âm thanh (như) tiếng chuông)
+@celestially
+- xem celestial
+@cell-body
+* danh từ
+- (sinh học) tế bào sinh dưỡng; tế bào thân
+@cell-cycle
+* danh từ
+- (sinh học) chu kỳ tế bào
+@cella
+* danh từ; số nhiều cellae
+- phòng nội điện miếu cổ
+- bộ phận bên trong ngôi nhà
+@cellist
+* danh từ
+- người chơi viôlôngxen, người chơi xelô
+@cellsap
+* danh từ
+- (sinh học) dịch tế bào
+@cellularity
+- xem cellular
+@cellularly
+- xem cellular
+@cellulosic
+- xem cellulose
+@celsius
+* tính từ
+- thuộc về độ bách phân
+@celticist
+* danh từ
+- chuyên gia văn hoá xen-tơ
+@celtologist
+* danh từ
+- nhà xentơ học
+@cembalo
+* danh từ
+- số nhiều cembali,  cembalos
+- (âm nhạc) đàn clavico
+@cementer
+- xem cement
+@cementing
+* danh từ
+- sự gắn xi măng
+- sự thấm các bon
+@cementite
+* danh từ
+- (hoá học) cementit
+@cementitious
+* tính từ
+- gắn (trám) xi măng; kết dính
+@cenltium
+* danh từ
+- (hoá học) xenti
+@cenobite
+* danh từ
+- cũng coenobite
+- (từ Mỹ) người tu đạo
+@cenogenesis
+* danh từ
+- (sinh học) sự phát sinh quần lạc
+@cenology
+* danh từ
+- môn quần lạc sinh vật
+@cenotaphic
+- xem cenotaph
+@cenozoic
+* danh từ
+- (từ Mỹ,  cainozoic) kỷ thứ ba
+* tính từ
+- thuộc kỷ thứ ba
+@censorable
+- xem censor
+@censoriously
+* phó từ
+- nghiêm khắc
+@censurability
+- xem censurable
+@censurableness
+- xem censurable
+@censurably
+- xem censurable
+@censurer
+- xem censure
+@centare
+- Cách viết khác : centiare
+@centel
+* danh từ
+- tạ Anh (bằng 45 kg 36)
+@centennially
+* phó từ
+- một trăm năm một lần
+@centesimally
+- xem centesimal
+@centibar
+* danh từ
+- centiba (đơn vị đo khí áp)
+@centimetre-gram-second
+* danh từ
+- hệ thống đơn vị dựa trên centimet là đơn vị chiều dài,  gram là đơn vị khối lượng; giây là đơn vị thời gian
+@centimetric
+* tính từ
+- thuộc centimet
+@centimo
+* danh từ
+- số nhiều cetimos
+- đồng xu bằng 1 / 100 đơn vị cơ bản tiền Tây Ban Nha và một số nước Nam Mỹ
+@centralist
+- xem centralism
+@centralistic
+- xem centralism
+@centrality
+* danh từ
+- tình trạng ở trung tâm
+- xu hướng đứng ở trung tâm
+@centralizer
+- xem centralize
+@centrally
+- xem central
+@centre spread
+* danh từ
+- hai trang đối diện nhau (trong một tờ báo)
+@centre-back
+* danh từ
+- hậu vệ phòng (bóng đá)
+@centre-bit
+* danh từ
+- mũi khoan
+@centre-fold
+* danh từ
+- ảnh màu phóng to lồng giữa các trang của một tờ tạp chí
+@centre-half
+* danh từ
+- trung vệ bóng đá
+@centre-line
+* danh từ
+- đường tâm
+@centreboard
+* danh từ
+- tấm ván giữ cho thuyền buồm khỏi bị trôi giạt
+@centred
+* tính từ
+- có một trung tâm
+@centrically
+- xem centric
+@centricity
+- xem centric
+@centrifugalism
+- xem centrifugal
+@centrifugally
+- xem centrifugal
+@centrifugation
+- xem centrifuge
+@centring
+* danh từ
+- sự định tâm, khoan tâm
+@centriole
+* danh từ
+- (sinh học) hạt trung tâm; hạt tâm; trung thể
+@centripetally
+- xem centripetal
+@centrism
+* danh từ
+- chủ trương ôn hoà, đường lối ôn hoà <chtrị>
+@centrist
+* danh từ
+- người chủ trương ôn hoà
+@centroid
+* danh từ
+- trung tâm khối lượng; trọng tâm
+@centromere
+* danh từ
+- (sinh học) đoạn trung tâm; đoạn tâm; trung đoạn; vùng gắn thoi
+@centroplasm
+* danh từ
+- (sinh học) chất trung tâm
+@centrosome
+* danh từ
+- (sinh học) thể trung tâm; thể tâm; trung thể
+@centrosphere
+* danh từ
+- (sinh học) cầu trung tâm; trung cầu
+@centrum
+* danh từ
+- số nhiều centrums,  centra
+- (sinh học) thân đốt sống; thể trung tâm; cầu trung tâm
+@centurial
+- xem centurion
+@centurion
+* danh từ
+- sự quan chỉ huy một trăm binh sự
+@centurylong
+* tính từ
+- kéo dài trong một thế kỷ
+* tính từ
+- kéo dài trong một thế kỷ
+@ceo
+* danh từ
+- viết tắt của Chief Executive Officer
+- Người lãnh đạo cao nhất trong một công ty hoặc một tổ chức, chịu trách nhiệm thực hiện hàng ngày các chính sách của hội đồng quản trị
+- danh từ, viết tắt của Chief Executive Officer
+- Người lãnh đạo cao nhất trong một công ty hoặc một tổ chức, chịu trách nhiệm thực hiện hàng ngày các chính sách của hội đồng quản trị
+@cep
+* danh từ
+- (thực vật) nấm xép
+@cephalad
+* phó từ
+- về phía đầu
+@cephalically
+- xem cephalic
+@cephalometry
+* danh từ
+- phép đo đầu
+@cephalopodan
+- xem cephalopod
+@cephalous
+* tính từ
+- có đầu
+@ceraceous
+* tính từ
+- giống như sáp
+@ceramal
+* danh từ
+- xem ceramet
+@ceramet
+- Cách viết khác : cermet
+@cerastes
+* danh từ
+- (động vật) rắn độc có gai trên mắt
+@ceratodus
+* danh từ
+- (động vật) cá một phổi
+- cá có sừng (hoá thạch)
+@cercal
+* tính từ
+- thuộc đuôi
+@cercaria
+* danh từ
+- số nhiều cercariae
+- ấu trùng dạng tim có đuôi
+@cercopid
+* danh từ
+- ve sầu nhảy
+@cerebellar
+- xem cerebellum
+@cerebrally
+- xem cerebral
+@cerebrate
+* nội động từ
+- sử dụng trí não
+@cerebro-spinal
+* tính từ
+- thuộc não-tủy sống
+@cerebro-vascular
+* tính từ
+- thuộc não-mạch
+@cered
+- xem cere
+@ceremonially
+* phó từ
+- trịnh trọng, long trọng
+@ceremoniously
+* phó từ
+- kiểu cách, khách sáo
+@ceremoniousness
+* danh từ
+- tính chuộng nghi thức
+- tính kiểu cách
+@ceresin
+* danh từ
+- (hoá học) xêrexin
+@cereus
+* danh từ
+- (thực vật) cây xương rồng khế
+@ceria
+* danh từ
+- (hoá học) xeri (ô xit)
+@ceric
+* tính từ
+- (hoá học) có yếu tố xêri
+@cern
+- (vt của Conseil Europeen pour la Recherche Nucleaire) Hội đồng châu Âu nghiên cứu hạt nhân
+@cernuous
+* tính từ
+- rủ ngọn; ngả đầu
+@cerograph
+* danh từ
+- cách khắc trên sáp
+@cerotic-acid
+* danh từ
+- (hoá học) axit xerotic
+@cerous
+* tính từ
+- (hoá học) chứa đựng chất xê ri
+@cert ed
+* (viết tắt)
+- chứng chỉ ngành sư phạm (Certificate in Education)
+@certes
+* phó từ
+- (từ cổ, nghĩa cổ) chắc chắn; thực tế
+@certifiably
+- xem certifiable
+@certificatory
+- xem certificate
+@certifier
+- xem certify
+@certiorari
+* danh từ
+- lệnh toá án cấp trên xét lại vụ án
+@cervelat
+* danh từ
+- xúc xích ngắn
+@cervicitis
+* danh từ
+- chứng viêm cổ tử cung
+@cervix
+* danh từ
+- cổ tử cung
+@cesarian
+* danh từ
+- như Caesarean section
+@cesser
+* danh từ
+- sự chấm dứt về pháp luật
+= cesser of term+sự đình chỉ kỳ hạn
+@cestode
+* danh từ
+- (động vật) lớp sán dây; sán dây
+* tính từ
+- thuộc lớp sán dây
+@cestus
+* danh từ
+- bao tay để đấu võ (từ cổ La Mã)
+@cesura
+* danh từ
+- như caesura
+- (thơ ca) (âm nhạc) chỗ ngắt
+@cet
+* (viết tắt)
+- Giờ Trung Âu (Central European Time)
+@cetacean
+* danh từ
+- động vật biển có vú (như) cá voi
+* tính từ
+- (thuộc) động vật biển có vú
+@cetane
+* danh từ
+- hydrocarbon lỏng dùng phân loại nhiên liệu đi-ê-zen theo tiêu chuẩn
+@cetane-number
+* danh từ
+- chỉ số xetan
+@cetane-rating
+* danh từ
+- chỉ số xetan
+@ceteris-paribus
+* phó từ
+- các mặt khác không thay đổi
+@cevitamic-acid
+* danh từ
+- (dược) vitamin C
+@cfc
+* (viết tắt)
+- chlorofluorocarbon, được dùng trong kỹ nghệ lạnh (CFC được (xem) là gây hư hại cho tầng Ozone)
+@cfe
+* (viết tắt)
+- Trường cao đẳng mở rộng (College of Further Education)
+@cga
+- bộ điều hợp CGA
+@cgm
+- Một loại khuôn thức tệp đồ họa phổ biến trên thế giới dùng để lưu trữ các đồ hình hướng đối tượng, theo dạng không phụ thuộc vào thiết bị
+@ch
+* (viết tắt)
+- hội viên danh dự (Companion  of  Honour)
+@ch'in
+* danh từ
+- như Qin
+* danh từ
+- như Qin
+@ch'ing
+* danh từ
+- như Qing
+* danh từ
+- như Qing
+@cha
+* danh từ
+- nước trà; trà
+@cha-cha-cha
+* danh từ
+- điệu nhảy chachacha
+@chabazite
+* danh từ
+- (khoáng chất) chabaxit
+@chablis
+* danh từ
+- rượu vang nguyên chất ở miền Đông nước Pháp
+@chaeta
+* danh từ
+- số nhiều chaetae
+- (sinh học) lông cứng
+@chafing dish
+* danh từ
+- lò hâm (để ở bàn ăn)
+* danh từ
+- đoàn tù bị xích vào với nhau
+- đòan tù dây
+@chain-armour
+* danh từ
+- áo giáp lưới sắt
+@chain-broadcasting
+* danh từ
+- (rađiô) sự phát thanh dây chuyền
+@chain-coupling
+* danh từ
+- (đường sắt) sự nối các toa bằng dây xích (để tăng an toàn)
+@chain-mail
+* danh từ
+- áo giáp hợp bởi những vòng kim loại xâu vào nhau
+@chain-saw
+* danh từ
+- cưa xích
+@chain-store
+* danh từ
+- (từ Mỹ,nghĩa Mỹ) một trong một loạt cửa hàng giống nhau thuộc sở hữu của cùng mộtcông ty
+@chain-wale
+* danh từ
+- (hàng hải) chân dây neo
+@chair car
+* danh từ
+- toa xe dành riêng
+@chair-lift
+* danh từ
+- ghế treo trên dây cáp, và lên xuống để chở người
+@chair-warmer
+* danh từ
+- (từ Mỹ,  (từ lóng)) anh chàng lười biếng, anh chàng vô công rồi nghề
+@chairperson
+* danh từ
+- chủ tịch
+@chaise longue
+* danh từ
+- ghế dài
+@chalaza
+* danh từ
+- số nhiều chalazae,  chalazas
+- dây treo, điểm hợp
+@chalcedonic
+- xem chalcedony
+@chalcocite
+* danh từ
+- (khoáng chất) chancoxit
+@chalcopyrite
+* danh từ
+- (khoáng chất) chancopirit
+@chalkboard
+* danh từ
+- bảng viết phấn, bảng đen
+@chalkiness
+* danh từ
+- tính cách trắng như phấn
+- sự xanh xao trắng bệch
+@challenging
+* tính từ
+- đề ra những vấn đề thử thách năng lực của ai; kích thích
+= a challenging job, test, assignment+một công việc, sự thử thách, sự phân công kích thích
+@challis
+* danh từ
+- vải nhẹ, mềm bằng vải, len, sợi hoá học
+@chalone
+* danh từ
+- (sinh học) chalon, chất ức chế nội tiết
+@chalumeau
+* danh từ
+- số nhiều chalumeaux
+- (âm nhạc) ống sáo
+@chamaephyte
+* danh từ
+- (thực vật) chồi cây trên đất (có chồi ngủ trên đất)
+@chamber pot
+* danh từ
+- chậu đái đêm
+- cái bô
+@chamber-pot
+* danh từ
+- chậu đựng nước tiểu trong phòng
+@chambered
+* tính từ
+- có phòng riêng
+@chambermaid
+* danh từ
+- nữ phục vụ phòng
+- (Mỹ) người tớ gái
+@chambray
+* danh từ
+- vải
+@champleve
+* danh từ
+- men khảm
+@chancellorship
+- xem chancellor
+@chancer
+* danh từ
+- người cơ hội; người không có nguyên tắc đạo đức
+@chancily
+* phó từ
+- bấp bênh, không chắc chắn
+@chanciness
+- xem chancy
+@chancroidal
+- xem chancroid
+@chancrous
+- xem chancre
+@chandelle
+* ngoại động từ
+- bay lao vút lên
+@change of life
+- thời kỳ mãn kinh
+@change-ringing
+* danh từ
+- cách rung chuông tạo được hoà âm
+@change-room
+* danh từ
+- phòng thay quần áo (trong thể thao)
+@changeably
+- xem changeable
+@changefully
+- xem changeful
+@changefulness
+- xem changeful
+@channeler
+- xem channel
+@chanson
+* danh từ
+- bài hát
+- bài hát ở quán rượu bằng tiếng Pháp
+@chansonnier
+* danh từ
+- người viết hay hát những bài hát
+- người hát ở quán rượu
+@chanteuse
+* danh từ
+- số nhiều chanteuses
+- nữ ca sĩ chủ yếu ở các quán rượu
+@chantingly
+- xem chant
+@chantry
+* danh từ
+- (kiến trúc) nơi hát lễ trong nhà thờ
+- tiền trợ cấp để hát lễ
+@chaotically
+* phó từ
+- hỗn độn, hỗn loạn
+@chap book
+* danh từ
+- sách văn học dân gian(về thơ ca) bán rong
+@chap fallen
+* tính từ
+- có má xị
+- chán nản, thất vọng, buồn nản
+@chaplaincy
+* danh từ
+- chức giáo sự tuyên úy
+@chaplainship
+- xem chaplain
+@chapleted
+- xem chaplet
+@charabanc
+* danh từ
+- xe buýt [có] ghế dài đi chơi
+@characteristically
+* phó từ
+- theo tính cách đặc trưng
+@characterizer
+- xem characterize
+@charbon
+* danh từ
+- (y học) bệnh than (của súc vật)
+@charcuterie
+* danh từ
+- thịt lợn ướp
+@chard
+* danh từ
+- một loại củ cải ăn giống như rau
+@charge account
+* danh từ
+- thẻ tín dụng
+@charge sheet
+* danh từ
+- hồ sơ tội trạng (ở đồn cảnh sát)
+@chargehand
+* danh từ
+- người đốc công
+@charily
+- xem chary
+@charisma
+* danh từ
+- uy tín; đức tính gây được lòng tin; sức thu hút của lãnh tụ (đối với quần chúng)
+@charismatic
+* tính từ
+- thuyết phục, lôi cuốn
+@charismatically
+* phó từ
+- thuyết phục, lôi cuốn
+@charist
+* danh từ
+- (cỗ) xe ngwạ hai bánh(để đánh trận hay chạy đua)
+@charitably
+* phó từ
+- nhân từ, độ lượng
+@charlady
+* danh từ
+- người đàn bà giúp việc gia đình (theo giờ hoặc công nhật)
+@charlatanic
+- xem charlatan
+@charlie
+* danh từ
+- kẻ ngốc nghếch, kẻ dại khờ
+@charlote
+* danh từ
+- bữa điểm tâm có quả với thịt; món sác-lốt
+@charmingly
+* phó từ
+- thú vị, hấp dẫn
+@charqui
+* danh từ
+- thịt bò phơi nắng
+@charr
+* danh từ
+- số nhiều charrs
+- (động vật) cá hồi chấm hồng
+@charring
+* danh từ
+- sự hoá than, đốt thành than
+@charter flight
+* danh từ
+- chuyến bay thuê
+* danh từ
+- hợp đồng thuê tầu
+@chartered
+* tính từ
+- có đủ tư cách phù hợp với các quy tắc của một hội nghề nghiệp được công nhận trong một hiến chương hoàng gia
+= a chartered engineer, librarian, surveyor+kỹ sư, thủ thư, viên thanh tra đủ tư cách hành nghề
+- chartered accountant  (cũng certified public accountant)
+- nhân viên kế toán được đào tạo toàn diện và đủ tư cách hành nghề
+@chartist
+* danh từ
+- người tham gia phong trào hiến chương (ở anh vào những năm 1830)
+@charybdis
+* danh từ
+- xem Scylla
+@chase-grace
+* danh từ
+- tên vô lại
+@chasing
+* danh từ
+- sự cắt ren (bằng dao)
+- sự khấu quặng theo phương mạch
+@chasmal
+- xem chasm
+@chasmogamic
+- Cách viết khác : chasmogamous
+@chasmogamy
+* danh từ
+- (thực vật) tính thụ phấn mở
+@chassepot
+* danh từ
+- súng saxơpo
+@chasseur
+* danh từ
+- kỵ binh
+@chastely
+- xem chaste
+@chastener
+- xem chasten
+@chasteness
+- xem chaste
+@chastily
+* phó từ
+- trong sạch, trong trắng
+@chastisable
+- xem chastise
+@chat show
+* danh từ
+- chương trình phỏng vấn trên tivi
+- chương trình phỏng vấn trên đài
+@chateau
+* danh từ
+- lâu đài
+@chateaubriand
+* danh từ
+- món bít tết dày
+@chaton
+* danh từ
+- mặt nhẫn
+@chatoyant
+* tính từ
+- óng ánh nhiều màu
+* danh từ
+- viên ngọc óng ánh nhiều màu
+@chatter-resistant
+* tính từ
+- chống rung
+@chattily
+* phó từ
+- dông dài, huyên thuyên
+@chattiness
+* danh từ
+- sự ăn nói huyên thuyên, sự ăn nói ba hoa
+@chauvinistically
+* phó từ
+- có tính cách bá quyền, hống hách
+@chayka
+* danh từ
+- xem cheka
+@chayote
+* danh từ
+- (thực vật) cây su su
+@chb
+* (viết tắt)
+- Cử nhân chuyên ngành phẫu thuật (Bachelor of Surgery)
+@cheap-skate
+* danh từ
+- kẻ bần tiện
+@cheapener
+- xem cheapen
+@cheapjack
+* danh từ
+- người bán rong
+* tính từ
+- vô giá trị, chẳng ra gì
+@cheaply
+* phó từ
+- rẻ, rẻ tiền
+@cheapskate
+* danh từ
+- <Mỹ> người keo kiệt
+@cheatable
+* tính từ
+- có thể lừa bịp được
+@cheatingly
+- xem cheat
+@cheattee
+* danh từ
+- kẻ lừa bịp
+@check up
+* danh từ
+- sự kiểm tra toàn diện (thường là về sức khỏe)
+@check-analysis
+* danh từ
+- sự phân tích đối chiếu để kiểm tra
+@check-in
+* danh từ
+- sự đăng ký ở khách sạn, sự đăng ký đi máy bay
+@check-out
+* danh từ
+- sự thanh toán tiền khách sạn
+- quầy thu tiền
+@check-point
+* danh từ
+- trạm kiểm soát
+@check-weigher
+* danh từ
+- người kiểm tra trọng lượng sản phẩm
+@checkable
+- xem check
+@checkbook
+- như cheque-book
+@checkered
+- như chequered
+@checkers
+* danh từ
+- cờ đam (gồm 24 quân cờ cho hai người chơi)
+@checkflight
+* danh từ
+- (hàng không) cuộc bay kiểm nghiệm
+@checkroom
+* danh từ
+- phòng gửi áo mũ
+- phòng giữ hành lý
+@checkrow
+* danh từ
+- dải đất, ô đất
+- thửa ruộng
+@checksum
+- tổng kiểm tra, đặc số kiểm tra
+@cheddar
+* danh từ
+- một loại phó mát dầy
+@cheekily
+* phó từ
+- láo xược, xấc xược
+@cheeper
+- xem cheep
+@cheerer
+- xem cheer
+@cheerfully
+* phó từ
+- vui vẻ, phấn khởi
+@cheerily
+* phó từ
+- vui vẻ, phấn khởi
+@cheeriness
+* danh từ
+- sự vui vẻ, sự phấn khởi
+@cheeringly
+- xem cheer
+@cheerlessly
+* phó từ
+- ủ rũ, buồn bã
+@cheers!
+- thành ngữ cheer
+- cheers!
+- chúc sức khoẻ! (trong bàn tiệc)
+- chào! (khi chia tay)
+- thành ngữ cheer
+- cheers!
+- chúc sức khoẻ! (trong bàn tiệc)
+- chào! (khi chia tay)
+@cheese-board
+* danh từ
+- thớt dùng để cắt phó mát
+@cheese-cloth
+* danh từ
+- vải thưa
+@cheese-drainer
+* danh từ
+- khuôn ráo (đan thưa để bỏ pho-mát vào cho rỉ nước đi)
+@cheese-off
+* tính từ, cũng cheesed
+- (thông tục) chán ngấy
+@cheese-rennet
+* danh từ
+- men dịch vị
+@cheeseburger
+* danh từ
+- thịt băm có lẫn phó mát
+@cheesecake
+* danh từ
+- bánh kem phó mát
+- ảnh phụ nữ đẹp dùng trong quảng cáo
+@cheesecloth
+* danh từ
+- vải thưa bọc phó mát
+@cheeseparing
+* danh từ
+- sự chi li trong chi tiêu
+- tính bủn xỉn
+@chelate
+* tính từ
+- có kìm; có càng có kẹp
+@chelicera
+* danh từ
+- số nhiều chelicerae
+- chân có kìm
+@chemic
+* tính từ
+- thuộc hoá học
+- (từ cổ, nghĩa cổ) thuộc thuật luyện kim
+@chemically
+* phó từ
+- về phương diện hoá học
+@chemoautotrophy
+* danh từ
+- (sinh học) sự tự dưỡng hoá học
+@chemoprophylactic
+* tính từ
+- thuộc cách phòng bệnh bằng thuốc
+@chemoprophylaxis
+* danh từ
+- cách phòng bệnh bằng thuốc
+@chemosphere
+* danh từ
+- (khí tượng) quyển nhiệt
+@chemosterillant
+* danh từ
+- thuốc gây vô sinh; thuốc tuyệt dục; thuốc cai đẻ
+@chemosynthesis
+* danh từ
+- sự hoá tổng hợp
+@chemosynthetic
+* tính từ
+- hoá tổng hợp
+@chemotactic
+* tính từ
+- theo hoá chất
+@chemotaxis
+* danh từ
+- (sinh học) tính theo hoá chất
+@chemotherapeutic
+- xem chemotherapy
+@chemotherapeutically
+- xem chemotherapy
+@chemotherapist
+- xem chemotherapy
+@chemotropic
+- xem chemotropism
+@chenopodiacesus
+* tính từ
+- thuộc họ rau muống
+@cheongsam
+* danh từ
+- áo dài (phụ nữ Trung Quốc)
+@cheque card
+* danh từ
+- thẻ séc
+@chequered
+- Cách viết khác : checkered
+@cherishable
+- xem cherish
+@cherisher
+- xem cherish
+@cherishingly
+- xem cherish
+@chernozem
+* danh từ
+- đất đen nhiều bùn
+@cherry-blossom
+* danh từ
+- hoa anh đào
+@cherry-brandy
+* danh từ
+- rượu anh đào
+@chersonese
+* danh từ
+- (thơ ca) bán đảo
+@chert
+* danh từ
+- đá phiến xilic
+@cherubically
+- xem cherub
+@cherublike
+* tính từ
+- giống thiên thần
+@chervil
+* danh từ
+- rau mùi, ngò
+@chervile
+* danh từ
+- (thực vật) rau xếp phôi
+@chesil
+* danh từ
+- sỏi
+@chessboard
+* danh từ
+- bàn cờ
+@chessel
+* danh từ
+- thùng để làm pho-mát
+@chessman
+* danh từ
+- quân cờ
+@chest of drawers
+* danh từ
+- tủ com - mốt
+@chested
+- (tạo thành tính từ ghép) có kiểu ngực được nói rõ
+= broad-chested+có ngực nở
+= bare-chested+ngực trần
+= she's flat-chested+cô ấy ngực lép
+- (tạo thành tính từ ghép) có kiểu ngực được nói rõ
+= broad-chested+có ngực nở
+= bare-chested+ngực trần
+= she's flat-chested+cô ấy ngực lép
+@cheval-de-frise
+* danh từ
+- chướng ngại vật làm bằng dây kẽm gai hoặc hợp bởi nhiều cọc cắm vào một khung gỗ, giăng ở chỗ tối để gạt ngã ngựa của đối phương; dây cản ngựa
+@cheverel
+* danh từ
+- da mềm (làm găng tay)
+@chewable
+- xem chew
+@chewiness
+- xem chewy
+@chewing gum
+* danh từ
+- kẹo cao su
+@chez
+* giới từ
+- ở nhà, về nhà
+@chianti
+* danh từ
+- rượu vang ở miền Trung nước Y
+@chiaroscurist
+- xem chiaroscuro
+@chiasmal
+- xem chiasma
+@chiasmatic
+- xem chiasma
+@chiasmatypy
+* danh từ
+- (sinh học) kiểu trao đổi tréo
+@chiasmic
+- xem chiasma
+@chiasmus
+* danh từ
+- (văn học) cách đảo đổi
+* tính từ
+- thuộc cách đảo đổi
+@chibcha
+* danh từ
+- số nhiều chibchas
+- người Sipsa (người da đỏ Nam Mỹ)
+- tiếng Sipsa
+@chicaner
+- xem chicane
+@chick-pea
+* danh từ
+- cây đậu xanh
+@chick-weed
+* danh từ
+- cỏ có hoa nhỏ màu trắng
+@chicken pox
+* danh từ
+- bệnh thủy đậu
+@chicken-prairie
+* danh từ
+- (động vật) gà gô đồng
+@chicken-run
+* danh từ
+- sân nuôi gà vịt
+@chicken-shit
+* danh từ
+- (từ Mỹ,  (thông tục)) chuyện vụn vặt; chuyện linh tinh
+@chicken-snake
+* danh từ
+- (động vật) rắn bắt gà con; rắn ăn trứng
+@chicken-wire
+* danh từ
+- lưới thép mỏng
+@chickenheartedness
+- xem chicken-hearted
+@chickweed
+* danh từ
+- cây tràng sao
+@chicle
+* danh từ
+- chất đặc biệt dùng để làm kẹo cao su
+@chiclet keyboard
+- bàn phím Chiclet
+@chicly
+- xem chic
+@chicness
+- xem chic
+@chider
+- xem chide
+@chidingly
+- xem chide
+@chiefless
+* tính từ
+- không có người cầm đầu
+@chigoe
+* danh từ
+- (động vật) rệp kẽ ngón tay (luồn dưới da để hút máu)
+@chihuahua
+* danh từ
+- chó nhỏ có lông mượt
+@chilblained
+- xem chilblain
+@child benefit
+* danh từ
+- trợ cấp nuôi con
+@child-minder
+* danh từ
+- người giữ trẻ
+@child-proof
+* tính từ
+- ngăn ngừa trẻ phá
+@childbearing
+* danh từ
+- sự sinh đẻ
+@childermas
+* danh từ
+- (tôn giáo) ngày lễ kỷ niệm trẻ em bị giết (trong (kinh thánh)), ngày 28 - 12
+@childishly
+* phó từ
+- như trẻ con
+@childlessness
+- xem child
+@childminder
+* danh từ
+- người trông nom trẻ em (khi cha mẹ đi làm việc)
+@childminding
+* danh từ
+- việc chăm sóc trông nom trẻ em
+@chiliasm
+* danh từ
+- thuyết nghìn năm thái bình sau khi Giê-xu cai trị thế giới
+@chilify
+* động từ
+- hoá thành dịch dưỡng
+@chill-proof
+* danh từ
+- không chịu ảnh hưởng khí lạnh
+@chillily
+- xem chilly
+@chillingly
+- xem chill
+@chillness
+- xem chill
+@chilly con carne
+* danh từ
+- thịt bò hầm đậu kèm ớt khô
+@chimaera
+* danh từ
+- quái vật đuôi rắn mình dê đầu sư tử
+- ảo tưởng
+@chimer
+- xem chime
+@chimere
+* danh từ
+- (tôn giáo) áo choàng (của giám mục Anh)
+@chimerically
+- xem chimerical
+@chimney breast
+* danh từ
+- tường bao lof sưởi và đáy ống khói (xây nhô ra ở trong phòng)
+@chimney sweep
+* danh từ
+- thợ cạo ống khói
+@chimney-breast
+* danh từ
+- khoảng tường bao lấy đáy ống khói và lò sưởi
+@chimp
+* danh từ
+- (động) tinh tinh
+@chin-strap
+* danh từ
+- quai nón, quai mũ
+@china-closet
+* danh từ
+- tủ kính bày hàng
+@china-ink
+* danh từ
+- mực tàu
+@chineet
+* danh từ
+- (từ Mỹ,  (từ lóng)) người Hoa
+@chinkapin
+* danh từ
+- cũng chinquapin
+- (thực vật) cây lật
+@chinkic
+* danh từ
+- cũng chinky
+- (thông tục) hiệu ăn Trung Quốc có thể mang thức ăn về
+@chinoiserie
+* danh từ
+- sự bắt chước phong cách Trung quốc trong tranh vẽ và trang trí
+- đồ vật theo kiểu cách Trung Quốc
+@chinook
+* danh từ
+- tiếng Si-núc (một ngôn ngữ Anh-Pháp lẫn lộn ở Bắc mỹ)
+* danh từgười Si-núc
+- gió ấm ở tây nam nước Mỹ
+@chinook-jargon
+* danh từ
+- (ngôn ngữ) biệt ngữ Si-núc
+@chinstrap
+* danh từ
+- dây buộc mũ qua dưới cằm
+@chintzy
+* danh từ
+- trang trí bằng vải hoa
+- rẻ tiền
+- hà tiện
+@chinwag
+* danh từ
+- cuộc nói chuyện phiếm
+@chip-basket
+* danh từ
+- giỏ đan bằng gỗ hay dây thép
+@chipboard
+* danh từ
+- vỏ bào ép với nhựa dính làm vật liệu xây dựng
+@chipolata
+* danh từ
+- một loại xúc xích ở Anh
+@chippings
+* danh từ
+- đá nhỏ rải trên mặt đường
+@chirographic
+* tính từ
+- viết tay
+@chirographist
+* danh từ
+- người viết tay thuê
+- người làm khế ước
+@chirography
+* danh từ
+- chữ viết tay; việc viết tay
+@chiropractic
+* danh từ
+- sự chữa bệnh bằng phương pháp nắn khớp xương
+@chiropractor
+* danh từ
+- người chữa bệnh bằng phương pháp nắn khớp xương
+@chiropter
+* danh từ
+- (động vật) loài dơi
+@chirurgeon
+* danh từ
+- (từ cổ) nhà phẩu thuật
+@chiseler
+- xem chisel
+@chiselled
+* tính từ, cũng chiseled
+- được chạm, trổ
+- nổi bậc rõ ràng
+@chiseller
+* danh từ
+- kẻ lừa bịp
+@chit-book
+* danh từ
+- sổ thu nhập
+@chitchat
+* danh từ
+- chuyện phiếm, chuyện gẫu
+@chitinized
+* tính từ
+- hoá kitin
+@chitinous
+- xem chitin
+@chiton
+* danh từ
+- (động vật) ốc song kinh
+- áo mặc trong (từ cổ Hy-lạp)
+@chivalrously
+* phó từ
+- hào hoa, hào hiệp
+@chive
+* danh từ
+- một loại lá thơm dùng làm gia vị
+@chloral
+* danh từ
+- aldehyde chứa Clo
+- (đầy đủ chlord hydrate) dược HCL
+@chloralose
+* danh từ
+- (hoá học) chloraloza
+@chloramine
+* danh từ
+- (hoá học) chloramin
+@chloramphenicol
+* danh từ
+- (dược) cloramfenikon
+@chlorella
+* danh từ
+- (sinh học) rong tiểu câu
+@chlorenchyma
+* danh từ
+- (thực vật) mô giậu; mô diệp lục
+@chloridic
+- xem chloride
+@chlorinate
+* động từ
+- khử trùng bằng clo
+@chlorination
+* danh từ
+- sự khử trùng bằng clo
+@chlorinator
+- xem chlorinate
+@chloropicrin
+* danh từ
+- (hoá học) cloropicrin
+@chlorotic
+- xem chlorosis
+@chlorotically
+- xem chlorosis
+@chm
+* (viết tắt)
+- Cao học phẫu thuật (Master of Surgery)
+= to have a ChM+có bằng cao học phẫu thuật
+@choc
+* danh từ
+- sôcôla
+@choc-ice
+* danh từ
+- kem cây phủ sô-cô-la
+@chocolate-box
+* tính từ
+- xinh đẹp hay đa cảm một cách hời hợt
+@chocolate-soldier
+* danh từ
+- lính cậu; lính chữ thọ
+@choir school
+* danh từ
+- trường dành cho lễ sinh
+@choir-stall
+* danh từ
+- ghế ngồi hát đồng ca
+@choirboy
+* danh từ
+- lễ sinh (hát ở giáo đường)
+@choirmaster
+* danh từ
+- người chỉ huy đội hát thờ
+@choke-collar
+* danh từ
+- vòng đai ở cổ chó để điều khiển nó
+@chokeberry
+* danh từ
+- (thực vật) quả anh đào dại
+@choked
+* tính từ
+- (choked about something) (thông tục) tức tối; chán nản
+@cholangiography
+* danh từ
+- (y học) phép chụp tia X đường mật
+@cholecalciferol
+* danh từ
+- vitamin D 2
+@cholecystectomy
+* danh từ
+- số nhiều cholecystectomies
+- (y học) thủ thuật cắt bỏ túi mật
+@cholecystitis
+* danh từ
+- (y học) viêm túi mật
+@cholelithiasis
+* danh từ
+- (y học) bệnh sỏi mật
+@cholerically
+- xem choleric
+@cholericly
+- xem choleric
+@choleroid
+- xem cholera
+@cholesterol
+* danh từ
+- chất béo gây xơ cứng động mạch, Colextêrôn
+@cholic
+* tính từ
+- thuộc mật
+@choline
+* danh từ
+- (hoá học) colin
+@cholinergic
+* tính từ
+- tác động kiểu colin
+@cholinesterase
+* danh từ
+- cholinexteraza
+@chomp
+* động từ
+- nhai rào rạo
+* danh từ
+- sự nhai rào rạo
+@chondrioblast
+* danh từ
+- (sinh học) tế bào tạo sụn
+@chondriosome
+* danh từ
+- (sinh học) bộ thể hạt
+@chondrocranium
+* danh từ
+- (sinh học) sọ mụn
+@chondrocyte
+* danh từ
+- tế bào sụn
+@chondroma
+* danh từ
+- (y học) bướu sụn
+@choosiness
+* danh từ
+- tính hay kén chọn
+@chopfallen
+* tính từ
+- chán nản
+@choppily
+- xem choppy
+@choppiness
+* danh từ
+- sự vỗ bập bềnh (sóng)
+- sự trở chiều (gió)
+@chopping
+* tính từ
+- thay đổi nhanh
+- sóng gió
+- quật cường
+* danh từ
+- sự thái, băm, cắt
+= chopping block+cái thớt
+= chopping knife+dao thái
+@chops
+* danh từ
+- hàm (động vật)
+- mép
+= The dog licked his chops+con chó liếm mép
+- miệng
+@choragus
+* danh từ
+- cũng choregus
+- người cầm đầu ban đồng ca (từ ổ Hy-Lạp)
+- người cầm đầu một phong trào
+@choralist
+* danh từ
+- người viết hợp xướng
+- người hát hợp xướng
+@chorally
+- xem choral
+@chordal
+* tính từ
+- có hình sợi dây
+- (giải phẩu học) thuộc dây sống
+- có sự hài hoà âm thanh
+@chordate
+* tính từ
+- (sinh học) có dây sống
+@choreograph
+* động từ
+- sáng tác và dàn dựng điệu múa balê
+@choreographer
+* danh từ
+- biên đạo múa
+* danh từ
+- biên đạo múa
+@choreographic
+* tính từ
+- (thuộc) nghệ thuật bố trí điệu múa ba-lê
+@choreography
+* danh từ
+- nghệ thuật bố trí điệu múa ba-lê
+@chorial
+* tính từ
+- (sinh học) thuộc màng đệm
+@choriambic
+- xem choriamb
+@choric
+* tính từ
+- theo phong cách đồng ca cổ Hy Lạp
+@chorioallantois
+* danh từ
+- (giải phẩu) màng đệm túi niệu
+@choriocarcinoma
+* danh từ
+- ung thư dạ con
+@chorionic
+- xem chorion
+@chorizo
+* danh từ
+- số nhiều chorizos
+- xúc xích cay (Tây Ban Nha)
+@chorogamic
+* tính từ
+- ngẫu giao
+@chorogamy
+* danh từ
+- tính ngẫu giao
+@chorographer
+- xem chorography
+@chorographically
+- xem chorography
+@choroidial
+* tính từ
+- thuộc màng mạch
+@choronomic
+* tính từ
+- bên ngoài, ngoại lai
+@chorotype
+* danh từ
+- kiểu địa phương
+@chortler
+- xem chortle
+@chorus-girl
+* danh từ
+- cô gái trong đội đồng ca
+@chow mein
+* danh từ
+- món mì xào
+@chrestomathic
+- xem chrestomathy
+@chrismal
+- xem chrism
+@christ-cross
+* danh từ
+- dấu thánh giá; dấu thập ác
+@christhood
+* danh từ
+- địa vị chúa Cơ-đốc
+@christiad
+* danh từ
+- sử thi về chúa Cơ-đốc
+@christianization
+* danh từ
+- việc theo đạo thiên chúa
+@christlike
+* tính từ
+- như Chúa Giê-su
+@christmas tree
+* danh từ
+- cây Nô-el
+@christmassy
+* tính từ
+- có không khí lễ Nô-en
+@christmastide
+* danh từ
+- tuần Nô-el
+@christmastime
+* danh từ
+- tuần Nô-el
+@christogram
+* danh từ
+- biểu tượng chỉ chúa Cơ-đốc bằng chữ viết
+@christology
+* danh từ
+- Cơ-đốc học
+@chrlotte
+* danh từ
+- bánh pútdinh nhân trái cây
+@chromaffin
+* tính từ
+- (sinh học) nhuộm crôm (tế bào)
+@chromaffinity
+* tính từ
+- (sinh học) tính nhuộm crôm (tế bào)
+@chromaphil
+* tính từ
+- ưa nhuộm crôm
+@chromatically
+- xem chromatic
+@chromaticism
+- xem chromatic
+@chromatid
+* danh từ
+- (sinh học) thanh nhiễm sắc
+@chromatinic
+- xem chromatin
+@chromatist
+- xem chromatics
+@chromatoblast
+* danh từ
+- tế bào tạo sắc tố
+@chromatographer
+- xem chromatography
+@chromatographically
+- xem chromatograph
+@chromatolysis
+* danh từ
+- (sinh học) sự phân hủy màu; sự tiêu sắc
+@chromatophil
+* tính từ
+- dễ nhuộm màu
+@chrome yellow
+* danh từ
+- màu vàng tươi
+@chrominian
+* danh từ
+- (hoá học) crom
+@chromite
+* danh từ
+- (hoá học) cromit
+@chromo
+* danh từ; số nhiều chromos
+- xem chromolithograph
+@chromogen
+* danh từ
+- chất tạo sắc
+- thể nhiễm sắc
+@chromomere
+* danh từ
+- (sinh học) đoạn (/hạt) nhiễm sắc thể
+@chromomeric
+* tính từ
+- thuộc đoạn nhiễm sắc thể
+@chromoneme
+* danh từ
+- số nhiều chromonemata
+- sợi nhiễm sắc
+@chromoprotein
+* danh từ
+- (sinh học) protein sắc tố
+@chromosomal
+- xem chromosome
+@chromosomally
+- xem chromosome
+@chromospheric
+- xem chromosphere
+@chronically
+- xem chronic
+@chronicle-play
+* danh từ
+- kịch biên niên; kịch lịch sử
+@chronogram
+* danh từ
+- cách dùng chữ cái hoa để ghi năm
+@chronographic
+- xem chronograph
+@chronographically
+- xem chronograph
+@chronography
+* danh từ
+- phép đo một khoảng thời gian rất ngắn
+@chronologically
+* phó từ
+- theo niên đại, theo thứ tự thời gian
+@chronometrically
+- xem chronometer
+@chronoscopic
+- xem chronoscope
+@chrysalises
+* danh từ
+- con nhộng
+@chryselephantine
+* tính từ
+- bằng ngà và vàng
+@chrysoberyl
+* danh từ
+- (khoáng chất) Crizoberin
+@chrysolite
+* danh từ
+- hoàng ngọc
+@chthonic
+- Cách viết khác : chtonian
+@chub
+* danh từ
+- cá bống
+@chubbily
+- xem chubby
+@chuckhole
+* danh từ
+- (từ Mỹ, nghĩa Mỹ) rãnh ngang ở đường để tháo nước
+@chuckler
+- xem chuckle
+@chucklesome
+- xem chuckle
+@chucklingly
+- xem chuckle
+@chuff
+* nội động từ
+- kêu phì phì như tiếng máy hơi nước
+* danh từ
+- tiếng động kêu phì phì như tiếng máy hơi nước
+- người quê mùa
+* tính từ
+- quê mùa; thô lỗ
+@chuffed
+* tính từ
+- vui mừng, hớn hở
+@chugger
+- xem chug
+@chukka
+* danh từ (cũng) chukker
+- khoảng thời gian chơi trong môn pôlô
+@chummage
+* danh từ
+- chỗ ở hai hay nhiều người chung phòng
+* danh từhà ở chung; nhà tù
+- bữa ăn các tù nhân cũ đãi các tù nhân mới vào phòng
+@chummily
+* phó từ
+- thân mật, thân thiết
+@chump-chop
+* danh từ
+- sườn cừu
+@chunder
+* nội động từ
+- nôn oẹ
+* danh từ
+- sự nôn oẹ
+@chunkily
+* phó từ
+@chunkiness
+* danh từ
+- sự vừa lùn vừa mập
+@chunking
+* tính từ
+- lớn; vụng về
+= a chunking piece of beef+một miếng thịt bò to tướng
+* danh từ
+- tiếng động của máy lớn khi chuyển động
+@chunnel
+* danh từ
+- cái hầm đang đào nối liền Anh và Pháp
+@chunter
+* động từ
+- (thông tục) phàn nàn, kêu ca
+@church-rate
+* danh từ
+- thuế nộp cho nhà thờ
+@churchianity
+* danh từ
+- thái độ theo nhà thờ một cách hình thức
+@churchmanly
+- xem churchman
+@churchmanship
+- xem churchman
+@churinga
+* danh từ
+- rùa bằng đá thiêng liêng thổ dân Oxtrâylia đeo
+@churlishly
+* phó từ
+- thô lỗ, xấc xược
+@churner
+- xem churn
+@churr
+* nội động từ
+- kêu vù vù (côn trùng bay)
+* danh từ
+- tiếng vù vù
+@churrigueresque
+* tính từ
+- theo phong cách ba-rôc Tây Ban Nha có trang trí công phu
+@chute-the-chute
+- máng trượt nước, đường trượt nước
+@chutzpah
+* danh từ
+- (tiếng lóng) sự cả gan trơ tráo
+@chylaceous
+- xem chyle
+@chyliferous
+* tính từ
+- (sinh học) mang dịch dưỡng
+@chymify
+* động từ
+- hoá thành dưỡng trấp/dịch sữa
+@chymous
+- xem chyme
+@ci
+- (vt của Channel Islands) các đảo trên biển Măngsơ
+@ci-devant
+* phó từ
+- trước đây
+= ci-devant chairman+chủ tịch trước đây
+@cia
+- (vt của Central Intelligence Agency) Cơ quan tình báo trung ương của Hoa kỳ
+@ciao
+- interj
+- chào!
+@ciborium
+* danh từ
+- số nhiều ciboria
+- bình đựng nước thánh
+- tán che ở bàn thờ chính nhà thờ
+@ciceronian
+* tính từ
+- hùng biện
+@cicisbeo
+* danh từ
+- người con trai theo đuổi một người đàn bà có chồng
+@cid
+* (viết tắt)
+- Cục điều tra hình sự Anh quốc (Criminal Investigation Department)
+@cif
+* (viết tắt)
+- chi phí & bảo hiểm & cước phí (Cost & Insurance & Freight)
+@cig
+* danh từ
+- (thông tục) điếu thuốc lá
+@cigar-maker
+* danh từ
+- người quấn xì-gà
+@cigarette-lighter
+* danh từ
+- cái bật lửa
+@cigarillo
+* danh từ
+- số nhiều cigarillos
+- điếu thuốc lá nhỏ hở hai đầu
+@ciggie
+* danh từ
+- (thông tục) điếu thuốc lá
+@ciliate
+* tính từ
+- (sinh học) có lông rung; có lông mịn; có lông mi
+@cilium
+* danh từ (số nhiều là cilia)
+- lông rung (ở tế bào thực vật)
+- lông mi
+@cillery
+* danh từ
+- cũng cileri
+- (kiến trúc) trang trí hình lá
+@cimex
+* danh từ
+- số nhiều cimices
+- (động vật) con rệp
+@cimmerian
+* tính từ
+- tối như bưng
+@cinchonic
+- xem cinchona
+@cinder-guard
+* danh từ
+- tấm chăn tro lửa
+@cinderella
+* danh từ
+- tài năng chưa được biết đến
+@cine
+- điện ảnh
+@cine-projector
+* danh từ
+- máy chiếu phim
+@cineaste
+* danh từ
+- như cineast
+* danh từ
+- như cineast
+@cinecamera
+* danh từ
+- máy quay phim
+@cinema-circuit
+* danh từ
+- các rạp chiếu bóng cùng thuộc một chủ
+@cinemadrama
+* danh từ
+- kịch chiếu phim
+@cinemagoer
+* danh từ
+- người xem chiếu bóng
+@cinematheque
+* danh từ
+- rạp chiếu bóng chuyên chiếu phim cổ điển và tiền phong
+@cinematic
+* tính từ
+- thuộc về điện ảnh
+@cinematically
+- xem cinema
+@cinematographer
+* danh từ
+- người chuyên về điện ảnh, Nhà điện ảnh
+@cinematographically
+- xem cinematography
+@cinerama
+* danh từ
+- màn ảnh cực rộng
+@cinerescent
+* tính từ
+- có màu tro; thành màu tro
+@cineritious
+* tính từ
+- giống như tro
+@cingulum
+* danh từ
+- số nhiều cingula
+- đai, vành
+@cinnabar
+* danh từ
+- thủy ngân sulfua (Hgs)
+- màu son
+- một loài bướm đêm có cánh đốm đỏ
+@cinnamic
+- xem cinnamon
+@cinquecento
+* danh từ
+- thế kỷ XVI ở ý (nổi tiếng về (văn học) (nghệ thuật))
+@cion
+* danh từ
+- cũng scion
+- (thực vật) cành ghép; chồi ghép
+@ciphertext
+* danh từ
+- văn bản viết thành mật mã
+@circadian
+* tính từ
+- (sinh lý học) xuất hiện khoảng một lần một ngày
+@circassian
+* danh từ
+- người Xiêc-cát-xi (ở Cáp-ca)
+- tiếng Xiếc-cát-xi
+@circinately
+- xem circinate
+@circler
+- xem circle
+@circuit training
+* danh từ
+- (thể thao) sự tập luyện một loạt bài thể dục
+@circuitously
+* phó từ
+- loanh quanh, quanh co
+@circuity
+- xem circuitous
+@circular-saw
+* danh từ
+- cưa vòng
+@circularization
+- xem circularize
+@circularizer
+- xem circularize
+@circularly
+- xem circular
+@circulating
+* tính từ
+- tuần hoàn; lưu thông
+@circulative
+- xem circulate
+@circumambience
+- xem circumambient
+@circumambiently
+- xem circumambient
+@circumambulation
+- xem circumambulate
+@circumbuccal
+* tính từ
+- quanh miệng
+@circumciser
+- xem circumcise
+@circumcision
+* danh từ
+- sự cắt bao quy đầu
+@circumlittoral
+* tính từ
+- ven vùng biển
+@circumlocutorily
+- xem circumlocution
+@circumlunar
+* tính từ
+- quay quanh mặt trăng
+@circumnavigator
+- xem circumnavigate
+@circumneural
+* tính từ
+- quanh thần kinh
+@circumnuclear
+* tính từ
+- quanh hạt nhân
+@circumnutate
+* nội động từ
+- chuyển động vòng; chuyển động xoáy ốc
+@circumoral
+* tính từ
+- quanh miệng
+@circumpolar
+* tính từ
+- quanh cực (quả đất)
+- thấy ở trên đường chân trời
+= a circumpolar star+một ngôi sao thấy ở đường chân trời
+- gần Bắc cực hoặc nam cực
+@circumscissle
+* tính từ
+- nứt theo đường vòng
+@circumscribable
+- xem circumscribe
+@circumscriber
+- xem circumscribe
+@circumscriptive
+- xem circumscription
+@circumscriptively
+- xem circumscription
+@circumspectly
+* phó từ
+- dè dặt, thận trọng
+@circumstantiation
+- xem circumstantiate
+@circumstellar
+* tính từ
+- ở cạnh một ngôi sao
+@circumvascular
+* tính từ
+- (sinh học) quanh mạch
+@circumventer
+- xem circumvent
+@circumventive
+- xem circumvent
+@circumventor
+- xem circumvent
+@circusy
+- xem circus
+@cirrate
+* tính từ
+- (sinh học) có tua cuốn; có lông gai
+@cirrhotic
+- xem cirrhosis
+@cisalpine
+* tính từ
+- ở phía nam của dãy Alps
+@cisatlantic
+* tính từ
+- phía châu Âu của Đại-tây-dương
+@cisc
+- máy tính có tập lệnh phức hợp
+@cislunar
+* tính từ
+- nằm giữa quả đất và mặt trăng
+= cislunar space+không gian giữa quả đất và mặt trăng
+@cistercian
+* danh từ
+- cha cố thuộc dòng Xitô (Robert Citeaux)
+@cisterna
+* danh từ
+- số nhiều cisternae
+- (sinh học) túi đựng dịch
+= cisterna chyle+túi nhũ trấp
+@cisternal
+- xem cistern
+@cistron
+* danh từ
+- (sinh học) xitron (gen, đơn vị di truyền chức năng)
+@citable
+- xem cite
+@citational
+- xem citation
+@citatory
+- xem citation
+@cithara
+* danh từ
+- đàn xi-ta; đàn thập lục
+@cither(n)
+* danh từ
+- đàn xít
+@citizen's arrest
+- sự bắt giữ do thường dân thực hiện
+@citizenly
+- xem citizen
+@citizenry
+* danh từ
+- toàn thể công dân
+@citizens band
+- băng tần thường dân (để lái xe có thể liên hệ với nhau trong khoảng
+@citral
+* danh từ
+- (hoá học) xitrala
+@citrate
+* danh từ
+- một loại muối của axit citric
+@citric acid
+* danh từ
+- (hóa) axitxitric
+@citriculture
+* danh từ
+- nghề trồng chanh, cam quýt
+@city editor
+- (anh) nhà báo chịu trách nhiệm về tin tức tài chính (trên một tờ báo)
+- (Mỹ) nhà báo chịu trách nhiệm  về tin tức địa phương
+@city hall
+- tòa thị chính thành phố lớn
+@city-father
+* danh từ
+- người cha của đô thị (người có uy tín rất lớn trong đô thị)
+@city-hall
+* danh từ
+- toà thị chính của thành phố; cơ quan quản lý thành phố
+@city-manager
+* danh từ
+- ủy viên hội đồng thành phố lo quản lý thành phố
+@city-planning
+* danh từ
+- việc kế hoạch hoá thành phố / đô thị
+@city-scape
+* danh từ
+- quang cảnh thành phố/đô thị
+- bức ảnh quang cảnh đô thị
+@city-state
+- thành quốc
+@civics
+* danh từ
+- khoa nghiên cứu quyền lợi và bổn phận công dân
+@civil marriage
+- hôn nhân theo thủ tục bên đời (không có lễ tôn giáo)
+@civil-law
+- luật dân sự, luật hộ
+@civilianization
+- xem civilianize
+@civilisation
+* danh từ
+- sự làm cho văn minh, sự khai hoá
+- nền văn minh
+- những nước văn minh, những dân tộc văn minh
+@civilized
+* tính từ
+- văn minh
+- khai hoá
+- lễ phép; lịch sự
+@civilly
+* phó từ
+- lịch sự, nhã nhặn
+@cjd
+* (viết tắt) của Creutzfeldt-Jakob Disease
+- viết tắt của Creutzfeldt-Jakob Disease
+@clachan
+* danh từ
+- làng nhỏ; thôn nhỏ
+@clack-dish
+* danh từ
+- bát ăn xin; đĩa đựng tiền xin
+@clack-valve
+* danh từ
+- (kỹ thuật) nắp van một đầu gắn với máy
+@clacker
+- xem clack
+@clactonian
+* tính từ
+- (khảo cổ) thuộc thời Clacton
+@clade
+* danh từ (sinh vật học)
+- môt nhánh gai nối
+- đơn vị huyết thống đơn tố
+- nhóm động vật hay thực vật phát triển từ một tổ tiên chung
+@cladistic
+* tính từ
+- thuộc nhánh
+@cladistics
+* danh từ
+- cách miêu tả theo nhánh
+@cladocarpous
+* tính từ
+- có thể quả đính nhánh bên
+@cladode
+* danh từ
+- (thực vật) cành dạng lá
+@cladogenesis
+* danh từ
+- sự phân nhánh tiến hoá; sự phát sinh dòng nhánh tiến hoá
+@cladogenetic
+* tính từ
+- thuộc phân nhánh tiến hoá
+@cladogenous
+* tính từ
+- mọc ở thân; đính nhánh
+@cladophyll
+* danh từ
+- (thực vật) cành dạng lá
+@cladoptosis
+* danh từ
+- sự rụng nhánh hàng năm
+@claggy
+* tính từ
+- (thông tục) bùn lầy
+@claimless
+* tính từ
+- không có quyền yêu cầu
+@clair-audience
+* danh từ
+- khả năng nghe những âm thanh người khác không nghe được
+@clamantly
+- xem clamant
+@clambake
+* danh từ
+- cuộc dạo chơi trên bãi biển và có ăn hải sản
+@clamberer
+- xem clamber
+@clammer
+- xem clam
+@clammily
+* phó từ
+- ẩm ướt, nhớp nháp
+@clamp-connection
+* danh từ
+- mấu nối; mấu liên kết
+@clamp-down
+* danh từ
+- chính sách khẩn cấp
+@clampshell
+* danh từ
+- gàu xúc
+- máy đào có gàu xúc
+@clamydate
+* danh từ
+- (sinh học) cỏ áo
+@clamydospore
+* danh từ
+- (sinh học) bào tử vách dày
+@clamydosporic
+* tính từ
+- (sinh học) có bào tử vách dày
+@clamys
+* danh từ
+- số nhiều clamyses,  clamydes
+- áo choàng ngắn (từ cổ Hy Lạp)
+@clandestinely
+- xem clandestine
+@clanger
+* danh từ
+- điều sơ suất, sai sót
+@clanky
+- xem clank
+@clannishly
+* phó từ
+- có tính cách bè phái
+@clannishness
+* danh từ
+- tính chất thị tộc
+- lòng trung thành với thị tộc; lòng trung thành với bè đảng
+@clap-net
+* danh từ
+- lưới gấp bắt chim nhỏ
+@claqueur
+* danh từ
+- tên nịnh hót
+@clarence
+* danh từ
+- xe ngựa bốn bánh, bốn chỗ ngồi
+@clarifier
+- xem clarify
+@clarinetist
+- xem clarinet
+@clarino
+* danh từ
+- số nhiều clarinos,  clarini
+- kèn trompet chơi ở âm vực cao
+@claro
+* danh từ
+- số nhiều claroes,  claros
+- loại xì gà nhẹ
+@clarsach
+* danh từ
+- đàn hac-pơ cổ (ở Island)
+@clasmatocyte
+* danh từ
+- (sinh học) thể thực bào ưa kiềm; tế bào mô
+@clasp knife
+* danh từ
+- dao xếp
+@clasp-knife
+* danh từ
+- con dao gấp
+@clasper
+* danh từ
+- (sinh học) thùy bám; mấu bám; tua cuốn
+= genital clasper+mấu bám giao cấu
+@class consciousness
+* danh từ
+- ý thức giai cấp
+@class struggle
+- đấu tranh giai cấp
+@class-conscious
+* tính từ
+- có tinh thần giai cấp, giác ngộ giai cấp
+@class-fellow
+* danh từ
+- bạn cùng lớp
+@class-list
+* danh từ
+- bản liệt kê kết quả theo thứ hạng
+@classicality
+- xem classical
+@classicize
+* ngoại động từ
+- biến thành kinh điển, cổ điển
+* nội động từ
+- theo phong cách cổ điển
+@classifiable
+* tính từ
+- có thể phân loại được
+@classificatorily
+- xem classification
+@classificatory
+- xem classification
+@classifier
+* danh từ
+- người phân loại
+@classmate
+* danh từ
+- bạn cùng  lớp
+@classroom
+* danh từ
+- phòng đọc
+@clast
+* danh từ
+- mảnh đá
+@clathrate
+* tính từ
+- dạng mắt lưới; dạng sàng
+@clatterer
+- xem clatter
+@clatteringly
+* phó từ
+- kêu loảng xoảng/ lách cách
+- ồn ào
+@claudication
+* danh từ
+- tình trạng khập khiễng, tình trạng bị què
+@clausal
+- xem clause
+@claustral
+* tính từ
+- thuộc tu viện; giống như tu viện
+@claustrophobe
+- xem claustrophobia
+@claustrophobia
+* danh từ
+- nỗi lo sợ mình bị giam giữ
+@claustrophobic
+* tính từ
+- mắc phải nỗi sợ bị giam giữ, hoặc gây ra nỗi sợ ấy
+@claustrophobically
+- xem claustrophobic
+@clava
+* danh từ
+- (sinh học) chùy (đầu anten)
+@clavately
+- xem clavate
+@clavation
+* danh từ
+- tình trạng có chùy, dạng chùy
+@claver
+* nội động từ
+- (từ xcôtlân) nói chuyện tầm phào
+* danh từ
+- người nói chuyện tầm phào
+@claves
+* danh từ số nhiều
+- đôi dùi gỗ đánh vào nhau đệm nhạc rumba
+@clavichordist
+- xem clavichord
+@clavicular
+- xem clavicle
+@claviculate
+- xem clavicle
+@clavier
+* danh từ
+- (âm nhạc) bàn phím
+- bàn chữ (máy chữ)
+@clavierist
+* danh từ
+- (âm nhạc) người chơi bàn phím
+@claw-back
+* danh từ
+- sự thu hồi những khoản trợ cấp không đúng đối tượng
+@clawed
+- xem claw
+@clay-brained
+* tính từ
+- ngu ngốc; óc đất sét
+@clay-coloured
+* tính từ
+- có màu đất sét
+@clay-pan
+* danh từ
+- đất sét cứng
+@clayish
+* tính từ
+- có chất đất sét
+@cleanable
+- xem clean
+@cleanliness
+* danh từ
+- tính sạch sẽ, tình trạng sạch sẽ
+@cleanser
+* danh từ
+- chất tẩy rửa
+@cleanup
+* danh từ
+- sự thu gọn, sự quét rọn sạch
+- sự truy quét tội phạm
+- món vớ bở, món lãi to
+@clear-eyed
+* tính từ
+- có đôi mắt tinh tường
+@clear-headed
+* tính từ
+- nhạy bén, nhạy cảm
+@clear-headedly
+* phó từ
+- nhạy bén, nhạy cảm
+@clear-headedness
+* danh từ
+- sự nhạy bén, sự nhạy cảm
+@clear-sightedly
+- xem clear-sighted
+@clear-starch
+* danh từ
+- hồ (để hồ quần áo)
+@clearable
+- xem clear
+@clearage
+* danh từ
+- việc quét sạch (cản trở)
+- đất đã phát quang
+@cleared
+* tính từ
+- đã phát quang
+@clearer
+- xem clear
+@clearway
+* danh từ
+- con đường cấm xe cộ không được dừng lại
+@cleek
+* danh từ
+- cái móc (để treo nồi trên lửa)
+@cleft-footed
+* tính từ
+- có ngón chẻ
+@cleft-stick
+* danh từ
+- tình thế lưỡng nan
+= We were caught in a cleft-stick+Chúng ta lâm vào ngõ cụt
+@cleg
+* danh từ
+- ruồi trâu; con mòng
+@cleidoic
+* tính từ
+- (thuộc) trứng bọc (trong vỏ hoặc trong màng)
+@clementine
+* danh từ
+- một loại cam nhỏ
+@clemently
+- xem clement
+@clepe
+* ngoại động từ (cleped; clept)+(từ cổ, nghĩa cổ) gọi tên; gọi
+@clepsydra
+* danh từ
+- số nhiều clepsydras,  clepsydrae
+- như water-clock
+@cleptomania
+* danh từ
+- cũng kleptomania
+- tật ăn cắp vặt
+@clerestory
+* danh từ
+- khoảng tường có một hàng cửa sổ dọc theo
+@clerically
+- xem clerical
+@clericals
+* danh từ số nhiều
+- quần áo tăng lữ
+@clerihew
+* danh từ
+- bài thơ gồm hai câu dài ngắn khác nhau
+@clerisy
+* danh từ
+- (từ cổ, nghĩa cổ) tầng lớp trí thức
+@clerkdom
+- xem clerk
+@clerkliness
+- xem clerkly
+@clever-clever
+* tính từ
+- ra vẻ thông minh, ra vẻ khôn ngoan
+@cleverly
+* phó từ
+- khéo léo, sắc sảo, khôn ngoan
+@clevis
+* danh từ
+- cái móc hình chữ U
+@clickety-click
+* danh từ
+- tiếng lách cách nhịp nhàng
+@clicksee
+- Tên gọi tắt của phần mềm dịch trực tiếp Just Click'n'See mà bạn đang sử dụng đây
+@cliency
+* danh từ
+- người khách của luật sư
+@client/server
+- khách/chủ
+@clientage
+- xem client
+@cliental
+- xem client
+@clientele
+* danh từ
+- một nhóm khách hàng
+- an Asian clientele
+- một nhóm khách hàng châu á
+- những khách quen, thân chủ của một nhà hát hoặc nhà hàng
+@cliff-dweller
+* danh từ
+- người hang đá thời tiền sử
+@cliff-dwelling
+* danh từ
+- việc ở hang đá
+@cliff-hanger
+* danh từ
+- chuyện phiêu lưu ra nhiều kỳ đến cuối lại có cái để thu hút người ta mua tiếp
+@cliff-hanging
+* tính từ
+- đầy tình tiết lôi cuốn
+@cliffhanger
+* danh từ
+- câu chuyện cho đến phút cuối cùng  vẫn chưa rõ kết cục
+- cuộc đua cho đến phút cuối cùng vẫn chưa rõ ai thắng, ai thua
+@climactically
+- xem climactic
+@climatically
+* phó từ
+- về phương diện khí hậu
+@climatologic
+- xem climatology
+@climatologically
+- xem climatology
+@climatologist
+- xem climatology
+@climatotherapy
+* danh từ
+- (y học) liệu pháp khí hậu học
+@climbable
+- xem climb
+@climbing frame
+- khung leo cho trẻ em  chơi
+@climbing-frame
+- thành ngữ climbing
+- climbing-frame
+- khung chơi leo trèo của trẻ em
+- thành ngữ climbing
+= climbing-frame+khung chơi leo trèo của trẻ em
+@clinal
+- xem cline
+@clincher-built
+* tính từ
+- đóng bằng những tấm ván ghép vào nhau
+@cline
+* danh từ
+- tập hợp những điểm dị biệt giữa những sinh vật đồng loại
+@cling film
+* danh từ
+- giấy bóng dùng làm bao bì thực phẩm
+@clinger
+- xem cling
+@clinging
+* tính từ
+- (quần áo) bó sát thân người
+- <bóng> bám dai dẳng
+@clingstone
+* danh từ
+- (thuộc) quả mơ nho
+@clinical thermometer
+* danh từ
+- cái cặp nhiệt
+@clinically
+* phó từ
+- về phương diện lâm sàng
+@clinician
+* danh từ
+- nhà lâm sàng; thầy thuốc lâm sàng
+@clinicist
+* danh từ
+- người nghiên cứu lâm sàng
+@clinker-built
+* động từ
+- có vỏ bằng các tấm lợp (lợp lên nhau như ngói lợp)
+@clinoid
+* tính từ
+- dạng nêm
+@clinology
+* danh từ
+- (y học) bệnh sàng học
+- khoa nghiên cứu sự suy thoái của thể chất
+@clinometric
+- xem clinometer
+@clinometry
+- xem clinometer
+@clinquant
+* tính từ
+- hào nhoáng bên ngoài, kém về thực chất
+* danh từ
+- vàng giả
+- đồ trang sức bằng vàng giả
+@clip-clop
+* danh từ
+- tiếng lộp cộp, tiếng lọc cọc
+@clip-joint
+* danh từ
+- quán bán với giá "cắt cổ"
+@clip-on
+* tính từ
+@clipart
+- hình rời (một tập hợp các hình đồ họa được lưu trữ trên đựa để sử dụng trong các chương trình dàn trang hoặc chương trình đồ họa giới thiệu)
+@clipped
+* tính từ
+- bị cắt cụt
+= clipped form+hình thức bị cắt cụt
+- rõ ràng và nhanh (lời nói)
+@cliquishly
+- xem clique
+@clishmaclaver
+* danh từ
+- tiếng đồn đại
+@clitellum
+* danh từ
+- số nhiều clitella
+- (sinh học) búi tuyến da
+@clitic
+* tính từ
+- (ngôn ngữ) không mang trọng âm; đọc như một bộ phận của từ đứng trước hay đứng sau
+@clitization
+* danh từ
+- hiện tượng không mang trọng âm; đọc như một bộ phận của từ đứng trước hay đứng sau
+@clitoral
+* tính từ
+- thuộc về âm vật
+@cloacal
+- xem cloaca
+@cloak-and-dagger
+* tính từ
+- (thngữ) truyện kiếm  hiệp
+@cloakroom
+* danh từ
+- phòng giữ áo mũ
+- (anh) phòng vệ sinh
+@clochan
+* danh từ
+- nhà đá tròn
+@clock tower
+* danh từ
+- tháp đồng hồ
+@clock-grass
+* danh từ
+- mặt kính đồng hồ
+@clock-like
+* tính từ
+- đều đặn như chiếc đồng hồ
+@clock-maker
+* danh từ
+- thợ đồng hồ
+@clock-watcher
+* danh từ
+- người luôn sốt ruột xem đồng hồ để đợi giờ nghỉ
+@clock-watching
+* danh từ
+- sự sốt ruột xem đồng hồ để đợi giờ nghỉ
+@clocker
+- xem clock
+@cloddiness
+* danh từ
+- tình trạng như đất
+- sự quê mùa, cục mịch
+@cloddishly
+- xem clod
+@cloddishness
+- xem clod
+@clog-dance
+* danh từ
+- điệu vũ [chân đi] guốc
+@clonal
+- xem clone
+@clonally
+- xem clone
+@cloner
+- xem clone
+@clonic
+- xem clonus
+@clonicity
+- xem clonus
+@clonidin
+* danh từ
+- (dược) clonidin
+@close call
+- (kng) sự thóat khỏi trong gang tấc
+@close shave
+- (kng) sự thóat khỏi trong gang tấc
+@close-banded
+* tính từ
+- ràng buộc chặt chẽ
+@close-barred
+* tính từ
+- đóng chặt (cửa)
+@close-bodied
+* tính từ
+- bó sát người
+@close-burning
+* tính từ
+- gầy (than)
+@close-call
+* danh từ
+- sự thoát chết
+@close-cropped
+* tính từ
+- cắt rất sát
+@close-hauled
+* tính từ
+- (nói về thuyền) có buồm đón sát hướng gió nhất
+@close-knit
+* tính từ
+- gắn bó với nhau (về tình cảm, quyền lợi)
+@close-lipped
+* tính từ
+- kín miệng
+@close-quarters
+* danh từ số nhiều
+- hàng ngũ siết chặt
+= They fought at close-quarters+Họ chiến đấu hàng ngũ siết chặt
+@close-run
+* tính từ
+- khít khao
+@close-shaven
+* tính từ
+- cạo nhẵn thín
+@close-thing
+* danh từ
+- (thông tục) cạo nhẵn thín
+- việc súyt thua (trận đánh hay bầu cử) nhưng cuối cùng đã thắng
+@close-tongued
+* tính từ
+- kín miệng
+@closed
+* tính từ
+- bảo thủ
+- không cởi mở, khép kín
+@closed-loop
+* danh từ
+- (tin học) chu trình đóng
+= closed-loop control+điều khiển chu trình đóng
+@closed-routine
+* danh từ
+- (tin học) thủ tục đóng
+@closed-storage
+* danh từ
+- (tin học) bộ nhớ đóng (kín)
+@closedown
+* danh từ
+- sự đóng cửa (xí nghiệp)
+@closely-bloomed
+* tính từ
+- kết dày hoa; sai hoa
+@closely-fruited
+* tính từ
+- kết dày quả; sai quả
+@closely-leaved
+* tính từ
+- kết dày lá
+@closely-scaled
+* tính từ
+- kết dày vảy
+@closer
+- xem close
+@closet-play
+* danh từ
+- vở kịch hợp với đọc hơn là diễn xuất
+@closet-queen
+* danh từ
+- (thông tục) người đàn ông sống cuộc sống bình thường nhưng lại bí mật làm đồng tính luyến ái
+@closet-strategist
+* danh từ
+- nhà chiến lược thư phòng
+@closing price
+* danh từ
+- giá cuối ngày (thị trường chứng khoán)
+@cloth-cap
+* danh từ
+- mũ len có lưỡi trai
+- biểu tượng của giai cấp công nhân
+* tính từ
+- thuộc giai cấp công nhân
+@cloth-eared
+* tính từ
+- hơi điếc
+@clothes-prop
+* danh từ
+- sào phơi quần áo
+@clothes-rack
+* danh từ
+- giá quần áo
+@clothes-tree
+* danh từ
+- mắc áo
+@clotheshanger
+* danh từ
+- cái mắc treo quần áo
+@clotted
+* tính từ
+- ngưng đọng lại
+= clotted nonsense+điều cực kỳ phi lý
+@cloture
+* danh từ
+- sự đóng cửa
+@cloud chamber
+* danh từ
+- thiết bị chứa hơi nước mà trong đó, hạt tích điện và tia X lẫn tia gamma được nhận dạng nhờ giọt hơi nước ngưng đọng
+@cloud-bank
+* danh từ
+- đám mây cuồn cuộn
+@cloud-nine
+* danh từ
+- (thông tục) cảm giác cực kỳ khoái trá
+= She was on cloud-nine after her victory+Cô ta cực kỳ hoan hỷ sau thắng lợi
+@cloud-travel
+* danh từ
+- đường mây
+@cloudburst
+* danh từ
+- mưa rào đột ngột
+@cloudily
+- xem cloudy
+@clove hitch
+* danh từ
+- gút buộc, gút thắt
+@cloven-foot
+* danh từ
+- móng chẻ
+@cloven-footed
+* tính từ
+- có móng chẻ
+@clover-leaf
+- thành ngữ clover
+- clover-leaf
+- giao lộ có dạng vòng xoay
+- thành ngữ clover
+= clover-leaf+giao lộ có dạng vòng xoay
+@clownishly
+- xem clown
+@cloying
+* tính từ
+- ngọt ngào giả tạo
+@cloyingly
+- xem cloy
+@cloyingness
+- xem cloy
+@cloze test
+* danh từ
+- sự kiểm tra bằng cách cho điền vào chỗ trống trong bài
+@club car
+* danh từ
+- toa xe lửa có phục vụ giải khát
+@club sandwich
+* danh từ
+- bánh mì xăng úych kẹp thịt và gia vịchua
+@club-like
+* tính từ
+- dạng chùy
+@club-nodding
+* danh từ
+- (thực vật) cây thông đất
+@club-room
+* danh từ
+- phòng họp câu lạc bộ
+@club-root
+* danh từ
+- bệnh sùi gốc (cải bắp, củ cải)
+@club-shaped
+* tính từ
+- dạng chùy
+@club-stalked
+* tính từ
+- (thực vật) có cuống dạng chùy
+@clubbed
+* tính từ
+- hình đùi cui
+- thô lỗ
+@clubbing
+* danh từ
+- việc nện bằng đùi cui
+@clubbist
+* danh từ
+- hội viên câu lạc bộ
+@clubhouse
+* danh từ
+- câu lạc bộ thể thao
+@clumpy
+- xem clump
+@clunk
+* danh từ
+- âm thanh do các vật kim loại chạm nhau gây ra
+@clupeid
+* danh từ
+- (động vật) họ cá trích
+* tính từ
+- thuộc họ cá trích
+@clv
+- tốc độ tuyến tính không đổi
+@clypeal
+* tính từ
+- (động vật) thuộc mảnh gốc môi
+@clypeate
+* tính từ
+- có mảnh gốc môi
+@clyster
+* danh từ
+- (y học) sự thụt
+@cm
+- đơn vị đo độ dài (centimet)
+@cmdr
+- trung úy hải quân anh (như cdr)
+@cmos
+- chip CMOS
+@cnd
+* (viết tắt)
+- Phong trào đấu tranh cho sự giải trừ vũ khí hạt nhân (Campaign for Nuclear Disarmament)
+@co-edition
+* danh từ
+- sự cùng xuất bản
+@co-editor
+* danh từ
+- người cùng xuất bản
+@co-found
+* ngoại động từ
+- cùng thiết lập, cùng sáng lập
+@co-optative
+- xem co-opt
+@co-option
+- xem co-opt
+@co-optive
+- xem co-opt
+@co-ordinator
+* danh từ
+- người điều phối, điều phối viên
+@co-pilot
+* danh từ
+- phi công phụ trên máy bay
+@co-sufferer
+* danh từ
+- người cùng đau khổ
+@co-supreme
+* tính từ
+- cùng nắm chủ quyền tối cao
+@coacervation
+- xem coacervate
+@coach-office
+* danh từ
+- phòng bán vé đi xe ngựa
+@coach-screw
+* danh từ
+- cái vít lục giác bằng gỗ
+@coach-work
+* danh từ
+- thùng xe
+@coachable
+- xem coach
+@coachbuilder
+* danh từ
+- thợ đóng xe ngựa
+@coacher-box
+* danh từ
+- chỗ ngồi người đánh xe ngựa
+@coaction
+* danh từ
+- hành động phối hợp
+- tác động tương hợp, tương hỗ
+@coadaptation
+* danh từ
+- (sinh học) sự đồng thích nghi, sự thích ứng
+@coadapted
+* tính từ
+- thích nghi với nhau
+@coadjacence
+* danh từ
+- sự kề sát cạnh
+@coadjacent
+* tính từ
+- kề sát cạnh
+@coadjutant
+* tính từ
+- tương trợ
+* danh từ
+- người tương trợ
+@coadjutrix
+- Cách viết khác : coadiutress
+@coadunate
+* tính từ
+- hợp sinh; liên sinh
+- tiếp hợp
+* ngoại động từ
+- (sinh học) làm cho hợp sinh với nhau, làm cho tiếp hợp với nhau
+@coagulability
+- xem coagulate
+@coagulin
+* danh từ
+- chất đông tụ
+@coagulum
+* danh từ
+- khối (cục) đông tụ
+@coal tar
+- nhựa than đá
+@coal-bin
+* danh từ
+- thùng than
+@coal-face
+* danh từ
+- phần lấy than của vỉa than
+@coal-hole
+* danh từ
+- hầm nhỏ chứa than
+@coal-miner
+* danh từ
+- thợ mỏ than
+@coal-seam
+* danh từ
+- vỉa than
+@coalescent
+- xem coalesce
+@coaming
+* danh từ
+- vành viền quanh hầm tàu cho nước khỏi tràn vào
+@coarctate
+* tính từ
+- ép chặt, kết chặt, bám chặt
+@coarctation
+* danh từ
+- sự ép (kết, bám) chặt
+- sự hẹp
+@coarse fish
+* danh từ
+- cá nước ngọt (ngoại trừ cá hồi)
+@coarse fishing
+* danh từ
+- sự câu cá nước ngọt
+@coarsely
+* phó từ
+- thô, không đúng cách
+@coastguardsman
+* danh từ
+- người bảo vệ bờ biển, báo cáo tình hình tàu thuyền qua lại và ngăn chặn nạn buôn lậu; người gác biển
+* danh từ
+- người bảo vệ bờ biển, báo cáo tình hình tàu thuyền qua lại và ngăn chặn nạn buôn lậu; người gác biển
+@coasting
+* tính từ
+- thuộc hàng hải ven biển
+= coasting trade+việc buôn bán ven biển
+* danh từ
+- việc đi lại (buôn bán) ven biển
+- việc lao xuống dốc
+@coastland
+* danh từ
+- đất đai ven ven biển; miền duyên hải
+@coastwaiter
+* danh từ
+- nhân viên hải quan ở bờ biển
+@coastwarning
+* danh từ
+- sự báo hiệu ở bờ biển
+@coat-frock
+* danh từ
+- cái giá treo áo
+@coat-hanger
+* danh từ
+- giá treo áo
+@coat-tails
+* danh từ
+- vạt nhọn tách đôi phần sau áo đuôi tôm
+@coated
+- xem coat
+@coatrack
+* danh từ
+- giá đứng có nhiều móc để ngoắc áo
+@coaxing
+* danh từ
+- sự dỗ dành ngon ngọt
+@coaxingly
+* phó từ
+- <bóng> ngon ngọt
+@cobalamin
+* danh từ
+- cũng cobalamine
+- (hoá học) côbalamin
+@cobelligerent
+* tính từ
+- đồng minh tham chiến
+* danh từ
+- nước đồng minh tham chiến
+@coble
+* danh từ
+- chiếc thuyền dẹt
+@cobobundary
+* tính từ
+- (tin học) đổi biến
+@cobol
+* (viết tắt)
+- <tin> ngôn ngữ lập trình dành cho thương mại (Common business oriented language)
+@cobwebbed
+* tính từ
+- đầy mạng nhện; như mạng nhện
+@coccidiosis
+* danh từ
+- số nhiều coccidiosis
+- (y học) bệnh trùng cầu
+@coccidium
+* danh từ
+- số nhiều coccidia
+- trùng cầu
+@coccolith
+* danh từ
+- (sinh học) gai vôi; hạt sạn
+@coccygeal
+* tính từ
+- thuộc xương cụt
+@cochlear
+- xem cochlea
+@cochleate
+- Cách viết khác : cochleated
+@cock-a-leekie
+* danh từ
+- súp nấu với thịt gà và rau cải
+@cock-up
+* danh từ
+- tình trạng bừa bãi
+@cockaded
+- xem cockade
+@cockatiel
+* danh từ
+- cũng cockateel
+- vẹt màu xám Ôxtraylia
+@cockbill
+* ngoại động từ
+- (hàng hải) buông neo
+@cockbrained
+* tính từ
+- đầu óc lỗ mãng
+@cockily
+* phó từ
+- vênh váo tự mãn
+@cockle-shell
+* danh từ
+- một nửa vỏ sò
+- chiếc thuyền nhẹ
+@cockloft
+* danh từ
+- gác áp mái
+@cockneydom
+* danh từ
+- xã hội Luân Đôn
+- vùng ngoại ô Luân Đôn
+@cocksfoot
+* danh từ
+- cỏ chân gà
+@cockshot
+* danh từ
+- trò chơi ném bóng vào một vật
+- vật làm mục tiêu ném bóng
+@cocksparrow
+* danh từ
+- chim sẻ đực
+- người nhỏ con thích ẩu đả
+@cocksucker
+* danh từ
+- tên nịnh hót, tên liếm gót
+- người đàn ông đồng tính luyến ái
+@cocksure
+* tính từ
+- kiêu ngạo cực kỳ
+@cocksurely
+- xem cocksure
+@cocksureness
+- xem cocksure
+@coconscious
+* danh từ
+- cùng ý thức
+@coconsciousness
+* danh từ
+- sự cùng ý thức
+@coconut shy
+* danh từ
+- trò chơi ném bóng cho các quả dừa rơi xuống
+@cocoonery
+* danh từ
+- cái kén (tằm)
+- cái bọc để che chở như cái kén
+- tình trạng sống tách rời được che chở
+* ngoại động từ
+- làm kén
+- bao phủ kín như cái kén
+@cocosphere
+* danh từ
+- (sinh học) cầu sạn
+@cocotte
+* danh từ
+- vĩ (nướng thịt)
+@coctailed
+* tính từ
+- bị cắt cộc đuôi (ngựa)
+@coctease
+* ngoại động từ
+- gợi tình dục nhưng không chịu ăn nằm
+@cocultivate
+* ngoại động từ
+- trồng cùng với loại cây khác
+@codable
+* tính từ
+- có thể mã hoá
+@coddler
+- xem coddle
+@codepage
+- trang mã, bảng mã
+@codetermination
+* danh từ
+- việc cùng tham dự vào sự quyết định một chính sách
+@codicillary
+- xem codicil
+@codifier
+- xem codify
+@codominance
+* danh từ
+- cũng codominancy
+- (sinh học) tính đồng trội, tính đồng ưu thế
+@codominant
+* tính từ
+- đồng trội; cùng trội; cùng ưu thế
+@codon
+* danh từ
+- côđon (đơn vị mã); thể chuông
+@codpiece
+* danh từ
+- túi hoặc nắp che phần trước quần của nam giới
+@codswallop
+* danh từ
+- chuyện ba lăng nhăng, chuyện tầm phào
+@coeducation
+* danh từ
+- chếđộ dạy chung cho cả nam lẫn nữ, chế độ giáo dục hỗn hợp
+@coelacanthine
+- xem coelacanth
+@coelacanthous
+- xem coelacanth
+@coelarium
+* danh từ
+- (sinh học) biểu mô khoang; trung mô
+@coelenterate
+* tính từ
+- có ruột khoang
+* danh từ
+- ngành động vật có ruột khoang
+@coelenteron
+* danh từ
+- số nhiều coelentera
+- ruột khoang
+@coelom
+* danh từ
+- số nhiều coeloms,  coelomata
+- khoang cơ thể; thể khoang
+@coelomate
+* tính từ
+- (sinh học) có khoang cơ thể; có thể khoang
+* danh từ
+- động vật có khoang cơ thể; động vật có thể khoang
+@coelomic
+* tính từ
+- thuộc khoang cơ thể; thuộc thể khoang
+@coemption
+* danh từ
+- sự mua vét
+@coenocyte
+* danh từ
+- cộng bào; tế bào chung nhiều nhân
+@coenospecies
+* danh từ
+- (sinh học) loài lai sinh thái (giữa hai sinh thái khác nhau)
+@coenurus
+* danh từ
+- số nhiều coenuri
+- (sinh học) ấu trùng nhiều đầu
+@coenzyme
+* danh từ
+- coenzim
+@coequality
+- xem coequal
+@coequally
+- xem coequal
+@coercer
+- xem coerce
+@coercionary
+- xem coercion
+@coessential
+* tính từ
+- cùng một bản chất
+@coetaneous
+- xem coeval
+@coeternal
+* tính từ
+- cùng sống vĩnh hằng
+@coevally
+- xem coeval
+@coexecutor
+* danh từ
+- (từ Pháp) người cùng thực hiện
+@coexecutrix
+* danh từ
+- người cùng thực hiện (chỉ phụ nữ)
+@cofactor
+* danh từ
+- (toán học) phần phụ đại số
+@coffee mill
+* danh từ
+- máy xay cà phê
+@coffee shop
+* danh từ
+- (Mỹ) quán cà phê
+@coffee table
+* danh từ
+- bàn cà phê (bàn thấp kê ở phòng tiếp khách)
+@coffee tree
+* danh từ
+- cây cà phê
+@coffee-morning
+* danh từ
+- buổi sáng họp uống cà-phê để lo việc thiện
+@coffee-table book
+* danh từ
+- quyển sách có nhiều hình ảnh quý giá
+@coffeine
+* danh từ
+- cafein
+@coffin-bone
+* danh từ
+- xương móng ngựa
+@coffin-maker
+* danh từ
+- thợ đóng quan tài
+@coffin-nail
+* danh từ
+- (từ lóng) điếu thuốc lá
+@coffin-plate
+* danh từ
+- biển đóng trên mặt quan tài
+@cog-rail
+* danh từ
+- cũng cog-railway
+- (đường sắt) đường ray có răng
+@cogence
+- xem cogency
+@cogently
+- xem cogent
+@cogged
+- xem cog
+@cogitatively
+- xem cogitative
+@cogitator
+- xem cogitate
+@cogito
+* danh từ
+- nguyên lý triết học cho sự tồn tại của một người là ở anh ta tư duy
+- quá trình nhận thức chính mình
+@cognation
+- xem cognate
+@cognitional
+- xem cognition
+@cognitive
+* tính từ
+- liên quan đến nhận thức
+- dựa trên hiểu biết, kinh nghiệm
+@cognizably
+- xem cognizable
+@cognominal
+- xem cognomen
+@cognoscente
+* danh từ
+- người sành sõi
+@cognovit
+* danh từ
+- (từ Pháp) sự thừa nhận của bị cáo về lỗi lầm
+@cohabitational
+- xem cohabit
+@cohabiter
+- xem cohabit
+@coheirship
+* danh từ
+- sự cùng thừa kế
+@coherently
+* phó từ
+- mạch lạc, súc tích
+@cohesionless
+* danh từ
+- sự rời rạc; sự thiếu mạch lạc
+@cohesively
+* phó từ
+- gắn bó, liên kết
+@coi
+* (viết tắt)
+- Cơ quan thông tin trung ương (Central Office of Information)
+@coif
+* danh từ
+- mũ ni
+@coiffeuse
+* danh từ
+- thợ cắt tóc, thợ làm đầu
+@coiler
+- xem coil
+@coin-op
+* danh từ
+- hàng giặt quần áo bỏ tiền vào thì máy chạy
+@coinable
+- xem coin
+@coincidentally
+- xem coincidental
+@coinsurance
+* danh từ
+- sự cộng đồng bảo hiểm
+@coinsurer
+* danh từ
+- người cùng bảo hiểm
+@coital
+* tính từ
+- thuộc về sự giao cấu
+@coitally
+- xem coitus
+@cola
+* danh từ
+- cây cola
+@colatitude
+* danh từ
+- (địa lý) độ dư vĩ
+@colchicine
+* danh từ
+- (hoá học) conchixium
+@colcothar
+* danh từ
+- (hoá học) concota (chất đánh bóng thủy tinh)
+@cold frame
+* danh từ
+- lồng kính ươm cây non
+@cold shoulder
+- đối xử lạnh nhạt (với ai)
+@cold snap
+- đợt rét đột ngột
+@cold sore
+* danh từ
+- bệnh hecpet môi
+@cold storage
+* danh từ
+- sự ướp lạnh (để giữ thực phẩm được lâu)
+@cold sweat
+* danh từ
+- trạng thái toát mồ hôi vì bệnh hoặc sợ
+@cold-bloodedly
+- xem cold-blooded
+@cold-bloodedness
+- xem cold-blooded
+@cold-fish
+- người lạnh lùng (đối xử lạnh nhạt với kẻ khác)
+@cold-heartedly
+- xem cold-hearted
+@cold-heartedness
+- xem cold-hearted
+@cold-type
+- %%cold-type%%cold-type
+@colembolan
+* danh từ
+- (động vật) bộ bọ nhảy (sâu bọ)
+* tính từ
+- thuộc bộ bọ nhảy
+@coleopterist
+* danh từ
+- người nghiên cứu bộ sâu bọ cánh cứng
+@coleoptile
+* danh từ
+- (thực vật) lá bao mầm
+@coleslaw
+* danh từ
+- xà lách, cải bắp thái nhỏ
+@coleus
+* danh từ
+- (thực vật) cây húng chanh; cây tía tô tây
+@coliform
+* tính từ
+- (sinh học) dạng trực khuẩn ruột
+@colinear
+* tính từ
+- (toán học) cùng đường thẳng; cộng tuyến
+- có những bộ phận tương ứng theo cùng một trật tự tuyến tính
+@coliseum
+* danh từ
+- đại hý trường La-mã
+@collaborative
+- xem collaborate
+@collagenic
+- Cách viết khác : collagenous
+@collagist
+- xem collage
+@collar-beam
+* danh từ
+- (kiến trúc) xà ngang
+@collar-button
+- Cách viết khác : collar-stud
+@collar-cell
+* danh từ
+- tế bào cổ áo
+@collared
+- xem collar
+@collatable
+* tính từ
+- có thể kiểm tra (đối chiếu) được
+@collaterally
+- xem collateral
+@colleagueship
+- xem colleague
+@collectedly
+* phó từ
+- bình tựnh, điềm tựnh
+@collective noun
+- danh từ tập hợp
+@collectively
+* phó từ
+- chung, tập thể
+@collectiveness
+- xem collective
+@collectivistic
+- xem collectivism
+@collectivistically
+- xem collectivism
+@collectorship
+- xem collector
+@collenchyma
+* danh từ
+- (thực vật) mô dày; mô giữa; mô keo
+@collenchymatous
+* tính từ
+- thuộc mô dày; mô giữa; mô keo
+@colligation
+- xem colligate
+@colligative
+* tính từ
+- (vật lý) lệ thuộc vào số lượng hơn vào đặc tính các hạt
+= The pressure of a gas is a colligative property+áp suất của một khí là đặc tính phụ thuộc vào số lượng
+@collisional
+- xem collision
+@collocational
+- xem collocation
+@colloidally
+- xem colloid
+@colloquially
+* phó từ
+- thông tục
+@colloquium
+* danh từ (số nhiều colloquiums hoặc colloquia)
+- hội thảo chuyên đề
+@collotype
+* danh từ
+- việc in trực tiếp từ phim
+@colluder
+- xem collude
+@collusively
+- xem collusive
+@collusiveness
+- xem collusive
+@collyrium
+* danh từ
+- số nhiều collyria,  collyriums
+- (y học) thuốc nhỏ mắt
+@colocynth
+* danh từ
+- (thực vật) cây dưa đắng
+@cologne
+* danh từ
+- nước hoa co-lô-nhơ
+@colonially
+- xem colonial
+@colonialness
+* danh từ
+- tính chất thực dân
+@colonic
+- xem colon
+@colonisation
+* danh từ
+- sự chiếm làm thuộc địa, sự thực dân hoá
+@colonitis
+* danh từ
+- (y) viêm ruột kết/ruột già
+@colonizationist
+* danh từ
+- người chủ trương chiếm / khai thác thuộc địa
+@colonnaded
+* tính từ
+- có hàng cột, có dãy cột
+@colonus
+* danh từ; số nhiều coloni
+- (sử học) lệ nông
+@colorer
+- xem color
+@colorimetric
+- xem colorimeter
+@colorimetrically
+- xem colorimeter
+@colossally
+- xem colossal
+@colosseum
+* danh từ
+- đại hý trường (cổ La-mã)
+@colostomy
+* danh từ (số nhiều colostomies)
+- phẫu thuật làm hậu môn giả
+- hậu môn giả
+@colostral
+* tính từ
+- thuộc sữa non
+@colostrum
+* danh từ
+- sữa non
+@colour code
+* danh từ
+- mã quy ước theo màu
+@colour scheme
+* danh từ
+- cách phối trí màu sắc trong một căn phòng
+@colour-cast
+* danh từ
+- vô tuyến màu
+@colour-cell
+* danh từ
+- (sinh học) tế bào sắc tố
+@colour-fast
+* tính từ
+- không phai màu
+@colour-guard
+* danh từ
+- người giữ quân kỳ
+@colour-phobia
+* danh từ
+- sự ghét người da đen
+@colourant
+* danh từ
+- thuốc màu; thuốc nhuộm
+@colourbreed
+* ngoại động từ
+- nuôi để phát triển những màu nhất định
+= colourbreeding canaries for red+nuôi hoàng yến để phát triển màu đỏ
+@colourfilter
+* danh từ
+- cái lọc màu
+@colourist
+* danh từ
+- người tô màu
+- nghệ sĩ sành về màu sắc
+@colportage
+* danh từ
+- công việc của người bán rong
+@coltishly
+- xem coltish
+@coluber
+* danh từ
+- (động vật) rắn nước
+@colubrid
+* danh từ
+- (động vật) họ rắn nước
+* tính từ
+- thuộc rắn nước
+@columbarium
+* danh từ
+- số nhiều columbaria
+- nhà để tro hoả táng
+- chuồng bồ câu
+@columbine
+* danh từ
+- một loại cây có cánh hoa mỏng nhọn
+@columbite
+* danh từ
+- (hoá học) columbit
+@columel
+* danh từ
+- trụ nhỏ
+@columella
+* danh từ
+- số nhiều columellae
+- cuống; trụ; thể que; lõi
+- (giải phẫu) trụ ốc (ở tai trong)
+- trụ giữa (vỏ ốc, túi bào tử rêu)
+@columniation
+* danh từ
+- việc bố trí thành cột
+@columniform
+* tính từ
+- hình trụ tròn
+@colure
+* danh từ
+- (thiên văn) đường phân chi
+@com
+- Trong DOS, đây là tên thiết bị được gán cho các cổng truyền thông nối tiếp có trong máy tính của bạn Máy bạn có thể có đến bốn cổng COM, theo DOS là COM 1, COM 2, COM 3, COM 4
+- Khi dùng làm đuôi mở rộng cho tên tệp COM sẽ cho biết đó là một tệp chương trình có thể thực hiện được, bị hạn chế trong giới hạn 64 K Để chạy một tệp COM, bạn đánh tên tệp và ấn Enter
+@comal
+- xem coma
+@comanchean
+* danh từ
+- (địa chất) thời kỳ Co-man-sơ
+@comatosely
+- xem comatose
+@comb-honey
+* danh từ
+- mật trong tầng ong
+@combatively
+* phó từ
+- hiếu chiến, hăng tiết
+@combinable
+* tính từ
+- có thể kết hợp được
+@combinate
+* động từ
+- kết hợp; phối hợp
+@combinational
+- xem combination
+@combinatorial explosion
+- (sự) bùng nổ tổ hợp
+- Một trở ngại cho việc giải một bài toán, xảy ra khi có quá nhiều các khả năng phải được tính
+@combiner
+- xem combine
+@combings
+* danh từ số nhiều
+- tóc rụng do chải đầu
+@combining form
+* danh từ
+- hình thái kết hợp hai từ để tạo ra một từ mới
+@combo
+* danh từ (số nhiều combos)
+- (tiếng lóng) ban nhạc jazz, ban khiêu vũ
+@combust
+* động từ
+- đốt cháy
+@combustibly
+- xem combustible
+@combustive
+- xem combustion
+@come-between
+* danh từ
+- người môi giới, người trung gian
+@come-hither
+* tính từ
+- tán tỉnh, ve vãn
+@come-on
+* danh từ
+- sự quyến rũ, nét quyến rũ
+@comedienne
+* danh từ
+- diễn viên hài
+- người hài hước
+@comedy of manners
+- hài kịch cuộc sống
+@comel
+- Cách viết khác : cormlet
+@comes
+* danh từ
+- mạch máu chạy dọc dây thần kinh
+@comestibles
+* danh từ
+- như edibles
+@comfortableness
+- xem comfortable
+@comfortful
+* tính từ
+- đầy đủ tiện nghi
+@comforting
+* tính từ
+- có thể an ủi, khuyên giải
+@comfortingly
+- xem comfort
+@comic strip
+- truyện tranh vui trên báo
+@comically
+* phó từ
+- khôi hài, tức cười
+@comics
+* danh từ
+- truyện tranh
+- văn học rẻ tiền
+@comitia
+* danh từ
+- số nhiều comitia
+- đại hội quốc dân (từ cổ La Mã)
+- đại hội tuyển cử (cách mạng Pháp)
+@commandingly
+- xem commanding
+@commandingness
+- xem commanding
+@commemorator
+- xem commemorate
+@commencer
+- xem commence
+@commendableness
+- xem commend
+@commendably
+* phó từ
+- đáng khen, đáng biểu dương
+@commensally
+- xem commensal
+@commensurably
+- xem commensurable
+@commensurately
+- xem commensurate
+@commensuration
+- xem commensurate
+@commentarial
+- xem commentary
+@commentate
+* động từ
+- tường thuật
+@commercialist
+- xem commercialism
+@commercialistic
+- xem commercialism
+@commercially
+* phó từ
+- về phương diện thương mại
+@commie
+* danh từ
+- (từ lóng) người cộng sản
+* tính từ
+- cộng sản
+@comminuted
+* tính từ
+- (y học) gẫy vụn
+@commis
+* danh từ
+- số nhiều commis
+- người giúp việc trong khách sạn
+@commiseratively
+- xem commiserate
+@commiserator
+- xem commiserate
+@commissional
+- xem commission
+@commissural
+- xem commissure
+@committable
+- xem commit
+@committed
+* tính từ
+- tận tụy; tận tâm
+@committee-man
+* danh từ
+- ủy viên hội đồng
+@committee-room
+* danh từ
+- phòng thường trực
+@committee-woman
+* danh từ
+- nữ ủy viên hội đồng
+@committer
+* danh từ
+- người đàn ông dan díu với một người đàn bà đã có chồng; gian phu
+@commix
+* ngoại động từ
+- hoà lẫn; pha trộn, hỗn hợp
+@commixture
+* danh từ
+- sự hoà lẫn, sự pha trộn, hỗn hợp
+@commmove
+* ngoại động từ
+- (từ cổ, nghĩa cổ) gây xáo động dữ dội
+- gây xúc động mãnh liệt
+@commodate
+* danh từ
+- việc cho mượn không đòi hỏi trả lại
+@commode
+* danh từ
+- tủ nhiều ngăn, tủ commôt
+- ghế dùng để tiểu tiện trong phòng ngủ
+@commodiously
+- xem commodious
+@common decency
+* danh từ
+- cách cư xử hợp với lẽ thông thường
+@common ground
+* danh từ
+- điểm tương đồng, điểm chung
+@common land
+* danh từ
+- đất công, công thổ
+@common market
+* danh từ
+- Khối thị trường chung Âu châu
+@common noun
+- (ngôn) danh từ chung
+@common room
+- phòng giáo viên ở một trường
+@common time
+* danh từ
+- <nhạc> bốn nhịp trong một khung
+@commonality
+* danh từ (số nhiều commonalities)
+- sự tương đồng
+- sự phổ biến
+@commoness
+* danh từ
+- tính chất phổ thông, bình thường, thô thiển
+@commonish
+* tính từ
+- phổ thông; bình thường
+@commonwealth of nations
+- khối cộng đồng
+@communality
+- xem communal
+@communally
+* phó từ
+- có tính cách chung, có tính cách cộng đồng
+@communicableness
+- xem communicable
+@communicably
+- xem communicable
+@communicational
+- xem communication
+@communicatively
+- xem communicative
+@communist international
+- Quốc tế cộng sản IIl
+@communistically
+- xem communistic
+@communitarian
+* danh từ
+- thành viên công xã
+@communitarianism
+* danh từ
+- cộng đồng luận
+@community home
+* danh từ
+- trung tâm cải tạo thanh thiếu niên phạm pháp, trung tâm giáo hoá
+@communization
+- xem communize
+@commutability
+- xem commutable
+@commutativity
+- xem commutative
+@comospore
+* danh từ
+- (thực vật) bào tử có mào lông
+@compact disc
+* danh từ
+- dựa compăc
+@compact disk-interactive
+- Một tiêu chuẩn về đựa compact được thiết kế để sử dụng cho việc nghe nhìn có tương tác các đựa compact chứa hình tiếng bằng máy TV và máy đọc đựa CD-I Được thiết kế để dùng cho giáo dục, đào tạo và giải trí nhưng CD-I chậm tìm được thị trường cho mình
+@compacted
+* tính từ
+- rắn chắc; gắn bó
+@compactly
+* phó từ
+- khít, đặc, chặt chẽ
+- súc tích, mạch lạc
+@companion-cell
+* danh từ
+- (sinh học) tế bào kèm
+@companion-way
+* danh từ
+- cầu thang từ trong boong tàu tới các phòng
+@companionably
+- xem companionable
+@company network
+- mạng công ty
+- Mạng máy tính toàn cục, như DEC ENET (mạng (kỹ thuật) nội bộ của công ty Digital Equipment Corporation) chẳng hạn, thường có cổng tự động nối với các mạng hợp tác như ARPANET hoặc BITNET để thực hiện các chức năng như thư điện tử và truyền tệp tin
+@compaq
+- hãng máy tính của Mỹ
+@comparability
+- xem comparable
+@comparably
+- xem comparable
+@comparascope
+* danh từ
+- kính hiển vi so sánh
+@comparatively
+* phó từ
+- tương đối
+@comparer
+- xem compare
+@comparison operator
+- toán tử liên quan
+- Một ký hiệu dùng để xác định mối quan hệ giữa hai giá trị số Kết quả của một tính toán dùng toán tử liên quan là đúng (true) hoặc sai (false)  Trong ngôn ngữ vấn đáp, các toán tử liên quan thường được dùng theo một tiêu chuẩn tìm kiếm nhất định
+@compartmental
+- xem compartment
+@compartmentalization
+- xem compartmentalize
+@compartmentalize
+* động từ
+- chia thành ngăn
+@compass-card
+* danh từ
+- biểu đồ gió
+@compass-needle
+* danh từ
+- kim la bàn
+@compassable
+- xem compass
+@compassionately
+- xem compassionate
+@compassionless
+- xem compassion
+@compatibleness
+- xem compatible
+@compatibly
+* phó từ
+- tương hợp, tương thích
+@compatriotism
+* danh từ
+- lòng yêu nước, lòng ái quốc
+- chủ nghĩa yêu nước, chủ nghĩa ái quốc
+@compelation
+* danh từ
+- (từ cổ, nghĩa cổ) việc gọi tên, tên gọi
+@compellable
+- xem compel
+@compellably
+- xem compel
+@compelled
+* tính từ
+- bị ép buộc, bị cưỡng bách
+@compeller
+- xem compel
+@compelling
+* tính từ
+- hấp dẫn, thuyết phục
+@compendiously
+- xem compendious
+@compensational
+- xem compensation
+@compere
+* danh từ
+- người giới thiệu chương trình
+* động từ
+- giới thiệu chương trình
+@competently
+* phó từ
+- thành thạo, điêu luyện
+@competitively
+* phó từ
+- đủ khả năng cạnh tranh
+@competitory
+* tính từ
+- thuộc sự cạnh tranh
+@complacently
+* phó từ
+- mãn nguyện, thoả chí
+@complainer
+- xem complain
+@complainingly
+* phó từ
+- oán trách, ta thán
+@complaisantly
+- xem complaisant
+@compleat
+* tính từ
+- hoàn hảo
+@complementarily
+- xem complementary
+@complementariness
+- xem complementary
+@complexional
+- xem complexion
+@complexioned
+* tính từ
+- (dùng trong tính từ ghép) có nước da như thế nào đó
+= dark-complexioned+có nước da ngăm ngăm đen
+@complexly
+- xem complex
+@complexness
+- xem complex
+@complexus
+* danh từ
+- (giải phẫu) cơ rối
+- điều phức tạp
+- (triết học) phức thể
+@compliantly
+- xem compliant
+@complicatedly
+- xem complicated
+@complice
+* danh từ
+- kẻ đồng loã, kẻ tiếp tay
+@complier
+* danh từ
+- người ngoan ngoãn phục tùng, người nịnh bợ
+@complimentarily
+- xem complimentary
+@complot
+* ngoại động từ
+- âm mưu
+* danh từ
+- cuộc âm mưu
+@compo
+* danh từ
+- vật liệu gồm nhiều thứ hợp lại (viết tắt) của composition
+@componential
+- xem component
+@comportable
+* tính từ
+- (từ cổ, nghĩa cổ) thích đáng; phù hợp
+@comportment
+* danh từ
+- cách xử thế, cách ứng xử
+@compos mentis
+* tính từgốc La tinh
+- tỉnh táo, tỉnh trí
+@composedly
+* phó từ
+- điềm tựnh, bình tựnh
+@compositely
+- xem composite
+@compositeness
+- xem composite
+@composition-book
+* danh từ
+- (từ Mỹ, nghĩa Mỹ) sách bài tập
+@composition-mental
+* danh từ
+- sự hỗn dung với kẽm, thiết
+@compositional
+- xem composition
+@compositionally
+- xem composition
+@compositorial
+- xem compositor
+@compound sentence
+- (ngôn) câu kép
+@compounder
+- xem compound
+@comprehendible
+- xem comprehend
+@comprehendingly
+- xem comprehend
+@comprehensibly
+- xem comprehensible
+@comprehensively
+* phó từ
+- hoàn toàn, toàn diện
+@compressibleness
+- xem compressible
+@compressional
+- xem compression
+@comprisable
+- xem comprise
+@compromiser
+- xem compromise
+@compromission
+* danh từ
+- sự hoà giải, sự dàn xếp
+@compulsative
+* tính từ
+- cưỡng bức; bắt buộc
+@compulsively
+- xem compulsive
+@compulsivity
+- xem compulsive
+@compulsorily
+* phó từ
+- buộc lòng, đành
+@compunctiously
+- xem compunction
+@compurgation
+* danh từ
+- (từ Pháp) việc tha vì có người xác nhận can phạm vô tội
+@compurgator
+* danh từ
+- người xác nhận trước toà can phạm vô tội
+@compuserve
+- Một cơ sở dịch vụ thông tin trực tuyến bằng máy tính lớn nhất và thành công nhất
+@compusex
+- tính dục máy tính
+@computational
+* tính từ
+- có sử dụng máy điện toán
+@computationally
+- xem computation
+@computerdom
+* danh từ
+- giới nghiên cứu hoặc sử dụng máy điện toán; giới tin học
+@computerisation
+* danh từ
+- Sự trang bị máy điện toán, Sự điện toán hoá
+@computerise
+- trang bị máy điện toán, điện toán hoá
+- kiểm soát bằng máy điện toán; điều khiển bằng máy điện toán; thao tác bằng máy điện toán
+@computerist
+* danh từ
+- người sử dụng máy điện toán
+@computerizable
+- xem computerize
+@comradeliness
+* danh từ
+- tình bạn, tình đồng chí
+@comradery
+* danh từ
+- tình bạn
+@comradily
+* tính từ
+- bạn bè, thân hữu
+@comsat
+* danh từ
+- vệ tinh để giao tiếp (viết tắt) của communication satellite
+@comstockery
+* danh từ
+- sự kiểm tra chặt chẽ văn học nghệ thuật vi phạm đạo đức
+@con man
+* danh từ
+- kẻ bịp bợm
+@con-rod
+* danh từ
+- (thông tục) thanh nối (viết tắt) của connecting rod
+@conarium
+* danh từ
+- (sinh học) ấu trùng conaria
+- (giải phẫu) tuyến tùng, tuyến quả thông
+@conation
+* danh từ
+- ý muốn
+- sự nỗ lực
+@conatus
+* danh từ
+- bản năng tự vệ
+@concasse
+* tính từ
+- thuộc rau, cà chua nghiền nhỏ
+@concavely
+- xem concave
+@concaveness
+- xem concave
+@concealable
+- xem conceal
+@concededly
+- xem concede
+@conceder
+- xem concede
+@conceitedly
+* phó từ
+- kiêu hãnh, ngạo mạn
+@conceitedness
+- xem conceited
+@conceivableness
+- xem conceive
+@conceivably
+* danh từ
+- có thể tin được, có thể hình dung được
+@conceiver
+- xem conceive
+@concentrative
+- xem concentrate
+@concentratively
+- xem concentrate
+@concentrically
+- xem concentric
+@conceptional
+- xem conception
+@conceptively
+- xem conception
+@conceptualistic
+- xem conceptualism
+@conceptualistically
+- xem conceptualism
+@conceptually
+- xem conceptual
+@conceptus
+* danh từ
+- cái thai
+@concernedly
+* phó từ
+- bâng khuâng, ái ngại
+@concert grand
+* danh từ
+- <nhạc> pianô cánh
+@concert-goer
+* danh từ
+- người hay đi nghe hoà nhạc
+@concert-hall
+* danh từ
+- phòng hoà nhạc
+@concertedly
+* phó từ
+- có dự tính; có bàn tính; có phối hợp
+@concertino
+* danh từ
+- số nhiều concertinos
+- (âm nhạc) công-xec-tô nhỏ
+- nhóm chủ tấu
+@concertmaster
+* danh từ
+- người chỉ huy dàn nhạc
+@concessional
+- xem concession
+@concessionary
+* tính từ
+- ưu đãi
+@concessively
+- xem concessive
+@conchal
+- xem concha
+@conchiform
+* danh từ
+- dạng vỏ ốc, dạng xoắn
+@conchological
+- xem conchology
+@concierge
+* danh từ
+- (từ Pháp) người giữ cửa, phu khuân vác
+@conciliable
+- xem conciliate
+@conciliar
+* tính từ
+- do hội đồng giám mục ban bố
+@concilium
+* danh từ
+- số nhiều concilia
+- hội nghị giám mục
+@concisely
+* phó từ
+- gãy gọn, súc tích
+@concluder
+- xem conclude
+@conclusively
+* phó từ
+- chắc chắn, thuyết phục
+@concocter
+- xem concoct
+@concoctor
+- xem concoct
+@concomitantly
+- xem concomitant
+@concordantly
+- xem concordant
+@concrescent
+- xem concrescence
+@concrete music
+- âm nhạc thu âm tự nhiên
+@concreteness
+- xem concrete
+@concretism
+* danh từ
+- thuyết cụ thể hoá những khái niệm trừu tượng
+- thuyết nhấn mạnh khía cạnh chữ viết trong thơ
+- cụ thể luận
+@concretization
+- xem concretize
+@concurrently
+* phó từ
+- đồng thời, kiêm
+@concussive
+- xem concussion
+@concussively
+- xem concussion
+@condasyl
+* danh từ
+- (tin học) ngôn ngữ mô tả dữ liệu; condasyl
+@condemnatory
+- xem condemn
+@condemner
+- xem condemn
+@condensational
+- xem condensation
+@condensed milk
+- sữa đặc (có đường)
+@condensery
+* danh từ
+- nhà máy sữa dặc
+@condensible
+- xem condense
+@condescender
+- xem condescend
+@condescendingly
+* phó từ
+- hạ mình, nhún nhường
+@condignly
+- xem condign
+@condimental
+- xem condiment
+@condisciple
+* danh từ
+- bạn học
+@conditionality
+- xem conditional
+@conditionally
+* phó từ
+- có điều kiện, tùy theo điều kiện
+@condolent
+- xem condolence
+@condoler
+- xem condole
+@condominial
+- xem condominium
+@condoner
+- xem condone
+@condotiere
+* danh từ
+- số nhiều condotieri
+- (lịch sử) tướng lĩnh đánh thuê (ý)
+@conducer
+- xem conduce
+@conducingly
+- xem conduce
+@conduciveness
+- xem conducive
+@conductimetric
+* tính từ
+- liên quan đến việc đo độ dẫn
+@conductometric
+* tính từ
+- liên quan đến việc đo độ dẫn
+@conductorial
+- xem conductor
+@conductorship
+- xem conductor
+@conductress
+* danh từ
+- nữ nhân viên thu tiền vé xe búyt
+@conduplication
+- xem conduplicate
+@condylar
+- xem condyle
+@condyloid
+- xem condyle
+@condyloma
+* danh từ
+- (y học) condilom
+@condylomatous
+* tính từ
+- (y học) thuộc về condilom
+@cone-shaped
+* tính từ
+- có hình nón
+@confabulator
+- xem confabulate
+@confabulatory
+- xem confabulate
+@confederalist
+* danh từ
+- người theo thuyết liên bang
+@confederat
+* động từ
+- liên minh; liên hiệp với (+ with)
+- kết đảng
+@confederationism
+- xem confederation
+@confederationist
+- xem confederation
+@confederative
+- xem confederate
+@conferrable
+- xem confer
+@conferral
+- xem confer
+@conferree
+* danh từ
+- xem conferee
+@conferrer
+- xem confer
+@confessable
+- xem confess
+@confessant
+* danh từ
+- người xưng tội
+@confessedly
+* phó từ
+- tự thú nhận
+@confessionist
+* danh từ
+- người nêu rõ tín ngưỡng của mình
+- người của phái tin lành Luy-te
+@confidentially
+* phó từ
+- tin cẩn, bộc bạch
+@confidently
+* phó từ
+- tự tin
+@confider
+- xem confide
+@confidingly
+* phó từ
+- nhẹ dạ, cả tin
+@confidingness
+- xem confiding
+@configurational
+- xem configuration
+@configurationally
+- xem configuration
+@configurative
+- xem configuration
+@confinable
+- xem confine
+@confineable
+- xem confine
+@confined
+* tính từ
+- giới hạn, hạn chế
+@confineless
+* tính từ
+- không bị giới hạn
+@confiner
+- xem confine
+@confines
+* danh từ
+- biên giới, ranh giới
+- beyond the confines of human knowledge
+* danh từ
+- ngoài phạm vi hiểu biết của con người
+= within the confines of family life+trong giới hạn của cuộc sống gia đình
+@confirmability
+- xem confirm
+@confirmable
+- xem confirm
+@confirmedly
+- xem confirmed
+@confirmer
+- xem confirm
+@confiscator
+- xem confiscate
+@confiteor
+* danh từ
+- kinh xưng tội (thiên chúa giáo)
+@conflagrant
+* tính từ
+- bốc cháy
+@conflate
+* động từ
+- đúc kết thành một
+@confliction
+- xem conflict
+@conflictive
+- xem conflict
+@conflictual
+- xem conflict
+@conformably
+- xem conformable
+@conformational
+- xem conformation
+@conformationally
+- xem conformation
+@conformer
+- xem conform
+@confoundedness
+- xem confounded
+@confounder
+- xem confound
+@confrontational
+- xem confrontation
+@confrontationist
+- xem confrontation
+@confrontative
+- xem confrontation
+@confronter
+- xem confront
+@confrontment
+- xem confront
+@confucian
+* danh từ
+- người ủng hộ Khổng Tử, người ủng hộ nho giáo
+@confusedly
+* phó từ
+- bối rối, lúng túng, ngượng
+@confusing
+* tính từ
+- khó hiểu, gây bối rối
+@confusingly
+* phó từ
+- rắc rối, rối rắm
+@confusional
+- xem confusion
+@confutable
+- xem confute
+@confutative
+- xem confutation
+@confuter
+- xem confute
+@conga
+* danh từ
+- nhạc đệm cho một điệu múa mà những người tham gia nối đuôi nhau thành một hàng uốn khúc
+@congealer
+- xem congeal
+@congenetic
+* tính từ
+- cùng di truyền, cùng nguồn gốc
+@congenially
+* phó từ
+- tương đắc, thích hợp
+@congenitally
+- xem congenital
+@conglobation
+- xem conglobate
+@conglomeratic
+- xem conglomerate
+@conglomerator
+- xem conglomerate
+@conglutination
+- xem conglutinate
+@conglutinative
+* tính từ
+- kết dính
+@conglutinator
+* danh từ
+- thuốc làm vết thương dính miệng
+@conglutinous
+* tính từ
+- kết dính
+@congregational
+* tính từ
+- <tôn> thuộc về giáo đoàn
+@congregationalism
+* danh từ
+- chủ nghĩa giáo đoàn (tin lành)
+@congregationalist
+* danh từ
+- người theo chủ nghĩa giáo đoàn
+@congregative
+- xem congregate
+@congregativeness
+- xem congregate
+@congregator
+- xem congregate
+@congressionalism
+* danh từ
+- thuyết giáo hội địa phương
+@congressionalist
+* danh từ
+- người theo thuyết giáo hội địa phương
+@congressionally
+- xem congress
+@congruently
+- xem congruent
+@congruously
+- xem congruous
+@conicalness
+* danh từ
+- tính chất cônic
+@conicity
+* danh từ
+- tính chất nón
+@conidial
+* tính từ
+- (thực vật) thuộc bào tử đính; hạt đính
+@conidiophore
+* danh từ
+- (thực vật) cuống bào tử đính; cuống hạt đính
+@conidium
+* danh từ
+- số nhiều conidia
+- (thực vật) bào tử đính; hạt đính
+@conjecturably
+- xem conjecture
+@conjecturally
+- xem conjectural
+@conjecturer
+- xem conjecture
+@conjoiner
+- xem conjoin
+@conjointly
+* phó từ
+- liên kết
+@conjugality
+- xem conjugal
+@conjugally
+* phó từ
+- về phương diện hôn nhân
+@conjugant
+* danh từ
+- (sinh học) thể tổng hợp
+@conjugately
+- xem conjugate
+@conjugational
+- xem conjugation
+@conjugationally
+- xem conjugation
+@conjugative
+- xem conjugate
+@conjugator
+- xem conjugate
+@conjunctionally
+- xem conjunction
+@conjunctival
+- xem conjunctiva
+@conjunctively
+- xem conjunctive
+@conjunctly
+- xem conjunct
+@conjury
+* danh từ
+- yêu thuật
+@conker
+* danh từ
+- cây dẻ ngựa
+@connascence
+* danh từ
+- con cùng sinh; vật cùng sinh
+@connascent
+* tính từ
+- sinh cùng lúc
+@connately
+- xem connate
+@connateness
+- xem connate
+@connatural
+* tính từ
+- tự nhiên; hồn nhiên
+- bẩm sinh (+ to)
+- cùng loại; cùng bản chất
+@connectable
+- xem connect
+@connectedly
+- xem connected
+@connecter
+- xem connect
+@connecting rod
+* danh từ
+- thanh nối pit-tông với trục khủyu trong máy
+@connectional
+- xem connection
+@connectively
+- xem connective
+@connectivity
+- xem connective
+@conner
+- xem con
+@conning
+* tính từ
+- (hàng hải) chỉ huy
+@conniver
+- xem connive
+@connivery
+- xem connive
+@conniving
+* tính từ
+- thâm hiểm, quỷ quyệt
+@connocarpus
+* danh từ
+- (thực vật) cây quả có hình nón
+@connoisseurship
+- xem connoisseur
+@connotative
+- xem connotation
+@connotatively
+- xem connotation
+@connubialism
+- xem connubial
+@connubially
+- xem connubial
+@conormal
+* danh từ
+- (toán học) có pháp tuyến chung
+@conquerer
+- xem conquer
+@conqueror
+* danh từ
+- người đi xâm chiếm, người đi chinh phục
+- người chiến thắng
+@conquistador
+* danh từ
+- người Tây Ban Nha đi xâm chiếm Trung và Nam Mỹ
+@consanguineously
+- xem consanguineous
+@conscience money
+- món tiền trả cho  nhẹ lòng (cho đỡ day dứt vì đáng ra phải trả
+@conscience-smitten
+* tính từ
+- bị lương tâm cắn rứt
+@conscience-stricken
+* tính từ
+- day dứt, đầy hối hận
+@conscientious objector
+- người phản đối quân ngũ (vì thấy trái với đạo lý)
+@conscientiously
+* phó từ
+- chu toàn, tận tình
+@consecrative
+- xem consecrate
+@consecrator
+- xem consecrate
+@consecratory
+- xem consecrate
+@consecutively
+* phó từ
+- liên tiếp, dồn dập
+@consensually
+- xem consensual
+@consentaneously
+- xem consentaneous
+@consenter
+- xem consent
+@consequentiality
+- xem consequential
+@consequentially
+* phó từ
+- tự đắc, kiêu căng
+- do đó, do vậy
+@conservable
+* tính từ
+- có thể bảo tồn, có thể lưu giữ
+@conservational
+- xem conservation
+@conservationist
+* danh từ
+- người ủng hộ công cuộc bảo vệ môi trường thiên nhiên
+@conservative party
+- Đảng Bảo thủ (Anh)
+@conservatively
+* phó từ
+- dè dặt
+- bảo thủ
+@conservativeness
+- xem conservatively
+@conservatize
+* động từ
+- (làm cho) trở thành bảo thủ
+@conservatorial
+- xem conservator
+@conservatorship
+- xem conservator
+@conserver
+- xem conserve
+@considerately
+* phó từ
+- thận trọng, chu đáo, y tứ
+@considerer
+- xem consider
+@consignable
+- xem consign
+@consistorial
+- xem consistory
+@consociate
+* động từ
+- cộng tác; liên kết
+* danh từ
+- người cộng tác
+@consolidator
+- xem console
+@consolingly
+- xem consolidate
+@consonantally
+- xem consonantal
+@consonantly
+- xem consonant
+@consortial
+- xem consortium
+@consortism
+* danh từ
+- (sinh học) hiện tượng cộng sinh, hiện tượng quần hợp
+@conspecific
+* tính từ
+- cùng loài
+@consperse
+* tính từ
+- (thực vật) phát tán dày; mọc dày
+@conspirant
+* danh từ
+- người đồng mưu
+@conspiratorial
+* tính từ
+- bí ẩn
+@conspiratorially
+- xem conspiratorial
+@conspirer
+- xem conspire
+@conspiringly
+- xem conspire
+@constableship
+- xem constable
+@constellational
+- xem constellation
+@constellatory
+- xem constellation
+@constituently
+- xem constituent
+@constituter
+- xem constitute
+@constitutionalism
+* danh từ
+- chủ nghĩa hợp hiến
+@constitutionalist
+* tính từ
+- thuộc về chủ nghĩa hợp hiến
+* danh từ
+- người ủng hộ chủ nghĩa hợp hiến
+@constitutionalize
+* ngoại động từ
+- bắt phải theo hiến pháp; hiến pháp hoá
+@constitutionally
+* phó từ
+- căn cứ theo hiến pháp, hợp hiến
+@constitutively
+- xem constitutive
+@constrainable
+- xem constrain
+@constrainedly
+* phó từ
+- gượng gạo, miễn cưỡng
+@constrainer
+- xem constrain
+@constrictively
+- xem constrict
+@constringency
+- xem constringe
+@construable
+* tính từ
+- có thể giải thích được
+@constructer
+- xem construct
+@constructible
+- xem construct
+@constructionally
+- xem construction
+@constructionist
+* danh từ
+- người giải thích (pháp luật, chứng thư)
+@constructively
+* phó từ
+- có tính cách xây dựng
+@constructiveness
+- xem constructive
+@constructivism
+* danh từ
+- (nghệ thuật) xu hướng tạo dựng
+@constructivist
+* danh từ
+- người theo xu hướng tạo dựng
+* tính từ
+- theo xu hướng tạo dựng
+@consubstantialism
+* danh từ
+- đồng bản chất luận
+@consubstantialist
+* danh từ
+- người theo đồng bản chất luận
+@consubstantiate
+* ngoại động từ
+- biến thành cùng bản chất
+@consultancy
+* danh từ
+- sự giúp đỡ ý kiến; sự cố vấn; sự tư vấn
+- cơ quan/văn phòng tư vấn về một lĩnh vực nào đó
+= To open a financial consultancy+Mở văn phòng tư vấn về tài chính
+- địa vị của người tư vấn
+= To accept a three-year consultancy abroad+Nhận làm công tác tư vấn ba năm ở nước ngoài
+@consultantship
+- xem consultant
+@consulter
+- xem consult
+@consumerism
+* danh từ
+- sự bảo vệ quyền lợi người tiêu dùng
+@consumerist
+- xem consumerism
+@consumeristic
+- xem consumerism
+@consumership
+- xem consumer
+@consuming
+* tính từ
+- ám ảnh, chi phối
+@consummately
+- xem consummate
+@consummative
+- xem consummate
+@consummator
+- xem consummate
+@consummatory
+- xem consummate
+@consumptilble
+* phó từ
+- có thể tiêu hao, có thể tiêu phí
+@cont
+- <vt> nội dung
+- <vt> tiếp theo
+@contact lens
+- kính áp giác mạc
+@contact print
+* danh từ
+- sự in ảnh bằng cách đặt phim âm bản trên giấy in trước khi phơi ra ánh sáng
+@contactual
+- xem contact
+@contactually
+- xem contact
+@contagiously
+* phó từ
+- dễ lây, dễ nhiễm
+@containerization
+* danh từ
+- sự cho hàng vào côngtenơ
+- sự thiết kế tàu (hoặc cảng) để vận chuyển (hoặc khai thác) côngtenơ
+@containerize
+* động từ
+- cho hàng vào côngtenơ
+- thiết kế (tàu, cảng) để vận chuyển (hoặc khai thác) côngtenơ
+@contaminant
+* danh từ
+- chất gây ô nhiễm
+@contaminative
+- xem contaminate
+@contaminator
+- xem contaminate
+@contango
+* danh từ
+- số nhiều contangos
+- tiền người mua đưa để hoãn việc trả nợ
+= contango day+ngày hoãn nợ
+@contd
+- <vt> nội dung
+- <vt> tiếp theo
+@conte
+* danh từ
+- chuyện ngắn; chuyện kể
+@contemplatively
+* phó từ
+- trầm ngâm, suy tư
+@contemporaneously
+- xem contemporaneous
+@contemporarily
+- xem contemporary
+@contemporization
+- xem contemporize
+@contemptibly
+- xem contemptible
+@contemptuously
+* phó từ
+- khinh khỉnh
+@contentedly
+- xem contented
+@contentiously
+- xem contentious
+@conterminously
+- xem conterminous
+@conterminousness
+- xem conterminous
+@contester
+- xem contest
+@contextually
+- xem contextual
+@contextural
+- xem contexture
+@contiguously
+- xem contiguous
+@continental breakfast
+- điểm tâm nhẹ theo kiểu châu  lục (chỉcó cà phê và mấy lát bánh mì
+@continental drift
+- sự trượt lục địa (trong quá trình tạo các lục địa)
+@continentalism
+- xem continental
+@continentalist
+- xem continental
+@continentality
+- xem continental
+@continentally
+- xem continental
+@continently
+- xem continent
+@contingently
+- xem contingent
+@continu um
+* danh từ
+- chuỗi liên tiếp, chuỗi liên tục
+@continuable
+- xem continue
+@continually
+* phó từ
+- liên tục, không ngớt
+@continuatively
+- xem continuative
+@continued
+* tính từ
+- liên tục
+@continuer
+- xem continue
+@continuo
+* danh từ
+- (âm nhạc) bè hát chạy liền
+@continuum
+* danh từ
+- số nhiều continua,  continuums
+- (triết học) thể liên tục
+- (toán học) continum
+- (sinh học) thảm thực vật liền
+@contortedly
+- xem contorted
+@contortionistic
+- xem contortionist
+@contortive
+- xem contort
+@contour map
+- bản đò có vẽ đường đồng mức
+@contour-interval
+* danh từ
+- sự cách đều
+@contra-indication
+* danh từ
+- <y> sự chống chỉ định
+@contrabandage
+- xem contraband
+@contrabandism
+* danh từ
+- thương nghiệp bất chính
+@contrabassist
+- xem contrabass
+@contract bridge
+* danh từ
+- loại bài brit mà người chơi thắng được nhờ mưu mẹo
+@contractibleness
+- xem contract
+@contractually
+- xem contractual
+@contracture
+* danh từ
+- sự co cứng
+@contradicter
+- xem contradict
+@contradictorily
+- xem contradictory
+@contradictoriness
+- xem contradictory
+@contradistinctive
+- xem contradistinction
+@contradistinctively
+- xem contradistinction
+@contraflow
+* danh từ
+- đường tạm lưu thông hai chiều
+@contraindicate
+* ngoại động từ
+- cấm dùng
+= this drug is contraindicated in pregnancy+thuốc này cấm dùng khi có thai
+@contraindication
+* danh từ
+- (y học) sự phản chỉ định; việc cấm dùng (thuốc)
+@contralateral
+* tính từ
+- (giải phẫu) đối bên
+@contrapuntally
+- xem contrapuntal
+@contrariant
+* tính từ
+- trái ngược; chống đối lại
+@contrariously
+- xem contrarious
+@contrary-minded
+* tính từ
+- có ý kiến ngược lại
+@contrastable
+- xem contrast
+@contrastingly
+- xem contrast
+@contrastive
+* tính từ
+- để nêu bật sự tương phản
+= contrastive analysis+cách phân tích nêu bật sự tương phản
+@contravener
+- xem contravene
+@contributive
+- xem contribute
+@contributively
+- xem contribute
+@contributiveness
+- xem contribute
+@contritely
+- xem contrite
+@contriteness
+- xem contrite
+@contrived
+* tính từ
+- trù tính, có sắp xếp trước
+@contrivedly
+- xem contrived
+@controller-general
+* danh từ
+- tổng giám đốc
+@controlling interest
+* danh từ
+- sự mua thật nhiều cổ phần để được đứng vào hội đồng quản trị của một công ty
+@controlment
+* danh từ
+- sự quản lý
+- sự chi phối
+@controversiality
+- xem controversial
+@controversially
+* phó từ
+- có tính cách tranh luận
+@controvertist
+- xem controversialist
+@contumaciously
+* phó từ
+- bướng bỉnh, ngang ngạnh
+@contumeliously
+- xem contumely
+@conus
+* danh từ
+- số nhiều coni
+- (sinh học) thể nón
+@convect
+* ngoại động từ
+- làm khí nóng di chuyển bằng đối lưu
+@convective
+- xem convection
+@convectively
+- xem convection
+@convenable
+- xem convene
+@convenance
+* danh từ
+- việc chính đáng
+- (số nhiều) điều hợp với tập tục
+@conveniently
+* phó từ
+- tiện lợi, thuận tiện
+@convenor
+- xem convene
+@conventicle
+* danh từ
+- cuộc hội họp tôn giáo được tổ chức bí mật hay bất hợp pháp
+@conventionalization
+- xem conventionalize
+@conventionalize
+* động từ
+- làm thành quy ước, quy ước hoá
+@conventionally
+* phó từ
+- theo thói thường, như vẫn quy ước
+@conversantly
+- xem conversant
+@conversationally
+- xem conversation
+@converse
+* nội động từ
+- nói chuyện, chuyện trò
+* danh từ
+- <toán> đảo đề
+* tính từ
+- trái ngược, nghịch đảo
+@conversely
+* phó từ
+- ngược lại
+@converser
+* danh từ
+- người trò chuyện
+@conversional
+- xem conversion
+@conversionary
+- xem conversion
+@convertibleness
+- xem convertible
+@convertibly
+- xem convertible
+@convexly
+- xem convex
+@convexness
+* danh từ
+- độ (tính chất) lồi
+@convexo-plane
+* tính từ
+- có mặt lồi-mặt phẳng
+@conveyor belt
+* danh từ
+- băng tải (chuyển hàng hóa ở phi trường)
+@convictional
+- xem conviction
+@convictively
+- xem convictive
+@convincement
+- xem convince
+@convincer
+- xem convince
+@convincingly
+* phó từ
+- thuyết phục, lôi cuốn
+@convive
+* danh từ
+- tân khách
+- bạn rượu
+@convivially
+- xem convivial
+@convocate
+* ngoại động từ
+- triệu tập
+@convocational
+- xem convocation
+@convolutely
+- xem convolute
+@convolutional
+- xem convolution
+@convulsant
+* danh từ
+- (y học) thuốc gây co giật
+@convulsively
+* phó từ
+- dữ dội, rúng động
+@convulsiveness
+- xem convulsive
+@cooer
+- xem coo
+@cook-table
+* danh từ
+- bàn nấu ăn
+@cook-wood
+* danh từ
+- củi để nấu thức ăn
+@cookout
+* danh từ
+- (từ Mỹ, nghĩa Mỹ) cuộc đi dạo ăn thức ăn ngoài trời
+@cooling-off
+* tính từ
+- dịu bớt những căm tức
+= a cooling-off period+thời kỳ hoà dịu
+@cop-out
+* danh từ
+- <bóng> sự tránh né
+@copacetic
+* tính từ, cũng copasetic
+- rất hài lòng
+@copaliferous
+* danh từ
+- (thực vật) sinh nhựa copan
+@copemate
+* danh từ
+- cũng copesmate
+- người đồng nghiệp
+@copepod
+* danh từ
+- (động vật) bộ châm kiếm (động vật thân giáp)
+* tính từ
+- thuộc bộ chân kiếm
+@copernican
+* tính từ
+- thuộc về Côpecnich (nhà <thvăn> Ba Lan)
+@copernicanism
+* danh từ
+- thuyết Copecnic
+* danh từ
+- thuyết Copecnic
+@copiously
+* phó từ
+- dồi dào, phong phú
+@coplaintiff
+* danh từ
+- người chung đơn kiện
+@coplanarity
+* danh từ
+- tính đồng phẳng
+@copolymer
+* danh từ
+- (hoá học) chất đồng trùng hợp
+@copolymerization
+* danh từ
+- việc tạo thành chất đồng trùng hợp
+@copolymerize
+* ngoại động từ
+- tạo thành chất đồng trùng hợp
+@copper-beech
+* danh từ
+- cây ngô đồng
+@copper-coloured
+* tính từ
+- màu đồng
+@copper-glance
+* danh từ
+- (khoáng chất) chancocit
+@copper-indian
+* danh từ
+- người thổ dân châu Mỹ
+@coppersmith
+* danh từ
+- thợ đúc đồ đồng
+@coproduce
+* ngoại động từ
+- cùng sản suất với người khác
+@coproducer
+* danh từ
+- người cùng sản suất
+@coprogenous
+* tính từ
+- do phân
+@coprolite
+* danh từ
+- phân bị hoá đá; sỏi phân
+@coprophagy
+- xem coprophagous
+@coprophilous
+* tính từ
+- ưa phân, chịu phân
+@coprophyte
+* tính từ
+- (thực vật) mọc ở (sống ở) phân
+@copt
+* danh từ
+- thành viên trong Giáo hội Thiên Chúa cổ A Rập
+@coptic
+* danh từ
+- ngôn ngữ phổ biến trong Giáo hội Ai Cập
+@copular
+- xem copula
+@copy desk
+* danh từ
+- bàn nơi các bản thảo được biên tập và chuẩn bị đem in
+@copy-hold
+* danh từ
+- người làm chủ bất động sản theo sổ sách cũ
+- tài sản được giữ theo sổ sách cũ
+@copy-typist
+* danh từ
+- người đánh máy tài liệu
+@copyable
+- xem copy
+@copybook
+* danh từ
+- vở tập viết
+* tính từ
+- đúng bài bản
+- rũrích, sáo
+@copycat
+* danh từ
+- người hay bắt chứơc
+@copyholder
+* danh từ
+- giá để giữ bản đánh máy
+- người đọc bản thảo cho người chữa bản in thử
+@copying-ink
+* danh từ
+- mực để sao chép
+@copying-pencil
+* danh từ
+- bút chì để sao chép
+@copyrightable
+- xem copyright
+@copyrighter
+- xem copyright
+@copytaster
+* danh từ
+- nhà báo chọn bài viết để đăng
+@coquelicot
+* danh từ
+- cây mỹ nhân
+@coquettishly
+* phó từ
+- đỏm dáng, điệu hạnh
+@coquettishness
+- xem coquette
+@cor anglais
+* danh từ
+- kèn giống như kèn ôboa, nhưng chơi được những điệu trầm hơn
+@coracoid
+* tính từ
+- dạng xương quạ
+* danh từ
+- xương quạ
+@coral reef
+- đá ngầm  san hô
+@coralliform
+* tính từ
+- hình san hô
+@corallinaceous
+* tính từ
+- giống san hô
+@corallum
+* danh từ
+- bộ xương san hô
+@coranto
+* danh từ
+- số nhiều corantos,  corantoes
+- điệu vũ côrantô (ă)
+@corban
+* danh từ
+- lễ hiến tế người Do Thái dâng cho chúa trời
+@corbeil
+* danh từ
+- cái giỏ đan
+- (kiến trúc) trang trí giỏ hoa quả
+@corbicula
+* danh từ
+- số nhiều corbiculae
+- giỏ phấn (chân sau của ong); diềm lông (đốt ống côn trùng)
+- danh từ,  số nhiều corbiculae
+- giỏ phấn (chân sau của ong); diềm lông (đốt ống côn trùng)
+@corbie-steps
+* danh từ
+- trán tường có nhiều bậc
+@cordately
+- xem cordate
+@corder
+- xem cord
+@cordierite
+* danh từ
+- (khoáng chất) cocđierit
+@cordiform
+* danh từ
+- hình quả tim
+@cordillera
+* danh từ
+- dãy núi
+@cordon bleu
+* danh từ
+- quan to, người tai mắt
+- <đùa> tay đầu bếp hạng nhất
+@cordovan
+* danh từ
+- da thuộc mềm (gốc từ Cordova,  Tây-ban-nha)
+@cordwainery
+* danh từ
+- nghề thuộc da
+- nghề đóng giày
+@cordwood
+* danh từ
+- gỗ chồng thành khối để đốt
+@coreciprocal
+* tính từ
+- tương hỗ
+@corelation
+* danh từ
+- sự tương quan
+@coremiform
+* danh từ
+- dạng chổi
+@coremium
+* danh từ
+- số nhiều coremia
+- (giải phẫu) bó cuống bào tử đỉnh; cuống hạt đính; bó sợi nấm
+@corepressor
+* danh từ
+- (sinh học) chất đồng kìm hãm; gen đồng kìm hãm; gen đồng ức chế
+@corgi
+* danh từ
+- một loại chó ở xứ Wales
+@coriander
+* danh từ
+- cây rau mùi
+@corinthian
+* tính từ
+- thuộc về thành Corin (Hy Lạp)
+* danh từ
+- người gốc Corinh
+@corium
+* danh từ
+- (giải phẫu) mảnh đệm; lớp mô mạch liên kết
+@corival
+* danh từ
+- người cùng cạnh tranh
+@cork-board
+* danh từ
+- ván bằng giấy và bần để cách nhiệt và cách âm
+@cork-cambium
+* danh từ
+- (thực vật) bần-tượng tằng
+@cork-oak
+* danh từ
+- cây sồi có vỏ để làm bần
+@corn laws
+* danh từ
+- (lịch sử) luật hạn chế nhập khẩu ngô vào Anh quốc
+@corn pone
+* danh từ
+- bánh ngô nướng hoặc rán
+@corn-exchange
+* danh từ
+- nơi mua bán ngũ cốc
+@corn-factor
+* danh từ
+- chủ nhà máy bột
+@corn-flour
+* danh từ
+- bột ngũ cốc
+- (từ Mỹ, nghĩa Mỹ) bột ngô
+@cornball
+* danh từ
+- người thật thà
+* tính từ
+- có chai
+@corner-cupboard
+* danh từ
+- tủ đặt ở góc phòng
+@cornerways
+* phó từ
+- xem cornerwise
+@cornflakes
+* danh từ
+- bánh bột ngô nướng
+@cornflour
+* danh từ
+- bột ngô
+@cornflower
+* danh từ
+- loại cây mọc trong cánh đồng ngô
+@corniche
+* danh từ
+- con đường đắp dọc bờ biển
+@cornicle
+* danh từ
+- tuyến tiết sáp (rệp cây)
+@cornification
+* danh từ
+- (sinh học) sự hình thành sừng ở biểu bì
+@cornily
+- xem corny
+@corniness
+- xem corny
+@cornish
+* tính từ
+- thuộc về xứ Cornwall
+@cornless
+* tính từ
+- không có hạt (ngũ cốc)
+@cornstarch
+* danh từ
+- bột ngô
+@cornucopian
+- xem cornucopia
+@cornuto
+* danh từ
+- người chồng bị cắm sừng
+@corollaceou
+* tính từ
+- (thực vật) hình tràng hoa; như tràng hoa
+@corollate
+- xem corolla
+@corollet
+* danh từ
+- tràng hoa con (trong cụm hoa phức)
+@coronally
+* tính từ
+- (giải phẫu) thuộc trán
+= coronally bone+xương trán
+@coronership
+- xem coroner
+@coronograph
+* danh từ
+- cũng coronagraph
+- kính thiên văn để nhìn tán mặt trời
+@corotate
+* nội động từ
+- (thiên văn) cùng quay kết hợp với một vật khác
+- quay cùng tốc độ với một vật thể khác
+@corotation
+* danh từ
+- sự cùng quay kết hợp với một vật thể khác
+- sự quay cùng tốc độ với một vật thể khác
+@corporately
+- xem corporate
+@corporatism
+* danh từ
+- cũng corporativism
+- chủ nghĩa nghiệp đoàn
+@corporatist
+* danh từ
+- người theo chủ nghĩa nghiệp đoàn
+@corporealism
+* danh từ
+- vật thể luận
+@corporealist
+* danh từ
+- người vật thể luận
+@corporeally
+- xem corporeal
+@corporealness
+* danh từ
+- xem corporeality
+@corpse-gate
+* danh từ
+- cửa mộ
+@corpulently
+- xem corpulent
+@corpulentness
+* danh từ
+- sự vạm vỡ; sự to béo
+* danh từ
+- sự vạm vỡ; sự to béo
+@corpuscularian
+* danh từ
+- người theo nguyên tử luận
+* tính từ
+- thuộc nguyên tử; nguyên tử luận
+@corrade
+* ngoại động từ
+- xâm thực (nước bào mòn đất, đá)
+* nội động từ
+- bị xâm thực
+@corrasion
+* danh từ
+- sự xâm thực
+@corrasive
+* tính từ
+- có tác dụng xâm thực
+@correctable
+- xem correct
+@correctible
+- xem correct
+@correctively
+- xem corrective
+@correctly
+* phó từ
+- đúng cách thức, phù hợp
+- đúng đắn, nghiêm chỉnh
+@corregidor
+* danh từ
+- (sử học) chánh án toà án thành phố Tây Ban Nha
+@correlational
+- xem correlation
+@correlatively
+- xem correlative
+@correspondently
+- xem correspondent
+@corresponsive
+* tính từ
+- tương ứng; nhất trí; phù hợp với
+@corrigibility
+- xem corrigible
+@corrigibly
+- xem corrigible
+@corrival
+* tính từ
+- cạnh tranh nhau
+* danh từ
+- người cạnh tranh nhau
+@corroborator
+- xem corroborate
+@corrodible
+- xem corrode
+@corrody
+* danh từ
+- xem corody
+@corrosible
+- xem corrode
+@corrosively
+- xem corrosive
+@corrupter
+- xem corrupt
+@corruptibleness
+- xem corruptible
+@corruptibly
+- xem corruptible
+@corruptive
+- xem corrupt
+@corruptly
+* phó từ
+- sai lệch
+- đồi bại
+@corruptness
+* danh từ
+- sự thối nát, sự đồi bại
+@corruptor
+- xem corrupt
+@corsetiere
+* danh từ
+- người bán (/ làm) cóoc xê
+@corsetry
+* danh từ
+- đồ lót phụ nữ để làm thân thể mảnh dẻ
+@cortically
+- xem cortical
+@corticiferous
+* tính từ
+- sinh vỏ ở ngoài
+@corticiform
+* tính từ
+- có dạng vỏ
+@cortico-spinal
+* tính từ
+- thuộc vỏ não-tủy sống
+@corticoid
+* danh từ
+- (hoá học) coocticoit
+@corticotrophic
+* tính từ, cũng corticotropic
+- kích thích thượng thận
+@cortisone
+* danh từ
+- hormon chữa viêm và dị ứng
+@coruscation
+- xem coruscate
+@corybantic
+* tính từ
+- phóng đãng
+@corymbiferous
+* tính từ
+- (thực vật) có ngù
+@corymbiform
+* tính từ
+- dạng ngù
+* tính từ
+- dạng ngù
+@corymbose
+- xem corymb
+@corymbosely
+- xem corymb
+@coseismal
+- Cách viết khác : coseismic
+@cosentient
+* tính từ
+- đồng cảm
+@coset
+* danh từ
+- tập hợp cộng với một tập hợp hiện hữu thành một tập hợp lớn hơn
+@cosignatory
+* danh từ
+- người cùng ký vào đơn
+@cosily
+* phó từ
+- ấm cúng, thoải mái
+@cosmetically
+* phó từ
+- có tính cách bên ngoài, có tính cách trang điểm
+@cosmetician
+* danh từ
+- người kinh doanh Mỹ phẩm
+@cosmetologist
+* danh từ
+- nhà mỹ dung
+@cosmetology
+* danh từ
+- khoa mỹ dung
+@cosmically
+- xem cosmic
+@cosmism
+* danh từ
+- vũ trụ luận
+@cosmocracy
+* danh từ
+- chính phủ toàn cầu
+@cosmogenic
+* tính từ
+- tạo nên bởi tác dụng các tia vũ trụ
+@cosmogonic
+- xem cosmogony
+@cosmogonically
+- xem cosmogony
+@cosmogonist
+- xem cosmogony
+@cosmologically
+- xem cosmology
+@cossie
+* danh từ
+- bộ đồ tắm
+@cost accountant
+* danh từ
+- người làm công tác kế toán, kế toán viên
+@cost benefit
+- thuộc ngữ
+@cost price
+* danh từ
+- giá vốn, giá bán sỉ
+@cost-benefit
+- (ktế) quan hệ vốn lãi
+@cost-effectively
+- xem cost-effective
+@cost-effectiveness
+* danh từ
+- sự sinh lợi nhuận, sự sinh lãi
+@cost-plus
+* tính từ
+- giá sản xuất cộng với tiền lãi vừa phải
+@cost-price
+* danh từ
+- chi phí để sản xuất cái gì hoặc giá có thể bán buôn; giá vốn, giá bán buôn
+@costa
+* danh từ
+- số nhiều costae
+- xương sườn
+- (thực vật) gân (sống lá)
+- cạnh (cuống lá)
+- gân sườn cánh (côn trùng)
+- bờ trước cánh; mép trước cánh (chim)
+@costard
+* danh từ
+- loại táo lớn ở Anh
+- (đùa cợt) cái đầu
+@costively
+- xem costive
+@costless
+- xem cost
+@costlessness
+- xem cost
+@costmary
+* danh từ
+- loại cúc tây để làm thức ăn cho thơm
+@costumed
+* tính từ
+- mặc y phục
+@costumier
+* danh từ
+- người cho thuê y phục sân khấu
+@cosubordinate
+* tính từ
+- cùng phụ thuộc
+@cot-death
+* danh từ
+- tình trạng trẻ con ngủ rồi chết luôn
+@cotangential
+- xem cotangent
+@cotenant
+* danh từ
+- người thuê chung nhà
+@cothurnus
+* danh từ
+- số nhiều cothurni
+- ủng (diễn viên bi kịch Hy Lạp mang)
+- bi kịch
+- phong cách trang trọng
+@cotoneaster
+* danh từ
+- bụi cây bê ri (loại quả có màu đỏ nhạt)
+@cotqueen
+* danh từ
+- đàn bà tính tình đàn ông
+- đàn ông quan tâm đến công việc phụ nữ
+@cotta
+* danh từ
+- áo trắng ống tay ngắn hay không ống tay những người đồng ca cổ Hy Lạp mặc
+@cottage cheese
+- pho mát sữa gạn kem
+@cottage industry
+- thủ công gia đình
+@cottagey
+* tính từ
+- giống nhà tranh
+@cotter-pin
+- thành ngữ cotter
+- cotter-pin
+- chốt định vị
+- thành ngữ cotter
+- cotter-pin
+- chốt định vị
+@cotterpin
+* danh từ
+- đinh chốt
+@cotton-grower
+* danh từ
+- người trồng bông
+@cotton-seed
+* danh từ
+- hạt bông
+@cotton-waste
+* danh từ
+- xơ bông; vụn bông
+@cotton-weed
+* danh từ
+- rau khúc
+@cotton-wood
+* danh từ
+- (thực vật) cây dương
+= black cotton-wood+cây dương đen
+@cotton-worm
+* danh từ
+- sâu bông
+@cotton-yarn
+* danh từ
+- chỉ vải
+@cotyledonal
+- xem cotyledon
+@cotylosaur
+* danh từ
+- (động từ) bộ thằn lằn
+@couch grass
+* danh từ
+- (Mỹ)(thực) cỏ gà
+@coucher
+- xem couch
+@couldst
+* động từ
+- quá khứ cổ của can ngôi thứ hai số đơn
+@coulee
+- lớp dung nham dày
+- (từ Mỹ, nghĩa Mỹ) khe sâu
+@coumarin
+* danh từ
+- (hoá học) cumarin
+@coumerone
+* danh từ
+- (hoá học) cumaron
+@counsel-keeper
+* danh từ
+- người giữ bí mật
+@counsel-keeping
+* danh từ
+- việc giữ bí mật
+@counselee
+* danh từ
+- người được khuyên bảo
+@counselling
+* danh từ
+- lời hướng dẫn
+@counselor
+* danh từhư counsellor
+- như counsellor
+@countability
+- xem countable
+@countable
+* tính từ
+- có thể đếm được
+@countably
+- xem countable
+@countenancer
+- xem countenance
+@counter-alliance
+* danh từ
+- sự chống liên minh
+@counter-argue
+* động từ
+- biện bác; bác lại luận điểm
+@counter-battery
+* danh từ
+- sự phản pháo kích
+@counter-blast
+* danh từ
+- sự phản đối kịch liệt
+- cơn gió ngược
+@counter-blow
+* danh từ
+- đò đánh trả
+@counter-charm
+* ngoại động từ
+- phá phù phép
+* danh từ
+- việc phá phù phép
+@counter-condemnation
+* danh từ
+- lời phản buộc tội
+@counter-coup
+* danh từ
+- cuộc phản công chống lại một chính quyền vừa lập lên nhờ đảo chính
+@counter-criticizm
+* danh từ
+- sự phản phê phán
+@counter-culture
+* danh từ
+- phản văn hoá
+@counter-current
+* danh từ
+- dòng nước ngược
+@counter-declaration
+* danh từ
+- lời bác lại lời tuyên bố
+@counter-evidence
+* danh từ
+- phản chứng
+@counter-example
+* danh từ
+- ví dụ được đưa ra để bác lại một định lý; phản ví dụ
+@counter-fuge
+* danh từ
+- (âm nhạc) fuga ngược
+@counter-influence
+* danh từ
+- ảnh hưởng chống lại
+@counter-intuitive
+* tính từ
+- phản trực giác, khác thường
+@counter-offer
+* danh từ
+- đơn chào giá có tính cách triệt hạ một đơn chào giá khác
+@counter-pace
+* danh từ
+- thủ đoạn (chiến lược) đối phó
+@counter-pole
+* danh từ
+- cực đối lập
+@counter-pressure
+* danh từ
+- áp lực chống lại
+- (từ Mỹ, nghĩa Mỹ) đối áp
+@counter-productive
+* tính từ
+- phản tác dụng
+@counter-productively
+* phó từ
+- phản tác dụng
+@counter-productiveness
+* danh từ
+- sự phản tác dụng
+@counter-question
+* ngoại động từ
+- hỏi vặn lại
+* danh từ
+- câu hỏi vặn lại
+@counter-reformation
+* danh từ
+- sự chống lại cải cách
+@counter-tenor
+* danh từ
+- giọng nam cao
+@counter-word
+* danh từ
+- sự phản kháng
+@counteraction
+* danh từ
+- sự chống lại, sự kháng cự lại
+- phản tác dụng
+- sự trung hoà, sự làm mất tác dụng
+@counteractive
+- xem counteract
+@counteractively
+- xem counteract
+@countercheck
+* danh từ
+- sự chặn lại, sự cản trở, sự ngăn trở
+- sự chống lại, cái cản trở
+@counterforce
+* danh từ
+- lực đối lập, lực phản kháng
+@counterman
+* danh từ
+- người bán hàng (ở quầy hàng)
+@countermovement
+- xem countermove
+@countermure
+* danh từ
+- (kiến trúc) tường tựa, tường chống
+@counterpoison
+* danh từ
+- thuốc giải độc
+@counterproductively
+* phó từ
+- [một cách] phản tác dụng
+@counterrevolution
+* danh từ
+- cuộc phản cách mạng
+@counterrevolutionary
+* tính từ
+- phản cách mạng
+@counterscarp
+* danh từ
+- tường ngoài hào
+@countersignal
+* danh từ
+- tín hiệu đáp lại
+@countersignature
+* danh từ
+- tín hiệu đáp lại
+@counterspy
+* danh từ
+- người phản gián điệp
+@counterstand
+* ngoại động từ
+- phản kháng; phản đối; chống lại
+* danh từ
+- sự phản kháng; sự phản đối; sự chống lại
+@countertenor
+* danh từ
+- giọng nam cao
+- người cógiọng nam cao
+@counterterroism
+* danh từ
+- sự chống khủng bố
+@countervail
+* ngoại động từ
+- gây tác dụng đối lập
+@countervailing
+* tính từ
+- bù lại, bù đắp
+@counterview
+* danh từ
+- quan điểm đối lập; ý kiến bác lại
+@counterweighted
+- xem counterweight
+@counterwind
+* danh từ
+- gió ngược
+@counting house
+* danh từ
+- phòng tài vụ
+@countlessly
+- xem countless
+@countrify
+* ngoại động từ
+- nông thôn hoá; thôn dã hoá
+@country gentleman
+* danh từ
+- phú ông
+@country-air
+* danh từ
+- điệu nhạc thôn dã
+@country-and-western
+* danh từ
+- nhạc đồng quê (xuất xứ từ nhạc dân gian miền nam và miền tây nứơc Mỹ)
+@country-bank
+* danh từ
+- ngân hàng ở tỉnh
+@country-box
+* danh từ
+- ngôi nhà nhỏ ở nông thôn
+@country-bred
+* danh từ
+- sống ở tỉnh hay ở nông thôn
+@country-dance
+- (Anh) điệu vũ sóng đôi
+@country-house
+* danh từ
+- ngôi nhà lớn ở nông thôn có đất đai bao bọc xung quanh (của người giàu ở nông thôn); trang viên
+@country-ward
+* phó từ
+- hướng về nông thôn
+@country-wide
+* phó từ
+- khắp nông thôn
+@countryfied
+* tính từ
+- có tính cách thôn quê, thôn dã
+- chân chất, chất phác
+@countryfield
+- xem countrifield
+@county-school
+* danh từ
+- trường học do quận quản lý
+@couplement
+* danh từ
+- (từ cổ, nghĩa cổ) việc nối; sự liên kết
+@courageously
+* phó từ
+- can đảm, dũng cảm
+@courageousness
+- xem courageous
+@courante
+* danh từ
+- điệu vũ cua-răng
+- nhạc nhảy cua-răng
+@courbaril
+* danh từ
+- (thực vật) cây cườm
+@courgette
+* danh từ
+- (thực vật) bí xanh
+@court order
+* danh từ
+- án lệnh của thẩm phán
+@court-day
+* danh từ
+- ngày mở phiên toà; ngày xét xử
+@court-dress
+* danh từ
+- triều phục; áo chầu
+@court-fool
+* danh từ
+- sủng thần; lộng thần
+@court-hand
+* danh từ
+- lối chữ viết trong giấy tờ cho triều đình
+@court-house
+* danh từ
+- trụ sở toà án
+@court-martial
+* ngoại động từ
+- đưa ra xử ở toà án quân sự
+@court-record
+* danh từ
+- biên bản phiên toà
+@court-room
+* danh từ
+- phòng xử án
+@court-usher
+* danh từ
+- (pháp lý) mõ toà
+@courteously
+* phó từ
+- lịch sự, nhã nhặn
+@courter
+* danh từ
+- người xu nịnh, người cầu khẩn
+- người cầu hôn
+@courtesanship
+* danh từ; cũng courtezanship
+- nghề đĩ quý phái
+@courtside
+* danh từ
+- phần ở ngoài sân (quần vợt, bóng rỗ)
+@couscous
+* danh từ
+- một món ăn vùng Bắc Phi (bột mì nấu với thịt hay nước thịt)
+@cousinage
+* danh từ
+- quan hệ giữa anh em họ
+@cousinship
+- tình anh em họ, tình họ hàng
+@couth
+* tính từ
+- nhẵn bóng
+@couture
+- thuộc ngữ
+@couturier
+* danh từ
+- người may y phục thời trang cho phái nữ
+@couvade
+* danh từ
+- tục sản ông (đàn ông giả vờ đẻ)
+@couverture
+* danh từ
+- lớp sôcola bọc ngoài kem, kẹo
+@covalency
+* danh từ
+- cũng covalence
+- (hoá học) sự cùng hoá trị
+@covelline
+* danh từ
+- cũng covellite
+- (khoáng chất) covelit
+@coven
+* danh từ
+- tổ chức của các mụ phù thủy
+@covenantal
+- xem covenant
+@covenantally
+- xem covenant
+@covenantee
+* danh từ
+- bên ký giao kèo / hiệp ước
+@covenantor
+* danh từ
+- xem convenanter
+@covent
+* danh từ
+- (từ cổ, nghĩa cổ) tu viện
+@cover-point
+* danh từ
+- (thể thao) vị trí phòng ngự; người phòng ngự (trong cric-kê)
+@cover-story
+* danh từ
+- truyện tranh ở bìa tạp chí
+@coverable
+- xem cover
+@coveralls
+* danh từ số nhiều
+- bộ áo liền quần cho những người làm công việc nặng nhọc
+@covered
+* tính từ
+- có mái che
+- kín đáo
+- được yểm hộ (nhờ pháo binh)
+- có đội mũ
+= to remain covered+cứ đội nguyên mũ
+@coverer
+- xem cover
+@coverless
+- xem cover
+@covertly
+* phó từ
+- ngầm, lén lút
+@covertness
+- xem covert
+@covetable
+- xem covet
+@coveter
+- xem covet
+@covetingly
+- xem covet
+@covetously
+* phó từ
+- thèm muốn, thèm thuồng
+@covin
+* danh từ
+- (pháp luật) hành động gian trá, mưu hại
+@covinous
+* tính từ
+- (pháp luật) đồng mưu, lừa dối
+@cow-bird
+* danh từ
+- (động vật) chim chìa vôi
+@cow-bunting
+* danh từ
+- xem cow-bird
+@cow-flap
+* danh từ
+- (thực vật) cây địa hoàng
+@cow-heart
+* danh từ
+- người nhát gan
+@cow-leeching
+* danh từ
+- cách chữa bệnh thú vật
+@cow-pat
+* danh từ
+- đống phân bò
+@cowalker
+* danh từ
+- linh hồn
+@cowbaby
+* danh từ
+- (thông tục) người hèn nhác; người nhát gan; người nhút nhác
+@cowbell
+* danh từ
+- chuông đeo ở cổ bò
+@cowboy
+* danh từ
+- người chăn bò ở miền Tây nước Mỹ; cao bồi
+- a cowboy movie
+- phim mô tả những cuộc phiêu lưu ở miền Tây nước Mỹ; phim cao bồi
+- nhà kinh doanh thiếu khả năng hoặc thiếu thiện chí
+@cowedly
+- xem cow
+@cowgirl
+* danh từ
+- cô gái chăn bò
+@cowhand
+* danh từ
+- người nuôi bò
+@cowish
+* tính từ
+- nhút nhát
+@cowled
+* tính từ
+- đội mũ trùm đầu của tu sĩ
+= cowled flower+bông hoa dạng chóp
+@cowlike
+* tính từ
+- giống con bò cái
+@cowling
+* danh từ
+- nắp đậy máy
+@cowlstaff
+* danh từ
+- cây gậy dài hai người gánh để chở đồ vật
+@coworker
+* danh từ
+- bạn cùng làm việc với nhau; bạn đồng nghiệp
+@cowpea
+* danh từ
+- (thực vật) cây đậu đũa
+@cowpox
+* danh từ
+- bệnh đậu mùa (ở súc vật)
+@cowy
+- xem cow
+@coxal
+- xem coxa
+@coxalgia
+* danh từ
+- (y học) lao khớp xương
+@coxalgic
+* tính từ
+- thuộc lao khớp xương
+@coxcombry
+* danh từ
+- người khoe khoang, người ăn diện
+@coyish
+* tính từ
+- xem coy
+@coyly
+- xem coy
+@coypu
+* danh từ
+- loài gặm nhấm được nuôi để lấy lông
+@coz
+* danh từ
+- xem cousin (dùng trong khẩu ngữ)
+@coze
+* ngoại động từ
+- nói chuyện phiếm
+= to coze with somebody+tán gẫu với ai
+@cozener
+- xem cozen
+@cozily
+- xem cozy
+@coziness
+- xem cozy
+@cp
+* (viết tắt)
+- so sánh (compare)
+- Đảng cộng sản (Communist Party)
+@cp/m
+- Một hệ điều hành sử dụng cho máy tính cá nhân dùng loại vi xử lý 8 bit Intel 8088 và Zilog Z- 80
+@cpi
+- ký tự/inch, số ký tự trên mỗi inch
+@cpm
+- phương pháp đường tới hạn
+@cps
+* (viết tắt)
+- vòng /giây (cycles per second)
+- ký tự/giây, số ký tự trong mỗi giây (đơn vị đo tốc độ thiết bị truyền thông hoặc thiết bị in)
+@cpu
+- Đơn vị xử lý trung tâm
+@cqd
+* (viết tắt)
+- tín hiệu vô tuyến có nghĩa là đến nhanh! Nguy hiểm (come  quick!  Danger)
+@crab apple
+* danh từ
+- cây táo đại
+- quả táo đại
+@crab-apple
+* danh từ
+- quả táo tây dại
+@crab-louse
+* danh từ
+- con rận
+@crab-tree
+* danh từ
+- cây táo tây dại
+@crabbedly
+- xem crabbed
+@crabbedness
+- xem crabbed
+@crabber
+- xem crab
+@crabbily
+- xem crabby
+@crabbiness
+- xem crabby
+@crabbing
+* danh từ
+- việc bắt cua
+@crabbit
+* tính từ
+- khó tính; dễ cáu
+@crabby
+* tính từ
+- cáu gắt, gắt gỏng
+@crabwise
+* phó từ
+- khó nhọc, cực nhọc
+@crack-barrel
+* tính từ
+- thôn dã
+@crack-down
+* danh từ
+- sự trừng trị thẳng tay, sự đàn áp không nương tay
+@crack-up
+* danh từ
+- sự kiệt sức
+@crackajack
+* danh từ
+- (thông tục) người tài năng phi thường
+* tính từ
+- tài giỏi tuyệt vời
+@crackbrain
+* tính từ
+- gàn dở, dở hơi, điên rồ
+@crackdown
+* danh từ
+- sự trừng trị thẳng tay, biện pháp thẳng tay hơn
+@crackle-ware
+* danh từ
+- sứ men rạn
+@crackleware
+* danh từ
+- sứ men rạn
+@crackly
+* tính từ
+- nhăn nheo; dễ nổ lách tách
+@crackpot
+* danh từ
+- người có suy nghĩ lập dị
+@cradler
+- xem cradle
+@crafter
+- xem craft
+@craftily
+* phó từ
+- láu cá, quỷ quyệt
+@craftless
+* tính từ
+- không gian xảo; không mánh khoé
+@craftsmanlike
+- xem craftsman
+@craftsmanly
+- xem craftsman
+@craggily
+- xem craggy
+@cragginess
+- xem craggy
+@cragpit
+* danh từ
+- hang động
+@cramp-fish
+* danh từ
+- (động vật) cá điện
+@cran
+* danh từ
+- đơn vị đo lường Xôtlân bằng 170 lit
+@crane-fly
+* danh từ
+- ruồi dài chân
+@crane-truck
+* danh từ
+- xe tải cần cẩu; xe cần cẩu; xe cần trục
+@craneman
+* danh từ
+- số nhiều cranemen
+- công nhân lái xe cần trục
+@cranesbill
+* danh từ
+- (thực vật) cây mỏ hạc
+@cranially
+- xem cranial
+@craniate
+* tính từ
+- có sọ
+@craniofacial
+* tính từ
+- thuộc sọ và mặt
+@craniology
+* danh từ
+- khoa sọ
+@craniometry
+* danh từ
+- phép đo sọ
+@crank-case
+* danh từ
+- hộp đựng khoan quay tay
+@crank-gear
+* danh từ
+- bộ bàn đạp
+@crankily
+- xem cranky
+@crankman
+* danh từ
+- người quay tay quay
+@crankshaft
+* danh từ
+- tay quay, maniven
+@crap
+* danh từ
+- phân, cứt
+- chuyện tào lao
+* động từ
+- ỉa
+@crape-myrtle
+* danh từ
+- (thực vật) cây bách nhật hồng; cây tử vi
+@craped
+* tính từ
+- mặc nhiễu đen
+- đeo băng tang nhiễu đen
+@crapper
+* danh từ
+- (thực vật) nhà xí
+@crappy
+* tính từ
+- dở, không hấp dẫn
+@crapshooter
+* danh từ
+- người gieo xúc xắc
+@crash barrier
+* danh từ
+- hàng rào phân ranh giới
+@crash-dive
+* danh từ
+- <không> sự bổ nhào xuống
+* động từ
+- bổ nhào xuống
+@crash-pad
+* danh từ
+- (tục tĩu) nơi nghỉ trọ không mất tiền
+@crash-proof
+* tính từ
+- (từ Mỹ, nghĩa Mỹ) chống lại được va chạm
+@crasher
+- xem crash
+@crashing bore
+* danh từ
+- người gây xáo trộn
+@crasis
+* danh từ
+- số nhiều crases
+- hiện tượng hai nguyên âm hay hai nguyên âm đôi rút lại thành một nguyên âm dài hay một nguyên âm đôi
+- danh từ,  số nhiều crases
+- hiện tượng hai nguyên âm hay hai nguyên âm đôi rút lại thành một nguyên âm dài hay một nguyên âm đôi
+@crassly
+* phó từ
+- ngu xuẩn, dại dột
+@crassula
+* danh từ
+- (thực vật) họ thuốc bỏng
+@crater lake
+* danh từ
+- hồ miệng núi lửa (hồ hình thành ở một ngọn núi lửa đã bị tắt)
+@crateriform
+* tính từ
+- hình miệng núi lửa
+@craterlet
+* danh từ
+- miệng nhỏ núi lửa
+@craton
+* danh từ
+- vùng tương đối im lìm của vỏ quả đất
+@cravenly
+- xem craven
+@cravenness
+- xem craven
+@craver
+- xem crave
+@cravingly
+- xem crave
+@crawlingly
+- xem crawl
+@crayonist
+- xem crayon
+@crazed
+* tính từ
+- bị rạn nứt
+- có vân rạn
+- phát cuồng
+@crazing-mill
+* danh từ
+- máy nghiền quặng
+@crc
+- kiểm độ dư vòng
+@creakily
+* phó từ
+- cót két, kẽo kẹt
+@creakingly
+- xem creak
+@cream-faced
+* tính từ
+- mặt tái mét
+@creamily
+- xem creamy
+@creaminess
+- xem creamy
+@creaseproof
+- xem crease
+@creaser
+- xem crease
+@creasote
+* danh từ
+- xem creosote
+@creatine
+* danh từ
+- cũng creatin
+- (sinh học) creatin
+@creatinine
+* danh từ
+- (hoá học) creatinin
+@creational
+- xem creation
+@creationism
+* danh từ
+- sáng tạo luận
+- thuyết sáng tạo linh hồn (linh hồn là người do chúa tạo ra)
+@creatively
+* phó từ
+- sáng tạo
+@creatural
+- xem creature
+@creatureliness
+- xem creature
+@creaturely
+- xem creature
+@credent
+* tính từ
+- đáng tin
+@credibly
+* phó từ
+- tin được, đáng tin
+@credit account
+* danh từ
+- tài khoản tín dụng
+@credit note
+* danh từ
+- phiếu cho phép người mua được đổi món hàng khác ngang giá với món hàng mà mình trả lại cho người bán
+@credit rating
+* danh từ
+- sự đánh giá mức độ tín nhiệm
+@credit squeeze
+* danh từ
+- sự tăng lãi suất tín dụng để kiềm chế lạm phát
+@credit transfer
+* danh từ
+- sự chuyển nhượng tín dụng
+@credit-side
+* danh từ
+- phần ghi những khoản thu vào tài khoản
+@credit-worthiness
+* danh từ
+- sự đáng tin cậy về khả năng trả nợ
+@credit-worthy
+* tính từ
+- đáng tin cậy
+@creditability
+- xem creditable
+@creditableness
+- xem creditable
+@creditably
+* phó từ
+- đáng khen, đáng biểu dương
+@creditworthy
+* tính từ
+- đáng tin để cho vay
+@credo
+* danh từ
+- cương lĩnh
+@credulously
+* phó từ
+- nhẹ dạ, cả tin
+@cree
+* danh từ
+- số nhiều crees
+- người Cri (da đỏ Bắc Mỹ)
+- tiếng Cri
+@creedal
+- xem creed
+@creep-hole
+* danh từ
+- hốc (động vật nấp)
+- lời thoái thác
+@creepiness
+- xem creepy
+@creeping
+* tính từ
+- dần dần, từ từ
+@creepingly
+* phó từ
+- bò, trườn
+- đi chậm rãi
+@creepy-crawly
+* danh từ
+- loài côn trùng kinh dị
+@cremaster
+* danh từ
+- cơ bìu
+- móc hậu môn (nhộng treo); gai bụng (nhộng đất)
+@creme de menthe
+* danh từ
+- rượu bạc hà
+@cremocarp
+* danh từ
+- (thực vật) quả rủ
+@crenately
+- xem crenate
+@crenelation
+- xem crenelated
+@creosol
+* danh từ
+- (hoá học) creozola
+@crepe
+* danh từ
+- cũng crêpe
+- nhiễu
+- cao su trong làm đế giày
+= crepe paper+giấy kếp
+@crepitant
+- xem crepitate
+@crepitus
+* danh từ
+- xem crepitation
+@crepuscle
+- Cách viết khác : crepuscule
+@crepusculous
+* tính từ
+- (thuộc) lúc tản sáng
+- (thuộc) lúc hoàng hôn
+@crescentic
+- xem crescent
+@crescentiform
+* tính từ
+- dạng liềm, dạng trăng khuyết, bán nguyệt
+@cresol
+* danh từ
+- (hoá học) crezola
+@crested
+* tính từ
+- có biểu tượng riêng
+- (nói về chim) có mào
+@crestless
+* tính từ
+- không có mào
+@cresylic
+* tính từ
+- thuộc crezola; thuộc creozot
+@cretinoid
+- xem cretin
+@creviced
+- xem crevice
+@crew neck
+* danh từ
+- kiểu cổ áo tròn
+@crib-biter
+* danh từ
+- người có tật nào đó
+- con ngựa có tật nhai rơm lép bép
+@crib-biting
+* danh từ
+- thói nhai rơm lép bép của ngựa
+@crib-death
+* danh từ
+- cái chết đột ngột của trẻ em mà không bị bệnh gì
+@cribble
+* ngoại động từ
+- sàng
+* danh từ
+- cái sàng
+@cribrellate
+* tính từ
+- có lỗ sàng; nhiều lỗ
+@cribrellum
+- (sinh học) tấm sàng; tấm rây; tằm nhả tơ (nhện)
+@cribrose
+* tính từ
+- rỗ mặt sàng
+@cricket
+* danh từ
+- <động> con dế
+- <thể> môn crikê
+* nội động từ
+- chơi crikê
+@cricketeer
+- xem cricket
+@cricketer
+* danh từ
+- người chơi crikê
+@crico-thyroid
+* tính từ
+- thuộc sụn giáp-nhẫn
+@crikey
+- interj
+- biểu lộ sự kinh ngạc, sự khiếp sợ
+@crime-sheet
+* danh từ
+- kết luận về tội trạng
+@criminally
+* phó từ
+@crimination
+- xem criminate
+@criminative
+- xem criminate
+@criminator
+- xem criminate
+@criminatory
+- xem criminate
+@criminologically
+- xem criminology
+@crimper
+- xem crimp
+@crimple
+* ngoại động từ
+- làm nhàu, làm nhăn, làm uốn sóng
+@crimplene
+* danh từ
+- vải khó nhàu
+@cringing
+* danh từ
+- thái độ xu phụ hèn hạ
+* tính từ
+- luồn cúi
+- đê tiện
+- hèn hạ
+@crinoid
+* tính từ
+- (động vật) dạng hoa huệ biển
+@crinolined
+- xem crinoline
+@crinome
+* danh từ
+- (sinh học) thể lưới ưa kiềm
+@crinose
+* tính từ
+- có lông dài
+@criollo
+* danh từ
+- số nhiều criollos
+- người sinh và sống ở Nam Mỹ (đặc biệt gốc Tây Ban Nha)
+- giống ngựa ở Ac-hen-ti-na
+@cripes
+- interj
+- biểu lộ sự ngạc nhiên
+@crippler
+- xem cripple
+@crippling
+* danh từ
+- (kỹ thuật) sự méo mó
+@crisis-ridden
+* tính từ
+- bị lôi cuốn vào khủng hoảng
+@crisp-winged
+* tính từ
+- có cánh nhăn
+@crisper
+* danh từ
+- sắt uốn tóc
+@crispiness
+- xem crispy
+@crisply
+* phó từ
+- sinh động, quả quyết
+@criss-crossing
+* danh từ
+- (sinh học) sự lai truyền chéo
+@crissum
+* danh từ
+- vùng quanh huyệt; vùng ổ nhớp
+@crista
+* danh từ
+- (sinh học) mào; lược
+- (số nhiều) nếp màng trong thể sợi hạt
+@cristate
+* tính từ
+- có mào; có lược
+@criterial
+- xem criterion
+@criterium
+* danh từ
+- cuộc đua xe đạp gồm nhiều chặng
+@critically
+* phó từ
+- chỉ trích, trách cứ
+- trầm trọng
+@criticalness
+- xem critical
+@criticizable
+- xem criticize
+@criticizer
+- xem criticize
+@croakily
+- xem croak
+@croaky
+- xem croak
+@crochet-wool
+* danh từ
+- chỉ sợi óng ánh để thêu
+@crocked
+* tính từ
+- bị thương, bị gãy vỡ
+@crocket
+* danh từ
+- (kiến trúc) trang trí hình lá
+@crocoisite
+* danh từ
+- (khoáng chất) crocoit
+@crofting
+* danh từ
+- việc lĩnh canh
+@croissant
+* danh từ
+- bánh sừng bò, bánh croaxăng
+@cromlech
+* danh từ
+- <khcổ> đá vòng cromelc
+@crookback
+* danh từ
+- (cổ) ngừơi gù
+* tính từ
+- (cổ) gù
+@crookedly
+* phó từ
+- quanh co, không ngay thẳng
+@crop dusting
+* danh từ
+- sự giải, sự phun (phân, thuốc trừ sâu)
+@crop-dust
+- xem crop-dusting
+@crop-dusting
+* danh từ
+- sự dùng máy bay rải hoá chất cho cây cối
+@crop-ear
+* danh từ
+- con ngựa bị cắt tai
+@crop-land
+* danh từ
+- đất thích hợp cho trồng trọt
+@crop-leather
+* danh từ
+- da thuộc để đóng giày
+@cropful
+* tính từ
+- bụng no nê
+- đầy diều
+@croppage
+* danh từ
+- tổng thu hoạch
+@cropping
+* danh từ
+- sự thu hoạch
+- sự cắt lông, xén lông
+@croppy
+* danh từ
+- (lịch sử) người đầu tròn
+@croquette
+* danh từ
+- miếng khoai tròn được bọc bằng vụn bánh mì và rán mỡ
+@croquis
+* danh từ
+- số nhiều croquis
+- bản ký hoạ
+@cross-arm
+* danh từ
+- đòn ngang; thanh ngang
+@cross-armed
+* tính từ
+- khoanh tay
+@cross-arrow
+* danh từ
+- mũi tên đầu bốn cạnh
+@cross-bearer
+* danh từ
+- người bị đóng đinh trên thánh giá (Giê-xu)
+@cross-bencher
+* danh từ
+- người chủ trương trung lập trong quốc hội
+@cross-bill
+* danh từ
+- (động vật) chim mỏ chéo
+@cross-check
+* danh từ
+- sự kiểm tra chéo
+* động từ
+- kiểm tra chéo
+@cross-court
+* tính từ, adv
+- về phía gốc chéo đối diện của sân chơi
+@cross-cultural
+* tính từ
+- so sánh giữa các nền văn hoá
+@cross-current
+* danh từ
+- dòng nước cắt ngang dòng nước khác
+- tư tưởng đối lập
+@cross-examiner
+* danh từ
+- người thẩm vấn
+@cross-fecundation
+* danh từ
+- sự thụ tinh chéo
+@cross-fertile
+- xem cross-fertilization
+@cross-fertilize
+* động từ
+- kích thích, thúc đẩy
+@cross-handed
+* tính từ,  adv
+- hai tay tréo nhau
+@cross-interrogation
+* danh từ
+- (pháp luật) sự thẩm vấn các nhân chứng
+@cross-kick
+* nội động từ
+- đá quả bóng qua sân bóng trong bóng bầu dục
+* danh từ
+- sự đá quả bóng qua sân bóng trong bóng bầu dục
+@cross-line
+* danh từ
+- đường ngang qua
+@cross-marriages
+* danh từ số nhiều
+- kết hôn chéo giữa hai gia đình
+@cross-multiply
+* ngoại động từ
+- nhân chéo giữa hai phân số
+@cross-patch
+* danh từ
+- người cáu gắt
+@cross-piece
+* danh từ
+- thanh ngang
+@cross-pin
+* danh từ
+- đinh đóng ngang
+@cross-ply
+* tính từ
+- (nói về vỏ xe) có lót bố
+@cross-purposes
+* danh từ số nhiều
+- sự hiểu lầm; bất hoà, hục hặc
+= to be at cross-purposes+ hiểu lầm, bất hòa
+= We're at cross-purposes: I'm talking about history, you're talking about politics+Chúng ta hiểu lầm nhau rồi: Tôi bàn chuyện lịch sử, cón anh lại bàn chuyện chính trị
+@cross-question
+* danh từ
+- như cross-examination
+* ngoại động từ
+- như cross-examine 2
+@cross-reference
+* danh từ
+- lời chỉ dẫn tham khảo, tham khảo chéo (một đoạn... trong cùng một cuốn sách)
+* động từ
+- bổ sung (một cuốn sách,  v v) những lời chỉ dẫn tham khảo
+@cross-staff
+* danh từ
+- máy đo góc
+@cross-town
+* tính từ
+- đi ngang mà thôi (chứ không vào)
+@cross-trade
+* danh từ
+- việc buôn bán bằng một tuyến hàng hải chở hàng đến những nước khác nước mình
+@cross-trees
+* danh từ
+- hai thanh gỗ nằm ngang để đỡ cột buồm và dây thừng
+@cross-wind
+* danh từ
+- gió thổi tạt ngang
+@crosser
+- xem cross
+@crosslet
+* danh từ
+- thánh giá nhỏ
+@crossroads
+* danh từ
+- nơi hai đường gặp và cắt nhau
+- We came to a crossroads
+- Chúng tôi đến một giao lộ
+= at the cross-roads+(nghĩa bóng) đến bước ngoặc; đến bước quyết định
+@crosstown
+* tính từ
+- xuyên thành phố, xuyên thị xã
+@crosstrees
+* danh từ
+- (snh)thanh giữ cột buồm
+@crossvein
+* danh từ
+- (giải phẫu) gân chéo
+@crosswalk
+* danh từ
+- (từ Mỹ, nghĩa Mỹ) như pedestrian crossing
+@crossways
+* phó từ
+- theo đường chéo góc
+@crosswind
+* danh từ
+- gió thổi tạt ngang (xe ôtô, máy bay)
+@crossword
+* danh từ
+- trò chơi ô chữ
+@crossword puzzle
+* danh từ
+- trò chơi ô chữ
+@crotched
+- xem crotch
+@crotcheteer
+* danh từ
+- người ngông; người có những ảo tưởng
+- người bán lấy những thành kiến
+@croton
+* danh từ
+- (thực vật) cây khổ sâm, cây ba đậu
+@croucher
+* danh từ
+- người xu nịnh
+@croupous
+* tính từ
+- xem croup
+* tính từ
+@crouton
+* danh từ
+- bánh mì nướng dùng với xúp
+@crow-berry
+* danh từ
+- (thực vật) cây dâu quạ
+@crowbar
+* danh từ
+- cái xà beng, cái nạy nắp thùng, cái đòn bẫy
+@crowder
+- xem crowd
+@crowdfoot
+* danh từ
+- (thực vật) cây mao lương
+@crowdie
+* danh từ
+- bánh ngọt làm tại nhà
+@crowdpuller
+* danh từ
+- điều thu hút đám đông
+@crowflight
+* danh từ
+- đường chim bay
+- đường bay của quạ
+@crowfoot
+* danh từ
+- (thực vật) cây mao lương
+@crowkeeper
+* danh từ
+- bù nhìn chống chống chim
+@crown colony
+- thuộc địa anh chưa được độc lập
+@crown prince
+- hoàng thái tử
+@crown princess
+- vợ hoàng thái tử
+@crown-cap
+* danh từ
+- nắp chai
+@crown-lens
+* danh từ
+- kính bằng thủy tinh cron
+@crown-office
+* danh từ
+- bộ hình (Anh)
+@crown-prince
+* danh từ
+- hoàng thái tử
+@crown-princess
+* danh từ
+- vợ hoàng thái tử
+@crown-quilt
+* danh từ
+- ngòi bút nhỏ nét
+@crowning
+* tính từ
+- hoàn thiện, chu toàn
+@crownless
+* danh từ
+- không có ngôi (vua); không có vua (nước)
+@crownling
+* danh từ
+- ấu chúa
+@crt
+- ống tia điện tử
+@cru
+* danh từ
+- vùng trồng nho
+@crucially
+* phó từ
+- quan trọng, chủ yếu
+@crucian
+* danh từ
+- (động vật) cá giếc
+@cruciately
+- xem cruciate
+@crucifier
+- xem crucify
+@cruciflorous
+* tính từ
+- có hoa dạng chữ thập
+@cruciform
+* tính từ
+- có hình dạng như chữ thập
+@cruciformly
+- xem cruciform
+@crud
+* danh từ
+- đồ thừa cần tống khứ
+- kẻ gây khó chịu
+@cruddly
+* tính từ
+- khó chịu
+@crudely
+* phó từ
+- sơ sài, qua loa
+- thô lỗ, thô tục
+@crudeness
+* danh từ
+- tính còn nguyên, tính còn sống
+- sự thô thiển
+- tính thô lỗ, tính lỗ mãng, tính tục tằn, tính thô bỉ; tính thô bạoạo
+@crudite
+* danh từ
+- miếng cà rốt
+- hành xắt sống ăn làm món khai vị
+@cruise missile
+* danh từ
+- tên lửa đầu đạn hạt nhân tầm thấp
+@cruising
+* tính từ
+- đi tuần tra
+- đi kiếm khách
+- đi tiết kiệm xăng
+* danh từ
+- (hàng hải) sự tuần tra
+- việc đi kiếm khách (ô tô)
+@crumb-brush
+* danh từ
+- chổi quét vụn bánh mì
+@crumb-tray
+* danh từ
+- rổ dọn bàn ăn
+@crumbliness
+- xem crumbly
+@crump
+* nội động từ
+- nổ ra
+- dáng một đòn mạnh
+- ngã xuống
+* danh từ
+- sự nổ ra
+- việc dáng một đòn mạnh
+- sự ngã xuống
+- tiếng đạn nổ
+@crumply
+- xem crumple
+@crumpy
+* tính từ
+- dễ vỡ; mềm yếu
+@crunchable
+- xem crunch
+@crunchy
+* tính từ
+- cứng và giòn
+@cruorine
+* danh từ
+- huyết sắc tố
+* danh từ
+- huyết sắc tố
+@crural
+* tính từ
+- thuộc đùi
+@crureous
+* danh từ
+- cơ đùi lớn ở giữa
+@crus
+* danh từ
+- số nhiều crura
+- cuống; chân; đùi
+@crush barrier
+* danh từ
+- hàng rào ngăn chặn đám đông
+@crushable
+- xem crush
+@crushingly
+* phó từ
+- triệt hạ, hạ nhục
+@crushproof
+- xem crush
+@crustal
+* tính từ
+- thuộc vỏ (trái đất...)
+@crustless
+- xem crust
+@crutched
+* tính từ
+- đi nạng; chống gậy
+@cruzado
+* danh từ
+- đồng cru-za-đô (tiền Bồ Đào Nha)
+@cryobiology
+* danh từ
+- sự nghiên cứu tác dụng của nhiệt độ thấp tới các hệ sinh học
+@cryogenically
+- xem cryogenic
+@cryolite
+* danh từ
+- (khoáng chất) criôlit
+@cryophylic
+* tính từ
+- phát triển ở nhiệt độ thấp
+@cryoscope
+* danh từ
+- (vật lý) cái nghiệm lạnh
+@cryoscopic
+- xem cryoscopy
+@cryotherapy
+* danh từ
+- cách dùng lạnh để chữa bệnh
+@cryptanalyse
+* ngoại động từ
+- giải các mật mã
+@cryptanalyst
+* danh từ
+- người giải các mật mã
+@cryptanalytic
+* tính từ
+- thuộc cách giải mật mã
+@crypticness
+- xem cryptic
+@cryptocarp
+* danh từ
+- (thực vật) quả kín
+@cryptocarpous
+* tính từ
+- có quả kín
+@cryptocrystalline
+* tính từ
+- có tinh thể kín
+@cryptogenic
+* tính từ
+- nguồn gốc không biết
+= cryptogenic disease+chứng bệnh không biết nguồn gốc
+@cryptogrammic
+- xem cryptogram
+@cryptographically
+- xem cryptography
+@cryptologist
+* danh từ
+- người chuyên về mật mã
+@cryptology
+* danh từ
+- khoa mật mã
+@cryptomeria
+* danh từ
+- (thực vật) cây thông liễu
+@cryptonym
+* danh từ
+- tên ẩn giấu
+@cryptorchid
+* danh từ
+- người ẩn tinh hoàn
+@cryptorchidism
+* danh từ
+- tình trạng tinh hoàn ẩn
+@cryptorchism
+* danh từ
+- chứng tinh hoàn ẩn
+@cryptorhetic
+* tính từ
+- thuộc nội tiết
+@cryptozoic
+* tính từ
+- (sinh học) sống ẩn
+@crystal clear
+* tính từ
+- hoàn toàn trong suốt
+- dễ hiểu
+@crystal set
+* danh từ
+- một loại máy thu thanh thông dụng trước đây
+@crystalliferous
+* tính từ
+- tạo ra pha lê
+- chứa đựng pha lê
+@crystallinity
+- xem crystalline
+@crystallizable
+- xem crystallize
+@crystallizer
+- xem crystallize
+@crystallographer
+- xem crystallography
+@crystallographically
+- xem crystallography
+@crystalloidal
+- xem crystalloid
+@cse
+* (viết tắt)
+- Chứng chỉ tốt nghiệp trung học (Certificate of Secondary Education)
+@csm
+* (viết tắt)
+- Thượng sự (Company Sergeant Major)
+@csma/cd
+- Tổ chức thâm nhập nhiều mối bằng cảm nhận sóng mạng có dò xung đột
+@cst
+* (viết tắt)
+- Giờ chuẩn trung tâm (Central Standard Time)
+@ctenophoral
+* danh từ
+- adj
+- (sinh học) có phiến lược; có tấm bơi
+@ctenophore
+* danh từ
+- (sinh học) gốc phiến lược
+@ctenosome
+* danh từ
+- (sinh học) nhiễm sắc thể hình lược
+@ctrl
+- (vt của control) điều khiển
+@cua
+- giao diện CUA (một tiêu chuẩn về giao diện cho các chương trình ứng dụng)
+@cuadrilla
+* danh từ
+- (sinh học) nhóm đấu sĩ đấu bò
+@cub-hunting
+* danh từ
+- việc đi săn cáo
+@cub-scout
+* danh từ
+- sói con (hướng đạo)
+@cubeb
+* danh từ
+- (thực vật) cây tiêu thuốc
+@cuber
+- xem cube
+@cubically
+- xem cubical
+@cubicalness
+- xem cubical
+@cubicly
+- xem cubic
+@cubistic
+- xem cubism
+@cubistically
+- xem cubism
+@cubitus
+* danh từ
+- xương trụ; gân trụ cánh (côn trùng)
+@cuboidal
+- xem cuboid
+@cuckhold
+* ngoại động từ
+- cắm sừng chồng
+@cuckholdry
+* danh từ
+- việc cắm sừng chồng
+@cucullate
+* tính từ, như cucullated
+- (thực vật) có dạng mũ, dạng nắp
+= a leaf cucullate+lá có dạng mũ
+@cucullus
+* danh từ
+- (thực vật) mũ; nắp
+@cucumiform
+* tính từ
+- hình quả dưa chuột
+@cucumis
+* danh từ
+- (thực vật) giống dưa chuột
+@cudbear
+* danh từ
+- (thực vật) địa y nhuộm (cây, bột)
+@cudden
+* danh từ
+- chàng ngốc
+@cuddlesome
+* tính từ
+- thích được vuốt ve
+@cuddly
+- xem cuddle
+@cuddy
+* danh từ
+- phòng con
+- khoang đầu thuyền
+- tủ
+@cudweed
+* danh từ
+- (thực vật) rau khúc
+@cue-ball
+* danh từ
+- hòn bi-a bị gậy bi-a đẩy
+@cuesta
+* danh từ
+- ngọn đồi một bên thoai thoải một bên dốc
+@cuittle
+* ngoại động từ
+- nói khoác để lừa bịp
+@culet
+* danh từ
+- mặt sau của viên ngọc để gắn vào đồ trang sức
+- phần áo giáp che từ bụng trở xuống
+@culex
+* danh từ
+- (động vật) muỗi vằn; muỗi cu lếch
+@culler
+- xem cull
+@cullion
+* danh từ
+- (thông tục) đồ hèn hạ
+@cullis
+* danh từ
+- (kiến trúc) vữa lòng
+* danh từước hầm thịt
+- máng nước mưa
+@culmen
+* danh từ
+- đỉnh (núi), đỉnh chót vót
+- (sinh học) đường sống mỏ
+@culminal
+* tính từ
+- ở trên đỉnh, thuộc đỉnh
+@culottes
+* danh từ
+- quần sooc rộng
+@culpa
+* danh từ
+- tội lỗi; sai lầm
+@culpably
+* phó từ
+- đáng trách
+@cultic
+- xem cult
+@cultiform
+* tính từ
+- dạng dao
+@cultillus
+* danh từ
+- lưỡi dao
+@cultish
+- xem cult
+@cultism
+- xem cult
+@cultist
+- xem cult
+@cultivability
+- xem cultivable
+@cultivable
+* tính từ
+- có thể trồng trọt, có thể canh tác
+@cultivar
+* danh từ
+- cây trồng
+@cultivatable
+- xem cultivate
+@culturally
+* phó từ
+- về phương diện văn hoá
+@culture shock
+* danh từ
+- cú sốc văn hoá
+@culture vulture
+* danh từ
+- người ao ước có được văn hoá
+@culturology
+* danh từ
+- văn hoá học
+@cultus
+* danh từ
+- phần nghi lễ trong tôn giáo, việc thờ cúng
+@culverin
+* danh từ
+- (lịch sử) súng thần công
+@cumberer
+- xem cumber
+@cumbersomely
+- xem cumbersome
+@cumbrously
+- xem cumbrous
+@cumbrousness
+- xem cumbrous
+@cummingtonite
+* danh từ
+- (khoáng chất) cumingtonit
+@cumshaw
+* danh từ
+- quà tặng
+@cumulatively
+* phó từ
+- tích tụ, lũy tích
+@cumulativeness
+- xem cumulative
+@cumuliform
+* tính từ
+- giống như đống mây
+@cumulo-nimbus
+* danh từ
+- số nhiều cumulo-nimbi,  cumulo-nimbuses
+- (khí tượng) mây tích mưa
+@cumulo-stratus
+* danh từ
+- số nhiều cumulostrati
+- (khí tượng) mây tích tầng
+@cunctation
+* danh từ
+- sự trì hoãn
+@cunctative
+* tính từ
+- trì hoãn
+@cunctator
+* danh từ
+- người trì hoãn
+@cuneate-obovoid
+* tính từ
+- dạng nêm - trứng ngược
+@cuneately
+- xem cuneate
+@cuneus
+* danh từ
+- mảnh nêm (cánh côn trùng)
+@cunnilingual
+- xem cunnilingus
+@cunnilingus
+* danh từ
+- sự kích dụng bằng cách liếm
+@cunningly
+* phó từ
+- xảo trá, gian trá
+@cunningness
+- xem cunning
+@cunt
+* danh từ
+- bộ phận sinh dục của giống cái
+- kẻ đáng ghét
+@cupcake
+* danh từ
+- bánh nướng nhỏ
+@cupeler
+- xem cupel
+@cupellation
+* danh từ
+- cách tách kim loại quý bằng cupen
+@cupeller
+- xem cupel
+@cupro-nickel
+* danh từ
+- hợp kim đồng và niken dùng để đúc tiền
+@cur-murring
+* danh từ
+- âm thanh nhẹ, nhỏ
+@curably
+- xem curable
+@curarine
+* danh từ
+- (hoá học) curarin
+@curatively
+- xem curative
+@curativeness
+- xem curative
+@curatorial
+- xem curator
+@curatorship
+- xem curator
+@curb-bit
+* danh từ
+- hàm thiết ngựa
+@curb-chain
+* danh từ
+- dây hàm thiếc ngựa
+@curbless
+* tính từ
+- không có dây cương
+@curia
+* danh từ
+- số nhiều curiae
+- curi (đơn vị chia theo thị tộc cổ La-mã)
+- triều chính toà thành giáo hội
+- (lịch sử) viện nguyên lão
+@curiosa
+* danh từ số nhiều
+- những điều hiếm thấy
+- khách khiêu dâm
+@curiously
+* phó từ
+- tò mò, hiếu kỳ
+- lạ kỳ
+@curler
+* danh từ
+- dụng cụ cuộn tóc
+@curlicue
+* danh từ
+- vòng xoắn trang trí
+@curlily
+- xem curly
+@curmudgeonly
+* tính từ
+- thô lỗ, cộc cằn
+@curmudgeonry
+- xem curmudgeon
+@curn
+* danh từ
+- hạt nhỏ; lượng nhỏ
+@currag
+* danh từ
+- cũng currach
+- thuyền da
+@current-meter
+* danh từ
+- dụng cụ đo dòng nước
+@currently
+* phó từ
+- hiện thời, hiện nay
+@currentness
+- xem current
+@curricular
+- xem curriculum
+@currishly
+- xem currish
+@cursedness
+- xem cursed
+@curser
+- xem curse
+@cursively
+- xem cursive
+@cursiveness
+- xem cursive
+@cursorily
+* phó từ
+- vội vàng, qua loa
+@cursus
+* danh từ
+- số nhiều cursi
+- kiến trúc bằng đất gồm hai bức thành song song ngoài có hào có từ thời tân thạch
+@curtailer
+- xem curtail
+@curtain-band
+* danh từ
+- khuôn cửa
+@curtal
+* tính từ
+- ngắn; bị cắt bớt
+- curtal dog
+- chó bị cắt cụt đuôi
+@curtate
+* tính từ
+- ngắn; rút ngắn; bị lược bớt
+@curtilage
+* danh từ
+- (từ Pháp) khu vườn, sân thuộc một ngôi nhà
+@curtly
+* phó từ
+- cộc lốc, sẳng
+@curule
+* danh từ
+- ghế ngà vị quan cao cấp cổ La-mã ngồi
+@curvaceous
+* tính từ
+- (nói về phụ nữ) tròn trịa, đẫy đà
+@curvaceously
+- xem curvaceous
+@curvaceousness
+- xem curvaceous
+@curvate
+* tính từ, cũng curvated
+- cong; uốn cong
+@curvedness
+- xem curve
+@curvicaudate
+* tính từ
+- có đuôi cong
+@curvicaulis
+* danh từ
+- thân cong
+@curvifoliate
+* tính từ
+- thân cong
+@curvilinearity
+- xem curvilinear
+@curvilinearly
+- xem curvilinear
+@curvirostreit
+* tính từ
+- có mỏ cong
+@curvity
+* danh từ
+- tính chất cong
+@curvy
+* tính từ
+- cong
+- có thân hình hấp dẫn
+@cuscus
+* danh từ
+- (động vật) cáo có túi
+@cushat
+- (động vật) bồ câu rừng xám
+@cushaw
+* danh từ
+- (thực vật) cây bí rợ
+@cushily
+- xem cushy
+@cushiness
+- xem cushy
+@cushionet
+* danh từ
+- cái đệm nhỏ
+@cushionless
+* tính từ
+- không có đệm
+@cusk
+- (động vật) cá moruy chấm đen
+@cuspate
+* tính từ
+- có điểm nhọn, có hình nhọn
+@cuspid
+* danh từ
+- (giải phẫu) răng nanh
+@cuspidate
+* tính từ
+- có mũi nhọn, nhọn đầu
+@cussedly
+* phó từ
+- lì lợm, ngoan cố
+@cussword
+* danh từ
+- lời thề
+@custardy
+- xem custard
+@custodial
+* tính từ
+- thuộc về án phạt giam
+@custodianship
+- xem custodian
+@customarily
+* phó từ
+- thông thường, theo lẽ thường
+@customariness
+- xem customary
+@customhouse
+- sở hải quan
+@customisation
+* danh từ
+- sự chế tạo (hoặc sửa chữa) theo yêu cầu của khách hàng
+- <tin> sự tùy biến
+@customise
+* động từ
+- làm theo yêu cầu của khách hàng
+- <tin> tùy biến
+@customization
+* danh từ
+- sự chế tạo (hoặc sửa chữa) theo yêu cầu của khách hàng
+- <tin> sự tùy biến
+@customizer
+- xem customize
+@customs
+* danh từ số nhiều
+- thuế đánh vào hàng nhập từ nước ngoài vào; thuế nhập khẩu
+= to pay customs on something+đóng thuế nhập khẩu cái gì
+- cơ quan chính phủ thu sắc thuế này; hải quan
+= The Customs have found heroin hidden in freight+Hải quan đã tìm ra hê rô in giấu trong lô hàng
+= customs officer+cán bộ hải quan
+= customs duty+thuế hải quan
+= customs formalities+thủ tục hải quan
+= a customs check/search+cuộc kiểm tra/khám xét của hải quan
+= how long does it take to get through customs?+làm thủ tục hải quan mất bao lâu?
+@customs union
+- liên minh thuế quan
+@cut glass
+- thủy tinh chạm
+@cut-price
+* tính từ, adv
+- hạ giá, giảm giá
+@cut-rate
+* tính từ
+- giá hạ
+@cutaneously
+- xem cutaneous
+@cutaway
+* danh từ
+- bản vẽ mặt trong, sơ đồ mặt trong (không vẽ mặt ngoài, để thấy rõ
+@cutback
+* danh từ
+- sự cắt giảm
+@cutely
+* phó từ
+- ranh ma, láu lỉnh
+@cuteness
+* danh từ
+- sự ranh ma, sự láu lỉnh
+@cuticular
+- xem cuticle
+@cutis
+* danh từ
+- số nhiều cutes
+- lớp da trong; chân bì
+- lớp mô mạch liên kết
+@cuttable
+- xem cut
+@cutting-room
+* danh từ
+- phòng biên tập phim
+@cuttingly
+* phó từ
+- chua cay, cay độc
+@cutwater
+* danh từ
+- phần trước chiếc tàu
+@cutwork
+* danh từ
+- mảnh in hoa rời gắn vào quần áo
+@cuvette
+* danh từ
+- chậu thủy tinh (trong phòng thí nghiệm)
+@cv
+* (viết tắt)
+- lý lịch (curriculum vitae)
+@cwm
+* danh từ
+- thung lũng tròn
+@cwt
+- (vt của tiếng latinh centum + tiếng anh weight) tạ (đơn vị đo trọng
+@cyanamide
+* danh từ
+- (hoá học) xianamit
+@cyanate
+* danh từ
+- (hoá học) xianat
+@cyanogenesis
+* danh từ
+- (hoá học) sự sinh axit xianhidric
+@cyanophyte
+* danh từ
+- (thực vật) tảo lam
+@cyanosed
+* tính từ
+- bị chứng xanh tím
+@cyanotic
+- xem cyanosis
+@cybernated
+* tính từ
+- thuộc điều khiển học
+@cybernation
+* danh từ
+- sự kiểm tra tự động hoạt động bằng máy tính
+@cybernetically
+- xem cybernetics
+@cybernetician
+- xem cybernetics
+@cyberneticist
+- xem cybernetics
+@cyberphober
+- chứng sợ máy tính
+@cybersex
+- tính dục máy tính
+@cyborg
+* danh từ
+- nhân vật trong tiểu thuyết viễn tưởng có tính cách nửa người nửa máy
+@cyclamate
+* danh từ
+- đường hoá học
+@cyclamin
+* danh từ
+- (hoá học) xiclamin
+@cycleway
+* danh từ
+- xem cycle track
+@cyclicality
+- xem cyclic
+@cyclically
+* phó từ
+- đều đặn, theo chu kỳ
+@cyclifying
+* tính từ
+- tạo thành hình tròn
+@cyclocross
+* danh từ
+- cuộc đua xe đạp việt dã
+@cyclogenesis
+* danh từ
+- sự phát sinh khí xoáy tụ
+@cyclohexane
+* danh từ
+- (hoá học) ciklohexan
+@cycloidal
+- xem cycloid
+@cyclometric
+- xem cyclometer
+@cyclometry
+- xem cyclometer
+@cyclonic
+* tính từ
+- thuộc về lốc, thuộc về gió xoáy
+@cyclonoscope
+* danh từ
+- dụng cụ dự báo gió xoáy
+@cyclopedic
+* tính từ
+- thuộc từ điển bách khoa
+- có học vấn uyên bác
+= cyclopedic knowledge+tri thức uyên bác
+@cyclorama
+* danh từ
+- (sân khấu) màn vây
+@cycloramic
+* tính từ
+- thuộc màn vây
+@cyclosis
+* danh từ
+- sự vận động vòng
+@cyclostomate
+* danh từ
+- (động vật) bộ miệng tròn
+@cyesis
+* danh từ
+- (y học) sự mang thai
+@cygnus
+* danh từ
+- (động vật) thiên nga
+@cylinder block
+- (cơ) hộp xilanh
+@cylinder head
+- (cơ) nắp xilanh
+@cylindricality
+- xem cylindrical
+@cylindrically
+- xem cylindrical
+@cylindricity
+* danh từ
+- tính chất hình trụ
+@cylindroid
+* tính từ
+- giống hình trụ
+@cymbaleer
+- xem cymbal
+@cymbiform
+* tính từ
+- (giải phẫu) dạng thuyền
+@cymbium
+* danh từ
+- (giải phẫu) xương thuyền
+@cymiferous
+- xem cyme
+@cymophane
+* danh từ
+- (khoáng chất) ximophan
+@cynically
+* phó từ
+- bất cần đạo lý, bất nhẫn
+@cynicalness
+- xem cynical
+@cynosural
+- xem cynosure
+@cynthia
+* danh từ
+- (thơ ca) chị Hằng
+@cyprinid
+* danh từ
+- (động vật) họ chép
+@cyprinodont
+* danh từ
+- (động vật) cá sóc
+@cyrix
+- Tên một hãng sản xuất các chip máy tính
+@cysticercoid
+* tính từ
+- (động vật) dạng nang sán
+@cysticercosis
+* danh từ
+- số nhiều cysticercoses
+- bệnh nang sán; bệnh gạo sán
+@cystinuria
+* danh từ
+- (y học) chứng đái xistin
+@cystocarp
+* danh từ
+- (thực vật) quả thể túi
+@cystocopik
+* tính từ
+- thuộc ống soi bọng đái
+@cystoid
+* tính từ
+- giống như túi; dạng bọng; dạng kén
+* danh từ
+- cấu trúc dạng túi, cấu trúc dạng kén
+@cystolith
+* danh từ
+- sỏi bàng quang
+@cystoscope
+* danh từ
+- ống soi bọng đái
+@cytherean
+* tính từ
+- thuộc hành tinh Vê nút (sao kim)
+@cytochemistry
+* danh từ
+- hoá học tế bào
+@cytodifferentiation
+* danh từ
+- sự phân hoá tế bào
+@cytogenetics
+* danh từ
+- di truyền học tế bào
+@cytokinesis
+* danh từ
+- sự phân bào
+@cytologic
+- xem cytology
+@cytologist
+- xem cytology
+@cytolysin
+* danh từ
+- tiêu tế bào tố; hủy tế bào tố
+@cytomembrane
+* danh từ
+- màng tế bào
+@cyton
+* danh từ
+- xiton; thân tế bào thần kinh
+@cytoplasmic
+- xem cytoplasm
+@cytoplasmically
+- xem cytoplasm
+@czardom
+- xem czar

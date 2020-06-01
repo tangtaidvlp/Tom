@@ -1,7 +1,7 @@
 package com.teamttdvlp.memolang.view.helper
 
-import com.teamttdvlp.memolang.model.entity.flashcard.FlashcardSet
-import com.teamttdvlp.memolang.model.entity.flashcard.Flashcard
+import com.teamttdvlp.memolang.data.model.entity.flashcard.FlashcardSet
+import com.teamttdvlp.memolang.data.model.entity.flashcard.Flashcard
 
 class TestEverything {
     companion object {
@@ -14,8 +14,7 @@ class TestEverything {
                 "en-vi",
                 "English-Vietnamese",
                 "We negotiate for intergrating two force",
-                "Chúng tôi đàm phán để liên kết hai lực lượng", "", "Sentences", ""
-            )
+                "Chúng tôi đàm phán để liên kết hai lực lượng", "", "Sentences", "")
             val flashcard1 = Flashcard(
                 i++,
                 "$i -Something",
@@ -222,7 +221,7 @@ class TestEverything {
         }
 
         fun mockFlashcardSet (id : String) : FlashcardSet {
-            return FlashcardSet(id).apply {
+            return FlashcardSet(id, "English", "Vietnamese").apply {
                 flashcards = mockFlashCardList()
             }
         }

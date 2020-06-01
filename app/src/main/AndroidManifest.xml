@@ -4,6 +4,8 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
 
     <application
         android:name=".di.MemoLang"
@@ -14,7 +16,11 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme_WithSplashScreen"
         android:windowSoftInputMode="adjustNothing">
-<!--        <activity android:name=".view.activity.ReviewFlashcardEasyActivity"></activity>-->
+
+        <service
+            android:name=".view.customview.floating_library.FloatingAddServiceManager$FloatAddService"
+            android:enabled="true"
+            android:exported="true"/>
 
         <meta-data
             android:name="com.facebook.sdk.ApplicationId"
@@ -37,19 +43,19 @@
             </intent-filter>
         </activity>
         <activity android:name=".view.activity.ReviewFlashcardActivity" />
-        <activity android:name=".view.activity.SeeVocabularyActivity"
-            android:windowSoftInputMode="adjustPan"/>
+        <activity
+            android:name=".view.activity.SeeVocabularyActivity"/>
         <activity android:name=".view.activity.SearchEngVNDictionaryActivity" />
         <activity android:name=".view.activity.ViewFlashcardSetActivity" />
         <activity android:name=".view.activity.AddFlashcardActivity" />
+        <activity android:name=".view.activity.RetrofitAddFlashcardActivity"
+            android:windowSoftInputMode="adjustResize" />
         <activity android:name=".view.activity.EditFlashcardActivity" />
-        <activity android:name=".view.activity.MenuActivity"
-            android:windowSoftInputMode="adjustPan"/>
-        <activity android:name=".view.activity.ViewFlashCardListActivity" />
-<!--        <activity android:name=".view.activity.SearchEditFlashcardActivity" />-->
-        <activity android:name=".view.activity.SearchOnlineActivity"
-            android:windowSoftInputMode="adjustPan"/>
-
+        <activity
+            android:name=".view.activity.MenuActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".view.activity.ViewFlashCardListActivity" /> <!-- <activity android:name=".view.activity.SearchEditFlashcardActivity" /> -->
+        <activity android:name=".view.activity.SearchOnlineActivity"/>
         <activity android:name=".view.activity.UseFlashcardDoneActivity" />
         <activity android:name=".view.activity.UseFlashcardActivity" />
         <activity android:name=".view.activity.ReviewFlashcardEasyActivity" />

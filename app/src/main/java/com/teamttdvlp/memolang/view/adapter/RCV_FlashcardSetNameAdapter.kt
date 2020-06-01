@@ -3,31 +3,26 @@ package com.teamttdvlp.memolang.view.adapter
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.teamttdvlp.memolang.data.model.entity.flashcard.FlashcardSet
 import com.teamttdvlp.memolang.databinding.ItemFlashcardSetNameBinding
-import com.teamttdvlp.memolang.view.helper.disappear
+import com.teamttdvlp.memolang.view.helper.goGONE
 
 class RCV_FlashcardSetNameAdapter (private var context : Context): RecyclerView.Adapter<RCV_FlashcardSetNameAdapter.DataViewHolder>() {
 
-    private val CREATE_NEW_SET_ITEM = "+ Create new set"
+    var list : ArrayList<FlashcardSet> = ArrayList()
 
-    var list : ArrayList<String> = ArrayList()
-
-    private var onItemClickListener : ((String) -> Unit)? = null
-
-    private var onCreateNewSetItemClick : (() -> Unit)? = null
+    private var onItemClickListener : ((FlashcardSet) -> Unit)? = null
 
     class DataViewHolder (var dB : ItemFlashcardSetNameBinding): RecyclerView.ViewHolder(dB.root) {
-        fun bind (setName : String) {
-            dB.txtText.text = setName
+        fun bind (set : FlashcardSet) {
+            dB.txtText.text = set.name
         }
     }
 
-    fun setData (data : ArrayList<String>) {
+    fun setData (data : ArrayList<FlashcardSet>) {
         this.list.clear()
         this.list.addAll(data)
-        this.list.add(CREATE_NEW_SET_ITEM)
         notifyDataSetChanged()
     }
 
@@ -42,25 +37,16 @@ class RCV_FlashcardSetNameAdapter (private var context : Context): RecyclerView.
     override fun onBindViewHolder(holder: DataViewHolder, position: Int) {
         val item = list[position]
         holder.bind(item)
-        if (item == CREATE_NEW_SET_ITEM) {
-            holder.itemView.setOnClickListener {
-                onCreateNewSetItemClick?.invoke()
-            }
-            holder.dB.line.disappear()
-        } else {
-            holder.itemView.setOnClickListener {
-                onItemClickListener?.invoke(item)
-            }
+        holder.itemView.setOnClickListener {
+            onItemClickListener?.invoke(item)
         }
-
+        if (position == list.size - 1) {
+            holder.dB.line.goGONE()
+        }
     }
 
-    fun setOnItemClickListener (onClick : (String) -> Unit) {
+    fun setOnItemClickListener (onClick : (FlashcardSet) -> Unit) {
         this.onItemClickListener = onClick
-    }
-
-    fun setOnCreateNewSet_ItemClick (onClick : () -> Unit) {
-        this.onCreateNewSetItemClick = onClick
     }
 
 }

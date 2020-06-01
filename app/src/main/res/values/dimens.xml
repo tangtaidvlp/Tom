@@ -2,9 +2,9 @@
 <resources>
     <dimen name="text_size">19sp</dimen>
     <dimen name="translation_size">15sp</dimen>
-    <dimen name="common_margin_top">20dp</dimen>
-    <dimen name="common_margin_start">20dp</dimen>
-    <dimen name="common_margin_end">20dp</dimen>
+    <dimen name="common_margin_top">15dp</dimen>
+    <dimen name="common_margin_start">18dp</dimen>
+    <dimen name="common_margin_end">18dp</dimen>
     <dimen name="common_dialog_margin_start">15dp</dimen>
     <dimen name="common_dialog_margin_end">15dp</dimen>
 </resources>

@@ -1,0 +1,5326 @@
+@e number
+* danh từ
+- mã số khởi đầu bằng chữ E, để chỉ gia vị cho vào thực phẩm
+@e-business
+- kinh doanh điện tử
+@e-commerce
+- thương mại điện tử
+@e-mail
+- thư điện tử
+@ea
+- (vt của each) mỗi
+@eachother
+- đt
+- lẫn nhau, nhau
+@eager beaver
+- người cần cụ nhiệt tình
+@eagerly
+* phó từ
+- hăm hở, hăng hái, thiết tha
+@eagle eye
+- mắt diều hâu, thị lực rất tốt
+- sự theo rõi sát sao
+@eagle-eye
+* danh từ
+- khả năng nhìn rất tinh
+- người có khả năng nhìn rất tinh
+@eagle-owl
+* danh từ
+- (động vật) chim cú lớn
+@ealdorman
+* danh từ
+- thủ trưởng (một quận Anh)
+@ear-cap
+* danh từ
+- cái che tai
+@ear-finger
+* danh từ
+- ngón tay út
+@ear-flaps
+* danh từ
+- cái che tai ở mũi
+@ear-lap
+* danh từ
+- dái tai
+@ear-piece
+* danh từ
+- bộ phận của một máy đặt bên tai để nghe
+- cái gọng kính
+@ear-plug
+* danh từ
+- nút bịt lỗ tai
+@ear-witness
+* danh từ
+- người được gọi ra làm chứng do chính tai mình nghe được điều gì
+@earache
+* danh từ
+- sự đau tai; bệnh đau tai
+@eardrop
+* danh từ
+- thuốc nhỏ tai
+@eardrum
+- màng nhự
+@eared
+* tính từ
+- có đôi tai đặc biệt
+= big eared man+người có tai to
+= golden eared corn+lúa mì bông vàng
+@earful
+* danh từ
+- sự quở mắng, sự rầy la
+@earlobe
+* danh từ
+- dái tai
+@earlock
+* danh từ
+- món tóc bên tai
+@early closing
+* danh từ
+- sự đóng cửa sớm
+@early warning
+* danh từ
+- sự loan báo sớm, sự cảnh báo sớm
+@earmuff
+- bao bịt tai (chống rét)
+@earner
+- xem earn
+@earnestly
+* phó từ
+- nghiêm túc, nghiêm chỉnh
+@earnings-related
+* tính từ
+- tùy theo thu nhập, tùy theo số tiền kiếm được
+@earphones
+- ống nghe
+@earpieces
+- mảnh che tai (ở một số kiểu mũ)
+- đầu ngọng mắc ở tai (ở kính đeo mắt)
+@earplugs
+- cái nút tai
+@earring
+- khuyên tai
+@earsplitting
+* tính từ
+- inh tai, xé tai (tiếng động)
+@earth science
+* danh từ
+- khoa học về đất
+@earth-bank
+* danh từ
+- bờ đất
+@earth-bath
+* danh từ
+- luống đất (để trồng)
+- mồ mả
+@earth-bred
+* tính từ
+- ty tiện
+@earth-chestnut
+* danh từ
+- cây lạc
+@earth-closet
+* danh từ
+- nhà xí lấy đất phủ lên phân
+@earth-created
+* tính từ
+- sinh ra từ đất; do đất tạo nên
+@earth-fall
+* danh từ
+- sự đất đá sụt lở; việc núi lở
+@earth-fast
+* tính từ
+- gắn bó với mặt đất
+@earth-fed
+* tính từ
+- ty tiện
+@earth-house
+* danh từ
+- nhà ở dưới đất
+@earth-movement
+* danh từ
+- sự chấn động của vỏ trái đất
+@earth-oil
+* danh từ
+- dầu mỏ
+@earth-shaker
+* danh từ
+- thần lay chuyển đất; chỉ thần biển (thần thoại Hy-lạp)
+@earth-treatment
+* danh từ
+- (y học) cách dùng đất trị bệnh
+@earth-wolf
+* danh từ
+- (động vật) chó sói đất
+@earthenhearted
+* tính từ
+- ích kỷ; ty tiện; ngu độn
+@earthily
+- xem earthy
+@earthman
+* danh từ
+- xem earthling
+@earthmother
+* danh từ
+- bà mẹ đất
+@earthshaking
+- động đất
+@earthworm
+- giun đất
+@easefully
+* phó từ
+- nhẹ nhàng, thoải mái
+@easefulness
+- xem easeful
+@east-bound
+* phó từ
+- đi về hướng đông
+@east-northeast
+* danh từ, adj,  adv+Đông Đông Bắc, điểm ở giữa Đông và Đông Bắc
+@eastbound
+* tính từ
+- về hướng đông
+@easter egg
+- trứng phục sinh (trứng làm bằng socola hay trứng thật)
+@easternness
+- xem eastern
+@easterntide
+* danh từ
+- tuần lễ phục sinh (từ phục sinh đến ngày thăng thiên)
+@eastmost
+* tính từ
+- cực đông
+@eastsoutheast
+* danh từ, adj,  adv+Đông Đông Nam
+@easy chair
+- ghế bành
+@easy street
+- sống sung túc
+@easygoing
+* tính từ
+- dễ tính, vô tâm
+@eatables
+* danh từ số nhiều
+- những thứ ăn được; thức ăn; đồ ăn
+= eatables and drinkables+đồ ăn thức uống
+@eaves-trough
+* danh từ
+- máng nước ở mái chìa
+@eavesdrip
+* danh từ
+- nước nhỏ giọt từ mái chìa
+@ebb tide
+- triều xuống
+@ebcdic
+- Một nguyên tắc mã hoá tập ký tự máy tính
+@ebracteate
+* tính từ
+- không lá bắc
+@ebriosity
+* danh từ
+- tình trạng thường say
+@ebulliently
+* phó từ
+- sôi nổi, hăm hở
+@ebullioscope
+* danh từ
+- dụng cụ nghiệm sôi
+@eburine
+* danh từ
+- ngà giả
+@eburnated
+* tính từ
+- cứng như ngà voi
+@ec
+* (viết tắt)
+- khu trung tâm phía đông (east central)
+@ecballium
+* danh từ
+- diễn thế sau đốn rừng
+@eccentrically
+* phó từ
+- lập dị, kỳ cục, quái gở
+@ecchondroma
+* danh từ
+- (y học) bệnh mềm xương
+@ecchymotic
+- xem ecchymosis
+@ecclesiastically
+- xem ecclesiastical
+@ecclesiasticism
+* danh từ
+- chủ nghĩa giáo hội
+@ecclesiasticus
+* danh từ
+- thánh thư giả
+@ecclesiography
+* danh từ
+- (tôn giáo) lịch sử giáo hội
+@ecclesiological
+- xem ecclesiology
+@eccoprotic
+* tính từ
+- (y học) lợi đại tiện
+* danh từ
+- thuốc lợi đại tiện
+@eccrine
+* danh từ
+- nội tiết
+@eccrinology
+* danh từ
+- (sinh học) nội tiết học
+@ecderon
+* danh từ
+- (y học) biểu bì
+@ecdysone
+- Cách viết khác : ecdyson
+@ecg
+* (viết tắt)
+- điện tâm đồ (electrocardiogram)
+@echinocactus
+* danh từ
+- (thực vật) cây xương rồng
+@echinocarp
+* danh từ
+- (thực vật) quả có gai
+@echinochrome
+* danh từ
+- sắc tố hô hấp đỏ
+@echinodermal
+- xem echinoderm
+@echinodermatous
+- xem echinoderm
+@echinoid
+* tính từ
+- giống nhím biển
+* danh từ
+- (động vật) động vật giống nhím biển
+@echinulate
+* tính từ
+- có gai nhỏ; có móc nhỏ
+@echo-sounder
+* danh từ
+- dụng cụ đo độ sâu bằng cách tính thời gian sóng âm thanh dội lại từ khi phát âm thanh
+@echoer
+- xem echo
+@echoey
+- xem echo
+@echography
+* danh từ
+- như ultrasonography
+* danh từ
+- như ultrasonography
+@echolalia
+* danh từ
+- (y học) chứng lặp lại máy móc lời nói người khác
+@echoless
+* tính từ
+- không có tiếng dội lại; không có phản ứng
+@echolocation
+* danh từ
+- sự định vị bằng tiếng vang
+@echometer
+* danh từ
+- máy đo âm hưởng
+@echoplex
+- Một tiêu chuẩn truyền thống đối với máy tính, trong đó trạm thu báo nhận và xác thực việc thu nhận thông báo bằng cách phản hồi thông báo đó ngược lại cho trạm phát
+@eclamptic
+- xem eclampsia
+@eclectically
+* phó từ
+- theo quan niệm chiết trung
+@eclosion
+* danh từ
+- sự nở (từ trứng)
+@eco-
+- (tiếp đầu ngữ) sinh thái
+@ecobiotic
+* tính từ
+- (thuộc) sinh thái-sinh học
+@ecocide
+* danh từ
+- thuốc hủy diệt sinh thái
+@ecoclimate
+* danh từ
+- sinh thái - khí hậu
+@ecoclimatic
+* tính từ
+- thuộc sinh thái - khí hậu
+@ecogenesis
+* danh từ
+- sự phát sinh sinh thái
+@ecoline
+* danh từ
+- cấp sinh thái
+@ecologically
+* phó từ
+- về phương diện sinh thái
+@econometric
+* tính từ
+- thuộc toán kinh tế
+@econometrician
+* danh từ
+- nhà toán kinh tế
+@econometrics
+* danh từ
+- toán kinh tế
+@econometrist
+* danh từ
+- nhà toán kinh tế
+@economically
+* phó từ
+- về phương diện kinh tế, về mặt kinh tế
+@economisation
+* danh từ
+- sự sử dụng tiết kiệm, sự sử dụng tối đa
+- sự tiết kiệm, sự giảm chi
+@ecophysiology
+* danh từ
+- khoa sinh lý môi sinh
+@ecospecies
+* danh từ số nhiều
+- loài sinh thái
+@ecospecific
+* tính từ
+- thuộc loài sinh thái
+@ecosphere
+* danh từ
+- sinh quyển
+@ecossaise
+* danh từ
+- điệu nhảy Ê-cốt
+@ecosystem
+- hệ sinh thái
+@ecotone
+* danh từ
+- (sinh học) loài chuyển tiếp sinh thái
+@ecotype
+* danh từ
+- (sinh học) kiểu sinh thái
+- seasonal ecotype
+- kiều sinh thái mùa
+= climatic ecotype+kiểu sinh thái khí hậu
+@ecstatically
+* phó từ
+- đê mê, ngây ngất, mê ly
+@ectad
+* phó từ
+- hướng ra ngoài
+@ectadenia
+* danh từ số nhiều
+- (sinh học) tuyến sinh dục phụ ngoại bì
+@ectal
+* tính từ
+- ngoài
+@ectedon
+* danh từ
+- biểu bì
+@ectendal
+* tính từ
+- thuộc nội-ngoại bì
+@ecto-
+- (tiếp vự ngữ) sự cắt bỏ bằng phẫu thuật
+@ectobronchium
+* danh từ
+- (sinh học) nhánh phế quản bên
+@ectochrome
+* danh từ
+- (sinh học) sắc tố trên mặt tế bào; sắc tố ngoại bào
+@ectocondyle
+* danh từ
+- (sinh học) lồi cầu bên; lồi cầu ngoài
+@ectocranial
+* tính từ
+- (giải phẩu học) ngoài sọ
+@ectodermal
+- xem ectoderm
+@ectodermic
+- xem ectoderm
+@ectoenzyme
+* danh từ
+- enzim ngoại bào
+@ectogenesis
+* danh từ
+- (sinh học) sự phát triển nhân tạo
+@ectogenetic
+* tính từ
+- thuộc sự phát triển nhân tạo
+@ectogenic
+* tính từ
+- ngoại sinh
+@ectomere
+* danh từ
+- phôi bào ngoại bì
+@ectomeric
+* tính từ
+- thuộc phôi bào ngoại bì
+@ectomorph
+* danh từ
+- người ốm yếu gầy còm
+@ectoneural
+* tính từ
+- thuộc thần kinh ngoài, thần kinh ngoại biên
+@ectoorbital
+* tính từ
+- (giải phẫu) ngoài ổ mắt
+@ectoparasite
+* danh từ
+- (sinh học) vật ký sinh ngoài
+@ectoparasitic
+* tính từ
+- thuộc vật ký sinh ngoài
+@ectopia
+* danh từ
+- sự lạc, lệch vị trí
+@ectopic
+* tính từ
+- lạc vị trí, lệch vị trí
+@ectoplasmic
+- xem ectoplasm
+@ectoskeleton
+* danh từ
+- (sinh học) bộ xương ngoài
+@ectotherm
+* danh từ
+- động vật máu lạnh
+@ectothermic
+* tính từ
+- thuộc động vật máu lạnh
+@ectotrophic
+- Cách viết khác : ectotropic
+@ectype
+* danh từ
+- bản sao chính, bản nguyên mẫu
+@ecu
+* (viết tắt)
+- đơn vị tiền tệ của Liên minh Âu châu (European Currency Unit)
+@ecumenicalism
+* danh từ
+- niềm tin vào sự thống nhất đạo Cơ Đốc trên khắp hoàn cầu
+@ecumenically
+* phó từ
+- phổ quát, khắp thế giới
+@ecumenics
+* danh từ
+- việc nghiên cứu chiến lược toàn thế giới của thiên chúa giáo
+@ecumenism
+* danh từ
+- niềm tin vào sự hợp nhất giáo hội thiên chúa giáo
+@eczematous
+- xem eczema
+@edaphic
+* tính từ
+- thuộc đất trồng, thuộc thổ nhưỡng
+@edaphogenic
+* tính từ
+- làm thành đất trồng
+@edaphology
+* danh từ
+- thổ nhưỡng học
+@edaphon
+* danh từ
+- khu hệ sinh vật thổ nhưỡng
+@edda
+* danh từ
+- văn thơ Băng đảo cổ,  edda
+@eddatic
+* tính từ
+- thuộc văn thơ Băng đảo cổ,  edda
+@eddic
+- Cách viết khác : eddaic
+@edema
+* danh từ
+- (y học) chứng phù
+@edematous
+* tính từ
+- (y học) bị chứng phù
+@edenic
+* tính từ
+- thuộc địa đường; nơi cực lạc
+@edental
+* tính từ
+- không có răng
+@edentation
+* danh từ
+- sự thiếu răng
+@edentulate
+* tính từ
+- xem edentulous
+@edentulous
+* tính từ
+- không có răng
+@edge-plane
+* danh từ
+- cái bào để bào cạnh
+@edger
+* danh từ
+- người mài; dụng cụ để mài
+- dụng cụ để tỉa bờ bồn hoa
+@edgily
+* phó từ
+- cáu kỉnh, cáu gắt, bực dọc
+@edginess
+* danh từ
+- sự cáu kỉnh, sự bực dọc
+@edging-tile
+* danh từ
+- ngói lợp ở rìa mái
+@edi
+- Một tiêu chuẩn dùng cho việc trao đổi bằng phương pháp điện tử các tài liệu doanh thương, như các danh đơn hàng gửi và các phiếu trả tiền chẳng hạn, đã được thành lập bởi Hiệp hội các tiêu chuẩn trao đổi dữ liệu (Data Interchange Standard Association - DISA)
+@edibleness
+- xem edible
+@edibles
+* danh từ số nhiều
+- những thứ ăn được; thức ăn
+= edibles such as vegetables and meat+những thức ăn như rau và thịt chẳng hạn
+@edificatory
+* tính từ
+- thuộc giáo huấn, giáo hoá
+- sự mở mang trí óc
+@edifier
+- xem edify
+@edifying
+* tính từ
+- có tính cách giáo dục, khai trí
+@edile
+* danh từ
+- quan thị chính (từ cổ La Mã)
+@editorialization
+- xem editorialize
+@editorializer
+- xem editorialize
+@edp
+* (viết tắt) (electronic data processing)
+- xử lý dữ liệu điện tử
+@edt
+* (viết tắt) (eastern daylight time)
+- giờ miền Đông nước Mỹ
+@educated
+* tính từ
+- có giáo dục, có học
+@educationally
+* phó từ
+- về phương diện giáo dục
+@educationist
+- chuyên gia giáo dục
+@eductor
+* danh từ
+- người làm việc chiết xuất
+- vật được chiếc xuất
+@edulcorant
+* danh từ
+- chất làm dịu
+@edutainment
+- Các chương trình ứng dụng của máy tính, được thiết kế để báo cho người sử dụng biết về một chủ đề, nhưng được giới thiệu dưới dạng một trò chơi mang tính giải trí hoặc thách thức để làm cho người sử dụng thích thú hơn
+@eec
+* (viết tắt)
+- Cộng đồng kinh tế Âu châu (European Economic Community)
+@eeg
+* (viết tắt)
+- điện não đồ (electroencephalogram)
+@eel-shear
+* danh từ
+- cái xiên lươn
+@eel-sucker
+* danh từ
+- (động vật) cá hấp đá
+@eelfare
+* danh từ
+- đàn cá chình con
+- sự di cư ngược dòng (cá chình con)
+@eely
+* tính từ
+- giống như lươn
+@eems
+- Phiên bản nâng cao của LIM EMS (Lotus-Intel-Microsoft Expanded Memory Specification), nó cho phép các trình ứng dụng DOS có thể sử dụng bộ nhớ lớn hơn 640 K Phiên bản 4 0 của EMS phù hợp với phiên bản EMS gốc lẫn phiên bản nâng cao (EEMS)
+@eerily
+* phó từ
+- kỳ lạ, kỳ quái
+@eff
+* động từ
+- được sử dụng như là nói giảm nói tránh của động từ "fuck"
+= let him eff off!+bảo nó cút đi!
+@effacer
+- xem efface
+@effecter
+- xem effect
+@effectible
+- xem effect
+@effection
+* danh từ
+- (từ hiếm) thành tựu
+@effectivity
+- xem effective
+@effector
+* danh từ
+- (sinh học) cơ quan phản ứng lại kích thích
+- người thực hành, người sáng tạo
+@effectuality
+- xem effectual
+@effectually
+* phó từ
+- có hiệu quả, có kết quả
+@effeminately
+* phó từ
+- ẻo lả như đàn bà, nhu nhược
+@effeminateness
+- xem effeminate
+@effendi
+* danh từ
+- số nhiều effendis
+- ngài; tiên sinh; các hạ (danh từ người Thổ-nhĩ-kỳ dùng để chỉ người có uy, quyền thế)
+@efferently
+- xem efferent
+@effervescently
+- xem effervesce
+@effervescible
+* tính từ
+- hết khả năng sản xuất (đất đai)
+- kiệt sức
+- suy nhược; già cỗi; thiếu sinh khí
+- bỏ bễ
+@effetely
+- xem effete
+@efficaciously
+* phó từ
+- có hiệu quả, hiệu nghiệm
+@efficacity
+* danh từ
+- xem efficaciousness
+@efficiently
+* phó từ
+- có hiệu quả, hiệu nghiệm
+@effloresce
+* nội động từ
+- nở hoa
+- (hoa) lên hoa
+@efflorescence
+* danh từ
+- sự nở hoa
+@efflorescent
+* tính từ
+- nở hoa
+@effluvial
+- xem effluvium
+@effortful
+- xem effort
+@effortfully
+- xem effort
+@effortlessly
+* phó từ
+- dễ dàng
+@effortlessness
+* danh từ
+- sự dễ dàng (không cần cố gắng nhiều)
+@effulge
+* nội động từ
+- phát sáng; chiếu sáng
+@effulgent
+* tính từ
+- sáng ngời
+@effusively
+* phó từ
+- dạt dào, nồng nàn
+@efl
+* (viết tắt) (English as Foreign Language)
+- Anh ngữ với tính cách là ngoại ngữ
+@efta
+* (viết tắt) (European Free Trade Association)
+- Hiệp hội mậu dịch tự do Âu Châu
+@eftsoons
+* phó từ
+- (từ cổ, nghĩa cổ) sau đó
+@ega
+- card EGA
+@egest
+* ngoại động từ
+- (sinh học) bài tiết
+@egesta
+* danh từ số nhiều
+- (sinh học) chất bài tiết
+@egestion
+* danh từ
+- sự bài tiết
+@egg-and-spoon race
+* danh từ
+- cuộc chạy thi cầm thìa đựng trứng
+@egg-bag
+* danh từ
+- noãn sào
+- trò quỷ thuật lấy trứng ra từ cái túi không
+@egg-bald
+* tính từ
+- đầu trọc lóc
+@egg-beater
+* danh từ
+- (từ Mỹ,  (từ lóng)) máy bay trực thăng
+- cái đánh trứng
+@egg-case
+* danh từ
+- tấm màng che chở trứng côn trùng
+- vỏ trứng
+@egg-membrane
+* danh từ
+- màng trứng
+@egg-pouch
+* danh từ
+- túi trứng
+@egg-tooth
+* danh từ
+- hạt gạo (ở mỏ chim mũi rắn để mổ vỡ trứng mà ra)
+@egg-tube
+* danh từ
+- ống trứng
+@eggcup
+- chén đựng trứng chần
+@egghead
+* danh từ
+- nhà trí thức xa rời thực tế
+@eggless
+- xem egg
+@eggshell
+* danh từ
+- vỏ trứng
+@eggshell paint
+- sơn dạng vỏ trứng
+@eggy
+- xem egg
+@egis
+* danh từ
+- xem aegis
+@ego-trip
+* danh từ
+- sự ích kỷ, sự vị kỷ
+@ego-tripper
+- xem ego-trip
+@egoaltruism
+* danh từ
+- thuyết ngã tha lưỡng lợi
+@egoaltruistic
+* tính từ
+- theo thuyết ngã tha lưỡng lợi
+@egocentrically
+- xem egocentric
+@egocentricity
+* danh từ
+- tính vị kỷ quá đáng
+@egohood
+* danh từ
+- nhân cách, cá tính
+@egoideal
+* danh từ
+- (phân tâm) lý tưởng của bản ngã
+@egoistically
+* phó từ
+- ích kỷ, vị kỷ
+@egomania
+* danh từ
+- tính chất hết sức ích kỷ
+@egomaniac
+* danh từ
+- người cực kỳ ích kỷ
+@egotistically
+* phó từ
+- ích kỷ
+@egotrip
+* nội động từ
+- làm chỉ đề cao lòng tự trọng
+@egregiously
+* phó từ
+- quá xá, quá đỗi
+@egressive
+* tính từ
+- ra ngoài; rút ra khỏi
+@egyptianize
+* ngoại động từ
+- Ai Cập hoá
+@egyptologer
+* danh từ
+- nhà nghiên cứu cổ vật Ai Cập
+@eident
+* tính từ
+- công dụng; nỗ lực
+@eider-duck
+* danh từ
+- (động vật) vịt biển
+- lông vịt biển; lông vịt
+@eiderdown
+* danh từ
+- chăn phủ giường chần lông vịt
+@eidetic
+* tính từ
+- nhớ chính xác những hình ảnh thị giác
+= eidetic memory+trí nhớ chính xác những hình ảnh thị giác
+@eighteenmo
+* danh từ,
+- khổ tờ giấy lớn chia ra 18 phần
+- sách, tờ giấy theo khổ này
+@eighteens
+* danh từ số ít
+- quyển sách theo khổ phần 18 tờ giấy lớn
+@eighteenth
+* tính từ
+- thứ mười tám
+* danh từ
+- một phần mười tám
+- người thứ mười tám; vật thứ mười tám; ngày mười tám
+@eightfold
+* tính từ
+- gấp tám lần
+* phó từ
+- gấp tám
+- có tám phần
+@eighth-note
+* danh từ
+- (âm nhạc) nốt móc
+@eighth-rest
+* danh từ
+- (âm nhạc) lặng móc
+@eightscore
+* tính từ
+- tám lần hai mươi; một trăm sáu mươi
+* danh từ
+- một trăm sáu mươi
+@eightyfold
+* tính từ
+- gấp tám mươi lần
+@eikou
+* danh từ
+- xem icon
+@einsteinium
+* danh từ
+- nguyên tố einsteni
+@eirenic
+* tính từ
+- có tính chất hoà giải sự xung đột
+@eirie
+* danh từ; cũng eiry
+- xem aerie
+@eisa
+- chuẩn EISA
+@eisegesis
+* danh từ; số nhiều eisegeses
+- lối giải thích thánh kinh bằng cách đưa tư tưởng mình vào
+@eiswein
+* danh từ
+- rượu nho ngọt của Đức
+@eiswool
+* danh từ
+- len cao cấp hai sợi
+@either-or
+- hoặc-hoặc
+@ejaculator
+- xem ejaculate
+@ejectable
+- xem eject
+@eking
+* danh từ
+- sự bổ sung, sự thêm vào, sự kéo dài
+@ekistics
+* danh từ
+- khoa học về cách định cư và sự diễn biến của con người
+@elaborator
+- xem elaborate
+@elaeoblast
+* danh từ
+- (sinh học) khối u
+@elaeocyte
+* danh từ
+- (sinh học) tế bào đầu
+@elaeoplast
+* danh từ
+- (sinh học) hạt tạo đầu
+@elasmobranch
+* danh từ
+- số nhiều elasmobranchs
+- (động vật) bộ cá nhám
+* tính từ
+- thuộc bộ cá nhám
+@elastically
+- xem elastic
+@elasticate
+* động từ
+- làm cho đàn hồi
+@elasticated
+* tính từ
+- chế tạo có đưa chất đàn hồi vào
+@elastomer
+* danh từ
+- chất đàn hồi
+@elastomeric
+* tính từ
+- thuộc chất nhựa đàn hồi
+@elastoplast
+* danh từ
+- băng dán vết thương
+@elatedly
+* phó từ
+- phấn khởi, hân hoan
+@elatedness
+- xem elated
+@elater
+* danh từ
+- sợi đàn hồi
+- (động vật) bọ bổ củi
+@elbow-cap
+* danh từ
+- xương bánh chè
+@elbow-joint
+* danh từ
+- khớp khủyu tay
+@elbow-pipe
+* danh từ
+- ống nối có góc
+@elderberry
+* danh từ
+- <thực> quả cây cơm cháy
+@elderliness
+- xem elderly
+@eldership
+- xem elder
+@eldorado
+* danh từ (số nhiều eldorados)
+- xứ Eldorado - vùng đất tưởng tượng giàu có
+- nơi phong phú thịnh vượng hoặc may mắn (vùng đất lý tưởng)
+@eleaticism
+* danh từ
+- học thuyết Ê-lê
+@electability
+* danh từ
+- khả năng được chọn, khả năng được bầu
+@electioneerer
+- xem electioneer
+@electioneering
+* danh từ
+- hoạt động nhằm tác động đến cử tri trong một cuộc bầu cử bằng cách vận động, đọc diễn văn...; cuộc vận động bầu cử
+@electively
+- xem elective
+@electiveness
+- xem elective
+@electorally
+- xem electoral
+@electoress
+* danh từ
+- nữ cử tri
+- tuyển hầu phu nhân
+@electric blanket
+* danh từ
+- chăn điện
+@electric field
+* danh từ
+- điện trường
+@electric razor
+* danh từ
+- dụng cụ cạo râu chạy bằng điện
+@electric storm
+* danh từ
+- sự xáo trộn khí quyển làm phát sinh dòng điện
+@electrically
+* phó từ
+@electricute
+* ngoại động từ
+- dùng điện tử để xử tử
+@electricution
+* danh từ
+- sự dùng điện để xử tử
+@electrifiable
+- xem electrify
+@electrifier
+- xem electrify
+@electrifyingly
+- xem electrify
+@electrine
+* danh từ
+- hổ phách
+@electro-convulsive
+* tính từ
+- co giật do chạm điện
+@electrocardiogram
+* danh từ
+- (y học) biểu đồ điện tim, điện tâm đồ
+@electrocardiograph
+* danh từ
+- máy ghi điện tim
+@electrochemical
+* tính từ
+- (thuộc) điện hoá học
+@electrochemistry
+* danh từ
+- điện hoá học, môn hoá học điện
+@electrocutaneous feedback
+- phản hồi dòng điện lên da
+@electrodialyse
+* ngoại động từ
+- thấm tách bằng điện
+@electrodialysis
+* danh từ
+- sự thấm tách bằng điện
+@electrodynamic
+- xem electrodynamics
+@electroencephalogram
+* danh từ
+- điện não đồ
+* danh từ
+- điện não đồ
+@electroencephalograph
+* danh từ
+- máy ghi điện não
+@electroencephalographic
+- xem electroencephalograph
+@electroencephalography
+- xem electroencephalograph
+@electrofishing
+* danh từ
+- việc dùng dòng điện đánh cá
+@electroform
+* ngoại động từ
+- tạo thành dáng kim loại kết tủa bằng điện
+@electrogilding
+* danh từ
+- thuật mạ bằng điện
+@electrogram
+* danh từ
+- điện đồ; biểu đồ dòng điện
+@electrography
+* danh từ
+- thuật in, khắc bằng điện
+@electrohydraulic
+* tính từ
+- thuộc thủy điện
+@electrokinetic
+* danh từ
+- thuộc điện động học
+@electroluminescent
+* tính từ
+- thuộc điện phát quang
+@electrolytically
+- xem electrolytic
+@electromagnetically
+- xem electromagnetic
+@electrometallurgical
+- xem electrometallurgy
+@electromyogram
+* danh từ
+- (y học) điện đồ cơ
+@electromyograph
+* danh từ
+- máy ghi điện đồ cơ
+@electromyographic
+* tính từ
+- thuộc điện đồ cơ
+* tính từ
+- thuộc điện đồ cơ
+@electromyography
+* danh từ
+- cách ghi điện đồ cơ
+@electronically
+* phó từ
+@electropathic
+* tính từ
+- dùng điện chữa bệnh
+@electrophile
+* danh từ
+- chất có ái lực với điện tử
+@electrophilic
+* tính từ
+- có ái lực với điện tử
+@electrophoretic
+- xem electrophoresis
+@electrophotography
+* danh từ
+- cách chụp ảnh điện
+@electrophysiologist
+* danh từ
+- nhà điện sinh học
+@electrophysiology
+* danh từ
+- điện sinh lý học
+@electroplating
+* danh từ
+- thuật mạ điện
+@electropneumatic
+* tính từ
+- (kỹ thuật) dùng điện khí nén
+@electroretinogram
+* danh từ
+- (y học) điện đồ màng lưới; điện đồ võng mạc
+@electroretinograph
+* danh từ
+- dụng cụ ghi điện đồ võng mạc
+@electroretinography
+* danh từ
+- phép ghi điện đồ võng mạc
+@electrosteel
+* danh từ
+- thép luyện điện
+@electrosurgical
+- xem electrosurgery
+@electrosurgically
+- xem electrosurgery
+@electrotaxis
+* danh từ
+- (sinh học) tính theo điện
+@electrotechnic
+* danh từ
+- kỹ thuật điện
+@electrotechnics
+* danh từ
+- tính điện học
+@electrotelegraphy
+* danh từ
+- điện tín học
+@electrothermal
+* tính từ
+- thuộc điện nhiệt
+@electrothermy
+* danh từ
+- điện nhiệt học
+@electrotonic
+* tính từ
+- thuộc trương lực điện
+@electrotonus
+* danh từ
+- (sinh học) điện trương
+@electrotopic
+* tính từ
+- hướng điện
+@electrotopism
+* danh từ
+- tính hướng điện
+@electrotyper
+- xem electrotype
+@electrotypic
+- xem electrotype
+@electrotypy
+* danh từ
+- thuật in mạ
+* danh từ
+- thuật in mạ
+@electrovalency
+* danh từ
+- (hoá học) hoá trị điện
+@electrovalent
+* tính từ
+- thuộc hoá trị điện
+@elegantly
+* phó từ
+- thanh lịch, tao nhã
+@elegiacal
+- xem elegiac
+@elegiacally
+- xem elegiac
+@elektron
+* danh từ
+- xem electron
+@elementally
+- xem elemental
+@elementarily
+- xem elementary
+@elench
+* danh từ
+- lập lận sai nhưng có vẻ là đúng; sự ngụy biện
+@elevating
+* danh từ
+- nâng cao (nhận thức, đạo đức)
+@elevatory
+* tính từ
+- (kỹ thuật) nâng
+@eleven-plus
+* danh từ
+- kỳ thi cho trẻ mười một tuổi lên bậc trung học
+@elevon
+* danh từ
+- bộ phận cử động được của máy bay
+@elf-land
+* danh từ
+- nơi ở của yêu tinh
+@elf-maid
+* danh từ
+- cũng elf  woman
+- nữ yêu tinh
+@elfishly
+- xem elfish
+@elfishness
+- xem elfish
+@elicitation
+- xem elicit
+@elicitor
+- xem elicit
+@eligibly
+- xem eligible
+@eliminant
+* danh từ
+- cách loại trừ
+@eliminative
+- xem eliminate
+@elinvar
+* danh từ
+- elinva (hợp kim)
+@eliquate
+* ngoại động từ
+- (kỹ thuật) tách lỏng
+@eliquation
+* danh từ
+- (kỹ thuật) sự tách lỏng
+@elite
+- Một kiểu chữ, in được 12 ký tự trong mỗi inch
+@elitism
+* danh từ
+- sự phát triển các tầng lớp ưu tú trong xã hội
+@ellipsograph
+* danh từ
+- compa elip
+@ellipsoidal
+- xem ellipsoid
+@elliptically
+* phó từ
+- tỉnh lược, giản lược
+@elliptoid
+* tính từ
+- gần giống Elip
+@eloge
+* danh từ
+- lời ca ngợi, lời khen ngợi
+@elogist
+* danh từ
+- người tán dương
+@elogy
+* danh từ
+- bài ca tụng
+- văn bia ca ngợi người chết
+- lời tán dương
+@eloign
+* ngoại động từ
+- (từ hiếm) lánh xa
+- dời đến nơi cách xa
+@eloquently
+* phó từ
+- hùng biện, hùng hồn
+@eloquentness
+- xem eloquent
+@elt
+* (viết tắt)
+- sự giảng dạy tiếng Anh (English Language Teaching)
+@elucubrate
+* ngoại động từ
+- làm cặm cụi
+@elucubration
+* danh từ
+- công trình cặm cụi
+@elusively
+- xem elusive
+@elute
+* ngoại động từ
+- tách rửa
+@elution
+* danh từ
+- (hoá học) phép tách rửa
+@elutriate
+* ngoại động từ
+- gạn sạch; rửa sạch
+@elutriation
+* danh từ
+- sự gạn sạch, sự rửa sạch
+@eluvial
+* tính từ
+- (địa chất) thuộc tàn tích, thuộc đá sót
+@eluvium
+* danh từ
+- (địa chất) tàn tích của đá; đá sót
+@elysian
+* tính từ
+@elytroid
+- xem elytron
+@elytrophore
+* danh từ
+- (động vật) gốc cánh cứng
+@elytrum
+* danh từ
+- số nhiều elytra
+- cánh cứng
+@em dash
+- nét em (vệt in liên tục có độ rộng bằng một em; đó là độ rộng của chữ M ứng với kiểu chữ đang dùng)
+@em fraction
+- phân số em
+- Phân số dạng ký tự đơn, chiếm độ rộng một em, dùng dấu vạch chéo (1 / 4), khác với phân số thường được thể hiện bằng ba hoặc nhiều ký tự (1 / 4)
+@email
+- thư điện tử
+@emanational
+- xem emanation
+@emanative
+- xem emanate
+@emancipative
+- xem emancipate
+@emarginate
+* tính từ
+- (thực vật) có khía; không bờ
+= emarginate leaf+lá có khía
+* ngoại động từ
+- xén lề, bỏ lề (tờ giấy)
+@emargination
+* danh từ
+- sự xén lề; sự bỏ lề (tờ giấy)
+@emasculation
+- xem emasculate
+@emasculator
+- xem emasculate
+@emasculatory
+- xem emasculate
+@emball
+* ngoại động từ (từ hiếm)
+- bọc (hàng)
+- làm cho có hình cầu
+@emballage
+* danh từ
+- việc đóng gói (hàng)
+@embalmer
+- xem embalm
+@embarcadero
+* danh từ
+- bến tàu thủy
+@embarcation
+* danh từ
+- xem embarkation
+@embarking
+* danh từ
+- xem embarkment
+@embarrassedly
+- xem embarrass
+@embarrassingly
+* phó từ
+- gây lúng túng, khiến bối rối
+@embarrassment
+* danh từ
+- sự lúng túng, sự ngượng ngịu; tình trạng lúng túng, tình trạng bối rối
+- điều làm lúng túng, điều làm bối rối; điều làm ngượng
+@embayed
+* tính từ
+- có hình dáng vịnh
+= an embayed shoreline+bờ biển có hình dáng vịnh
+@embayment
+* danh từ
+- vịnh; vũng
+- sự hình thành vịnh
+@embedding
+* danh từ
+- sự đưa vào, sự gắn vào
+- (hoá học) tạp chất
+@embedment
+- xem embed
+@embellisher
+- xem embellish
+@embezzler
+* danh từ
+- người biển thủ, người thụt két, người tham ô
+@emblazoner
+- xem emblazon
+@emblematically
+- xem emblematic
+@embolic
+* tính từ
+- (y học) thúc vào; lõm vào
+- nhập vào
+@embolismic
+- xem embolism
+@embosser
+- xem emboss
+@embowelment
+* danh từ
+- cách moi ruột
+- (số nhiều) ruột
+@embrasured
+- xem embrasure
+@embrave
+* ngoại động từ
+- làm cho thành can đảm; cổ vũ
+@embrittle
+* ngoại động từ
+- làm thành giòn, làm thành dễ vỡ
+* nội động từ
+* nội động từ
+- trở nên giòn
+@embroiderer
+- xem embroider
+@embroidering-machine
+* danh từ
+- máy thêu
+@embryocardia
+* danh từ
+- (y học) nhịp tim thai; giai đoạn thai có tim
+@embryogenic
+- xem embryogenesis
+@embryologic
+- xem embryology
+@embryologically
+- xem embryology
+@embryologist
+* danh từ
+- nhà nghiên cứu về phôi thai, nhà phôi học
+@embryonal
+* tính từ
+- thuộc phôi
+- thuộc thai nhi
+- thuộc ấu trùng
+- thuộc thời manh nha
+@embryonated
+* tính từ
+- có phôi
+= embryonated egg+trứng có phôi
+@embryonically
+- xem embryonic
+@embryosac
+* danh từ
+- (thực vật) túi phôi
+@embryotectonics
+* danh từ
+- cấu trúc phôi
+@embryotocia
+* danh từ
+- tiểu sản
+@embryotrophic
+* tính từ
+- nuôi phôi
+@embryotrophy
+* danh từ
+- sự nuôi phôi
+@embryulia
+* danh từ
+- (y học) cách lấy phôi ra
+@emcee
+* danh từ
+- người chủ trì
+* động từ
+- chủ trì
+@emeer
+* danh từ
+- xem emir
+@emender
+- xem emend
+@emersed
+* tính từ
+- (thực vật) nổi lên khỏi mặt nước
+@emery-board
+* danh từ
+- tấm bìa cứng phủ bột mài, dùng để giũa móng tay
+@emery-stone
+* danh từ
+- cát kim cương (để mài nhẵn)
+@emesis
+* danh từ
+- số nhiều emeses
+- (y học) sự nôn
+@emetically
+- xem emetic
+@emetine
+* danh từ
+- (hoá học) emetin
+@emf
+* (viết tắt)
+- sức điện động (electromotive  force)
+@eminently
+* phó từ
+@emirate
+* danh từ
+- tiểu vương quốc A Rập
+@emissarium
+* danh từ
+- số nhiều emissaria
+- mạch dẫn máu
+- đường bài tiết
+- cống dẫn nước
+@emissivity
+* danh từ
+- độ phát xạ
+= radiant emissivity+độ bức xạ
+@emm
+- trình quản lý bộ nhớ mở rộng
+@emmenology
+* danh từ
+- (y học) khoa kinh nguyệt
+@emmetropic
+- xem emmetropia
+@emolliate
+* ngoại động từ
+- làm cho mềm đi; làm cho yếu đi
+@emoticon
+- Trong thư điện tử và các nhóm tin máy tính, đây là hình các khuôn mặt nằm ngang tạo ra bằng các ký tự của chuẩn ASCII dùng để đưa một thông báo vào đúng ngữ cảnh
+@emotionalistic
+- xem emotionalist
+@emotionalize
+* ngoại động từ
+- làm cho cảm động
+@emotionally
+* phó từ
+@emotionless
+* tính từ
+- dửng dưng, không hề xúc động
+@emotionlessness
+- xem emotionless
+@emotively
+- xem emotive
+@emotiveness
+- xem emotive
+@emotivity
+- xem emotive
+@empathetic
+* tính từ
+- có sự đồng cảm, thông cảm
+@empennage
+* danh từ
+- việc lắp các bộ phận để máy bay bay được ổn định
+@emperorship
+- xem emperor
+@empery
+* danh từ (thơ ca)
+- sự thống trị; chủ quyền
+- đế quốc
+@emphasize
+* ngoại động từ
+- nhấn mạnh
+- làm nổi bật (sự kiện...)
+@emphysemic
+- xem emphysema
+@emphyteusis
+* danh từ
+- (pháp luật) quyền thuê đất lâu dài
+@emphyteuta
+* danh từ
+- (pháp luật) người thuê đất lâu dài
+@emphyteuticary
+* danh từ
+- xem emphyteuta
+@empicture
+* ngoại động từ
+- miêu tả; biểu thị bằng tranh
+@empire-building
+- thành ngữ empire
+- empire-building
+- sự mưu đồ quyền lực
+- thành ngữ empire
+= empire-building+sự mưu đồ quyền lực
+@empirically
+* phó từ
+- do kinh nghiệm, theo kinh nghiệm
+@emplastic
+* tính từ
+- dính
+- dùng làm thuốc cao dán
+* danh từ
+- vật dán dính
+- miếng vá
+- thuốc cao dán
+@emplectite
+* danh từ
+- (khoáng chất) emplectit
+@employability
+- xem employ
+@emplume
+* ngoại động từ
+- trang sức lông chim
+@empodium
+* danh từ
+- (sinh học) đệm vuốt; đế vuốt
+@empowerment
+- xem empower
+@emptily
+- xem empty
+@empyema
+* danh từ
+- số nhiều empyemata,  empyemas
+- tình trạng mưng mủ
+- sự viêm mủ màng phổi
+@empyemic
+* tính từ
+- mưng mủ; có mủ
+@empyreum
+* danh từ
+- xem empyrean
+@empyreumatic
+* tính từ
+- (hoá học) cháy khét (dầu)
+@ems
+* (viết tắt)
+- hệ thống tiền tệ châu Âu (European  Monetary  System)
+@emulatively
+- xem emulate
+@emulousness
+- xem emulous
+@emulsible
+* tính từ
+- có thể chuyển thành thể sữa; có thể nhũ tương hoá
+@emulsin
+* danh từ
+- (hoá học) emunsin (enzym)
+@emulsionize
+* ngoại động từ
+- xem emulsify
+@emulsoidal
+* tính từ
+- thuộc chất thể sữa
+@en dash
+- nét en (vệt in liên tục có độ rộng bằng một en, đó là độ rộng bằng nửa khoảng em-độ rộng của chữ hoa M trong kiểu chữ đang dùng)
+@en fraction
+- phân số en
+@en rgle
+* phó từ
+- đúng thể lệ, đúng thủ tục, đúng nghi thức
+@en suite
+- định ngữ
+@enabler
+- xem enable
+@enactable
+- xem enact
+@enactory
+* tính từ
+- thuộc việc chế định pháp luật
+@enaliosaur
+* danh từ
+- (cổ sinh vật) hải long
+@enameler
+- xem enamel
+@enameling
+* danh từ
+- củng enamelling
+- sự tráng men
+= stove enameling+sự tráng men nung
+@enamelist
+- xem enamel
+@enamelware
+* danh từ
+- đồ dùng bằng kim loại tráng men trong nhà
+@enamoured
+* tính từ, cũng enamored
+- say mê; ham thích
+@enantiobiosis
+* danh từ
+- (sinh học) sự cộng sinh đối kháng
+@enantiobiotic
+* tính từ
+- cộng sinh đối kháng
+@enantioblastic
+* tính từ
+- (thực vật) đối (diện) lá noãn
+@enantiomeric
+* tính từ
+- đối hình
+@enantiomorphic
+- xem enantiomorph
+@enantiomorphism
+- xem enantiomorph
+@enantiomorphous
+- xem enantiomorph
+@enantiopathy
+* danh từ
+- <y> phép chữa đối chứng
+@enantiosis
+* danh từ
+- phép nói ngược (nghĩa trái ngược với điều nói ra để châm biếm)
+@enantiotropy
+* danh từ
+- sự hỗ biến
+@enargite
+* danh từ
+- (khoáng chất) enacgit
+@enation
+* danh từ
+- mấu nhú
+@encalm
+* ngoại động từ
+- làm cho yên tĩnh
+@encapsulate
+* động từ
+- tóm lược, gói gọn
+@encapsulated
+* tính từ
+- kết vỏ; kết nang
+@encapsulation
+- xem encapsulate
+@encapsulator
+- xem encapsulate
+@encave
+* ngoại động từ
+- ẩn trong động; giấu trong huyệt
+@encephalisation
+* danh từ
+- sự hình thành bộ não
+@encephalogram
+* danh từ
+- điện não đồ
+@encephalographic
+- xem encephalography
+@encephalographically
+- xem encephalography
+@encephalomere
+* danh từ
+- khúc não
+* danh từ
+- khúc não
+@encephalomyelitis
+* danh từ
+- bệnh viêm não và dây cột sống
+@encephalopathy
+* danh từ
+- (y học) bệnh não
+@encephalospinal
+* tính từ
+- (thuộc) não tủy
+@encephalous
+- xem encephalon
+@enchantingly
+* phó từ
+- thú vị, hấp dẫn
+@enchase
+* ngoại động từ
+- lắp vào; gắn vào
+= to enchase a germ+gắn một viên ngọc vào
+- tô điểm bằng chạm nổi; khảm hoa
+@enchondroma
+* danh từ
+- số nhiều enchondromata
+- (y học) bệnh sinh nội sụn
+@enchondromatous
+* tính từ
+- xem enchondroma
+@enchorial
+* tính từ
+- gia dụng; thông tục
+- thổ trước; bản địa
+@enchyma
+- danh từ
+@enchymona
+* danh từ
+- (y học) bệnh sung huyết ở da
+@encircling
+* tính từ
+- vây quanh; bao vây
+= encircling force+lực lượng bao vây
+@encirling
+* tính từ
+- vây quanh; bao vây
+= encircling force+lực lượng bao vây
+@encloister
+* ngoại động từ
+- đưa vào tu viện
+@encoffin
+* ngoại động từ
+- đưa vào quan tài
+@encolour
+* ngoại động từ
+- tô màu
+@encourager
+- xem encourage
+@encouragingly
+* phó từ
+- khích lệ, cổ vũ
+@encradle
+* ngoại động từ
+- đặt trong nôi
+@encratic
+* tính từ
+- tự kiềm chế; khắc dục
+@encraty
+* danh từ
+- sự tự kiềm chế; sự khắc dịu
+@encrypt
+* ngoại động từ
+- viết lại thành mật mã
+@encryptation
+* danh từ
+- sự viết lại thành mật mã
+@encyclopedically
+- xem encyclopedic
+@encyclopedize
+* ngoại động từ
+- đưa vào từ điển bách khoa
+@encycloppaedism
+- thuyết bách khoa
+- kiến thức bách khoa
+@end-body
+* danh từ
+- bổ thể
+@end-brain
+* danh từ
+- não cuối
+@end-bud
+* danh từ
+- (thực vật) mầm đuôi
+@end-sheath
+* danh từ
+- (sinh học) bao cuối; bao ngọn
+@end-stopped
+* tính từ
+- cần phải dừng lại khi đọc (câu thơ)
+@end-to-end
+* phó từ
+- hai đầu mút gần như chạm nhau
+@endanger
+* động từ
+- gây nguy hiểm
+@endangerment
+- xem endanger
+@endangitis
+* danh từ
+- (y học) viêm màng mạch máu
+@endangium
+* danh từ
+- (giải phẫu) màng mạch máu
+@endarch
+* tính từ
+- (thực vật) có bó nguyên mộc trung tâm
+@endarterectomy
+* danh từ
+- (y học) việc cắt viêm áo trong động mạch
+@endeavorer
+- xem endeavor
+@endecagon
+* danh từ
+- xem hendecagon
+@endemial
+* tính từ
+- xem endemic
+@endemically
+- xem endemic
+@endemiology
+- danh từ
+@endemism
+- xem endemic
+@endergonic
+* tính từ
+- thu nhiệt; thu năng lượng
+@endermically
+- xem endermic
+@enderon
+* danh từ
+- lớp nội bì
+@endexine
+* danh từ
+- (sinh học) màng trong (hạt phấn, bào tử)
+@endlessly
+* phó từ
+- không ngừng, liên tu bất tận
+@endline
+* danh từ
+- đường ranh giới
+@endnote
+- chú giải cuối cùng đặt ở cuối tài liệu
+@endoadaptation
+* danh từ
+- (sinh học) sự nội thích ứng
+@endoascus
+* danh từ
+- (sinh học) màng trong túi, màng trong nan
+@endobatic
+* tính từ
+- vào, nhập, hướng tâm
+@endobiotic
+* tính từ
+- (sinh học) nội sinh; sống trong sinh vật
+@endobronchial
+* tính từ
+- thuộc nhánh phế quản sau (chim)
+@endobronchium
+* danh từ
+- nhánh phế quản sau (chim)
+@endocarditic
+- xem endocarditis
+@endocarpal
+- xem endocarp
+@endocarpic
+* tính từ
+- thuộc vỏ quả trong
+@endocarpoid
+* tính từ
+- có vỏ quả trong
+@endocellular
+* tính từ
+- trong tế bào
+@endocentric
+* tính từ
+- (ngôn ngữ) nội tâm
+= endocentric construction+kiến trúc nội tâm
+@endochrome
+* danh từ
+- sắc tố trong tế bào
+@endocranial
+* tính từ
+- thuộc mấu trong sọ (côn trùng)
+@endocrinologic
+- xem endocrinology
+@endocrinologist
+- xem endocrinology
+@endocyst
+* danh từ
+- (động vật) màng vỏ trong; vách thể xốp
+@endodermal
+- xem endoderm
+@endodermic
+* tính từ
+- xem endoderm
+@endodermis
+* danh từ
+- (thực vật) vỏ trong (cây)
+@endodyne
+* danh từ
+- máy tự tạo dao động nội tại
+@endoenzyme
+* danh từ
+- (sinh học) enzym nội bào
+@endogamic
+* tính từ
+- tự giao; tự thụ phấn; nội giao
+@endogen
+* danh từ
+- (thực vật) thực vật nội trường
+@endogenously
+- xem endogenous
+@endogeny
+- xem endogenous
+@endolymphangial
+* tính từ
+- trong mạch bạch huyết
+@endolymphatic
+- xem endolymph
+@endolysin
+* danh từ
+- nội tiêu tố
+@endolysis
+* danh từ
+- sự tiêu nội bào, sự phân hủy nội bào
+@endomere
+* danh từ
+- khúc nội phôi bì; khúc lá phôi trong
+@endometrial
+- xem endometrium
+@endomitousis
+* danh từ
+- (sinh học) sự nội gián phân
+@endomixis
+* danh từ
+- (sinh học) sự nội kết hợp nhân
+@endomorphy
+- xem endomorphic
+@endonuclear
+* tính từ
+- (sinh học) trong nhân
+@endoparasitic
+- xem endoparasite
+@endoparasitism
+- xem endoparasite
+@endophyte
+* danh từ
+- cây sống trong một cây khác
+@endoplasmic
+- xem endoplasm
+@endopleura
+* danh từ
+- (sinh học) vỏ trong; màng trong (hạt)
+@endorm
+* ngoại động từ
+- làm cho ai ở trạng thái ngủ
+@endorsable
+- xem endorse
+@endorsor
+- xem endorse
+@endosarc
+* danh từ
+- nội chất; nội tương
+@endoscopic
+- xem endoscope
+@endoscopically
+- xem endoscope
+@endosis
+* danh từ
+- (y học) sự giảm dần nhiệt độ
+@endoskeletal
+- xem endoskeleton
+@endosmose
+* danh từ
+- sự nội thẩm; hiện tượng nội thẩm
+@endosmotic
+- xem endosmosis
+@endosmotically
+- xem endosmosis
+@endosome
+* danh từ
+- hạt cơ quan nội bào
+@endospermous
+* tính từ
+- có nội nhũ
+@endosporium
+* danh từ
+- vỏ trong vách bào tử
+@endosteum
+* danh từ
+- (màng xương tronggiai phẫu)
+@endostone
+* danh từ
+- (thực vật) miệng trong
+@endostosis
+* danh từ
+- (giải phẫu) sự hoá xương trong sụn
+@endostyle
+* danh từ
+- (động vật) trụ trong
+@endothecium
+* danh từ
+- (thực vật) vách trong bao phấn
+@endothelioid
+- xem endothelium
+@endothelioma
+* danh từ
+- (y học) u nội mô, u màng trong
+@endothermy
+- xem endothermic
+@endotoxin
+* danh từ
+- nội độc tố
+@endotrachea
+* danh từ
+- vỏ trong khí quản
+@endotracheal
+* tính từ
+- thuộc khí quản
+- đặt trong khí quản
+= endotracheal tube+ống đặt trong khí quản
+@endozoic
+* tính từ
+- (sinh học) sống trong động vật
+@endurability
+* danh từ
+- tính chất có thể chịu đựng được
+- tính chất bền
+@endurably
+- xem endurable
+@enduringly
+* phó từ
+- nhẫn nại, kiên trì
+@endways
+* phó từ
+- đầu dựng ngược
+- đầu quay về phía người nhìn, đầu đưa ra đằng trước
+- châu đầu vào nhauhau
+@energesis
+* danh từ
+- quá trình dị hoá giải phóng năng lượng; quá trình dị hoá thải nhiệt
+@energetically
+* phó từ
+- mạnh mẽ, hăng hái
+@energid
+* danh từ
+- (sinh học) thể nguyên sinh; chất nguyên sinh hoạt động
+@energizer
+- xem energize
+@enervative
+- xem enervate
+@enervator
+- xem enervate
+@enervose
+* tính từ
+- (thực vật) không gân (lá)
+@enfant terrible
+* danh từ
+- kẻ thích sống lập dị
+@enfeebler
+- xem enfeeble
+@enfleurage
+* danh từ
+- phương pháp tách hương liệu của hoa
+@enfolder
+- xem enfold
+@enforceability
+- xem enforce
+@enforceable
+* tính từ
+- (pháp lí) có thể đem thi hành
+@enforcer
+- xem enforce
+@eng
+* (viết tắt)
+- Kỹ sư
+= engineer (ing)+Peter BSc (Eng)+Peter, cử nhân khoa học (kỹ sư)
+- nước Anh (England)
+- người Anh; tiếng Anh (English)
+@engagement ring
+* danh từ
+- nhẫn đính hôn
+@engager
+- xem engage
+@engagingly
+* phó từ
+- hấp dẫn, thú vị
+@engenderer
+- xem engender
+@engild
+* ngoại động từ
+- mạ vàng
+@engine-house
+* danh từ
+- trạm cứu hoả
+@engine-shed
+* danh từ
+- nhà để đầu máy xe lửa
+@engine-turn
+* ngoại động từ
+- chạm đường lộng chéo
+@engined
+* tính từ
+- có lắp máy
+= front -engined car+ôtô lắp máy phía trước
+@englacial
+* tính từ
+- ở giữa băng hà
+@engoube
+* danh từ
+- men sành
+@engraftment
+- xem engraft
+@engrosser
+- xem engross
+@engrossingly
+- xem engrossing
+@enhalo
+* ngoại động từ
+- bao quanh bằng cái quầng
+@enhancer
+- xem enhance
+@enhancive
+- xem enhance
+@enharmonically
+- xem enharmonic
+@enhydrous
+* tính từ
+- (khoáng chất) chứa bọng nước
+@enigmatically
+* phó từ
+- bí ẩn, kỳ bí, khó hiểu
+@enigmatist
+* danh từ
+- người nói năng khó hiểu
+@enjoiner
+- xem enjoin
+@enjoyably
+* phó từ
+- thú vị, thích thú
+@enjoyer
+- xem enjoy
+@enkindler
+- xem enkindle
+@enlarged
+* tính từ
+- mở rộng
+= enlarged meeting+cuộc họp mở rộng
+@enlisted man
+* danh từ
+- <qsự> binh nhì
+@enlivener
+- xem enliven
+@enlivenment
+- xem enliven
+@enmeshment
+- xem enmesh
+@enneahedral
+* tính từ
+- có chín mặt
+@enneahedron
+* danh từ
+- hình chín mặt
+@enneastyle
+* tính từ
+- (kiến trúc) mặt trước có chín trụ
+@ennobler
+- xem ennoble
+@enol
+* danh từ
+- (hoá học) enola
+@enolase
+* danh từ
+- (hoá học) enolaza
+@enology
+* danh từ
+- cách chế rượu nho
+@enophile
+* danh từ
+- người thích rượu nho
+@enophilist
+* danh từ
+- xem enophile
+@enorganic
+* tính từ
+- có sẵn trong cơ thể; tiên thiên; di truyền
+@enormous
+* tính từ
+- to lớn, khổng lồ
+- <cổ> tàn ác
+@enormously
+* phó từ
+- to lớn, khổng lồ
+- vô cùng, hết sức
+@enormousness
+* danh từ
+- sự to lớn, sự khổng lồ; tính to lớn
+- khổ to lớn
+@enphytotic
+* tính từ
+- (thực vật) gây bệnh cây
+@enquiry-response
+* danh từ
+- sự hỏi đáp
+@enraged
+* tính từ
+- nổi giận; nổi khùng
+- hoá điên
+@enragement
+- xem enrage
+@enrapt
+* tính từ
+- mừng quýnh; mê thích
+@enrapturement
+- xem enrapture
+@enravishment
+* danh từ
+- sự khoái trá, sự mê mẩn
+@enregister
+* ngoại động từ
+- đăng ký
+- ghi vào sổ
+- ghi âm
+@enricher
+- xem enrich
+@enring
+* ngoại động từ
+- đeo vòng, đeo khuyên
+@enrollee
+- xem enroll
+@enrollment
+- như enrolment
+@enroot
+* ngoại động từ
+- bắt rễ sâu
+@ensael
+* ngoại động từ
+- đóng con dấu
+@ensanguine
+* ngoại động từ
+- làm đẫm máu
+@enschedule
+* ngoại động từ
+- đưa vào mục lục, đưa vào kế hoạch
+@enseal
+* ngoại động từ
+- đóng con dấu
+@ensepulcher
+* ngoại động từ, cũng ensepulchre
+- mai táng; chôn
+@ensheath
+* ngoại động từ
+- bọc; kéo kén; đưa vào kén
+@ensign-bearer
+* danh từ
+- người cầm cờ hiệu
+@ensilation
+* danh từ
+* danh từ
+- sự ủ xilô
+- thức ăn gia súc ủ xilô
+@ensisternum
+* danh từ
+- (sinh học) mảnh ức dạng kiếm
+@ensnarement
+- xem ensnare
+@ensnarer
+- xem ensnare
+@enstate
+* ngoại động từ
+- trao chức; đặt ở địa vị
+@enstatite
+* danh từ
+- (khoáng chất) enxtatit
+@ensuing
+* tính từ
+- kế tiếp theo
+= the ensuing year+năm kế tiếp theo
+* tính từ
+- kế tiếp theo
+= the ensuing year+năm kế tiếp theo
+@ent
+* (viết tắt)
+- tai mũi họng (ear, nose and throat)
+@entablement
+* danh từ
+- xem entablature
+@entangial
+* tính từ
+- (giải phẫu) trong mạch
+@entangler
+- xem entangle
+@entasis
+* danh từ
+- (kiến trúc) đường gờ dọc cột; đường chỉ dọc cột
+@enteral
+* tính từ
+- trong ruột
+@enteralgia
+* danh từ
+- (y học) chứng đau ruột
+@enterclose
+* danh từ
+- (kiến trúc) đường thông qua các phòng
+@enterectomy
+* danh từ
+- (y học) thủ thuật cắt bỏ ruột non
+@enterobacterial
+* tính từ
+- thuộc vi khuẩn trong ruột
+@enterobacterium
+* danh từ
+- vi khuẩn trong ruột
+@enterococus
+* danh từ
+- số nhiều enterococci
+- (y học) khuẩn cầu ruột
+@enterocoele
+* danh từ
+- cũng enterocoel
+- khoang ruột
+@enterocoelous
+* tính từ
+- thuộc khoang ruột
+@enterocolitis
+* danh từ
+- (y học) viêm ruột non kết
+@enteroderm
+* danh từ
+- mầm ruột; biểu bì ruột
+@enterogastrone
+* danh từ
+- enterogaxtron; homon ruột lá
+@enterokinase
+* danh từ
+- enterokinaza; men ruột
+@enterology
+* danh từ
+- (y học) khoa nội tạng
+@enteromephric
+* tính từ
+- thuộc đơn thận ruột
+@enteropathogenic
+* tính từ
+- (y học) gây bệnh ruột
+@enteropathy
+* danh từ
+- bệnh ruột
+@enteroproct
+* danh từ
+- (giải phẫu) lỗ ruột-hậu môn
+@enterostome
+* danh từ
+- (giải phẫu) miệng ruột
+@enterotoxin
+* danh từ
+- toxin (độc tố) trong ruột
+@enterprisingly
+* phó từ
+- mạnh dạn
+@entertainingly
+* phó từ
+- hấp dẫn, thú vị
+@enthalpy
+* danh từ
+- (hoá học) entanpi
+= entanpi of liquid+entanpi chất lỏng
+@entheism
+* danh từ
+- (triết học) thuyết vũ trụ phiếm thần
+@enthetic
+* tính từ
+- (y học) cấy; đưa vào; nhập nội
+@enthrallingly
+- xem enthrall
+@enthrallment
+- xem enthrall
+@enthronize
+* ngoại động từ
+- đưa lên ngôi; lập làm vua
+- nhận hức (giáo chủ)
+@enthusiastically
+* phó từ
+- phấn khởi, hăng hái, nồng nhiệt
+@enthymeme
+* danh từ
+- (triết học) tam đoạn luận giảm ước
+@enticer
+- xem entice
+@enticing
+* tính từ
+- hấp dẫn, lôi cuốn, thú vị
+@enticingly
+* phó từ
+- hấp dẫn, thú vị
+@entiserum
+* danh từ
+- huyết thanh miễn dịch
+@entitative
+* tính từ
+- (thuộc) thực thể
+- (thuộc) sự tồn tại
+@entitle
+* ngoại động từ
+- cho đầu đề, cho tên (sách...)
+- xưng hô bằng tước
+- cho quyền (làm gì...)
+@entitlement
+* danh từ
+- quyền, sự được phép làm
+@entoblast
+* danh từ
+- (sinh học) lá phôi trong; nội phôi bì
+@entobranchiate
+* tính từ
+- (động từ) có mang trong
+@entobronchus
+* danh từ
+- nhánh phế quản sau (chim)
+@entoderm
+* danh từ
+- nội bì; lá phôi trong; nội phôi bì
+@entodermal
+* tính từ
+- thuộc nội bì; thuộc lá phôi trong
+@entoil
+* ngoại động từ
+- sai vây bắt
+@entomochoric
+* tính từ
+- (thực vật) phát tán nhờ côn trùng
+@entomochory
+* danh từ
+- tính phát tán nhờ côn trùng
+@entomofauna
+* danh từ
+- khu hệ côn trùng
+@entomogamous
+* tính từ
+- thụ phấn nhờ côn trùng
+@entomogamy
+* danh từ
+- sự thụ phấn nhờ côn trùng
+@entomologic
+- xem entomology
+@entomologically
+- xem entomology
+@entomophily
+- xem entomophilous
+@entomostracan
+* danh từ
+- (động vật) phân lớp thân giáp thấp
+* tính từ
+- thuộc phân lớp thân giáp thấp
+@entomostracous
+* tính từ
+- xem entomostracan
+@entophyte
+* danh từ
+- (thực vật) thực vật ký sinh trong
+@entophytic
+* tính từ
+- thuộc thực vật ký sinh trong
+@entopia
+* danh từ
+- sự đúng vị trí (bình (thường))
+@entopic
+* tính từ
+- đúng vị trí (bình (thường))
+@entoplasm
+* danh từ
+- (sinh học) nội chất, nội tương
+@entorganism
+* danh từ
+- sinh vật ký sinh trong cơ thể
+@entotic
+* tính từ
+- thuộc tai trong; trong tai
+@entotympanic
+* danh từ
+- màng nhĩ rời
+@entozoical
+* tính từ, cũng entozoic
+- sống trong động vật, sống trong thực vật
+@entrainer
+- xem entrain
+@entrainment
+- xem entrain
+@entrance-hall
+* danh từ
+- phòng ngoài
+@entrance-way
+* danh từ
+- lối đi vào
+@entrancingly
+- xem entrance
+@entrapment
+- xem entrap
+@entrapping
+* danh từ
+- sự đặt bẫy, đánh bẫy
+@entreasure
+* ngoại động từ
+- đưa vào kho tàng
+@entreatingly
+* phó từ
+- khẩn thiết, van nài
+@entreatment
+- xem entreat
+@entrepreneurial
+* tính từ
+- (thuộc) nghề thầu khoán
+@entrepreneurialism
+- xem entrepreneur
+@entrepreneurism
+- xem entrepreneur
+@entrepreneurship
+- xem entrepreneur
+@entrochite
+* danh từ
+- (y học) đốt thân
+@entropic
+- xem entropy
+@entropically
+- xem entropy
+@entruck
+* ngoại động từ
+- chất tải lên ô tô
+@entrustment
+* danh từ
+- xem entrust
+@entryism
+* danh từ
+- tập quán nhập vào một chính đảng để tác động đến nó từ bên trong
+* danh từ
+- tập quán nhập vào một chính đảng để tác động đến nó từ bên trong
+@entryphone
+* danh từ
+- điện thoại mắc ở lối vào các khu nhà tập thể, giúp khách liên hệ với chủ nhà trước khi vào
+@entryway
+* danh từ
+- lối đi vào
+@entwinement
+- xem entwine
+@enucleator
+- xem enucleate
+@enumeratory
+* tính từ
+- xem enunciate
+@enunciable
+- xem enunciate
+@enunciatively
+- xem enunciate
+@enuretic
+- xem enuresis
+@enveigle
+* ngoại động từ
+- xem inveigle
+@enveloper
+- xem envelop
+@envenomed
+* tính từ
+- hiểm độc; độc ác
+= envenomed tongue+ngôn ngữ hiểm độc
+@envenomization
+* danh từ
+- tình trạng bị nhiễm độc vì vỏ khí hay rắn hay rắn độc
+@enviably
+* phó từ
+- đáng thèm muốn, đáng ganh tị
+@envier
+- xem envy
+@enviously
+* phó từ
+- thèm muốn, ganh tị, lăm le
+@enviousness
+- xem envious
+@environmental
+* tính từ
+- thuộc về môi trường
+@environmentalism
+* danh từ
+- môi trường luận (thuyết cho môi trường quan trọng hơn di truyền trong sự phát triển văn hoá)
+@environmentalist
+* danh từ
+- người quan tâm bảo vệ môi trường, nhà môi trường học
+@environmentally
+* phó từ
+- về phương diện môi trường
+@envyingly
+- xem envy
+@enyo
+* danh từ
+- nữ thần hiến đấu (thần thoại Hy-lạp)
+@enzedder
+* danh từ
+- người Niu Dilân
+@enzootic
+* tính từ
+- gây bệnh động vật (bệnh có tính chất cục bộ); thuộc dịch động vật địa phương
+@enzygotic
+* tính từ
+- hệt nhau (con sinh đôi)
+@enzymatic
+- xem enzyme
+@enzymatically
+- xem enzyme
+@enzymically
+- xem enzyme
+@enzymmologist
+* danh từ
+- nhà enzim học
+@enzymmology
+* danh từ
+- enzim học
+@eoclimax
+* danh từ
+- cao đỉnh của gió
+@eof
+- Viết tắt của End Of File: Kết thúc tệp
+@eol
+- Viết tắt của End Of Line: Hết dòng
+@eolation
+* danh từ
+- sự phong hoá; sự hủy hoại do gió
+@eolian
+* tính từ
+- do gió; do gió đưa tới
+@eonian
+* tính từ
+- vĩnh cữu; vô cùng
+@eosinophil
+* tính từ
+- ưa eozin
+* danh từ
+- tế bào ưa eozin
+@eozoic
+* danh từ
+- (địa chất) thời kỳ địa chất cổ xưa nhất; thế trước Cambri
+@eozotic
+* tính từ
+- xem eozoic
+* tính từ
+@ep
+* (viết tắt)
+- dựa hát chơi lâu (extended-play record)
+@epacmatic
+* tính từ
+- xem epacme
+@epacme
+* danh từ
+- (sinh học) kỳ trước điểm cao phát triển
+@epactal
+* tính từ
+- thừa quá nhiều
+@epanthous
+* tính từ
+- (sinh học) sống ở hoa
+@eparch
+* danh từ
+- (tôn giáo) đại giáo chủ (nhà thờ chính giáo)
+- quận (từ cổ La-mã)
+@eparchy
+* danh từ
+- giáo khu (chính giáo)
+- quận (từ cổ La-mã)
+@epaxial
+* tính từ
+- trên trục
+@epeirogeny
+* danh từ
+- xem epeirogenesis
+@epencephalic
+* tính từ
+- thuộc tiểu não
+@epencephalon
+* danh từ
+- (giải phẫu) tiểu não
+@ependyma
+* danh từ
+- lớp lót khoang não-tủy sống
+@ependymal
+* tính từ
+- thuộc lớp khoang não-tủy sống
+@eperlan
+* danh từ
+- (động vật) cá hương
+* danh từ
+- (động vật) cá hương
+@ephah
+* danh từ
+- đơn vị đong đồ khô của cổ Do Thái, bằng 36; 37 lít
+@ephebic
+- xem ephebe
+@ephemerally
+- xem ephemeral
+@ephemeralness
+- xem ephemeral
+@ephemeridae
+* danh từ số nhiều
+- khoa phù du; họ phù du
+@ephidrosis
+* danh từ
+- (y học) chứng có quá nhiều mồ hôi
+@ephilaltes
+* danh từ
+- bóng đè
+- việc nằm mơ thấy ma
+@ephorate
+* danh từ
+- (lịch sử) chức pháp quan (từ cổ Hy lạp)
+@epibiosis
+* danh từ
+- xem epibiotic
+@epibiotic
+* tính từ
+- sống sót; sót lại; tàn dư
+@epiblastic
+- xem epiblast
+@epiblem
+* danh từ
+- lớp hút (rễ), vỏ rễ
+@epibole
+* danh từ
+- (thực vật) sự phát triển phủ; sự mọc phủ
+@epibolic
+- xem epiboly
+@epicalyx
+* danh từ
+- (thực vật) đài phụ; đài nhỏ; đài ngoài
+@epicanthus
+* danh từ
+- nếp quạt (ở mắt)
+@epicarpic
+* tính từ
+- thuộc vỏ quả ngoài
+@epicarpium
+* danh từ
+- vỏ quả ngoài
+@epicenism
+- xem epicene
+@epicerebral
+* tính từ
+- (giải phẫu) trên não
+@epichilium
+* danh từ
+- (thực vật) cựa cánh tràng
+@epichordal
+* tính từ
+- (giải phẫu) trên dây sống
+@epichroic
+* tính từ
+- mất màu; bạc màu
+@epiclinal
+* tính từ
+- trên đế hoa
+@epicondyle
+* danh từ
+- (giải phẫu) lồi cầu trên
+@epicontinental
+* tính từ
+- nằm trên lục địa hay trên thềm lục địa
+@epicotyl
+* danh từ
+- (thực vật) trụ trên lá mầm
+@epicrisis
+* danh từ
+- số nhiều epicrisises
+- cơn thứ phát
+@epicuticle
+* danh từ
+- (động vật) tâm mô sừng ngoài
+@epidemically
+- xem epidemic
+@epidemiologic
+- xem epidemiology
+@epidemiologically
+- xem epidemiology
+@epidemiologist
+- xem epidemiology
+@epiderma
+* danh từ
+- (sinh học) biểu bì; vỏ ngoài; da
+@epidermophyte
+* danh từ
+- nấm ngoài da
+@epididymis
+* danh từ
+- số nhiều epididymides
+- (sinh học) mào tinh hoàn
+@epidote
+* danh từ
+- (khoáng chất) epidot
+@epidural
+* tính từ
+- <y> gây tê ngoài màng cứng
+* danh từ
+- sự gây tê ngoài màng cứng
+@epifauna
+- (sinh học) hệ động vật mặt đáy
+@epifaunal
+* tính từ
+- thuộc hệ động vật mặt đáy
+@epifocal
+* tính từ
+- xem epicentre
+@epigaster
+* danh từ
+- (giải phẫu) mầm ruột kết
+@epigastroid
+* danh từ
+- (giải phẫu) sụn trên mu
+@epigeal
+- Cách viết khác : epigeous
+@epigean
+* tính từ
+- xem epigeal
+- trên đất trồng
+@epigeic
+* tính từ
+- trên mặt đất
+@epigenous
+* tính từ
+- phát triển ở bề mặt; mọc trên bề mặt
+@epiglottal
+* tính từ
+- thuộc về nắp thanh quản
+@epiglottic
+* tính từ
+- thuộc nắp thanh quản
+- mảnh trên hầu (côn trùng)
+@epignathus
+* tính từ
+- có hàm trên dài hơn hàm dưới
+@epigone
+* danh từ
+- người kế nghiệp, người bắt chước
+@epigonism
+* danh từ
+- chủ trương bắt chước
+@epigrammatically
+- xem epigrammatic
+@epigrammatism
+* danh từ
+- thể thơ châm biếm; có tác dụng châm biếm
+@epigrapher
+- xem epigraphy
+@epigraphical
+- xem epigraph
+@epigraphically
+- xem epigraph
+@epigyne
+* danh từ
+- (thực vật) thể sinh dục cái ngoài
+@epigynium
+* danh từ
+- xem epigyne
+@epigyny
+* danh từ
+- (thực vật) tính đính trên bầu
+@epilate
+* ngoại động từ
+- vặt lông
+@epileptiform
+* tính từ
+- có dạng động kinh
+@epileptogenic
+* tính từ
+- gây động kinh
+@epilogic
+* tính từ, cũng epilogical
+- thuộc phần kết luận
+@epimer
+* danh từ
+- (hoá học) epime (một loại đồng tâm lập thể)
+@epimere
+* danh từ
+- khúc cơ lưng
+@epimeric
+* tính từ
+- thuộc epime
+@epimerization
+* danh từ
+- sự epime hoá
+@epimerize
+* ngoại động từ
+- epime hoá
+@epimeron
+* danh từ
+- (động vật) tấm bên lưng sâu bọ
+@epimorphic
+* tính từ
+- giữ nguyên dạng
+@epimorphosis
+* danh từ
+- (sinh học) sự tái sinh nguyên dạng
+@epimysium
+* danh từ
+- (sinh học) bao mô khí
+@epinasty
+* danh từ
+- (thực vật) tính sinh trưởng cong
+@epinephrine
+* danh từ
+- cũng epinephrin
+- (sinh học) epinefrin,  adrenalin
+@epineurium
+* danh từ
+- (giải phẫu) vỏ dây thần kinh
+@epineurral
+* tính từ
+- thuộc vỏ dây thần kinh
+@epinytic
+* danh từ
+- (thực vật) nở ban đêm (hoa)
+@epiotic
+* tính từ
+- trên tai; thuộc xương trên tai
+@epiparasite
+* danh từ
+- vật ký sinh ngoài
+@epiparasitic
+* tính từ
+- thuộc vật ký sinh ngoài
+@epiparasitism
+* danh từ
+- hiện tượng ký sinh ngoài
+@epipelagic
+* tính từ
+- thuộc tầng mặt biển khơi (sâu dưới 20 mét)
+@epiperidium
+* danh từ
+- (thực vật) vỏ thể quả chén
+@epipetalous
+* tính từ
+- (thực vật) trên tràng
+@epiphenomenal
+- xem epiphenomenon
+@epiphenomenalism
+* danh từ
+- (triết học) thuyết hiện tượng phụ
+@epiphenomenally
+- xem epiphenomenon
+@epiphitic
+* tính từ
+- thuộc thực vật biểu sinh
+@epiphragm
+* danh từ
+- (sinh học) nắp màng
+@epiphyll
+* danh từ
+- (thực vật) địa y sống trên lá
+@epiphysial
+- xem epiphysis
+@epiphytically
+- xem epiphyte
+@epiphytotic
+* tính từ
+- thuộc bệnh dịch thực vật
+@epiplankton
+* danh từ
+- (sinh học) sinh vật nổi tầng mặt
+@epiplasm
+* danh từ
+- (sinh học) sinh chất thừa; chất tế bào thừa
+@epiplastron
+* danh từ
+- (sinh học) tấm đòn
+@epiploon
+* danh từ
+- số nhiều epiploa
+- mạc nối
+@epipodite
+* danh từ
+- (động vật) nhánh bên (chân động vật chân khép)
+@episcopally
+- xem episcopal
+@episeme
+* danh từ
+- màu báo hiệu
+- tín hiệu; dấu hiệu
+@episepalous
+* tính từ
+- đính trên lá dài
+@episiotomy
+* danh từ
+- <y> thuật rạch âm hộ
+@episkeletal
+* tính từ
+- ngoài bộ xương
+@episomal
+* tính từ
+- thuộc thể bổ sung
+@episome
+* danh từ
+- (sinh học) thể bổ sung
+@episperm
+* danh từ
+- vỏ (hạt); bao (tinh trùng)
+@epispore
+* danh từ
+- vỏ vách bào tử; vỏ ngoài bào tử
+@episporous
+* tính từ
+- thuộc vỏ vách bào tử; thuộc vỏ ngoài bào tử
+@epistasis
+* danh từ
+- số nhiều epistases
+- (sinh học) tính át gen
+= dominant epistasis+tính lấn át gen trội
+= recessive epistasis+tính lấn át gen lặn
+@epistasy
+* danh từ
+- xem epistasis
+@epistatic
+* tính từ
+- (sinh học) lấn át gen
+@epistaxis
+* danh từ
+- số nhiều epistaxes
+- sự chảy máu cam
+@epistemic
+* tính từ
+- thuộc trí thức
+@epistemologist
+* danh từ
+- (triết học) nhà nhận thức luận
+@epistemology
+* danh từ
+- (triết học) nhận thức luận; sự nhận thức luận
+@episternum
+* danh từ
+- xương gian đòn; xương cán ức
+@epistler
+* danh từ
+- người viết thể thơ bằng thư
+@epistoma
+* danh từ
+- (động vật) tấm trên miệng sâu bọ
+@epitaphic
+- xem epitaph
+@epitasis
+* danh từ
+- số nhiều epitases
+- (sân khấu) đoạn kết của bi kịch
+@epitaxy
+* danh từ
+- sự mọc ghép
+@epithalamion
+* danh từ; số nhiều epithalamia
+- thơ mừng đám cưới; bài hát mừng đám cưới
+@epithelialize
+* ngoại động từ
+- phủ đầy biểu mô
+@epithelioid
+* tính từ
+- dạng biểu mô
+@epithelioma
+* danh từ
+- ung thư biểu mô
+@epitheliomatous
+* tính từ
+- thuộc ung thư biểu mô
+@epithelize
+* ngoại động từ
+- biến thành biểu mô
+@epithem
+* danh từ
+- (sinh học) mô thông nước; mô tiết
+- (y học) thuốc dán
+@epitomizer
+* danh từ
+- xem epitomist
+@epitympanic
+* tính từ
+- (giải phẫu) trên màng nhĩ
+@epizoan
+* tính từ
+- thuộc động vật ký sinh ngoài
+@epizoicide
+* danh từ
+- thuốc diệt vật ký sinh ngoài
+@epizoism
+- xem epizoic
+@epizootically
+- xem epizootic
+@epizootiology
+* danh từ
+- khoa nghiên cứu dịch động vật
+@epizootology
+* danh từ
+- xem epizootiology
+@epns
+* (viết tắt)
+- kền mạ bạc (electroplated nickel silver)
+@eponymy
+* danh từ
+- việc lấy tên người để đặt (cho đất đai, phát minh...)
+@epoxide
+* danh từ
+- (hoá học) epoxit
+@epoxy
+* tính từ
+- epoxi, cầu oxy (- o -), vòng oxy
+@eprom
+- bộ nhớ ROM xoá và lập trình được
+@eps
+- tệp EPS (hình đồ họa phân giải cao)
+@epsom salts
+* danh từ
+- <y> thuốc tẩy manhê
+@epulis
+* danh từ
+- (y học) u lợi
+@epulosis
+* danh từ
+- (y học) sự làm sẹo
+@epyllion
+* danh từ
+- bài sử thi ngắn
+@equableness
+- xem equable
+@equably
+* phó từ
+- điềm đạm, trầm tựnh
+@equanimous
+* tính từ
+- bình thản; trấn tĩnh; thản nhiên
+@equationally
+- xem equation
+@equatorially
+- xem equatorial
+@equestrianism
+- xem equestrian
+@equestrianship
+- xem equestrian
+@equiaxial
+* tính từ
+- đẳng trục
+@equibalance
+* ngoại động từ
+- cân bằng
+* danh từ
+- sự cân bằng
+@equibiradiate
+* tính từ
+- (sinh học) hai tia đều
+@equidistance
+- xem equidistant
+@equidistantly
+- xem equidistant
+@equifrequent
+* tính từ
+- đẳng tần
+@equigranular
+* tính từ
+- đều hạt
+@equilaterally
+- xem equilateral
+@equilibrant
+* danh từ
+- lực làm cân bằng
+@equilibristic
+- xem equilibrist
+@equipartition
+* danh từ
+- sự phân bố đều
+@equipollently
+- xem equipollent
+@equipotent
+* tính từ
+- đẳng năng; đẳng thế
+- toàn năng
+- cân bằng thế năng
+- (sinh học) có khả năng thực hiện chức năng của bộ phận khác (cơ quan, tế bào)
+@equipotential
+* tính từ
+- <lý> đẳng thế
+@equiprobable
+* tính từ
+- có xác suất ngang nhau
+@equisetacious
+* tính từ
+- (thuộc) cây tháp bút
+@equisetic
+* tính từ
+- thuộc cây tháp bút
+@equitably
+* phó từ
+- công bằng, không thiên vị
+@equites
+* danh từ
+- (lịch sử) đoàn kỵ sĩ (từ cổ La-mã)
+@equitization
+* danh từ
+- sự cổ phần hoá
+* danh từ
+- sự cổ phần hoá
+@equitize
+* động từ
+- cổ phần hoá
+@equivalently
+- xem equivalent
+@equivalve
+* danh từ
+- (sinh học) hai mảnh vỏ đều
+@equivocally
+- xem equivocal
+@eradicative
+- xem eradicate
+@eradicator
+* danh từ
+- người nhổ rễ, người bài trừ
+@erasability
+- xem erase
+@eraser
+* danh từ
+- người xoá, người xoá bỏ
+- cái tẩy, cái cạo
+- giẻ lau bảng tha thiết
+@erasibility
+* danh từ
+- khả năng xoá được, tẩy được
+@erastian
+* tính từ
+- thuộc học thuyết chủ trương nhà nước chiếm ưu thế trong lĩnh vực tôn giáo
+* danh từ
+- người chủ trương nhà nước chiếm ưu thế trong lĩnh vực tôn giáo
+@erastianism
+* danh từ
+- học thuyết chủ trương ưu thế nhà nước trong lĩnh vực tôn giáo
+@erasure
+* danh từ
+- sự xoá, sự xoá bỏ
+- vết xoá, vết cạo
+@erd
+* danh từ
+- địa cầu; đất; khu vực
+@erectable
+- xem erect
+@erecter
+* danh từ
+- người xây dựng
+- cơ cương; cơ dựng
+@erectly
+- xem erect
+@erectopatent
+* tính từ
+- nửa khép nửa hở
+@erelong
+* phó từ
+- (từ cổ, nghĩa cổ) chẳng bao lâu nửa
+@eremic
+* tính từ
+- ở sa mạc; thuộc hoang mạc
+@eremitism
+* danh từ
+- cuộc sống ẩn sĩ
+@erenow
+* phó từ
+- trước đây
+@erethismic
+- xem erethism
+@erethistic
+- Cách viết khác : erethitic
+@erewhile
+* phó từ, cũng erewhiles
+- (từ cổ, nghĩa cổ) trước đây ít lâu
+@ergastic
+* tính từ
+- (sinh học) thuộc hậu chất
+@ergastoplasm
+* danh từ
+- (sinh học) chất phân bào
+@ergastoplasmic
+* tính từ
+- thuộc chất phân bào
+@ergograph
+* danh từ
+- (sinh học) máy ghi cơ công
+@ergology
+* danh từ
+- sinh lý học lao động
+@ergometer
+* danh từ
+- (sinh học) cơ công kế
+@ergometrine
+* danh từ
+- (dược học) ecgometrin
+@ergonometric
+- xem ergonomics
+@ergonomic
+- xem ergonomics
+@ergonomically
+- xem ergonomics
+@ergonomist
+- xem ergonomics
+@ergonovine
+* danh từ
+- ecgometrin
+@ergotamin
+* danh từ
+- (dược) ecgotamin
+@ergotic
+- xem ergot
+@ergotinin
+* danh từ
+- cũng ergotinine
+- (dược học) ecgotinin
+@ergotize
+- %%ergotize%%ergotize
+@ergotoxine
+* danh từ
+- (dược) ecgotoxin
+@erica
+* danh từ
+- (thực vật) cây thạch nam
+@erin
+* danh từ
+- (thơ ca) Airơlân
+@erinaceous
+* tính từ
+- (động vật) thuộc họ chuột nhím
+@erinys
+* danh từ
+- số nhiều erinyes
+- Ê-ri-ni (nữ thần trả thù của thần thoại Hy lạp)
+@erodibility
+- xem erode
+@erodible
+- xem erode
+@erogeneity
+* danh từ
+- tính kích thích tính dục
+@erogenous
+* tính từ
+- nhạy kích thích tình dục
+@erosional
+- xem erosion
+@erosionally
+- xem erosion
+@erosiveness
+- xem erosive
+@erosivity
+- xem erosive
+@erotematic
+* tính từ
+- (văn học) mang hình thức câu hỏi
+@erotically
+* phó từ
+- khiêu dâm, khêu gợi
+@eroticist
+- xem eroticism
+@eroticize
+* ngoại động từ
+- khiêu dâm
+@erotology
+* danh từ
+- ái tình học
+@erotomania
+* danh từ
+- (y học) xung động thoả dục; chứng cuồng dâm
+@erotomaniac
+* danh từ
+- người lúc nào cũng nghĩ đến nhục dục; người cuồng dâm
+@errantly
+- xem errant
+@erraticism
+- xem erratic
+@erratics
+* danh từ
+- (địa chất) tầng lăn; đá lang thang; phiêu nham
+@erroneously
+* phó từ
+- sai, nhầm
+@erubescence
+* danh từ
+- sự ửng đỏ (mặt); cách làm ửng đỏ (quả)
+@erubescite
+* danh từ
+- (khoáng chất) erubetxit
+@eruciform
+* tính từ
+- dạng sâu
+@eructative
+- xem eructation
+@eruditely
+* phó từ
+- uyên thâm, uyên bác
+@eruditeness
+- xem erudite
+@eruginous
+* tính từ
+- xanh lục; có màu gỉ đồng
+@erumpent
+* tính từ (thực vật)
+- phát sinh nhất thời; đột nhiên xuất hiện
+- bị nứt đột ngột
+@eruptively
+- xem erupt
+@eryngo
+* danh từ
+- (thực vật) cây mùi tàu
+@erythaemia
+* danh từ
+- (y học) chứng tăng hồng cầu vô căn
+@erythematous
+- xem erythema
+@erythrism
+* danh từ
+- màu da, tóc đỏ đặc biệt
+@erythristic
+* tính từ
+- thuộc màu da, tóc đỏ đặc biệt
+@erythrite
+* danh từ
+- (khoáng chất) erythrit
+@erythroblast
+* danh từ
+- (sinh học) nguyên hồng cầu
+@erythroblastic
+* danh từ
+- (thuộc) nguyên hồng cầu
+@erythroblastosis
+* danh từ
+- số nhiều erythroblastoses
+- (y học) chứng tăng hồng cầu
+@erythrocyte
+* danh từ
+- hồng cầu
+@erythrocytometer
+* danh từ
+- dụng cụ để tính hồng cầu
+@erythroleukemia
+* danh từ
+- (y học) chứng tăng hồng - bạch cầu
+@erythrolysis
+* danh từ
+- (y học) sự tiêu hồng cầu
+@erythromycin
+* danh từ
+- (dược) eritromixin
+@erythron
+* danh từ
+- tổng số hồng cầu
+@erythropenic
+* tính từ
+- (y học) giảm hồng cầu
+@erythropoiesis
+* danh từ
+- (y học) sự tạo hồng cầu
+@erythropoietic
+* tính từ
+- tạo hồng cầu
+@erythropsia
+* danh từ
+- (y học) chứng thấy sắc đỏ
+@erythropsin
+* danh từ
+- cũng erythropsine
+- (hoá học) eritroxin; màu đỏ (mắt côn trùng)
+@esa
+* (viết tắt)
+- Cơ quan không gian Âu châu (European Space Agency)
+@esc
+- phím Esc
+@escalader
+- xem escalade
+@escalatory
+- xem escalate
+@escalope
+* danh từ
+- miếng thịt bọc trứng và bánh mì rán
+@escapable
+- xem escape
+@escape velocity
+* danh từ
+- vận tốc cho phép tàu vũ trụ vượt khỏi lực hút của hành tinh
+@escape-hatch
+* danh từ
+- lối thoát khẩn cấp, cửa thoát hiểm
+@escaper
+- xem escape
+@escapeway
+* danh từ
+- lối thoát ứng cấp
+@escapologist
+* danh từ
+- người thích "thổi" đồ của người khác như một trò tiêu khiển
+@escapology
+* danh từ
+- sự tiêu khiển bằng cách "thổi" được những món mà người khác giữ kín
+@escargot
+* danh từ
+- (động vật) ốc sên (chủ yếu dùng làm thức ăn)
+@escarole
+* danh từ
+- (thực vật) rau diếp mạ
+@eschatologically
+- xem eschatology
+@eschatologist
+- xem eschatology
+@escheatable
+- xem escheat
+@eschewal
+- xem eschew
+@escopette
+* danh từ
+- (lịch sử) súng trường loe nòng
+@escutcheon
+* danh từ
+- huy hiệu trên khiên
+- nắp lỗ khoá
+@escutcheoned
+- xem escutcheon
+@esdi
+- Một tiêu chuẩn giao diện dùng cho các ổ đựa cứng
+@esker
+* danh từ
+- eskar
+- (địa chất) đồi hình rắn, ngoằn ngoèo (do băng hà)
+@eskimoan
+* tính từ
+- thuộc người Eskimo
+@esl
+* (viết tắt)
+- Anh ngữ như ngôn ngữ thứ hai (English as a Secondary Language)
+@esn
+* (viết tắt)
+- dưới bình thường về học lực (educationally subnormal)
+@esodic
+* tính từ
+- vào; nhập; hướng tâm
+@esophageal
+- xem esophagus
+@esophagotomy
+* danh từ
+- (y học) cách mổ thực quản
+@esoterically
+- xem esoteric
+@esotericism
+* danh từ
+- chủ nghĩa bí truyền
+@esoterism
+* danh từ
+- chủ nghĩa thần bí, thuyết thần bí
+@esp
+* (viết tắt)
+- Anh ngữ chuyên ngành (English for Specific Purposes)
+- Tri giác ngoại cảm (Extra sensory perception)
+@espadrille
+* danh từ
+- giày làm bằng vải bạt
+@espagnole
+* danh từ
+- nước chấm Tây-ban-nha
+@espagnoletle
+* danh từ
+- then móc cửa sổ
+@esperance
+* danh từ
+- (từ cổ, nghĩa cổ) hy vọng; chờ đợi
+@esperantidist
+* danh từ
+- người tuyên truyền tiếng Experanto
+@espiel
+* danh từ
+- do thám; theo dõi
+- sự phát hiện ra
+@espier
+* danh từ
+- người do thám, người trinh thám
+@espionage
+* danh từ
+- hoạt động tình báo, hoạt động gián điệp
+@esquisse
+* danh từ
+- bản phác hoạ (tranh)
+- bản phát thảo
+@essayer
+- xem essay
+@essayette
+* danh từ
+- bài văn ngắn
+@essayistic
+* tính từ
+- thuộc tiểu luận; thuộc tùy bút
+@essentialism
+* danh từ
+- (triết học) bản chất luận
+@essentialist
+* danh từ
+- người theo bản chất luận
+@essentiality
+- xem essential
+@essentially
+* phó từ
+- về bản chất, về cơ bản
+@essonite
+* danh từ
+- (khoáng chất) esonit
+@est
+* (viết tắt)
+- giờ chuẩn ở miền Đông (Eastern standard time)
+- phương pháp trị liệu bằng xung điện (Electro-shock treatment)
+@establisher
+- xem establish
+@establishmentarianism
+- xem establishmentarian
+@estafette
+* danh từ
+- cũng estafet
+- sĩ quan liên lạc; phu trạm
+@estaminet
+* danh từ
+- số nhiều estaminets
+- quán cà phê bình dân
+@estate car
+* danh từ
+- xe có ngăn riêng xếp hành lý
+@esterase
+* danh từ
+- esteraza (enzym)
+@esterification
+* danh từ
+- sự este hoá
+@esterify
+* ngoại động từ
+- este hoá
+@esthesia
+* danh từ
+- cảm giác; xúc giác
+@esthesis
+* danh từ
+- khả năng cảm giác
+@esthete
+* danh từ
+- nhà duy mỹ
+@esthonian
+* danh từ
+- người Extoni
+- tiếng Extoni
+@estimableness
+- xem estimable
+@estimably
+- xem estimable
+@estival
+* tính từ
+- thuộc mùa hè
+@estivation
+* danh từ
+- sự ngủ hè; sự qua hè (của một số động vật)
+- (thực vật) tiền khai hoa
+@estranger
+- xem estrange
+@estriate
+* danh từ
+- không vân; không sọc
+@estuarial
+- xem estuary
+@esuriently
+- xem esurient
+@et al
+- đặc ngữ La tinh
+- những người hoặc thứ khác
+@et seq
+- đặc ngữ La tinh
+- và tiếp theo
+@etalon
+* danh từ
+- chuẩn; mẫu (đo lường)
+@etamine
+* danh từ
+- vải mỏng; vải mặt rây
+@etape
+* danh từ
+- trạm nghỉ (quân đội)
+- lộ trình trong một ngày
+@etc
+- nhiều hơn nữa, vân vân (khi liệt kê)
+@etceteras
+* danh từ số nhiều
+- những thứ kèm theo; đồ linh tinh
+= It's not just food for the guests - there are all the eceteras as well+Đâu phải chỉ có thức ăn cho khách thôi - mà còn bao nhiêu thứ linh tinh khác nữa
+@etchant
+* danh từ
+- chất khắc ăn mòn
+@etching-knife
+* danh từ
+- dao khắc axit
+@etd
+* (viết tắt)
+- giờ khởi hành ước chừng (Estimated time of departure)
+@eternization
+- xem eternize
+@etesian
+* tính từ
+- xuất hiện hàng năm đúng kì hạn
+= etesian winds+gió bấc mùa hè ở Địa Trung Hải
+@ethanol
+* danh từ
+- (hoá học) ethanol
+@ethanolamine
+* danh từ
+- (hoá học) etanolamin
+@ethene
+* danh từ
+- (hoá học) eten; etilen
+@etheric
+- xem ether
+@etherizer
+- xem etherize
+@ethernet
+- Phần cứng, định ước, tiêu chuẩn ghép nối của một loại mạng cục bộ, do hãng Xerox Corporation đưa ra đầu tiên, có khả năng liên kết đến 1024 nút trong một mạng bus
+@ethertalk
+- Một bộ phận bổ sung trong phần cứng của mạng cục bộ Ethernet, do các hãng Apple và 3 Com hợp tác chế độ, được thiết kế để hoạt động cùng với hệ điều hành mạng AppleShare EtherTalk truyền dữ liệu qua cáp đồng trục với tốc độ 10 megabit mỗi giây (tốc độ của Ethernet), trong khi tốc độ của mạng AppleTalk chỉ có 230 kilobit/giây
+@ethicality
+- xem ethical
+@ethicalness
+- xem ethical
+@ethionine
+* danh từ
+- (hoá học) ethionin
+@ethmoiditis
+* danh từ
+- (y học) viêm xương sàng
+@ethnarchy
+- xem ethnarch
+@ethnicism
+* danh từ
+- xem ethnicalism
+@ethnicity
+* danh từ
+- tính cách sắc tộc
+@ethnobotany
+* danh từ
+- thực vật dân tộc học
+@ethnocentrically
+- xem ethnocentrism
+@ethnocentricity
+- xem ethnocentrism
+@ethnogenic
+* tính từ
+- (thuộc) khoa nguồn gốc tộc người
+@ethnogeny
+* danh từ
+- khoa nguồn gốc tộc người
+@ethnographically
+- xem ethnography
+@ethnologically
+- xem ethnology
+@ethnomusicological
+* tính từ
+- thuộc âm nhạc dân tộc
+@ethnomusicologist
+* danh từ
+- nhà nghiên cứu âm nhạc dân tộc
+@ethnomusicology
+* danh từ
+- khoa âm nhạc dân tộc
+@ethnopsychology
+* danh từ
+- khoa tâm lý học dân tộc
+@ethnos
+* danh từ
+- đoàn thể huyết tộc
+@ethography
+* danh từ
+- phong tục học
+@ethologist
+- xem ethology
+@ethoxy
+* tính từ
+- thuộc etoxila
+@ethoxyl
+* danh từ
+- (hoá học) etoxila
+@ethylation
+* danh từ
+- sự úa vàng (cây); tình trạng xanh xao (người)
+@ethylenic
+- xem ethylene
+@ethylize
+* ngoại động từ
+- etyl hoá
+@etiologic
+- xem etiology
+@etiologically
+- xem etiology
+@etiologist
+- xem etiology
+@ettings
+* danh từ số nhiều
+- vật thu được
+@ettle
+* ngoại động từ
+- thu được
+@etude
+* danh từ
+- (âm nhạc) khúc luyện
+@etx/ack handshaking
+- thiết lập quan hệ, tay bắt tay (một phương pháp để kiểm soát sự thông suốt của quá trình truyền tin nối tiếp giữa hai thiết bị, sao cho thiết bị này chỉ phát tin khi thiết bị kia đã sẵn sàng nhận)
+@etymologically
+- xem etymological
+@etymologist
+* danh từ
+- nhà từ nguyên học
+@eucalypt
+* danh từ
+- (thực vật) cây bạch đàn
+@eucalyptol
+* danh từ
+- cũng eucalyptole
+- dầu bạch đàn
+@eucarpic
+* tính từ
+- (thực vật) thuộc thể quả thật
+@eucatalepsy
+* danh từ
+- (triết học) sự thông hiểu, sự giác ngộ
+@eucentric
+* tính từ
+- (sinh học) chính tâm; bao quanh đoạn trung tâm
+@eucephalous
+* tính từ
+- (động vật) có đầu phát triển
+@euchroic
+* tính từ
+- thuộc hệ sắc tố bình thường
+@euchromatic
+* tính từ
+- thuộc chất nhiễm sắc điển hình
+@euchromatin
+* danh từ
+- chất nhiễm sắc điển hình
+@euchromosome
+* danh từ
+- thể nhiễm sắc điển hình
+@eudemonistic
+- xem eudemonism
+@eudemonistical
+- xem eudemonism
+@eudemonology
+* danh từ
+- cũng eudaemonology
+- hạnh phúc học
+@eudiplueral
+* tính từ
+- (sinh học) đối xứng hai bên
+@eudominant
+* danh từ
+- (sinh học) loài trội điển hình, loài chính thức
+@eugamic
+* tính từ
+- (sinh học) giao phối ở tuổi thành thục
+@eugenia
+- (thực vật) cây vối
+@eugenically
+- xem eugenic
+@eugenism
+* danh từ
+- ưu sinh luận
+@eugenol
+* danh từ
+- (hoá học) eugenol
+@euglena
+* danh từ
+- (động vật) tảo mắt; trùng mắt
+@euglenoid
+* tính từ
+- dạng tảo mắt dạng trùng mắt
+@eugonic
+* tính từ
+- mọc dày đặc
+@euhemeristically
+- xem euhemerism
+@euheterosis
+* danh từ
+- tính ưu thế điển hình
+@euhybrid
+* danh từ
+- (sinh học) loài lai điển hình
+@eulogia
+- danh từ,  số nhiều của eulogium
+@eulogistically
+- xem eulogy
+@eulogium
+* danh từ
+- số nhiều eulogia
+- bài tán dương, bài ca ngợi
+@eulogizer
+* danh từ
+- người tán dương, tán tụng, ca tụng
+@eumenides
+* danh từ
+- nữ thần Ơ-mê-nit tóc là rắn theo đuổi trừng trị kẻ phạm tội ác (thần thoại Hy-lạp)
+@eunuchism
+- xem eunuch
+@eupatorium
+* danh từ
+- (thực vật) cây cỏ lào
+@eupeptically
+- xem eupeptic
+@euphemist
+- xem euphemism
+@euphemistically
+* phó từ
+- theo lối nói trại, theo lối nói hoa Mỹ
+@euphemizer
+- xem euphemize
+@euphonically
+- xem euphony
+@euphonicalness
+* danh từ
+- sự hài âm
+* danh từ
+- sự hài âm
+@euphoniously
+- xem euphonious
+@euphoniousness
+- xem euphonious
+@euphonism
+* danh từ
+- hài âm
+@euphorically
+- xem euphoria
+@euphotic
+* tính từ
+- thuộc lớp mặt nước có đầy đủ ánh sáng để cây sinh trưởng
+@euphotometric
+* tính từ
+- thuộc lượng ánh sáng khuếch tán toàn phần
+@euphrasy
+* danh từ
+- (thực vật) cỏ tiểu mễ (để chữa mắt)
+@euphuistical
+- xem euphuism
+@euphuistically
+- xem euphuism
+@euplankton
+* danh từ
+- sinh vật nổi ở biển
+@euploid
+* danh từ
+- thể bội chỉnh
+* tính từ
+- thuộc số bội chỉnh
+@euploidy
+* danh từ
+- tính thể bội chỉnh
+@eupnoea
+* danh từ
+- cũng eupnea
+- hô hấp bình thường
+@eupnoeic
+* tính từ
+- có hô hấp bình thường
+@eurematics
+* danh từ
+- phát minh học
+@eurhythmy
+* danh từ
+- sự nhịp nhàng, cân đối, hài hoà
+- (y học) sự đều mạch
+@eurite
+* danh từ
+- (khoáng chất) eurit
+@euritic
+* tính từ
+- thuộc fenzit; microgranit
+@euro
+* danh từ
+- số nhiều euros
+- loài canguru lớn da đỏ xám (ở úc)
+@eurocheque
+* danh từ
+- séc phát hành toàn Âu châu
+@eurocommunism
+* danh từ
+- chủ nghĩa cộng sản Tây Âu (độc lập với đường lối cộng sản Liên-xô)
+@eurocommunist
+* danh từ
+- người theo chủ nghĩa cộng sản Tây Âu
+* tính từ
+- (thuộc) chủ nghĩa cộng sản Tây Âu
+@eurocrat
+* danh từ
+- viên chức của cơ quan điều hành Cộng đồng Âu châu
+@eurodollar
+* danh từ
+- đô la Âu châu
+@europe
+* danh từ
+- (địa lý) châu Âu
+@eurus
+* danh từ
+- thần gió đông, gió đông nam (thần thoại Hy-lạp)
+- gió đông; gió đông nam
+@eurythmic
+* tính từ
+- xem eurhythmic
+@eurythmics
+* danh từ
+- xem eurhythmy
+@eurythmy
+* danh từ
+- xem eurhythmy
+@eustatic
+* tính từ
+- (địa chất) chấn tĩnh
+@eusternum
+* danh từ
+- mảnh ức côn trùng
+@eustomatous
+* tính từ
+- (động vật) có miệng chính thức
+@eusystole
+* danh từ
+- tâm thu bình thường
+@eutectoid
+* tính từ
+- ơtectoi; cùng tích
+@euterpean
+* tính từ
+- thuộc nữ thần âm nhạc
+- thuộc âm nhạc
+@euthenics
+* danh từ
+- khoa cải tiến điều kiện sinh sống
+@euthenist
+* danh từ
+- người theo khoa cải tiến điều kiện sinh sống
+@eutherian
+* danh từ
+- động vật có vú chính thức; động vật có nhau
+* tính từ
+- thuộc động vật có vú chính thức, động vật có nhau
+@euthyroid
+* tính từ
+- có tuyến giáp bình thường
+@eutrophic
+* tính từ
+- dinh dưỡng tốt
+@eutrophication
+* danh từ
+- sự dinh dưỡng tốt
+@eutrophy
+* danh từ
+- sự dinh dưỡng tốt
+@eutropic
+* tính từ
+- hướng mặt trời; quang hải
+@evacuant
+* tính từ
+- làm bài tiết tốt; nhuận tràng
+@evacuative
+- xem evacuate
+@evacuator
+- xem evacuate
+@evader
+- xem evade
+@evadible
+- xem evade
+@evaluative
+- xem evaluate
+@evaluator
+- xem evaluate
+@evalvate
+* tính từ
+- thiếu van; thiếu nắp
+@evanescently
+- xem evanescent
+@evangelically
+- xem evangelical
+@evangelisation
+* danh từ
+- sự truyền bá Phúc âm
+- sự cảm hoá (ai) theo Công giáo
+@evangelistically
+- xem evangelism
+@evangelizer
+- xem evangelize
+@evaporatively
+- xem evaporate
+@evaporativity
+- xem evaporate
+@evapotranspiration
+* danh từ
+- sự thoát-bốc hơi nước
+@evasively
+* phó từ
+- thoái thác, lảng tránh
+@evection
+* danh từ
+- (thiên văn) kỳ sai (của mặt trăng)
+@evectional
+* danh từ
+- thuộc kỳ sai (của mặt trăng)
+@even-disciple
+* danh từ
+- đệ tử đồng môn
+@even-down
+* tính từ
+- xuống thẳng
+- chân chính
+- rõ ràng
+@even-forward
+* tính từ
+- tiến thẳng
+@even-hand
+* tính từ
+- cùng địa vị
+@even-handedness
+* danh từ
+- thái độ công bằng, vô tư
+@evener
+- xem even
+@evening paper
+* danh từ
+- báo phát hành vào buổi chiều
+@evening primrose
+* danh từ
+- <thực> cây anh thảo
+@eventfully
+- xem eventful
+@eventfulness
+- xem eventful
+@eventing
+* danh từ
+- môn thể thao có dùng ngựa
+@eventless
+- xem event
+@eventration
+* danh từ
+- (y học) sự lồi phủ tạng
+@ever-bearing
+* tính từ
+- (thực vật) ra quả quanh năm
+@ever-blooming
+* tính từ
+- (thực vật) ra hoa quanh năm
+@ever-changing
+* tính từ
+- bấp bênh (người); thay đổi luôn
+@ever-greeness
+* danh từ
+- tính thường xanh (cây)
+- tính bất hủ
+@everlastingly
+* phó từ
+- liên miên, không ngớt
+@everydayness
+- xem everyday
+@evictee
+- xem evict
+@evidentially
+- xem evidential
+@evidently
+* phó từ
+- hiển nhiên, rõ ràng
+@evil-disposed
+* tính từ
+- có ý xấu; có ác ý
+@evil-intentioned
+* tính từ
+- như evil-minded
+@evil-mindedly
+- xem evil-minded
+@evil-mindedness
+- xem evil-minded
+@evil-speaking
+* tính từ
+- ăn nói độc địa; ăn nói độc mồm độc miệng
+@evil-starred
+* tính từ
+- đen đủi; gặp số không may
+@evildoer
+* danh từ
+- kẻ làm việc ác; kẻ bất lương
+@evilly
+* phó từ
+- có hiểm ý, có ác ý
+@evilness
+- xem evil
+@evocable
+- xem evoke
+@evocatively
+- xem evocative
+@evocator
+- xem evocation
+@evolutility
+* danh từ
+- (sinh học) tính biến đổi cấu trúc
+@evolutionarily
+- xem evolution
+@evolvable
+- xem evolve
+@ewe-cheese
+* danh từ
+- pho mát sữa cừu
+@ewe-lamb
+* danh từ
+- vật quí nhất
+@eworld
+- Một dịch vụ máy tính trực tuyến do hãng Apple Corporation thiết kế đặc biệt để dùng cho các máy Macintosh
+@ex-directory
+* tính từ
+- (nói về số điện thoại) không nằm trong danh bạ
+@ex-nihilo
+* phó từ
+- từ hư vô
+= creation ex-nihilo+sự sáng tạo từ hư vô
+@ex-servicewoman
+* danh từ
+- số nhiều là ex-servicewomen
+- người từng là nữ quân nhân; cựu nữ quân nhân; cựu chiến binh
+- danh từ,  số nhiều là ex-servicewomen
+- người từng là nữ quân nhân; cựu nữ quân nhân; cựu chiến binh
+@ex-siccant
+* tính từ
+- làm khô; sấy khô
+* danh từ
+- chất hút ẩm
+@exacter
+- xem exact
+@exactingly
+- xem exacting
+@exactingness
+- xem exacting
+@exaggerated
+* tính từ
+- phóng đại; cường điệu
+= to have an exaggerated notion of a  person's wealth+có một khái niệm quá lớn về của cải của một người
+- tăng quá mức
+@exaggeratory
+- xem exaggerate
+@exalate
+* tính từ
+- (thực vật) không cánh; không phần phụ dạng cánh
+@exalted
+* tính từ
+- phấn khởi; cao hứng
+- cao quý (tình cảm, phong cách); xứng đáng; cao thượng
+@exalter
+- xem exalt
+@examinable
+- xem examine
+@exanimation
+* danh từ
+- xem exanimate chỉ tình trạng
+@exanimo
+* tính từ
+- thực lòng; thành tâm
+@exanthematic
+- xem exanthema
+@exarate
+* tính từ
+- thuộc con nhộng có cánh, chân cử động được
+- đào xới
+@exarchal
+- xem exarch
+@exarchate
+- xem exarch
+@exasperatedly
+- xem exasperate
+@exasperater
+- xem exasperate
+@exasperatingly
+* phó từ
+- khó chịu, khó ưa
+@excardination
+* danh từ
+- việc chuyển một tu sĩ từ giáo khu này sang giáo khu khác
+@exceedingly
+* phó từ
+- quá chừng, cực kỳ
+@excellently
+* phó từ
+- xuất sắc, tuyệt vời
+@excentric
+* tính từ
+- xem eccentric
+@excentricity
+* danh từ
+- xem eccentricity
+@exceptionability
+- xem exceptionable
+@exceptionably
+- xem exceptionable
+@exceptionally
+* phó từ
+- cá biệt, khác thường
+@exceptionalness
+- xem exceptional
+@excessively
+* phó từ
+- quá chừng, quá đáng
+@excipient
+* danh từ
+- (dược học) tá dược
+@exciple
+* danh từ
+- (thực vật) vỏ thể quả đĩa
+@excitability
+* danh từ
+- tính dễ bị kích thích, tính dễ bị kích động
+@excitable
+* tính từ
+- dễ bị kích thích, dễ bị kích động
+@excitableness
+- xem excitable
+@excitably
+- xem excitable
+@excitedly
+* phó từ
+- xúc động
+@excitingly
+* phó từ
+- hứng thú, thú vị
+@excitometabolic
+* tính từ
+- (sinh học) kích thích chuyển hoá
+@excitomotion
+* danh từ
+- (sinh học) sự kích thích vận động
+@excitomotor
+* tính từ
+- kích thích vận động
+@excitomotory
+* tính từ
+- xem exclamative
+= excitomotory sentence+câu cảm thán
+@exciton
+* tính từ
+- (vật lý) exiton
+@excitonutrient
+* tính từ
+- kích thích dinh dưỡng
+@excitor
+* danh từ
+- vật kích thích
+- dây thần kinh phản xạ
+@exclaimer
+- xem exclaim
+@exclamation mark
+* danh từ
+- dấu cảm, dấu chấm than
+@excludability
+- xem exclude
+@excludable
+- xem exclude
+@excluder
+- xem exclude
+@excludible
+- xem exclude
+@exclusionary
+- xem exclusion
+@exclusionism
+* danh từ
+- thuyết bế môn toả cảng; thuyết bài trừ người nước ngoài
+- thuyết dành đặc quyền chỉ cho một đẳng cấp
+@exclusively
+* phó từ
+@exclusivity
+* danh từ
+- tính loại trừ
+- tính riêng biệt, tính dành riêng; tính độc chiếm, tính độc quyền
+- tính độc nhất
+@excoriator
+- xem excoriate
+@excrescently
+- xem excrescent
+@excretal
+- xem excreta
+@excretory
+* tính từ
+- như excretive
+@excruciating
+* tính từ
+- hết sức đau khổ
+= an excruciating migraine+một bệnh đau đầu hết sức đau đớn
+- (từ Mỹ, nghĩa Mỹ) (thông tục) khắt khe; rất tỉ mỉ
+@excrutiatingly
+* phó từ
+@exculpable
+- xem exculpate
+@excursion-rates
+* danh từ
+- giá hạ (xe, tàu, khách sạn) cho khách đi chơi; tham quan
+@excursively
+- xem excursive
+@excurvate
+* tính từ
+- (cong) lồi
+@excurvation
+* danh từ
+- sự uốn (cong); khúc cong (lồi)
+@excurved
+* tính từ
+- cong (lồi)
+@excusable
+* tính từ
+- có thể tha lỗi, có thể tha thứ được
+@excusableness
+* danh từ
+- tính tha lỗi được, tính tha thứ được
+@excusably
+* phó từ
+- đáng tha thứ
+@excusatory
+* tính từ
+- để xin lỗi, để cáo lỗi
+- để bào chữa
+@excuser
+- xem excuse
+@exe
+- Trong DOS, đây là một đuôi mở rộng, chỉ rõ tệp tin đó là một chương trình chạy được
+@execrableness
+- xem execrable
+@execrably
+* phó từ
+- bỉ ổi, đáng tởm, đáng ghét
+@execrator
+- xem execrate
+@executer
+- xem execute
+@executress
+* danh từ
+- xem executress
+@exedra
+* danh từ
+- số nhiều exedrae
+- phòng toạ đàm (từ cổ Hy-lạp)
+@exegete
+* danh từ
+- nhà chú giải
+@exegetically
+- xem exegetic
+@exegetics
+* danh từ
+- chú giải học; huấn hỗ học
+@exemplarily
+- xem exemplary
+@exemplarity
+- xem exemplary
+@exemplifiable
+- xem exemplify
+@exemplifier
+- xem exemplify
+@exemptible
+- xem exempt
+@exequial
+* tính từ
+- thuộc tang lễ
+@exequy
+* danh từ
+- số nhiều exequies
+- tang lễ
+@exercise-book
+* danh từ
+- vở bài tập
+@exergonic
+* tính từ
+- thải nhiệt, thải năng lượng; thoát nhiệt, thoát năng lượng; sản lượng
+= an exergonic biochemical reaction+một phản ứng sinh hoá thải nhiệt
+@exergue
+* danh từ
+- phần dưới mặt trái của huy chương, đồng tiền để khắc chữ
+- chữ khắc ở phần dưới, mặt trái huy chương
+@exfoliative
+- xem exfoliate
+@exfoliator
+- xem exfoliate
+@exhaust-driven
+* tính từ
+- (cơ khí) chạy bằng khí xả
+@exhaustedly
+- xem exhaust
+@exhaustingly
+- xem exhaust
+@exhaustively
+* phó từ
+- thấu đáo, tường tận
+@exhaustivity
+- xem exhaustive
+@exhaustless
+* tính từ
+- vô tận; không bao giờ hết
+@exhibiter
+- xem exhibit
+@exhibitionistic
+- xem exhibitionism
+@exhibitively
+- xem exhibitive
+@exhilaratingly
+- xem exhilarating
+@exhilarator
+- xem exhilarate
+@exhorter
+- xem exhort
+@exhumer
+- xem exhume
+@exigently
+* phó từ
+- vòi vĩnh, kèo nèo
+@exiguously
+- xem exiguous
+@exilic
+- xem exile
+@exine
+* danh từ
+- (thực vật) màng ngoài (bào tử, hạt phấn)
+@existentially
+- xem existential
+@existing
+* tính từ
+- hiện tại; hiện tồn; hiện hành; hiện nay
+= the existing state of things+tình hình sự việc hiện tại
+@exobiological
+* tính từ
+- thuộc sinh học ngoài trái đất
+@exobiologist
+* danh từ
+- nhà sinh học ngoài trái đất
+@exobiology
+* danh từ
+- sinh học ngoài trái đất
+@exocardiac
+* tính từ
+- ngoài tim
+@exocardial
+* tính từ
+- ngoài tim
+@exode
+* danh từ
+- đoạn kết (bi kịch cổ Hy Lạp)
+@exodermis
+* danh từ
+- (sinh học) lớp ngoại bì; lớp biểu bì
+@exodic
+* tính từ (sinh học)
+- ly tâm
+- ra khỏi nước
+@exodontia
+* danh từ
+- ngành nhổ răng
+@exodontist
+* danh từ
+- (người nhổ răng)
+@exoenzyme
+* danh từ
+- (sinh học) Enzim ngoại bào
+@exoergic
+* tính từ
+- phát ra năng lượng
+= exoergic nuclear reactions+phản ứng hạt nhân phát ra năng lượng
+@exogamete
+* danh từ
+- (sinh học) ngoại giao tử
+@exogamic
+- xem exogamy
+@exogenitic
+* tính từ
+- ngoại sinh
+@exogenously
+- xem exogenous
+@exomorphic
+* tính từ
+- (địa chất) biến chất tiếp ngoài
+@exonerator
+* danh từ
+- người miễn tội, người giải tội
+@exonic
+- xem exon
+@exoparasite
+* danh từ
+- vật ký sinh ngoài
+@exopathic
+* tính từ
+- (y học) nguyên nhân bệnh ở ngoài
+@exophthalmos
+* danh từ
+- cũng exophthalmus
+- (y học) lồi mắt
+@exophylaxis
+* danh từ
+- (sinh học) sự phòng bệnh nhờ da
+@exopodite
+* danh từ
+- (động vật) nhánh chân ngoài
+@exorability
+* danh từ
+- xem exorable chỉ tính chất
+@exorbitantly
+* phó từ
+- quá đáng, thái quá
+@exorcise
+- yểm trừ, xua đuổi
+@exorciser
+- xem exorcise
+@exoskeletal
+- xem exoskeleton
+@exosmotic
+- xem exosmosis
+@exosphere
+* danh từ
+- phần bên ngoài khí quyển
+@exospheric
+* tính từ
+- thuộc quyển ngoài
+@exospore
+* danh từ
+- <thực> bào tử ngoài, ngoại bào tử
+@exosporous
+* tính từ
+- thuộc bào tử
+@exostome
+* danh từ
+- (sinh học) lỗ vách ngoài noãn
+@exostosis
+* danh từ
+- (y học) lồi ương
+- (thực vật) lúp; bướu
+@exostracize
+* ngoại động từ
+- (sử học) trục xuất khỏi nước (hình phạt cổ Hy-Lạp)
+@exoterically
+- xem exoteric
+@exotheca
+* danh từ
+- (sinh học) bao ngoài; áo ngoài; vỏ ngoài
+@exothecium
+* danh từ
+- (thực vật) vách ngoài của bao phấn
+@exothermically
+- xem exothermic
+@exotica
+* danh từ (số nhiều)
+- vật quí hiếm, lạ
+@exotically
+- xem exotic
+@exoticness
+- xem exotic
+@exotoxin
+* danh từ
+- (dược học) ngoại độc tố
+@exotropic
+* tính từ
+- hướng ra ngoài; hướng ra khỏi trục
+@exotropism
+* danh từ
+- tính hướng ra ngoài
+- tính hướng ly tâm
+@expandable
+- xem expand
+@expanded metal
+* danh từ
+- kim loại dát và kéo thành mắt lưới (giúp bêtông vững chắc hơn)
+@expansively
+* phó từ
+- cởi mở, chan hoà
+@expectable
+- xem expect
+@expectably
+- xem expect
+@expectantly
+* phó từ
+- mong đợi, hy vọng
+@expectational
+- xem expectation
+@expectedly
+- xem expect
+@expectedness
+- xem expect
+@expedientially
+- xem expediential
+@expediently
+* phó từ
+- giảo hoạt, xảo quyệt
+@expediter
+- xem expedite
+@expeditiously
+* phó từ
+- mau lẹ, nhanh nhẹn, chóng vánh
+@expeditor
+- xem expedite
+@expeller
+- xem expel
+@expendability
+* danh từ
+- xem expendable chỉ khả năng
+@expensively
+* phó từ
+- đắt tiền, đắt giá
+@experiencer
+- xem experience
+@experientially
+- xem experiential
+@expertly
+* phó từ
+- thông thạo, thành thạo
+@expirable
+* tính từ
+- có thể chấm dứt được, có thể kết thúc được
+@expiring
+* tính từ
+- thở ra
+- lâm chung; hấp hối
+@explanate
+* tính từ
+- trải phẳng
+@explanatorily
+- xem explanatory
+@explant
+* ngoại động từ
+- cấy mô sang; cấy mô khỏi sinh vật
+* danh từ
+- mô lấy từ sinh vật để nuôi nhân tạo
+@explantation
+* danh từ
+- sự cấy mô sang; sự cấy mô khỏi sinh vật
+@explicably
+- xem explicable
+@explication
+- xem explicate
+@explicatively
+- xem explicative
+@explicator
+- xem explicate
+@explicitly
+* phó từ
+- rõ ràng, dứt khoát
+@explodent
+* danh từ
+- (ngôn ngữ) âm nổ (như) p,  b,  t...
+@exploder
+- xem explode
+@exploitability
+- xem exploit
+@exploitative
+- xem exploit
+@exploitatively
+- xem exploit
+@exploitive
+- xem exploit
+@exploitively
+- xem exploit
+@exploring
+* danh từ
+- sự thăm dò; sự thám hiểm
+@explosibility
+* danh từ
+- khả năng có thể nổ
+@explosible
+* tính từ
+- có thể nổ
+@explosion-proof
+* danh từ
+- phòng nổ, chống nổ
+@explosively
+* phó từ
+- mạnh mẽ, dữ dội
+@expo
+* danh từ; số nhiều expos
+- cuộc triển lãm (viết-tắt của exposition)
+@exponentially
+* phó từ
+- theo hàm mũ
+@exponentiation
+* danh từ
+- (toán học) sự mũ hoá
+@exponible
+* tính từ
+- có thể thuyết minh
+@exportability
+- xem export
+@exposal
+* danh từ
+- sự bộc lộ, sự phơi bày
+@exposer
+- xem expose
+@expostulative
+* tính từ
+- để phê bình, để vạch chỗ sai
+@expostulator
+- xem expostulate
+@expostulatory
+- xem expostulate
+@express-laboratory
+* danh từ
+- phòng thí nghiệm nhanh
+@expressage
+* danh từ
+- sự vận chuyển tốc hành
+- vật vận chuyển tốc hành
+@expresser
+- xem express
+@expressionistic
+- xem expressionism
+@expressionistically
+- xem expressionism
+@expressively
+* phó từ
+- diễn cảm, truyền cảm
+@expressivity
+* danh từ
+- (sinh học) độ biểu hiện (tình trạng truyền); tính biểu hiện
+@expressway
+* danh từ
+- như motorway
+@exprobation
+* danh từ
+- sự trách móc; lời trách móc
+@expromission
+* danh từ
+- (pháp luật) sự nhận nợ thay
+@expromissor
+* danh từ
+- (pháp luật) người nhận nợ thay
+@expropriator
+- xem expropriate
+@expropriatory
+- xem expropriate
+@expugnable
+* tính từ
+- có thể đánh chiếm được, có thể tập kích được
+@expugnation
+* danh từ
+- sự đánh chiếm, sự tập kích
+@expunger
+- xem expunge
+@exquisitely
+* phó từ
+- sắc sảo, thanh tú, trang nhã
+@exsanguinated
+* tính từ
+- mất máu; thiếu máu
+@exsanguinous
+* tính từ, cũng exanguinous
+- thiếu máu
+@exsciccosis
+* danh từ
+- sự giảm lượng máu
+@exsculption
+* danh từ
+- sự chạm sâu, sự khắc sâu
+@exsertile
+* tính từ
+- (sinh học) thúc ra; thoát ra; đẩy ra
+@exsertion
+- xem exsert
+@exsiccata
+* danh từ
+- vật mẩu khô; tiêu bản khô
+@exsiccative
+- xem exsiccate
+@exstipulate
+* tính từ
+- (thực vật) thiếu lá mầm
+@exsucceous
+* danh từ
+- (thực vật) khô, không có nhựa
+@exsufflation
+* danh từ
+- sự thở ra cố gắng
+@ext
+- ngoài, ngoại
+- số máy (điện thoại) phụ
+@extemporal
+* tính từ
+- không hề chuẩn bị trước; ứng khẩu
+@extemporaneously
+* phó từ
+- tùy ứng, ứng khẩu, ngẫu ứng
+@extemporarily
+- xem extemporary
+@extemporizer
+- xem extemporize
+@extended
+* tính từ
+- (ngôn ngữ) mở rộng
+= simple extented sentence+câu đơn mở rộng
+= extended family+gia đình mà trong đó, chú bác, cô dì và anh em họ được xem như họ hàng gần gũi, có nghĩa vụ giúp đỡ và hỗ trợ nhau; gia đình mở rộng
+@extensibility
+* tính từ
+- tính có thể duỗi thẳng ra; tính có thể đưa ra
+- tính có thể kéo dài ra, tính có thể gia hạn; tính có thể mở rộng
+- <pháp> tính có thể bị tịch thu
+@extension-ladder
+* danh từ
+- cái thang có thể kéo dài ra
+@extension-line
+* danh từ
+- đường sắt kéo dài thêm
+@extension-table
+* danh từ
+- cái bàn có thể kéo dài ra
+@extensional
+- xem extension
+@extensity
+* danh từ
+- tính không gian
+- tính mở rộng
+@extensively
+* phó từ
+- rộng rãi, bao quát, cùng khắp
+@extenuative
+- xem extenuate
+@extenuator
+- xem extenuate
+@exteriorly
+- xem exterior
+@extern
+* tính từ
+- (từ cổ, nghĩa cổ) xem external
+* danh từ
+- học sinh ở ngoài trường
+@externalism
+* danh từ
+- thuyết hiện tượng luận
+@externally
+* phó từ
+- theo bên ngoài, theo bề ngoài
+@externodorsal
+* tính từ
+- thuộc lưng sau-ngoài
+@exteroceptive
+* tính từ
+- kích thích từ bên ngoài
+@exteroceptor
+* danh từ
+- giác quan nhận và truyền kích thích từ bên ngoài
+@exteroreception
+* danh từ
+- sự nhận cảm ngoài; ngoại cảm thụ
+@exteroreceptive
+* tính từ
+- nhận cảm ngoài; ngoại cảm thụ
+@exteroreceptor
+* danh từ
+- ngoại thụ quan (cơ quan nhận cảm giác bên ngoài)
+@exterritorially
+- xem exterritorial
+@extine
+* danh từ
+- vỏ ngoài; màng ngoài (bao tử, hạt phấn)
+@extirpative
+- xem extirpate
+@extirpatory
+* tính từ
+- xem exterpative
+@extorsive
+* tính từ
+- cưỡng đoạt
+@extortionately
+* phó từ
+- quá đáng, thái quá
+@extra-axillar
+* tính từ
+- ngoài nách lá
+@extra-axillary
+* tính từ
+- ngoài nách lá
+@extra-branchial
+* tính từ
+- (sinh vật) ngoài cung mang
+@extra-canonical
+* tính từ
+- ngoài pháp điển
+@extra-capsular
+* tính từ
+- ngoài vỏ; ngoài túi; ngoài nang
+@extra-cardial
+* tính từ
+- ngoài tim
+@extra-marital
+* tính từ
+- ngoại tình
+@extra-solar
+* tính từ
+- ngoài thái dương hệ
+@extra-stomachal
+* tính từ
+- ngoài dạ dày
+@extracecal
+* tính từ
+- (giải phẫu) ngoài ruột tịt, ngoài ruột bít
+@extracellular
+* tính từ
+- ngoài tế bào; ngoại bào
+@extracranial
+* tính từ
+- ngoài sọ
+@extractable
+- xem extract
+@extractible
+- xem extract
+@extractively
+- xem extractive
+@extradotal
+* tính từ
+- (pháp luật) tài sản ngoài của hồi môn
+@extradural
+* tính từ
+- (sinh học) ngoài màng cứng
+@extraembryonic
+* tính từ
+- ngoài phôi; ngoại phôi
+@extraenteric
+* tính từ
+- ngoài ruột; ngoài ống tiêu hoá
+@extrafloral
+* tính từ
+- ngoài hoa
+@extragalatic
+* tính từ
+- ở ngoài thiên hà
+@extrahard
+* tính từ
+- rất cứng; đặc biệt cứng (đá mài)
+@extraheavy
+* tính từ
+- cực nặng
+@extrahepatic
+* tính từ
+- (giải phẫu) ngoài gan
+@extrajudicially
+- xem extrajudicial
+@extralinguistic
+* tính từ
+- ngoài (lĩnh vực) ngôn ngữ học
+@extrality
+* danh từ
+- xem exterritoriality
+@extramarital
+* tính từ
+- thuộc về quan hệ tình dục (của một người đã có vợ hoặc có chồng) bên ngoài hôn nhân; ngoại tình
+= he had extramarital relations with one of his neighbours+anh ta ngoại tình với một cô láng giềng
+= extramarital affairs+những vụ ngoại tình
+@extramatrical
+* tính từ
+- ngoài dạ con
+@extraneously
+- xem extraneous
+@extranuclear
+* tính từ
+- ngoài (hạt) nhân
+@extraocular
+* tính từ
+- ngoài mắt
+= extraocular muscle+cơ ngoài mắt
+@extraofficial
+* tính từ
+- ngoài trách nhiệm; ngoài chức vụ
+@extraordinarily
+* phó từ
+- lạ thường, phi thường
+@extraparliamentary
+* tính từ
+- ngoài quốc hội, ngoài nghị trường
+@extrapolative
+- xem extrapolate
+@extrapolator
+- xem extrapolate
+@extraprofessional
+* tính từ
+- ngoài chuyên môn, ngoài chức vụ
+@extrared
+* tính từ
+- (vật lý) hồng ngoại
+@extrarenal
+* tính từ
+- (giải phẫu) ngoài thân
+@extrastelar
+* tính từ
+- ngoài trung trụ; ngoài mô mạch
+@extraterritorially
+- xem extraterritorial
+@extrauterine
+* tính từ
+- ngoài dạ con, ngoài tử cung
+@extravagantly
+* phó từ
+- ngông cuồng, quái gở
+@extravagantness
+- xem extravagant
+@extravascular
+* tính từ
+- (giải phẫu) ngoài mạch
+@extravehicular
+* tính từ
+- ở ngoài con tàu vũ trụ đang bay
+@extraventricular
+* tính từ
+- (giải phẩu)
+- ngoài tâm thất
+@extravert
+* tính từ
+- xem extrovert
+@extremal
+* tính từ
+- thuộc cực trị; đầu cùng
+@extremum
+* danh từ
+- số nhiều extrema
+- (toán học) cực trị
+@extrinsically
+- xem extrinsic
+@extrose
+* tính từ
+- (thực vật) hướng ra ngoài; quay ra ngoài
+@extroversion
+* danh từ
+- sự hướng ngoại
+@extroversive
+- xem extroversion
+@extroversively
+- xem extroversion
+@extrovert
+* danh từ
+- người quan tâm đến môi trường xung quanh hơn là đến bản thân mình, người có tinh thần hướng ngoại
+@extruder
+* danh từ
+- (kỹ thuật) máy đúc ép; máy đùn (chất dẻo)
+@exuberantly
+* phó từ
+- xum xuê, dồi dào
+- cởi mở, hồ hởi
+@exudate
+* danh từ
+- chất dò rỉ
+* tính từ
+- tiết dịch; ứa giọt
+@exudative
+- xem exudation
+@exulcerate
+* ngoại động từ
+- (y học) làm loét nông
+* nội động từ
+- loét nông
+@exulceration
+* danh từ
+- (y học) chỗ loét nông
+@exultance
+- xem exult
+@exultantly
+* phó từ
+- hớn hở, hân hoan
+@exultation
+* danh từ
+- nỗi hân hoan, nỗi hoan hỉ; nỗi hớn hở
+- sự hân hoan, sự hoan hỉ, sự hớn hở, sự đắc chí, sự hả hê
+@exultingly
+- xem exult
+@exurb
+* danh từ
+- ngoại ô
+@exurban
+* tính từ
+- thuộc ngoại ô
+@eye-bar
+* danh từ
+- (kỹ thuật) thanh có tai treo
+@eye-beam
+* danh từ
+- cái nhìn sắc sảo; ánh mắt
+@eye-bite
+* ngoại động từ
+- dùng con mắt để làm người ta mê
+@eye-bolt
+* danh từ
+- (kỹ thuật) đinh khuy
+@eye-bulb
+* danh từ
+- cầu mắt (nhãn cầu)
+@eye-catcher
+- xem eye-catching
+@eye-catching
+* tính từ
+- dễ gây chú ý
+@eye-copy
+* danh từ
+- chép lại theo mắt nhìn
+@eye-level
+* tính từ
+- ngang tầm mắt
+@eye-liner
+* danh từ
+- sự trang điểm mắt
+@eye-pit
+* danh từ
+- hố mắt
+@eye-rthyme
+* danh từ
+- vần như nhau chỉ ở chính tả nhưng phát âm khác nhau
+@eye-shadow
+* danh từ
+- Mỹ phẩm bôi vào mí mắt
+@eye-shot
+* danh từ
+- tầm nhìn
+= beyond eye-shot of+ngoài tầm nhìn
+= within eye-shot of+trong tầm nhìn
+@eye-spot
+* danh từ
+- đốm mắt; đốm giống con mắt (trên cánh bướm)
+- mắt đơn
+@eye-spotted
+* danh từ
+- (động vật) có đốm mắt
+@eye-strain
+* danh từ
+- sự mỏi mắt (do chữ li ti hoặc thiếu ánh sáng)
+@eye-strings
+* danh từ số nhiều
+- (giải phẩu) dây chằng vận mắt
+@eye-water
+* danh từ
+- thuốc nhỏ, rửa mắt
+* danh từ+ ước mắt
+- dịch thủy tinh
+@eye-witness
+* danh từ
+- người được gọi ra làm chứng do chính mắt mình chứng kiến điều gì
+@eyeable
+* tính từ
+- nhìn được
+@eyeful
+* danh từ
+- cái bị ném hoặc thảy vào mắt
+= to get an eyeful of sand+ bị cát vào đầy mắt
+- cảnh thú vị hoặc hấp dẫn
+= she's quite an eyeful!+quả là cô ấy hấp dẫn thật!
+= to have /get an eyeful (of something)+nhìn (cái gì) cho thoả thích
+= come and get an eyeful of this - there's a giraffe in the garden!+lại mà xem cái này cho đã mắt - có một con hươu cao cổ trong vườn!
+@eyeglance
+* danh từ
+- cái liếc mắt
+@eyeglass
+* danh từ
+- số nhiều là eyeglasses
+- thấu kính (cho một mắt) để giúp thị lực yếu; mắt kính; kính một mắt
+- (số nhiều) như spectacles
+- danh từ,  số nhiều là eyeglasses
+- thấu kính (cho một mắt) để giúp thị lực yếu; mắt kính; kính một mắt
+- (số nhiều) như spectacles
+@eyeground
+* danh từ
+- đáy mắt
+@eyeless
+* tính từ
+- không có mắt
+@eyelift
+* danh từ
+- sự giải phẩu thẩm mỹ đối với mô chung quanh mắt để giảm bớt hoặc loại bỏ vết nhăn
+@eyelike
+* tính từ
+- giống con mắt
+@eyesocket
+* danh từ
+- ổ mắt
+@ezine
+* danh từ
+- viết tắt của Electronic Magazine (Tạp chí điện tử)

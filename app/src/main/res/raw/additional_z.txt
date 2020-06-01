@@ -1,0 +1,185 @@
+@z-hour
+- xem zero  hour
+@zaffre
+- xem zaffer
+@zanily
+* phó từ
+- nhố nhăng, quái gở
+@zap
+* danh từ
+- sự phấn khởi dạt dào
+* ngoại động từ
+- hạ gục
+* nội động từ
+- vụt đi, vọt
+@zapf dingbats
+- Tên phông chữ trang trí do Herman Zapf, một nhà thiết kế kiểu chữ người Đức, xây dựng Về xuất xứ, Dingbats là những ký hiệu mang tính trang trí, được dùng giữa các cột, phổ biến hơn là giữa các đoạn văn, để phân cách
+@zappy
+* tính từ
+- phấn chấn, phấn khởi
+@zealotic
+* tính từ
+- cuồng tín, quá khích
+@zealously
+* phó từ
+- hăng hái, sốt sắng
+@zein
+* danh từ
+- zein (đạm ngô)
+@zeitgeist
+* danh từ
+- hệ tư tưởng của thời đại
+@zelotic
+- xem zelotic
+@zemstvo
+* danh từ
+- hội đồng tự quản địa phương (nga)
+- vải mỏng, vải voan
+* danh từ
+- hội đồng tự quản địa phương (nga)
+- vải mỏng, vải voan
+@zen
+* danh từ
+- <phật> phái Zen, phái Thiền
+@zenonism
+* danh từ
+- (triết) học thuyết của zênon; chủ nghĩa khắc kỉ
+@zephyrian
+- Cách viết khác : zephyrous
+@zero-hour
+* danh từ
+- thời gian mà một cuộc hành quân, một cuộc tấn công được trù tính bắt đầu; giờ G
+- zero-hour is 330 am
+- giờ G là 3 giờ rưỡi sáng
+* danh từ
+- thời gian mà một cuộc hành quân, một cuộc tấn công được trù tính bắt đầu; giờ G
+= zero-hour is 330 am+giờ G là 3 giờ rưỡi sáng
+@zero-rated
+* tính từ
+- không chịu thuế giá trị gia tăng
+@zestful
+* tính từ
+- thích thú, say mê
+@zestfully
+* phó từ
+- thích thú, say mê
+@zeta
+* danh từ
+- zêta (chữ thứ sáu của bảng chữ cái Hi lạp)
+@zhou
+* danh từ
+- như Chou
+* danh từ
+- như Chou
+@zibeline
+* danh từ
+- cũng zibelline
+- bộ lông con chồn nâu, bộ lông con hắc điêu
+@zillion
+* danh từ
+- <thgt> con số vô cùng lớn
+@zillionaire
+* danh từ
+- (từ Mỹ,  (từ lóng)) nhà giàu kếch sù, kẻ giàu sụ
+@zincify
+* ngoại động từ
+- tráng (mạ) kẽm
+@zing
+* danh từ
+- (từ lóng)
+- tiếng rít (đạn bay...)
+- sức sống; tính sinh động
+= with plenty of zing+đầy nhiệt huyết
+* nội động từ
+- (từ lóng) rít (đạn); vừa bay vừa phát ra tiếng rít
+@zinked
+* tính từ
+- được tráng (mạ) kẽm
+@zinky
+* tính từ
+- thuộc kẽm; có kẽm
+@zinziber
+* danh từ
+- (thực vật) cây gừng
+@zion
+* danh từ
+- tín ngưỡng của người Do Thái
+- thiên đường
+@zippered
+* tính từ
+- có khoá kéo; có phéc-mơ-tuya
+@zippy
+* tính từ
+- hăng hái, nhiệt tình
+@zmodem
+- Một giao thức truyền tệp dùng cho các máy tính cá nhân, cho phép thực hiện truyền các tệp tin máy tính không bị lỗi một cách dễ dàng thông qua hệ thống điện thoại Sau XMODEM thì ZMODEM là một giao thức truyền tệp phổ dụng nhất
+@zoid
+* danh từ
+- bào tử động
+@zoidiophilous
+* tính từ
+- (thực) ưa bào tử động
+@zombie
+* danh từ
+- thây ma sống lại nhờ phù phép
+- người dở sống dở chết
+@zomorphic
+* tính từ
+- thuộc biến thái động vật
+- có biến thái động vật
+@zona
+* danh từ; số nhiều zonae
+- (y học) đới; đai; vùng; vành
+= zona ciliaris+vành lông rung
+@zonae
+- danh từ số nhiều của zona
+@zonked
+* tính từ
+- mệt nhoài, đuối sức
+@zoo-keeper
+* danh từ
+- người trông nom vườn thú
+@zoogenic
+- Cách viết khác : zoogenous
+@zoologically
+* phó từ
+- về phương diện động vật học
+@zoom lens
+* danh từ
+- ống kính máy ảnh có khả năng phóng to, thu nhỏ đối tượng thu hình
+@zoonomorphic
+* tính từ
+- (thuộc) biến thái động vật
+- có biến thái động vật
+@zoonomorphism
+* danh từ
+- sự biến thái động vật
+@zoonosis
+* danh từ
+- số nhiều là zoonoses
+- bất cứ căn bệnh nào có thể lây từ thú sang người
+@zoophilous
+* tính từ
+- (văn) ham thích động vật
+- (thực) ưa động vật
+@zootechnician
+* danh từ
+- kỹ sư chăn nuôi
+@zootechnics
+* danh từ
+- kỹ thuật chăn nuôi
+@zulu
+* danh từ
+- người Zulu ở Nam Phi
+- ngôn ngữ Zulu
+* tính từ
+- thuộc về người Zulu
+@zygophyte
+* danh từ
+- (thực vật) thực vật tiếp hợp
+@zymological
+* tính từ
+- thuộc khoa nghiên cứu men
+@zymurgy
+* danh từ
+- khoa nghiên cứu sự lên men

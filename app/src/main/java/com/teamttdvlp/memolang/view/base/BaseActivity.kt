@@ -2,6 +2,7 @@ package com.teamttdvlp.memolang.view.base
 
 import android.content.Context
 import android.os.Bundle
+import android.view.WindowManager
 import androidx.databinding.DataBindingUtil
 import androidx.databinding.ViewDataBinding
 import androidx.fragment.app.FragmentActivity
@@ -69,6 +70,12 @@ abstract class BaseActivity <T : ViewDataBinding, V : ViewModel> : FragmentActiv
 
     fun showVirtualKeyboard () {
         imm.toggleSoftInput(RESULT_UNCHANGED_SHOWN, SHOW_IMPLICIT)
+    }
+
+    fun setStatusBarColor (color : Int) {
+        window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
+        window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
+        window.statusBarColor = color
     }
 
     open fun addViewEvents() {}

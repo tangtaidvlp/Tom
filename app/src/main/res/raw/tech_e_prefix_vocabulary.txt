@@ -1,0 +1,1642 @@
+@E core
+- (Tech) lõi E
+@E graph
+- (Tech) đồ thị E
+@E layer
+- (Tech) lớp E
+@E notation
+- (Tech) ký hiệu E (lũy thừa)
+@E scan
+- (Tech) quét kiểu E
+@E vector
+- (Tech) véctơ E
+@E wave
+- (Tech) sóng loại E
+@E&E (energy and electronic)
+- (Tech) năng lượng và điện tử
+@E-cell
+- (Tech) bộ (đếm thời gian) E
+@E-H wave
+- (Tech) sóng loại E-H
+@e-mail, email = electronic mail
+- (Tech) thư điện tử
+@E-plane bend
+- (Tech) đoạn uốn hình mặt phẳng E (ống dẫn sóng)
+@E-region
+- (Tech) vùng (trường) E
+@E-type constant
+- (Tech) hằng số loại E
+@E/R model = Entity-Relationship Model
+- (Tech) mô hình tương quan thực thể
+@e
+- (Tech) e (cơ số đối số/lôgarít tự nhiên)
+@EAROM (electrically alterable read-only memory)
+- (Tech) ROM thay đổi được bằng điện
+@earphone
+- (Tech) ống nghe
+@earpiece
+- (Tech) vành tai; ống nghe
+@earplug
+- (Tech) vật bịt tai
+@earth capacitance
+- (Tech) địa điện dung
+@earth conductivity
+- (Tech) tính dẫn điện của đất
+@earth current
+- (Tech) dòng tiếp đất; dòng trong đất
+@earth electrode
+- (Tech) địa điện cực
+@earth magnetism
+- (Tech) địa từ
+@earth return circuit
+- (Tech) mạch trở về đất
+@earth return phantom circuit
+- (Tech) mạch ảo trở về đất
+@earthed shield
+- (Tech) lá chắn đất
+@EBCDIC (Extended Binary Code Decimal Interchange Code)
+- (Tech) EBCDIC [épxiddích], Bộ Mã Hoán Chuyển Mã Thập Phân Và Nhị Phân Được Nối Dài, Bộ mã 5-bit của IBM
+@eccentric
+- (Tech) lệch tâm, tâm sai
+@eccentricity
+- (Tech) độ tâm sai, độ lệch tâm
+@Eccles-Jordan circuit
+- (Tech) mạch xúc phát Eccles-Jordan
+@echelon circuit
+- (Tech) mạch bậc thang
+@echelon lens
+- (Tech) thấu kính bậc
+@echelon prism
+- (Tech) lăng kính bậc
+@echelon strapping
+- (Tech) liên kết từng bậc
+@echo
+- (Tech) tiếng dội/vọng, âm thanh nổi; bóng; sóng dội; tín hiệu phản xạ; trình bày
+@echo attenuation
+- (Tech) suy giảm tiếng dội
+@echo cancellation
+- (Tech) triệt tiếng dội
+@echo canceller
+- (Tech) bộ triệt tiếng dội
+@echo canceller burst mode (ECBM)
+- (Tech) bộ triệt tiếng nổ dội
+@echo canceller far-end
+- (Tech) bộ triệt tiếng dội xa
+@echo canceller near-end
+- (Tech) bộ triệt tiếng dội gần
+@echo chamber
+- (Tech) phòng ngăn tiếng dội
+@echo delay line
+- (Tech) dây trì hoãn tiếng dội
+@echo distortion
+- (Tech) biến dạng tiếng dội
+@echo Doppler indicator
+- (Tech) bộ chỉ báo xung dội Doppler
+@echo effect
+- (Tech) hiệu ứng dội
+@echo image
+- (Tech) hình dội
+@echo impulse
+- (Tech) xung dội
+@echo listener
+- (Tech) bộ nghe tiếng dội
+@echo signal
+- (Tech) tín hiệu dội
+@echo sounder
+- (Tech) máy dò bằng tiếng dội
+@echo suppressor
+- (Tech) bộ triệt tiếng dội
+@echo wave
+- (Tech) sóng dội
+@ECL (emitter-coupled logic)
+- (Tech) mạch luận lý ghép cực phát
+@eddy current loss
+- (Tech) tổn hao do dòng xoáy, tổn hao do dòng étddi
+@edge card
+- (Tech) thẻ cạnh, bảng cạnh
+@edge connector
+- (Tech) bộ nối biên, đầu nối cạnh
+@edge notched card
+- (Tech) phiếu khía biên = marginally notched card
+@edge-emitting LED (ELED)
+- (Tech) đèn hai cực phát sáng biên
+@Edison accumulator
+- (Tech) bình điện Edison, bình điện sắt-kền
+@Edison cell
+- (Tech) pin Edison
+@Edison effect
+- (Tech) hiệu ứng Edison
+@edit
+- (Tech) lắp ráp (d); dựng hình (d); biên soạn, biên tập, soạn thảo (d)
+@editing key
+- (Tech) phím biên soạn
+@editing pad
+- (Tech) bàn phím biên soạn
+@editing subprogram
+- (Tech) chương trình con để biên soạn
+@editing VTR (video tape recorder)
+- (Tech) máy ghi băng viddêo để biên soạn/dựng hình [TN]
+@editor
+- (Tech) bộ lắp; chương trình biên soạn, bộ biên soạn; soạn giả; biên tập viên
+@editor program
+- (Tech) chương trình biên soạn
+@EDP
+- (Tech) (electronic data processing) xử lý dữ liệu điện tử
+@educational software
+- (Tech) nhu liệu giáo dục
+@educational television
+- (Tech) truyền hình giáo dục
+@EEROM (electrically erasable ROM)
+- (Tech) ROM xoá bằng điện
+@effect
+- (Tech) hiệu ứng; ảnh hưởng; kết quả, hiệu quả; thực hiện
+@effective address
+- (Tech) địa chỉ hữu hiệu, địa chỉ thực
+@effective antenna length
+- (Tech) độ dài hữu hiệu của ăngten
+@effective attenuation
+- (Tech) suy giảm hữu hiệu
+@effective conductance
+- (Tech) dẫn điện hữu hiệu
+@effective current
+- (Tech) dòng điện hữu hiệu
+@effective cutoff frequency
+- (Tech) tần số cắt hữu hiệu
+@effective height of antenna
+- (Tech) độ cao hữu hiệu của ăngten
+@effective inductance
+- (Tech) điện cảm hữu hiệu
+@effective instruction
+- (Tech) chỉ thị hữu hiệu, chỉ thị thực
+@effective lifetime
+- (Tech) đời sống hữu hiệu
+@effective resistance
+- (Tech) điện trở hữu hiệu
+@effective sensitivity
+- (Tech) độ nhạy hữu hiệu
+@effective voltage
+- (Tech) điện áp hữu hiệu
+@effective wavelength
+- (Tech) độ dài sóng hữu hiệu
+@EGA (enhanced graphic adapter) mode
+- (Tech) kiểu EGA, chế độ EGA [TN]
+@EGA (enhanced graphic adapter)
+- (Tech) EGA (bộ phối hợp đồ họa được tăng cường)
+@EGA card
+- (Tech) thẻ EGA
+@EIA interface
+- (Tech) giao diện theo tiêu chuẩn EIA (Hội Kỹ Nghệ Điện Tử)
+@EIA RS-232 interface
+- (Tech) giao diện theo tiêu chuẩn RS-232 của EIA
+@eigenfunction
+- (Tech) hàm số đặc trưng, hàm eigen
+@eigenvalue
+- (Tech) trị số đặc trưng
+@eigenvector
+- (Tech) véctơ đặc trưng
+@eight-bit byte
+- (Tech) bai tám bít
+@eight-level code
+- (Tech) mã tám mức
+@Einstein photoelectric equation
+- (Tech) phương trình quang điện Einstein
+@Einthoven galvanometer
+- (Tech) điện kế Einthoven
+@EISA (Extended Industry Standard Architecture)
+- (Tech) EISA, iza (Kiến Trúc Tiêu Chuẩn Kỹ Nghệ Mở Rộng)
+@eject
+- (Tech) ném, bỏ; bật ra, đẩy ra
+@electric bell
+- (Tech) chuông điện
+@electric breakdown
+- (Tech) sự cố hỏng điện
+@electric carrier signal
+- (Tech) tín hiệu mang điện
+@electric charge
+- (Tech) điện tích
+@electric circuit
+- (Tech) mạch điện
+@electric clock
+- (Tech) đồng hồ điện
+@electric conductivity
+- (Tech) tính dẫn điện
+@electric constant
+- (Tech) hằng số điện
+@electric controller
+- (Tech) bộ điều khiển bằng điện
+@electric coupling
+- (Tech) cái ghép điện
+@electric current
+- (Tech) dòng điện
+@electric discharge
+- (Tech) phóng điện
+@electric eye button
+- (Tech) nút mắt điện
+@electric flux density
+- (Tech) mật độ điện thông
+@electric generator
+- (Tech) máy phát điện
+@electric industry
+- (Tech) công nghiệp điện
+@electric intensity
+- (Tech) cường độ điện
+@electric interference
+- (Tech) nhiễu điện
+@electric lamp
+- (Tech) đèn điện
+@electric lead
+- (Tech) dây dẫn điện
+@electric light
+- (Tech) ánh sáng điện; đèn điện
+@electric line
+- (Tech) đường dây điện
+@electric motor
+- (Tech) động cơ điện
+@electric network
+- (Tech) mạng điện
+@electric polarization
+- (Tech) sự phân cực bằng điện
+@electric potential
+- (Tech) điện thế
+@electric power supply
+- (Tech) nguồn cung cấp điện lực
+@electric resonance
+- (Tech) cộng hưởng điện
+@electric shield
+- (Tech) vỏ chắn điện
+@electric shock
+- (Tech) va chạm điện, điện giật
+@electric soldering iron
+- (Tech) mỏ hàn điện
+@electric tachometer
+- (Tech) chuyển tốc kế chạy điện
+@electric transducer
+- (Tech) bộ biến hoán điện
+@electric valve
+- (Tech) van điện
+@electric wave filter
+- (Tech) bộ lọc sóng điện
+@electrical energy
+- (Tech) năng lượng điện
+@electrical engineering
+- (Tech) kỹ thuật điện
+@electrical equipment
+- (Tech) thiết bị điện
+@electrical ignition
+- (Tech) mồi điện
+@electrical installation
+- (Tech) lắp điện; thiết bị điện
+@electrical instrument
+- (Tech) dụng cụ điện
+@electrical neutrality
+- (Tech) tính trung hòa điện
+@electrical noise
+- (Tech) tiếng ồn điện, nhiễu điện
+@electrical schematic
+- (Tech) sơ đồ điện
+@electrical sheath
+- (Tech) vỏ bọc cách điện
+@electrical specification
+- (Tech) quy định (về) điện
+@electrically alterable read-only memory (EAROM)
+- (Tech) bộ nhớ chỉ đọc đổi điện được
+@electrically erasable and programmable ROM (EEPROM)
+- (Tech) bộ nhớ chỉ đọc tẩy và thảo chương được (bằng điện)
+@electricity meter
+- (Tech) đồng hồ đo điện
+@electro-induction
+- (Tech) hiện tượng cảm ứng điện; sự cảm ứng điện
+@electro-optic modulation
+- (Tech) biến điệu điện-quang
+@electro-optic modulator
+- (Tech) bộ biến điệu điện-quang
+@electro-optical system
+- (Tech) hệ thống điện-quang
+@electroacoustic transducer
+- (Tech) bộ biến hoán điện âm
+@electroacoustic
+- (Tech) điện âm
+@electroconductivity
+- (Tech) tính điện dẫn; sự dẫn điện
+@electrode AC resistance
+- (Tech) điện trở dòng xoay chiều điện cực
+@electrode potential
+- (Tech) thế điện cực
+@electrodynamic ammeter
+- (Tech) ampe kế điện động lực
+@electrodynamic instrument
+- (Tech) máy đo điện động lực
+@electrodynamics
+- (Tech) điện động lực học
+@electrodynamometer
+- (Tech) điện lực kế
+@electroencephalogram (EEG)
+- (Tech) não điện đồ, biểu đồ sóng não
+@electroencephalograph (EEG)
+- (Tech) não điện kế, máy ghi sóng não
+@electrogen
+- (Tech) phần tử quang điện
+@electrograph
+- (Tech) điện ký
+@electrokinetics
+- (Tech) điện động học
+@electroless plating
+- (Tech) mạ vô điện
+@electrolity copper
+- (Tech) đồng điện phân
+@electroluminescence
+- (Tech) điện phát quang
+@electrolyte
+- (Tech) chất điện giải, dung dịch điện giải
+@electrolytic capacitor
+- (Tech) bộ điện dung bằng điện giải
+@electrolytic cathode
+- (Tech) âm cực điện giải
+@electrolytic cell
+- (Tech) pin điện giải
+@electrolytic conduction
+- (Tech) sự dẫn của điện giải
+@electrolytic conductor
+- (Tech) chất dẫn điện giải
+@electrolytic deposition
+- (Tech) lắng đọng điện giải
+@electrolytic photocell
+- (Tech) pin quang điện bằng điện giải
+@electrolytic plating
+- (Tech) mạ điện giải
+@electrolytic polarization
+- (Tech) phân cực điện giải
+@electrolytic polishing
+- (Tech) đánh bóng điện giải
+@electrolytic rectifier
+- (Tech) bộ chỉnh lưu điện giải
+@electrolytic separation
+- (Tech) phân ly điện giải
+@electromagnet winding
+- (Tech) cuộn điện từ
+@electromagnetic coupling
+- (Tech) ghép điện từ
+@electromagnetic deflection
+- (Tech) làm lệch địện từ
+@electromagnetic delay line
+- (Tech) dây tạo trễ điện từ
+@electromagnetic energy
+- (Tech) năng lượng điện từ
+@electromagnetic field
+- (Tech) trường điện từ
+@electromagnetic force
+- (Tech) lực điện từ
+@electromagnetic generator
+- (Tech) máy phát điện từ
+@electromagnetic induction
+- (Tech) cảm ứng điện từ
+@electromagnetic interference (EMI)
+- (Tech) nhiễu xạ điện từ
+@electromagnetic lens
+- (Tech) thấu kính điện từ
+@electromagnetic loudspeaker
+- (Tech) loa điện từ
+@electromagnetic microphone
+- (Tech) máy vi âm điện từ
+@electromagnetic oscillation
+- (Tech) dao động điện từ
+@electromagnetic pick-up
+- (Tech) đầu đọc điện từ
+@electromagnetic quantum
+- (Tech) lượng tử điện từ
+@electromagnetic radiation
+- (Tech) phóng xạ điện từ
+@electromagnetic receiver
+- (Tech) ống nghe điện từ, bộ nhận điện từ
+@electromagnetic rectifier
+- (Tech) bộ chỉnh lưu điện từ
+@electromagnetic relay
+- (Tech) bộ kế điện điện từ, rờle điện từ
+@electromagnetic scattering
+- (Tech) tán xạ điện từ
+@electromagnetic screen
+- (Tech) màn hình điện từ
+@electromagnetic spectrum
+- (Tech) phổ điện từ
+@electromagnetic type electron microscope
+- (Tech) kính hiển vi điện tử loại điện từ
+@electromagnetic unit
+- (Tech) đơn vị điện từ
+@electromagnetic wave
+- (Tech) sóng điện từ
+@electromechanical apparatus
+- (Tech) thiết bị điện cơ
+@electromechanical automatic frequency control
+- (Tech) điều tần tự động bằng điện cơ
+@electromechanical filter
+- (Tech) bộ lọc điện cơ
+@electromechanical resonator
+- (Tech) bộ cộng hưởng điện cơ
+@electromechanical transducer
+- (Tech) bộ biến hoán điện cơ
+@electromechanics
+- (Tech) điện cơ học
+@electron
+- (Tech) electron, (âm) điện tử
+@electron accelerator
+- (Tech) bộ gia tốc điện tử
+@electron admittance
+- (Tech) dẫn nạp điện tử
+@electron affinity
+- (Tech) ái lực điện tử
+@electron alternating current
+- (Tech) dòng xoay chiều điện tử
+@electron atmosphere
+- (Tech) khí quyển điện tử
+@electron attached coefficient
+- (Tech) hệ số đính kèm điện tử
+@electron avalanche
+- (Tech) thác điện tử
+@electron beam
+- (Tech) tia điện tử
+@electron beam counter tube
+- (Tech) ống đếm tia điện tử
+@electron beam current
+- (Tech) dòng tia điện tử
+@electron beam deflection system
+- (Tech) hệ thống làm lệch tia tia điện tử
+@electron beam etching
+- (Tech) khắc bằng tia điện tử
+@electron beam excitation
+- (Tech) sự kích thích bằng tia điện tử
+@electron beam generator
+- (Tech) bộ tạo tia điện tử
+@electron beam pumped laser
+- (Tech) bộ kích quang được bơm bằng tia điện tử
+@electron beam tube
+- (Tech) ống tia điện tử
+@electron beam writing
+- (Tech) viết bằng tia điện tử
+@electron camera
+- (Tech) máy thu hình điện tử
+@electron charge
+- (Tech) điện tích điện tử
+@electron charge-to-mass ratio
+- (Tech) tỷ số điện tích-chất lượng của điện tử
+@electron collision
+- (Tech) sự va chạm điện tử
+@electron conduction
+- (Tech) sự truyền dẫn điện tử
+@electron coupler
+- (Tech) bộ ghép điện tử
+@electron coupling oscillating circuit
+- (Tech) mạch dao động ghép điện tử [ĐL]
+@electron covalent bond
+- (Tech) liên kết đồng hóa trị điện tử
+@electron current
+- (Tech) dòng điện tử
+@electron deficiency
+- (Tech) sự thiếu hụt điện tử
+@electron density
+- (Tech) mật độ điện tử
+@electron diffraction
+- (Tech) nhiễu xạ điện tử
+@electron diffraction apparatus
+- (Tech) thiết bị nhiễu xạ điện tử
+@electron diffraction contrast effect
+- (Tech) hiệu ứng tương phản nhiễu xạ điện tử
+@electron discharge tube
+- (Tech) ống phóng điện tử
+@electron drift
+- (Tech) trôi dạt điện tử
+@electron emission constant
+- (Tech) hằng số phát xạ điện tử
+@electron emission decay
+- (Tech) sự thoái hóa phát xạ điện tử
+@electron emission density
+- (Tech) mật độ phát xạ điện tử
+@electron envelope
+- (Tech) tầng vỏ điện tử
+@electron evaporation
+- (Tech) sự bốc hơi điện tử
+@electron flow
+- (Tech) luồng điện tử
+@electron geometrical optics
+- (Tech) quang hình học điện tử
+@electron gun
+- (Tech) súng điện tử
+@electron illuminating system
+- (Tech) hệ thống chiếu sáng điện tử
+@electron image
+- (Tech) hình điện tử
+@electron image tube
+- (Tech) ống hình điện tử
+@electron indicator tube
+- (Tech) ống chỉ báo điện tử
+@electron injection current
+- (Tech) dòng phun điện tử
+@electron lattice theory
+- (Tech) lý thuyết điểm trận điện tử [ĐL]
+@electron microprobe (EMP)
+- (Tech) vi đầu đọc điện tử, kim dò điện tử
+@electron microscope
+- (Tech) kính hiển vi điện tử
+@electron migration
+- (Tech) di chuyển điện tử
+@electron mobility
+- (Tech) tính di động điện tử
+@electron multiplier phototube
+- (Tech) ống quang điện bội nhân điện tử, ống bội nhân quang điện
+@electron optics
+- (Tech) quang học điện tử
+@electron orbit
+- (Tech) quỹ đạo điện tử
+@electron orbital
+- (Tech) vân đạo điện tử, quỹ hàm điện tử
+@electron oscillation tube
+- (Tech) ống dao động điện tử
+@electron oscillator
+- (Tech) bộ dao động điện tử
+@electron pair bond
+- (Tech) liên kết cặp điện tử
+@electron paramagnetic resonance
+- (Tech) cộng hưởng thuận từ điện tử = electron spin resonance
+@electron path
+- (Tech) đường điện tử
+@electron pencil
+- (Tech) chùm điện tử
+@electron pendulum oscillation
+- (Tech) dao động con lắc điện tử
+@electron period
+- (Tech) chu kỳ điện tử
+@electron plasma
+- (Tech) đẳng ly tử thể điện tử
+@electron pole
+- (Tech) cực điện tử
+@electron population
+- (Tech) quần thể điện tử
+@electron primary photoelectric current
+- (Tech) dòng quang điện nguyên thủy điện tử
+@electron ray tube
+- (Tech) ống tia điện tử
+@electron recording (ER) tube
+- (Tech) ống ghi điện tử
+@electron scanning
+- (Tech) quét điện tử
+@electron scanning microscope
+- (Tech) kính hiển vi quét điện tử
+@electron scattering
+- (Tech) tán xạ điện tử
+@electron screening
+- (Tech) che điện tử
+@electron sharing
+- (Tech) dùng chung điện tử
+@electron sheath
+- (Tech) tầng điện tử
+@electron shell
+- (Tech) tầng ngoài/vỏ điện tử
+@electron spin resonance
+- (Tech) cộng hưởng tự quay điện tử = electron paramagnetic resonance
+@electron spin resonance spectroscopy
+- (Tech) phổ học về cộng hưởng tự quay điện tử
+@electron stream transmission efficiency
+- (Tech) hiệu suất truyền dòng điện tử
+@electron switch = electronic switch
+- (Tech) công tắc điện tử
+@electron synchrotron
+- (Tech) bộ gia tốc đồng bộ điện tử
+@electron telescope
+- (Tech) viễn vọng kính điện tử, kính thiên văn điện tử
+@electron theory
+- (Tech) lý thuyết điện tử, điện tử luận
+@electron trajectory equation
+- (Tech) phương trình quỹ đạo điện tử
+@electron transit angle
+- (Tech) góc vượt quãng điện tử
+@electron transit time error
+- (Tech) sai số thời gian vượt quãng điện tử
+@electron transition
+- (Tech) chuyển tiếp điện tử
+@electron trap
+- (Tech) cái bẫy điện tử
+@electron tube instrument
+- (Tech) đồ đo kiểu đèn điện tử
+@electron tube transducer
+- (Tech) bộ hoán năng đèn điện tử
+@electron tunneling
+- (Tech) xuyên đường hầm của điện tử
+@electron vacancy
+- (Tech) chỗ khuyết điện tử
+@electron velocity analyzer
+- (Tech) bộ phân tích vận tốc điện tử
+@electron voltaic effect
+- (Tech) hiệu ứng điện thế điện tử
+@electron wave
+- (Tech) sóng điện tử
+@electron wave tube
+- (Tech) đèn sóng điện tử
+@electron wavelength
+- (Tech) độ dài sóng điện tử
+@electron-beam device
+- (Tech) dụng cụ dùng tia điện tử
+@electron-beam excitation
+- (Tech) sự kích thích tia điện tử
+@electron-beam lithography
+- (Tech) phép in mặt bằng tia điện tử, phép quang khắc bằng tia điện tử
+@electron-beam multiplier
+- (Tech) bộ bội nhân tia điện tử
+@electron-capture process
+- (Tech) tiến trình thu nạp điện tử
+@electron-capture transition
+- (Tech) sự chuyển tiếp thu nạp điện tử
+@electron-coupled frequency converter
+- (Tech) bộ biến tần ghép điện tử [ĐL]
+@electron-coupled oscillator
+- (Tech) bộ dao động ghép điện tử, bộ dao động dương cực hai lưới
+@electron-gun cathode
+- (Tech) âm cực súng điện tử
+@electron-hole collision
+- (Tech) sự va chạm lỗ trống điện tử
+@electron-hole pair generation
+- (Tech) sự tạo cặp lỗ trống điện tử
+@electron-hole pair
+- (Tech) cặp lỗ trống điện tử
+@electron-hole recombination
+- (Tech) sự tái hợp lỗ trống điện tử
+@electron-hole
+- (Tech) lỗ trống điện tử
+@electron-molecule collision
+- (Tech) sự va chạm điện tử-phân tử
+@electron-multiplier section
+- (Tech) khâu bội nhân điện tử
+@electron-optical aberration
+- (Tech) quang sai điện tử
+@electron-optical cross-section
+- (Tech) mặt cắt quang điện tử
+@electron-ray indicator tube
+- (Tech) đèn chỉ báo tia diện tử
+@electronic
+- (Tech) thuộc điện tử
+@electronic admittance
+- (Tech) dẫn nạp điện tử
+@electronic amplifier
+- (Tech) bộ khuếch đại điện tử
+@electronic analog computer
+- (Tech) máy điện tóan dạng tương tự
+@electronic apparatus
+- (Tech) thiết bị điện tử
+@electronic automatic frequency control
+- (Tech) sự kiểm tra tần số tự động bằng điện tử
+@electronic banking
+- (Tech) công tác ngân hàng điện tử
+@electronic beam processing
+- (Tech) xử lí tia điện tử
+@electronic bulletin board
+- (Tech) bảng công báo điện tử
+@electronic calculator
+- (Tech) máy tính điện tử
+@electronic camera
+- (Tech) máy chụp ảnh điện tử; máy thu hình điện tử
+@electronic charge = electron charge
+- (Tech) điện tích điện tử
+@electronic circuit
+- (Tech) mạch điện tử
+@electronic clock
+- (Tech) đồng hồ điện tử
+@electronic coder
+- (Tech) bộ biên mã điện tử
+@electronic commutation
+- (Tech) chuyển mạch điện tử
+@electronic commutator
+- (Tech) bộ chuyển mạch điện tử
+@electronic comparator
+- (Tech) bộ so sánh điện tử
+@electronic computer
+- (Tech) máy điện toán điện tử
+@electronic conductance
+- (Tech) điện dẫn điện tử
+@electronic control
+- (Tech) điều khiển bằng điện tử, điều chỉnh bằng điện tử
+@electronic correlator
+- (Tech) bộ tương quan điện tử
+@electronic counter
+- (Tech) máy đếm điện tử
+@electronic counter type frequency meter
+- (Tech) tần số kế loại đếm điện tử
+@electronic countermeasure
+- (Tech) đối kháng điện tử
+@electronic coupling
+- (Tech) ghép điện tử = electron coupling
+@electronic energy level
+- (Tech) mức năng lượng điện tử
+@electronic energy-band spectrum
+- (Tech) phổ dải năng lượng điện tử
+@electronic engineer
+- (Tech) kỹ sư điện tử
+@electronic engineering
+- (Tech) kỹ thuật điện tử
+@electronic eye
+- (Tech) mắt điện tử
+@electronic file
+- (Tech) tập tin điện tử
+@electronic filing
+- (Tech) lập tập tin điện tử
+@electronic form
+- (Tech) dạng điện tử
+@electronic frequency meter
+- (Tech) tần số kế loại điện tử
+@electronic function generator
+- (Tech) bộ tạo hàm số loại điện tử
+@electronic funds transfer
+- (Tech) chuyển ngân điện tử
+@electronic game
+- (Tech) trò chơi điện tử
+@electronic image pick-up device
+- (Tech) thiết bị thu hình điện tử
+@electronic image reproducing device
+- (Tech) thiết bị tạo lại hình điện tử
+@electronic image storage device
+- (Tech) thiết bị trữ hình điện tử
+@electronic image tube
+- (Tech) ống hình điện tử
+@electronic impedance
+- (Tech) trở kháng điện tử
+@electronic instrumentation
+- (Tech) trang bị máy điện tử
+@electronic keying
+- (Tech) đánh đóng-mở điện tử
+@electronic line scanning
+- (Tech) quét dòng điện tử
+@electronic magazine (E-MAG, ezine)
+- (Tech) tạp chí dạng điện tử
+@electronic magnetometer
+- (Tech) từ lực kế điện tử
+@electronic mail (E-mail, e-mail)
+- (Tech) thư điện tử
+@electronic mailbox
+- (Tech) hộp thư điện tử
+@electronic memory
+- (Tech) bộ nhớ điện tử
+@electronic microphone
+- (Tech) máy vi âm điện tử
+@electronic multimeter
+- (Tech) máy đo đa dụng điện tử
+@electronic music instruments
+- (Tech) dụng cụ âm nhạc điện tử
+@electronic news
+- (Tech) tin tức dạng điện tử
+@Electronic Numerical Integrator And Computer (ENIAC)
+- (Tech) máy điện toán và tích hợp số dạng điện tử
+@electronic oscillator = electron oscillator
+- (Tech) bộ giao động điện tử
+@electronic oscilloscope
+- (Tech) máy hiện sóng điện tử
+@electronic pen
+- (Tech) bút điện tử
+@electronic photo-voltaic cell
+- (Tech) pin điện áp sinh quang điện tử [ĐL]
+@electronic photometer
+- (Tech) quang độ kế điện tử
+@electronic picture
+- (Tech) hình điện tử
+@electronic pointer
+- (Tech) con trỏ điện tử
+@electronic potentiometer
+- (Tech) cái biến trở điện tử
+@electronic processor
+- (Tech) bộ xử lý điện tử
+@electronic publishing
+- (Tech) xuất bản điện tử
+@electronic raster scanning
+- (Tech) quét mành điện tử
+@electronic recording equipment
+- (Tech) thiết bị ghi điện tử
+@electronic recording tube (ER tube)
+- (Tech) ống ghi điện tử
+@electronic rectifier
+- (Tech) bộ chỉnh lưu điện tử
+@electronic regulation
+- (Tech) ổn áp điện tử
+@electronic regulator
+- (Tech) bộ ổn áp điện tử
+@electronic relay
+- (Tech) bộ rờle điện tử
+@electronic reverberation
+- (Tech) sự chấn dội điện tử
+@electronic sampling switch
+- (Tech) công tắc lấy mẫu điện tử
+@electronic scanner
+- (Tech) bộ quét điện tử
+@electronic scanning = electron scanning
+- (Tech) quét điện tử
+@electronic scanning antenna
+- (Tech) ăngten quét điện tử
+@electronic semiconductor
+- (Tech) chất bán dẫn điện tử
+@electronic switching circuit
+- (Tech) mạch chuyển dòng điện tử
+@electronic telegraph
+- (Tech) máy điện báo điện tử
+@electronic teletype
+- (Tech) điện báo in chữ điện tử
+@electronic television
+- (Tech) truyền hình điện tử
+@electronic temperature recorder
+- (Tech) bộ ghi nhiệt độ điện tử
+@electronic text
+- (Tech) văn bản điện tử
+@electronic thermometer
+- (Tech) nhiệt kế điện tử
+@electronic timer
+- (Tech) máy đếm thời gian điện tử
+@electronic transcondutance
+- (Tech) độ hỗ dẫn điện tử
+@electronic transducer tube
+- (Tech) ống chuyển đổi điện tử
+@electronic tuning indicator
+- (Tech) bộ chỉ báo điều hưởng loại điện tử
+@electronic TV recording equipment
+- (Tech) thiết bị ghi truyền hình điện tử
+@electronic typesetting
+- (Tech) sắp chữ điện tử
+@electronic typewriter
+- (Tech) máy đánh chữ điện tử
+@electronic video recording system
+- (Tech) hệ thống ghi viddêo diện tử
+@electronic wattmeter
+- (Tech) công suất kế điện tử
+@electronic wave = electron wave
+- (Tech) sóng điện tử
+@electronics
+- (Tech) điện tử học, môn điện tử; công trình điện tử [ĐL]
+@electronics dictionary
+- (Tech) từ điển ngành điện tử
+@Electronics Industry Association (EIA)
+- (Tech) Hiệp Hội Công Nghiệp Điện Tử
+@electrooptic Q-switch
+- (Tech) bộ chuyển phẩm chất điện quang
+@electrooptic shutter
+- (Tech) cửa sập điện quang
+@electrooptic(al)
+- (Tech) thuộc điện quang
+@electrooptical device
+- (Tech) thiết bị điện quang
+@electrooptical effect
+- (Tech) hiệu ứng điện quang
+@electrooptical tube
+- (Tech) ống điện quang
+@electroplated transistor
+- (Tech) trănsito được mạ điện
+@electrostatic actuator
+- (Tech) bộ truyền động điện tĩnh
+@electrostatic adhesion
+- (Tech) sự dính hút điện tĩnh
+@electrostatic capacitance
+- (Tech) điện dung điện tĩnh
+@electrostatic cathode ray tube
+- (Tech) ống tia âm cực điện tĩnh
+@electrostatic charge-storage tube
+- (Tech) ống trữ điện tích điện tĩnh
+@electrostatic charge
+- (Tech) điện tích điện tĩnh
+@electrostatic copying
+- (Tech) sao chép dạng điện tĩnh
+@electrostatic loudspeaker
+- (Tech) loa điện tĩnh
+@electrostatic memory
+- (Tech) bộ nhớ điện tĩnh
+@electrostatic microphone
+- (Tech) máy vi âm điện tĩnh
+@electrostatic plotter
+- (Tech) máy vẽ loại điện tĩnh
+@electrostatic potential
+- (Tech) hiệu thế điện tĩnh
+@electrostatic printer
+- (Tech) máy in điện tĩnh
+@electrostatic receiver
+- (Tech) ống nghe điện tĩnh
+@electrostatic screen
+- (Tech) màn hình điện tĩnh
+@electrostatic shield
+- (Tech) lá chắn điện tĩnh
+@electrostatic storage
+- (Tech) bộ trữ điện tĩnh
+@electrostatic unit (esu)
+- (Tech) đơn vị điện tĩnh
+@electrostatically charged area
+- (Tech) khu vực mang điện tĩnh
+@electrostatically focused klystron
+- (Tech) đèn tốc điều gom tụ điện tĩnh
+@electrothermal printer
+- (Tech) máy in điện nhiệt
+@electrothermic instrument
+- (Tech) dụng cụ điện nhiệt
+@element
+- (Tech) phần tử, bộ phận; pin; nguyên tố; yếu tố; chi tiết
+@elevation potentiometer
+- (Tech) bộ phân áp độ cao
+@elevation selsyn
+- (Tech) máy tự đồng bộ góc nâng
+@eliminator
+- (Tech) bộ loại trừ, bộ triệt; bộ lọc loại
+@ellipse
+- (Tech) hình bầu dục, elip
+@ellipsoid
+- (Tech) mặt bầu dục, thể bầu dục
+@elliptic aperture
+- (Tech) lỗ bầu dục
+@elliptic filter
+- (Tech) bộ lọc hình bầu dục
+@elliptical waveguide
+- (Tech) ống dẫn sóng hình bầu dục
+@elliptically polarized light
+- (Tech) ánh sáng hướng cực dạng bầu dục
+@elliptically polarized wave
+- (Tech) sóng hướng cực dạng bầu dục
+@EM (end of medium)
+- (Tech) đoạn cuối môi thể
+@email = e-mail = electronic mail
+- (Tech) thư điện tử
+@embed
+- (Tech) gắn vào, đặt vào, gài trong, nhúng vào
+@embedded command
+- (Tech) lệnh gài trong
+@embedded loop
+- (Tech) chu trình gài trong
+@embedded object
+- (Tech) đối tượng gài trong
+@embedded software
+- (Tech) nhu liệu gài trong
+@embedded system
+- (Tech) hệ thống gài trong
+@EMCW radar
+- (Tech) radda sóng liên tục biến điệu tần số
+@emergency communication
+- (Tech) truyền thông khẩn cấp
+@emergency signal
+- (Tech) tín hiệu khẩn cấp
+@emission current
+- (Tech) dòng phát xạ
+@emission phototube
+- (Tech) ống quang phát xạ
+@emission spectrum
+- (Tech) phổ phát xạ
+@emitron camera
+- (Tech) máy thu hình điện quang [ĐL], máy thu hình êmitron
+@emittance
+- (Tech) công suất bức xạ; độ trưng
+@emitted photon
+- (Tech) quang tử phát xạ
+@emitter
+- (Tech) cực phát; vùng phát; bộ phát xạ
+@emitter barrier
+- (Tech) tường chắn phát xạ
+@emitter bias
+- (Tech) thiên áp cực phát xạ
+@emitter current
+- (Tech) dòng cực phát xạ
+@emitter diffusion mask
+- (Tech) màn che khuếch tán cực phát xạ
+@emitter diffusion
+- (Tech) khuếch tán cực phát xạ
+@emitter electrode
+- (Tech) điện cực phát xạ
+@emitter follower circuit
+- (Tech) mạch gánh cực phát xạ
+@emitter junction
+- (Tech) tiếp giáp cực phát xạ
+@emitter-base capacitance
+- (Tech) điện dung cực phát-gốc
+@emitter-coupled logic circuit
+- (Tech) mạch luận lý ghép cực phát
+@emitter-coupled transistor logic
+- (Tech) mạch luận lý trănsito ghép cực phát
+@empty set
+- (Tech) tập hợp rỗng
+@emulate
+- (Tech) mô phỏng, bắt chước (đ)
+@emulation
+- (Tech) mô phỏng, bắt chước (d)
+@emulator
+- (Tech) bộ mô phỏng, chương trình mô phỏng; đối thủ
+@emulsion laser storage
+- (Tech) bộ trữ kích quang nhũ tương, bộ nhớ lade nhũ
+@enabled interrupt
+- (Tech) ngắt có phép
+@enabling
+- (Tech) khả dụng; khai thông mạch; cho phép
+@encapsulation (in object-oriented programming)
+- (Tech) sự bao bọc
+@encipher
+- (Tech) mã hóa (d/đ)
+@encipherer
+- (Tech) bộ mã hóa
+@enciphering
+- (Tech) sự mã hóa
+@enclosed wafer tape
+- (Tech) băng viên dẹp đóng kín
+@encode
+- (Tech) biên mã, mã hóa, lập mã
+@encoded file (ENC)
+- (Tech) tập tin được mã hóa
+@encoder
+- (Tech) bộ biên mã
+@encoding channel
+- (Tech) kênh biên mã, kênh lập mã
+@encoding
+- (Tech) biên mã, mã hóa
+@encrypted file
+- (Tech) tập tin được mật mã hóa
+@encryption key
+- (Tech) khóa mật mã
+@encryption
+- (Tech) sự mật mã hóa
+@end-around carry
+- (Tech) số nhớ tuần hoàn = cyclic carry
+@end-around carry shift
+- (Tech) dịch chuyển tuần hoàn
+@end-around shift
+- (Tech) dịch tuần hoàn
+@end-fed antenna
+- (Tech) ăngten tiếp sóng đầu cuối
+@end-fire antenna
+- (Tech) ăngten cùng hướng, ăngten đoạn xạ
+@end-fire array antenna
+- (Tech) ăngten giàn cùng hướng, ăngten hướng dọc
+@end-of-block (EOB)
+- (Tech) kết thúc khối, đầu cuối khối
+@end-of-file (EOF)
+- (Tech) kết thúc tập tin, đầu cuối tập tin
+@end-of-job (EOJ)
+- (Tech) kết thúc công việc, đầu cuối công việc
+@end-of-message (EOM)
+- (Tech) kết thúc thông báo, cuối thông báo
+@end-of-text (ETX)
+- (Tech) kết thúc văn bản, đầu cuối văn bản
+@end-of-text character
+- (Tech) ký tự kết thúc văn bản
+@end-of-transmission (EOT)
+- (Tech) kết thúc truyền, đầu cuối truyền
+@end-of-transmission block character
+- (Tech) ký tự khối kết thúc truyền
+@end-of-transmission character
+- (Tech) ký tự kết thúc truyền
+@end-to-end protocol
+- (Tech) quy ước từ đầu đến cuối
+@end-user
+- (Tech) người dùng cuối
+@end
+- (Tech) cuối, đầu cuối; cuối màn hình; chấm dứt (đ)
+@endless loop
+- (Tech) chu trình vô tận = infinite loop
+@endless magnetic tape loop
+- (Tech) chu trình băng từ kín
+@energized
+- (Tech) năng lượng hóa
+@energy
+- (Tech) năng lượng
+@energy absorber
+- (Tech) bộ hấp thụ năng lượng
+@energy band
+- (Tech) dải năng lượng
+@energy band structure
+- (Tech) cấu trúc dải năng lượng
+@energy density
+- (Tech) mật độ năng lượng
+@energy density spectrum
+- (Tech) phổ mật độ năng lượng
+@energy dispersive spectroscopy (EDS)
+- (Tech) phổ học về phân tán năng lượng
+@energy distribution curve
+- (Tech) đường phân bố năng lượng
+@energy gap
+- (Tech) khe năng lượng
+@energy quantum
+- (Tech) lượng tử năng lượng
+@energy unit
+- (Tech) đơn vị năng lượng
+@engine switch
+- (Tech) công tắc máy
+@engineer
+- (Tech) kỹ sư
+@engineering board
+- (Tech) bảng công trình, ủy ban quản lí công trình
+@engineering cybernetics
+- (Tech) kỹ thuật điều khiển, kỹ thuật xibecnêtic
+@engineering reliability
+- (Tech) độ tin cậy kỹ thuật
+@engineering unit
+- (Tech) đơn vị kỹ thuật
+@engineering
+- (Tech) ngành kỹ thuật, công trình học; công trình; ngành kỹ thuật thiết kế và quản lý; công nghệ
+@English mode
+- (Tech) kiểu tiếng Anh
+@engraver
+- (Tech) khắc (d)
+@enhanced keyboard
+- (Tech) bàn phím tăng cường
+@enhancement
+- (Tech) tăng cường, nâng lên (d)
+@enhancement fet
+- (Tech) trănsito fet tăng cường
+@enhancement mode
+- (Tech) kiểu tăng cường
+@enhancement region
+- (Tech) vùng giàu, vùng tăng cường
+@enhancement type
+- (Tech) loại tăng cường
+@enlarge
+- (Tech) mở rộng, triển khai
+@ENQ (Enquiry = Inquiry)
+- (Tech) điều tra, chiếu hội; câu hỏi
+@enqueue
+- (Tech) đặt thứ tự, sắp đặt hàng, vào hàng
+@enquiry = inquiry
+- (Tech) điều tra (d); hỏi tin (đ)
+@enquiry character (EC) = inquiry character
+- (Tech) ký tự hỏi
+@ensemble
+- (Tech) tập hợp, nhóm
+@enter
+- (Tech) cho vào
+@enter correction
+- (Tech) thực hành sửa (chữa)
+@enter key
+- (Tech) phím vào, phím thi hành
+@enterprise
+- (Tech) xí nghiệp
+@entity
+- (Tech) đối thể, đối tượng, thực thể
+@entity identifier
+- (Tech) bộ nhận dạng đối tượng
+@entrance cable
+- (Tech) cáp vào
+@entrepreneur
+- (Tech) doanh nhân
+@entropy
+- (Tech) entropy (ăngtrôpi)
+@entry
+- (Tech) cửa vào, nhập khẩu [TQ/NB]; hạng mục, muc nhập; từ mục; biểu trị; vào (đ); tham gia (đ)
+@entry field
+- (Tech) phạm vi nhập
+@entry instruction
+- (Tech) chỉ thị nhập vào
+@entry label
+- (Tech) nhãn nhập vào
+@entry-point address
+- (Tech) địa chỉ điểm vào, địa chỉ xuất phát
+@enumeration
+- (Tech) đếm; liệt kê
+@envelope
+- (Tech) đường bao, bao nhóm
+@envelope delay
+- (Tech) sự trì hoãn đường bao
+@envelope delay distortion
+- (Tech) biến dạng trì hoãn đường bao
+@envelope detector
+- (Tech) bộ kiểm sóng đường bao
+@environment variable
+- (Tech) biến số môi trường
+@environmental requirement
+- (Tech) yêu cầu về môi trường
+@EOT (End of Transmission)
+- (Tech) chấm dứt truyền phát
+@epi-layer
+- (Tech) lớp kéo mặt ngoài = epitaxial layer
+@epitaxial diode
+- (Tech) đèn hai cực kéo lớp mặt ngoài/ngoại duyên [TQ]
+@epitaxial film
+- (Tech) màng kéo lớp mặt ngoài
+@epitaxial growth
+- (Tech) sự tăng trưởng kéo lớp mặt ngoài
+@epitaxial junction
+- (Tech) bộ tiếp giáp kéo lớp mặt ngoài
+@epitaxial layer deposition
+- (Tech) sự lắng đọng lớp mặt ngoài/ngoại duyên [TQ]/epitaxi
+@epitaxial layer isolation
+- (Tech) sự cách ly bằng lớp kéo mặt ngoài
+@epitaxial resistor
+- (Tech) cái điện trở kéo lớp mặt ngoài
+@epitaxial SCR
+- (Tech) bộ chỉnh lưu được điều khiển bằng chất khuê kéo lớp mặt ngoài, thirixto êpitaxi
+@epitaxial silicon
+- (Tech) chất khuê kéo lớp mặt ngoài
+@epitaxial transistor
+- (Tech) đèn tinh thể kéo lớp mặt ngoài
+@epitaxial varactor
+- (Tech) đèn hai cực biến dung kéo lớp mặt ngoài
+@epitaxial wafer
+- (Tech) đĩa tinh thể kéo lớp mặt ngoài
+@epitaxial-mesa transistor
+- (Tech) đèn tinh thể kiểu mặt bàn-kéo lớp mặt ngoài
+@epoxy resin
+- (Tech) nhựa epoxi
+@EPROM (erasable programmable read-only memory)
+- (Tech) bộ nhớ chỉ đọc, thảo chương, và xóa được (éprôm)
+@epsilon
+- (Tech) epsilon (épxilông)
+@equalization
+- (Tech) làm bằng (đ); quân bằng; bù; hiệu chỉnh
+@equalized delay line
+- (Tech) dây trễ bù
+@equalizer
+- (Tech) bộ quân bằng
+@equalizer coefficients
+- (Tech) hệ số quân bình
+@equalizer Least Mean Square (LMS)
+- (Tech) quân bình bằng phương trung bình nhân tối thiểu
+@equalizing pulse interval
+- (Tech) khoảng cách xung làm bằng
+@equation
+- (Tech) phương trình (thức); đẳng phân
+@equation processor
+- (Tech) bộ xử lý phương trình
+@equiangular antenna
+- (Tech) ăngten đẳng góc
+@equilibrium
+- (Tech) cân bằng
+@equilibrium potential
+- (Tech) thế cân bằng
+@equiphase
+- (Tech) đẳng vị tướng
+@equipotential cathode
+- (Tech) âm cực đẳng thế
+@equipotential surface
+- (Tech) bề mặt đẳng thế
+@equisignal radio range beacon
+- (Tech) pha vô tuyến cự li có tín hiệu quân bình
+@equivalence element
+- (Tech) phần tử tương đương
+@equivalent circuit
+- (Tech) mạch tương đương
+@equivalent diode
+- (Tech) đèn hai cực tương đương
+@equivalent inductance
+- (Tech) điện cảm tương đương
+@equivalent load
+- (Tech) gánh tương đương
+@equivalent network
+- (Tech) mạng tương đương
+@equivalent noise level
+- (Tech) mức nhiễu âm tương đương
+@equivalent parallel resistance
+- (Tech) điện trở song song tương đương
+@equivalent resistance
+- (Tech) điện trở tương đương
+@equivalent series resistance
+- (Tech) điện trở nối tiếp tương đương
+@equivalent sine wave
+- (Tech) sóng hình sin tương đương
+@equivalent voltage
+- (Tech) điện áp tương đương
+@erasable
+- (Tech) xóa được
+@erasable memory
+- (Tech) bộ nhớ xóa được
+@erasable optical storage
+- (Tech) bộ trữ quang xóa được
+@erasable programmable ROM (EPROM)
+- (Tech) bộ nhớ thảo chương và xóa được
+@erasable ROM = erasable programmable ROM
+- (Tech)
+@erasable storage
+- (Tech) bộ trữ xóa được
+@erase character
+- (Tech) ký tự xóa = delete character
+@erase key
+- (Tech) phím xóa
+@ergodic function
+- (Tech) hàm thiên lịch, hàm ergôddic
+@ergodic theorem
+- (Tech) định lý thiên lịch
+@ergonomics
+- (Tech) môn tối ưu nhân tố
+@erlang
+- (Tech) erlang (đơn vị lưu lượng thông tin)
+@erlangmeter
+- (Tech) máy đo erlang
+@error
+- (Tech) sai số; sai lầm, lỗi; thiếu sót
+@error analysis
+- (Tech) phân tích sai lầm; phân tích sai số
+@error byte
+- (Tech) bai sai số
+@error character
+- (Tech) ký tự sai lầm
+@error checking code
+- (Tech) mã kiểm sai lầm
+@error control character
+- (Tech) ký tự kiểm soát sai lầm
+@error control equipment
+- (Tech) thiết bị kiểm soát sai lầm
+@error correcting code
+- (Tech) mã hiệu chỉnh sai lầm
+@error detecting code
+- (Tech) mã phát hiện sai lầm
+@error detection routine
+- (Tech) thường trình phát hiện sai lầm
+@error detector
+- (Tech) bộ phát hiện sai số
+@error diagnostics
+- (Tech) chẩn đoán sai lầm
+@error flag
+- (Tech) cờ báo sai lầm
+@error free
+- (Tech) không sai số; không sai lầm
+@error function
+- (Tech) hàm sai số
+@error handling
+- (Tech) xử lý sai lầm = error analysis
+@error interrupt
+- (Tech) ngắt khi có sai số
+@error level
+- (Tech) mức sai lầm
+@error log
+- (Tech) sổ ghi sai lầm
+@error message
+- (Tech) thông báo về sai lầm
+@error notch
+- (Tech) dấu sai
+@error probability
+- (Tech) xác suất sai số
+@error rate
+- (Tech) độ sai lầm
+@error ratio
+- (Tech) tỷ số sai lầm
+@error recovery procedure (ERP)
+- (Tech) thủ tục hồi phục khi có sai lầm
+@error signal
+- (Tech) tín hiệu sai số
+@error transmission
+- (Tech) truyền sai lầm
+@ES (Expert System)
+- (Tech) Hệ Thống Chuyên Gia
+@Es layer
+- (Tech) lớp E thất thường, lớp Es
+@Esaki diode
+- (Tech) đèn hai cực đường hầm
+@ESC (escape character)
+- (Tech) ký tự thoát
+@ESC key
+- (Tech) phím thoát; phím khuếch trương (ký tự)
+@escape character (ESC)
+- (Tech) ký tự thoát
+@escape code
+- (Tech) mã thoát
+@escape (Esc) key
+- (Tech) phím thoát; phím khuếch trương
+@escape mechanism
+- (Tech) cơ chế/năng thoát [TQ]
+@escape sequence code
+- (Tech) mã trình tự thoát, mã nối tiếp khuyếch trương (ký tự) [NB]
+@escape sequence
+- (Tech) trình tự thoát, nối tiếp khuếch trương (ký tự) [NB]
+@ESD (electro-static spark) prevention
+- (Tech) sự đề phòng phóng điện tĩnh
+@estimation
+- (Tech) ước lượng, ước tính
+@esu (electrostatic unit)
+- (Tech) esu (đơn vị điện tĩnh)
+@ETB (End of Transmission Block)
+- (Tech) khối chấm dứt truyền đạt
+@etch pattern
+- (Tech) dạng hình mạch khắc
+@etch pit density
+- (Tech) mật độ khắc lõm, mật độ thực khắc
+@etch
+- (Tech) khắc (đ)
+@etched circuit
+- (Tech) mạch khắc
+@etching method
+- (Tech) phương pháp khắc
+@Ethernet cable
+- (Tech) cáp Ethernet
+@Ethernet
+- (Tech) mạng Ethernet (itơnet)
+@ETX (End of Text)
+- (Tech) chấm dứt văn bản
+@Euclidean geometry,
+- (Tech) hình học Euclide, hình học không gian, hình học ba chiều
+@even
+- (Tech) thuộc số chẵn; đều; bằng phẳng
+@even number
+- (Tech) số chẵn
+@even parity check
+- (Tech) kiểm đồng đẳng chẵn
+@even parity
+- (Tech) tính chẵn; tính đồng đẳng chẳn
+@even permutation
+- (Tech) hoán vị chẵn
+@even-numbered memory address
+- (Tech) địa chỉ bộ nhớ số chẵn
+@even-odd
+- (Tech) chẵn lẻ
+@even-odd check
+- (Tech) kiểm chẵn lẻ
+@event
+- (Tech) sự biến
+@event handler
+- (Tech) thủ trình cho sự biến
+@event interrupt
+- (Tech) ngắt cho sự biến
+@event-driven
+- (Tech) dựa theo sự biến
+@exact copy
+- (Tech) bản sao y
+@exceed
+- (Tech) vượt trội (đ)
+@exception condition
+- (Tech) điều kiện ngoại lệ
+@exception control
+- (Tech) kiểm soát ngoại lệ
+@exception handler
+- (Tech) thủ trình ngoại lệ
+@excess charge carrier
+- (Tech) hạt mang điện tích thừa
+@excess conduction
+- (Tech) dẫn điện thừa
+@excess conductivity
+- (Tech) tính dẫn thừa
+@excess current
+- (Tech) dòng thừa
+@excess electron
+- (Tech) điện tử thừa
+@excess energy
+- (Tech) năng lượng thừa
+@excess voltage
+- (Tech) điện thế thừa
+@exchange key
+- (Tech) phím biến hoán (biến đổi mẫu âm Hoa hay Nhật ra chữ Hán)
+@exchange
+- (Tech) tổng đài (điện thoại), trung tâm điện thoại; trao đổi (d/đ)
+@excitation energy
+- (Tech) năng lượng kích thích
+@excitation level
+- (Tech) mức kích thích
+@excitation potential
+- (Tech) thế kích thích
+@excitation power
+- (Tech) công suất kích thích
+@exciter antenna
+- (Tech) ăngten kích thích
+@exciter selsyn
+- (Tech) máy tự đồng bộ kích thích
+@exciter
+- (Tech) bộ kích thích (điện)
+@exciting coil
+- (Tech) cuộn dây kích thích
+@exciting current
+- (Tech) dòng kích thích
+@exciting loop
+- (Tech) mạch kín kích thích
+@exciting magnet
+- (Tech) nam châm kích thích
+@exciting winding
+- (Tech) cuộn dây kích thích = field winding
+@excitron
+- (Tech) đèn kích thích, đèn kích hồ [TQ], excitron
+@EXCLUSIVE OR (XOR) circuit
+- (Tech) mạch HOẶC ĐỐI, mạch XOR
+@exclusive
+- (Tech) loại trừ; duy nhất; chuyên nhất, độc chiếm, độc quyền
+@executable file
+- (Tech) tập tin khả thi
+@executable program
+- (Tech) chương trình khả thi
+@executable statement
+- (Tech) câu lệnh khả thi
+@execute
+- (Tech) chạy (chương trình), thi hành (chỉ thị) (đ)
+@execute cycle
+- (Tech) chu kỳ thi hành
+@execute statement
+- (Tech) câu lệnh thi hành
+@execute-only program
+- (Tech) chương trình chỉ thi hành
+@execution cycle
+- (Tech) chu kỳ thi hành
+@execution time
+- (Tech) thời gian thi hành
+@exhaustive search
+- (Tech) sự tìm tường tận
+@EXNOR gate = EXCLUSIVE NOR
+- (Tech) cổng KHÔNG HOẶC ĐỐI ĐẢo, cổng EXNOR
+@EXOR gate = EXCLUSIVE OR
+- (Tech) cổng HOẶC ĐỐI, cổng EXOR
+@expandability
+- (Tech) tính mở rộng, tính triển khai
+@expanded board
+- (Tech) bảng mở rộng
+@expanded memory specifications (EMS)
+- (Tech) các quy định bộ nhớ mở rộng
+@expanded memory
+- (Tech) bộ nhớ mở rộng
+@expander
+- (Tech) bộ giãn
+@expandor
+- (Tech) bộ giãn = expander
+@expansion slot
+- (Tech) ổ cắm mở rộng
+@expert system
+- (Tech) hệ thống chuyên gia [máy điện toán]
+@exponent
+- (Tech) số mũ, lũy thừa, chỉ số; chỉ tiêu
+@exponent overflow
+- (Tech) sự vượt hạn trên số mũ
+@exponent sign
+- (Tech) dấu mũ
+@exponent underflow
+- (Tech) sự vượt hạn dưới số mũ
+@exponential
+- (Tech) thuộc số mũ
+@exponential curve
+- (Tech) đường cong số mũ
+@exponential factor
+- (Tech) thừa số hàm mũ
+@exponential function
+- (Tech) hàm số số mũ, hàm số lũy thừa
+@exposure time
+- (Tech) thời gian phơi bày
+@extended addressing
+- (Tech) định vị nối dài, định địa chỉ nối dài
+@extended binary-coded decimal interchange code (EBCDIC)
+- (Tech) mã trao đổi thập phân biên mã nhị phân mở rộng, EBCDIC (épxiddích)
+@extended code set
+- (Tech) bộ mã nối dài
+@extended control (EC) mode
+- (Tech) chế độ điều khiển nối dài
+@extended memory
+- (Tech) bộ nhớ nối dài
+@extended memory specifications (XMS)
+- (Tech) các quy định bộ nhớ nối dài
+@extended precision
+- (Tech) độ chính xác nối dài
+@extended-level synthesizer
+- (Tech) bộ tổng hợp cấp nối dài
+@extended-precision word
+- (Tech) từ có dộ chính xác nối dài
+@extender board
+- (Tech) bảng bộ sao
+@extension cord
+- (Tech) dây nối dài
+@extension line
+- (Tech) dây nối dài
+@extension subscriber
+- (Tech) người thuê bao đường dây
+@extent
+- (Tech) phạm vi, miền
+@external (device) address
+- (Tech) địa chỉ thiết bị ngoài
+@external cavity klystron
+- (Tech) đèn tốc điều hốc ngoài
+@external circuit
+- (Tech) mạch ngoài
+@external command
+- (Tech) lệnh ngoài
+@external current
+- (Tech) dòng ngoài
+@external database
+- (Tech) kho dự kiện ngoài
+@external declaration
+- (Tech) mô tả ngoài
+@external disk drive
+- (Tech) bộ quay đĩa ngoài
+@external environment
+- (Tech) môi trường ngoài
+@external impedance
+- (Tech) trở kháng ngoài
+@external interrupt
+- (Tech) cái ngắt ngoài
+@external load circuit
+- (Tech) mạch gánh ngoài
+@external memory
+- (Tech) bộ nhớ ngoài
+@external procedure
+- (Tech) trình tự ngoài
+@external reference
+- (Tech) tham khảo ngoài
+@external register
+- (Tech) bộ ghi ngoài
+@external resistance
+- (Tech) điện trở ngoài
+@external storage
+- (Tech) bộ trữ ngoài
+@external symbol
+- (Tech) ký hiệu ngoài
+@external table
+- (Tech) bảng ngoài
+@extra current
+- (Tech) dòng phụ
+@extra high tension
+- (Tech) điện áp cực cao; áp suất cực cao
+@extra large scale integration (ELSI)
+- (Tech) tập thành đại quy mô
+@extremely high frequency (EHF)
+- (Tech) tần số cực cao
+@extrinsic conduction
+- (Tech) độ dẫn ngoại lai
+@extrinsic photoeffect
+- (Tech) hiệu ứng quang ngoại lai
+@extrinsic semiconductor
+- (Tech) chất bán dẫn ngoại lai, chất bán dẫn tạp,
+@eye patterns
+- (Tech) dạng mắt cáo
+@eyelet-construction mica capacitor
+- (Tech) bộ điện dung mica dạng mắt cáo
+@Eyring equation
+- (Tech) phương trình Eyring

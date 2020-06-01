@@ -5,13 +5,14 @@ import android.view.animation.AnimationUtils
 import com.teamttdvlp.memolang.R
 import com.teamttdvlp.memolang.view.activity.AddFlashcardActivity
 import com.teamttdvlp.memolang.view.adapter.RCVChooseLanguageAdapter
+import com.teamttdvlp.memolang.view.adapter.RCVRecentUsedLanguageAdapter
 import com.teamttdvlp.memolang.view.adapter.RCV_FlashcardSetNameAdapter
 import dagger.Module
 import dagger.Provides
 import javax.inject.Named
 
 @Module
-class AddFlashcardActivityModule() {
+class AddFlashcardActivityModule {
 
   @Provides
   @Named("HighlightTextAnim")
@@ -22,6 +23,11 @@ class AddFlashcardActivityModule() {
   @Provides
   fun provideChooseLanguageAdapter (activity : AddFlashcardActivity) : RCVChooseLanguageAdapter{
     return RCVChooseLanguageAdapter(activity)
+  }
+
+  @Provides
+  fun provideRecentUsedLanguageAdapter (activity : AddFlashcardActivity) : RCVRecentUsedLanguageAdapter{
+    return RCVRecentUsedLanguageAdapter(activity)
   }
 
   @Provides

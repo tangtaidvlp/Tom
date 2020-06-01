@@ -16,24 +16,10 @@ fun Activity.quickToast (message : String) {
   Toast.makeText(this, message, Toast.LENGTH_LONG).show()
 }
 
-//fun Activity.quickStartActivity(target : Class<*>) {
-//    val intent = Intent(this, target)
-//    val bundle = ActivityOptionsCompat.makeSceneTransitionAnimation(this).toBundle()
-//    startActivity(intent, bundle)
-//}
-
-
-inline fun <reified T : ViewModel> Fragment.getFragmentViewModel(noinline creator: (() -> T)? = null): T {
-  return if (creator == null)
+inline fun <reified T : ViewModel> FragmentActivity.getActivityViewModel(factory: ViewModelProviderFactory? = null): T {
+  return if (factory == null)
     ViewModelProviders.of(this).get(T::class.java)
   else
-    ViewModelProviders.of(this, ViewModelFactory(creator)).get(T::class.java)
-}
-
-inline fun <reified T : ViewModel> FragmentActivity.getActivityViewModel(noinline creator: (() -> T)? = null): T {
-  return if (creator == null)
-    ViewModelProviders.of(this).get(T::class.java)
-  else
-    ViewModelProviders.of(this, ViewModelFactory(creator)).get(T::class.java)
+    ViewModelProviders.of(this, factory).get(T::class.java)
 }
 

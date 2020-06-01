@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import androidx.core.view.children
 import androidx.recyclerview.widget.RecyclerView
 import com.teamttdvlp.memolang.databinding.ItemFlashcardSetBinding
-import com.teamttdvlp.memolang.view.helper.hide
+import com.teamttdvlp.memolang.view.helper.goINVISIBLE
 
 class RCV_FlashcardSetsBackground_Adapter (var context : Context) : RecyclerView.Adapter<RCV_FlashcardSetsBackground_Adapter.ViewHolder> () {
 
@@ -22,7 +22,7 @@ class RCV_FlashcardSetsBackground_Adapter (var context : Context) : RecyclerView
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         for (viewChild in (holder.itemView as ViewGroup).children) {
-            viewChild.hide()
+            viewChild.goINVISIBLE()
         }
         holder.dB.root.setBackgroundColor(Color.BLACK)
     }

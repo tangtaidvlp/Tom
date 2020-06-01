@@ -3,22 +3,19 @@ package com.teamttdvlp.memolang.view.activity
 import android.animation.Animator
 import android.content.Intent
 import android.os.Bundle
+import android.view.inputmethod.EditorInfo
 import androidx.core.animation.addListener
-import androidx.interpolator.view.animation.FastOutSlowInInterpolator
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.teamttdvlp.memolang.R
 import com.teamttdvlp.memolang.databinding.ActivitySearchEngVnDictionaryBinding
-import com.teamttdvlp.memolang.model.entity.vocabulary.SearchVocaHistoryHolder
-import com.teamttdvlp.memolang.database.sql.repository.FlashcardRepository
-import com.teamttdvlp.memolang.database.sql.repository.UserSearchHistoryRepository
+import com.teamttdvlp.memolang.data.model.other.new_vocabulary.TypicalRawVocabulary
 import com.teamttdvlp.memolang.view.activity.iview.SearchEngVNDictionaryView
 import com.teamttdvlp.memolang.view.adapter.RCVRecent_SearchDictionary_Adapter
 import com.teamttdvlp.memolang.view.adapter.RCVSearchDictionaryAdapter
 import com.teamttdvlp.memolang.view.base.BaseActivity
-import com.teamttdvlp.memolang.view.helper.addTextChangeListener
-import com.teamttdvlp.memolang.view.helper.appear
-import com.teamttdvlp.memolang.view.helper.disappear
+import com.teamttdvlp.memolang.view.helper.*
+import com.teamttdvlp.memolang.viewmodel.PARTS_DEVIDER
 import com.teamttdvlp.memolang.viewmodel.SearchEngVNDictionaryViewModel
 import javax.inject.Inject
 import javax.inject.Named
@@ -35,10 +32,7 @@ class SearchEngVNDictionaryActivity :
     lateinit var rcvRecentSearchDicAdapter : RCVRecent_SearchDictionary_Adapter
     @Inject set
 
-    lateinit var userSearchHistoryRepository: UserSearchHistoryRepository
-    @Inject set
-
-    lateinit var flashcardRepository: FlashcardRepository
+    lateinit var viewModelProviderFactory: ViewModelProviderFactory
     @Inject set
 
     private lateinit var rcvDictionaryAppearAnimator : Animator
@@ -48,14 +42,19 @@ class SearchEngVNDictionaryActivity :
     override fun getLayoutId(): Int = R.layout.activity_search_eng_vn_dictionary
 
     override fun takeViewModel(): SearchEngVNDictionaryViewModel {
-        return SearchEngVNDictionaryViewModel(this.application, userSearchHistoryRepository, flashcardRepository)
+        return getActivityViewModel(viewModelProviderFactory)
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         viewModel.setUpView(this)
         rcvDictionaryAppearAnimator.start()
-        dB.txtEngViDictionary.requestFocus()
+        dB.edtEngViDictionary.requestFocus()
+    }
+
+    override fun onPause() {
+        super.onPause()
+        viewModel.saveSearchingHistory()
     }
 
     override fun addViewControls() {
@@ -65,7 +64,7 @@ class SearchEngVNDictionaryActivity :
         dB.rcvRecentSearchDic.adapter = rcvRecentSearchDicAdapter
         dB.rcvRecentSearchDic.layoutManager = LinearLayoutManager(this, RecyclerView.VERTICAL, false)
 
-        viewModel.getAllSearchHistoryInfo {
+        viewModel.getAll_RecentSearchedVocaList {
             rcvRecentSearchDicAdapter.setData(it)
         }
     }
@@ -73,50 +72,60 @@ class SearchEngVNDictionaryActivity :
     override fun addViewEvents() { dB.apply {
 
         btnSearch.setOnClickListener {
-            txtEngViDictionary.requestFocus()
+            edtEngViDictionary.requestFocus()
             showVirtualKeyboard()   
         }
 
-        rcvSearchDictionaryAdapter.setOnItemClickListener { key, content, navigatableKey ->
-            val item = SearchVocaHistoryHolder(
-                navigatableKey ?: key,
-                content
-            )
-            rcvRecentSearchDicAdapter.addData(item)
-            viewModel.updateSearchHistoryOffline(rcvRecentSearchDicAdapter.searchHistoryList)
-            sendContentToActivitySeeFlashcard(content)
+        rcvSearchDictionaryAdapter.setOnItemClickListener { rawVocabulary ->
+            onChooseVocabulary(rawVocabulary as TypicalRawVocabulary)
         }
 
-        rcvRecentSearchDicAdapter.setOnItemClickListener { key, content ->
-            val item = SearchVocaHistoryHolder(
-                key,
-                content
-            )
-            rcvRecentSearchDicAdapter.addData(item)
-            viewModel.updateSearchHistoryOffline(rcvRecentSearchDicAdapter.searchHistoryList)
-            sendContentToActivitySeeFlashcard(content)
+        rcvRecentSearchDicAdapter.setOnItemClickListener { rawVocabulary ->
+            onChooseVocabulary(rawVocabulary)
         }
 
         btnClearAllText.setOnClickListener {
-            txtEngViDictionary.setText("")
+            edtEngViDictionary.setText("")
         }
 
-        txtEngViDictionary.addTextChangeListener (onTextChanged = { text, _ , _, _ ->
+        edtEngViDictionary.addTextChangeListener (onTextChanged = { text, _, _, _ ->
             if (text == "") {
-                rcvRecentSearchDic.appear()
-                rcvDictionary.disappear()
+                rcvRecentSearchDic.goVISIBLE()
+                rcvDictionary.goGONE()
             } else {
-                rcvRecentSearchDic.disappear()
-                rcvDictionary.appear()
+                rcvRecentSearchDic.goGONE()
+                rcvDictionary.goVISIBLE()
             }
 
             rcvSearchDictionaryAdapter.search(text)
-        })
+
+            })
+
+        edtEngViDictionary.setOnEditorActionListener { v, actionId, event ->
+            if (actionId == EditorInfo.IME_ACTION_SEARCH) {
+                val key = edtEngViDictionary.text.toString()
+                val fullContent = rcvSearchDictionaryAdapter.getVocabularyByKey(key)
+                quickLog("FULL: $fullContent")
+                if (fullContent != null) {
+                    onChooseVocabulary(fullContent)
+                } else {
+                    quickToast("Navigate to online search")
+                }
+                true
+            }
+            false
+        }
     }}
+
+    private fun onChooseVocabulary(item: TypicalRawVocabulary) {
+        rcvRecentSearchDicAdapter.addData(item)
+        viewModel.addVoca_ToRecentSearchedList(item)
+        sendContentToActivitySeeFlashcard(item)
+    }
 
     override fun onStart() {
         super.onStart()
-        dB.txtEngViDictionary.requestFocus()
+        dB.edtEngViDictionary.requestFocus()
     }
 
     override fun overrideEnterAnim () {
@@ -127,7 +136,7 @@ class SearchEngVNDictionaryActivity :
         overridePendingTransition(R.anim.nothing,R.anim.disappear)
     }
 
-    fun sendContentToActivitySeeFlashcard (vocabularyContent : String) {
+    private fun sendContentToActivitySeeFlashcard (vocabularyContent : TypicalRawVocabulary) {
         val intent = Intent(this@SearchEngVNDictionaryActivity, SeeVocabularyActivity::class.java)
         intent.putExtra(VOCABULARY_INFO, vocabularyContent)
         startActivity(intent)
@@ -142,13 +151,13 @@ class SearchEngVNDictionaryActivity :
         rcvDictionaryAppearAnimator.setTarget(rcvRecentSearchDic)
         rcvDictionaryAppearAnimator.addListener (onStart = {
             rcvRecentSearchDic.alpha = 0f
-            rcvRecentSearchDic.appear()
+            rcvRecentSearchDic.goVISIBLE()
         })
 
         rcvDictionaryDisappearAnimator = dictionaryDisappearAnimation
         rcvDictionaryDisappearAnimator.setTarget(rcvRecentSearchDic)
         rcvDictionaryDisappearAnimator.addListener (onStart = {
-            rcvRecentSearchDic.disappear()
+            rcvRecentSearchDic.goGONE()
         })
 
     }}

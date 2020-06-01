@@ -14,10 +14,10 @@ import java.util.*
 class MenuBackgroundListViewAdapter (var context : Context): BaseAdapter () {
 
     override fun getView(position: Int, convertView: View?, parent: ViewGroup?): View {
-        var view = LayoutInflater.from(context).inflate(R.layout.item_black_background, parent, false)
-        var txtTex = view.findViewById<TextView>(R.id.txt_background_text)
+        val view = LayoutInflater.from(context).inflate(R.layout.item_black_background, parent, false)
+        val txtTex = view.findViewById<TextView>(R.id.txt_background_text)
         txtTex.layoutParams.width = 100.dp() + Random().nextInt(200.dp())
-        var txtTrans = view.findViewById<TextView>(R.id.txt_background_translation)
+        val txtTrans = view.findViewById<TextView>(R.id.txt_background_translation)
         txtTrans.layoutParams.width = 100.dp() + Random().nextInt(200.dp())
         return view
     }

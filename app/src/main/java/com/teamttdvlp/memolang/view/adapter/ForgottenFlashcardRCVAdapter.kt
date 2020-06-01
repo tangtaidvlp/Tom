@@ -8,7 +8,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.teamttdvlp.memolang.R
-import com.teamttdvlp.memolang.model.entity.flashcard.Flashcard
+import com.teamttdvlp.memolang.data.model.entity.flashcard.Flashcard
 
 class ForgottenFlashcardRCVAdapter (var context : Context, var list : ArrayList<Flashcard>) : RecyclerView.Adapter<ForgottenFlashcardRCVAdapter.ViewHolder> () {
 

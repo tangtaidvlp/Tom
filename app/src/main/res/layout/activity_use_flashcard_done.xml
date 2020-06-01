@@ -6,19 +6,490 @@
     tools:context=".view.activity.UseFlashcardDoneActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:background="#ffffff"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="@drawable/background_menu_activity">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/panel_add_flashcard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/round_10dp_white_background"
+            android:elevation="10dp"
+            android:clickable="true"
+            android:paddingStart="16dp"
+            android:paddingTop="15dp"
+            android:paddingEnd="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.5">
+
+            <TextView
+                android:id="@+id/txt_title_set_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:elevation="0dp"
+                android:fontFamily="@font/segoeui"
+                android:includeFontPadding="false"
+                android:text="Set name"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/edt_panel_set_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:elevation="0dp"
+                android:fontFamily="@font/seguisb"
+                android:gravity="center_vertical"
+                android:hint="Set name (Optional)"
+                android:includeFontPadding="false"
+                android:inputType="textPersonName"
+                android:paddingLeft="4dp"
+                android:paddingRight="16dp"
+                android:paddingBottom="1dp"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txt_title_set_name" />
+
+            <ImageView
+                android:id="@+id/img_choose_set_name_spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:elevation="0dp"
+                android:paddingLeft="16dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:src="@drawable/image_spinner"
+                app:layout_constraintBottom_toBottomOf="@+id/edt_panel_set_name"
+                app:layout_constraintEnd_toEndOf="@+id/edt_panel_set_name"
+                app:layout_constraintTop_toTopOf="@+id/edt_panel_set_name" />
+
+            <TextView
+                android:id="@+id/line_under_set_name"
+                android:layout_width="0dp"
+                android:layout_height="0.5dp"
+                android:alpha="0.5"
+                android:background="@color/black"
+                android:fontFamily="@font/seguisb"
+                android:paddingStart="4dp"
+                app:layout_constraintEnd_toEndOf="@id/edt_panel_set_name"
+                app:layout_constraintStart_toStartOf="@id/edt_panel_set_name"
+                app:layout_constraintTop_toBottomOf="@id/edt_panel_set_name" />
+
+            <TextView
+                android:id="@+id/txt_title_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="12dp"
+                android:elevation="0dp"
+                android:fontFamily="@font/segoeui"
+                android:includeFontPadding="false"
+                android:text="Type"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/edt_panel_translation" />
+
+            <EditText
+                android:id="@+id/edt_panel_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:fontFamily="@font/seguisb"
+                android:gravity="center_vertical"
+                android:includeFontPadding="false"
+                android:inputType="textPersonName"
+                android:paddingStart="4dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="16dp"
+                android:paddingBottom="1dp"
+                android:textColor="#E84E16"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txt_title_type" />
+
+            <TextView
+                android:id="@+id/line_under_type"
+                android:layout_width="0dp"
+                android:layout_height="0.5dp"
+                android:alpha="0.5"
+                android:background="@color/black"
+                app:layout_constraintEnd_toEndOf="@id/edt_panel_type"
+                app:layout_constraintStart_toStartOf="@id/edt_panel_type"
+                app:layout_constraintTop_toBottomOf="@id/edt_panel_type" />
+
+            <ImageView
+                android:id="@+id/img_choose_type_spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:elevation="0dp"
+                android:paddingLeft="16dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:src="@drawable/image_spinner"
+                app:layout_constraintBottom_toBottomOf="@+id/edt_panel_type"
+                app:layout_constraintEnd_toEndOf="@+id/edt_panel_type"
+                app:layout_constraintTop_toTopOf="@+id/edt_panel_type" />
+
+            <TextView
+                android:id="@+id/txt_title_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="12dp"
+                android:elevation="0dp"
+                android:fontFamily="@font/segoeui"
+                android:includeFontPadding="false"
+                android:text="Text"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/edt_panel_set_name" />
+
+            <EditText
+                android:id="@+id/edt_panel_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:elevation="0dp"
+                android:fontFamily="@font/seguisb"
+                android:gravity="center_vertical"
+                android:includeFontPadding="false"
+                android:inputType="textPersonName"
+                android:paddingStart="4dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="16dp"
+                android:paddingBottom="1dp"
+                android:textColor="#E84E16"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txt_title_text" />
+
+            <TextView
+                android:id="@+id/line_under_text"
+                android:layout_width="0dp"
+                android:layout_height="0.5dp"
+                android:alpha="0.5"
+                android:background="@color/black"
+                app:layout_constraintEnd_toEndOf="@id/edt_panel_text"
+                app:layout_constraintStart_toStartOf="@id/edt_panel_text"
+                app:layout_constraintTop_toBottomOf="@id/edt_panel_text" />
+
+            <TextView
+                android:id="@+id/txt_title_translation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="12dp"
+                android:elevation="0dp"
+                android:fontFamily="@font/segoeui"
+                android:includeFontPadding="false"
+                android:text="Translation"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/edt_panel_text" />
+
+            <EditText
+                android:id="@+id/edt_panel_translation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:elevation="0dp"
+                android:fontFamily="@font/seguisb"
+                android:gravity="center_vertical"
+                android:includeFontPadding="false"
+                android:inputType="textPersonName"
+                android:paddingStart="4dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="16dp"
+                android:paddingBottom="1dp"
+                android:textColor="#E84E16"
+                android:textSize="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txt_title_translation" />
+
+            <TextView
+                android:id="@+id/line_under_translation"
+                android:layout_width="0dp"
+                android:layout_height="0.5dp"
+                android:alpha="0.5"
+                android:background="@color/black"
+                app:layout_constraintEnd_toEndOf="@id/edt_panel_translation"
+                app:layout_constraintStart_toStartOf="@id/edt_panel_translation"
+                app:layout_constraintTop_toBottomOf="@id/edt_panel_translation" />
+
+            <ImageView
+                android:id="@+id/img_choose_translation_spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:elevation="0dp"
+                android:paddingLeft="16dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:src="@drawable/image_spinner"
+                app:layout_constraintBottom_toBottomOf="@+id/edt_panel_translation"
+                app:layout_constraintEnd_toEndOf="@+id/edt_panel_translation"
+                app:layout_constraintTop_toTopOf="@+id/edt_panel_translation" />
+
+            <TextView
+                android:id="@+id/txt_title_example"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="12dp"
+                android:elevation="0dp"
+                android:fontFamily="@font/segoeui"
+                android:includeFontPadding="false"
+                android:text="Example"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/edt_panel_type" />
+
+            <EditText
+                android:id="@+id/edt_panel_example"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:elevation="0dp"
+                android:fontFamily="@font/seguisb"
+                android:gravity="center_vertical"
+                android:includeFontPadding="false"
+                android:inputType="textPersonName"
+                android:paddingStart="4dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="16dp"
+                android:paddingBottom="1dp"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txt_title_example" />
+
+            <TextView
+                android:id="@+id/line_under_example"
+                android:layout_width="0dp"
+                android:layout_height="0.5dp"
+                android:alpha="0.5"
+                android:background="@color/black"
+                app:layout_constraintEnd_toEndOf="@id/edt_panel_example"
+                app:layout_constraintStart_toStartOf="@id/edt_panel_example"
+                app:layout_constraintTop_toBottomOf="@id/edt_panel_example" />
+
+            <ImageView
+                android:id="@+id/img_choose_example_spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:elevation="0dp"
+                android:paddingLeft="16dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:src="@drawable/image_spinner"
+                app:layout_constraintBottom_toBottomOf="@+id/edt_panel_example"
+                app:layout_constraintEnd_toEndOf="@+id/edt_panel_example"
+                app:layout_constraintTop_toTopOf="@+id/edt_panel_example" />
+
+            <TextView
+                android:id="@+id/txt_title_mean_example"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="12dp"
+                android:elevation="0dp"
+                android:fontFamily="@font/segoeui"
+                android:includeFontPadding="false"
+                android:text="Mean of example"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/edt_panel_example" />
+
+            <EditText
+                android:id="@+id/edt_panel_mean_example"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:elevation="0dp"
+                android:fontFamily="@font/seguisb"
+                android:gravity="center_vertical"
+                android:includeFontPadding="false"
+                android:inputType="textPersonName"
+                android:paddingStart="4dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="16dp"
+                android:paddingBottom="1dp"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txt_title_mean_example" />
+
+            <TextView
+                android:id="@+id/line_under_mean_of_example"
+                android:layout_width="0dp"
+                android:layout_height="0.5dp"
+                android:alpha="0.5"
+                android:background="@color/black"
+                app:layout_constraintEnd_toEndOf="@id/edt_panel_mean_example"
+                app:layout_constraintStart_toStartOf="@id/edt_panel_mean_example"
+                app:layout_constraintTop_toBottomOf="@id/edt_panel_mean_example" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/app_red"
+                android:fontFamily="@font/seguisb"
+                android:text="Add"
+                android:textColor="#ffffff"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/edt_panel_mean_example" />
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcv_choose_translation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:background="#CFCFCF"
+                android:elevation="3dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:visibility="gone"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/edt_panel_translation"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcv_choose_example"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:background="#CFCFCF"
+                android:elevation="3dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:visibility="gone"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                app:layout_constraintBottom_toTopOf="@id/edt_panel_example"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcv_choose_card_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:background="#CFCFCF"
+                android:elevation="3dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:visibility="gone"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/edt_panel_type"
+                app:layout_constraintVertical_bias="0.0">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcv_choose_set_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:background="#CFCFCF"
+                android:elevation="3dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:visibility="gone"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/edt_panel_set_name"
+                app:layout_constraintVertical_bias="0.0">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
 
         <TextView
-            android:id="@+id/txt_congratulation"
+            android:id="@+id/txt_forgotten_cards"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginBottom="80dp"
+            android:background="@drawable/round_right_5dp_black_background"
+            android:elevation="10dp"
+            android:visibility="gone"
+            android:translationZ="5dp"
+            android:fontFamily="@font/seguisb"
+            android:gravity="center_vertical"
+            android:text="Forgotten cards"
+            android:textColorHint="#777777"
+            android:paddingStart="26dp"
+            android:paddingEnd="26dp"
+            android:paddingBottom="1dp"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+
+        <ImageView
+            android:id="@+id/img_congratulation"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="20dp"
-            android:fontFamily="@font/seguisb"
+            android:layout_margin="16dp"
             android:gravity="center"
-            android:text="Well done! You remember all of them"
-            android:textSize="20sp"
+            android:src="@drawable/image_well_done"
             android:visibility="gone"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
@@ -27,102 +498,39 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.45" />
 
-        <LinearLayout
-            android:id="@+id/title_bar"
-            android:layout_width="0dp"
-            android:layout_height="50dp"
-            android:background="@color/app_red"
-            android:elevation="5dp"
-            android:gravity="center_vertical"
-            android:orientation="horizontal"
-            android:visibility="invisible"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/title_bar"
-            app:layout_constraintTop_toTopOf="parent">
-
-            <ImageView
-                android:id="@+id/img_flashcard_icon"
-                android:layout_width="15dp"
-                android:layout_height="18dp"
-                android:layout_marginStart="13dp"
-                android:layout_marginTop="0dp"
-                android:layout_marginBottom="0dp"
-                android:background="@drawable/icon_fogotten_flashcards"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.0" />
-
-            <TextView
-                android:id="@+id/txt_language_set_name"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="0dp"
-                android:layout_marginEnd="8dp"
-                android:fontFamily="@font/segoeui"
-                android:paddingBottom="3dp"
-                android:text="Fogotten cards"
-                android:textColor="#ffffff"
-                android:textSize="16sp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="@+id/img_background"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toEndOf="@+id/img_flashcard_icon"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.0" />
-
-            <TextView
-                android:id="@+id/txt_cards_left_count"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="0dp"
-                android:layout_marginEnd="13dp"
-                android:layout_weight="1"
-                android:fontFamily="@font/segoeui"
-                android:gravity="right|center_vertical"
-                android:paddingBottom="3dp"
-                android:textColor="#ffffff"
-                android:textSize="16sp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="@+id/img_background"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toEndOf="@+id/img_flashcard_icon"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.0" />
-
-        </LinearLayout>
-
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rcv_fogotten_cards_list"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:paddingStart="19dp"
             android:paddingEnd="19dp"
+            android:layout_marginTop="5dp"
             android:visibility="gone"
+            android:orientation="vertical"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/title_bar"
+            app:layout_constraintTop_toBottomOf="@+id/txt_forgotten_cards"
             app:layout_constraintVertical_bias="0.39" />
 
-        <Button
-            android:id="@+id/btn_got_it"
-            android:layout_width="wrap_content"
-            android:layout_height="40dp"
-            android:layout_marginEnd="16dp"
-            android:layout_marginBottom="16dp"
-            android:background="@drawable/slightly_round_white_background"
+        <ImageView
+            android:id="@+id/btn_quit"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
             android:elevation="15dp"
-            android:fontFamily="@font/seguisb"
-            android:text="Got it"
-            android:textAllCaps="false"
-            android:textColor="@color/use_flashcard_grey_text_color"
-            android:textSize="16sp"
+            android:src="@drawable/image_button_quit"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <ImageView
+            android:id="@+id/btn_restart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="95dp"
+            android:elevation="15dp"
+            android:src="@drawable/image_button_restart"
             android:visibility="gone"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />

@@ -1,41 +1,920 @@
-Yaist<pd>[‘æbəsist]<pd>N<pd>Người gãy bàn phím
-Yaus<pd>[‘æbəkəs]<pd>N<pd>Bàn tính<ex>to move counters of an abacus: tính bằng bàn tính
-Yauses<pd><nav>Yaus
-Yak<pd>[ə’bæk]<pd>Adv<pd>Lùi lại, trở lại phía sau<ex>to stand aback from sb/sth: đứng lùi lại để tránh ai hoặc cái gì
-Yaterial<pd>[eibæk’tiəriəl]<pd>N<pd>Không do vi khuẩn gây ra
-Yatio<pd>_<pd>N<pd>(Y học) sự phá thai
-Yation<pd>[æ’bækʃn]<pd>N<pd>Việc gia súc bị bắt trộm
-Yatus<pd>[æ’bæktəs]<pd>Adj<pd>Bị trụy thai
-Yaaddon<pd>[ə’bædən]<pd> N<pd>Âm ti, địa ngục<md>con quỷ
-Yaaft<pd>[ə’bɑ:ft]<pd>Adv/(Hàng hải) ở đằng sau bánh lái][Pre/(Hàng hải) ở đằng sau<ex>abaft the mast: sau cột buồm
-Yaalienate<pd>[æ’bəiljəneit]<pd>TransV<pd>Nhường lại tài sản
-Yaalienation<pd>[æbəiljə’neʃn]<pd>N<pd>Danh từ của <cli>Yaalienate<cli/><md>Sự nhường lại tài sản
-Yaalone<pd>[æbə’ləʊni]<pd>N<pd>(Từ Mỹ, nghĩa Mỹ) Bào ngư
-Yaalones<pd><nav>Yaalone
-Yaandon<pd>[ə’bændən]<pd>TransV/Từ bỏ, bỏ rơi, ruồng bỏ/to abandon all efforts: từ bỏ mọi nỗ lực<md>to abandon a child: ruồng bỏ đứa con][N/Sự phóng túng, tự do, sự buông thả<ex>with abandon: một cách phóng túng
-Yaandoned<pd>[ə’bændənd]<pd>Adj<pd>Bị bỏ rơi, bị ruồng bỏ<md>Phóng đãng, trụy lạc
-Yaandoner<pd>[ə’bændənə]<pd>N<pd>(Pháp lý) Người rút đơn
-Yaandoning<pd><nav>Yaandon
-Yaandonment<pd>[ə’bændənmənt]<pd>N<pd>Sự bỏ, sự từ bỏ, sự bỏ rơi, ruồng bỏ<md>Tình trạng bị bỏ rơi, tình trạng bị ruồng bỏ<md>Sự phóng túng, sự tự do, buông thả
-Yaandonments<pd><nav>Yaandonment
-Yaapikal<pd>[əb’æppkəl]<pd>Adj<pd>(Sinh học) Xa đỉnh, xa ngọn<md>Dưới vực
-Yaarticular<pd>[‘æba:tikjulə]<pd>Adj<pd>(Giải phẫu) Học ngoài khớp, trật khớp
-Yaas<pd>[‘ɑ:bə]<pd>N<pd>Áo aba
-Yaase<pd>[ə’beIs]<pd>TransV<pd>Làm hạ phẩm giá, làm mất thể diện, làm nhục<ex>Yakbiting the others is to abase oneself: Nói xấu người khác là tự hạ phẩm giá của mình
-Yaased<pd><nav>Yaase
-Yaasement<pd>[ə’beIsment]<pd>N<pd>Sự làm hạ phẩm giá, sự làm mất thể diện, sự làm nhục<md>Danh từ của <cli>Yaase<cli/>
-Yaases<pd><nav>Yaase
-Yaash<pd>[ə’bæʃ]<pd>TransV<pd>Làm bối rối, làm lúng túng, làm luống cuống
-Yaashed<pd><nav>Yaash
-Yaashment<pd>[ə’bæʃmənt]<pd>N<pd>(Danh từ của <cli>Yaash<cli/>) Sự bối rối, sự lúng túng, sự luống cuống
-Yaatable<pd>[ə’beitəbl]<pd>Adj<pd>Yaó thể làm dịu<md>Yaó thể hạ, có thể bớt /b Yaó thể làm nhụt<md>Yaó thể chấm dứt, có thể thanh trừ<md>(Pháp lý) Yaó thể hủy bỏ, có thể thủ tiêu
-Yaate<pd>[ə’beIt]<pd>V/Dịu đi, yếu đi, nhụt chí, đỡ, nguôi, bớt<ex>Pain abates: cơn đau dịu đi<exd>Storm abates: cơn bão nguôi đi][TransV/Làm dịu đi, làm yếu đi<md>Hạ, bớt (giá)<md>Làm nhụt (chí)<md>Làm cùn (lưỡi dao)
-Yaated<pd><nav>Yaate
-Yaating<pd><nav>Yaate
-Yaatement<pd>[ə’beItmənt]<pd>N<pd>(Danh từ của <cli>Yaate<cli/>) Sự dịu đi, sự yếu đi, sự nhụt đi, sự giảm bớt<md>Sự hạ, sự bớt (giá)<md>Sự chấm dứt, sự thanh toán<md>(pháp lý) Sự hủy bỏ, sự thủ tiêu<ex>Yaatement of a contract: sự hủy bỏ một hợp đồng
-Yaater<pd>[ə’beitə]<pd>N<pd>Người giảm bớt<md>(Y học) Thuốc làm dịu
-Yaatis<pd>[‘æbətis]<pd>N<pd>(Quân sự) Đống cây chướng ngại, đống cây cản
-Yaatised<pd>[‘æbətist]<pd>Ad<pd>(Quân sự) Yaó đống cây chướng ngại, có đống cây cản
-Yaattoir<pd>[‘æbətwɑɑ:(r)]<pd>N<pd>Lò mổ, lò sát sinh
-Yaattoirs<pd><nav>Yaattoir
-Yaaxial<pd>[æb’æksiəl]<pd>Adj<pd>Ở ngoài trục, xa trục
+@y /wai/
+*  danh từ,  số nhiều Ys,  Y's
+- y
+- (toán học) ẩn số y
+- vật hình Y
+
+@y-axis /'wai'æksis/
+*  danh từ
+- (toán học) trục tung
+
+@y-shaped /'waiʃeipt/
+*  tính từ
+- hình Y
+
+@yacht /jot/
+*  danh từ
+- thuyền yat, thuyền buồm nhẹ (để đi chơi, đi du lịch, thi thuyền)
+*  nội động từ
+- đi chơi bằng thuyền buồm
+- thi thuyền buồm
+
+@yacht-club /'jɔtklʌb/
+*  danh từ
+- hội chơi thuyền
+
+@yachting /'jɔtiɳ/
+*  danh từ
+- sự đi chơi bằng thuyền buồm
+- sự thi thuyền buồm
+
+@yachtsman /'jɔtsmən/
+*  danh từ
+- người đi chơi thuyền buồm
+- người thi thuyền buồm
+
+@yachtsmanship /'jɔtsmənʃip/
+*  danh từ
+- thuật lái thuyền buồm
+
+@yaffil /'jæfl/ (yaffle) /'jæfl/
+*  danh từ
+- (động vật học) chim gõ kiến xanh
+
+@yaffle /'jæfl/ (yaffle) /'jæfl/
+*  danh từ
+- (động vật học) chim gõ kiến xanh
+
+@yah /jɑ:/
+*  thán từ
+- ái!, úi chà chà!
+
+@yahoo /jə'hu:/
+*  danh từ
+- Iơ-hu (một giống thú mang hình người trong tiểu thuyết " Những cuộc du hành của Guy-li-ve")
+- người thô lỗ; người có thú tính
+
+@yak /jæk/
+*  danh từ
+- (động vật học) bò Tây tạng
+
+@yale lock /'jeil'lɔk/
+*  danh từ
+- ổ khoá (hình) ống
+
+@yam /jæm/
+*  danh từ
+- (thực vật học) củ từ; khoai mỡ
+- (từ Mỹ,nghĩa Mỹ) khoai lang
+
+@yammer /'jæmə/
+*  nội động từ
+- (thông tục) rên rỉ, rền rỉ
+
+@yank /jænk/
+*  danh từ
+- (thực vật học) cái kéo mạnh, cái giật mạnh
+*  động từ
+- (thông tục) kéo mạnh, giật mạnh
+=to yank out one's sword+ rút mạnh kiếm ra, tuốt gươm
+=to yank on the brake+ kéo mạnh phanh
+!to yank up
+- đưa phắt lên, giật mạnh lên
+*  danh từ
+- (Yank) (thông tục) (như) Yankee
+
+@yankee /'jæɳki/
+*  danh từ
+- người Mỹ, người Hoa kỳ
+=yankee notions+ máy móc nhỏ (đồ dùng trong nhà...) của Mỹ
+=yankee Doodle+ quốc ca Mỹ
+
+@yankeefied /'jæɳkifaid/
+*  tính từ
+- Mỹ hoá
+
+@yankeeism /'jænkiizm/
+*  danh từ
+- (ngôn ngữ học) từ ngữ đặc Mỹ
+
+@yaourt /'jɑ:ə:t/ (yoghurt) /'jougə:t/ (yogurt) /'jougə:t/
+*  danh từ
+- sữa chua
+
+@yap /jæp/
+*  danh từ
+- tiếng chó sủa ăng ẳng
+- cuộc nói chuyện phiếm
+- (từ Mỹ,nghĩa Mỹ),  (từ lóng) sự càu nhàu; sự cãi lại
+- (từ Mỹ,nghĩa Mỹ),  (từ lóng) cái mõm
+*  nội động từ
+- sủa ăng ẳng
+- nói chuyện phiếm
+- (từ Mỹ,nghĩa Mỹ),  (từ lóng) càu nhàu; cãi lại
+
+@yard /jɑ:d/
+*  danh từ
+- Iat, thước Anh (bằng 0, 914 mét)
+- (hàng hải) trục căng buồm
+=to be yard and yard+ kề sát nhau, sóng nhau (hai chiếc thuyền)
+*  danh từ
+- sân (có rào xung quanh)
+=back yard+ sân sau
+- bãi rào (để chăn nuôi)
+- xưởng; kho
+=shipbuilding yard+ xưởng đóng tàu
+=contractor's yard+ xưởng chứa vật liệu
+*  ngoại động từ
+- đưa súc vật vào bãi rào
+
+@yard-master /'jɑ:d,mɑ:stə/
+*  danh từ
+- (ngành đường sắt) người dồn toa
+- người phụ trách nhà kho
+
+@yard-wand /'jɑ:swɔnd/
+*  danh từ
+- thước iat (thước đo dài 1 iat) ((cũng) yardstick)
+
+@yardage /'jɑ:didʤ/
+*  danh từ
+- số đo bằng iat
+
+@yardman /'jɑ:dmən/
+*  danh từ
+- (ngành đường sắt) người làm việc ở nhà kho
+
+@yardstick /'jɑ:dstik/
+*  danh từ
+- (như) yard-wand
+- (nghĩa bóng) tiêu chuẩn so sánh
+
+@yarn /jɑ:n/
+*  danh từ
+- sợi, chỉ
+=yarn of nylon+ sợi ni lông, chỉ ni lông
+- (thông tục) chuyện huyên thiên; chuyện bịa
+=to spin a yarn+ kể chuyện huyên thiên; kể chuyện bịa
+*  nội động từ
+- (thông tục) nói chuyện huyên thiên; kể chuyện bịa
+
+@yarn-beam /'jɑ:nbi:m/
+*  danh từ
+- (nghành dệt) trục cửi
+
+@yarovization /,jɑ:rəvi'zeiʃn/
+*  danh từ
+- (nông nghiệp) sự xuân hoá
+
+@yarovize /'jɑ:rəvaiz/
+*  động từ
+- xuân hoá (hạt giống)
+
+@yarrow /'jærou/
+*  danh từ
+- (thực vật học) cỏ thi
+
+@yashmak /'jæʃmæk/
+*  danh từ
+- mạng che mặt (đàn bà Hồi giáo)
+
+@yaw /jɔ:/
+*  danh từ+ (yawing) /'jɔ:iɳ/
+- sự đi trệch đường (tàu thuỷ); sự bay trệch đường (máy bay)
+*  nội động từ
+- đi trệch đường (tàu thuỷ); bay trệch đường (máy bay)
+
+@yawing /jɔ:/
+*  danh từ+ (yawing) /'jɔ:iɳ/
+- sự đi trệch đường (tàu thuỷ); sự bay trệch đường (máy bay)
+*  nội động từ
+- đi trệch đường (tàu thuỷ); bay trệch đường (máy bay)
+
+@yawl /jɔ:l/
+*  danh từ
+- xuồng yôn (có 4 hoặc 6 mái chèo)
+- thuyền yôn, thuyền hai cột buồm
+
+@yawn /jɔ:n/
+*  danh từ
+- ngáp (người)
+=to give a yawn+ ngáp
+- (kỹ thuật) khe hở
+*  nội động từ
+- há miệng, toác ra, mở ra (đồ vật)
+*  ngoại động từ
+- vừa nói vừa ngáp
+=to yawn goodnight+ vừa ngáp vừa chào để đi ngủ
+="its' very late", he yawned+ anh ta vừa ngáp vừa nói "khuya lắm rồi"
+=to yawn one's head off+ ngáp sái quai hàm
+
+@yawner /'jɔ:nə/
+*  danh từ
+- người hay ngáp
+
+@yawningly /'jɔ:niɳli/
+*  phó từ
+- ngáp; ngáp vặt, buồn ngủ
+
+@yawny /'jɔ:ni/
+*  tính từ
+- (từ Mỹ,nghĩa Mỹ),  (thông tục) làm cho buồn chán đến ngáp được
+
+@yaws /jɔ:z/
+*  danh từ số nhiều
+- (y học) bệnh ghẻ cóc
+
+@yclept /i'klept/
+*  tính từ
+- (từ cổ,nghĩa cổ), (đùa cợt) tên là, tên gọi là
+
+@ye /ji:/
+*  đại từ
+- (từ cổ,nghĩa cổ) (như) you
+*  mạo từ
+- (từ cổ,nghĩa cổ) (như) the (trước một nguyên âm)
+
+@yea /jei/
+*  phó từ & danh từ
+- (từ cổ,nghĩa cổ) (như) yes
+=to answer someone yea+ trả lời ai rằng được
+
+@yean /ji:n/
+*  động từ
+- đẻ (cừu, dê)
+
+@yeanling /'ji:nliɳ/
+*  danh từ
+- cừu con; dê con
+
+@year /jə:/
+*  danh từ
+- năm
+=in the year 1945+ vào năm 1945
+=in the year one+ vào năm đầu công lịch; (nghĩa bóng) ngày xửa ngày xưa
+=lunar year+ năm âm lịch
+=year after year+ nhiều năm ròng
+=year in year out+ suốt năm, cả năm
+=student in his second year+ học sinh đại học năm thứ hai
+- (số nhiều) tuổi
+=to be ten years old+ lên mười (tuổi)
+=the weight of years+ ảnh hưởng của tuổi tác, tuổi già sức yếu
+=well on in years+ đứng tuổi
+=advanced in years+ già, có tuổi
+=to die full of years+ chết già
+=old for one's years+ già trước tuổi
+!it heaps years on me
+- cái đó làm cho tôi chán lắm; cái đó làm phiền tôi
+
+@year's mind /'jə:z'maind/
+*  danh từ
+- lễ cầu kinh một năm sau khi chết; lễ giỗ đầu
+
+@yearling /'jə:liɳ/
+*  danh từ
+- thú vật một tuổi
+*  tính từ
+- một tuổi (thú vật)
+=yearling colt+ ngựa con một tuổi
+
+@yearlong /'jə:,lɔɳ/
+*  tính từ
+- lâu một năm, dài một năm
+
+@yearly /'jə:li/
+*  tính từ & phó từ
+- hằng năm
+=yearly income+ thu nhập hằng năm
+=yearly holiday+ ngày nghỉ hằng năm
+- kéo dài một năm, suốt một năm
+=yearly letting+ sự cho thuê một năm
+
+@yearn /jə:n/
+*  nội động từ
+- mong mỏi, ao ước, khao khát, nóng lòng
+=to yearn for (after) something+ mong mỏi khao khát cái gì
+=to yearn to do something+ nóng lòng muốn làm việc gì
+- thương mến; thương cảm, thương hại
+=to yearn to (towards) someone+ thương hại người nào
+
+@yearning /'jə:niɳ/
+*  danh từ
+- (+ after,  for) sự mong mỏi, sự ao ước, sự khát khao, sự nóng lòng muốn làm (việc gì)
+- (+ to,  towards) sự thương mến; sự thương cảm, sự thương hại
+*  tính từ
+- khát khao, nóng lòng muốn làm (việc gì)
+- thương mến; thương cảm, thương hại
+
+@yeast /ji:st/
+*  danh từ
+- men, men rượu, men bia
+- bọt (rượu lên men, sóng...)
+
+@yeastiness /'ji:stinis/
+*  danh từ
+- tính chất có bọt; sự đầy bọt
+- tính sôi sục, tính bồng bột
+- (nghĩa bóng) tính chất hời hợt, tính chất rỗng tuếch (bài viết...)
+
+@yeasty /'ji:sti/
+*  tính từ
+- (thuộc) men
+=yeasty taste+ vị men
+- có bọt, đầy bọt
+=yeasty sea+ biển đầy bọt
+- sôi sục, bồng bột
+- hời hợt, rỗng tuếch
+=yeasty writing+ bài viết rỗng tuếch
+
+@yegg /jeg/
+*  danh từ
+- (từ Mỹ,nghĩa Mỹ),  (từ lóng) kẻ trộm
+
+@yeggman /'jegmən/
+*  danh từ
+- (từ Mỹ,nghĩa Mỹ),  (từ lóng) (như) yegg
+
+@yeld /jeld/
+*  tính từ
+- không đẻ, nân, xổi
+- không có sữa (bò cái)
+
+@yelk /jelk/
+*  danh từ
+- (từ hiếm,nghĩa hiếm) (như) yolk
+
+@yell /jel/
+*  danh từ
+- sự kêu la, sự la hét
+- tiếng la hét, tiếng thét lác; (từ Mỹ,nghĩa Mỹ) tiếng la hò động viên (trong những cuộc thi đấu thể thao...)
+*  động từ
+- kêu la, la hét, thét lác
+=to yell with pain+ kêu la vì đau đớn
+=to yell with laughter+ cười rầm lên
+=to yell out abuses+ chửi mắng om sòm
+
+@yellow /'jelou/
+*  tính từ
+- vàng
+=to grow (turn, get, become) yellow+ vàng ra, hoá vàng; úa vàng (lá)
+- ghen ghét, ghen tị, đố kỵ, ngờ vực
+=to cast a yellow look at+ nhìn (ai) bằng con mắt ghen ghét
+- (thông tục) nhút nhát, nhát gan
+- (từ Mỹ,nghĩa Mỹ) vàng; có tính chất giật gân (báo chí)
+*  danh từ
+- màu vàng
+- bướm vàng
+- (số nhiều) tính ghen ghét, tính ghen tị, tính đố kỵ
+- (thông tục) tính nhút nhát, tính nhát gan
+- (số nhiều) (y học) bệnh vàng da
+*  động từ
+- vàng ra, hoá vàng; nhuốm vàng, nhuộm vàng
+
+@yellow boy /'jelou'bɔi/
+*  danh từ
+- (từ lóng) đồng tiền vàng
+
+@yellow dog /'jelou'dɔg/
+*  danh từ
+- (từ Mỹ,nghĩa Mỹ) người đê tiện, người đáng khinh
+
+@yellow fever /'jelou'fi:və/
+*  danh từ
+- (y học) bệnh sốt vàng
+
+@yellow flag /'jelou'flæg/
+*  danh từ
+- (hàng hải) cờ vàng, cờ kiểm dịch
+
+@yellow jack /'jelou'dʤæk/
+*  danh từ (từ lóng)
+- (như) yellow_flag
+- (như) yellow_fever
+
+@yellow jacket /'jelou'dʤækit/
+*  danh từ
+- áo bào vàng, hoàng bào (của nhà vua ở Trung quốc)
+
+@yellow press /'jelou'pres/
+*  danh từ
+- báo vàng
+
+@yellow spot /'jelou'spɔt/
+*  danh từ
+- (giải phẫu) điểm vàng
+
+@yellow wood /'jelou'wud/
+*  danh từ (thực vật học)
+- cây hoàng đàn
+- gỗ hoàng đàn
+
+@yellow-bird /'jeloubə:d/
+*  danh từ
+- (động vật học) chim sẻ cánh vàng
+
+@yellow-dog fund /'jeloudɔg'fʌnd/
+*  danh từ
+- (từ Mỹ,nghĩa Mỹ),  (từ lóng) quỹ đen, quỹ bí mật
+
+@yellowback /'jeloubæk/
+*  danh từ
+- tiểu thuyết rẻ tiền
+- tiểu thuyết bìa vàng (của Pháp)
+
+@yellowish /'jelouiʃ/ (yellowy) /'jeloui/
+*  tính từ
+- hơi vàng, vàng vàng
+
+@yellowness /'jelounis/
+*  danh từ
+- màu vàng
+- (y học) nước da vàng
+
+@yellowy /'jelouiʃ/ (yellowy) /'jeloui/
+*  tính từ
+- hơi vàng, vàng vàng
+
+@yelp /jelp/
+*  danh từ
+- tiếng kêu ăng ẳng (chó)
+*  nội động từ
+- kêu ăng ẳng
+
+@yen /jen/
+*  danh từ
+- đồng yên (tiền Nhật bản)
+*  danh từ
+- (từ Mỹ,nghĩa Mỹ),  (từ lóng) sự thèm muốn, sự thèm thuồng
+*  nội động từ
+- (từ Mỹ,nghĩa Mỹ),  (từ lóng) ((thường) + for) thèm, thèm thuồng
+
+@yeoman /'joumən/
+*  danh từ
+- tiểu chủ (ở nông thôn, có ít ruộng đất cày cấy lấy)
+- kỵ binh nghĩa dũng
+- (hàng hải) yeoman of signals hạ sĩ quan ngành thông tin tín hiệu
+- (từ Mỹ,nghĩa Mỹ) hạ sĩ quan làm việc văn phòng
+- (sử học) địa chủ nhỏ
+!to do yeoman('s) service
+- giúp đỡ tận tình trong lúc nguy nan
+
+@yeomanry /'joumənri/
+*  danh từ
+- tầng lớp tiểu chủ (ở nông thôn)
+- (quân sự) quân kỵ binh nghĩa dũng
+- (sử học) tầng lớp địa chủ nhỏ
+
+@yes /jes/
+*  phó từ
+- vâng, phải, dạ, được, ừ, có, có chứ
+=to say yes or no+ nói có hoặc không; nói được hay không
+=You didn't see him? - yes I did+ anh không thấy nó à? có chứ
+*  danh từ,  số nhiều yeses
+- tiếng vâng dạ, tiếng ừ phải
+
+@yes-man /'jesmæn/
+*  danh từ
+- (thông tục) người cái gì cũng ừ, người ba phải
+
+@yeses /jes/
+*  phó từ
+- vâng, phải, dạ, được, ừ, có, có chứ
+=to say yes or no+ nói có hoặc không; nói được hay không
+=You didn't see him? - yes I did+ anh không thấy nó à? có chứ
+*  danh từ,  số nhiều yeses
+- tiếng vâng dạ, tiếng ừ phải
+
+@yester-eve /'jestər'i:v/ (yester-even) /'jestər'i:vən/ (yester-evening) /'jestə'i:vniɳ/
+*  phó từ & danh từ
+- (thơ ca) chiều qua, tối hôm qua
+
+@yester-even /'jestər'i:v/ (yester-even) /'jestər'i:vən/ (yester-evening) /'jestə'i:vniɳ/
+*  phó từ & danh từ
+- (thơ ca) chiều qua, tối hôm qua
+
+@yester-evening /'jestə'i:vniɳ/
+*  phó từ & danh từ
+- (thơ ca) (như) yester-eve
+
+@yester-year /'jestə'jə:/
+*  phó từ & danh từ
+- (thơ ca) năm ngoái, năm trước
+
+@yesterday /'jestədi/
+*  phó từ & danh từ
+- hôm qua
+=yesterday morning+ sáng hôm sau
+=the day before yesterday+ hôm kia
+=yesterday week+ tám hôm trước
+
+@yesternight /'jestə'nait/
+*  phó từ & danh từ
+- (thơ ca) tối hôm trước, tối qua
+
+@yestreen /jes'tri:n/
+*  phó từ & danh từ
+- (thơ ca) (như) yester-eve
+
+@yet /jet/
+*  phó từ
+- còn, hãy còn, còn nữa
+=we have ten minutes yet+ chúng ta còn mười phút nữa
+=I remember him yet+ tôi còn nhớ anh ta
+=while he was yet asleep+ trong khi anh ta còn đang ngủ
+=there is much yet to do+ hãy còn nhiều việc phải làm lắm
+=you mush work yet harder+ anh còn phải làm việc tích cực hơn nữa
+=I have a yet more important thing to say+ tôi còn có một điều quan trọng hơn nữa để nói
+- bây giờ, lúc này
+=can't you tell me yet?+ bây giờ anh có thể nói với tôi được chưa?
+=we needn't do it just yet+ chúng ta chẳng cần làm điều đó lúc này
+- tuy thế, tuy vậy, nhưng mà, mà, song
+=it is strange, yet true+ thật là kỳ lạ nhưng mà đúng sự thực
+=I agree with you, but yet I can't consent+ tôi đồng ý với anh song tôi không thể nào thoả thuận được
+- dù sao, dù thế nào
+=he will do it yet+ dù thế nào nữa nó cũng sẽ làm điều đó
+- (từ Mỹ,nghĩa Mỹ) vả lại, hơn nữa
+=much yet remains to be said+ vả lại còn nhiều điều phải nói
+!as yet
+- cho đến nay, cho đến bây giờ
+=he has not known our abilities as yet+ cho đến nay hắn chưa biết khả năng của chúng ta
+!nor yet
+- mà cũng không
+!not yet
+- chưa, còn chưa
+=he has not yet finished his task+ nó chưa làm xong bài
+*  liên từ
+- nhưng mà, song, ấy vậy mà, tuy thế, tuy nhiên
+=he worked hard, yet he failed+ hắn ta làm việc tích cực ấy thế mà lại trượt
+
+@yew /ju:/
+*  danh từ
+- (thực vật học) cây thuỷ tùng ((cũng) yew-tree)
+- gỗ thuỷ tùng
+
+@yiddish /'jidiʃ/
+*  danh từ
+- (Yiddish) tiếng I-đít (một thử tiếng Đức cổ của người Do thái ở Trung và Đông Âu)
+
+@yield /ji:ld/
+*  danh từ
+- sản lượng, hoa lợi (thửa ruộng); hiệu suất (máy...)
+=in full yield+ có hiệu suất cao; đang sinh lợi nhiều
+- (tài chính) lợi nhuận, lợi tức
+- (kỹ thuật) sự cong, sự oằn
+*  ngoại động từ
+- (nông nghiệp) sản xuất, sản ra, mang lại
+=a tree yields fruit+ cây sinh ra quả
+=this land yields good crops+ miếng đất này mang lại thu hoạch tốt
+- (tài chính) sinh lợi
+=to yield 10%+ sinh lợi 10 qịu nhường lại cho, nhượng lại cho
+=to yield precedence to+ nhường bước cho
+=to yield submission+ chịu khuất phục
+=to yield consent+ bằng lòng
+- chịu thua, chịu nhường
+=to yield a point in a debate+ chịu thua một điểm trong một cuộc tranh luận
+- (quân sự) giao, chuyển giao
+*  nội động từ
+- (nông nghiệp); (tài chính) sinh lợi
+- đầu hàng, quy phục, hàng phục, khuất phục
+=to be determined never to yield+ cương quyết không đầu hàng
+=to yield to force+ khuất phục trước sức mạnh
+- chịu thua, chịu lép, nhường
+=to yield to none+ chẳng nhường ai, không chịu thua ai
+- cong, oằn
+=to yield under a weight+ cong (oằn) dưới sức nặng
+!to yield up
+- bỏ
+=to yield oneself up to+ dấn thân vào
+!to yield up the ghost
+- chết
+
+@yield capacity /'ji:ldkə'pæsiti/
+*  danh từ
+- năng suất
+
+@yield stress /'ji:ld'stres/
+*  danh từ
+- (kỹ thuật) ứng suất đàn hồi
+
+@yielding /'ji:ldiɳ/
+*  tính từ
+- mềm, dẻo, đàn hồi
+- mềm mỏng, hay nhân nhượng, dễ tính
+- (nông nghiệp); (tài chính) đang sinh lợi
+- (kỹ thuật) cong, oằn
+
+@yip /jip/
+*  danh từ
+- (từ Mỹ,nghĩa Mỹ),  (thông tục) sự cãi lại
+*  nội động từ
+- (từ Mỹ,nghĩa Mỹ),  (thông tục) cãi lại
+
+@ylang-ylang /'i:læɳ'i:læɳ/
+*  danh từ
+- (thực vật học) cây ngọc lan tây
+- dầu ilang ilang
+
+@yo-heave-ho /'jouhi:v'hou/ (yoho) /jou'hou/
+*  thán từ
+- dô hò!, hò dô ta! (tiếng hò kéo dây)
+
+@yodel /'joudl/
+*  danh từ
+- sự hát đổi giọng trầm sang giọng kim
+- bài hò (của những người miền núi Thuỵ sĩ)
+*  động từ
+- hát đổi giọng trầm sang giọng kim (theo phong cách hát của những người dân miền núi Thuỵ sĩ)
+
+@yoga /'jougə/ (yogism) /'jougizm/
+*  danh từ
+- (triết học); (tôn giáo) thuyết du già
+
+@yoghurt /'jɑ:ə:t/ (yoghurt) /'jougə:t/ (yogurt) /'jougə:t/
+*  danh từ
+- sữa chua
+
+@yogi /'jougi/
+*  danh từ
+- người theo thuyết du già
+
+@yogism /'jougə/ (yogism) /'jougizm/
+*  danh từ
+- (triết học); (tôn giáo) thuyết du già
+
+@yogurt /'jɑ:ə:t/ (yoghurt) /'jougə:t/ (yogurt) /'jougə:t/
+*  danh từ
+- sữa chua
+
+@yoke /jouk/
+*  danh từ
+- sữa chua yoke /jouk/
+*  danh từ
+- ách (buộc trâu bò); cặp trâu bò buộc cùng ách
+- đòn gánh
+- cầu vai, lá sen (áo)
+- móc chung
+- cái kẹp (bắt hai ống nước)
+- (nghĩa bóng) mối ràng buộc (giữa vợ chồng); ách áp bức, gông xiềng
+=to throw off the yoke+ đánh đổ ách áp bức, phá bỏ gông xiềng
+!to pass (come) under the yoke
+- chịu hàng, chịu nhượng bộ
+*  ngoại động từ
+- thẳng vào ách, lồng ách vào (bò, ngựa)
+- cặp vào nhau, nối nhau (hai ống nước)
+- (nghĩa bóng) ràng buộc, nối; ép buộc, bắt phục tùng
+*  nội động từ
+- (+ with) bị buộc cặp với
+- (+ together) bị ràng buộc với nhau, kết lại với nhau
+
+@yoke-bone /'joukboun/
+*  danh từ
+- (y học) xương gò má
+
+@yokefellow /'jouk,felou/ (yokemate) /'joukmeit/
+*  danh từ
+- bạn nối khố
+- vợ chồng
+
+@yokel /'joukəl/
+*  danh từ
+- người nông thôn, người quê mùa
+
+@yokemate /'jouk,felou/ (yokemate) /'joukmeit/
+*  danh từ
+- bạn nối khố
+- vợ chồng
+
+@yolk /jouk/
+*  danh từ
+- lòng đỏ trứng; (sinh vật học) noãn hoàng
+- mỡ lông cừu
+
+@yolky /'jouki/
+*  tính từ
+- (thuộc) lòng đỏ trứng; giống lòng đỏ trứng
+- (thuộc) mỡ lông cừu; có chất mỡ lông cừu
+
+@yon /jɔn/
+*  tính từ & phó từ
+- (từ cổ,nghĩa cổ); (thơ ca) (như) yonder
+=as far as yon tree+ xa tận cái cây đằng kia
+
+@yonder /'jɔndə/
+*  tính từ & phó từ
+- kia, đằng kia, đằng xa kia
+=yonder group of trees+ khóm cây đằng xa kia
+
+@yore /jɔ:/
+*  phó từ
+- of yore xưa, ngày xưa
+=in days of yore+ thời xưa
+
+@you /ju:/
+*  đại từ
+- anh, chị, ông, bà, ngài, ngươi, mày; các anh, các chị, các ông, các bà, các ngài, các người, chúng mày
+=you all know that...+ tất cả các anh đều biết rằng...
+=he spoke of you+ hắn ta nói về anh
+=if I were you+ nếu tôi là anh
+=you there what is your name?+ anh kia, tên anh là gì?
+- ai, người ta
+=you never can tell+ ai biết đâu được
+
+@you'd /ju:d/
+*  (thông tục) (viết tắt) của you would,  you had
+
+@you'll /ju:l/
+*  (thông tục) (viết tắt) của you will,  you shall
+
+@you're /juə/
+*  (viết tắt) của you are
+
+
+@you've /ju:v/
+*  (thông tục) (viết tắt) của you have
+
+@young /jʌɳ/
+*  tính từ
+- trẻ, trẻ tuổi, thiếu niên, thanh niên
+=a young man+ một thanh niên
+=young people+ thanh niên
+=his (her) young woman (man)+ người yêu của nó
+=a young family+ gia đình có nhiều con nhỏ
+=a young person+ người đàn bà lạ trẻ tuổi thuộc tầng lớp dưới (trong ngôn ngữ những người ở của các gia đình tư sản quý tộc Anh)
+=the young person+ những người còn non trẻ ngây thơ cần giữ gìn không cho nghe (đọc) những điều tục tĩu
+- non
+=young tree+ cây non
+- (nghĩa bóng) non trẻ, trẻ tuổi
+=a young republic+ nước cộng hoà trẻ tuổi
+=he is young for his age+ nó còn non so với tuổi, nó trẻ hơn tuổi
+- (nghĩa bóng) non nớt, mới mẻ, chưa có kinh nghiệm
+=young in mind+ trí óc còn non nớt
+=young in bussiness+ chưa có kinh nghiệm kinh doanh
+- (nghĩa bóng) còn sớm, còn ở lúc ban đầu, chưa muộn, chưa quá, chưa già
+=the night is young yet+ đêm chưa khuya
+=young moon+ trăng non
+=autumn is still young+ thu hãy còn đang ở lúc đầu mùa
+- của tuổi trẻ, của thời thanh niên, của thời niên thiếu, (thuộc) thế hệ trẻ
+=young hope+ hy vọng của tuổi trẻ
+=in one's young days+ trong thời kỳ thanh xuân, trong lúc tuổi còn trẻ
+- (thông tục) con, nhỏ
+=young Smith+ thằng Xmít con, cậu Xmít
+*  danh từ
+- thú con, chim con (mới đẻ)
+=with young+ có chửa (thú)
+
+@younger /'jʌɳgə/
+*  tính từ
+- út
+=younger brother+ em trai út
+=younger son+ con trai út
+- em
+= Edison the younger+ Ê-đi-xơn em
+
+@youngish /'jʌɳiʃ/
+*  tính từ
+- khá trẻ, hơi trẻ
+
+@youngling /'jʌɳliɳ/
+*  danh từ
+- (thơ ca) thanh niên, thiếu nữ
+- thú con, chim con
+=younglings of the flock+ những con cừu non
+
+@youngster /'jʌɳstə/
+*  danh từ
+- người thanh niên; đứa bé con; đứa con trai
+
+@younker /'jʌɳkə/
+*  danh từ
+- (từ cổ,nghĩa cổ),  (thông tục) (như) youngster
+- nhà quý tộc trẻ tuổi (Đức)
+
+@your /jɔ:/
+*  tính từ sở hữu
+- của anh, của chị, của ngài, của mày; của các anh, của các chị, của các ngài, của chúng mày
+=show me your hands+ đưa tay anh cho tôi xem
+=is this your own book?+ đây có phải là quyển sách của anh không?
+
+@yours /jɔ:z/
+*  đại từ sở hữu
+- cái của anh, cái của chị, cái của ngài, cái của mày; cái của các anh, cái của các chị, cái của các ngài, cái của chúng mày
+=this book is yours+ quyển sách này là của anh
+=a friend of yours+ một trong những người bạn của anh
+=that is no business of yours+ đó không phải là việc của anh, việc đó không quan hệ gì đến anh
+=you and yours+ ông (anh...) và gia đình (tài sản) của ông (anh...)
+=yours is to hand+ thư của anh đã đến tay tôi
+=what is yours?+ (thông tục) còn anh thì uống gì?
+!Yours truly (faithfully, sincerely)
+- bạn chân thành của anh (chị...) (công thức cuối thư)
+
+@yourself /jɔ:'self/
+*  đại từ phản thân (số nhiều yourselves)
+- tự anh, tự chị, chính anh, chính mày, tự mày, tự mình
+=you mush wash yourself+ mày phải tắm rửa đi
+=you yourself said so; you said so yourself+ chính anh đã nói thế
+=you are not quite yourself today+ hôm nay anh không được bình thường
+=help yourself to some more meat+ mời anh xơi thêm thịt
+=how's yourself?+ (từ lóng) còn anh có khoẻ không?
+=be yourself!+ hãy trấn tĩnh lại!
+![all] by yourself
+- một mình
+=finish it by yourself+ hãy làm xong cái đó lấy một mình
+=you'll be left by yourself+ anh bị bỏ lại một mình
+
+@yourselves /jɔ:'self/
+*  đại từ phản thân (số nhiều yourselves)
+- tự anh, tự chị, chính anh, chính mày, tự mày, tự mình
+=you mush wash yourself+ mày phải tắm rửa đi
+=you yourself said so; you said so yourself+ chính anh đã nói thế
+=you are not quite yourself today+ hôm nay anh không được bình thường
+=help yourself to some more meat+ mời anh xơi thêm thịt
+=how's yourself?+ (từ lóng) còn anh có khoẻ không?
+=be yourself!+ hãy trấn tĩnh lại!
+![all] by yourself
+- một mình
+=finish it by yourself+ hãy làm xong cái đó lấy một mình
+=you'll be left by yourself+ anh bị bỏ lại một mình
+
+@youth /ju:θ/
+*  danh từ
+- tuổi trẻ, tuổi xuân, tuổi thanh niên, tuổi niên thiếu
+=the days of youth+ thời kỳ niên thiếu
+=from youth upwards+ từ lúc còn trẻ, từ nhỏ
+=the enthusiasm of youth+ nhiệt tình của tuổi trẻ
+- (nghĩa bóng) buổi ban đầu; thời non trẻ
+=the youth of civilization+ buổi ban đầu của nền văn minh
+=the youth of a nation+ thời kỳ non trẻ của một quốc gia
+- thanh niên; tầng lớp thanh niên, lứa tuổi thanh niên
+=a promising youth+ một thanh niên đầy hứa hẹn
+=a bevy of youths+ một đám thanh niên
+=the youth of one country+ lứa tuổi thanh niên của một nước
+=The Communist Youth League+ Đoàn thanh niên cộng sản
+=The Ho Chi Minh Labour Youth Union+ Đoàn thanh niên lao động Hồ Chí Minh
+
+@youth hostel /'ju:θ'hɔstəl/
+*  danh từ
+- quán trọ đêm cho những người đi du lịch
+
+@youthful /'ju:θful/
+*  tính từ
+- trẻ, trẻ tuổi
+=to look youthful+ trông còn trẻ
+- (thuộc) tuổi thanh niên, (thuộc) tuổi trẻ
+
+@youthfulness /'ju:θfulnis/
+*  danh từ
+- tính chất thanh niên, tính chất trẻ, tính chất trẻ tuổi; tính chất trẻ trung
+
+@yowl /jaul/
+*  danh từ
+- tiếng ngao (mèo); tiếng tru (chó)
+*  nội động từ
+- ngao (mèo); tru (chó)
+
+@yoyo /'joujou/
+*  danh từ
+- cái yôyô (đồ chơi trẻ con)
+
+@yperite /'i:pərait/
+*  danh từ
+- Yperit (hơi độc)
+
+@ytterbium /i'tə:bjəm/
+*  danh từ
+- (hoá học) Ytebi
+
+@yttrium /i'tə:bjəm/
+*  danh từ
+- (hoá học) Ytri
+
+@yucca /'jʌkə/
+*  danh từ
+- (thực vật học) cây ngọc giá
+
+@yugoslav /'ju:gou'sla:v/ (Yugoslavian) /'ju:gou'sla:vjən/
+*  tính từ
+- (Yugoslavian) (thuộc) Nam tư
+*  danh từ
+- (Yugoslavian) người Nam tư
+
+@yugoslavian /'ju:gou'sla:v/ (Yugoslavian) /'ju:gou'sla:vjən/
+*  tính từ
+- (Yugoslavian) (thuộc) Nam tư
+*  danh từ
+- (Yugoslavian) người Nam tư
+
+@yule /ju:l/
+*  danh từ
+- lễ Nô-en
+
+@yule-log /'ju:llɔg/
+*  danh từ
+- khúc củi đốt ngày lễ Nô-en
+
+@yule-tide /'ju:ltaid/
+*  danh từ
+- kỳ lễ Nô-en
+
+@yummy /'jʌmi/
+*  thán từ
+- (từ Mỹ,nghĩa Mỹ),  (thông tục) ngon tuyệt!

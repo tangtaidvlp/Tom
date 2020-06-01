@@ -10,19 +10,13 @@ import android.view.animation.Animation
 import android.widget.TextView
 import androidx.core.animation.addListener
 import com.teamttdvlp.memolang.R
+import com.teamttdvlp.memolang.data.model.entity.flashcard.Flashcard
+import com.teamttdvlp.memolang.data.model.entity.flashcard.FlashcardSet
 import com.teamttdvlp.memolang.databinding.ActivitySearchOnlineBinding
-import com.teamttdvlp.memolang.database.MemoLangSqliteDataBase
-import com.teamttdvlp.memolang.database.sql.repository.FlashcardRepository
-import com.teamttdvlp.memolang.database.sql.repository.UserRepository
-import com.teamttdvlp.memolang.database.sql.repository.UserSearchHistoryRepository
 import com.teamttdvlp.memolang.model.CardType
-import com.teamttdvlp.memolang.model.RecentAddedFlashcardManager
-import com.teamttdvlp.memolang.model.entity.Language.Companion.LANG_DIVIDER
+import com.teamttdvlp.memolang.data.model.entity.flashcard.SetNameUtils
 import com.teamttdvlp.memolang.view.activity.iview.SearchVocabularyView
-import com.teamttdvlp.memolang.view.adapter.RCVChooseLanguageAdapter
-import com.teamttdvlp.memolang.view.adapter.RCVChooseLanguageAdapter.UserSavingAssitant.Companion.USER_REPOSITORY_POS
-import com.teamttdvlp.memolang.view.adapter.RCVRecent_Search_FlashcardAdapter
-import com.teamttdvlp.memolang.view.adapter.RCVSimpleListAdapter2
+import com.teamttdvlp.memolang.view.adapter.*
 import com.teamttdvlp.memolang.view.base.BaseActivity
 import com.teamttdvlp.memolang.view.helper.*
 import com.teamttdvlp.memolang.viewmodel.SearchOnlineViewModel
@@ -35,8 +29,6 @@ class SearchOnlineActivity : BaseActivity<ActivitySearchOnlineBinding, SearchOnl
     private val TYPE_NONE = 131073
 
     private val TYPE_TEXT = 1
-
-    private val THE_TIME_THAT_EDIT_VIEWGROUP_APPEAR = 5000L
 
     private var RED : Int = 0
 
@@ -61,14 +53,14 @@ class SearchOnlineActivity : BaseActivity<ActivitySearchOnlineBinding, SearchOnl
     private lateinit var hideTransErrorAnmtr  : Animator
 
 
-    private val AnmtrSetChooseLangAppear = AnimatorSet()
+    private val anmtrSetChooseLangAppear = AnimatorSet()
 
-    private val AnmtrSetChooseLangDisappear = AnimatorSet()
+    private val anmtrSetChooseLangDisappear = AnimatorSet()
 
 
-    private val AnmtrSetCardInfoAppear = AnimatorSet()
+    private val anmtrSetCardInfoAppear = AnimatorSet()
 
-    private val AnmtrSetCardInfoDisappear = AnimatorSet()
+    private val anmtrSetCardInfoDisappear = AnimatorSet()
 
     lateinit var btnAddAppearAnimator : Animator
 
@@ -84,34 +76,22 @@ class SearchOnlineActivity : BaseActivity<ActivitySearchOnlineBinding, SearchOnl
     @Inject
     lateinit var showLangSelectionErrorAnmtn : Animation
 
-    lateinit var rcvRecentSearchFlashcardAdapter: RCVRecent_Search_FlashcardAdapter
+    lateinit var rcvRecentSearchedFlashcardAdapter: RCVRecent_Search_FlashcardAdapter
     @Inject set
 
     lateinit var rcvChooseLanguageAdapter: RCVChooseLanguageAdapter
     @Inject set
 
-    lateinit var rcvRecentChosenLanguageAdapter: RCVChooseLanguageAdapter
+    lateinit var rcvRecentChosenLanguageAdapter: RCVRecentUsedLanguageAdapter
     @Inject set
 
-    lateinit var rcvChooseTextTypeAdapter : RCVSimpleListAdapter2
+    lateinit var rcvChooseCardTypeAdapter : RCVSimpleListAdapter2
     @Inject set
 
-    lateinit var rcvChooseSetNameAdapter : RCVSimpleListAdapter2
+    lateinit var rcvChooseSetNameAdapter : RCVSimpleListChooseSetNameAdapter
     @Inject set
 
-    lateinit var databaseManager: MemoLangSqliteDataBase
-    @Inject set
-
-    lateinit var flashcardRepository : FlashcardRepository
-    @Inject set
-
-    lateinit var userRepository : UserRepository
-    @Inject set
-
-    lateinit var searchHistoryRepository: UserSearchHistoryRepository
-    @Inject set
-
-    lateinit var recentAddedFlashcardManager: RecentAddedFlashcardManager
+    lateinit var viewModelProviderFactory : ViewModelProviderFactory
     @Inject set
 
     private var isInSearchingMode = false
@@ -128,33 +108,24 @@ class SearchOnlineActivity : BaseActivity<ActivitySearchOnlineBinding, SearchOnl
 
     private var previousText = ""
 
-
+    private var txtTranslationHintHolder = ""
 
     override fun getLayoutId(): Int  = R.layout.activity_search_online
 
-    override fun takeViewModel(): SearchOnlineViewModel = getActivityViewModel() {
-        SearchOnlineViewModel(
-            this@SearchOnlineActivity.application,
-            databaseManager,
-            recentAddedFlashcardManager,
-            userRepository,
-            flashcardRepository,
-            searchHistoryRepository
-        )
-    }
+    override fun takeViewModel(): SearchOnlineViewModel = getActivityViewModel(viewModelProviderFactory)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         viewModel.setUpView(this)
-        viewModel.getAllSearchHistoryInfo {
-            rcvRecentSearchFlashcardAdapter.setData(it)
-        }
+    }
+
+    override fun onPause() {
+        super.onPause()
+        viewModel.saveSearchHistory()
     }
 
     override fun initProperties() { dB.apply {
-        dB.viewModelS = viewModel
-        txtSourceLang.text = viewModel.getUser().recentSourceLanguage
-        txtTargetLang.text = viewModel.getUser().recentTargetLanguage
+        dB.vwModel = viewModel
 
         RED = resources.getColor(R.color.app_red)
         HINT_COLOR = resources.getColor(R.color.hint_color)
@@ -162,30 +133,49 @@ class SearchOnlineActivity : BaseActivity<ActivitySearchOnlineBinding, SearchOnl
 
     override fun addViewControls() { dB.apply {
 
-        txtTranslation.hint = "Your translation here (${txtTargetLang.text})"
-        val recentUseFlashcardSet = viewModel.getUser().recentUseFlashcardSet
-        edtPanelSetName.setText(recentUseFlashcardSet)
+        // RECENT USED LANGUAGES
+        txtSourceLang.text = viewModel.getCurrentSourceLanguage()
+        txtTargetLang.text = viewModel.getCurrentTargetLanguage()
+
+        // LASTED USED FLASHCARD SET
+        updateTxtTranslationHintHolder(txtTargetLang.text.toString())
+        txtTranslation.hint = txtTranslationHintHolder
+        val lastedUsedFlashcardSet = viewModel.getLastedUsedFlashcardSet()
+        edtPanelSetName.setText(lastedUsedFlashcardSet)
 
         // RECENT SEARCH FLASHCARDS
-        rcvRecentSearchFlashcards.adapter = rcvRecentSearchFlashcardAdapter
+        rcvRecentSearchedFlashcards.adapter = rcvRecentSearchedFlashcardAdapter
+        viewModel.getAllRecentOnlineSearchedFlashcard { allRecentSearchedFlashcard ->
+            rcvRecentSearchedFlashcardAdapter.setData(allRecentSearchedFlashcard)
+        }
 
         // CHOOSE LANGUAGE
         layoutChooseLang.rcvChooseLanguage.adapter = rcvChooseLanguageAdapter
-        rcvChooseLanguageAdapter.assistant = RCVChooseLanguageAdapter.UserSavingAssitant()
-        rcvChooseLanguageAdapter.assistant!!.addAssistant(USER_REPOSITORY_POS, userRepository as Object)
 
         // RECENT CHOSEN LANUGAES
         layoutChooseLang.rcvRecentChosenLanguage.adapter = rcvRecentChosenLanguageAdapter
-        rcvRecentChosenLanguageAdapter.setData(viewModel.getUser().recentUseLanguages)
-
+        viewModel.getUserUsedLanguageList(onGet = {
+            rcvRecentChosenLanguageAdapter.setData(it)
+        })
 
         // CHOOSE CARD TYPE
-        rcvChooseTextTypeAdapter.setData(CardType.TYPE_LIST)
-        rcvChooseType.adapter = rcvChooseTextTypeAdapter
+        val cardTypeList = ArrayList<String>().apply {
+            addAll(CardType.TYPE_LIST)
+            for (type in viewModel.getUserOwnCardTypes()) {
+                if (contains(type)) {
+                    remove(type)
+                }
+                add(0, type)
+            }
+        }
+        rcvChooseCardTypeAdapter.setData(cardTypeList)
+        rcvChooseCardType.adapter = rcvChooseCardTypeAdapter
 
         // CHOOSE SET NAME
-        rcvChooseSetNameAdapter.setData(viewModel.getUser().flashcardSetNames)
         rcvChooseSetName.adapter = rcvChooseSetNameAdapter
+        viewModel.getAllFlashcardSetWithNOCardList { flashcardSetList ->
+            rcvChooseSetNameAdapter.setData(flashcardSetList)
+        }
     }}
 
     override fun addViewEvents() { dB.apply {
@@ -212,7 +202,7 @@ class SearchOnlineActivity : BaseActivity<ActivitySearchOnlineBinding, SearchOnl
             // Because onFocusChangeListener also calls onTextChangeListener
             // So, making this helps us not translating the same text
             // Avoiding getting some bugs as well as Saving Translation Storage
-            val isTranslatingSameText = (text.trim().equals(previousText))
+            val isTranslatingSameText = (text.trim() == previousText)
             if (isTranslatingSameText) return@addTextChangeListener
             previousText = text.trim()
 
@@ -226,16 +216,16 @@ class SearchOnlineActivity : BaseActivity<ActivitySearchOnlineBinding, SearchOnl
 
         txtSourceLang.setOnClickListener {
             selectedLanguageTextView = txtSourceLang
-            AnmtrSetChooseLangAppear.start()
+            anmtrSetChooseLangAppear.start()
         }
 
         txtTargetLang.setOnClickListener {
             selectedLanguageTextView = txtTargetLang
-            AnmtrSetChooseLangAppear.start()
+            anmtrSetChooseLangAppear.start()
         }
 
         layoutChooseLang.imgBlackBackgroundChooseLanguage.setOnClickListener {
-            AnmtrSetChooseLangDisappear.start()
+            anmtrSetChooseLangDisappear.start()
         }
 
         rcvChooseLanguageAdapter.setOnItemClickListener { language ->
@@ -246,39 +236,42 @@ class SearchOnlineActivity : BaseActivity<ActivitySearchOnlineBinding, SearchOnl
             onChooseLanguage(language)
         }
 
-        rcvRecentSearchFlashcardAdapter.setOnItemClickListener { card ->
+        rcvRecentSearchedFlashcardAdapter.setOnItemClickListener { card ->
             dB.layoutCardInfo.beingViewedCard = card
             hideVirtualKeyboard()
-            AnmtrSetCardInfoAppear.start()
+            anmtrSetCardInfoAppear.start()
         }
 
 
         layoutCardInfo.imgBlackBackgroundSeeCardInfo.setOnClickListener {
-            AnmtrSetCardInfoDisappear.start()
+            anmtrSetCardInfoDisappear.start()
         }
 
-        btnTapToSearch.setOnClickListener {
+        btnNavigateToSearchZone.setOnClickListener {
             edtText.requestFocus()
             showVirtualKeyboard()
-            btnTapToSearch.disappear()
+            btnNavigateToSearchZone.goGONE()
         }
 
         btnAdd.setOnClickListener {
-            edtPanelText.setText(edtText.text)
+            edtPanelText.text = edtText.text
             edtPanelTranslation.setText(txtTranslation.text)
 
             addFCPanelAppear.start()
             hideVirtualKeyboard()
-            rcvRecentSearchFlashcards.smoothScrollToPosition(0)
+            rcvRecentSearchedFlashcards.smoothScrollToPosition(0)
 
             edtPanelSetName.hint = "Default (${getDefaultSetName()})"
+            val frontLanguage = txtSourceLang.text.toString()
+            val backLanguage = txtTargetLang.text.toString()
+            rcvChooseSetNameAdapter.filtFlashcardSetByLanguagePair(frontLanguage, backLanguage)
         }
 
         imgBlackBgAddFlashcardPanel.setOnClickListener {
             addFCPanelDisappear.start()
             btnAddAppearAnimator.start()
-            rcvChooseType.disappear()
-            rcvChooseSetName.disappear()
+            rcvChooseCardType.goGONE()
+            rcvChooseSetName.goGONE()
         }
 
         btnPanelAdd.setOnClickListener {
@@ -291,39 +284,43 @@ class SearchOnlineActivity : BaseActivity<ActivitySearchOnlineBinding, SearchOnl
             val example = edtPanelExample.text.toString()
             val meanOfExample = edtPanelMeanExample.text.toString()
 
-            viewModel.addFlashcard(
-                sourceLang, targetLang, setName, type,
-                text, translation, example, meanOfExample, "") { newFlashcard ->
-                rcvRecentSearchFlashcardAdapter.addFlashcardAtTheFirstPosition(newFlashcard)
-            }
+            val newCard = Flashcard(0, setOwner = setName,
+                text = text, translation = translation, frontLanguage = sourceLang, backLanguage = targetLang,
+                example = example,meanOfExample = meanOfExample, type = type)
+
+            viewModel.addFlashcard_And_UpdateUserInfo(newCard, onAddSuccess = { newFlashcard ->
+                rcvRecentSearchedFlashcardAdapter.addFlashcardAtTheFirstPosition(newFlashcard)
+            })
 
             imgBlackBgAddFlashcardPanel.performClick()
-            btnTapToSearch.appear()
-            rcvChooseSetNameAdapter.addToFirst(if (setName.isNotEmpty()) setName else getDefaultSetName())
+            btnNavigateToSearchZone.goVISIBLE()
+            rcvChooseSetNameAdapter.addToFirst(FlashcardSet(setName, sourceLang, targetLang))
         }
 
         btnSwapLanguage.setOnClickListener {
+            txtTranslation.text = ""
+
+            // Swap
+            val sourceLang = txtTargetLang.text.toString() + ""
+            val targetLang = txtSourceLang.text.toString() + ""
+            val text = edtText.text.toString()
+
+            translate(text, sourceLang, targetLang)
 
             txtSourceLang.startAnimation(moveRightAndFadeOutAnim)
             txtTargetLang.startAnimation(moveLeftAndFadeOutAnim)
+            val newTargetLang = txtSourceLang.text.toString()
+            val oldHint = txtTranslationHintHolder
+            updateTxtTranslationHintHolder(newTargetLang)
 
-            val text = edtText.text.toString()
-
-            txtTranslation.hint = "Your translation here (${txtSourceLang.text})"
-            quickLog(txtTranslation.hint)
             if (text != "") {
-                if ((!translatingTextAnimator.isStarted) and (txtTranslation.hint == "Your translation here (${txtSourceLang.text})"))
+                if ((translatingTextAnimator.isStarted.not()) and (txtTranslation.hint == oldHint))
                     translatingTextAnimator.start()
                 if (dB.imgTranslatingCircleProgressBar.animation == null) {
                     showTranslatingProgressBar()
                 }
             }
 
-            // Swap
-            val sourceLang = txtTargetLang.text.toString() + ""
-            val targetLang = txtSourceLang.text.toString() + ""
-
-            translate(text, sourceLang, targetLang)
         }
 
         btnDeleteAllText.setOnClickListener {
@@ -331,44 +328,35 @@ class SearchOnlineActivity : BaseActivity<ActivitySearchOnlineBinding, SearchOnl
         }
 
         btnRetry.setOnClickListener {
-            edtText.setText(edtText.text.append(""))
+            edtText.text = edtText.text.append("")
             showTransErrorAnmtrSet.cancel()
             hideTransErrorAnmtr.start()
         }
 
         imgChooseTypeSpinner.setOnClickListener {
-            if (rcvChooseType.isVisible().not()) {
-                rcvChooseType.appear()
+            if (rcvChooseCardType.isVisible().not()) {
+                rcvChooseCardType.goVISIBLE()
                 hideVirtualKeyboard()
-                rcvChooseSetName.disappear()
+                rcvChooseSetName.goGONE()
             } else {
-                rcvChooseType.disappear()
+                rcvChooseCardType.goGONE()
             }
         }
 
-        rcvChooseTextTypeAdapter.setOnItemClickListener {
+        rcvChooseCardTypeAdapter.setOnItemClickListener {
             edtPanelType.setText(it)
-            rcvChooseType.disappear()
+            rcvChooseCardType.goGONE()
         }
 
         imgChooseSetNameSpinner.setOnClickListener {
             if (rcvChooseSetName.isVisible().not()) {
-                groupChooseSetName.appear()
                 hideVirtualKeyboard()
-                rcvChooseType.disappear()
-            } else {
-                groupChooseSetName.disappear()
+                rcvChooseCardType.goGONE()
             }
         }
 
-        btnGetDefaultSetName.setOnClickListener {
-            edtPanelSetName.setText(getDefaultSetName())
-            groupChooseSetName.disappear()
-        }
-
-        rcvChooseSetNameAdapter.setOnItemClickListener {
-            edtPanelSetName.setText(it)
-            groupChooseSetName.disappear()
+        rcvChooseSetNameAdapter.setOnItemClickListener {flashcardSet ->
+            edtPanelSetName.setText(flashcardSet.name)
         }
 
         layoutCardInfo.btnEdit.setOnClickListener {
@@ -380,12 +368,11 @@ class SearchOnlineActivity : BaseActivity<ActivitySearchOnlineBinding, SearchOnl
     }}
 
     private fun getDefaultSetName () : String { dB.apply {
-        return "${txtSourceLang.text}$LANG_DIVIDER${txtTargetLang.text}"
+        return SetNameUtils.getSetNameFromLangPair(txtSourceLang.text.toString(), txtTargetLang.text.toString())
     }}
 
     private fun translate (text : String, sourceLang : String, targetLang : String) { dB.apply {
-        val needTranslatingText = text
-        viewModel.translateText(needTranslatingText, sourceLang, targetLang, object : SearchOnlineViewModel.OnTranslateListener {
+        viewModel.translateText(text, sourceLang, targetLang, object : SearchOnlineViewModel.OnTranslateListener {
             override fun onSuccess() {
                 if (!addButtonDoesAppear) {
                     btnAddAppearAnimator.start()
@@ -408,11 +395,13 @@ class SearchOnlineActivity : BaseActivity<ActivitySearchOnlineBinding, SearchOnl
 
 
     override fun onBackPressed() {
-        if (isInAddFlashcardMode) dB.imgBlackBgAddFlashcardPanel.performClick()
-        else if (isInChooseLanguageMode) AnmtrSetChooseLangDisappear.start()
-        else if (isInSeeCardInfoMode) AnmtrSetCardInfoDisappear.start()
-        else if (isInSearchingMode) startEndSearchingAnimations()
-        else super.onBackPressed()
+        when {
+            isInAddFlashcardMode -> dB.imgBlackBgAddFlashcardPanel.performClick()
+            isInChooseLanguageMode -> anmtrSetChooseLangDisappear.start()
+            isInSeeCardInfoMode -> anmtrSetCardInfoDisappear.start()
+            isInSearchingMode -> startEndSearchingAnimations()
+            else -> super.onBackPressed()
+        }
     }
 
     private fun onChooseLanguage (language : String) { dB.apply {
@@ -421,7 +410,8 @@ class SearchOnlineActivity : BaseActivity<ActivitySearchOnlineBinding, SearchOnl
             viewModel.updateUserRecentSourceLang(language)
         } else if (selectedLanguageTextView == txtTargetLang) {
             viewModel.updateUserRecentTargetLang(language)
-            txtTranslation.hint = "Your translation here (${txtTargetLang.text})"
+            updateTxtTranslationHintHolder(language)
+            txtTranslation.hint = txtTranslationHintHolder
         }
 
         if (txtTargetLang.text == txtSourceLang.text) {
@@ -438,31 +428,33 @@ class SearchOnlineActivity : BaseActivity<ActivitySearchOnlineBinding, SearchOnl
             translate(text, sourceLang, targetLang)
         }
 
-        AnmtrSetChooseLangDisappear.start()
-        rcvRecentChosenLanguageAdapter.addLanguage(language)
+        anmtrSetChooseLangDisappear.start()
+        addToUsedLanguageList(language)
     }}
 
+    private fun addToUsedLanguageList (language : String) {
+        rcvRecentChosenLanguageAdapter.addLanguage(language)
+        viewModel.addToUsedLanguageList(language)
+    }
 
     override fun hideTranslatingProgressBar () {
         dB.apply {
             imgTranslatingCircleProgressBar.animation?.cancel()
-            imgBackgroundProgress.disappear()
-            imgTranslatingCircleProgressBar.disappear()
+            imgTranslatingCircleProgressBar.goGONE()
         }
     }
 
     override fun showTranslatingProgressBar () {
         dB.apply {
             imgTranslatingCircleProgressBar.startAnimation(progressRotateTranslatingTextAnmtion)
-            imgBackgroundProgress.appear()
-            imgTranslatingCircleProgressBar.appear()
+            imgTranslatingCircleProgressBar.goVISIBLE()
         }
     }
 
     override fun onCheckConnectionWhenSearch (hasConnection : Boolean) { dB.apply {
         if (hasConnection) {
             if (txtTranslation.hintTextColors.defaultColor  == RED) {
-                txtTranslation.hint = "Your translation here (${txtTargetLang.text})"
+                txtTranslation.hint = txtTranslationHintHolder
                 txtTranslation.setHintTextColor(HINT_COLOR)
             }
         } else {
@@ -498,12 +490,18 @@ class SearchOnlineActivity : BaseActivity<ActivitySearchOnlineBinding, SearchOnl
     }}
 
     private fun swapLanguage () { dB.apply {
-        var langHolder = txtSourceLang.text
+        val  langHolder = txtSourceLang.text
         txtSourceLang.text = txtTargetLang.text
         txtTargetLang.text = langHolder
-        quickLog("2: " + txtTranslation.hint)
-        txtTranslation.hint == "Your translation here (${txtTargetLang.text})"
+        updateTxtTranslationHintHolder(txtTargetLang.text.toString())
+        if (translatingTextAnimator.isRunning.not()) {
+            txtTranslation.hint = txtTranslationHintHolder
+        }
     }}
+
+    private fun updateTxtTranslationHintHolder (language: String) {
+        txtTranslationHintHolder = "Your translation here ($language)"
+    }
 
     private fun makeEditTextsMultiLine () { dB.apply {
         edtText.inputType = TYPE_NONE or InputType.TYPE_TEXT_FLAG_NO_SUGGESTIONS
@@ -512,12 +510,6 @@ class SearchOnlineActivity : BaseActivity<ActivitySearchOnlineBinding, SearchOnl
         txtTranslation.inputType = TYPE_NONE or InputType.TYPE_TEXT_FLAG_NO_SUGGESTIONS
     }}
 
-    private fun makeEditTextsSingleLine () { dB.apply {
-        edtText.inputType = TYPE_TEXT or InputType.TYPE_TEXT_FLAG_NO_SUGGESTIONS
-        edtText.setSelection(edtText.text.toString().length)
-
-        txtTranslation.inputType = TYPE_TEXT or InputType.TYPE_TEXT_FLAG_NO_SUGGESTIONS
-    }}
 
     private fun performTranslatingAnimations (text: String) {
         if (text == "") {
@@ -525,7 +517,7 @@ class SearchOnlineActivity : BaseActivity<ActivitySearchOnlineBinding, SearchOnl
             btnAddDisappearAnimator.start()
             translatingTextAnimator.end()
         } else if (text != "") {
-            if ((!translatingTextAnimator.isStarted) and (dB.txtTranslation.hint == "Your translation here (${dB.txtTargetLang.text})"))
+            if ((translatingTextAnimator.isStarted.not()) and (dB.txtTranslation.hint == txtTranslationHintHolder))
                 translatingTextAnimator.start()
             if (dB.imgTranslatingCircleProgressBar.animation == null) {
                 showTranslatingProgressBar()
@@ -548,26 +540,28 @@ class SearchOnlineActivity : BaseActivity<ActivitySearchOnlineBinding, SearchOnl
                 newLayoutParams.height = it.animatedValue as Int
                 viewgroupLanguageOption.layoutParams = newLayoutParams
             }
+            addListener(onEnd = {
+                viewgroupLanguageOption.goGONE()
+            })
             setTarget(viewgroupLanguageOption)
         }
 
-        txtTranslation_FadeIn_Animator.setTarget(vwgrpTxtTranslation)
+        txtTranslation_FadeIn_Animator.setTarget(txtTranslation)
 
         txtTranslation_ScaleBigger_Animator.apply {
             addUpdateListener {
-                val newLayoutParams = vwgrpTxtTranslation.layoutParams
+                val newLayoutParams = txtTranslation.layoutParams
                 newLayoutParams.height = it.animatedValue as Int
-                vwgrpTxtTranslation.layoutParams = newLayoutParams
-                quickLog("Val: ${it.animatedValue as Int}")
+                txtTranslation.layoutParams = newLayoutParams
             }
 
             addListener (onStart = {
-                txtTranslation.appear()
-                vwgrpTxtTranslation.appear()
+                txtTranslation.goVISIBLE()
+                txtTranslation.goVISIBLE()
                 isTxtTranslationOpened = true
             })
 
-            setTarget(vwgrpTxtTranslation)
+            setTarget(txtTranslation)
         }
 
         val txtTranslation_AppearAnmtrSet = AnimatorSet().apply {
@@ -579,11 +573,10 @@ class SearchOnlineActivity : BaseActivity<ActivitySearchOnlineBinding, SearchOnl
             .with(txtTranslation_AppearAnmtrSet)
         startSearch_OpenTxtTranslation_AnmtrSet.addListener (onStart = {
             edtText.hint = "Type your text here (${txtSourceLang.text})"
-            rcvRecentSearchFlashcards.smoothScrollToPosition(0)
-            btnTapToSearch.disappear()
+            rcvRecentSearchedFlashcards.smoothScrollToPosition(0)
+            btnNavigateToSearchZone.goGONE()
         }, onEnd = {
             isInSearchingMode = true
-            makeEditTextsSingleLine()
         })
 
         startSearch_Without_OpenTxtTranslation_AnmtrSet
@@ -591,11 +584,10 @@ class SearchOnlineActivity : BaseActivity<ActivitySearchOnlineBinding, SearchOnl
 
         startSearch_Without_OpenTxtTranslation_AnmtrSet.addListener (onStart = {
             edtText.hint = "Type your text here (${txtSourceLang.text})"
-            rcvRecentSearchFlashcards.smoothScrollToPosition(0)
-            btnTapToSearch.disappear()
+            rcvRecentSearchedFlashcards.smoothScrollToPosition(0)
+            btnNavigateToSearchZone.goGONE()
         }, onEnd = {
             isInSearchingMode = true
-            makeEditTextsSingleLine()
         })
     }}
 
@@ -605,26 +597,30 @@ class SearchOnlineActivity : BaseActivity<ActivitySearchOnlineBinding, SearchOnl
         @Named("DisappearAnimator") txtTranslation_Disappear_Animator : Animator,
         @Named("TxtTranslationScaleToNothing") txtTranslation_ScaleSmaller_Animator : ValueAnimator) { dB.apply {
         vgLangOption_ShowAnimator.apply {
+            setTarget(vgLangOption_ShowAnimator)
             addUpdateListener {
                 val newLayoutParams = viewgroupLanguageOption.layoutParams
                 newLayoutParams.height = it.animatedValue as Int
                 viewgroupLanguageOption.layoutParams = newLayoutParams
             }
+            addListener (onStart = {
+                viewgroupLanguageOption.goVISIBLE()
+            })
         }
 
-        txtTranslation_Disappear_Animator.setTarget(vwgrpTxtTranslation)
+        txtTranslation_Disappear_Animator.setTarget(txtTranslation)
 
         txtTranslation_ScaleSmaller_Animator.apply {
             addUpdateListener {
-                val newLayoutParams = vwgrpTxtTranslation.layoutParams
+                val newLayoutParams = txtTranslation.layoutParams
                 newLayoutParams.height = it.animatedValue as Int
-                vwgrpTxtTranslation.layoutParams = newLayoutParams
+                txtTranslation.layoutParams = newLayoutParams
             }
             addListener (onEnd = {
-                txtTranslation.disappear()
+                txtTranslation.goGONE()
                 isTxtTranslationOpened = false
             })
-            setTarget(vwgrpTxtTranslation)
+            setTarget(txtTranslation)
         }
 
         val txtTranslation_DisappearAnmtrSet = AnimatorSet().apply {
@@ -632,26 +628,26 @@ class SearchOnlineActivity : BaseActivity<ActivitySearchOnlineBinding, SearchOnl
         }
 
         endSearchingAnmtrSet
-            .play(vgLangOption_ShowAnimator)
-            .with(txtTranslation_DisappearAnmtrSet)
+            .playTogether(vgLangOption_ShowAnimator, txtTranslation_DisappearAnmtrSet)
         endSearchingAnmtrSet.addListener (onStart = {
-            rcvRecentSearchFlashcards.smoothScrollToPosition(0)
+            rcvRecentSearchedFlashcards.smoothScrollToPosition(0)
         }, onEnd = {
             isInSearchingMode = false
             makeEditTextsMultiLine()
             edtText.hint = "Tap here to enter text"
-            btnTapToSearch.appear()
+            btnNavigateToSearchZone.goVISIBLE()
         })
 
+        // End searching without hide txtTranslation
         endSearchWithTransAnmtrSet
             .play(vgLangOption_ShowAnimator)
         endSearchWithTransAnmtrSet.addListener (onStart = {
-            rcvRecentSearchFlashcards.smoothScrollToPosition(0)
+            rcvRecentSearchedFlashcards.smoothScrollToPosition(0)
         }, onEnd = {
             isInSearchingMode = false
             makeEditTextsMultiLine()
             edtText.hint = "Tap here to enter text"
-            btnTapToSearch.appear()
+            btnNavigateToSearchZone.goVISIBLE()
         })
     }}
 
@@ -663,7 +659,7 @@ class SearchOnlineActivity : BaseActivity<ActivitySearchOnlineBinding, SearchOnl
         btnAddAppearAnimator = appearAnimator.apply {
             setTarget(dB.vwgrpBtnAddAndProgressBar)
             addListener (onStart = {
-                dB.vwgrpBtnAddAndProgressBar.appear()
+                dB.vwgrpBtnAddAndProgressBar.goVISIBLE()
             }, onEnd = {
                 addButtonDoesAppear = true
             })
@@ -672,7 +668,7 @@ class SearchOnlineActivity : BaseActivity<ActivitySearchOnlineBinding, SearchOnl
         btnAddDisappearAnimator = disappearAnimator.apply {
             setTarget(dB.vwgrpBtnAddAndProgressBar)
             addListener (onEnd = {
-                dB.vwgrpBtnAddAndProgressBar.disappear()
+                dB.vwgrpBtnAddAndProgressBar.goGONE()
                 addButtonDoesAppear = false
                 hideTranslatingProgressBar()
             })
@@ -684,14 +680,12 @@ class SearchOnlineActivity : BaseActivity<ActivitySearchOnlineBinding, SearchOnl
     fun initSwapAnimations (
         @Named("MoveRightAndFadeOut") moveRightAndFadeOutAnimation : Animation,
         @Named("MoveLeftAndFadeOut") moveLeftAndFadeOutAnimation : Animation) { dB.apply {
-        moveRightAndFadeOutAnim = moveRightAndFadeOutAnimation.apply {
-            addAnimationLister (onStart = {
-            }, onEnd = {
+        moveRightAndFadeOutAnim = moveRightAndFadeOutAnimation
+        moveRightAndFadeOutAnim.addAnimationLister(onStart = null,
+            onEnd = {
                 swapLanguage()
-            })
-        }
+        })
         moveLeftAndFadeOutAnim = moveLeftAndFadeOutAnimation
-
     }}
 
     @Inject
@@ -703,16 +697,16 @@ class SearchOnlineActivity : BaseActivity<ActivitySearchOnlineBinding, SearchOnl
 
         rcvChooseLanguageDisappear.setTarget(layoutChooseLang.viewgroupChooseLanguage)
         blackBackgroundDisappear.setTarget(layoutChooseLang.imgBlackBackgroundChooseLanguage)
-        AnmtrSetChooseLangDisappear.play(rcvChooseLanguageDisappear).before(blackBackgroundDisappear)
-        AnmtrSetChooseLangDisappear.addListener (onEnd = {
+        anmtrSetChooseLangDisappear.play(rcvChooseLanguageDisappear).before(blackBackgroundDisappear)
+        anmtrSetChooseLangDisappear.addListener (onEnd = {
             layoutChooseLang.groupChooseLanguage.visibility = View.GONE
             isInChooseLanguageMode = false
         })
 
         rcvChooseLanguageAppear.setTarget(layoutChooseLang.viewgroupChooseLanguage)
         blackBackgroundAppear.setTarget(layoutChooseLang.imgBlackBackgroundChooseLanguage)
-        AnmtrSetChooseLangAppear.play(blackBackgroundAppear).before(rcvChooseLanguageAppear)
-        AnmtrSetChooseLangAppear.addListener(onStart = {layoutChooseLang.groupChooseLanguage.appear()},
+        anmtrSetChooseLangAppear.play(blackBackgroundAppear).before(rcvChooseLanguageAppear)
+        anmtrSetChooseLangAppear.addListener(onStart = {layoutChooseLang.groupChooseLanguage.goVISIBLE()},
             onEnd = {
                 isInChooseLanguageMode = true
             })
@@ -727,18 +721,18 @@ class SearchOnlineActivity : BaseActivity<ActivitySearchOnlineBinding, SearchOnl
 
         viewgroupCardInfoDisappear.setTarget(layoutCardInfo.viewgroupCardInfo)
         blackBackgroundDisappear.setTarget(layoutCardInfo.imgBlackBackgroundSeeCardInfo)
-        AnmtrSetCardInfoDisappear.play(viewgroupCardInfoDisappear).before(blackBackgroundDisappear)
-        AnmtrSetCardInfoDisappear.addListener (onEnd = {
+        anmtrSetCardInfoDisappear.play(viewgroupCardInfoDisappear).before(blackBackgroundDisappear)
+        anmtrSetCardInfoDisappear.addListener (onEnd = {
             layoutCardInfo.groupCardInfo.visibility = View.GONE
             isInSeeCardInfoMode = false
         })
 
         viewgroupCardInfoAppear.setTarget(layoutCardInfo.viewgroupCardInfo)
         blackBackgroundAppear.setTarget(layoutCardInfo.imgBlackBackgroundSeeCardInfo)
-        AnmtrSetCardInfoAppear.play(blackBackgroundAppear).before(viewgroupCardInfoAppear)
-        AnmtrSetCardInfoAppear.addListener(
+        anmtrSetCardInfoAppear.play(blackBackgroundAppear).before(viewgroupCardInfoAppear)
+        anmtrSetCardInfoAppear.addListener(
         onStart = {
-            layoutCardInfo.groupCardInfo.appear()
+            layoutCardInfo.groupCardInfo.goVISIBLE()
         },
         onEnd = {
             isInSeeCardInfoMode = true
@@ -756,18 +750,23 @@ class SearchOnlineActivity : BaseActivity<ActivitySearchOnlineBinding, SearchOnl
             repeatCount = INFINITE
             repeatMode = ValueAnimator.RESTART
             addUpdateListener {
-                if (it.animatedFraction < 0.25f) {
-                    dB.txtTranslation.hint = "Translating"
-                } else if (it.animatedFraction < 0.5f) {
-                    dB.txtTranslation.hint = "Translating."
-                } else if (it.animatedFraction < 0.75f) {
-                    dB.txtTranslation.hint = "Translating.."
-                } else if (it.animatedFraction < 1) {
-                    dB.txtTranslation.hint = "Translating..."
+                when {
+                    it.animatedFraction < 0.25f -> {
+                        dB.txtTranslation.hint = "Translating"
+                    }
+                    it.animatedFraction < 0.5f -> {
+                        dB.txtTranslation.hint = "Translating."
+                    }
+                    it.animatedFraction < 0.75f -> {
+                        dB.txtTranslation.hint = "Translating.."
+                    }
+                    it.animatedFraction < 1 -> {
+                        dB.txtTranslation.hint = "Translating..."
+                    }
                 }
             }
             addListener (onEnd = {
-                dB.txtTranslation.hint = "Your translation here (${dB.txtTargetLang.text})"
+                dB.txtTranslation.hint = txtTranslationHintHolder
             })
         }
 
@@ -788,20 +787,20 @@ class SearchOnlineActivity : BaseActivity<ActivitySearchOnlineBinding, SearchOnl
         showTransErrorAnmtrSet.setTarget(vwgrpTranslatingErrorHappened)
         showTransErrorAnmtrSet.addListener (
             onStart = {
-                vwgrpTranslatingErrorHappened.appear()
+                vwgrpTranslatingErrorHappened.goVISIBLE()
             },
             onEnd = {
-                vwgrpTranslatingErrorHappened.disappear()
+                vwgrpTranslatingErrorHappened.goGONE()
             })
 
         hideTransErrorAnmtr = disappearAnimator2
         hideTransErrorAnmtr.setTarget(vwgrpTranslatingErrorHappened)
         hideTransErrorAnmtr.addListener(
             onStart = {
-                vwgrpTranslatingErrorHappened.appear()
+                vwgrpTranslatingErrorHappened.goVISIBLE()
             },
             onEnd = {
-                vwgrpTranslatingErrorHappened.disappear()
+                vwgrpTranslatingErrorHappened.goGONE()
             })
     }}
 
@@ -820,8 +819,8 @@ class SearchOnlineActivity : BaseActivity<ActivitySearchOnlineBinding, SearchOnl
         panelAppear.setTarget(panelAddFlashcard)
         addFCPanelAppear.play(blackBackgroundAppear).before(panelAppear)
         addFCPanelAppear.addListener (onStart = {
-            groupAddFlashcard.appear()
-            btnAdd.disappear()
+            groupAddFlashcard.goVISIBLE()
+            btnAdd.goGONE()
             isInAddFlashcardMode = true
         })
 
@@ -829,8 +828,8 @@ class SearchOnlineActivity : BaseActivity<ActivitySearchOnlineBinding, SearchOnl
         panelDisappear.setTarget(panelAddFlashcard)
         addFCPanelDisappear.play(panelDisappear).before(blackBackgroundDisappear)
         addFCPanelDisappear.addListener (onEnd = {
-            btnAdd.appear()
-            groupAddFlashcard.disappear()
+            btnAdd.goVISIBLE()
+            groupAddFlashcard.goGONE()
             isInAddFlashcardMode = false
         })
 

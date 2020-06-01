@@ -2,9 +2,6 @@ package com.teamttdvlp.memolang.view.customview
 
 import android.content.Context
 import android.util.AttributeSet
-import android.view.ViewGroup.LayoutParams.WRAP_CONTENT
-import androidx.constraintlayout.widget.ConstraintLayout.LayoutParams.MATCH_CONSTRAINT
-import androidx.core.view.doOnPreDraw
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.teamttdvlp.memolang.R
@@ -15,25 +12,46 @@ import kotlin.collections.ArrayList
 
 class ChooseCardTypeRecyclerView  : RecyclerView {
 
-    private lateinit var customedAdapter : RCVSimpleListAdapter
-
-    private var wordTypeList = CardType.TYPE_LIST
-
+    private lateinit var cardTypeListAdapter : RCVSimpleListAdapter
 
     constructor (context : Context, attributeSet: AttributeSet) : super(context, attributeSet) {
         initAdapter()
-        background = context.getDrawable(R.drawable.round_10dp_white_background)
+    }
+
+    fun getTypeList () : ArrayList<String> {
+        return cardTypeListAdapter.getTypeList()
     }
 
     private fun initAdapter () {
-        customedAdapter =RCVSimpleListAdapter (context)
-        customedAdapter.setData(wordTypeList)
-        adapter = customedAdapter
+        cardTypeListAdapter = RCVSimpleListAdapter (context)
+        cardTypeListAdapter.setData(CardType.TYPE_LIST)
+        adapter = cardTypeListAdapter
         layoutManager = LinearLayoutManager(context, VERTICAL, false)
     }
 
-    fun setOnItemClickListener (onItemClickListener: (item: String) -> Unit) {
-        customedAdapter.setOnItemClickListener(onItemClickListener)
+    fun addTypes (types : ArrayList<String>) {
+        for (type in types) {
+            if (getTypeList().contains(type)) {
+                getTypeList().remove(type)
+            }
+            getTypeList().add(0, type)
+        }
+        cardTypeListAdapter.notifyDataSetChanged()
     }
 
+    fun addType (type : String) {
+        if (getTypeList().contains(type)) {
+            getTypeList().remove(type)
+        }
+        getTypeList().add(0, type)
+        cardTypeListAdapter.notifyItemInserted(0)
+    }
+
+    fun setOnItemClickListener (onItemClickListener: (item: String) -> Unit) {
+        cardTypeListAdapter.setOnItemClickListener(onItemClickListener)
+    }
+
+    fun filtTypeAndUpdateView(type: String) : ArrayList<String> {
+        return cardTypeListAdapter.filtType(type)
+    }
 }

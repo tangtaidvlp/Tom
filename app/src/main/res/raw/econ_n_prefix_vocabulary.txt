@@ -1,0 +1,339 @@
+@Non performings assets
+- (Econ) Những tài sản không sinh lợi.
+@Non performings loans
+- (Econ) Những khoản vay không thực hiện đúng hợp đồng.
+@Non trade
+- (Econ) Phi ngoại thương
+@Non-symmetric
+- (Econ) Phii / bất đối xứng
+@Naive accelerator
+- (Econ) Gia tốc dạng đơn giản.
+= Xem ACCELERATOR PRINCIPLE
+@Nash solution
+- (Econ) Giải pháp Nash.
+= Trong LÝ THUYẾT TRÒ CHƠI  khái niệm này được áp dụng trong những điều kiện nhất định để tìm ra cách giải quyết cho những trò chơi hai người hợp tác với nhau.
+@National accounts
+- (Econ) Hệ thống tài khoản quốc gia.
+= Là việc soạn thảo các tài khoản nhằm đưa ra được những ước tính về THU NHẬP QUỐC DÂN.
+@National bargaining
+- (Econ) Thương lượng mang tính quốc gia.
+= Là sự thương lượng tập thể giữa những người làm công ăn lương và đại diện của giới chủ để đề ra mức lương và những điều kiện làm việc trong một ngành hoặc một nhóm ngành trên toàn quốc.
+@National Bureau for Economic Research
+- (Econ) Phòng nghiên cứu kinh tế quốc gia.
+= Là một tổ chức tư nhân phi lợi nhuận của Mỹ được thành lập năm 1920 dưới hình thức  một trung tâm nghiên cứu độc lập và khách quan.
+@National debt
+- (Econ) Nợ quốc gia.
+= Theo định nghĩa thông thường thì khái niệm này phản ánh tổng số nghĩa vụ nợ còn tồn đọng của chính quyền trung ương và được chia là hai loại: nợ có thể bán được, tức là CHỨNG KHOÁN được trao đổi ; và nợ không thể bán được, ví dụ như giấy chứng nhận tiết kiệm quốc gia.
+@National Economic Development Council (NEDC)
+- (Econ) Hội đồng phát triển kinh tế quốc gia.
+= Là một hội đông ở Anh, chủ tịch của hội đồng là Bộ trưởng Tài chính, là một diễn đàn cho các đại diện của chính phủ, các doanh nghiệp nhà nước và tư nhân, các nghiệp đoàn và giới học giả nhằm đề ra và đánh giá các chính sách liên quan đến hoạt động và sự tăng trưởng nền kinh tế Anh vào năm 1962.
+@National Enterprise Board (NEB)
+- (Econ) Ban doanh nghiệp quốc gia.
+= Là một tổ chức của nhà nước được thành lập bởi Đạo luật công nghiệp năm 1975. Chức năng chính của NEB là tăng cường hiệu quả sản xuất công nghiệp và tính cạnh tranh quốc tế, tiếp quản các cổ phần hiện có của chính phủ để đảm bảo mức sinh lãi.
+@National income
+- (Econ) Thu nhập quốc dân.
+= Là thước đo giá trị tiền tệ và hàng hoá và dịch vụ được cung cấp trên toàn quốc từ hoạt động kinh tế.
+@National income accounting
+- (Econ) Hạch toán Thu nhập quốc dân.
+@National Girobank
+- (Econ) Ngân hàng Giro quốc gia.
+= Xem GIRO SYSTEM.
+@National Institute for Economic and Social Research
+- (Econ) Viện Nghiên cứu Quốc gia về  Kinh tế và Xã hội.
+= Là một tổ chức phi lợi nhuận độc lập của Anh được thành lập vào năm 1938 nhằm mục đích nâng cao kiến thức về các điều kiện kinh tế và xã hội của xã hội đương thời.
+@Myrdal, Gunnar K.
+- (Econ) (1898-1987)
+= Là một nhà kinh tế học, chính trị gia và nhà hoạt động quốc tế người Thuỵ Điển, Myrdal đã kiên định thách thức tư duy kinh tế chính thống trên một loạt các chủ đề. Trong các lĩnh vực, Myrdal đều bày tỏ quan điểm rằng các yếu tố về thể chế quan trọng hơn các quan hệ thị trường trong việc quyết định những sự kiện kinh tế. Myrdal cũng có những đóng góp cho học thuyết kinh tế thuần tuý, và những tác phẩm trước đó của ông, đặc biệt là các tác phẩm Cân bằng tiền tệ (1931) đã phát triển thêm kinh tế học của Knut Wicksell và dự báo được phần lớn những nghiên cứu sau này của  J.M.Keynes. Trong phạm vi vấn đề này, Myrdal là người đã đưa ra những khái niệm EX ANTE VÀ EX POST. Ông đã sử dụng những ý tưởng này để bàn về những quyết định đầu tư chủ chốt và mối quan hệ của chúng với tổng sản lượng quốc dân ở điểm cân bằng theo cách thức mà người ta cho là giống của Keynes. Những tác phẩm quan trọng khác của ông bao gồm: Một nền kinh tế quốc tế: Những vấn đề về triển vọng (1956); Học thuyết kinh tế và các khu vực kém phát triển (1957); Thách thức với sự phong lưu (1963); và Lội ngược dòng (1973). Myrdal được trao giải thưởng Nobel kinh tế (cùng với F.A.von HAYEK) vào năm 1974 do có những nỗ lực mở rộng phạm vi nghiên cứu kinh tế học.
+@National Insurance Contributions
+- (Econ) Các khoản đóng góp bảo hiểm quốc gia.
+= Là một hình thức thuế lao động tại Anh, đánh vào cả giới chủ lẫn người lao động. Các khoản nộp trên được dành riêng để dùng vào việc chi trả cho trợ cấp bảo hiểm quốc gia nhưng chúng không tạo ra được toàn bộ nguồn thu cần thiết để thực hiện việc chi trả này.
+@National Insurance Fund
+- (Econ) Quỹ bảo hiểm quốc gia.
+= Là một quỹ tiếp nhận các khoản đóng góp bảo hiểm quốc gia và thực hiện thanh toán trợ cấp bảo hiểm xã hội.
+@National Labor Relation Act
+- (Econ) Đạo luật quan hệ Lao động Quốc gia.
+= Đạo luật Wager được quốc hội Mỹ thông qua vào năm 1935. Nó là kết quả của một Lịch sử lâu dài trong việc gia tăng sức ép của chính quyền liên bang nhằm ủng hộ nguyên tắc thương lượng tập thể. Chủ yếu nhờ đao luật mà số thành viên của các nghiệp đoàn của Mỹ đã tăng một cách nhanh chóng từ 3,9 triệu năm 1935 lên tới 15 triệu năm 1947 khi mà đaọ luật Wagner được sửa đổi theo các quy định của đạo luật Taft-Harley.
+@Nationalized industry
+- (Econ) Ngành bị quốc hữu hoá.
+= Ngành sản xuất ra các sản phẩm để bán cho người tiêu dùng và các nhà sản xuất khác thông qua các thị trường nhưng lại thuộc sở hữu duy nhất của chính phủ và chịu sự kiểm soát của chính phủ.
+@National product
+- (Econ) Sản phẩm quốc dân.
+= Xem NATION INCOME.
+@National Research Development Corporation
+- (Econ) Công ty nghiên cứu phát triển quốc gia.
+= Là một công ty nhà nước độc lập được thành lập vào năm 1949 nhằm khuyến khích việc triển khai và khai thác công nghệ mới.
+@National Saving Bank
+- (Econ) Ngân hàng tiết kiệm quốc gia.
+= Đây là một ngân hàng tiết kiệm của nhà nước Anh hoạt động thông qua mạng lưới bưu điên.
+@Natural law
+- (Econ) Quy luật tự nhiên.
+= Là một tập hợp các quy tắc tự nhiên đặt ra đối với con người và do đó không bao giờ thay đổi được.
+@Natural logarithm
+- (Econ) Lôgarit tự nhiên.
+= Xem LOGARITHM.
+@Natural price
+- (Econ) Giá tự nhiên.
+= Là một cụm thuật ngữ được Adam Smith dùng để mô tả giá trị của một loại hàng hoá mà các mức giá thị trường dao động xung quanh giá trị này.
+@Natural rate of growth
+- (Econ) Tỉ lệ tăng trưởng tự nhiên.
+= Là tỉ lệ tăng trưởng của lực lượng lao động có làm việc trong mô hình tăng trưởng HARROD - DOMAR.
+@Natural rate of unemployment
+- (Econ) Tỷ lệ thất nghiệp tự nhiên.
+= Là tỷ lệ thất nghiệp được ngầm hiểu theo cơ cấu hiện đại của nền kinh tế. Tỷ lệ thất nghiệp này được xác định bởi các tác nhân cơ cấu và tác nhân dai dẳng trong nền kinh tế, những tác nhân nay không hề giảm bớt khi tăng tổng cầu Đường Philips thẳng đứng cho ta thấy rằng bất kỳ nỗ lực nào trong việc giữ cho việc giữ cho mức thất nghiệp thấp hơn tỷ lệ tự nhiên của nó sẽ làm gia tăng lạm phát.
+@Natural resources
+- (Econ) Tài nguyên thiên nhiên.
+= Là những hiện tượng vật chất của thiên nhiên nảy sinh một cách tự do trong phạm ví những ranh giới của hoạt động của con người.
+@Natural selection hypothesis
+- (Econ) Giả thuyết về sự lựa chọn tự nhiên.
+= Giả thiết này đề cập đến luận điểm cho rằng các thị trường vốn hoặc các thị trường sản phẩm mang tính cạnh tranh đảm bảo hành vi tối đa hoá lợi nhuận thay cho các doanh nghiệp.
+@Near money
+- (Econ) Tiền cận; Chuẩn tệ.
+= Là của cải được nắm giữ dưới một hình thức mà có thể chuyển đổi một cách nhanh chóng và dễ dàng thành tiền.
+@Necessity
+- (Econ) Hàng thiết yếu.
+= Đây không phải là một thuật ngữ được sử dụng rộng rãi trong kinh tế học hiện đại, nhưng nếu sử dụng, là để đề cập tới một loại hàng hoá có độ co giãn thu nhập của cầu nhỏ hơn 1.
+@NEDC
+- (Econ) Uỷ ban phát triển kinh tế quốc gia.
+= Xem NATIONAL ECONOMIC DEVELOPMENT COUNCIL.
+@Neddy
+- (Econ) Là tên gọi không chính thức của cả hội đồng phát triển kinh tế quốc gia cũng như Văn phòng phát triển kinh tế quốc gia.
+@NEDO
+- (Econ) Văn phòng phát triển kinh tế quốc gia.
+= Xem NATIONAL ECONOMIC DEVELOPMENT COUNCIL.
+@Need
+- (Econ) Nhu cầu.
+= Đôi khi người ta lập luận rằng trong một thị trường tự do, các cá nhân sẽ không có cầu đối với một số hàng hoá nào đó nhiều đến mức mà xã hội hay cộng đồng cho là họ cần phải tiêu dùng.
+@Negative income tax
+- (Econ) Thuế thu nhập âm.
+= Là một chương trình hỗ trợ thu nhập trong đó các cá nhân hoặc hộ gia đình có thu nhập thấp hơn mức hoà vốn nhất định sẽ nhận được các khoản thanh toán, mức thanh toán liên quan đến mức thu nhập. Do vậy, những người không có khoản thu nhập nào khác sẽ nhận được một khoản tiền tối thiểu được bảo đảm.
+@Neighborhood effects
+- (Econ) Những hiệu ứng đến xung quanh.
+= Là một cụm thuật ngữ khác dùng thay cho thuật ngữ NHỮNG NGOẠI ỨNG, khi ngoại ứng đó có tính không gian.
+@Neo-classical economics
+- (Econ) Kinh tế học tân cổ điển.
+= Là một phần của học thuyết kinh tế trong đó có sử dụng những kỹ thuật và phương pháp tiếp cận tổng hợp của các nhà kinh tế học đầu tiên theo trường phái biên thế kỷ XIX.
+@Neo-classical growth theory
+- (Econ) Học thuyết tăng trưởng tân cổ điển.
+= Là cụm thuật ngữ tổng hợp đề cập đến những mô hình tăng trưởng kinh tế được xây dựng trong khuôn khổ học thuyết tân cổ điển, trong đó chú trọng đến việc thúc đẩy khả năng thay thế giữa vốn và lao động trong hàm sản xuất để đảm bảo sự tăng trưởng đến trạng thái bền vững, cho nên tình trạng mất ổn định được phát hiện ra trong mô hình tăng trưởng HARROD - DOMAR do giả định về hệ số cố định giữa vốn và lao động gây ra.
+@Neo-classical synthesis
+- (Econ) Hợp đề tân cổ điển.
+= Luận chứng cho rằng sự tồn tại của CÂN BẲNG THẤT NGHIỆP phát sinh từ giả định về mức lương cứng nhắc của Keynes. Đây là sự kết hợp giữa một bên là việc lồng ghép của Keynes đối với các khu vực thực tế và khu vực tiền tệ của một nền kinh tế, nhằm chứng minh cho sự quyết định cùng một lúc của thu nhập danh nghĩa và lãi suất với phía bên kia là các quan điểm cổ điển cho rằng xu hướng đạt tới điểm cân bằng toàn dụng nhân công chỉ có thể bị cản trở bởi tính cứng nhắc trong hệ thống kinh tế.
+@Neo-imperialism
+- (Econ) Chủ nghĩa đế quốc kiểu mới.
+= Theo các tác phẩm của phái MÁC XÍT và XÃ HỘI CHỦ NGHĨA thì đó là sự kiểm soát nền kinh tế của các nước chậm phát triển bởi các tập đoàn tư bản khổng lồ có trụ sở tại các nước tư bản phát triển.
+@Neo-orthodoxy
+- (Econ) Trường phái tân chính thống.
+= Là tên gọi được đặt cho những người phản đối phái CHÍNH THỐNG MỚI trong cuộc tranh luận về việc kiểm soát cung tiền tệ.
+@Nested hypotheses
+- (Econ) Các giả thuyết lồng nhau
+= Trong MÔ HÌNH HỒI QUY,  CÁC GIẢ THIẾT được coi là lồng nhau trong nếu CÁC BIẾN GIẢI THÍCH trong một giả thiết là một tập hợp con của các biến số giải thích trong các biến khác.
+@Nationalized indentities
+- (Econ) Đồng nhất thức của thu nhập quốc dân.
+@Natural monopoly
+- (Econ) Độc quyền tự nhiên.
+@Net advantages, the equalisation of
+- (Econ) Sự cân bằng hoá những lợi thế ròng.
+= Là giả thuyết cho rằng sự cạnh tranh trong CÁC THỊ TRƯỜNG LAO ĐỘNG sẽ đảm bảo rằng toàn bộ những lợi thế và bất lợi của các công việc khác nhau sẽ hoặc là hoàn toàn ngang bằng nhau hoặc liên tục có xu hướng ngang bằng nhau.
+@Net barter terms of trade
+- (Econ) Tỷ giá trao đổi ròng.
+= Xem TERMS OF TRADE.
+@Net book value
+- (Econ) Giá trị ròng theo sổ sách.
+= Là báo cáo về giá trị của các tài sản cố định được dùng trong kế toán.
+@Net economic welfare
+- (Econ) Phúc lợi kinh tế ròng.
+@Net export
+- (Econ) Xuất khẩu ròng.
+@Net present value
+- (Econ) Giá trị hiện tại ròng.
+= Là kết quả thu được khi lấy giá trị đã triết khấu của các khoản lợi nhuận dự kiến trừ đi giá trị đã chiết khấu của các chi phí đầu tư dự kiến.
+@Net investment
+- (Econ) Đầu tư ròng ( Còn gọi là sự tạo vốn ròng) .
+= Là việc bổ sung thêm vào tổng nguồn vốn của nền kinh tế, hay nói cách khác là giá trị của vốn đầu tư đã trừ khấu. Xem INVESTMENT.
+@Net material product (NMP)
+- (Econ) Sản phẩm vật chất ròng.
+= Là thước đo được sử dụng tại các nước xã hội chủ nghĩa (chủ yếu là Khối Đông Âu) để đánh giá sản lượng hàng năm của cái gọi là lĩnh vực sản xuất, bao gồm nông nghiệp, lâm nghiệp, ngư nghiệp, ngành chế tạo, xây dựng, vận tải và một số dịch vụ mang tính sản xuất như du lịch, ăn uống và ngân hàng.
+@Net national income
+- (Econ) Thu nhập quốc dân ròng
+= Xem NATIONAL INCOME.
+@Net national product
+- (Econ) Sản phẩm quốc dân ròng.
+= Xem NATIONAL INCOME.
+@Net profit
+- (Econ) Lợi nhuận ròng.
+= Là phần còn lại của tổng số lợi nhuận sau khi đã trừ đi thuế và khấu hao.
+@Net property income from abroad
+- (Econ) Thu nhập tài sản ròng từ nước ngoài.
+= Là mức chênh lệch giữa LỢI NHUẬN, CỔ TỨC và LÃI SUẤT nhận được từ các tài sản ở nước ngoài của các cư dân trong nước và lợi nhuận, cổ tức và lãi suất thanh toán ra nước ngoài cho các TÀI SẢN của các cư dân người nước ngoài ở nền kinh tế TRONG NƯỚC.
+@Neutrality of money
+- (Econ) Tính chất trung lập của tiền.
+= Định lý này cho rằng nhờ các tác động SỐ DƯ THỰC TẾ TRÊN THỊ TRƯỜNG TIỀN TỆ mà cứ mỗi khi cung tiền tệ tăng lên một mức bao nhiêu thì giá tiền tệ tại điểm cân bằng cũng tăng lên một mức bấy nhiêu.
+@Neutralizing monetary flows
+- (Econ) Trung hoà các luồng tiền tệ.
+= Xem INTERNATIONAL MONETARISM
+@New classical macroeconomics
+- (Econ) Kinh tế học vĩ mô cổ điển mới
+= Về cơ bản thì đây là sự trình bày lại dưới một hình thức tỷ mỉ hơn về KINH TẾ HỌC CỔ ĐIỂM chính thống.
+@New Economic Policy (NEP)
+- (Econ) Chính sách kinh tế.
+= Là một thuật ngữ được sử dụng để mô tả cơ chế hoạt động của hệ thống kinh tế Liên Xô trong những năm 20.
+@New industrial state
+- (Econ) Tình trạng công nghiệp mới.
+= Cụm thuật ngữ này có liên quan đến công trình nghiên cứu của J.KGALBRAITH, người lập luận rằng các nền kinh tế tư bản chủ nghĩa phát triển hiện đại đã trải qua một sự chuyển đổi trong quyền lực kinh tế và chính trị từ những nhà sở hữu vốn sang cái mà ông gọi là CƠ CẤU CÔNG NGHỆ.
+@New inflation
+- (Econ) Lạm phát kiểu mới
+= Là quan niệm cho rằng lạm phát hiện tại mà kinh tế các nước phương Tây đã trải qua kể từ sau Chiến tranh thế giới thứ hai có bản chất hoặc nguồn gốc khác so với các kiểu lạm phát trước đây trong lịch sử.
+@New issues market
+- (Econ) Thị trường các chứng khoán mới phát hành.
+= Là thị trường sơ cấp, không xác định được rõ ràng lắm, trong đó người ta bán các loại CHỨNG KHOÁN mới được tạo ra, hoặc là các chứng khoán trước đó chưa được niêm yết chính thức và do vậy chưa được trao đổi tại sở giao dịch chứng khoán: bằng cách chào công khai tới dân chúng, tới các cổ đông đã có cổ phần trong trường hợp phát hành cổ phiếu đặc quyền, hoặc bán riêng cho một số cá nhân và tổ chức được lựa chọn có khả năng mua với số lượng lớn đối với các chứng khoán của các công ty tư nhân hoặc của các công ty nhà nước không được niêm yết chính thức.
+@New microeconomics
+- (Econ) Kinh tế học vi mô mới.
+= Là tên gọi được đặt cho các tài liệu kinh tế đã thực hiên việc phân biệt kinh tế học vĩ mô; cụ thể là đã đưa một cơ sở kinh tế học vi mô vững chắc cho những cơ cấu làm nền tảng cho mối quan hệ tổng hợp giữa những thay đổi về giá và thất nghiệp.
+@New-new microeconomics
+- (Econ) Kinh tế học vi mô mới-mới.
+= Là tên gọi được đặt cho những phương pháp xây dựng mô hình trong đó tìm cách giải thích những hợp đồng về lương và giá trên cơ sở xem xét hành vi tối ưu hoá của kinh tế học vi mô.
+@New-orthodoxy
+- (Econ) Trường phái chính thống mới.
+= Sự tách rời khỏi quan điểm chính thống cho rằng các nhà chức trách không kiểm soát được cung tiền.
+@New quantity theory of money
+- (Econ) Lý thuyết định lượng mới về tiền tệ.
+= Xem Quantity theory of money.
+@New international economic order
+- (Econ) Trật tự kinh tế quốc tế mới.
+@New protectionism
+- (Econ) Chủ nghĩa bảo hộ mới.
+@Newly industrilizing countries (NICs)
+- (Econ) Các nước mới công nghiệp hoá.
+@New view of investment
+- (Econ) Quan niệm mới về đầu tư.
+= Là quan niệm về đầu tư trong các MÔ HÌNH TĂNG TRƯỞNG THEO GIAI ĐOẠN trong đó ghi nhận rằng TIẾN BỘ KỸ THUẬT đã làm giảm tuổi thọ trung bình của nguồn vốn và tăng tỷ lệ của NGUỒN VỐN mà có hàm chứa yếu tố công nghệ mới.
+@New view on money supply
+- (Econ) Quan điểm mới về cung tiền.
+= Là học thuyết về bản chất của tiền tệ và sự tạo ra tiền, trong đó bác bỏ phần lớn học thuyết truyền thống về sự tạo ra tín dụng và về SÔ NHÂN TÍN DỤNG, như là một lý do có giá trị giải thích các thức xác định số lượng các khoản tiền gửi ngân hàng - yếu tố cơ bản của lượng tiền.
+@New York Stock Exchange
+- (Econ) Sở giao dịch chứng khoán New York
+= Là thị trường chứng khoán chính ở Mỹ, tại đó có niêm yết hơn 1000 loại chứng khoán.
+@Nominal
+- (Econ) Danh nghĩa.
+= Là tính từ mô tả sự đanh giá về một đại lượng kinh tế trong các mức giá hiện tại.
+@Nominal balances
+- (Econ) Số dư tiền mặt danh nghĩa
+= Xem MONEY BALANCES.
+@Nominal value
+- (Econ) Giá trị danh nghĩa.
+= Là giá trị được ghi trên một tờ chứng khoán hoặc mệnh giá của nó, trái với giá trị danh nghĩa là giá thị trường.
+@Nominal yield
+- (Econ) Lợi tức danh nghĩa.
+= Trong trường hợp một cổ phiếu thường, cổ tức được công bố và được tính theo tỷ lệ phần trăm của MỆNH GIÁ của nó.
+@Non-accelerating inflation rate of unemployment
+- (Econ) Tỷ lệ thất nghiệp không làm tăng lạm phát.
+= Đồng nghĩa với tỷ lệ thất nghiệp tự nhiên.
+@Nominal and real interest rates
+- (Econ) Lãi suất danh nghĩa và lãi suất thực tế.
+@Nominal and real money balances
+- (Econ) Số dư tiền mặt danh nghĩa và thực tế.
+@Nominal and exchange rate
+- (Econ) Tỷ giá hối đoái danh nghĩa và thực tế.
+@Nominal variables
+- (Econ) Các biến số danh nghĩa.
+@Non-market
+- (Econ) Phi thị trường.
+@Non-bank financial intermediaries
+- (Econ) Các tổ chức trung gian tài chính phi ngân hàng.
+= Là những tổ chức trung gian tài chính mà các tài sản nợ của chúng không được tính vào trong cung tiền theo những định nghĩa thông thường.
+@Non-competing groups
+- (Econ) Các nhóm không cạnh tranh.
+= Để có được những mức chênh lệch về nghề nghiệp có tác dụng cân bằng, đảm bảo rằng các cá nhân có thể tự do lựa chọn nghề nghiệp.
+@Non-cumulative preference shares
+- (Econ) Cổ phiếu ưu đãi phi tích luỹ.
+= Xem FINANCIAL CAPITAL.
+@Non-excludability
+- (Econ) Tính không thể khu biệt; tính không thể ngăn cản.
+= Một loại hàng hoá được coi là không thể khu biệt được nếu việc cung cấp hàng hoá đó cho bất kỳ người nào sẽ tự động khiến cho những người khác cũng có được hàng hoá đó. Tính không loại trừ là một đặc điểm của HÀNG HOÁ CÔNG CỘNG.
+@Non-labor income
+- (Econ) Thu nhập phi lao động.
+= Là khoản thu nhập phát sinh ngoài thị trường lao động, có thể là từ các khoản đầu tư hay quan trọng hơn là từ các khoản THANH TOÁN CHUYỂN NHƯỢNG.
+@Non-linear
+- (Econ) Phi tuyến.
+= Là thuật ngữ thường được gắn với một hàm số mà đồ thị của nó không phải là một đường thẳng.
+@Non-linear function
+- (Econ) Hàm phi tuyến.
+= Là mối quan hệ toán học giữa các biến số mà mối quan hệ này lại không phải là một hàm tuyến tính.
+@Non-manual workers
+- (Econ) Lao động phi thủ công; Lao động trí óc.
+= Là những người lao động và chủ sử dụng lao động làm công ăn lương và công việc của họ là lao động trí óc chứ không phải là lao động chân tay.
+@Non-nested hypotheses
+- (Econ) Các giả thiết không bị lồng nhau.
+= Trong mô hình hồi quy, hai giả thiết được cói là không lồng trong nhau nếu các biến số giải thích trong một giả thiết không phải là một tập hợp con của các biến số giải thích trong giả thiết kia.
+@Non-pecuniary goals
+- (Econ) Những mục tiêu phi tiền tệ.
+= Là những mục tiêu mà một cá nhân hay tổ chức đanh theo đuổi, những mục tiêu nay không thể được xác định một cách trực tiếp thành những đơn vị tiền tê.
+@Non-price competition
+- (Econ) Cạnh tranh phi giá cả.
+= Là việc áp dụng bất kỳ chính sách nào ngoại trừ chính sách giảm giá, nhằm mục đích lôi kéo những khách hàng mới từ các đối thủ của mình.
+@Non-profit institutions
+- (Econ) Các tổ chức phi lợi nhuận
+= Là các tổ chức không tồn tại vì mục đích kiếm lợi nhuận dù là tuyên bố một cách công khai hay ngầm hiểu như vây, ví dụ như nhiều tổ chức chăm sóc sức khoẻ và giáo dục.
+@Non-renewable resource
+- (Econ) Tài nguyên không tái tạo được.
+= Là bất kỳ nguồn tài nguyên nào tồn tại dưới một hình thức có hạn - hay nói cách khác là với một số lượng hạn chế mà không được bổ sung thêm ngoài cách tái chế.
+@Non-rival consumption
+- (Econ) Sự tiêu dùng không bị kèn cựa; Sự tiêu dùng không bị cạnh tranh.
+= Khi sự tiêu dùng của một cá nhân đối với một loại hàng hoá không hề làm giảm đi nguồn cung cấp hàng hoá đó cho những cá nhân khác thì hàng hoá đó được coi là không cạnh tranh trong tiêu dùng.
+@Non-tariff barriers
+- (Econ) Các hàng rào phi thuế quan.
+= Là những hạn chế đối với thương mại quốc tê như hạn ngạch, các chính sách thu mua trong nước của chính phủ và các tiêu chuẩn về kỹ thuật và an toàn nhằm giúp cho các nhà sản xuất trong nước có lợi thế hơn so với các nhà sản xuất nước ngoài.
+@Non-uniqueness
+- (Econ) Tính phi độc nhất.
+= Trong lý thuyết cân bằng bộ phận và cân bằng tổng thể, đây là một tình huống trong đó tồn tại từ hai mức giá tại điểm cân bằng trở lên.
+@Non-wage attributes
+- (Econ) Các thuộc tính phi tiền lương.
+= Là các đặc điểm phi tiền tệ của một quan hệ hợp đồng lao động, chẳng hạn như các điều kiện làm việc, uy tín và cơ hội thăng tiến.
+@Non-wage labour costs
+- (Econ) Các chi phí lao động phi tiền lương.
+= Là những chi phí lao động mà doanh nghiệp phải trả ngoài mức thu nhập tính theo giờ.
+@Norm
+- (Econ) Định mức tăng lương.
+= Là mức tăng lương thông thường được xác định tại từng thời điểm trong chính sách thu nhập.
+@Normal cost pricing
+- (Econ) 'Định giá theo chi phí định mức; Định giá theo chi phí thông thường.
+= Là giả thiết cho rằng quá trình định giá được căn cứ trên chi phí của mức sản lượng giả thiết chứ không dựa trên những chi phí hiện tại hay mức dư cầu.
+@Normal distribution
+- (Econ) Phân phối chuẩn.
+= Là một hàm phân phố xác suất đối xứng hình chuông, với các thông số là trung bình và phương sai.
+@Normal equations
+- (Econ) Các phương trình chuẩn.
+= Là một nhóm các phương trình đồng thời, nhóm phương trình nay được giải để có được ước lượng bình phương nhỏ nhất của các thông số trong một phân tích hồi quy, bao gồm tổng của các bình phương và tích chéo của các biến số trong phương trình hồi quy.
+@Normal good
+- (Econ) Hàng hoá thông thường.
+= Là loại hàng hoá mà cầu đối với nó sẽ giảm đi khi thu nhập giảm xuống.
+@Normal profits
+- (Econ) Các khoản lợi nhuận thông thường.
+= Là mức lợi nhuận tối thiểu mà một doanh nghiệp phải đạt được để khiến cho doanh nghiệp còn có thể tiếp tục hoạt động được.
+@Normal unemployment
+- (Econ) Tỷ lệ thất nghiệp thông thường.
+= Xem NATURAL RATE OF UNMENPLOYMENT.
+@Normal variable
+- (Econ) Biến thông thường.
+= Là một biến ngẫu nhiên có phân phối chuẩn.
+@Normative costs of production
+- (Econ) Các chi phí sản suất chuẩn tắc.
+= Là những chi phí ước tính, dẫn suất từ những cơ sở công nghiệp đơn lẻ được các nhà kế hoạnh hoá tập trung ở các nước Xã hội chủ nghĩa (trước đây) sử dụng làm cơ sở cho việc ấn định mức lợi nhuận và mức thuế của doanh nghiệp trong việc hoàn thành kế hoạch.
+@Normative economics
+- (Econ) Kinh tế học chuẩn tắc.
+= Là phân tích kinh tế để đưa ra những quy định hoặc những tuyên bố về việc điều đó cần phải như thế nào chứ không phải điều đó là như thế nào.
+@Norm following behaviour
+- (Econ) Hành vi theo định mức lương.
+= Lập luận cho rằng trong một giai đoạn của chính sách thu nhập khi tồn tại một định mức lương do luật định hoặc được áp dụng một cách tự nguyện thì đinh mức này trên thực tế sẽ trở thành cái đích cho mọi thoả thuận về lương, hay nói cách khác nó sẽ trở thành mức lương cơ bản.
+@Notional demand
+- (Econ) Cầu tạm tính; Cầu ý niệm; cầu tư biện.
+= Xem EFFECTIVE DEMAND.
+@Null hypothesis
+- (Econ) Giả thiết Không.
+= Trong những kiểm định giả thuyết, đó là giả thiết mà trong đó thống kê kiểm định sẽ dựa vào một hàm phân phối xác suất cho trước.
+@Numbers equivalent index
+- (Econ) Chỉ số đương lượng.
+= Xem HERFINDAHL INDEX.
+@Numeraire
+- (Econ) Đơn vị tính toán.
+= Là một đơn vị hạch toán, hoặc là một biểu thức của tiêu chuẩn giá trị.

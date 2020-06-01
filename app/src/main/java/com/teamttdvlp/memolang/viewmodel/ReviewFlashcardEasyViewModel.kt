@@ -3,18 +3,16 @@ package com.teamttdvlp.memolang.viewmodel
 import android.app.Application
 import androidx.databinding.ObservableField
 import androidx.databinding.ObservableInt
-import com.teamttdvlp.memolang.model.CardListRandomer
-import com.teamttdvlp.memolang.model.TextSpeaker
-import com.teamttdvlp.memolang.model.canUseUsingForTestSubject
-import com.teamttdvlp.memolang.model.entity.Language.Companion.LANG_DIVIDER
-import com.teamttdvlp.memolang.model.entity.Language.Companion.TARGET_LANGUAGE
-import com.teamttdvlp.memolang.model.entity.flashcard.Flashcard
+import com.teamttdvlp.memolang.data.model.entity.flashcard.Flashcard
+import com.teamttdvlp.memolang.data.model.entity.flashcard.FlashcardSet
+import com.teamttdvlp.memolang.model.*
 import com.teamttdvlp.memolang.view.activity.iview.ReviewFlashcardEasyView
-import com.teamttdvlp.memolang.view.base.BaseAndroidViewModel
+import com.teamttdvlp.memolang.view.base.BaseViewModel
 import com.teamttdvlp.memolang.view.helper.notContains
+import com.teamttdvlp.memolang.view.helper.quickLog
 import com.teamttdvlp.memolang.view.helper.selfPlusOne
 
-class ReviewFlashcardEasyViewModel(var app : Application) : BaseAndroidViewModel<ReviewFlashcardEasyView>(app) {
+class ReviewFlashcardEasyViewModel(var app : Application) : BaseViewModel<ReviewFlashcardEasyView>() {
 
     val currentPos = ObservableInt()
 
@@ -24,29 +22,91 @@ class ReviewFlashcardEasyViewModel(var app : Application) : BaseAndroidViewModel
 
     private lateinit var currentCard: Flashcard
 
-    private lateinit var cardList: ArrayList<Flashcard>
-
-    private lateinit var textSpeaker : TextSpeaker
+    private var cardList: ArrayList<Flashcard> = ArrayList()
 
     private var cardListRandomer : CardListRandomer = CardListRandomer()
 
     private var forgottenCardList = ArrayList<Flashcard>()
 
-    fun setUp (cardList : ArrayList<Flashcard>) {
-        this.cardList = cardListRandomer.random(cardList)
-        currentCard = this.cardList.first()
+    private lateinit var reviewFCEasyActivity_StatusManager : ReviewActivitiesSpeakerStatusManager
+
+    private lateinit var answerTextSpeaker : TextSpeaker
+
+    private lateinit var questionTextSpeaker : TextSpeaker
+
+    private var reverseLanguages : Boolean = false
+
+    fun setUp (flashcardSet : FlashcardSet, reverseLanguages : Boolean) {
+        this.reverseLanguages = reverseLanguages
+
+        // Show to UI by Databinding
+        setName.set(flashcardSet.name)
+        cardLeftCount.set(cardList.size)
+        //
+
+        reviewFCEasyActivity_StatusManager = ReviewActivitiesSpeakerStatusManager(app, "", setNameFormat = { setName ->
+            return@ReviewActivitiesSpeakerStatusManager "Easy_Review<$setName>"
+        })
+
+        val questionLanguage : String
+        val answerLanguage : String
+
+        if (reverseLanguages) {
+            questionLanguage = flashcardSet.frontLanguage
+            answerLanguage = flashcardSet.backLanguage
+            CardListLanguageReverser.reverse_ListCard_TextAndTranslation(flashcardSet.flashcards)
+        } else {
+            answerLanguage = flashcardSet.frontLanguage
+            questionLanguage = flashcardSet.backLanguage
+        }
+
+
+        // These statements must be called after #CardListLanguageReverser.reverse_ListCard_TextAndTranslation(flashcardSet.flashcards)
+        cardList.clear()
+        cardList.addAll(cardListRandomer.random(flashcardSet.flashcards))
+        currentCard = cardList.first()
+
+        val textSpokenFirst = if (doesTextNeedSpeakingAtStart()) {
+            if (checkCanUseExampleForTestSubject(currentCard)) {
+                cardList.first().meanOfExample
+            } else {
+                cardList.first().translation
+            }
+        } else ""
+
+        answerTextSpeaker = TextSpeaker(app, answerLanguage.trim())
+        questionTextSpeaker = TextSpeaker(app, questionLanguage.trim(), textSpokenFirst)
+
+
         currentPos.set(0)
         useCard(currentCard)
-        setName.set(currentCard.setName)
-        cardLeftCount.set(this.cardList.size)
-        textSpeaker = TextSpeaker(app, currentCard.languagePair.split(LANG_DIVIDER).get(TARGET_LANGUAGE))
     }
 
-    fun speakAnswer (text : String, onEnd : () -> Unit) {
-        textSpeaker.setOnSpeakTextDoneListener {
-            onEnd()
+    fun useCard (card : Flashcard) {
+        val cellOfListType = getCellOfListType(card)
+
+        val answerElement = convertAnswerToElements(card.text, cellOfListType)
+        val completeAnswerElement = getShuffledElementsAnswer(answerElement)
+
+        val useExampleForTestSubject :  Boolean
+        if (reverseLanguages) {
+            // Reverse for #checkCanUseExampleForTestSubject(card)
+            CardListLanguageReverser.reverse_Card_ExampleAndMeanExample(card)
+            useExampleForTestSubject = checkCanUseExampleForTestSubject(card)
+            if (useExampleForTestSubject.not()) {
+                // Reverse again, get it back to normal because example can't be used
+                CardListLanguageReverser.reverse_Card_ExampleAndMeanExample(card)
+            }
+        } else {
+            useExampleForTestSubject = checkCanUseExampleForTestSubject(card)
         }
-        textSpeaker.speak(text)
+
+        view.onGetTestSubject(
+            testSubject = card,
+            ansElements = completeAnswerElement,
+            useExampleForTestSubject = useExampleForTestSubject,
+            listType = cellOfListType
+        )
     }
 
     fun checkAnswer (userAnswer : String) {
@@ -94,31 +154,34 @@ class ReviewFlashcardEasyViewModel(var app : Application) : BaseAndroidViewModel
         return thereIsCardLeft
     }
 
-    fun useCard (card : Flashcard) {
-        val listType = if (card.text.trim().contains(" "))
-                                        ReviewFlashcardEasyView.WORD_LIST
-                                else
-                                        ReviewFlashcardEasyView.CHARACTER_LIST
 
-        val answerElement = convertAnswerToElements(card.text)
-        val completeAnswerElement = getShuffledElementsAnswer(answerElement)
-        view.onGetTestSubject(
-            testSubject = card,
-            ansElements = completeAnswerElement,
-            useUsingForTestSubject = canUseUsingForTestSubject(card),
-            listType = listType
-            )
+
+    private val SPECIFIED_CELL_AMOUNT = 15
+    private fun getCellOfListType (card : Flashcard) : ReviewFlashcardEasyView.ListOfCellType {
+        quickLog("jkaf: " + card.text)
+        if (card.text.trim().contains(" ")) {
+            val clearedAllSpaceText = card.text.replace(" ", "")
+            if (clearedAllSpaceText.length > SPECIFIED_CELL_AMOUNT) {
+                quickLog("Text: $clearedAllSpaceText and Length: ${clearedAllSpaceText.length}")
+                return ReviewFlashcardEasyView.ListOfCellType.WORD_LIST
+            } else { // Text is too short to devide it into words
+                quickLog("Too short length: ${clearedAllSpaceText.length}")
+                return ReviewFlashcardEasyView.ListOfCellType.CHARACTER_LIST
+            }
+        }
+        else
+                return ReviewFlashcardEasyView.ListOfCellType.CHARACTER_LIST
     }
 
-    fun convertAnswerToElements (input : String) : Array<String> {
+    fun convertAnswerToElements (input : String, type : ReviewFlashcardEasyView.ListOfCellType) : Array<String> {
         var answer = input.trim()
         val result : Array<String>
-        if (answer.contains(" ")) {
+        if (type == ReviewFlashcardEasyView.ListOfCellType.WORD_LIST) {
             while (answer.contains("  ")) {
                 answer = answer.replace("  ", " ")
             }
             result = answer.split(" ").toTypedArray()
-        } else {
+        } else { // ReviewFlashcardEasyView.ListOfCellType.CHARACTER_LIST
             result = Array<String>(answer.length) { index ->
                 return@Array answer[index].toString()
             }
@@ -148,7 +211,56 @@ class ReviewFlashcardEasyViewModel(var app : Application) : BaseAndroidViewModel
         return ansElementsHolder
     }
 
-    fun getFoggotenCardList(): ArrayList<Flashcard> {
+    fun getForgottenCardList(): ArrayList<Flashcard> {
         return forgottenCardList
+    }
+
+    fun speakAnswer (text : String, onSpeakDone : () -> Unit) {
+        answerTextSpeaker.setOnSpeakTextDoneListener(onSpeakDone)
+        answerTextSpeaker.speak(text)
+        if (answerTextSpeaker.error != null) {
+            // We just want to show this error only once
+            // because although there is error, but text speaker still work
+            // I also don't know exactly how it work
+            view.showSpeakTextError(answerTextSpeaker.error + "")
+            answerTextSpeaker.error = null
+        }
+    }
+
+    fun speakQuestion (text : String) {
+        questionTextSpeaker.speak(text)
+        if (questionTextSpeaker.error != null) {
+            // We just want to show this error only once
+            // because although there is error, but text speaker still work
+            // I also don't know exactly how it work
+            view.showSpeakTextError(questionTextSpeaker.error + "")
+            questionTextSpeaker.error = null
+        }
+    }
+
+    fun getSpeakerStatus(): Boolean {
+        return reviewFCEasyActivity_StatusManager.speakerStatusManager.getStatus()
+    }
+
+    fun saveAllStatus (speakerFunction : Int, speakerStatus : Boolean) {
+
+        if (::reviewFCEasyActivity_StatusManager.isInitialized) {
+            reviewFCEasyActivity_StatusManager.speakerStatusManager.apply {
+                saveFunction(speakerFunction)
+                saveStatus(speakerStatus)
+            }
+        } else {
+            quickLog("ReviewFlashcardEasyViewModel.kt:: reviewFCEasyActivity_StatusManager is not initialized")
+        }
+    }
+
+    fun getSpeakerFunction () : Int {
+        return reviewFCEasyActivity_StatusManager.speakerStatusManager.getFunction()
+    }
+
+    private fun doesTextNeedSpeakingAtStart () : Boolean {
+        val speakerFunc = reviewFCEasyActivity_StatusManager.speakerStatusManager.getFunction()
+        val speakerIsOn = reviewFCEasyActivity_StatusManager.speakerStatusManager.getStatus()
+        return ((speakerFunc == ReviewActivitiesSpeakerStatusManager.SpeakerStatus.SPEAK_ANSWER_ONLY) or (speakerFunc == ReviewActivitiesSpeakerStatusManager.SpeakerStatus.SPEAK_QUESTION_AND_ANSWER)) and speakerIsOn
     }
 }

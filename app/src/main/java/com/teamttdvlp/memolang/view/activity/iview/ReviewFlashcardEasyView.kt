@@ -1,17 +1,16 @@
 package com.teamttdvlp.memolang.view.activity.iview
 
-import com.teamttdvlp.memolang.model.entity.flashcard.Flashcard
+import com.teamttdvlp.memolang.data.model.entity.flashcard.Flashcard
+
 
 interface ReviewFlashcardEasyView : View {
 
-    companion object {
-        val CHARACTER_LIST = -1
-
-        val WORD_LIST = -2
+    enum class ListOfCellType {
+        WORD_LIST, CHARACTER_LIST
     }
 
-    fun onGetTestSubject (testSubject : Flashcard, useUsingForTestSubject : Boolean,
-                          ansElements : Array<String>, listType : Int)
+    fun onGetTestSubject (testSubject : Flashcard, useExampleForTestSubject : Boolean,
+                          ansElements : Array<String>, listType : ListOfCellType)
 
     fun performCorrectAnsElemtsOrderAnims ()
 
@@ -24,4 +23,6 @@ interface ReviewFlashcardEasyView : View {
     fun endReviewing()
 
     fun nextCard()
+
+    fun showSpeakTextError(error: String)
 }

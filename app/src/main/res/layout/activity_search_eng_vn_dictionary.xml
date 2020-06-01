@@ -7,7 +7,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/background_menu_activity"
+        android:background="@color/white"
         tools:context=".view.activity.SearchEngVNDictionaryActivity">
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -17,14 +17,14 @@
             android:layout_marginStart="@dimen/common_margin_start"
             android:layout_marginTop="@dimen/common_margin_top"
             android:layout_marginEnd="@dimen/common_margin_end"
-            android:background="@drawable/round_3dp_yellow_search_bar_background"
+            android:background="@drawable/background_round_corner_app_gradient_blue"
             android:weightSum="2"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
             <EditText
-                android:id="@+id/txt_eng_vi_dictionary"
+                android:id="@+id/edt_eng_vi_dictionary"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_marginStart="16dp"
@@ -32,23 +32,26 @@
                 android:layout_weight="1"
                 android:background="@null"
                 android:ems="10"
+                android:gravity="center_vertical"
                 android:fontFamily="@font/segoeui"
-                android:hint="English-Vietnamese dictionary"
+                android:hint="Type your text here"
+                android:includeFontPadding="false"
                 android:inputType="textPersonName"
                 android:paddingBottom="1dp"
-                android:textColorHint="#5E5533"
+                android:textColorHint="@color/white"
                 android:textSize="16sp"
+                android:imeOptions="actionSearch"
                 app:layout_constraintEnd_toStartOf="@id/btn_clear_all_text"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <ImageView
                 android:id="@+id/btn_clear_all_text"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="10dp"
+                android:layout_width="12.5dp"
+                android:layout_height="12.5dp"
+                android:layout_marginEnd="12.5dp"
                 android:layout_weight="1"
-                android:src="@drawable/image_clear_all_text_black"
+                android:src="@drawable/image_clear_all_text_white"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -87,19 +90,19 @@
             app:layout_constraintTop_toBottomOf="@+id/vwgrp_en_vi_dictionary"
             app:layout_constraintVertical_bias="0.0" />
 
-        <TextView
+        <ImageView
             android:id="@+id/btn_search"
-            android:layout_width="85dp"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="@dimen/common_margin_end"
-            android:layout_marginBottom="20dp"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
             android:text="Tap"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="5dp"
             android:gravity="center"
             android:textColor="#FFCA7A"
             android:textSize="17sp"
             android:fontFamily="@font/segoeui"
             android:paddingBottom="3dp"
-            android:background="@drawable/round_5dp_brown_of_land_background"
+            android:src="@drawable/image_tap_to_search_brown"
             android:elevation="6dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"

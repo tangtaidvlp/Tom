@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_menu_activity"
+        android:clickable="true"
+        android:elevation="15dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <TextView
+            android:id="@+id/txt_question_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="Question language"
+            android:textColor="@color/black"
+            android:fontFamily="@font/segoeuib"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@id/txt_question_language"
+            app:layout_constraintTop_toBottomOf="@id/txt_question_title2" />
+
+        <TextView
+            android:id="@+id/txt_question_title2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/segoeui"
+            android:text="Choose languages"
+            android:textColor="@color/black"
+            android:textSize="28sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@id/txt_question_language"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0" />
+
+        <TextView
+            android:id="@+id/txt_question_language"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/common_margin_start"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/round_5dp_black_alpha_8_percents_background"
+            android:gravity="center"
+            android:paddingTop="8dp"
+            android:paddingBottom="10dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/segoeui"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txt_question_title" />
+
+        <TextView
+            android:id="@+id/txt_answer_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/segoeuib"
+            android:text="Answer language"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@id/txt_answer_language"
+            app:layout_constraintTop_toBottomOf="@id/txt_question_language" />
+
+        <TextView
+            android:id="@+id/txt_answer_language"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="@dimen/common_margin_end"
+            android:background="@drawable/round_5dp_black_alpha_8_percents_background"
+            android:fontFamily="@font/segoeui"
+            android:gravity="center"
+            android:paddingTop="8dp"
+            android:paddingBottom="10dp"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txt_answer_title" />
+
+        <LinearLayout
+            android:id="@+id/btn_reverse_langage"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="55dp"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/round_5dp_black_background"
+            android:elevation="5dp"
+            android:fontFamily="@font/seguisb"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toStartOf="@id/btn_does_not_reverse_language"
+            app:layout_constraintTop_toBottomOf="@id/txt_answer_language">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/image_reverse" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:fontFamily="@font/seguisb"
+                android:gravity="center"
+                android:paddingTop="3dp"
+                android:paddingBottom="5dp"
+                android:text="Reverse"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toStartOf="@id/btn_does_not_reverse_language"
+                app:layout_constraintTop_toBottomOf="@id/txt_answer_language" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/btn_does_not_reverse_language"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="55dp"
+            android:background="@drawable/round_5dp_black_background"
+            android:elevation="5dp"
+            android:fontFamily="@font/seguisb"
+            android:gravity="center"
+            android:paddingTop="3dp"
+            android:paddingBottom="5dp"
+            android:text="Okay"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@id/txt_answer_language"
+            app:layout_constraintTop_toBottomOf="@id/txt_answer_language" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/vertical_center_guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

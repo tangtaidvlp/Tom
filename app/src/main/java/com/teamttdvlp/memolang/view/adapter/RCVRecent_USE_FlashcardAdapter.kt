@@ -4,9 +4,8 @@ import android.content.Context
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.teamttdvlp.memolang.R
 import com.teamttdvlp.memolang.databinding.ItemRecentUseFlashcardRcvBinding
-import com.teamttdvlp.memolang.model.entity.flashcard.Flashcard
+import com.teamttdvlp.memolang.data.model.entity.flashcard.Flashcard
 
 class RCVRecent_USE_FlashcardAdapter (var context : Context, var list : ArrayList<Flashcard> = ArrayList()) : RecyclerView.Adapter<RCVRecent_USE_FlashcardAdapter.ViewHolder> () {
 

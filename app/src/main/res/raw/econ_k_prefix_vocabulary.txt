@@ -1,0 +1,72 @@
+@Kahn, Richard F.
+- (Econ) (1905-1989)
+= Nhà kinh tế học người Anh, người có ảnh hưởng lớn tại Cambridge, từ những năm 1930 tơi những năm 70. Uy tín và ảnh hưởng của ông vượt xa những tác phẩm đã xuất bản của mình mà trong đó tác phẩm Các tiểu luận lựa chọn về việc làm và tăng trưởng (1973) miêu tả những đóng góp chủ yếu của ông.Ông được cho là người đã đưa ra khái niệm số nhân và được ghi nhận vì những đóng góp quan trọng trong những năm 1930 về KINH TẾ HỌC PHÚC LỢI trong việc xác định những điều kiện để có một SỰ TỐI ƯU VỀ XÃ HỘI.
+@Kaldor, Nicholas
+- (Econ) (1908-1986)
+= Sinh ra ở Hungary, Kaldor đã học và dạy ở Anh từ những năm 1920. Ông ta có một số đóng góp cho lý thuyết kinh tế và đôi khi là nhân vật quan trọng trong việc tư vấn cho các chính phủ về chính sách kinh tế. Ông có đóng góp vào lý thuyết kinh tế trong lĩnh vực KINH TẾ HỌC PHÚC LỢI mà theo đó ông cùng với J.R.Hicks phát triển mô hình KIỂM ĐỊNH ĐỀN BÙ phúc lợi thu được. Ông ta là người ủng hộ chính đối với cuộc tranh cãi về vốn và cùng với Joan Robinson và những người khác ông đã tấn công học thuyết tân cổ điển về phân phối thu nhập và tiến bộ kỹ thuật dựa trên phân tích biên thay thế chúng với các mô hình dựa trên phân tích của J.M.Keynes, David Ricardo và Pireo Sraffa. Trong khi làm cố vấn cho bộ trưởng bộ tài chính Anh về các chính sách thuế khoá từ năm 1964-1968 và 1974-1976, ông đã đề nghị sử dụng THUẾ LỢI VỐN để phân phối lại thu nhập và thuế sử dụng lao động chọn lọc để khuyến khích thuyên chuyển lao động sang ngành chế tạo. Là người bảo vệ chung thành kinh tế học Keynes, ông có ảnh hưởng rất lớn trong một số lĩnh vực đặc biệt trong các tác phẩm của Nhóm chính sách kinh tế Cambridge, chủ yếu là của Kaldor về CẦU HIỆU LỰC và sự cần thiết của chính phủ cần phải can thiệp vào nền kinh tế để ổn định nền kinh tế về cả bên trong và bên ngoài và khuyến khích tăng trưởng. Các tác phẩm chính của ông bao gồm: Thuế chi tiêu (1955), Các tiểu luận về tăng trưởng và ổn định kinh tế (1960), Các tiểu luận về giá trị và phân phối (1960), Tích luỹ vốn và tăng trưởng kinh tế (1961), Nguyên nhân của tỷ lệ tăng trưởng chậm ở Anh (1966), Mâu thuẫn của các mục tiêu chính sách (1971), Các tiểu luận về kinh tế được thu thập, tập 5 (1978).
+@Kaldor - Hicks test
+- (Econ) Kiểm định Kaldor - Hicks.
+= Kiểm định này được Kaldor và Hicks đưa ra trong các bài báo được in ở Tạp chí Kinh tế năm 1939. Xem COMPENSATION TESTS.
+@Kalecki, Micheal
+- (Econ) (1899-1970)
+= Nhà kinh tế học người Balan, trong đầu những năm 30 ông đã độc lập phát triển thuyết của Keynes. Kalecki cũng là người đưa ra khái niệm mức độ độc quyền được xác định bởi tỷ lệ giữa mức lãi suất trên giá bán, điều này cho thấy không có sự cạnh tranh về giá cả. Khái niệm này được dùng để giải thích tại sao giá cả lại không giảm xuống trong thời kỳ suy thoái và cũng để giải tỷ trọng của lợi nhuận và lương trong THU NHẬP QUỐC DÂN. Kelecki cũng là người đưa ra khái niệm người công nhân tiêu cái gì mà họ kiếm được và các nhà tư bản kiếm cái gì họ đã chi tiêu. Nếu người công nhân tiêu toàn bộ tiền lương của vào mua hàng hoá thì phần còn lại của thu nhập quốc dân, lợi nhuận phải có sẵn cho đầu tư và tiêu dùng của nhà tư bản. Nếu các nhà tư bản tăng tiêu dùng của mình thì nó sẽ trở lại với họ dưới dạng lợi nhuận cao hơn. Năm 1943, Kalecki cũng dự đoán chu kỳ ngừng tăng trưởng chính trị. Điều đó đã xảy ra ở Anh từ cuối Chiến tranh thế giới thứ hai. Tới cuối đời mình, ở Balan, Kalecki quan tâm đến ĐỘNG HỌC KINH TẾ và sự tăng trưởng ở các nước Xã hội chủ nghĩa. Các ấn phẩm chính của ông bao gồm: Các tiểu luận về lý thuyết giao động kinh tế (1939), Lý thuyết động học kinh tế (1945), Lý thuyết tăng trưởng ở một nền kinh tế Xã hội chủ nghĩa (1969) và các tiểu luận lựa chọn về động học của nền kinh tế tư bản chủ nghĩa (1971).
+@Kalman filtering
+- (Econ) Phép lọc Kalman.
+= Đây là phương pháp tối ưu để dự đoán CÁC BIẾN SỐ NỘI SINH và cập nhật những THÔNG SỐ ƯỚC LƯỢNG trong các phương trình dự đoán.
+@Kantorovich, Leonid
+- (Econ) (1912-1986)
+= Nhà kinh tế học và toán học người Nga là người khởi xướng QUY HOẠCH TUYẾN TÍNH trong những năm 1930. Kantorovich ứng dụng thuyết này không những đối với vấn đề kết hợp các yếu tố sản xuất sẵn có trong một nhà máy để tối đa sản lượng, mà còn áp dụng thuyết này vào vấn đề kế hoạch hoá kinh tế vĩ mô ở một nền kinh tế xã hội chủ nghĩa. Kết luận của ông là có thể phi tập trung hoá các quyết định sản xuất mà vẫn duy trì hiệu quả nếu giá cả bóng (dẫn xuất từ đáp số của các bài toán quy hoạch tuyến tính) được sử dụng ở các mức thấp của quá trình quyết định. Luận điểm chính trong tác phẩm của ông và các nhà kinh tế khác ở Nga, những người chịu ảnh hưởng của ông là: một nền kinh tế kế hoạch hoá tập trung thành công cần phải sử dụng hệ thống giá cả xây dựng bao gồm tỷ lệ chiết khấu xã hội hay lãi suất xã hội. Ông đề nghị cải cách kỹ thuật kế hoạch hoá khi đó đang được dùng ở Liên Xô. Ông được tặng giải Nobel về kinh tế học năm 1975 (cùng với T.KOOPMANS). Các tác phẩm chính của ông bao gồm: Các phương pháp toán học trong lập kế hoạch tổ chức sản xuất (1939), Các sử dụng tốt nhất các nguồn lực kinh tế (1965) và Quyết định tối ưu trong kinh tế học (1972) (vói A.G.Gorstko).
+@Kenedy Round
+- (Econ) Vòng đàm phán Kenedy.
+= Vòng thương thuyết mậu dịch đa phương lần thứ sáu, tiến hành dưới sự bảo trợ của HIỆP ĐỊNH CHUNG VỀ THUẾ QUAN VÀ MẬU DỊCH diễn ra ở Geneva từ 1964-1967. Không giống các vòng thương thuyết mậu dịch trước đó thường khuyến khích giảm hàng rào mậu dịch đa phương, vòng Kenedy đã dẫn tới việc thương lượng giảm thuế quan đối với những nhóm hàng hoá cụ thể chứ không thương lượng về một mặt hàng.
+@Key bargain
+- (Econ) Thương lượng chủ chốt.
+= Một hình thức chỉ đạo tiền lương cụ thể mà trong đó một khoản thanh toán tiền lương được dùng làm tham chiếu cho toàn bộ những khoản lương phải trả sau đó.
+@Keynes, John Maynard
+- (Econ) (1883-1946)
+= Là một học trò của Alffred Marshall.
+@Keynes effect
+- (Econ) Hiệu ứng Keynes.
+= Một thay đổi của cầu đối với hàng hoá là kết quả của sự thay đổi trong mức giá chung.
+@Keynesian cross
+- (Econ) Điểm cắt Keynes
+= Xem INCOME - EXPENDITURE MODEL.
+@Keynesian economics
+- (Econ) Kinh tế học trường phái Keynes
+= Một cụm thuật ngữ dùng để miêu tả các lý thuyết kinh tế vĩ mô về mức độ hoạt động kinh tế sử dụng các kỹ thuật do J.M.Keynes đưa ra.
+@Keynesian Growth Theory
+- (Econ) Lý thuyết tăn trưởng của trường phái Keynes.
+= Xem HARROD DOMAR GROWTH MODEL.
+@Keynes Plan
+- (Econ) Kế hoạch Keynes.
+= Bộ tài chính Anh đưa ra những đề nghị về việc thiết lập một liên minh Thanh toán Bù trừ quốc tế tại Hội nghị Tài chính và tiền tệ của Liên hợp quốc ở BRETTON WOOD, New Hampshire năm 1944. John Maynard Keynes là người chịu trách nhiệm chủ yếu về việc tạo lập các đề nghị đó nên được gọi chung là Kế hoạch Keynes.
+@Key rates
+- (Econ) Các mức lương then chốt.
+= Các mức lương của nghề nghiệp trong thị trường LAO ĐỘNG NỘI BỘ làm điểm tiếp xúc với thị trường bên ngoài.
+@Kinked demand curve
+- (Econ) Đường cầu gấp khúc.
+= Dựa trên giả thuyết rằng trong các thị trường có đặc điểm độc quyền nhóm, sự phụ thuộc lẫn nhau buộc các doanh nghiệp phải tin rằng giảm giá xuống dưới mức hiện hành sẽ bị các đối thủ làm theo, nhưng tình hình đó sẽ không diễn ra đối với trường hợp tăng giá.
+@Klein Goldberger model
+- (Econ) Mô hình Klein Goldberger.
+= Một mô hình KINH TẾ LƯỢNG cỡ vừa của nền kinh tế Mỹ cho giai đoạn 1929-1952 (không kể cả giai đoạn 1942-1945) đã có ảnh hưởng rất quan trọng đối với việc xây mô hình kinh tế lượng từ thời gian xuất bản năm 1955 đến nay.
+@Klein, Lawrence R.
+- (Econ) (1920-)
+= Nhà kinh tế học người Mỹ và là giáo sư kinh tế tại trường Đại học Pennsylvania; được tặng giải thưởng Nobel về kinh tế năm 1980 về tác phẩm tiên phong của mình trong việc phát triển các mô hình dự báo kinh tế định lượng, có thể được dùng để dự báo các biến số như tổng sản phẩm quốc dân, xuất khẩu, đầu tư… và các tác động của các biện pháp trong các chính sách đối với các biến số này. Trong số nhiều mô hình có liên quan đến tên này thì mô hình thành công và nổi tiếng nhất là mô hình Dự báo Kinh tế Lượng Wharton đối với nền kinh tế Mỹ, đưa ra tại trường đại học Pennsylvania. Klein đã quan tâm nhiều đến việc áp dụng các phát triển lý thuyết trong kinh tế lượng vào công việc ứng dụng hơn là việc đưa ra thuyết kinh tế định lượng. Sự nghiệp của ông đã góp phần phát triển lĩnh vực này và ảnh hưởng tới việc xây dựng mô hình trên quy mô toàn thế giới. Thành tựu có một không hai của Klein nói chung là việc dịch chuyển mô hình Keynes sang lĩnh vực thống kê. Hai cuốn sách nổi tiếng nhất của ông là Cuộc cách mạng Keynes (1947) và Sách giáo khoa về Kinh tế lượng (1953).
+@Knife edge
+- (Econ) Điểm tựa mỏng manh.
+= Trong THUYẾT TĂNG TRƯỞNG, một vật cản đối với tăng trưởng ổn định khi Tốc độ tăng trưởng đảm bảo là không ổn định, ngoài vấn đề nữa là liệu tốc độ đảm bảo có ngang bằng Tốc độ tăng trưởng tự nhiên hay không.
+@Knight, Frank
+- (Econ) (1895-1973)
+= Là một nhà kinh tế học người Mỹ, Knight được bổ nhiệm làm giáo sư kinh tế tại Chicago năm 1928. Ông có đóng góp quan trọng vào đạo lý và PHƯƠNG PHÁP LUẬN của kinh tế học cũng như đối với việc định nghĩa và giải thích CHI PHÍ XÃ HỘI. Đóng góp lớn nhất của ông đối với kinh tế tác phẩm Rủi ro, Sự không chắc chắn và lợi nhuận (1921). Các ấn phẩm chính khác của ông bao gồm Tổ chức Kinh tế (1933), Luân lý về cạnh tranh (1935), Tự do và đổi mới (1947), Những bài luận về lịch sử và Các phương pháp kinh tế học (1956), và Tình báo và Hành động dân chủ (1960). Là một nhà sáng lập trương phái các nhà kinh tế TỰ DO CHICAGO, Knight đã có ảnh hưởng đáng kể đối với các thành viên của trương phái đó, mặc dầu ông ta bị phê phán về quyền hành của nhà nước, ông ta nghi ngờ khả năng của một xí nghiệp tự do hoạt động hiệu quả và theo một cách thức hợp đạo lý. Đặc biệt ông bị phê phán về các tác động của kinh doanh tự do đối với thu nhập.
+@Kondratieff, Nicolai D.
+- (Econ) (1892-..?)
+= Một nhà kinh tế người Nga có đóng góp đáng kể vào kinh tế nông nghiệp và phát triển kế hoạch hoá kinh tế ở Liên Xô. Năm 1952 ông xuất bản cuốn Những làn sóng dài trong cuộc sống kinh tế, mà nhờ đó ông trở nên nổi tiếng. Ông tìm ra những chu kỳ dài từ cuối những năm 1780 đến 1844-51, từ 1844-51 đến 1914-20. Ông cho rằng sự tồn tại của các làn sóng dài là ít nhất có khả năng nhưng không đưa ra thuyết hệ thống, chỉ đơn thuần đưa ra một số yếu tố liên quan. Các nghiên cứu sau này đã cho thấy rằng các làn sóng tìm được có thể là do các kỹ thuật thống kê được Kondratieff sử dụng tạo nên. Mong muốn phân tích các điều kiện kinh tế một cách khách quan của ông đã vô hình làm cho ông mâu thuẫn với các chính sách của Liên Xô. Ông bị bắt năm 1930, và không được đưa ra xử công khai, và sau đó chết trong tù không ai biết tới.
+@Koopmans, Tjalling
+- (Econ) (1910-1985)
+= Nhà kinh tế học người Mỹ sinh ra ở Halan. Koopmans là giáo sư kinh tế tại Chicago (1948-1955), giám đốc COWLES FOUNDATION (1961-1967), và là giáo sư kinh tế tại Harvard (1960-1961). Là người có công độc lập phát triển QUY HOẠCH TUYẾN TÍNH, Koopmans gắn liền quy hoạch tuyến tính với thuyết kinh tế vi mô truyền thống và phát triển một mô hình phân bổ nguồn lực trong một nền kinh tế cạnh tranh. Ông cho rằng một mô hình sản xuất như vậy có thể làm cơ sở cho việc thiết lập nên một lý thuyết cân bằng tổng thể. Năm 1951, ông trình bày quan điển này trong phân tích hoạt động về sản xuất về phân bổ, trong đó ông đưa ra công cụ phân tích hoạt động. Kết luận của tác phẩm này là việc sử dụng giá bóng tạo ra các khả năng phi tập trung hoá các quyết định sản xuất trong nền kinh tế. Koopmans đã có đóng góp quan trọng vào thuyết tăng trưởng tối ưu và thuyết kinh tế lượng. Ông đưa ra một số định lý quan trọng về việc phân chia tối ưu thu nhập quốc dân giữa đầu tư và tiêu dùng thông qua thời gian và đã cho thấy kết quả của những lựa chọn đó đối với việc phân bổ phúc lợi giữa các thế hệ. Ông được tặng giải  thưởng Nobel năm 1975 (cùng với L.KANTOROVICH). Các tác phẩm chính khác của ông bao gồm Ba tiểu luận về tình trạng khoa học kinh tế (1957).
+@Koych transformation
+- (Econ) Phép biến đổi Koyck
+= Một loạt các biến đổi mà trong đó một phương trình chứa một trễ phân phối giảm theo cấp số nhân có độ dài vô hạn được biến đổi thành một số số lượng hữu hạn các biến số, bao gồm một trễ không đồng nhất.
+@Kuznets, Simon
+- (Econ) (1901-1985)
+= Nhà kinh tế học người Mỹ gốc Nga, người được tặng giải thưởng Nobel kinh tế năm 1971 do đóng góp vào việc thu thập, ước lượng và giải thích các số liệu liên quan đến quá trình thay đổi xã hội. Đóng góp đó của ông đã chiếu một luồng ánh sáng mới vào tăng trưởng kinh tế. Ông quan tâm đến chu kỳ tăng trưởng dài mà có vẻ bị ảnh hưởng mạnh mẽ bởi những thay đổi trong tốc độ tăng dân số, sự ổn định trong hầu hết các nước công nghiệp trong nhiều thập kỷ của tỷ lệ giưa tiêu dùng và thu nhập và việc ông phát hiện ra rằng số lượng vốn thực sự cần để sản xuất ra một lượng hàng hoá nhất định có xu hướng đi xuống. Có một số tranh cãi về việc liệu các chu kỳ mà ông tìm ra có thể không phải là vì kỹ thuật thống kê mà ông sử dụng. Xem Fishman, G.S, Những phương pháp phổ biến trong kinh tế lượng. Harvard University press (1969). Các ấn phẩm chính của Kuznuts là Thu nhập quốc dân và Thành phần của nó (1941), Sản phẩm quốc dân từ năm 1869 (1946) và Sự tăng trưởng kinh tế của các dân tộc (1971).

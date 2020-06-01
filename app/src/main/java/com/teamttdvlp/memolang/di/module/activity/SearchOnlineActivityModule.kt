@@ -12,17 +12,19 @@ import androidx.recyclerview.widget.RecyclerView
 import androidx.vectordrawable.graphics.drawable.AnimatorInflaterCompat
 import com.teamttdvlp.memolang.R
 import com.teamttdvlp.memolang.view.activity.SearchOnlineActivity
-import com.teamttdvlp.memolang.view.adapter.RCVChooseLanguageAdapter
-import com.teamttdvlp.memolang.view.adapter.RCVRecent_Search_FlashcardAdapter
-import com.teamttdvlp.memolang.view.adapter.RCVSimpleListAdapter2
+import com.teamttdvlp.memolang.view.adapter.*
 import com.teamttdvlp.memolang.view.helper.dp
-import com.teamttdvlp.memolang.view.helper.quickLog
 import dagger.Module
 import dagger.Provides
 import javax.inject.Named
 
 @Module
 class SearchOnlineActivityModule  {
+
+    @Provides
+    fun provideRecentUsedLanguageAdapter (activity : SearchOnlineActivity) : RCVRecentUsedLanguageAdapter{
+        return RCVRecentUsedLanguageAdapter(activity)
+    }
 
     @Provides
     @Named("MoveUpAndAppear")
@@ -217,6 +219,11 @@ class SearchOnlineActivityModule  {
     }
 
     @Provides
+    fun provideSimpleListChooseSetNameAdapter(activity: SearchOnlineActivity) : RCVSimpleListChooseSetNameAdapter{
+        return RCVSimpleListChooseSetNameAdapter(activity)
+    }
+
+    @Provides
     fun provideLayoutManager (activity: SearchOnlineActivity) : LinearLayoutManager {
         return LinearLayoutManager(activity, RecyclerView.VERTICAL, false)
     }
@@ -228,13 +235,13 @@ class SearchOnlineActivityModule  {
     @Provides
     @Named("ViewGroupLangOptionHeight")
     fun provideViewGroupHeight (activity: SearchOnlineActivity) : Float{
-        return 50.dp().toFloat()
+        return 43.dp().toFloat()
     }
 
     @Provides
     @Named("EditTextTextHeight")
     fun provideTextViewTextHeight  (activity: SearchOnlineActivity) : Float {
-        return  120.dp().toFloat()
+        return  150.dp().toFloat()
     }
 
 

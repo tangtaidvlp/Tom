@@ -1,104 +1,173 @@
 package com.teamttdvlp.memolang.viewmodel
 
 import androidx.databinding.ObservableField
-import com.teamttdvlp.memolang.database.MemoLangSqliteDataBase
-import com.teamttdvlp.memolang.model.entity.flashcard.Flashcard
-import com.teamttdvlp.memolang.model.entity.User
-import com.teamttdvlp.memolang.database.sql.entity.user.UserConverter
-import com.teamttdvlp.memolang.database.sql.repository.FlashcardRepository
-import com.teamttdvlp.memolang.database.sql.repository.UserRepository
-import com.teamttdvlp.memolang.model.RecentAddedFlashcardManager
+import com.teamttdvlp.memolang.data.model.entity.flashcard.Flashcard
+import com.teamttdvlp.memolang.data.model.entity.flashcard.FlashcardSet
+import com.teamttdvlp.memolang.model.AddFlashcardExecutor
+import com.teamttdvlp.memolang.model.repository.UserUsingHistoryRepos
+import com.teamttdvlp.memolang.model.repository.UserRepos
+import com.teamttdvlp.memolang.model.AddFlashcardSharedPreference
+import com.teamttdvlp.memolang.model.repository.FlashcardSetRepos
 import com.teamttdvlp.memolang.view.activity.iview.AddFlashcardView
 import com.teamttdvlp.memolang.view.base.BaseViewModel
-import com.teamttdvlp.memolang.view.helper.notContains
 import com.teamttdvlp.memolang.view.helper.quickLog
-//import com.teamttdvlp.memolang.viewmodel.reusable.OnlineFlashcardDBManager
+import java.lang.Exception
 
-class AddFlashCardViewModel(var database : MemoLangSqliteDataBase,
-                            var userRepository: UserRepository,
-                            var flashcardRepository: FlashcardRepository,
-                            var recentAddedFCManager: RecentAddedFlashcardManager) : BaseViewModel<AddFlashcardView>() {
+class AddFlashCardViewModel(
+                           private var userRepos: UserRepos,
+                           private var addFlashcardExecutor: AddFlashcardExecutor,
+                           private var flashcardSetRepos: FlashcardSetRepos,
+                           private var userUsingHistoryRepos: UserUsingHistoryRepos,
+                           private var addFlashcardSharedPreference: AddFlashcardSharedPreference) : BaseViewModel<AddFlashcardView>() {
 
-    val languageHolderCard = ObservableField<Flashcard>()
+    val dataBindingCard = ObservableField<Flashcard>()
 
-    fun bindUserCurrentDataToUI (setName : String, sourceLang: String, targetLang: String) {
-        languageHolderCard.set(Flashcard(languagePair = "$sourceLang - $targetLang", id = 0,
-            text = "", translation = "",
-            setName = setName, example = "", exampleMean = "",
-            synonym = "", type = "", pronunciation = ""))
+    private lateinit var userFlashcardSetList : ArrayList<FlashcardSet>
+
+    fun showToUI (setName : String, frontLanguage: String, backLanguage: String) {
+        val dBCard = Flashcard(
+            frontLanguage = frontLanguage,
+            backLanguage = backLanguage,
+            setOwner = setName,
+
+            id = 0,text = "", translation = "",
+            example = "", meanOfExample = "",
+            type = "", pronunciation = "")
+
+        dataBindingCard.set(dBCard)
     }
 
-    fun addFlashcardToOfflineDB (newCard : Flashcard, onInsertListener : (isSuccess : Boolean, cardId : Long, ex : Exception?) -> Unit) {
-        flashcardRepository.insertFlashcard(newCard, onInsertListener)
-    }
+    fun proceedAddFlashcard (newCard: Flashcard) {
+        val flashcardSet = FlashcardSet(newCard.setOwner, newCard.frontLanguage, newCard.backLanguage)
 
-    fun addFlashcard (sourceLang : String, targetLang : String,
-                      setName : String, type : String,
-                      text : String, translation : String,
-                      example : String, meanOfExample : String,  pronunciation : String) {
-
-        if ((text == "") or (text == null)) {
+        if (newCard.text.isEmpty()) {
             view.showTextInputError()
             return
         }
 
-        if ((translation == "") or (translation == null)) {
+        if (newCard.translation.isEmpty()) {
             view.showTranslationInputError()
             return
         }
 
-        val langInfo = "$sourceLang - $targetLang"
-        val validSetName = if (setName.isNotEmpty()) setName else langInfo
-        val newCard = Flashcard(0,
-            text, translation, langInfo, validSetName,
-            example,meanOfExample, "", type, pronunciation)
+        saveFlashcardAndUpdateUserInfo(newCard, flashcardSet)
+    }
 
-        addFlashcardToOfflineDB (newCard) { isSuccess, insertedCardId, exception ->
+    fun createNewFlashcardSetIfValid (setName : String, frontLanguage: String, backLanguage: String) {
+        val newFlashcardSet = FlashcardSet(setName, frontLanguage, backLanguage)
+        val checkingInfo = checkFlashcardSetIsValid(newFlashcardSet)
+        val setIsValid = checkingInfo.first
+        if (setIsValid) {
+            flashcardSetRepos.insert(newFlashcardSet)
+            view.hideCreateNewFlashcardSetPanel()
+        } else {
+            val errorMessage = checkingInfo.second + ""
+            view.showInvalidFlashcardSetError(errorMessage)
+        }
+    }
+
+    private fun checkFlashcardSetIsValid (currentSet : FlashcardSet) : Pair<Boolean, String?> {
+        for (userFCSet in userFlashcardSetList) {
+            val hasANameInList = currentSet.name.trim() == userFCSet.name.trim()
+            if (hasANameInList) {
+                    val errorMessage = "The set \"${currentSet.name}\" has already existed, please choose another one"
+                    return Pair(false, errorMessage)
+            }
+        }
+        return Pair(true, null)
+    }
+
+    private fun saveFlashcardAndUpdateUserInfo (newCard: Flashcard, flashcardSet : FlashcardSet) {
+        addFlashcardExecutor.addFlashcardAndUpdateFlashcardSet(newCard) { isSuccess, insertedCardId, exception ->
             if (isSuccess) {
                 view.onAddFlashcardSuccess()
                 newCard.id = insertedCardId.toInt()
-                recentAddedFCManager.add(newCard)
-
-                updateUserFlashcardSets(validSetName)
+                updateUserInfo(newCard)
             } else {
                 quickLog("Storing this flashcard to local storage failed. Please check again")
                 exception!!.printStackTrace()
             }
         }
-
     }
 
-    fun updateUserRecentTargetLang (targetLang : String) {
-        User.getInstance().recentTargetLanguage = targetLang
-        userRepository.updateUser(UserConverter.toUserEntity(User.getInstance()))
-    }
-
-    fun updateUserRecentSourceLang (sourceLang : String) {
-        User.getInstance().recentSourceLanguage = sourceLang
-        userRepository.updateUser(UserConverter.toUserEntity(User.getInstance()))
-    }
-
-    fun updateUserFlashcardSets (setName : String) {
-        User.getInstance().recentUseFlashcardSet = setName
-        if (User.getInstance().flashcardSetNames.notContains(setName)) {
-            User.getInstance().flashcardSetNames.add(setName)
+    private fun updateUserInfo(newCard : Flashcard) {
+        userUsingHistoryRepos.addToRecent_AddedFlashcardList(newCard)
+        if (newCard.type.isNotEmpty()) {
+            addToUserOwnCardTypes(newCard.type)
         }
-        userRepository.updateUser(UserConverter.toUserEntity(User.getInstance()))
+        updateUserLastedUsedFlashcardSet(newCard.setOwner)
     }
 
-    fun getRecentSourceLanguage () : String {
-        return getSingletonUser().recentSourceLanguage
+    private fun updateUserLastedUsedFlashcardSet (setName : String) {
+        getUser().lastest_Used_FlashcardSetName = setName
+        userRepos.updateUser(getUser())
     }
 
-    fun getRecentTargetLanguage () : String {
-        return getSingletonUser().recentTargetLanguage
+    fun getLastedUseFlashcardSetName () : String {
+        return getUser().lastest_Used_FlashcardSetName
     }
 
-    fun getRecentUseFlashcardSet () : String {
-        return getSingletonUser().recentUseFlashcardSet
+    fun addToUsedLanguageList (language : String) {
+        userUsingHistoryRepos.addToUsedLanguageList(language)
     }
 
-    fun getFlashcardSetNameList () : ArrayList<String> {
-        return getSingletonUser().flashcardSetNames
+    fun updateCurrentFrontLang (frontLanguage : String) {
+        addFlashcardSharedPreference.currentFrontCardLanguage = frontLanguage
+        userRepos.updateUser(getUser())
     }
+
+    private fun addToUserOwnCardTypes (cardType : String) {
+        getUser().addToCardTypeList(cardType)
+    }
+
+    fun getUserOwnCardTypes() : ArrayList<String> {
+        return getUser().ownCardTypeList
+    }
+
+
+    fun updateCurrentBackLanguage (backLanguage : String) {
+        addFlashcardSharedPreference.currentBackCardLanguage = backLanguage
+        userRepos.updateUser(getUser())
+    }
+
+
+    fun getCurrentBackLanguage () : String {
+        return addFlashcardSharedPreference.currentBackCardLanguage
+    }
+
+    fun getCurrentFrontLanguage () : String {
+        return addFlashcardSharedPreference.currentFrontCardLanguage
+    }
+
+
+    fun getUsedLanguageList (onGet : (ArrayList<String>) -> Unit){
+        userUsingHistoryRepos.getUsedLanguage(onGet)
+    }
+
+
+    fun getAllFlashcardSetWithNoCardList (onGet : (ArrayList<FlashcardSet>) -> Unit) {
+        flashcardSetRepos.getAll_CardSet_WithNOCardList {
+            if (it != null) {
+                onGet.invoke(it)
+                cachedFlashcardSetList(it)
+            }
+        }
+    }
+
+    fun getFlashcardSetByName (setName : String, onGetListener : (FlashcardSet?, Exception?) -> Unit) {
+        flashcardSetRepos.getFlashcardSetByName(setName, onGetListener)
+    }
+
+    private fun cachedFlashcardSetList (flashcardSetList : ArrayList<FlashcardSet>) {
+        if (this::userFlashcardSetList.isInitialized.not()) {
+            this.userFlashcardSetList = flashcardSetList
+        }
+    }
+
+
+    fun saveUsingHistory() {
+        userUsingHistoryRepos.saveUsingHistoryInfo()
+        userRepos.updateUser(getUser())
+    }
+
 }

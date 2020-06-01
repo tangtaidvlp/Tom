@@ -1,6 +1,6 @@
 package com.teamttdvlp.memolang.model
 
-import com.teamttdvlp.memolang.model.entity.flashcard.Flashcard
+import com.teamttdvlp.memolang.data.model.entity.flashcard.Flashcard
 import kotlin.random.Random
 
 private const val MIN_RANDOM_TIMES = 3

@@ -1,0 +1,394 @@
+@Tast
+- (Econ) Sở thích, thị hiếu.
+@Tax incident
+- (Econ) Ai phải chịu thuế.
+@Tax wedge
+- (Econ) Chênh lệch giá do thuế.
+@Tax-base incomes Policy
+- (Econ) Chính sách thu nhập dựa vào thuế.
+@Technical change through R&D
+- (Econ) Thay đổi công nghệ qua R&D.
+@Technical efficiency
+- (Econ) Tính hiệu dụng về mặt kỹ thuật.
+@Technical knowlwdge
+- (Econ) Tri thức, kiến thức, kỹ thuật
+@Testing an economic model
+- (Econ) Kiểm nghiệm một mô hình thực tế.
+@The Corset
+- (Econ) Kế hoạch Corset.
+@Tradable
+- (Econ) Khả thương.
+@Trade balance
+- (Econ) Cán cân thương mại.
+@Traded and non-traded (goods)
+- (Econ) Hàng ngoại thương và phi ngoại thương.
+@Trade unions
+- (Econ) Công đoàn.
+@Transaction motives
+- (Econ) Những động cơ giao dịch.
+@Transfer in kin
+- (Econ) Trợ cấp bằng hiện vật.
+@Transmission mechanism
+- (Econ) Cơ chế lan chuyền.
+@Trend output path
+- (Econ) Đường biểu thị xu thế sản lượng.
+@Treasury
+- (Econ) Bộ tài chính, ngân khố.
+@Tow-path tariffs
+- (Econ) (hệ thống) giá hai phần.
+@Taft-Hartley Act
+- (Econ) Bộ luật Taft-Hartley.
+= Là bản sửa đổi vào năm 1947 của LUẬT QUAN HỆ LAO ĐỘNG QUỐC GIA (còn gọi là luật Wagner), được đưa ra nhằm hạn chế quyền lực của công đoàn.
+@Take-Home pay
+- (Econ) Thu nhập khả chi.
+= Thu nhập có thể sử dụng; thu nhập thô trừ thuế và đóng góp bảo hiểm xã hội.
+@Take-off
+- (Econ) Cất cánh .
+= Xem ROSTOW MODEL.
+@Takeover
+- (Econ) Thu mua.
+= Vịêc một công ty Tấn công mua hơn 51% cổ phiếu để có quyền bỏ phiếu ở một công ty khác .
+@Takeover and mergers
+- (Econ) Sự mua đứt và hợp nhất .
+@Takeover bid
+- (Econ) Trả giá thu mua.
+= Nỗ lực của một cá nhân, một nhóm người, hay một công ty nhằm mua đủ cổ phiếu để có quyền bỏ phiếu ở một công ty khác.
+@Tangible assets
+- (Econ) Tài sản hữu hình.
+= Các tài sản vật chất như nhà máy, máy móc, có thể được phân biệt với tài sản vô hình như giá trị của một bằng phát minh hay tiếng tăm của một công ty.
+@Tangible wealth
+- (Econ) Của cải hữu hình.
+@Tangency equilibrium
+- (Econ) Tiếp điểm cân bằng.
+@Tap issue
+- (Econ) Bán lẻ chứng khoán liên tục.
+= Hệ thống mà chứng khoán viền vàng có thể mua được từ cơ quan môi giới chính phủ mua trên sở giao dịch chứng khoán London.
+@Targets
+- (Econ) Mục tiêu (định lượng).
+= Còn gọi là mục tiêu chính sách. Là một loạt các mục tiêu định lượng của chính sách kinh tế phải đạt được bằng việc lựa chọn các giá trị của CÔNG CỤ CHÍNH SÁCH.
+@Tariff
+- (Econ) Thuế quan.
+= Thuế đánh vào một hàng hoá nhập khẩu ở một quốc gia.
+@Tariff factory
+- (Econ) Nhà máy tránh thuế quan.
+= Việc thay đổi địa điểm sản xuất một hàng hoá từ một nơi có giá thành thấp tới một nơi có giá thành cao ở một nước khác- nơi mà không thể bán mặt hàng này được do thuế quan cao.
+@Tariff Structure
+- (Econ) Khung biểu thuế quan.
+= Hình thái toàn bộ của các mức thuế quan.
+@Tatonnement
+- (Econ) Dò dẫm.
+= Quá trình mặc cả qua đó điểm cân bằng đạt được trên thị trường Walras.
+@Taxable income
+- (Econ) Thu nhập chịu thuế.
+= Tổng thu nhập trừ đi các khoản trợ cấp và các khoản công tác phí .
+@Taxation
+- (Econ) Sự đánh thuế.
+= Các khoản thanh toán mà chính phủ bắt buộc các cá nhân và công ty phải nộp nhằm huy động nguồn thu để trả cho các chi phí về hàng hoá công cộng và dịch vụ, và để kiểm soát lượng chi phí của khu vực tư nhân trong nền kinh tế.
+@Tax base
+- (Econ) Cơ sở thuế.
+= Xem TAXABLE INCOME.
+@Tax burden
+- (Econ) Gánh nặng thuế.
+= Xem AVERAGE RATE OF TAX.
+@Tax credit
+- (Econ) Ghi có thuế.
+= Đây là khoản ghi có trực tiếp đối với một loại thuế: khoản thuế phải trả được giảm đi bằng khoản ghi có.
+@Tax credit scheme
+- (Econ) Cơ chế ghi có thuế.
+= Một chương trình DUY TRÌ THU NHẬP, trong đó mọi người được bảo đảm một khoản thu nhập tối thiểu trong khi thu nhập trên mức đó sẽ bị đánh thuế.
+@Tax disincentive
+- (Econ) Sự làm giảm khuyến khích của thuế.
+= THUẾ THU NHẬP có thể làm cho người ta làm việc ít hơn. Sự tồn tại của nó làm cho giải trí hấp dẫn hơn vì nó không chịu thuế. Điều này được gọi là HIỆU ỨNG THAY THẾ của thuế.
+@Tax expenditure
+- (Econ) Chi tiêu (để) tránh thuế.
+= Cụm thuật ngữ dùng để chỉ các khoản khấu trừ mà được dùng để giảm nghĩa vụ nộp thuế - nói chung là nghĩa vụ nộp thuế thu nhập.
+@Tax-push inflation
+- (Econ) Lạm phát do thuế đẩy.
+= Lạm phát này liên quan đến quan tâm của công nhân trong việc duy trì mức tăng tiền công thực tế sau thuế và là một trong các yếu tố bị cho là đã làm thay đổi trong tiền công kém nhạy bén với các điều kiện của chiu kỳ kinh doanh.
+@Tax shifting
+- (Econ) Chuyển đẩy thuế.
+= HIện tượng mà trong đó những người phải chịu thuế có thể chuyển gánh nặng một phần hay toàn bộ cho những người khác.
+@Tax yield
+- (Econ) Tiền thu thuế.
+= Doanh thu có được từ một loại thuế.
+@T-distribution
+- (Econ) Phân phối T.
+= (Cũng còn goi là phân phối Student). Một PHÂN PHỐI XÁC SUẤT thường được dùng trong KIỂM ĐỊNH GIẢ THIẾT đối với các mẫu nhỏ và trong đó PHƯƠNG SAI của biến số liên quan phải được ước lượng từ dữ liệu thu được.
+@Technical progress
+- (Econ) Tiến bộ kỹ thuật.
+= Một yếu tố trung tâm trong TĂNG TRƯỞNG KINH TẾ cho phép sản xuất ra mức sản lượng cao hơn so với số lượng đầu vào lao động và vốn không đổi.
+@Technological dualism
+- (Econ) Mô hình nhị nguyên về công nghệ.
+= Quá trình kết hợp công nghiệp nặng cần nhiều vốn với các phương pháp cần nhiều lao động ở nơi khác để sử dụng lao động thừa.
+@Technological external effects
+- (Econ) Ngoại ứng của công nghệ.
+= Một cách gọi khác của ngoại ứng. Tính từ công nghệ được đưa vào để phân biệt các hiệu ứng như vậy với TÍNH KINH PHỤ THUỘC BÊN NGOÀI.
+@Technological progress
+- (Econ) Tiến bộ công nghệ.
+= Hầu hết các lý thuyết phát triển kinh tế nhấn mạnh sự cần thiết của tiến bộ kỹ thuật, và thường sự gia tăng trong tốc độ tiến bộ kỹ thuật có khi đòi hỏi sự tăng tốc.
+@Technological unemployment
+- (Econ) Thất nghiệp do công nghệ.
+= Thất nghiệp xảy ra  do áp dụng thiết bị tiết kiệm lao động khi nền kinh tế tăng trưởng.
+@Technology, choice of
+- (Econ) Sự lựa chọn công nghệ.
+= Một khía cạnh then chốt của chiến lược phát triển là việc lựa chọn kỹ thuật. Ở các nước đang phát triển, mức độ sẵn có của các yếu tố thường ngược lại ở chỗ vốn thì khan hiếm và đắt đỏ còn lao động thì thừa, rẻ.
+@Technology matrix
+- (Econ) Ma trận côngnghệ.
+= Trong phân tích đầu vào - đầu ra, một ma trận (thường được kí hiệu là An) mà phần tử thứ ij (nghĩa là phần tử ở hàng i và cột j) cho biết giá trị của sản lượng ở nghành i được sử dụng như một đầu vào ngay lập tức trong việc sản xuất ra một đơn vị đầu ra của ngành j của nền kinh tế.
+@Technology transfer
+- (Econ) Chuyển giao công nghệ.
+= Theo nghĩa rộng nhất là sự trao đổi giữa các nước về kiến thức sự tồn tại và vận hành của các loại máy móc và trong nhiều trường hợp là sự trao đổi của bản thânh máy móc.
+@Technology
+- (Econ) Công nghệ.
+@Technostructure
+- (Econ) Cấu trúc công nghệ.
+= Lớp học quản lý và kỹ năng hoạch định và kỹ thuật mà sản xuất công nghiệp hiện đại đòi hỏi.
+@Temporary layoffs
+- (Econ) Sa thải tạm thời.
+= Các nhân viên bị giới chủ sa thải nhưng biết rằng họ có thể trở lại công việc của mình vào lúc nào đó trong tương lai gần.
+@Term loan
+- (Econ) Khoản vay kỳ hạn.
+= Khoản cho vay ngân hàng trong một số năm cố định, thường là ba đến năm năm hoặc lâu hơn, với mức lãi xuất cố định, và thường được trả góp thành các phần nhỏ trải dài trong suốt một thời kỳ.
+@Terms of trade
+- (Econ) Tỷ giá thương mại.
+= Quan hệ giữa giá hàng xuất khẩu và giá hàng nhập khẩu.
+@Term structure of interest rates
+- (Econ) Cơ cấu kỳ hạn của lãi xuất.
+= Cơ cấu hay quan hệ giữa các lãi suất, hay nói một cách chặt chẽ hơn tổng lợi tức lúc đáo hạn, trên các chứng khoán có kỳ hạn khác nhau.
+@Test discount rate
+- (Econ) Lãi xuất chiết khấu kiểm định.
+= Mức lãi xuất mà một thời được dùng trong việc thẩm định ĐẦU TƯ TƯ BẢN bởi các ngành công nghiệp quốc hữu hoá ở Anh, sử dụng kỹ thuật chiết khấu luồng tiền. Tiêu trái này đã trở nên lạc hậu trong một số năm. Do vậy, người ta đã chuyển sự chú ý sang các phương pháp khác để xem xét chi phí vốn trong các quyết định đầu tư, và chính phủ đã yêu cầu các ngành công nghiệp quốc hữu hoá có được lợi tức trước thuế là 5% (8% kể từ năm 1989) đối với tất cả các khoản đầu tư mới (chứ không phải là đối với các dự án đơn lẻ).
+@Test statistic
+- (Econ) Thống kê kiểm định.
+= Một thống kê được tính cho kiểm định giả thiết.
+@Threat effect
+- (Econ) Tác động đe doạ.
+= Tác động mà giới chủ phi nghiệp đoàn trả tiền công nghiệp đoàn, hay xấp sỉ như vậy, hìng ngăn chặn việc thành lập nghiệp đoàn của nhân viên mình.
+@Threat of pay off
+- (Econ) Lợi ích đe doạ.
+= Xem NASH SOLUTIONS
+@Three stage least squares
+- (Econ) Bình phương nhỏ nhất của ba giai đoạn.
+= (3SLS hay Th SLS). Một giá trị của họ các ước lượng theo phương pháp bình phương nhỏ nhất áp dụng đối với việc ước lượng các thông số của hệ phương trình đồng thời, mà trong đó các hệ số nhiễu có thể tương quan với các phương trình.
+@Threshold
+- (Econ) Ngưỡng.
+= Điểm mà bên ngoài đó sẽ có thay đổi trong hành vi của tác nhân kinh tế, ví dụ như một ngưỡng đối với kỳ vọng giá cả, có nghĩa là kỳ vọng sẽ không liên tục được thay đổi dưới ánh sáng của các bằng chứng tích tụ, nhưng sẽ được thay đổi trong các khoảng thời gian khi tốc độ thay đổi giá đã vượt quá một điểm nào đó.
+@Threshold analysí
+- (Econ) Phân tích ngưỡng.
+= Một kỹ thuật dùng trong hoạch định vật chất để tìm ra quy mô mong muốn của cộng đồng và việc cung cấp các dịch vụ công cộng.
+@Threshold effect
+- (Econ) Tác động ngưỡng.
+= Sự tăng mức thuế mà một cộng đồng được cho sẵn là sẵn sàng trả do có khủng hoảng hay khẩn cấp quốc gia.
+@Threshold of a good
+- (Econ) Ngưỡng của một hàng hoá.
+= Trong kinh tế học khu vực, dân số tối thiểu có thể tạo một thị trường cho một hàng hoá hay dịch vụ. Khi dân số của một khu vực (như một thị trấn) dưới mức ngưỡng, cầu đối hàng hoá đó sẽ thấp đến mức mà việc cung cấp hàng hoá đó sẽ không khả thi về mặt kinh tế.
+@Thunen, Johann Heinrich von
+- (Econ) (1783-1850)
+= Von Thunen - nhà kinh tế học nông nghiệp người Đức đưa ra mô hình lý thuyết dựa trên kinh nghiệm canh tác nhằm tìm ra vị trí tối ưu đối với một loại cây trồng nào đó, đặc biệt về khoảng cách từ trung tâm có nhu cầu đối nó. Ông đưa ra thuyết TIỀN THUÊ ĐẤT tương tự với thuyết của Ricardo, và thuyết phân phối dựa trên năng suất biên. Việc ứng dụng năng suấtbiên vào tiền công và vốn, sử dụng các đạo hàm và lôgich cận biên nhằm  tìm ra các nghiệm cân bằng cho các biến số kinh tế, và tuyên bố của ông về quy luật TỶ LỆ BIẾN THIÊN đã cho phép ông ta được biết đén như nhà sáng lập ra phân tích biên. A.MARSHALL đã ca ngợi đóng góp lớn của ông.
+@Tiebout model
+- (Econ) Mô hìn Tiebout.
+= Một phân tích việc cung cấp HÀNG HOÁ CÔNG CỘNG lập luận rằng nếu một số dịch vụ công cộng nào đó được chính quyền địa phương cung cấp thì các cá nhân có thể thể hiện sở thích của mình về các  dịch vụ này và có được một kết hợp của dịch vụ công nghệ và thuế tương ứng với sở thích của họ bằng việc di chuyển giữa các địa phương.
+@Tight money
+- (Econ) Thắt chặt tiền tệ.
+= Một biện pháp của chính sách tiền tệ khi mà cung cấp tín dụng bị hạn chế và lãi suất ở mức cao.
+@Time, allocation of
+- (Econ) Phân bổ thời gian.
+= Mô hình thời gian giải trí truyền thống về cung giờ giả định rằng toàn bộ thời gian được phân bổ hoặc làm việc để kiếm tiền hoặc cho giải trí.
+@Time deposit
+- (Econ) Tiền gửi có kỳ hạn.
+= Khoản tiền gửi ở một ngân hàng mà chỉ có thể được rút ra sau khi có thông báo trước.
+@Time preference
+- (Econ) Sở thích theo thời gian.
+= Các cá nhân có mức sở thích theo thời gian dương đánh giá các đơn vị tiêu dùng hay thu nhập hiện tại cao hơn các đơn vị trong tương lai.
+@Time series
+- (Econ) Chuỗi số/dữ liệu theo thời gian.
+= Một chuỗi các giá trị quan sầtm một biến nhận ở các thời điểm khác nhau (thường là trong các giai đoạn kế tiếp nhau).
+@Time varying parameter models
+- (Econ) Các mô hình biến số  thay đổi theo thời gian.
+= Xem VARIABLE PARAMETER MODELS.
+@Tinbergen, Jan
+- (Econ) (1903-)
+= Nhà kinh tế học HÀ LAN cùng với R.FRISCH được trao giải Nobel kinh tế năm 1969 về nghiên cứu tiên phong trong kinh tế lượng. Nghiên cứu đầu tay được nói đến nhiều nhất là nghiên cứu về biến động chu kỳ ở Mỹ, mà trong đó ông cố gắng chỉ ra theo cách định lượng tầm quan trọng của các yếu tố khác nhau trong ch kỳ kinh doanh ở Mỹ. Một tác phẩm có ảnh hưởng khác của Tinbergen là Lý thuyết về chính sách kinh tế như mục tiêu chính sách. Ông đã có đóng góp quan trọng vào khái niệm GIÁ BÓNG.
+@Tobin, James
+- (Econ) (1918-)
+= Nhà kinh tế học người Mỹ, giáo sư kinh tế tại đại học Yale; được trao giải Nobel kinh tế về nghiên cứu trong Lý thuyết về thị trường tài chính và quan hệ của nó với quyết định tiêu dùng và đầu tư; sản xuất, việc làm và giá cả. Nghiên cứu có ý nghĩa nhất của ông là về lựa chọn danh mục đầu tư, trong đó ông nhấn mạnh sự đánh đổi giữa rủi ro và lợi tức trong một loạt các tài sản, bao gồm cả tiền, có thể được coi là tái thiết lập lại sự tôn trọng tri thức của tư tưởng Keynes về sự ưa thích thành khoản. Hầu hết các nghiên cứu của ông đã được trình bày trong các tạp trí hay các bộ sưu tập chứ không được trình bày trong các cuốn sách về một chủ đề đơn lẻ.
+@Todaro model
+- (Econ) Mô hình Todaro.
+= Mô hình kinh tế nổi tiếng nhất về di cư trong nước ở các nước đang phát triển. Tác giả là Michạe Todaro - nhà kinh tế học người Mỹ đã từng làm việc ở Châu Phi. Mô hình này giải thích hiện tượng di cư từ nông thôn ra thành thị cao ở hầu hết các nước đang phát triển là hợp lý xét từ quan điểm kinh tế. Điểm quan trọng là có mức chênh lệc lớn giữa thu nhập ở khu vực công nghiệp hiện đại và thu nhập ở nông thôn.Thường thường, thu nhập ở khu công nghiệp ở trên mức cân bằng thị trường vì một số lý do. Câu trả lời dài hạn cho các vấn đề đó là tạo ra các chính sách ở cả thành thị và nông thôn để giảm mức chênh lệch trong thu nhập thực tế giữa hai khu vực.
+@Token money
+- (Econ) Tiền quy ước.
+= Mọi loại tiền nào mà giá trị của nó với tư cách làm phương tiện thanh toán dựa vào các quy định của pháp luật, ví dụ, một đồng tiền pháp định, hay dựa vào sự chấp nhận truyền thống, và giá trị của nó không có quan hệ gì với giá trị vật làm ra tiền.
+@Tokyo Round
+- (Econ) Vòng đàm phán Tokyo.
+= Vòng đàm phán thương mại đa phương, tổ chức dưới sự bảo trợ của HIỆP ĐỊNH CHUNG VỀ THUẾ QUAN VÀ MẬU DỊCH (GATT) diễn ra ở Tokyo từ 1973-1979. Vòng đàm phán Tokyo giải quyết các vấn đề cản trở thương mại thuế quan và phi thuế quan.
+@Total cost
+- (Econ) Tổng phí; chi phí tổng.
+= Tổng chi phí sản xuất ra một sản lượng xác định.
+@Total remuneration
+- (Econ) Thù lao tổng.
+= Tổng các lợi ích bằng tiền mà người công nhân nhận được từ việc làm của mình.
+@Total Revenue
+- (Econ) Doanh thu tổng.
+= Tổng thu từ việc bán một hay nhiều sản phẩm của một hãng hay một nghành.
+@Trade
+- (Econ) Thương mại (hay mậu dịch).
+= Việc trao đổi hàng hoá giữa các cá nhân hay các nhóm hoặc trực tiếp thông qua HÀNG ĐỔI HÀNG, hoặc gián tiếp qua một phương tiện thanh toán như tiền.
+@Trade bill
+- (Econ) Hối phiếu thương mại.
+= Trên thị trường chiết khấu Lodon, một hối phiếu phát hành để tài trựo một giao dịch thương mại thực sư như để trang trải cho giai đoạn vận tải hàng, và mà vẫn chưa được một ngân hàng chấp nhận , khi đó được gọi là HỐI PHIẾU NGÂN HÀNG.
+@Trade creation
+- (Econ) Sự tạo lập thương mại.
+= Việc thay thế trong thương mại quốc tế nguồn sản xuất có chi phí cao hơn bằng nguồn chi phí thấp hơn do thay đổi trong thuế quan, hay hạn ngạch hay các hàng rào thương mại khác trên cơ sở địa lý, như tạo lập một liên minh thuế quan.
+@Trade credit
+- (Econ) Tín dụng thương mại.
+= Tín dụng do một nhà buôn hay nhà sản xuất cung cấp cho khách hàng của mình qua các điều khoản bán hàng cho phép thanh toán vào một thời gian nào đó sau khi đã thực sự giao hàng hoá.
+@Trade cycle
+- (Econ) Chu kỳ thương mại.
+= Cũng còn gọi là chu kỳ kinh doanh hay chu kỳ kinh tế. Sự biến động trong mức độ hoạt động kinh tế (thường thể hiện dưới dạng thu nhập quốc dân) tạo thành một hình thái đều đặn, với việc mở rộng hoạt động theo một quá trình thu hẹp, sau đó là tiếp tục mở rộng.
+@Trade-off
+- (Econ) Sự đánh đổi.
+= Mẫu thuẫn giữa các mục tiêu chính sách với kết quả là một mục tiêu chỉ có thể đạt được với việc hy sinh một mục tiêu khác.
+@Traditional sectors
+- (Econ) Các khu vực truyền thống.
+= Xem AGRICULTURAL SECTOR, DUALISM, THEORY OF, INFORMAL SECTOR, LEWIS-FEI-RANIS MODEL.
+@Transactions approach
+- (Econ) Phương pháp giao dịch.
+= Tên phiên bản của Newcomb và Fisher về THUYẾT ĐỊNH LƯỢNG TIỀN.
+@Transactions balances
+- (Econ) Các số dư giao dịch.
+= Xem MONEY, THE DEMAND FOR.
+@Transactions costs
+- (Econ) Các chi phí giao dịch.
+= Các chi phí không phải giá phát sinh trong khi trao đổi hàng hoá và dịch vụ.
+@Transaction
+- (Econ) Giao dịch / thương vụ.
+@Transactions demand for money
+- (Econ) Cầu về tiền giao dịch.
+= Một động cơ đòi hỏi có tiền để phục vụ mục đích giao dịch, nghĩa là thanh toán và nhận thanh toán, sử dụng tiền với chức năng của nó là phương tiện trao đổi.
+@Transactions motive for holding money
+- (Econ) Động cơ giữ tiền để giao dịch.
+= Xem Transactions demand for money, Transactions balances, Money, the demand for.
+@Transactions velocity of circulation
+- (Econ) Tốc độ lưu thông giao dịch.
+= Xem INCOME VELOCITY OF CIRCULATION.
+@Transcendental logarithMIC production function
+- (Econ) Hàm sản xuất trừu tượng dạng logarit
+= Xem TRANSLOG PRODUCTION FUNCTION.
+@Transcendental production function
+- (Econ) Hàm sản xuất trừu tượng.
+@Transferable rouble
+- (Econ) Rúp chuyển đổi được.
+= Một đơn vị tiền tệ kế toán do Liên Xô đưa ra năm 1963 cho việc thanh toán số dư thương mại giữa các nước trong hội đồng tương trợ kinh tế.
+@Transfer costs
+- (Econ) Chi phí vận chuyển.
+= Chi phí liên quan đến việc vận chuyển hàng hoá từ địa điểm này đến địa điểm khác bao gồm các chi phí trực tiếp của việc di chuyển mà thay đổi với khoảng cách di chuyển (và do vậy có thể gọi là chi phí khoảng cách), và toàn bộ chi phí xếp hàng, dỡ hàng, xử lý và quản lý ở mỗi đầu của hàn trình.
+@Transfer deed
+- (Econ) Chước bạ chuyển giao.
+= Một chứng từ mà qua đó quyền sở hữu CHỨNG KHOÁN được chuyển giao theo nghĩa pháp lý từ người bán sang người mua.
+@Transfer earnings
+- (Econ) Thặng dư kinh tế.
+= Xem ECONOMIC RENT.
+@Transfer incomes
+- (Econ) Thu nhập do chuyển nhượng.
+= Thu nhập không thể coi là thanh toán cho dịch vụ hện tại và do vậy không tạo thành một phần của thu nhập quốc dân.
+@Transfer of technology
+- (Econ) Chuyển giao công nghệ.
+= Công nghệ là một yếu tố chính trong việc thúc đẩy TĂNG TRƯỞNG KINH TẾ. Việc chuyển giao công nghệ không thích hợp có thể làm méo mó hình thái phát triển, dẫn tới việc sản xuất các sản phẩm không thích hợp.
+@Transfer payment
+- (Econ) Thanh toán chuyển nhượng.
+= Khoản thanh toán (thường do chính phủ) cho một cá nhân mà không tạo thành một phần của  việc trao đổi hàng hoá và dịch vụ.
+@Transfer pricing
+- (Econ) Định giá chuyển nhượng.
+= Hệ thống ấn định giá cho các giao dịch giữa các công ty con của một công ty đa quốc gia, trong đó giá không phụ thuộc vào yếu tố thị trường.
+@Transfer problem
+- (Econ) Vấn đề chuyển nhượng.
+= Thuật ngữ trong kinh tế học quốc tế về việc liệu một nước, phải bồi thường cho một nước khác, ví dụ tiền sửa chữa, phải gánh nặng quá mức hay thứ cấp, nghĩa là  gánh nặng hơn tốc độ thanh toán, để mà thực hiện việc chuyển giao bằng việc kiếm được khoản thặng dư trên thanh toán quốc tế.
+@Transformation function
+- (Econ) Hàm chuyển đổi.
+= Xem PRODUCTION FRONTIER.
+@Transformation problem
+- (Econ) Bài toán chuyển đổi.
+= Bài toán trong kinh tế học C.Mác nhằm tìm ra một bộ giá duy nhất từ các giá trị, nghĩa là đầu vào lao động.
+@Transitivity of preferences
+- (Econ) Tính bắc cầu của sở thích.
+= Xem AXIOMS OF PREFERENCE.
+@Transitory consumption
+- (Econ) Tiêu dùng qúa độ.
+= Sự tăng hay giảm không dự tính trong tiêu dùng.
+@Transitory income
+- (Econ) Thu nhập quá độ.
+= Thu nhập không dự tính. Khoản thu hay lỗ bất thường.
+@Translog production function
+- (Econ) Hàm sản xuất chuyển dạng lô-ga-rít.
+= Hàm sản xuất trừu tượng dạng lô-ga-rít.Là dạng tổng quát của hàm sản xuất COBB-DOUGLAS.
+@Trans-shipment points
+- (Econ) Các điểm chuyển đổi phương tiện vận chuyển.
+= Các địa điểm mà tại đó vận tải thay đổi từ loại này sang loại khác.
+@Treasury, the
+- (Econ) Bộ tài chính Anh.
+= Một bộ trong chính phủ Anh kiểm soát chính sách kinh tế và chi tiêu công cộng.
+@Treasury US department of
+- (Econ) Bộ tài chính Mỹ.
+= Một bộ trong chính phủ Mỹ quản lý hầu hết việc thu ngân sách, sản xuất tiền kim loại và tiền giấy và thi hành một số luật lệ.
+@Treasury bill
+- (Econ) Tín phiếu bộ tài chính.
+= Một phương tiện vay ngắn hạn của chính phủ Anh được đưa vào năm 1877 và vào thời gian đó là mô hình theo hối phiếu thương mại. Ở mỹ cũng có công cụ tương ứng. Tín phiếu bộ tài chính Mỹ do bộ tài chính phát hành có thời hạn ba, sáu, chín và mười hai tháng. Các chứng khoán này là sự đầu tư không có rủi ro, nhưng vẫn có rủi ro trên thị trường thứ cấp trước khi đáo hạn, bởi vì giá biến động với thay đổi trong lãi xuất thị trường.
+@Treasury Deposit Receipt (TDR)
+- (Econ) Biên nhận tiền gửi Bộ tài chính.
+= Đây là chứng khoán không buôn bán ngắn hạn (6 tháng) được chính phủ Anh áp dụng năm 1940 với tư cách là công cụ tài chính thời chiến, và bán ra giá trị hàng tuần đã định cho ngân hàng. Loại chứng khoán này giảm dần và bị loại bỏ vào năm 1953.
+@Treasury - Federal Reserve Accord
+- (Econ) Thoả thuận giữa bộ tài chính và Cục dự trữ liên bang.
+= Từ năm 1942-51, HỆ THỐNG DỰ TRỮ LIÊN BANG MỸ nâng đỡ giá trái phiếu chính phủ Mỹ nhằm tạo thuận lợi cho việc vay mượn của chính phủ liên bang. Năm 1952 Dự trữ liên bang và Bộ tài chính đã ký một thoả thuận - giải phóng Dự trữ liên bang khỏi trách nhiệm mua trái phiếu.
+@Treasury note
+- (Econ) Đồng tiền của bộ tài chính.
+= Xem CURRENCY NOTE.
+@Treasury view
+- (Econ) Quan điểm của bộ tài chính.
+= Một quan điểm của bộ tài chính Anh vào đầu thế kỷ XX cho rằng chi tiêu bổ sung của chính phủ sẽ được cân bằng bởi việc suy giảm trong tư nhân.
+@Treaty of Rome
+- (Econ) Hiệp ước Rome.
+= Xem EUROPEAN COMMUNITY.
+@Trend
+- (Econ) Xu hướng.
+= Còn gọi là xu hướng theo thời gian.  1)Thành phần dài hạn, cơ sở trong dữ liệu CHUỖI THỜI GIAN, thường được tính để thể hiện hướng vận động dài hạn của một biến số. 2)Một số đo mức trung bình của một đại lượng kinh tế tại một thời điểm nào đó.
+@Trend stationary process (TSP)
+- (Econ) Quá trình tĩnh tại của xu hướng.
+@Trigonometric functions
+- (Econ) Các hàm lượng giác.
+= Các hàm được định nghĩa bởi các tính chất trong một tam giác vuông bao gồm sin, cosin và tang.
+@Truncated earnings function
+- (Econ) Hàm thu nhập rút gọn.
+= Một kiểm nghiệm giả thuyết của thị trường lao động NHỊ NGUYÊN rằng cơ chế quyết định tiền công khác nhau giữa khu vực thứ nhất và thứ hai của thị trường lao động, khu vực thứ nhất trả cho VỐN NHÂN LỰC, khu vực thứ hai trả cho những người vừa không có kinh nghiệm và không có học vấn.
+@Trust
+- (Econ) Tờ-rớt.
+= Với tư cách là một thuật ngữ của luật học, thuật ngữ này áp dụng cho các thoả thuận được pháp luật quy định khác nhau mà theo đó tài sản thuộc về một cá nhân hay nhóm người được đặt trong tay những người uỷ thầcm, tuỳ thuộc vào loạ trớt, có thể thực sự quản lý chúng vì lợi ích của những người chủ sở hữu tài sản đó.
+@t-statistic
+- (Econ) Thống kê t.
+= Một thống kê tuân theo phân phối T. Thống kê t thường được dùng trong kiểm định giả thiết để xác định MỨC Ý NGHĨA THỐNG KÊ của các tham số trong các mô hình kinh tế lượng, và được tính bằng tỷ số giữa giá trị tham số ước tính và sai số chuẩn của nó.
+@Turning point
+- (Econ) Điểm ngoặt
+= Điểm trong chu kỳ kinh doanh khi TRẠNG THÁI MỞ RỘNG của chu kỳ được thay thế bằng trạng thái thu hẹp hoặc ngược lại. Điểm đỉnh và điểm đáy được goi là các bước ngoặt.
+@Turnover
+- (Econ) Doanh thu, kim ngạch.
+= Xem TOTAL REVENUE.
+@Turnover tax
+- (Econ) Thuế kim ngạch.
+= Đôi khi được goi là thuế theo đợt. Đây là loại hình ban đầu của thuế doanh thu. Người ta đã nhìn thấy nhược điểm của thuế này và trong những năm gần đây ở nhiều nước đã đổi sang loại thuế không có nhược điểm này.
+@Turnpike theorems
+- (Econ) Các định lý cổng ngăn.
+= Một loại định đề trong thuyết tăng trưởng liên quan đến sự gần gũi của các đường tăng trưởng tối ưu với tăng trưởng cân bằng với tốc độ cao nhất.
+@Twelve-month rule
+- (Econ) Quy tắc mười hai tháng.
+= Xem INCOMES POLICY.
+@Two sector growth model
+- (Econ) Mô hình tăng trưởng hai khu vực.
+= Một mo hình dùng trong thuyết tăng trưởng, trong đó sự khác biệt cơ bản giưa hàng tiêu dùng và hàng tư liệu sản xuất được công nhận, với một khu vực được quan tâm đến mỗi một trong hai hàng hoá này.
+@Two stage leatst squares (TSLS hoặc 2 SLS)
+- (Econ) Bình phương nhỏ nhất hai giai đoạn
+= Một phương pháp kinh tế lượng để ước lượng các tham số dạng cơ cấu của hệ phương trình đồng thời, trong đó tránh sự thiên lệch của phương trình đồng thời.
+@Tying contract
+- (Econ) Hợp đồng bán kèm.
+= Một điều kiện bán hàng đòi hỏi người mua một sản phẩm nào đó phải mua thêm một sản phẩm khác, thường là bổ sung cho sản phẩm đầu tiên.
+@Type I/ type II
+- (Econ) Sai số loại I / loại II.
+= Các loại sai số có thể phạm trong kiểm định giả thiết.

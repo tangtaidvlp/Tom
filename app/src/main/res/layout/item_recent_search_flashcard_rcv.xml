@@ -3,7 +3,7 @@
     <data>
         <variable
             name="flashcard"
-            type="com.teamttdvlp.memolang.model.entity.flashcard.Flashcard" />
+            type="com.teamttdvlp.memolang.data.model.entity.flashcard.Flashcard" />
     </data>
     <androidx.constraintlayout.widget.ConstraintLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
@@ -17,24 +17,28 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="6dp"
-            android:fontFamily="@font/segoeui"
+            android:fontFamily="@font/seguisb"
             android:text="Negotiate"
             android:textColor="@color/black"
             android:textSize="19sp"
             android:maxLines="1"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.0"/>
 
         <TextView
-            android:id="@+id/txt_flashcard_count"
+            android:id="@+id/txt_translation"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/segoeuisl"
             android:text="Đàm phán"
             android:textColor="@color/black"
             android:textSize="16sp"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/txt_text"
@@ -46,7 +50,7 @@
             android:id="@+id/line"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/txt_flashcard_count"
+            app:layout_constraintTop_toBottomOf="@+id/txt_translation"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintVertical_bias="0.0"

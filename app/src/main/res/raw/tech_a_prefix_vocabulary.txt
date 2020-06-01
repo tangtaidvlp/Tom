@@ -1,0 +1,2980 @@
+﻿@A except B gate
+- (Tech) cổng A loại trừ B
+@A ignore B gate
+- (Tech) cổng A không biết B
+@A implies B gate
+- (Tech) cổng A bao hàm B
+@A-D
+- hay A/D
+- hay a-d (analog-to-digital)
+- (Tech) đổi dạng sóng (dạng tương tự) sang dạng số
+@A-D conversion
+- (Tech) đổi sóng (tương tự) - số
+@A-D converter circuit
+- (Tech) mạch đổi sóng-số
+@A4-size
+- (Tech) khổ giấy A4 (21 cm x 29.7 cm)
+@abacus
+- (Tech) bàn toán
+@abampere
+- (Tech) abampe, ampe tuyệt đối (đơn vị cường độ tuyệt đối của dòng điện, 1 abampe = 10 ampe)
+@abandon
+- (Tech) bỏ, bỏ rơi (đ)
+@abandon call
+- (Tech) gọi bỏ
+@abandonment
+- (Tech) bỏ, từ bỏ (d)
+@abbreviate
+- (Tech) rút gọn; viết tắt
+@abbreviated address
+- (Tech) địa chỉ rút gọn
+@abbreviation
+- (Tech) sự tóm tắt; chữ viết tắt
+@abend (abnormal ending)
+- (Tech) kết thúc/chấm dứt bất thường
+@aberration
+- (Tech) quang sai
+@abnormal
+- (Tech) bất thường, dị thường; không chuẩn
+@abnormal end (ABEND)
+- (Tech) kết thúc bất thường
+@abnormal end of task
+- (Tech) kết thúc bất thường (một) nhiệm vụ
+@abnormal end of transmission
+- (Tech) kết thúc truyền bất thường
+@abnormal function
+- (Tech) chức năng/hàm số bất thường
+@abnormal propagation
+- (Tech) truyền lan bất thường
+@abnormal reflection
+- (Tech) phản xạ bất thường
+@abnormal refraction
+- (Tech) khúc xạ bất thường
+@abnormal return address
+- (Tech) địa chỉ hồi báo bất thường
+@abnormal status
+- (Tech) trạng thái bất thường
+@abnormal termination
+- (Tech) cắt dứt bất thường
+@abohm
+- (Tech) abôm (1 abôm = 10 lũy thừa -9 ôm)
+@abonent
+- (Tech) người thuê bao; người dùng đầu cuối
+@abort
+- (Tech) hủy bỏ, ngưng nửa chừng, bỏ dở
+@abortion mechanism
+- (Tech) cơ năng bỏ dở
+@abortive
+- (Tech) bỏ dở
+@abortive subexit
+- (Tech) lối thoát phụ khi bỏ dở
+@about...
+- (Tech) về...
+@abrupt junction
+- (Tech) tiếp giáp dốc thẳng đứng
+@abrupt junction diode
+- (Tech) đèn hai cực tiếp giáp dốc thẳng đứng
+@abscissa
+- (Tech) hoành độ
+@absence or presence
+- (Tech) vắng mặt hay hiện diện, không hay có
+@absent service
+- (Tech) dịch vụ (truyền đạt lúc) vắng mặt
+@absent subscriber service
+- (Tech) dịch vụ thuê bao vắng mặt
+@absent transfer
+- (Tech) truyền đạt vắng mặt
+@absolute
+- (Tech) tuyệt đối
+@absolute address
+- (Tech) địa chỉ tuyệt đối
+@absolute address variable
+- (Tech) biến số địa chỉ tuyệt đối
+@absolute addressing
+- (Tech) phương pháp định địa chỉ tuyệt đối
+@absolute altimeter
+- (Tech) máy đo độ cao tuyệt đối
+@absolute ampere
+- (Tech) ampe tuyệt đối
+@absolute coordinate
+- (Tech) tọa độ tuyệt đối
+@absolute data
+- (Tech) dữ kiện tuyệt đối
+@absolute electrometer
+- (Tech) điện tĩnh kế tuyệt đối
+@absolute element
+- (Tech) phần tử tuyệt đối
+@absolute error
+- (Tech) sai số tuyệt đối
+@absolute expression
+- (Tech) biểu thức tuyệt đối
+@absolute file specifier
+- (Tech) tên gọi tuyệt đối của tập tin
+@absolute galvanometer
+- (Tech) điện kế tuyệt đối
+@absolute generation number
+- (Tech) số thế hệ tuyệt đối
+@absolute instruction
+- (Tech) chỉ thị tuyệt đối, chỉ thị ngôn ngữ máy
+@absolute level
+- (Tech) mức tuyệt đối
+@absolute loader
+- (Tech) bộ nạp tuyệt đối
+@absolute move
+- (Tech) di chuyển tuyệt đối
+@absolute movement
+- (Tech) di động tuyệt đối
+@absolute name
+- (Tech) tên tuyệt đối
+@absolute ohm
+- (Tech) ohm tuyệt đối
+@absolute order
+- (Tech) thứ tự tuyệt đối
+@absolute path
+- (Tech) đường tuyệt đối
+@absolute path name
+- (Tech) tên đường tuyệt đối
+@absolute permeability
+- (Tech) độ từ thẩm tuyệt đối
+@absolute permittivity
+- (Tech) hằng số điện môi tuyệt đối
+@absolute phase
+- (Tech) vị tướng/pha tuyệt đối
+@absolute plotting
+- (Tech) phép vẽ dùng vị trí tuyệt đối
+@absolute plotting unit
+- (Tech) đơn vị vẽ tuyệt đối
+@absolute position
+- (Tech) vị trí tuyệt đối
+@absolute temperature
+- (Tech) nhiệt độ tuyệt đối
+@absolute tense
+- (Tech) thời (chế) tuyệt đối [NB]
+@absolute term
+- (Tech) số hạng tuyệt đối
+@absolute unit
+- (Tech) đơn vị tuyệt đối
+@absolute value
+- (Tech) trị số tuyệt đối
+@absolute value computer
+- (Tech) máy điện toán trị tuyệt đối
+@absolute value function
+- (Tech) hàm số trị tuyệt đối
+@absolute vector
+- (Tech) véctơ tuyệt đối
+@absolute volt
+- (Tech) volt tuyệt đối
+@absolute zero
+- (Tech) số không tuyệt đối
+@absolutely convergent
+- (Tech) hội tụ tuyệt đối
+@absolutely noncircular attribute
+- (Tech) thuộc tính phi tuần hoàn tuyệt đối
+@absolutely noncircular attribute grammar
+- (Tech) văn phạm thuộc tính phi tuần hoàn tuyệt đối
+@absorbed photon
+- (Tech) quang tử hấp thu
+@absorbed power
+- (Tech) công suất hấp thu
+@absorber
+- (Tech) bộ hấp thu; bộ đệm
+@absorbing load
+- (Tech) tải hấp thu
+@absorbing state
+- (Tech) trạng thái hấp thu
+@absorptance
+- (Tech) độ hấp thu
+@absorption
+- (Tech) hấp thu; đệm; làm nhụt (d)
+@absorption cell
+- (Tech) tổ hấp thu
+@absorption circuit
+- (Tech) mạch hấp thu
+@absorption coefficient
+- (Tech) hệ số hấp thu
+@absorption current
+- (Tech) dòng hấp thu
+@absorption factor
+- (Tech) hệ số hấp thu
+@absorption index
+- (Tech) chỉ số hấp thu
+@absorption law
+- (Tech) định luật hấp thu
+@absorption loss
+- (Tech) tổn hao hấp thu
+@absorption peak
+- (Tech) đĩnh hấp thu
+@absorption spectrum
+- (Tech) quang phổ hấp thu
+@absorption trap
+- (Tech) cái bẫy hấp thu
+@absorption wavemeter
+- (Tech) máy đo sóng loại hấp thu
+@absorptive attenuator
+- (Tech) bộ giảm sóng hấp thu
+@absorptive modulation
+- (Tech) điều tần hấp thu
+@absorptive surface
+- (Tech) bề mặt hấp thu
+@absorptive transition
+- (Tech) tiếp giáp hấp thu
+@absorptivity
+- (Tech) độ hấp thu; tính hấp thu
+@abstract
+- (Tech) trừu tượng; tóm tắt, trích yếu
+@abstract algebra
+- (Tech) đại số học trừu tượng/ đồng điều
+@abstract journal
+- (Tech) báo trích yếu, báo sao lục [NB]
+@abstract semantics
+- (Tech) ngữ nghĩa trừu tượng
+@abstract symbol
+- (Tech) ký hiệu trừu tượng
+@abstract syntax
+- (Tech) cú pháp trừu tượng
+@absurd
+- (Tech) vô nghĩa, phi lý
+@ac (alternating current)
+- (Tech) dòng điện xoay chiều, dòng điện hai chiều; xoay chiều
+@ac (alternating component)
+- (Tech) bộ phận xoay chiều
+@ac (alternating current) bus
+- (Tech) mẫu tuyến dòng điện xoay chiều
+@ac (alternating current) charging
+- (Tech) nạp điện dòng xoay chiều
+@ac (alternating current) circuit
+- (Tech) mạch điện xoay chiều
+@ac (alternating current) coupled flip-flop
+- (Tech) mạch xúc phát ghép xoay chiều
+@ac (alternating current) coupling
+- (Tech) ghép xoay chiều
+@ac (alternating current) distribution cabinet
+- (Tech) hộp phân phối dòng điện xoay chiều
+@ac (alternating current) erasing head
+- (Tech) đầu xóa xoay chiều
+@ac (alternating current) erasing
+- (Tech) xóa xoay chiều
+@ac (alternating current) generator
+- (Tech) máy phát điện xoay chiều
+@ac (alternating current) Josephson effect
+- (Tech) hiệu ứng Josephson xoay chiều
+@ac (alternating current) motor
+- (Tech) động cơ điện xoay chiều
+@ac (alternating current) oscillator
+- (Tech) bộ dao động điện xoay chiều
+@ac (alternating current) oscillator source
+- (Tech) nguồn dao động điện xoay chiều
+@ac (alternating current) plate resistance
+- (Tech) điện trở bản cực xoay chiều
+@ac (alternating current) power supply
+- (Tech) nguồn điện xoay chiều
+@ac (alternating current) receiver
+- (Tech) máy thu chạy điện xoay chiều
+@ac (alternating current) resistance
+- (Tech) điện trở xoay chiều
+@ac (alternating current) servo motor
+- (Tech) động cơ trợ động điện xoay chiều
+@AC-cut quartz
+- (Tech) thạch anh kiểu cắt AC
+@ac/dc receiver
+- (Tech) máy thu chạy điện xoay chiều-một chiều = universal receiver
+@ac/dc ringing
+- (Tech) phép gọi điện xoay chiều-một chiều
+@accelerated test
+- (Tech) trắc nghiệm gia tốc
+@accelerating anode
+- (Tech) dương cực gia tốc
+@accelerating cavity
+- (Tech) cái hốc gia tốc
+@accelerating coil
+- (Tech) cuộn dây gia tốc
+@accelerating electrode
+- (Tech) điện cực gia tốc
+@accelerating field
+- (Tech) trường gia tốc
+@accelerating grid
+- (Tech) lưới gia tốc
+@accelerating potential
+- (Tech) thế gia tốc
+@acceleration
+- (Tech) gia tốc, tăng tốc; độ gia tốc
+@acceleration of convergence
+- (Tech) gia tốc hội tụ
+@acceleration parameter
+- (Tech) thông số gia tốc
+@acceleration voltage
+- (Tech) điện thế gia tốc
+@accelerator
+- (Tech) bộ gia tốc, bộ tăng tốc
+@accelerator board
+- (Tech) bảng gia tốc, tấm gia tốc
+@accelerator card
+- (Tech) thẻ gia tốc
+@accelerator key
+- (Tech) khóa gia tốc, phím gia tốc = hot key
+@accelerometer
+- (Tech) máy đo gia tốc, gia tốc kế
+@accent
+- (Tech) dấu, âm phù; giọng nhấn; đánh dấu (đ); nhấn mạnh (đ)
+@accented character
+- (Tech) chữ có dấu
+@accentuated contrast
+- (Tech) sự tương phản tăng cường
+@accentuation
+- (Tech) gia cường, nhấn mạnh
+@accentuator
+- (Tech) bộ gia cường, bộ tăng sóng
+@accept connection
+- (Tech) nối nhận
+@accept stacker
+- (Tech) hộp chứa phiếu đã đọc
+@accept statement
+- (Tech) câu lệnh nhận
+@acceptable quality level (AQL)
+- (Tech) mức độ phẩm chất chấp nhận được
+@acceptance angle
+- (Tech) góc thụ quang, góc nhận ánh sáng
+@acceptance cone
+- (Tech) chóp thụ quang
+@acceptance inspection
+- (Tech) kiểm tra nghiệm thu
+@acceptance pattern
+- (Tech) mô thức thụ quang
+@acceptance test
+- (Tech) thử nghiệm thu, trắc nghiệm kiểm nhận
+@acceptance trials
+- (Tech) thực nghiệm thụ quang
+@accepting
+- (Tech) nhận tin (đầu cuối)
+@accepting station
+- (Tech) trạm nhận tin
+@acceptor center
+- (Tech) trung tâm tiếp nhận
+@acceptor circuit
+- (Tech) mạch cộng hưởng nối tiếp, mạch nhận
+@acceptor
+- (Tech) nguyên tử nhận, phần tử nhận; mạch cộng hưởng (nối tiếp), mạch nhận; chất tạp nhận
+@acceptor level
+- (Tech) mức nhận
+@acceptor state
+- (Tech) trạng thái nhận
+@acceptor type trap
+- (Tech) cái bẫy loại nhận
+@access
+- (Tech) truy cập, truy tìm, truy xuất-nhập, tồn thủ [TQ]; lối vào; tiếp cận; viết (vào)-đọc (ra), tồn thủ; tìm vào
+@access address
+- (Tech) địa chỉ truy cập
+@access attempt
+- (Tech) lần thử độ truy cập
+@access barred signal
+- (Tech) tín hiệu cản truy cập
+@access category
+- (Tech) hạng mục/loại truy cập
+@access code
+- (Tech) mã truy cập
+@access control
+- (Tech) điều khiển truy cập
+@access control device (ACD)
+- (Tech) thiết bị điều khiển truy cập
+@access coupler
+- (Tech) bộ ghép truy cập
+@access denial
+- (Tech) chối bỏ/từ khước truy cập
+@access digit
+- (Tech) số mã truy cập
+@access failure
+- (Tech) thất bại truy cập
+@access hierarchy
+- (Tech) giai tầng truy cập [NB]
+@access key
+- (Tech) phím truy cập
+@access level
+- (Tech) mức truy cập
+@access list
+- (Tech) danh sách truy cập
+@access memory
+- (Tech) bộ nhớ truy cập
+@access menu
+- (Tech) đơn chọn truy cập
+@access method
+- (Tech) phương pháp truy cập
+@access mode
+- (Tech) kiểu truy cập
+@access model
+- (Tech) mô hình truy cập
+@access originator
+- (Tech) nguồn khởi truy cập
+@access path
+- (Tech) đường truy cập
+@access period
+- (Tech) thời kỳ truy cập
+@access permission
+- (Tech) cho phép truy cập
+@access phase
+- (Tech) pha/vị tướng truy cập
+@access plan
+- (Tech) kế hoạch truy cập
+@access point
+- (Tech) điểm truy cập
+@access port
+- (Tech) bến truy cập
+@access privilege
+- (Tech) đặc quyền truy cập [NB]
+@access procedure
+- (Tech) thủ tục truy cập
+@access protocol
+- (Tech) nghi thức truy cập
+@access rate
+- (hay) access speed
+- (Tech) tốc độ truy cập
+@access request
+- (Tech) yêu cầu truy cập
+@access success
+- (Tech) thành công truy cập
+@access success ratio
+- (Tech) tỉ lệ thành công truy cập
+@access time
+- (Tech) thời gian truy cập; thời gian thiết lập
+@access type
+- (Tech) loại truy cập
+@access-denial probability
+- (Tech) xác suất từ khước truy cập
+@access-denial time
+- (Tech) thời gian từ khước truy cập
+@access-rights terminal
+- (Tech) đầu cuối dành quyền truy cập
+@accessibility
+- (Tech) khả năng truy cập; tính tiếp cận
+@accessories
+- (Tech) phụ tùng, bộ phụ, phụ kiện [TQ]
+@accessory software
+- (Tech) nhu liệu/phần mềm phụ
+@accident
+- (Tech) hư hỏng, tai nạn
+@accidental
+- (Tech) rũi ro; phụ
+@accidental error
+- (Tech) sai số rủi ro
+@accommodate
+- (Tech) thu nhận, chứa
+@accommodated location
+- (Tech) vị trí thu nhận
+@accommodation limits
+- (Tech) giới hạn dung chứa
+@accommodation
+- (Tech) điều tiết; thích ứng, thích nghi (d)
+@accommode
+- (Tech) thích ứng, thích nghi (đ)
+@account card
+- (Tech) thẻ chương mục
+@account
+- (Tech) tài khoản, chương mục; kế toán; khách hàng; tính toán (đ); tính đến, kể đến (đ)
+@account data
+- (Tech) dữ kiện kế toán, số liệu kế toán
+@account level security
+- (Tech) an toàn mức kế toán
+@account name
+- (Tech) tên chương mục, tên tài khoản
+@account number
+- (Tech) số chương mục, số tài khoản
+@accountability
+- (Tech) tính chất khả tính
+@accountable time
+- (Tech) thời gian đắc dụng (máy điện toán)
+@accounting
+- (Tech) kế toán; quyết toán, thanh toán; tính tiền
+@accounting data
+- (Tech) dữ kiện kế toán
+@accounting file
+- (Tech) hồ sơ kế toán
+@accounting information
+- (Tech) thông tin kế toán
+@accounting journal
+- (Tech) biên bản kế toán, nhật ký kế toán
+@accounting legend
+- (Tech) chú giải kế toán
+@accounting machine
+- (Tech) máy kế toán
+@accounting package
+- (Tech) toàn bộ chương trình kế toán
+@accounting process
+- (Tech) trình tự/quá trình kế toán
+@accounting program
+- (Tech) chương trình kế toán
+@accounting rate
+- (Tech) biểu suất kế toán
+@accounting record
+- (Tech) bản ghi kế toán
+@accounting report
+- (Tech) báo cáo kế toán
+@accounting routine
+- (Tech) thường trình kế toán
+@accounting software
+- (Tech) nhu liệu/phần mềm kế toán
+@accounting symbol
+- (Tech) biểu tượng kế toán
+@accumulate
+- (Tech) tích lũy [TQ], lũy tích [TQ], lũy toán [NB], cộng dồn(đ)
+@accumulated deviation
+- (Tech) độ sai biệt tích lũy
+@accumulated error
+- (Tech) sai số tích lũy
+@accumulation electrode
+- (Tech) điện cực tích lũy
+@accumulation layer
+- (Tech) lớp lũy tích
+@accumulative carry
+- (Tech) số nhớ tích lũy
+@accumulator
+- (Tech) bình điện, ắcquy, pin chứa; bộ tích lũy; thanh tổng; bộ cộng, máy lũy toán
+@accumulator battery
+- (Tech) bình điện (trữ)
+@accumulator cell
+- (Tech) bình trữ điện; bộ tích
+@accumulator register
+- (Tech) bộ ghi tổng cộng/lũy gia [ĐL], ngăn tích lũy, thanh tích lũy
+@accuracy
+- (Tech) chính xác (d); độ chính xác
+@acetate film
+- (Tech) phim axêtat
+@achromat
+- (Tech) chất tiêu sắc
+@achromatic
+- (Tech) tiêu sắc; vô sắc
+@achromatic color
+- (Tech) mầu vô sắc, mầu không sắc
+@achromatic lens
+- (Tech) thấu kính tiêu sắc
+@ACK (Acknowledge <Positive>)
+- (Tech) khẳng định, báo nhận
+@ACK (acknowledgement)
+- (Tech) khẳng định (trả lời), báo nhận
+@acknowledge (ACK)
+- (Tech) báo nhận, ghi nhận, báo xác định
+@acknowledge character
+- (Tech) ký tự báo nhận
+@acknowledge packet assembly and disassembly
+- (Tech)  báo nhận lắp và tháo gói
+@acknowledge pulse
+- (Tech) xung báo nhận
+@acknowledge request
+- (Tech) yêu cầu báo nhận
+@acknowledge state
+- (Tech) trạng thái báo nhận
+@acknowledgement signal
+- (Tech) tín hiệu báo nhận
+@aclinic line = magnetic equator
+- (Tech) đường không từ khuynh, đường từ xích đạo
+@acorn tube
+- (Tech) đèn hạt dẻ
+@acoustic
+- (Tech) thuộc về (có tính) âm thanh; thuộc âm học; thuộc truyền âm; âm chất
+@acoustic absorber
+- (Tech) bộ hấp thụ âm thanh
+@acoustic absorption
+- (Tech) hấp thụ âm thanh
+@acoustic admittance
+- (Tech) dẫn nạp âm thanh
+@acoustic baffle
+- (Tech) ván trợ âm thanh
+@acoustic capacitance
+- (Tech) âm dung, âm lượng
+@acoustic coupler modem
+- (Tech) bộ biến hoàn ghép âm
+@acoustic coupler
+- (Tech) bộ ghép âm, bổ đổi âm sang số
+@acoustic dispersion
+- (Tech) phân tán âm thanh
+@acoustic engineering
+- (Tech) ngành kỹ thuật âm thanh
+@acoustic fidelity
+- (Tech) độ trung thực âm thanh
+@acoustic filter
+- (Tech) bộ lọc âm thanh
+@acoustic impedance
+- (Tech) trở kháng âm thanh, âm trở
+@acoustic noise
+- (Tech) nhiễu âm
+@acoustic phonon
+- (Tech) thanh tử âm thanh
+@acoustic sensor
+- (Tech) bộ cảm nhận âm thanh
+@acoustic wave
+- (Tech) sóng âm thanh
+@acquisition
+- (Tech) thu thập, thu nhận
+@acronym
+- (Tech) lược danh, lược (thành) ngữ, tên gọn
+@actinic
+- (Tech) quang hóa
+@actinometer
+- (Tech) nhật xạ kế, quang hóa kế
+@action
+- (Tech) tác động, động tác, hành động; tác dụng
+@action menu
+- (Tech) đơn chọn tác động
+@action message
+- (Tech) thông báo tác động
+@activate indication
+- (Tech) biểu thị khởi động
+@activate
+- (Tech) hoạt hóa; khởi động (đ)
+@activated cathode
+- (Tech) âm cực hoạt hóa
+@activated material
+- (Tech) chất được hoạt hóa
+@activated plasma
+- (Tech) đẳng ly tử thể kích thích, plasma hoạt kích
+@activated
+- (Tech) được hoạt hóa, kích hoạt
+@activating effect
+- (Tech) hiệu ứng hoạt hóa
+@activating process
+- (Tech) xử lý khởi động
+@activation
+- (Tech) hoạt hóa; khởi động, phát động
+@active
+- (Tech) chủ động; hoạt tính; hoạt động, hiệu lực, đang dùng; tích cực
+@active antenna
+- (Tech) ănten có nguồn, ănten chủ động
+@active area
+- (Tech) khu vực hoạt/năng động
+@active call
+- (Tech) gọi chủ động
+@active chain
+- (Tech) chuỗi hoạt động
+@active channel
+- (Tech) kênh có nguồn, kênh hoạt động
+@active component
+- (Tech) thành phần chủ động
+@active computer
+- (Tech) máy điện toán hoạt động
+@active current
+- (Tech) dòng hoạt tính, dòng thực
+@active element
+- (Tech) phần tử hoạt tính, phần tử chủ động
+@active encapsulation
+- (Tech) bao bọc hoạt tính
+@active file
+- (Tech) tập tin hoạt động, tập tin mở
+@active interferometer
+- (Tech) giao thoa kế hoạt tính
+@active material
+- (Tech) hoạt chất
+@active matrix liquid crytal display
+- (Tech) bộ hiển thị tinh thể lỏng ma trận hoạt tính
+@active medium
+- (Tech) môi trường hoạt tính
+@active network
+- (Tech) mạng chủ động
+@active node
+- (Tech) nút hoạt động
+@active station
+- (Tech) đài có nguồn điện
+@active substrate
+- (Tech) nền hoạt tính [ĐL]
+@active surface
+- (Tech) bề mặt hoạt tính
+@active task
+- (Tech) công việc hoạt tính, công tác hoạt tính
+@active test
+- (Tech) phép thử hoạt động
+@active time
+- (Tech) thời gian hoạt động
+@active transducer
+- (Tech) bộ biến hoán/hoán năng có nguồn [ĐL]
+@active window
+- (Tech) cửa sổ hoạt động, cửa sổ đang dùng
+@activity
+- (Tech) hoạt tính; hoạt động; phóng xạ tính
+@activity coefficient
+- (Tech) hệ số hoạt động
+@activity ratio
+- (Tech) tỉ số hoạt động
+@actual
+- (Tech) thực tế, thực tại, thực; hiện tại
+@actual address
+- (Tech) địa chỉ thực tế
+@actual amount
+- (Tech) số lượng thực tế
+@actual code
+- (Tech) mã thực, mã tuyệt đối
+@actual coding
+- (Tech) biên mã thực, biên mã ngôn ngữ máy
+@actual data
+- (Tech) dữ kiện thực
+@actual instruction
+- (Tech) chỉ thị thực
+@actual parameter
+- (Tech) tham số thực tế
+@actual power
+- (Tech) công suất hữu hiệu, công suất thực
+@actual state
+- (Tech) trạng thái thực tế, thực trạng
+@actual storage
+- (Tech) bộ trữ hữu hiệu
+@actual value
+- (Tech) trị số thực
+@actuating mechanism
+- (Tech) cơ cấu động tác, cơ chế động tác
+@actuating signal
+- (Tech) tín hiệu phát huy
+@actuating transfer function
+- (Tech) chức năng chuyển động tác
+@actuator
+- (Tech) bộ [cần] truyền động; bộ kích thích; bộ viết-đọc; bộ điều tiết; thiết bị truyền động [TQ]
+@acuity
+- (Tech) tính phân giải, tính phân tích
+@acutance
+- (Tech) độ phân giải, độ phân tích
+@acyclic
+- (Tech) không tuần hoàn, không có chu kỳ
+@acyclic graph
+- (Tech) đồ thị không tuần hoàn
+@AD converter
+- (Tech) bộ đổi sóng-số
+@adaptation function
+- (Tech) chức năng thích ứng
+@adaptation
+- (Tech) thích ứng, thích nghi; phối hợp (d)
+@adapter
+- (Tech) bộ phối hợp, bộ thích ứng; đầu đọc (tiếng); bộ điện
+@adapter board
+- (Tech) bảng tiếp hợp
+@adaptive equalizer
+- (Tech) bộ cân bằng điều ứng
+@adaptive
+- (Tech) mang tính thích nghi
+@add carry
+- (Tech) số nhớ khi cộng
+@add-on
+- (Tech) thiết bị thêm vào, phụ kiện, phụ tùng tăng cường; thêm vào, tăng năng
+@add-on memory
+- (Tech) bộ nhớ thêm vào
+@add
+- (Tech) cộng; thêm vào, cộng thêm, tăng cường, bổ sung
+@addend
+- (Tech) số hạng (của tổng), số cộng
+@addend digit
+- (Tech) ký số của số cộng
+@addend register
+- (Tech) bộ ghi số cộng
+@addendum
+- (Tech) phụ lục; phần thêm vào, vật thêm vào
+@adder
+- (Tech) bộ cộng; mạch cộng
+@adder accumulator
+- (Tech) bộ cộng tích lũy/tăng trữ
+@adder amplifier
+- (Tech) bộ khuếch đại cộng
+@adder subtracter
+- (Tech) bộ gia giảm, bộ cộng trừ
+@adder-in
+- (Tech) phụ kiện tăng cường, phụ tùng tăng cường, tăng thiết
+@addition
+- (Tech) phép cộng; thêm vào, phụ thêm, đình kèm; bổ trợ, bổ túc
+@addition assignment operator
+- (Tech) toán tử gán cộng
+@addition character
+- (Tech) ký tự thêm vào = special character
+@additive
+- (Tech) cộng tính
+@additive attribute
+- (Tech) thuộc về cộng tính
+@additive color
+- (Tech) mầu cộng thêm; phương pháp mầu cộng thêm
+@additive error
+- (Tech) sai số cộng
+@additive noise
+- (Tech) tạp/nhiễu âm cộng thêm
+@additive operator
+- (Tech) toán tử cộng tính
+@additive polarity
+- (Tech) phân cực cộng tính
+@additive primaries
+- (Tech) các màu cơ bản cộng
+@additive primary color
+- (Tech) màu cơ bản cộng thêm
+@additive process
+- (Tech) quá trình cộng thêm
+@additive subtractive expression
+- (Tech) gia giảm thức [NB], biểu thức gia giảm
+@additive subtractive operator
+- (Tech) toán tử gia giảm
+@additive white Gaussian noise (AWGN)
+- (Tech) nhiễu âm cộng dạng Gauss, nhiễu âm cộng có phân bố đều
+@additive white noise
+- (Tech) nhiễu âm trắng cộng thêm
+@address
+- (Tech) địa chỉ; vị trí; định đia chỉ, định vị (d/đ)
+@address block
+- (Tech) khối địa chỉ
+@address bus
+- (Tech) mẫu tuyến địa chỉ
+@address counter
+- (Tech) máy đếm địa chỉ
+@address descriptor
+- (Tech) bộ mô tả địa chỉ
+@address mapping
+- (Tech) lập bản đồ địa chỉ, gán địa chỉ
+@address marker
+- (Tech) bộ đánh dấu địa chỉ
+@address matrix
+- (Tech) ma trận địa chỉ
+@address mode
+- (Tech) kiểu địa chỉ
+@address name
+- (Tech) tên địa chỉ
+@address range
+- (Tech) phạm vi đia chỉ, khoảng địa chỉ
+@address register
+- (Tech) bộ/thanh ghi địa chỉ
+@address table
+- (Tech) bảng địa chỉ
+@addressability
+- (Tech) khả năng định vị (địa chỉ)
+@addressable storage
+- (Tech) bộ trữ định địa chỉ được
+@addressee
+- (Tech) người nhận tin
+@addressing
+- (Tech) định địa chỉ, định vị trí (d)
+@addressless instruction
+- (Tech) chỉ thị không địa chỉ
+@adherence
+- (Tech) dính; độ dính
+@adhesion
+- (Tech) kết dính, hút; tham gia
+@adhesive
+- (Tech) dính
+@adhesive tape
+- (Tech) băng dính
+@adiabat
+- (Tech) đường đoạn nhiệt
+@adiabatic
+- (Tech) đoạn nhiệt
+@adjacent
+- (Tech) lân cận, kế cận, kề
+@adjunction
+- (Tech) phụ thêm, phụ gia [NB]
+@adjust
+- (Tech) điều chỉnh
+@adjustable
+- (Tech) điều chỉnh được
+@adjustable array
+- (Tech) dẫy/mảng điều chỉnh được
+@adjustable capacitor
+- (Tech) bộ điện dung chỉnh được
+@adjustable dimension
+- (Tech) kích thước điều chỉnh được
+@adjustable probe
+- (Tech) đầu dò điều chỉnh được
+@adjusting
+- (Tech) điều chỉnh (d)
+@adjusting screw
+- (Tech) vít điều chỉnh
+@adjustment
+- (Tech) điều chỉnh (d)
+@adjustment table
+- (Tech) bảng điều chỉnh
+@administer
+- (Tech) quản lý, quản trị
+@administration information display
+- (Tech) bộ hiển thị tin tức quản lý
+@administration manager
+- (Tech) quản trị viên hành chính
+@administration mode
+- (Tech) chế độ quản lý
+@administration process
+- (Tech) quy trình quản lý
+@administration program
+- (Tech) chương trình quản lý
+@administrative information
+- (Tech) tin tức quản lý
+@administrative service
+- (Tech) dịch vụ quản lý
+@administrator
+- (Tech) quản trị viên, người quản lý
+@admissible
+- (Tech) chấp nhận được
+@admissible function
+- (Tech) hàm số chấp nhận được [NB]
+@admissible hypothesis
+- (Tech) giả thuyết chấp nhận được
+@admittance
+- (Tech) dẫn nạp, đạo nạp, tổng dẫn
+@advance
+- (Tech) sớm (d); sớm, trước (tt); tiến tới (đ); cho chạy (đ)
+@advanced
+- (Tech) cấp cao, tiên tiến
+@advanced function
+- (Tech) hàm số cấp cao
+@advanced ignition
+- (Tech) mồi sớm
+@advanced programming
+- (Tech) thảo chương cấp cao, lập trình cấp cao
+@Advanced Research Project Agency Network (ARPANET)
+- (Tech) Mạng Cục Kế Hoạch Nghiên Cứu Cấp Cao (Hoa Kỳ), Apanét
+@advanced technology (AT)
+- (Tech) kỹ thuật tiên tiến, kỹ thuật tiến bộ
+@aeolight
+- (Tech) đèn phát sáng âm cực lạnh
+@aerial
+- (Tech) dây trời, ăngten = antenna;
+- thuộc hàng không; thuộc không vận; thuộc không khí
+@aerial cable
+- (Tech) cáp treo, cáp trên không
+@aerial gain
+- hay antenna gain
+- (Tech) gia lượng dây trời
+@affirmation
+- (Tech) khẳng định (d)
+@affirmative acknowledge
+- (xem) affirmative response
+@affirmative response
+- (Tech) trả lời khẳng định
+@afocal resonator
+- (Tech) cái cộng hưởng không đồng tiêu
+@afterglow
+- (Tech) lưu ảnh, dư huy [TQ], ánh sáng tàn
+@afterglow screen
+- (Tech) màn hình lưu ảnh
+@afterglow tube
+- (Tech) đèn lưu ảnh
+@agenda
+- (Tech) đề tài thảo luận, chương trình nghị sự, nghị trình
+@agglomerate cell
+- (Tech) pin tập khối
+@aggregate
+- (Tech) tập hợp, kết tụ
+@aggregate data
+- (Tech) dữ kiện tập hợp
+@agility
+- (Tech) linh động (d)
+@AI (Artificial Intelligence)
+- (Tech) Tri Năng Nhân Tạo, Trí Tuệ Nhân Tạo
+@airline reservation system (ARS)
+- (Tech) hệ thống giữ chỗ hàng không
+@alarm module
+- (Tech) tổ kiện báo động
+@alert
+- (Tech) báo động (d/đ); cảnh giác (tt)
+@alert broacasting
+- (Tech) quảng bá báo động
+@algebra
+- (Tech) đại số
+@algebraic code
+- (Tech) mã đại số
+@algebraic equation
+- (Tech) phương trình đại số
+@algebraic expression
+- (Tech) biểu thức đại số
+@algebraic value
+- (Tech) trị đại số
+@ALGOL (algebraic oriented language)
+- (Tech) ngôn ngữ hướng đại số
+@ALGOL (algorithmic language)
+- (Tech) ngôn ngữ thuật toán
+@ALGOL (algorithmic oriented language)
+- (Tech) ngôn ngữ hướng thuật toán
+@algorithm
+- (Tech) thuật toán, giải thuật
+@alias
+- (Tech) biệt hiệu, biệt danh
+@aliasing
+- (Tech) rối loạn
+@align
+- (Tech) điều chỉnh, hiệu chính; đồng chỉnh, xếp hàng; đóng khung (đ)
+@aligned
+- (Tech) được đồng chỉnh
+@aligning
+- (Tech) điều chỉnh, hiệu chỉnh; đồng chỉnh, xếp hàng
+@alignment
+- (Tech) điều chỉnh, hiệu chỉnh; đồng chỉnh; chỉnh hàng; định tuyến [TQ]; tuần tự; đóng khung (d); đóng khung
+@alkaline battery
+- (Tech) bình điện kiềm
+@all purpose electronic computer
+- (Tech) máy tính điện tử vạn năng, máy tính điện tử thông dụng
+@all solid-state
+- (Tech) mạch rắn toàn bộ
+@all-purpose computer
+- (Tech) máy điện toán vạn năng/thông dụng
+@alleviate
+- (Tech) giảm khinh (đ)
+@alligator clip
+- (Tech) cái kẹp cá sấu
+@allocate
+- (Tech) cấp, phân định (đ)
+@allocated band
+- (Tech) dải tần được phân định
+@allocated block
+- (Tech) khối được phân định
+@allocated main memory
+- (Tech) bộ nhớ chính dược phân định
+@allocation
+- (Tech) sự cấp phát, sự phân định
+@allocation map
+- (Tech) bảng phân định
+@allocation space
+- (Tech) không gian phân định
+@allocator
+- (Tech) bộ phân định
+@allowable limit
+- (Tech) giới hạn được phép
+@allowed band
+- (Tech) dải tần cho phép
+@allowed sequence
+- (Tech) trình tự cho phép
+@alloy
+- (Tech) hợp kim
+@alloy semiconductor
+- (Tech) chất bán dẫn hợp kim
+@alloy transistor
+- (Tech) đèn tinh thể hợp kim, trăng-xít-to hợp kim
+@alnico
+- (Tech) hợp kim alnico
+@alpha
+- (Tech) anfa; hệ số khuếch đại anfa (đèn tinh thể); chữ cái đầu tiên trong mẫu tự Hy Lạp
+@alpha bombardment
+- (Tech) bắn phá bằng tia anfa
+@alpha character
+- hay alphabetic character
+- (Tech) các ký chữ cái
+@alpha code
+- hay alphabetic code
+- (Tech) mã chữ
+- (Điện tử, viễn thông) mã bộ trữ
+- (Toán học và tin học) mã chữ cái, mã ký tự chữ, sự lập mã bộ chữ
+@alpha current factor
+- (Tech) hệ số dòng anfa
+@alpha cut-off frequency
+- (Tech) tần số cắt anfa, tần số giới hạn anfa
+@alpha display
+- (Tech) hiển thị chữ cái, hiển thị văn tự
+@alpha expression
+- (Tech) biểu thức chữ cái, văn tự thức [NB]
+@alpha format
+- (Tech) khuôn dạng chữ cái
+@alpha geometric
+- (Tech) thuộc hình học anfa
+@alpha mosaic
+- (Tech) nạm anfa
+@alpha particle
+- (Tech) hạt anfa
+@alpha photographic
+- (Tech) thuộc chụp ảnh anfa
+@alpha ray
+- (Tech) tia anfa
+@alpha standard procedure
+- (Tech) thủ tục tiêu chuẩn văn tự [NB]
+@alpha test
+- (Tech) thử anfa
+@alpha testing
+- (Tech) thử anfa
+@alpha type
+- hay alphabetic type
+- (Tech) loại chữ cái
+@alpha value=
+- hay alphabetic value
+- (Tech) trị số thuộc chữ cái
+@alpha version
+- (Tech) phiên bản anfa, phiên bản đầu tiên
+@alpha-beta method
+- (Tech) phương pháp anfa-bêta
+@alphabet
+- (Tech) bộ chữ cái, bộ mẫu tự, bảng chữ; bộ ký tự
+@alphabetic area
+- (Tech) khu vực chữ cái
+@alphabetic character
+- (Tech) ký tự chữ cái
+@alphabetic code
+- (Tech) mã chữ cái
+@alphabetic coding
+- (Tech) biên mã bằng chữ cái
+@alphabetic data
+- (Tech) dữ kiện chữ cái
+@alphabetic data code
+- (Tech) mã dữ kiện chữ cái
+@alphabetic escape sequence
+- (Tech) trình tự thoát bằng chữ cái
+@alphabetic order
+- (Tech) thứ tự chữ cái
+@alphabetic position
+- (Tech) vị trí chữ cái
+@alphabetic record
+- (Tech) bản ghi chữ cái
+@alphabetic string
+- (Tech) chuỗi chữ cái, chuỗi ký tự
+@alphabetic type
+- (Tech) loại chữ cái
+@alphabetic value
+- (Tech) trị số thuộc chữ cái
+@alphabetic word
+- (Tech) chữ cái
+@alphabetical
+- (Tech) thuộc chữ cái; có tính cách ký tự, thuộc ký tự
+@alphabetical order
+- hay alphabetic order
+- (Tech) thứ tự chữ cái
+@alphameric
+- (Tech) chữ-số, mẫu tự-số tự
+- (Economic) gồm chữ và số
+- (Economic) gồm chữ và số (nói về máy tính)
+- (Economic) vừa có chữ vừa có số
+
+@alphanumeric
+- (Tech) chữ-số, mẫu tự-số tự
+- (Economic) gồm chữ và số
+- (Economic) gồm chữ và số (nói về máy tính)
+- (Economic) vừa có chữ vừa có số
+
+@alphameric character
+- (Tech) kí tự chữ số
+
+@alphanumeric character
+- (Tech) kí tự chữ số
+
+@alphameric character set
+- (Tech) bộ ký tự chữ-số
+
+@alphanumeric character set
+- (Tech) bộ ký tự chữ-số
+
+@alphameric code
+- (Tech) mã chữ cái số
+- (Tech) mã chữ số
+- (Tech) mã chữ-số
+- (Tech) mã ký tự chữ số
+- (Tech) mã ký tự số
+- (Tech) mã số ký tự
+
+@alphanumeric code
+- (Tech) mã chữ cái số
+- (Tech) mã chữ số
+- (Tech) mã chữ-số
+- (Tech) mã ký tự chữ số
+- (Tech) mã ký tự số
+- (Tech) mã số ký tự
+
+@alphameric data
+- (Tech) dữ kiện chữ-số
+@alphanumeric data
+- (Tech) dữ kiện chữ-số
+
+@alphameric data code
+- (Tech) mã dữ kiện chữ-số
+
+@alphanumeric data code
+- (Tech) mã dữ kiện chữ-số
+
+@alphameric field
+- (Tech) lĩnh vực chữ-số
+
+@alphanumeric field
+- (Tech) lĩnh vực chữ-số
+
+@alphameric keyboard
+- (Tech) bàn phím chữ-số
+
+@alphanumeric keyboard
+- (Tech) bàn phím chữ-số
+
+@alphameric literal
+- (Tech) thuộc văn tự chữ-số
+
+@alphanumeric literal
+- (Tech) thuộc văn tự chữ-số
+
+@alphameric optical reader
+- (Tech) bộ đọc chữ-số bằng quang
+
+@alphanumeric optical reader
+- (Tech) bộ đọc chữ-số bằng quang
+
+@alphanumeric
+- (Tech) chữ-số, mẫu tự-số tự
+@alphanumeric area
+- (Tech) khu vực chữ-số
+@alphanumeric character
+- (Tech) ký tự chữ-số
+@alphanumeric character set
+- (Tech) bộ ký tự chữ-số
+@alphanumeric code
+- (Tech) mã chữ-số
+@alphanumeric data
+- (Tech) dữ kiện chữ-số
+@alphanumeric data code
+- (Tech) mã dữ kiện chữ-số
+@alphanumeric data item
+- (Tech) điều khoản dữ kiện chữ-số
+@alphanumeric display device
+- (Tech) thiết bị hiển thị bằng chữ-số
+@alphanumeric display
+- (Tech) hiển thị bằng chữ-số
+@alphanumeric edited
+- (Tech) biên soạn chữ-số
+@alphanumeric edited character
+- (Tech) ký tự biện soạn chữ-số
+@alphanumeric edited item
+- (Tech) điều khoản biện soạn chữ-số
+@alphanumeric field
+- (Tech) lĩnh vực chữ-số
+@alphanumeric indicator
+- (Tech) bộ chỉ báo chữ-số
+@alphanumeric information
+- (Tech) thông tin chữ-số
+@alphanumeric instruction
+- (Tech) chỉ thị chữ-số
+@alphanumeric item
+- (Tech) điều khoản chữ-số
+@alphanumeric keyboard
+- (Tech) bàn phím chữ-số
+@alphanumeric line
+- (Tech) dòng chữ-số
+@alphanumeric literal
+- (Tech) thuộc văn tự chữ-số
+@alphanumeric mask
+- (Tech) màn che chữ-số
+@alphanumeric optical reader
+- (Tech) bộ đọc chữ-số bằng quang
+@alphanumeric position
+- (Tech) vị trí chữ-số
+@alphanumeric record
+- (Tech) bản ghi chữ-số
+@alphanumeric sort
+- (Tech) xếp thứ tự chữ-số
+@alphanumeric string
+- (Tech) chuỗi chữ-số
+@alphanumeric tabulator
+- (Tech) máy lập bảng chữ-số
+@alphanumeric type
+- (Tech) loại chữ-số
+@alphanumeric value
+- (Tech) trị chữ-số
+@alphanumeric-pager
+- (Tech) máy nhắn tin dùng chữ-số
+@Alt (alternate) key
+- (Tech) phím đổi; phím lệnh thay đổi (thường dùng chung với phím khác và tùy qui định)
+@alter
+- (Tech) thay đổi; hiệu chỉnh
+@alterable read-only storage
+- (Tech) bộ trữ chỉ đọc đổi được
+@alteration switch
+- (Tech) công tắc chuyển đổi
+@alternate
+- (Tech) luân phiên, thay phiên; thay thế; xoay chiều
+@alternate current signaling
+- (Tech) phương thức tín hiệu giao lưu [NB]
+@alternate data set
+- (Tech) tập dữ kiện luân phiên
+@alternate key
+- (Tech) khóa thay thế
+- (Tech) phím thay thế
+
+@alt key (Alternate key)
+- (Tech) khóa thay thế
+- (Tech) phím thay thế
+
+@alternate line scanning
+- (Tech) quét dòng xen kẽ
+@alternate map register set
+- (Tech) tập hợp bộ ghi bảng đối ứng thay thế [điện toán] [NB]
+@alternate map
+- (Tech) bảng đối ứng thay thế [điện toán] [NB]
+@alternate map register
+- (Tech) bộ ghi bảng đối ứng thay thế [điện toán] [NB]
+@alternate path
+- (Tech) đường thay thế, đường vòng
+@alternate route
+- (Tech) đường vòng [NB]
+@alternate routing
+- (Tech) chọn đường thay thế, trung kế vòng [ĐL], trung kế bổ trợ [ĐL]
+@alternating acknowledge
+- (Tech) báo nhận xen kẽ
+@alternating current
+- hay ac, AC
+- (Tech) dòng điện xoay chiều
+@alternating current bias
+- (Tech) thiên áp dòng xoay chiều = magnetic bias
+@alternating current bridge
+- (Tech) cầu dòng xoay chiều
+@alternating current generator
+- (Tech) máy phát điện dòng xoay chiều
+@alternating current hum
+- (Tech) tiếng ù dòng xoay chiều
+@alternating field
+- (Tech) trường xoay chiều
+@alternating flux
+- (Tech) thông lượng xoay chiều
+@alternating group
+- (Tech) nhóm giao nhau [NB]
+@alternating load
+- (Tech) tải xoay chiều
+@alternating routing
+- (Tech) xếp nối thay thế
+@alternating voltage
+- (Tech) điện áp biến đổi/xoay chiều
+@alternation
+- (Tech) luân phiên, thay phiên
+@alternative
+- (Tech) luân phiên; thay thế; xoay chiều; chọn một
+@alternative command
+- (Tech) lệnh thay thế
+@alternative current (AC) receptacle
+- (Tech) ổ cắm điện xoay chiều
+@alternative current (AC) socket
+- (Tech) lỗ cắm điện xoay chiều
+@alternative hypothesis
+- (Tech) giả thuyết đối lập [NB]
+@alternative protocol
+- (Tech) nghi thức thay thế
+@alternator
+- (Tech) máy phát điện xoay chiều
+@altimeter
+- (Tech) máy đo độ cao, cao kế
+@altitude
+- (Tech) độ cao, cao độ
+@altitude error
+- (Tech) sai số độ cao
+@altitude indicator
+- (Tech) bộ chỉ báo độ cao, đồng hồ đo cao
+@alumina
+- (Tech) ôxít nhôm, alumin
+@aluminum
+- (Tech) nhôm
+@aluminium
+- hay aluminum
+- (Tech) nhôm
+@aluminum cable
+- (Tech) cáp nhôm
+@aluminum conductor
+- (Tech) dây dẫn nhôm
+@AM (amplitude-modulated) capability
+- (Tech) khả năng dao động biên độ
+@AM (amplitude-modulated) noise
+- (Tech) tiếng ồn biến điệu biên (độ)
+@AM (amplitude-modulated) photodetector
+- (Tech) bộ tách sóng quang biến điệu biên (độ)
+@AM (amplitude-modulated) receiver
+- (Tech) máy thu biến điệu biên (độ)
+@AM wave
+- hay amplitude-modulated wave
+- (Tech) sóng biến điệu biên (độ)
+
+@amplitude-modulated wave
+- hay AM wave
+- (Tech) sóng biến điệu biên (độ)
+@AM/FM receiver
+- (Tech) máy thu biến điệu biên-tần
+@AM/FM tuner
+- (Tech) bộ điều hưởng biên-tần
+@amateur radio communication
+- (Tech) thông tin vô tuyến tài tử/nghiệp dư
+@amateur station
+- (Tech) đài (thu-phát) tài tử/nghiệp dư
+@ambient
+- (Tech) chung quanh, môi trường
+@ambient condition
+- (Tech) điều kiện chung quanh
+@ambient light
+- (Tech) ánh sáng chung quanh
+@ambient noise
+- (Tech) tiếng ồn chung quanh
+@ambient temperature
+- (Tech) ôn độ chung quanh
+@ambiguity
+- (Tech) tính lưỡng nghĩa; nhập nhằng, mơ hồ, không xác định
+@ambiguity function
+- (Tech) hàm số nhập nhằng/bất thường
+@ambiguous
+- (Tech) lưỡng nghĩa (tt); nhập nhằng, mơ hồ (tt)
+@ambiguous definition
+- (Tech) định nghĩa nhập nhằng
+@amend
+- (Tech) tu chính (đ)
+@amending process
+- (Tech) quy trình tu chính
+@ammeter
+- (Tech) ampere (ampe) kế, máy đo dòng (điện)
+@amount
+- (Tech) lượng, số lượng
+@amp (ampere)
+- (Tech) ampere (ampe); = amplifier
+@ampere
+- (Tech) ampe (amp, đơn vị dòng điện)
+@ampere balance
+- (Tech) cân bằng ampere (ampe)
+@ampere-hour
+- (Tech) ampe-giờ
+@ampere-second
+- (Tech) ampe-giây
+@ampere-turn
+- (Tech) ampe-vòng
+@ampere-winding
+- (Tech) ampe-vòng
+@amperemeter
+* danh từ
+- (Điện học) ampe kế, dụng cụ đo ampe
+= hatwire (thermal) ammeter+ cái đo ampe nhiệt điện
+= electromagnetic ammeter+ cái đo ampe điện từ
+- (Tech) ampere (ampe) kế, máy đo dòng điện
+
+@ammeter
+* danh từ
+- (Điện học) ampe kế, dụng cụ đo ampe
+= hatwire (thermal) ammeter+ cái đo ampe nhiệt điện
+= electromagnetic ammeter+ cái đo ampe điện từ
+- (Tech) ampere (ampe) kế, máy đo dòng điện
+
+@amplidyne
+- (Tech) bộ khuếch/phóng đại điện cơ, ampliddin
+@amplification
+- (Tech) khuếch đại, phóng đại
+@amplification coefficient
+- (Tech) hệ số khuếch đại
+@amplification factor
+- (Tech) hệ số khuếch đại
+@amplifier
+- (Tech) bộ khuếch/phóng đại; tầng khuếch/phóng đại, mạch khuếch/phóng đại
+@amplifier bandwidth
+- (Tech) dải thông khuếch đại
+@amplifier inverter
+- (Tech) bộ biến đổi khuếch đại
+@amplitude
+- (Tech) biên độ
+@amplitude balance
+- (Tech) cân bằng biên độ
+@amplitude clipper
+- (Tech) bộ hạn biên
+@amplitude code
+- (Tech) mã biên độ
+@amplitude fading
+- (Tech) biến hiệu mờ dần biên độ
+@amplitude filter
+- (Tech) bộ lọc biên độ
+@amplitude frequency modulation
+- (Tech) biến điệu biên độ tần số
+@amplitude gate
+- (Tech) cổng biên độ
+@amplitude modulated transmitter
+- (Tech) máy phát biến điệu biên (độ), máy phát điều biên
+@amplitude modulation
+- (Tech) biến điệu biên độ
+@amplitude separator
+- (Tech) bộ phân chia theo biên độ
+@amplitude stabilized laser
+- (Tech) bộ kích quang ổn định biên độ
+@amplitude-frequency distortion
+- (Tech) biến dạng biên (độ)-tần (số)
+@amplitude-frequency response characteristic
+- (Tech) đáp tuyến biên độ-tần số
+@amplitude-modulated wave
+- (Tech) sóng biến điệu biên (độ)
+@ampoule
+- (Tech) vỏ, bóng
+@analog, analogue
+- (Tech) tương tự, liên biến, dạng sóng, liên tục
+@analog (data) recorder
+- (Tech) máy ghi (dữ kiện) dạng tương tự
+@analog adder
+- (Tech) bộ cộng tương tự
+@analog circuit
+- (Tech) mạch tương tự
+@analog compact cassette (ACC)
+- (Tech) hộp băng nhỏ dạng tương tự
+@analog computer
+- (Tech) máy điện toán dạng tương tự
+@analog data
+- (Tech) dữ kiện tương tự
+@analog device
+- (Tech) thiết bị tương tự
+@analog element
+- (Tech) phần tử tương tự
+@analog equipment
+- (Tech) thiết bị tương tự
+@analog machine
+- (Tech) máy tương tự
+@analog microcircuit
+- (Tech) vi mạch tương tự
+@analog multiplexer
+- (Tech) bộ đa hợp tương tự
+@analog network
+- (Tech) mạng tương tự
+@analog plotter
+- (Tech) máy vẽ hình loại tương tự
+@analog recording
+- (Tech) ghi dạng tương tự
+@analog signal
+- (Tech) tín hiệu tương tự, tín hiệu dạng sóng
+@analog simulation
+- (Tech) mô phỏng tương tự
+@analog telephone line
+- (Tech) dây điện thoại tương tự
+@analog to binary converter
+- (Tech) bộ đổi tương tự ra nhị phân
+@analog to digital converter
+- (Tech) bộ đổi tương tự ra số tự
+@analog transistor
+- (Tech) đèn tinh thể tương tự
+@analog transmission
+- (Tech) truyền tương tự
+@analog-digital computer
+- (Tech) máy điện toán dạng tương tự-số tự
+@analog-digital conversion
+- (Tech) đổi tương tự-số tự
+@analog-digital converter
+- (Tech) bộ đổi tương tự-số tự
+@analogous
+- (Tech) tương tự (tt), liên biến (tt)
+@analogy
+- (Tech) tính tương tự; loại suy, suy diễn
+@analyse
+- (Tech) phân tích (đ)
+@analyser, analyzer
+- (Tech) bộ phân tích, máy phân tích
+@analysis
+- (Tech) phân tích; giải tích (d)
+@analyst
+- (Tech) phân tích viên
+@analyst-programmer
+- (Tech) chuyên viên phân tích và lập trình
+@analytical-function generator
+- (Tech) bộ tạo hàm giải tích
+
+@analyzer (analyser)
+* danh từ
+- (vật lý) / (hoá học) dụng cụ phân tích, máy phân tích
+= differential analyzer+ máy phân tích vi phân
+= magnetic analyzer+ máy phân tích từ
+= frequency analyzer+ máy phân tích tần số
+= sound analyzer+ máy phân tích âm
+= isotope analyzer+ máy phân tích đồng vị
+= radiation analyzer+ máy phân tích phóng xạ
+- người phân tích
+- (máy tính) máy phân tích
+= circuit analyzer+ máy phân tích mạch
+= curve analyzer+ máy phân tích đường cong
+= differential analyzer+ máy tính vi phân
+= digital differential analyzer+ máy tính vi phân (bằng) số
+= direct-reading analyzer+ máy phân tích đọc trực tiếp
+= electronic analyzer+ máy phân tích điện tử
+= fourier analyzer+ máy phân tích Furiê, máy phân tích điều hoà
+= frequency response analyzer+ máy phân tích tần số
+= harmonic analyzer+ máy phân tích điều hoà
+= motion analyzer+ máy phân tích lưới
+= network analyzer+ máy phân tích lưới
+= servo analyzer+ máy phân tích secvo
+= transient analyzer+ máy phân tích chuyển tiếp, máy phân tích các quá trình chuyển tiếp
+
+@analyser
+* danh từ
+- (vật lý); (hoá học) dụng cụ phân tích, máy phân tích
+= differential analyser+ máy phân tích vi phân
+= magnetic analyser+ máy phân tích từ
+= frequency analyser+ máy phân tích tần số
+= sound analyser+ máy phân tích âm
+= isotope analyser+ máy phân tích đồng vị
+= radiation analyser+ máy phân tích phóng xạ
+- người phân tích
+- (máy tính) máy phân tích
+= circuit analyser+ máy phân tích mạch
+= curve analyser+ máy phân tích đường cong
+= differential analyser+ máy tính vi phân
+= digital differential analyser+ máy tính vi phân (bằng) số
+= direct-reading analyser+ máy phân tích đọc trực tiếp
+= electronic analyser+ máy phân tích điện tử
+= fourier analyser+ máy phân tích Furiê, máy phân tích điều hoà
+= frequency response analyser+ máy phân tích tần số
+= harmonic analyser+ máy phân tích điều hoà
+= motion analyser+ máy phân tích lưới
+= network analyser+ máy phân tích lưới
+= servo analyser+ máy phân tích secvo
+= transient analyser+ máy phân tích chuyển tiếp, máy phân tích các quá trình chuyển tiếp
+
+@anaphoresis
+- (Tech) di chuyển ly tử (âm)
+@anastigmatic
+- (Tech) chính thị
+@anastigmatic lens
+- (Tech) thấu kính chính thị [TN], thấu kính khử tán hình [ĐL]
+@anchor bolt
+- (Tech) đinh ốc cố định
+@anchor point
+- (Tech) điểm cố định
+@anchor pole
+- (Tech) cột cố định, cột neo
+@anchor record
+- (Tech) bản ghi gốc = root record
+@anchor strut
+- (Tech) cột chống cố định
+@AND circuit
+- (Tech) mạch VÀ, mạch hội
+@AND component
+- (Tech) thành phần VÀ, thành phần hội
+@AND core
+- (Tech) lõi VÀ
+@AND element
+- (Tech) yếu tố VÀ
+@AND gate
+- (Tech) cổng VÀ
+@AND operation
+- (Tech) phép toán VÀ
+@AND operator
+- (Tech) toán tử VÀ
+@AND to AND circuit
+- (Tech) mạch VÀ-VÀ
+@AND to AND
+- (Tech) VÀ-VÀ (mạch luận lý)
+@AND to OR circuit
+- (Tech) mạch VÀ-HOẶC
+@AND to OR
+- (Tech) VÀ-HOẶC (mạch luận lý)
+@AND
+- (Tech) VÀ (mạch luận lý)
+@android
+- (Tech) người máy, máy có nhân tính
+@anechoic chamber
+- (Tech) phòng không dội âm, phòng tiêu âm [TQ]
+@angel
+- (Tech) mục tiêu ký sinh (ra-đa) [TQ]; đạo thường hồ ba [TQ]
+@angle
+- (Tech) góc
+@angle bracket
+- (Tech) dấu ngoặc nhọn
+@angle of aspect
+- (Tech) góc bao quát
+@angle of cut-off
+- (Tech) góc cắt
+@angle of elevation
+- (Tech) góc ngẩng/ngưỡng; góc cao, góc chính diện
+@angle of flow
+- (Tech) góc giao thông, góc khí lưu
+@angle of groove
+- (Tech) góc của rãnh (đĩa hát)
+@angle of incidence
+- (Tech) góc tới
+@angle of lag
+- (Tech) góc muộn
+@angle of polarization
+- (Tech) góc phân cực
+@angle of sight
+- (Tech) thị giác, góc bao quát
+@angle reflector
+- (Tech) bộ phản xạ góc, gương phản xạ
+@angle shock wave
+- (Tech) sóng va chạm góc, sóng chấn động góc
+@angle tracking
+- (Tech) truy tích góc
+@angstrom
+- (Tech) angstrom (A)  (10 lũy thừa -10 mét)
+@angular
+- (Tech) thuộc góc (tt)
+@angular deflection
+- (Tech) độ lệch góc
+@angular deviation
+- (Tech) độ chênh góc
+@angular distance
+- (Tech) cự ly góc
+@angular frequency
+- (Tech) tần số góc
+@angular length
+- (Tech) độ dài góc
+@angular light sensing
+- (Tech) cảm nhận ánh sáng góc
+@angular modulation
+- (Tech) biến điệu góc
+@angular oscillation
+- (Tech) dao động góc
+@angular width
+- (Tech) độ rộng góc
+@anharmonic resonance
+- (Tech) cộng hưởng phi điều hòa
+@anharmonic
+- (Tech) phi điều hòa
+@animated sequence
+- (Tech) cảnh (phim) sống động
+@animation
+- (Tech) hoạt động tính
+@animator
+- (Tech) hoạt họa viên
+@animatronics
+- (Tech) hoạt họa/hình điện tử
+@anisochronous
+- (Tech) dị thời
+@anisotropic
+- (Tech) dị hướng
+@anisotropy
+- (Tech) tính dị hướng
+@annotate
+- (Tech) chú giải (đ), chú thích (đ); phụ chú (đ)
+@annotation
+- (Tech) chú giải (d), chú thích (d); phụ chú (d)
+@announcer
+- (Tech) mã tự báo tin; xướng ngôn viên
+@annular
+- (Tech) hình khuyên
+@annunciator
+- (Tech) bộ/lá báo (điện thoại)
+@anode
+- (Tech) dương cực, cực dương, anôt
+@anode
+- (Tech) battery pin dương cực
+@anode ray
+- (Tech) tia dương cực
+@anode rectification
+- (Tech) chỉnh lưu ở dương cực
+@anode shield
+- (Tech) vỏ bọc dương cực
+@anode voltage
+- (Tech) điện áp dương cực
+@anomalous
+- (Tech) dị thường, bất thường
+@anomalous refraction
+- (Tech) khúc xạ dị thường
+@answer
+- (Tech) trả lời, đáp; nhận
+@answer back
+- (Tech) hồi đáp, báo nhận, trả lời lại
+@answer mode
+- (Tech) kiểu trả lời
+@answer signal
+- (Tech) tín hiệu trả lời
+@answer tone
+- (Tech) báo âm, âm hiệu trả lời
+@answering equipment
+- (Tech) thiết bị/dụng cụ trả lời
+@answering machine
+- (Tech) máy trả lời (điện thoại)
+@antecedent
+- (Tech) tiền kiện, tiền đề, tiền lệ
+@antenna
+- (Tech) ăngten, dây trời
+@antenna adapter
+- (Tech) bộ phối thích anten/dây trời
+@antenna aperture
+- (Tech) khẩu độ ănten
+@antenna array
+- (Tech) giàn ăngten
+@antenna cable
+- (Tech) cáp ăngten
+@antenna coil
+- (Tech) cuộn dây ăngten
+@antenna coupler
+- (Tech) bộ ghép ăngten
+@antenna dome
+- (Tech) vòm ăngten
+@antenna feeder
+- (Tech) dây tiếp sóng ăngten
+@antenna field gain
+- (Tech) tăng ích trường ăngten
+@antenna gain
+- (Tech) gia lượng ăngten = aerial gain
+@antenna impedance
+- (Tech) trở kháng ăngten
+@antenna mast
+- (Tech) cột ăngten
+@antenna reflector
+- (Tech) bộ phản xạ ăngten
+@antenna resistance
+- (Tech) điện trở ăngten
+@antenna rod
+- (Tech) thanh ăngten
+@antenna tower
+- (Tech) tháp ăngten
+@anti-interference
+- (Tech) chống nhiễu
+@anticapacitance switch
+- (Tech) công tắc kháng điện dung
+@anticathode
+- (Tech) đối âm cực
+@anticlockwise
+- (Tech) ngược chiều kim đồng hồ
+@anticoincidence
+- (Tech) chống trùng hợp
+@anticollision radar
+- (Tech) radda phòng chống đụng nhau
+@anticorrosive
+- (Tech) chống ăn mòn
+@antifading
+- (Tech) chống phai mờ
+@antiferroelectric
+- (Tech) chất phản thiết điện; thuộc phản thiết điện (tt)
+@antiferromagnetic
+- (Tech) chất phản thiết từ; thuộc phản thiết từ (tt)
+@antiglare
+- (Tech) chống phản chiếu, chống lóa
+@antihum
+- (Tech) chống ù/ồn
+@antiinduction
+- (Tech) chống cảm ứng
+@antijamming
+- (Tech) chống nhiễu = anti-interference
+@antilog(arithm)
+- (Tech) đối đối số, đối loga
+@antimagnetic
+- (Tech) phản từ (tính)
+@antimicrophonic
+- (Tech) chống hiệu ứng ống nói/micrô
+@antimode
+- (Tech) đối mốt, đối kiểu, đối loại, mốt ngược
+@antinode
+- (Tech) bụng sóng
+@antinoise
+- (Tech) chống ồn
+@antiparasitic
+- (Tech) chống tạp âm
+@antiphase
+- (Tech) đối vị tướng, đối pha
+@antiphase pumping
+- (Tech) bơm đối vị tướng, bơm đối pha
+@antiradar device
+- (Tech) thiết bị chống radda
+@antireflection coating
+- (Tech) lớp sơn chống phản xạ
+@antiresonance
+- (Tech) chống cộng hưởng
+@antirolling
+- (Tech) chống quấn rối
+@antisidetone
+- (Tech) chống nội âm [điện thoại]
+@antistatic mat
+- (Tech) thảm chống tĩnh điện
+@antivibration
+- (Tech) chống rung
+@aperiodic
+- (Tech) không tuần hoàn, phi chu kỳ
+@aperture
+- (Tech) khẩu độ; góc mở; lỗ (cửa); cửa (sổ)
+@apex
+- (Tech) đỉnh, chóp, ngọn
+@aplanatic lens
+- (Tech) thấu kính tương phẳng
+@apochromatic lens
+- (Tech) thấu kính tiêu sắc phức
+@apogee
+- (Tech) viễn điểm
+@apparatus
+- (Tech) thiết bị, máy
+@apparatus room
+- (Tech) phòng máy
+@apparent
+- (Tech) biểu kiến, bề ngoài
+@appearance potential
+- (Tech) điện thế xuất hiện
+@append
+- (Tech) phụ thêm, thêm; nối kết
+@APPEND
+- (Tech) tìm tập tin thường (chỉ thị)
+@appendage
+- (Tech) thêm (d); vật phụ thêm; máy phụ thêm; phụ kiện
+@appendix
+- (Tech) phụ lục
+@appliance
+- (Tech) máy, thiết bị, phụ tùng
+@application
+- (Tech) ứng dụng; chương trình ứng dụng
+@application language
+- (Tech) ngôn ngữ ứng dụng
+@application object
+- (Tech) đối tượng ứng dụng
+@application option
+- (Tech) tùy ý ứng dụng
+@application package
+- (Tech) bộ chương trình ứng dụng (tiền chế)
+@application program
+- (Tech) chương trình ứng dụng
+@application programmer
+- (Tech) thảo chương viên ứng dụng
+@application programming
+- (Tech) thảo chương ứng dụng
+@application software
+- (Tech) nhu kiện ứng dụng
+@application-oriented language
+- (Tech) ngôn ngữ hướng dụng
+@applicator
+- (Tech) máy mạ bản; máy điểm dạng [TQ]
+@applied informatics
+- (Tech) tin học ứng dụng
+@appriori
+- (Tech) tiên nghiệm
+@approach
+- (Tech) tính gần đúng, phép xấp xỉ; tiếp cận; phương pháp; đáp xuống (máy bay)
+@approach control
+- (Tech) điều khiển tiếp cận (máy bay)
+@approach signal
+- (Tech) tín hiệu tiếp cận
+@approximate
+- (Tech) gần đúng
+@approximate reasoning
+- (Tech) lập luận gần đúng
+@approximate value
+- (Tech) trị gần đúng
+@approximation
+- (Tech) phép tính gần đúng, phép tính sai số, phép tính xấp xỉ
+@aquadag
+- (Tech) lớp than chì (trong ống tia điện tử)
+@arbitrary
+- (Tech) nhiệm ý, tùy ý
+@arbitrary distribution
+- (Tech) phân bố nhiệm ý
+@arbitrary sequence
+- (Tech) trình tự/chuỗi nhiệm ý
+@arbitrary statement
+- (Tech) câu lệnh nhiệm ý
+@arbitrary unit
+- (Tech) đơn vị nhiệm ý
+@arc
+- (Tech) hồ quang, hồ điện, cung lửa; cung
+@arc arrester
+- (Tech) cái phóng điện hồ quang
+@arc baffle
+- (Tech) ván trợ hồ quang
+@arc converter
+- (Tech) bộ đổi hồ quang
+@arc discharge
+- (Tech) lamp đèn phóng hồ quang
+@arc discharger
+- (Tech) bộ phóng điện hồ quang
+@arc furnace
+- (Tech) lò hồ quang
+@arc resistance
+- (Tech) điện trở hồ quang
+@arc transmitter
+- (Tech) máy phát hồ quang điện (cung lửa)
+@arc welding
+- (Tech) hàn hồ quang
+@arcade game
+- (Tech) trò chơi kiểu nhà điện tử = arcade-type game
+@arcback
+- (Tech) sự đánh lửa ngược, phản hồ quang (trong bộ nắn điện thủy ngân)
+@arching horn
+- (Tech) ống loa phòng đánh lửa
+@architectural acoustics
+- (Tech) âm thanh học kiến trúc
+@architectural design
+- (Tech) thiết kế kiến trúc
+@architecture
+- (Tech) kiến trúc; cấu trúc
+@archive
+- (Tech) tài liệu, tài liệu lưu trữ; lưu trữ (đ)
+@archive attribute
+- (Tech) thuộc tính lưu trữ
+@archived file
+- (Tech) tập tin lưu trữ
+@archives
+- (Tech) tài liệu lưu trữ;, kho lưu trữ
+@arcing
+- (Tech) đánh lửa
+@arcing lamp
+- (Tech) đèn đánh lửa
+@are gap
+- (Tech) khe hồ quang
+@are generator
+- (Tech) bộ dao động loại tia lửa
+@area chart
+- (Tech) biểu đồ khu vực
+@area graph
+- (Tech) đồ thị khu vực/diện tích
+@area search
+- (Tech) tìm khu vực (d)
+@area
+- (Tech) khu vực, bãi, chỗ; phạm vi; diện tích; mặt, diện
+@argon laser
+- (Tech) bộ kích quang agon
+@argon rectifier
+- (Tech) bộ chỉnh lưu agon (Ar)
+@argon
+- (Tech) agon (Ar) [hóa]
+@argument
+- (Tech) đối số, tham số; tự biến số, tự biến lượng; lý luận; chứng minh
+@argument field
+- (Tech) khoản dành cho tham số
+@argument list
+- (Tech) bản liệt kê tham số
+@argument separator
+- (Tech) dấu tách tham số
+@arithmetic
+- (Tech) số học; toán thuật, tính toán, vận toán
+@arithmetic and logic unit (ALU)
+- (Tech) bộ số học và luận lý, bộ số học lôgíc, bộ lý toán
+@arithmetic element
+- (Tech) phần tử số học
+@arithmetic expression
+- (Tech) biểu thức số học
+@arithmetic inspection
+- (Tech) kiểm tra số học
+@arithmetic instruction
+- (Tech) chỉ thị số học
+@arithmetic mean
+- (Tech) trị trung bình cộng
+@arithmetic operation
+- (Tech) phép toán số học
+@arithmetic operator
+- (Tech) toán tử số học
+@arithmetic organ
+- (Tech) bộ phận số học
+@arithmetic point
+- (Tech) dấu chấm số học/cơ số
+@arithmetic processor
+- (Tech) bộ xử lý số học
+@arithmetic progression
+- (Tech) cấp số cộng
+@arithmetic shift
+- (Tech) dịch chuyển số học
+@arithmetic unit
+- (Tech) bộ phận số học
+@arithmetic-logic section
+- (Tech) khâu số học và luận lý, khâu số lôgíc
+@arm
+- (Tech) nhánh; cánh tay; cần; xà
+@armature
+- (Tech) phần cứng; cốt, lõi máy; ngàm; phần động
+@armature coil
+- (Tech) cuộn lõi
+@armature gap
+- (Tech) khe lõi
+@armature winding
+- (Tech) cuộn dây của phần ứng
+@armored cable
+- (Tech) cáp bọc kim thuộc
+@armored cord
+- (Tech) dây nối ống nói (loại thẳng, điện thoại công cộng ở Hoa Kỳ)
+@armored
+- (Tech) được bọc kim thuộc
+@armoring tape
+- (Tech) băng bọc (cáp)
+@armoring
+- (Tech) bọc, bọc kim thuộc
+@armour
+- (Tech) vỏ bọc kim thuộc
+@armoured
+* tính từ
+- hay armored
+- bọc sắt
+= armoured car+ xe bọc sắt
+= armoured train+ xe lửa bọc sắt
+= armoured force+ lực lượng thiết giáp
+
+@armored
+* tính từ
+- bọc sắt
+= armoured car+ xe bọc sắt
+= armoured train+ xe lửa bọc sắt
+= armoured force+ lực lượng thiết giáp
+
+@array
+- (Tech) giàn, mạng; dẫy số, bảng; hàng; mảng; hệ thống, hệ
+@array declarator
+- (Tech) tên dẫy số = array name
+@array descriptor
+- (Tech) bộ mô tả dẫy số
+@array element
+- (Tech) phần tử mảng
+@array name
+- (Tech) tên dẫy số = array declarator
+@array processing
+- (Tech) xử lý dẫy số
+@array processor
+- (Tech) bộ xử lý dẫy số
+@array representation
+- (Tech) biểu thị/trình bầy dẫy số
+@array segment
+- (Tech) đoạn dẫy số
+@array variable
+- (Tech) biến dẫy số
+@arrester
+- (Tech) bộ phóng điện, cái phóng điện
+@arrival rate
+- (Tech) tỷ lệ đến
+@arrow
+- (Tech) mũi tên (con trỏ)
+@arrow cursor
+- (Tech) con chạy mũi tên
+@arrow key
+- (Tech) phím mũi tên
+@art
+- (Tech) mỹ thuật; nghệ thuật; kỷ xảo
+@art form
+- (Tech) kiểu hình, kiểu mỹ thuật
+@article
+- (Tech) điều khoản, mục; vật phẩm; bài báo
+@articulation index
+- (Tech) độ nghe rõ
+@articulation testing
+- (Tech) thử độ rõ phát âm
+@articulation
+- (Tech) độ rõ (phát âm); khớp nối
+@artificial
+- (Tech) nhân tạo; giả tạo
+@artificial cognition
+- (Tech) nhận thức nhân tạo
+@artificial intelligence (AI)
+- (Tech) trí năng nhân tạo
+@artificial language
+- (Tech) ngôn ngữ nhân tạo
+@artificial line
+- (Tech) đường dây giả, đường dây nhân tạo
+@artificial voice
+- (Tech) tiếng nói nhân tạo/giả nhân
+@artwork
+- (Tech) nguyên cảo; nguyên đồ; đồ trang sức; đồ nghệ thuật
+@asbestos
+- (Tech) thạch miên [TQ] (bông đá), amiăng
+@ascender
+- (Tech) đầu chữ, (phần ló đầu của chữ thường) (như b, d, h)
+@ascending
+- (Tech) thăng, tăng lên, lên cao (d)
+@ascending key
+- (Tech) phím trở lên
+@ascending order
+- (Tech) thứ tự lên, thứ tự lớn dần
+@ascending sequence
+- (Tech) trình tự lên
+@ascending sort
+- (Tech) xếp thứ tự từ dưới lên
+@ASCII (American Standard Code for Information Interchange)
+- (Tech) Bộ Mã Tiêu Chuẩn Hoa Kỳ Dùng Giao Hoán Tin Tức, AXƠKI
+@ASCII (American Standard Code for Information Interchange) code
+- (Tech) mã sốASCII [axơki]
+@ASCII (American Standard Code for Information Interchange) text
+- (Tech) văn bản dạng ASCII
+@aspect ratio
+- (Tech) cỡ ảnh (tỷ lệ dài-rộng, tỷ lệ dài-cao)
+@assemble
+- (Tech) ráp; dịch mã số(đ)
+@assemble time
+- (Tech) thời gian dịch mã số
+@assembler
+- (Tech) chương trình dịch mã số; thợ lắp ráp
+@assembler language
+- (Tech) hợp ngữ, ngôn ngữ (chương trình) tổ hợp
+@assembler operator
+- (Tech) toán tử hợp ngữ
+@assembling time
+- (Tech) thời gian dịch mã số
+@assembling
+- (Tech) dịch ngữ mã số (d); lắp ráp, tổ hợp
+@assembly
+- (Tech) lắp ráp, tổ hơp; dịch mã số (d)
+@assembly drawing
+- (Tech) bản vẽ lắp ráp
+@assembly language
+- (Tech) hợp ngữ, ngôn ngữ tổ hợp
+@assembly listing
+- (Tech) liệt kê sau khi dịch mã số
+@assembly program
+- (Tech) chương trình dịch mã số
+@assembly routine
+- (Tech) thường trình dịch mã số
+@assertion
+- (Tech) khẳng định
+@assign
+- (Tech) gán, định; chia phần
+@assigned frequency
+- (Tech) tần số chỉ định
+@assignment
+- (Tech) phân định, chỉ định; gán, đồng hóa (đĩa); trắc định, xác định
+@assignment instruction
+- (Tech) chỉ thị gán
+@assignment operator
+- (Tech) toán tử gán, toán tử chỉ định
+@assignment statement
+- (Tech) câu lệnh gán, câu lệnh chỉ định
+@assignment symbol
+- (Tech) dấu gán, ký hiệu gán
+@associate
+- (Tech) liên kết (đ), kết hợp (đ)
+@associate memory
+- (Tech) bộ nhớ liên kết
+@associated decimal number
+- (Tech) số thập phân kết hợp
+@association
+- (Tech) liên kết (d), kết hợp (d)
+@association list
+- (Tech) bản kê liên kết
+@associative addressing
+- (Tech) định vị liên kết
+@associative criterion
+- (Tech) chuẩn cứ liên kết
+@associative law
+- (Tech) định luật liên kết
+@associative memory
+- (Tech) bộ nhớ liên kết
+@associative processing
+- (Tech) xử lý liên kết
+@associative processor
+- (Tech) bộ xử lý liên kết
+@associative region
+- (Tech) vùng liên kết
+@associative register
+- (Tech) bộ ghi liên kết
+@associative search
+- (Tech) tìm liên kết
+@associative storage
+- (Tech) bộ trữ liên kết
+@assume
+- (Tech) giả định, giả sử; đảm nhận
+@astable
+- (Tech) không ổn
+@astatic
+- (Tech) vô định hướng, phiếm định; vô ổn định
+@asterisk
+- (Tech) dấu sao (*)
+@astigmatic
+- (Tech) loạn thị
+@astigmatic lens
+- (Tech) thấu kính loạn thị [TN], thấu kính tán hình [ĐL]
+@astronautics
+- (Tech) khoa du hành vũ trụ
+@astronavigation
+- (Tech) du hành vũ trụ
+@astronomical navigation
+- hay astronavigation
+- (Tech) du hành vũ trụ
+@astronomy
+- (Tech) thiên văn học
+@asymmetrical
+- (Tech) không đối xứng, bất đối xứng
+@asymptote
+- (Tech) đường tiệm cận
+@asynchronous
+- (Tech) dị bộ, không đồng bộ
+@asynchronous bus
+- (Tech) mẫu tuyến dị bộ
+@asynchronous communication
+- (Tech) thông tin dị bộ
+@asynchronous data transmission
+- (Tech) truyền dữ kiện dị bộ
+@asynchronous device
+- (Tech) thiết bị dị bộ
+@asynchronous line
+- (Tech) đường dây dị bộ
+@asynchronous time division multiplexing
+- (Tech) hệ đa kết bằng phép phân thời gian không đồng bộ, hệ đa kết phân thời
+@asynchronous transmission
+- (Tech) truyền dị bộ
+@at-sign
+- (Tech) dấu a vòng (@)
+@atmosphere
+- (Tech) khí quyển; atmôtfe (đơn vị)
+@atmospheric
+- (Tech) thuộc khí quyển
+@atmospheric absorption
+- (Tech) hấp thụ của khí quyển
+@atmospheric discharge
+- (Tech) phóng điện trong khí quyển
+@atmospheric disturbance
+- (Tech) nhiễu loạn trong khí quyển
+@atmospheric interference
+- (Tech) giao thoa trong khí quyển
+@atmospheric noise
+- (Tech) nhiễu âm điện khí quyển
+@atmospheric tidal wave
+- (Tech) sóng triều khí quyển
+@atmospheric waveguide
+- (Tech) ống dẫn sóng khí quyển
+@atmospherics
+- (Tech) điện khí quyển; tạp âm khí quyển
+@atom
+- (Tech) nguyên tử; yếu tố, đơn tố
+@atomic
+- (Tech) thuộc nguyên tử
+@atomic battery
+- (Tech) pin nguyên tử
+@atomic beam laser
+- (Tech) bộ kích quang (la de) chùm nguyên tử
+@atomic beam resonator
+- (Tech) cái cộng hưởng chùm nguyên tử
+@atomic clock
+- (Tech) đồng hồ nguyên tử
+@atomic frequency standard
+- (Tech) tiêu chuẩn tần số nguyên tử
+@atomic nucleus
+- (Tech) hạt nhân nguyên tử, hạt tâm
+@atomic number
+- (Tech) số nguyên tử
+@atomic theory
+- (Tech) lý thuyết nguyên tử
+@atomic weight
+- (Tech) trọng lượng nguyên tử
+@atomicity
+- (Tech) nguyên tử tính; nguyên tử hóa trị; nguyên vẹn
+@atomics
+- (Tech) kỹ thuật nguyên tử
+@attach
+- (Tech) gắn nối, kết (đ)
+@attached device
+- (Tech) thiết bị gắn nối
+@attached unit
+- (Tech) bộ phận gắn nối
+@attached variable
+- (Tech) biến gắn nối
+@attachment
+- (Tech) bộ đính kèm; phụ tùng; bộ móc nối
+@attended
+- (Tech) station đài/trạm có người (quản lý)
+@attention interruption
+- (Tech) ngắt chú ý
+@attention key
+- (Tech) khóa chú ý
+@attenuate
+- (Tech) suy giảm (đ)
+@attenuation
+- (Tech) suy giảm; độ suy giảm; hấp thụ
+@attenuation band
+- (Tech) dải suy giảm
+@attenuation-frequency distortion
+- (Tech) biến dạng suy giảm tần số
+@attenuator grating
+- (Tech) lưới quang suy giảm
+@attenuator
+- (Tech) bộ suy giảm
+@atto
+- (Tech) attô (10 lũy thừa -18)
+@attoelectronic emission
+- (Tech) phóng xạ âm điện tử
+@attracted-disc electrometer
+- (Tech) tĩnh điện kế kiểu hút đĩa
+@attraction
+- (Tech) hút (d)
+@attribute
+- (Tech) thuộc tính, đặc tính; bổ ngữ, đặc ngữ; đặc chất (chất lượng)
+@attrition
+- (Tech) hao mòn
+@audibility factor
+- (Tech) hệ số thính âm
+@audibility meter
+- (Tech) máy đo độ nghe rõ
+@audibility
+- (Tech) độ nghe rõ, độ thính âm
+@audible signal
+- (Tech) tín hiệu thính âm
+@audible spectrum
+- (Tech) phổ thính âm
+@audible test
+- (Tech) thử nghe, thi+? thính âm
+@audible tone
+- (Tech) giọng nghe được
+@audible
+- (Tech) nghe được, thính âm
+@audience microphone
+- (Tech) máy vi âm nền động
+@audio
+- (Tech) thuộc âm thanh
+@audio (frequency) device
+- (Tech) bộ (tần số) âm thanh
+@audio (frequency) effect
+- (Tech) hiệu ứng (tần số) âm thanh
+@audio amplifier
+- (Tech) bộ khuếch đại âm thanh
+@audio book
+- (Tech) sách dạng âm thanh
+@audio disk
+- (Tech) đĩa âm thanh
+@audio engineering
+- (Tech) kỹ thuật âm thanh = acoustic engineering
+@audio frequency transformer
+- (Tech) bộ biến âm tần
+@audio frequency
+- (Tech) tần số âm thanh, âm tần
+@audio generator
+- (Tech) máy tạo sóng âm tần
+@audio head
+- (Tech) đầu ghi âm
+@audio indicator
+- (Tech) bộ chỉ báo âm lượng
+@audio modulation
+- (Tech) biến điệu âm tần
+@audio operator
+- (Tech) nhân viên thu-phát thanh
+@audio oscillator
+- (Tech) bộ dao động âm thanh
+@audio output
+- (Tech) phát âm thanh
+@audio reproduction
+- (Tech) tái tạo âm thanh
+@audio response device
+- (Tech) bộ phát âm
+@audio response unit
+- (Tech) bộ phận đáp lời
+@audio signal
+- (Tech) tín hiệu âm thanh
+@audio tape
+- (Tech) băng âm (tần)
+@audio transformer
+- (Tech) bộ biến áp âm tần
+@audio transmission
+- (Tech) truyền âm thanh
+@audio-frequency wave
+- (Tech) sóng âm-tầm
+@audio-visual equipment
+- (Tech) thiết bị thính thị
+@audio-visual recorder
+- (Tech) máy ghi thính thị
+@audio-visual
+- (Tech) thính thị, nghe nhìn
+@audiofrequency meter
+- (Tech) máy đo âm tần
+@audiofrequency oscillator
+- (Tech) bộ dao động âm tần
+@audiofrequency spectrometer
+- (Tech) phổ kế âm tần
+@audiogram
+- (Tech) biểu đồ âm thanh
+@audiometer
+- (Tech) âm kế, máy đo sức nghe
+@audiometry
+- (Tech) phép đo âm, phép đo sức nghe
+@audiovisual system
+- (Tech) hệ thống thính thị
+@audit
+- (Tech) kiểm tra
+@audit log
+- (Tech) sổ kiểm tra
+@audit trail
+- (Tech) vết kiểm tra, dấu kiểm tra
+@auditing
+- (Tech) kiểm tra quản lý
+@auditorium
+- (Tech) phòng nghe, thính đường
+@auditory sensation
+- (Tech) cảm quan thính giác
+@augend digit
+- (Tech) số tự số hạng thứ hai
+@augend
+- (Tech) toán tố thứ nhất (toán cộng); số bị cộng; số hạng thứ hai
+@augment
+- (Tech) gia tố (d); làm tăng, tăng lên (đ)
+@augmention
+- (Tech) làm tăng, tăng lên (d)
+@aural
+- (Tech) thuộc về tai, thuộc về thính giác
+@aural carrier
+- (Tech) sóng mang thanh, sóng tải âm
+@aural detection
+- (Tech) phát hiện bằng âm thanh
+@aural detector
+- (Tech) bộ kiểm sóng âm thanh
+@aural harmonic
+- (Tech) điều âm dựa trên thính giác
+@aural perception
+- (Tech) cảm thụ bằng thính giác
+@aural presentation
+- (Tech) trình bày bằng âm thanh
+@aural reception
+- (Tech) nhận bằng tai
+@aural signal
+- (Tech) tín hiệu chuông (quay về)
+@aural transmitter
+- (Tech) máy phát thính-thị/thanh-hình
+@aural warning
+- (Tech) báo hiệu bằng âm thanh
+@aurora
+- (Tech) cực quang [TQ] (nam/bắc cực)
+@auroral zone propagation
+- (Tech) truyền lan vùng cực quang
+@authentication code
+- (Tech) mã nhận đúng, mã chứng nhận chính xác
+@author
+- (Tech) tác giả
+@authoring language
+- (Tech) ngôn ngữ trứ tác
+@authoring system
+- (Tech) hệ thống trứ tác
+@authorized frequency
+- (Tech) tần số được quyền/cho phép
+@authorized program
+- (Tech) chương trình được quyền/cho phép
+@authorized user
+- (Tech) người dùng được quyền, người dùng được phép
+@auto
+- (Tech) tự động
+@auto decompressor
+- (Tech) máy giảm áp tự động
+@auto jumb
+- (Tech) nhảy tự động
+@auto mode
+- (Tech) kiểu tự động
+@auto program
+- (Tech) chương trình tự động
+@auto relay
+- (Tech) bộ kế điện tự động
+@auto tracking
+- (Tech) truy tích tự động
+@auto-exchange
+- (Tech) tổng đài điện thoại tự động
+@auto-manual
+- (Tech) tự động-thủ công
+@auto-number-page
+- (Tech) đánh số trang tự động
+@auto-repeat
+- (Tech) tự động lập lại
+@auto-request control
+- (Tech) kiểm soát yêu cầu tự động
+@auto-restart
+- (Tech) tái khởi tự động
+@auto-scan tuner
+- (Tech) bộ điều hưởng tự quét
+@auto-switching center
+- (Tech) tổng đài điện thoại tự động
+@autocode
+- (Tech) biên mã tự động
+@autocoder
+- (Tech) bộ biên mã tự động
+@autocorrelation
+- (Tech) tự tương quang
+@autocorrelation analyser
+- (Tech) bộ phân tích tự tương quan
+@autocorrelation function
+- (Tech) hàm số tự tương quan
+@autocorrelation vocoder
+- (Tech) bộ mã tiếng nói tự tương quan
+@autodecremental addressing
+- (Tech) định địa chỉ tự giảm dần
+@autodump
+- (Tech) xổ tự động, tự động đổ ra
+@autodyne
+- (Tech) tự sai [TQ], autôddin
+@autodyne circuit
+- (Tech) mạch tự sai [ĐL]
+@autodyne oscillator
+- (Tech) bộ dao động tự sai [TQ]
+@autodyne reception
+- (Tech) thu tự sai [ĐL]
+@autoelectronic emission
+- (Tech) tự phát xạ điện tử tự động
+@autoexcitation
+- (Tech) tự kích thích
+@autoincremental addressing
+- (Tech) định địa chỉ tự tăng dần
+@autoindex
+- (Tech) chỉ số tự động
+@autoinductive coupling
+- (Tech) ghép biến áp tự động
+@automanual (telephone) exchange
+- (Tech) tổng đài bán tự động
+@automat
+- (Tech) máy tự động; thiết bị tự động
+@automata
+- (Tech) máy tự động; lý thuyết máy tự động
+@automata theory
+- (Tech) lý thuyết (máy) tự động
+@automated office (AO)
+- (Tech) văn phòng được tự động hóa
+@automatic
+- (Tech) thuộc tự động; máy tự động
+@automatic bias
+- (Tech) thiên áp tự động; lệch số tự động
+@automatic black level control
+- (Tech) điều chỉnh tự động mức đen
+@automatic break
+- (Tech) cắt tự động
+@automatic brightness control
+- (Tech) điều chỉnh độ chói tự động
+@automatic calling unit
+- (Tech) bộ phận gọi tự động
+@automatic calling
+- (Tech) gọi tự động
+@automatic carriage
+- (Tech) bộ lên giấy tự động
+@automatic check
+- (Tech) kiểm (tra) tự động
+@automatic checkout system
+- (Tech) hệ thống kiểm (ra) tự động
+@automatic circuit breaker
+- (Tech) cái cắt mạch tự động
+@automatic coding
+- (Tech) biên mã tự động
+@automatic compiler
+- (Tech) chương trình biên dịch tự động
+@automatic contrast control
+- (Tech) điều chỉnh độ tương phản tự động
+@automatic control
+- (Tech) điều khiển tự động, điều chỉnh tự động
+@automatic controller
+- (Tech) bộ điều khiển tự động
+@automatic data link
+- (Tech) đường truyền dữ kiện tự động
+@automatic data processing (ADP)
+- (Tech) xử lý dữ liệu tự động
+@automatic digital network (autodin)
+- (Tech) hệ thống thông tin số tự tự động (toàn cầu)
+@automatic direction finder
+- (Tech) máy tìm hướng tự động
+@automatic direction finder
+- (Tech) máy tìm phương tự động
+@automatic document feeder tray
+- (Tech) khay cấp giấy tự động
+@automatic error correction
+- (Tech) hiệu chính sai số tự động
+@automatic exchange
+- (Tech) tổng đài tự động
+@automatic expander
+- (Tech) bộ giãn tự động
+@automatic feed
+- (Tech) tiếp vận tự động
+@automatic flight control
+- (Tech) điều khiển bay tự động
+@automatic following
+- (Tech) theo sát tự động
+@automatic frequency control circuit
+- (Tech) mạch điều khiển tần số tự động
+@automatic frequency control
+- (Tech) điều khiển tần số tự động
+@automatic gain control circuit
+- (Tech) mạch điều khiển tăng ích tự động
+@automatic gain control
+- (Tech) điều khiển gia lượng tự động
+@automatic graph
+- (Tech) đồ thị tự động
+@automatic grid bias
+- (Tech) độ lệch lưới tự động
+@automatic hunting
+- (Tech) tìm tự động
+@automatic interrupter
+- (Tech) bộ ngắt tự động
+@automatic library call
+- (Tech) gọi thư viện tự động
+@automatic loader
+- (Tech) bộ nạp tự động
+@automatic message switching
+- (Tech) đảo mạch thông báo tự động
+@automatic message
+- (Tech) thông báo tự động
+@automatic noise limiter
+- (Tech) bộ hạn chế nhiễu tự động
+@automatic phase control
+- (Tech) bộ điều chỉnh pha (vị tướng) tự động
+@automatic polling
+- (Tech) vấn đáp tự động
+@automatic processing
+- (Tech) xử lý tự động
+@automatic program generator
+- (Tech) bộ tạo chương trình tự động
+@automatic programmed tool (APT)
+- (Tech) công cụ thảo chương tự động
+@automatic programming
+- (Tech) thảo chương tự động
+@automatic proof
+- (Tech) chứng minh tự động
+@automatic radio compass
+- (Tech) la bàn vô tuyến tự động
+@automatic range tracking
+- (Tech) truy tích theo cự ly tư động
+@automatic reading
+- (Tech) đọc tự động
+@automatic reasoning
+- (Tech) lập luận tự động
+@automatic record changer
+- (Tech) bộ thay đĩa tự động (máy quay đĩa)
+@automatic recovery program
+- (Tech) chương trình khôi phục tự động
+@automatic redundancy
+- (Tech) độ dư thừa tự động
+@automatic regulator
+- (Tech) bộ chỉnh tự động
+@automatic relay
+- (Tech) bộ nối điện tự động
+@automatic release
+- (Tech) trả lại tự động
+@automatic request for repetition
+- (Tech) yêu cầu tự động xin lập lại
+@automatic restart
+- (Tech) tái khởi động tự động
+@automatic retransmitter
+- (Tech) máy phát lại tự động
+@automatic ringing
+- (Tech) reo chuông tự động
+@automatic scan
+- (Tech) quét tự động
+@automatic scrolling
+- (Tech) cuộn tự động
+@automatic search jammer
+- (Tech) máy phá rối tìm tự động
+@automatic search
+- (Tech) tìm tự động
+@automatic segmentation
+- (Tech) phân đoạn tự động
+@automatic selectivity control
+- (Tech) điều chỉnh chọn lọc tự động
+@automatic sending receiving (ASR)
+- (Tech) chuyển-nhận tự động
+@automatic sequence
+- (Tech) chuỗi/trình tự tự động
+@automatic shutdown
+- (Tech) ngưng tự động
+@automatic signaling
+- (Tech) báo hiệu tự động
+@automatic starter
+- (Tech) bộ khởi động tự động
+@automatic starting motor
+- (Tech) động cơ khởi động tự động
+@automatic station
+- (Tech) đài tự động
+@automatic switchboard
+- (Tech) tổng đài tự động
+@automatic switching system
+- (Tech) hệ thống chuyển mạch tự động
+@automatic switching
+- (Tech) chuyển mạch tự động
+@automatic system reconfiguration
+- (Tech) tự động tái cấu hình hệ thống
+@automatic telegraphy
+- (Tech) môn điện báo tự động
+@automatic telephone message recorder
+- (Tech) máy ghi thông báo điện thoại tự động
+@automatic telephone set
+- (Tech) máy điện thoại tự động
+@automatic telephone system
+- (Tech) hệ thống điện thoại tự động
+@automatic telephony
+- (Tech) điện thoại tự động
+@automatic teller machine
+- (Tech) máy gửi-rút tiền tự động
+@automatic teller
+- (Tech) thâu ngân viên tự động (máy gởi-rút tiền tự động)
+@automatic text reflow
+- (Tech) cuốn văn bản tự động
+@automatic tracking
+- hay auto tracking
+- (Tech) truy kích tự động
+- (Tech) tự động theo dõi, theo dấu
+@automatic translation
+- (Tech) dịch tự động
+@automatic transmission
+- (Tech) phát/truyền tự động
+@automatic transmitter
+- (Tech) máy phát tự động
+@automatic tuning control
+- (Tech) bộ điều chỉnh tần số tự động
+@automatic variable
+- (Tech) biến tự động
+@automatic voice network (autovon)
+- (Tech) mạng điện thoại tự động (ưu tiên quân sự)
+@automatic volume compressor
+- (Tech) bộ nén âm lượng tự động
+@automatic volume control circuit
+- (Tech) mạch tự điều chỉnh âm lượng
+@automatic volume control
+- (Tech) điều chỉnh âm lượng tự động
+@automatic volume expander
+- (Tech) bộ giãn âm lượng tự động
+@automatic volume expansion
+- (Tech) giãn âm lượng tự động
+@automatic volume recognition
+- (Tech) nhận dạng âm lượng tự động
+@automatic working
+- (Tech) chế độ tự động
+@automatics
+- (Tech) ngành tự động hóa
+@automation
+- (Tech) kỹ thuật tự động, tự động hóa
+@automatization
+- (Tech) tự động hóa
+@automaton
+- (Tech) máy tự động
+@automonitor
+- (Tech) bộ giám sát tự động; chương trình cơ năng (vận hành)
+@autopiler
+- (Tech) bộ biên dịch tự động
+@autopilot
+- (Tech) bộ lái tự động
+@autoplotter
+- (Tech) bộ vẽ tự động
+@autoprogrammable
+- (Tech) tự lập trình được
+@autorange
+- (Tech) thang đo tự động
+@autoredialing
+- (Tech) quay lại số tự động
+@autorestart
+- (Tech) tự khởi động lại, tự động bắt đầu lại
+@autoreverse
+- (Tech) tự đảo ngược, tự quay ngược
+@autorized program
+- (Tech) chương trình quy định
+@autosave
+- (Tech) tự động lưu trữ
+@autoscore
+- (Tech) gạch dưới tự động
+@autosynchronized oscillator
+- (Tech) bộ dao động tự đồng bộ
+@autotest
+- (Tech) tự thử, tự kiểm tra
+@autotracing
+- (Tech) tự vẽ, tự ghi dấu
+@autotransductor
+- (Tech) bộ khuếch đại từ tự động
+@autotransformer
+- (Tech) máy biến áp tự ngẫu, máy tự biến áp
+@autotune transmitter
+- (Tech) máy phát tự điều hưởng
+@autotune
+- (Tech) tự điều hưởng
+@auxiliary
+- (Tech) máy phụ; phụ, thêm, thứ yếu (tt)
+@auxiliary anode
+- (Tech) dương cực phụ
+@auxiliary electrode
+- (Tech) điện cực phụ
+@auxiliary equipment
+- (Tech) thiết bị phụ
+@auxiliary memory
+- (Tech) bộ nhớ phụ
+@auxiliary operation
+- (Tech) phép toán phụ; điều hành phụ
+@auxiliary processor
+- (Tech) bộ xử lý phụ
+@auxiliary relay
+- (Tech) bộ nối điện phụ
+@auxiliary selector
+- (Tech) bộ chọn phụ
+@auxiliary storage devices
+- (Tech) thiết bị tồn trữ phụ
+@auxiliary storage
+- (Tech) bộ trữ phụ
+@availability
+- (Tech) tính sẵn sàng; tính khả dụng; tỷ số vận hành = operating ratio
+@available
+- (Tech) sẵn sàng; dùng được; có hiệu lực, có giá trị
+@available capacity
+- (Tech) dung lượng có sẵn
+@available energy
+- (Tech) năng lượng khả dụng
+@available execution time
+- (Tech) thời gian hành xử được
+@available machine time
+- (Tech) thời gian dùng được máy
+@available power
+- (Tech) công suất hữu hiệu, công suất khả dụng
+@available time
+- (Tech) thời gian máy khả dụng
+- (Tech) thời gian dùng được máy
+
+@available machine time
+- hay available time
+- (Tech) thời gian máy khả dụng
+- (Tech) thời gian dùng được máy
+
+@avalanche
+- (Tech) thác (hiệu ứng), tuyết băng [TQ]; thác điện tử
+@avalanche breakdown
+- (Tech) sự suy sụp do dòng điện thác
+@avalanche current
+- (Tech) dòng điện thác
+@avalanche diode
+- (Tech) đèn hai cực thác
+@avalanche formation
+- (Tech) hình thành thác
+@avalanche impedance
+- (Tech) trở kháng thác
+@avalanche injection laser
+- (Tech) bộ kích quang phun thác
+@avalanche injection
+- (Tech) phun thác
+@avalanche ionization
+- (Tech) ly tử hóa (do hiệu ứng) thác
+@avalanche multiplication factor
+- (Tech) hệ số nhân thác
+@avalanche multiplication
+- (Tech) nhân thác
+@avalanche noise
+- (Tech) nhiễu âm thác
+@avalanche photodevice
+- (Tech) bộ quang thác
+@avalanche photodiode
+- (Tech) đèn hai cực quang thác
+@avalanche transistor
+- (Tech) đèn tinh thể (trăng-xít-to) thác
+@avalanche triggering
+- (Tech) kích động thác
+@avalanche triode
+- (Tech) đèn ba cực thác
+@average
+- (Tech) trung bình, bình quân
+@average bright
+- (Tech) độ chói trung bình
+@average calculating time
+- (Tech) thời gian tính toán trung bình
+@average capacity
+- (Tech) dung lượng trung bình
+@average current
+- (Tech) dòng điện trung bình
+@average delay time
+- (Tech) thời gian chậm trễ trung bình
+@average density
+- (Tech) mật độ trung bình
+@average frequency
+- (Tech) tần số trung bình
+@average life
+- (Tech) đời sống trung bình
+@average load
+- (Tech) tải trung bình
+@average power
+- (Tech) công suất trung bình
+@average rate
+- (Tech) suất trung bình
+@average value
+- (Tech) trị số trung bình
+@averaged characteristic
+- (Tech) đặc tính trung bình
+@averaging principle
+- (Tech) nguyên lý trung bình
+@averaging rectifier
+- (Tech) bộ chỉnh lưu trung bình
+@averaging
+- (Tech) lấy trung bình (d)
+@aviation service
+- (Tech) ngành hàng không
+@aviation
+- (Tech) hàng không
+@avionics
+- (Tech) kỹ thuật điện tử hàng không
+@Avogadrós number
+- (Tech) số Avôgaddrô
+@avometer
+- (Tech) máy đo vạn năng, avô kế
+@awaiting-repair time
+- (Tech) thời gian chờ đợ sửa chữa
+@axial
+- (Tech) thuộc trục, theo trục, dọc trục
+@axial field
+- (Tech) trường hướng trục
+@axial lead
+- (Tech) đầu ra theo trục
+@axial mode helix
+- (Tech) đường xoắn ốc kiểu dọc trục
+@axial mode
+- (Tech) kiểu dao động xuyên tâm
+@axial ratio
+- (Tech) tỷ số trục (hình bầu dục)
+@axial slot
+- (Tech) khe theo trục
+@axial symmetry
+- (Tech) tính đối xứng theo trục
+@axiom schema
+- (Tech) sơ đồ tiên đề/công lý [ĐL]
+@axiom
+- (Tech) tiên đề
+@axis
+- (Tech) trục
+@azimuth
+- (Tech) độ phương vị, góc phương [TN]; góc cực
+@azimuth beam
+- (Tech) góc phương vị
+@azimuth coverage
+- (Tech) phạm vi/góc quét phương vị
+@azimuth drive
+- (Tech) truyền động phương vị
+@azimuth potentiometer
+- (Tech) máy điện thế phương vị, bộ biến trở phương vị
+@azimuth rate
+- (Tech) tốc độ thay đổi phương vị
+@azimuth resolution
+- (Tech) độ phân giải phương vị
+@azimuth selsyn
+- (Tech) máy tự đồng bộ phương vị
+@azimuth sweep
+- (Tech) quét phương vị
+@azimuthal component
+- (Tech) thành phần phương vị

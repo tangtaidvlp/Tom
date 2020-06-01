@@ -22,7 +22,7 @@ package com.teamttdvlp.memolang.viewmodel
 // * @see com.teamttdvlp.memolang.view.activity.AuthActivity
 // */
 //
-//const val FIRST_TIMES_SIGNED_IN = "first_times_signed_in"
+//const val FIRST_TIMES_SIGNED_IN = "first_times_signed_in" 
 //const val SIGN_IN_INFO = "signed_in_info"
 //
 //class AuthActivityViewModel (/*var onlineUserDBManager: OnlineUserDBManager,

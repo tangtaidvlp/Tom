@@ -1,0 +1,677 @@
+@Equilibrium aggregate output
+- (Econ) Tổng sản lượng cân bằng.
+@Equilizing wage diffirentials
+- (Econ) Cân bằng các mức chênh lệch tiền công.
+@Equity
+- (Econ) Vốn cổ phần.
+@Evolving market condition
+- (Econ) Sự tiến triển của tình hình kinh tế.
+@Exogenuos expectations
+- (Econ) Những dư tính ngoại sinh.
+@Expected inflation
+- (Econ) Lạm phát dự tính được.
+@Expasionary fiscal policy
+- (Econ) Chính sách thu chi ngân sách mở rộng.
+@Earmaking
+- (Econ) Dành cho mục đích riêng.
+= Việc gắn những yếu tố cụ thể trong CHI TIÊU CÔNG CỘNG với các khoản thu nhập huy động từ một số cụ thể. Xem BENEFIT PRINCIPLE.
+@Earning
+- (Econ) Thu nhập.
+= Cụn thuật ngữ được sử dụng theo hai cách: một để miêu tả phần lợi tức đối với nỗ lực của con người, thù lao cho đầu vào của yếu tố lao động sản xuất và nghĩa thứ hai để miêu tả thu nhập của một doanh nghiệp.
+@Earnings driff
+- (Econ) Khuynh hướng tăng thu nhập.
+= Tăng thu nhập hàng tuần vượt mức tăng MỨC LƯƠNG đã thoả thoả thuận.
+@Earnings function
+- (Econ) Hàm thu nhập.
+= Mối quan hệ hàm số  giữa các mức thu nhập và các yếu tố quyết định chúng.
+@Easy money
+- (Econ) Tiền dễ vay.
+= Tình trạng chung của việc vay tiền dễ dàng và rẻ trong hệ thống tài chính.
+@Easy / tight monetary or fiscal policy
+- (Econ) Chính sách tiền tệ và tài khoá lỏng/chặt; Chính sách nới lỏng / thắt chặt tiền tệ hay thu chi ngân sách.
+@EC Agricultural Livies
+- (Econ) Thuế nông nghiệp của EC
+= Thuế do các thành viên của CỘNG ĐỒNG CHÂU ÂU (EC) đánh vào hàng nông phẩm nhập khẩu từ các nước không phải là thành viên.
+@ECGD
+- (Econ) Xem EXPORT CREDITS GUARANTEE DEPARTMENT
+@Econometric model
+- (Econ) Mô hình kinh tế lượng.
+= Một MÔ HÌNH toán học của một nền kinh tế hay một bộ phận của một nền kinh tế mà các tham số của nó được ước tính bằng phương pháp kinh tế lượng.
+@Econometrics
+- (Econ) Môn kinh tế lượng.
+= Một nghành của thống kê học liên quan tới kiểm nghiệm các giả thuyết kinh tế và ước tính các tham số kinh tế chủ yế thông qua phương pháp HỒI QUY BỘI SỐ, mặc dù đôi khi thông qua việc sử dụng phương pháp luận phức tạp hơn.
+@Economic base
+- (Econ) Cơ sở kinh tế.
+= Những hoạt đông kinh tế mà sự tăng trưởng và phát triển của chúng được coi là có vai trò quyết địng đối với  tăng trưởng kinh tế của một vùng hay của một thị trấn.
+@Economic base multiplier
+- (Econ) Nhân tử cơ sở kinh tế.
+= Một dạng của NHÂN TỬ KHU VỰC ước tính ảnh hưởng của những thay đổi trong một CƠ SỞ KINH TẾ vùng đối với toàn bộ nền kinh tế của vùng.
+@Economic community
+- (Econ) Cộng đồng kinh tế.
+= Một liên minh kinh tế giữa các nước có biểu thuế quan và chính sách thương mại chung đã dỡ bỏ các hạn chế đối với thương mại giữa các nước thành viên.
+@Economic Co-operation Administration
+- (Econ) Cơ quan Hợp tác kinh tế.
+= Một cơ quan viện trợ kinh tế, thành lập năm 1948 do Đạo luật Trợ giúp nước ngoài của Mỹ, quản lý KẾ HOẠCH MARSHALL đối với việc phục hồi kinh tế Châu Âu sau chiến tranh thế giới thứ hai.
+@Economic development
+- (Econ) Phát triển kinh tế.
+= Quá trình cải thiện mức sônngs và sự sung túc của dân chúng của các nước đang phát triển bằng cách tăng thu nhập trên đầu người.
+@Economic development Committee
+- (Econ) Uỷ ban Phát triển kinh tế.
+= Xem NATIONAL ECONOMIC DEVELOPMENT COUNCIL.
+@Economic development Institute
+- (Econ) Viện Phát triển kinh tế.
+= Xem INTERNATIONAL BANK FOR RECONSTRUCTION AND DEVELOPMENT
+@Economic dynamics
+- (Econ) Động học kinh tế.
+= Xem DYNAMIC ECONOMICS
+@Economic efficiency
+- (Econ) Hiệu quả kinh tế.
+= Xem ALLCATIVE EFFICIENCY
+@Eclectic Keynesian
+- (Econ) Người theo thuyết Keynes chiết trung.
+@Economic cost
+- (Econ) Chi phí kinh tế.
+@Economic growth
+- (Econ) Tăng trưởng kinh tế.
+= Thường để chỉ mức tăng sản lượng thực tế của SẢN PHẨM QUỐC DÂN RÒNG, mặc dù thước đo này sẽ nhạy cảm với cách tính sản phẩm quốc dân. Xem GROWTH THEORY
+@Economic good
+- (Econ) Hàng hoá kinh tế.
+= Một mặt hàng khan hiếm và mặt hàng mà người ta sẽ lựa chọn nhiều hơn nếu có thể. Xem FREE GOOD.
+@Economic imperialism
+- (Econ) Đế quốc kinh tế.
+= Xem IMPERIALISM
+@Economic liberialism
+- (Econ) Chủ nghĩa tự do kinh tế.
+= Học thuyết ủng hộ khả năng sử dụng nhiều nhất các thị trường và các tác nhân cạnh tranh để điều phối hoạt động kinh tế.
+@Economic man
+- (Econ) Con người kinh tế.
+= Tên đặt cho vật đựoc được sáng tạo trong kinh tế học, bằng cách đó, các cá nhân được giả định là cư sử như thể họ tối đa hoá độ thoả dụng, chịu chi phối bởi những ràng buộc, trong đó hiển nhiên nhất là thu nhập.
+@Economic planning
+- (Econ) Hoạch định kinh tế.
+= Sự phối hợp một các có tổ chức các hoạt động kinh tế.
+@Economic policy
+- (Econ) Chính sách kinh tế.
+= Sự điều hành của nhà nước đối với nền kinh tế của một quốc gia.
+@Economic price
+- (Econ) Giá kinh tế.
+@Economic profit
+- (Econ) Lợi nhuận kinh tế.
+@Economic rent
+- (Econ) Tiền thuê kinh tế, tô kinh tế, Đặc lợi kinh tế.
+= Khoản tri trả cho một yếu tố sản xuất vượt mức cần thiết để giữ yếu tố đó ở mức sử dụng hiện tại.
+@Economic rate of return
+- (Econ) Tỷ suất lợi nhuận kinh tế.
+@Economics
+- (Econ) Kinh tế học.
+= Một ngành nghiên cứu về cách thức con người tự tổ chức để giải quyết vấn đề cơ bản về sự khan hiếm.
+@Economic surplus
+- (Econ) Thặng dư kinh tế.
+= Chênh lệc giữa sản lượng của một nền kinh tế và chi phí cần thiết để sản xuất ra sản lượng đó, mà chi phí cần thiết là TIỀN CÔNG, KHẤU HAO VỐN, chi phí nguyên vật liệu.
+@Economies of scale
+- (Econ) Tính kinh tế nhờ qui mô; Lợi thế kinh tế nhờ quy mô.
+= Giảm chi phí trung bình của một sản phẩm xét trong dài hạn nhờ tăng sản lượng.
+@Economic theory of polities
+- (Econ) Lý thuyết chính trị dựa trên kinh tế.
+= Một mô hình về hành vi chính trị giả định rằng là cử tri là những người tối đa hoá ĐỘ THOẢ DỤNG và các đảng phái chính trị là những TỔ CHỨC TỐI ĐA HOÁ PHIẾU BẦU.
+@Economic union
+- (Econ) Cộng đồng kinh tế.
+= Xem ECONOMIC COMMUNITY
+@Economic welfare
+- (Econ) Phúc lợi kinh tế.
+= Phần phúc lợi của con người xuất phts từ việc tiêu dùng hàng hoá và dịch vụ.
+@Economies of learning
+- (Econ) Tính kinh tế nhờ học hành; Lợi ích kinh tế do học tập
+= Xem LEARNING
+@Economy of high wages
+- (Econ) Nền kinh tế có tiền công cao.
+= Một nhận định rằng, tiền công cao sẽ dẫn đến năng suất cao; tiền công và sản phẩm lao động biên được coi là có liên hệ thuận với nhau.
+@ECSC
+- (Econ) Xem EUROPEAN COAL AND STEEL COMMUNITY
+@ECU
+- (Econ) Xem EUROPEAN MONETARY SYSTEM
+@Edgeworth, Francis Ysidro
+- (Econ) (1845-1926).
+= Giáo sư kinh tế chính trị học ở trường đại hcọ Oxford 1891-1922 và là người theo chủ nghĩa vị lợi, là người phát minh ra công cụ về đường bàng quan và đường hợp đông mà sử dụng trong thuyết hàng đổi hàng. Ông cũng nổi tiếng với công trình về các phương pháp thống kê và đặc biệt là quy luật chung của sai số, chỉ số và hàm số. Ông đã mở rộng QUY LUẬT LỢI TỨC GIẢM DẦN từ nông nghiệp sang chế tạo như một nguyên lý chung.
+@EEC
+- (Econ) Xem EUROPEAN ECONOMIC COMMUNITY
+@Effective demand
+- (Econ) Cầu hữu hiệu.
+= Tổng cầu đối với hàng hoá và dịch vụ được hỗ trợ bởi các nguồn lực để mua chúng. Xem DUAL DECISION HYPOTHESIS.
+@Effective
+- (Econ) Hiệu dụng, hiệu quả.
+@Effective rate of protection
+- (Econ) Tỷ lệ bảo hộ hữu dụng; Thuế bảo hộ hữu hiệu.
+= Được định nghĩa là phần giá trị gia tăng, do cơ cấu thuế quan mang lại, là một phần giá trị gia tăng của thương mại tự do.
+@Effective rate of tax
+- (Econ) Mức thuế hữu dụng; Thuế suất hộ hữu hiệu.
+= Xem AVERAGE RATE OF TAX
+@Effective protection
+- (Econ) Bảo hộ hữu dụng; Bảo hộ hữu hiệu.
+@Effective rate of return
+- (Econ) Suất sinh lợi hiệu dụng.
+@Efficiency
+- (Econ) Tính hiệu quả; Tính hiệu dụng.
+@Efficiency coefficient of investment
+- (Econ) Hệ số hiệu qủa đầu tư.
+= Một cụm thuật ngữ được các nhà kinh tế Đông ÂU sử dụng để chỉ TỶ SỐ SẢN LƯỢNG/ VỐN GIA TĂNG.
+@Efficiency earnings
+- (Econ) Thu nhập hiệu quả.
+= Thu nhập trên một ĐƠN VỊ HIỆU QUẢ. Khi các nhà kinh tế học nói về khuynh hướng cạnh tranh để cân bằng thu nhập trên cùng một THỊ TRƯỜNG LAO ĐỘNG TRONG NƯỚC nghĩa là họ muốn nói đến thu nhập hiệu qủa.
+@Efficiency units
+- (Econ) Đơn vị hiệu quả.
+= Một phương pháp đo lường lực lượng lao động thông qua đầu vào dịch vụ lao động được sử dụng.
+@Efficiency wages
+- (Econ) Tiền công hiệu quả; tiền lương hiệu dụng/ hiệu quả.
+@Efficiency wage theory
+- (Econ) Lý thuyết tiền công hiệu quả.
+= Theo học thuyết này, SẢN PHẨM BIÊN của người lao động và tiền công mà họ được trả có liên quan với nhau.
+@Efficient asset market
+- (Econ) Thị trường tài sản có hiệu dụng/ hiệu quả.
+@Efficient market hypothesis
+- (Econ) Giả thuyết về thị trường có hiệu quả.
+= Một quan điểm cho rằng  giá cổ phiếu trên thị trương chứng khoán là những ước tính tốt nhất về giá trị thực của cổ phiếu vì thị trường chứng khoán có cơ chế định giá tốt nhất.
+@Efficient resource allocation
+- (Econ) Sự phân bổ nguồn lực có hiệu quả
+@Effort aversion
+- (Econ) Ngán nỗ lực; Không thích nỗ lực.
+= Một khái niệm chính thức dùng để biểu thị giả định rằng sự nỗ lực là một biến số có tác động âm trong HÀM THOẢ DỤNG của các cá nhân, tức là sự nỗ lực tạo ra trong sự PHI THOẢ DỤNG BIÊN.
+@EFTA
+- (Econ) Xem EUROPEAN FREE TRADE ASSOCIATION
+@EIB
+- (Econ) Xem EUROPEAN INVESTMENT BANK.
+@Elastic and unit elastic demand
+- (Econ) Nhu cầu co giãn và co giãn một đơn vị.
+@Inelastic and unit elastic demand
+- (Econ)
+@Elasticity
+- (Econ) Độ co giãn
+= Một thước đo tỷ lệ phần trăm thay đổi của một biến số đối với một tỷ lệ % thay đổi của một biến số khác. Xem PRICE ELASTICITY OF DEMAND.
+@Elasticity of demand
+- (Econ) Độ co giãn của cầu.
+= Thường dùng để chỉ ĐỘ CO GIÃN CỦA CẦU THEO GIÁ, nhưng cần phải xác định rõ độ ca giãn của cầu nào đang được đề cập đến.
+@Elasticity of input substitution
+- (Econ) Độ co giãn của sự thay thế đầu vào.
+= Một thước đo sự phản ứng của sự kết hợp lao động TỐI ƯU đối với thay đổi giá tương đối của hai đầu vào này (hoặc để chỉ hai yếu tố đầu vào bất kỳ).
+@Eligible asset ratio
+- (Econ) Tỷ số tài sản dự trữ.
+= Xem RESERVE ASSET RATIO.
+@Eligible paper
+- (Econ) Giấy tờ đủ tiêu chuẩn chiết khấu.
+= Các TÀI SẢN tài chính mà NGÂN HÀNG TRUNG ƯƠNG sẵn sàng mua (tái chiết khấu) hay chấp nhận làm vật thế chấp cho các khoản vay, trong một số trường hợp đặc biệt, và thường là khi giao dịch với các cơ quan đã đựoc định rõ.
+@Elitist good
+- (Econ) Hàng xa xỉ
+= Xem Luxury
+@EMA
+- (Econ) Xem EUROPEAN MONETARY AGREEMENT
+@Embodied technical progress
+- (Econ) Tiến bộ kỹ thuật nội hàm; Tiến bộ hàm chứa kỹ thuật.
+= Tiến bộ kỹ thuật mà không thể có được nếu không hàm chứa nguồn vốn mới.
+@Emoluments
+- (Econ) Khoản thù lao; Thù lao ngoài lương chính
+= Được định nghĩa là một phần tiền lương của ban quản lý và các lợi ích PHI TIỀN TỆ mà lợi ích này không phải  là một phần giá cung cấp của doanh nghiệp (lương chính ).
+@Endogeneous consumption
+- (Econ) Tiêu dùng nội sinh.
+@Employee Stock Ownership plan (ESOP)
+- (Econ) Kế hoạch Sở hữu cổ phần cho người làm.
+= Một kế hoạch cho phép các nhân viên trong các hãng của Mỹ được hưởng lợi nhuân và sự tăng trưởng của doanh nghiệp bằng cách sở hữu các cổ phần trong cổ phần chung của công ty.
+@Employment Service
+- (Econ) Dịch vụ việc làm.
+= Các văn phong nhà nước hay tư nhân cố gắng sắp xếp những người xin việc vào các chỗ trống hiện có.
+@Employment subsidies
+- (Econ) Trợ cấp việc làm.
+= Xem JOB CREATION
+@EMS
+- (Econ) Xem EUROPEAN MONETARY SYSTEM
+@Encompassing test
+- (Econ) Phép kiểm nghiệm vây; Phép kiểm nghiệm vòng biên.
+= Phép kiểm nghiệm không tập trung này dựa trên nguyên tắc cho rằng một mô hình nên có các đặc điểm nổi bật của các mô hình khác nhau và có thể là các mô hình đôí nghịch.
+@Endogenous income hypothesis
+- (Econ) Giả thiết thu nhập nội sinh
+= Một giả thiết cho rằng độ thoả dụng là một hàm của chi tiêu TIÊU DÙNG và CỦA CẢI.
+@Endogenous money supply
+- (Econ) Cung tiền tệ nội sinh.
+= Theo quan điểm này, mức cung tiền được quyết định bởi các tác nhân bên trong nền kinh tế, chẳng hạn như lãi suất và mức độ hoạt động kinh doanh.
+@Endogenous variable
+- (Econ) Biến nội sinh.
+= Một biến số mà giá trị của nó được xác định trong khuôn khổ của một mô hình kinh tế hay kinh tế lượng.
+@Endowment effect
+- (Econ) Hiệu ứng hàng đã có.
+= Các cá nhân đòi hỏi nhiều hơn để có thể lôi kéo họ từ bỏ một hàng hoá mà họ đã có so với số tiền mà họ sẵn lòng trả để có được hàng hóa tương tự.
+@Energy intensity
+- (Econ) Cường độ sử dụng năng lượng.
+= Một chỉ báo về tính hiệu quả trong việc sử dụng năng lượng cơ bản trong sản xuất một đơn vị tổng sản phẩm quốc nội.
+@Enfranchisement of the nomenklatura
+- (Econ) Đặc quyền của giới chức.
+= Một cách tiếp cận không chính thức và không rõ ràng đối với quá trình TƯ NHÂN HOÁ nhanh chóng tài sản nhà nước ở các nước xã hội chủ nghĩa trước đây (và một vài nước khác), qua đó các nhà hoạt động đảng phái trước đây và quan chức nhà nước có thể mua tài sản nhà nước với giá thấp hơn giá thị trường. Thuật ngữ nomenklatura chỉ những người được lựa chọn vào các chức vụ cao, nhưng không phải do công trạng mà do sự phán quyết của đảng cầm quyền.
+@Engagements
+- (Econ) Tuyển dụng (hay thuê mới).
+= Tổng số người tham gia đội ngũ có việc là trong bất cứ thời kỳ nào.
+@Engel curve
+- (Econ) Đường Engel.
+= Một đường biểu thị mối quan hệ giữa thu nhập và tiêu dùng của một cá nhân về một hàng hoá cụ thể.
+@Engel's Law
+- (Econ) Quy luật của Engel.
+= Một quy luật tiêu dùng thực nghiệm do Ernst Engel đề xướng.Ý tưởng ở đây là phần thu nhập quốc gia được chi tiêu cho lương thực là một chỉ số tốt về phúc lợi của quốc gia đó.
+@Engineering method
+- (Econ) Phương pháp kỹ thuật.
+= Một phương pháp được dùng trong PHÂN TÍCH CHI PHÍ THÔNG KÊ, trong đó những ước tính của người kỹ sư về mối liên hệ đầu vào- đầu ra là cơ sở để tính toán chi phí sản xuất tối thiểu tại các mức sản lượng khác nhau.
+@Entitlement principle
+- (Econ) Nguyên tắc được quyền.
+= Một nguyên tắc về sự công bằng trong phân phối cho rằng, các cá nhân được coi là có quyền đối với những vật sở hữu chừng nào sở hữu đó có được nhờ, do trao đổi tự nguyện hay do quà biếu.
+@Entrepreneur
+- (Econ) Chủ doanh nghiệp.
+= Một nhân tố tổ chức trong một quá trình sản xuất. Chủ doanh nghiệp chịu trách nhiệm về các quyết định kinh tế như sản xuất cái gì, sản xuất bao nhiêu và phương pháp sản xuất nào được áp dụng.
+@Entrepreneurial supply price
+- (Econ) Giá cung ứng của doanh nghiệp.
+= Lợi tức vừa đủ để giữ một người điều hành với một số phẩm chất nào đó ở lại với công việc hiện tại của người đó.
+@Entrepreneurship
+- (Econ) Khả năng, sự làm chủ của doanh nghiệp.
+= Xem Entrepreneur.
+@Entry barriers
+- (Econ) Rào cản nhập nghành.
+= Xem BARRIERS TO ENTRY.
+@Entry and exit
+- (Econ) Nhập nghành và xuất ngành.
+@Entry forestalling price
+- (Econ) Giá ngăn chặn nhập ngành.
+= Xem LIMIT PRICING.
+@Entry preventing price
+- (Econ) Giá ngăn chặn nhập ngành.
+= Giá mà các hãng đã thiết lập trong một ngành định ra ở mức không sợ những doanh nghiệp mơí nhập ngành.
+@Environmental conditions
+- (Econ) Những điều kiện môi trường.
+= Mặc dù trình độ hiểu biết khoa học và kỹ thuật của thế giới đang gia tăng, vẫn còn chênh lệch lớn về kiến thức này, đặc biệt liên quan đến điều kiện môi trường ở CÁC NƯỚC ĐANG PHÁT TRIỂN.
+@Environmental determinism
+- (Econ) Quyết định luận do môi trường.
+= Giả thuyết cho rằng môi trường vật chất là yếu tố chính quyết định tới trình độ phát triển kinh tế của một quốc gia.
+@Environmental impact analysis
+- (Econ) Phân tích tác động môi trường.
+= Một phân tích tìm cách xác định rõ ràng những ảnh hưởng lên toàn bộ môi trường của một dự án đầu tư.
+@EPU
+- (Econ) Xem EUROPEAN PAYMENTS UNION.
+@Equal advantage
+- (Econ) Lợi thế bình đẳng, Lợi thế ngang bằng.
+= Xem COMPARATIVE ADVANTAGE.
+@Equal Employment Opportunity Act of Đạo luật về cơ hội việc làm /bình đẳng/ngang bằng năm 1972.
+- (Econ) Một đạo luật mở rộng vi phạm của mục VII của Đạo luật Quyền dân sự của Mỹ năm 1964 sang các chính quyền tiểu bang và địa phương và cho phép Uỷ ban cơ hội việc làm ngang nhau lập hồ sơ kiện tụng cho bản thân họ.
+@Equal Employment Opportunity Commision
+- (Econ) Uỷ ban Cơ hội việc làm bình đẳng/ngang bằng.
+= Một uỷ ban được thành lập để giải quyết những khiếu nại bắt nguồn từ sự thông qua Đạo luật Quyền dân sự của Mỹ năm 1964. Đạo luật này nghiêm cấm hành động phân biệt đối xử của các ông chủ.
+@Equalization grants
+- (Econ) Các khoản trợ cấp để cân bằng.
+= Các quỹ do một chính phủ cấp cho các chính quyền địa phương với mục đích giảm mức độ không cân bằng trong thu nhập hay doanh thu do chính quyền địa phương thu được.
+@Equalizing differences, the theory of
+- (Econ) Lhuyết cân bằng chênh lệch
+= Xem NET ADVANTAGES.
+@Equal pay
+- (Econ) Trả lương ngang nhau; trả lương  bình đẳng.
+= Sự công bằng giữa các giới về điều khoản và điều kiện việc làm: một khái niệm về trả lương ngang nhau cho công việc có giá trị ngang nhau, mặc dù định nghĩa về trả lương và công việc ngang nhau không giống nhau giữa các nước.
+@Equal sacrifice theories
+- (Econ) Lý thuyết hy sinh ngang nhau; lý thuyết hy sinh bình đẳng.
+= Sự hy sinh cùng ĐỘ THOẢ DỤNG của những người trả thuế.
+@Equation of exchange
+- (Econ) Phương trình trao đổi.
+= Xem QUANTITY THEORY OF MONEY.
+@Equilibrium
+- (Econ) Cân bằng
+= Một cụm thuật ngữ mượn từ môn vật lý để miêu tả tình huống, trong đó các tác nhân kinh tế hay tổng tác nhân kinh tế như thị trường, không có động lực gì để thay đổi hành vi kinh tế của mình.
+@Equilibrium error
+- (Econ) Sai số cân bằng
+= Khi một nhóm các biến số được liên kết với nhau trong một mô hình HỒI QUY là đồng liên kết (xem COINTEGRATION)  thì thành phần nhiễu được gọi là sai số cân bằng.
+@Equilibrium level of national income
+- (Econ) Mức cân bằng của thu nhập quốc gia
+= Mức cân bằng của THU NHẬP QUỐC GIA không biểu hiện các xu hướng thay đổi.
+@Equilibrium price
+- (Econ) Giá cân bằng
+= Giá tại đó THỊ TRƯỜNG ở trạng thái CÂN BẰNG.
+@Equilibrium rate of inflation
+- (Econ) Tỷ lệ lạm phát cân bằng.
+= Tỷ lệ LẠM PHÁT được hoàn toàn dự báo trước. TỶ lệ lạm phát giá cả mà tại đó các kỳ vọng có thể trở thành hiện thực.
+@Equities
+- (Econ) Cổ phần
+= Còn được gọi là cổ phiếu thường, là những cổ phiếu ở dạng vốn phát hành của một công ty.
+@Equity
+- (Econ) Công bằng
+= Công lý hay lẽ phải.
+@Equity capital
+- (Econ) Vốn cổ phần
+= Xem EQUYTIES.
+@Equivalance scale
+- (Econ) Thang/hệ số/ tỷ lệ/qui mô qui đổi mức sống tương đương; Quy mô tương đương.
+= Một hệ số hoặc một quyền số được dùng để đánh giá mức thu nhập hoặc tiêu dùng mà các gia đình bắt buộc phải có trong các hoàn cảnh khác nhau để đạt được một mức sống nhất định.
+@Equivalent commodity scale
+- (Econ) Thang/hệ số/ tỷ lệ/qui mô qui đổi hàng hoá tiêu dùng tương đương.
+= Một hệ số biểu thị bằng số áp dụng cho mức tiêu dùng các hàng hoá nhất định của các giá đình trong các hoàn cảnh khác nhau để chỉ ra mức tiêu dùng mà mỗi gia đình cần có để đạt được mức sống nhất định.
+@Equivalent income scale
+- (Econ) Thang/hệ số/ tỷ lệ/qui mô qui đổi thu nhập tương đương
+= Một hệ số bằng số áp dụng đối với mức thu nhập của các gia đình cần có để đạt tới mức sống nhất định.
+@Equivalent variation
+- (Econ) Mức biến động tương đương
+= Xem CONSUMER'S SURPLUS.
+@ERM
+- (Econ) Xem EXCHANGE RATE MECHANISM.
+@Error correction models (ECMs)
+- (Econ) Các mô hình hiệu chỉnh sai số; Các mô hình sửa chữa sai số.
+= Trong phân tích và hồi quy một ECMs kết hợp các sự tác động qua lại ngắn hạn và dài hạn giữa các biến số,
+@Error learning process
+- (Econ) Quá trình nhận biết sai số.
+= Xem ADAPTIVE EXPECTATIONS.
+@Errors variables
+- (Econ) Sai số trong biến số (hay sai số trong các phép đo).
+= Một bài toán kinh tế lượng, theo đó các biến giải thích trong phân tích HỒI QUY được đo một cách không hoàn hảo do giá trị thực tế của chúng không thể quan sát được, hay do sự không chính xác khi ghi chép.
+@Escalators
+- (Econ) Điều khoản di động giá.
+= Các điều khoản về phí sinh hoạt trong các ghi thoả thuận thương lượng tập thể. Các điều khoản là một cơ chế điều chỉnh định kỳ mức lương dựa trên những biến động của một chỉ số giá cả nhất định.
+@Estate duty
+- (Econ) Thuế di sản (thuế tài sản thừa kế).
+= Dạng chủ yếu của thuế của cải ở Anh trước khi nó được thay thế bằng thuế CHUYỂN GIAO VỐN năm 1974. Thuế này được dánh giá theo suất luỹ tiến vào các tài sản của người chủ khi người này qua đời. Thuế luỹ tiến  được áp dụng cho toàn bộ tài sản chứ không chỉ cho lượng gia tăng của cải.
+@Estate economy
+- (Econ) Nền kinh tế đồn điền.
+= Thuật ngữ nói về một khu vực hay toàn bộ nền kinh tế ở một nước chậm phát triển được sử dụng để sản xuất đại quy mô lớn nông sản xuất khẩu, thường do các thế lực nước ngoài sở hữu hoặc quản lý; nền kinh tế này rất phổ biến trong thời kỳ thuộc địa.
+@Estimation
+- (Econ) Sự ước lượng.
+= Sự xác định mang tính định lượng các tham số trong các mô hình kinh tế thông qua các số liệu thông kê.
+@Estimator
+- (Econ) Phương thức ước lượng; Ước lượng.
+= Một công thức hay một quy trình ước lượng các con số thống kê (chẳng hạn như TRUNG BÌNH hay PHƯƠNG SAI của một biến số) hoặc các tham số của một phương trình nhân được từ số liệu.
+@EUA
+- (Econ) Xem EUROPEAN UNIT OF ACCOUNT
+@Euler's theorem
+- (Econ) Định lý Euler
+@Eurocurrency market
+- (Econ) Thị trường tiền tệ Châu ÂU.
+= Một thị trường quốc tế ở nước ngoài của các đồng tiền của các nước công nghiệp lớn (phương Tây).
+@Eurodollars
+- (Econ) Đola Châu Âu.
+= Xem EUROCURRENCY MARKET.
+@European Agricultural Guidance and Guaranted Fund
+- (Econ) Quỹ Bảo đảm và Hướng dãn Nông nghiệp Châu Âu.
+= Một quỹ đặc biệt của CỘNG ĐỒNG CHÂU ÂU được thành lập năm 1962 nhằm tài trợ vốn cho chính sách nông nghiệp chung của cộng đồng.
+@European Bank for Reconstruction and Development
+- (Econ) Ngân hàng tái thiết và Phát triển Châu ÂU.
+= Được thành lập năm 1991 với số vốn 10 tỷ đơn vị tiền tệ Châu Âu nhằm thúc đẩy sự phát triển ở các nước thuộc khối Đông Âu.
+@European Coal and Steel Community
+- (Econ) Cộng đồng Than và thép Châu Âu.
+= Tổ chức thực hiện và quản lý THỊ TRƯỜNG CHUNG về than & thép giữa 6 nước thành viên sáng lập của CỘNG ĐỒNG CHÂU ÂU.
+@European Community Budget
+- (Econ) Ngân sách Cộng đồng Châu Âu.
+= Một ngân sách do các nước thành viên của cộng đồng Châu Âu đóng góp nhằm tài trợ cho các hoạt động của cộng đồng. Các khoản đóng góp từ các thành viên ở dạng 90% là doanh thu từ thuế NÔNG NGHIỆP và BIỂU THUẾ QUAN CHUNG và dưới 1% doanh thu từ thuế GIÁ TRỊ GIA TĂNG được tính cho mực đích làm hài hoà thuế giữa các nước thành viên.
+@European Commom Market
+- (Econ) Thị trường chung Châu Âu.
+= Xem European Economic Community.
+@European Community
+- (Econ) Cộng đồng Châu Âu.
+= Một tên gọi chung của 3 tổ chức: Cộng đồng Than và thép Châu Âu, Cộng đồng kinh tế châu Âu và cộng đồng năng lượng nguyên tử Châu Âu.
+@European Currency Unit
+- (Econ) Đơn vị tiền tệ Châu Âu.
+= Xem EUROPEAN MONETARY SYSTEM.
+@European Devolopment Fund
+- (Econ) Quỹ phát triển Châu Âu.
+= Một quỹ đặc biệt do CỘNG ĐỒNG KINH TẾ CHÂU ÂU thành lập để cung cấp viện trợ tài chính và kỹ thuật cho các nước liên kết với Cộng đồng Châu Âu theo Hiệp Ứơc ROME, các hiệp định YAOUNDÉ và LOMÉ. Xem EUROPEAN INVESTMENT BANK.
+@European Economic Community
+- (Econ) Cộng đồng Kinh tế Châu Âu.
+= Cộng đồng Kinh tế Châu Âu được cínhthwcs thành lập ngày 25-3-1957 theo hiệp ước Rome do chính phủ các nước Bỉ, Hà Lan, Cộng hoà liên bang Đức, Italia, Lucxămbua. Hiệp ước này đưa lại sự phát triển tự do liên minh thuế quan, loại bỏ mọi rào cản đối với sự vận động tự do của VỐN, LAO ĐỘNG và DỊCH VỤ và hình thành các chính sách vận tải và nông nghiệp giữa các nước thành viên.
+@European Free Trade Association
+- (Econ) Hiệp hội Mậu dịch tự do Châu Âu.
+= Được thành lập năm 1960 sau Hiệp định Stockholm, được Áo, Đan mạch, Nauy. Bồ Đào Nha, Thuỵ Điển, Thuỵ Sĩ, Anh thông qua. Hiệp hội đạt được các mục tiêu ban đầu của mình là thiết lập buôn bán hàng hoá công nghiệp tự do giữa các mục tiêu ban đầu của mình là thiết lập buôn bán hàng hoá công nghiệp tự do giữa các thành viên và đàm phán một hiệp ước thương mại toàn diện với cộng đồng châu Âu (EC).
+@European Fund
+- (Econ) Quỹ Châu Âu.
+= HIỆP ƯỚC TIỀN TỆ CHÂU ÂU được hội đồng OEEC thông qua vào năm 1955, cho phép quỹ Châu Âu giúp tài trợ thâm hụt CÁN CÂN THANH TOÁN tạm thời phát sinh từ quyết định của các nước thành viên làm cho đồng tiền của mình có khả năng chuyển đổi với đồng Đôla.
+@European Investment Bank
+- (Econ) Ngân hàng Đầu tư Châu Âu.
+= Một ngân hàng phát triển được thành lập năm 1957 theo HIỆP ƯỚC ROME, cho ra đời CỘNG ĐÔNG KINH TẾ CHÂU ÂU. Chức năng cơ bản của ngân hàng này là thúc đẩy sự phát triển của hị trường chung Châu Âu bằng cách cấp cấp các khoản vay dài hạn, bảo lãnh các khoản vay tạo điều kiện tài trợ đầu tư cho các vùng kém phát triển, các kế hoạch hiện đại hoá công nghiệp và các dự án công nghiệp.
+@European Monetary Agreement
+- (Econ) Hiệp định tiền tệ Châu Âu.
+= Hiệp định được Hội đồng TỔ CHỨC HỢP TÁC KINH TẾ CHÂU ÂU thông qua năm 1955. Hiệp định là quyết định của các nước Châu Âu nhằm làm cho đồng tiền của các nước dần dần chuyển đổi được đối với đồng đôla, bằng cách đó thay thế LIÊN MINH THANH TOÁN CHÂU ÂU bằng một hệ thống thanh toán quốc tế mới, trong đó mọi giao dịch phải được tiến hành bằng vàng hoặc các đồng tiền có thể chuyển đổi.
+@European Monetary Co-operation Fund
+- (Econ) Quỹ hợp tác Tiền tệ Châu ÂU.
+= Một quỹ đặc biệt của EC hình thành năm 1973 nhằm áp dụng HIỆP ĐỊNH BASLE 1972, hiệp định này quy định các mức dao động trong trao đổi của các đồng tiền được quản lý, đựoc biết đến như con rắn tiền tệ châu Âu.
+@European Monetary Fund
+- (Econ) Quỹ Tiền tệ Châu ÂU.
+= Xem EUROPEAN MONETARY FUND.
+@European Monetary System (EMS)
+- (Econ) Hệ thống tiền tệ châu Âu.
+= Được áp dụng vào tháng 3-1979, hệ thống này (EMS) là một nỗ lực nhằm tạo nên một khu vực ổn định về tỷ giá hối đoái giữa các nước thành viên, vì hầu hết các thành viên đều tiến hành việc hạn chế biến động tỷ giá hối đoái của mình ở mức (+) hoặc (-) 2,25% giá trung tâm, đã thống nhất cho đồng tiền của họ.
+@European Monetary Unit of Account
+- (Econ) Đơn vị Kế toán Tiền tệ Châu Âu.
+= Xem EUROPEAN UNIT OF ACCOUNT.
+@European Payments Union
+- (Econ) Liên minh Thanh toán Châu Âu.
+= Năm 1950, TỔ CHỨC HỢP TÁC KINH TẾ CHÂU ÂU thành lập Liên minh Thanh toán Châu Âu, thay thế cho hệ thống các tổ chức thanh toán Châu Âu do các hiệp định thanh toán trong Châu Âu năm 1948 và năm 1949 đưa vào áp dụng. Mục đích của liên minh này tạo điều kiện choa thanh toán thặng dư hay thâm hụt đa phương giữa các nước Châu Âu (và các khu vực tiền tệ ở nước ngoài tương ứng của chúng) và khuyến khích các chính sách tự do hoá mậu dịch bằng cách đưa ra các phương tịên tín dụng tự động cho các thành viên gặp phải thâm hụt cán cân thanh toán.
+@European Recovery Programme.
+- (Econ) Chương trình Phục hưng Châu Âu.
+= Năm 1947, Bộ trưởng ngoại giao MỸ, tướng George Marshall đã phát biểu trong một bài diễn văn tại trường Đại học Harvard, đề nghị giúp đỡ của Mỹ đối với chương trình phục hồi nền kinh tế Châu Âu do các nước Châu Âu điều phối. Sau bài diễn văn này, các đại diện của 16 nước Tây Âu đã thành lập Uỷ ban về Hợp tác Kinh tế Châu Âu, TỔ CHỨC HỢP TÁC KINH TẾ CHÂU ÂU được thành lập năm 1948 để điều hành một chương trình phục hưng châu Âu cùng với UỶ BAN HỢP TÁC KINH TẾ CỦA MỸ. Chương trình này thường được gọi là VIỆN TRỢ MARSHALL.
+@European Regional Development Fund.
+- (Econ) Quỹ Phát triển Khu vực Châu Âu.
+= Một quỹ đặc biệt của CỘNG ĐỒNG CHÂU ÂU, thành lập năm 1975, nhằm làm giảm sự chênh lệch về phát triển kinh tế giữa các khu vực trong cộng đồng.
+@European Social Fund.
+- (Econ) Quỹ Xã hội Châu ÂU.
+= Một quỹ đặc biệt của CỘNG ĐỒNG CHÂU ÂU, nhằm mục đích tăng cường cơ hội tìm kiếm việc làm trong cộng đồng bằng cách đảm bảo hỗ trợ tài chính để đào tạo lại công nhân, đặc biệt là những ai bị thu hẹp công việc do hoạt động của Thị trường chung Châu Âu.
+@European Unit of Account
+- (Econ) Đơn vị Kế toán Châu Âu.
+= Là đơn vị kế toán được sử dụng trong CỘNG ĐỒNG CHÂU ÂU cho các mục đích như chuẩn bị ngân sách công đồng và định giá sản phẩm nông nghiệp thông qua CHÍNH SÁCH NÔNG NGHIỆP CHUNG. Vì các nước thành viện của ÉCử dụng các đồng tiền khác nhau, nên cần thiết phải tạo ra một đơn vị kế toán chung để trao đổi buôn bán công đồng.
+@Eurostat
+- (Econ) Cục Thống kê của CÔNG ĐỒNG CHÂU ÂU.
+@Exact test
+- (Econ) Kiểm nghiệm chính xác.
+= Khi PHÂN PHỐI XÁC SUẤT của một thống kê kiểm định được biết một cách chính xác, thay cho việc một phân phối chỉ biết ở dạng gần đúng, như vậy vùng tới hạn có thể xác định được thì kiểm định ấy được gọi là kiểm định chính xác.
+@Ex ante
+- (Econ) Từ trước; Dự tính; dự định
+= Là mức độ đã được dự tính, dự định hay mong muốn của một hoạt động nào đó.
+@Excess capacity
+- (Econ) Công suất dư; công suất thừa; Thừa năng lực, thừa công suất.
+= Nói một cách chặt chẽ, khi một doanh nghiệp được coi là sản xuất thừa năng lực là khi mức SẢN LƯỢNG được sản xuất ra thấp hơn mức sản lượng tại đó chi phí trung bình thấp nhất.
+@Excess capacity theory
+- (Econ) Lý thuyết công suất dư/thừa; Thuyết thừa công suất.
+= Được dùng để miêu tả dự báo mô hình CẠNH TRANH ĐỘC QUYỀN, trong đó các hãng trong điều kiện cân bằng dài hạn sản xuất trên đoạn xuống dốc của ĐƯỜNG CHI PHÍ TRUG BÌNH dài hạn, do đó sản xuất ở mức chi phí cao hơn chi phí tối thiểu.
+@Excess burden
+- (Econ) Gánh nặng thuế quá mức.
+@Excess demand
+- (Econ) Mức cầu dư; Dư cầu.
+= Là tình trạng CẦU vượt CUNG ở một mức giá nào đó.
+@Excess productive capacity (Idle Excess goods)
+- (Econ) Tư liệu sản xuất nhàn rỗi.
+@Excess reserves
+- (Econ) Khoản dự trữ dư; Dự trữ dư.
+= Mức chênh lệch giữa tổng số dự trữ mà ngân hàng gửi tiền  Mỹ đang giữ và DỰ TRỮ BẮT BUỘC do luật pháp yêu cầu để trả nợ.
+@Excess supply
+- (Econ) Mức cung dư; Dư cung
+= Là tình trạng  CUNG  vượt CẦU ở một mức giá nào đó.
+@Excess profit
+- (Econ) Lãi vượt.
+@Excess wage tax
+- (Econ) Thuế chống lương vượt; Thuế chống tăng lương
+= Là thuế đưa ra để chống việc tăng lương quá cao nhằm làm giảm lạm phát.
+@Exchange
+- (Econ) Trao đổi
+= Xem TRADE.
+@Exchange control
+- (Econ) Quản lý ngoại hối.
+= Là một hệ thống mà nhà nước sử dụng để kiểm soát các giao dịch bằng ngoại tệ và vàng.
+@Exchange Equalization Account
+- (Econ) Quỹ bình ổn Hối đoái.
+= Là một hệ thống hay dàn xếp đựơc NGÂN HÀNG hình thành năm 1932, nhằm quản lý những biến động không mong muốn trong tỷ giá hối đoái của đồng bảng, sau khi Anh bỏ CHẾ ĐỘ BẢN VỊ VÀNG vào năm 1931.
+@Exchange rate
+- (Econ) Tỷ giá hối đoái.
+= Là giá của đồng tiền một nước được tính bằng đồng tiền của một nước khác.
+@Exchange rate Mechanism
+- (Econ) Cơ chế tỷ giá hối đoái.
+= Cơ chế tỷ giá hối đoái  (ERM) là một hệ thống mà theo đó các thành viên của HỆ THỐNG TIỀN TỆ CHÂU ÂU (ENS) buộc phải duy trì tỷ giá hối đoái của họ trong những mức nhất định.
+@Exchange reserves
+- (Econ) Dự trữ ngoại hối.
+= Xem EXTERNAL RESERVES
+@Exchequer
+- (Econ) Kho bạc, ngân khố Anh.
+= Là tài khoản trung ương của chính phủ Anh được Bộ tài chính giữ trong ngân hàng Anh. Xem CONSOLIDATED FUND.
+@Excise duty
+- (Econ) Thuế tiêu thụ đặc biệt.
+= Xem CUSTOMS, EXCISE AND PROTECTIVE DUTIES.
+@Exclusion
+- (Econ) Loại trừ
+= Là một tình trạng mà người tiêu dùng bị loại trừ không được mua một loại hàng hoá nào đó vì giá mà người đó sẵn sàng trả thấp hơn giá thị trường.
+@Excludable
+- (Econ) Có thể loại trừ.
+= Xem EXCLUSSION PRINCIPLE.
+@Exclusion principle
+- (Econ) Nguyên tắc loại trừ.
+= Là một tiêu chuẩn để chúng ta phân biệt HÀNG HOÁ CÔNG CỘNG và hàng hoá phi công cộng. Khi một người sản xuất hay một người bán có thể ngăn cản một số người nào đó không cho họ mua hàng của mình - nói chung là những người không đủ tiền mua hàng - thì hàng hoá đó được cung cấp theo cách của thị trường.
+@Executive
+- (Econ) Người điều hành.
+= Là một cá nhân chịu trách nhiệm đối với một mặt hay khía cạnh nào đó trong các hoạt động của một hãng.
+@Exempt goods
+- (Econ) Hàng hoá được miễn thuế giá trị gia tăng.
+= Xem VALUE - ADDED TAX
+@Exhaustive voting
+- (Econ) Cách bỏ phiếu thấu đáo.
+= Là hình thức lựa chọn tập thể mà trong đó người bỏ phiếu thể hiện phương án ít thích nhất của mình.
+@Existence, theorem of
+- (Econ) Định lý về sự tồn tại.
+= Bất kỳ một định lý nào tìm cách lập luận rằng, trong bối cảnh cân bằng tổng thể, tồn tại một loạt giá và lượng cân bằng. Xem EQUYLIBRUM, GENERAL EQUIBRIUM.
+@Exit-voice model
+- (Econ) Mô hình nói rút lui.
+= Là sự phân loại các hệ thống, mà các cá nhân sử dụng để bày tỏ ý thích của họ để phân biệt những người muốn tham gia vào hay rút lui khỏi những thứ cần sự giao tiếp bằng lời nói.
+@Excise taxes
+- (Econ) Các mức thuế trên từng mặt hàng.
+@Exchange rate speculation
+- (Econ) Sự đầu cơ tỷ giá hối đoái.
+@Effective exchange rate
+- (Econ) Tỷ giá hối đoái hiệu dụng
+@Exogeneity
+- (Econ) Yếu tố ngoại sinh.
+= Nếu các biến số giải thích trong một phương trình MÔ HÌNH KINH TẾ LƯỢNG có thể được coi là cố định trong các mẫu được lặp lại, chúng được coi là các biến ngoại sinh.
+@Exogeneity of money supply
+- (Econ) Sự ngoại sinh của cung tiền tê.
+= Xem MONEY SUPPLY.
+@Exogenous
+- (Econ) (thuộc) ngoại sinh.
+= Là một cụm thuật ngữ miêu tả bất kỳ cái gì được quy định hoặc cho trước của một phân tích kinh tế.
+@Exogenous variable
+- (Econ) Biến ngoại sinh.
+= Là một biến số mà giá trị của nó không được xác định trong mô hình kinh tế, nhưng lại đóng vai trò quan trong trong việc xác định giá trị của các biến nội sinh.
+@Expansionary phase
+- (Econ) Giai đoạn bành trướng; Giai đoạn tăng trưởng.
+= Là một giai đoạn trong CHU KỲ KINH DOANH tiếp theo sau một điểm thấp nhất của chu kỳ và kéo dài đến điểm tiếp theo cao nhất của chu kỳ.
+@Expansion path
+- (Econ) Đường bành trướng; Đường mở rộng
+= Liên quan đến HÃNG, đây là đường nối các lựa chọn yếu tố đầu vào ở mỗi mức sản lượng như trong đồ thị, nghĩa là quỹ tích của cấc tiếp điểm giữa ĐƯỜNG ĐẲNG PHÍ và ĐƯỜNG ĐẲNG LƯỢNG.
+@Expatriate
+- (Econ) Chuyên gia (từ các nước phát triển)
+= Là thuật ngữ chung để chỉ người mang quốc tịch nước ngoài, thường dùng để chỉ những người từ CÁC NƯỚC PHÁT TRIỂN đến làm việc tại CÁC NƯỚC KÉM PHÁT TRIỂN.
+@Expectations
+- (Econ) Kỳ vọng; dự tính.
+= Là các quan điểm hay sự tin tưởng vào các giá trị tương lai của các biến số kinh tế.
+@Expectations, augmented
+- (Econ) Biến bổ sung về dự tính.
+= Là các biến đổi đối với một mô hình kinh tế để tính đến hiệu ứng của các dự tính.
+@Expectations lag
+- (Econ) Độ trễ kỳ vọng; Độ trễ dự tính
+= Độ trễ trong việc xem xét lại giá trị kỳ vọng của một biến số do các thay đổi trong giá trị hiện tại của nó. Độ trễ dự tính thường được giải thích bằng GIẢ THIẾT KỲ VỌNG PHỎNG THEO.
+@Expected inflation
+- (Econ) Mức lạmp phát kỳ vọng; Lạm phát dự tính
+= TỶ LỆ LẠM PHÁT nào đó được dự tính trong tương lai.
+@Expected net returns
+- (Econ) Mức lợi tức ròng kỳ vọng; Lợi tức ròng dự tính.
+= Là tổng các thu nhập dự tính trừ đi các chi phí dự tính, tức là lợi nhuận dự tính của một dự án đầu tư.
+@Expected utility theory
+- (Econ) Lý thuyết độ thoả dụng kỳ vọng; Thuyết thoả dụng dự tính.
+= Là thuyết về các hành vi cá nhân trong điều kiện KHÔNG CHẮC CHẮN của VON NEUMANN và MORGENSTERN. Thuyết đưa ra sự mô tả logic rằng mọi người duy lý có thể cư xử như thế nào trong một thế giới không chắc chắn. Phần chính của thuyết này cho thấy rằng một cá nhân có những sở thích thoả mãn một số định đề (thường là về trật tự, tiếp tục và dộc lập) sẽ lựa chọn để tối đa hoá độ thoả dụng dự tính.
+@Expected value
+- (Econ) Giá trị kỳ vọng; giá trị dự tính.
+= Còn được gọi TRUNG BÌNH, kỳ vọng toán học.Giá trị kỳ vọng của một BIẾN SỐ NGẪU NHIÊN là giá trị trung bình của phân phối của biến ấy.
+@Expenditure approach
+- (Econ) Phương pháp dựa vào chi tiêu (để tính GDP).
+@Expenditure-switching policies
+- (Econ) Các chính sách chuyển đổi chi tiêu.
+= Là một trong các chính sách cần thiết để loại bỏ sự không cân bằng thương mại quốc tế.
+@Expenditure tax
+- (Econ) Thuế chi tiêu
+= Là loại thuế đánh vào chi tiêu của người tiêu dùng.NÓ là hình thức thay thế cho THUẾ THU NHẬP và có thể được định mức dựa trên cơ sở luỹ tiến.
+@Expenditure-variation controls
+- (Econ) Kiểm soát mức biến động trong chi tiêu; Kiểm soát sự thay đổi của chi tiêu.
+= Điều chỉnh lại sự mất cân bằng kinh doanh bằng cách thay đổi mức và thành phần của ngân sách và bằng cách kiểm soát quy mô và chi phí của tín dụng.
+@Expense preference
+- (Econ) Ưu tiên chi tiêu.
+= Là một khái niệm nói về sự hài lòng của các nhà quản lý đạtđược trong việc chi tiêu cho một số công việc của hãng như chi tiêu cho việc Marketing và cho đôi ngũ nhân viên.
+@Explanatory variable
+- (Econ) Biến giải thích
+= Là biến số đóng vai trò trong việc giải thích sự biến đổi của một biến độc lập trong phân tích hồi quy, biến số giải thích xuất hiện bên phải của phương trình hồi quy.
+@Explicit function
+- (Econ) Hàm hiện
+= Dạng thông thường nhất của một hàm số trong đó biến số PHỤ THUỘC được viết bên trái của dấu bằng và các BIẾN ĐỘC LẬP viết bên phải, thường để chỉ mối liên hệ nhân quả hoặc xác định.
+@Exploitation
+- (Econ) Khai thác; bóc lột.
+= Trong kinh tế học, thuật ngữ này có hai nghĩa. Thứ nhất, là việc sử dụng tài nguyên thiên nhiên hay nhân lực. Thứ hai, một công nhân được gọi là bị bóc lột nếu số tiền chi trả cho công việc đã làm ít hơn giá trị của công việc đó.
+@Explosive cycle
+- (Econ) Chu kỳ bùng nổ.
+= Là chu kỳ đặc trưng bởi việc biên độ tăng theo hàm mũ, ví dụ, qua thời gian. Nó được xem như chu kỳ phân kỳ.
+@Exponential
+- (Econ) Thuộc số mũ, thuộc hàm mũ.
+= Hàm số mũ là một HÀM LUỸ THỪA, thường chỉ sự liên quan giữa biến số độc lập và số e tăng lên một luỹ thừa chứa BIẾN SỐ ĐỘC LẬP khi e = 2,718, và là cơ số của LOGARIT TỰ NHIÊN.
+@Export
+- (Econ) Xuất khẩu, hàng xuất khẩu.
+= Một hàng hoá hoặc dịch vụ sản xuất tại một nước được bán và tiêu dùng ở nước khác. Xuất khẩu hữu hình là xuất khẩu hàng hoá, còn xuất khẩu vô hình là xuất khẩu dịch vụ cho người ở nước khác mua.
+@Export-import bank
+- (Econ) Ngân hàng xuất nhập khẩu.
+= Ngân hàng do chính phủ Mỹ thành lập nam 1937, nhằm thúc đẩy ngoại thương của Mỹ bằng cách cung cấp vốn dưới dạng các khoản tiền cho vay trực tiếp có bảo đảm cho các công ty nước ngoài.
+@Export-led growth
+- (Econ) Tăng trưởng dựa vào xuất khẩu.
+= Là sự tăng trưởng được thúc đẩy bởi sự gia tăng hàng xuất khẩu.
+@Export promotion
+- (Econ) Khuyến khích xuất khẩu.
+= LÀ sự phát triển của những ngành mà thỉtường chính là ở nước ngoài. Đây là một chiến lược thay thế chính đối với CHIẾN LƯỢC THAY THẾ NHẬP KHẨU ở các nước kém phát triển.
+@Export Credit Guarantee Department.
+- (Econ) Cục Bảo đảm tín dụng xuất khẩu.
+= LÀ một tổ chức được chính phủ Anh thành lập năm 1930, đưa ra các hình thức BẢO HIỂM khác nhau nhằm chống lại những rủi ro mà các nhà xuất khẩu Anh phỉa chịu đựng.
+@Export-oriented industrialization
+- (Econ) Công nghiệp hoá theo hướng xuất khẩu.
+@Ex post
+- (Econ) từ sau; sau đó
+= Sau khi xảy ra một sự kiện nào đó hoặc sau một quyết định thực hiện một việc gì đó. Xem EX ANTE.
+@Extensive margin
+- (Econ) Mức cận biên quảng canh.
+= Là tình trạng LỢI TỨC GIẢM DẦN đối với đất đai.
+@External balace
+- (Econ) Cân bằng đối ngoại; Cân bằng bên ngoài.
+= Thường được định nghĩa là một tình trạng trong đó CÁN CÂN THANH TOÁN của một nước là CÂN BẰNG, theo nghĩa luồng tiền vào tự định bằng với luồng ra tự định mà không cần điều chỉnh các luồng bổ sung vào hoặc rút ra từ dự trữ NGOẠI HỐI hay dự trữ vàng.
+@External deficit
+- (Econ) Thâm hụt đối ngoại; Thâm hụt bên ngoài.
+= Thâm hụt CÁN CÂN THANH TOÁN.
+@External diseconomy
+- (Econ) Ảnh hưởng phi kinh tế từ bên ngoài; Tính phi kinh tế từ bên ngoài
+= Xem EXTERNALITIES.
+@External economies & diseconomies of scale
+- (Econ) Ảnh hưởng kinh tế và phi kinh tế từ bên ngoài theo quy mô.
+= Những ảnh hưởng có lợi hay có hại mà các hoạt động sản xuất của một hãng này gây ra cho các hoạt động sản xuất của hãng khác.
+@External economy
+- (Econ) Ảnh hưởng kinh tế từ bên ngoài; Tính kinh tế từ bên ngoài
+= Xem EXTERNALITIES.
+@External finance
+- (Econ) (Nguồn) tài chính từ bên ngoài.
+= Quỹ được huy động bởi các hãng bằng cách phát hành CỔ PHIẾU (vốn cổ phần) hoặc đi vay để tài trợ cho các hoạt động của hãng.
+@External financial limits
+- (Econ) Mức giới hạn nguồn tài chính từ bên ngoài.
+= Chính phủ Anh đặt giới hạn đối với các NGUÒN TÀI CHÍNH TỪ BÊN NGOÀI mà các công ty quốc doanh có thể huy động trong nước.
+@External growth
+- (Econ) Tăng trưởng ngoại ứng; Tăng trưởng do bên ngoài.
+= Sự mở rộng của một hãng được mang lại do SÁP NHẬP hay thu mua.
+@Externalities
+- (Econ) Các ngoại hưởng; Các ngoại ứng
+= Được biết đến với những tên khác nhau, như tác động ngoại lai, ảnh hưởng từ bên ngoài, bất lợi từ bên ngoài,ảnh hưởng trào ra bên ngoài và ẢNH HƯỞNG ĐẾN VÙNG LÂN CẬN. Người ta đã phân biệt ngoại ứng biên và ngoại ứng trong biên.
+@External labour market
+- (Econ) Thị trường lao động bên ngoài.
+= Một thị trường cho một số người lao động nhất định, hoặc là sẵn ngay hoặc tiềm tàng cho các công việc mới.
+@External reserve
+- (Econ) Dự trữ ngoại hối.
+= Thường để chỉ mức nắm giữ các phương tiện thanh toán của một nước được quốc tế chấp nhận, với mục đích trang trải làm thâm hụt ngắn hạn và trung hạn của CÁN CÂN THANH TOÁN VỚI BÊN NGOÀI, đồng thời nhằm mục đích kiểm soát sự thay đổi TỶ GIÁ HỐI ĐOÁI đồng tiền của nước này.
+@Dynamic externalities
+- (Econ) Các ngoại hưởng động; Ngoại ứng động.
+@Extraneous information
+- (Econ) Thông tin không liên quan
+= Những thông tin ban đầu (có thể là ước lưọng về tham số trước đó) được kết hợp với thông tin mẫu  với mục đích suy luận thống kê hay ước tính tham số trong phân tích hồi quy thường để cải thiện dự báo hay khắc phục những vấn đề như ĐA CỘNG TUYẾN TÍNH.
+@Extrapolative expectation
+- (Econ) Kỳ vọng ngoại suy; Những dự tính ngoại suy.
+@Extrema
+- (Econ) Các cực trị.
+= Các giá trị thấp nhất và cao nhất của một hàm số.
+@Extrema Keynesian
+- (Econ) Người theo thuyết Keynes cực đoan.

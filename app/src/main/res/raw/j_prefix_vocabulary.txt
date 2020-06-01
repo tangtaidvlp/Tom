@@ -1,41 +1,2962 @@
-Jedist<pd>[‘æbəsist]<pd>N<pd>Người gãy bàn phím
-Jedus<pd>[‘æbəkəs]<pd>N<pd>Bàn tính<ex>to move counters of an abacus: tính bằng bàn tính
-Jeduses<pd><nav>Jedus
-Jedk<pd>[ə’bæk]<pd>Adv<pd>Lùi lại, trở lại phía sau<ex>to stand aback from sb/sth: đứng lùi lại để tránh ai hoặc cái gì
-Jedterial<pd>[eibæk’tiəriəl]<pd>N<pd>Không do vi khuẩn gây ra
-Jedtio<pd>_<pd>N<pd>(Y học) sự phá thai
-Jedtion<pd>[æ’bækʃn]<pd>N<pd>Việc gia súc bị bắt trộm
-Jedtus<pd>[æ’bæktəs]<pd>Adj<pd>Bị trụy thai
-Jedaddon<pd>[ə’bædən]<pd> N<pd>Âm ti, địa ngục<md>con quỷ
-Jedaft<pd>[ə’bɑ:ft]<pd>Adv/(Hàng hải) ở đằng sau bánh lái][Pre/(Hàng hải) ở đằng sau<ex>abaft the mast: sau cột buồm
-Jedalienate<pd>[æ’bəiljəneit]<pd>TransV<pd>Nhường lại tài sản
-Jedalienation<pd>[æbəiljə’neʃn]<pd>N<pd>Danh từ của <cli>Jedalienate<cli/><md>Sự nhường lại tài sản
-Jedalone<pd>[æbə’ləʊni]<pd>N<pd>(Từ Mỹ, nghĩa Mỹ) Bào ngư
-Jedalones<pd><nav>Jedalone
-Jedandon<pd>[ə’bændən]<pd>TransV/Từ bỏ, bỏ rơi, ruồng bỏ/to abandon all efforts: từ bỏ mọi nỗ lực<md>to abandon a child: ruồng bỏ đứa con][N/Sự phóng túng, tự do, sự buông thả<ex>with abandon: một cách phóng túng
-Jedandoned<pd>[ə’bændənd]<pd>Adj<pd>Bị bỏ rơi, bị ruồng bỏ<md>Phóng đãng, trụy lạc
-Jedandoner<pd>[ə’bændənə]<pd>N<pd>(Pháp lý) Người rút đơn
-Jedandoning<pd><nav>Jedandon
-Jedandonment<pd>[ə’bændənmənt]<pd>N<pd>Sự bỏ, sự từ bỏ, sự bỏ rơi, ruồng bỏ<md>Tình trạng bị bỏ rơi, tình trạng bị ruồng bỏ<md>Sự phóng túng, sự tự do, buông thả
-Jedandonments<pd><nav>Jedandonment
-Jedapikal<pd>[əb’æppkəl]<pd>Adj<pd>(Sinh học) Xa đỉnh, xa ngọn<md>Dưới vực
-Jedarticular<pd>[‘æba:tikjulə]<pd>Adj<pd>(Giải phẫu) Học ngoài khớp, trật khớp
-Jedas<pd>[‘ɑ:bə]<pd>N<pd>Áo aba
-Jedase<pd>[ə’beIs]<pd>TransV<pd>Làm hạ phẩm giá, làm mất thể diện, làm nhục<ex>Jedkbiting the others is to abase oneself: Nói xấu người khác là tự hạ phẩm giá của mình
-Jedased<pd><nav>Jedase
-Jedasement<pd>[ə’beIsment]<pd>N<pd>Sự làm hạ phẩm giá, sự làm mất thể diện, sự làm nhục<md>Danh từ của <cli>Jedase<cli/>
-Jedases<pd><nav>Jedase
-Jedash<pd>[ə’bæʃ]<pd>TransV<pd>Làm bối rối, làm lúng túng, làm luống cuống
-Jedashed<pd><nav>Jedash
-Jedashment<pd>[ə’bæʃmənt]<pd>N<pd>(Danh từ của <cli>Jedash<cli/>) Sự bối rối, sự lúng túng, sự luống cuống
-Jedatable<pd>[ə’beitəbl]<pd>Adj<pd>Jedó thể làm dịu<md>Jedó thể hạ, có thể bớt /b Jedó thể làm nhụt<md>Jedó thể chấm dứt, có thể thanh trừ<md>(Pháp lý) Jedó thể hủy bỏ, có thể thủ tiêu
-Jedate<pd>[ə’beIt]<pd>V/Dịu đi, yếu đi, nhụt chí, đỡ, nguôi, bớt<ex>Pain abates: cơn đau dịu đi<exd>Storm abates: cơn bão nguôi đi][TransV/Làm dịu đi, làm yếu đi<md>Hạ, bớt (giá)<md>Làm nhụt (chí)<md>Làm cùn (lưỡi dao)
-Jedated<pd><nav>Jedate
-Jedating<pd><nav>Jedate
-Jedatement<pd>[ə’beItmənt]<pd>N<pd>(Danh từ của <cli>Jedate<cli/>) Sự dịu đi, sự yếu đi, sự nhụt đi, sự giảm bớt<md>Sự hạ, sự bớt (giá)<md>Sự chấm dứt, sự thanh toán<md>(pháp lý) Sự hủy bỏ, sự thủ tiêu<ex>Jedatement of a contract: sự hủy bỏ một hợp đồng
-Jedater<pd>[ə’beitə]<pd>N<pd>Người giảm bớt<md>(Y học) Thuốc làm dịu
-Jedatis<pd>[‘æbətis]<pd>N<pd>(Quân sự) Đống cây chướng ngại, đống cây cản
-Jedatised<pd>[‘æbətist]<pd>Ad<pd>(Quân sự) Jedó đống cây chướng ngại, có đống cây cản
-Jedattoir<pd>[‘æbətwɑɑ:(r)]<pd>N<pd>Lò mổ, lò sát sinh
-Jedattoirs<pd><nav>Jedattoir
-Jedaxial<pd>[æb’æksiəl]<pd>Adj<pd>Ở ngoài trục, xa trục
+@j /dzei/
+*  danh từ,  số nhiều Js,  J's,
+- j
+- J pen ngòi bút rông
+
+@jaal-goat /'dʤeiəl'gout/
+*  danh từ
+- (động vật học) dê rừng (ở Ai cập)
+
+@jab /dʤæb/
+*  danh từ
+- nhát đâm mạnh, cái thọc mạnh
+- nhát đâm bất thình lình; cú đánh bất thình lình
+- (quân sự) trận đánh thọc sâu
+
+@jabber /'dʤæbə/
+*  danh từ
+- lời nói lúng búng
+- lời nói liến thoắng không mạch lạc; lời nói huyên thiên
+*  động từ
+- nói lúng búng
+- nói liến thoắng không mạch lạc; nói huyên thiên
+
+@jaborandi /,dʤæbə'rændi/
+*  danh từ
+- (dược học) lá mao quả
+
+@jabot /'ʤæbou/
+*  danh từ
+- ren, đăng ten (viền áo cánh đàn bà, ngực áo sơ mi đàn ông)
+
+@jacinth /'dʤæsinθ/
+*  danh từ
+- (khoáng chất) ngọc da cam,  hiaxin
+- màu da cam
+
+@jack /dʤæk/
+*  danh từ
+- quả mít
+- (thực vật học) cây mít
+- gỗ mít
+*  danh từ
+- (hàng hải) lá cờ ((thường) chỉ quốc tịch)
+!Union Jack
+- quốc kỳ Anh
+*  danh từ (từ cổ,nghĩa cổ)
+- áo chẽn không tay (của lính)
+- bình bằng da (để đựng nước, rượu...) ((cũng) black jack)
+*  danh từ
+- Giắc (tên riêng, cách gọi thân mật của tên Giôn)
+- người con trai, gã ((cũng) Jack)
+=every man jack+ mọi người
+=Jack and Gill (Jill)+ chàng và nàng
+- (như) jack_tar
+- nhân viên, thợ, người đi làm thuê làm mướn, người làm những công việc linh tinh ((cũng) Jack)
+=Jack in office+ viên chức nhỏ nhưng hay làm ra vẻ ta đây quan trọng
+- (đánh bài) quân J
+- (từ Mỹ,nghĩa Mỹ),  (từ lóng) tiến
+- (quân sự),  (từ lóng) lính quân cảnh
+- (động vật học) cá chó nhỏ
+- (kỹ thuật) cái kích ((cũng) cattiage jack); cái palăng; tay đòn, đòn bẩy
+- giá, bệ đỡ
+- cái đế rút giày ống ((cũng) boot jack)
+- máy để quay xiên nướng thịt
+- (từ Mỹ,nghĩa Mỹ) đuốc, đèn (để đi săn hoặc câu đêm) ((cũng) jack light)
+!to be Jack of all trades and master of none
+- nghề gì cũng biết nhưng chẳng tinh nghề nào
+!before you could say Jack Robinson
+- đột ngột, rất nhanh, không kịp kêu lên một tiếng, không kịp ngáp
+*  ngoại động từ
+- ((thường) + up) kích lên (xe ô tô...)
+- săn bằng đuốc, săn bằng đèn; câu bằng đuốc, câu bằng đèn
+!to jack up
+- bỏ, từ bỏ
+=to jack up one's job+ bỏ công việc
+- (từ Mỹ,nghĩa Mỹ),  (thông tục) nâng, tăng (giá lương...)
+- (từ Mỹ,nghĩa Mỹ),  (thông tục) quở trách, khiển, chỉnh (vì sao lãng...)
+
+@jack frost /'dʤæk'frɔst/
+*  danh từ
+- chàng Sương muối (sương muối nhân cách hoá)
+
+@jack ketch /'dʤæk'ketʃ/
+*  danh từ (như) hangman
+
+@jack light /'dʤæklait/
+*  danh từ
+- (từ Mỹ,nghĩa Mỹ) đuốc, đèn (để đi săn hay để câu đêm)
+
+@jack pudding /'dʤæk'pudiɳ/
+*  danh từ
+- anh hề
+
+@jack rabbit /'dʤæk'pudiɳ/
+*  danh từ
+- (động vật học) thỏ rừng tai to (ở Bắc Mỹ)
+
+@jack sprat /'dʤæk'spræt/
+*  danh từ
+- người tầm thường, người nhỏ nhen
+
+@jack tar /'dʤæk'tɑ:/
+*  danh từ
+- thuỷ thủ
+
+@jack-a-dandy /,dʤækə'dændi/
+*  danh từ
+- anh chàng ăn diện, anh chàng diện đúng mốt; công tử bột
+
+@jack-horse /'dʤækhɔ:s/
+*  danh từ
+- cái giá, bệ đỡ
+
+@jack-in-the-box /'dʤækinðəbɔks/
+*  danh từ
+- hộp hình nộm (có lò xo, khi mở nắp hộp thì hình nộm bật lên) (đồ chơi trẻ con)
+- pháo hoa hộp
+- (kỹ thuật) kích vít
+
+@jack-knife /'dʤæknaif/
+*  danh từ
+- dao xếp (bỏ túi)
+
+@jack-o'-lantern /'dʤækə,læntən/
+*  danh từ
+- ma trơi
+- đèn ma (quả bí moi ruột và khắc hình người có mắt, mũi, mồm làm đèn nghịch chơi)
+
+@jack-plane /'dʤækplein/
+*  danh từ
+- (kỹ thuật) cái bào thô
+
+@jack-priest /'dʤæk,pri:st/
+* danh từ
+- cha cố, cố đạo (nghĩa xấu)
+
+@jack-rafter /'dʤæk,rɑ:ftə/
+*  danh từ
+- đòn tay ngắn (ở mái nhà)
+
+@jack-screw /'dʤækskru:/
+*  danh từ
+- (kỹ thuật) kích vít
+
+@jack-snipe /'dʤæksnaip/
+*  danh từ
+- (động vật học) chim dẽ ri
+
+@jack-staff /'dʤækstɑ:f/
+*  danh từ (hàng hải)
+- cột buồm treo cờ
+- cán cờ trên cột buồm
+
+@jack-straw /'dʤækstrɔ:/
+*  danh từ
+- bù nhìn rơm
+- người tầm thường, người nhỏ nhen
+- (số nhiều) trò chơi nhặt cọng rơm (vứt cọng rơm thành đồng khẽ nhặt ra từng cái một làm sao không động đến cái khác)
+!not to care a jack-straw
+- cóc cần; không mảy may bận tâm gì đến
+
+@jack-towel /'dʤæk,tauəl/
+*  danh từ
+- khăn mặt cuốn (khăn mặt khâu tròn, cuốn vào rulô)
+
+@jackal /'dʤækɔ:l/
+*  danh từ
+- (động vật học) chó rừng
+- (nghĩa bóng) người làm những công việc cực nhọc vất vả (cho người khác hưởng)
+
+@jackanapes /'dʤækəneips/
+*  danh từ
+- kẻ càn rỡ, kẻ hỗn xược; thằng ranh con hỗn láo
+- người kiêu căng tự mãn, người hợm hĩnh
+- (từ cổ,nghĩa cổ) con khỉ
+
+@jackaroo /'dʤækəru:/
+*  danh từ
+- Uc,  (từ lóng) người mới vào nghề
+
+@jackass /'dʤækæs/
+*  danh từ
+- con lừa đực
+- (thường) người ngu đần, chàng ngốc
+
+@jackboot /'dʤækbu:t/
+*  danh từ
+- giầy ống, ủng (cao đến trên đầu gối)
+
+@jackdaw /'dʤækdɔ:/
+*  danh từ
+- (động vật học) quạ gáy xám
+
+@jacket /'dʤækit/
+*  danh từ
+- áo vét tông (đành ông), áo vét (đàn bà)
+- (kỹ thuật) cái bao, áo giữ nhiệt (bọc máy...)
+- bìa bọc sách; (từ Mỹ,nghĩa Mỹ) bìa tài liệu chính thức
+- da, bộ lông (súc vật); vỏ (khoai tây)
+=potatoes boiled in their jackets+ khoai tây luộc để cả vỏ
+!to dust (dress down, trim, warm) someone's jacket
+- nện cho ai một trận
+*  ngoại động từ
+- mặc áo vét tông cho, mặc áo vét cho
+- bọc, bao
+- (từ lóng) sửa cho một trận
+
+@jackhammer /'dɔæk,hæmə/
+*  danh từ
+- (kỹ thuật) búa chèn; búa khoan
+
+@jackpot /'dʤækpɔt/
+*  danh từ
+- (đánh bài) số tiền góp
+- (nghĩa bóng) giải xổ số
+- (từ Mỹ,nghĩa Mỹ),  (thông tục) món lời ca nhất (trong việc kinh doanh)
+!to hit the jackpot Mỹ, lóng
+- (đánh bài) vớ hết số tiền góp
+- vớ bở, thành công lớn
+
+@jacob's ladder /'dʤeikəbz'lædə/
+*  danh từ
+- (kinh thánh) cái thang của Gia-cốp
+- (thông tục) thang dựng đứng khó trèo
+- (hàng hải) thang dây
+- (thực vật học) cây lá thang
+
+@jacob's staff /'dʤeikəbz'stɑ:f/
+*  danh từ
+- (kinh thánh) cái gậy của Gia-cốp
+- máy đẳng cao
+
+@jacobean /,dʤækə'bi:ən/
+*  tính từ
+- thuộc thời vua Giêm I (Anh, 1603 1625)
+=jacobean literature+ văn học dưới thời vua Giêm I
+- màu gỗ sồi thẫm (đồ gỗ)
+
+@jacobin /'dʤækəbin/
+*  danh từ
+- thầy tu dòng Đô-mi-ních
+- người theo phái Gia-cô-banh (thời cách mạng Pháp, 1789)
+*  danh từ
+- (động vật học) bồ câu thầy dòng (có lông xù ở gáy, trông giống như mũ thầy dòng)
+
+@jacobinic /,dʤækə'binik/ (Jacobinical) /,dʤækə'binikəl/
+*  tính từ
+- (thuộc) phái Gia-cô-banh
+
+@jacobinical /,dʤækə'binik/ (Jacobinical) /,dʤækə'binikəl/
+*  tính từ
+- (thuộc) phái Gia-cô-banh
+
+@jacobinism /'dʤækəbinizm/
+*  danh từ
+- xu hướng chính tri Gia-cô-banh (thời cách mạng Pháp 1789)
+
+@jaconet /'dʤækənət/
+*  danh từ
+- vải jagan (một loại vải trắng mỏng)
+
+@jacquard loom /dʤə'kɑ:d'lu:m/
+*  danh từ
+- khung dệt jăcka
+
+@jactation /dʤæk'teiʃn/ (jactitation) /,dʤækti'teiʃn/
+*  danh từ
+- (y học) sự trăn trở, sự quằn quại (lúc ốm đau); chứng co giật
+- (từ cổ,nghĩa cổ) thói khoe khoang khoác lác
+
+@jactitation /,dʤækti'teiʃn/
+*  danh từ
+- ((pháp lý)) jactitation of marriage tội nhận xằng là vợ (là chồng) ai
+- (xem) jactation
+
+@jade /dʤeid/
+*  danh từ
+- ngọc bích
+- mùa ngọc bích
+*  danh từ
+- ngựa tồi, ngựa già ốm
+-(đùa cợt) con mụ, con bé
+*  ngoại động từ ((thường) động tính từ quá khứ)
+- bắt làm việc mệt nhoài; làm mệt lử
+
+@jaded /dʤeid/
+*  tính từ
+- mệt mỏi, mệt rã rời, kiệt sức; phải làm việc quá sức
+- chán ứ, chán ngấy
+=a jaded appetite+ ăn chán ứ không thấy ngon
+
+@jaeger /'jeigə/
+*  danh từ
+- vải len jêgơ
+
+@jag /dʤæg/
+*  danh từ (từ Mỹ,nghĩa Mỹ),  (từ lóng)
+- bữa rượu, bữa chè chén
+- cơn say bí tỉ
+*  danh từ
+- đầu nhọn, mỏm nhọn
+=a jag of rock+ một mỏm đá nhọn
+*  ngoại động từ
+- cắt lởm chởm; xé không đều; làm mẻ (dao...)
+
+@jagged /'dʤægid/
+*  tính từ
+- (từ Mỹ,nghĩa Mỹ),  (từ lóng) say bí tỉ
+*  tính từ
+- có mép lởm chởm (như răng cưa); lởm chởm, có nhiều cạnh nhọn
+=jagged rocks+ đá lởm chởm
+
+@jaggery /'gʤægəri/
+*  danh từ
+- đường thốt nốt
+- đường thô
+
+@jaggy /'dʤægi/
+*  tính từ
+- có mép lởm chởm (như răng cưa)
+
+@jaguar /'ʤægjuə/
+*  danh từ
+- (động vật học) báo đốm Mỹ
+
+@jail /dʤeil/
+*  danh từ & ngoại động từ
+- (như) goal
+
+@jailer /ˈjālər/
+* danh từ
+- quản ngục
+
+@jalap /'dʤæləp/
+*  danh từ
+- (dược học) thuốc tẩy jalap
+
+@jaloppy /dʤə'lɔpi/ (jaloppy) /dʤə'lɔpi/
+*  danh từ
+- (từ Mỹ,nghĩa Mỹ),  (từ lóng) xe ô tô cọc cạch; máy bay ọp ẹp
+
+@jalopy /dʤə'lɔpi/ (jaloppy) /dʤə'lɔpi/
+*  danh từ
+- (từ Mỹ,nghĩa Mỹ),  (từ lóng) xe ô tô cọc cạch; máy bay ọp ẹp
+
+@jalousie /'ʤælu:zi:/
+*  danh từ
+- bức mành, mành mành
+
+@jam /dʤæm/
+*  danh từ
+- mứt
+!real jam
+- (từ lóng) điều khoái trá, điều hết sức thú vị
+*  danh từ
+- sự kẹp chặt, sự ép chặt
+- sự ấn vào, sự tọng vào, sự nhồi nhét
+- đám đông chen chúc, đám đông tắc nghẽn
+=traffic jam+ đường tắc nghẽn; giao thông tắc nghẽn
+- sự mắc kẹt, sự kẹt (máy...)
+- (thông tục) tình hình khó khăn, tình thế khó xử, hoàn cảnh bế tắc
+- (raddiô) nhiễu (lúc thu)
+*  ngoại động từ
+- ép chặt, kẹp chặt
+=to jam one's finger in the door+ kẹp ngón tay ở cửa
+- ((thường) + into) ấn vào, tọng vào, nhồi nhét, nhồi chặt
+- làm tắc nghẽn (đường xá...)
+- (kỹ thuật) làm mắc kẹt, kẹt chặt, hãm kẹt lại; chêm, chèn
+=to jam the brake+ hãm kẹt phanh lại
+- (raddiô) phá, làm nhiễu (một chương trình phát thanh, làn sóng...)
+*  nội động từ
+- bị chêm chặt, mắc kẹt, kẹt chặt (bộ phận máy...)
+- bị ép chặt, bị xếp chật ních, bị nhồi chặt
+- (từ Mỹ,nghĩa Mỹ),  (từ lóng) ứng tác, ứng tấu (nhạc ja)
+
+@jam-jar /'dʤæmdʤɑ:/
+*  danh từ
+- lọ mứt, bình đựng mứt
+
+@jam-up /'dʤæmʌp/
+*  danh từ
+- sự ùn lại, sự tắc nghẽn (người, xe cộ trên đường đi...)
+
+@jamb /dʤæm/
+*  danh từ (kiến trúc)
+- thanh dọc (khung cửa), rầm cửa
+- (số nhiều) mặt bên (của) lò sưởi
+
+@jamboree /,dʤæmbə'ri:/
+*  danh từ
+- buổi chè chén; buổi liên hoan
+- đại hội hướng đạo
+
+@jammer /'dʤæmə/
+*  danh từ
+- (raddiô) đài làm nhiễu âm
+
+@jangle /'dʤæɳgl/
+*  danh từ
+- tiếng kêu chói tai; tiếng om sòm
+- (từ cổ,nghĩa cổ) cuộc cãi cọ om xòm
+*  động từ
+- kêu chói tai; nói om sòm chói tai; làm kêu chói tai
+=to jangle a bell+ lắc chuông kêu chói tai
+- (từ cổ,nghĩa cổ) tranh cãi ầm ĩ; cãi nhau om sòm
+
+@janissary /'dʤænizəri/ (janissary) /'dʤænisəri/
+*  danh từ
+- (sử học) vệ binh (của) vua Thổ nhĩ kỳ
+- lính Thổ nhĩ kỳ
+- (nghĩa bóng) công cụ riêng để áp bức
+
+@janitor /'dʤænitə/
+*  danh từ
+- người gác cổng
+- người coi nhà (khi chủ đi vắng)
+
+@janizary /'dʤænizəri/ (janissary) /'dʤænisəri/
+*  danh từ
+- (sử học) vệ binh (của) vua Thổ nhĩ kỳ
+- lính Thổ nhĩ kỳ
+- (nghĩa bóng) công cụ riêng để áp bức
+
+@jansenism /'dʤænsnizm/
+*  danh từ
+- giáo phái Gian-xen
+
+@jansenist /'dʤænsnist/
+*  danh từ
+- người theo giáo phái Gian-xen
+
+@january /'dʤænjuəri/
+*  danh từ
+- tháng giêng
+
+@jap /dʤæp/
+*  tính từ & danh từ (thông tục) (như) Japanese
+
+@japan /dʤə'pæn/
+*  danh từ
+- sơn mài Nhật; đồ sơn mài Nhật
+- đồ sứ Nhật
+- lụa Nhật
+*  ngoại động từ
+- sơn bằng sơn mài Nhật
+- sơn đen bóng (như sơn mài Nhật)
+
+@japanese /,dʤæpə'ni:z/
+*  tính từ+ (Japonic) /dʤə'pɔnik/
+- (thuộc) Nhật bản
+*  danh từ
+- người Nhật bản
+- tiếng Nhật bản
+
+@japanesque /,dʤæpə'nesk/
+*  tính từ
+- theo kiểu Nhật
+
+@jape /dʤeip/
+*  danh từ
+- (văn học) nói đùa; nói giễu
+
+@japonic /,dʤæpə'ni:z/
+*  tính từ+ (Japonic) /dʤə'pɔnik/
+- (thuộc) Nhật bản
+*  danh từ
+- người Nhật bản
+- tiếng Nhật bản
+
+@japonica /dʤə'pɔnikə/
+*  danh từ (thực vật học)
+- cây lê Nhật bản (thường dùng để trang trí)
+- cây hoa trà
+
+@jar /dʤɑ:/
+*  danh từ
+- vại, lọ, bình
+- (điện học) chai
+= Leyden jar+ chai lêdden
+- ((thông tục)) on the jar; on a jar; on jar hé mở (cửa)
+- tiếng động chói tai; tiếng ken két làm gai người
+- sự rung chuyển mạnh, sự chao đảo mạnh (làm chói tai)
+- sự choáng người, sự choáng óc; sự gai người; sự bực bội, sự khó chịu (thần kinh, cân não...)
+=the news gave me a nasty jar+ tin đó làm tôi bực bội khó chịu
+- sự va chạm (quyền lợi...), sự bất đồng, sự không hoà hợp (ý kiến...)
+- sự bất hoà, sự cãi nhau
+- (kỹ thuật) sự rung, sự chấn động
+*  nội động từ
+- phát ra tiếng động chói tai; kêu ken két làm gai người
+- (+ upon) gây cảm giác khó chịu, gây bực bội
+=to jar upon ear+ gây chói tai
+=to jar uopn nerves+ gây bực bội thất kinh
+- (+ upon,  against) cọ ken két, nghiến ken két
+- ((thường) + with) va chạm, xung đột, bất đồng, mâu thuẫn, không hoà hợp (quyền lợi, ý kiến...)
+- cãi nhau
+- (kỹ thuật) rung, chấn động
+*  ngoại động từ
+- làm rung động mạnh, làm chấn động mạnh
+- làm kêu chói tai, làm kêu ken két gai người
+- làm choáng (óc), làm gai (người...), làm chói (tai...), làm bực bội, làm khó chịu (thần kinh, cân não...)
+
+@jardinière /,ʤɑ:di'njeə/
+*  danh từ
+- chậu hoa (để trang trí trong phòng hay để ở ngưỡng cửa)
+
+@jargon /'dʤɑ:gən/
+*  danh từ
+- tiếng nói khó hiểu, tiếng nói líu nhíu khó hiểu
+- biệt ngữ
+- tiếng hót líu lo (chim)
+
+@jargonelle /,dʤɑ:gə'nel/
+*  danh từ
+- (thực vật học) giống lê sớm
+
+@jargonise /'dʤɑ:gənaiz/ (jargonize) /'dʤɑ:gənaiz/
+*  động từ
+- dùng biệt ngữ, nói biệt ngữ
+
+@jargonize /'dʤɑ:gənaiz/ (jargonize) /'dʤɑ:gənaiz/
+*  động từ
+- dùng biệt ngữ, nói biệt ngữ
+
+@jarovization /,jɑ:rəvi'zeiʃn/
+*  danh từ
+- (nông nghiệp) sự xuân hoá
+
+@jarring /'dʤɑ:riɳ/
+*  tính từ
+- chói tai, nghịch tai, làm gai người
+=a jarring sound+ tiếng chói tai
+=a jarring note+ (âm nhạc) nốt nghịch tai
+- làm choáng (óc...), làm bực bội, làm khó chịu (thần kinh, cân não...)
+- va chạm, xung đột, mâu thuẫn, bất đồng, không hoà hợp
+=jarring interests+ quyền lợi xung dột
+=jarring opinions+ ý kiến bất đồng, ý kiến mâu thuẫn
+
+@jarvey /'dʤɑ:vi/
+*  danh từ
+- người đánh xe ngựa thuê
+
+@jasey /'dʤeizi/
+*  danh từ (từ cổ,nghĩa cổ),  (từ lóng)
+- bộ tóc giả (bằng chỉ len)
+
+@jasmin /'dʤæsmin/ (jasmine) /'dʤæsmin/ (jessamine) /'dʤesəmin/
+*  danh từ
+- (thực vật học) cây hoa nhài
+
+@jasper /'dʤæspə/
+*  danh từ
+- ngọc thạch anh,  jatpe
+
+@jaundice /'dʤɔ:ndis/
+*  danh từ
+- (y học) bệnh vàng da
+- (nghĩa bóng) cách nhìn lệch lạc thành kiến; sự hằn học, sự ghen tức
+*  ngoại động từ
+- làm mắc bệnh vàng da
+- (nghĩa bóng) ((thường) động tính từ quá khứ) làm hằn học, làm ghen tức
+=with a jaundiced eye+ với con mắt ghen tức
+
+@jaunt /dʤɔ:nt/
+*  danh từ
+- cuộc đi chơi
+*  nội động từ
+- đi chơi
+
+@jauntiness /'dʤɔ:ntinis/
+*  danh từ
+- sự vui nhộn, sự vui vẻ; sự hoạt bát
+- thái độ thong dong
+- vẻ khoái chí; vẻ tự mãn
+
+@jaunting-car /'dʤɔ:ntiɳkɑ:/ (side-car) /'saidkɑ:/
+-car) /'saidkɑ:/
+*  danh từ
+- xe ngựa hai bánh (ở Ai-len)
+
+@jaunty /'dʤɔ:nti/
+*  tính từ
+- vui nhộn, vui vẻ; hoạt bát
+- thong dong
+- khoái chí; có vẻ tự mãn
+
+@javanese /,dʤɑ:və'ni:z/
+*  tính từ
+- (thuộc) Gia-va
+*  danh từ
+- người Gia-va
+- tiếng Gia-va
+
+@javelin /'dʤævlin/
+*  danh từ
+- (thể dục,thể thao) cái lao
+
+@javelin-throwing /'dʤævlin,θrouiɳ/
+*  danh từ
+- (thể dục,thể thao) môn ném lao
+
+@jaw /dʤɔ:/
+*  danh từ
+- hàm, quai hàm
+=upper jaw+ hàm trên
+=lower jaw+ hàm dưới
+- (số nhiều) mồm, miệng
+=in the jaws of death+ trong tay thần chết
+- (số nhiều) lối vào hẹp (thung lũng, vịnh, eo biển...)
+- (số nhiều) (kỹ thuật) cái kẹp; má (kìm...), hàm (êtô...)
+- (thông tục) sự lắm mồm, sự nhiều lời, sự ba hoa
+- sự răn dạy; sự chỉnh, sự "lên lớp"  (nghĩa bóng)
+=pi jaw+(ngôn ngữ nhà trường),  (từ lóng) sự chỉnh, sự "lên lớp"
+!hold your jaw!
+- thôi câm cái mồn đi, đừng ba hoa nữa!; thôi đừng "lên lớp" nữa!
+*  động từ (từ lóng)
+- nói lải nhải, nói dài dòng chán ngắt
+- răn dạy, chỉnh, "lên lớp" (ai), thuyết cho (ai) một hồi
+
+@jaw-bone /'dʤɔ:boun/
+*  danh từ
+- xương hàm
+
+@jaw-breaker /'dʤɔ:,breikə/
+*  danh từ
+- (thông tục) từ khó đọc, từ khó phát âm
+
+@jay /dʤei/
+*  danh từ
+- chim giẻ cùi
+- (nghĩa bóng) anh chàng ba hoa khó chịu, anh chàng ngốc, anh chàng khờ dại
+
+@jay-walker /'dʤei,wɔ:kə/
+*  danh từ
+- (từ Mỹ,nghĩa Mỹ) người đi ẩu không chú ý đến luật lệ giao thông
+
+@jaywalk /'dʤeiwɔ:k/
+*  nội động từ
+- (từ Mỹ,nghĩa Mỹ) đi ẩu không chú ý đến luật lệ giao thông (đi bộ)
+
+@jazz /dʤæz/
+*  danh từ
+- nhạc ja
+- điệu nhảy ja
+- trò vui nhộn, trò ồn ào; trò lố bịch tức cười
+- (từ Mỹ,nghĩa Mỹ) câu chuyện làm quà, câu chuyện đãi bôi
+*  tính từ
+- có tính chất nhạc ja, như nhạc ja
+- vui nhộn, ồn ào; lố bịch tức cười
+*  ngoại động từ
+- (âm nhạc) chơi theo kiểu ja; cái biến thành điệu ja
+- (từ Mỹ,nghĩa Mỹ) ((thường) + up) gây không khí vui nhộn; làm sôi nổi, làm hoạt động lên
+*  nội động từ
+- chơi nhạc ja
+- nhảy theo điệu ja
+
+@jazz band /'dʤæz'bænd/
+*  danh từ
+- ban nhạc ja
+
+@jazzist /'dʤæzist/ (jazzman) /'dʤæzmən/
+*  danh từ
+- người chơi nhạc ja
+- người nhảy ja
+
+@jazzman /'dʤæzist/ (jazzman) /'dʤæzmən/
+*  danh từ
+- người chơi nhạc ja
+- người nhảy ja
+
+@jazzy /dʤæz/
+*  danh từ
+- nhạc ja
+- điệu nhảy ja
+- trò vui nhộn, trò ồn ào; trò lố bịch tức cười
+- (từ Mỹ,nghĩa Mỹ) câu chuyện làm quà, câu chuyện đãi bôi
+*  tính từ
+- có tính chất nhạc ja, như nhạc ja
+- vui nhộn, ồn ào; lố bịch tức cười
+*  ngoại động từ
+- (âm nhạc) chơi theo kiểu ja; cái biến thành điệu ja
+- (từ Mỹ,nghĩa Mỹ) ((thường) + up) gây không khí vui nhộn; làm sôi nổi, làm hoạt động lên
+*  nội động từ
+- chơi nhạc ja
+- nhảy theo điệu ja
+
+@jealous /'dʤeləs/
+*  tính từ
+- ghen tị, ghen ghét, đố kỵ
+=to be jealous of someone's success+ ghen ghét sự thành công của ai
+- hay ghen, ghen tuông
+- bo bo giữ chặt; hết sức giữ gìn, tha thiết bảo vệ
+=a people jealous of their independence+ một dân tộc tha thiết bảo vệ nền độc lập của mình
+- cảnh giác vì ngờ vực, cẩn thận vì ngờ vực
+=a jealous inquiry+ cuộc điều tra cẩn thận vì ngờ vực
+
+@jealousy /'dʤeləsi/
+*  danh từ
+- lòng ghen tị, lòng ghen ghét; tính đố kỵ; thái độ ghen tị; thái độ ghen ghét
+- máu ghen, thái độ ghen tuông
+- sự bo bo giữ chặt; sự hết sức giữ gìn
+- sự cảnh giác vì ngờ vực
+
+@jean /dʤein/
+*  danh từ
+- vải chéo go
+- (số nhiều) quần ngắn bó ống; bộ quần áo lao động (của công nhân)
+
+@jeep /dʤi:p/
+*  danh từ
+- xe jíp
+
+@jeer /dʤiə/
+*  danh từ
+- ((hàng hải),  (thường) số nhiều) dây kéo trục buồm dưới
+- lời chế nhạo, lời chế giễu cợt
+*  động từ
+- cười nhạo, chế nhạo, chế giễu
+=to jeer at someone+ cười nhạo ai
+
+@jeeringly /'dʤiəriɳli/
+*  phó từ
+- cười nhạo, chế nhạo, chế giễu
+
+@jehad /dʤi'hɑ:d/ (jehad) /dʤi'hɑ:d/
+*  danh từ
+- chiến tranh Hồi giáo (giữa những tín đồ đạo Hồi và những người không theo đạo Hồi)
+- (nghĩa bóng) cuộc vận động bảo vệ một chủ nghĩa; cuộc vận động chống lại một chủ nghĩa
+
+@jehovah /dʤi'houvə/
+*  danh từ
+- (kinh thánh) Giê-hô-va
+
+@jehu /'dʤi:hju:/
+*  danh từ
+-(đùa cợt) người đánh xe ngựa; người đánh xe ngựa phóng bạt mạng
+
+@jejune /dʤi'dʤu:n/
+*  tính từ
+- tẻ nhạt, khô khan, không hấp dẫn, không gợi cảm
+- nghèo nàn, ít ỏi
+=jejune dies+ chế độ ăn uống nghèo nàn
+- khô cằn (đất)
+!jejune dictionary
+- từ điển nhỏ bỏ túi
+
+@jejunectomy /,dʤidʤu:'nektəmi/
+*  danh từ
+- (y học) thủ thuật cắt ruột chay
+
+@jejuneness /dʤi'dʤu:nnis/
+*  danh từ
+- sự tẻ nhạt, sự khô khan, sự không hấp dẫn, sự không gợi cảm
+- sự nghèo nàn, sự ít ỏi
+- sự khô cằn (đất)
+
+@jejunum /dʤi'dʤu:nəm/
+*  danh từ
+- (giải phẫu) ruột chay
+
+@jell /dʤel/
+*  danh từ (thông tục)
+- (như) jelly
+*  động từ
+- (như) jelly
+- (nghĩa bóng) hình thành rõ rệt
+=public opinion has jelled on that question+ về vấn đề đó dư luận quần chúng đã rõ rệt
+=the conversation wouldn't jell+ câu chuyện rời rạc nhạt nhẽo
+
+@jellify /'dʤeli/ (jell) /dʤel/
+*  danh từ
+- thịt nấu đông; nước quả nấu đông, thạch
+!to beat to a jelly
+- đánh cho nhừ tử
+*  động từ+ (jellify) /'dʤelifai/
+- đông lại; làm cho đông lại
+
+@jelly /'dʤeli/ (jell) /dʤel/
+*  danh từ
+- thịt nấu đông; nước quả nấu đông, thạch
+!to beat to a jelly
+- đánh cho nhừ tử
+*  động từ+ (jellify) /'dʤelifai/
+- đông lại; làm cho đông lại
+
+@jelly-fish /'dʤelifiʃ/
+*  danh từ
+- (động vật học) con sứa
+- (từ Mỹ,nghĩa Mỹ),  (thông tục) người mềm yếu nhu nhược
+
+@jelly-like /'dʤelilaik/
+*  tính từ
+- như thịt nấu đông; như nước quả nấu đông, như thạch
+
+@jellygraph /'dʤeligrɑ:f/
+*  danh từ
+- bàn in thạch
+
+@jemadar /'dʤemədɑ:/
+*  danh từ Anh-Ỡn
+- hạ sĩ quan (trong quân đội Ân)
+- cảnh sát Ân
+- quản gia
+- (thông tục) người quét tước (trong nhà)
+
+@jemimas /dʤi'maiməz/
+*  danh từ số nhiều
+- (thông tục) giày ống chun (hai bên có thể chun ra chun vào được)
+
+@jemmy /'dʤemi/
+*  danh từ
+- cái nạy cửa (của kẻ trộm)
+- đầu cừu (món ăn)
+
+@jennet /'dʤenit/
+*  danh từ
+- ngựa Tây ban nha
+
+@jenneting /'dʤenətiɳ/
+*  danh từ
+- (thực vật học) táo hè (một loại táo chím sớm vào mùa hè)
+
+@jenny /'dʤeni/
+*  danh từ
+- xe cần trục
+- cú chọc, cú đánh (bi-a)
+- con lừa cái ((cũng) jenny ans)
+- máy xe nhiều sợi một lúc ((cũng) spinning jenny)
+
+@jenny wren /'dʤeniren/
+*  danh từ
+- xuây JẩĂ
+
+@jeopard /'dʤepəd/
+*  ngoại động từ
+- (từ Mỹ,nghĩa Mỹ) (như) jeopardize
+
+@jeopardise /'dʤepədaiz/ (jeopardize) /'dʤepədaiz/
+*  ngoại động từ
+- nguy hại, gây nguy hiểm; liều (mạng)
+=to jeopardise one's life+ liều mạng
+
+@jeopardize /'dʤepədaiz/ (jeopardize) /'dʤepədaiz/
+*  ngoại động từ
+- nguy hại, gây nguy hiểm; liều (mạng)
+=to jeopardise one's life+ liều mạng
+
+@jeopardy /'dʤepədi/
+*  danh từ
+- nguy cơ, cảnh nguy hiểm, cảnh hiểm nghèo
+=to be in jeopardy+ lâm vào cảnh nguy hiểm lâm nguy
+
+@jerboa /dʤə:'bouə/
+*  danh từ
+- (động vật học) chuột nhảy
+
+@jeremiad /,dʤeri'maiəd/
+*  danh từ
+- lời than van; lời than van ai oán
+
+@jeremiah /,dʤeri'maiə/
+*  danh từ
+- nhà tiên đoán yếm thế (tố cáo những chuyện xấu xa hiện tại và tiên đoán những tai hoạ sắp đến)
+
+@jerk /dʤə:k/
+*  danh từ
+- cái giật mạnh thình lình; cái xốc mạnh thình lình; cú đẩy mạnh thình lình; cú xoắn mạnh thình lình; cú thúc mạnh thình lình; cú ném mạnh thình lình
+- (số nhiều) sự co giật (mặt, chân tay...)
+- phản xạ
+- (thể dục,thể thao) sự giật tạ (để nâng từ vai lên quá đầu)
+- (từ Mỹ,nghĩa Mỹ),  (từ lóng) người ngớ ngẩn, người xuẩn ngốc
+!physical Jerks
+- (từ lóng) động tác tập thể dục
+*  ngoại động từ
+- giật mạnh thình lình; xốc mạnh thình lình; đẩy mạnh thình lình; xoắn mạnh thình lình; thúc mạnh thình lình; ném mạnh thình lình
+=to jerk the door open+ giật mở tung cửa ra
+=to jerk onself free+ giật mạnh để thoát ra
+- (từ Mỹ,nghĩa Mỹ) ((thường) + out) nói dằn mạnh từng tiếng, nói cắn cẩu nhát gừng
+=to jerk out one's words+ nói dằn mạnh từng tiếng
+*  nội động từ
+- chạy xóc nảy lên; đi trục trặc
+- co giật (mặt, chân tay...)
+*  ngoại động từ
+- lạng (thịt bò) thành lát dài ướp muối phơi nắng
+
+@jerkin /dʤə:k/
+*  danh từ
+- (sử học) áo chẽn bằng da (của đàn ông)
+
+@jerkiness /dʤə:kinis/
+*  danh từ
+- sự giật giật, sự trục trặc; sự xóc nảy lên
+
+@jerkwater /'dʤə:k,wɔtə/
+*  tính từ
+- (từ Mỹ,nghĩa Mỹ),  (thông tục) nhỏ bé, tầm thường, không quan trọng
+=a jerkwater town+ một thành phố nhỏ
+
+@jerky /'dʤə:ki/
+*  tính từ
+- giật giật, trục trặc; xóc nảy lên
+- dằn mạnh từng tiếng, cắn cẩu nhát gừng (nói)
+- ngớ ngẩn, xuẩn ngốc
+*  danh từ
+- thịt bò khô
+
+@jeroboam /,dʤerə'bouəm/
+*  danh từ
+- chai lớn (đựng rượu vang, to bằng tám đến mười hai lần chai thường)
+
+@jerrican /'dʤerikæn/ (jerrycan) /'dʤerikæn/
+*  danh từ
+- thùng đựng xăng
+
+@jerry /'dʤeri/
+*  danh từ
+- (từ lóng) cái bô (để đi đái đêm)
+- (như) jerry-shop
+*  danh từ (quân sự),  (từ lóng)
+- lính Đức
+- người Đức
+- máy bay Đức
+
+@jerry-builder /'dʤeri,bildə/
+*  danh từ
+- người xây nhà cẩu thả (làm vội vã và dùng vật liệu xấu)
+
+@jerry-building /'dʤeri,bildiɳ/
+*  danh từ
+- sự xây dựng vội vàng bằng vật liệu xấu; sự xây dựng cẩu thả
+
+@jerry-built /'dʤeribilt/
+*  tính từ
+- xây dựng vội vàng bằng vật liệu xấu; xây dựng cẩu thả (nhà cửa)
+
+@jerry-shop /'dʤerikæn/ (jerry) /'dʤeri/
+*  danh từ
+- (từ lóng) quán bán bia loại tồi
+
+@jerrycan /'dʤerikæn/ (jerrycan) /'dʤerikæn/
+*  danh từ
+- thùng đựng xăng
+
+@jersey /'dʤə:zi/
+*  danh từ
+- áo nịt len (đan tay hoặc dệt kim)
+- (jersey) bò cái jecxi
+
+@jess /dʤes/
+*  danh từ
+- dây buộc chân (chim ưng săn)
+*  ngoại động từ
+- buộc dây chân vào (chim ưng săn)
+
+@jessamine /'dʤæsmin/ (jasmine) /'dʤæsmin/ (jessamine) /'dʤesəmin/
+*  danh từ
+- (thực vật học) cây hoa nhài
+
+@jest /dʤest/
+*  danh từ
+- lời chế nhạo, lời chế giễu, lời giễu cợt
+=to make a jest of+ giễu cợt, chế nhạo
+- lời nói đùa chơi, lời nói giỡn
+=in jest+ nói đùa chơi
+=between jest and earnest+ nửa đùa nửa thật
+- trò cười (cho thiên hạ), đích để mọi người chế giễu
+=a standing jest+ người thường xuyên làm trò cười cho thiên hạ
+*  nội động từ
+- nói đùa, nói giỡn, pha trò
+- chế nhạo, chế giễu, giễu cợt
+
+@jest-book /'dʤəstbuk/
+*  danh từ
+- tập truyện vui, tập truyện tiếu lâm
+
+@jester /'dʤestə/
+*  danh từ
+- người hay nói đùa, người hay pha trò
+- anh hề (trong cung đình hay ở các nhà quyền quý xưa)
+
+@jesting /'dʤestiɳ/
+*  tính từ
+- nói đùa, nói giỡn, pha trò
+=a jesting remark+ một câu nói đùa
+=a jesting fellow+ một người hay nói đùa cợt pha trò
+
+@jesuit /'dʤezjuit/
+*  danh từ
+- thầy tu dòng Tên
+- người hay mưu đồ; người hay mập mờ nước đôi
+- người hay đạo đức giả, người hay giả nhân giả nghĩa; người giảo quyệt
+
+@jesuitic /,dʤezju'itik/ (Jesuitical) /,dʤezju'itikəl/
+*  tính từ
+- (thuộc) dòng Tên
+- hay mưu đồ; hay mập mờ nước đôi
+- đạo đức giả, giả nhân giả nghĩa; giảo quyệt
+
+@jesuitism /'dʤezjuitizm/ (Jesuitry) /'dʤezjuitri/
+*  danh từ
+- giáo phái dòng Tên
+- tính đạo đức giả, tính giả nhân giả nghĩa; tính giảo quyệt
+
+@jesuitry /'dʤezjuitizm/ (Jesuitry) /'dʤezjuitri/
+*  danh từ
+- giáo phái dòng Tên
+- tính đạo đức giả, tính giả nhân giả nghĩa; tính giảo quyệt
+
+@jet /dʤet/
+*  tính từ
+- bằng huyền
+- đen nhánh, đen hạt huyền ((cũng) jet black)
+*  danh từ
+- huyền
+=as black as jet+ đen nhánh, đen như hạt huyền
+- màu đen nhánh, màu đen như hạt huyền
+*  danh từ
+- tia (nước, máu, hơi...)
+- vòi (ống nước...)
+- (kỹ thuật) vòi phun,  giclơ
+- (thông tục) máy bay phản lực
+*  động từ
+- phun ra thành tia; làm bắn tia
+
+@jet propulsion /'dʤetprə'pʌlʃn/
+*  danh từ
+- sự đẩy đi do phản lực; sự chuyển động do phản lực
+
+@jet set /'dʤet'set/
+*  danh từ
+- (từ Mỹ,nghĩa Mỹ) những người giàu sang chuyên đi lại bằng máy bay phản lực
+
+@jet-engine /'dʤet,endʤin/
+*  danh từ
+- động cơ phản lực
+
+@jet-fighter /'dʤet,faitə/
+*  danh từ
+- máy bay chiến đấu phản lực
+
+@jet-plane /'dʤetplein/
+*  danh từ
+- máy bay phản lực
+
+@jet-propelled /'dʤetprə'reld/
+*  tính từ
+- đẩy đi do phản lực
+=jet-propelled plane+ máy bay phản lực
+
+@jetsam /'dʤetsəm/
+*  danh từ
+- hàng hoá vứt xuống biển cho nhẹ tàu (khi gặp dông tố...)
+- hàng hoá vứt đi trôi giạt vào bờ
+
+@jettison /'dʤetisn/
+*  danh từ
+- sự vứt hàng xuống biển cho nhẹ tàu (khi lâm nguy)
+- (nghĩa bóng) sự vứt bỏ
+*  ngoại động từ
+- vứt hàng xuống biển cho nhẹ tàu (khi lâm nguy)
+- (từ Mỹ,nghĩa Mỹ) vứt ra khỏi máy bay (khi đang bay)
+- (nghĩa bóng) vứt bỏ (cái gì)
+
+@jetty /'dʤeti/
+*  danh từ
+- để chắn sóng
+- cầu tàu
+*  tính từ
+- đen nhánh, đen như hạt huyền
+
+@jew /dʤu:/
+*  danh từ
+- người Do thái
+- (nghĩa xấu) người cho vay nặng lãi; con buôn lọc lõi khó chơi
+
+@jew's pitch /'dʤu:zpitʃ/
+*  danh từ
+- nhựa đường
+
+@jew-baiting /'dʤu:,beitiɳ/
+*  danh từ
+- sự ngược đãi người Do thái
+
+@jewel /'dʤu:əl/
+*  danh từ
+- ngọc đá quý
+- (số nhiều) đồ châu báu; đồ nữ trang, đồ kim hoàn
+- chân kinh (đồng hồ)
+- (nghĩa bóng) người đáng quý; vật quý
+*  ngoại động từ
+- nạm ngọc, nạm đá quý
+- tráng sức bằng châu báu
+- lắp chân kính (vào đồng hồ)
+
+@jewel-box /'dʤu:əlbɔks/ (jewel-case) /'dʤu:əlkeis/
+-case) /'dʤu:əlkeis/
+*  danh từ
+- hộp đựng châu báu; hộp nữ trang
+
+@jewel-case /'dʤu:əlbɔks/ (jewel-case) /'dʤu:əlkeis/
+-case) /'dʤu:əlkeis/
+*  danh từ
+- hộp đựng châu báu; hộp nữ trang
+
+@jewel-house /'dʤu:əlhaus/
+*  danh từ
+- the jewel-house kho châu báu Hoàng gia (ở Luân đôn)
+
+@jeweller /'dʤu:ələ/
+*  danh từ
+- người làm đồ nữ trang, thợ kim hoàn
+- người bán đồ châu báu; người bán đồ kim hoàn
+
+@jewellery /'dʤu:əlri/ (jewelry) /'dʤu:əlri/
+*  danh từ
+- đồ châu báu; đồ nữ trang, đồ kim hoàn (nói chung)
+- nghệ thuật làm đồ kim hoàn
+- nghề bán đồ châu báu; nghề bán đồ kim hoàn
+
+@jewelry /'dʤu:əlri/ (jewelry) /'dʤu:əlri/
+*  danh từ
+- đồ châu báu; đồ nữ trang, đồ kim hoàn (nói chung)
+- nghệ thuật làm đồ kim hoàn
+- nghề bán đồ châu báu; nghề bán đồ kim hoàn
+
+@jewess /'dʤu:is/
+*  danh từ
+- người đàn bà Do thái
+
+@jewish /'dʤu:iʃ/
+*  tính từ
+- (thuộc) người Do thái
+
+@jewry /'dʤuəri/
+*  danh từ
+- dân Do thái
+- (sử học) khu Do thái (ở một thành phố)
+
+@jezebel /'dʤezəbl/
+*  danh từ
+- người đàn bà phóng đâng hư hỏng; người đàn bà vô liêm sỉ
+- người đàn bà tô son trát phấn
+
+@jib /dʤib/
+*  danh từ
+- (hàng hải) lá buồm tam giác (ở mũi tàu, thuyền)
+- (kỹ thuật) cần máy trục, cần nhấc
+!the cut of one's jib
+- dáng vẻ bề ngoài
+*  động từ
+- (hàng hải) trở (buồm)
+*  nội động từ
+- đứng sững lại; giật lùi lại không chịu đi tiếp (ngựa...)
+- không chịu làm, lẩn tránh (việc gì)
+- (jib at) ghê tởm, gớm ghét, không thích
+=to jib at somebody+ tỏ ý ghét ai
+=to jib at something+ tỏ ý ghê tởm cái gì
+
+@jib door /'dʤib'dɔ:/
+*  danh từ
+- cửa làm bằng với mặt tường (và sơn đồng màu để không phân biệt được)
+
+@jib-boom /'dʤib'bu:m/
+*  danh từ
+- ((hàng hải)) sào căng buồm tam giác (ở mũi tàu, thuyền)
+
+@jib-crane /'dʤib'krein/
+*  danh từ
+- cần trục xoay
+
+@jibber /'dʤibə/
+*  danh từ
+- ngựa bất kham, ngựa hay trở chứng (không chịu đi...)
+
+@jibe /dʤaib/
+*  danh từ & động từ (như) gibe
+*  nội động từ
+- (từ Mỹ,nghĩa Mỹ),  (thông tục) phù hợp, hoà hợp, đi đôi với nhau
+=words and actions do not jibe+ lời nói và việc làm không đi đôi với nhau
+
+@jiff /'dʤif/ (jiffy) /'dʤifi/
+*  danh từ
+- (thông tục) chốc lát, thoáng nháy mắt
+=in a jiff+ chỉ một thoáng trong nháy mắt; ngay lập tức
+=wait [half] a jiff+ hây đợi một lát
+
+@jiffy /'dʤif/ (jiffy) /'dʤifi/
+*  danh từ
+- (thông tục) chốc lát, thoáng nháy mắt
+=in a jiff+ chỉ một thoáng trong nháy mắt; ngay lập tức
+=wait [half] a jiff+ hây đợi một lát
+
+@jig /dʤig/
+*  danh từ
+- điệu nhảy jig
+- nhạc (cho điệu nhảy) jig
+!the jig was up
+- hết hy vọng, hết đường
+*  nội động từ
+- nhảy điệu jig
+- nhảy tung tăng
+=to jig up and down+ nhảy tung tăng
+*  ngoại động từ
+- làm cho nhảy tung tăng; tung lên tung xuống nhanh
+=to jig a baby [up and down] on one's knees+ tung tung một em bé lên đầu gối
+*  danh từ
+- (kỹ thuật) đồ gá lắp, khuôn dẫn (khoan)
+- máy sàng, sàng (quặng, khoáng chất)
+*  ngoại động từ
+- (kỹ thuật) lắp đồ gá lắp, lắp khuôn dẫn (khoan)
+- sàng (quặng, khoáng chất)
+
+@jigger /'dʤigə/
+*  danh từ
+- người nhảy điệu jig
+
+@jigger-mast /'dʤigə'mɑ:st/
+*  danh từ
+- (hàng hải) cột buồm chót (của thuyền bốn buồm)
+
+@jiggered /'dʤigəd/
+*  danh từ
+- người sàng quặng; máy sàng quặng
+- (hàng hải) buồm nhỏ; palăng nhỏ để kéo buồm
+- (thể dục,thể thao) gậy sắt (để đánh gôn)
+*  tính từ
+- suột, gió, quái ác, chết tiệt
+=I'm jiggered!+ mình thật khỉ quá
+
+@jiggery-pokery /'dʤigəri'poukəri/
+*  danh từ
+- (thông tục) âm mưu đen tối
+- trò lừa phỉnh, trò lừa gạt
+
+@jiggle /'dʤigl/
+*  danh từ
+- động tác đưa đẩy nhẹ, cái xóc xóc nhẹ, cái lắc lắc nhẹ
+*  ngoại động từ
+- đưa đẩy nhẹ, xóc xóc nhẹ, lắc lắc nhẹ
+
+@jigsaw /'dʤigsɔ:/
+*  danh từ
+- (kỹ thuật) cưa xoi
+!jigsaw puzzle
+- trò chơi lắp hình
+
+@jihad /dʤi'hɑ:d/ (jehad) /dʤi'hɑ:d/
+*  danh từ
+- chiến tranh Hồi giáo (giữa những tín đồ đạo Hồi và những người không theo đạo Hồi)
+- (nghĩa bóng) cuộc vận động bảo vệ một chủ nghĩa; cuộc vận động chống lại một chủ nghĩa
+
+@jill /dʤil/
+*  danh từ,  (cũng) Jill  /dʤil/
+- (viết tắt) của Gillian
+- cô gái, bạn gái, người yêu
+=Jack and gill (Jill)+ chàng và nàng
+*  danh từ
+- Gin (đơn vị đo lường khoảng 0, 141 lít ở Anh, 0, 118 lít ở Mỹ)
+- khe núi sâu (thường có cây)
+- dòng suối trên núi
+*  danh từ,  (thường) số nhiều
+- mang (cá)
+- yếm (gà)
+- cằm dưới, cằm xệ (người)
+- (thực vật học) lá tia (ở mũ nấm)
+!to be (look) green about the gills
+- trông xanh xao vàng vọt
+!to be (look) rosy about the gills
+- trông hồng hào khoẻ mạnh
+*  ngoại động từ
+- mổ ruột (gà)
+- đánh (cá) bằng lưới móc (làm mắc mang cá vào)
+- bóc lá tia (ở mũ nấm)
+
+@jilt /dʤilt/
+*  danh từ
+- kẻ tình phụ, kẻ bỏ rơi người yêu ((thường) nói về người đàn bà)
+*  ngoại động từ
+- tình phụ, bỏ rơi người yêu
+
+@jim crow /'dʤim'krou/
+*  danh từ
+- (từ Mỹ,nghĩa Mỹ),  (thông tục) (như) Jim-crowism
+- (từ Mỹ,nghĩa Mỹ), ghuộm (án) đen
+- (định ngữ) dành cho người da đen, phân biệt chủng tộc đối với người Mỹ da đen
+=jim_crow policy+ chính sách phân biệt chủng tộc đối với người Mỹ da đen
+
+@jim-crow /'dʤimkrou/
+*  danh từ
+- cái nắn thắng (thanh sắt hoặc đường ray)
+
+@jim-crowism /'dʤim'krouizm/
+*  danh từ
+- (từ Mỹ,nghĩa Mỹ) chế độ phân biệt chủng tộc đối với người da đen
+
+@jim-dandy /'dʤim'dændi/
+*  tính từ
+- (từ Mỹ,nghĩa Mỹ),  (thông tục) cừ nhất, xuất sắc
+*  tính từ
+- (từ Mỹ,nghĩa Mỹ),  (thông tục) cái cừ nhất, cái xuất sắc (trong những cái cùng loại)
+
+@jim-jams /'dʤimdʤæmz/
+*  danh từ số nhiều (từ lóng)
+- chứng mê sảng rượu
+- (từ Mỹ,nghĩa Mỹ) (như) jitter
+
+@jimp /dʤimp/
+*  tính từ (Ớ-cốt)
+- mảnh dẻ, thanh thanh, dong dỏng
+- duyên dáng
+- nghèo nàn, ít ỏi
+
+@jimson-weed /'dʤimsnwi:d/
+*  danh từ
+- (thực vật học) cây cà độc dược
+
+@jingle /'dʤiɳgl/
+*  danh từ
+- tiếng leng keng (chuông nhỏ); tiếng xủng xoảng (của những đồng xu...)
+- sự lặp âm (cốt để gợi sự chú ý)
+- câu thơ nhiều âm điệp; câu thơ có nhiều vần điệp
+- Ai-len,  Uc xe hai bánh có mui
+*  ngoại động từ
+- rung leng keng (chuông nhỏ, nhạc ngựa...); xóc xủng xoảng (chùm chìa khoá, những đồng xu trong túi...)
+
+@jingo /'dʤiɳgou/
+*  danh từ,  số nhiều jingoes
+- phần tử sô-vanh hiếu chiến
+!by jungo!
+- trời ơi!, thế à! (tỏ ý ngạc nhiên, để nhấn mạnh một nhận xét)
+*  tính từ
+- sô-vanh hiếu chiến
+- hào nhoáng loè loẹt
+
+@jingoism /'dʤiɳgouizm/
+*  danh từ
+- chủ nghĩa sô-vanh hiếu chiến
+
+@jingoistic /,dʤiɳgou'istik/
+*  tính từ
+- sô-vanh hiếu chiến
+
+@jink /dʤiɳk/
+*  danh từ
+- sự tránh, sự né tránh
+*  động từ
+- tránh, né tránh
+- (quân sự),  (từ lóng) lách lách để tránh đạn cao xạ (máy bay)
+
+@jinn /dʤin/
+*  danh từ,  số nhiều của jinnee ((thường) dùng như số ít)
+
+@jinnee /dʤi'ni:/
+*  danh từ,  số nhiều jinn
+- (thần thoại,thần học) thần
+
+@jinricksha /dʤin'rikʃə/ (jinrikisha) /dʤin'rikiʃə/
+*  danh từ
+- xe tay, xe kéo
+
+@jinrikisha /dʤin'rikʃə/ (jinrikisha) /dʤin'rikiʃə/
+*  danh từ
+- xe tay, xe kéo
+
+@jinx /dʤiɳks/
+*  danh từ
+- (từ Mỹ,nghĩa Mỹ),  (từ lóng) người hâm tài, người đem lại điều rủi; vật xúi quẩy
+
+@jitney /'dʤitni/
+*  danh từ (từ Mỹ,nghĩa Mỹ),  (từ lóng)
+- đồng năm xu
+- xe buýt hạng rẻ tiền
+*  tính từ (từ Mỹ,nghĩa Mỹ),  (từ lóng)
+- rẻ tiền, hạng tồi, hạng kém
+*  nội động từ
+- đi ô tô buýt hạng rẻ tiền
+
+@jitter /'dʤitə/
+*  nội động từ (từ lóng)
+- bồn chồn, lo sợ; hốt hoảng kinh hâi; hành động hốt hoảng
+
+@jitterbug /'dʤitəbʌg/
+*  danh từ
+- người thần kinh dễ bị kích thích; người hay bồn chồn lo sợ
+- người thích nhảy những điệu giật gân
+
+@jitters /'dʤitəz/
+*  danh từ số nhiều
+- (từ Mỹ,nghĩa Mỹ),  (từ lóng) nỗi bồn chồn lo sợ, sự hốt hoảng kinh hãi
+=to have the jitters+ bồn chồn lo sợ, sợ xanh mắt
+
+@jittery /'dʤitəri/
+*  tính từ
+- (từ lóng) dễ bị kích thích; bồn chồn lo sợ; hốt hoảng kinh hãi
+
+@jiu-jitsu /dʤu:'dʤu:tsu:/ (jiu-jitsu) /dʤju:'dʤitsu:/
+-jitsu) /dʤju:'dʤitsu:/
+*  danh từ
+- võ juddô (võ Nhật)
+
+@jive /dʤaiv/
+*  danh từ
+- nhạc ja
+- (từ Mỹ,nghĩa Mỹ),  (từ lóng) tiếng lóng khó hiểu
+- (từ Mỹ,nghĩa Mỹ),  (từ lóng) chuyện huyên thiên; chuyên rỗng tuếch, chuyện vớ vẩn
+*  nội động từ
+- chơi nhạc ja
+- nhảy theo điệu nhạc ja
+*  ngoại động từ
+- (từ Mỹ,nghĩa Mỹ),  (từ lóng) chòng ghẹo, trêu ghẹo
+
+@job /dʤɔb /
+*  danh từ
+- việc, việc làm, công việc; việc làm thuê, việc làm khoán
+=to make a goof job of it+ làm tốt một công việc gì
+=to make a bad job of it+ làm hỏng một công việc gì
+=to work by the job+ làm khoán
+=old jobs+ công việc vặt
+- (thông tục) công ăn việc làm
+=in search of a job+ đi tìm công ăn việc làm
+=out of job+ thất nghiệp
+=to lose one's job+ mất công ăn việc làm
+- việc làm ăn gian lận để kiếm chác
+- việc, sự việc, sự thể; tình hình công việc
+=bad job+ việc hỏng toi, việc mất công toi; tình hình công việc xấu
+=good job+ tình hình công việc làm ăn tốt
+- cú thúc nhẹ, cú đâm nhẹ (bằng cái gì nhọn)
+- cú ghì giật hàm thiếc (làm đau mồn ngựa)
+!job of work
+- việc làm ăn khó khăn vất vả
+!to do somebody's job; to do the job for somebody
+- làm hại ai, gây tai hại cho ai
+!to give something up as a bad job
+- từ chối không làm việc gì
+!job lot
+- lô hàng mua trữ để đầu cơ
+- (từ Mỹ,nghĩa Mỹ) mớ tạp nhạp; bọn người tạp nhạp
+!to lie down on the job
+- làm đại khái, làm qua loa, làm ăn chểnh mảng
+!on the job
+- (từ lóng) đang làm, đang hoạt động
+- bận rộn
+!to put up a job on somebody
+- (từ Mỹ,nghĩa Mỹ) chơi xỏ ai một vố
+*  nội động từ
+- làm những việc lặt vặt, làm những việc linh tinh; (thông tục) sửa chữa lặt vặt
+- đầu cơ
+- làm môi giới chạy hành xách
+- xoay sở kiếm chác; dở ngon gian lận để kiếm chác
+- buôn bán cổ phần (chứng khoán)
+- (job at) đâm, thúc
+*  ngoại động từ
+- thuê (ngựa, xe...); cho thuê (ngựa, xe...)
+- cho làm khoán; nhận làm khoán (một công việc)
+- mua bán đầu cơ (hàng)
+- lợi dụng (chức vụ...) để xoay sở kiếm chác
+- thúc nhẹ, đâm nhẹ (bằng cái gì nhọn)
+- ghì giật hàm thiếc làm đau mồm (ngựa)
+*  nội động từ
+- (+ at) đâm, thúc[dʤoub]
+*  danh từ (Job)
+- (kinh thánh) Giốp
+- người chịu đựng đau khổ nhiều; người kiên nhẫn chịu đựng
+!Job's comforter
+- người làm ra bộ an ủi nhưng chỉ cốt gây thêm đau khổ
+!Job's news
+- tin buồn
+!this would try the patience of Job
+- làm thế thì không ai có thể chịu đựng được; làm thế thì đến bụt cũng phải tức
+
+@job printer /'dʤɔb'printə/
+*  danh từ
+- thợ in những thứ lặt vặt
+
+@job printing /'dʤɔb'printiɳ/
+*  danh từ
+- nghề in những thứ lặt vặt
+
+@job-work /'dʤɔbwə:k/
+*  danh từ
+- việc làm khoán
+
+@jobation /dʤou'beiʃn/
+*  danh từ
+- lời quở trách lải nhải, lời mắng nhiếc lải nhải
+
+@jobber /'dʤɔbə/
+*  danh từ
+- người làm thuê việc lặt vặt; người làm khoán
+- kẻ đầu cơ
+- người môi giới chạy hàng xách
+- người buôn bán cổ phần (chứng khoán)
+- (từ Mỹ,nghĩa Mỹ) người bán buôn
+- người cho thuê ngựa, người cho thuê xe
+- kẻ lợi dụng chức vụ để xoay sở kiếm chác
+
+@jobbernowl /'dʤɔbənoul/
+*  danh từ
+- (thông tục) người ngớ ngẩn, người xuẩn ngốc
+
+@jobbery /'dʤɔbəri/
+*  danh từ
+- sự đầu cơ
+- sự buôn bán cổ phần (chứng khoán)
+- sự xoay sở kiếm chác; sự lợi dụng chức vụ để xoay sở kiếm chác
+
+@jobholder /'dʤɔb,houldə/
+*  danh từ
+- người có công việc làm ăn chắc chắn
+- (từ Mỹ,nghĩa Mỹ) công chức, viên chức
+
+@jobless /'dʤɔblis/
+*  tính từ
+- không có việc làm; không có công ăn việc làm
+
+@jobmaster /'dʤɔb,mɑ:stə/
+*  danh từ
+- người cho thuê ngựa; người cho thuê xe ngựa
+
+@jock /dʤɔk/
+*  danh từ
+- (từ lóng) lính Ê-cốt
+- (thông tục) (như) jockey
+
+@jockey /'dʤɔki/
+*  danh từ
+- người cưỡi ngựa đua, dô kề
+!Jockey Club
+- hội đua ngựa (ở Anh, nắm các cuộc đua ngựa)
+- người hầu, người dưới
+*  động từ
+- cưỡi ngựa đua, làm dô kề
+- lừa bịp, lừa phỉnh, dùng mánh khoé để dành thắng lợi
+=to jockey someone out of something+ lừa bịp ai lấy cái gì
+=to jockey someone into doing something+ lừa phỉnh ai làm gì
+=to jockey for position+ dùng mẹo khôn khéo để giành ưu thế (trong cuộc đua thuyền...); giành lấy lợi về mình một cách không chính đáng
+
+@jocko /'dʤɔkou/
+*  danh từ
+- (động vật học) con tinh tinh
+
+@jockstrap /'dʤɔkstræp/
+*  danh từ
+- khố đeo (âm nang) (của các vận động viên thể dục thể thao)
+
+@jocose /dʤə'kous/
+*  tính từ
+- đùa bỡn, vui đùa; hài hước, khôi hài
+
+@jocoseness /dʤə'kousnis/ (jocosity) /dʤou'kɔsiti/
+*  danh từ
+- sự đùa bỡn
+- tính vui đùa; tính hài hước, tính khôi hài
+
+@jocosity /dʤə'kousnis/ (jocosity) /dʤou'kɔsiti/
+*  danh từ
+- sự đùa bỡn
+- tính vui đùa; tính hài hước, tính khôi hài
+
+@jocular /'dʤɔkjulə/
+*  tính từ
+- vui vẻ, vui đùa; hài hước, buồn cười
+
+@jocularity /,dʤɔkju'læriti/
+*  tính từ
+- sự vui vẻ, sự vui đùa
+- thái độ hài hước, hành động hài hước; lời nói hài hước vui đùa, lời nói đùa
+
+@jocund /'dʤɔkənd/
+*  tính từ
+- vui vẻ, vui tươi
+- vui tính
+
+@jocundity /dʤou'kʌnditi/
+*  danh từ
+- tâm trạng vui vẻ, tâm trạng vui tươi
+- sự vui tính
+
+@jodhpurs /'dʤɔdpuəz/
+*  danh từ (Anh-Ỡn)
+- quần đi ngựa (bóp ống từ đầu gối đến mắt cá chân)
+
+@joe /dʤou/
+*  danh từ
+- not for joe! tớ thì thôi!; thôi đừng cho tớ!
+- ((từ Mỹ,nghĩa Mỹ),  (quân sự),  (từ lóng)) người lính ((cũng) Joe Blow)
+
+@joe miller /'dʤou'milə/
+*  danh từ
+- câu pha trò nhảm, câu pha trò cũ rích
+
+@joey /'dʤoui/
+*  danh từ
+- con canguru con
+- con thú con
+
+@jog /dʤɔg/
+*  danh từ
+- cái lắc nhẹ, cái xóc nhẹ; cái đẩy nhẹ
+- cái hích nhẹ (bằng cùi tay)
+- bước đi chậm chạp
+- nước kiệu chậm (ngựa)
+*  ngoại động từ
+- lắc nhẹ, xóc nhẹ; đẩy nhẹ
+- hích bằng cùi tay (để cho chú ý...)
+- nhắc lại, gợi lại (trí nhớ)
+=to jog someone's memory+ nhắc cho người nào nhớ lại
+*  nội động từ
+- đi lắc lư
+- (jog on,  along) bước đi khó khăn, bước đi thong thả
+- tiến hành, tiến triển, tiếp tục
+=matters jog along+ sự việc vẫn cứ tiến triển
+- chạy nước kiệu chậm (ngựa)
+- đi, lên đường
+=we must be jogging+ chúng ta phải đi thôi
+
+@joggle /'dʤɔgl/
+*  danh từ
+- cái xóc xóc nhẹ, cái lắc lắc nhẹ
+- vấu nối, gờ nối (hai phiến đá, hai thanh gỗ)
+*  ngoại động từ
+- xóc xóc nhẹ, lắc lắc nhẹ
+- nối bằng vấu nối
+*  nội động từ
+- chạy lắc lắc nhẹ; chạy xóc nảy lên
+
+@jogtrot /'dʤɔg'trɔt/
+*  danh từ
+- bước đi lắc lư chầm chậm
+- nước kiệu chậm (ngựa)
+- (nghĩa bóng) sự tiến triển đều đều
+- (định ngữ) đều đều, buồn tẻ
+=a jogtrot life+ cuộc sống đều đều, buồn tẻ
+
+@john bull /'dʤɔn'bul/
+*  danh từ
+- Giôn Bun (người Anh điển hình; nước Anh nhân cách hoá)
+
+@john dory /'dʤɔn'dɔ:ri/
+*  danh từ
+- (động vật học) cá dây
+
+@johnny /'dʤɔni/
+*  danh từ
+- anh chàng, gã, thằng cha
+- anh chàng ăn diện vô công rỗi nghề
+
+@johnny-cake /'dʤɔnikeik/
+*  danh từ
+- (từ Mỹ,nghĩa Mỹ) bánh ngô
+- Uc bánh bột mì
+
+@johnny-on-the-spot /'dʤɔniɔnðə'spɔt/
+*  tính từ
+- (từ Mỹ,nghĩa Mỹ),  (thông tục) cần đến là có mặt ngay (người)
+*  danh từ
+- (từ Mỹ,nghĩa Mỹ),  (thông tục) người cần đến là có mặt ngay
+
+@joie de vivre /,ʤwɑ:də'vi:vr/
+*  danh từ
+- niềm vui sống
+
+@join /dʤɔin/
+*  ngoại động từ
+- nối lại, chắp, ghép, buộc (cái nọ vào cái kia)
+- nối liền
+=the road joins the two cities+ con đường nối liền hai thành phố
+- thắt chặt, hợp nhất, kết hợp, liên hiệp; kết giao, kết thân
+=to join forces with+ hợp lực với
+=to join two persons in marriage+ kết thân hai người trong mối tình vợ chồng
+- gia nhập, nhập vào, vào
+=to join a party+ gia nhập một đảng
+=to join the army+ vào quân đội, nhập ngũ
+- tiếp với, gặp; đổ vào (con sông)
+=where the foot-path joins the main road+ ở nơi mà con đường nhỏ nối với con đường cái
+=where the Luoc river joins the Red river+ ở nơi mà sông Luộc đổ vào sông Hồng
+- đi theo, đến với, đến gặp; cùng tham gia
+=I'll join you in a few minutes+ độ vài phút nữa tôi sẽ đến với anh
+=would you join us in our picnic?+ anh có muốn tham gia cuộc đi chơi ngoài trời với chúng tôi không?
+- trở về, trở lại
+=to join the regiment+ trở lại trung đoàn (sau ngày nghỉ phép...)
+=to join the ship+ trở về tàu
+*  nội động từ
+- nối lại với nhau, thắt chặt lại với nhau, kết hợp lại với nhau; liên hiệp với nhau, kết thân với nhau
+- gặp nhau, nối tiếp nhau
+=parallet lines never join+ hai đường song song không bao giờ gặp nhau
+=where the two rivers join+ ở nơi mà hai con sông gặp nhau
+- tham gia, tham dự, nhập vào, xen vào
+=to join in the conversation+ tham gia vào câu chuyện
+- (từ cổ,nghĩa cổ) giáp với nhau, tiếp giáp với nhau
+=the two gardens join+ hai khu vườn tiếp giáp với nhau
+- (quân sự) nhập ngũ ((cũng) join up)
+!to join battle
+- bắt đầu giao chiến
+!to join hands
+- nắm chặt tay nhau, bắt chặt tay nhau
+- (nghĩa bóng) phối hợp chặt chẽ với nhau; câu kết chặt chẽ với nhau (để làm gì)
+*  danh từ
+- chỗ nối, điểm nối, đường nối
+
+@joinder /'dʤɔində/
+*  danh từ
+- (pháp lý) sự liên hợp, sự liên kết (giữa các người thuộc bên bị trong một vụ kiện)
+
+@joiner /'dʤɔinə/
+*  danh từ
+- thợ làm đồ gỗ (chuyên đóng đồ gỗ dùng trong nhà)
+- (từ Mỹ,nghĩa Mỹ) hội viên nhiều câu lạc bộ; người có chân trong nhiều tổ chức
+
+@joinery /'dʤɔinəri/
+*  danh từ
+- nghề làm đồ gỗ (dùng trong nhà)
+- đồ gỗ (bàn, ghế, tủ...)
+
+@joint /dʤɔint/
+*  danh từ
+- chỗ nối, mối nối, đầu nối
+- (giải phẫu) khớp (xương)
+=out of joint+ trật khớp, sai khớp; (nghĩa bóng) trục trặc, không ăn khớp, lộn bậy lung tung
+- (thực vật học) mấu, đốt
+- (địa lý,ddịa chất) khe nứt, thớ nứt (ở khối đá...)
+- súc thịt (pha ra)
+- (kỹ thuật) mối hàn, mối nối, mối ghép; khớp nối, bản lề
+- (từ Mỹ,nghĩa Mỹ),  (từ lóng) ổ lưu manh, ổ gái điếm lén lút, tiệm lén hút; hắc điếm
+!to put someone's nese out of joint
+- (xem) nose
+*  tính từ
+- chung (giữa hai hay nhiều người)
+=joint efforts+ cố gắng chung (của hai hay nhiều người)
+=a joint communiqué+ thông cáo chung
+=during their joint lives+ (pháp lý) trong khi cả hai người (tất cả) đều còn sống
+*  ngoại động từ
+- nối lại bằng đoạn nối, ghép lại bằng đoạn nối
+- cắt tại những đoạn nối; chia ra từng đoạn
+- trát vữa vào khe nối của (tường...)
+- bào cạnh (tấm ván) để ghép
+
+@joint staff /'dʤɔint'stɑ:f/
+*  danh từ
+- (quân sự) bộ tổng tham mưu
+
+@joint-heir /'dʤɔint'eə/
+*  danh từ
+- người cùng kế thừa
+
+@joint-pin /'dʤɔintpin/
+*  danh từ
+- (kỹ thuật) đinh ghép; cái chốt; bu-lông kiểu bản lề
+
+@jointer /'dʤɔintə/
+*  danh từ
+- cáo bào xoi (để bào ghép)
+- (kỹ thuật) máy nối, máy ghép
+- cái trát vữa (vào các khe hở)
+- thợ nối đường dây (điện)
+
+@jointly /'dʤɔintli/
+*  phó từ
+- cùng, cùng nhau, cùng chung
+=to jointly strive for freedom and peace+ cùng chung sức phấn đấu cho tự do và hoà bình
+
+@jointress /'dʤɔintris/
+*  danh từ
+- người thừa hưởng của chồng (đàn bà goá được hưởng tài sản của chồng để lại)
+
+@jointure /jointure/
+*  danh từ
+- tài sản của chồng để lại (cho vợ sau khi chết)
+*  ngoại động từ
+- tài sản để lại cho (vợ)
+
+@joist /dʤɔist/
+*  danh từ
+- (kiến trúc) rầm (nhà)
+
+@joke /dʤouk/
+*  danh từ
+- lời nói đùa, câu nói đùa
+=to crack a joke+ nói đùa một câu
+=to play a joke on someone+ đùa nghịch trêu chọc ai
+=to know how to take a joke+ biết nghe nói đùa, không để tâm giận lời nói đùa
+=a practical joke+ trò đùa ác ý, trò chơi khăm
+- trò cười (cho thiên hạ)
+- chuyện đùa; chuyện buồn cười, chuyện lố bịch; trường hợp xảy ra buồn cười
+=it is no joke+ không phải là chuyện đùa
+=the joke is that+ điều buồn cười là
+*  động từ
+- nói đùa
+- đùa bỡn, giễu cợt; trêu chòng
+
+@joker /'dʤoukə/
+*  danh từ
+- người thích thú đùa; người hay pha trò
+- (từ lóng) anh chàng, cu cậu, gã, thằng cha
+- quân bài J
+- (từ Mỹ,nghĩa Mỹ) điều khoản mánh khoé (có thể hiểu nhiều cách, lồng vào một văn kiện để dễ đưa người ta vào tròng)
+- (từ Mỹ,nghĩa Mỹ) điều khó khăn ngầm, điều khó khăn không người tới
+
+@jokingly /'dʤoukiɳli/
+*  phó từ
+- đùa
+- đùa bỡn, giễu cợt, trêu chòng
+
+@jokul /'joukul/
+*  danh từ
+- núi tuyết, núi băng
+
+@joky /'dʤouki/
+*  tính từ
+- vui đùa, bông đùa, thích đùa
+
+@jollier /'dʤɔliə/
+*  danh từ
+- (từ Mỹ,nghĩa Mỹ) người hay nói đùa, người hay pha trò
+
+@jollification /,dʤɔlifi'keiʃn/
+*  danh từ
+- trò vui
+- cuộc vui chơi
+
+@jollify /'dʤɔlifai/
+*  nội động từ
+- vui chơi, đánh chén, chè chén say sưa
+*  ngoại động từ
+- làm cho vui vẻ, làm cho vui lên
+- làm say ngà ngà
+
+@jolliness /'dʤɔlinis/
+*  danh từ
+- sự vui vẻ, sự vui nhộn ((cũng) jollity)
+
+@jollity /'dʤɔliti/
+*  danh từ
+- sự vui vẻ, sự vui nhộn ((cũng) jolliness)
+- cuộc vui chơi, hội hè đình đám
+
+@jolly /'dʤɔli/
+*  tính từ
+- vui vẻ, vui tươi, vui nhộn
+- chếnh choáng say, ngà ngà say
+=the jolly god+ thần rượu
+- (từ lóng) thú vị, dễ chịu
+=jolly weather+ thời tiết dễ chịu
+-(mỉa mai) thú vị gớm; dễ chịu gớm, hay ho gớm
+=what a jolly mess I am in!+ mình thật là lâm vào một hoàn cảnh dễ chịu gớm!
+*  phó từ
+- (từ lóng) rất, hết sức, lắm, quá
+=jolly tired+ mệt hết sức, mệt lử
+=you will jolly well have to do it+ anh phải làm cái đó là đúng quá đi rồi, nhất định là anh phải làm cái đó rồi
+*  ngoại động từ
+- (thông tục) ((thường) + along) tán tỉnh, phỉnh phờ, phỉnh nịnh
+- đùa bỡn, trêu chòng, chòng ghẹo
+
+@jolly-boat /'dʤɔlibout/
+*  danh từ
+- xuồng nhỏ (trên tàu thuỷ)
+
+@jolt /dʤoult/
+*  danh từ
+- cái lắc bật ra, cái xóc nảy lên
+- (từ Mỹ,nghĩa Mỹ) cú đấm choáng váng (quyền Anh)
+- (từ Mỹ,nghĩa Mỹ) sự ngạc nhiên làm choáng váng, sự thất vọng choáng váng; cú điếng người
+*  ngoại động từ
+- lắc bật ra, làm xóc nảy lên
+*  nội động từ
+- ((thường) + along) chạy xóc nảy lên (ô tô)
+
+@jolterhead /'dʤoultəhed/
+*  danh từ
+- người ngớ ngẩn, người ngốc nghếch
+
+@jolty /'dʤoulti/
+*  tính từ
+- xóc nảy lên (xe)
+- khấp khểnh, gập ghềnh (đường)
+
+@jonah /'dʤounə/
+*  danh từ
+- (thông tục) anh chàng số đen
+
+@jonathan /'dʤɔnəθən/
+*  danh từ
+- táo jonathan (một loại táo ăn tráng miệng)
+- Giô-na-than (người Mỹ điển hình; dân tộc Mỹ nhân cách hoá) ((cũng) Brother jonathan)
+
+@jongleur /ʤɔ:ɳ'glə:/
+*  danh từ
+- người hát rong (thời Trung cổ)
+
+@jonny raw /'dʤɔni'rɔ:/
+*  danh từ
+- người mới vào nghề
+- (quân sự),  (từ lóng) tân binh, lính mới
+
+@jonquil /'dʤɔɳkwil/
+*  danh từ
+- (thực vật học) cây trường thọ
+- hoa trường thọ
+- màu hoa trường thọ, màu vàng nhạt
+
+@jordan /'dʤɔ:dn/
+*  danh từ
+- ùi màng để đi đái đêm)
+
+@jorum /'dʤɔ:rəm/
+*  danh từ
+- bát lớn, cốc vại (để uống rượu)
+- bát đầy rượu pân
+
+@joseph /'dʤouzif/
+*  danh từ
+- người đàn ông chay tịnh
+- áo choàng mặc cưỡi ngựa (của đàn bà (thế kỷ) 18)
+
+@josh /dʤɔʃ/
+*  danh từ
+- (từ Mỹ,nghĩa Mỹ),  (từ lóng) lời nói đùa vui; lời bỡn cợt
+*  động từ,  (từ lóng)
+- bỡn cợt, trêu chòng, chòng ghẹo
+
+@joskin /'dʤɔskin/
+*  danh từ
+- (từ lóng) người quê mùa, cục mịch
+
+@joss /dʤɔs/
+*  danh từ
+- thần (ở Trung quốc)
+
+@joss-house /dʤɔshaus/
+*  danh từ
+- đền, miếu (ở Trung quốc)
+
+@joss-stick /'dʤɔsstik/
+*  danh từ
+- nén hương
+
+@josser /dʤɔsə/
+*  danh từ
+- (từ lóng) người ngu xuẩn
+- (từ lóng) anh chàng, gã, lặn
+
+@jostle /'dʤɔsl/
+*  danh từ
+- sự xô đẩy, sự chen lấn, sự hích nhau
+*  động từ
+- đẩy, xô đẩy, chen lấn, hích khuỷ tay
+=to be jostlesd by the crowd+ bị đám đông xô đẩy
+- (jostle against) xô vào, va vào
+- tranh giành (với ai...)
+=to jostle with someone for something+ tranh giành với ai lấy cái gì
+
+@jot /dʤɔt/
+*  danh từ
+- chút, tí tẹo
+=not a jot+ không một chút nào
+
+@jotting /'dʤɔtiɳ/
+*  danh từ
+- đoạn ngắn ghi nhanh
+
+@joule /dʤu:l/
+*  danh từ
+- (điện học) Jun
+
+@jounce /dʤauns/
+*  động từ
+- lắc, xóc nảy lên
+
+@journal /'dʤə:nl/
+*  danh từ
+- báo hằng ngày
+- tạp chí
+- (hàng hải); (thương nghiệp) nhật ký
+- (số nhiều) (the Journals) biên bản (những phiên họp nghị viện)
+- (kỹ thuật) cổ trục, ngõng trục
+
+@journal-box /'dʤə:nlbɔks/
+*  danh từ
+- (kỹ thuật) hộp ổ trục
+
+@journalese /'dʤə:nə'li:z/
+*  danh từ
+- văn viết báo, văn nhà báo (viết vội, cẩu thả)
+
+@journalise /'dʤə:nəlaiz/ (journalise) /'dʤə:nəlaiz/
+*  ngoại động từ
+- (thương nghiệp) ghi vào sổ nhật ký (kế toán)
+- ghi nhật ký
+*  nội động từ
+- giữ nhật ký
+
+@journalism /'dʤə:nəlizm/
+*  danh từ
+- nghề làm báo, nghề viết báo
+
+@journalist /'dʤə:nəlist/
+*  danh từ
+- nhà báo
+
+@journalistic /,dʤə:nə'listik/
+*  tính từ
+- (thuộc) báo chí; (thuộc) nghề nhà báo
+
+@journalistically /,dʤə:nə'listikəli/
+*  phó từ
+- về mặt báo chí; theo kiểu nhà báo; theo quan điểm báo chí
+
+@journalize /'dʤə:nəlaiz/ (journalise) /'dʤə:nəlaiz/
+*  ngoại động từ
+- (thương nghiệp) ghi vào sổ nhật ký (kế toán)
+- ghi nhật ký
+*  nội động từ
+- giữ nhật ký
+
+@journey /'dʤə:ni/
+*  danh từ
+- cuộc hành trình (thường là bằng đường bộ)
+- chặng đường đi, quâng đường đi (trong một thời gian nhất định)
+=to go by easy journeys+ đi từng chặng đường ngắn
+=a three day's journey+ chặng đường đi mất ba ngày; cuộc hành trình ba ngày
+*  nội động từ
+- làm một cuộc hành trình
+
+@journey-work /'dʤə:niwə:k/
+*  danh từ
+- công việc của người làm thuê
+
+@journeyman /'dʤə:nimən/
+*  danh từ
+- thợ (thợ máy hoặc thợ thủ công) đã thạo việc đi làm thuê (đối lại với người mới học nghề)
+- (nghĩa bóng) người làm thuê
+- (từ cổ,nghĩa cổ) người làm công nhật
+
+@joust /dʤaust/
+*  danh từ
+- cuộc cưỡi ngựa đấu thương
+*  nội động từ
+- cưỡi ngựa đấu thương
+
+@jove /dʤouv/
+*  danh từ
+- (thần thoại,thần học) thần Giu-pi-te
+!by Jove!
+- thế à!, trời ơi!
+
+@jovial /'dʤouvjəl/
+*  tính từ
+- vui vẻ, vui tính
+
+@joviality /,dʤouvi'æliti/
+*  danh từ
+- tính vui vẻ, tâm hồn vui vẻ; thái độ vui vẻ
+
+@jovian /'dʤouviən/
+*  tính từ
+- (thuộc) thần Giu-pi-te; giống thần Giu-pi-te
+- (thuộc) sao Mộc
+
+@jowl /dʤaul/
+*  danh từ
+- xương hàm, hàm (thường là hàm dưới)
+- má
+- cằm xị (người); yếm (bò); diều (chim)
+- đầu (cá hồi...)
+!cheek by jowl
+- (xem) cheek
+
+@joy /dʤɔi/
+*  danh từ
+- sự vui mừng, sự hân hoan, sự vui sướng
+=to jump for joy+ nhảy lên vì vui sướng
+=to someone's joy+ làm cho ai vui sướng
+- niềm vui
+=he is the joy and pride of his mother+ nó là niềm vui và tự hào của mẹ nó
+*  nội động từ
+- (thơ ca) vui mừng, vui sướng
+- (thơ ca) làm vui mừng, làm vui sướng
+
+@joy-bells /'dʤɔibelz/
+*  danh từ
+- hồi chuông ngày lễ; hồi chuông báo tin vui
+
+@joy-ride /'dʤɔiəsnis/
+*  danh từ
+- (từ lóng) cuộc đi chơi lén bằng ô tô của người khác, cuộc đi chơi lén bằng máy bay của người khác (lấy đi lén không cho chủ nhân biết)
+*  nội động từ
+- đi chơi lén bằng ô tô của người khác, đi chơi lén bằng máy bay của người khác
+
+@joyful /'dʤɔiful/
+*  tính từ
+- vui mừng, hân hoan, vui sướng
+- mang lại niềm vui, đáng mừng
+
+@joyfulness /'dʤɔifulnis/
+*  danh từ
+- sự vui mừng, sự vui sướng, sự tràn ngập niềm vui
+
+@joyless /'dʤɔilis/
+*  tính từ
+- không vui, buồn
+
+@joyous /'dʤɔiəs/
+*  tính từ
+- vui mừng, vui sướng
+
+@joyousness /'dʤɔiəsnis/
+*  danh từ
+- sự vui mừng, sự vui sướng
+
+@joystick /'dʤɔistik/
+*  danh từ
+- (từ lóng) cần điều khiển (của máy bay)
+
+@ju-ju /'dʤu:dʤu:/
+*  danh từ
+- vật thần (để thờ cúng); bùa (trừ ma quỷ)
+- điều cấm kỵ (ở các dân tộc dã man)
+
+@ju-jutsu /dʤu:'dʤu:tsu:/ (jiu-jitsu) /dʤju:'dʤitsu:/
+-jitsu) /dʤju:'dʤitsu:/
+*  danh từ
+- võ juddô (võ Nhật)
+
+@jubilance /,dʤu:bi'leiʃn/ (jubilance) /'dʤu:biləns/
+*  danh từ
+- sự vui sướng, sự mừng rỡ, sự hân hoan; sự tưng bừng hớn hở
+
+@jubilant /'dʤu:bilənt/
+*  tính từ
+- vui sướng, mừng rỡ, hân hoan; tưng bừng hớn hở
+
+@jubilate /'dʤu:bileit/
+*  nội động từ
+- vui sướng, mừng rỡ, hân hoan; tưng bừng hớn hở
+
+@jubilation /,dʤu:bi'leiʃn/ (jubilance) /'dʤu:biləns/
+*  danh từ
+- sự vui sướng, sự mừng rỡ, sự hân hoan; sự tưng bừng hớn hở
+
+@jubilee /'dʤu:bili:/
+*  danh từ
+- lễ kỷ niệm 50 năm
+=silver jubilee+ lễ kỷ niệm 25 năm
+!Diamond Jubilee
+- lễ mừng 60 năm trị vì của hoàng hậu Vích-to-ri-a (1867)
+- dịp vui mùa mở hội
+- niềm hân hoan, niềm vui tưng bừng
+- (sử học) ngày lễ toàn xá (50 năm một lần của Do thái)
+- (tôn giáo) ngày lễ đại xá (đạo Cơ đốc)
+
+@judaic /dʤu:'deiik/
+*  tính từ
+- (thuộc) Do thái
+
+@judaise /'dʤu:deiaiz/ (Judaise) /'dʤu:deiaiz/
+*  động từ
+- Do thái hoá
+
+@judaism /'dʤu:deiizm/
+*  danh từ
+- đạo Do thái
+
+@judaist /'dʤu:deiist/
+*  danh từ
+- người theo đạo Do thái
+
+@judaize /'dʤu:deiaiz/ (Judaise) /'dʤu:deiaiz/
+*  động từ
+- Do thái hoá
+
+@judas /'dʤu:dəs/
+*  danh từ
+- (kinh thánh) Giu-dda (kẻ đã phản bội Chúa Giê-xu)
+- (nghĩa bóng) kẻ phản bội
+- (judas) lỗ nhỏ đục ở cánh cửa ((cũng) judas-hole)
+
+@judas-coloured /'dʤu:dəs'kʌləd/
+*  tính từ
+- đỏ hoe (râu, tóc...)
+
+@judas-hole /'dʤu:dəshoul/
+*  danh từ
+- lỗ nhỏ đục ở cánh cửa ((cũng) judas)
+
+@judder /'dʤʌdə/
+*  danh từ
+- sự lắc, sự rung
+*  nội động từ
+- lắc, rung
+
+@judge /'dʤʌdʤ/
+*  danh từ
+- quan toà, thẩm phán
+- người phân xử, trọng tài
+- người am hiểu, người sành sỏi
+=a judge of art+ người am hiểu nghệ thuật
+*  ngoại động từ
+- xét xử, phân xử (một vụ kiện, một người có tội...)
+- xét, xét đoán, phán đoán, đánh giá
+=do not judge people by appearance+ đừng xét người theo bề ngoài
+- xét thấy, cho rằng, thấy rằng
+=if you judge it to be necessary+ nếu anh xét thấy cái đó là cần thiết
+- (từ cổ,nghĩa cổ) phê bình, chỉ trích
+*  nội động từ
+- làm quan toà
+- làm người phân xử, làm trọng tài
+- xét, xét xử, xét đoán
+
+@judge-made /''dʤʌdʤmeid/
+*  tính từ
+- judge-made law những nguyên tắc căn cứ trên quyết định của các quan toà
+
+@judgematic /,dʤʌdʤ'mætik/ (judgematical) /,dʤʌdʤ'mætikəl/
+*  tính từ
+- (thông tục) biết suy xét, biết lẽ phải
+- đúng, chí lý
+
+@judgematical /,dʤʌdʤ'mætik/ (judgematical) /,dʤʌdʤ'mætikəl/
+*  tính từ
+- (thông tục) biết suy xét, biết lẽ phải
+- đúng, chí lý
+
+@judgement /'dʤʌdʤmənt/ (judgement) /'dʤʌdʤmənt/
+*  danh từ
+- sự xét xử
+=to pass (give, render) judgment on someone+ xét xử ai
+- quyết định của toà; phán quyết, án
+=the last judgment+ (tôn giáo) phán quyết cuối cùng (của Chúa)
+- sự trừng phạt, sự trừng trị; điều bất hạnh (coi như sự trừng phạt của trời)
+=your failure is a judgment on you for being so lazy+ sự thất bại của anh là một trừng phạt đối với cái tội lười biếng của anh đấy
+- sự phê bình, sự chỉ trích
+- ý kiến, cách nhìn, sự đánh giá
+=in my judgment+ theo ý kiến tôi
+- óc phán đoán, sức phán đoán, óc suy xét; lương tri
+=to show good judgment+ tỏ ra có óc suy xét
+=a man of sound judgment+ người có óc suy xét chắc chắn; người biết suy xét
+
+@judgement creditor /'dʤʌdʤmənt'kreditə/ (judgement_creditor) /'dʤʌdʤmənt'kreditə/
+*  danh từ
+- người được toà xét có quyền thu nợ
+
+@judgement debt /'dʤʌdʤməntdet/ (judgement_debt) /'dʤʌdʤməntdet/
+*  danh từ
+- món nợ toà xét phải trả
+
+@judgement debtor /'dʤʌdʤmənt'detə/ (judgement_debtor) /'dʤʌdʤmənt'detə/
+*  danh từ
+- người bị toà xét phải trả nợ
+
+@judgement-day /'dʤʌdʤməntdei/ (judgement-day) /'dʤʌdʤməntdei/
+-day) /'dʤʌdʤməntdei/
+*  danh từ
+- (tôn giáo) ngày phán quyết
+
+@judgeship /'dʤʌdʤʃip/
+*  danh từ
+- chức vị quan toà
+
+@judgment /'dʤʌdʤmənt/ (judgement) /'dʤʌdʤmənt/
+*  danh từ
+- sự xét xử
+=to pass (give, render) judgment on someone+ xét xử ai
+- quyết định của toà; phán quyết, án
+=the last judgment+ (tôn giáo) phán quyết cuối cùng (của Chúa)
+- sự trừng phạt, sự trừng trị; điều bất hạnh (coi như sự trừng phạt của trời)
+=your failure is a judgment on you for being so lazy+ sự thất bại của anh là một trừng phạt đối với cái tội lười biếng của anh đấy
+- sự phê bình, sự chỉ trích
+- ý kiến, cách nhìn, sự đánh giá
+=in my judgment+ theo ý kiến tôi
+- óc phán đoán, sức phán đoán, óc suy xét; lương tri
+=to show good judgment+ tỏ ra có óc suy xét
+=a man of sound judgment+ người có óc suy xét chắc chắn; người biết suy xét
+
+@judgment creditor /'dʤʌdʤmənt'kreditə/ (judgement_creditor) /'dʤʌdʤmənt'kreditə/
+*  danh từ
+- người được toà xét có quyền thu nợ
+
+@judgment debt /'dʤʌdʤməntdet/ (judgement_debt) /'dʤʌdʤməntdet/
+*  danh từ
+- món nợ toà xét phải trả
+
+@judgment debtor /'dʤʌdʤmənt'detə/ (judgement_debtor) /'dʤʌdʤmənt'detə/
+*  danh từ
+- người bị toà xét phải trả nợ
+
+@judgment-day /'dʤʌdʤməntdei/ (judgement-day) /'dʤʌdʤməntdei/
+-day) /'dʤʌdʤməntdei/
+*  danh từ
+- (tôn giáo) ngày phán quyết
+
+@judgment-seat /'dʤʌdʤməntsi:t / (judgement-seat) /'dʤʌdʤməntsi:t/
+-seat) /'dʤʌdʤməntsi:t/
+*  danh từ
+- ghế quan toà, chỗ ngồi của quan toà
+- toà án
+
+@judicature /'dʤu:dikətʃə/
+*  danh từ
+- các quan toà (của một nước)
+- bộ máy tư pháp
+!the Supreme Court of Judicature
+- toà án tối cao nước Anh
+- chức quan toà; nhiệm kỳ quan toà
+- toà án
+
+@judicial /dʤu:'diʃəl/
+*  tính từ
+- (thuộc) toà án; (thuộc) quan toà; (thuộc) pháp luật ((cũng) judiciary)
+=the judicial bench+ các quan toà
+=a judicial assembly+ toà án
+=to take (bring) judicial proceedings against someone+ truy tố ai tại toà
+- do toà án xét xử, do toà quyết định
+=a judicial separation+ sự biệt cư do toà quyết định
+- bị Chúa trừng phạt
+=judicial blindnest+ sự mù quáng do Chúa trừng phạt
+- có phán đoán, có suy xét, có phê phán
+=judicial faculty+ óc suy xét, óc phê phán
+- công bằng, vô tư
+
+@judiciary /dʤu:'diʃəlri/
+*  tính từ
+- (thuộc) toà án; (thuộc) quan toà; (thuộc) pháp luật ((cũng) judicial)
+*  danh từ
+- bộ máy tư pháp
+- các quan toà (của một nước)
+
+@judicious /dʤu:'diʃəl/
+*  tính từ
+- sáng suốt, có suy xét; đúng đắn, chí lý
+- khôn ngoan; thận trọng
+
+@judiciousness /dʤu:'diʃəlnis/
+*  danh từ
+- sự sáng suốt, sự đúng đắn, sự chí lý
+- sự khôn ngoan; sự thận trọng
+
+@judo /'dʤu:dou/
+*  danh từ
+- võ juddô (võ Nhật)
+
+@jug /dʤʌg/
+*  danh từ
+- cái bình (có tay cầm và vòi)
+- (từ lóng) nhà tù ((cũng) stone jug)
+*  ngoại động từ
+- ((thường) động tính từ quá khứ) hầm (thỏ) trong nồi đất
+=jug ged hare+ thịt thỏ hầm trong nồi đất
+- (từ lóng) giam, bỏ tù
+*  danh từ
+- tiếng hót (của chim sơn ca...) ((cũng) jug)
+*  nội động từ
+- hót (chim sơn ca...)
+
+@jugate /'dʤu:git/
+*  tính từ
+- (thực vật học) có lá chét thành cặp
+
+@jugful /'dʤʌgful/
+*  danh từ
+- bình (đầy)
+!not by a jugful
+- (từ Mỹ,nghĩa Mỹ) không khi nào, không đời nào
+
+@juggernaut /'dʤʌgənɔ:t/
+*  danh từ
+- Gia-ga-nát (tên một vị thánh ở Ân-ddộ; hình ảnh vị thánh này trước kia thường được đặt trên một chiếc xe diễu qua phố và những người cuồng tín thường đổ xô vào để xe cán chết)
+- (nghĩa bóng) lực lượng khủng khiếp đi đến đâu là tàn phá tất cả; ý niện gây sự hy sinh mù quáng
+=the juggernaut of war+ chiến tranh tàn phá; sự tàn phá của chiến tranh
+
+@juggins /'dʤʌginz/
+*  danh từ
+- (từ lóng) người ngốc nghếch, người khờ dại
+
+@juggle /'dʤʌgl/
+*  danh từ
+- trò tung hứng, trò múa rối
+- sự lừa bịp, sự lừa gạt
+*  nội động từ
+- tung hứng, múa rối
+- (juggle with) lừa bịp, lừa dối; xuyên tạc
+=to juggle with someone+ lừa bịp ai
+=to juggle with facts+ xuyên tạc sự việc
+*  ngoại động từ
+- lừa bịp; dùng mánh khoé để lừa
+=to juggle someone out of something+ lừa bịp ai lấy cái gì
+=to juggle something away+ dùng mánh khoé để lấy cái gì
+
+@juggler /'dʤʌglə/
+*  danh từ
+- nghệ sĩ xiên tung hứng, nghệ sĩ múa rối
+- kẻ lừa bịp, kẻ lừa gạt
+
+@jugglery /'dʤʌgləri/
+*  danh từ
+- trò tung hứng, trò múa rối
+- trò lừa bịp, trò lừa gạt
+
+@jugoslav /'ju:gou'slɑ:v/ (Jugoslavian) /'ju:gou'slɑ:vjən/
+*  tính từ
+- (thuộc) Nam tư
+
+@jugular /'dʤʌgjulə/
+*  tính từ
+- (giải phẫu) (thuộc) cổ
+*  danh từ
+- (giải phẫu) tĩnh mạch cảnh
+
+@jugulate /'dʤʌgjuleit/
+*  ngoại động từ
+- cắt cổ
+- bóp cổ chết
+- (nghĩa bóng) trị (bệnh...) bằng thuốc mạnh
+
+@juice /dʤu:s/
+*  danh từ
+- nước ép (của quả, thịt, rau)
+=the juice of an orange+ nước cam
+- dịch
+=gastric juice+ dịch vị
+- (nghĩa bóng) phần tinh hoa, phần tinh tuý (của cái gì)
+- (từ lóng) xăng, dầu; điện
+*  ngoại động từ
+- (từ Mỹ,nghĩa Mỹ) ép (quả, thịt, rau...) lấy nước
+!to juice up
+- (từ Mỹ,nghĩa Mỹ) làm hoạt động lên, làm hăng hái lên, làm phấn khởi lên
+
+@juiceless /'dʤu:slis/
+*  tính từ
+- không có nước (quả, thịt, rau...)
+
+@juicer /'dʤu:sə/
+*  danh từ
+- cái ép lấy nước (quả, thịt, rau...)
+
+@juiciness /'dʤu:sinis/
+*  danh từ
+- tính có nhiều nước (quả, thịt, rau...)
+
+@juicy /'dʤu:si/
+*  tính từ
+- có nhiều nước (quả, thịt, rau...)
+- ẩm ướt (thời tiết)
+- (thông tục) hay, lý thú, rôm rả
+- (nghệ thuật),  (từ lóng) nhiều màu sắc, đậm màu tươi (nom bóng ướt)
+
+@jujube /'dʤu:dʤu:b/
+*  danh từ
+- quả táo ta
+- cây táo ta
+- viên gelatin có mùi táo, viên thuốc có mùi táo
+
+@juke-box /'dʤu:kbɔks/
+*  danh từ
+- (từ Mỹ,nghĩa Mỹ) máy hát tự động (cho đồng tiền vào khe, máy sẽ chạy)
+
+@julep /'dʤu:lep/
+*  danh từ
+- nước ngọt (để dùng thuốc), nước chiêu
+- (từ Mỹ,nghĩa Mỹ) rượu uytky đá pha bạc hà ((cũng) mint julep)
+
+@julian /'dʤu:ljən/
+*  tính từ
+- juliêng, (thuộc) Giu-li-út Xê-za
+=julian calendar+ lịch juliêng (do Giu-li-út Xê-za cải biên)
+
+@july /dʤu:'lai/
+*  danh từ
+- tháng bảy
+
+@jum-off /'dʤʌmp'ɔ:f/
+*  danh từ
+- (thể dục,thể thao) sự xuất phát; điểm xuất phát (chạy thiu)
+- (quân sự) sự bắt đầu cuộc tấn công; chỗ bắt đầu cuộc tấn công
+
+@jumbal /'dʤʌmbəl/
+*  danh từ
+- bánh xốp mỏng (hình giống cái vòng)
+
+@jumble /'dʤʌmbl/
+*  danh từ
+- (như) jumbal
+- mớ lộn xộn, mớ bòng bong
+*  ngoại động từ
+- trộn lộn xộn, làm lộn xộn, làm lẫn lộn lung tung
+*  nội động từ
+- lộn xộn, lẫn lộn lung tung cả
+
+@jumble-sale /'dʤʌmblseil/
+*  danh từ
+- sự bán hàng linh tinh rẻ tiền (thường để gây quỹ cứu tế)
+
+@jumble-shop /'dʤʌmblʃɔp/
+*  danh từ
+- cửa hàng bán đủ cán thứ linh tinh tạp nhạp
+
+@jumbly /'dʤʌmbli/
+*  tính từ
+- lộn xộn, hỗn độn; lẫn lộn lung tung
+
+@jumbo /'dʤʌmbou/
+*  danh từ
+- người to lớn chậm chạp; vật to lớn khó coi
+- người thành công một cách đặc biệt
+
+@jump /dʤʌmp/
+*  danh từ
+- sự nhảy, bước nhảy
+=long (broad) jump+ (thể dục,thể thao) nhảy xa
+=high jump+ (thể dục,thể thao) nhảy cao
+=pole jump+ (thể dục,thể thao) nhảy sào
+=running jump+ nhảy có chạy lấy đà
+=standing jump+ nhảy không chạy lấy đà
+- sự giật mình; cái giật mình
+=to give someone the jumps+ làm cho ai giật mình
+- (the jumps) mê sảng rượu
+- sự tăng đột ngột (giá cả, nhiệt độ...)
+- sự thay đổi đột ngột, sự chuyển đột ngột; chỗ hẫng, chỗ hổng (trong lập luận...); chỗ trống (trong một hàng, một dãy)
+- vật chướng ngại phải nhảy qua
+- nước cờ ăn quân (cờ đam)
+- dòng ghi trang tiếp theo (cuối bài báo, truyện ngắn)
+!to get (have) the jump on
+- (từ Mỹ,nghĩa Mỹ),  (từ lóng) bắt đầu sớm hơn và do đó nắm được ưu thế hơn
+!on the jump
+- (thông tục) hối hả bận rộn
+*  nội động từ
+- nhảy
+=to jump for joy+ nhảy lên vì vui sướng
+=to jump from one subject to another+ nhảy từ vấn đề này sang vấn đề kia
+- giật mình, giật nảy người
+=my heart jumps+ tim tôi giật nảy lên (vì sợ...)
+- nhảy vọt, tăng vọt, tăng đột ngột (giá cả, độ nhiệt...)
+- (thường) at,  to chớp ngay lấy, nắm ngay lấy; chấp nhận vội vàng, vội đi tới (một kết luận...)
+=to jump at an opportunity+ chớp lấy cơ hội
+=to jump at an offer+ vội chấp nhận một đề nghị
+=to jump at (to) a conclusion+ vội đi tới một kết luận
+- (jump on,  upon) nhảy bổ vào tấn công dữ dội (kẻ địch...)
+*  ngoại động từ
+- nhảy qua
+=to jump a fence+ nhảy qua hàng rào
+- bỏ sót, bỏ qua, bỏ cách quãng mất
+=to jump a chapter in a book+ bỏ cách quãng mất một chương trong sách
+- trật (bánh ra khỏi đường ray)
+=to jump the rails+ trật đường ray
+- làm cho nhảy lên, bắt nhảy, bắt nhảy qua
+=to jump the horse across the ditch+ bắt con ngựa nhảy qua cái hào
+=to jump a child down+ đỡ cho một em nhỏ nhảy xuống
+- làm giật mình, làm giật nảy người lên
+- đào lật (khoai rán trong chão...)
+- (từ Mỹ,nghĩa Mỹ) nhảy lên, nhảy vào
+=to jump a train+ nhảy lên xe lửa
+- nhảy bổ vào chộp lấy (cái gì)
+- lấn, không đứng vào (hàng nối đuôi nhau theo lần lượt)
+=to jump a queue+ lấn chỗ khi xếp hàng
+- nẫng tay trên, phỗng tay trên, chiếm đoạt, xâm chiếm
+=to jump a mining claim+ chiếm mất quyền khai thác mỏ (của ai)
+- làm cho bay lên, làm chạy tán loạn (chim, thú săn)
+- khoan đá bằng choòng
+- tiếp (bài báo, truyện ngắn...) ở trang khác
+- chặt, ăn (quân cờ đam)
+- (từ Mỹ,nghĩa Mỹ),  (từ lóng) tấn công bất thình lình
+- (từ Mỹ,nghĩa Mỹ),  (từ lóng) bỏ đi bất thình lình, trốn, chuồn
+!to jump off
+- (quân sự),  (từ lóng) bắt đầu tấn công
+!to jump on
+- (từ Mỹ,nghĩa Mỹ),  (từ lóng) mắng, nhiếc, chỉnh
+!to jump together; to jump with
+- phù hợp với nhau, nhất trí với nhau; trùng nhau
+!to jump the gun
+- (từ lóng)
+- (thể dục,thể thao) chạy trước khi có hiệu lệnh xuất phát
+- bắt đầu (làm gì) trước lúc quy định
+!to jump down somebody's throat
+- chặn đứng ai không cho nói, ngắt lời ai không cho nói
+- trả lời chặn họng ai, nói chặn họng ai
+!to jump someone into doing something
+- lừa phỉnh ai làm gì
+!to jump out of one's skin
+- giật nảy mình ngạc nhiên; giật nảy mình sợ hãi...
+
+@jump ball /'dʤʌmpbɔ:l/
+*  danh từ
+- (thể dục,thể thao) quả bóng (trọng tài tung lên bắt đầu trận đấu (bóng rổ)
+
+@jump-seat /'dʤʌmpsi:t/
+*  danh từ
+- ghế phụ lật lên lật xuống được (ở ô tô)
+
+@jumper /'dʤʌmpə/
+*  danh từ
+- người nhảy; thú nhảy; sâu bọ nhảy (như bọ chét, dế, châu chấu...)
+- dây néo cột buồm
+- choòng (đục đá)
+*  danh từ
+- áo ngoài mặc chui đầu (của phụ nữ)
+- áo va rơi (của thuỷ thủ)
+- (số nhiều) áo may liền với quần (của trẻ con)
+
+@jumpiness /'dʤʌmpinis/
+*  danh từ
+- bệnh hay giật mình, bệnh hay hốt hoảng bồn chồn
+- sự tăng vọt; sự lên xuống thất thường, sự thay đổi thất thường (giá cả)
+
+@jumping-jack /'dʤʌmpiɳdʤæk/
+*  danh từ
+- con choi choi (một thứ đồ chơi)
+
+@jumpy /'dʤʌmpi/
+*  tính từ
+- hay giật mình, hay hốt hoảng bồn chồn
+- tăng vọt; lên xuống thất thường, thay đổi thất thường (giá cả)
+
+@junction /'dʤʌɳkʃn/
+*  danh từ
+- sự nối liền, sự gặp nhau
+- mối nối, chỗ nối; chỗ gặp nhau (của các con đường...)
+- (ngành đường sắt) ga đầu mối (nơi các đường xe lửa gặp nhau)
+
+@juncture /'dʤʌɳktʃə/
+*  danh từ
+- sự nối liền
+- chỗ nối; điểm gặp nhau
+- tình hình, sự việc; thời cơ
+=at this juncture+ vào lúc này, trong tình hình này
+=at a critical juncture+ vào lúc gay go
+- (kỹ thuật) mối hàn, mối nối, mối ghép
+
+@june /dʤu:n/
+*  danh từ
+- tháng sáu
+
+@jungle /'ʤʌɳgl/
+*  danh từ
+- rừng nhiệt đới
+- khu đất hoang mọc đầy bụi rậm
+- mớ hỗn độn
+- (định ngữ) ở rừng ((thường) trong từ ghép)
+
+@jungle fever /'ʤʌɳgl'fi:və/
+*  danh từ
+- sốt rét rừng
+
+@jungly /'dʤʌɳgli/
+*  danh từ
+- có nhiều rừng rậm
+
+@junior /'dʤu:njə/
+*  tính từ
+- trẻ tuổi hơn; em, con (ghi sau tên họ người)
+= John Brown Junior+ Giôn Brao em; Giôn Brao con
+- ít tuổi hơn; ít thâm niên hơn; ở cấp dưới
+=a junior colleague+ một đồng nghiệp cấp dưới
+*  danh từ
+- người ít tuổi hơn
+=he is three years my junior; he is my junior by three years+ anh ấy ít hơn tôi ba tuổi
+- người ít thâm niên hơn, người cấp dưới
+- (từ Mỹ,nghĩa Mỹ) học sinh đại học lớp liền ngay lớp cuối cấp
+
+@juniority /,dʤu:ni'ɔriti/
+*  danh từ
+- địa vị người ít tuổi hơn
+- địa vị người cấp dưới
+
+@juniper /'dʤu:nipə/
+*  danh từ
+- (thực vật học) cây cối
+
+@junk /dʤʌɳk/
+*  danh từ
+- ghe mành, thuyền mành
+*  danh từ
+- thừng châo cũ (dùng để tước lấy xơ xảm thuyền)
+- đồ đồng nát, giấy vụn, thuỷ tinh vụn, sắt vụn...
+- đồ tạp nhạp bỏ đi
+- (hàng hải) thịt ướp muối (bò, lợn...)
+- tảng, cục, mảng
+- mô sáp (trên đầu cá nhà táng)
+- (từ Mỹ,nghĩa Mỹ),  (từ lóng) thuốc mê
+*  ngoại động từ
+- chia thành từng khúc, chặt thành từng mảng
+- (từ Mỹ,nghĩa Mỹ) vứt bỏ đi (coi như vô giá trị)
+
+@junk-shop /'dʤʌɳkʃɔp/
+*  danh từ
+- cửa hàng bán đồ cũ, cửa hàng đồng nát
+
+@junkard /'dʤʌɳkjɑ:d/
+*  danh từ
+- nơi để đồ đồng nát
+
+@junket /'dʤʌɳkit/
+*  danh từ
+- sữa đông
+- cuộc liên hoan; bữa tiệc
+- (từ Mỹ,nghĩa Mỹ) cuộc đi chơi vui, cuộc đi chơi cắm trại (do quỹ chung chịu)
+*  nội động từ
+- dự tiệc, ăn uống, tiệc tùng, liên hoan
+- (từ Mỹ,nghĩa Mỹ) đi chơi vui, đi cắm trại
+
+@junkman /'dʤʌɳkmən/
+*  danh từ
+- (từ Mỹ,nghĩa Mỹ) người bán đồ cũ, người bán đồ đồng nát
+
+@juno /'dʤu:nou/
+*  danh từ
+- (thần thoại,thần học) nữ thần Giu-nô (vợ Giu-pi-te)
+- người đàn bà đẹp trang nghiêm
+
+@junoesque /,dʤu:nou'esk/
+*  tính từ
+- đẹp một cách trang nghiêm (đàn bà)
+
+@junta /'dʤʌntə/
+*  danh từ
+- hội đồng tư vấn; uỷ ban hành chính (ở Tây ban nha,  Y)
+- (xem) junta
+
+@junto /'dʤʌntou/
+*  danh từ,  số nhiều juntos ((cũng) junta)
+- hội kín (hoạt động chính trị)
+- tập đoàn, phe đảng (khống chế một tổ chức, một quốc gia)
+
+@jupiter /'dʤu:pitə/
+*  danh từ
+- (thần thoại,thần học) thần Giu-pi-te
+- sao Mộc
+!by jupiter!
+- trời ơi!
+!Jupiter Pluvius
+-(đùa cợt) thần Mưa
+
+@jural /'dʤuərəl/
+*  tính từ
+- (thuộc) luật pháp
+- (thuộc) nghĩa vụ bổn phận; (thuộc) quyền lợi và trách nhiệm
+
+@jurassic /dʤu'ræsik/
+*  tính từ
+- (địa lý,ddịa chất) (thuộc) kỷ jura
+=jurassic period+ kỷ jura
+
+@juratory /'dʤuərætəri/
+*  tính từ
+- (thuộc) lời thề, (thuộc) lời tuyên thệ
+
+@juriconsult /'dʤuəriskən,sʌlt/
+*  danh từ
+- nhà luật học, luật gia
+- cố vấn pháp lý
+
+@juridical /dʤuə'ridikl/
+*  tính từ
+- pháp lý
+
+@jurisdiction /,dʤuəris'dikʃn/
+*  danh từ
+- quyền lực pháp lý, quyền xử xét, quyền tài phán
+- quyền hạn, phạm vi quyền hạn; khu vực nằm trong phạm vi quyền hạn
+
+@jurisprudence /'dʤuəris,pru:dəns/
+*  danh từ
+- khoa luật pháp, luật học
+- sự giỏi về luật pháp
+
+@jurisprudent /'dʤuəris,pru:dənt/
+*  tính từ
+- giỏi về luật pháp
+
+@jurisprudential /,dʤuərispru':denʃəl/
+*  tính từ
+- (thuộc) luật học
+
+@jurist /'dʤuərist/
+*  danh từ
+- nhà luật học, luật gia
+- nhà viết luật
+- sinh viên luật
+
+@juristic /dʤuə'ristik/ (juristical) /dʤuə'ristikəl/
+*  tính từ
+- (thuộc) luật pháp, (thuộc) pháp lý
+
+@juristical /dʤuə'ristik/ (juristical) /dʤuə'ristikəl/
+*  tính từ
+- (thuộc) luật pháp, (thuộc) pháp lý
+
+@juror /'dʤuərə/
+*  danh từ
+- hội thẩm, bồi thẩm
+- người đã tuyên thệ
+
+@jury /'dʤuəri/
+*  danh từ
+- (pháp lý) ban hội thẩm, ban bồi thẩm
+=to sit (serve) on a jury+ tham gia vào ban hội thẩm, ngồi ghế hội thẩm
+- ban giám khảo
+
+@jury-box /'dʤuəribɔks/
+*  danh từ
+- chỗ ngồi của ban hội thẩm
+
+@jury-mast /'dʤuərimɑ:st/
+*  danh từ
+- cột buồm tạm thời (thay thế cột buồm đã bị gãy)
+
+@juryman /'dʤuərimən/
+*  danh từ
+- viên hội thẩm, viên bồi thẩm
+- viên giám khảo
+
+@jussive /'dʤʌsiv/
+*  tính từ
+- (ngôn ngữ học) mệnh lệnh
+
+@just /dʤʌst/
+*  tính từ
+- công bằng
+=to be just to someone+ công bằng đối với ai
+- xứng đáng, đích đáng, thích đáng
+=a just reward+ phần thưởng xứng đáng
+=a just punishment+ sự trừng phạt đích đáng
+- chính đáng, chính nghĩa, hợp lẽ phải
+=just cause+ chính nghĩa
+- đúng, đúng đắn, có căn cứ
+*  phó từ
+- đúng, chính
+=just at that spot+ đúng ở chỗ đó
+=just here+ chính tại đây
+=just three o'clock+ đúng ba giờ
+=just as you say+ đúng như anh nói
+=just so+ đúng vậy
+=that is just it+ đúng như thế đấy
+- vừa đúng, vừa đủ, vừa kịp
+=I just caught the train+ tôi chỉ vừa kịp lên xe lửa
+=just in time+ vừa đúng lúc
+- vừa mới
+=I have just seen him+ tôi vừa mới trông thấy nó
+=just now+ đúng lúc này; vừa mới xong, ngay vừa rồi
+- chỉ
+=take just one+ chỉ được lấy một chiếc thôi
+=just a moment, please!+ yêu cầu chỉ đợi cho một lát
+=I'll say just this+ tôi sẽ chỉ nói điều này thôi
+- (thông tục) hoàn toàn, thật đúng là
+=it is just splendid+ thật đúng là lộng lẫy
+- (thông tục), (thân mật) một chút, một tí; thử xem
+=just feel it+ thử mà xem
+=just shut the door, will you?+ phiền ông đóng hộ cửa một tí
+*  danh từ & nội động từ
+- (như) joust
+
+@justice /'dʤʌstis/
+*  danh từ
+- sự công bằng
+=in justice to somebody+ để có thái độ công bằng đối với ai
+- công lý, tư pháp, sự xét xử của toà án; quyền tài phán
+=to bring somebody to justice+ đem ai ra toà, truy tố ai ra toà
+!High Court of Justice
+- toà án tối cao
+- quan toà, thẩm phán
+!Justice of the Peace
+- thẩm phán trị an
+- quan toà toà án tối cao (ở Anh)
+!to do justice to something
+- biết thưởng thức (biết đánh giá đúng) cái gì
+=he did justice to the dinner+ anh ta thưởng thức bữa ăn một cách ngon lành
+!to do oneself justice
+- làm xứng với tài năng của mình; dốc hết tài năng để làm việc gì
+
+@justiceship /'dʤʌstisʃip/
+*  danh từ
+- chức quan toà
+
+@justiciable /dʤʌs'tiʃiəbl/
+*  tính từ
+- bị thuộc quyền xét xử; bị thuộc quyền tài phán (của ai)
+*  danh từ
+- người bị thuộc quyền xét xử (của ai)
+
+@justiciar /dʤʌs'tiʃiɑ:/
+*  danh từ
+- (sử học) quan chánh án tối cao (dưới triều Nóoc-măng)
+
+@justiciary /dʤʌs'tiʃiəri/
+*  danh từ
+- quan toà
+- (như) justiciar
+*  tính từ
+- (thuộc) sự xét xử
+
+@justifiability /,dʤʌstifaiə'biliti/
+*  danh từ
+- tính chất có thể bào chữa
+- tính chất hợp pháp, tính chất hợp lý, tính chất chính đáng
+
+@justifiable /'dʤʌstifaiəbl/
+*  tính từ
+- có thể bào chữa được, có thể chứng minh là đúng
+- hợp pháp, hợp lý, chính đáng
+=justifiable honicide+ trường hợp giết người vì lý do chính đáng (tự vệ)
+
+@justification /,dʤʌstifi'keiʃn/
+*  danh từ
+- sự bào chữa, sự biện hộ, sự chứng minh là đúng; lý lẽ bào chữa
+- (ngành in) sự sắp chữ cho đúng hàng đúng chỗ
+
+@justificative /'dʤʌstifikeitiv/ (justificatory) /'dʤʌstifikeitəri/
+*  tính từ
+- để bào chữa, để biện hộ, để chứng minh là đúng
+
+@justificatory /'dʤʌstifikeitiv/ (justificatory) /'dʤʌstifikeitəri/
+*  tính từ
+- để bào chữa, để biện hộ, để chứng minh là đúng
+
+@justify /'dʤʌstifai/
+*  ngoại động từ
+- bào chữa, biện hộ, chứng minh là đúng
+- (ngành in) sắp chữ cho đúng hàng đúng chỗ
+
+@jut /dʤʌt/
+*  danh từ
+- phần lòi ra, phần nhô ra, phần thò ra
+*  nội động từ
+- ((thường) + out,  forth) lòi ra, thò ra, nhô ra
+=the balcony juts out over the garden+ bao lơn nhô ra ngoài vườn
+
+@jute /dʤu:t/
+*  danh từ
+- sợi đay
+- (thực vật học) cây đay
+- (định ngữ) (thuộc) đay; bằng đay
+
+@juvenescence /,dʤu:vi'nesns/
+*  danh từ
+- thời kỳ thanh thiếu niên
+
+@juvenescent /,dʤu:vi'nesnt/
+*  tính từ
+- (thuộc) thời kỳ thanh thiếu niên
+
+@juvenile /'dʤu:vinail/
+*  tính từ
+- (thuộc) thanh thiếu niên; có tính chất thanh thiếu niên; hợp với thanh thiếu niên
+*  danh từ
+- thanh niên, thiếu niên
+- (số nhiều) sách cho thanh thiếu niên
+
+@juvenilia /,dʤu:vi'niliə/
+*  danh từ số nhiều
+- những tác phẩm viết trong lúc còn trẻ (của một tác giả)
+
+@juvenility /,dʤu:vi'niliti/
+*  danh từ
+- tuổi trẻ, tuổi thanh thiếu niên
+- hành động có tính chất thanh thiếu niên
+- thanh thiếu niên (nói chung)
+
+@juxtapose /'dʤʌkstəpouz/
+*  ngoại động từ
+- để (hai hoặc nhiều vật) cạnh nhau, để kề nhau
+
+@juxtaposition /,dʤʌkstəpə'ziʃn/
+*  danh từ
+- sự đặt cạnh nhau, sự kề nhau
+- vị trí kề nhau

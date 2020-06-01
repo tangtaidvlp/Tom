@@ -7,15 +7,18 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.teamttdvlp.memolang.R
-import com.teamttdvlp.memolang.model.entity.flashcard.Flashcard
+import com.teamttdvlp.memolang.data.model.entity.flashcard.Flashcard
+import com.teamttdvlp.memolang.view.helper.quickLog
 
-class RCVRecent_Search_FlashcardAdapter (var context : Context, var list : ArrayList<Flashcard> = ArrayList()) : RecyclerView.Adapter<RCVRecent_Search_FlashcardAdapter.ViewHolder> () {
+class RCVRecent_Search_FlashcardAdapter (var context : Context) : RecyclerView.Adapter<RCVRecent_Search_FlashcardAdapter.ViewHolder> () {
+
+    private var list : ArrayList<Flashcard> = ArrayList()
 
     private var onItemClickListener : OnItemClickListener? = null
 
     class ViewHolder (item : View): RecyclerView.ViewHolder(item) {
         var txtText = item.findViewById<TextView>(R.id.txt_text)
-        var txtTranslation = item.findViewById<TextView>(R.id.txt_flashcard_count)
+        var txtTranslation = item.findViewById<TextView>(R.id.txt_translation)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
@@ -45,9 +48,12 @@ class RCVRecent_Search_FlashcardAdapter (var context : Context, var list : Array
     }
 
     fun setData (dataList : ArrayList<Flashcard>) {
-        list = dataList
+        list.clear()
+        list.addAll(dataList)
         notifyDataSetChanged()
     }
+
+    var i = 0
 
     fun addFlashcardAtTheFirstPosition (newFlashcard : Flashcard) {
         list.add(0, newFlashcard)

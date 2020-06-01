@@ -5,5 +5,5 @@ fun Int.dp() : Int {
 }
 
 fun Int.percent () : Int {
-    return this / 100
+    return this / 100 
 }

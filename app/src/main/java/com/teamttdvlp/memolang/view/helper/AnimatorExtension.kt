@@ -18,7 +18,7 @@ fun ViewPropertyAnimator.setLiteListener (
         onEnd : (animation: Animator?) -> Unit = {},
         onCancel : (animation: Animator?) -> Unit = {},
         onStart2 : (animation: Animator?, isReverse: Boolean) -> Unit = {_,_ -> },
-        onStart : (animation: Animator?) -> Unit = {}) {
+        onStart : (animation: Animator?) -> Unit = {}) : ViewPropertyAnimator{
 
     setListener(object : Animator.AnimatorListener {
         override fun onAnimationRepeat(animation: Animator?) {
@@ -45,4 +45,6 @@ fun ViewPropertyAnimator.setLiteListener (
                 onStart.invoke(animation)
         }
     })
+
+    return this
 }

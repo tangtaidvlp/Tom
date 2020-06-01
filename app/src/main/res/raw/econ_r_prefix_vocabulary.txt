@@ -1,0 +1,462 @@
+@Ramdom events
+- (Econ) Các biến cố ngẫu nhiên.
+@Range of values
+- (Econ) Miền giá trị.
+@Rate of return on investment
+- (Econ) Suất sinh lợi từ đầu tư.
+@Rateable valu
+- (Econ) Giá trị có thể đánh thuế.
+@Real / relative price
+- (Econ) Các giá thực tế/ tương đối.
+@Real balance effect
+- (Econ) Ảnh hưỏng của số dư tiền thực/ hiệu ứng tiền thực.
+@Real interest rate.
+- (Econ) Mức lãi suất thực tế.
+@Real prices and real income
+- (Econ) Giá thực tế và thu nhập thực tế
+@Receipt
+- (Econ) Số thu.
+@Recessionary gap
+- (Econ) Hố, khoảng trống suy thoái.
+@R
+- Hệ số xác định.
+- (Econ) Xem COEFFICIENT OF DETERMINATION.
+@Radcliffe Committee
+- (Econ) Uỷ ban Radcliffe.
+= Uỷ ban về sự hoạt động của hệ thống tiền tệ được thành lập năm 1957, do luật gia, huân tước Radcliffe làm chủ tịch, Uỷ ban này đã tường trình năm 1959 (Báo cáo Cmnd.827). Ủy ban trong đó có hai nhà kinh tế học xuất sắc, giáo sư Alec Cairncross và giáo sư R.S.Sayers đã tiến hành một cuộc khảo sát phạm vi rộng và có thẩm quyền về hệ thống tiền tệ và tài chính.
+@Radical economics
+- (Econ) Kinh tế học cấp tiến.
+= Tên chung cho các tác phẩm theo truyền thống xã hội chủ nghĩa hoặc Macxits, liên quan chủ yếu đến chủ nghĩa Mác nhưng chấp nhận và sử dụng các nguồn tư tưởng khác, chẳng hạn như thuyết vô chính phủ và thuyết tự do bình đẳng. Những tác phẩm này thường được gọi là cánh tả mới.
+@Raider firm
+- (Econ) Hãng thu mua.
+= Là một công ty có tiềm năng củng cố địa vị như sự thu mua đối với một công ty khác.
+@Ramsey pricing
+- (Econ) Định giá Ramsay.
+= Đã được sử dụng rộng rãi trong thyết ngoại ứng môi trường, một qui tắc có thể cần thiết áp dụng cho mội mức giá trong một nền kinh tế, khi ít nhất có một thứ hàng hoá là hàng công cộng không thể cạn kiệt được.
+@R and D
+- (Econ) Nghiên cứu và triển khai.
+= Xem RESEARCH AND DEVELOPMENT.
+@Random coefficient models
+- (Econ) Các mô hình hệ số ngẫu nhiên.
+= Xem VARIABLE PARAMETER MODELS.
+@Random sample
+- (Econ) Mẫu ngẫu nhiên.
+= Một mẫu mà tư cách của các thành viên được xác định bằng xác suất và là nơi một quan sát được thực hiện một cách độc lập đối với tất cả các quan sát khác ở mẫu này.
+@Random variable
+- (Econ) Biến ngẫu nhiên.
+= Một biến chấp nhận những trị số tuỳ theo phân phối xác suất của nó.
+@Random walk
+- (Econ) Bước ngẫu nhiên.
+= Một thí dụ về mô hình dãy thời gian trong đó giá trị hiện tại của một biến số bằng giá trị mới nhất của nó cộng thêm một yếu tố ngẫu nhiên.
+@Range
+- (Econ) Dải, khoảng.
+= Một thước đo mức độ phân tán của một mẫu các quan sát hoặc của một sự phân phối được tính như chênh lệch giứa các giá trị lớn nhất và nhỏ nhất của biến số đó.
+@Range (of a good)
+- (Econ) Phạm vi (của một hàng hoá).
+= Trong kinh tế học, vùng khoảng cách tối đa mà người ta sẽ đi để mua một hàng hoá cụ thể nào đó.
+@Rank correlation
+- (Econ) Tương quan bậc.
+= Phương pháp đo mức độ mà hai biến số liên quan với nhau, không nhất thiết theo giá trị mà theo bậc.
+@Ranking of projects
+- (Econ) Xếp hạng các dự án.
+= Xem MUTUALLY EXCLUSIVE, PROJECTS, CAPITAL RATIONING.
+@Rank of a matrix
+- (Econ) Hạng của ma trận.
+= Con số tối đa của hàng hay cột độc lập tuyến tính của ma trận.
+@Rank-tournament compensation rule
+- (Econ) Quy tắc đền bù theo xếp hạng thi đua
+= Một quy tắc theo đó việc người chủ thanh toán cho nhân viên phụ thuộc vào thứ hạng của nhân viên đó trong cuộc ganh đua.
+@Ratchet effect
+- (Econ) Hiệu ứng bánh cóc.
+= Xem RELATIVE INCOME HYPOTHESIS.
+@Rate capping
+- (Econ) Hạn chế tỷ lệ chi tiêu.
+= Một thủ tục mà Bộ trưởng Môi trường của Anh dùng để hạn chế tỷ lệ gia tăng chi tiêu của nhà chức trách địa phương. Thủ tục này được coi như biện pháp thay thế cho các phương pháp truyền thống để kiểm soát sự chi tiêu của chính quyền địa phương chẳng hạn như việc điều hành TỶ LỆ HỖ TRỢ BẰNG TRỢ CẤP.
+@Rate of commodity
+- (Econ) Tỷ lệ thay thế hàng hoá.
+= Xem MARGINAL RATE OF SUBSTITUTION.
+@Rate of interest
+- (Econ) Lãi xuất.
+= Giá cả của dịch vụ tiền tệ.
+@Rate of return
+- (Econ) Tỷ suất lợi tức.
+= Một khái niệm chung nói đến số Tiền thu được từ sự đầu tư vốn, khi tiền này được coi như một phần của kinh phí.
+@Rate of time preference
+- (Econ) Tỷ lệ ưu tiên thời gian.
+= Xem TIME PREFERENCE.
+@Rates
+- (Econ) Thuế địa ốc.
+= Một hứ thuế dựa trên giá trị có thể bị đánh thuế của đất đai và nhà ở, đã được thay thế bằng phí cộng đồng vào cuối những năm 80 ở Anh. Khi áp dụng PHÍ CỘNG ĐỒNG cho cá nhân thì một thuế kinh doanh đồng nhất được áp dụng cho mọi doanh nghiệp. Trong khi mà trước đó mức thuế tính theo đồng bảng do các doanh nghiệp đã trả thay đổi tuỳ theo từng chính quyền địa phương thì loại thuế đồng nhất có nghĩa là mọi doanh nghiệp ở trong nước sẽ thanh toán cùng mức thuế tính theo đồng bảng, mặc dù hiện nay có sự thay đổi giữa Scotland, Anh và Xứ Wales.
+@Rate support grant
+- (Econ) Trợ cấp nâng mức thuế.
+= Một cơ chế để chuyển vốn từ chính phủ trung ương cho các chính quyền địa phương ở Anh. Ngày nay sự trợ cấp cho các chính quyền này tạo nên nguồn thu nhập chủ yếu của các chính quyền địa phương ở Anh.
+@Rational expectations
+- (Econ) Kỳ vọng duy lý.
+= Đó là sự áp dụng phần chủ yếu của hành vi duy lý tối đa hoá vào việc thu thập và xử lý thông tin cho mục đích tạo nên một quan điểm về tương lai.
+@Rationality
+- (Econ) Tính duy lý.
+= Hành vi của một tác nhân kinh tế (người tiêu dùng, chính phủ …) nhất quán với một loạt các quy tắc chi phối các sở thích.
+@Rational lags
+- (Econ) Trễ hữu tỷ; Trễ hợp lý.
+= Một công thức TRỄ PHÂN PHỐI trong đó, các giá trị kế tiếp của một biến số đã bị trễ được xác định bằng tỷ lệ của hai mô hình trễ đa thức.
+@Rationing
+- (Econ) Chia khẩu phần.
+= Bất cứ phương pháp nào phân bổ một sản phẩm hoặc dịch vụ khan hiếm khác với cách dùng của cơ chế giá.
+@Rawlsian justice
+- (Econ) Bằng đẳng Rawls
+= Một cách tiếp cận vấn đề của một xã hội bình đẳng, và đặc biệt là BÌNH ĐẲNG PHÂN PHỐI được phát triển bởi nhà triết học John Rawls ở đại học Harvard, ông lập luận rằng  bình đẳng xã hội là xã hội mà trong đó có thể lựa chọn nếu họ bị chi phối hoàn toàn bởi quyền lợi cá nhân.
+@R,D and D
+- (Econ) Nghiên cứu, triển khai và trình diễn.
+= Xem RESEARCH AND DEVELOPMENT.
+@Reaction functions
+- (Econ) Các hàm phản ứng.
+= Giúp cho doanh nghiệp xác định giá trị tối ưu cho một biến số lựa chọn khi biết được giá trị này của các hãng cạnh tranh.
+@Real balance effect
+- (Econ) Hiệu ứng số dư tiền.
+= Cụm thuật ngữ này thường được sử dụng để mô tả trường hợp khi cầu đối với hàng hoá thay đổi do có sự thay đổi số dư tiền thực tế.
+@Real cost approach to international trade
+- (Econ) Phương pháp chi phí thực tế đối với thương mại quốc tế.
+= Học thuyết về lợi thế so sánh của Ricardo được dựa trên một phương pháp chi phí thực tế.
+@Real money balances
+- (Econ) Các số dư tiền thực tế.
+= Là giá trị của các lượng tiền được nắm giữ được xác định bằng số lượng hàng hoá và dịch vụ mà chúng có thể mua được.
+@Real national output
+- (Econ) Sản lượng quốc dân thực tế.
+= Giá trị của tổng sản lượng - THU NHẬP QUỐC DÂN - được tính theo giá cố định - tức là trừ đi tỷ lệ lạm phát chung để tính được hiệu quả thực tế của việc sử dụng các nguồn lực.
+@Real wages
+- (Econ) Tiền lương thực tế.
+= Là tiền lương được tính theo giá trị hàng hoá và dịch vụ mà số tiền đó có thể mua được.
+@Receiver
+- (Econ) Người tiếp nhận (tài sản).
+= Là người được bổ nhiệm để tiếp quản tài sản của một con nợ, đồng thời thu nhận hoa lợi từ tài sản nói trên nhằm thanh toán nợ.
+@Recession
+- (Econ) Suy thoái.
+= Là giai đoạn giảm sút của chu kỳ thương mại xảy ra sau một đỉnh điểm và kết thúc tại điểm thấp nhất của chu kỳ.
+@Reciprocal
+- (Econ) Số nghịch đảo.
+= Là một số có số mữ âm một.
+@Reciprocal demand
+- (Econ) Cầu qua lại.
+= Là cầu của một nước đối với hàng hoá của một nước khác trong quan hệ trao đổi hàng giữa hai nước.
+@Reciprocal Trade Argreements Act of 1934 (RTA)
+- (Econ) Đạo luật năm 1934 về các hiệp định Thương mại qua lại.
+= Đạo luật thuế quan Smoot-Hawley năm 1930 đã áp đặt biểu thuế nhập khẩu cao đến mức các hoạt động thương mại quốc tế của Hoa Kỳ hầu như không có. Đến năm 1962, tác động của RTA đã làm giảm mức thuế quan trung bình xuống còn 11,1%. Năm 1990, mức thuế quan trung bình cho hàng công nghiệp chỉ còn ở mức 5%.
+@Recognition lag
+- (Econ) Trễ trong nhận thức.
+= Lag khoảng thời gian kể từ từ khi một yếu tố có khả năng gây bất ổn xảy ra cho đến khi nó được các nhà hoạch định chính sách nhận định là có khả năng gây bất ổn.
+@Recontract
+- (Econ) Tái khế ước.
+= Là thoả thuận mà theo đó bên mua hoặc bên bán có thể thay đổi số lượng hàng mua bán nếu biểu giá đã thoả thuận không giúp cho hàng được tiêu thụ hết trên thị trường: số lượng hàng sẽ được điều chỉnh tuỳ thuộc vào việc xảy ra tình trạng dư cầu hay dư cung.
+@Recursive model
+- (Econ) Mô hình nội phản.
+= Là một mô hình trong đó những giá trị hiện tại của một tập hợp các biến số quyết định giá trị hiện tại của một tập hợp khác trong khi các giá trị trước đó (giá trị trễ) của tập hợp sau lại quyết định các giá trị hiện tại của giá trị trước.
+@Recursive residuals
+- (Econ) Số dư nội phản.
+= Xem KALMAN FILTERING.
+@Redeemable loan stock
+- (Econ) Cổ phần vay có thể hoàn trả.
+= Xem FINANCIAL CAPITAL.
+@Redeemable securities
+- (Econ) Chứng khoán có thể hoàn trả.
+= Có thể là chứng khoán mà sẽ được trả lại - thanh toán - vào một ngày nhất định, hoặc có thể là chứng khoán mà có thể được trả lại tuỳ theo hợp đồng của người vay tiền.
+@Redemption yield
+- (Econ) Tổng lợi tức đáo hạn.
+= Nếu một nhà đầu tư mua một cổ phiếu có kỳ hạn với giá thấp hơn giá danh nghĩa của nó mà giữ cổ phần đó đến khi đáo hạn thì sẽ được hưởng một khoản lợi tức ngoài tiền lãi hàng năm trả cho cổ phần đó.
+@Redistribution
+- (Econ) Tái phân phối.
+= Là quá trình điều chính lại sự phân phối (thường là) thu nhập hoặc của cải trong một xã hội.
+@Reduced form (RF)
+- (Econ) Dạng rút gọn.
+= Là các dạng của một tập hợp CÁC PHƯƠNG TRÌNH ĐỒNG THỜI trong đó các biến số nội sinh đươc biểu thị như là các hàm của các BIẾN SỐ NGOẠI SINH, nghĩa là không có biến số nội sinh nào xuất hiện phía bên phải của các phương trình.
+@Redundancies
+- (Econ) Nhân viên thừa.
+= Những người mất việc không tự nguyện do yêu cầu về nhân lực của doanh nghiệp giảm.
+@Redundancy payments
+- (Econ) Trợ cấp thôi việc.
+= Xem SEVERANCE PAY.
+@Re-export
+- (Econ) Hàng tái xuất.
+= Là hàng được nhập từ một nước sang một nước khác nhưng không được tiêu thụ ở nước nhập hàng đó mà được xuất tới một nước thứ ba.
+@Regional development grant
+- (Econ) Trợ cấp phát triển vùng.
+= Là các khoản tiền mà trước đây chính phủ Anh cung cấp cho các hãng tiến hành đầu tư vào sản xuất tại những vùng nào được coi là CÁC KHU VỰC CẦN PHÁT TRIỂN và VÁC KHU VỰC PHÁT TRIỂN ĐẶC BIỆT. Các khoản trợ cấp phát triển khu vực đã dần bị cắt bỉ kể từ tháng 3 năm 1988.
+@Regional economics
+- (Econ) Kinh tế học khu vực.
+= Kinh tế học khu vực là chuyên nghành phân tích kinh liên quan đến việc phân phối  hoạt động kinh tế theo không gian và sự khác nhau về không gian trong kết quả của hoạt động kinh tế.
+@Regional emloyment premium
+- (Econ) Trợ cấp tuyển dụng lao động khu vực.
+= Là khoản trợ cấp cho các hãng sản xuất tại các khu vực cần phát triển và các khu vực đặc biệt ở Anh từ năm 1967 đến năm 1977 dựa trên cơ sở số công nhân được tuyển dụng, ban dầu là 1,5 bảng cho một công nhân và sau đó là 3 bảng cho một công nhân, hy vọng sẽ khuyến khích các hãng ở các khu vực có tỷ lệ thất nghiệp cao thuê thêm nhiều lao động.
+@Regional multiplier
+- (Econ) Số nhân khu vực.
+= Là một phiên bản của số nhân  được sử dụng trong việc phân tích các nền kinh tế khu vực.
+@Regional policy
+- (Econ) Chính sách khu vực.
+= Là một dạng của chính sách kinh tế của chính phủ nhằm điều chỉnh hình thái hoạt động kinh tế hoặc kết quả kinh tế của khu vực.
+@Regional integration
+- (Econ) Hội nhập khu vực.
+@Regional wage differentials
+- (Econ) Những chênh lệch tiền lương giữa các khu vực.
+= Là những chênh lệch về mức lương trung bình của các nhóm công nhân được phân loại theo khu vực mà họ đang làm việc tại đó.
+@Regional wage structure
+- (Econ) Cơ cấu tiền lương theo khu vực.
+= Là việc xếp thứ tự các mức lương trung bình của các nhóm công nhân được phân loại theo khu vực mà họ đang làm việc tại đó.
+@Registered unemployed
+- (Econ) Những người thất nghiệp có đăng ký.
+= Là tổng số người ở Anh đăng ký tại các Văn phòng thất nghiệp để được hưởng trợ cấp.
+@Regressand
+- (Econ) Biến phụ thuộc (trong phân tích hồi quy).
+@Regression
+- (Econ) Hồi quy.
+= Là một phép phân tích bằng cách ghép một phương trình hồi quy quy (hoặc một quan hệ toán học) vào một tập hợp các điểm số liệu, thường là bằng phương pháp BÌNH PHƯƠNG TỐI THIỂU THÔNG THƯỜNG, để thiết lập các mối quan hệ kinh tế lượng (ước tính giá trị của các thông số), hoặc để kiểm định các giả thiết kinh tế.
+@Regressive expectations
+- (Econ) Kỳ vọng hồi quy.
+= Là kỳ vọng cho rằng sự biến đổi của giá trị thực tế của một biến số tách ra khỏi giá trị tại điểm cân bằng của nó, thường là một giá trị mới, sẽ được tiếp nối bởi việc quay trở lại giá trị tại điểm cân bằng.
+@Regressive tax
+- (Econ) Thuế luỹ thoái.
+= Là trường hợp thuế suất trung bình giảm khi thu nhập tăng lên.
+@Regressor
+- (Econ) Ước tính hồi quy.
+= Là một BIẾN ĐỘC LẬP trong một phép phân tích hồi quy.
+@Regret matrix
+- (Econ) Ma trận hối tiếc.
+= Xem MINIMAX REGRET.
+@Regulation Q
+- (Econ) Quy chế Q.
+= Là một quy chế của Hoa KỲ do HỆ THỐNG DỰ TRỮ LIÊN BANG đặt ra vào năm 1933 đối với các mức lãi mà các ngân hàng phải trả cho các tiền gửi nhỏ.
+@Regulation
+- (Econ) Sự điều tiết.
+@Regulatory capture
+- (Econ) Sự lạm quyền điều tiết; Điều tiết bị trói.
+@Regulatory policy
+- (Econ) Chính sách điều tiết.
+@Reintermediation
+- (Econ) Tái phí trung gian.
+= Xem DISINTERMEDIATION.
+@Relative deprivation
+- (Econ) Cảm giác bị tước đoạt.
+= Là một khái niệm được các nhà kinh tế học thể chế vay mượn từ xã hội học để tạo ra nền tảng về hành vi vi mô của quá trình được coi là phi thị trường mà tiền lương được xác định trong đó (Xem SPILLOVER HYPOTHESIS).
+@Relative income hypothesis
+- (Econ) Giả thuyết về thu nhập tương đối.
+= Là giả thuyết cho rằng tiêu dùng của cá nhân và / hoặc hộ gia đình là hàm số của thu nhập của cá nhân/ hộ gia đình đó trong mối quan hệ với thu nhập của các cá nhân hoặc hộ gia đình khác, đồng thời cũng là hàm số của thu nhập hiện tại trong mối quan hệ với mức thu nhập trong các giai đoạn ngay trước đó.
+@Relative price
+- (Econ) Giá tương đối.
+= Xem PRICE.
+@Relativities
+- (Econ) Chênh lệch lương trong một nghề.
+= Là thuật ngữ được sử dụng để mô tả những chênh lệch giữa các mức lương trung bình của các nhóm công nhân trong cùng một nghề, do các nhóm chủ khác nhau trả.
+@Renewable resource
+- (Econ) Tài nguyên tái tạo được.
+= Là bất cứ tài nguyên nào có khả năng tái tạo lại, một phần hoặc toàn bộ, một cách tự nhiên.
+@Rent
+- (Econ) Tô, lợi, tiền thuê.
+= Xem ECONOMIC RENT.
+@Rent gradient
+- (Econ) Gradient tiền thuê.
+= Là một mối quan hệ được sử dụng trong KINH TẾ HỌC ĐÔ THỊ, biểu thị mức tô phải trả cho một đơn vị đất đai như một hàm số của khoảng cách từ một điểm tham chiếu nhất định - thường là một thành phố hoặc trung tâm thị xã.
+@Rentiers
+- (Econ) Chủ cho thuê tài sản; Chủ cho thuê vốn.
+= Là những chủ sở hữu vốn mà toàn bộ hoặc hầu hết thu nhập của họ có được từ nguồn này nhưng họ lại chọn cách không áp đặt quyền kiểm soát của mình đối với việc sử dụng nó.
+@Rent seeking
+- (Econ) Sự tìm kiếm đặc lợi; Sự tìm kiếm tiền thuê.
+= Là việc sử dụng các nguồn lực thực tế nhằm thu được thặng dư dưới hình thức một khoản đặc lợi.
+@Rent seeker
+- (Econ) Người kiếm sự đặc lợi.
+@Rental on capital
+- (Econ) Tiền thuê vốn.
+@Replacement cost
+- (Econ) Chi phí thay thế.
+= Xem HISTORICAL COST.
+@Replacement cost accounting
+- (Econ) Hạch toán chi phí thay thế.
+= Là một phương pháp kế toán có điều chỉnh theo những thay đổi về giá cả bằng cách tính lợi nhuận như là khoản chênh lệch giữa giá bán một mặt hàng và chi phí thay thế của nó tại thời điểm bán hàng.
+@Replacement investment
+- (Econ) Đầu tư thay thế.
+= Là khoản tiền cần thiết để thay thế phần vốn đầu tư cơ bản đã được sử dụng hết trong quá trình sản xuất.
+@Replacement ratio
+- (Econ) Tỷ số thay thế.
+= Là tỷ số giữa tổng thu nhập ròng (thu nhập cộng với phúc lợi đã trừ thuế và tiền nhà ở, cho phép hoàn trả lại tiền thêu) khi thất nghiệp và tổng thu nhập thuần khi đang làm việc.
+@Representative firm
+- (Econ) Hãng đại diện.
+= Là một hãng tiêu biểu cho một ngành hay một khu vực của nền kinh tế đang được phân tích.
+@Repressed inflation
+- (Econ) Lạm phát bị kiềm chế.
+= Là trường hợp việc ấn định giá kiểm soát được tốc độ thay đổi của giá cả mà không tác động đến những xu hướng lạm phát đang diễn ra.
+@Required reserves
+- (Econ) Dự trữ bắt buộc.
+= Trong ngành ngân hàng ở Mỹ, các tổ chức nhận tiền gửi phải duy trì một tỷ lệ phần trăm nhất định của số nợ mà các tổ chức này phát hành (về cơ bản gồm có séc, sổ tiết kiệm và giấy chứng nhận tài khoản tiền gửi) dưới dạng số dư nhàn rỗi.
+@Required rate of return on capital
+- (Econ) Suất sinh lợi cần có của vốn.
+@Required real rate of return on capital
+- (Econ) Suất sinh lợi thực tế cần có của vốn.
+@Required reserve ratio
+- (Econ) Tỷ lệ dự trữ bắt buộc.
+@Resale price mainternance
+- (Econ) Việc duy trì giá bán lẻ.
+= Là thoả thuận theo đó các nhà sản xuất xác định một cách độc lập hoặc tập thể những mức giá tối thiểu mà các sản phẩm của họ có thể được bán lại tại các nhà bán buôn và bán lẻ.
+@Resale Prices Act Đạo luật năm 1964 về Giá bán lẻ.
+- (Econ) Là Đạo luật của Anh cấm việc duy trì giá bán lẻ bởi một hãng riêng lẻ.
+@Research and development (R&D)
+- (Econ) Nghiên cứu và triển khai.
+= Là hoạt động nhằm nâng cao trình độ khoa học hoặc kỹ thuật và ứng dụng trình độ đó vào việc tạo ra các sản phẩm mới và phương tiện sản xuất mới cũng như cải tiến các sản phẩm và qui trình sản xuất hiện tại.
+@Reservation wage
+- (Econ) Mức lương bảo lưu; Mức lương kỳ vọng tối thiểu.
+= Người công nhân tìm việc trên THỊ TRƯỜNG LAO ĐỘNG sẽ có một ý tưởng nhất định về mức lương mà anh ta mong muốn hoặc xứng đáng được hưởng, dựa trên mức lương trước đây của anh ta và những đề nghị trả lương được biết đến theo một ý nghĩa kỳ vọng nhất định.
+@Reserve assets ratio
+- (Econ) Tỷ lệ tài sản dự trữ.
+= Là tỷ lệ tối thiểu mà tất cả các ngân hàng và các CÔNG TY TÀI CHÍNH có quy mô lớn hơn hoạt động tại Anh trong thời gian từ 1971 đến 1981 phải duy trì giữa các tài sản được xác định là hợp lệ và các khoản nợ được xác định bằng cách tương tự là hợp lệ.
+@Reserve base
+- (Econ) Cơ số dự trữ.
+= Là số lượng những tài sản trong hệ thống tài chính mà xét trên thực tế hoặc về mặt pháp lý, có thể hình thành nên dự trữ của hệ thống ngân hàng, và theo lý thuyết truyền thống về SỐ NHÂN TÍN DỤNG, hình thành nên số bị nhân giúp cho việc sử dụng số nhân để xác định tổng số tiền gửi ngân hàng.
+@Reserve currency
+- (Econ) Đồng tiền dự trữ.
+= Là tên gọi được đặt cho một ĐỒNG TIỀN nước ngoài mà một chính phủ sãn sàng giữ làm một phần dự trữ của mình; số tiền này được sử dụng để tài trợ cho thương mại quốc tế.
+@Reserve ratio
+- (Econ) Tỷ lệ dự trữ.
+= Là tỷ lệ giữa một tài sản, hoặc một nhóm các tài sản, được giữ làm quỹ dự trữ so với tổng số các khoản nợ hoặc cam kết nhất định, và xét về một mức độ nào đó thì đây là đối tượng của chính sách hoạt động của các tổ chức có liên quan.
+@Residual
+- (Econ) Số dư.
+= Chênh lệch giữa một điểm số liệu trên thực tế với giá trị được đưa ra bởi một phương trình ước tính.
+@Resiliency
+- (Econ) Tính nhạy bén.
+@Resource
+- (Econ) Nguồn lực; Nguồn tài nguyên.
+@Restricted least squares (RLS)
+- (Econ) Bình phương nhỏ nhất hạn chế.
+= Là một phương pháp ước tính các thông số của một phương trình, trong đó có tính đến một loại thông tin ưu tiên.
+@Restrictive Practices Court
+- (Econ) Toà án về các hoạt động hạn chế.
+= Xem RESTRICTIVE TRADE PRACTICES ACT 1956.
+@Restrictive Trade Practices Act Đạo luật năm 1956 về những Thông lệ thương mại hạn chế.
+- (Econ) Là đạo luật của Anh quy định việc các hãng sản xuất thoả thuận với nhau để duy trì giá bán lẻ là bất hợp pháp.
+@Restrictive Trade Practices Act Đạo luật năm 1968 về những Thông lệ thương mại hạn chế.
+- (Econ) Điểm chính của đạo luật này là một điều khoản nới lỏng việc đăng ký bắt buộc các thoả thuận theo quy định của đạo luật năm 1956 về những Thông lệ thương mại hạn chế.
+@Reswitching
+- (Econ) Tái chuyển đổi.
+= Trong CUỘC TRANH LUẬN VỀ VỐN, quan điểm cho rằng một phương pháp sản xuất bị từ bỏ khi tỷ lệ lợi nhuận thấp có thể được đưa ra khi tỷ lệ lợi nhuận tăng lên tới những mức cao hơn nhiều, cùng với việc một (hoặc nhiều) Phương pháp sản xuất thay thế có khả năng sinh lợi cao hơn được sử dụng trong giai đoạn chuyển tiếp.
+@Retail
+- (Econ) Bán lẻ.
+= Là giai đoạn cuối cùng trong dây chuyền phân phối từ nhà sản xuất đến người tiêu dùng.
+@Retail banking
+- (Econ) Nghiệp vụ ngân hàng bán lẻ.
+= Thuật ngữ này được áp dụng cho các nghiệp vụ ngân hàng chuyền thống do các NGÂN HÀNG THANH TOÁN BÙ TRỪ và ngày càng nhiều các ngân hàng khác tiến hành, thông qua hệ thống chi nhánh của họ tới mọi đối tượng.
+@Retail price index (RPI)
+- (Econ) Chỉ số giá bán lẻ.
+= Là một chỉ số giá hàng hoá được đề cập đến như là chỉ số giá sinh hoạt. Chỉ số này đo lường những thay đổi tương đối trong các mức giá của một nhóm hàng tiêu dùng cụ thể mà một hộ gia đình trung bình mua một cách thường xuyên.
+@Retained earnings
+- (Econ) Thu nhập được giữ lại.
+= Xem INTERNAL FINANCE.
+@Retention ratio
+- (Econ) Tỷ lệ giữ lại.
+= Là tỷ lệ lợi nhuận ròng được tính làm thu nhập giữ lại.
+@Retentions
+- (Econ) Các khoản giữ lại.
+= Là tên gọi khác của THU NHẬP GIỮ LẠI hoặc LỢI NHUẬN KHÔNG CHIA.
+@Return on capital employed
+- (Econ) Lợi tức từ vốn được sử dụng.
+= Xem RATE OF RETURN.
+@Returns to scale
+- (Econ) Lợi tức theo quy mô.
+= Là tỷ lệ mà theo đó sản lượng thay đổi khi số lượng của tất cả các đầu vào thay đổi.
+@Revaluation
+- (Econ) Sự nâng giá trị; sự tăng giá.
+= Là một thay đổi theo hướng đi lên của sức mua ngang giá đối với một đồng tiền trong một hệ thống tỷ giá hối đoái cố định.
+@Revealed preference
+- (Econ) Sở thích được bộc lộ.
+= Là một phương thức tiếp cận học thuyết về cầu của SAMUELSON, dựa trên những nhận định về cách thức mà người tiêu dùng phản ứng đối với những thay đổi về giá cả và thu nhập.
+@Revenue
+- (Econ) Doanh thu.
+@Revenue maximization
+- (Econ) Tối đa hoá doanh thu.
+= Xem SALES MAXIMIZATION HYPOTHESIS.
+@Reverse dumping
+- (Econ) Bán phá giá ở thị trường nước ngoài.
+= Là việc bán một loại hàng hoá ở nước ngoài với một mức giá cao hơn giá mặt hàng đó tại thị trường trong nước để lợi dụng vị trí độc quyền.
+@Reverse yield gap
+- (Econ) Chênh lệch nghịch đảo của lợi tức.
+= Xem Yield gap.
+@Ricardian equivalence theorem
+- (Econ) Định lý Ricardo về tính tương đương .
+= Theo định lý này, việc đánh thuế và việc phát hành nợ của nhính phủ, khi được sử dụng như một công cụ tài trợ cho chi tiêu ngắn hạn của chính phủ, đều có các hiệu ứng tương đương với nhau đối với nền kinh tế.
+@Ricardo, David
+- (Econ) (1772-1823).
+= Là nhà kinh tế học người Anh, được nhắc đến nhiều nhất do học thuyết về TIỀN THUÊ và học thuyết về CHI PHÍ SO SÁNH của ông. Năm 1819, ông được bầu vào Hạ nghị viện. Sự quan tâm của ông đối với kinh tế học bắt đầu từ khi ông đọc tác phẩm Của cải của các dân tộc của Smith mà sau đó trở thành cơ sở cho tác phẩm Giá cao của vàng (1810), trong đó ông lập luận rằng tình trạng lạm phát hiện tại là do việc ngân hàng trung ương Anh không hạn chế được việc phát hành tiền và một uỷ ban chính thức cũng đưa ra một kết luận tương tự vào năm 1811. Tác phẩm chủ yếu của ông là Những nguyên tắc của kinh tế chính trị và thuế (1817). Ricardo cũng được biết đến vì thành công của ông trong việc tạo ra một cỗ máy phân tích' và là người đầu tiên sử dụng phương pháp xây dựng các mô hình phân tích giản đơn dựac trên những giả định táo bạo để áp dụng trực tiếp vào việc giải quyết các vấn đề quan trọng.
+@Right-to-work laws
+- (Econ) Các luật về quyền được làm việc.
+= Ở Mỹ, nơi phát sinh cụm thuật ngữ này, việc buộc công nhân phải gia nhập các nghiệp đoàn là bất hợp pháp và các tiểu ban có quyền cấm việc áp dụng quy định về gia nhập nghiệp đoàn.
+@Rights issue
+- (Econ) Phát hành quyền mua cổ phiếu.
+= Trong một đợt phát hành cổ phiếu mới của một công ty, các cổ động hiện tại có quyền mua cổ phiếu mơi theo tỷ lệ góp vốn của từng cổ đông, là với những điều kiện ưu đãi.
+@Risk
+- (Econ) Rủi ro.
+= Là hoàn cảnh trong đó một sự kiện xảy ra với một xác suất nhất định hoặc trong trường hợp quy mô của sự kiện đó có một PHÂN PHỐI XÁC SUẤT.
+@Risk aversion
+- (Econ) Sự sợ rủi ro, không thích rủi ro.
+= Là kỳ vọng của nhà đầu tư muốn có lợi tức dự kiến cao hơn để bù đắp sự gia tăng độ rủi ro.
+@Risk capital
+- (Econ) Vốn rủi ro.
+= Thông thường cụm thuật ngữ này nói đến một khoản vốn được đầu tư vào một doanh nghiệp mà chủ sở hữu của nó chấp nhận rủi ro là công ty có thể bị phá sản.
+@Risk attitude
+- (Econ) Thái độ đối với rủi ro.
+@Risk character
+- (Econ) Thái độ đối với rủi ro.
+@Risk premium
+- (Econ) Tiền bù cho rủi ro, phí rủi ro
+= 1.Là một khoản bổ sung vào TỶ LỆ CHIẾT KHẤU thuần tuý để tính đến sự không chắc chắn của những lợi ích hoặc doanh thu của một dự án trong tương lai; 2.Trong một thế giới không chắc chắn, đó là phần lợi tức bù đắp cho chủ sở hữu vốn về những rủi ro trong việc sử dụng số vốn đó trong kinh doanh.
+@Risk-spreading
+- (Econ) Dàn trải rủi ro.
+= Xem INSURANCE.
+@Risk-diversification
+- (Econ) Phân tán rủi ro.
+@Risk-loving
+- (Econ) Thích rủi ro.
+@Risk Master
+- (Econ) Phần mềm Risk Master
+@Risk-neutrality
+- (Econ) Bàng quan với rủi ro.
+@Risk-pool
+- (Econ) Chung độ rủi ro; Góp chung rủi ro.
+@Risk-sharing
+- (Econ) Chia xẻ rủi ro.
+@Rival
+- (Econ) Tính hữu tranh; Tính cạnh tranh (trong tiêu dùng).
+= Khi sự tiêu dùng của một cá nhân về một hàng hoá làm giảm số lượng hàng hoá đó mà những người khác có thể tiêu dùng.
+@Robbins, Lionel
+- (Econ) (1898-1984).
+= Là nhà kinh tế học người Anh và là một nhân vật có nhiều ảnh hưởng, là giáo sư kinh tế tại trường Kinh tế London từ năm 1929 đến năm 1961. Trong thời gian này, Robbins có ảnh hưởng to lớn đối với cả sinh viên lẫn chính phủ, là người đi đầu trong việc hồi sinh tư duy kinh tế tự do. Ông nhấn mạnh sự cần thiết về mặt lý thuyết và thực tế giữa kinh tế học CHUẨN TẮC và THỰC CHỨNG. Trong tác phẩm Luận bàn về bản chất và ý nghĩa của khoa học kinh tế (1953), nhấn mạnh đến khía cạnh sự khan hiếm trong mọi hành vi kinh tế. Câu nói nổi tiếng của Robbins đã tóm lại quan điểm này và trở thành một định nghĩa chuẩn về phạm vi nghiên cứu của kinh tế học:Khoa học nghiên cứu hành vi của con người dựa trên cơ sở mối quan hệ giữa những mục tiêu và công cụ khan hiếm với những công dụng khác nhau.
+@Robinson, Joan V.
+- (Econ) (1903-1983).
+= Nhà kinh tế học người Anh và là một trong những lý thuyết gia kinh tế có ảnh hưởng nhất trong giai đoạn hậu Keynes. Là giáo sư giảng dạy tại trường Đại học Cambrigde (1931-1971). Đóng góp góp quan trọng đầu tiên của bà là sự phê bình và sự diễn giải lại học thuyết truyền thống về giá trị dựa trên khái niệm. Tác phẩm sau này của bà đã chuyển từ phương pháp điểm cân bằng từng phần của Marshall sang phương pháp phân tích cổ điểncủa Keynes về những vấn đề kinh tế vĩ mô năng động, đặc biệt là vấn đề tăng trưởng và phân phối. Tác phẩm Sự tích luỹ vốn (1956), đóng góp quan trọng của bà cho học thuyết tăng trưởng kinh tế, vận dụng tư tưởng của J.Mkeynes, Harrod, C.Mác và David Ricardo. Robinson là một người đi đầu trong những cuộc tranh luận gay gắt về ý nghĩa của vốn vào những năm 50 và 60.
+@Robinson-Patman Act
+- (Econ) Đạo luật Robinson-Patman.
+= Là đạo luật ra đời năm 1936 để sửa đổi mục 2 của Đạo luật Clayton của Hoa Kỳ. Nội dung chủ yếu của nó là việc cấm đặt các mức giá khác nhau cho các khách hàng khác nhau đối với những hàng hoá mà cơ bản giống nhau về chủng loại và chất lượng, trong trường hợp đó tác động sẽ là việc giảm đáng kể mức độ cạnh tranh hoặc có xu hướng độc quyền.
+@Roosa effect
+- (Econ) Hiệu ứng Roosa.
+= Cụm thuật ngữ này trước đây dùng để chỉ điều mà ngày nay thường được gọi là HIỆU ỨNG KHOÁ. Nó được mang tên chủ ngân hàng - Nhà kinh tế học Robert V.Roosa, người đầu tiên ủng hộ ý nghĩa của nó.
+@Roots
+- (Econ) Các nghiệm, căn số.
+= Các nghiệm của một hàm là các giá trị của biến độc lập làm cho biến phụ thuộc bằng không.
+@Rostow model
+- (Econ) Mô hình Rostow
+= Một thuyết tăng trưởng kinh tế do giáo sư W.W Rostow đưa ra năm 1961. Ông phân chia quá trình tăng trưởng thành 5 giai đoạn: 1)Xã hội truyền thống; 2)Các điều kiện tiên quyết để cất cánh;3)Cất cánh;4)Tiến tới trưởng thành;5)Giai đoạn tiêu dùng cao.
+@Roundaboutness
+- (Econ) Phương pháp sản xuất gián tiếp.
+= Thuật ngữ này dùng để chỉ phương pháp sản xuất tốn nhiều thời gian hơn và hiệu quả hơn. Khái niệm năng suất cao hơn của phương pháp sản xuất là giáo lý trung tâm của trường phái Áo trong khi thảo luận vốn.
+@Royalty
+- (Econ) Thuế tài nguyên.
+= Ở Anh, đây là loại thuế phải trả cho chính phủ Anh bởi các tổ chức khai khoáng sản vì mọi quyền khai khoáng đều thuộc về Hoàng gia. Ở nhiều nước, một số hình thức thuế tinh vi hơn và thường căn cứ vào lợi nhuận đang trở nên quan trọng hơn với tư cách là thuế đánh vào tài nguyên thiên nhiên.
+@Royalties
+- (Econ) Tiền hoa hồng (căn cứ vào kết quả làm việc cá nhân).
+= Xem COMPENSATION RULES.
+@RPI
+- (Econ) Chỉ số giá bán lẻ.
+= Xem RETAIL PRICE INDEX.
+@Rule-of-thumb
+- (Econ) Quy tắc tự đặt.
+= Một công thức hay thủ tục mà tạo cơ sở cho việc ra quyết định của các tác nhân kinh tế.
+@Rybczcynski theorem
+- (Econ) Định lý Rybczcynski.
+= Định lý, do nhà kinh tế Rybczcynski đưa ra, cho rằng nếu trong mô hình HECKSCHER-OHLIN, một trong hai yếu tố sản xuất được tăng để duy trì giá cả hàng hoá và các yếu tố sản xuất không đổi thì lượng hàng hoá dùng nhiều yếu tố sản xuất được tăng lên phải mở rộng sản lượng hàng hoá kia, dùng nhiều hơn trong yếu tố sản xuất không đổi phải giảm xuống.
+@Robustness of an exchange rate regime
+- (Econ) Tính thiết thực của một chế độ tỷ giá hối đoái.
+@Run (a)
+- (Econ) (một) cơn sốt rút tiền.

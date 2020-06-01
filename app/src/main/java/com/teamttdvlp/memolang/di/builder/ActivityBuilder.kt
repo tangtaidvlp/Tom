@@ -9,14 +9,11 @@ import dagger.android.ContributesAndroidInjector
 @Module
 abstract class ActivityBuilder {
 
-//    @ContributesAndroidInjector(modules = [AuthActivityModule::class])
-//    abstract fun injectAuthActivity() : AuthActivity
-
-//    @ContributesAndroidInjector(modules = [SignUpActivityModule::class])
-//    abstract fun injectSignUpActivity() : SignUpActivity
-
     @ContributesAndroidInjector(modules = [AddFlashcardActivityModule::class])
     abstract fun injectAddFlashcardActivity() : AddFlashcardActivity
+
+    @ContributesAndroidInjector(modules = [RetrofitAddFlashcardActivityModule::class])
+    abstract fun injectRetrofitAddFlashcardActivity() : RetrofitAddFlashcardActivity
 
     @ContributesAndroidInjector(modules = [ViewFlashcardSetActivityModule::class])
     abstract fun injectLanguageActivity() : ViewFlashcardSetActivity
@@ -30,8 +27,6 @@ abstract class ActivityBuilder {
     @ContributesAndroidInjector(modules = [ViewFlashcardListActivityModule::class])
     abstract fun injectViewFlashCardListActivity() : ViewFlashCardListActivity
 
-//    @ContributesAndroidInjector(modules = [SearchEditFlashcardActivityModule::class])
-//    abstract fun injectSearchEditFlashcardActivity() : SearchEditFlashcardActivity
 
     @ContributesAndroidInjector(modules = [SetUpAccountActivityModule::class])
     abstract fun ịnjectSetUpAccountActivity() : SetUpAccountActivity
