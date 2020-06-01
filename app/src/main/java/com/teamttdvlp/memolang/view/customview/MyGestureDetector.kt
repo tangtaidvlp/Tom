@@ -8,7 +8,6 @@ import android.view.View
 import com.teamttdvlp.memolang.view.helper.dp
 import com.teamttdvlp.memolang.view.helper.quickLog
 import java.lang.Exception
-import kotlin.math.abs
 import kotlin.math.absoluteValue
 
 open class MyGestureDetector :  View.OnTouchListener {
@@ -35,9 +34,9 @@ open class MyGestureDetector :  View.OnTouchListener {
 
     private inner class GestureListener : GestureDetector.SimpleOnGestureListener() {
 
-        val STANDARD_VELOCITY = 80.dp()
+        val STANDARD_Y_VELOCITY = 60.dp()
 
-        val STANDARD_X_VELOCITY = 60.dp()
+        val STANDARD_X_VELOCITY = 40.dp()
 
         override fun onDown(e: MotionEvent?): Boolean {
             return true
@@ -51,10 +50,10 @@ open class MyGestureDetector :  View.OnTouchListener {
             try {
                 var deltaY= e2!!.y - e1!!.y
                 var deltaX= e2!!.x - e1!!.x
-                quickLog("Y: " + velocityY)
-                quickLog("X: " + velocityX)
-                val isSwipeUp = (deltaY < 0) and (velocityY.absoluteValue > STANDARD_VELOCITY) and (velocityY.absoluteValue > velocityX.absoluteValue )
-                val isSwipeDown = (deltaY > 0) and (velocityY.absoluteValue > STANDARD_VELOCITY) and (velocityY.absoluteValue > velocityX.absoluteValue )
+                val isSwipeUp =
+                    (deltaY < 0) and (velocityY.absoluteValue > STANDARD_Y_VELOCITY) and (velocityY.absoluteValue > velocityX.absoluteValue)
+                val isSwipeDown =
+                    (deltaY > 0) and (velocityY.absoluteValue > STANDARD_Y_VELOCITY) and (velocityY.absoluteValue > velocityX.absoluteValue)
                 val isSwipeRight = (deltaX > 0) and (velocityX.absoluteValue > STANDARD_X_VELOCITY) and (velocityX.absoluteValue > velocityY.absoluteValue )
                 val isSwipeLeft = (deltaX <  0) and (velocityX.absoluteValue > STANDARD_X_VELOCITY) and (velocityX.absoluteValue > velocityY.absoluteValue )
                 if ( isSwipeUp) {

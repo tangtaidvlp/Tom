@@ -56,6 +56,12 @@ class RCVViewFlashcardAdapter (var context : Context, var list : ArrayList<Flash
             vHder.dB.root.elevation = 3.dp().toFloat()
             (vHder.dB.root.layoutParams as RecyclerView.LayoutParams).bottomMargin = 3.dp()
             vHder.dB.root.requestLayout()
+        } else {
+            // Reset it
+            vHder.dB.line.goVISIBLE()
+            vHder.dB.root.elevation = 0.dp().toFloat()
+            (vHder.dB.root.layoutParams as RecyclerView.LayoutParams).bottomMargin = 0.dp()
+            vHder.dB.root.requestLayout()
         }
 
         val flashcard = list[position]

@@ -34,8 +34,7 @@
                 app:radius="120dp" />
 
         <LinearLayout
-                android:id="@+id/success"
-                android:layout_width="160dp"
+            android:layout_width="160dp"
                 android:layout_height="160dp"
                 android:alpha="0.0"
                 android:background="@drawable/round_success_login_background"
@@ -60,8 +59,7 @@
         </LinearLayout>
 
         <LinearLayout
-                android:id="@+id/failed"
-                android:layout_width="160dp"
+            android:layout_width="160dp"
                 android:layout_height="160dp"
                 android:background="@drawable/round_10dp_white_background"
                 android:clickable="false"
@@ -87,8 +85,7 @@
     </FrameLayout>
 
     <TextView
-            android:id="@+id/txt_success"
-            android:layout_width="wrap_content"
+        android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="43dp"
             android:alpha="0.0"
@@ -101,8 +98,7 @@
             app:layout_constraintTop_toBottomOf="@id/root" />
 
     <TextView
-            android:id="@+id/txt_failed"
-            android:layout_width="wrap_content"
+        android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="43dp"
             android:alpha="0.0"

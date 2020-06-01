@@ -9,7 +9,6 @@ import com.teamttdvlp.memolang.model.UseFCActivity_StatusManager.SpeakerStatus.C
 import com.teamttdvlp.memolang.model.UseFCActivity_StatusManager.SpeakerStatus.Companion.SPEAK_TEXT_ONLY
 import com.teamttdvlp.memolang.data.model.entity.flashcard.Flashcard
 import com.teamttdvlp.memolang.data.model.entity.flashcard.FlashcardSet
-import com.teamttdvlp.memolang.model.ReviewActivitiesSpeakerStatusManager
 import com.teamttdvlp.memolang.model.CardListLanguageReverser.Companion.reverse_ListCard_TextAndTranslation
 import com.teamttdvlp.memolang.model.UseFCActivity_StatusManager
 import com.teamttdvlp.memolang.view.activity.iview.UseFlashcardView
@@ -25,7 +24,7 @@ class UseFlashcardViewModel (private val context : Application): BaseViewModel<U
 
     val cardLeftCount = ObservableInt()
 
-    val fogottenCardsCount = ObservableInt()
+    val forgottenCardsCount = ObservableInt()
 
     val currentCardOrder = ObservableInt()
 
@@ -33,7 +32,7 @@ class UseFlashcardViewModel (private val context : Application): BaseViewModel<U
 
     private val hardCardList = ArrayList<Flashcard>()
 
-    private val cardListManager = CardListManager()
+    val cardListManager = CardListManager()
 
     private lateinit var srcLangTextSpeaker : TextSpeaker
 
@@ -142,7 +141,7 @@ class UseFlashcardViewModel (private val context : Application): BaseViewModel<U
 
     fun handleHardCard () {
         if (!hardCardList.contains(cardListManager.getCurrentCard())) {
-            fogottenCardsCount.selfPlusOne()
+            forgottenCardsCount.selfPlusOne()
             hardCardList.add(cardListManager.getCurrentCard())
         }
         cardListManager.handleHardCard()

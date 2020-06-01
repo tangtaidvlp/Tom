@@ -1,36 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#008577</color>
-    <color name="colorPrimaryDark">#00574B</color>
-    <color name="colorAccent">#D81B60</color>
     <color name="input_alert_color">#DC0000</color>
     <color name="dark_blue_text">#4B4D63</color>
-    <color name="light_blue">#4141FF</color>
-    <color name="light_yellow">#FFAB0C</color>
     <color name="quite_black_text">#3B3B3B</color>
     <color name="dark_orange_text">#E84E16</color>
     <color name="example_text_blue">#0056E9</color>
     <color name="app_red">#F65546</color>
     <color name="dark_red">#F0161B</color>
     <color name="dark_green">#0CB500</color>
-    <color name="app_yellow">#FFB933</color>
     <color name="hint_color">#AEAFB9</color>
-    <color name="more_hard_hint_color">#65666A</color>
     <color name="app_bright_blue">#4F65EB</color>
     <color name="app_blue">#1228B7</color>
     <color name="white">#FFFFFF</color>
     <color name="use_flashcard_grey_text_color">#545454</color>
-    <color name="light_grey">#ADAEB8</color>
-    <color name="light_red">#FA6D60</color>
-    <color name="login_error_color">#CD0C00</color>
     <color name="text_success_color">#0DC200</color>
     <color name="text_error_color">#CD0C00</color>
-    <color name="search_voca_card_info_text_color">#707070</color>
-    <color name="search_dictionary_hint_color">#D0D0D0</color>
     <color name="border_color">#AEAFB9</color>
     <color name="black">#000000</color>
     <color name="dark_covered_blue">#09145B</color>
-    <color name="hard_mode_red">#EF605E</color>
     <color name="orange_highlight_text">#F44F11</color>
 
 

@@ -90,7 +90,7 @@
             android:gravity="right|center_vertical"
             android:includeFontPadding="false"
             android:paddingBottom="3dp"
-            android:text="Cards left count: "
+            android:text="Cards left: "
             android:textColor="@color/black"
             android:textSize="13sp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -127,7 +127,7 @@
             android:gravity="right|center_vertical"
             android:includeFontPadding="false"
             android:paddingBottom="3dp"
-            android:text="Passed cards count: "
+            android:text="Passed cards: "
             android:textColor="@color/black"
             android:textSize="13sp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -144,7 +144,7 @@
             android:gravity="right|center_vertical"
             android:includeFontPadding="false"
             android:paddingBottom="3dp"
-            android:text="@{String.valueOf(vwModel.cardLeftCount)}"
+            android:text="@{String.valueOf(vwModel.cardListManager.getSize() - vwModel.cardLeftCount)}"
             android:textColor="@color/orange_highlight_text"
             android:textSize="13sp"
             app:layout_constraintBottom_toBottomOf="@id/txt_title_passed_card_count"
@@ -163,7 +163,7 @@
             android:gravity="right|center_vertical"
             android:includeFontPadding="false"
             android:paddingBottom="3dp"
-            android:text="Forgotten cards count: "
+            android:text="Forgotten cards: "
             android:textColor="@color/black"
             android:textSize="13sp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -180,7 +180,7 @@
             android:gravity="right|center_vertical"
             android:includeFontPadding="false"
             android:paddingBottom="3dp"
-            android:text="@{String.valueOf(vwModel.cardLeftCount)}"
+            android:text="@{String.valueOf(vwModel.forgottenCardsCount)}"
             android:textColor="@color/orange_highlight_text"
             android:textSize="13sp"
             app:layout_constraintBottom_toBottomOf="@id/txt_title_forgotten_cards_count"
@@ -225,8 +225,9 @@
                 android:includeFontPadding="false"
                 android:paddingStart="8dp"
                 android:paddingTop="7dp"
+                android:textColor="@color/app_bright_blue"
                 android:text="@{String.valueOf(vwModel.currentCardOrder)}"
-                android:textColor="@color/use_flashcard_grey_text_color"
+                android:textSize="16sp"
                 android:visibility="visible"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -259,6 +260,7 @@
             android:id="@+id/img_front_swipe_zone"
             android:layout_width="0dp"
             android:layout_height="0dp"
+            android:alpha="0.5"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/viewgroup_front_flashcard"
@@ -353,9 +355,10 @@
                 android:layout_height="wrap_content"
                 android:alpha="1.0"
                 android:fontFamily="@font/segoeui"
-                android:gravity="right"
+                android:gravity="left"
                 android:paddingTop="1dp"
                 android:paddingLeft="6dp"
+                android:textSize="16sp"
                 android:text="@{String.valueOf(vwModel.currentCardOrder)}"
                 android:textColor="@color/app_red"
                 app:layout_constraintStart_toStartOf="parent"
@@ -459,7 +462,7 @@
                 android:paddingTop="1dp"
                 android:paddingRight="6dp"
                 android:text="@{String.valueOf(vwModel.currentCardOrder)"
-                android:textColor="@color/use_flashcard_grey_text_color"
+                android:textColor="@color/black"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -602,93 +605,95 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
+
+        </com.teamttdvlp.memolang.view.customview.MyCustomDialog>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/round_5dp_white_background"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:padding="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
             <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginEnd="10dp"
-                android:background="@drawable/round_5dp_white_background"
-                android:gravity="center_vertical"
-                android:orientation="vertical"
-                android:padding="20dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toTopOf="parent">
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:orientation="horizontal">
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="30dp"
-                    android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/image_speaker_black" />
 
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:src="@drawable/image_speaker_black" />
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/seguisb"
+                    android:text="Speaker"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
 
-                    <androidx.appcompat.widget.AppCompatTextView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_marginLeft="10dp"
-                        android:fontFamily="@font/seguisb"
-                        android:text="Speaker"
-                        android:layout_weight="1"
-                        android:textColor="@color/black"
-                        android:textSize="16sp" />
-
-                    <Switch
-                        android:id="@+id/switch_speaker"
-                        android:checked="true"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"/>
-
-                </LinearLayout>
-
-                <RadioGroup
-                    android:id="@+id/radio_grp_speaker_setting"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-
-                    <RadioButton
-                        android:id="@+id/checkbox_speak_text_only"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:button="@drawable/check_box_circle_background"
-                        android:fontFamily="@font/segoeui"
-                        android:gravity="center_vertical"
-                        android:layoutDirection="rtl"
-                        android:text="Speak text only"
-                        android:textColor="@color/black"
-                        android:textSize="16sp" />
-
-                    <RadioButton
-                        android:id="@+id/checkbox_speak_translation_only"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:button="@drawable/check_box_circle_background"
-                        android:fontFamily="@font/segoeui"
-                        android:gravity="center_vertical"
-                        android:layoutDirection="rtl"
-                        android:text="Speak translation only"
-                        android:textColor="@color/black"
-                        android:textSize="16sp" />
-
-                    <RadioButton
-                        android:id="@+id/checkbox_speak_both_text_and_trans"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:button="@drawable/check_box_circle_background"
-                        android:fontFamily="@font/segoeui"
-                        android:gravity="center_vertical"
-                        android:layoutDirection="rtl"
-                        android:text="Speak both text and translation"
-                        android:textColor="@color/black"
-                        android:textSize="16sp" />
-
-                </RadioGroup>
+                <Switch
+                    android:id="@+id/switch_speaker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true" />
 
             </LinearLayout>
 
-        </com.teamttdvlp.memolang.view.customview.MyCustomDialog>
+            <RadioGroup
+                android:id="@+id/radio_grp_speaker_setting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/checkbox_speak_text_only"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:button="@drawable/check_box_circle_background"
+                    android:fontFamily="@font/segoeui"
+                    android:gravity="center_vertical"
+                    android:layoutDirection="rtl"
+                    android:text="Speak text only"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:id="@+id/checkbox_speak_translation_only"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:button="@drawable/check_box_circle_background"
+                    android:fontFamily="@font/segoeui"
+                    android:gravity="center_vertical"
+                    android:layoutDirection="rtl"
+                    android:text="Speak translation only"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:id="@+id/checkbox_speak_both_text_and_trans"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:button="@drawable/check_box_circle_background"
+                    android:fontFamily="@font/segoeui"
+                    android:gravity="center_vertical"
+                    android:layoutDirection="rtl"
+                    android:text="Speak both text and translation"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

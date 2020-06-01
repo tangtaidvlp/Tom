@@ -66,8 +66,9 @@ class UseFlashcardDoneActivity : BaseActivity<ActivityUseFlashcardDoneBinding, U
 
     override fun addViewControls() { dB.apply {
         rcvForgottenCardAdapter = RCVViewFlashcardAdapter(this@UseFlashcardDoneActivity, getForgottenCardList())
-        rcvFogottenCardsList.adapter = rcvForgottenCardAdapter
-        rcvFogottenCardsList.layoutManager = LinearLayoutManager(this@UseFlashcardDoneActivity, RecyclerView.VERTICAL, false)
+        rcvForgottenCardsList.adapter = rcvForgottenCardAdapter
+        rcvForgottenCardsList.layoutManager =
+            LinearLayoutManager(this@UseFlashcardDoneActivity, RecyclerView.VERTICAL, false)
     }}
 
     override fun addViewEvents() { dB.apply {
@@ -101,14 +102,14 @@ class UseFlashcardDoneActivity : BaseActivity<ActivityUseFlashcardDoneBinding, U
     }}
 
     override fun showCongratulationText() { dB.apply {
-        imgCongratulation.goVISIBLE()
+        txtCongratulation.goVISIBLE()
     }}
 
     override fun showFoggotenCardListAndNavigations() { dB.apply {
-        rcvFogottenCardsList.goVISIBLE()
+        rcvForgottenCardsList.goVISIBLE()
         btnQuit.goVISIBLE()
         btnRestart.goVISIBLE()
-        txtForgottenCards.goVISIBLE()
+        txtTitleForgottenCards.goVISIBLE()
     }}
 
     override fun waitForAWhileAndFinish () {
