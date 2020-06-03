@@ -14,31 +14,8 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/background_menu_activity"
+        android:background="@color/grey_background_color"
         tools:context=".view.activity.ReviewFlashcardActivity">
-
-        <TextView
-            android:id="@+id/txt_language_set_name_"
-            android:layout_width="0dp"
-            android:layout_height="35dp"
-            android:layout_marginTop="12dp"
-            android:layout_marginBottom="80dp"
-            android:background="@drawable/round_right_5dp_black_background"
-            android:elevation="10dp"
-            android:translationZ="5dp"
-            android:fontFamily="@font/seguisb"
-            android:gravity="center_vertical"
-            android:hint="Choose set or create new one"
-            android:inputType="textNoSuggestions|text"
-            android:paddingStart="16dp"
-            android:paddingEnd="16dp"
-            android:paddingBottom="1dp"
-            android:text="@{vwModel.setName}"
-            android:textColor="@color/white"
-            android:textSize="16sp"
-            app:layout_constraintEnd_toEndOf="@+id/center_guideline"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/center_guideline"
@@ -64,54 +41,209 @@
             app:layout_constraintGuide_end="@dimen/common_margin_end"
             app:layout_constraintStart_toStartOf="parent" />
 
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/vwgrp_title"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:background="@color/writing_flashcard_red"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/txt_set_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/segoeui"
+                android:gravity="center_vertical"
+                android:hint="Set name here"
+                android:includeFontPadding="false"
+                android:inputType="textNoSuggestions|text"
+                android:paddingEnd="16dp"
+                android:paddingBottom="1dp"
+                android:text="@{vwModel.setName}"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:translationZ="5dp" />
+
+            <ImageView
+                android:id="@+id/btn_speaker_setting"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="10dp"
+                android:alpha="1.0"
+                android:fontFamily="@font/seguisb"
+                android:gravity="center"
+                android:padding="4.5dp"
+                android:src="@drawable/image_speaker_setting"
+                app:layout_constraintRight_toLeftOf="@id/btn_turn_off_speaker"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <View
+            android:id="@+id/view_background_test_subject"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@color/white"
+            android:elevation="2dp"
+            app:layout_constraintBottom_toBottomOf="@id/vwgrp_test_subject"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/vwgrp_title" />
+
+        <!--        Cards Left Count-->
+
         <TextView
-            android:id="@+id/txt_cards_left_count_"
+            android:id="@+id/txt_title_cards_left_count"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="@dimen/common_margin_top"
-            android:layout_marginEnd="@dimen/common_margin_end"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="5dp"
             android:layout_weight="1"
             android:fontFamily="@font/segoeui"
             android:gravity="right|center_vertical"
+            android:includeFontPadding="false"
+            android:paddingBottom="3dp"
+            android:text="Cards left: "
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            android:translationZ="2dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/vwgrp_title" />
+
+        <TextView
+            android:id="@+id/txt_cards_left_count"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/seguisb"
+            android:gravity="right|center_vertical"
+            android:hint="3"
+            android:includeFontPadding="false"
             android:paddingBottom="3dp"
             android:text="@{String.valueOf(vwModel.cardLeftCount)}"
             android:textColor="@color/black"
-            android:textSize="16sp"
+            android:textSize="13sp"
+            android:translationZ="2dp"
+            app:layout_constraintBottom_toBottomOf="@id/txt_title_cards_left_count"
+            app:layout_constraintStart_toEndOf="@id/txt_title_cards_left_count"
+            app:layout_constraintTop_toTopOf="@id/txt_title_cards_left_count"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <!--        Passed cards count   -->
+        <TextView
+            android:id="@+id/txt_title_passed_card_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/segoeui"
+            android:gravity="right|center_vertical"
+            android:includeFontPadding="false"
+            android:paddingBottom="3dp"
+            android:text="Passed cards: "
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            android:translationZ="2dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txt_title_cards_left_count" />
+
+        <TextView
+            android:id="@+id/txt_passed_card_count"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/seguisb"
+            android:gravity="right|center_vertical"
+            android:hint="3"
+            android:includeFontPadding="false"
+            android:paddingBottom="3dp"
+            android:text="@{String.valueOf(vwModel.flashcardSet.flashcards.size() - vwModel.cardLeftCount)}"
+            android:textColor="@color/orange_highlight_text"
+            android:textSize="13sp"
+            android:translationZ="2dp"
+            app:layout_constraintBottom_toBottomOf="@id/txt_title_passed_card_count"
+            app:layout_constraintStart_toEndOf="@id/txt_title_passed_card_count"
+            app:layout_constraintTop_toTopOf="@id/txt_title_passed_card_count"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <!--        Forgotten cards count   -->
+        <TextView
+            android:id="@+id/txt_title_forgotten_cards_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/segoeui"
+            android:gravity="right|center_vertical"
+            android:includeFontPadding="false"
+            android:paddingBottom="3dp"
+            android:text="Forgotten cards: "
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            android:translationZ="2dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txt_title_passed_card_count" />
+
+        <TextView
+            android:id="@+id/txt_forgotten_cards_count"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/seguisb"
+            android:gravity="right|center_vertical"
+            android:hint="3"
+            android:includeFontPadding="false"
+            android:paddingBottom="3dp"
+            android:text="@{String.valueOf(vwModel.forgottenCardList.size())}"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            android:translationZ="2dp"
+            app:layout_constraintBottom_toBottomOf="@id/txt_title_forgotten_cards_count"
+            app:layout_constraintStart_toEndOf="@id/txt_title_forgotten_cards_count"
+            app:layout_constraintTop_toTopOf="@id/txt_title_forgotten_cards_count"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageView
+            android:id="@+id/btn_flip_flashcard_set"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="12dp"
+            android:src="@drawable/image_button_flip_flashcard_set"
+            android:translationZ="2dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/vwgrp_title" />
+
+
+        <View
+            android:id="@+id/view_background_input_answer"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@color/white"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/vwgrp_input_answer" />
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/vwgrp_test_subject"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:layout_marginTop="@dimen/common_margin_top"
-            android:layout_marginBottom="54dp"
-            android:elevation="5dp"
-            app:layout_constraintHeight_max="300dp"
+            android:layout_marginBottom="8dp"
+            android:translationZ="2dp"
             app:layout_constraintHeight_min="120dp"
             app:layout_constrainedHeight="true"
-            android:orientation="vertical"
-            android:weightSum="2"
             app:layout_constraintBottom_toTopOf="@+id/vwgrp_input_answer"
-            app:layout_constraintLeft_toLeftOf="@id/left_barrier"
-            app:layout_constraintRight_toRightOf="@id/right_barier"
-            app:layout_constraintTop_toBottomOf="@id/txt_language_set_name_"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txt_title_forgotten_cards_count"
             app:layout_constraintVertical_bias="0.0">
-
-            <ImageView
-                android:id="@+id/img_background"
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:alpha="0.03"
-                android:background="@drawable/round_10dp_black_background"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
 
             <ScrollView
                 android:layout_width="0dp"
@@ -216,8 +348,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:fontFamily="@font/seguisb"
-                        android:textColor="@color/black"
                         android:textSize="20sp"
+                        app:layout_constraintHorizontal_bias="1.0"
                         app:layout_constraintLeft_toLeftOf="parent"
                         app:layout_constraintRight_toRightOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />
@@ -252,63 +384,20 @@
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
-        <ImageView
-            android:id="@+id/btn_setting"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:layout_marginEnd="10dp"
-            android:alpha="1.0"
-            android:fontFamily="@font/seguisb"
-            android:gravity="center"
-            android:padding="4.5dp"
-            android:src="@drawable/image_setting"
-            app:layout_constraintRight_toLeftOf="@id/btn_turn_off_speaker"
-            app:layout_constraintTop_toTopOf="parent" />
 
-        <ImageView
-            android:id="@+id/btn_turn_off_speaker"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/common_margin_top"
-            android:alpha="1.0"
-            android:gravity="center"
-            android:padding="5dp"
-            android:text="Give up"
-            android:src="@drawable/image_speaker_black"
-            android:textColor="@android:color/white"
-            android:textSize="14sp"
-            android:layout_marginRight="10dp"
-            app:layout_constraintRight_toLeftOf="@id/txt_cards_left_count_"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <ImageView
-            android:id="@+id/btn_turn_on_speaker"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:layout_marginRight="10dp"
-            android:alpha="1.0"
-            android:visibility="gone"
-            android:fontFamily="@font/seguisb"
-            android:gravity="center"
-            android:padding="5dp"
-            android:src="@drawable/image_speaker_mute"
-            app:layout_constraintRight_toLeftOf="@id/txt_cards_left_count_"
-            app:layout_constraintTop_toTopOf="parent" />
 
         <LinearLayout
             android:id="@+id/vwgrp_input_answer"
             android:layout_width="0dp"
             android:layout_height="40dp"
             android:layout_marginBottom="10dp"
-            android:background="@drawable/round_3dp_black_border"
+            android:background="@drawable/background_writing_red_gradient"
             android:gravity="center_vertical"
             android:orientation="horizontal"
             android:weightSum="10"
-            app:layout_constraintBottom_toTopOf="@id/btn_ok"
-            app:layout_constraintEnd_toEndOf="@id/right_barier"
-            app:layout_constraintStart_toStartOf="@id/left_barrier">
+            app:layout_constraintBottom_toTopOf="@id/btn_submit"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
 
             <EditText
                 android:id="@+id/edt_input_answer"
@@ -334,7 +423,7 @@
                 android:elevation="3dp"
                 android:fontFamily="@font/seguisb"
                 android:gravity="center"
-                android:src="@drawable/image_clear_all_text_black"
+                android:src="@drawable/image_clear_all_text_red"
                 android:textColor="@color/white"
                 android:textSize="18sp" />
 
@@ -347,13 +436,13 @@
             android:layout_marginEnd="10dp"
             android:layout_marginBottom="10dp"
             android:layout_weight="10"
-            android:background="@drawable/round_3dp_black_border"
+            android:layout_marginStart="10dp"
             android:fontFamily="@font/seguisb"
             android:gravity="center"
-            android:padding="2dp"
+            android:background="@drawable/round_100dp_bright_pink_background"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@id/btn_ok"
-            app:layout_constraintStart_toStartOf="@id/left_barrier">
+            app:layout_constraintEnd_toStartOf="@id/btn_submit"
+            app:layout_constraintStart_toStartOf="parent">
 
             <TextView
                 android:id="@+id/txt_hint"
@@ -385,8 +474,6 @@
                 android:fontFamily="@font/seguisb"
                 android:gravity="center"
                 android:scrollbars="horizontal"
-                android:paddingTop="3dp"
-                android:paddingBottom="3dp"
                 android:alpha="0.3"
                 android:src="@drawable/image_give_idea"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -401,8 +488,6 @@
                 android:layout_weight="10"
                 android:fontFamily="@font/seguisb"
                 android:gravity="center"
-                android:paddingTop="3dp"
-                android:paddingBottom="3dp"
                 android:src="@drawable/image_give_idea"
                 android:visibility="gone"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -414,44 +499,36 @@
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
-        <ImageView
-            android:id="@+id/btn_ok"
-            android:layout_width="100dp"
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/btn_submit"
+            android:layout_width="120dp"
             android:layout_height="32dp"
-            android:layout_marginBottom="10dp"
-            android:background="@drawable/round_3dp_black_background"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/round_100dp_bright_red_background"
             android:fontFamily="@font/seguisb"
+            android:layout_marginBottom="10dp"
             android:gravity="center"
-            android:paddingStart="27dp"
-            android:paddingTop="5dp"
-            android:paddingEnd="27dp"
-            android:paddingBottom="5dp"
-            android:src="@drawable/image_up_arrow"
-            android:text="OK"
-            android:textColor="@color/white"
-            android:textSize="14sp"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="@id/right_barier" />
+            app:layout_constraintEnd_toEndOf="parent">
 
-        <ImageView
-            android:id="@+id/btn_next"
-            android:layout_width="100dp"
-            android:layout_height="32dp"
-            android:layout_marginBottom="10dp"
-            android:background="@drawable/round_3dp_black_background"
-            android:fontFamily="@font/seguisb"
-            android:gravity="center"
-            android:paddingStart="27dp"
-            android:paddingTop="5dp"
-            android:paddingEnd="27dp"
-            android:paddingBottom="5dp"
-            android:src="@drawable/image_right_arrow"
-            android:text="OK"
-            android:textColor="@color/white"
-            android:textSize="14sp"
-            android:visibility="gone"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="@id/right_barier" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_image_fat_arrow" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round_100dp_bright_red_background"
+                android:fontFamily="@font/tw_century_regular"
+                android:gravity="center"
+                android:src="@drawable/image_up_arrow"
+                android:text="Submit"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
 
         <RelativeLayout
             android:id="@+id/vwgrp_arrow"
@@ -649,12 +726,6 @@
             </LinearLayout>
 
         </com.teamttdvlp.memolang.view.customview.MyCustomDialog>
-
-        <include
-            android:id="@+id/layout_choose_lang_flow"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            layout="@layout/support_review_flashcard_choose_language_flow"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

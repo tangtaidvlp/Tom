@@ -6,7 +6,6 @@ import android.animation.ValueAnimator
 import android.content.Context
 import android.content.Intent
 import android.graphics.Color
-import android.graphics.drawable.Drawable
 import android.os.Bundle
 import android.text.Html
 import android.text.Spannable
@@ -18,9 +17,9 @@ import android.widget.TextView
 import androidx.core.animation.addListener
 import androidx.interpolator.view.animation.FastOutSlowInInterpolator
 import com.teamttdvlp.memolang.R
-import com.teamttdvlp.memolang.databinding.ActivityReviewFlashcardBinding
 import com.teamttdvlp.memolang.data.model.entity.flashcard.Flashcard
 import com.teamttdvlp.memolang.data.model.entity.flashcard.FlashcardSet
+import com.teamttdvlp.memolang.databinding.ActivityReviewFlashcardBinding
 import com.teamttdvlp.memolang.model.ReviewActivitiesSpeakerStatusManager
 import com.teamttdvlp.memolang.model.findTextFormInAnother
 import com.teamttdvlp.memolang.view.activity.iview.ReviewFlashcardView
@@ -31,8 +30,9 @@ import javax.inject.Inject
 import javax.inject.Named
 
 
-
 const val FLASHCARD_SET_KEY = "flashcard_set"
+
+const val REVERSE_CARD_TEXT_AND_TRANSLATION = "reverse"
 
 const val VIEW_LIST_REQUEST_CODE = 118
 
@@ -44,11 +44,6 @@ class ReviewFlashcardActivity : BaseActivity<ActivityReviewFlashcardBinding, Rev
     private val LITTLE_DARK_GREEN = "#01A40C"
 
     private val NEXT_CARD_ANIMS_DURATION = 400L
-
-    private lateinit var RED_BORDER_BACKGROUND : Drawable
-
-    private lateinit var NORMAL_BORDER_BACKGROUND : Drawable
-
 
     @field: Named("QuickAppearThenDisappearAnimation")
     @Inject
@@ -89,9 +84,14 @@ class ReviewFlashcardActivity : BaseActivity<ActivityReviewFlashcardBinding, Rev
 
 
     companion object {
-        fun requestReviewFlashcard (requestContext : Context, flashcardSet : FlashcardSet){
+        fun requestReviewFlashcard(
+            requestContext: Context,
+            flashcardSet: FlashcardSet,
+            reverseCardTextAndTranslation: Boolean
+        ) {
             val intent = Intent(requestContext, ReviewFlashcardActivity::class.java)
             intent.putExtra(FLASHCARD_SET_KEY, flashcardSet)
+            intent.putExtra(REVERSE_CARD_TEXT_AND_TRANSLATION, reverseCardTextAndTranslation)
             requestContext.startActivity(intent)
         }
     }
@@ -106,6 +106,7 @@ class ReviewFlashcardActivity : BaseActivity<ActivityReviewFlashcardBinding, Rev
         super.onCreate(savedInstanceState)
         viewModel.setUpView(this)
         dB.vwModel = viewModel
+        beginUsing(reverseLanguageFlow = false)
     }
 
     override fun onStart() { dB.apply {
@@ -126,12 +127,6 @@ class ReviewFlashcardActivity : BaseActivity<ActivityReviewFlashcardBinding, Rev
         super.onDestroy()
     }
 
-
-    override fun initProperties() {
-        RED_BORDER_BACKGROUND = getDrawable(R.drawable.round_3dp_black_border)!!
-        NORMAL_BORDER_BACKGROUND = getDrawable(R.drawable.round_3dp_black_border)!!
-    }
-
     override fun addAnimationEvents() {
         nextCardAnimtor.addListener(onEnd = {
             dB.vwgrpTestSubject.translationX = 0f
@@ -149,11 +144,6 @@ class ReviewFlashcardActivity : BaseActivity<ActivityReviewFlashcardBinding, Rev
 
     override fun addViewControls() { dB.apply {
         txtHint.movementMethod = ScrollingMovementMethod()
-
-        layoutChooseLangFlow.apply {
-            txtQuestionLanguage.text = getRequestedFlashcardSet().backLanguage
-            txtAnswerLanguage.text = getRequestedFlashcardSet().frontLanguage
-        }
     }}
 
     override fun addViewEvents() { dB.apply {
@@ -162,13 +152,8 @@ class ReviewFlashcardActivity : BaseActivity<ActivityReviewFlashcardBinding, Rev
             edtInputAnswer.setText("")
         }
 
-        btnOk.setOnClickListener {
+        btnSubmit.setOnClickListener {
             viewModel.submitAnswer(edtInputAnswer.text.toString())
-        }
-
-        btnNext.setOnClickListener {
-            nextCard(0)
-            swithFromNextToOKButton()
         }
 
         edtInputAnswer.addTextChangeListener { userAnswer, _ , _ , _ ->
@@ -185,27 +170,27 @@ class ReviewFlashcardActivity : BaseActivity<ActivityReviewFlashcardBinding, Rev
             }
         }
 
-        btnSetting.setOnClickListener {
+        btnSpeakerSetting.setOnClickListener {
             dialogSetting.show()
         }
 
-        layoutChooseLangFlow.btnReverseLangage.setOnClickListener {
-            beginUsing(true)
-        }
-
-        layoutChooseLangFlow.btnDoesNotReverseLanguage.setOnClickListener {
-            beginUsing(false)
-        }
-
-        btnTurnOffSpeaker.setOnClickListener {
-            speakerIsOn = false
-            btnTurnOnSpeaker.goVISIBLE()
-        }
-
-        btnTurnOnSpeaker.setOnClickListener {
-            speakerIsOn = true
-            btnTurnOnSpeaker.goGONE()
-        }
+//        layoutChooseLangFlow.btnReverseLangage.setOnClickListener {
+//            beginUsing(true)
+//        }
+//
+//        layoutChooseLangFlow.btnDoesNotReverseLanguage.setOnClickListener {
+//            beginUsing(false)
+//        }
+//
+//        btnTurnOffSpeaker.setOnClickListener {
+//            speakerIsOn = false
+//            btnTurnOnSpeaker.goVISIBLE()
+//        }
+//
+//        btnTurnOnSpeaker.setOnClickListener {
+//            speakerIsOn = true
+//            btnTurnOnSpeaker.goGONE()
+//        }
 
         radioGrpSpeakerSetting.setOnCheckedChangeListener { _, checkedId ->
             when (checkedId) {
@@ -228,7 +213,6 @@ class ReviewFlashcardActivity : BaseActivity<ActivityReviewFlashcardBinding, Rev
 
     private fun beginUsing (reverseLanguageFlow : Boolean) {
         viewModel.setUpInfo(getRequestedFlashcardSet(), reverseLanguageFlow)
-        dB.layoutChooseLangFlow.root.goGONE()
         setUpSpeakerStatus()
         dB.edtInputAnswer.requestFocus()
         showVirtualKeyboard()
@@ -237,9 +221,9 @@ class ReviewFlashcardActivity : BaseActivity<ActivityReviewFlashcardBinding, Rev
     private fun setUpSpeakerStatus () {
         speakerIsOn = viewModel.getSpeakerStatus()
         if (speakerIsOn) {
-            dB.btnTurnOnSpeaker.goGONE()
+//            dB.btnTurnOnSpeaker.goGONE()
         } else {
-            dB.btnTurnOnSpeaker.goVISIBLE()
+//            dB.btnTurnOnSpeaker.goVISIBLE()
         }
         quickLog("SfafdkafjgkhWJEF;kNGH': " + viewModel.getSpeakerFunction())
         when (viewModel.getSpeakerFunction()) {
@@ -263,31 +247,8 @@ class ReviewFlashcardActivity : BaseActivity<ActivityReviewFlashcardBinding, Rev
         }
     }
 
-    private fun switchFromOKToNextButton () { dB.apply {
-        imgUpArrow.rotation = 0f
-        imgUpArrow.animate().setDuration(200).setInterpolator(FastOutSlowInInterpolator()).rotation(90f)
-                                                .setLiteListener (onStart = {
-                                                    vwgrpArrow.goVISIBLE()
-                                                }, onEnd = {
-                                                    vwgrpArrow.goGONE()
-                                                    btnNext.goVISIBLE()
-                                                })
-    }}
-
-    private fun swithFromNextToOKButton () { dB.apply {
-        imgUpArrow.rotation = 90f
-        imgUpArrow.animate().setDuration(400).setInterpolator(FastOutSlowInInterpolator()).rotation(360f)
-                                                .setLiteListener ( onStart = {
-                                                    vwgrpArrow.goVISIBLE()
-                                                    },
-                                                    onEnd = {
-                                                        vwgrpArrow.goGONE()
-                                                        btnNext.goGONE()
-                                                    })
-    }}
 
     // VIEW FUNCTION ===========================================
-
 
     override fun showValidAnsBehaviours () { dB.apply {
 
@@ -330,16 +291,20 @@ class ReviewFlashcardActivity : BaseActivity<ActivityReviewFlashcardBinding, Rev
         performShowAnswerAnimations(false)
     }}
 
-    private fun speakAnswer_IfAllowed (text : String, onSpeakDone : () -> Unit) {
-         if (speakerIsOn and answerIsSpoken) {
-             viewModel.speakAnswer(text, onSpeakDone)
-         }
+    private fun speakAnswer(text: String, onSpeakDone: () -> Unit) {
+        viewModel.speakAnswer(text, onSpeakDone)
     }
 
-    private fun speakQuestion_IfAllowed (text : String) {
-        if (speakerIsOn and questionIsSpoken) {
-            viewModel.speakQuestion(text)
-        }
+    private fun allowSpeakAnswer(): Boolean {
+        return (speakerIsOn and answerIsSpoken)
+    }
+
+    private fun speakQuestion(text: String) {
+        viewModel.speakQuestion(text)
+    }
+
+    private fun allowSpeakQuestion(): Boolean {
+        return (speakerIsOn and questionIsSpoken)
     }
 
     override fun highlightHintOption() {
@@ -349,9 +314,6 @@ class ReviewFlashcardActivity : BaseActivity<ActivityReviewFlashcardBinding, Rev
     }
 
     override fun resetHintOptionState() {
-        if (dB.vwgrpHint.background != NORMAL_BORDER_BACKGROUND) {
-            dB.vwgrpHint.background = NORMAL_BORDER_BACKGROUND
-        }
         dB.imgGreyLight.goVISIBLE()
         dB.imgLightedLight.goGONE()
         dB.txtHint.alpha = 0f
@@ -376,10 +338,12 @@ class ReviewFlashcardActivity : BaseActivity<ActivityReviewFlashcardBinding, Rev
         if (useExampleForTestSubject) {
             setUpExampleTestSubject(card)
             quickLog(card.meanOfExample)
-            speakQuestion_IfAllowed(card.meanOfExample)
+            if (allowSpeakQuestion())
+                speakQuestion(card.meanOfExample)
         } else {
             setUpTranslationTestSubject(card)
-            speakQuestion_IfAllowed(card.translation)
+            if (allowSpeakQuestion())
+                speakQuestion(card.translation)
         }
     }}
 
@@ -428,62 +392,50 @@ class ReviewFlashcardActivity : BaseActivity<ActivityReviewFlashcardBinding, Rev
     }}
 
     private fun performShowAnswerAnimations (userPasses : Boolean) { dB.apply {
-
         val isExampleAppearOnScreen = (txtTestSubjectExample.alpha == 1f)
         if (isExampleAppearOnScreen) {
             if (userPasses) {
-                if (speakerIsOn) {
-                    txtExamplePositiveHighlight.animate().setDuration(200).alpha(1f)
-                    speakAnswer_IfAllowed(txtExamplePositiveHighlight.text.toString(), onSpeakDone = {
-                        runOnUiThread {
-                            nextCard(100)
-                        }
-                    })
-                } else {
-                    txtExamplePositiveHighlight.animate().setDuration(200).alpha(1f).setLiteListener (onEnd = {
-                        nextCard(500)
-                    })
-                }
+                txtExamplePositiveHighlight.animate().setDuration(200).alpha(1f)
             } else {
                 txtExampleNegativeHighlight.animate().setDuration(200).alpha(1f)
-                switchFromOKToNextButton()
-            }
-        } else {
-
-            if (not(userPasses)) {
-                switchFromOKToNextButton()
             }
 
+            if (allowSpeakAnswer()) {
+                speakAnswer(txtExamplePositiveHighlight.text.toString(), onSpeakDone = {
+                    runOnUiThread {
+                        nextCard(100)
+                    }
+                })
+            } else {
+                txtExamplePositiveHighlight.animate().setDuration(200).alpha(1f)
+                    .setLiteListener(onEnd = {
+                        nextCard(500)
+                    })
+            }
+        } else { // Is showing TEXT test subject
             txtTranslation.animate().alpha(0f)
                 .setDuration(200).setInterpolator(FastOutSlowInInterpolator())
                 .setLiteListener (onEnd = {
                     txtTranslation.translationY = 0f
                 })
 
-            if (speakerIsOn) {
-                speakAnswer_IfAllowed(txtTextAnswer.text.toString(), onSpeakDone = {
-                    if (userPasses) {
-                        runOnUiThread {
-                            nextCard(100)
-                        }
+            if (allowSpeakAnswer()) {
+                speakAnswer(txtTextAnswer.text.toString(), onSpeakDone = {
+                    runOnUiThread {
+                        nextCard(100)
                     }
                 })
 
                 txtTextAnswer.animate().alpha(1f)
-                    .setDuration(200).setInterpolator(FastOutSlowInInterpolator())
+                    .setDuration(200).interpolator = FastOutSlowInInterpolator()
 
-            } else {
+            } else { // Speaker is off
                 txtTextAnswer.animate().alpha(1f)
                     .setDuration(200).setInterpolator(FastOutSlowInInterpolator())
                     .setLiteListener (onEnd = {
-                    if (userPasses) {
                         nextCard(500)
-                    }
-                })
+                    })
             }
-
-
-
         }
     }}
 
@@ -492,9 +444,12 @@ class ReviewFlashcardActivity : BaseActivity<ActivityReviewFlashcardBinding, Rev
     }
 
     fun sendHardCardListToEndActivity () {
-        val hardCardList = viewModel.getForgottenCardList()
-        UseFlashcardDoneActivity.requestFinishUsingFlashcard(this, hardCardList,
-            UseFlashcardDoneActivity.SendableActivity.REVIEW_FLASHCARD_ACTIVITY.code)
+        val forgottenCardList = viewModel.getForgottenCardList()
+        val fullCardList = viewModel.getFlashcardSet()
+        UseFlashcardDoneActivity.requestFinishUsingFlashcard(
+            this, fullCardList, forgottenCardList,
+            UseFlashcardDoneActivity.FlashcardSendableActivity.REVIEW_FLASHCARD_ACTIVITY.code
+        )
     }
 
     // INJECTED FUNCTION ==================================================================

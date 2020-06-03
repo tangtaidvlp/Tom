@@ -9,7 +9,6 @@ import android.provider.Settings
 import android.view.LayoutInflater
 import android.view.View
 import android.view.animation.Animation
-import androidx.core.app.ActivityOptionsCompat
 import androidx.core.view.doOnPreDraw
 import com.teamttdvlp.memolang.R
 import com.teamttdvlp.memolang.databinding.ActivityMenuBinding
@@ -94,7 +93,7 @@ class MenuActivity : BaseActivity<ActivityMenuBinding, MenuActivityViewModel>(),
             quickStartActivity(SearchOnlineActivity::class.java)
         }
 
-        edtEngViDictionary.setOnClickListener() {
+        edtEngViDictionary.setOnClickListener {
             quickStartActivity(SeeVocabularyActivity::class.java)
         }
 
@@ -117,11 +116,19 @@ class MenuActivity : BaseActivity<ActivityMenuBinding, MenuActivityViewModel>(),
         }
 
         flashcardSetAdapter.setOnBtnUseFlashcardClickListener { flashcardSet ->
-            UseFlashcardActivity.requestReviewFlashcard(this@MenuActivity, flashcardSet)
+            UseFlashcardActivity.requestReviewFlashcard(
+                this@MenuActivity,
+                flashcardSet,
+                reverseCardTextAndTranslation = false
+            )
         }
 
         flashcardSetAdapter.setOnBtnReviewFlashcardHardClickListener { flashcardSet ->
-            ReviewFlashcardActivity.requestReviewFlashcard(this@MenuActivity, flashcardSet)
+            ReviewFlashcardActivity.requestReviewFlashcard(
+                this@MenuActivity,
+                flashcardSet,
+                reverseCardTextAndTranslation = false
+            )
         }
 
         flashcardSetAdapter.setOnBtnReviewFlashcardEasyClickListener { flashcardSet ->
@@ -139,14 +146,14 @@ class MenuActivity : BaseActivity<ActivityMenuBinding, MenuActivityViewModel>(),
                     val userStartScrollDown = abs(rcvFlashcardSetList.getChildAt(0).y - defaultScrollY!!) > rcvFlashcardSetList.paddingTop / 2
                     if (userStartScrollDown and lineIsShowed.not()) {
                         lineIsShowed = true
-                        imgDeviderLine.animate().alpha(1f).setDuration(200)
+                        imgDeviderLine.animate().alpha(1f).duration = 200
                         return
                     }
 
                     val userScrollToTopMost = abs(rcvFlashcardSetList.getChildAt(0).y - defaultScrollY!!) < 2.dp()
                     if (userScrollToTopMost and lineIsShowed) {
                         lineIsShowed = false
-                        imgDeviderLine.animate().alpha(0f).setDuration(200)
+                        imgDeviderLine.animate().alpha(0f).duration = 200
                     }
                 }
             })

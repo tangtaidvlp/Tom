@@ -3,17 +3,20 @@ package com.teamttdvlp.memolang.viewmodel
 import android.app.Application
 import androidx.databinding.ObservableField
 import androidx.databinding.ObservableInt
-import com.teamttdvlp.memolang.model.TextSpeaker
-import com.teamttdvlp.memolang.model.checkCanUseExampleForTestSubject
 import com.teamttdvlp.memolang.data.model.entity.flashcard.Flashcard
 import com.teamttdvlp.memolang.data.model.entity.flashcard.FlashcardSet
 import com.teamttdvlp.memolang.model.CardListLanguageReverser.Companion.reverse_ListCard_TextAndTranslation
 import com.teamttdvlp.memolang.model.ReviewActivitiesSpeakerStatusManager
 import com.teamttdvlp.memolang.model.ReviewActivitiesSpeakerStatusManager.SpeakerStatus.Companion.SPEAK_ANSWER_ONLY
 import com.teamttdvlp.memolang.model.ReviewActivitiesSpeakerStatusManager.SpeakerStatus.Companion.SPEAK_QUESTION_AND_ANSWER
+import com.teamttdvlp.memolang.model.TextSpeaker
+import com.teamttdvlp.memolang.model.checkCanUseExampleForTestSubject
 import com.teamttdvlp.memolang.view.activity.iview.ReviewFlashcardView
 import com.teamttdvlp.memolang.view.base.BaseViewModel
-import com.teamttdvlp.memolang.view.helper.*
+import com.teamttdvlp.memolang.view.helper.notContains
+import com.teamttdvlp.memolang.view.helper.quickLog
+import com.teamttdvlp.memolang.view.helper.replaceAt
+import com.teamttdvlp.memolang.view.helper.selfPlusOne
 import kotlin.random.Random
 
 class ReviewFlashcardViewModel(var app : Application) : BaseViewModel<ReviewFlashcardView>() {
@@ -23,6 +26,8 @@ class ReviewFlashcardViewModel(var app : Application) : BaseViewModel<ReviewFlas
     private lateinit var currentCard : Flashcard
 
     private var cardList : ArrayList<Flashcard> = ArrayList()
+
+    private lateinit var flashcardSet: FlashcardSet
 
     private var answerWrongTimes = 0
 
@@ -47,6 +52,7 @@ class ReviewFlashcardViewModel(var app : Application) : BaseViewModel<ReviewFlas
     fun setUpInfo (flashcardSet : FlashcardSet, reverseLanguages : Boolean) {
         val questionLanguage : String
         val answerLanguage : String
+        this.flashcardSet = flashcardSet
 
         if (reverseLanguages) {
             questionLanguage = flashcardSet.frontLanguage
@@ -213,6 +219,10 @@ class ReviewFlashcardViewModel(var app : Application) : BaseViewModel<ReviewFlas
 
     fun getForgottenCardList(): ArrayList<Flashcard> {
         return forgottenCardList
+    }
+
+    fun getFlashcardSet(): FlashcardSet {
+        return flashcardSet
     }
 
     fun getSpeakerStatus(): Boolean {

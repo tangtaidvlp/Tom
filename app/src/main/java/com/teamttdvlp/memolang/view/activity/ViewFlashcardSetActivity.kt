@@ -6,14 +6,14 @@ import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.teamttdvlp.memolang.R
-import com.teamttdvlp.memolang.view.adapter.RCV_FlashcardSetAdapter
-import com.teamttdvlp.memolang.view.base.BaseActivity
-import com.teamttdvlp.memolang.viewmodel.ViewFlashcardSetViewModel
-import com.teamttdvlp.memolang.databinding.ActivityViewFlashcardSetBinding
 import com.teamttdvlp.memolang.data.model.entity.flashcard.FlashcardSet
+import com.teamttdvlp.memolang.databinding.ActivityViewFlashcardSetBinding
 import com.teamttdvlp.memolang.view.activity.iview.ViewFlashcardSetView
+import com.teamttdvlp.memolang.view.adapter.RCV_FlashcardSetAdapter
 import com.teamttdvlp.memolang.view.adapter.RCV_FlashcardSetsBackground_Adapter
+import com.teamttdvlp.memolang.view.base.BaseActivity
 import com.teamttdvlp.memolang.view.helper.*
+import com.teamttdvlp.memolang.viewmodel.ViewFlashcardSetViewModel
 import javax.inject.Inject
 
 class ViewFlashcardSetActivity : BaseActivity<ActivityViewFlashcardSetBinding, ViewFlashcardSetViewModel>()
@@ -81,11 +81,19 @@ class ViewFlashcardSetActivity : BaseActivity<ActivityViewFlashcardSetBinding, V
         }
 
         flashcardSetAdapter.setOnBtnUseFlashcardClickListener { flashcardSet ->
-            UseFlashcardActivity.requestReviewFlashcard(this@ViewFlashcardSetActivity, flashcardSet)
+            UseFlashcardActivity.requestReviewFlashcard(
+                this@ViewFlashcardSetActivity,
+                flashcardSet,
+                reverseCardTextAndTranslation = false
+            )
         }
 
         flashcardSetAdapter.setOnBtnReviewFlashcardHardClickListener { flashcardSet ->
-            ReviewFlashcardActivity.requestReviewFlashcard(this@ViewFlashcardSetActivity, flashcardSet)
+            ReviewFlashcardActivity.requestReviewFlashcard(
+                this@ViewFlashcardSetActivity,
+                flashcardSet,
+                reverseCardTextAndTranslation = false
+            )
         }
 
         flashcardSetAdapter.setOnBtnReviewFlashcardEasyClickListener { flashcardSet ->

@@ -10,21 +10,6 @@
         android:layout_height="match_parent"
         android:background="@color/white">
 
-        <TextView
-            android:id="@+id/txt_congratulation"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/sitka_heading_regular"
-            android:text="Well done"
-            android:textColor="@color/black"
-            android:textSize="30sp"
-            android:translationZ="15dp"
-            android:visibility="gone"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
         <androidx.appcompat.widget.LinearLayoutCompat
             android:id="@+id/vwgrp_title"
             android:layout_width="0dp"
@@ -39,7 +24,7 @@
             app:layout_constraintTop_toTopOf="parent">
 
             <TextView
-                android:id="@+id/txt_title_forgotten_cards"
+                android:id="@+id/txt_title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="12dp"
@@ -49,7 +34,7 @@
                 android:gravity="center_vertical"
                 android:inputType="textNoSuggestions|text"
                 android:paddingEnd="16dp"
-                android:text="Forgotten cards"
+                android:text="Result review"
                 android:paddingBottom="1dp"
                 android:textColor="@color/white"
                 android:textSize="16sp"
@@ -71,55 +56,263 @@
 
         </androidx.appcompat.widget.LinearLayoutCompat>
 
+        <TextView
+            android:id="@+id/txt_title_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/segoeuib"
+            android:includeFontPadding="false"
+            android:text="Score"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/vwgrp_title" />
+
+        <com.teamttdvlp.memolang.view.customview.ScoreReportCircle
+            android:id="@+id/circle_score_report"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="25dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/vwgrp_title"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <LinearLayout
+            android:id="@+id/vwgrp_user_score_report"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="@id/circle_score_report"
+            app:layout_constraintEnd_toEndOf="@id/circle_score_report"
+            app:layout_constraintStart_toStartOf="@id/circle_score_report"
+            app:layout_constraintTop_toTopOf="@id/circle_score_report">
+
+            <TextView
+                android:id="@+id/txt_user_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/seguisb"
+                android:includeFontPadding="false"
+                android:text="0"
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/txt_slash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/seguisb"
+                android:includeFontPadding="false"
+                android:text="/"
+                android:textColor="@color/use_flashcard_done_green"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/txt_max_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/seguisb"
+                android:includeFontPadding="false"
+                android:text="10"
+                android:textColor="@color/use_flashcard_done_green"
+                android:textSize="25sp" />
+
+        </LinearLayout>
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/vwgrp_missed_card"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="25dp"
+            android:alpha="0.0"
+            android:background="@drawable/background_gradient_red_to_invisible"
+            android:elevation="3dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:translationZ="0.5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/circle_score_report">
+
+            <TextView
+                android:id="@+id/txt_title_missed_card"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:elevation="10dp"
+                android:fontFamily="@font/segoeuib"
+                android:gravity="center_vertical"
+                android:inputType="textNoSuggestions|text"
+                android:paddingBottom="1dp"
+                android:text="Missed "
+                android:textColor="#FF0000"
+                android:textSize="16sp"
+                android:translationZ="5dp" />
+
+            <TextView
+                android:id="@+id/txt_missed_card_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:elevation="10dp"
+                android:fontFamily="@font/segoeuib"
+                android:gravity="center_vertical"
+                android:inputType="textNoSuggestions|text"
+                android:paddingEnd="16dp"
+                android:paddingBottom="1dp"
+                android:text="0"
+                android:textColor="#FF0000"
+                android:textSize="16sp"
+                android:translationZ="5dp" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rcv_forgotten_cards_list"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_marginBottom="10dp"
             android:background="@color/white"
+            android:layoutAnimation="@anim/layout_animation_appear"
+            android:visibility="gone"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/vwgrp_title"
+            app:layout_constraintTop_toBottomOf="@+id/vwgrp_missed_card"
             app:layout_constraintVertical_bias="0.0">
 
         </androidx.recyclerview.widget.RecyclerView>
 
-        <TextView
-            android:id="@+id/btn_restart"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="10dp"
-            android:layout_marginBottom="10dp"
-            android:background="@drawable/round_3dp_blue_background"
-            android:fontFamily="@font/tw_century_regular"
-            android:paddingStart="10dp"
-            android:paddingTop="3dp"
-            android:paddingEnd="10dp"
-            android:paddingBottom="3dp"
-            android:text="Restart"
-            android:textSize="23sp"
-            android:textColor="@color/white"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
+        <View
+            android:id="@+id/view_cover_score_report"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.0"
+            android:background="@color/white"
+            android:translationZ="10dp"
+            android:visibility="gone" />
 
         <TextView
-            android:id="@+id/btn_quit"
+            android:id="@+id/txt_nice_work"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="10dp"
-            android:layout_marginBottom="10dp"
-            android:background="@drawable/round_3dp_blue_background"
-            android:fontFamily="@font/tw_century_regular"
-            android:paddingStart="10dp"
-            android:paddingTop="3dp"
-            android:paddingEnd="10dp"
-            android:paddingBottom="3dp"
-            android:text="Quit"
-            android:textColor="@color/white"
-            android:textSize="23sp"
+            android:layout_marginStart="15dp"
+            android:layout_marginBottom="15dp"
+            android:alpha="0.0"
+            android:fontFamily="@font/sitka_display_regular"
+            android:text="Nice work, next ?"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:translationZ="10dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@id/vwgrp_center_buttons"
+            app:layout_constraintStart_toStartOf="@id/vwgrp_center_buttons" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/vwgrp_center_buttons"
+            android:layout_width="0dp"
+            android:layout_height="75dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:alpha="0.0"
+            android:orientation="horizontal"
+            android:translationZ="10dp"
+            android:visibility="gone"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@id/btn_restart" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/btn_center_go_to_puzzle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/image_button_purple_play_puzzle"
+                app:layout_constraintBottom_toTopOf="@+id/btn_go_to_writting"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <ImageView
+                android:id="@+id/btn_center_go_to_writting"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/image_button_red_writting"
+                app:layout_constraintBottom_toTopOf="@+id/btn_restart"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <ImageView
+                android:id="@+id/btn_center_restart"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/image_button_blue_restart"
+                app:layout_constraintBottom_toTopOf="@+id/btn_quit"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <ImageView
+                android:id="@+id/btn_center_quit"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/image_button_quit"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/vwgrp_bottom_right_buttons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="0.0"
+            android:orientation="vertical"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <ImageView
+                android:id="@+id/btn_go_to_puzzle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image_button_purple_play_puzzle"
+                app:layout_constraintBottom_toTopOf="@+id/btn_go_to_writting"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <ImageView
+                android:id="@+id/btn_go_to_writting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image_button_red_writting"
+                app:layout_constraintBottom_toTopOf="@+id/btn_restart"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <ImageView
+                android:id="@+id/btn_restart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image_button_blue_restart"
+                app:layout_constraintBottom_toTopOf="@+id/btn_quit"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <ImageView
+                android:id="@+id/btn_quit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image_button_quit"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

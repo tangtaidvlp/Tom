@@ -19,7 +19,10 @@
     <color name="black">#000000</color>
     <color name="dark_covered_blue">#09145B</color>
     <color name="orange_highlight_text">#F44F11</color>
-
+    <color name="use_flashcard_done_green">#19DC60</color>
+    <color name="use_flashcard_done_red">#FB5654</color>
+    <color name="writing_flashcard_red">#EF605E</color>
+    <color name="grey_background_color">#E6E6E6</color>
 
 </resources>
 

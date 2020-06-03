@@ -42,7 +42,9 @@
                 <data android:scheme="@string/fb_login_protocol_scheme" />
             </intent-filter>
         </activity>
-        <activity android:name=".view.activity.ReviewFlashcardActivity" />
+        <activity
+            android:name=".view.activity.ReviewFlashcardActivity"
+            android:windowSoftInputMode="stateAlwaysVisible" />
         <activity
             android:name=".view.activity.SeeVocabularyActivity"/>
         <activity android:name=".view.activity.SearchEngVNDictionaryActivity" />

@@ -12,15 +12,15 @@ import android.text.method.ScrollingMovementMethod
 import android.view.View
 import androidx.core.animation.addListener
 import com.teamttdvlp.memolang.R
+import com.teamttdvlp.memolang.data.model.entity.flashcard.FlashcardSet
 import com.teamttdvlp.memolang.databinding.ActivityUseFlashcardBinding
 import com.teamttdvlp.memolang.model.UseFCActivity_StatusManager.SpeakerStatus.Companion.SPEAK_TEXT_AND_TRANSLATION
 import com.teamttdvlp.memolang.model.UseFCActivity_StatusManager.SpeakerStatus.Companion.SPEAK_TEXT_ONLY
 import com.teamttdvlp.memolang.model.UseFCActivity_StatusManager.SpeakerStatus.Companion.SPEAK_TRANSLATION_ONLY
-import com.teamttdvlp.memolang.data.model.entity.flashcard.FlashcardSet
 import com.teamttdvlp.memolang.view.activity.iview.UseFlashcardView
 import com.teamttdvlp.memolang.view.base.BaseActivity
-import com.teamttdvlp.memolang.view.helper.*
 import com.teamttdvlp.memolang.view.customview.MyGestureDetector
+import com.teamttdvlp.memolang.view.helper.*
 import com.teamttdvlp.memolang.viewmodel.UseFlashcardViewModel
 import javax.inject.Inject
 import javax.inject.Named
@@ -85,16 +85,20 @@ class UseFlashcardActivity : BaseActivity<ActivityUseFlashcardBinding, UseFlashc
 
     private var canGoToPreviousCard: Boolean = false
 
-
     lateinit var viewModelProviderFactory : ViewModelProviderFactory
     @Inject set
 
-    private lateinit var usedFlashcardSet : FlashcardSet
+    private var isReverseTextAndTranslation = false
 
     companion object {
-        fun requestReviewFlashcard (requestContext : Context, flashcardSet : FlashcardSet){
+        fun requestReviewFlashcard(
+            requestContext: Context,
+            flashcardSet: FlashcardSet,
+            reverseCardTextAndTranslation: Boolean
+        ) {
             val intent = Intent(requestContext, UseFlashcardActivity::class.java)
             intent.putExtra(FLASHCARD_SET_KEY, flashcardSet)
+            intent.putExtra(REVERSE_CARD_TEXT_AND_TRANSLATION, reverseCardTextAndTranslation)
             requestContext.startActivity(intent)
         }
     }
@@ -107,7 +111,7 @@ class UseFlashcardActivity : BaseActivity<ActivityUseFlashcardBinding, UseFlashc
         super.onCreate(savedInstanceState)
         dB.lifecycleOwner = this
         viewModel.setUpView(this)
-        beginUsing(false)
+        beginUsing(isReverseTextAndTranslation)
     }
 
     override fun onDestroy() {
@@ -119,7 +123,6 @@ class UseFlashcardActivity : BaseActivity<ActivityUseFlashcardBinding, UseFlashc
             SPEAK_TRANSLATION_ONLY
         } else throw Exception ("Speaker status unknown")
 
-        quickLog("State: $speakerIsOn")
         viewModel.saveAllStatus(speakerFunction, speakerIsOn)
         super.onDestroy()
     }
@@ -135,7 +138,7 @@ class UseFlashcardActivity : BaseActivity<ActivityUseFlashcardBinding, UseFlashc
 
         dB.vwModel = viewModel
 
-        usedFlashcardSet = getRequestedFlashcardSet()
+        isReverseTextAndTranslation = getIsReverseTextAndTranslation()
     }
 
     override fun addViewControls() { dB.apply {
@@ -249,8 +252,15 @@ class UseFlashcardActivity : BaseActivity<ActivityUseFlashcardBinding, UseFlashc
             dialogSetting.show()
         }
 
+        btnFlipFlashcardSet.setOnClickListener {
+            requestReviewFlashcard(
+                this@UseFlashcardActivity, viewModel.getFlashcardSet(),
+                reverseCardTextAndTranslation = isReverseTextAndTranslation.not()
+            )
+            finish()
+        }
+
         radioGrpSpeakerSetting.setOnCheckedChangeListener { _, checkedId ->
-            quickLog("Change")
             when (checkedId) {
                 checkboxSpeakTextOnly.id -> {
                     textIsSpoken = true
@@ -358,19 +368,27 @@ class UseFlashcardActivity : BaseActivity<ActivityUseFlashcardBinding, UseFlashc
         }
     }
 
-    fun resetBackButtonPressedTimes () {
+    private fun resetBackButtonPressedTimes() {
         backButtonPressedTimes = 0
     }
 
-    fun sendHardCardListToEndActivity () {
+    private fun sendHardCardListToEndActivity() {
         val hardCardList = viewModel.getForgottenCardList()
-        UseFlashcardDoneActivity.requestFinishUsingFlashcard(this, hardCardList,
-            UseFlashcardDoneActivity.SendableActivity.USE_FLASHCARD_ACTIVITY.code)
+        val flashcardSet = viewModel.getFlashcardSet()
+        UseFlashcardDoneActivity.requestFinishUsingFlashcard(
+            this, flashcardSet, hardCardList,
+            UseFlashcardDoneActivity.FlashcardSendableActivity.USE_FLASHCARD_ACTIVITY.code
+        )
     }
 
     private fun getRequestedFlashcardSet () : FlashcardSet {
         return intent.extras!!.getSerializable(FLASHCARD_SET_KEY) as FlashcardSet
     }
+
+    private fun getIsReverseTextAndTranslation(): Boolean {
+        return intent.extras!!.getBoolean(REVERSE_CARD_TEXT_AND_TRANSLATION, false)
+    }
+
 
     private fun setUpSpeakerStatus () {
         speakerIsOn = viewModel.getSpeakerStatus()
@@ -401,6 +419,14 @@ class UseFlashcardActivity : BaseActivity<ActivityUseFlashcardBinding, UseFlashc
         viewModel.beginUsing()
         dB.executePendingBindings()
         setUpSpeakerStatus()
+    }
+
+    override fun overrideEnterAnim() {
+        overridePendingTransition(R.anim.appear, R.anim.nothing)
+    }
+
+    override fun overrideExitAnim() {
+        overridePendingTransition(R.anim.nothing, R.anim.disappear)
     }
 
     // ON OPEN

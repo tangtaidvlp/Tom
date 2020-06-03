@@ -69,6 +69,7 @@
         </androidx.appcompat.widget.LinearLayoutCompat>
 
         <ImageView
+            android:id="@+id/btn_flip_flashcard_set"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
@@ -181,7 +182,7 @@
             android:includeFontPadding="false"
             android:paddingBottom="3dp"
             android:text="@{String.valueOf(vwModel.forgottenCardsCount)}"
-            android:textColor="@color/orange_highlight_text"
+            android:textColor="@color/black"
             android:textSize="13sp"
             app:layout_constraintBottom_toBottomOf="@id/txt_title_forgotten_cards_count"
             app:layout_constraintStart_toEndOf="@id/txt_title_forgotten_cards_count"
@@ -605,95 +606,94 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
-
-        </com.teamttdvlp.memolang.view.customview.MyCustomDialog>
-
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="10dp"
-            android:background="@drawable/round_5dp_white_background"
-            android:gravity="center_vertical"
-            android:orientation="vertical"
-            android:padding="20dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
-
             <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="30dp"
-                android:orientation="horizontal">
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/round_5dp_white_background"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:padding="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
 
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:src="@drawable/image_speaker_black" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:orientation="horizontal">
 
-                <androidx.appcompat.widget.AppCompatTextView
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_marginLeft="10dp"
-                    android:layout_weight="1"
-                    android:fontFamily="@font/seguisb"
-                    android:text="Speaker"
-                    android:textColor="@color/black"
-                    android:textSize="16sp" />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/image_speaker_black" />
 
-                <Switch
-                    android:id="@+id/switch_speaker"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:checked="true" />
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/seguisb"
+                        android:text="Speaker"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <Switch
+                        android:id="@+id/switch_speaker"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true" />
+
+                </LinearLayout>
+
+                <RadioGroup
+                    android:id="@+id/radio_grp_speaker_setting"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/checkbox_speak_text_only"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:button="@drawable/check_box_circle_background"
+                        android:fontFamily="@font/segoeui"
+                        android:gravity="center_vertical"
+                        android:layoutDirection="rtl"
+                        android:text="Speak text only"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <RadioButton
+                        android:id="@+id/checkbox_speak_translation_only"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:button="@drawable/check_box_circle_background"
+                        android:fontFamily="@font/segoeui"
+                        android:gravity="center_vertical"
+                        android:layoutDirection="rtl"
+                        android:text="Speak translation only"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <RadioButton
+                        android:id="@+id/checkbox_speak_both_text_and_trans"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:button="@drawable/check_box_circle_background"
+                        android:fontFamily="@font/segoeui"
+                        android:gravity="center_vertical"
+                        android:layoutDirection="rtl"
+                        android:text="Speak both text and translation"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                </RadioGroup>
 
             </LinearLayout>
 
-            <RadioGroup
-                android:id="@+id/radio_grp_speaker_setting"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <RadioButton
-                    android:id="@+id/checkbox_speak_text_only"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:button="@drawable/check_box_circle_background"
-                    android:fontFamily="@font/segoeui"
-                    android:gravity="center_vertical"
-                    android:layoutDirection="rtl"
-                    android:text="Speak text only"
-                    android:textColor="@color/black"
-                    android:textSize="16sp" />
-
-                <RadioButton
-                    android:id="@+id/checkbox_speak_translation_only"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:button="@drawable/check_box_circle_background"
-                    android:fontFamily="@font/segoeui"
-                    android:gravity="center_vertical"
-                    android:layoutDirection="rtl"
-                    android:text="Speak translation only"
-                    android:textColor="@color/black"
-                    android:textSize="16sp" />
-
-                <RadioButton
-                    android:id="@+id/checkbox_speak_both_text_and_trans"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:button="@drawable/check_box_circle_background"
-                    android:fontFamily="@font/segoeui"
-                    android:gravity="center_vertical"
-                    android:layoutDirection="rtl"
-                    android:text="Speak both text and translation"
-                    android:textColor="@color/black"
-                    android:textSize="16sp" />
-
-            </RadioGroup>
-
-        </LinearLayout>
+        </com.teamttdvlp.memolang.view.customview.MyCustomDialog>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

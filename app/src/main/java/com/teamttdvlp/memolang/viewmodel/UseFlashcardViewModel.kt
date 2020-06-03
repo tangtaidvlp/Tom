@@ -3,20 +3,19 @@ package com.teamttdvlp.memolang.viewmodel
 import android.app.Application
 import androidx.databinding.ObservableField
 import androidx.databinding.ObservableInt
-import com.teamttdvlp.memolang.model.CardListManager
-import com.teamttdvlp.memolang.model.TextSpeaker
-import com.teamttdvlp.memolang.model.UseFCActivity_StatusManager.SpeakerStatus.Companion.SPEAK_TEXT_AND_TRANSLATION
-import com.teamttdvlp.memolang.model.UseFCActivity_StatusManager.SpeakerStatus.Companion.SPEAK_TEXT_ONLY
 import com.teamttdvlp.memolang.data.model.entity.flashcard.Flashcard
 import com.teamttdvlp.memolang.data.model.entity.flashcard.FlashcardSet
 import com.teamttdvlp.memolang.model.CardListLanguageReverser.Companion.reverse_ListCard_TextAndTranslation
+import com.teamttdvlp.memolang.model.CardListManager
+import com.teamttdvlp.memolang.model.TextSpeaker
 import com.teamttdvlp.memolang.model.UseFCActivity_StatusManager
+import com.teamttdvlp.memolang.model.UseFCActivity_StatusManager.SpeakerStatus.Companion.SPEAK_TEXT_AND_TRANSLATION
+import com.teamttdvlp.memolang.model.UseFCActivity_StatusManager.SpeakerStatus.Companion.SPEAK_TEXT_ONLY
 import com.teamttdvlp.memolang.view.activity.iview.UseFlashcardView
 import com.teamttdvlp.memolang.view.base.BaseViewModel
 import com.teamttdvlp.memolang.view.helper.quickLog
 import com.teamttdvlp.memolang.view.helper.selfMinusOne
 import com.teamttdvlp.memolang.view.helper.selfPlusOne
-import kotlin.collections.ArrayList
 
 class UseFlashcardViewModel (private val context : Application): BaseViewModel<UseFlashcardView>() {
 
@@ -34,6 +33,8 @@ class UseFlashcardViewModel (private val context : Application): BaseViewModel<U
 
     val cardListManager = CardListManager()
 
+    private lateinit var flashcardSet: FlashcardSet
+
     private lateinit var srcLangTextSpeaker : TextSpeaker
 
     private lateinit var tgtLangTextSpeaker : TextSpeaker
@@ -43,6 +44,7 @@ class UseFlashcardViewModel (private val context : Application): BaseViewModel<U
     fun setData (fcSet : FlashcardSet, reverseLanguages : Boolean) {
         val frontLang : String
         val backLang : String
+        this.flashcardSet = fcSet
         if (reverseLanguages) {
             reverse_ListCard_TextAndTranslation(fcSet.flashcards)
             frontLang = fcSet.backLanguage.trim()
@@ -175,5 +177,9 @@ class UseFlashcardViewModel (private val context : Application): BaseViewModel<U
 
     fun getSpeakerStatus(): Boolean {
         return useFCActivityStatusManager.speakerStatusManager.getStatus()
+    }
+
+    fun getFlashcardSet(): FlashcardSet {
+        return this.flashcardSet
     }
 }

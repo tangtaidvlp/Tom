@@ -22,6 +22,8 @@ class ReviewFlashcardEasyViewModel(var app : Application) : BaseViewModel<Review
 
     private lateinit var currentCard: Flashcard
 
+    private lateinit var flashcardSet: FlashcardSet
+
     private var cardList: ArrayList<Flashcard> = ArrayList()
 
     private var cardListRandomer : CardListRandomer = CardListRandomer()
@@ -37,6 +39,7 @@ class ReviewFlashcardEasyViewModel(var app : Application) : BaseViewModel<Review
     private var reverseLanguages : Boolean = false
 
     fun setUp (flashcardSet : FlashcardSet, reverseLanguages : Boolean) {
+        this.flashcardSet = flashcardSet
         this.reverseLanguages = reverseLanguages
 
         // Show to UI by Databinding
@@ -211,8 +214,12 @@ class ReviewFlashcardEasyViewModel(var app : Application) : BaseViewModel<Review
         return ansElementsHolder
     }
 
-    fun getForgottenCardList(): ArrayList<Flashcard> {
+    fun getMissedCardsList(): ArrayList<Flashcard> {
         return forgottenCardList
+    }
+
+    fun getFlashcardSet(): FlashcardSet {
+        return flashcardSet
     }
 
     fun speakAnswer (text : String, onSpeakDone : () -> Unit) {

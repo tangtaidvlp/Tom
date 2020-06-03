@@ -9,22 +9,26 @@ import android.text.InputType
 import android.text.InputType.TYPE_NULL
 import android.view.Gravity
 import android.view.View
-import android.view.animation.*
+import android.view.animation.Animation
+import android.view.animation.DecelerateInterpolator
+import android.view.animation.LinearInterpolator
 import android.view.inputmethod.EditorInfo
 import android.widget.EditText
 import androidx.core.view.doOnPreDraw
 import androidx.interpolator.view.animation.FastOutSlowInInterpolator
-import com.teamttdvlp.memolang.view.base.BaseActivity
-import com.teamttdvlp.memolang.viewmodel.AddFlashCardViewModel
 import com.teamttdvlp.memolang.R
 import com.teamttdvlp.memolang.data.model.entity.flashcard.Flashcard
 import com.teamttdvlp.memolang.data.model.entity.flashcard.FlashcardSet
 import com.teamttdvlp.memolang.databinding.ActivityAddFlashcardRetroBinding
-import com.teamttdvlp.memolang.view.helper.*
 import com.teamttdvlp.memolang.view.activity.iview.AddFlashcardView
-import com.teamttdvlp.memolang.view.adapter.*
+import com.teamttdvlp.memolang.view.adapter.RCVChooseLanguageAdapter
+import com.teamttdvlp.memolang.view.adapter.RCVRecentUsedLanguageAdapter
+import com.teamttdvlp.memolang.view.adapter.RCV_Generic_SimpleListAdapter
+import com.teamttdvlp.memolang.view.base.BaseActivity
 import com.teamttdvlp.memolang.view.customview.MyGestureDetector
 import com.teamttdvlp.memolang.view.customview.NormalOutExtraSlowIn
+import com.teamttdvlp.memolang.view.helper.*
+import com.teamttdvlp.memolang.viewmodel.AddFlashCardViewModel
 import java.lang.Math.pow
 import javax.inject.Inject
 import javax.inject.Named
@@ -378,6 +382,9 @@ class RetrofitAddFlashcardActivity : BaseActivity<ActivityAddFlashcardRetroBindi
                 edtNewSetName.requestFocus()
                 edtNewSetFrontLanguage.setText(txtFrontLang.text)
                 edtNewSetBackLanguage.setText(txtBackLang.text)
+                if (rcvFlashcardSetName.isVisible()) {
+                    hideSetNameList()
+                }
                 showCreateSetNamePanel()
             }
 
@@ -491,7 +498,7 @@ class RetrofitAddFlashcardActivity : BaseActivity<ActivityAddFlashcardRetroBindi
     private fun clearAllCardInfomation () { dB.apply {
         edtText.setText("")
         edtType.setText("")
-        edtPronunciation.setText("")
+        edtPronunciation.text = ""
         edtTranslation.setText("")
         edtExample.setText("")
         edtExampleTranslation.setText("")
@@ -619,7 +626,7 @@ class RetrofitAddFlashcardActivity : BaseActivity<ActivityAddFlashcardRetroBindi
                     it.goVISIBLE()
                     it.animate()
                         .alpha(1f)
-                        .setDuration(200).setInterpolator(LinearInterpolator())
+                        .setDuration(200).interpolator = LinearInterpolator()
                 }
 
                 val boxMoveUp = doActionOnBox {
@@ -630,7 +637,7 @@ class RetrofitAddFlashcardActivity : BaseActivity<ActivityAddFlashcardRetroBindi
                     it.translationY = 90f
                     it.animate()
                         .translationY(0f)
-                        .setDuration(200).setInterpolator(LinearInterpolator())
+                        .setDuration(200).interpolator = LinearInterpolator()
                 }
 
                 val swipeFunctionsDisappear = vwgrpSwipeFunctions.animate()
@@ -642,7 +649,7 @@ class RetrofitAddFlashcardActivity : BaseActivity<ActivityAddFlashcardRetroBindi
 
 
                 if (edtType.text.isEmpty()) {
-                    edtType.animate().alpha(0f).setDuration(200)
+                    edtType.animate().alpha(0f).duration = 200
                     
                     val edtTextScaleOut = ValueAnimator.ofInt(edtType.height, 0).apply {
                         setTarget(edtType)
@@ -656,7 +663,7 @@ class RetrofitAddFlashcardActivity : BaseActivity<ActivityAddFlashcardRetroBindi
                 }
 
                 if (edtPronunciation.text.isEmpty()) {
-                    edtPronunciation.animate().alpha(0f).setDuration(200)
+                    edtPronunciation.animate().alpha(0f).duration = 200
                     val edtPronunciationScaleOut = ValueAnimator.ofInt(edtPronunciation.height, 0).apply {
                         setTarget(edtPronunciation)
                         duration = 200
@@ -718,7 +725,7 @@ class RetrofitAddFlashcardActivity : BaseActivity<ActivityAddFlashcardRetroBindi
                 txtFlipCardText.goVISIBLE()
                 txtStartCreatingText.goGONE()
                 vwgrpSwipeRightToSave.goVISIBLE()
-                vwgrpSwipeFunctions.animate().alpha(1f).setDuration(100)
+                vwgrpSwipeFunctions.animate().alpha(1f).duration = 100
             })
 
         hasStartedEdit = true
@@ -794,7 +801,7 @@ class RetrofitAddFlashcardActivity : BaseActivity<ActivityAddFlashcardRetroBindi
                 Thread.sleep(200)
                 runOnUiThread {
                     ipaKeyboard.goVISIBLE()
-                    ipaKeyboard.animate().alpha(1f).setDuration(200)
+                    ipaKeyboard.animate().alpha(1f).duration = 200
                     ipaKeyboard.db.keyboardParent.isClickable = true
                     isIPAKeyboardVisible = true
                 }
@@ -830,7 +837,7 @@ class RetrofitAddFlashcardActivity : BaseActivity<ActivityAddFlashcardRetroBindi
     override fun showInvalidFlashcardSetError(errorMessage: String) {
         dB.txtCreateSetError.text = errorMessage
         dB.vwgrpCreateSetError.goVISIBLE()
-        dB.vwgrpCreateSetError.animate().alpha(1f).setDuration(200)
+        dB.vwgrpCreateSetError.animate().alpha(1f).duration = 200
     }
 
     fun hideInvalidFlashcardSetError () {

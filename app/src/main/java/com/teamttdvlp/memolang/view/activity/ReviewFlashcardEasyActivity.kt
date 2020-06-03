@@ -24,9 +24,9 @@ import androidx.core.view.marginTop
 import androidx.core.widget.addTextChangedListener
 import androidx.interpolator.view.animation.FastOutSlowInInterpolator
 import com.teamttdvlp.memolang.R
-import com.teamttdvlp.memolang.databinding.ActivityReviewFlashcardEasyBinding
 import com.teamttdvlp.memolang.data.model.entity.flashcard.Flashcard
 import com.teamttdvlp.memolang.data.model.entity.flashcard.FlashcardSet
+import com.teamttdvlp.memolang.databinding.ActivityReviewFlashcardEasyBinding
 import com.teamttdvlp.memolang.model.ReviewActivitiesSpeakerStatusManager
 import com.teamttdvlp.memolang.model.findTextFormInAnother
 import com.teamttdvlp.memolang.view.activity.iview.ReviewFlashcardEasyView
@@ -617,9 +617,10 @@ class ReviewFlashcardEasyActivity : BaseActivity<ActivityReviewFlashcardEasyBind
 
         // Run isFirstTimesCreated
         if (isFirstTimesCreated) {
-            inCharCell.performCreateAnimate(DIRECTION_UP).setStartDelay(position * INTERVAL_BETWEEN_TWO_DISAPPEAR)
+            inCharCell.performCreateAnimate(DIRECTION_UP).startDelay =
+                position * INTERVAL_BETWEEN_TWO_DISAPPEAR
         } else {
-            inCharCell.performCreateAnimate(DIRECTION_DOWN).setStartDelay(CELL_MOVING_INVISIBLY_TIME)
+            inCharCell.performCreateAnimate(DIRECTION_DOWN).startDelay = CELL_MOVING_INVISIBLY_TIME
         }
 
     }
@@ -670,7 +671,7 @@ class ReviewFlashcardEasyActivity : BaseActivity<ActivityReviewFlashcardEasyBind
     }}
 
     private fun setAnswer (answer : String) {
-        dB.txtInputAnswer.setText(answer)
+        dB.txtInputAnswer.text = answer
     }
 
     private fun recalculatePanelsHeight (elementCount : Int) {
@@ -708,7 +709,7 @@ class ReviewFlashcardEasyActivity : BaseActivity<ActivityReviewFlashcardEasyBind
         for ((position, element) in ansElements.withIndex()) {
             // Create the cell
             val inputCell = Cell(this, cellType = INPUT_CELL)
-            inputCell.setText(element)
+            inputCell.text = element
             val constraint = ConstraintLayout.LayoutParams(WRAP_CONTENT, inCellHeight)
             constraint.topToTop = inputPanel.id
             constraint.leftToLeft  = inputPanel.id
@@ -737,13 +738,14 @@ class ReviewFlashcardEasyActivity : BaseActivity<ActivityReviewFlashcardEasyBind
                 }
             }
 
-            inputCell.performCreateAnimate(DIRECTION_UP).setStartDelay(position * INTERVAL_BETWEEN_TWO_DISAPPEAR)
+            inputCell.performCreateAnimate(DIRECTION_UP).startDelay =
+                position * INTERVAL_BETWEEN_TWO_DISAPPEAR
         }
     }
 
     private fun createWord_InputCell (cellContent : String, cellWidth : Int, cellHeight : Int, marginStart : Int, marginTop : Int) {
         val inputCell = Cell(this, INPUT_CELL)
-        inputCell.setText(cellContent)
+        inputCell.text = cellContent
         val constraint = ConstraintLayout.LayoutParams (cellWidth, cellHeight)
         constraint.topToTop = inputPanel.id
         constraint.startToStart = inputPanel.id
@@ -764,7 +766,7 @@ class ReviewFlashcardEasyActivity : BaseActivity<ActivityReviewFlashcardEasyBind
         }
 
         // Run animate
-        inputCell.performCreateAnimate(DIRECTION_DOWN).setStartDelay(CELL_MOVING_INVISIBLY_TIME)
+        inputCell.performCreateAnimate(DIRECTION_DOWN).startDelay = CELL_MOVING_INVISIBLY_TIME
     }
 
     private fun layoutInput_WordCellsOnScreen () {
@@ -824,7 +826,7 @@ class ReviewFlashcardEasyActivity : BaseActivity<ActivityReviewFlashcardEasyBind
         constraint.startToStart= outputPanel.id
 
         outputCell.layoutParams = constraint
-        outputCell.setText(cellContent)
+        outputCell.text = cellContent
 
         // Set Listener
         outputCell.setOnRestore { delayTime ->
@@ -901,9 +903,6 @@ class ReviewFlashcardEasyActivity : BaseActivity<ActivityReviewFlashcardEasyBind
             onEnd()
         }
 
-        quickLog("Out: $outputCellListSize")
-        quickLog("In: $inputCellListSize")
-
         for ((i, cell) in outputCellList.withIndex()) {
             cell.performDestroyAnimate(DIRECTION_UP).setStartDelay(delayTime + i * INTERVAL_BETWEEN_TWO_DISAPPEAR).setLiteListener (onEnd = {
                 if (outListLongerThanInList && (i == outputCellListSize - 1)) {
@@ -979,9 +978,12 @@ class ReviewFlashcardEasyActivity : BaseActivity<ActivityReviewFlashcardEasyBind
     }
 
     fun sendHardCardListToEndActivity () {
-        val hardCardList = viewModel.getForgottenCardList()
-        UseFlashcardDoneActivity.requestFinishUsingFlashcard(this, hardCardList,
-            UseFlashcardDoneActivity.SendableActivity.REVIEW_FLASHCARD_EASY_ACTIVITY.code)
+        val missedCardList = viewModel.getMissedCardsList()
+        val flashcardSet = viewModel.getFlashcardSet()
+        UseFlashcardDoneActivity.requestFinishUsingFlashcard(
+            this, flashcardSet, missedCardList,
+            UseFlashcardDoneActivity.FlashcardSendableActivity.REVIEW_FLASHCARD_EASY_ACTIVITY.code
+        )
     }
 
     // ==================================INJECTED METHODS============================================
