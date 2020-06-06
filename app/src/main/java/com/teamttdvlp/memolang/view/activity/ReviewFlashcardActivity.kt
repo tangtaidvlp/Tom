@@ -82,6 +82,7 @@ class ReviewFlashcardActivity : BaseActivity<ActivityReviewFlashcardBinding, Rev
 
     var resetHintAnimtrSet: AnimatorSet = AnimatorSet()
 
+    var reverseCardTextAndTrans = false
 
     companion object {
         fun requestReviewFlashcard(
@@ -104,9 +105,10 @@ class ReviewFlashcardActivity : BaseActivity<ActivityReviewFlashcardBinding, Rev
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        setStatusBarColor(Color.parseColor("#AC2523"))
         viewModel.setUpView(this)
         dB.vwModel = viewModel
-        beginUsing(reverseLanguageFlow = false)
+        beginUsing()
     }
 
     override fun onStart() { dB.apply {
@@ -122,7 +124,6 @@ class ReviewFlashcardActivity : BaseActivity<ActivityReviewFlashcardBinding, Rev
             ReviewActivitiesSpeakerStatusManager.SpeakerStatus.SPEAK_QUESTION_ONLY
         } else throw Exception ("Speaker status unknown")
 
-        quickLog("State: $speakerIsOn")
         viewModel.saveAllStatus(speakerFunction, speakerIsOn)
         super.onDestroy()
     }
@@ -170,27 +171,17 @@ class ReviewFlashcardActivity : BaseActivity<ActivityReviewFlashcardBinding, Rev
             }
         }
 
+        btnFlipFlashcardSet.setOnClickListener {
+            flipWholeFlashcardSet()
+        }
+
         btnSpeakerSetting.setOnClickListener {
             dialogSetting.show()
         }
 
-//        layoutChooseLangFlow.btnReverseLangage.setOnClickListener {
-//            beginUsing(true)
-//        }
-//
-//        layoutChooseLangFlow.btnDoesNotReverseLanguage.setOnClickListener {
-//            beginUsing(false)
-//        }
-//
-//        btnTurnOffSpeaker.setOnClickListener {
-//            speakerIsOn = false
-//            btnTurnOnSpeaker.goVISIBLE()
-//        }
-//
-//        btnTurnOnSpeaker.setOnClickListener {
-//            speakerIsOn = true
-//            btnTurnOnSpeaker.goGONE()
-//        }
+        switchSpeaker.setOnCheckedChangeListener { v, isChecked ->
+            speakerIsOn = isChecked
+        }
 
         radioGrpSpeakerSetting.setOnCheckedChangeListener { _, checkedId ->
             when (checkedId) {
@@ -198,6 +189,7 @@ class ReviewFlashcardActivity : BaseActivity<ActivityReviewFlashcardBinding, Rev
                     answerIsSpoken = true
                     questionIsSpoken = false
                 }
+
                 checkboxSpeakQuestionOnly.id -> {
                     questionIsSpoken = true
                     answerIsSpoken = false
@@ -209,23 +201,29 @@ class ReviewFlashcardActivity : BaseActivity<ActivityReviewFlashcardBinding, Rev
             }
         }
 
-    }}
+    }
+    }
 
-    private fun beginUsing (reverseLanguageFlow : Boolean) {
-        viewModel.setUpInfo(getRequestedFlashcardSet(), reverseLanguageFlow)
+    private fun beginUsing() {
+        viewModel.setUpInfo(getRequestedFlashcardSet(), getIsReverseTextAndTranslation())
+        this.reverseCardTextAndTrans = viewModel.isReverseTextAndTrans
         setUpSpeakerStatus()
         dB.edtInputAnswer.requestFocus()
         showVirtualKeyboard()
     }
 
-    private fun setUpSpeakerStatus () {
+    private fun flipWholeFlashcardSet() {
+        requestReviewFlashcard(
+            this@ReviewFlashcardActivity, viewModel.getOriginalFlashcardSet(),
+            viewModel.isReverseTextAndTrans.not()
+        )
+        finish()
+    }
+
+    private fun setUpSpeakerStatus() {
         speakerIsOn = viewModel.getSpeakerStatus()
-        if (speakerIsOn) {
-//            dB.btnTurnOnSpeaker.goGONE()
-        } else {
-//            dB.btnTurnOnSpeaker.goVISIBLE()
-        }
-        quickLog("SfafdkafjgkhWJEF;kNGH': " + viewModel.getSpeakerFunction())
+        dB.switchSpeaker.isChecked = speakerIsOn
+
         when (viewModel.getSpeakerFunction()) {
             ReviewActivitiesSpeakerStatusManager.SpeakerStatus.SPEAK_ANSWER_ONLY -> {
                 answerIsSpoken = true
@@ -247,16 +245,27 @@ class ReviewFlashcardActivity : BaseActivity<ActivityReviewFlashcardBinding, Rev
         }
     }
 
+    override fun overrideEnterAnim() {
+        overridePendingTransition(R.anim.appear, R.anim.nothing)
+    }
+
+    override fun overrideExitAnim() {
+        overridePendingTransition(R.anim.nothing, R.anim.disappear)
+    }
 
     // VIEW FUNCTION ===========================================
 
-    override fun showValidAnsBehaviours () { dB.apply {
+    override fun showValidAnsBehaviours() {
+        dB.apply {
 
-    }}
+        }
+    }
 
-    override fun showInvalidAnsBehaviours () { dB.apply {
+    override fun showInvalidAnsBehaviours() {
+        dB.apply {
 
-    }}
+        }
+    }
 
     override fun endReviewing() {
         sendHardCardListToEndActivity()
@@ -289,6 +298,7 @@ class ReviewFlashcardActivity : BaseActivity<ActivityReviewFlashcardBinding, Rev
         imgBadAnswers.goVISIBLE()
         imgBadAnswers.startAnimation(imgBadAnswersAppearAnim)
         performShowAnswerAnimations(false)
+        viewModel.processMissedCard()
     }}
 
     private fun speakAnswer(text: String, onSpeakDone: () -> Unit) {
@@ -337,7 +347,6 @@ class ReviewFlashcardActivity : BaseActivity<ActivityReviewFlashcardBinding, Rev
         txtTextAnswer.text = answer
         if (useExampleForTestSubject) {
             setUpExampleTestSubject(card)
-            quickLog(card.meanOfExample)
             if (allowSpeakQuestion())
                 speakQuestion(card.meanOfExample)
         } else {
@@ -437,18 +446,23 @@ class ReviewFlashcardActivity : BaseActivity<ActivityReviewFlashcardBinding, Rev
                     })
             }
         }
-    }}
+    }
+    }
 
-    private fun getRequestedFlashcardSet () : FlashcardSet {
+    private fun getRequestedFlashcardSet(): FlashcardSet {
         return intent.extras!!.getSerializable(FLASHCARD_SET_KEY) as FlashcardSet
     }
 
-    fun sendHardCardListToEndActivity () {
+    private fun getIsReverseTextAndTranslation(): Boolean {
+        return intent.extras!!.getBoolean(REVERSE_CARD_TEXT_AND_TRANSLATION, false)
+    }
+
+    fun sendHardCardListToEndActivity() {
         val forgottenCardList = viewModel.getForgottenCardList()
-        val fullCardList = viewModel.getFlashcardSet()
-        UseFlashcardDoneActivity.requestFinishUsingFlashcard(
+        val fullCardList = viewModel.getOriginalFlashcardSet()
+        ResultReportActivity.requestFinishUsingFlashcard(
             this, fullCardList, forgottenCardList,
-            UseFlashcardDoneActivity.FlashcardSendableActivity.REVIEW_FLASHCARD_ACTIVITY.code
+            ResultReportActivity.FlashcardSendableActivity.REVIEW_FLASHCARD_ACTIVITY.code
         )
     }
 

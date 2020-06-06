@@ -5,11 +5,12 @@ import com.teamttdvlp.memolang.data.model.entity.flashcard.Flashcard
 class CardListLanguageReverser {
     companion object {
 
-        fun reverse_ListCard_TextAndTranslation (flashcardList : ArrayList<Flashcard>) {
+        fun reverse_LIST_Card_TextAndTranslation(flashcardList: ArrayList<Flashcard>) {
             for (card in flashcardList) {
                 reverse_Card_TextAndTranslation(card)
             }
         }
+
         fun reverse_Card_TextAndTranslation (card : Flashcard) {
             val textHolder = card.text
             card.text = card.translation

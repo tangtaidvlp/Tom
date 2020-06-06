@@ -132,7 +132,11 @@ class MenuActivity : BaseActivity<ActivityMenuBinding, MenuActivityViewModel>(),
         }
 
         flashcardSetAdapter.setOnBtnReviewFlashcardEasyClickListener { flashcardSet ->
-            ReviewFlashcardEasyActivity.requestReviewFlashcard(this@MenuActivity, flashcardSet)
+            ReviewFlashcardEasyActivity.requestReviewFlashcard(
+                this@MenuActivity,
+                flashcardSet,
+                false
+            )
         }
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {

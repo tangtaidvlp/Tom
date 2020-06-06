@@ -15,6 +15,7 @@ import com.teamttdvlp.memolang.databinding.ActivityUseFlashcardDoneBinding
 import com.teamttdvlp.memolang.view.activity.iview.UseFlashcardDoneView
 import com.teamttdvlp.memolang.view.adapter.RCVRecent_Search_FlashcardAdapter
 import com.teamttdvlp.memolang.view.base.BaseActivity
+import com.teamttdvlp.memolang.view.customview.NormalOutExtraSlowIn
 import com.teamttdvlp.memolang.view.helper.dp
 import com.teamttdvlp.memolang.view.helper.getActivityViewModel
 import com.teamttdvlp.memolang.view.helper.goVISIBLE
@@ -27,7 +28,9 @@ const val FORGOTTEN_FLASHCARDS_LIST = "fgl"
 const val FULL_FLASHCARD_SET = "fullfcl"
 const val SENDER_CODE = "sdrc"
 
-class UseFlashcardDoneActivity : BaseActivity<ActivityUseFlashcardDoneBinding, UseFlashcardDoneViewModel>(), UseFlashcardDoneView {
+class ResultReportActivity :
+    BaseActivity<ActivityUseFlashcardDoneBinding, UseFlashcardDoneViewModel>(),
+    UseFlashcardDoneView {
 
     enum class FlashcardSendableActivity(val code: Int) {
         USE_FLASHCARD_ACTIVITY(1),
@@ -57,7 +60,7 @@ class UseFlashcardDoneActivity : BaseActivity<ActivityUseFlashcardDoneBinding, U
             forgottenCardList: ArrayList<Flashcard>,
             senderCode: Int
         ) {
-            val intent = Intent(requestContext, UseFlashcardDoneActivity::class.java)
+            val intent = Intent(requestContext, ResultReportActivity::class.java)
             intent.putExtra(FORGOTTEN_FLASHCARDS_LIST, forgottenCardList)
             intent.putExtra(FULL_FLASHCARD_SET, flashcardSet)
             intent.putExtra(SENDER_CODE, senderCode)
@@ -134,10 +137,16 @@ class UseFlashcardDoneActivity : BaseActivity<ActivityUseFlashcardDoneBinding, U
         val userGetMaxScore = viewModel.userGetMaxScore()
         if (userGetMaxScore) {
             highlightUserScore()
-            showCenterButtons(startDelay = 1200)
+            showCenterButtons(startDelay = 1100)
+            playGetMaxScoreAnimation(startDelay = 100, duration = 375)
         } else {
             showBottomRightButtons(startDelay = 200)
         }
+    }
+
+    private fun playGetMaxScoreAnimation(startDelay: Long = 0, duration: Long = 150) {
+        dB.imageCircleGreenBehindCircleScoreReport.animate().alpha(0f).scaleX(1.4f).scaleY(1.4f)
+            .setDuration(duration).setStartDelay(startDelay).interpolator = NormalOutExtraSlowIn()
     }
 
     private fun showCenterButtons(startDelay: Long = 0) {
@@ -169,12 +178,12 @@ class UseFlashcardDoneActivity : BaseActivity<ActivityUseFlashcardDoneBinding, U
     }
 
     override fun addViewControls() { dB.apply {
-        rcvForgottenCardAdapter = RCVRecent_Search_FlashcardAdapter(this@UseFlashcardDoneActivity)
+        rcvForgottenCardAdapter = RCVRecent_Search_FlashcardAdapter(this@ResultReportActivity)
         rcvForgottenCardAdapter.setData(getMissedCardsList())
 
         rcvForgottenCardsList.adapter = rcvForgottenCardAdapter
         rcvForgottenCardsList.layoutManager =
-            LinearLayoutManager(this@UseFlashcardDoneActivity, RecyclerView.VERTICAL, false)
+            LinearLayoutManager(this@ResultReportActivity, RecyclerView.VERTICAL, false)
     }}
 
     override fun addViewEvents() { dB.apply {
@@ -193,7 +202,7 @@ class UseFlashcardDoneActivity : BaseActivity<ActivityUseFlashcardDoneBinding, U
                         flashcardSet = viewModel.getFlashcardSet()
                     }
                     UseFlashcardActivity.requestReviewFlashcard(
-                        this@UseFlashcardDoneActivity,
+                        this@ResultReportActivity,
                         flashcardSet,
                         reverseCardTextAndTranslation = false
                     )
@@ -201,7 +210,7 @@ class UseFlashcardDoneActivity : BaseActivity<ActivityUseFlashcardDoneBinding, U
 
                 FlashcardSendableActivity.REVIEW_FLASHCARD_ACTIVITY -> {
                     ReviewFlashcardActivity.requestReviewFlashcard(
-                        this@UseFlashcardDoneActivity,
+                        this@ResultReportActivity,
                         viewModel.getFlashcardSet(),
                         reverseCardTextAndTranslation = false
                     )
@@ -209,8 +218,9 @@ class UseFlashcardDoneActivity : BaseActivity<ActivityUseFlashcardDoneBinding, U
 
                 FlashcardSendableActivity.REVIEW_FLASHCARD_EASY_ACTIVITY -> {
                     ReviewFlashcardEasyActivity.requestReviewFlashcard(
-                        this@UseFlashcardDoneActivity,
-                        viewModel.getFlashcardSet()
+                        this@ResultReportActivity,
+                        viewModel.getFlashcardSet(),
+                        reverseCardTextAndTranslation = false
                     )
                 }
             }
@@ -219,7 +229,7 @@ class UseFlashcardDoneActivity : BaseActivity<ActivityUseFlashcardDoneBinding, U
 
         btnGoToWritting.setOnClickListener {
             ReviewFlashcardActivity.requestReviewFlashcard(
-                this@UseFlashcardDoneActivity,
+                this@ResultReportActivity,
                 getFullFlashcardSet(),
                 reverseCardTextAndTranslation = false
             )
@@ -228,8 +238,9 @@ class UseFlashcardDoneActivity : BaseActivity<ActivityUseFlashcardDoneBinding, U
 
         btnGoToPuzzle.setOnClickListener {
             ReviewFlashcardEasyActivity.requestReviewFlashcard(
-                this@UseFlashcardDoneActivity,
-                getFullFlashcardSet()
+                this@ResultReportActivity,
+                getFullFlashcardSet(),
+                reverseCardTextAndTranslation = false
             )
             finish()
         }

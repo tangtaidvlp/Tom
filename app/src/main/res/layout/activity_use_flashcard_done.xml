@@ -72,16 +72,29 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/vwgrp_title" />
 
+
+        <View
+            android:id="@+id/image_circle_green_behind_circle_score_report"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/image_green_elipse"
+            app:layout_constraintBottom_toBottomOf="@id/circle_score_report"
+            app:layout_constraintEnd_toEndOf="@id/circle_score_report"
+            app:layout_constraintStart_toStartOf="@id/circle_score_report"
+            app:layout_constraintTop_toTopOf="@+id/circle_score_report" />
+
         <com.teamttdvlp.memolang.view.customview.ScoreReportCircle
             android:id="@+id/circle_score_report"
             android:layout_width="200dp"
             android:layout_height="200dp"
             android:layout_marginTop="25dp"
+            android:background="@drawable/image_white_elipse"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/vwgrp_title"
             app:layout_constraintVertical_bias="0.0" />
+
 
         <LinearLayout
             android:id="@+id/vwgrp_user_score_report"

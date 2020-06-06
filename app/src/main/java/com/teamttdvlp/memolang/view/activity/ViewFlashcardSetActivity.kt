@@ -97,7 +97,11 @@ class ViewFlashcardSetActivity : BaseActivity<ActivityViewFlashcardSetBinding, V
         }
 
         flashcardSetAdapter.setOnBtnReviewFlashcardEasyClickListener { flashcardSet ->
-           ReviewFlashcardEasyActivity.requestReviewFlashcard(this@ViewFlashcardSetActivity, flashcardSet)
+           ReviewFlashcardEasyActivity.requestReviewFlashcard(
+               this@ViewFlashcardSetActivity,
+               flashcardSet,
+               false
+           )
         }
 
         btnCreateNewFlashcard.setOnClickListener {

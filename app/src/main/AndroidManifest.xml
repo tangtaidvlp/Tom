@@ -58,7 +58,7 @@
             android:windowSoftInputMode="adjustPan" />
         <activity android:name=".view.activity.ViewFlashCardListActivity" /> <!-- <activity android:name=".view.activity.SearchEditFlashcardActivity" /> -->
         <activity android:name=".view.activity.SearchOnlineActivity"/>
-        <activity android:name=".view.activity.UseFlashcardDoneActivity" />
+        <activity android:name=".view.activity.ResultReportActivity" />
         <activity android:name=".view.activity.UseFlashcardActivity" />
         <activity android:name=".view.activity.ReviewFlashcardEasyActivity" />
         <activity android:name=".view.activity.SetUpAccountActivity">

@@ -20,34 +20,39 @@ class ReviewFlashcardEasyViewModel(var app : Application) : BaseViewModel<Review
 
     val cardLeftCount = ObservableInt()
 
+    val missedCardCount = ObservableInt()
+
+    val passedCardCount = ObservableInt()
+
     private lateinit var currentCard: Flashcard
 
     private lateinit var flashcardSet: FlashcardSet
 
     private var cardList: ArrayList<Flashcard> = ArrayList()
 
-    private var cardListRandomer : CardListRandomer = CardListRandomer()
+    private var cardListRandomer: CardListRandomer = CardListRandomer()
 
-    private var forgottenCardList = ArrayList<Flashcard>()
+    private var missedCardList = ArrayList<Flashcard>()
 
-    private lateinit var reviewFCEasyActivity_StatusManager : ReviewActivitiesSpeakerStatusManager
+    private lateinit var reviewFCEasyActivity_StatusManager: ReviewActivitiesSpeakerStatusManager
 
-    private lateinit var answerTextSpeaker : TextSpeaker
+    private lateinit var answerTextSpeaker: TextSpeaker
 
-    private lateinit var questionTextSpeaker : TextSpeaker
+    private lateinit var questionTextSpeaker: TextSpeaker
 
-    private var reverseLanguages : Boolean = false
+    var reverseLanguages: Boolean = false
+        private set
 
-    fun setUp (flashcardSet : FlashcardSet, reverseLanguages : Boolean) {
-        this.flashcardSet = flashcardSet
+    fun setUp(flashcardSet: FlashcardSet, reverseLanguages: Boolean) {
         this.reverseLanguages = reverseLanguages
+        this.flashcardSet = flashcardSet
 
         // Show to UI by Databinding
         setName.set(flashcardSet.name)
-        cardLeftCount.set(cardList.size)
-        //
+        cardLeftCount.set(flashcardSet.flashcards.size)
 
-        reviewFCEasyActivity_StatusManager = ReviewActivitiesSpeakerStatusManager(app, "", setNameFormat = { setName ->
+        reviewFCEasyActivity_StatusManager =
+            ReviewActivitiesSpeakerStatusManager(app, "", setNameFormat = { setName ->
             return@ReviewActivitiesSpeakerStatusManager "Easy_Review<$setName>"
         })
 
@@ -57,19 +62,19 @@ class ReviewFlashcardEasyViewModel(var app : Application) : BaseViewModel<Review
         if (reverseLanguages) {
             questionLanguage = flashcardSet.frontLanguage
             answerLanguage = flashcardSet.backLanguage
-            CardListLanguageReverser.reverse_ListCard_TextAndTranslation(flashcardSet.flashcards)
+            CardListLanguageReverser.reverse_LIST_Card_TextAndTranslation(flashcardSet.flashcards)
         } else {
             answerLanguage = flashcardSet.frontLanguage
             questionLanguage = flashcardSet.backLanguage
         }
-
 
         // These statements must be called after #CardListLanguageReverser.reverse_ListCard_TextAndTranslation(flashcardSet.flashcards)
         cardList.clear()
         cardList.addAll(cardListRandomer.random(flashcardSet.flashcards))
         currentCard = cardList.first()
 
-        val textSpokenFirst = if (doesTextNeedSpeakingAtStart()) {
+
+        val textWhichIsSpokenFirst = if (doesTextNeedSpeakingAtStart()) {
             if (checkCanUseExampleForTestSubject(currentCard)) {
                 cardList.first().meanOfExample
             } else {
@@ -78,11 +83,11 @@ class ReviewFlashcardEasyViewModel(var app : Application) : BaseViewModel<Review
         } else ""
 
         answerTextSpeaker = TextSpeaker(app, answerLanguage.trim())
-        questionTextSpeaker = TextSpeaker(app, questionLanguage.trim(), textSpokenFirst)
-
+        questionTextSpeaker = TextSpeaker(app, questionLanguage.trim(), textWhichIsSpokenFirst)
 
         currentPos.set(0)
         useCard(currentCard)
+
     }
 
     fun useCard (card : Flashcard) {
@@ -118,37 +123,41 @@ class ReviewFlashcardEasyViewModel(var app : Application) : BaseViewModel<Review
         if (answerIsComplete) {
             if (userAnswer == cardAnswer) {
                 view.performPassBehaviours()
+                cardLeftCount.set(cardList.size - (currentPos.get() + 1))
+                passedCardCount.selfPlusOne()
             } else {
-                view.performIncorrectAnsElemtsOrderAnims()
+                view.perform_INcorrectAnsElemtsOrderAnims()
             }
         } else {
             if (cardAnswer.startsWith(userAnswer)) {
-                view.performCorrectAnsElemtsOrderAnims()
+                view.perform_CorrectAnswerElementsOrderBehaviours()
             } else {
-                view.performIncorrectAnsElemtsOrderAnims()
+                view.perform_INcorrectAnsElemtsOrderAnims()
             }
         }
     }
 
-    fun processForgottenCard () {
+    fun processForgottenCard() {
         addCurrentCardTo_ListOfForgottenCards()
         moveCurrentCardToEndOfCardList()
+        missedCardCount.set(missedCardList.size)
     }
 
-    private fun addCurrentCardTo_ListOfForgottenCards () {
-        if (forgottenCardList.notContains(currentCard)) {
-            forgottenCardList.add(currentCard)
+    fun getFlashcardSize() = cardList.size
+
+    private fun addCurrentCardTo_ListOfForgottenCards() {
+        if (missedCardList.notContains(currentCard)) {
+            missedCardList.add(currentCard)
         }
     }
 
-    private fun moveCurrentCardToEndOfCardList () {
+    private fun moveCurrentCardToEndOfCardList() {
         cardList.add(currentCard)
     }
 
     fun nextCard () {
         currentPos.selfPlusOne()
         currentCard = cardList[currentPos.get()]
-        cardLeftCount.set(cardList.size - currentPos.get())
         useCard(currentCard)
     }
 
@@ -156,7 +165,6 @@ class ReviewFlashcardEasyViewModel(var app : Application) : BaseViewModel<Review
         val thereIsCardLeft = currentPos.get() + 1 <= cardList.size - 1
         return thereIsCardLeft
     }
-
 
 
     private val SPECIFIED_CELL_AMOUNT = 15
@@ -215,14 +223,32 @@ class ReviewFlashcardEasyViewModel(var app : Application) : BaseViewModel<Review
     }
 
     fun getMissedCardsList(): ArrayList<Flashcard> {
-        return forgottenCardList
+        return missedCardList
     }
 
-    fun getFlashcardSet(): FlashcardSet {
-        return flashcardSet
+    fun getOriginalFlashcardSet(): FlashcardSet {
+        if (reverseLanguages) {
+            val cloneFlashcardSet = FlashcardSet(
+                this.flashcardSet.name,
+                this.flashcardSet.frontLanguage,
+                this.flashcardSet.backLanguage
+            )
+            val cloneFlashcardList = ArrayList<Flashcard>()
+            this.flashcardSet.flashcards.forEach { flashcard ->
+                cloneFlashcardList.add(flashcard.copy())
+            }
+            CardListLanguageReverser.reverse_LIST_Card_TextAndTranslation(cloneFlashcardList)
+            cloneFlashcardSet.flashcards = cloneFlashcardList
+
+            return cloneFlashcardSet
+        } else {
+            // Set is original, not reversed
+            return flashcardSet
+        }
     }
 
-    fun speakAnswer (text : String, onSpeakDone : () -> Unit) {
+
+    fun speakAnswer(text: String, onSpeakDone: () -> Unit) {
         answerTextSpeaker.setOnSpeakTextDoneListener(onSpeakDone)
         answerTextSpeaker.speak(text)
         if (answerTextSpeaker.error != null) {
@@ -270,4 +296,5 @@ class ReviewFlashcardEasyViewModel(var app : Application) : BaseViewModel<Review
         val speakerIsOn = reviewFCEasyActivity_StatusManager.speakerStatusManager.getStatus()
         return ((speakerFunc == ReviewActivitiesSpeakerStatusManager.SpeakerStatus.SPEAK_ANSWER_ONLY) or (speakerFunc == ReviewActivitiesSpeakerStatusManager.SpeakerStatus.SPEAK_QUESTION_AND_ANSWER)) and speakerIsOn
     }
+
 }

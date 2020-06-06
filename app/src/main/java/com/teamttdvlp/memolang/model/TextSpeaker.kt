@@ -4,7 +4,6 @@ import android.content.Context
 import android.speech.tts.TextToSpeech
 import android.speech.tts.TextToSpeech.*
 import android.speech.tts.UtteranceProgressListener
-import com.teamttdvlp.memolang.view.helper.quickLog
 import java.util.*
 import kotlin.collections.HashMap
 
@@ -67,10 +66,8 @@ class TextSpeaker (context : Context, language : String,  textCalled_AfterFinish
         var localeIsAvailable = false
         for (locale in Locale.getAvailableLocales()) {
             if (language == locale.displayLanguage)
-            quickLog("${locale.displayLanguage} and <${locale.displayCountry}>")
             if ((locale.displayLanguage == language) and (locale.displayCountry.isNotEmpty())) {
                 val result = tts.setLanguage(locale)
-                quickLog("Result ${locale.displayLanguage} and $result")
                 if (result == LANG_MISSING_DATA) {
                     error = "$LANG_MISSING_DATA_ERR $language"
                 } else if (result == LANG_NOT_SUPPORTED) {

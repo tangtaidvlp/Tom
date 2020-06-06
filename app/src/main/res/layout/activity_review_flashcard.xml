@@ -6,10 +6,8 @@
         <variable
             name="vwModel"
             type="com.teamttdvlp.memolang.viewmodel.ReviewFlashcardViewModel" />
-
         <import type="android.view.View"/>
     </data>
-
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -80,7 +78,7 @@
                 android:gravity="center"
                 android:padding="4.5dp"
                 android:src="@drawable/image_speaker_setting"
-                app:layout_constraintRight_toLeftOf="@id/btn_turn_off_speaker"
+                app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
         </androidx.appcompat.widget.LinearLayoutCompat>
@@ -163,7 +161,7 @@
             android:hint="3"
             android:includeFontPadding="false"
             android:paddingBottom="3dp"
-            android:text="@{String.valueOf(vwModel.flashcardSet.flashcards.size() - vwModel.cardLeftCount)}"
+            android:text="@{String.valueOf(vwModel.flashcardListSize - vwModel.cardLeftCount)}"
             android:textColor="@color/orange_highlight_text"
             android:textSize="13sp"
             android:translationZ="2dp"
@@ -200,7 +198,7 @@
             android:hint="3"
             android:includeFontPadding="false"
             android:paddingBottom="3dp"
-            android:text="@{String.valueOf(vwModel.forgottenCardList.size())}"
+            android:text="@{String.valueOf(vwModel.missedCardCount)}"
             android:textColor="@color/black"
             android:textSize="13sp"
             android:translationZ="2dp"
@@ -324,7 +322,7 @@
                         android:id="@+id/txt_test_subject_example"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/seguisb"
+                        android:fontFamily="@font/segoeui"
                         android:textColor="@color/black"
                         android:text="Example"
                         android:textSize="20sp"
@@ -336,7 +334,7 @@
                         android:id="@+id/txt_example_negative_highlight"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:fontFamily="@font/seguisb"
+                        android:fontFamily="@font/segoeui"
                         android:textColor="@color/black"
                         android:textSize="20sp"
                         app:layout_constraintLeft_toLeftOf="parent"
@@ -347,7 +345,7 @@
                         android:id="@+id/txt_example_positive_highlight"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:fontFamily="@font/seguisb"
+                        android:fontFamily="@font/segoeui"
                         android:textSize="20sp"
                         app:layout_constraintHorizontal_bias="1.0"
                         app:layout_constraintLeft_toLeftOf="parent"
@@ -369,7 +367,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
-                        android:fontFamily="@font/seguisb"
+                        android:fontFamily="@font/segoeui"
                         android:textColor="@color/black"
                         android:textSize="20sp"
                         android:text="Example translation"
@@ -411,7 +409,8 @@
                 android:inputType="text|textNoSuggestions"
                 android:paddingStart="10dp"
                 android:paddingBottom="1dp"
-                android:textColor="#000000"
+                android:textColor="#E94F4D"
+                android:textColorHint="#60E94F4D"
                 android:textSize="16sp" />
 
             <ImageView
@@ -451,14 +450,16 @@
                 android:alpha="0.0"
                 android:fontFamily="@font/seguisb"
                 android:inputType="textNoSuggestions|text"
-                android:paddingStart="8dp"
-                android:paddingEnd="8dp"
+                android:includeFontPadding="false"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
                 android:gravity="center_vertical"
                 android:scrollbarSize="0.3dp"
                 android:scrollbars="horizontal"
                 android:text="@{vwModel.hint}"
                 android:textColor="@color/black"
                 android:textSize="16sp"
+                android:paddingBottom="1dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -660,23 +661,30 @@
                 app:layout_constraintBottom_toBottomOf="parent">
 
                 <LinearLayout
-                    android:orientation="horizontal"
-                    android:layout_width="wrap_content"
-                    android:layout_height="30dp">
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:orientation="horizontal">
 
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:src="@drawable/image_speaker_black"/>
+                        android:src="@drawable/image_speaker_black" />
 
                     <androidx.appcompat.widget.AppCompatTextView
-                        android:layout_width="wrap_content"
+                        android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:textSize="16sp"
                         android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
                         android:fontFamily="@font/seguisb"
+                        android:text="Speaker"
                         android:textColor="@color/black"
-                        android:text="Speaker"/>
+                        android:textSize="16sp" />
+
+                    <Switch
+                        android:id="@+id/switch_speaker"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true" />
 
                 </LinearLayout>
 

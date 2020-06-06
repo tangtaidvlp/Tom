@@ -5,6 +5,7 @@ import android.animation.AnimatorSet
 import android.animation.ValueAnimator
 import android.content.Context
 import android.content.Intent
+import android.content.res.ColorStateList
 import android.graphics.Color
 import android.graphics.drawable.Drawable
 import android.os.Bundle
@@ -150,9 +151,15 @@ class ReviewFlashcardEasyActivity : BaseActivity<ActivityReviewFlashcardEasyBind
     private var speakerIsOn : Boolean = true
 
     companion object {
-        fun requestReviewFlashcard (requestContext : Context, flashcardSet : FlashcardSet){
+        fun requestReviewFlashcard(
+            requestContext: Context,
+            flashcardSet: FlashcardSet,
+            reverseCardTextAndTranslation: Boolean
+        ) {
+
             val intent = Intent(requestContext, ReviewFlashcardEasyActivity::class.java)
             intent.putExtra(FLASHCARD_SET_KEY, flashcardSet)
+            intent.putExtra(REVERSE_CARD_TEXT_AND_TRANSLATION, reverseCardTextAndTranslation)
             requestContext.startActivity(intent)
         }
     }
@@ -165,6 +172,7 @@ class ReviewFlashcardEasyActivity : BaseActivity<ActivityReviewFlashcardEasyBind
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        setStatusBarColor(Color.parseColor("#44004B"))
         viewModel.setUpView(this)
         dB.vwModel = viewModel
 
@@ -176,6 +184,8 @@ class ReviewFlashcardEasyActivity : BaseActivity<ActivityReviewFlashcardEasyBind
             dB.vwgrpOutputCells.doOnPreDraw {
                 calculatelInputCellsDimens()
                 calculateOutputCellsDimens()
+                // Only can be used after dimensions are set up
+                beginUsing()
             }
         }
     }
@@ -191,8 +201,8 @@ class ReviewFlashcardEasyActivity : BaseActivity<ActivityReviewFlashcardEasyBind
     }
 
     override fun addViewControls() { dB.apply {
-        layoutChooseLangFlow.txtQuestionLanguage.text = getRequestedFlashcardSet().backLanguage
-        layoutChooseLangFlow.txtAnswerLanguage.text = getRequestedFlashcardSet().frontLanguage
+//        layoutChooseLangFlow.txtQuestionLanguage.text = getRequestedFlashcardSet().backLanguage
+//        layoutChooseLangFlow.txtAnswerLanguage.text = getRequestedFlashcardSet().frontLanguage
     }}
 
     override fun addViewEvents() { dB.apply {
@@ -209,26 +219,12 @@ class ReviewFlashcardEasyActivity : BaseActivity<ActivityReviewFlashcardEasyBind
             resetBackButtonPressedTimes()
         }
 
-        btnSetting.setOnClickListener {
+        btnSpeakerSetting.setOnClickListener {
             dialogSetting.show()
         }
 
-        layoutChooseLangFlow.btnReverseLangage.setOnClickListener {
-            beginUsing(true)
-        }
-
-        layoutChooseLangFlow.btnDoesNotReverseLanguage.setOnClickListener {
-            beginUsing(false)
-        }
-
-        btnTurnOffSpeaker.setOnClickListener {
-            speakerIsOn = false
-            btnTurnOnSpeaker.goVISIBLE()
-        }
-
-        btnTurnOnSpeaker.setOnClickListener {
-            speakerIsOn = true
-            btnTurnOnSpeaker.goGONE()
+        switchSpeaker.setOnCheckedChangeListener { view, isChecked ->
+            speakerIsOn = isChecked
         }
 
         radioGrpSpeakerSetting.setOnCheckedChangeListener { _, checkedId ->
@@ -248,10 +244,23 @@ class ReviewFlashcardEasyActivity : BaseActivity<ActivityReviewFlashcardEasyBind
             }
         }
 
-    }}
+        btnFlipFlashcardSet.setOnClickListener {
+            flipWholeFlashcardSet()
+        }
+    }
+    }
+
+    private fun flipWholeFlashcardSet() {
+        requestReviewFlashcard(
+            this,
+            viewModel.getOriginalFlashcardSet(),
+            viewModel.reverseLanguages.not()
+        )
+        finish()
+    }
 
     override fun addAnimationEvents() {
-        oldSubjectDisaprAnim_RunNextCardOnFinish.addListener( onEnd = {
+        oldSubjectDisaprAnim_RunNextCardOnFinish.addListener(onEnd = {
             dB.vwgrpTestSubject.translationX = 0f
             dB.vwgrpTestSubject.alpha = 1f
             nextCardAnimtrSet.start()
@@ -260,19 +269,19 @@ class ReviewFlashcardEasyActivity : BaseActivity<ActivityReviewFlashcardEasyBind
         })
     }
 
-    private fun beginUsing (reverseLanguageFlow : Boolean) {
-        viewModel.setUp(getRequestedFlashcardSet(), reverseLanguageFlow)
-        dB.layoutChooseLangFlow.root.goGONE()
+    private fun beginUsing() {
+        viewModel.setUp(getRequestedFlashcardSet(), getIsReverseTextAndTranslation())
+        quickLog(getRequestedFlashcardSet().flashcards.size)
         setUpSpeakerStatus()
     }
 
-    private fun setUpSpeakerStatus () {
+    private fun getIsReverseTextAndTranslation(): Boolean {
+        return intent.extras!!.getBoolean(REVERSE_CARD_TEXT_AND_TRANSLATION, false)
+    }
+
+    private fun setUpSpeakerStatus() {
         speakerIsOn = viewModel.getSpeakerStatus()
-        if (speakerIsOn) {
-            dB.btnTurnOnSpeaker.goGONE()
-        } else {
-            dB.btnTurnOnSpeaker.goVISIBLE()
-        }
+        dB.switchSpeaker.isChecked = speakerIsOn
 
         when (viewModel.getSpeakerFunction()) {
             ReviewActivitiesSpeakerStatusManager.SpeakerStatus.SPEAK_ANSWER_ONLY -> {
@@ -295,13 +304,7 @@ class ReviewFlashcardEasyActivity : BaseActivity<ActivityReviewFlashcardEasyBind
         }
     }
 
-
     override fun onBackPressed() {
-        val hasNotSetUpLanguages = (dB.layoutChooseLangFlow.root.isVisible())
-        if (hasNotSetUpLanguages) {
-            finish()
-        }
-
         backButtonPressedTimes ++
         if (backButtonPressedTimes == 1) {
             dB.dialogExit.show()
@@ -310,20 +313,24 @@ class ReviewFlashcardEasyActivity : BaseActivity<ActivityReviewFlashcardEasyBind
         }
     }
 
-
     override fun onDestroy() {
         saveSpeakerStatus()
         super.onDestroy()
     }
 
     private fun saveSpeakerStatus () {
-        val speakerFunction = if (answerIsSpoken and questionIsSpoken) {
-            ReviewActivitiesSpeakerStatusManager.SpeakerStatus.SPEAK_QUESTION_AND_ANSWER
-        } else if (answerIsSpoken and not(questionIsSpoken)) {
-            ReviewActivitiesSpeakerStatusManager.SpeakerStatus.SPEAK_ANSWER_ONLY
-        } else if (not(answerIsSpoken) and questionIsSpoken) {
-            ReviewActivitiesSpeakerStatusManager.SpeakerStatus.SPEAK_QUESTION_ONLY
-        } else throw Exception ("Speaker status unknown")
+        val speakerFunction = when {
+            answerIsSpoken and questionIsSpoken -> {
+                ReviewActivitiesSpeakerStatusManager.SpeakerStatus.SPEAK_QUESTION_AND_ANSWER
+            }
+            answerIsSpoken and not(questionIsSpoken) -> {
+                ReviewActivitiesSpeakerStatusManager.SpeakerStatus.SPEAK_ANSWER_ONLY
+            }
+            not(answerIsSpoken) and questionIsSpoken -> {
+                ReviewActivitiesSpeakerStatusManager.SpeakerStatus.SPEAK_QUESTION_ONLY
+            }
+            else -> throw Exception("Speaker status unknown")
+        }
 
         viewModel.saveAllStatus(speakerFunction, speakerIsOn)
     }
@@ -378,8 +385,7 @@ class ReviewFlashcardEasyActivity : BaseActivity<ActivityReviewFlashcardEasyBind
         }
     }}
 
-
-    fun resetBackButtonPressedTimes () {
+    private fun resetBackButtonPressedTimes() {
         backButtonPressedTimes = 0
     }
 
@@ -412,6 +418,7 @@ class ReviewFlashcardEasyActivity : BaseActivity<ActivityReviewFlashcardEasyBind
                                   ansElements: Array<String>,
                                   listType : ReviewFlashcardEasyView.ListOfCellType) { dB.apply {
 
+
         val answer = testSubject.text
         txtTextAnswer.text = answer
 
@@ -424,14 +431,14 @@ class ReviewFlashcardEasyActivity : BaseActivity<ActivityReviewFlashcardEasyBind
         }
 
         if (listType == CHARACTER_LIST) {
-            quickLog("Char")
-            createChar_InputCells(ansElements)
+            createChar_InputCell_LIST(ansElements)
+            recalculatePanelsHeight(ansElements.size)
         } else if (listType == WORD_LIST) {
-            quickLog("Word")
-            createWord_InputCells(ansElements)
+            createWord_InputCell_LIST(ansElements, onLayoutInputCell_Finishing = { rowCount ->
+                recalculatePanelsHeight_BasedOnRowCount(rowCount)
+            })
         }
 
-        recalculatePanelsHeight(ansElements.size)
     }}
 
     private fun setUpTranslationTestSubject (card : Flashcard) { dB.apply {
@@ -458,22 +465,26 @@ class ReviewFlashcardEasyActivity : BaseActivity<ActivityReviewFlashcardEasyBind
         showExampleTestSubjectComponents()
         txtTranslation.alpha = 0f
         txtTextAnswer.alpha = 0f
-    }}
+    }
+    }
 
+    private val ORANGE_HIGHLIGHT_COLOR: Int = Color.parseColor("#F44F11")
 
-    override fun performCorrectAnsElemtsOrderAnims() { dB.apply {
-        if (imgTxtInputAnswerBackground.background != NORMAL_BORDER_BACKGROUND) {
-            imgTxtInputAnswerBackground.background = NORMAL_BORDER_BACKGROUND
+    override fun perform_CorrectAnswerElementsOrderBehaviours() {
+        dB.apply {
+            if (txtInputAnswer.textColors != ColorStateList.valueOf(Color.BLACK)) {
+                txtInputAnswer.setTextColor(Color.BLACK)
+            }
         }
-    }}
+    }
 
-    override fun performIncorrectAnsElemtsOrderAnims() { dB.apply {
-        if (imgTxtInputAnswerBackground.background != RED_BORDER_BACKGROUND) {
-            imgTxtInputAnswerBackground.background = RED_BORDER_BACKGROUND
+    override fun perform_INcorrectAnsElemtsOrderAnims() {
+        dB.apply {
+            if (txtInputAnswer.textColors != ColorStateList.valueOf(ORANGE_HIGHLIGHT_COLOR)) {
+                txtInputAnswer.setTextColor(ORANGE_HIGHLIGHT_COLOR)
+            }
         }
-    }}
-
-
+    }
 
     override fun performPassBehaviours() {
         disableClickingAllOutputCells()
@@ -549,8 +560,11 @@ class ReviewFlashcardEasyActivity : BaseActivity<ActivityReviewFlashcardEasyBind
         val actualPanelWidth = (InCellWidth * MAX_CPR + spaceBetInputCells * (MAX_CPR - 1))
         val calcError = expectedPanelWidth - actualPanelWidth
         val addtnalCellWidth = calcError / MAX_CPR
-        InAddtnalMarginStart = (expectedPanelWidth - (actualPanelWidth + addtnalCellWidth * MAX_CPR))/2
+        InAddtnalMarginStart =
+            (expectedPanelWidth - (actualPanelWidth + addtnalCellWidth * MAX_CPR)) / 2
         InCellWidth += addtnalCellWidth
+
+        quickLog("Calculate input")
     }
 
     private fun calculateOutputCellsDimens () {
@@ -580,11 +594,13 @@ class ReviewFlashcardEasyActivity : BaseActivity<ActivityReviewFlashcardEasyBind
     // ======================== CHARACTERS FUNCTION =================================
 
 
-    private fun createChar_InputCells (ansElements: Array<String>) { dB.apply {
-        for ((position, element) in ansElements.withIndex()) {
-            createChar_InputCell(element, position, true)
+    private fun createChar_InputCell_LIST(ansElements: Array<String>) {
+        dB.apply {
+            for ((position, element) in ansElements.withIndex()) {
+                createChar_InputCell(element, position, true)
+            }
         }
-    }}
+    }
 
     private fun createChar_InputCell (cellContent: String, position : Int, isFirstTimesCreated : Boolean) {
         val inCharCell = Cell(this, INPUT_CELL)
@@ -604,6 +620,7 @@ class ReviewFlashcardEasyActivity : BaseActivity<ActivityReviewFlashcardEasyBind
         cellParent.addView(inCharCell)
 
         inputCellList.add(inCharCell)
+
         // SetListener
         inCharCell.setOnClickListener {
             inCharCell.isClickable = false
@@ -675,18 +692,28 @@ class ReviewFlashcardEasyActivity : BaseActivity<ActivityReviewFlashcardEasyBind
     }
 
     private fun recalculatePanelsHeight (elementCount : Int) {
+        quickLog("recalculatePanelsHeight()")
         dB.apply {
             var rowCount = elementCount / MAX_CPR
             val notFullCellInLastRow = (elementCount % MAX_CPR != 0)
-            if (notFullCellInLastRow) rowCount ++
+            if (notFullCellInLastRow) rowCount++
 
-            val expectedInputGroupHeight : Int
+            recalculatePanelsHeight_BasedOnRowCount(rowCount)
+        }
+    }
+
+    private fun recalculatePanelsHeight_BasedOnRowCount(rowCount: Int) {
+        dB.apply {
+            val expectedInputGroupHeight: Int
             if (rowCount > MIN_INPUT_ROW_COUNT) {
-                expectedInputGroupHeight = rowCount * (inCellHeight + spaceBetInputCells) + InTopMargin * 2
+                expectedInputGroupHeight =
+                    rowCount * (inCellHeight + spaceBetInputCells) + InTopMargin * 2
             } else {
-                expectedInputGroupHeight = MIN_INPUT_ROW_COUNT * (inCellHeight + spaceBetInputCells) + InTopMargin * 2
+                expectedInputGroupHeight =
+                    MIN_INPUT_ROW_COUNT * (inCellHeight + spaceBetInputCells) + InTopMargin * 2
             }
-            val expectedOutputGroupHeight = rowCount * (outCellHeight + outSpaceBetCells) + outTopMargin * 2
+            val expectedOutputGroupHeight =
+                rowCount * (outCellHeight + outSpaceBetCells) + outTopMargin * 2
 
             if (vwgrpInputCells.layoutParams.height != expectedInputGroupHeight) {
                 vwgrpInputCells.layoutParams.height = expectedInputGroupHeight
@@ -697,22 +724,24 @@ class ReviewFlashcardEasyActivity : BaseActivity<ActivityReviewFlashcardEasyBind
                 vwgrpOutputCells.layoutParams.height = expectedOutputGroupHeight
                 vwgrpOutputCells.requestLayout()
             }
-
         }
     }
-
 
 // ======================== WORDS FUNCTION =================================
 
 
-    private fun createWord_InputCells (ansElements: Array<String>) {
+    private fun createWord_InputCell_LIST(
+        ansElements: Array<String>,
+        onLayoutInputCell_Finishing: (rowCount: Int) -> Unit
+    ) {
+
         for ((position, element) in ansElements.withIndex()) {
             // Create the cell
             val inputCell = Cell(this, cellType = INPUT_CELL)
             inputCell.text = element
             val constraint = ConstraintLayout.LayoutParams(WRAP_CONTENT, inCellHeight)
             constraint.topToTop = inputPanel.id
-            constraint.leftToLeft  = inputPanel.id
+            constraint.leftToLeft = inputPanel.id
             inputCell.setPadding(15.dp(), 0, 15.dp(), 0)
             inputCell.layoutParams = constraint
             cellParent.addView(inputCell)
@@ -734,7 +763,8 @@ class ReviewFlashcardEasyActivity : BaseActivity<ActivityReviewFlashcardEasyBind
 
             if (position == ansElements.lastIndex) {
                 inputCell.doOnPreDraw {
-                    layoutInput_WordCellsOnScreen()
+                    val rowCount = layoutInput_WordCellsOnScreen()
+                    onLayoutInputCell_Finishing.invoke(rowCount)
                 }
             }
 
@@ -759,7 +789,13 @@ class ReviewFlashcardEasyActivity : BaseActivity<ActivityReviewFlashcardEasyBind
             inputCell.isClickable = false
             inputCell.performDestroyAnimate(DIRECTION_UP).setStartDelay(0)
                 .setLiteListener (onEnd = {
-                    createWord_OutputCell(cellContent, cellWidth, cellHeight, marginStart, marginTop)
+                    createWord_OutputCell(
+                        cellContent,
+                        cellWidth,
+                        cellHeight,
+                        marginStart,
+                        marginTop
+                    )
                     cellParent.removeView(inputCell)
                 })
             inputCellList.remove(inputCell)
@@ -769,19 +805,22 @@ class ReviewFlashcardEasyActivity : BaseActivity<ActivityReviewFlashcardEasyBind
         inputCell.performCreateAnimate(DIRECTION_DOWN).startDelay = CELL_MOVING_INVISIBLY_TIME
     }
 
-    private fun layoutInput_WordCellsOnScreen () {
+    private fun layoutInput_WordCellsOnScreen(): Int {
+        quickLog("layoutInput_WordCellsOnScreen()")
+        var rowCount = 1
         for (cell in inputCellList) {
             val nextTotalCellsWidth_InLastRow = curInputWCells_MarginStart + cell.width
 
             val goToNextRow = nextTotalCellsWidth_InLastRow > inputPanel.width
-            var cellMarginStart : Int
-            val cellMarginTop : Int
+            var cellMarginStart: Int
+            val cellMarginTop: Int
 
             if (goToNextRow) {
                 cellMarginStart = InStartMargin
                 // Reset Start Margin to the left of Input Panel
                 curInputWCells_MarginStart = InStartMargin + cell.width + spaceBetInputCells
                 curInputWCells_MarginTop += (cell.height + spaceBetInputCells)
+                rowCount++
             } else {
                 cellMarginStart = curInputWCells_MarginStart
                 curInputWCells_MarginStart = nextTotalCellsWidth_InLastRow + spaceBetInputCells
@@ -795,7 +834,9 @@ class ReviewFlashcardEasyActivity : BaseActivity<ActivityReviewFlashcardEasyBind
             newLayoutParams.startToStart= inputPanel.id
             cell.layoutParams = newLayoutParams
             cell.requestLayout()
+
         }
+        return rowCount
     }
 
 
@@ -889,7 +930,7 @@ class ReviewFlashcardEasyActivity : BaseActivity<ActivityReviewFlashcardEasyBind
     }
 
     private fun removeOtherRightSideOutputCells (pickedPos : Int) {
-        for (pos in pickedPos..outputCellList.size - 1) {
+        for (pos in pickedPos until outputCellList.size) {
             outputCellList.removeAt(outputCellList.size - 1)
         }
     }
@@ -977,24 +1018,33 @@ class ReviewFlashcardEasyActivity : BaseActivity<ActivityReviewFlashcardEasyBind
         return hiddenAnswerString
     }
 
-    fun sendHardCardListToEndActivity () {
+    fun sendHardCardListToEndActivity() {
         val missedCardList = viewModel.getMissedCardsList()
-        val flashcardSet = viewModel.getFlashcardSet()
-        UseFlashcardDoneActivity.requestFinishUsingFlashcard(
+        val flashcardSet = viewModel.getOriginalFlashcardSet()
+        ResultReportActivity.requestFinishUsingFlashcard(
             this, flashcardSet, missedCardList,
-            UseFlashcardDoneActivity.FlashcardSendableActivity.REVIEW_FLASHCARD_EASY_ACTIVITY.code
+            ResultReportActivity.FlashcardSendableActivity.REVIEW_FLASHCARD_EASY_ACTIVITY.code
         )
+    }
+
+    override fun overrideEnterAnim() {
+        overridePendingTransition(R.anim.appear, R.anim.nothing)
+    }
+
+    override fun overrideExitAnim() {
+        overridePendingTransition(R.anim.nothing, R.anim.disappear)
     }
 
     // ==================================INJECTED METHODS============================================
 
     @Inject
-    fun initNextCardAnimations (
-        @Named("MoveRight120%AndFadeOut") moveRightAndFadeOut : Animator,
-        @Named("Float") vwgrpNewSubAppear : Animator
-    ) { dB.apply {
-        vwgrpNewSubAppear.setTarget(vwgrpTestSubject)
-        (vwgrpNewSubAppear as ValueAnimator).addUpdateListener {
+    fun initNextCardAnimations(
+        @Named("MoveRight120%AndFadeOut") moveRightAndFadeOut: Animator,
+        @Named("Float") vwgrpNewSubAppear: Animator
+    ) {
+        dB.apply {
+            vwgrpNewSubAppear.setTarget(vwgrpTestSubject)
+            (vwgrpNewSubAppear as ValueAnimator).addUpdateListener {
             vwgrpTestSubject.elevation = it.animatedValue as Float
         }
         vwgrpNewSubAppear.duration = NEXT_CARD_ANIMS_DURATION / 2

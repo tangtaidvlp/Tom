@@ -5,7 +5,7 @@ import androidx.databinding.ObservableField
 import androidx.databinding.ObservableInt
 import com.teamttdvlp.memolang.data.model.entity.flashcard.Flashcard
 import com.teamttdvlp.memolang.data.model.entity.flashcard.FlashcardSet
-import com.teamttdvlp.memolang.model.CardListLanguageReverser.Companion.reverse_ListCard_TextAndTranslation
+import com.teamttdvlp.memolang.model.CardListLanguageReverser.Companion.reverse_LIST_Card_TextAndTranslation
 import com.teamttdvlp.memolang.model.ReviewActivitiesSpeakerStatusManager
 import com.teamttdvlp.memolang.model.ReviewActivitiesSpeakerStatusManager.SpeakerStatus.Companion.SPEAK_ANSWER_ONLY
 import com.teamttdvlp.memolang.model.ReviewActivitiesSpeakerStatusManager.SpeakerStatus.Companion.SPEAK_QUESTION_AND_ANSWER
@@ -23,9 +23,11 @@ class ReviewFlashcardViewModel(var app : Application) : BaseViewModel<ReviewFlas
 
     val currentPos = ObservableInt()
 
-    private lateinit var currentCard : Flashcard
+    val missedCardCount = ObservableInt()
 
-    private var cardList : ArrayList<Flashcard> = ArrayList()
+    private lateinit var currentCard: Flashcard
+
+    private var cardList: ArrayList<Flashcard> = ArrayList()
 
     private lateinit var flashcardSet: FlashcardSet
 
@@ -33,7 +35,7 @@ class ReviewFlashcardViewModel(var app : Application) : BaseViewModel<ReviewFlas
 
     private val MAX_ANSWER_WRONG_TIMES = 3
 
-    private val forgottenCardList = ArrayList<Flashcard>()
+    private val missedCardList = ArrayList<Flashcard>()
 
     val setName = ObservableField<String>()
 
@@ -43,21 +45,24 @@ class ReviewFlashcardViewModel(var app : Application) : BaseViewModel<ReviewFlas
 
     var answerLength = 0
 
-    private lateinit var answerTextSpeaker : TextSpeaker
+    private lateinit var answerTextSpeaker: TextSpeaker
 
-    private lateinit var questionTextSpeaker : TextSpeaker
+    private lateinit var questionTextSpeaker: TextSpeaker
 
     private lateinit var reviewFCActivity_StatusManager: ReviewActivitiesSpeakerStatusManager
 
-    fun setUpInfo (flashcardSet : FlashcardSet, reverseLanguages : Boolean) {
-        val questionLanguage : String
-        val answerLanguage : String
-        this.flashcardSet = flashcardSet
+    var isReverseTextAndTrans = false
 
-        if (reverseLanguages) {
+    fun setUpInfo(flashcardSet: FlashcardSet, reverseTextAndTranslation: Boolean) {
+        val questionLanguage: String
+        val answerLanguage: String
+        this.flashcardSet = flashcardSet
+        this.isReverseTextAndTrans = reverseTextAndTranslation
+
+        if (reverseTextAndTranslation) {
             questionLanguage = flashcardSet.frontLanguage
             answerLanguage = flashcardSet.backLanguage
-            reverse_ListCard_TextAndTranslation(flashcardSet.flashcards)
+            reverse_LIST_Card_TextAndTranslation(flashcardSet.flashcards)
         } else {
             answerLanguage = flashcardSet.frontLanguage
             questionLanguage = flashcardSet.backLanguage
@@ -202,34 +207,54 @@ class ReviewFlashcardViewModel(var app : Application) : BaseViewModel<ReviewFlas
         }
     }
 
-    fun processForgottenCard () {
+    fun processMissedCard() {
         addCurrentCardTo_ListOfForgottenCards()
         moveCurrentCardToEndOfCardList()
+        missedCardCount.set(missedCardList.size)
     }
 
-    private fun addCurrentCardTo_ListOfForgottenCards () {
-        if (forgottenCardList.notContains(currentCard)) {
-            forgottenCardList.add(currentCard)
+    private fun addCurrentCardTo_ListOfForgottenCards() {
+        if (missedCardList.notContains(currentCard)) {
+            missedCardList.add(currentCard)
         }
     }
 
-    private fun moveCurrentCardToEndOfCardList () {
+    private fun moveCurrentCardToEndOfCardList() {
         cardList.add(currentCard)
     }
 
     fun getForgottenCardList(): ArrayList<Flashcard> {
-        return forgottenCardList
+        return missedCardList
     }
 
-    fun getFlashcardSet(): FlashcardSet {
-        return flashcardSet
+    fun getFlashcardListSize(): Int = flashcardSet.flashcards.size
+
+    fun getOriginalFlashcardSet(): FlashcardSet {
+        if (isReverseTextAndTrans) {
+            val cloneFlashcardSet = FlashcardSet(
+                this.flashcardSet.name,
+                this.flashcardSet.frontLanguage,
+                this.flashcardSet.backLanguage
+            )
+            val cloneFlashcardList = ArrayList<Flashcard>()
+            this.flashcardSet.flashcards.forEach { flashcard ->
+                cloneFlashcardList.add(flashcard.copy())
+            }
+            reverse_LIST_Card_TextAndTranslation(cloneFlashcardList)
+            cloneFlashcardSet.flashcards = cloneFlashcardList
+
+            return cloneFlashcardSet
+        } else {
+            // Set is original, not reversed
+            return flashcardSet
+        }
     }
 
     fun getSpeakerStatus(): Boolean {
         return reviewFCActivity_StatusManager.speakerStatusManager.getStatus()
     }
 
-    fun saveAllStatus (speakerFunction : Int, speakerStatus : Boolean) {
+    fun saveAllStatus(speakerFunction: Int, speakerStatus: Boolean) {
         if (::reviewFCActivity_StatusManager.isInitialized) {
             reviewFCActivity_StatusManager.speakerStatusManager.apply {
                 saveFunction(speakerFunction)

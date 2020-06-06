@@ -12,9 +12,9 @@ interface ReviewFlashcardEasyView : View {
     fun onGetTestSubject (testSubject : Flashcard, useExampleForTestSubject : Boolean,
                           ansElements : Array<String>, listType : ListOfCellType)
 
-    fun performCorrectAnsElemtsOrderAnims ()
+    fun perform_CorrectAnswerElementsOrderBehaviours()
 
-    fun performIncorrectAnsElemtsOrderAnims ()
+    fun perform_INcorrectAnsElemtsOrderAnims()
 
     fun performPassBehaviours ()
 

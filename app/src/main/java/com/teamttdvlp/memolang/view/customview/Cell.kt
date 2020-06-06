@@ -5,12 +5,10 @@ import android.graphics.Color
 import android.util.AttributeSet
 import android.view.Gravity
 import android.view.ViewPropertyAnimator
-import android.widget.TextView
 import androidx.annotation.Dimension.SP
 import androidx.appcompat.widget.AppCompatTextView
 import androidx.interpolator.view.animation.FastOutSlowInInterpolator
 import com.teamttdvlp.memolang.R
-import com.teamttdvlp.memolang.view.helper.UnitConverter.DpToPixel
 import com.teamttdvlp.memolang.view.helper.dp
 
 class Cell  : AppCompatTextView {
@@ -31,7 +29,7 @@ class Cell  : AppCompatTextView {
 
     constructor(context: Context, cellType : Int) : super(context) {
         if (cellType == INPUT_CELL) {
-            background = context.getDrawable(R.drawable.round_3dp_black_background)
+            background = context.getDrawable(R.drawable.background_app_round_3dp_gradient_violet)
             setTextColor(Color.WHITE)
         } else if (cellType == OUTPUT_CELL) {
             background = context.getDrawable(R.drawable.round_3dp_white_background)
@@ -39,9 +37,7 @@ class Cell  : AppCompatTextView {
         }
     }
 
-    constructor(context: Context, attrSet : AttributeSet?) : super(context, attrSet) {
-
-    }
+    constructor(context: Context, attrSet: AttributeSet?) : super(context, attrSet)
 
     fun setOnRestore (onRestore : (delayTime : Long) -> Unit) {
         this.onRestore = onRestore

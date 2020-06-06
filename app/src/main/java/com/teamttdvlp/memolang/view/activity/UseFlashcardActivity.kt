@@ -88,8 +88,6 @@ class UseFlashcardActivity : BaseActivity<ActivityUseFlashcardBinding, UseFlashc
     lateinit var viewModelProviderFactory : ViewModelProviderFactory
     @Inject set
 
-    private var isReverseTextAndTranslation = false
-
     companion object {
         fun requestReviewFlashcard(
             requestContext: Context,
@@ -111,7 +109,7 @@ class UseFlashcardActivity : BaseActivity<ActivityUseFlashcardBinding, UseFlashc
         super.onCreate(savedInstanceState)
         dB.lifecycleOwner = this
         viewModel.setUpView(this)
-        beginUsing(isReverseTextAndTranslation)
+        beginUsing(getIsReverseTextAndTranslation())
     }
 
     override fun onDestroy() {
@@ -137,8 +135,6 @@ class UseFlashcardActivity : BaseActivity<ActivityUseFlashcardBinding, UseFlashc
         }
 
         dB.vwModel = viewModel
-
-        isReverseTextAndTranslation = getIsReverseTextAndTranslation()
     }
 
     override fun addViewControls() { dB.apply {
@@ -254,8 +250,8 @@ class UseFlashcardActivity : BaseActivity<ActivityUseFlashcardBinding, UseFlashc
 
         btnFlipFlashcardSet.setOnClickListener {
             requestReviewFlashcard(
-                this@UseFlashcardActivity, viewModel.getFlashcardSet(),
-                reverseCardTextAndTranslation = isReverseTextAndTranslation.not()
+                this@UseFlashcardActivity, viewModel.getOriginalFlashcardSet(),
+                reverseCardTextAndTranslation = viewModel.isReversedTextAndTranslation
             )
             finish()
         }
@@ -333,12 +329,12 @@ class UseFlashcardActivity : BaseActivity<ActivityUseFlashcardBinding, UseFlashc
 
     // VIEW PROCESSING
 
-    override fun onNoCardsLeft() {
+    override fun onEndReviewing() {
         doActionOnGroup_FRONT_Card { it ->
             it.goINVISIBLE()
         }
         viewModel.stopAllTextSpeaker()
-        sendHardCardListToEndActivity()
+        sendCardSetInfoTo_ResultReportActivity()
         finish()
     }
 
@@ -347,12 +343,10 @@ class UseFlashcardActivity : BaseActivity<ActivityUseFlashcardBinding, UseFlashc
     }
 
     override fun lock_ShowPreviousCard_Function() {
-        quickLog("Lock")
         canGoToPreviousCard = false
     }
 
     override fun unlock_ShowPreviousCard_Function() {
-        quickLog("Unlock")
         canGoToPreviousCard = true
     }
 
@@ -364,7 +358,7 @@ class UseFlashcardActivity : BaseActivity<ActivityUseFlashcardBinding, UseFlashc
                 on_NEXT_HARD_CardAnimation.start()
             }
         } else { // No card left
-            onNoCardsLeft()
+            onEndReviewing()
         }
     }
 
@@ -372,12 +366,12 @@ class UseFlashcardActivity : BaseActivity<ActivityUseFlashcardBinding, UseFlashc
         backButtonPressedTimes = 0
     }
 
-    private fun sendHardCardListToEndActivity() {
+    private fun sendCardSetInfoTo_ResultReportActivity() {
         val hardCardList = viewModel.getForgottenCardList()
-        val flashcardSet = viewModel.getFlashcardSet()
-        UseFlashcardDoneActivity.requestFinishUsingFlashcard(
+        val flashcardSet = viewModel.getOriginalFlashcardSet()
+        ResultReportActivity.requestFinishUsingFlashcard(
             this, flashcardSet, hardCardList,
-            UseFlashcardDoneActivity.FlashcardSendableActivity.USE_FLASHCARD_ACTIVITY.code
+            ResultReportActivity.FlashcardSendableActivity.USE_FLASHCARD_ACTIVITY.code
         )
     }
 

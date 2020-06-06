@@ -5,7 +5,7 @@ import androidx.databinding.ObservableField
 import androidx.databinding.ObservableInt
 import com.teamttdvlp.memolang.data.model.entity.flashcard.Flashcard
 import com.teamttdvlp.memolang.data.model.entity.flashcard.FlashcardSet
-import com.teamttdvlp.memolang.model.CardListLanguageReverser.Companion.reverse_ListCard_TextAndTranslation
+import com.teamttdvlp.memolang.model.CardListLanguageReverser.Companion.reverse_LIST_Card_TextAndTranslation
 import com.teamttdvlp.memolang.model.CardListManager
 import com.teamttdvlp.memolang.model.TextSpeaker
 import com.teamttdvlp.memolang.model.UseFCActivity_StatusManager
@@ -35,18 +35,21 @@ class UseFlashcardViewModel (private val context : Application): BaseViewModel<U
 
     private lateinit var flashcardSet: FlashcardSet
 
-    private lateinit var srcLangTextSpeaker : TextSpeaker
+    private lateinit var srcLangTextSpeaker: TextSpeaker
 
-    private lateinit var tgtLangTextSpeaker : TextSpeaker
+    private lateinit var tgtLangTextSpeaker: TextSpeaker
 
-    private lateinit var useFCActivityStatusManager : UseFCActivity_StatusManager
+    private lateinit var useFCActivityStatusManager: UseFCActivity_StatusManager
 
-    fun setData (fcSet : FlashcardSet, reverseLanguages : Boolean) {
-        val frontLang : String
-        val backLang : String
+    var isReversedTextAndTranslation = false
+
+    fun setData(fcSet: FlashcardSet, reverseTextAndTrans: Boolean) {
+        val frontLang: String
+        val backLang: String
         this.flashcardSet = fcSet
-        if (reverseLanguages) {
-            reverse_ListCard_TextAndTranslation(fcSet.flashcards)
+        this.isReversedTextAndTranslation = reverseTextAndTrans
+        if (reverseTextAndTrans) {
+            reverse_LIST_Card_TextAndTranslation(fcSet.flashcards)
             frontLang = fcSet.backLanguage.trim()
             backLang = fcSet.frontLanguage.trim()
         } else {
@@ -179,7 +182,25 @@ class UseFlashcardViewModel (private val context : Application): BaseViewModel<U
         return useFCActivityStatusManager.speakerStatusManager.getStatus()
     }
 
-    fun getFlashcardSet(): FlashcardSet {
-        return this.flashcardSet
+    fun getOriginalFlashcardSet(): FlashcardSet {
+        if (isReversedTextAndTranslation) {
+            val cloneFlashcardSet = FlashcardSet(
+                this.flashcardSet.name,
+                this.flashcardSet.frontLanguage,
+                this.flashcardSet.backLanguage
+            )
+            val cloneFlashcardList = ArrayList<Flashcard>()
+            this.flashcardSet.flashcards.forEach { flashcard ->
+                cloneFlashcardList.add(flashcard.copy())
+            }
+            reverse_LIST_Card_TextAndTranslation(cloneFlashcardList)
+            cloneFlashcardSet.flashcards = cloneFlashcardList
+
+            return cloneFlashcardSet
+        } else {
+            // Set is original, not reversed
+            return flashcardSet
+        }
     }
+
 }

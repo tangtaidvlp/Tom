@@ -1,7 +1,6 @@
 package com.teamttdvlp.memolang.model
 
 import android.content.Context
-import com.teamttdvlp.memolang.view.helper.quickLog
 
 open class ReviewActivitiesSpeakerStatusManager (context: Context, private var setName : String = "", private var setNameFormat : (setName : String) -> String) {
 
@@ -11,7 +10,7 @@ open class ReviewActivitiesSpeakerStatusManager (context: Context, private var s
 
     // This is just for making sure that there'll be no conflict in SharePreference loading
     // if user name the set with some text similar with Application property's name
-    open protected fun getFormattedSetName () : String {
+    protected open fun getFormattedSetName(): String {
         return setNameFormat(setName)
     }
 
@@ -48,7 +47,6 @@ open class ReviewActivitiesSpeakerStatusManager (context: Context, private var s
         }
 
         fun saveFunction (function : Int) {
-            quickLog("SAVE: $function")
             sharePreference.edit().putInt(SPEAKER_FUNCTION, function).apply()
         }
 

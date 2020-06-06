@@ -9,12 +9,14 @@ private const val MAX_RANDOM_TIMES = 10
 
 class CardListRandomer {
 
-    fun random (data : ArrayList<Flashcard>) : ArrayList<Flashcard>{
+    fun random(data: ArrayList<Flashcard>): ArrayList<Flashcard> {
+        val cloneData = ArrayList<Flashcard>()
+        cloneData.addAll(data)
         val newData = ArrayList<Flashcard>()
-        for (i in 1..data.size) {
-            val randomPos = Random.nextInt(data.size)
-            newData.add(data.get(randomPos))
-            data.remove(data.get(randomPos))
+        for (i in 1..cloneData.size) {
+            val randomPos = Random.nextInt(cloneData.size)
+            newData.add(cloneData.get(randomPos))
+            cloneData.remove(cloneData.get(randomPos))
         }
         return newData
     }

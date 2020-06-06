@@ -2,7 +2,7 @@ package com.teamttdvlp.memolang.view.activity.iview
 
 interface UseFlashcardView : View{
 
-    fun onNoCardsLeft ()
+    fun onEndReviewing()
 
     fun showSpeakTextError(error: String)
 

@@ -38,7 +38,7 @@ abstract class ActivityBuilder {
     abstract fun ịnjectUseFlashcardActivity() : UseFlashcardActivity
 
     @ContributesAndroidInjector(modules = [UseFlashcardDoneActivityModule::class])
-    abstract fun injectUseFlashcardDoneActivity() : UseFlashcardDoneActivity
+    abstract fun injectUseFlashcardDoneActivity(): ResultReportActivity
 
     @ContributesAndroidInjector(modules = [SearchEngVNDictionaryModule::class])
     abstract fun injectSearchEngVNActivity() : SearchEngVNDictionaryActivity
