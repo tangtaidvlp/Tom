@@ -3,7 +3,11 @@ package com.teamttdvlp.memolang.view.customview.floating_library
 import android.animation.Animator
 import android.animation.AnimatorSet
 import android.animation.ValueAnimator
-import android.app.*
+import android.annotation.SuppressLint
+import android.app.Notification
+import android.app.NotificationChannel
+import android.app.NotificationManager
+import android.app.PendingIntent
 import android.content.Context
 import android.content.Intent
 import android.content.res.Configuration
@@ -45,6 +49,7 @@ import com.example.dictionary.model.Vocabulary
 import com.teamttdvlp.memolang.R
 import com.teamttdvlp.memolang.data.model.entity.flashcard.Flashcard
 import com.teamttdvlp.memolang.data.model.entity.flashcard.FlashcardSet
+import com.teamttdvlp.memolang.data.model.entity.language.Language
 import com.teamttdvlp.memolang.data.model.other.new_vocabulary.Example
 import com.teamttdvlp.memolang.data.model.other.new_vocabulary.SingleMeanExample
 import com.teamttdvlp.memolang.data.model.other.new_vocabulary.TypicalRawVocabulary
@@ -266,7 +271,7 @@ class FloatingAddServiceManager private constructor(
                         applicationContext, usingTranslationAndExample.translation)
 
                     newVocaMean.button.setOnClickListener {
-                        edtType.setText(using.type)
+                        edtPanelType.setText(using.type)
                         updateTxtTrans(usingTranslationAndExample.translation)
                         updateRCVChooseExample(usingTranslationAndExample)
                         addFCPanelAppear.start()
@@ -337,9 +342,10 @@ class FloatingAddServiceManager private constructor(
 
         private fun updateRCVChooseExample (transAndEx : TransAndExamp) {
             if (transAndEx.subExampleList.size != 0) {
-                val fullSingleExampleList = convertExampleListTo_FullSingleExampleList(transAndEx.subExampleList!!)
+                val fullSingleExampleList =
+                    convertExampleListTo_FullSingleExampleList(transAndEx.subExampleList)
                 rcvChooseExampleAdapter.setData(fullSingleExampleList)
-                updateTxtExampleAndExampleMean(fullSingleExampleList.first() as SingleMeanExample)
+                updateTxtExampleAndExampleMean(fullSingleExampleList.first())
             } else {
                 updateTxtExampleAndExampleMean(null)
             }
@@ -347,13 +353,13 @@ class FloatingAddServiceManager private constructor(
 
         private fun updateTxtExampleAndExampleMean (example : SingleMeanExample?) {
             if (example != null) {
-                floatManager.bodyDB.edtExample.setText(example.text)
-                floatManager.bodyDB.edtMeanExample.setText(example.mean)
+                floatManager.bodyDB.edtPanelExample.setText(example.text)
+                floatManager.bodyDB.edtPanelMeanExample.setText(example.mean)
             }
         }
 
         private fun updateTxtTrans (trans : String) {
-            floatManager.bodyDB.edtTranslation.setText(trans)
+            floatManager.bodyDB.edtPanelTranslation.setText(trans)
         }
 
         private fun convertExampleListTo_FullSingleExampleList (exampleList : ArrayList<Example>) : ArrayList<SingleMeanExample> {
@@ -382,8 +388,8 @@ class FloatingAddServiceManager private constructor(
 
         private fun setUpAddFCPanel(vocabulary : Vocabulary) { floatManager.bodyDB.apply {
             val usingList = vocabulary.usings
-            edtText.setText(vocabulary.text)
-            edtType.setText(usingList.first().type)
+            edtPanelText.setText(vocabulary.text)
+            edtPanelType.setText(usingList.first().type)
 
             if (usingList != null) {
                 val typeList = ArrayList<String>()
@@ -399,11 +405,13 @@ class FloatingAddServiceManager private constructor(
             }
         }}
 
+        @SuppressLint("ClickableViewAccessibility")
         override fun onCreate() {
             super.onCreate()
             imm = getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
             performAndroidInjection()
             bindViewToViewModel()
+
             initProperties()
 
             viewModel.vocabulary.observe(this, Observer { gottenVocabulary ->
@@ -415,75 +423,75 @@ class FloatingAddServiceManager private constructor(
             createRootViewAndSetUpOnBackPressed()
 
             iconTouchEventListener = GestureDetectorCompat(floatManager.context, object : SimpleOnGestureListener() {
-                    private var initRootViewX = 0
-                    private var initRootViewY = 0
-                    private var initialTouchX = 0f
-                    private var initialTouchY = 0f
+                private var initRootViewX = 0
+                private var initRootViewY = 0
+                private var initialTouchX = 0f
+                private var initialTouchY = 0f
 
-                    override fun onDown(event: MotionEvent): Boolean {
-                        initRootViewX = rootViewParams.x
-                        initRootViewY = rootViewParams.y
-                        initialTouchX = event.rawX
-                        initialTouchY = event.rawY
-                        return false
-                    }
+                override fun onDown(event: MotionEvent): Boolean {
+                    initRootViewX = rootViewParams.x
+                    initRootViewY = rootViewParams.y
+                    initialTouchX = event.rawX
+                    initialTouchY = event.rawY
+                    return false
+                }
 
-                    /**
-                     * @param currEvent : current Motion event
-                     * @param prevEvent : previous Motion event
-                     */
-                    override fun onScroll(prevEvent: MotionEvent, currEvent: MotionEvent,
-                                          distanceX: Float, distanceY: Float): Boolean {
+                /**
+                 * @param currEvent : current Motion event
+                 * @param prevEvent : previous Motion event
+                 */
+                override fun onScroll(prevEvent: MotionEvent, currEvent: MotionEvent,
+                                      distanceX: Float, distanceY: Float): Boolean {
 
-                        hideBodyIfVisible()
-                        showRemoveFunction_IfInvisible()
+                    hideBodyIfVisible()
+                    showRemoveFunction_IfInvisible()
 
-                        val scroll_In_Top_RemoveZone = currEvent.rawY > (removeView_Y_Pos - removeZoneRadius)
-                        val scroll_In_Left_RemoveZone = (currEvent.rawX < haftScreenWidth) && (currEvent.rawX > haftScreenWidth - removeZoneRadius)
-                        val scroll_In_Right_RemoveZone = (currEvent.rawX > haftScreenWidth) && (currEvent.rawX < haftScreenWidth + removeZoneRadius)
-                        val scroll_InRemoveZone = scroll_In_Top_RemoveZone &&
-                                                              (scroll_In_Left_RemoveZone or scroll_In_Right_RemoveZone)
+                    val scroll_In_Top_RemoveZone = currEvent.rawY > (removeView_Y_Pos - removeZoneRadius)
+                    val scroll_In_Left_RemoveZone = (currEvent.rawX < haftScreenWidth) && (currEvent.rawX > haftScreenWidth - removeZoneRadius)
+                    val scroll_In_Right_RemoveZone = (currEvent.rawX > haftScreenWidth) && (currEvent.rawX < haftScreenWidth + removeZoneRadius)
+                    val scroll_InRemoveZone = scroll_In_Top_RemoveZone &&
+                            (scroll_In_Left_RemoveZone or scroll_In_Right_RemoveZone)
 
-                        if (scroll_InRemoveZone) {
-                            userWantToStopFloatAddService = true
-                            if (icon_Is_InRemoveZone.not()) {
-                                if (iconIsBeingMovedByAnimator == false) {
-                                    moveIconToCenterRemoveZone ()
-                                    iconIsBeingMovedByAnimator = true
-                                }
-                                icon_Is_InRemoveZone = true
+                    if (scroll_InRemoveZone) {
+                        userWantToStopFloatAddService = true
+                        if (icon_Is_InRemoveZone.not()) {
+                            if (iconIsBeingMovedByAnimator == false) {
+                                moveIconToCenterRemoveZone ()
+                                iconIsBeingMovedByAnimator = true
                             }
+                            icon_Is_InRemoveZone = true
+                        }
+                        return false
+                    } else { // Scroll out Remove Zone
+                        userWantToStopFloatAddService = false
+
+                        iconTargetX = initRootViewX + currEvent.rawX - initialTouchX
+                        iconTargetY = initRootViewY + currEvent.rawY - initialTouchY
+
+                        if (icon_Is_InRemoveZone) {
+                            if (iconIsBeingMovedByAnimator == false) {
+                                moveIconFromRemoveZoneTo_TargetPosition()
+                            }
+                            icon_Is_InRemoveZone = false
                             return false
-                        } else { // Scroll out Remove Zone
-                            userWantToStopFloatAddService = false
-
-                            iconTargetX = initRootViewX + currEvent.rawX - initialTouchX
-                            iconTargetY = initRootViewY + currEvent.rawY - initialTouchY
-
-                            if (icon_Is_InRemoveZone) {
-                                if (iconIsBeingMovedByAnimator == false) {
-                                    moveIconFromRemoveZoneTo_TargetPosition()
-                                }
-                                icon_Is_InRemoveZone = false
-                                return false
-                            }
-
-                            if (iconIsBeingMovedByAnimator.not()) {
-                                updateIconToTargetPosition()
-                            }
                         }
 
-                        return false
+                        if (iconIsBeingMovedByAnimator.not()) {
+                            updateIconToTargetPosition()
+                        }
                     }
 
-                    override fun onSingleTapConfirmed(e: MotionEvent): Boolean {
-                        val bodyIsBeingClosed = (floatManager.bodyDB.root.visibility == GONE)
-                        if (bodyIsBeingClosed) {
-                            showBody()
-                        }
-                        return false
+                    return false
+                }
+
+                override fun onSingleTapConfirmed(e: MotionEvent): Boolean {
+                    val bodyIsBeingClosed = (floatManager.bodyDB.root.visibility == GONE)
+                    if (bodyIsBeingClosed) {
+                        showBody()
                     }
-                })
+                    return false
+                }
+            })
 
             rootViewParams = getFloatingParams()
 
@@ -746,100 +754,160 @@ class FloatingAddServiceManager private constructor(
                 rcvRecentSearchDicAdapter.setData(it)
             }
 
-            edtSetName.setText(viewModel.getLastedUseFlashcardSetName())
+            edtPanelSetName.setText(viewModel.getLastedUseFlashcardSetName())
 
             show_LastedChosenOptions_OnScreen()
         }}
 
         private fun show_LastedChosenOptions_OnScreen() { floatManager.bodyDB.apply {
-            txtFrontLang.text = viewModel.getCurrentFrontLanguage()
-            txtBackLang.text = viewModel.getCurrentBackLanguage()
-            edtSetName.setText(viewModel.getLastedUseFlashcardSetName())
+            edtPanelSetName.setText(viewModel.getLastedUseFlashcardSetName())
         }}
 
-        private fun addViewEvents () { floatManager.bodyDB.apply {
-            btnCancel.setOnClickListener {
-                addFCPanelDisappear.start()
-            }
+        private fun addViewEvents() {
+            floatManager.bodyDB.apply {
 
-            btnAdd.setOnClickListener {
-                val text = edtText.text.toString()
-                val translation = edtTranslation.text.toString()
-                val type = edtType.text.toString()
-                val setName = edtSetName.text.toString()
-                val frontLanguage = txtFrontLang.text.toString()
-                val backLanguage = txtBackLang.text.toString()
-                val example = edtExample.text.toString()
-                val meanOfExample = edtMeanExample.text.toString()
-
-                val newCard = Flashcard(setOwner = setName, type = type, text = text,
-                    translation = translation, frontLanguage = frontLanguage, backLanguage = backLanguage,
-                    example = example, meanOfExample = meanOfExample)
-                val flashcardSet = FlashcardSet(setName, frontLanguage, backLanguage)
-                viewModel.proceedAddFlashcard(newCard, flashcardSet)
-            }
-
-            edtText.addTextChangeListener(onTextChanged = { text, _, _, _ ->
-                if (text.isNotEmpty() and (edtText.hint != TEXT_ERROR_TEXT)) {
-                    edtText.setHintTextColor(Color.parseColor("#85000000"))
-                    edtText.hint = "Text"
+                btnAdd.setOnClickListener {
+                    addFCPanelAppear.start()
+                    quickLog("Clicked")
                 }
-            })
 
-            edtTranslation.addTextChangeListener(onTextChanged = { text, _, _, _ ->
-                if (text.isNotEmpty() and (edtTranslation.hint != TRANSLATION_ERROR_TEXT)) {
-                    edtTranslation.setHintTextColor(Color.parseColor("#85000000"))
-                    edtTranslation.hint = "Translation"
+//        btnSpeaker.setOnClickListener {
+//            viewModel.speak(txtText.text.toString())
+//        }
+
+                btnPanelAdd.setOnClickListener {
+                    val setName = edtPanelSetName.text.toString()
+                    val text = edtPanelText.text.toString()
+                    val translation = edtPanelTranslation.text.toString()
+                    val example = edtPanelExample.text.toString()
+                    val meanExample = edtPanelMeanExample.text.toString()
+                    val type = edtPanelType.text.toString()
+                    val pronunciation = txtPronunciation.text.toString()
+                    val newCard = Flashcard(
+                        frontLanguage = Language.ENGLISH_VALUE,
+                        backLanguage = Language.VIETNAMESE_VALUE,
+                        setOwner = setName,
+                        type = type,
+                        text = text,
+                        translation = translation,
+                        example = example,
+                        meanOfExample = meanExample,
+                        pronunciation = pronunciation
+                    )
+
+                    viewModel.proceedAddFlashcard(newCard)
                 }
-            })
 
-            imgChooseSetNameSpinner.setOnClickListener {
-//                dialogChooseSetName.show()
-            }
+                imgBlackBgAddFlashcardPanel.setOnClickListener {
+                    addFCPanelDisappear.start()
+                    rcvChooseCardType.goGONE()
+                    rcvChooseExample.goGONE()
+                    rcvChooseTranslation.goGONE()
+                }
 
-            imgChooseTypeSpinner.setOnClickListener {
-//                dialogChooseCardType.show()
-            }
+                rcvChooseTypeAdapter.setOnItemClickListener { type ->
+                    val corresUsing: Using
+                    for (using in usingList) {
+                        if (using.type == type) {
+                            corresUsing = using
+                            updateRCVChooseTrans(corresUsing)
+                            updateRCVChooseExample(corresUsing.transAndExamsList.first())
+                            edtPanelType.setText(corresUsing.type)
+                            break
+                        }
+                    }
+                    rcvChooseCardType.goGONE()
+                    rcvChooseExample.goGONE()
+                    rcvChooseTranslation.goGONE()
+                    rcvChooseSetName.goGONE()
+                }
 
-            imgBlackBgAddFlashcardPanel.setOnClickListener {
-                addFCPanelDisappear.start()
-                rcvChooseCardType.goGONE()
-                rcvChooseExample.goGONE()
-                rcvChooseTranslation.goGONE()
-            }
+                rcvChooseSetNameAdapter.setOnItemClickListener { flashcardSet ->
+                    floatManager.bodyDB.edtPanelSetName.setText(flashcardSet.name)
+                    rcvChooseCardType.goGONE()
+                    rcvChooseExample.goGONE()
+                    rcvChooseTranslation.goGONE()
+                    rcvChooseSetName.goGONE()
+                }
 
-            imgHiddenBackgroundToHideDictionaryRecyclerViews.setOnClickListener {
-                hideDictionaryRecyclerViews()
-            }
+                rcvChooseTransAdapter.setOnItemClickListener { translation ->
+                    for (transAndEx in transAndExampsList) {
+                        if (translation == transAndEx.translation) {
+                            edtPanelTranslation.setText(translation)
+                            updateRCVChooseExample(transAndEx)
+                        }
+                    }
+                    rcvChooseCardType.goGONE()
+                    rcvChooseExample.goGONE()
+                    rcvChooseTranslation.goGONE()
+                    rcvChooseSetName.goGONE()
+                }
 
-            chooseSetNameAdapter.setOnItemClickListener {
-                edtSetName.setText(it.name)
-                txtFrontLang.text = it.frontLanguage
-                txtBackLang.text = it.backLanguage
-//                dialogChooseSetName.hide()
-                viewModel.updateUserFlashcardSets(it.name)
-            }
+                rcvChooseExampleAdapter.setOnItemClickListener { example ->
+                    floatManager.bodyDB.edtPanelExample.setText(example.text)
+                    floatManager.bodyDB.edtPanelMeanExample.setText(example.mean)
 
-            chooseLanguageAdapter.setOnItemClickListener { language ->
-                currentFocusedLanguageTextView.text = language
-//                dialogChooseLanguage.hide()
-                onChooseLanguage(language)
-            }
+                    rcvChooseCardType.goGONE()
+                    rcvChooseExample.goGONE()
+                    rcvChooseTranslation.goGONE()
+                    rcvChooseSetName.goGONE()
+                }
 
-//            rcvChooseCardType.setOnItemClickListener { type ->
-//                edtType.setText(type)
-//                dialogChooseCardType.hide()
-//            }
+                imgChooseTypeSpinner.setOnClickListener {
+                    if (!rcvChooseCardType.isVisible) {
+                        rcvChooseCardType.goVISIBLE()
+                    } else {
+                        rcvChooseCardType.goGONE()
+                    }
+                    rcvChooseExample.goGONE()
+                    rcvChooseTranslation.goGONE()
+                    rcvChooseSetName.goGONE()
+                }
 
-            rcvSearchDictionaryAdapter.setOnItemClickListener { rawVocabulary ->
-                onChooseVocabulary(rawVocabulary as TypicalRawVocabulary)
-            }
+                imgChooseTranslationSpinner.setOnClickListener {
+                    if (!rcvChooseTranslation.isVisible) {
+                        rcvChooseTranslation.goVISIBLE()
+                    } else {
+                        rcvChooseTranslation.goGONE()
+                    }
 
-            rcvRecentSearchDicAdapter.setOnItemClickListener { rawVocabulary ->
-                onChooseVocabulary(rawVocabulary)
-            }
+                    rcvChooseExample.goGONE()
+                    rcvChooseCardType.goGONE()
+                    rcvChooseSetName.goGONE()
+                }
 
-            edtEngViDictionary.setOnEditorActionListener { v, actionId, event ->
+                imgChooseExampleSpinner.setOnClickListener {
+                    if (!rcvChooseExample.isVisible) {
+                        rcvChooseExample.goVISIBLE()
+                    } else {
+                        rcvChooseExample.goGONE()
+                    }
+
+                    rcvChooseTranslation.goGONE()
+                    rcvChooseCardType.goGONE()
+                    rcvChooseSetName.goGONE()
+                }
+
+                imgChooseSetNameSpinner.setOnClickListener {
+                    if (!rcvChooseSetName.isVisible) {
+                        rcvChooseSetName.goVISIBLE()
+                    } else {
+                        rcvChooseSetName.goGONE()
+                    }
+                    rcvChooseTranslation.goGONE()
+                    rcvChooseCardType.goGONE()
+                    rcvChooseExample.goGONE()
+                }
+
+                rcvSearchDictionaryAdapter.setOnItemClickListener { rawVocabulary ->
+                    onChooseVocabulary(rawVocabulary as TypicalRawVocabulary)
+                }
+
+                rcvRecentSearchDicAdapter.setOnItemClickListener { rawVocabulary ->
+                    onChooseVocabulary(rawVocabulary)
+                }
+
+                edtEngViDictionary.setOnEditorActionListener { v, actionId, event ->
                 if (actionId == EditorInfo.IME_ACTION_SEARCH) {
                     val key = edtEngViDictionary.text.toString()
                     val fullContent = rcvSearchDictionaryAdapter.getVocabularyByKey(key)
@@ -856,28 +924,45 @@ class FloatingAddServiceManager private constructor(
 
             edtEngViDictionary.addTextChangeListener (onTextChanged = { text, _, _, _ ->
                 if (text == "") {
-                    rcvRecentSearchDic.goVISIBLE()
                     rcvDictionary.goGONE()
                 } else {
-                    rcvRecentSearchDic.goGONE()
                     rcvDictionary.goVISIBLE()
+                    if (rcvDictionary.alpha == 0f) {
+                        rcvDictionary.alpha = 1f
+                    }
+                    rcvSearchDictionaryAdapter.search(text)
                 }
-
-                rcvSearchDictionaryAdapter.search(text)
             })
 
-            edtEngViDictionary.setOnFocusChangeListener { v, hasFocus ->
-                if (hasFocus) {
-                    showDictionaryRecyclerViews()
-                    hideVocabularyInfo()
+                edtEngViDictionary.setOnFocusChangeListener { v, hasFocus ->
+                    if (hasFocus) {
+                        onNavigateToSearchBar()
+                    }
                 }
+
+                btnNavigateToSearchBar.setOnClickListener {
+                    onNavigateToSearchBar()
+                    showVirtualKeyboard()
+                    edtEngViDictionary.setText("")
+                    edtEngViDictionary.requestFocus()
+                }
+
             }
-        }}
+        }
+
+
+        private fun onNavigateToSearchBar() {
+            val thereIsNoRecentVocabularyOnScreen = rcvRecentSearchDicAdapter.itemCount == 0
+            if (thereIsNoRecentVocabularyOnScreen) {
+                showDictionaryRecyclerView()
+            }
+            hideVocabularyInfo()
+        }
 
 
         private fun onChooseVocabulary(item: TypicalRawVocabulary) {
             hideVirtualKeyboard()
-            hideDictionaryRecyclerViews()
+            hideDictionaryRecyclerView()
             showVocabularyInfo()
             rcvRecentSearchDicAdapter.addData(item)
             floatManager.bodyDB.edtEngViDictionary.clearFocus()
@@ -893,63 +978,71 @@ class FloatingAddServiceManager private constructor(
 
         private val COMMON_FADE_DURATION = 100L
 
-        private fun showDictionaryRecyclerViews () { floatManager.bodyDB.apply {
-            rcvDictionary.animate().alpha(1f).setDuration(COMMON_FADE_DURATION).setLiteListener (onStart = {
-                rcvDictionary.goVISIBLE()
-            })
-
-            rcvRecentSearchDic.animate().alpha(1f).setDuration(COMMON_FADE_DURATION).setLiteListener (onStart = {
-                rcvRecentSearchDic.goVISIBLE()
-            })
-
-            imgHiddenBackgroundToHideDictionaryRecyclerViews.goVISIBLE()
-        }}
-
-        private fun hideDictionaryRecyclerViews () { floatManager.bodyDB.apply {
-            rcvDictionary.animate().alpha(0f).setDuration(COMMON_FADE_DURATION).setLiteListener (onEnd = {
-                rcvDictionary.goGONE()
-            })
-
-            rcvRecentSearchDic.animate().alpha(0f).setDuration(COMMON_FADE_DURATION).setLiteListener (onEnd = {
-                rcvRecentSearchDic.goGONE()
-            })
-
-            imgHiddenBackgroundToHideDictionaryRecyclerViews.goGONE()
-        }}
-
-        private fun hideVocabularyInfo () {
-            // TODO
-        }
-
-        private fun showVocabularyInfo () {
-            // TODO
-        }
-
-        private fun onChooseLanguage (language : String) {
-            currentFocusedLanguageTextView?.text = language
-            if (currentFocusedLanguageTextView == floatManager.bodyDB.txtFrontLang) {
-                viewModel.updateCurrentFrontLang(language)
-            } else if (currentFocusedLanguageTextView == floatManager.bodyDB.txtBackLang) {
-                viewModel.updateCurrentBackLanguage(language)
+        private fun showDictionaryRecyclerView() {
+            floatManager.bodyDB.apply {
+                rcvDictionary.animate().alpha(1f).setDuration(COMMON_FADE_DURATION)
+                    .setLiteListener(onStart = {
+                        rcvDictionary.goVISIBLE()
+                    })
             }
-            viewModel.addToUsedLanguageList(language)
         }
 
+        private fun hideDictionaryRecyclerView() {
+            floatManager.bodyDB.apply {
+                rcvDictionary.animate().alpha(0f).setDuration(COMMON_FADE_DURATION)
+                    .setLiteListener(onEnd = {
+                        rcvDictionary.goGONE()
+                    })
+            }
+        }
 
-        private fun minimizeAddPanel () { floatManager.bodyDB.apply {
+        private fun showVocabularyInfo() {
+            floatManager.bodyDB.apply {
+                vwgrpVocaInfo.animate().alpha(1f).setDuration(COMMON_FADE_DURATION)
+                    .setLiteListener(onStart = {
+                        vwgrpVocaInfo.goVISIBLE()
+                    })
+            }
+        }
+
+        private fun hideVocabularyInfo() {
+            floatManager.bodyDB.apply {
+                vwgrpVocaInfo.animate().alpha(0f).setDuration(COMMON_FADE_DURATION)
+                    .setLiteListener(onEnd = {
+                        vwgrpVocaInfo.goGONE()
+                    })
+            }
+        }
+
+//        private fun onChooseLanguage (language : String) {
+//            currentFocusedLanguageTextView?.text = language
+//            if (currentFocusedLanguageTextView == floatManager.bodyDB.txtFrontLang) {
+//                viewModel.updateCurrentFrontLang(language)
+//            } else if (currentFocusedLanguageTextView == floatManager.bodyDB.txtBackLang) {
+//                viewModel.updateCurrentBackLanguage(language)
+//            }
+//            viewModel.addToUsedLanguageList(language)
+//        }
+
+
+        private fun minimizeAddPanel() {
+            floatManager.bodyDB.apply {
 //            groupExpandedPart.visibility = GONE
-        }}
+            }
+        }
 
-        private fun expandAddPanel () { floatManager.bodyDB.apply {
+        private fun expandAddPanel() {
+            floatManager.bodyDB.apply {
 //            groupExpandedPart.visibility = VISIBLE
-        }}
+            }
+        }
 
         private fun resetAllInputFields () { floatManager.bodyDB.apply {
-            edtText.setText("")
-            edtTranslation.setText("")
-            edtType.setText("")
-            edtExample.setText("")
-            edtMeanExample.setText("")
+            edtPanelText.setText("")
+            edtPanelTranslation.setText("")
+            edtPanelType.setText("")
+            edtPanelExample.setText("")
+            edtPanelMeanExample.setText("")
         }}
 
         private fun moveIconToTopLeft_And_Disappear () : ValueAnimator {
@@ -1147,7 +1240,7 @@ class FloatingAddServiceManager private constructor(
                     floatManager.bodyDB.root.visibility = VISIBLE
                 }, onEnd = {
                     // TODO (MOVE THIS STUFF BELOW TO ANOTHER PLACE) WE need Clean Code
-                    floatManager.bodyDB.edtText.requestFocus()
+                    floatManager.bodyDB.edtEngViDictionary.requestFocus()
                     showVirtualKeyboard()
                 }).start()
             })
@@ -1194,16 +1287,20 @@ class FloatingAddServiceManager private constructor(
         private val TRANSLATION_ERROR_TEXT = "Translation must not be empty"
 
         override fun showTextInputError() {
-            floatManager.bodyDB.edtText.hint = TEXT_ERROR_TEXT
+            floatManager.bodyDB.edtPanelText.hint = TEXT_ERROR_TEXT
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-                floatManager.bodyDB.edtText.setHintTextColor(applicationContext.getColor(R.color.app_red))
+                floatManager.bodyDB.edtPanelText.setHintTextColor(applicationContext.getColor(R.color.app_red))
             }
         }
 
         override fun showTranslationInputError() {
-            floatManager.bodyDB.edtTranslation.hint = TRANSLATION_ERROR_TEXT
+            floatManager.bodyDB.edtPanelTranslation.hint = TRANSLATION_ERROR_TEXT
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-                floatManager.bodyDB.edtTranslation.setHintTextColor(applicationContext.getColor(R.color.app_red))
+                floatManager.bodyDB.edtPanelTranslation.setHintTextColor(
+                    applicationContext.getColor(
+                        R.color.app_red
+                    )
+                )
             }
         }
 
@@ -1212,7 +1309,7 @@ class FloatingAddServiceManager private constructor(
             resetAllInputFields()
         }
 
-        fun showVirtualKeyboard () {
+        private fun showVirtualKeyboard() {
             inputMethodManager.toggleSoftInput(RESULT_UNCHANGED_SHOWN, SHOW_IMPLICIT)
         }
 
@@ -1229,21 +1326,16 @@ class FloatingAddServiceManager private constructor(
             panelAppear.setTarget(panelAddFlashcard)
             addFCPanelAppear.play(blackBackgroundAppear).before(panelAppear)
             addFCPanelAppear.addListener (onStart = {
-                panelAddFlashcard.goVISIBLE()
-                imgBlackBgAddFlashcardPanel.goVISIBLE()
+                groupAddFlashcard.goVISIBLE()
             })
 
             blackBackgroundDisappear.setTarget(imgBlackBgAddFlashcardPanel)
             panelDisappear.setTarget(panelAddFlashcard)
             addFCPanelDisappear.play(panelDisappear).before(blackBackgroundDisappear)
             addFCPanelDisappear.addListener (onEnd = {
-                btnAdd.goVISIBLE()
-                panelAddFlashcard.goGONE()
-                imgBlackBgAddFlashcardPanel.goGONE()
+                groupAddFlashcard.goGONE()
             })
-
         }}
-
     }
 
     companion object {

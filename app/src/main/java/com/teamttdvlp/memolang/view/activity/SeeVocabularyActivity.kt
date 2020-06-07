@@ -91,7 +91,7 @@ class SeeVocabularyActivity : BaseActivity<ActivitySeeVocabularyBinding, SeeVoca
             dB.rcvDictionary.goVISIBLE()
             dB.rcvDictionary.alpha = 0f
             dB.rcvDictionary.animate().alpha(1f)
-                .setDuration(100).setInterpolator(NormalOutExtraSlowIn())
+                .setDuration(100).interpolator = NormalOutExtraSlowIn()
         }
     }
 
@@ -329,7 +329,6 @@ class SeeVocabularyActivity : BaseActivity<ActivitySeeVocabularyBinding, SeeVoca
     private val COMMON_FADE_DURATION = 100L
 
     private fun showDictionaryRecyclerView () { dB.apply {
-        quickLog("????")
         rcvDictionary.animate().alpha(1f).setDuration(COMMON_FADE_DURATION).setLiteListener (onStart = {
             rcvDictionary.goVISIBLE()
         })
@@ -348,9 +347,10 @@ class SeeVocabularyActivity : BaseActivity<ActivitySeeVocabularyBinding, SeeVoca
     }}
 
     private fun hideVocabularyInfo () { dB.apply {
-        vwgrpVocaInfo.animate().alpha(0f).setDuration(COMMON_FADE_DURATION).setLiteListener (onEnd = {
-            vwgrpVocaInfo.goGONE()
-        })
+        vwgrpVocaInfo.animate().alpha(0f).setDuration(COMMON_FADE_DURATION)
+            .setLiteListener(onEnd = {
+                vwgrpVocaInfo.goGONE()
+            })
     }}
 
 
@@ -451,7 +451,7 @@ class SeeVocabularyActivity : BaseActivity<ActivitySeeVocabularyBinding, SeeVoca
     }}
 
     private fun setUpAddFCPanel(vocabulary : Vocabulary) { dB.apply {
-        usingList = vocabulary.usings!!
+        usingList = vocabulary.usings
         edtPanelText.setText(vocabulary.text)
         edtPanelType.setText(usingList.first().type)
 
@@ -486,9 +486,10 @@ class SeeVocabularyActivity : BaseActivity<ActivitySeeVocabularyBinding, SeeVoca
 
     private fun updateRCVChooseExample (transAndEx : TransAndExamp) {
         if (transAndEx.subExampleList.size != 0) {
-            val fullSingleExampleList = convertExampleListTo_FullSingleExampleList(transAndEx.subExampleList!!)
+            val fullSingleExampleList =
+                convertExampleListTo_FullSingleExampleList(transAndEx.subExampleList)
             rcvChooseExampleAdapter.setData(fullSingleExampleList)
-            updateTxtExampleAndExampleMean(fullSingleExampleList.first() as SingleMeanExample)
+            updateTxtExampleAndExampleMean(fullSingleExampleList.first())
         } else {
             updateTxtExampleAndExampleMean(null)
         }

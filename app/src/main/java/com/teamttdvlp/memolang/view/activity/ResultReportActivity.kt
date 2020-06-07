@@ -16,10 +16,7 @@ import com.teamttdvlp.memolang.view.activity.iview.UseFlashcardDoneView
 import com.teamttdvlp.memolang.view.adapter.RCVRecent_Search_FlashcardAdapter
 import com.teamttdvlp.memolang.view.base.BaseActivity
 import com.teamttdvlp.memolang.view.customview.NormalOutExtraSlowIn
-import com.teamttdvlp.memolang.view.helper.dp
-import com.teamttdvlp.memolang.view.helper.getActivityViewModel
-import com.teamttdvlp.memolang.view.helper.goVISIBLE
-import com.teamttdvlp.memolang.view.helper.setLiteListener
+import com.teamttdvlp.memolang.view.helper.*
 import com.teamttdvlp.memolang.viewmodel.UseFlashcardDoneViewModel
 import kotlin.math.roundToInt
 
@@ -75,12 +72,48 @@ class ResultReportActivity :
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         viewModel.setUpView(this)
+        activitySender = getActivitySender()
         viewModel.setData(getFullFlashcardSet(), getMissedCardsList())
+
+        setUpViewByActivitySender(activitySender)
 
         dB.txtMaxScore.text = viewModel.getFullCardListSize().toString()
         dB.txtMissedCardCount.text = viewModel.getMissedCardsListSize().toString()
 
         runCircleScoreReport()
+    }
+
+    private fun setUpViewByActivitySender(activitySender: FlashcardSendableActivity) {
+        dB.apply {
+            when (activitySender) {
+                FlashcardSendableActivity.USE_FLASHCARD_ACTIVITY -> {
+                    btnCenterRestart.setImageResource(R.drawable.image_button_blue_restart)
+                    btnRestart.setImageResource(R.drawable.image_button_blue_restart)
+                }
+
+                FlashcardSendableActivity.REVIEW_FLASHCARD_ACTIVITY -> {
+                    btnCenterRestart.setImageResource(R.drawable.image_button_red_restart)
+                    btnRestart.setImageResource(R.drawable.image_button_red_restart)
+
+                    btnCenterGoToWritting.goGONE()
+                    btnCenterGoToUseFlashcard.goVISIBLE()
+
+                    btnGoToWritting.goGONE()
+                    btnGoToUseFlashcard.goVISIBLE()
+                }
+
+                FlashcardSendableActivity.REVIEW_FLASHCARD_EASY_ACTIVITY -> {
+                    btnCenterRestart.setImageResource(R.drawable.image_button_violet_restart)
+                    btnRestart.setImageResource(R.drawable.image_button_violet_restart)
+
+                    btnCenterGoToPuzzle.goGONE()
+                    btnCenterGoToUseFlashcard.goVISIBLE()
+
+                    btnGoToPuzzle.goGONE()
+                    btnGoToUseFlashcard.goVISIBLE()
+                }
+            }
+        }
     }
 
     private fun updateScoreOnScreen(score: Int) {
@@ -145,7 +178,7 @@ class ResultReportActivity :
     }
 
     private fun playGetMaxScoreAnimation(startDelay: Long = 0, duration: Long = 150) {
-        dB.imageCircleGreenBehindCircleScoreReport.animate().alpha(0f).scaleX(1.4f).scaleY(1.4f)
+        dB.imageCircleGreenBehindCircleScoreReport.animate().alpha(0f).scaleX(1.32f).scaleY(1.32f)
             .setDuration(duration).setStartDelay(startDelay).interpolator = NormalOutExtraSlowIn()
     }
 
@@ -193,58 +226,22 @@ class ResultReportActivity :
         }
 
         btnRestart.setOnClickListener {
-            when (activitySender) {
-                FlashcardSendableActivity.USE_FLASHCARD_ACTIVITY -> {
-                    var flashcardSet: FlashcardSet? = null
-                    if (viewModel.getMissedCardsListSize() > 0) {
-                        flashcardSet = viewModel.getFlashcardSetWithMissedCardList()
-                    } else {
-                        flashcardSet = viewModel.getFlashcardSet()
-                    }
-                    UseFlashcardActivity.requestReviewFlashcard(
-                        this@ResultReportActivity,
-                        flashcardSet,
-                        reverseCardTextAndTranslation = false
-                    )
-                }
+            handleRestart()
+        }
 
-                FlashcardSendableActivity.REVIEW_FLASHCARD_ACTIVITY -> {
-                    ReviewFlashcardActivity.requestReviewFlashcard(
-                        this@ResultReportActivity,
-                        viewModel.getFlashcardSet(),
-                        reverseCardTextAndTranslation = false
-                    )
-                }
-
-                FlashcardSendableActivity.REVIEW_FLASHCARD_EASY_ACTIVITY -> {
-                    ReviewFlashcardEasyActivity.requestReviewFlashcard(
-                        this@ResultReportActivity,
-                        viewModel.getFlashcardSet(),
-                        reverseCardTextAndTranslation = false
-                    )
-                }
-            }
-            finish()
+        btnGoToUseFlashcard.setOnClickListener {
+            goToUseFlashcardActivity()
         }
 
         btnGoToWritting.setOnClickListener {
-            ReviewFlashcardActivity.requestReviewFlashcard(
-                this@ResultReportActivity,
-                getFullFlashcardSet(),
-                reverseCardTextAndTranslation = false
-            )
-            finish()
+            goToWritingFlashcardActivity()
         }
 
         btnGoToPuzzle.setOnClickListener {
-            ReviewFlashcardEasyActivity.requestReviewFlashcard(
-                this@ResultReportActivity,
-                getFullFlashcardSet(),
-                reverseCardTextAndTranslation = false
-            )
-            finish()
+            goToPuzzleActivity()
         }
 
+        // CENTER
 
         btnCenterQuit.setOnClickListener {
             btnQuit.performClick()
@@ -252,6 +249,10 @@ class ResultReportActivity :
 
         btnCenterRestart.setOnClickListener {
             btnRestart.performClick()
+        }
+
+        btnCenterGoToUseFlashcard.setOnClickListener {
+            btnGoToUseFlashcard.performClick()
         }
 
         btnCenterGoToWritting.setOnClickListener {
@@ -264,10 +265,77 @@ class ResultReportActivity :
     }
     }
 
+    private fun handleRestart() {
+
+        var flashcardSet: FlashcardSet
+        if (viewModel.getMissedCardsListSize() > 0) {
+            flashcardSet = viewModel.getFlashcardSetWithMissedCardList()
+        } else {
+            flashcardSet = viewModel.getFlashcardSet()
+        }
+
+        when (activitySender) {
+            FlashcardSendableActivity.USE_FLASHCARD_ACTIVITY -> {
+                UseFlashcardActivity.requestReviewFlashcard(
+                    this@ResultReportActivity,
+                    flashcardSet,
+                    reverseCardTextAndTranslation = false
+                )
+            }
+
+            FlashcardSendableActivity.REVIEW_FLASHCARD_ACTIVITY -> {
+                ReviewFlashcardActivity.requestReviewFlashcard(
+                    this@ResultReportActivity,
+                    flashcardSet,
+                    reverseCardTextAndTranslation = false
+                )
+            }
+
+            FlashcardSendableActivity.REVIEW_FLASHCARD_EASY_ACTIVITY -> {
+                ReviewFlashcardEasyActivity.requestReviewFlashcard(
+                    this@ResultReportActivity,
+                    flashcardSet,
+                    reverseCardTextAndTranslation = false
+                )
+            }
+        }
+        finish()
+    }
+
+    private fun goToPuzzleActivity() {
+        ReviewFlashcardEasyActivity.requestReviewFlashcard(
+            this@ResultReportActivity,
+            getFullFlashcardSet(),
+            reverseCardTextAndTranslation = false
+        )
+        finish()
+    }
+
+    private fun goToWritingFlashcardActivity() {
+        ReviewFlashcardActivity.requestReviewFlashcard(
+            this@ResultReportActivity,
+            getFullFlashcardSet(),
+            reverseCardTextAndTranslation = false
+        )
+        finish()
+    }
+
+
+    private fun goToUseFlashcardActivity() {
+        UseFlashcardActivity.requestReviewFlashcard(
+            this@ResultReportActivity,
+            getFullFlashcardSet(),
+            reverseCardTextAndTranslation = false
+        )
+        finish()
+    }
+
     private fun getMissedCardsList(): ArrayList<Flashcard> {
-        activitySender =
-            FlashcardSendableActivity.getTypeByCode(intent.extras!!.getInt(SENDER_CODE))
         return intent.extras!!.getSerializable(FORGOTTEN_FLASHCARDS_LIST) as (ArrayList<Flashcard>)
+    }
+
+    private fun getActivitySender(): FlashcardSendableActivity {
+        return FlashcardSendableActivity.getTypeByCode(intent.extras!!.getInt(SENDER_CODE))
     }
 
     private fun getFullFlashcardSet(): FlashcardSet {

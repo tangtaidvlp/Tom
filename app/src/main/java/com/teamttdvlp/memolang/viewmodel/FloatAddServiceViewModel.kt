@@ -100,8 +100,9 @@ constructor(
         return true
     }
 
-    fun proceedAddFlashcard (newCard : Flashcard, flashcardSet : FlashcardSet) {
-
+    fun proceedAddFlashcard(newCard: Flashcard) {
+        val flashcardSet =
+            FlashcardSet(newCard.setOwner, newCard.frontLanguage, newCard.backLanguage)
         val setIsValid = checkFlashcardSetIsValid(flashcardSet)
         if (setIsValid.not()) {
             return

@@ -174,7 +174,6 @@
                         app:layout_constraintEnd_toEndOf="@+id/img_add_fc_success"
                         app:layout_constraintTop_toBottomOf="@id/img_add_fc_success" />
 
-
                 </androidx.appcompat.widget.LinearLayoutCompat>
 
                 <LinearLayout

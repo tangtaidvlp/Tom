@@ -246,6 +246,17 @@
             app:layout_constraintTop_toTopOf="parent">
 
             <ImageView
+                android:id="@+id/btn_center_go_to_use_flashcard"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/image_button_blue_use_flashcard"
+                android:visibility="gone"
+                app:layout_constraintBottom_toTopOf="@+id/btn_go_to_writting"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+
+            <ImageView
                 android:id="@+id/btn_center_go_to_puzzle"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
@@ -260,7 +271,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:src="@drawable/image_button_red_writting"
-                app:layout_constraintBottom_toTopOf="@+id/btn_restart"
+                app:layout_constraintBottom_toTopOf="@+id/btn_go_to_use_flashcard"
                 app:layout_constraintEnd_toEndOf="parent" />
 
             <ImageView
@@ -294,28 +305,29 @@
             app:layout_constraintEnd_toEndOf="parent">
 
             <ImageView
+                android:id="@+id/btn_go_to_use_flashcard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image_button_blue_use_flashcard"
+                android:visibility="gone" />
+
+            <ImageView
                 android:id="@+id/btn_go_to_puzzle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/image_button_purple_play_puzzle"
-                app:layout_constraintBottom_toTopOf="@+id/btn_go_to_writting"
-                app:layout_constraintEnd_toEndOf="parent" />
+                android:src="@drawable/image_button_purple_play_puzzle" />
 
             <ImageView
                 android:id="@+id/btn_go_to_writting"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/image_button_red_writting"
-                app:layout_constraintBottom_toTopOf="@+id/btn_restart"
-                app:layout_constraintEnd_toEndOf="parent" />
+                android:src="@drawable/image_button_red_writting" />
 
             <ImageView
                 android:id="@+id/btn_restart"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/image_button_blue_restart"
-                app:layout_constraintBottom_toTopOf="@+id/btn_quit"
-                app:layout_constraintEnd_toEndOf="parent" />
+                android:src="@drawable/image_button_blue_restart" />
 
             <ImageView
                 android:id="@+id/btn_quit"
