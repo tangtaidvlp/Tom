@@ -3,25 +3,37 @@ package com.teamttdvlp.memolang.view.adapter
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import android.view.ViewGroup.LayoutParams.WRAP_CONTENT
+import android.widget.PopupWindow
 import androidx.databinding.ViewDataBinding
 import androidx.recyclerview.widget.RecyclerView
-import com.teamttdvlp.memolang.databinding.ItemFlashcardSetBinding
+import com.facebook.FacebookSdk.getApplicationContext
 import com.teamttdvlp.memolang.data.model.entity.flashcard.FlashcardSet
+import com.teamttdvlp.memolang.databinding.ItemFlashcardSetBinding
 import com.teamttdvlp.memolang.databinding.ItemFlashcardSetViewHolderBinding
+import com.teamttdvlp.memolang.databinding.PopupFlashcardSetOtherEditOptionsBinding
 
-class RCV_FlashcardSetAdapter (var context : Context, var list : ArrayList<FlashcardSet> = ArrayList()) : RecyclerView.Adapter<RCV_FlashcardSetAdapter.ViewHolder> () {
 
-    private var onBtnViewListListener : OnItemClickListener? = null
+class RCV_FlashcardSetAdapter(
+    var context: Context,
+    var list: ArrayList<FlashcardSet> = ArrayList()
+) : RecyclerView.Adapter<RCV_FlashcardSetAdapter.ViewHolder>() {
 
-    private var onBtnAddListener : OnItemClickListener? = null
+    private var onBtnViewListListener: OnItemClickListener? = null
 
-    private var onItemClickListener : OnItemClickListener? = null
+    private var onBtnAddListener: OnItemClickListener? = null
 
-    private var onBtnUseFlashcardClickListener : OnItemClickListener? = null
+    private var onItemClickListener: OnItemClickListener? = null
 
-    private var onBtnReviewFlashcardEasyClickListener : OnItemClickListener? = null
+    private var onBtnUseFlashcardClickListener: OnItemClickListener? = null
 
-    private var onBtnReviewFlashcardHardClickListener : OnItemClickListener? = null
+    private var onBtnReviewFlashcardEasyClickListener: OnItemClickListener? = null
+
+    private var onBtnReviewFlashcardHardClickListener: OnItemClickListener? = null
+
+    private var onBtn_Edit_FlashcardSetClickListener: OnItemClickListener? = null
+
+    private var onBtn_Delete_FlashcardSetClickListener: OnItemClickListener? = null
 
 
     private val TYPE_NORMAL = 0
@@ -81,16 +93,52 @@ class RCV_FlashcardSetAdapter (var context : Context, var list : ArrayList<Flash
                 dataBinding.vwgrpUseFlashcard.setOnClickListener {
                     onBtnUseFlashcardClickListener?.onClick(item)
                 }
+
+                // Popups's Events
+                val inflater =
+                    getApplicationContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
+                val popUpBinding = PopupFlashcardSetOtherEditOptionsBinding.inflate(inflater)
+                val popupWindow = PopupWindow(popUpBinding.root, WRAP_CONTENT, WRAP_CONTENT, true)
+
+                popUpBinding.vwgrpEdit.setOnClickListener {
+                    onBtn_Edit_FlashcardSetClickListener!!.onClick(item)
+                    popupWindow.dismiss()
+                }
+
+                popUpBinding.vwgrpDeleteSet.setOnClickListener {
+                    onBtn_Delete_FlashcardSetClickListener!!.onClick(item)
+                    popupWindow.dismiss()
+                }
+
+                dataBinding.btnOtherOptions.setOnClickListener { view ->
+                    popupWindow.showAsDropDown(view)
+                }
             } else {
-                throw Exception ("Unknown card exception: RCV_FlashcardSetAdapter.kt")
+                throw Exception("Unknown card exception: RCV_FlashcardSetAdapter.kt")
             }
-        }
-        else {
+        } else {
             // DO NOTHING, BECAUSE THIS IS VIEW HOLDER
         }
     }
 
-    fun setOnBtnViewListClickListener (onBtnViewListListener: (item: FlashcardSet) -> Unit) {
+
+    fun setOnBtn_Edit_FlashcardClickListener(onBtnEditFlashcardListener: (item: FlashcardSet) -> Unit) {
+        this.onBtn_Edit_FlashcardSetClickListener = object : OnItemClickListener {
+            override fun onClick(item: FlashcardSet) {
+                onBtnEditFlashcardListener(item)
+            }
+        }
+    }
+
+    fun setOnBtn_Delete_FlashcardClickListener(onBtnDeleteFlashcardListener: (item: FlashcardSet) -> Unit) {
+        this.onBtn_Delete_FlashcardSetClickListener = object : OnItemClickListener {
+            override fun onClick(item: FlashcardSet) {
+                onBtnDeleteFlashcardListener(item)
+            }
+        }
+    }
+
+    fun setOnBtnViewListClickListener(onBtnViewListListener: (item: FlashcardSet) -> Unit) {
         this.onBtnViewListListener = object : OnItemClickListener {
             override fun onClick(item: FlashcardSet) {
                 onBtnViewListListener(item)
@@ -98,7 +146,7 @@ class RCV_FlashcardSetAdapter (var context : Context, var list : ArrayList<Flash
         }
     }
 
-    fun setOnBtnAddClickListener (onBtnAddListener: (item: FlashcardSet) -> Unit) {
+    fun setOnBtnAddClickListener(onBtnAddListener: (item: FlashcardSet) -> Unit) {
         this.onBtnAddListener = object : OnItemClickListener {
             override fun onClick(item: FlashcardSet) {
                 onBtnAddListener(item)
@@ -123,7 +171,7 @@ class RCV_FlashcardSetAdapter (var context : Context, var list : ArrayList<Flash
     }
 
 
-    fun setOnBtnReviewFlashcardEasyClickListener (onClick: (FlashcardSet) -> Unit) {
+    fun setOnBtn_GoToPuzzleActivity_ClickListener(onClick: (FlashcardSet) -> Unit) {
         onBtnReviewFlashcardEasyClickListener = object : OnItemClickListener {
             override fun onClick(item: FlashcardSet) {
                 onClick.invoke(item)
@@ -132,7 +180,7 @@ class RCV_FlashcardSetAdapter (var context : Context, var list : ArrayList<Flash
     }
 
 
-    fun setOnBtnReviewFlashcardHardClickListener (onClick: (FlashcardSet) -> Unit) {
+    fun setOnBtn_GoToWritingActivity_ClickListener(onClick: (FlashcardSet) -> Unit) {
         onBtnReviewFlashcardHardClickListener = object : OnItemClickListener {
             override fun onClick(item: FlashcardSet) {
                 onClick.invoke(item)
@@ -152,15 +200,24 @@ class RCV_FlashcardSetAdapter (var context : Context, var list : ArrayList<Flash
         else list.size + VIEW_HOLDER_TAIL
     }
 
+    fun deleteFlashcardSet(flashcardSet: FlashcardSet) {
+        val deletedPos = list.indexOf(flashcardSet)
+        list.remove(flashcardSet)
+        notifyItemRemoved(deletedPos)
+    }
+
+    fun updateFlashcardSetName(flashcardSet: FlashcardSet, newName: String) {
+        val updatedPos = list.indexOf(flashcardSet)
+        flashcardSet.name = newName
+        list[updatedPos] = flashcardSet
+        notifyItemChanged(updatedPos)
+    }
+
     interface OnItemClickListener {
-        fun onClick (item : FlashcardSet)
+        fun onClick(item: FlashcardSet)
     }
 
-    class ViewHolder (var dB : ViewDataBinding) : RecyclerView.ViewHolder(dB.root) {
-
-
-
-    }
+    class ViewHolder(var dB: ViewDataBinding) : RecyclerView.ViewHolder(dB.root)
 
 
 }

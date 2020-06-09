@@ -7,9 +7,6 @@
     <data>
         <import type="com.teamttdvlp.memolang.data.model.entity.flashcard.Flashcard"/>
         <import type="android.view.View"/>
-        <variable
-            name="vwModel"
-            type="com.teamttdvlp.memolang.viewmodel.AddFlashCardViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -77,9 +74,10 @@
                 android:inputType="text"
                 android:paddingTop="1dp"
                 android:paddingBottom="2dp"
-                android:text="@{vwModel.dataBindingCard.setOwner}"
                 android:textColor="@color/white"
                 android:textSize="16sp"
+                android:hint="Default"
+                android:textColorHint="#70FFFFFF"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@id/txt_title_set_name"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -120,7 +118,33 @@
             app:layout_constraintVertical_bias="0.0"
             app:layout_constraintEnd_toEndOf="@id/vwgrp_txt_set_name"
             app:layout_constraintStart_toStartOf="@id/vwgrp_txt_set_name"
-            app:layout_constraintTop_toBottomOf="@id/vwgrp_txt_set_name"/>
+            app:layout_constraintTop_toBottomOf="@id/vwgrp_txt_set_name" />
+
+        <TextView
+            android:id="@+id/btn_create_new_set_suggestion"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:alpha="0.0"
+            android:background="@drawable/round_5dp_white_background"
+            android:elevation="7dp"
+            android:fontFamily="@font/seguisb"
+            android:includeFontPadding="false"
+            android:maxHeight="300dp"
+            android:paddingStart="10dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="7dp"
+            android:scaleX="0.0"
+            android:scaleY="0.0"
+            android:text="+ Create new set"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/vwgrp_txt_set_name"
+            app:layout_constraintStart_toStartOf="@id/vwgrp_txt_set_name"
+            app:layout_constraintTop_toBottomOf="@id/vwgrp_txt_set_name"
+            app:layout_constraintVertical_bias="0.0" />
 
         <ImageView
             android:id="@+id/btn_start_create_new_set"
@@ -170,7 +194,6 @@
                 android:fontFamily="@font/segoeuisl"
                 android:gravity="center_vertical"
                 android:inputType="text"
-                android:text="@{vwModel.dataBindingCard.frontLanguage}"
                 android:textColor="@color/white"
                 android:textSize="13sp"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -204,7 +227,6 @@
                 android:layout_marginStart="7dp"
                 android:fontFamily="@font/segoeuisl"
                 android:gravity="center_vertical"
-                android:text="@{vwModel.dataBindingCard.backLanguage}"
                 android:textColor="@color/white"
                 android:textSize="13sp"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -291,6 +313,7 @@
                 android:fontFamily="@font/seguisb"
                 android:gravity="left|center_vertical"
                 android:paddingTop="1dp"
+                android:inputType="textNoSuggestions"
                 android:paddingBottom="2dp"
                 android:background="@null"
                 android:paddingStart="10dp"
@@ -334,6 +357,7 @@
                 android:fontFamily="@font/seguisb"
                 android:gravity="left|center_vertical"
                 android:paddingTop="1dp"
+                android:inputType="textNoSuggestions"
                 android:paddingBottom="2dp"
                 android:background="@null"
                 android:paddingStart="10dp"
@@ -392,6 +416,7 @@
                 android:fontFamily="@font/seguisb"
                 android:gravity="left|center_vertical"
                 android:paddingTop="1dp"
+                android:inputType="textNoSuggestions"
                 android:paddingBottom="2dp"
                 android:background="@null"
                 android:paddingStart="10dp"
@@ -429,7 +454,7 @@
 <!--            CREATE NEW SET BUTTON-->
 
             <TextView
-                android:id="@+id/btn_in_panel_create_new_set"
+                android:id="@+id/btn_panel_create_new_set"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="20sp"
@@ -657,6 +682,7 @@
                     android:alpha="1.0"
                     android:background="@android:color/transparent"
                     android:fontFamily="@font/seguisb"
+                    android:inputType="textNoSuggestions"
                     android:gravity="center"
                     android:hint="Translation"
                     android:paddingStart="8dp"
@@ -676,6 +702,7 @@
                     android:layout_marginTop="3dp"
                     android:alpha="1.0"
                     android:background="@android:color/transparent"
+                    android:inputType="textNoSuggestions"
                     android:fontFamily="@font/segoeui"
                     android:gravity="center"
                     android:hint="Example"
@@ -693,6 +720,7 @@
                     android:alpha="1.0"
                     android:background="@android:color/transparent"
                     android:fontFamily="@font/segoeui"
+                    android:inputType="textNoSuggestions"
                     android:gravity="center"
                     android:hint="Example translation"
                     android:includeFontPadding="false"
@@ -768,7 +796,7 @@
                     android:hint="Text"
                     android:imeOptions="actionNext"
                     android:includeFontPadding="false"
-                    android:inputType="textMultiLine"
+                    android:inputType="textMultiLine|textNoSuggestions"
                     android:maxLines="2"
                     android:paddingStart="6dp"
                     android:paddingTop="1dp"
@@ -791,6 +819,7 @@
                     android:alpha="1.0"
                     android:background="@android:color/transparent"
                     android:fontFamily="@font/segoeui"
+                    android:inputType="textNoSuggestions"
                     android:gravity="center"
                     android:hint="Type"
                     android:includeFontPadding="false"

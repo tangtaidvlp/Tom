@@ -2,29 +2,21 @@ package com.teamttdvlp.memolang.viewmodel
 
 import android.app.Application
 import androidx.lifecycle.MutableLiveData
-import com.example.dictionary.model.TransAndExamp
-import com.teamttdvlp.memolang.data.model.other.new_vocabulary.Using
 import com.example.dictionary.model.Vocabulary
-import com.teamttdvlp.memolang.model.TextSpeaker
 import com.teamttdvlp.memolang.data.model.entity.flashcard.Flashcard
 import com.teamttdvlp.memolang.data.model.entity.flashcard.FlashcardSet
 import com.teamttdvlp.memolang.data.model.entity.language.Language.Companion.ENGLISH_VALUE
 import com.teamttdvlp.memolang.data.model.entity.language.Language.Companion.VIETNAMESE_VALUE
-import com.teamttdvlp.memolang.data.model.other.new_vocabulary.SingleMeanExample
 import com.teamttdvlp.memolang.data.model.other.new_vocabulary.TypicalRawVocabulary
-import com.teamttdvlp.memolang.data.model.other.vocabulary.MultiMeanExample
 import com.teamttdvlp.memolang.model.AddFlashcardExecutor
+import com.teamttdvlp.memolang.model.TextSpeaker
 import com.teamttdvlp.memolang.model.VocabularyConverter
 import com.teamttdvlp.memolang.model.repository.FlashcardSetRepos
 import com.teamttdvlp.memolang.model.repository.UserRepos
 import com.teamttdvlp.memolang.model.repository.UserUsingHistoryRepos
 import com.teamttdvlp.memolang.view.activity.iview.SeeVocabularyView
-import com.teamttdvlp.memolang.view.adapter.RCVSearchDictionaryAdapter
 import com.teamttdvlp.memolang.view.base.BaseViewModel
-import com.teamttdvlp.memolang.view.helper.clearAll
-import com.teamttdvlp.memolang.view.helper.foreachFromSecondElement
 import com.teamttdvlp.memolang.view.helper.quickLog
-import java.lang.Exception
 import java.util.*
 
 const val NAVIGATION_TAG = "<nav>"
@@ -94,14 +86,7 @@ class SeeVocabularyActivityViewModel (
         textSpeaker.speak(text)
     }
 
-    fun addFlashcard (frontLanguage : String, backLanguage : String, setName : String,
-                      type : String, text : String,
-                      translation : String, example : String, meanExample : String, pronunciation : String) {
-
-        val newCard = Flashcard(id = 0, text = text, translation = translation,
-            frontLanguage = frontLanguage, backLanguage = backLanguage,
-            setOwner = setName, type = type, example = example, meanOfExample = meanExample,
-            pronunciation = pronunciation)
+    fun proceedAddFlashcard(newCard: Flashcard) {
 
         addFlashcardExecutor.addFlashcardAndUpdateFlashcardSet(newCard) { isSuccess, insertedCardId, exception ->
             if (isSuccess) {

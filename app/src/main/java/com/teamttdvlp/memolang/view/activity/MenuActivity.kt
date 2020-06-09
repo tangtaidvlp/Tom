@@ -6,11 +6,14 @@ import android.net.Uri
 import android.os.Build
 import android.os.Bundle
 import android.provider.Settings
+import android.text.Html
 import android.view.LayoutInflater
 import android.view.View
 import android.view.animation.Animation
+import android.widget.TextView
 import androidx.core.view.doOnPreDraw
 import com.teamttdvlp.memolang.R
+import com.teamttdvlp.memolang.data.model.entity.flashcard.FlashcardSet
 import com.teamttdvlp.memolang.databinding.ActivityMenuBinding
 import com.teamttdvlp.memolang.databinding.LayoutFloatAddBodyBinding
 import com.teamttdvlp.memolang.databinding.LayoutFloatAddIconBinding
@@ -52,6 +55,7 @@ class MenuActivity : BaseActivity<ActivityMenuBinding, MenuActivityViewModel>(),
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setStatusBarColor(resources.getColor(R.color.app_blue))
+        window.callback.onWindowFocusChanged(true)
         viewModel.setUpView(this)
         loadFlashcardSet()
         dB.btnMenuButton.doOnPreDraw {
@@ -73,25 +77,31 @@ class MenuActivity : BaseActivity<ActivityMenuBinding, MenuActivityViewModel>(),
         }
     }
 
-    override fun addViewControls() { dB.apply {
-        val headDB = LayoutFloatAddIconBinding.inflate(LayoutInflater.from(this@MenuActivity))
-        val bodyDB = LayoutFloatAddBodyBinding.inflate(LayoutInflater.from(this@MenuActivity))
+    override fun addViewControls() {
+        dB.apply {
+            val headDB = LayoutFloatAddIconBinding.inflate(LayoutInflater.from(this@MenuActivity))
+            val bodyDB = LayoutFloatAddBodyBinding.inflate(LayoutInflater.from(this@MenuActivity))
 
-        floatingQuickAddService = FloatingAddServiceManager.createInstance(this@MenuActivity, headDB, bodyDB)!!
-        floatingQuickAddService.stopService()
+            floatingQuickAddService =
+                FloatingAddServiceManager.createInstance(this@MenuActivity, headDB, bodyDB)!!
+            floatingQuickAddService.stopService()
 
-        rcvFlashcardSetList.adapter = flashcardSetAdapter
-    }}
-
-    override fun addViewEvents() { dB.apply {
-
-        btnAddFlashcard.setOnClickListener {
-            quickStartActivity(RetrofitAddFlashcardActivity::class.java)
+            rcvFlashcardSetList.adapter = flashcardSetAdapter
         }
+    }
 
-        btnSearchOnline.setOnClickListener {
-            quickStartActivity(SearchOnlineActivity::class.java)
-        }
+    private var currentBeingFocusedFlashcardSet: FlashcardSet? = null
+
+    override fun addViewEvents() {
+        dB.apply {
+
+            btnAddFlashcard.setOnClickListener {
+                quickStartActivity(RetrofitAddFlashcardActivity::class.java)
+            }
+
+            btnSearchOnline.setOnClickListener {
+                quickStartActivity(SearchOnlineActivity::class.java)
+            }
 
         edtEngViDictionary.setOnClickListener {
             quickStartActivity(SeeVocabularyActivity::class.java)
@@ -112,7 +122,7 @@ class MenuActivity : BaseActivity<ActivityMenuBinding, MenuActivityViewModel>(),
         }
 
         flashcardSetAdapter.setOnBtnAddClickListener { flashcardSet ->
-            AddFlashcardActivity.requestAddLanguage(this@MenuActivity, flashcardSet)
+            RetrofitAddFlashcardActivity.requestAddLanguage(this@MenuActivity, flashcardSet)
         }
 
         flashcardSetAdapter.setOnBtnUseFlashcardClickListener { flashcardSet ->
@@ -123,46 +133,94 @@ class MenuActivity : BaseActivity<ActivityMenuBinding, MenuActivityViewModel>(),
             )
         }
 
-        flashcardSetAdapter.setOnBtnReviewFlashcardHardClickListener { flashcardSet ->
-            ReviewFlashcardActivity.requestReviewFlashcard(
-                this@MenuActivity,
-                flashcardSet,
-                reverseCardTextAndTranslation = false
-            )
-        }
+            flashcardSetAdapter.setOnBtn_GoToWritingActivity_ClickListener { flashcardSet ->
+                ReviewFlashcardActivity.requestReviewFlashcard(
+                    this@MenuActivity,
+                    flashcardSet,
+                    reverseCardTextAndTranslation = false
+                )
+            }
 
-        flashcardSetAdapter.setOnBtnReviewFlashcardEasyClickListener { flashcardSet ->
-            ReviewFlashcardEasyActivity.requestReviewFlashcard(
-                this@MenuActivity,
-                flashcardSet,
-                false
-            )
-        }
+            flashcardSetAdapter.setOnBtn_GoToPuzzleActivity_ClickListener { flashcardSet ->
+                ReviewFlashcardEasyActivity.requestReviewFlashcard(
+                    this@MenuActivity,
+                    flashcardSet,
+                    false
+                )
+            }
 
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-            rcvFlashcardSetList.setOnScrollChangeListener(object : View.OnScrollChangeListener {
-                private var defaultScrollY : Float? = null
-                private var lineIsShowed = false
-                override fun onScrollChange( v: View?, scrollX: Int, scrollY: Int, oldScrollX: Int, oldScrollY: Int) {
-                    if (defaultScrollY == null) {
-                        defaultScrollY = rcvFlashcardSetList.getChildAt(0).y
-                    }
-                    val userStartScrollDown = abs(rcvFlashcardSetList.getChildAt(0).y - defaultScrollY!!) > rcvFlashcardSetList.paddingTop / 2
+            flashcardSetAdapter.setOnBtn_Edit_FlashcardClickListener { flashcardSet ->
+                currentBeingFocusedFlashcardSet = flashcardSet
+                edtPanelEditSetName.setText(flashcardSet.name)
+                dialogEditFlashcardSetName.show()
+                showVirtualKeyboard()
+                edtPanelEditSetName.requestFocus()
+            }
+
+            flashcardSetAdapter.setOnBtn_Delete_FlashcardClickListener { flashcardSet ->
+                currentBeingFocusedFlashcardSet = flashcardSet
+                txtConfirmDeleteFlashcardSet.setText(
+                    getConfirmText(flashcardSet.name),
+                    TextView.BufferType.SPANNABLE
+                )
+                dialogDeleteFlashcardSetName.show()
+            }
+
+            btnPanelSaveSetName.setOnClickListener {
+                val newName = edtPanelEditSetName.text.toString()
+                viewModel.deleteFlashcard(currentBeingFocusedFlashcardSet!!)
+                viewModel.updateSetName(currentBeingFocusedFlashcardSet!!, newName)
+                dialogEditFlashcardSetName.dismiss()
+                hideVirtualKeyboard()
+                flashcardSetAdapter.updateFlashcardSetName(
+                    currentBeingFocusedFlashcardSet!!,
+                    newName
+                )
+            }
+
+            btnPanelDeleteFlashcardSet.setOnClickListener {
+                viewModel.deleteFlashcard(currentBeingFocusedFlashcardSet!!)
+                dialogDeleteFlashcardSetName.dismiss()
+                flashcardSetAdapter.deleteFlashcardSet(currentBeingFocusedFlashcardSet!!)
+            }
+
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+                rcvFlashcardSetList.setOnScrollChangeListener(object : View.OnScrollChangeListener {
+                    private var defaultScrollY: Float? = null
+                    private var lineIsShowed = false
+                    override fun onScrollChange(
+                        v: View?,
+                        scrollX: Int,
+                        scrollY: Int,
+                        oldScrollX: Int,
+                        oldScrollY: Int
+                    ) {
+                        if (defaultScrollY == null) {
+                            defaultScrollY = rcvFlashcardSetList.getChildAt(0).y
+                        }
+                        val userStartScrollDown =
+                            abs(rcvFlashcardSetList.getChildAt(0).y - defaultScrollY!!) > rcvFlashcardSetList.paddingTop / 2
                     if (userStartScrollDown and lineIsShowed.not()) {
                         lineIsShowed = true
                         imgDeviderLine.animate().alpha(1f).duration = 200
                         return
                     }
 
-                    val userScrollToTopMost = abs(rcvFlashcardSetList.getChildAt(0).y - defaultScrollY!!) < 2.dp()
-                    if (userScrollToTopMost and lineIsShowed) {
-                        lineIsShowed = false
-                        imgDeviderLine.animate().alpha(0f).duration = 200
+                        val userScrollToTopMost =
+                            abs(rcvFlashcardSetList.getChildAt(0).y - defaultScrollY!!) < 2.dp()
+                        if (userScrollToTopMost and lineIsShowed) {
+                            lineIsShowed = false
+                            imgDeviderLine.animate().alpha(0f).duration = 200
+                        }
                     }
-                }
-            })
+                })
+            }
         }
-    }}
+    }
+
+    private fun getConfirmText(setName: String): CharSequence {
+        return Html.fromHtml("You want to delete <font color='#F44F11'>${setName}</font> set?")
+    }
 
     override fun overrideEnterAnim() {
         overridePendingTransition(R.anim.from_right_to_centre, R.anim.from_centre_to_left)

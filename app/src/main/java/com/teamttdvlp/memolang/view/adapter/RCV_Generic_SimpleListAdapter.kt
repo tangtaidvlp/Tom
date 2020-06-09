@@ -51,8 +51,13 @@ class RCV_Generic_SimpleListAdapter<T> (
         return list.size
     }
 
+    fun addNewFlashcardSet(newSet: T) {
+        list.add(0, newSet)
+        notifyItemInserted(0)
+    }
+
     interface OnItemClickListener<T> {
-        fun onClick (item : T)
+        fun onClick(item: T)
     }
 
 }

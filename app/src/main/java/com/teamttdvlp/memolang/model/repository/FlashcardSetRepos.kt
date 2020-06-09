@@ -6,7 +6,6 @@ import com.teamttdvlp.memolang.data.model.entity.flashcard.FlashcardSet
 import com.teamttdvlp.memolang.data.model.entity.flashcard.FlashcardSetWithCardList
 import com.teamttdvlp.memolang.data.sql.MemoLangSqliteDataBase
 import com.teamttdvlp.memolang.view.helper.quickLog
-import java.lang.Exception
 
 
 private const val WITHOUT_CARD_LIST = false
@@ -37,14 +36,15 @@ class FlashcardSetRepos (database : MemoLangSqliteDataBase) {
         GetFlashcardSet(onGetListener).execute(name)
     }
 
-    private inner class GetAllFlashcardSetTask
-        (private val onGetSuccess : (ArrayList<FlashcardSet>?) -> Unit): AsyncTask<Boolean, Unit, List<FlashcardSet>?>() {
+    private inner class GetAllFlashcardSetTask(private val onGetSuccess: (ArrayList<FlashcardSet>?) -> Unit) :
+        AsyncTask<Boolean, Unit, List<FlashcardSet>?>() {
 
         override fun doInBackground(vararg params: Boolean?): List<FlashcardSet>? {
             val needCardList = params[0]!!
             return try {
                 if (needCardList) {
-                    val flashcardSetWithCardList_List : List<FlashcardSetWithCardList> = flashcardSetDAO.getAllFlashcardSetWithCardList()
+                    val flashcardSetWithCardList_List: List<FlashcardSetWithCardList> =
+                        flashcardSetDAO.getAllFlashcardSetWithCardList()
                     return convertToFlashcardSetList(flashcardSetWithCardList_List)
                 } else {
                     return flashcardSetDAO.getAllFlashcardSetWithNOCardList()

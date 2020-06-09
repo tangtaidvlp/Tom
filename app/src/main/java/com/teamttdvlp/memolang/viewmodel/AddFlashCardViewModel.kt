@@ -1,17 +1,16 @@
 package com.teamttdvlp.memolang.viewmodel
 
-import androidx.databinding.ObservableField
 import com.teamttdvlp.memolang.data.model.entity.flashcard.Flashcard
 import com.teamttdvlp.memolang.data.model.entity.flashcard.FlashcardSet
+import com.teamttdvlp.memolang.data.model.entity.flashcard.SetNameUtils
 import com.teamttdvlp.memolang.model.AddFlashcardExecutor
-import com.teamttdvlp.memolang.model.repository.UserUsingHistoryRepos
-import com.teamttdvlp.memolang.model.repository.UserRepos
 import com.teamttdvlp.memolang.model.AddFlashcardSharedPreference
 import com.teamttdvlp.memolang.model.repository.FlashcardSetRepos
+import com.teamttdvlp.memolang.model.repository.UserRepos
+import com.teamttdvlp.memolang.model.repository.UserUsingHistoryRepos
 import com.teamttdvlp.memolang.view.activity.iview.AddFlashcardView
 import com.teamttdvlp.memolang.view.base.BaseViewModel
 import com.teamttdvlp.memolang.view.helper.quickLog
-import java.lang.Exception
 
 class AddFlashCardViewModel(
                            private var userRepos: UserRepos,
@@ -20,22 +19,7 @@ class AddFlashCardViewModel(
                            private var userUsingHistoryRepos: UserUsingHistoryRepos,
                            private var addFlashcardSharedPreference: AddFlashcardSharedPreference) : BaseViewModel<AddFlashcardView>() {
 
-    val dataBindingCard = ObservableField<Flashcard>()
-
     private lateinit var userFlashcardSetList : ArrayList<FlashcardSet>
-
-    fun showToUI (setName : String, frontLanguage: String, backLanguage: String) {
-        val dBCard = Flashcard(
-            frontLanguage = frontLanguage,
-            backLanguage = backLanguage,
-            setOwner = setName,
-
-            id = 0,text = "", translation = "",
-            example = "", meanOfExample = "",
-            type = "", pronunciation = "")
-
-        dataBindingCard.set(dBCard)
-    }
 
     fun proceedAddFlashcard (newCard: Flashcard) {
         val flashcardSet = FlashcardSet(newCard.setOwner, newCard.frontLanguage, newCard.backLanguage)
@@ -53,9 +37,13 @@ class AddFlashCardViewModel(
         saveFlashcardAndUpdateUserInfo(newCard, flashcardSet)
     }
 
-    fun createNewFlashcardSetIfValid (setName : String, frontLanguage: String, backLanguage: String) {
+    fun createNewFlashcardSetIfValid(
+        setName: String,
+        frontLanguage: String,
+        backLanguage: String
+    ): FlashcardSet {
         val newFlashcardSet = FlashcardSet(setName, frontLanguage, backLanguage)
-        val checkingInfo = checkFlashcardSetIsValid(newFlashcardSet)
+        val checkingInfo: Pair<Boolean, String?> = checkFlashcardSetIsValid(newFlashcardSet)
         val setIsValid = checkingInfo.first
         if (setIsValid) {
             flashcardSetRepos.insert(newFlashcardSet)
@@ -64,6 +52,8 @@ class AddFlashCardViewModel(
             val errorMessage = checkingInfo.second + ""
             view.showInvalidFlashcardSetError(errorMessage)
         }
+
+        return newFlashcardSet
     }
 
     private fun checkFlashcardSetIsValid (currentSet : FlashcardSet) : Pair<Boolean, String?> {
@@ -168,6 +158,10 @@ class AddFlashCardViewModel(
     fun saveUsingHistory() {
         userUsingHistoryRepos.saveUsingHistoryInfo()
         userRepos.updateUser(getUser())
+    }
+
+    fun getDefaultSetName(frontLanguage: String, backLanguage: String): String {
+        return SetNameUtils.getSetNameFromLangPair(frontLanguage, backLanguage)
     }
 
 }

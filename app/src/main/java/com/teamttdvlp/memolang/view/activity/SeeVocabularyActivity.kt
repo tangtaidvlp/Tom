@@ -13,6 +13,7 @@ import androidx.lifecycle.Observer
 import com.example.dictionary.model.TransAndExamp
 import com.example.dictionary.model.Vocabulary
 import com.teamttdvlp.memolang.R
+import com.teamttdvlp.memolang.data.model.entity.flashcard.Flashcard
 import com.teamttdvlp.memolang.data.model.entity.language.Language.Companion.ENGLISH_VALUE
 import com.teamttdvlp.memolang.data.model.entity.language.Language.Companion.VIETNAMESE_VALUE
 import com.teamttdvlp.memolang.data.model.other.new_vocabulary.Example
@@ -151,9 +152,14 @@ class SeeVocabularyActivity : BaseActivity<ActivitySeeVocabularyBinding, SeeVoca
             val type = edtPanelType.text.toString()
             val pronunciation = txtPronunciation.text.toString()
 
-            viewModel.addFlashcard(frontLanguage = ENGLISH_VALUE, backLanguage = VIETNAMESE_VALUE,
-                setName = setName, type = type, text = text, translation = translation, example =  example,
-                meanExample = meanExample, pronunciation =  pronunciation)
+            val newCard = Flashcard(
+                id = 0, text = text, translation = translation,
+                frontLanguage = ENGLISH_VALUE, backLanguage = VIETNAMESE_VALUE,
+                setOwner = setName, type = type, example = example, meanOfExample = meanExample,
+                pronunciation = pronunciation
+            )
+
+            viewModel.proceedAddFlashcard(newCard)
         }
 
         imgBlackBgAddFlashcardPanel.setOnClickListener {

@@ -6,6 +6,7 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
         android:name=".di.MemoLang"
@@ -14,13 +15,13 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_2"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme_WithSplashScreen"
-        android:windowSoftInputMode="adjustNothing">
+        android:theme="@style/AppTheme_WithSplashScreen">
 
         <service
             android:name=".view.customview.floating_library.FloatingAddServiceManager$FloatAddService"
             android:enabled="true"
-            android:exported="true"/>
+            android:exported="true" />
+
 
         <meta-data
             android:name="com.facebook.sdk.ApplicationId"
@@ -53,9 +54,7 @@
         <activity android:name=".view.activity.RetrofitAddFlashcardActivity"
             android:windowSoftInputMode="adjustResize" />
         <activity android:name=".view.activity.EditFlashcardActivity" />
-        <activity
-            android:name=".view.activity.MenuActivity"
-            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".view.activity.MenuActivity" />
         <activity android:name=".view.activity.ViewFlashCardListActivity" /> <!-- <activity android:name=".view.activity.SearchEditFlashcardActivity" /> -->
         <activity android:name=".view.activity.SearchOnlineActivity"/>
         <activity android:name=".view.activity.ResultReportActivity" />

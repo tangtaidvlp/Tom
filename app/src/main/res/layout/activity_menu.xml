@@ -99,10 +99,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/image_fuzzy_search_button"
-            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/btn_search_online"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/vwgrp_en_vi_dictionary"
-            app:layout_constraintVertical_bias="0.47" />
+            app:layout_constraintVertical_bias="0.85" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -158,22 +158,178 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toBottomOf="parent" />
 
-        <androidx.appcompat.widget.LinearLayoutCompat
-            android:id="@+id/linearLayoutCompat"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="0dp"
-            android:layout_marginLeft="8dp"
-            android:layout_marginTop="15dp"
-            android:layout_marginBottom="8dp"
-            android:gravity="center"
-            android:orientation="horizontal"
+        <com.teamttdvlp.memolang.view.customview.MyCustomDialog
+            android:id="@+id/dialog_edit_flashcard_set_name"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:translationZ="15dp"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintVertical_bias="0.0">
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
-        </androidx.appcompat.widget.LinearLayoutCompat>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/vwgrp_edit_flashcard_set_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/round_5dp_white_background"
+                android:clickable="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
 
-        </androidx.constraintlayout.widget.ConstraintLayout>
+                <EditText
+                    android:id="@+id/edt_panel_edit_set_name"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="12dp"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/sitka_display_bold"
+                    android:includeFontPadding="false"
+                    android:inputType="textNoSuggestions"
+                    android:text="Harry Potter"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="@id/btn_panel_clear_set_name"
+                    app:layout_constraintEnd_toStartOf="@id/btn_panel_clear_set_name"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/btn_panel_clear_set_name" />
+
+                <ImageView
+                    android:id="@+id/btn_panel_clear_set_name"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="12dp"
+                    android:paddingStart="7.5dp"
+                    android:paddingTop="9dp"
+                    android:paddingBottom="8dp"
+                    android:src="@drawable/image_clear_all_text_black"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_goneMarginEnd="12dp" />
+
+                <View
+                    android:id="@+id/line_under_edt_edit_panel"
+                    android:layout_width="0dp"
+                    android:layout_height="0.5dp"
+                    android:alpha="0.5"
+                    android:background="@color/black"
+                    app:layout_constraintEnd_toEndOf="@id/btn_panel_clear_set_name"
+                    app:layout_constraintStart_toStartOf="@id/edt_panel_edit_set_name"
+                    app:layout_constraintTop_toBottomOf="@id/edt_panel_edit_set_name" />
+
+                <TextView
+                    android:id="@+id/btn_panel_save_set_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/round_3dp_blue_background"
+                    android:fontFamily="@font/tw_century_regular"
+                    android:includeFontPadding="false"
+                    android:paddingStart="10dp"
+                    android:paddingTop="4.5dp"
+                    android:paddingEnd="10dp"
+                    android:paddingBottom="5dp"
+                    android:text="Save"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/edt_panel_edit_set_name" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.teamttdvlp.memolang.view.customview.MyCustomDialog>
+
+
+        <com.teamttdvlp.memolang.view.customview.MyCustomDialog
+            android:id="@+id/dialog_delete_flashcard_set_name"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:translationZ="15dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/round_5dp_white_background"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/txt_confirm_delete_flashcard_set"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="14dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/segoeui"
+                    android:includeFontPadding="false"
+                    android:text="You want to delete this flashcard set ?"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/btn_panel_delete_flashcard_set"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/round_3dp_blue_background"
+                    android:fontFamily="@font/tw_century_regular"
+                    android:includeFontPadding="false"
+                    android:paddingStart="10dp"
+                    android:paddingTop="4.5dp"
+                    android:paddingEnd="10dp"
+                    android:paddingBottom="5dp"
+                    android:text="Delete"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/txt_confirm_delete_flashcard_set" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.teamttdvlp.memolang.view.customview.MyCustomDialog>
+
+        <!--        <androidx.appcompat.widget.LinearLayoutCompat-->
+        <!--            android:id="@+id/linearLayoutCompat"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_margin="0dp"-->
+        <!--            android:layout_marginLeft="8dp"-->
+        <!--            android:layout_marginTop="15dp"-->
+        <!--            android:layout_marginBottom="8dp"-->
+        <!--            android:gravity="center"-->
+        <!--            android:orientation="horizontal"-->
+        <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--            app:layout_constraintLeft_toLeftOf="parent"-->
+        <!--            app:layout_constraintRight_toRightOf="parent"-->
+        <!--            app:layout_constraintVertical_bias="0.0">-->
+
+        <!--        </androidx.appcompat.widget.LinearLayoutCompat>-->
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

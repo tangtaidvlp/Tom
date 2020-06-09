@@ -88,7 +88,7 @@ class ViewFlashcardSetActivity : BaseActivity<ActivityViewFlashcardSetBinding, V
             )
         }
 
-        flashcardSetAdapter.setOnBtnReviewFlashcardHardClickListener { flashcardSet ->
+        flashcardSetAdapter.setOnBtn_GoToWritingActivity_ClickListener { flashcardSet ->
             ReviewFlashcardActivity.requestReviewFlashcard(
                 this@ViewFlashcardSetActivity,
                 flashcardSet,
@@ -96,12 +96,12 @@ class ViewFlashcardSetActivity : BaseActivity<ActivityViewFlashcardSetBinding, V
             )
         }
 
-        flashcardSetAdapter.setOnBtnReviewFlashcardEasyClickListener { flashcardSet ->
-           ReviewFlashcardEasyActivity.requestReviewFlashcard(
-               this@ViewFlashcardSetActivity,
-               flashcardSet,
-               false
-           )
+        flashcardSetAdapter.setOnBtn_GoToPuzzleActivity_ClickListener { flashcardSet ->
+            ReviewFlashcardEasyActivity.requestReviewFlashcard(
+                this@ViewFlashcardSetActivity,
+                flashcardSet,
+                false
+            )
         }
 
         btnCreateNewFlashcard.setOnClickListener {

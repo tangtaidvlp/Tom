@@ -3,17 +3,15 @@ package com.teamttdvlp.memolang.view.helper
 import android.app.Application
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import com.teamttdvlp.memolang.data.sql.MemoLangSqliteDataBase
 import com.teamttdvlp.memolang.model.AddFlashcardExecutor
-import com.teamttdvlp.memolang.model.repository.FlashcardRepos
-import com.teamttdvlp.memolang.model.repository.UserRepos
-import com.teamttdvlp.memolang.model.repository.UserUsingHistoryRepos
 import com.teamttdvlp.memolang.model.AddFlashcardSharedPreference
 import com.teamttdvlp.memolang.model.SearchOnlineSharedPreference
 import com.teamttdvlp.memolang.model.UserInfoStatusSharedPreference
+import com.teamttdvlp.memolang.model.repository.FlashcardRepos
 import com.teamttdvlp.memolang.model.repository.FlashcardSetRepos
+import com.teamttdvlp.memolang.model.repository.UserRepos
+import com.teamttdvlp.memolang.model.repository.UserUsingHistoryRepos
 import com.teamttdvlp.memolang.viewmodel.*
-import java.lang.Exception
 import javax.inject.Inject
 
 typealias DaggerLazy<T> = dagger.Lazy<T>
@@ -43,9 +41,8 @@ class ViewModelProviderFactory
         }
 
         if (modelClass.isAssignableFrom(MenuActivityViewModel::class.java)) {
-            return MenuActivityViewModel(flashcardSetRepos.get()) as T
+            return MenuActivityViewModel(flashcardSetRepos.get(), flashcardRepos.get()) as T
         }
-
 
         if (modelClass.isAssignableFrom(ReviewFlashcardEasyViewModel::class.java)) {
             return ReviewFlashcardEasyViewModel(application) as T

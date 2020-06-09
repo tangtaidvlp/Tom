@@ -8,6 +8,8 @@ import android.app.Notification
 import android.app.NotificationChannel
 import android.app.NotificationManager
 import android.app.PendingIntent
+import android.content.ClipData
+import android.content.ClipboardManager
 import android.content.Context
 import android.content.Intent
 import android.content.res.Configuration
@@ -48,7 +50,6 @@ import com.example.dictionary.model.TransAndExamp
 import com.example.dictionary.model.Vocabulary
 import com.teamttdvlp.memolang.R
 import com.teamttdvlp.memolang.data.model.entity.flashcard.Flashcard
-import com.teamttdvlp.memolang.data.model.entity.flashcard.FlashcardSet
 import com.teamttdvlp.memolang.data.model.entity.language.Language
 import com.teamttdvlp.memolang.data.model.other.new_vocabulary.Example
 import com.teamttdvlp.memolang.data.model.other.new_vocabulary.SingleMeanExample
@@ -108,12 +109,15 @@ class FloatingAddServiceManager private constructor(
 
     // SERVICE HERE
     class FloatAddService : LifecycleService(), FloatAddServiceView {
-        private lateinit  var windowManager: WindowManager
+        private val EMPTY_STRING: String = " "
+        private lateinit var windowManager: WindowManager
         private lateinit  var rootViewParams: WindowManager.LayoutParams
         private lateinit var rootView: LinearLayout
         lateinit var iconTouchEventListener: GestureDetectorCompat
         lateinit var metrics: DisplayMetrics
-        private lateinit var imm : InputMethodManager
+
+        private lateinit var imm: InputMethodManager
+        private lateinit var clipboardManager: ClipboardManager
 
         private val addFCPanelAppear : AnimatorSet = AnimatorSet()
 
@@ -143,15 +147,6 @@ class FloatingAddServiceManager private constructor(
 
         private lateinit var removeFuncBackground : View
         private lateinit var removeFuncBackgroundParams : WindowManager.LayoutParams
-
-        lateinit var chooseSetNameAdapter : RCV_Generic_SimpleListAdapter<FlashcardSet>
-            @Inject set
-
-        lateinit var chooseLanguageAdapter : RCVChooseLanguageAdapter
-            @Inject set
-
-        lateinit var viewModel : FloatAddServiceViewModel
-            @Inject set
 
         lateinit var inputMethodManager: InputMethodManager
 
@@ -187,17 +182,24 @@ class FloatingAddServiceManager private constructor(
         private val REMOVE_FUNCTION_APPEAR_DURATION = 200L
 
         private var DELETE_MOVE_ANIM_DURATION = 200L
-        private var DELETE_MOVE_ANIM_INTERPOLATOR  = OvershootInterpolator(3f)
+        private var DELETE_MOVE_ANIM_INTERPOLATOR = OvershootInterpolator(3f)
 
 
         // SEARCH AND SEE VOCA PART
-        lateinit var rcvSearchDictionaryAdapter : RCVSearchDictionaryAdapter
+
+        lateinit var chooseLanguageAdapter: RCVChooseLanguageAdapter
             @Inject set
 
-        lateinit var rcvRecentSearchDicAdapter : RCVRecent_SearchDictionary_Adapter
+        lateinit var viewModel: FloatAddServiceViewModel
             @Inject set
 
-        lateinit var rcvChooseTypeAdapter : RCVSimpleListAdapter2
+        lateinit var rcvSearchDictionaryAdapter: RCVSearchDictionaryAdapter
+            @Inject set
+
+        lateinit var rcvRecentSearchDicAdapter: RCVRecent_SearchDictionary_Adapter
+            @Inject set
+
+        lateinit var rcvChooseTypeAdapter: RCVSimpleListAdapter2
             @Inject set
 
         lateinit var rcvChooseTransAdapter : RCVSimpleListAdapter2
@@ -411,6 +413,7 @@ class FloatingAddServiceManager private constructor(
             imm = getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
             performAndroidInjection()
             bindViewToViewModel()
+            createClipBoardManager()
 
             initProperties()
 
@@ -547,6 +550,15 @@ class FloatingAddServiceManager private constructor(
             floatManager.bodyDB.root.pivotY = 0f
 
             rootView.addView(floatManager.bodyDB.root, bodyParams)
+        }
+
+        private fun createClipBoardManager() {
+            clipboardManager = getSystemService(Context.CLIPBOARD_SERVICE) as ClipboardManager
+            resetClipboardByAddEmptyClip()
+        }
+
+        private fun resetClipboardByAddEmptyClip() {
+            clipboardManager.setPrimaryClip(ClipData.newPlainText("empty", EMPTY_STRING))
         }
 
         private fun updateIconToTargetPosition() {
@@ -730,9 +742,9 @@ class FloatingAddServiceManager private constructor(
 
         private fun addViewControls () { floatManager.bodyDB.apply {
             // Choose SET NAME
-            rcvChooseSetName.adapter = chooseSetNameAdapter
+            rcvChooseSetName.adapter = rcvChooseSetNameAdapter
             viewModel.getAllFlashcardSetWithNoCardList {
-                chooseSetNameAdapter.setData(it)
+                rcvChooseSetNameAdapter.setData(it)
             }
 
             // Choose LANGUAGE
@@ -768,12 +780,11 @@ class FloatingAddServiceManager private constructor(
 
                 btnAdd.setOnClickListener {
                     addFCPanelAppear.start()
-                    quickLog("Clicked")
                 }
 
-//        btnSpeaker.setOnClickListener {
-//            viewModel.speak(txtText.text.toString())
-//        }
+                btnSpeaker.setOnClickListener {
+                    viewModel.speak(txtText.text.toString())
+                }
 
                 btnPanelAdd.setOnClickListener {
                     val setName = edtPanelSetName.text.toString()
@@ -800,6 +811,7 @@ class FloatingAddServiceManager private constructor(
 
                 imgBlackBgAddFlashcardPanel.setOnClickListener {
                     addFCPanelDisappear.start()
+                    rcvChooseSetName.goGONE()
                     rcvChooseCardType.goGONE()
                     rcvChooseExample.goGONE()
                     rcvChooseTranslation.goGONE()
@@ -828,6 +840,7 @@ class FloatingAddServiceManager private constructor(
                     rcvChooseExample.goGONE()
                     rcvChooseTranslation.goGONE()
                     rcvChooseSetName.goGONE()
+                    quickLog("???? ! I clicked it, fuck u bitch")
                 }
 
                 rcvChooseTransAdapter.setOnItemClickListener { translation ->
@@ -908,22 +921,17 @@ class FloatingAddServiceManager private constructor(
                 }
 
                 edtEngViDictionary.setOnEditorActionListener { v, actionId, event ->
-                if (actionId == EditorInfo.IME_ACTION_SEARCH) {
-                    val key = edtEngViDictionary.text.toString()
-                    val fullContent = rcvSearchDictionaryAdapter.getVocabularyByKey(key)
-                    quickLog("FULL: $fullContent")
-                    if (fullContent != null) {
-                        onChooseVocabulary(fullContent)
-                    } else {
-                        Toast.makeText(applicationContext, "Navigate to online search", Toast.LENGTH_LONG).show()
+                    if (actionId == EditorInfo.IME_ACTION_SEARCH) {
+                        val key = edtEngViDictionary.text.toString()
+                        showVocabulary_IfKeyFound_Or_GoToSearchOnline(key = key)
+                        true
                     }
-                    true
+                    false
                 }
-                false
-            }
 
             edtEngViDictionary.addTextChangeListener (onTextChanged = { text, _, _, _ ->
                 if (text == "") {
+                    quickLog("Clip: " + clipboardManager.hasPrimaryClip())
                     rcvDictionary.goGONE()
                 } else {
                     rcvDictionary.goVISIBLE()
@@ -937,6 +945,17 @@ class FloatingAddServiceManager private constructor(
                 edtEngViDictionary.setOnFocusChangeListener { v, hasFocus ->
                     if (hasFocus) {
                         onNavigateToSearchBar()
+                        if (clipboardManager.hasPrimaryClip()) {
+                            val copiedText =
+                                clipboardManager.primaryClip!!.getItemAt(0).text.toString()
+                            if (copiedText != EMPTY_STRING) {
+                                rcvSearchDictionaryAdapter.search(copiedText)
+                                if (rcvSearchDictionaryAdapter.itemCount != 0) {
+                                    showVocabulary_IfKeyFound_Or_GoToSearchOnline(key = copiedText)
+                                }
+                                resetClipboardByAddEmptyClip()
+                            }
+                        }
                     }
                 }
 
@@ -946,7 +965,17 @@ class FloatingAddServiceManager private constructor(
                     edtEngViDictionary.setText("")
                     edtEngViDictionary.requestFocus()
                 }
+            }
+        }
 
+        private fun showVocabulary_IfKeyFound_Or_GoToSearchOnline(key: String) {
+            quickLog("Full: $key")
+            val fullContent = rcvSearchDictionaryAdapter.getVocabularyByKey(key)
+            if (fullContent != null) {
+                onChooseVocabulary(fullContent)
+            } else {
+                Toast.makeText(applicationContext, "Navigate to online search", Toast.LENGTH_LONG)
+                    .show()
             }
         }
 

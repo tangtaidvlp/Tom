@@ -6,16 +6,14 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.teamttdvlp.memolang.R
 import com.teamttdvlp.memolang.data.model.other.new_vocabulary.NavigableRawVocabulary
-import com.teamttdvlp.memolang.data.model.other.new_vocabulary.TypicalRawVocabulary
 import com.teamttdvlp.memolang.data.model.other.new_vocabulary.RawVocabulary
+import com.teamttdvlp.memolang.data.model.other.new_vocabulary.TypicalRawVocabulary
 import com.teamttdvlp.memolang.databinding.ItemSearchDictionaryBinding
-import com.teamttdvlp.memolang.view.helper.capitalizeFirstLetter
 import com.teamttdvlp.memolang.view.helper.clearAll
 import com.teamttdvlp.memolang.view.helper.not
 import com.teamttdvlp.memolang.view.helper.quickLog
 import java.io.BufferedReader
 import java.io.InputStreamReader
-import java.lang.Exception
 import kotlin.math.abs
 
 class RCVSearchDictionaryAdapter(var context : Context) : RecyclerView.Adapter<RCVSearchDictionaryAdapter.ViewHolder>() {
@@ -57,10 +55,14 @@ class RCVSearchDictionaryAdapter(var context : Context) : RecyclerView.Adapter<R
         }
     }
 
-    fun setData (data : ArrayList<RawVocabulary>) {
+    fun setData(data: ArrayList<RawVocabulary>) {
         vocaList.clear()
         vocaList.addAll(data)
         notifyDataSetChanged()
+    }
+
+    fun getItemAt(position: Int): RawVocabulary {
+        return vocaList.get(position)
     }
 
     private fun getNavigatedRawVocabulary(navigableRawVocabulary: NavigableRawVocabulary): TypicalRawVocabulary {
@@ -70,7 +72,7 @@ class RCVSearchDictionaryAdapter(var context : Context) : RecyclerView.Adapter<R
                 it.key == targetKey
             } as TypicalRawVocabulary
             return targetRawVocabulary
-        } catch (ex : Exception) {
+        } catch (ex: Exception) {
             ex.printStackTrace()
             quickLog("Error Word: $targetKey")
         }
@@ -161,7 +163,6 @@ class RCVSearchDictionaryAdapter(var context : Context) : RecyclerView.Adapter<R
         val prefix = trueFormKey.get(0).toString()
         val corresPrefix_VocaList : ArrayList<RawVocabulary> = getCorresPrefixVocaList_AndCacheIt(prefix)
         for (rawVoca in corresPrefix_VocaList) {
-            quickLog("Gotten voca: $rawVoca")
             if (rawVoca.key == trueFormKey) {
                 if (rawVoca is NavigableRawVocabulary) {
                     return getNavigatedRawVocabulary(rawVoca)

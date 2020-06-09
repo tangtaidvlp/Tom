@@ -15,6 +15,7 @@ import android.view.animation.LinearInterpolator
 import android.view.inputmethod.EditorInfo
 import android.widget.EditText
 import androidx.core.view.doOnPreDraw
+import androidx.core.view.isVisible
 import androidx.interpolator.view.animation.FastOutSlowInInterpolator
 import com.teamttdvlp.memolang.R
 import com.teamttdvlp.memolang.data.model.entity.flashcard.Flashcard
@@ -80,7 +81,6 @@ class RetrofitAddFlashcardActivity : BaseActivity<ActivityAddFlashcardRetroBindi
 
     private lateinit var turnUpBackCard_After_TurnDownFrontCard : Animation
 
-
     lateinit var rcvFrontLangChooseLanguageAdapter: RCVChooseLanguageAdapter
     @Inject set
 
@@ -112,7 +112,6 @@ class RetrofitAddFlashcardActivity : BaseActivity<ActivityAddFlashcardRetroBindi
         super.onCreate(savedInstanceState)
         setStatusBarColor(resources.getColor(R.color.app_blue))
         viewModel.setUpView(this)
-        dB.vwModel = viewModel
         recalculateFlashcardSetBox()
     }
 
@@ -151,13 +150,48 @@ class RetrofitAddFlashcardActivity : BaseActivity<ActivityAddFlashcardRetroBindi
 
     override fun addViewControls() {
         dB.apply {
-            showDefault_Info_OnScreen()
             disableEdtPronunciation()
             setUpEditTextsFeatures()
             // Choose Flashcard SET NAME Recycler View
             rcvFlashcardSetName.adapter = rcvFlashcardSetNameAdapter
             viewModel.getAllFlashcardSetWithNoCardList { flashcardSetList ->
                 rcvFlashcardSetNameAdapter.setData(flashcardSetList)
+
+                val addRequest_From_SpecifiedFlashcardSet = (getAddFlashcardRequest() != null)
+                val thereIsNoFlashcardSet = (flashcardSetList.size == 0)
+                if (addRequest_From_SpecifiedFlashcardSet) {
+                    val flashcardSet = getAddFlashcardRequest()
+                    showToUI(
+                        flashcardSet!!.name,
+                        flashcardSet.frontLanguage,
+                        flashcardSet.backLanguage
+                    )
+
+                } else {
+                    if (thereIsNoFlashcardSet) {
+                        val lastUsedFrontLang = viewModel.getCurrentFrontLanguage()
+                        val lastUsedBackLang = viewModel.getCurrentBackLanguage()
+                        txtSetName.hint =
+                            viewModel.getDefaultSetName(lastUsedFrontLang, lastUsedBackLang)
+                        showToUI(
+                            lastSetName = "",
+                            lastFrontLang = lastUsedFrontLang,
+                            lastBackLang = lastUsedBackLang
+                        )
+
+                    } else { // There have been some FlashcardSet and No AddFlashcardRequest from any specified set
+                        val lastUsedFrontLang = viewModel.getCurrentFrontLanguage()
+                        val lastUsedBackLang = viewModel.getCurrentBackLanguage()
+                        val lastUsedFlashcardSet = viewModel.getLastedUseFlashcardSetName()
+
+                        showToUI(
+                            lastSetName = lastUsedFlashcardSet
+                            , lastFrontLang = lastUsedFrontLang
+                            , lastBackLang = lastUsedBackLang
+                        )
+                    }
+                }
+
             }
 
             // Choose LANGUAGE RecyclerView
@@ -206,26 +240,19 @@ class RetrofitAddFlashcardActivity : BaseActivity<ActivityAddFlashcardRetroBindi
         edtExampleTranslation.imeOptions = EditorInfo.IME_ACTION_DONE
         edtExampleTranslation.setRawInputType(InputType.TYPE_CLASS_TEXT)
 
-    }}
+    }
+    }
 
     private fun disableEdtPronunciation() {
         dB.edtPronunciation.inputType = TYPE_NULL
     }
 
-    private fun showDefault_Info_OnScreen() {
-        val flashcardSet = getAddFlashcardRequest()
-        if (flashcardSet == null) {
-            setUp_CurrentChosenOptions_OnScreen()
-        } else {
-            viewModel.showToUI(flashcardSet.name, flashcardSet.frontLanguage, flashcardSet.backLanguage)
+    private fun showToUI(lastSetName: String, lastFrontLang: String, lastBackLang: String) {
+        dB.apply {
+            txtSetName.text = lastSetName
+            txtFrontLang.text = lastFrontLang
+            txtBackLang.text = lastBackLang
         }
-    }
-
-    private fun setUp_CurrentChosenOptions_OnScreen() {
-        val currentBackLang = viewModel.getCurrentBackLanguage()
-        val currentFrontLang = viewModel.getCurrentFrontLanguage()
-        val currentUseSetName = viewModel.getLastedUseFlashcardSetName()
-        viewModel.showToUI(currentUseSetName, currentFrontLang, currentBackLang)
     }
 
     @SuppressLint("ClickableViewAccessibility")
@@ -329,9 +356,22 @@ class RetrofitAddFlashcardActivity : BaseActivity<ActivityAddFlashcardRetroBindi
                 }
             })
 
+            imgSetNameSpinner.setOnClickListener {
+                txtSetName.performClick()
+            }
+
             txtSetName.setOnClickListener {
-                showSetNameList()
+                if (rcvFlashcardSetNameAdapter.itemCount > 0) {
+                    showSetNameList()
+                } else {
+                    showButton_CreateNewSetSuggesstion()
+                }
                 hideScreenFocusToTranslationEditText()
+            }
+
+            btnCreateNewSetSuggestion.setOnClickListener {
+                hideButton_CreateNewSetSuggesstion()
+                btnStartCreateNewSet.performClick()
             }
 
             rcvFrontLangChooseLanguageAdapter.setOnItemClickListener { language ->
@@ -382,14 +422,15 @@ class RetrofitAddFlashcardActivity : BaseActivity<ActivityAddFlashcardRetroBindi
                 edtNewSetName.requestFocus()
                 edtNewSetFrontLanguage.setText(txtFrontLang.text)
                 edtNewSetBackLanguage.setText(txtBackLang.text)
-                if (rcvFlashcardSetName.isVisible()) {
+                if (rcvFlashcardSetName.isVisible) {
                     hideSetNameList()
                 }
-                showCreateSetNamePanel()
-            }
 
-            imgSetNameSpinner.setOnClickListener {
-                showSetNameList()
+                if (btnCreateNewSetSuggestion.isVisible) {
+                    hideButton_CreateNewSetSuggesstion()
+                }
+
+                showCreateSetNamePanel()
             }
 
             imgNewSetFrontLangSpinner.setOnClickListener {
@@ -404,14 +445,15 @@ class RetrofitAddFlashcardActivity : BaseActivity<ActivityAddFlashcardRetroBindi
                 hideVirtualKeyboard()
             }
 
-            btnInPanelCreateNewSet.setOnClickListener {
+            btnPanelCreateNewSet.setOnClickListener {
                 val setName = edtNewSetName.text.toString()
                 val frontLang = edtNewSetFrontLanguage.text.toString()
                 val backLang = edtNewSetBackLanguage.text.toString()
                 txtSetName.text = setName
-                txtFrontLang.text =frontLang
+                txtFrontLang.text = frontLang
                 txtBackLang.text = backLang
-                viewModel.createNewFlashcardSetIfValid(setName, frontLang, backLang)
+                val newSet = viewModel.createNewFlashcardSetIfValid(setName, frontLang, backLang)
+                rcvFlashcardSetNameAdapter.addNewFlashcardSet(newSet)
             }
 
             imgTurnOffCreateNewSet.setOnClickListener {
@@ -575,21 +617,30 @@ class RetrofitAddFlashcardActivity : BaseActivity<ActivityAddFlashcardRetroBindi
 
         vwgrpCreateNewSet.hideByScaleDownAndFadeOut()
         imgTurnOffCreateNewSet.animate().alpha(0f).setDuration(100)
-            .setLiteListener (onEnd = {
-            imgTurnOffCreateNewSet.goGONE()
-        })
+            .setLiteListener(onEnd = {
+                imgTurnOffCreateNewSet.goGONE()
+            })
 
         hideVirtualKeyboard()
-    }}
+    }
+    }
 
-    private fun showSetNameList () {
+    private fun showButton_CreateNewSetSuggesstion() {
+        dB.btnCreateNewSetSuggestion.showByScaleUpAndFadeIn()
+    }
+
+    private fun hideButton_CreateNewSetSuggesstion() {
+        dB.btnCreateNewSetSuggestion.hideByScaleDownAndFadeOut()
+    }
+
+    private fun showSetNameList() {
         dB.rcvFlashcardSetName.animate()
-                                                .alpha(1f)
-                                                .scaleX(1f).scaleY(1f)
-                                                .setDuration(150).setInterpolator(NormalOutExtraSlowIn())
-                                                .setLiteListener (onStart = {
-                                                    dB.rcvFlashcardSetName.goVISIBLE()
-                                                })
+            .alpha(1f)
+            .scaleX(1f).scaleY(1f)
+            .setDuration(150).setInterpolator(NormalOutExtraSlowIn())
+            .setLiteListener(onStart = {
+                dB.rcvFlashcardSetName.goVISIBLE()
+            })
     }
 
     private fun hideSetNameList () {

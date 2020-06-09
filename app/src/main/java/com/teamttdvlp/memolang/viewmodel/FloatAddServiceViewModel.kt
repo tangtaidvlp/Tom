@@ -1,5 +1,6 @@
 package com.teamttdvlp.memolang.viewmodel
 
+import android.app.Application
 import androidx.lifecycle.MutableLiveData
 import com.example.dictionary.model.Vocabulary
 import com.teamttdvlp.memolang.data.model.entity.flashcard.Flashcard
@@ -10,6 +11,7 @@ import com.teamttdvlp.memolang.data.model.entity.user.User
 import com.teamttdvlp.memolang.data.model.other.new_vocabulary.TypicalRawVocabulary
 import com.teamttdvlp.memolang.model.AddFlashcardExecutor
 import com.teamttdvlp.memolang.model.AddFlashcardSharedPreference
+import com.teamttdvlp.memolang.model.TextSpeaker
 import com.teamttdvlp.memolang.model.VocabularyConverter
 import com.teamttdvlp.memolang.model.repository.FlashcardSetRepos
 import com.teamttdvlp.memolang.model.repository.UserRepos
@@ -22,28 +24,32 @@ import javax.inject.Inject
 class FloatAddServiceViewModel
 @Inject
 constructor(
+    private var app: Application,
     private var userRepos: UserRepos,
     private var addFlashcardExecutor: AddFlashcardExecutor,
     private var flashcardSetRepos: FlashcardSetRepos,
     private var userUsingHistoryRepos: UserUsingHistoryRepos,
-    private var addFlashcardSharedPreference: AddFlashcardSharedPreference) : BaseViewModel<FloatAddServiceView>() {
+    private var addFlashcardSharedPreference: AddFlashcardSharedPreference
+) : BaseViewModel<FloatAddServiceView>() {
 
-    private lateinit var userFlashcardSetList : ArrayList<FlashcardSet>
+    private lateinit var userFlashcardSetList: ArrayList<FlashcardSet>
 
-    private val vocabularyConverter : VocabularyConverter = VocabularyConverter()
+    private val vocabularyConverter: VocabularyConverter = VocabularyConverter()
 
-    var vocabulary : MutableLiveData<Vocabulary> = MutableLiveData()
-    private set
+    var vocabulary: MutableLiveData<Vocabulary> = MutableLiveData()
+        private set
+
+    private val textSpeaker = TextSpeaker(app, Language.ENGLISH_VALUE)
 
     companion object {
-        var user : User? = null
+        var user: User? = null
     }
 
     init {
         flashcardSetRepos.getAll_CardSet_WithNOCardList { cardSetList ->
             userFlashcardSetList = if (cardSetList != null) {
-                                                     cardSetList
-                                                 } else {
+                cardSetList
+            } else {
                                                      ArrayList<FlashcardSet>()
                                                  }
         }
@@ -74,6 +80,7 @@ constructor(
     private fun sendVocabularyToObserver (vocabulary : Vocabulary) {
         this.vocabulary.value = vocabulary
     }
+
 
     // ADD FLASHCARD FUNCTIONS
 
@@ -211,10 +218,14 @@ constructor(
         }
     }
 
-    private fun cachedFlashcardSetList (flashcardSetList : ArrayList<FlashcardSet>) {
+    private fun cachedFlashcardSetList(flashcardSetList: ArrayList<FlashcardSet>) {
         if (this::userFlashcardSetList.isInitialized.not()) {
             this.userFlashcardSetList = flashcardSetList
         }
+    }
+
+    fun speak(text: String) {
+        textSpeaker.speak(text)
     }
 
     fun saveUsingHistory() {

@@ -55,7 +55,7 @@ class MyCustomDialog (context : Context, attrSet : AttributeSet) : ConstraintLay
         })
 
         view.setOnClickListener {
-            hide()
+            dismiss()
         }
     }
 
@@ -88,7 +88,7 @@ class MyCustomDialog (context : Context, attrSet : AttributeSet) : ConstraintLay
         }
     }
 
-    fun hide () {
+    fun dismiss() {
         hideAnmtrList.forEach {
             it.start()
         }

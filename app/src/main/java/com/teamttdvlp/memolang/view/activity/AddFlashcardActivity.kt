@@ -8,22 +8,22 @@ import android.graphics.Color
 import android.os.Bundle
 import android.text.InputType.TYPE_NULL
 import android.view.View
-import com.teamttdvlp.memolang.view.base.BaseActivity
-import com.teamttdvlp.memolang.viewmodel.AddFlashCardViewModel
-import com.teamttdvlp.memolang.databinding.ActivityAddFlashcardBinding
-import android.view.animation.*
-import com.teamttdvlp.memolang.R
+import android.view.animation.Animation
 import android.widget.TextView
 import androidx.core.animation.addListener
 import androidx.core.content.res.ResourcesCompat
 import androidx.core.view.isVisible
+import com.teamttdvlp.memolang.R
 import com.teamttdvlp.memolang.data.model.entity.flashcard.Flashcard
 import com.teamttdvlp.memolang.data.model.entity.flashcard.FlashcardSet
-import com.teamttdvlp.memolang.view.adapter.RCVChooseLanguageAdapter
-import com.teamttdvlp.memolang.view.helper.*
+import com.teamttdvlp.memolang.databinding.ActivityAddFlashcardBinding
 import com.teamttdvlp.memolang.view.activity.iview.AddFlashcardView
+import com.teamttdvlp.memolang.view.adapter.RCVChooseLanguageAdapter
 import com.teamttdvlp.memolang.view.adapter.RCVRecentUsedLanguageAdapter
 import com.teamttdvlp.memolang.view.adapter.RCV_FlashcardSetNameAdapter
+import com.teamttdvlp.memolang.view.base.BaseActivity
+import com.teamttdvlp.memolang.view.helper.*
+import com.teamttdvlp.memolang.viewmodel.AddFlashCardViewModel
 import javax.inject.Inject
 import javax.inject.Named
 
@@ -130,7 +130,7 @@ class AddFlashcardActivity : BaseActivity<ActivityAddFlashcardBinding, AddFlashC
         if (flashcardSet == null) {
             setUp_CurrentChosenOptions_OnScreen()
         } else {
-            viewModel.showToUI(flashcardSet.name, flashcardSet.frontLanguage, flashcardSet.backLanguage)
+//            viewModel.showToUI(flashcardSet.name, flashcardSet.frontLanguage, flashcardSet.backLanguage)
         }
     }
 
@@ -138,7 +138,7 @@ class AddFlashcardActivity : BaseActivity<ActivityAddFlashcardBinding, AddFlashC
         val currentBackLang = viewModel.getCurrentBackLanguage()
         val currentFrontLang = viewModel.getCurrentFrontLanguage()
         val currentUseSetName = viewModel.getLastedUseFlashcardSetName()
-        viewModel.showToUI(currentUseSetName, currentFrontLang, currentBackLang)
+//        viewModel.showToUI(currentUseSetName, currentFrontLang, currentBackLang)
     }
 
     override fun addViewEvents() {
@@ -219,7 +219,7 @@ class AddFlashcardActivity : BaseActivity<ActivityAddFlashcardBinding, AddFlashC
 
             rcvChooseCardType.setOnItemClickListener { type ->
                 layoutAddFlashcard.edtType.setText(type)
-                dialogChooseCardType.hide()
+                dialogChooseCardType.dismiss()
             }
 
             layoutAddFlashcard.edtText.addTextChangeListener(onTextChanged = { text, _, _, _ ->
@@ -259,14 +259,14 @@ class AddFlashcardActivity : BaseActivity<ActivityAddFlashcardBinding, AddFlashC
             }
 
             btnInErrorPanelCreateNewSet.setOnClickListener {
-                dialogInvalidFlashcardSet.hide()
+                dialogInvalidFlashcardSet.dismiss()
                 layoutAddFlashcard.edtSetName.setText("")
                 layoutAddFlashcard.edtSetName.requestFocus()
                 showVirtualKeyboard()
             }
 
             btnInErrorPanelEditLanguageInfo.setOnClickListener {
-                dB.dialogInvalidFlashcardSet.hide()
+                dB.dialogInvalidFlashcardSet.dismiss()
             }
 
         }
