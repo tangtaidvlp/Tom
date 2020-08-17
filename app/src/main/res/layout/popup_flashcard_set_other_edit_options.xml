@@ -9,22 +9,23 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="3dp"
-            android:layout_marginTop="3dp"
-            android:layout_marginEnd="9dp"
-            android:layout_marginBottom="3dp"
-            android:background="@color/app_blue"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="31dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/round_5dp_app_blue_background"
+            android:paddingStart="14dp"
+            android:paddingTop="13dp"
             android:elevation="3dp"
             android:orientation="vertical"
-            android:paddingTop="8dp"
-            android:paddingBottom="8dp">
+            android:paddingEnd="14dp"
+            android:paddingBottom="13dp">
 
             <androidx.appcompat.widget.LinearLayoutCompat
                 android:id="@+id/vwgrp_edit"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_gravity="center_vertical"
-                android:layout_marginStart="7dp"
                 android:orientation="horizontal">
 
                 <ImageView
@@ -38,10 +39,10 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/segoeui"
+                    android:fontFamily="@font/seguisb"
+                    android:paddingEnd="20dp"
                     android:includeFontPadding="false"
-                    android:paddingEnd="100dp"
-                    android:text="Edit name"
+                    android:text="Edit set name"
                     android:textColor="@color/white"
                     android:textSize="16sp" />
 
@@ -50,7 +51,7 @@
             <View
                 android:layout_width="match_parent"
                 android:layout_height="0.5dp"
-                android:layout_marginTop="5dp"
+                android:layout_marginTop="9dp"
                 android:alpha="0.5"
                 android:background="@color/white" />
 
@@ -59,8 +60,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_gravity="center_vertical"
-                android:layout_marginStart="7dp"
-                android:layout_marginTop="7dp"
+                android:layout_marginTop="9dp"
                 android:orientation="horizontal">
 
                 <ImageView
@@ -74,9 +74,8 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/segoeui"
+                    android:fontFamily="@font/seguisb"
                     android:includeFontPadding="false"
-                    android:paddingEnd="100dp"
                     android:text="Delete"
                     android:textColor="@color/white"
                     android:textSize="16sp" />

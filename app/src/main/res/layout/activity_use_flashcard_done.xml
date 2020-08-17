@@ -14,7 +14,7 @@
             android:id="@+id/vwgrp_title"
             android:layout_width="0dp"
             android:layout_height="45dp"
-            android:background="@drawable/background_app_gradient_blue"
+            android:background="@drawable/background_app_gradient_theme_blue"
             android:elevation="3dp"
             android:gravity="center_vertical"
             android:orientation="horizontal"

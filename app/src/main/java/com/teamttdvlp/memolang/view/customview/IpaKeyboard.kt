@@ -30,241 +30,241 @@ class IpaKeyboard (context : Context, attrSet: AttributeSet): LinearLayout(conte
 
         btnLongI.setOnClickListener {
             val newText = "[" + focusedTextView.text.toString().removePrefix("[").removeSuffix("]") + btnLongI.text + "]"
-            focusedTextView.setText(newText)
+            focusedTextView.text = newText
         }
 
         btnI.setOnClickListener {
             val newText = "[" + focusedTextView.text.toString().removePrefix("[").removeSuffix("]") + btnI.text + "]"
-            focusedTextView.setText(newText)
+            focusedTextView.text = newText
         }
 
         btnU.setOnClickListener {
             val newText = "[" + focusedTextView.text.toString().removePrefix("[").removeSuffix("]") + btnU.text + "]"
-            focusedTextView.setText(newText)
+            focusedTextView.text = newText
         }
 
         btnLongU.setOnClickListener {
             val newText = "[" + focusedTextView.text.toString().removePrefix("[").removeSuffix("]") + btnLongU.text + "]"
-            focusedTextView.setText(newText)
+            focusedTextView.text = newText
         }
 
         btnEre.setOnClickListener {
             val newText = "[" + focusedTextView.text.toString().removePrefix("[").removeSuffix("]") + btnEre.text + "]"
-            focusedTextView.setText(newText)
+            focusedTextView.text = newText
         }
 
         btnEi.setOnClickListener {
             val newText = "[" + focusedTextView.text.toString().removePrefix("[").removeSuffix("]") + btnEi.text + "]"
-            focusedTextView.setText(newText)
+            focusedTextView.text = newText
         }
 
         btnE.setOnClickListener {
             val newText = "[" + focusedTextView.text.toString().removePrefix("[").removeSuffix("]") + btnE.text + "]"
-            focusedTextView.setText(newText)
+            focusedTextView.text = newText
         }
 
         btnIr.setOnClickListener {
             val newText = "[" + focusedTextView.text.toString().removePrefix("[").removeSuffix("]") + btnIr.text + "]"
-            focusedTextView.setText(newText)
+            focusedTextView.text = newText
         }
 
         btnLongIr.setOnClickListener {
             val newText = "[" + focusedTextView.text.toString().removePrefix("[").removeSuffix("]") + btnLongIr.text + "]"
-            focusedTextView.setText(newText)
+            focusedTextView.text = newText
         }
 
         btnLongO.setOnClickListener {
             val newText = "[" + focusedTextView.text.toString().removePrefix("[").removeSuffix("]") + btnLongO.text + "]"
-            focusedTextView.setText(newText)
+            focusedTextView.text = newText
         }
 
         btnTour.setOnClickListener {
             val newText = "[" + focusedTextView.text.toString().removePrefix("[").removeSuffix("]") + btnTour.text + "]"
-            focusedTextView.setText(newText)
+            focusedTextView.text = newText
         }
 
         btnOi.setOnClickListener {
             val newText = "[" + focusedTextView.text.toString().removePrefix("[").removeSuffix("]") + btnOi.text + "]"
-            focusedTextView.setText(newText)
+            focusedTextView.text = newText
         }
 
         btnOw.setOnClickListener {
             val newText = "[" + focusedTextView.text.toString().removePrefix("[").removeSuffix("]") + btnOw.text + "]"
-            focusedTextView.setText(newText)
+            focusedTextView.text = newText
         }
 
         btnEa.setOnClickListener {
             val newText = "[" + focusedTextView.text.toString().removePrefix("[").removeSuffix("]") + btnEa.text + "]"
-            focusedTextView.setText(newText)
+            focusedTextView.text = newText
         }
 
         btnUp.setOnClickListener {
             val newText = "[" + focusedTextView.text.toString().removePrefix("[").removeSuffix("]") + btnUp.text + "]"
-            focusedTextView.setText(newText)
+            focusedTextView.text = newText
         }
 
         btnLongA.setOnClickListener {
             val newText = "[" + focusedTextView.text.toString().removePrefix("[").removeSuffix("]") + btnLongA.text + "]"
-            focusedTextView.setText(newText)
+            focusedTextView.text = newText
         }
 
         btnOn.setOnClickListener {
             val newText = "[" + focusedTextView.text.toString().removePrefix("[").removeSuffix("]") + btnOn.text + "]"
-            focusedTextView.setText(newText)
+            focusedTextView.text = newText
         }
 
         btnAir.setOnClickListener {
             val newText = "[" + focusedTextView.text.toString().removePrefix("[").removeSuffix("]") + btnAir.text + "]"
-            focusedTextView.setText(newText)
+            focusedTextView.text = newText
         }
 
         btnAi.setOnClickListener {
             val newText = "[" + focusedTextView.text.toString().removePrefix("[").removeSuffix("]") + btnAi.text + "]"
-            focusedTextView.setText(newText)
+            focusedTextView.text = newText
         }
 
         btnAu.setOnClickListener {
             val newText = "[" + focusedTextView.text.toString().removePrefix("[").removeSuffix("]") + btnAu.text + "]"
-            focusedTextView.setText(newText)
+            focusedTextView.text = newText
         }
 
         btnP.setOnClickListener {
             val newText = "[" + focusedTextView.text.toString().removePrefix("[").removeSuffix("]") + btnP.text + "]"
-            focusedTextView.setText(newText)
+            focusedTextView.text = newText
         }
 
         btnB.setOnClickListener {
             val newText = "[" + focusedTextView.text.toString().removePrefix("[").removeSuffix("]") + btnB.text + "]"
-            focusedTextView.setText(newText)
+            focusedTextView.text = newText
         }
 
         btnT.setOnClickListener {
             val newText = "[" + focusedTextView.text.toString().removePrefix("[").removeSuffix("]") + btnT.text + "]"
-            focusedTextView.setText(newText)
+            focusedTextView.text = newText
         }
 
         btnD.setOnClickListener {
             val newText = "[" + focusedTextView.text.toString().removePrefix("[").removeSuffix("]") + btnD.text + "]"
-            focusedTextView.setText(newText)
+            focusedTextView.text = newText
         }
 
         btnSch.setOnClickListener {
             val newText = "[" + focusedTextView.text.toString().removePrefix("[").removeSuffix("]") + btnSch.text + "]"
-            focusedTextView.setText(newText)
+            focusedTextView.text = newText
         }
 
         btnDz.setOnClickListener {
             val newText = "[" + focusedTextView.text.toString().removePrefix("[").removeSuffix("]") + btnDz.text + "]"
-            focusedTextView.setText(newText)
+            focusedTextView.text = newText
         }
 
         btnK.setOnClickListener {
             val newText = "[" + focusedTextView.text.toString().removePrefix("[").removeSuffix("]") + btnK.text + "]"
-            focusedTextView.setText(newText)
+            focusedTextView.text = newText
         }
 
         btnG.setOnClickListener {
             val newText = "[" + focusedTextView.text.toString().removePrefix("[").removeSuffix("]") + btnG.text + "]"
-            focusedTextView.setText(newText)
+            focusedTextView.text = newText
         }
 
         btnF.setOnClickListener {
             val newText = "[" + focusedTextView.text.toString().removePrefix("[").removeSuffix("]") + btnF.text + "]"
-            focusedTextView.setText(newText)
+            focusedTextView.text = newText
         }
 
         btnV.setOnClickListener {
             val newText = "[" + focusedTextView.text.toString().removePrefix("[").removeSuffix("]") + btnV.text + "]"
-            focusedTextView.setText(newText)
+            focusedTextView.text = newText
         }
 
         btnTh.setOnClickListener {
             val newText = "[" + focusedTextView.text.toString().removePrefix("[").removeSuffix("]") + btnTh.text + "]"
-            focusedTextView.setText(newText)
+            focusedTextView.text = newText
         }
 
         btnDThis.setOnClickListener {
             val newText = "[" + focusedTextView.text.toString().removePrefix("[").removeSuffix("]") + btnDThis.text + "]"
-            focusedTextView.setText(newText)
+            focusedTextView.text = newText
         }
 
         btnS.setOnClickListener {
             val newText = "[" + focusedTextView.text.toString().removePrefix("[").removeSuffix("]") + btnS.text + "]"
-            focusedTextView.setText(newText)
+            focusedTextView.text = newText
         }
 
         btnZ.setOnClickListener {
             val newText = "[" + focusedTextView.text.toString().removePrefix("[").removeSuffix("]") + btnZ.text + "]"
-            focusedTextView.setText(newText)
+            focusedTextView.text = newText
         }
 
         btnLongS.setOnClickListener {
             val newText = "[" + focusedTextView.text.toString().removePrefix("[").removeSuffix("]") + btnLongS.text + "]"
-            focusedTextView.setText(newText)
+            focusedTextView.text = newText
         }
 
         btn3.setOnClickListener {
             val newText = "[" + focusedTextView.text.toString().removePrefix("[").removeSuffix("]") + btn3.text + "]"
-            focusedTextView.setText(newText)
+            focusedTextView.text = newText
         }
 
         btnM.setOnClickListener {
             val newText = "[" + focusedTextView.text.toString().removePrefix("[").removeSuffix("]") + btnM.text + "]"
-            focusedTextView.setText(newText)
+            focusedTextView.text = newText
         }
 
         btnN.setOnClickListener {
             val newText = "[" + focusedTextView.text.toString().removePrefix("[").removeSuffix("]") + btnN.text + "]"
-            focusedTextView.setText(newText)
+            focusedTextView.text = newText
         }
 
         btnNg.setOnClickListener {
             val newText = "[" + focusedTextView.text.toString().removePrefix("[").removeSuffix("]") + btnNg.text + "]"
-            focusedTextView.setText(newText)
+            focusedTextView.text = newText
         }
 
         btnH.setOnClickListener {
             val newText = "[" + focusedTextView.text.toString().removePrefix("[").removeSuffix("]") + btnH.text + "]"
-            focusedTextView.setText(newText)
+            focusedTextView.text = newText
         }
 
         btnL.setOnClickListener {
             val newText = "[" + focusedTextView.text.toString().removePrefix("[").removeSuffix("]") + btnL.text + "]"
-            focusedTextView.setText(newText)
+            focusedTextView.text = newText
         }
 
         btnR.setOnClickListener {
             val newText = "[" + focusedTextView.text.toString().removePrefix("[").removeSuffix("]") + btnR.text + "]"
-            focusedTextView.setText(newText)
+            focusedTextView.text = newText
         }
 
         btnW.setOnClickListener {
             val newText = "[" + focusedTextView.text.toString().removePrefix("[").removeSuffix("]") + btnW.text + "]"
-            focusedTextView.setText(newText)
+            focusedTextView.text = newText
         }
 
         btnJ.setOnClickListener {
             val newText = "[" + focusedTextView.text.toString().removePrefix("[").removeSuffix("]") + btnJ.text + "]"
-            focusedTextView.setText(newText)
+            focusedTextView.text = newText
         }
 
         btnI.setOnClickListener {
             val newText = "[" + focusedTextView.text.toString().removePrefix("[").removeSuffix("]") + btnI.text + "]"
-            focusedTextView.setText(newText)
+            focusedTextView.text = newText
         }
 
         btnStress.setOnClickListener {
             val newText = "[" + focusedTextView.text.toString().removePrefix("[").removeSuffix("]") + btnStress.text + "]"
-            focusedTextView.setText(newText)
+            focusedTextView.text = newText
         }
 
         btnDelete.setOnClickListener {
             val text = focusedTextView.text.toString()
-            if (text?.length != 0) {
+            if (text.length != 0) {
                 /* "/a/" => "" */
-                if (text!!.length >= 3) {
+                if (text.length >= 3) {
                     val newText = text.substring(0, text.length - 2) + "]"
-                    focusedTextView.setText(newText)
+                    focusedTextView.text = newText
                 }
             }
         }
@@ -309,7 +309,7 @@ class IpaKeyboard (context : Context, attrSet: AttributeSet): LinearLayout(conte
             quickLog("Android Virtual Keyboard is being showed y: $y and lowestPos: $lowestPosition")
             onDeviceVirtualKeyboardShow?.invoke()
         } else {
-            quickLog("Android Virtual Keyboard is being hidden")
+            quickLog("Android Virtual Keyboard is being hiddenk")
         }
 
     }

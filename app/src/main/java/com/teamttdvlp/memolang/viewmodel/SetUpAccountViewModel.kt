@@ -1,14 +1,15 @@
 package com.teamttdvlp.memolang.viewmodel
 
+import com.teamttdvlp.memolang.data.model.entity.flashcard.DEFAULT_SET_NAME
 import com.teamttdvlp.memolang.data.model.entity.flashcard.FlashcardSet
-import com.teamttdvlp.memolang.data.model.entity.flashcard.SetNameUtils
 import com.teamttdvlp.memolang.data.model.entity.user.User
-import com.teamttdvlp.memolang.model.repository.UserRepos
-import com.teamttdvlp.memolang.model.repository.UserUsingHistoryRepos
-import com.teamttdvlp.memolang.model.AddFlashcardSharedPreference
-import com.teamttdvlp.memolang.model.SearchOnlineSharedPreference
 import com.teamttdvlp.memolang.model.UserInfoStatusSharedPreference
 import com.teamttdvlp.memolang.model.repository.FlashcardSetRepos
+import com.teamttdvlp.memolang.model.repository.UserRepos
+import com.teamttdvlp.memolang.model.repository.UserUsingHistoryRepos
+import com.teamttdvlp.memolang.model.sharepref.AddFlashcardActivitySharePref
+import com.teamttdvlp.memolang.model.sharepref.EngVietDictionaryActivitySharePref
+import com.teamttdvlp.memolang.model.sharepref.SearchOnlineActivitySharePref
 import com.teamttdvlp.memolang.view.activity.iview.SetUpAccountView
 import com.teamttdvlp.memolang.view.base.BaseViewModel
 
@@ -17,22 +18,24 @@ import com.teamttdvlp.memolang.view.base.BaseViewModel
  * @see com.teamttdvlp.memolang.view.activity.SetUpAccountActivity
  */
 class SetUpAccountViewModel(
-    var userRepos : UserRepos,
+    var userRepos: UserRepos,
     var userUsingHistoryRepos: UserUsingHistoryRepos,
     var flashcardSetRepos: FlashcardSetRepos,
     var userInfoStatusSharedPreference: UserInfoStatusSharedPreference,
-    var addFlashcardSharedPreference: AddFlashcardSharedPreference,
-    var searchOnlineSharedPreference: SearchOnlineSharedPreference) : BaseViewModel<SetUpAccountView>() {
+    var addFlashcardSharedPreference: AddFlashcardActivitySharePref,
+    var engVietDictionaryActivitySharePref: EngVietDictionaryActivitySharePref,
+    var searchOnlineSharedPreference: SearchOnlineActivitySharePref
+) : BaseViewModel<SetUpAccountView>() {
 
 
-    fun checkUserInfoSetUpStatus () {
+    fun checkUserInfoSetUpStatus() {
         val userDidSetUpInfoBefore = userInfoStatusSharedPreference.didUserSetUpBasicInfoBefore()
         if (userDidSetUpInfoBefore) {
             getUserInfoAndNavigateToMenu()
         }
     }
 
-    fun getUserInfoAndNavigateToMenu () {
+    fun getUserInfoAndNavigateToMenu() {
         userRepos.triggerGetUser { user ->
             initUser(user!!)
         }
@@ -43,8 +46,8 @@ class SetUpAccountViewModel(
         addFlashcardSharedPreference.currentFrontCardLanguage = defaultFrontCardLang
         addFlashcardSharedPreference.currentBackCardLanguage = defaultBackCardLang
 
-        searchOnlineSharedPreference.currentSourceLanguage = defaultFrontCardLang
-        searchOnlineSharedPreference.currentTargetLanguage = defaultBackCardLang
+        searchOnlineSharedPreference.currentSourceLang = defaultFrontCardLang
+        searchOnlineSharedPreference.currentTargetLang = defaultBackCardLang
     }
 
     fun initUser (userInfo : User) {
@@ -59,17 +62,23 @@ class SetUpAccountViewModel(
         saveAll_Information()
     }
 
-    private fun createUserDefaultSetName (frontLang : String, backLang : String) {
-        val defaultFlashcardSet = FlashcardSet("", frontLang, backLang)
-        getUser().lastest_Used_FlashcardSetName = defaultFlashcardSet.name
+    private fun createUserDefaultSetName(frontLang: String, backLang: String) {
+        val defaultFlashcardSet = FlashcardSet(DEFAULT_SET_NAME, frontLang, backLang)
+        setDefaultUsedSetName(defaultFlashcardSet.name)
         flashcardSetRepos.insert(defaultFlashcardSet)
     }
 
-    private fun addToUser_UsedLanguageList(language : String) {
+    private fun setDefaultUsedSetName(setName: String) {
+        addFlashcardSharedPreference.lastUsedFlashcardSetName = setName
+        searchOnlineSharedPreference.lastUsedFlashcardSetName = setName
+        engVietDictionaryActivitySharePref.lastUsedFlashcardSetName = setName
+    }
+
+    private fun addToUser_UsedLanguageList(language: String) {
         userUsingHistoryRepos.addToUsedLanguageList(language)
     }
 
-    private fun saveAll_Information () {
+    private fun saveAll_Information() {
         userRepos.insertUser(getUser())
         userUsingHistoryRepos.saveUsingHistoryInfo()
         userInfoStatusSharedPreference.markUserInfo_IsSetUp()

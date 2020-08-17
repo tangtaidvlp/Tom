@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="225dp"
+        android:background="@drawable/round_top_20dp_white_background"
+        android:elevation="15dp">
+
+        <ImageView
+            android:id="@+id/btn_setting"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="31dp"
+            android:background="@drawable/image_button_setting"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="0.45"
+            android:fontFamily="@font/segoeui"
+            android:text="Settings"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@+id/btn_setting"
+            app:layout_constraintStart_toStartOf="@+id/btn_setting"
+            app:layout_constraintTop_toBottomOf="@+id/btn_setting" />
+
+        <ImageView
+            android:id="@+id/btn_bubble_search"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="31dp"
+            android:background="@drawable/image_button_bubble"
+            app:layout_constraintEnd_toStartOf="@+id/btn_translate_online"
+            app:layout_constraintStart_toEndOf="@+id/btn_setting"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="0.45"
+            android:fontFamily="@font/segoeui"
+            android:text="Bubble search"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@+id/btn_bubble_search"
+            app:layout_constraintStart_toStartOf="@+id/btn_bubble_search"
+            app:layout_constraintTop_toBottomOf="@+id/btn_bubble_search" />
+
+        <ImageView
+            android:id="@+id/btn_translate_online"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="31dp"
+            android:layout_marginEnd="40dp"
+            android:background="@drawable/image_button_translate"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="0.45"
+            android:fontFamily="@font/segoeui"
+            android:text="Translate"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@+id/btn_translate_online"
+            app:layout_constraintStart_toStartOf="@+id/btn_translate_online"
+            app:layout_constraintTop_toBottomOf="@+id/btn_translate_online" />
+
+
+        <ImageView
+            android:id="@+id/btn_dictionary"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="40dp"
+            android:background="@drawable/image_button_dictionary"
+            app:layout_constraintBottom_toTopOf="@id/txt_dictionary"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="138dp" />
+
+        <TextView
+            android:id="@+id/txt_dictionary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="36dp"
+            android:alpha="0.45"
+            android:fontFamily="@font/segoeui"
+            android:text="Dictionary"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/btn_dictionary"
+            app:layout_constraintStart_toStartOf="@+id/btn_dictionary" />
+
+        <ImageView
+            android:id="@+id/btn_button_new_set"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/image_button_new_set"
+            app:layout_constraintBottom_toTopOf="@+id/txt_add_new_set"
+            app:layout_constraintEnd_toStartOf="@+id/btn_button_add"
+            app:layout_constraintStart_toEndOf="@+id/btn_dictionary"
+            tools:layout_editor_absoluteY="138dp" />
+
+        <TextView
+            android:id="@+id/txt_add_new_set"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="36dp"
+            android:alpha="0.45"
+            android:fontFamily="@font/segoeui"
+            android:text="New set"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/btn_button_new_set"
+            app:layout_constraintStart_toStartOf="@+id/btn_button_new_set" />
+
+        <ImageView
+            android:id="@+id/btn_button_add"
+            android:layout_width="67dp"
+            android:layout_height="67dp"
+            android:layout_marginEnd="29dp"
+            android:background="@drawable/image_button_blue_add"
+            app:layout_constraintBottom_toBottomOf="@+id/txt_add_new_set"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/btn_button_new_set" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

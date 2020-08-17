@@ -35,12 +35,6 @@ class AddFlashcardActivity : BaseActivity<ActivityAddFlashcardBinding, AddFlashC
 
         private val SET_NAME = "set_name"
 
-        private val FRONT_LANGUAGE = "front_lang"
-
-        private val BACK_LANGUAGE = "back_lang"
-
-        val ADD_FLASHCARD_RESULT_CODE = 2118
-
         fun requestAddLanguage(packageContext: Context, flashcardSet: FlashcardSet) {
             val intent = Intent(packageContext, AddFlashcardActivity::class.java)
             intent.putExtra(SET_NAME, flashcardSet)
@@ -180,7 +174,6 @@ class AddFlashcardActivity : BaseActivity<ActivityAddFlashcardBinding, AddFlashC
                             setOwner = setName)
 
                     viewModel.proceedAddFlashcard(newCard)
-
 
                     rcvChooseCardType.addType(type)
                 }

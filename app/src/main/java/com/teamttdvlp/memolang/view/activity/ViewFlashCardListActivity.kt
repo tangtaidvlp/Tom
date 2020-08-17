@@ -8,15 +8,17 @@ import androidx.core.animation.addListener
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.teamttdvlp.memolang.R
-import com.teamttdvlp.memolang.view.base.BaseActivity
-import com.teamttdvlp.memolang.databinding.ActivityViewFlashCardListBinding
 import com.teamttdvlp.memolang.data.model.entity.flashcard.Flashcard
-import com.teamttdvlp.memolang.view.adapter.RCVViewFlashcardAdapter
 import com.teamttdvlp.memolang.data.model.entity.flashcard.FlashcardSet
+import com.teamttdvlp.memolang.databinding.ActivityViewFlashCardListBinding
 import com.teamttdvlp.memolang.view.activity.iview.ViewFlashcardListView
-import com.teamttdvlp.memolang.view.helper.*
+import com.teamttdvlp.memolang.view.adapter.RCVViewFlashcardAdapter
+import com.teamttdvlp.memolang.view.base.BaseActivity
+import com.teamttdvlp.memolang.view.helper.ViewModelProviderFactory
+import com.teamttdvlp.memolang.view.helper.getActivityViewModel
+import com.teamttdvlp.memolang.view.helper.goGONE
+import com.teamttdvlp.memolang.view.helper.goVISIBLE
 import com.teamttdvlp.memolang.viewmodel.ViewFlashCardListViewModel
-import java.lang.Exception
 import javax.inject.Inject
 import javax.inject.Named
 
@@ -31,22 +33,23 @@ const val UPDATED_FLASHCARD_SET  = "updaed_flcard_set"
 class ViewFlashCardListActivity : BaseActivity<ActivityViewFlashCardListBinding, ViewFlashCardListViewModel>()
                                  ,ViewFlashcardListView {
 
+    lateinit var viewModelProviderFactory: ViewModelProviderFactory
+        @Inject set
+
+    private lateinit var buttonDeleteAppearAnimator: Animator
+
+    private lateinit var buttonDeleteDisappearAnimator: Animator
+
+    lateinit var viewFlashcardAdapter: RCVViewFlashcardAdapter
+
     private var hasAChangeInList = false
 
-    private lateinit var currentViewedFlashcardSet : FlashcardSet
-
-    lateinit var viewModelProviderFactory : ViewModelProviderFactory
-    @Inject set
-
-    private lateinit var buttonDeleteAppearAnimator : Animator
-
-    private lateinit var buttonDeleteDisappearAnimator : Animator
-
-    lateinit var viewFlashcardAdapter : RCVViewFlashcardAdapter
+    private lateinit var currentViewedFlashcardSet: FlashcardSet
 
     override fun getLayoutId(): Int = R.layout.activity_view_flash_card_list
 
-    override fun takeViewModel(): ViewFlashCardListViewModel = getActivityViewModel(viewModelProviderFactory)
+    override fun takeViewModel(): ViewFlashCardListViewModel =
+        getActivityViewModel(viewModelProviderFactory)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -80,9 +83,11 @@ class ViewFlashCardListActivity : BaseActivity<ActivityViewFlashCardListBinding,
     override fun addViewEvents() { dB.apply {
         viewFlashcardAdapter.setOnItemClickListener { card ->
             preventUserFromClickingOtherItem()
-            val intent = Intent(this@ViewFlashCardListActivity, EditFlashcardActivity::class.java)
-            intent.putExtra(FLASHCARD_KEY, card)
-            startActivityForResult(intent, EDIT_FLASHCARD_REQUEST_CODE)
+            RetrofitAddFlashcardActivity.requestEditFlashcard(
+                this@ViewFlashCardListActivity,
+                card,
+                currentViewedFlashcardSet
+            )
         }
 
         viewFlashcardAdapter.setOnDeleteButtonClickListener {

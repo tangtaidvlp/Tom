@@ -1,6 +1,7 @@
 package com.teamttdvlp.memolang.view.adapter
 
 import android.content.Context
+import android.graphics.Color
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
@@ -10,7 +11,6 @@ import com.teamttdvlp.memolang.data.model.other.new_vocabulary.RawVocabulary
 import com.teamttdvlp.memolang.data.model.other.new_vocabulary.TypicalRawVocabulary
 import com.teamttdvlp.memolang.databinding.ItemSearchDictionaryBinding
 import com.teamttdvlp.memolang.view.helper.clearAll
-import com.teamttdvlp.memolang.view.helper.not
 import com.teamttdvlp.memolang.view.helper.quickLog
 import java.io.BufferedReader
 import java.io.InputStreamReader
@@ -18,18 +18,21 @@ import kotlin.math.abs
 
 class RCVSearchDictionaryAdapter(var context : Context) : RecyclerView.Adapter<RCVSearchDictionaryAdapter.ViewHolder>() {
 
-    private val DEFAULT = null
+    private val DEFAULT = Color.BLACK
 
-    var textColor : Int? = DEFAULT
+    var textColor: Int? = DEFAULT
 
-    private var vocaList : ArrayList<RawVocabulary> = ArrayList()
+    private var vocaList: ArrayList<RawVocabulary> = ArrayList()
 
-    private var full_SpecifiedPrefix_VocaList : ArrayList<RawVocabulary> = ArrayList()
+    private var full_SpecifiedPrefix_VocaList: ArrayList<RawVocabulary> = ArrayList()
 
-    private var onItemClickListener : OnItemClickListener? = null
+    private var onItemClickListener: OnItemClickListener? = null
+
+    private var onBtnBringTextUpClickListener: OnItemClickListener? = null
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        val dataBinding = ItemSearchDictionaryBinding.inflate(LayoutInflater.from(context), parent, false)
+        val dataBinding =
+            ItemSearchDictionaryBinding.inflate(LayoutInflater.from(context), parent, false)
         if (textColor != null) {
             dataBinding.txtText.setTextColor(textColor!!)
         }
@@ -44,13 +47,21 @@ class RCVSearchDictionaryAdapter(var context : Context) : RecyclerView.Adapter<R
         val vocabulary = vocaList.get(position)
         holder.bind(vocabulary.key)
         if (vocabulary is NavigableRawVocabulary) {
-            val targetVocabulary : TypicalRawVocabulary = getNavigatedRawVocabulary(vocabulary)
+            val targetVocabulary: TypicalRawVocabulary = getNavigatedRawVocabulary(vocabulary)
             holder.dataBinding.root.setOnClickListener {
                 onItemClickListener?.onClick(targetVocabulary)
+            }
+
+            holder.dataBinding.btnBringTextUp.setOnClickListener {
+                onBtnBringTextUpClickListener?.onClick(targetVocabulary)
             }
         } else {
             holder.dataBinding.root.setOnClickListener {
                 onItemClickListener?.onClick(vocabulary)
+            }
+
+            holder.dataBinding.btnBringTextUp.setOnClickListener {
+                onBtnBringTextUpClickListener?.onClick(vocabulary)
             }
         }
     }
@@ -85,23 +96,33 @@ class RCVSearchDictionaryAdapter(var context : Context) : RecyclerView.Adapter<R
         notifyItemInserted(0)
     }
 
-    fun setOnItemClickListener(onItemClickListener : (item : RawVocabulary) -> Unit) {
+    fun setOnItemClickListener(onItemClickListener: (item: RawVocabulary) -> Unit) {
         this.onItemClickListener = object : OnItemClickListener {
-            override fun onClick(item : RawVocabulary) {
+            override fun onClick(item: RawVocabulary) {
                 onItemClickListener.invoke(item)
             }
         }
     }
 
-    class ViewHolder (val dataBinding : ItemSearchDictionaryBinding): RecyclerView.ViewHolder (dataBinding.root) {
+    fun setOnBtnBringTextUpClickListener(onBtnBringTextUpClickListener: (item: RawVocabulary) -> Unit) {
+        quickLog("Setted")
+        this.onBtnBringTextUpClickListener = object : OnItemClickListener {
+            override fun onClick(item: RawVocabulary) {
+                onBtnBringTextUpClickListener.invoke(item)
+            }
+        }
+    }
 
-        fun bind(item : String) {
+    class ViewHolder(val dataBinding: ItemSearchDictionaryBinding) :
+        RecyclerView.ViewHolder(dataBinding.root) {
+
+        fun bind(item: String) {
             dataBinding.txtText.text = item
         }
     }
 
     interface OnItemClickListener {
-        fun onClick (item : RawVocabulary)
+        fun onClick(item: RawVocabulary)
     }
 
     data class VocaTextHolder (var id : Int = 0, var text : String = "")
@@ -133,8 +154,14 @@ class RCVSearchDictionaryAdapter(var context : Context) : RecyclerView.Adapter<R
     So the text has changed but only in the way it form but not length
     while Searching Algothrim listens for text change in length listener
      **/
-    private fun textChangeInLength (text : String) : Boolean = (text.length != previousText.length)
-    private fun trimAllSpacesPrefix (text : String) : String {
+    private fun textChangeInLength(text: String): Boolean {
+        quickLog("----------------------------------------------")
+        quickLog("Prev: ${previousText}")
+        quickLog("Current: $text")
+        return (text.length != previousText.length)
+    }
+
+    private fun trimAllSpacesPrefix(text: String): String {
         var result = text
         while (result.startsWith(" ")) {
             result = result.substring(1)
@@ -160,8 +187,18 @@ class RCVSearchDictionaryAdapter(var context : Context) : RecyclerView.Adapter<R
 
     fun getVocabularyByKey (key : String) : TypicalRawVocabulary? {
         val trueFormKey = key.toLowerCase().trim()
+
+        if (vocaList.size != 0) {
+            val matchKey = vocaList.first().key.toLowerCase().trim() == trueFormKey
+            if (matchKey) {
+                return vocaList.first() as TypicalRawVocabulary
+            }
+        }
+
+
         val prefix = trueFormKey.get(0).toString()
-        val corresPrefix_VocaList : ArrayList<RawVocabulary> = getCorresPrefixVocaList_AndCacheIt(prefix)
+        val corresPrefix_VocaList: ArrayList<RawVocabulary> =
+            getCorresPrefixVocaList_AndCacheIt(prefix)
         for (rawVoca in corresPrefix_VocaList) {
             if (rawVoca.key == trueFormKey) {
                 if (rawVoca is NavigableRawVocabulary) {
@@ -195,13 +232,14 @@ class RCVSearchDictionaryAdapter(var context : Context) : RecyclerView.Adapter<R
 
         if (userEditTextNormally) {
             val userIsWriting = isUserWriting(text)
-            val userIsDeleting = not(userIsWriting)
+            val userIsDeleting = userIsWriting.not()
             updatePreviousText(text)
 
             if (userIsWriting) {
                 if (textIsFirstChar(text)) {
                     val prefix = text
                     val corresPrefixList : ArrayList<RawVocabulary> = getCorresPrefixVocaList_AndCacheIt(prefix)
+                    quickLog(corresPrefixList.first().key)
                     proceedCacheSearchingLists_List(corresPrefixList)
                     return corresPrefixList
                 } else { // Text is not first character

@@ -61,7 +61,7 @@
             android:id="@+id/viewgroup_language_option"
             android:layout_width="match_parent"
             android:layout_height="43dp"
-            android:background="@drawable/background_app_gradient_blue"
+            android:background="@drawable/background_app_gradient_theme_blue"
             android:elevation="3dp"
             android:visibility="visible"
             app:layout_constraintBottom_toBottomOf="parent"

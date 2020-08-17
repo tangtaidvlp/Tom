@@ -13,7 +13,7 @@
         android:id="@+id/activity"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/background_app_gradient_blue"
+        android:background="@drawable/background_app_gradient_theme_blue"
         android:focusable="true">
 
         <androidx.constraintlayout.widget.Guideline
@@ -30,7 +30,7 @@
             android:orientation="horizontal"
             app:layout_constraintGuide_percent="0.5"/>
 
-<!--        Set name Options-->
+        <!--        Set name Options-->
 
         <TextView
             android:id="@+id/txt_title_set_name"
@@ -181,7 +181,7 @@
                 android:gravity="center_vertical"
                 android:text="Front"
                 android:textColor="@color/white"
-                android:textSize="13sp"
+                android:textSize="14.5sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -195,7 +195,7 @@
                 android:gravity="center_vertical"
                 android:inputType="text"
                 android:textColor="@color/white"
-                android:textSize="13sp"
+                android:textSize="14.5sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@id/txt_title_front_language"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -216,7 +216,7 @@
                 android:gravity="center_vertical"
                 android:text="Back"
                 android:textColor="@color/white"
-                android:textSize="13sp"
+                android:textSize="14.5sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -228,7 +228,7 @@
                 android:fontFamily="@font/segoeuisl"
                 android:gravity="center_vertical"
                 android:textColor="@color/white"
-                android:textSize="13sp"
+                android:textSize="14.5sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@id/txt_title_back_language"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -250,7 +250,7 @@
             app:layout_constraintTop_toBottomOf="@+id/vwgrp_set_name_languages" />
 
 
-<!--        Tạo set mới-->
+        <!--        Tạo set mới-->
 
         <ImageView
             android:id="@+id/img_turn_off_create_new_set"
@@ -265,7 +265,7 @@
             android:id="@+id/vwgrp_create_new_set"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:background="@drawable/background_app_gradient_blue"
+            android:background="@drawable/background_app_gradient_theme_blue"
             android:paddingTop="18dp"
             android:paddingBottom="20dp"
             android:paddingStart="15dp"
@@ -289,7 +289,7 @@
                 android:orientation="vertical"
                 app:layout_constraintGuide_percent="0.5"/>
 
-<!--             Set name-->
+            <!--             Set name-->
             <TextView
                 android:id="@+id/txt_title_new_set_name"
                 android:layout_width="wrap_content"
@@ -333,7 +333,7 @@
                 app:layout_constraintStart_toStartOf="@id/edt_new_set_name"
                 app:layout_constraintEnd_toEndOf="@id/edt_new_set_name"/>
 
-<!--            Front language-->
+            <!--            Front language-->
             <TextView
                 android:id="@+id/txt_title_new_set_front_language"
                 android:layout_width="wrap_content"
@@ -391,7 +391,7 @@
                 app:layout_constraintStart_toStartOf="@id/edt_new_set_front_language"
                 app:layout_constraintEnd_toEndOf="@id/edt_new_set_front_language"/>
 
-<!--            Back language-->
+            <!--            Back language-->
             <TextView
                 android:id="@+id/txt_title_new_set_back_language"
                 android:layout_width="wrap_content"
@@ -451,7 +451,7 @@
                 app:layout_constraintStart_toStartOf="@id/edt_new_set_back_language"
                 app:layout_constraintEnd_toEndOf="@id/edt_new_set_back_language"/>
 
-<!--            CREATE NEW SET BUTTON-->
+            <!--            CREATE NEW SET BUTTON-->
 
             <TextView
                 android:id="@+id/btn_panel_create_new_set"
@@ -471,7 +471,7 @@
                 app:layout_constraintTop_toBottomOf="@id/edt_new_set_back_language"
                 app:layout_constraintEnd_toEndOf="parent"/>
 
-<!--            ERROR VIEW GROUP-->
+            <!--            ERROR VIEW GROUP-->
 
             <androidx.appcompat.widget.LinearLayoutCompat
                 android:id="@+id/vwgrp_create_set_error"
@@ -479,7 +479,7 @@
                 android:layout_height="0dp"
                 android:paddingStart="@dimen/common_dialog_margin_start"
                 android:paddingEnd="@dimen/common_dialog_margin_end"
-                android:background="@drawable/background_app_gradient_blue"
+                android:background="@drawable/background_app_gradient_theme_blue"
                 android:gravity="center"
                 android:alpha="0.0"
                 android:visibility="gone"
@@ -895,203 +895,10 @@
             app:layout_constraintTop_toTopOf="@id/viewgroup_front_flashcard" />
 
         <!--        đáy hộp-->
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/vwgrp_box_bottom"
-            android:layout_width="0dp"
-            android:layout_height="150dp"
-            android:layout_marginStart="15dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginEnd="15dp"
-            android:elevation="3dp"
-            android:translationZ="1.5dp"
-            android:visibility="gone"
-            app:cardBackgroundColor="#D2D2D2"
-            app:cardCornerRadius="20dp"
-            app:cardElevation="3dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/viewgroup_back_flashcard">
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:translationZ="2dp"
-                app:cardBackgroundColor="#D2D2D2"
-                app:cardCornerRadius="20dp"
-                app:cardElevation="0dp"
-                app:cardMaxElevation="0dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <ImageView
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:background="@drawable/round_5dp_white_border"
-                android:elevation="3.9dp"
-                android:translationZ="2dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
 
         <!--         Thẻ có sẵn trong hộp-->
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/vwgrp_card_in_box"
-            android:layout_width="0dp"
-            android:layout_height="150dp"
-            android:background="@drawable/round_10dp_white_background"
-            android:elevation="1.5dp"
-            android:translationZ="3dp"
-            android:visibility="gone"
-            app:layout_constraintBottom_toBottomOf="@id/vwgrp_box_bottom"
-            app:layout_constraintEnd_toEndOf="@id/vwgrp_box_bottom"
-            app:layout_constraintStart_toStartOf="@id/vwgrp_box_bottom"
-            app:layout_constraintTop_toTopOf="@id/vwgrp_box_bottom">
-
-            <androidx.appcompat.widget.LinearLayoutCompat
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:gravity="center_horizontal"
-                android:orientation="vertical"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.5"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.6">
-
-                <TextView
-                    android:id="@+id/txt_card_in_box_text"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:alpha="1.0"
-                    android:background="@android:color/transparent"
-                    android:fontFamily="@font/seguisb"
-                    android:gravity="left|center_vertical"
-                    android:includeFontPadding="false"
-                    android:paddingStart="6dp"
-                    android:paddingTop="1dp"
-                    android:paddingEnd="6dp"
-                    android:scrollbars="vertical"
-                    android:text="October"
-                    android:textColor="@color/use_flashcard_grey_text_color"
-                    android:textSize="20sp"
-                    android:visibility="visible"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.0" />
-
-                <androidx.appcompat.widget.LinearLayoutCompat
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="2dp"
-                    android:gravity="center"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:id="@+id/txt_card_in_box_type"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:alpha="1.0"
-                        android:background="@android:color/transparent"
-                        android:fontFamily="@font/segoeui"
-                        android:gravity="center"
-                        android:hint="Type"
-                        android:includeFontPadding="false"
-                        android:paddingLeft="5dp"
-                        android:paddingTop="6dp"
-                        android:scrollbars="vertical"
-                        android:text="Noun"
-                        android:textColor="@color/use_flashcard_grey_text_color"
-                        android:textSize="16sp"
-                        android:visibility="visible"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.0"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintVertical_bias="0.0" />
-
-                </androidx.appcompat.widget.LinearLayoutCompat>
-
-                <androidx.appcompat.widget.AppCompatTextView
-                    android:id="@+id/txt_card_in_box_pronunciation"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:alpha="1.0"
-                    android:background="@android:color/transparent"
-                    android:editable="false"
-                    android:fontFamily="@font/sitka_display_regular"
-                    android:gravity="center"
-                    android:hint="/'oktebe'/"
-                    android:paddingStart="6dp"
-                    android:paddingTop="1dp"
-                    android:paddingEnd="6dp"
-                    android:scrollbars="vertical"
-                    android:textColor="@color/use_flashcard_grey_text_color"
-                    android:textSize="16sp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.0" />
-
-
-            </androidx.appcompat.widget.LinearLayoutCompat>
-
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
 
         <!--       nắp hộp -->
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/vwgrp_box_cover_layer"
-            android:layout_width="0dp"
-            android:layout_height="150dp"
-            android:layout_marginStart="15dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginEnd="15dp"
-            android:background="@drawable/round_5dp_50percent_white_background_black_border"
-            android:elevation="2dp"
-            android:translationZ="6dp"
-            android:visibility="gone"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/viewgroup_back_flashcard">
-
-            <TextView
-                android:id="@+id/txt_box_set_name"
-                android:layout_width="wrap_content"
-                android:layout_height="30dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginBottom="80dp"
-                android:background="@drawable/round_right_5dp_black_background"
-                android:elevation="10dp"
-                android:fontFamily="@font/seguisb"
-                android:gravity="center_vertical"
-                android:inputType="textNoSuggestions|text"
-                android:paddingStart="16dp"
-                android:paddingEnd="26dp"
-                android:paddingBottom="1dp"
-                android:text="English - Vietnamese"
-                android:textColor="@color/white"
-                android:textColorHint="#777777"
-                android:textSize="16sp"
-                android:translationZ="5dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.0" />
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
 
 
         <androidx.appcompat.widget.LinearLayoutCompat
@@ -1214,6 +1021,30 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/viewgroup_back_flashcard" />
 
+        <ImageView
+            android:id="@+id/img_flashcard_right_receiver"
+            android:layout_width="25dp"
+            android:layout_height="50dp"
+            android:background="@drawable/round_left_50dp_app_blue_background"
+            android:elevation="12dp"
+            android:scaleX="0.0"
+            android:scaleY="0.0"
+            app:layout_constraintBottom_toBottomOf="@id/viewgroup_front_flashcard"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/viewgroup_front_flashcard" />
+
+        <ImageView
+            android:id="@+id/img_flashcard_left_receiver"
+            android:layout_width="25dp"
+            android:layout_height="50dp"
+            android:background="@drawable/round_right_50dp_app_blue_background"
+            android:elevation="12dp"
+            android:scaleX="0.0"
+            android:scaleY="0.0"
+            app:layout_constraintBottom_toBottomOf="@id/viewgroup_front_flashcard"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/viewgroup_front_flashcard" />
+
         <com.teamttdvlp.memolang.view.customview.MyCustomDialog
             android:id="@+id/dialog_exit"
             android:layout_width="0dp"
@@ -1237,4 +1068,5 @@
             app:layout_constraintRight_toRightOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
 </layout>

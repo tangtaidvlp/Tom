@@ -15,30 +15,33 @@ import com.teamttdvlp.memolang.data.model.entity.flashcard.Flashcard
 import com.teamttdvlp.memolang.data.model.entity.flashcard.FlashcardSet
 import com.teamttdvlp.memolang.data.model.entity.language.Language
 import com.teamttdvlp.memolang.model.AddFlashcardExecutor
+import com.teamttdvlp.memolang.model.repository.FlashcardSetRepos
 import com.teamttdvlp.memolang.model.repository.UserRepos
 import com.teamttdvlp.memolang.model.repository.UserUsingHistoryRepos
-import com.teamttdvlp.memolang.model.SearchOnlineSharedPreference
-import com.teamttdvlp.memolang.model.repository.FlashcardSetRepos
+import com.teamttdvlp.memolang.model.sharepref.SearchOnlineActivitySharePref
 import com.teamttdvlp.memolang.view.activity.iview.SearchVocabularyView
 import com.teamttdvlp.memolang.view.base.BaseViewModel
 import com.teamttdvlp.memolang.view.helper.quickLog
 import java.io.IOException
 import java.util.*
 
-class SearchOnlineViewModel(var app: Application,
-                            var userRepos : UserRepos,
-                            var flashcardSetRepos: FlashcardSetRepos,
-                            var addFlashcardExecutor: AddFlashcardExecutor,
-                            var userUsingHistoryRepos: UserUsingHistoryRepos,
-                            var searchOnlineSharedPreference: SearchOnlineSharedPreference) : BaseViewModel<SearchVocabularyView>() {
+class SearchOnlineViewModel(
+    var app: Application,
+    private var userRepos: UserRepos,
+    private var flashcardSetRepos: FlashcardSetRepos,
+    private var addFlashcardExecutor: AddFlashcardExecutor,
+    private var userUsingHistoryRepos: UserUsingHistoryRepos,
+    private var searchOnline_SharedPref: SearchOnlineActivitySharePref
+) : BaseViewModel<SearchVocabularyView>() {
 
     private var translation = ObservableField<String>()
     private var translatedText: String? = null
     private var connected: Boolean = false
     private lateinit var translate: Translate
-    private lateinit var onTranslateListener : OnTranslateListener
+    private lateinit var onTranslateListener: OnTranslateListener
     private var requestList = ArrayList<String>()
-    private val connectivityManager : ConnectivityManager
+    private val connectivityManager: ConnectivityManager
+
 
     init {
         getTranslateService()
@@ -71,40 +74,38 @@ class SearchOnlineViewModel(var app: Application,
         addSearchedCardToHistory(newCard)
         userUsingHistoryRepos.addToRecent_OnlineSearchedFlashcardList(newCard)
         userUsingHistoryRepos.addToRecent_AddedFlashcardList(newCard)
-        updateUserFlashcardSets(newCard.setOwner)
+        updateLastUsedFlashcardSetName(newCard.setOwner)
         addToUserOwnCardTypes(newCard.type)
     }
 
-    private fun addToUserOwnCardTypes (cardType : String) {
+    private fun addToUserOwnCardTypes(cardType: String) {
         getUser().addToCardTypeList(cardType)
     }
 
-    fun getUserOwnCardTypes() : ArrayList<String> {
+    fun getUserOwnCardTypes(): ArrayList<String> {
         return getUser().ownCardTypeList
     }
 
 
-    private fun updateUserFlashcardSets (setName : String) {
-        val user = getUser()
-        user.lastest_Used_FlashcardSetName = setName
-        userRepos.updateUser(user)
+    private fun updateLastUsedFlashcardSetName(setName: String) {
+        searchOnline_SharedPref.lastUsedFlashcardSetName = setName
     }
 
-    private fun addSearchedCardToHistory (newCard : Flashcard) {
+    private fun addSearchedCardToHistory(newCard: Flashcard) {
         userUsingHistoryRepos.addToRecent_OnlineSearchedFlashcardList(newCard)
     }
 
-    fun addToUsedLanguageList (language : String) {
+    fun addToUsedLanguageList(language: String) {
         userUsingHistoryRepos.addToUsedLanguageList(language)
     }
 
     fun updateUserRecentTargetLang (targetLang : String) {
-        searchOnlineSharedPreference.currentTargetLanguage = targetLang
+        searchOnline_SharedPref.currentBackCardLanguage = targetLang
         userRepos.updateUser(getUser())
     }
 
     fun updateUserRecentSourceLang (sourceLang : String) {
-        searchOnlineSharedPreference.currentSourceLanguage = sourceLang
+        searchOnline_SharedPref.currentFrontCardLanguage = sourceLang
         userRepos.updateUser(getUser())
     }
 
@@ -149,8 +150,7 @@ class SearchOnlineViewModel(var app: Application,
         }
         try {
             requestList.add(requestText)
-            // TODO (Process translating text here  {{{
-            /*val translation = translate.translate(
+            val translation = translate.translate(
                 this.text,
                 Translate.TranslateOption.sourceLanguage(this.sourceLang),
                 Translate.TranslateOption.targetLanguage(this.targetLang),
@@ -158,10 +158,7 @@ class SearchOnlineViewModel(var app: Application,
             )
 
             translatedText = translation.translatedText
-            translatedText = htmlDecode(translatedText + "")*/
-            // TODO (Process translating text code block }}}
-            Thread.sleep(1000)
-            translatedText = "$targetLang translation of ${this.text}"
+            translatedText = htmlDecode(translatedText + "")
             // This statement must wait the translation code block above complete
             // so while translating is not done cause of slow connection
             // User can clear all text so those translation is no longer necessary
@@ -299,15 +296,15 @@ class SearchOnlineViewModel(var app: Application,
     }
 
     fun getCurrentSourceLanguage(): String {
-        return searchOnlineSharedPreference.currentSourceLanguage
+        return searchOnline_SharedPref.currentSourceLang
     }
 
     fun getCurrentTargetLanguage(): String {
-        return searchOnlineSharedPreference.currentTargetLanguage
+        return searchOnline_SharedPref.currentTargetLang
     }
 
     fun getLastedUsedFlashcardSet() : String{
-        return getUser().lastest_Used_FlashcardSetName
+        return searchOnline_SharedPref.lastUsedFlashcardSetName
     }
 
     fun getAllFlashcardSetWithNOCardList (onGet : (ArrayList<FlashcardSet>) -> Unit) {

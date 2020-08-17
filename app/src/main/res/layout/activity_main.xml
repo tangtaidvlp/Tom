@@ -111,9 +111,8 @@
             app:layout_constraintTop_toBottomOf="@id/root" />
 
     <TextView
-            android:id="@+id/textView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
             android:layout_marginTop="43dp"
             android:fontFamily="@font/segoeui"
             android:text="Processing"

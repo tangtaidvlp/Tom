@@ -1,19 +1,23 @@
 package com.teamttdvlp.memolang.data.model.entity.flashcard
 
-import androidx.room.*
+import androidx.room.ColumnInfo
+import androidx.room.Entity
+import androidx.room.Ignore
+import androidx.room.PrimaryKey
 import com.teamttdvlp.memolang.data.model.entity.flashcard.SetNameUtils.Companion.getSetNameFromLangPair
 import java.io.Serializable
 
-@Entity(tableName = "flashcard_set")
-class FlashcardSet constructor (
+const val DEFAULT_SET_NAME = ""
 
+@Entity(tableName = "flashcard_set")
+class FlashcardSet constructor(
     /**
      * Check out init {} code block, if field `name` is empty, it will
      * be set to default
      */
     @PrimaryKey
     @ColumnInfo(name = "setName")
-    var name : String,
+    var name: String,
 
     var frontLanguage : String,
 
@@ -23,7 +27,7 @@ class FlashcardSet constructor (
     var flashcards: ArrayList<Flashcard> = ArrayList()
 
     init {
-        if (name.isEmpty()) {
+        if (name == DEFAULT_SET_NAME) {
             name = getSetNameFromLangPair(frontLanguage, backLanguage)
         }
     }

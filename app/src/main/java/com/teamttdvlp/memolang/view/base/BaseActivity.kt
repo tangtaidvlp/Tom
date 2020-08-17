@@ -3,15 +3,15 @@ package com.teamttdvlp.memolang.view.base
 import android.content.Context
 import android.os.Bundle
 import android.view.WindowManager
+import android.view.inputmethod.InputMethodManager
+import android.view.inputmethod.InputMethodManager.RESULT_UNCHANGED_SHOWN
+import android.view.inputmethod.InputMethodManager.SHOW_IMPLICIT
 import androidx.databinding.DataBindingUtil
 import androidx.databinding.ViewDataBinding
 import androidx.fragment.app.FragmentActivity
 import androidx.lifecycle.ViewModel
-import dagger.android.AndroidInjection
-import android.view.inputmethod.InputMethodManager.SHOW_IMPLICIT
-import android.view.inputmethod.InputMethodManager
-import android.view.inputmethod.InputMethodManager.RESULT_UNCHANGED_SHOWN
 import com.teamttdvlp.memolang.R
+import dagger.android.AndroidInjection
 
 
 abstract class BaseActivity <T : ViewDataBinding, V : ViewModel> : FragmentActivity() {
@@ -40,6 +40,7 @@ abstract class BaseActivity <T : ViewDataBinding, V : ViewModel> : FragmentActiv
         addViewEvents()
         addEventsListener()
         addAnimationEvents()
+        updateTheme()
     }
 
     override fun finish() {
@@ -73,8 +74,8 @@ abstract class BaseActivity <T : ViewDataBinding, V : ViewModel> : FragmentActiv
     }
 
     fun setStatusBarColor (color : Int) {
-        window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
-        window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
+        window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS)
+        window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS)
         window.statusBarColor = color
     }
 
@@ -84,15 +85,17 @@ abstract class BaseActivity <T : ViewDataBinding, V : ViewModel> : FragmentActiv
 
     open fun addEventsListener() {}
 
-    open fun initProperties () {}
+    open fun initProperties() {}
+
+    open fun updateTheme() {}
 
     // Create Enter Transition For Activity
-    open fun overrideEnterAnim () {
+    open fun overrideEnterAnim() {
         overridePendingTransition(R.anim.from_right_to_centre, R.anim.nothing)
     }
 
     // Create Exit Transition For Activity
-    open fun overrideExitAnim () {
+    open fun overrideExitAnim() {
         overridePendingTransition(R.anim.nothing, R.anim.from_centre_to_right)
     }
 

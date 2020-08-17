@@ -14,54 +14,30 @@ import com.teamttdvlp.memolang.model.VocabularyConverter
 import com.teamttdvlp.memolang.model.repository.FlashcardSetRepos
 import com.teamttdvlp.memolang.model.repository.UserRepos
 import com.teamttdvlp.memolang.model.repository.UserUsingHistoryRepos
+import com.teamttdvlp.memolang.model.sharepref.EngVietDictionaryActivitySharePref
 import com.teamttdvlp.memolang.view.activity.iview.SeeVocabularyView
 import com.teamttdvlp.memolang.view.base.BaseViewModel
 import com.teamttdvlp.memolang.view.helper.quickLog
 import java.util.*
 
-const val NAVIGATION_TAG = "<nav>"
-
-const val TEXT = 0
-const val PRONUNCIATION = 1
-const val TYPE = 2
-const val USING = 3
-const val USINGS = 2
-const val NONE = "_"
-
-const val DETAIL_TYPE = 0
-const val DETAIL_TRANSLATION = 1
-
-const val GROUP_MEAN = 0
-const val GROUP_EXAMPLES = 1
-
-const val EXAMPLE_TEXT = 0
-const val EXAMPLE_MEAN = 1
-
-const val USINGS_DIVIDER = "]["
-const val EXAMPLES_DEVIDER = "<exd>"
-const val MEAN_AND_EXAMPLE_GROUPS_DIVIDER = "<md>"
-const val MEAN_AND_EXAMPLE_JOINT= "<ex>"
-const val MEAN_AND_EXAMPLE_DEVIDER= ":"
-const val PARTS_DEVIDER = "<pd>"
-const val USING_DETAILS_JOINT= "/"
-const val NAVIGATE_TAG = "<nav>"
-
-class SeeVocabularyActivityViewModel (
-                                    var app : Application,
-                                    var userRepos: UserRepos,
-                                    var flashcardSetRepos: FlashcardSetRepos,
-                                    var addFlashcardExecutor: AddFlashcardExecutor,
-                                    var userUsingHistoryRepos: UserUsingHistoryRepos) : BaseViewModel<SeeVocabularyView>() {
+class EngVietDictionaryActivityViewModel(
+    app: Application,
+    private var userRepos: UserRepos,
+    private var flashcardSetRepos: FlashcardSetRepos,
+    private var addFlashcardExecutor: AddFlashcardExecutor,
+    private var userUsingHistoryRepos: UserUsingHistoryRepos,
+    private var dictionaryActivity_SharePref: EngVietDictionaryActivitySharePref
+) : BaseViewModel<SeeVocabularyView>() {
 
     private val vocabulary = MutableLiveData<Vocabulary>()
 
     private val textSpeaker = TextSpeaker(app, ENGLISH_VALUE)
 
-    private val vocabularyConverter : VocabularyConverter = VocabularyConverter()
+    private val vocabularyConverter: VocabularyConverter = VocabularyConverter()
 
-    fun getVocabulary () : MutableLiveData<Vocabulary> = vocabulary
+    fun getVocabulary(): MutableLiveData<Vocabulary> = vocabulary
 
-    fun getAll_RecentSearchedVocaList (onGetAllSearchHistory : (ArrayList<TypicalRawVocabulary>) -> Unit) {
+    fun getAll_RecentSearchedVocaList(onGetAllSearchHistory: (ArrayList<TypicalRawVocabulary>) -> Unit) {
         userUsingHistoryRepos.getRecent_SearchedVocabularyList (onGetAllSearchHistory)
     }
 
@@ -116,12 +92,12 @@ class SeeVocabularyActivityViewModel (
     }
 
     private fun updateUserLastedUsedFlashcardSet (setName : String) {
-        getUser().lastest_Used_FlashcardSetName = setName
+        dictionaryActivity_SharePref.lastUsedFlashcardSetName = setName
         userRepos.updateUser(getUser())
     }
 
     fun getLastedUseFlashcardSetName () : String {
-        return getUser().lastest_Used_FlashcardSetName
+        return dictionaryActivity_SharePref.lastUsedFlashcardSetName
     }
 
     private fun addToUserOwnCardTypes (cardType : String) {

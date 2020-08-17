@@ -1,5 +1,6 @@
 package com.teamttdvlp.memolang.view.activity
-import android.animation.ValueAnimator
+import android.animation.ObjectAnimator
+import android.animation.PropertyValuesHolder
 import android.annotation.SuppressLint
 import android.content.Context
 import android.content.Intent
@@ -7,16 +8,18 @@ import android.graphics.Color
 import android.os.Bundle
 import android.text.InputType
 import android.text.InputType.TYPE_NULL
-import android.view.Gravity
 import android.view.View
+import android.view.View.SCALE_X
+import android.view.View.SCALE_Y
+import android.view.animation.AccelerateDecelerateInterpolator
 import android.view.animation.Animation
 import android.view.animation.DecelerateInterpolator
 import android.view.animation.LinearInterpolator
 import android.view.inputmethod.EditorInfo
-import android.widget.EditText
-import androidx.core.view.doOnPreDraw
+import androidx.core.animation.addListener
 import androidx.core.view.isVisible
-import androidx.interpolator.view.animation.FastOutSlowInInterpolator
+import androidx.core.view.marginEnd
+import androidx.core.view.marginStart
 import com.teamttdvlp.memolang.R
 import com.teamttdvlp.memolang.data.model.entity.flashcard.Flashcard
 import com.teamttdvlp.memolang.data.model.entity.flashcard.FlashcardSet
@@ -30,50 +33,47 @@ import com.teamttdvlp.memolang.view.customview.MyGestureDetector
 import com.teamttdvlp.memolang.view.customview.NormalOutExtraSlowIn
 import com.teamttdvlp.memolang.view.helper.*
 import com.teamttdvlp.memolang.viewmodel.AddFlashCardViewModel
-import java.lang.Math.pow
 import javax.inject.Inject
 import javax.inject.Named
-import kotlin.math.sqrt
 
+const val KEYBOARD_DISAPPEAR_INTERVAL = 50L
 
 class RetrofitAddFlashcardActivity : BaseActivity<ActivityAddFlashcardRetroBinding, AddFlashCardViewModel>()
     ,AddFlashcardView {
 
     companion object {
 
-        private val SET_NAME = "set_name"
+        private val ADD_REQUEST_FLASHCARD_SET = "add_set_name"
 
-        private val FRONT_LANGUAGE = "front_lang"
+        private val EDIT_REQUEST_FLASHCARD_SET = "edit_set_name"
 
-        private val BACK_LANGUAGE = "back_lang"
-
-        val ADD_FLASHCARD_RESULT_CODE = 2118
+        private val EDIT_REQUEST_FLASHCARD = "nef"
 
         fun requestAddLanguage(packageContext: Context, flashcardSet: FlashcardSet) {
             val intent = Intent(packageContext, RetrofitAddFlashcardActivity::class.java)
-            intent.putExtra(SET_NAME, flashcardSet)
+            intent.putExtra(ADD_REQUEST_FLASHCARD_SET, flashcardSet)
+            packageContext.startActivity(intent)
+        }
+
+        fun requestEditFlashcard(
+            packageContext: Context,
+            flashcard: Flashcard,
+            flashcardSet: FlashcardSet
+        ) {
+            val intent = Intent(packageContext, RetrofitAddFlashcardActivity::class.java)
+            intent.putExtra(EDIT_REQUEST_FLASHCARD, flashcard)
+            intent.putExtra(EDIT_REQUEST_FLASHCARD_SET, flashcardSet)
             packageContext.startActivity(intent)
         }
     }
 
     // The image will stay on screen for a while before disappearing
-    private val TIME_THAT_SAVED_FLASHCARD_IMAGE_STAY_ON_SCREEN = 400L
-
-    private var currentFocusedLanguageTextView: EditText? = null
-
-    private var isInChooseLanguageMode = false
 
     private var isIPAKeyboardVisible = false
 
     private var isShowingFrontCard = true
 
     private var hasStartedEdit = false
-
-    private var savedCardWidth = 0
-
-    private var savedCardHeight = 0
-
-    private var thereIsAnyCardInbox : Boolean = true
 
     private var userEndAdding = false
 
@@ -93,14 +93,18 @@ class RetrofitAddFlashcardActivity : BaseActivity<ActivityAddFlashcardRetroBindi
     lateinit var rcvBackLangRecentChosenLanguageAdapter: RCVRecentUsedLanguageAdapter
         @Inject set
 
-
     lateinit var rcvFlashcardSetNameAdapter: RCV_Generic_SimpleListAdapter<FlashcardSet>
         @Inject set
-
 
     lateinit var viewModelProviderFactory: ViewModelProviderFactory
         @Inject set
 
+
+    private var requestEditFlashcard: Flashcard? = null
+
+    private var requestEditFlashcardSet: FlashcardSet? = null
+
+    private var requestAdd_FlashcardSet: FlashcardSet? = null
 
     override fun getLayoutId(): Int = R.layout.activity_add_flashcard_retro
 
@@ -112,79 +116,87 @@ class RetrofitAddFlashcardActivity : BaseActivity<ActivityAddFlashcardRetroBindi
         super.onCreate(savedInstanceState)
         setStatusBarColor(resources.getColor(R.color.app_blue))
         viewModel.setUpView(this)
-        recalculateFlashcardSetBox()
-    }
 
-    private fun recalculateFlashcardSetBox () { dB.apply {
-        viewgroupFrontFlashcard.doOnPreDraw {
-            with (it) {
-                val ratio : Double = (height.toDouble() / width.toDouble())
-                val smallCardW = width - 30.dp()
-                val smallCardH  = (smallCardW * ratio).toInt()
-
-                savedCardWidth = smallCardW
-                savedCardHeight = smallCardH
-
-                val boxH = smallCardH + 30.dp()
-
-                vwgrpCardInBox.layoutParams.height = smallCardH
-                vwgrpCardInBox.layoutParams.width = smallCardW
-
-                vwgrpBoxBottom.layoutParams.height = boxH
-                vwgrpBoxBottom.layoutParams.width = width
-
-                vwgrpBoxCoverLayer.layoutParams.height = boxH
-                vwgrpBoxCoverLayer.layoutParams.width = width
-
-                vwgrpBoxBottom.requestLayout()
-                vwgrpBoxCoverLayer.requestLayout()
-                vwgrpCardInBox.requestLayout()
-            }
+        if (requestEditFlashcard != null) {
+            startEditting()
+            showVirtualKeyboard()
+            dB.edtText.requestFocus()
         }
-    }}
+    }
 
     override fun onPause() {
         super.onPause()
         viewModel.saveUsingHistory()
     }
 
+    override fun initProperties() {
+        requestAdd_FlashcardSet = getAddFlashcardRequest()
+
+        val editInfo = getEditFlashcardRequest()
+        if (editInfo != null) {
+            requestEditFlashcard = editInfo.first
+            requestEditFlashcardSet = editInfo.second
+        }
+    }
+
     override fun addViewControls() {
         dB.apply {
+            // imgFlashcardRightReceiver Width : 50dp
+            // imgFlashcardRightReceiver Height : 50dp
+            // Check it in .xml
+            imgFlashcardRightReceiver.pivotX = 25.dp().toFloat()
+            imgFlashcardRightReceiver.pivotY = 25.dp().toFloat()
+
+            imgFlashcardLeftReceiver.pivotX = 0f
+            imgFlashcardLeftReceiver.pivotY = 25.dp().toFloat()
+
             disableEdtPronunciation()
             setUpEditTextsFeatures()
+            setUpChooseLanguageRecyclerViews()
+
             // Choose Flashcard SET NAME Recycler View
             rcvFlashcardSetName.adapter = rcvFlashcardSetNameAdapter
             viewModel.getAllFlashcardSetWithNoCardList { flashcardSetList ->
                 rcvFlashcardSetNameAdapter.setData(flashcardSetList)
 
-                val addRequest_From_SpecifiedFlashcardSet = (getAddFlashcardRequest() != null)
-                val thereIsNoFlashcardSet = (flashcardSetList.size == 0)
-                if (addRequest_From_SpecifiedFlashcardSet) {
-                    val flashcardSet = getAddFlashcardRequest()
-                    showToUI(
-                        flashcardSet!!.name,
-                        flashcardSet.frontLanguage,
-                        flashcardSet.backLanguage
+                // Set up request
+                val thereIs_AddRequest = (getAddFlashcardRequest() != null)
+                val thereIs_EditFlashcardRequest = (getEditFlashcardRequest() != null)
+                if (thereIs_AddRequest) {
+                    showFlashcardSetInfoOnScreen(
+                        requestAdd_FlashcardSet!!.name,
+                        requestAdd_FlashcardSet!!.frontLanguage,
+                        requestAdd_FlashcardSet!!.backLanguage
                     )
 
+                } else if (thereIs_EditFlashcardRequest) {
+                    showFlashcardSetInfoOnScreen(
+                        requestEditFlashcardSet!!.name,
+                        requestEditFlashcardSet!!.frontLanguage,
+                        requestEditFlashcardSet!!.backLanguage
+                    )
+
+                    showRequestEditFlashcard_Info_OnScreen(requestEditFlashcard!!)
+
                 } else {
-                    if (thereIsNoFlashcardSet) {
+                    val thereIsNoFlashcardSetAvailable = (flashcardSetList.size == 0)
+                    if (thereIsNoFlashcardSetAvailable) {
                         val lastUsedFrontLang = viewModel.getCurrentFrontLanguage()
                         val lastUsedBackLang = viewModel.getCurrentBackLanguage()
                         txtSetName.hint =
                             viewModel.getDefaultSetName(lastUsedFrontLang, lastUsedBackLang)
-                        showToUI(
+                        showFlashcardSetInfoOnScreen(
                             lastSetName = "",
                             lastFrontLang = lastUsedFrontLang,
                             lastBackLang = lastUsedBackLang
                         )
 
-                    } else { // There have been some FlashcardSet and No AddFlashcardRequest from any specified set
+                    } else { // There have been some Flashcard Sets and No AddFlashcardRequest from any specified set
                         val lastUsedFrontLang = viewModel.getCurrentFrontLanguage()
                         val lastUsedBackLang = viewModel.getCurrentBackLanguage()
                         val lastUsedFlashcardSet = viewModel.getLastedUseFlashcardSetName()
 
-                        showToUI(
+                        showFlashcardSetInfoOnScreen(
                             lastSetName = lastUsedFlashcardSet
                             , lastFrontLang = lastUsedFrontLang
                             , lastBackLang = lastUsedBackLang
@@ -194,18 +206,6 @@ class RetrofitAddFlashcardActivity : BaseActivity<ActivityAddFlashcardRetroBindi
 
             }
 
-            // Choose LANGUAGE RecyclerView
-            rcvFrontChooseLanguage.adapter = rcvFrontLangChooseLanguageAdapter
-            rcvBackChooseLanguage.adapter = rcvBackLangChooseLanguageAdapter
-
-            // Recent CHOSEN LANGUAGE RecyclerView
-            rcvFrontRecentChosenLanguage.adapter = rcvFrontLangRecentChosenLanguageAdapter
-            rcvBackRecentChosenLanguage.adapter = rcvBackLangRecentChosenLanguageAdapter
-
-            viewModel.getUsedLanguageList { recentUsedLanguageList ->
-                rcvFrontLangRecentChosenLanguageAdapter.setData(recentUsedLanguageList)
-                rcvBackLangRecentChosenLanguageAdapter.setData(recentUsedLanguageList)
-            }
 
             // Choose TYPE RecyclerView
             rcvChooseCardType.addTypes(viewModel.getUserOwnCardTypes())
@@ -223,15 +223,47 @@ class RetrofitAddFlashcardActivity : BaseActivity<ActivityAddFlashcardRetroBindi
         }
     }
 
+    private fun setUpChooseLanguageRecyclerViews() {
+        dB.apply {
 
-    private fun setUpEditTextsFeatures() { dB.apply {
-        edtText.imeOptions = EditorInfo.IME_ACTION_NEXT
-        edtText.setRawInputType(InputType.TYPE_CLASS_TEXT)
+            // Choose LANGUAGE RecyclerView
+            rcvFrontChooseLanguage.adapter = rcvFrontLangChooseLanguageAdapter
+            rcvBackChooseLanguage.adapter = rcvBackLangChooseLanguageAdapter
 
-        edtType.imeOptions = EditorInfo.IME_ACTION_NEXT
-        edtType.setRawInputType(InputType.TYPE_CLASS_TEXT)
+            // Recent CHOSEN LANGUAGE RecyclerView
+            rcvFrontRecentChosenLanguage.adapter = rcvFrontLangRecentChosenLanguageAdapter
+            rcvBackRecentChosenLanguage.adapter = rcvBackLangRecentChosenLanguageAdapter
 
-        edtTranslation.imeOptions = EditorInfo.IME_ACTION_NEXT
+            viewModel.getUsedLanguageList { recentUsedLanguageList ->
+                rcvFrontLangRecentChosenLanguageAdapter.setData(recentUsedLanguageList)
+                rcvBackLangRecentChosenLanguageAdapter.setData(recentUsedLanguageList)
+            }
+
+        }
+    }
+
+    private fun showRequestEditFlashcard_Info_OnScreen(requestEditFlashcard: Flashcard) {
+        dB.apply {
+            edtText.setText(requestEditFlashcard.text)
+            edtType.setText(requestEditFlashcard.type)
+            edtPronunciation.text = requestEditFlashcard.pronunciation
+
+            edtTranslation.setText(requestEditFlashcard.translation)
+            edtExample.setText(requestEditFlashcard.example)
+            edtExampleTranslation.setText(requestEditFlashcard.meanOfExample)
+        }
+    }
+
+
+    private fun setUpEditTextsFeatures() {
+        dB.apply {
+            edtText.imeOptions = EditorInfo.IME_ACTION_NEXT
+            edtText.setRawInputType(InputType.TYPE_CLASS_TEXT)
+
+            edtType.imeOptions = EditorInfo.IME_ACTION_NEXT
+            edtType.setRawInputType(InputType.TYPE_CLASS_TEXT)
+
+            edtTranslation.imeOptions = EditorInfo.IME_ACTION_NEXT
         edtTranslation.setRawInputType(InputType.TYPE_CLASS_TEXT)
 
         edtExample.imeOptions = EditorInfo.IME_ACTION_NEXT
@@ -247,7 +279,11 @@ class RetrofitAddFlashcardActivity : BaseActivity<ActivityAddFlashcardRetroBindi
         dB.edtPronunciation.inputType = TYPE_NULL
     }
 
-    private fun showToUI(lastSetName: String, lastFrontLang: String, lastBackLang: String) {
+    private fun showFlashcardSetInfoOnScreen(
+        lastSetName: String,
+        lastFrontLang: String,
+        lastBackLang: String
+    ) {
         dB.apply {
             txtSetName.text = lastSetName
             txtFrontLang.text = lastFrontLang
@@ -318,12 +354,12 @@ class RetrofitAddFlashcardActivity : BaseActivity<ActivityAddFlashcardRetroBindi
             imgSwipeZone.setOnTouchListener(object : MyGestureDetector(this@RetrofitAddFlashcardActivity) {
 
                 override fun onSwipeRight() {
-                    proceedAddFlashcard()
+                    proceedAddOrSaveFlashcard()
                     userEndAdding = true
                 }
 
                 override fun onSwipeLeft() {
-                    proceedAddFlashcard()
+                    proceedAddOrSaveFlashcard()
                     userEndAdding = false
                 }
 
@@ -456,6 +492,7 @@ class RetrofitAddFlashcardActivity : BaseActivity<ActivityAddFlashcardRetroBindi
                 rcvFlashcardSetNameAdapter.addNewFlashcardSet(newSet)
             }
 
+
             imgTurnOffCreateNewSet.setOnClickListener {
                 hideCreateNewFlashcardSetPanel()
             }
@@ -477,65 +514,47 @@ class RetrofitAddFlashcardActivity : BaseActivity<ActivityAddFlashcardRetroBindi
         dB.rcvChooseCardType.hideByScaleDownAndFadeOut()
     }
 
-    private fun proceedAddFlashcard () { dB.apply {
+    private fun proceedAddOrSaveFlashcard() {
+        dB.apply {
 
-        if (hasStartedEdit.not()) {
-            return
-        }
+            if (hasStartedEdit.not()) {
+                return
+            }
 
-        quickLog("On Swipe Right")
-        hideIPAKeyboard()
-        val text = edtText.text.toString()
-        val translation = edtTranslation.text.toString()
-        val example = edtExample.text.toString()
-        val meanOfExample = edtExampleTranslation.text.toString()
-        val type = edtType.text.toString()
-        val pronunciation = edtPronunciation.text.toString()
-        val frontLanguage = txtFrontLang.text.toString()
-        val backLanguage = txtBackLang.text.toString()
-        val setName = txtSetName.text.toString()
+            hideIPAKeyboard()
+            val text = edtText.text.toString()
+            val translation = edtTranslation.text.toString()
+            val example = edtExample.text.toString()
+            val meanOfExample = edtExampleTranslation.text.toString()
+            val type = edtType.text.toString()
+            val pronunciation = edtPronunciation.text.toString()
+            val frontLanguage = txtFrontLang.text.toString()
+            val backLanguage = txtBackLang.text.toString()
+            val setName = txtSetName.text.toString()
 
-        val newCard = Flashcard(id = 0, text = text,
-            translation = translation,
-            example = example,
-            meanOfExample = meanOfExample,
-            type = type,
-            pronunciation = pronunciation,
-            frontLanguage = frontLanguage,
-            backLanguage = backLanguage,
-            setOwner = setName)
+            val isEditingFlashcard = (requestEditFlashcard != null)
+            val id = if (isEditingFlashcard) {
+                requestEditFlashcard!!.id
+            } else 0
 
-        viewModel.proceedAddFlashcard(newCard)
+            val newCard = Flashcard(
+                id = id, text = text,
+                translation = translation,
+                example = example,
+                meanOfExample = meanOfExample,
+                type = type,
+                pronunciation = pronunciation,
+                frontLanguage = frontLanguage,
+                backLanguage = backLanguage,
+                setOwner = setName
+            )
+
+            viewModel.proceedAddFlashcard(newCard)
         if (type.isNotEmpty()) {
             rcvChooseCardType.addType(type)
         }
     }}
 
-    private fun playResetCardAnims(startDelay : Long = 0) { dB.apply {
-        // Base on Pytagorean Theorem c = sqrt ( a^2 + b^2 )
-        val circleTargetRadius = sqrt(pow(viewgroupFrontFlashcard.height.toDouble(), 2.0) + pow(viewgroupFrontFlashcard.width.toDouble(), 2.0))
-        val scaleRatio = circleTargetRadius.toFloat()  / imgResetFlashcardCircle.height.toFloat()
-
-        // Phase 1: Scale Up and fade in
-        imgResetFlashcardCircle.animate()
-            .alpha(1f)
-            .scaleX(scaleRatio).scaleY(scaleRatio)
-            .setDuration(200).setInterpolator(NormalOutExtraSlowIn()).setStartDelay(startDelay)
-            .setLiteListener (onStart = {
-                imgResetFlashcardCircle.isClickable = true
-            }, onEnd = {
-
-                // Phase 2 : Fade out
-                clearAllCardInfomation()
-                edtText.requestFocus()
-
-                imgResetFlashcardCircle.animate().setStartDelay(0).setDuration(150).alpha(0f).setLiteListener (onEnd = {
-                    imgResetFlashcardCircle.scaleX = 1f / scaleRatio
-                    imgResetFlashcardCircle.scaleY = 1f / scaleRatio
-                    imgResetFlashcardCircle.isClickable = false
-                })
-            })
-    }}
 
     private fun clearAllCardInfomation () { dB.apply {
         edtText.setText("")
@@ -587,7 +606,6 @@ class RetrofitAddFlashcardActivity : BaseActivity<ActivityAddFlashcardRetroBindi
             })
     }
 
-
     private fun View.showByScaleUpAndFadeIn () {
         this.animate().alpha(1f)
             .scaleX(1f).scaleY(1f)
@@ -610,7 +628,6 @@ class RetrofitAddFlashcardActivity : BaseActivity<ActivityAddFlashcardRetroBindi
             showVirtualKeyboard()
         })
     }}
-
 
     override fun hideCreateNewFlashcardSetPanel() { dB.apply {
         setStatusBarColor(resources.getColor(R.color.app_blue))
@@ -663,112 +680,92 @@ class RetrofitAddFlashcardActivity : BaseActivity<ActivityAddFlashcardRetroBindi
         dB.edtText.setHintTextColor(Color.parseColor("#9E9E9E"))
     }
 
-    private fun playSaveAnimations(delayTime : Long = 0, onEnd : () -> Unit = {}) { dB.apply {
-        Thread(Runnable {
-            Thread.sleep(delayTime)
-            runOnUiThread {
-                // PHASE 1
-                val boxAppear = doActionOnBox {
-                    if ((it == vwgrpCardInBox) && (thereIsAnyCardInbox.not())) {
-                        return@doActionOnBox
-                    }
+    private val SAVE_ANIM_PHASE1_DURATION = 120L
 
-                    it.alpha = 0f
-                    it.goVISIBLE()
-                    it.animate()
-                        .alpha(1f)
-                        .setDuration(200).interpolator = LinearInterpolator()
+    private val SAVE_ANIM_PHASE2_DURATION = 150L
+
+    private fun playSaveAnimations(delayTime: Long = 0, onEnd: () -> Unit = {}) {
+        dB.apply {
+            Thread(Runnable {
+                Thread.sleep(delayTime)
+                runOnUiThread {
+                    imgFlashcardRightReceiver.animate()
+                        .scaleX(1f).scaleY(1f)
+                        .setDuration(SAVE_ANIM_PHASE1_DURATION).interpolator =
+                        NormalOutExtraSlowIn()
+
+                    playFlashcardGoTo_Right_ReceiverAnim(onEnd = onEnd)
                 }
+            }).start()
+        }
+    }
 
-                val boxMoveUp = doActionOnBox {
-                    if ((it == vwgrpCardInBox) && (thereIsAnyCardInbox.not())) {
-                        return@doActionOnBox
-                    }
+    private fun playFlashcardGoTo_Left_ReceiverAnim(onEnd: () -> Unit) {
+        val viewWillPerformSaveAnim = if (isShowingFrontCard)
+            dB.viewgroupFrontFlashcard
+        else
+            dB.viewgroupBackFlashcard
 
-                    it.translationY = 90f
-                    it.animate()
-                        .translationY(0f)
-                        .setDuration(200).interpolator = LinearInterpolator()
-                }
-
-                val swipeFunctionsDisappear = vwgrpSwipeFunctions.animate()
-                    .alpha(0f)
+        viewWillPerformSaveAnim.animate() // Phase 1
+            .scaleX(0.1f).scaleY(0.1f)
+            .translationX(-viewWillPerformSaveAnim.width * 0.1f)
+            .setDuration(SAVE_ANIM_PHASE2_DURATION).setInterpolator(LinearInterpolator())
+            .setLiteListener(onEnd = {
+                viewWillPerformSaveAnim.animate() // Phase 2
+                    .translationX(-viewWillPerformSaveAnim.width / 2f - viewWillPerformSaveAnim.marginStart * 1.2f)
                     .setDuration(200).setInterpolator(LinearInterpolator())
-                    .setListener(null) // Reset this listener because it has been registered before in
-                // startEditting() function, if the code is updated. Please becareful of this kind of listener, it is affected on all animate() functions called thorough project
-                // which can run something that is unexpected
+                    .setLiteListener(onEnd = { // Phase 3
 
-
-                if (edtType.text.isEmpty()) {
-                    edtType.animate().alpha(0f).duration = 200
-                    
-                    val edtTextScaleOut = ValueAnimator.ofInt(edtType.height, 0).apply {
-                        setTarget(edtType)
-                        duration = 200
-                        addUpdateListener {
-                            edtType.layoutParams.height = it.animatedValue as Int
-                            edtType.requestLayout()
-                        }
-                        start()
-                    }
-                }
-
-                if (edtPronunciation.text.isEmpty()) {
-                    edtPronunciation.animate().alpha(0f).duration = 200
-                    val edtPronunciationScaleOut = ValueAnimator.ofInt(edtPronunciation.height, 0).apply {
-                        setTarget(edtPronunciation)
-                        duration = 200
-                        addUpdateListener {
-                            edtPronunciation.layoutParams.height = it.animatedValue as Int
-                            edtPronunciation.requestLayout()
-                        }
-                        start()
-                    }
-                }
-
-                edtText.gravity = Gravity.CENTER_HORIZONTAL
-
-                val theSmallRatio = savedCardWidth.toFloat() / viewgroupFrontFlashcard.width.toFloat()
-                val theCardShrink = viewgroupFrontFlashcard.animate()
-                    .scaleX(theSmallRatio).scaleY(theSmallRatio)
-                    .setDuration(200).setInterpolator(LinearInterpolator())
-                    .setLiteListener (onEnd = {
-                        // PHASE 2
-                        val theLidGoDown = vwgrpBoxCoverLayer.animate().translationY((vwgrpBoxCoverLayer.height + 30.dp()).toFloat())
-                            .setDuration(400).setInterpolator(FastOutSlowInInterpolator())
-                            .setLiteListener (onEnd = {
-
-                                // PHASE 3
-                                val distanceY = viewgroupFrontFlashcard.height + 20.dp() + (viewgroupFrontFlashcard.height - savedCardHeight) / 2
-                                val theCardGoDown = viewgroupFrontFlashcard.animate().translationY(distanceY.toFloat())
-                                    .setDuration(350).setInterpolator(FastOutSlowInInterpolator())
-                                    .setLiteListener (onEnd = {
-
-                                        // PHASE 4 (ENDING)
-                                        val theLidGoUp = vwgrpBoxCoverLayer.animate().translationY(0f)
-                                            .setDuration(300).setInterpolator(FastOutSlowInInterpolator()).setLiteListener {
-                                                onEnd.invoke()
-                                            }
-
-                                        val lowerCardElevation = ValueAnimator.ofFloat(viewgroupFrontFlashcard.elevation, vwgrpCardInBox.elevation + vwgrpCardInBox.translationZ + 1.dp())
-                                        lowerCardElevation.duration = 100
-                                        lowerCardElevation.addUpdateListener { it ->
-                                            viewgroupFrontFlashcard.elevation = it.animatedValue as Float
-                                        }
-                                        lowerCardElevation.setTarget(viewgroupFrontFlashcard)
-                                        lowerCardElevation.start()
-                                    })
-                            })
+                        val bulgeXAnimator = PropertyValuesHolder.ofFloat(SCALE_X, 1f, 1.2f, 1f)
+                        val bulgeYAnimator = PropertyValuesHolder.ofFloat(SCALE_Y, 1f, 1.2f, 1f)
+                        val bulgeAnimator = ObjectAnimator.ofPropertyValuesHolder(
+                            dB.imgFlashcardLeftReceiver,
+                            bulgeXAnimator,
+                            bulgeYAnimator
+                        )
+                        bulgeAnimator.duration = 280
+                        bulgeAnimator.interpolator = AccelerateDecelerateInterpolator()
+                        bulgeAnimator.start()
+                        bulgeAnimator.addListener(onEnd = {
+                            onEnd.invoke()
+                        })
                     })
-            }
-        }).start()
-    }}
+            })
+    }
 
-    private fun doActionOnBox (action : (View) -> Unit) { dB.apply {
-          action.invoke(vwgrpBoxBottom)
-          action.invoke(vwgrpCardInBox)
-          action.invoke(vwgrpBoxCoverLayer)
-    }}
+    private fun playFlashcardGoTo_Right_ReceiverAnim(onEnd: () -> Unit) {
+        val viewWillPerformSaveAnim = if (isShowingFrontCard)
+            dB.viewgroupFrontFlashcard
+        else
+            dB.viewgroupBackFlashcard
+
+        viewWillPerformSaveAnim.animate() // Phase 1
+            .scaleX(0.1f).scaleY(0.1f)
+            .translationX(viewWillPerformSaveAnim.width * 0.1f)
+            .setDuration(SAVE_ANIM_PHASE2_DURATION).setInterpolator(LinearInterpolator())
+            .setLiteListener(onEnd = {
+                viewWillPerformSaveAnim.animate() // Phase 2
+                    .translationX(viewWillPerformSaveAnim.width / 2f + viewWillPerformSaveAnim.marginEnd * 1.2f)
+                    .setDuration(200).setInterpolator(LinearInterpolator())
+                    .setLiteListener(onEnd = { // Phase 3
+
+                        val bulgeXAnimator = PropertyValuesHolder.ofFloat(SCALE_X, 1f, 1.2f, 1f)
+                        val bulgeYAnimator = PropertyValuesHolder.ofFloat(SCALE_Y, 1f, 1.2f, 1f)
+                        val bulgeAnimator = ObjectAnimator.ofPropertyValuesHolder(
+                            dB.imgFlashcardRightReceiver,
+                            bulgeXAnimator,
+                            bulgeYAnimator
+                        )
+                        bulgeAnimator.duration = 280
+                        bulgeAnimator.interpolator = AccelerateDecelerateInterpolator()
+                        bulgeAnimator.start()
+                        bulgeAnimator.addListener(onEnd = {
+                            onEnd.invoke()
+                        })
+                    })
+            })
+    }
+
 
     private fun startEditting () { dB.apply {
         vwgrpSwipeFunctions.animate().alpha(0f).setDuration(100)
@@ -789,16 +786,18 @@ class RetrofitAddFlashcardActivity : BaseActivity<ActivityAddFlashcardRetroBindi
             dB.edtTranslation.requestFocus()
 
         } else { // is showing back card
-            showFrontCard_AndUpdateStatus()
+            showFrontCard()
             dB.edtText.requestFocus()
         }
     }
 
 
-    private fun showFrontCard_AndUpdateStatus () { dB.apply {
-        viewgroupBackFlashcard.startAnimation( turnUpFrontCard_After_TurnDownBackCard )
-        isShowingFrontCard = true
-    }}
+    private fun showFrontCard() {
+        dB.apply {
+            viewgroupBackFlashcard.startAnimation(turnUpFrontCard_After_TurnDownBackCard)
+            isShowingFrontCard = true
+        }
+    }
 
     private fun showBackCard_AndUpdateStatus () { dB.apply {
         viewgroupFrontFlashcard.startAnimation( turnUpBackCard_After_TurnDownFrontCard )
@@ -830,10 +829,27 @@ class RetrofitAddFlashcardActivity : BaseActivity<ActivityAddFlashcardRetroBindi
             return null
         }
 
-        val flashcardSet = bundle.getSerializable(SET_NAME) as FlashcardSet
+        val flashcardSet = bundle.getSerializable(ADD_REQUEST_FLASHCARD_SET) as FlashcardSet?
         return flashcardSet
     }
 
+    private fun getEditFlashcardRequest(): Pair<Flashcard, FlashcardSet>? {
+        val bundle = intent.extras
+
+        if (bundle == null) {
+            return null
+        }
+
+        val flashcard = bundle.getSerializable(EDIT_REQUEST_FLASHCARD) as Flashcard?
+        val flashcardSet = bundle.getSerializable(EDIT_REQUEST_FLASHCARD_SET) as FlashcardSet?
+
+        if ((flashcard == null) || (flashcardSet == null)) {
+            return null
+        }
+
+        return Pair(flashcard, flashcardSet)
+
+    }
 
     // VIEW IMPLEMENTED METHODS
 
@@ -869,7 +885,7 @@ class RetrofitAddFlashcardActivity : BaseActivity<ActivityAddFlashcardRetroBindi
 
     override fun showTextInputError() {
         if (isShowingFrontCard.not()) {
-            showFrontCard_AndUpdateStatus()
+            showFrontCard()
         }
         dB.edtText.requestFocus()
         dB.edtText.hint = "Text can not be empty"
@@ -897,73 +913,82 @@ class RetrofitAddFlashcardActivity : BaseActivity<ActivityAddFlashcardRetroBindi
         })
     }
 
-    private val KEYBOARD_DISAPPEAR_INTERVAL = 50L
-
     override fun onAddFlashcardSuccess() { dB.apply {
         if (userEndAdding) {
             hideVirtualKeyboard()
-            dB.txtBoxSetName.text = dB.txtSetName.text.toString()
+            playSaveAnimations(delayTime = KEYBOARD_DISAPPEAR_INTERVAL, onEnd = {
+                finish()
+            })
             currentFocus?.clearFocus()
+        } else { // User continues adding another flashcard
+            playSaveAnimationButKeepAdding(onEnd = {
+                resetFrontCardState()
+                resetBackCardState()
+                isShowingFrontCard = true
 
-            val currentSetName = dB.txtSetName.text.toString()
-            viewModel.getFlashcardSetByName(currentSetName) { full_InfoFlashcardSet, err ->
-                if (err == null) {
-                    if ((full_InfoFlashcardSet != null) && (full_InfoFlashcardSet.flashcards.size > 1)) {
-                        val secondLastCard = full_InfoFlashcardSet.flashcards.get(full_InfoFlashcardSet.flashcards.size - 2)
-                        setUpCardInbox(secondLastCard)
-                    } else { // This is empty set, so in virtual box there's no card
-                        vwgrpCardInBox.goGONE()
-                        thereIsAnyCardInbox = false
-                    }
-                } else { // Load flashcard set has error
-                    quickLog("Error happened")
-                    err.printStackTrace()
+                clearAllCardInfomation()
+
+                hideLeftFlashcardReceiver()
+                playResetFlashcardAnim()
+
+                edtText.requestFocus()
+            })
+        }
+    }
+    }
+
+    private fun playSaveAnimationButKeepAdding(delayTime: Long = 0, onEnd: () -> Unit = {}) {
+        dB.apply {
+            Thread(Runnable {
+                Thread.sleep(delayTime)
+                runOnUiThread {
+                    imgFlashcardLeftReceiver.animate()
+                        .scaleX(1f).scaleY(1f)
+                        .setDuration(SAVE_ANIM_PHASE1_DURATION).interpolator =
+                        NormalOutExtraSlowIn()
+
+                    playFlashcardGoTo_Left_ReceiverAnim(onEnd = onEnd)
                 }
-
-
-                val onEndSaveAnimation = {
-                    Thread(Runnable {
-                        Thread.sleep(75)
-                        runOnUiThread {
-                            finish()
-                        }
-                    }).start()
-                }
-
-                if (isShowingFrontCard.not()) {
-                    showFrontCard_AndUpdateStatus()
-                    playSaveAnimations(delayTime = turnUpFrontCard_After_TurnDownBackCard.duration * 2 + KEYBOARD_DISAPPEAR_INTERVAL, onEnd = onEndSaveAnimation)
-                } else {
-                    playSaveAnimations(delayTime = KEYBOARD_DISAPPEAR_INTERVAL, onEnd = onEndSaveAnimation)
-                }
-            }
+            }).start()
         }
-        else { // User continues adding another flashcard
-            if (isShowingFrontCard .not()) {
-                showFrontCard_AndUpdateStatus()
-                playResetCardAnims(startDelay = turnUpFrontCard_After_TurnDownBackCard.duration + 50)
-            } else
-            playResetCardAnims()
+    }
+
+
+    private fun hideLeftFlashcardReceiver() {
+        dB.imgFlashcardLeftReceiver.animate()
+            .scaleX(0f).scaleY(0f)
+            .setDuration(200L).interpolator = LinearInterpolator()
+    }
+
+    private fun playResetFlashcardAnim() {
+        dB.apply {
+            viewgroupFrontFlashcard.alpha = 0f
+            viewgroupFrontFlashcard.scaleX = 0.6f
+            viewgroupFrontFlashcard.scaleY = 0.6f
+            viewgroupFrontFlashcard.animate()
+                .alpha(1f)
+                .scaleX(1f).scaleY(1f)
+                .setDuration(200L).interpolator = NormalOutExtraSlowIn()
         }
-    }}
+    }
 
-    private fun setUpCardInbox (flashcard : Flashcard) { dB.apply {
-        txtCardInBoxText.text = flashcard.text
-
-        if (flashcard.type.isNotEmpty()) {
-            txtCardInBoxType.text = flashcard.type
-        } else {
-            txtCardInBoxType.goGONE()
+    private fun resetFrontCardState() {
+        dB.apply {
+            viewgroupBackFlashcard.translationX = 0f
+            viewgroupBackFlashcard.scaleX = 1f
+            viewgroupBackFlashcard.scaleY = 1f
+            viewgroupFrontFlashcard.goVISIBLE()
         }
+    }
 
-        if (flashcard.pronunciation.isNotEmpty()) {
-            txtCardInBoxPronunciation.text = flashcard.pronunciation
-        } else {
-            txtCardInBoxPronunciation.goGONE()
+    private fun resetBackCardState() {
+        dB.apply {
+            viewgroupBackFlashcard.translationX = 0f
+            viewgroupBackFlashcard.scaleX = 1f
+            viewgroupBackFlashcard.scaleY = 1f
+            viewgroupBackFlashcard.goINVISIBLE()
         }
-
-        thereIsAnyCardInbox = true
-    }}
+    }
 
     private fun addToUsedLanguageList(language: String) {
         rcvFrontLangRecentChosenLanguageAdapter.addLanguage(language)

@@ -59,8 +59,11 @@ import com.teamttdvlp.memolang.data.model.other.vocabulary.MultiMeanExample
 import com.teamttdvlp.memolang.databinding.LayoutFloatAddBodyBinding
 import com.teamttdvlp.memolang.databinding.LayoutFloatAddIconBinding
 import com.teamttdvlp.memolang.view.activity.MenuActivity
+import com.teamttdvlp.memolang.view.activity.SearchOnlineActivity
 import com.teamttdvlp.memolang.view.activity.iview.FloatAddServiceView
-import com.teamttdvlp.memolang.view.adapter.*
+import com.teamttdvlp.memolang.view.adapter.RCVRecent_SearchDictionary_Adapter
+import com.teamttdvlp.memolang.view.adapter.RCVSearchDictionaryAdapter
+import com.teamttdvlp.memolang.view.adapter.RCVSimpleListChooseSetNameAdapter
 import com.teamttdvlp.memolang.view.customview.StuckAtFirstInterpolator
 import com.teamttdvlp.memolang.view.customview.see_vocabulary.*
 import com.teamttdvlp.memolang.view.customview.see_vocabulary.sub_example.SubExampleTranslationView
@@ -187,9 +190,6 @@ class FloatingAddServiceManager private constructor(
 
         // SEARCH AND SEE VOCA PART
 
-        lateinit var chooseLanguageAdapter: RCVChooseLanguageAdapter
-            @Inject set
-
         lateinit var viewModel: FloatAddServiceViewModel
             @Inject set
 
@@ -197,15 +197,6 @@ class FloatingAddServiceManager private constructor(
             @Inject set
 
         lateinit var rcvRecentSearchDicAdapter: RCVRecent_SearchDictionary_Adapter
-            @Inject set
-
-        lateinit var rcvChooseTypeAdapter: RCVSimpleListAdapter2
-            @Inject set
-
-        lateinit var rcvChooseTransAdapter : RCVSimpleListAdapter2
-            @Inject set
-
-        lateinit var rcvChooseExampleAdapter : RCVGenericSimpleListAdapter2<SingleMeanExample>
             @Inject set
 
         lateinit var rcvChooseSetNameAdapter : RCVSimpleListChooseSetNameAdapter
@@ -272,11 +263,11 @@ class FloatingAddServiceManager private constructor(
                     val newVocaMean = VocabularyMeanView(
                         applicationContext, usingTranslationAndExample.translation)
 
-                    newVocaMean.button.setOnClickListener {
+                    newVocaMean.addButton.setOnClickListener {
                         edtPanelType.setText(using.type)
                         updateTxtTrans(usingTranslationAndExample.translation)
-                        updateRCVChooseExample(usingTranslationAndExample)
-                        addFCPanelAppear.start()
+                        updateChooseExampleFields(usingTranslationAndExample)
+                        showPanelAddFlashcard()
                     }
 
                     if (isFirstMeanTextView) {
@@ -338,15 +329,12 @@ class FloatingAddServiceManager private constructor(
             if (transAndExampsList.size != 0) {
                 updateTxtTrans(transList.first())
             }
-
-            rcvChooseTransAdapter.setData(transList)
         }
 
-        private fun updateRCVChooseExample (transAndEx : TransAndExamp) {
+        private fun updateChooseExampleFields(transAndEx: TransAndExamp) {
             if (transAndEx.subExampleList.size != 0) {
                 val fullSingleExampleList =
                     convertExampleListTo_FullSingleExampleList(transAndEx.subExampleList)
-                rcvChooseExampleAdapter.setData(fullSingleExampleList)
                 updateTxtExampleAndExampleMean(fullSingleExampleList.first())
             } else {
                 updateTxtExampleAndExampleMean(null)
@@ -357,6 +345,9 @@ class FloatingAddServiceManager private constructor(
             if (example != null) {
                 floatManager.bodyDB.edtPanelExample.setText(example.text)
                 floatManager.bodyDB.edtPanelMeanExample.setText(example.mean)
+            } else {
+                floatManager.bodyDB.edtPanelExample.setText("")
+                floatManager.bodyDB.edtPanelMeanExample.setText("")
             }
         }
 
@@ -403,7 +394,7 @@ class FloatingAddServiceManager private constructor(
                 val firstUsing = usingList.first()
                 updateRCVChooseTrans(firstUsing)
                 val firstTransAndExamp = firstUsing.transAndExamsList.first()
-                updateRCVChooseExample(firstTransAndExamp)
+                updateChooseExampleFields(firstTransAndExamp)
             }
         }}
 
@@ -747,15 +738,6 @@ class FloatingAddServiceManager private constructor(
                 rcvChooseSetNameAdapter.setData(it)
             }
 
-            // Choose LANGUAGE
-//            rcvChooseLanguage.adapter = chooseLanguageAdapter
-//            viewModel.getProcessedLanguageList { languageList ->
-//                chooseLanguageAdapter.setData(languageList)
-//            }
-
-            // Choose Card TYPE
-//            rcvChooseCardType.addTypes(viewModel.getUserOwnCardTypes())
-
             // SEARCH dictionary
             rcvDictionary.adapter = rcvSearchDictionaryAdapter
             rcvRecentSearchDic.adapter = rcvRecentSearchDicAdapter
@@ -779,7 +761,7 @@ class FloatingAddServiceManager private constructor(
             floatManager.bodyDB.apply {
 
                 btnAdd.setOnClickListener {
-                    addFCPanelAppear.start()
+                    showPanelAddFlashcard()
                 }
 
                 btnSpeaker.setOnClickListener {
@@ -812,104 +794,15 @@ class FloatingAddServiceManager private constructor(
                 imgBlackBgAddFlashcardPanel.setOnClickListener {
                     addFCPanelDisappear.start()
                     rcvChooseSetName.goGONE()
-                    rcvChooseCardType.goGONE()
-                    rcvChooseExample.goGONE()
-                    rcvChooseTranslation.goGONE()
                 }
 
-                rcvChooseTypeAdapter.setOnItemClickListener { type ->
-                    val corresUsing: Using
-                    for (using in usingList) {
-                        if (using.type == type) {
-                            corresUsing = using
-                            updateRCVChooseTrans(corresUsing)
-                            updateRCVChooseExample(corresUsing.transAndExamsList.first())
-                            edtPanelType.setText(corresUsing.type)
-                            break
-                        }
-                    }
-                    rcvChooseCardType.goGONE()
-                    rcvChooseExample.goGONE()
-                    rcvChooseTranslation.goGONE()
-                    rcvChooseSetName.goGONE()
+                imgChooseSetNameSpinner.setOnClickListener {
+                    rcvChooseSetName.goVISIBLE()
                 }
 
                 rcvChooseSetNameAdapter.setOnItemClickListener { flashcardSet ->
                     floatManager.bodyDB.edtPanelSetName.setText(flashcardSet.name)
-                    rcvChooseCardType.goGONE()
-                    rcvChooseExample.goGONE()
-                    rcvChooseTranslation.goGONE()
                     rcvChooseSetName.goGONE()
-                    quickLog("???? ! I clicked it, fuck u bitch")
-                }
-
-                rcvChooseTransAdapter.setOnItemClickListener { translation ->
-                    for (transAndEx in transAndExampsList) {
-                        if (translation == transAndEx.translation) {
-                            edtPanelTranslation.setText(translation)
-                            updateRCVChooseExample(transAndEx)
-                        }
-                    }
-                    rcvChooseCardType.goGONE()
-                    rcvChooseExample.goGONE()
-                    rcvChooseTranslation.goGONE()
-                    rcvChooseSetName.goGONE()
-                }
-
-                rcvChooseExampleAdapter.setOnItemClickListener { example ->
-                    floatManager.bodyDB.edtPanelExample.setText(example.text)
-                    floatManager.bodyDB.edtPanelMeanExample.setText(example.mean)
-
-                    rcvChooseCardType.goGONE()
-                    rcvChooseExample.goGONE()
-                    rcvChooseTranslation.goGONE()
-                    rcvChooseSetName.goGONE()
-                }
-
-                imgChooseTypeSpinner.setOnClickListener {
-                    if (!rcvChooseCardType.isVisible) {
-                        rcvChooseCardType.goVISIBLE()
-                    } else {
-                        rcvChooseCardType.goGONE()
-                    }
-                    rcvChooseExample.goGONE()
-                    rcvChooseTranslation.goGONE()
-                    rcvChooseSetName.goGONE()
-                }
-
-                imgChooseTranslationSpinner.setOnClickListener {
-                    if (!rcvChooseTranslation.isVisible) {
-                        rcvChooseTranslation.goVISIBLE()
-                    } else {
-                        rcvChooseTranslation.goGONE()
-                    }
-
-                    rcvChooseExample.goGONE()
-                    rcvChooseCardType.goGONE()
-                    rcvChooseSetName.goGONE()
-                }
-
-                imgChooseExampleSpinner.setOnClickListener {
-                    if (!rcvChooseExample.isVisible) {
-                        rcvChooseExample.goVISIBLE()
-                    } else {
-                        rcvChooseExample.goGONE()
-                    }
-
-                    rcvChooseTranslation.goGONE()
-                    rcvChooseCardType.goGONE()
-                    rcvChooseSetName.goGONE()
-                }
-
-                imgChooseSetNameSpinner.setOnClickListener {
-                    if (!rcvChooseSetName.isVisible) {
-                        rcvChooseSetName.goVISIBLE()
-                    } else {
-                        rcvChooseSetName.goGONE()
-                    }
-                    rcvChooseTranslation.goGONE()
-                    rcvChooseCardType.goGONE()
-                    rcvChooseExample.goGONE()
                 }
 
                 rcvSearchDictionaryAdapter.setOnItemClickListener { rawVocabulary ->
@@ -924,22 +817,21 @@ class FloatingAddServiceManager private constructor(
                     if (actionId == EditorInfo.IME_ACTION_SEARCH) {
                         val key = edtEngViDictionary.text.toString()
                         showVocabulary_IfKeyFound_Or_GoToSearchOnline(key = key)
-                        true
+                        return@setOnEditorActionListener true
                     }
-                    false
+                    return@setOnEditorActionListener false
                 }
 
             edtEngViDictionary.addTextChangeListener (onTextChanged = { text, _, _, _ ->
                 if (text == "") {
-                    quickLog("Clip: " + clipboardManager.hasPrimaryClip())
                     rcvDictionary.goGONE()
                 } else {
                     rcvDictionary.goVISIBLE()
                     if (rcvDictionary.alpha == 0f) {
                         rcvDictionary.alpha = 1f
                     }
-                    rcvSearchDictionaryAdapter.search(text)
                 }
+                rcvSearchDictionaryAdapter.search(text)
             })
 
                 edtEngViDictionary.setOnFocusChangeListener { v, hasFocus ->
@@ -969,13 +861,11 @@ class FloatingAddServiceManager private constructor(
         }
 
         private fun showVocabulary_IfKeyFound_Or_GoToSearchOnline(key: String) {
-            quickLog("Full: $key")
             val fullContent = rcvSearchDictionaryAdapter.getVocabularyByKey(key)
             if (fullContent != null) {
                 onChooseVocabulary(fullContent)
             } else {
-                Toast.makeText(applicationContext, "Navigate to online search", Toast.LENGTH_LONG)
-                    .show()
+                SearchOnlineActivity.requestSearchOnline(applicationContext, key)
             }
         }
 
@@ -1334,8 +1224,35 @@ class FloatingAddServiceManager private constructor(
         }
 
         override fun onAddFlashcardSuccess() {
+            hidePanelAddFlashcard()
             hideBody()
+            val AddFCPanelDisappear_RelativeDuration = 100L
+            playImageAddSuccessAnim(startDelay = AddFCPanelDisappear_RelativeDuration)
             resetAllInputFields()
+        }
+
+        private fun playImageAddSuccessAnim(startDelay: Long = 0) {
+            floatManager.bodyDB.apply {
+                imgAddFcSuccess.animate().scaleX(2f).scaleY(2f).alpha(1f).setDuration(250)
+                    .setInterpolator(FastOutLinearInInterpolator()).setStartDelay(startDelay)
+                    .setLiteListener(
+                        onEnd = {
+                            imgAddFcSuccess.animate().alpha(0f)
+                                .setStartDelay(0) // Reset startDelay
+                                .setLiteListener(onEnd = {
+                                    // Do nothing, Reset the above setLiteListener()
+                                })
+                        })
+            }
+        }
+
+
+        private fun hidePanelAddFlashcard() {
+            addFCPanelDisappear.start()
+        }
+
+        private fun showPanelAddFlashcard() {
+            addFCPanelAppear.start()
         }
 
         private fun showVirtualKeyboard() {
@@ -1344,9 +1261,9 @@ class FloatingAddServiceManager private constructor(
 
 
         @Inject
-        fun initAddFlashcardPanelAnimations (
-            @Named("Appear50Percents") blackBackgroundAppear : Animator,
-            @Named("Disappear50Percents") blackBackgroundDisappear : Animator,
+        fun initAddFlashcardPanelAnimations(
+            @Named("Appear50Percents") blackBackgroundAppear: Animator,
+            @Named("Disappear50Percents") blackBackgroundDisappear: Animator,
             @Named("FromNothingToNormalSize") panelAppear : Animator,
             @Named("FromNormalSizeToNothing") panelDisappear: Animator
         ) { floatManager.bodyDB.apply {

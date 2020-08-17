@@ -10,12 +10,12 @@ import com.teamttdvlp.memolang.data.model.entity.language.Language
 import com.teamttdvlp.memolang.data.model.entity.user.User
 import com.teamttdvlp.memolang.data.model.other.new_vocabulary.TypicalRawVocabulary
 import com.teamttdvlp.memolang.model.AddFlashcardExecutor
-import com.teamttdvlp.memolang.model.AddFlashcardSharedPreference
 import com.teamttdvlp.memolang.model.TextSpeaker
 import com.teamttdvlp.memolang.model.VocabularyConverter
 import com.teamttdvlp.memolang.model.repository.FlashcardSetRepos
 import com.teamttdvlp.memolang.model.repository.UserRepos
 import com.teamttdvlp.memolang.model.repository.UserUsingHistoryRepos
+import com.teamttdvlp.memolang.model.sharepref.EngVietDictionaryActivitySharePref
 import com.teamttdvlp.memolang.view.activity.iview.FloatAddServiceView
 import com.teamttdvlp.memolang.view.base.BaseViewModel
 import com.teamttdvlp.memolang.view.helper.quickLog
@@ -29,8 +29,9 @@ constructor(
     private var addFlashcardExecutor: AddFlashcardExecutor,
     private var flashcardSetRepos: FlashcardSetRepos,
     private var userUsingHistoryRepos: UserUsingHistoryRepos,
-    private var addFlashcardSharedPreference: AddFlashcardSharedPreference
+    private val engVietDictionaryActivity_SharePref: EngVietDictionaryActivitySharePref
 ) : BaseViewModel<FloatAddServiceView>() {
+
 
     private lateinit var userFlashcardSetList: ArrayList<FlashcardSet>
 
@@ -141,47 +142,26 @@ constructor(
         }
     }
 
-    private fun updateUserInfo (newCard: Flashcard) {
+    private fun updateUserInfo(newCard: Flashcard) {
         userUsingHistoryRepos.addToRecent_AddedFlashcardList(newCard)
-        updateUserFlashcardSets(newCard.setOwner)
+        updateLastUsedFlashcardSetName(newCard.setOwner)
         addToUserOwnCardTypes(newCard.type)
     }
 
-    fun updateUserFlashcardSets (setName : String) {
-        getUser().lastest_Used_FlashcardSetName = setName
-        userRepos.updateUser(getUser())
+    fun updateLastUsedFlashcardSetName(setName: String) {
+        engVietDictionaryActivity_SharePref.lastUsedFlashcardSetName = setName
     }
 
-    private fun addToUserOwnCardTypes (cardType : String) {
+    private fun addToUserOwnCardTypes(cardType: String) {
         getUser().addToCardTypeList(cardType)
     }
 
-    fun addToUsedLanguageList (language : String) {
+    fun addToUsedLanguageList(language: String) {
         userUsingHistoryRepos.addToUsedLanguageList(language)
     }
 
-
-    fun updateCurrentFrontLang (frontLanguage : String) {
-        addFlashcardSharedPreference.currentFrontCardLanguage = frontLanguage
-        userRepos.updateUser(getUser())
-    }
-
-    fun updateCurrentBackLanguage (backLanguage : String) {
-        addFlashcardSharedPreference.currentBackCardLanguage = backLanguage
-        userRepos.updateUser(getUser())
-    }
-
-
-    fun getCurrentBackLanguage () : String {
-        return addFlashcardSharedPreference.currentBackCardLanguage
-    }
-
-    fun getCurrentFrontLanguage () : String {
-        return addFlashcardSharedPreference.currentFrontCardLanguage
-    }
-
     fun getLastedUseFlashcardSetName () : String {
-        return getUser().lastest_Used_FlashcardSetName
+        return engVietDictionaryActivity_SharePref.lastUsedFlashcardSetName
     }
 
     fun getUserOwnCardTypes() : ArrayList<String> {

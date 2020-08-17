@@ -1,8 +1,5 @@
 package com.teamttdvlp.memolang.model
 
-import com.teamttdvlp.memolang.data.model.other.new_vocabulary.TypicalRawVocabulary
-import com.teamttdvlp.memolang.viewmodel.PARTS_DEVIDER
-import java.lang.Exception
 
 class StringVocaToRawVocaConverter {
     companion object {

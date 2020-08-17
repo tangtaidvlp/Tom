@@ -4,6 +4,7 @@ import android.app.Application
 import com.teamttdvlp.memolang.di.component.DaggerAppComponent
 import dagger.android.DispatchingAndroidInjector
 import dagger.android.HasAndroidInjector
+//import leakcanary.LeakCanary
 import javax.inject.Inject
 
 class MemoLang : Application(), HasAndroidInjector {
@@ -24,7 +25,4 @@ class MemoLang : Application(), HasAndroidInjector {
             .inject(this)
     }
 
-    override fun onTerminate() {
-        super.onTerminate()
-    }
 }

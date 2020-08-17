@@ -7,13 +7,13 @@ import androidx.recyclerview.widget.RecyclerView
 import androidx.vectordrawable.graphics.drawable.AnimatorInflaterCompat
 import com.teamttdvlp.memolang.R
 import com.teamttdvlp.memolang.view.activity.MenuActivity
-import com.teamttdvlp.memolang.view.adapter.RCVRecent_USE_FlashcardAdapter
+import com.teamttdvlp.memolang.view.adapter.RCVChooseLanguageAdapter
+import com.teamttdvlp.memolang.view.adapter.RCVRecentUsedLanguageAdapter
 import com.teamttdvlp.memolang.view.adapter.RCV_FlashcardSetAdapter
 import com.teamttdvlp.memolang.view.customview.MenuBackgroundListViewAdapter
 import dagger.Module
 import dagger.Provides
 import javax.inject.Named
-import javax.inject.Singleton
 
 @Module
 class MenuActivityModule {
@@ -25,15 +25,24 @@ class MenuActivityModule {
     }
 
     @Provides
-    fun providerFlashcardSetAdapter (activity : MenuActivity) : RCV_FlashcardSetAdapter{
+    fun providerFlashcardSetAdapter(activity: MenuActivity): RCV_FlashcardSetAdapter {
         return RCV_FlashcardSetAdapter(activity)
     }
 
     @Provides
-    fun provideLayoutManager (activity: MenuActivity) : RecyclerView.LayoutManager {
+    fun provideLayoutManager(activity: MenuActivity): RecyclerView.LayoutManager {
         return LinearLayoutManager(activity, RecyclerView.VERTICAL, false)
     }
 
+    @Provides
+    fun provideChooseLanguageAdapter(activity: MenuActivity): RCVChooseLanguageAdapter {
+        return RCVChooseLanguageAdapter(activity)
+    }
+
+    @Provides
+    fun provideRecentUsedLanguageAdapter(activity: MenuActivity): RCVRecentUsedLanguageAdapter {
+        return RCVRecentUsedLanguageAdapter(activity)
+    }
 
     @Provides
     @Named("Menu_FromNormalSizeToNothing")

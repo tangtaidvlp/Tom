@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <data>
+
         <variable
             name="flashcard"
-            type="com.teamttdvlp.memolang.data.model.entity.flashcard.Flashcard"/>
+            type="com.teamttdvlp.memolang.data.model.entity.flashcard.Flashcard" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
         android:background="@color/white"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -50,13 +50,13 @@
                 android:id="@+id/txt_translation"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/common_margin_start"
                 android:fontFamily="@font/segoeuisl"
-                android:text="@{flashcard.translation}"
                 android:hint="Translation"
                 android:includeFontPadding="false"
-                android:layout_marginStart="@dimen/common_margin_start"
+                android:text="@{flashcard.translation}"
                 android:textColor="@color/black"
-                android:textSize="15sp" />
+                android:textSize="17sp" />
 
         </LinearLayout>
 

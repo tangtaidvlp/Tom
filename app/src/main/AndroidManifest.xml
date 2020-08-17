@@ -6,7 +6,6 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
         android:name=".di.MemoLang"
@@ -46,17 +45,19 @@
         <activity
             android:name=".view.activity.ReviewFlashcardActivity"
             android:windowSoftInputMode="stateAlwaysVisible" />
-        <activity
-            android:name=".view.activity.SeeVocabularyActivity"/>
+        <activity android:name=".view.activity.EngVietDictionaryActivity" />
         <activity android:name=".view.activity.SearchEngVNDictionaryActivity" />
         <activity android:name=".view.activity.ViewFlashcardSetActivity" />
         <activity android:name=".view.activity.AddFlashcardActivity" />
-        <activity android:name=".view.activity.RetrofitAddFlashcardActivity"
+        <activity
+            android:name=".view.activity.RetrofitAddFlashcardActivity"
             android:windowSoftInputMode="adjustResize" />
         <activity android:name=".view.activity.EditFlashcardActivity" />
-        <activity android:name=".view.activity.MenuActivity" />
+        <activity
+            android:name=".view.activity.MenuActivity"
+            android:windowSoftInputMode="adjustResize" />
         <activity android:name=".view.activity.ViewFlashCardListActivity" /> <!-- <activity android:name=".view.activity.SearchEditFlashcardActivity" /> -->
-        <activity android:name=".view.activity.SearchOnlineActivity"/>
+        <activity android:name=".view.activity.SearchOnlineActivity" />
         <activity android:name=".view.activity.ResultReportActivity" />
         <activity android:name=".view.activity.UseFlashcardActivity" />
         <activity android:name=".view.activity.ReviewFlashcardEasyActivity" />

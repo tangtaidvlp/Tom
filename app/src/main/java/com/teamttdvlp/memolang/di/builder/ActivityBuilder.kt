@@ -44,7 +44,7 @@ abstract class ActivityBuilder {
     abstract fun injectSearchEngVNActivity() : SearchEngVNDictionaryActivity
 
     @ContributesAndroidInjector(modules = [SeeVocabularyActivityModule::class])
-    abstract fun injectSeeVocabularyAcitivty() : SeeVocabularyActivity
+    abstract fun injectSeeVocabularyAcitivty(): EngVietDictionaryActivity
 
     @ContributesAndroidInjector(modules = [ReviewFlashcardActivityModule::class])
     abstract fun injectReviewFlashcardActivity() : ReviewFlashcardActivity

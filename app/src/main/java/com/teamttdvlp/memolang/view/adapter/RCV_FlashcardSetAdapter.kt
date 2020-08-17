@@ -41,21 +41,23 @@ class RCV_FlashcardSetAdapter(
 
     private val VIEW_HOLDER_TAIL = 1
 
-    private val MINIMUM_ITEM_COUNT_ON_SCREEN = 4
+    private val MINIMUM_ITEM_COUNT_ON_SCREEN = 5
 
     override fun getItemViewType(position: Int): Int {
-        val thereIsTooFewItemOnScreen = list.size <= MINIMUM_ITEM_COUNT_ON_SCREEN
-        if (thereIsTooFewItemOnScreen) {
-            if (position < list.size)
-                return TYPE_NORMAL
-            else
-                return TYPE_VIEW_HOLDER
-        } else { // There is more than #MINIMUM_ITEM_COUNT_ON_SCREEN item on screen
-            if (position == list.size - 1 + VIEW_HOLDER_TAIL) {
-                return TYPE_VIEW_HOLDER
-            }
-            return  TYPE_NORMAL
-        }
+//        val thereIsTooFewItemOnScreen = list.size <= MINIMUM_ITEM_COUNT_ON_SCREEN
+//        if (thereIsTooFewItemOnScreen) {
+//            if (position < list.size)
+//                return TYPE_NORMAL
+//            else
+//                return TYPE_VIEW_HOLDER
+//        } else { // There is more than #MINIMUM_ITEM_COUNT_ON_SCREEN item on screen
+//            if (position == list.size - 1 + VIEW_HOLDER_TAIL) {
+//                return TYPE_VIEW_HOLDER
+//            }
+//            return  TYPE_NORMAL
+//        }
+
+        return TYPE_NORMAL
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
@@ -195,9 +197,10 @@ class RCV_FlashcardSetAdapter(
     }
 
     override fun getItemCount(): Int {
-        return if (list.size <= MINIMUM_ITEM_COUNT_ON_SCREEN)
-            MINIMUM_ITEM_COUNT_ON_SCREEN
-        else list.size + VIEW_HOLDER_TAIL
+//        return if (list.size < MINIMUM_ITEM_COUNT_ON_SCREEN)
+//            MINIMUM_ITEM_COUNT_ON_SCREEN
+//        else list.size + VIEW_HOLDER_TAIL
+        return list.size
     }
 
     fun deleteFlashcardSet(flashcardSet: FlashcardSet) {
@@ -211,6 +214,11 @@ class RCV_FlashcardSetAdapter(
         flashcardSet.name = newName
         list[updatedPos] = flashcardSet
         notifyItemChanged(updatedPos)
+    }
+
+    fun addNewSet(newSet: FlashcardSet) {
+        this.list.add(0, newSet)
+        notifyDataSetChanged()
     }
 
     interface OnItemClickListener {

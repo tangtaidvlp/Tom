@@ -19,7 +19,7 @@
         android:id="@+id/activity_add_flashcards"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/background_menu_activity"
+        android:background="@color/white"
         tools:context=".view.activity.EditFlashcardActivity">
 
         <ImageView

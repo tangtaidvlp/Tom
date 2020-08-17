@@ -8,14 +8,13 @@ import androidx.core.animation.addListener
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.teamttdvlp.memolang.R
-import com.teamttdvlp.memolang.databinding.ActivitySearchEngVnDictionaryBinding
 import com.teamttdvlp.memolang.data.model.other.new_vocabulary.TypicalRawVocabulary
+import com.teamttdvlp.memolang.databinding.ActivitySearchEngVnDictionaryBinding
 import com.teamttdvlp.memolang.view.activity.iview.SearchEngVNDictionaryView
 import com.teamttdvlp.memolang.view.adapter.RCVRecent_SearchDictionary_Adapter
 import com.teamttdvlp.memolang.view.adapter.RCVSearchDictionaryAdapter
 import com.teamttdvlp.memolang.view.base.BaseActivity
 import com.teamttdvlp.memolang.view.helper.*
-import com.teamttdvlp.memolang.viewmodel.PARTS_DEVIDER
 import com.teamttdvlp.memolang.viewmodel.SearchEngVNDictionaryViewModel
 import javax.inject.Inject
 import javax.inject.Named
@@ -29,8 +28,8 @@ class SearchEngVNDictionaryActivity :
     lateinit var rcvSearchDictionaryAdapter : RCVSearchDictionaryAdapter
     @Inject set
 
-    lateinit var rcvRecentSearchDicAdapter : RCVRecent_SearchDictionary_Adapter
-    @Inject set
+    lateinit var rcv_Recent_SearchDicAdapter: RCVRecent_SearchDictionary_Adapter
+        @Inject set
 
     lateinit var viewModelProviderFactory: ViewModelProviderFactory
     @Inject set
@@ -61,11 +60,12 @@ class SearchEngVNDictionaryActivity :
         dB.rcvDictionary.adapter = rcvSearchDictionaryAdapter
         dB.rcvDictionary.layoutManager = LinearLayoutManager(this, RecyclerView.VERTICAL, false)
 
-        dB.rcvRecentSearchDic.adapter = rcvRecentSearchDicAdapter
-        dB.rcvRecentSearchDic.layoutManager = LinearLayoutManager(this, RecyclerView.VERTICAL, false)
+        dB.rcvRecentSearchDic.adapter = rcv_Recent_SearchDicAdapter
+        dB.rcvRecentSearchDic.layoutManager =
+            LinearLayoutManager(this, RecyclerView.VERTICAL, false)
 
         viewModel.getAll_RecentSearchedVocaList {
-            rcvRecentSearchDicAdapter.setData(it)
+            rcv_Recent_SearchDicAdapter.setData(it)
         }
     }
 
@@ -73,22 +73,31 @@ class SearchEngVNDictionaryActivity :
 
         btnSearch.setOnClickListener {
             edtEngViDictionary.requestFocus()
-            showVirtualKeyboard()   
+            showVirtualKeyboard()
         }
 
         rcvSearchDictionaryAdapter.setOnItemClickListener { rawVocabulary ->
             onChooseVocabulary(rawVocabulary as TypicalRawVocabulary)
         }
 
-        rcvRecentSearchDicAdapter.setOnItemClickListener { rawVocabulary ->
+        rcvSearchDictionaryAdapter.setOnBtnBringTextUpClickListener { rawVocabulary ->
+            edtEngViDictionary.setText(rawVocabulary.key)
+        }
+
+        // Recent search
+        rcv_Recent_SearchDicAdapter.setOnItemClickListener { rawVocabulary ->
             onChooseVocabulary(rawVocabulary)
+        }
+
+        rcv_Recent_SearchDicAdapter.setOnBtnBringTextUpClickListener { rawVocabulary ->
+            edtEngViDictionary.setText(rawVocabulary.key)
         }
 
         btnClearAllText.setOnClickListener {
             edtEngViDictionary.setText("")
         }
 
-        edtEngViDictionary.addTextChangeListener (onTextChanged = { text, _, _, _ ->
+        edtEngViDictionary.addTextChangeListener(onTextChanged = { text, _, _, _ ->
             if (text == "") {
                 rcvRecentSearchDic.goVISIBLE()
                 rcvDictionary.goGONE()
@@ -118,7 +127,7 @@ class SearchEngVNDictionaryActivity :
     }}
 
     private fun onChooseVocabulary(item: TypicalRawVocabulary) {
-        rcvRecentSearchDicAdapter.addData(item)
+        rcv_Recent_SearchDicAdapter.addData(item)
         viewModel.addVoca_ToRecentSearchedList(item)
         sendContentToActivitySeeFlashcard(item)
     }
@@ -137,7 +146,8 @@ class SearchEngVNDictionaryActivity :
     }
 
     private fun sendContentToActivitySeeFlashcard (vocabularyContent : TypicalRawVocabulary) {
-        val intent = Intent(this@SearchEngVNDictionaryActivity, SeeVocabularyActivity::class.java)
+        val intent =
+            Intent(this@SearchEngVNDictionaryActivity, EngVietDictionaryActivity::class.java)
         intent.putExtra(VOCABULARY_INFO, vocabularyContent)
         startActivity(intent)
     }

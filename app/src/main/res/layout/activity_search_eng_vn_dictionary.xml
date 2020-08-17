@@ -17,7 +17,7 @@
             android:layout_marginStart="@dimen/common_margin_start"
             android:layout_marginTop="@dimen/common_margin_top"
             android:layout_marginEnd="@dimen/common_margin_end"
-            android:background="@drawable/background_round_corner_app_gradient_blue"
+            android:background="@drawable/background_app_gradient_round_100dp_theme_blue"
             android:weightSum="2"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"

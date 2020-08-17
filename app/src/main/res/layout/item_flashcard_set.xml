@@ -5,15 +5,14 @@
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
-        app:cardCornerRadius="20dp"
-        app:cardElevation="4dp"
-        app:cardMaxElevation="4dp">
+        android:layout_marginBottom="10dp"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="8dp">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="3dp"
+            android:padding="22dp"
             android:background="@drawable/round_20dp_white_background"
             android:clickable="false">
 
@@ -21,23 +20,36 @@
                 android:id="@+id/txt_set_name"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="12dp"
                 android:layout_marginBottom="15dp"
-                android:fontFamily="@font/sitka_display_bold"
+                android:fontFamily="@font/seguisb"
                 android:gravity="center_vertical"
                 android:includeFontPadding="false"
-                android:paddingStart="15dp"
-                android:paddingTop="3dp"
                 android:paddingEnd="15dp"
-                android:paddingBottom="3dp"
                 android:text="English - Vietnamese"
                 android:textColor="@color/black"
-                android:textSize="24dp"
+                android:textSize="25sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/txt_card_count"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/txt_set_language"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:fontFamily="@font/segoeui"
+                android:gravity="center_vertical"
+                android:includeFontPadding="false"
+                android:paddingEnd="15dp"
+                android:paddingBottom="3dp"
+                android:text="English - Vietnamese"
+                android:textColor="#ABABAB"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toStartOf="@+id/txt_card_count"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txt_set_name"
                 app:layout_constraintVertical_bias="0.0" />
 
             <TextView
@@ -47,21 +59,19 @@
                 android:fontFamily="@font/seguisb"
                 android:text="30"
                 android:textColor="@color/app_blue"
-                android:textSize="17sp"
-                android:layout_marginEnd="14dp"
-                app:layout_constraintHorizontal_bias="1"
+                android:textSize="20sp"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="@+id/txt_set_name" />
 
             <ImageView
                 android:id="@+id/btn_other_options"
-                android:layout_width="32dp"
+                android:layout_width="22dp"
                 android:layout_height="22dp"
-                android:layout_marginBottom="15dp"
+                android:alpha="0.4"
                 android:clickable="true"
                 android:paddingTop="5dp"
-                android:paddingEnd="15dp"
                 android:src="@drawable/image_lying_kebad_button"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="1.0"
@@ -69,45 +79,46 @@
                 app:layout_constraintTop_toBottomOf="@id/txt_card_count" />
 
             <ImageView
-                android:id="@+id/btn_add_flashcard"
-                android:layout_width="17dp"
-                android:layout_height="17dp"
-                android:layout_marginEnd="18dp"
-                android:layout_marginBottom="15dp"
-                android:clickable="true"
-                android:padding="3dp"
-                android:src="@drawable/button_add_black"
+                android:id="@+id/img_box_background"
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:background="@drawable/image_background_fuzzle_grey_border"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@id/btn_view_list"
-                app:layout_constraintHorizontal_bias="1.0"
-                app:layout_constraintStart_toStartOf="parent" />
+                app:layout_constraintRight_toRightOf="parent" />
+
+            <ImageView
+                android:id="@+id/btn_add_flashcard"
+                android:layout_width="37dp"
+                android:layout_height="37dp"
+                android:layout_marginStart="1.5dp"
+                android:layout_marginTop="4dp"
+                android:clickable="true"
+                android:src="@drawable/image_button_add"
+                app:layout_constraintStart_toStartOf="@+id/img_box_background"
+                app:layout_constraintTop_toTopOf="@+id/img_box_background" />
 
             <ImageView
                 android:id="@+id/btn_view_list"
-                android:layout_width="32dp"
-                android:layout_height="17dp"
-                android:layout_marginBottom="15dp"
+                android:layout_width="37dp"
+                android:layout_height="37dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="1.5dp"
                 android:clickable="true"
-                android:paddingEnd="15dp"
-                android:src="@drawable/button_view_black"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="1.0"
-                app:layout_constraintStart_toStartOf="parent" />
+                android:src="@drawable/image_button_view"
+                app:layout_constraintEnd_toEndOf="@+id/img_box_background"
+                app:layout_constraintTop_toTopOf="@+id/img_box_background" />
 
             <LinearLayout
                 android:id="@+id/vwgrp_using_options"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="15dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginEnd="12dp"
-                android:layout_marginBottom="12dp"
                 android:orientation="vertical"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/btn_add_flashcard"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/txt_set_name">
+                app:layout_constraintTop_toBottomOf="@id/txt_set_language">
 
                 <LinearLayout
                     android:id="@+id/vwgrp_use_flashcard"
@@ -118,23 +129,22 @@
                     android:weightSum="1">
 
                     <ImageView
-                        android:layout_width="18dp"
-                        android:layout_height="match_parent"
-                        android:src="@drawable/image_use_flashcard_black" />
+                        android:layout_width="31dp"
+                        android:layout_height="31dp"
+                        android:src="@drawable/image_icon_use_flashcard" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:layout_marginStart="10dp"
+                        android:layout_marginStart="3dp"
                         android:layout_marginBottom="2dp"
                         android:layout_weight="1"
                         android:alpha="0.9"
-                        android:fontFamily="@font/segoeuisl"
+                        android:fontFamily="@font/seguisb"
                         android:gravity="center_vertical"
                         android:text="Use flashcards"
-                        android:textColor="@color/black"
+                        android:textColor="@color/app_blue"
                         android:textSize="18sp" />
-
 
 
                 </LinearLayout>
@@ -148,32 +158,20 @@
                     android:weightSum="1">
 
                     <ImageView
-                        android:layout_width="18dp"
-                        android:layout_height="match_parent"
-                        android:src="@drawable/image_review_flashcard_puzzle" />
+                        android:layout_width="31dp"
+                        android:layout_height="31dp"
+                        android:src="@drawable/image_icon_puzzle" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:layout_marginStart="10dp"
+                        android:layout_marginStart="2dp"
                         android:layout_marginBottom="2dp"
-                        android:alpha="0.9"
-                        android:fontFamily="@font/segoeuisl"
-                        android:gravity="center_vertical"
-                        android:text="Review by Puzzle "
-                        android:textColor="@color/black"
-                        android:textSize="18sp" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_marginBottom="2dp"
-                        android:layout_weight="1"
                         android:alpha="0.9"
                         android:fontFamily="@font/seguisb"
                         android:gravity="center_vertical"
-                        android:text="(Easy)"
-                        android:textColor="@color/black"
+                        android:text="Puzzle (Easy)"
+                        android:textColor="@color/app_blue"
                         android:textSize="18sp" />
 
                 </LinearLayout>
@@ -187,32 +185,48 @@
                     android:weightSum="1">
 
                     <ImageView
-                        android:layout_width="18dp"
-                        android:layout_height="match_parent"
-                        android:src="@drawable/image_review_flashcard_writing" />
+                        android:layout_width="31dp"
+                        android:layout_height="31dp"
+                        android:src="@drawable/image_icon_writting" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:layout_marginStart="10dp"
+                        android:layout_marginStart="2dp"
                         android:layout_marginBottom="2dp"
-                        android:alpha="0.9"
-                        android:fontFamily="@font/segoeuisl"
-                        android:gravity="center_vertical"
-                        android:text="Review by Writing "
-                        android:textColor="@color/black"
-                        android:textSize="18sp" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_marginBottom="2dp"
-                        android:layout_weight="1"
                         android:alpha="0.9"
                         android:fontFamily="@font/seguisb"
                         android:gravity="center_vertical"
-                        android:text="(Hard)"
-                        android:textColor="@color/black"
+                        android:text="Writting (Medium)"
+                        android:textColor="@color/app_blue"
+                        android:textSize="18sp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/vwgrp_learning"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="3dp"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <ImageView
+                        android:layout_width="31dp"
+                        android:layout_height="31dp"
+                        android:src="@drawable/image_icon_learning" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="2dp"
+                        android:layout_marginBottom="2dp"
+                        android:alpha="0.9"
+                        android:fontFamily="@font/seguisb"
+                        android:gravity="center_vertical"
+                        android:text="Learning (Hard)"
+                        android:textColor="@color/app_blue"
                         android:textSize="18sp" />
 
 

@@ -1,7 +1,10 @@
 package com.teamttdvlp.memolang.view.activity
 
-import android.animation.*
+import android.animation.Animator
+import android.animation.AnimatorSet
+import android.animation.ValueAnimator
 import android.animation.ValueAnimator.INFINITE
+import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.text.InputType
@@ -12,9 +15,9 @@ import androidx.core.animation.addListener
 import com.teamttdvlp.memolang.R
 import com.teamttdvlp.memolang.data.model.entity.flashcard.Flashcard
 import com.teamttdvlp.memolang.data.model.entity.flashcard.FlashcardSet
+import com.teamttdvlp.memolang.data.model.entity.flashcard.SetNameUtils
 import com.teamttdvlp.memolang.databinding.ActivitySearchOnlineBinding
 import com.teamttdvlp.memolang.model.CardType
-import com.teamttdvlp.memolang.data.model.entity.flashcard.SetNameUtils
 import com.teamttdvlp.memolang.view.activity.iview.SearchVocabularyView
 import com.teamttdvlp.memolang.view.adapter.*
 import com.teamttdvlp.memolang.view.base.BaseActivity
@@ -23,14 +26,16 @@ import com.teamttdvlp.memolang.viewmodel.SearchOnlineViewModel
 import javax.inject.Inject
 import javax.inject.Named
 
+const val SEARCH_ONLINE_TEXT = "sot"
+
 class SearchOnlineActivity : BaseActivity<ActivitySearchOnlineBinding, SearchOnlineViewModel>()
-    ,SearchVocabularyView {
+    , SearchVocabularyView {
 
     private val TYPE_NONE = 131073
 
     private val TYPE_TEXT = 1
 
-    private var RED : Int = 0
+    private var RED: Int = 0
 
     private var HINT_COLOR : Int = 0
 
@@ -110,13 +115,36 @@ class SearchOnlineActivity : BaseActivity<ActivitySearchOnlineBinding, SearchOnl
 
     private var txtTranslationHintHolder = ""
 
-    override fun getLayoutId(): Int  = R.layout.activity_search_online
+    companion object {
+        fun requestSearchOnline(context: Context, text: String) {
+            val intent = Intent(context, SearchOnlineActivity::class.java)
+            intent.putExtra(SEARCH_ONLINE_TEXT, text)
+            context.startActivity(intent)
+        }
+    }
 
-    override fun takeViewModel(): SearchOnlineViewModel = getActivityViewModel(viewModelProviderFactory)
+    override fun getLayoutId(): Int = R.layout.activity_search_online
+
+    override fun takeViewModel(): SearchOnlineViewModel =
+        getActivityViewModel(viewModelProviderFactory)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         viewModel.setUpView(this)
+        val searchOnlineRequest = getSearchOnlineRequest()
+        if (searchOnlineRequest != null) {
+            autoSearch(searchOnlineRequest)
+        }
+    }
+
+    private fun autoSearch(searchOnlineRequest: String) {
+        dB.edtText.setText(searchOnlineRequest)
+        startSearchingAnimations()
+    }
+
+    private fun getSearchOnlineRequest(): String? {
+        if (intent.extras == null) return null
+        return intent.extras!!.getString(SEARCH_ONLINE_TEXT, null)
     }
 
     override fun onPause() {
@@ -124,8 +152,9 @@ class SearchOnlineActivity : BaseActivity<ActivitySearchOnlineBinding, SearchOnl
         viewModel.saveSearchHistory()
     }
 
-    override fun initProperties() { dB.apply {
-        dB.vwModel = viewModel
+    override fun initProperties() {
+        dB.apply {
+            dB.vwModel = viewModel
 
         RED = resources.getColor(R.color.app_red)
         HINT_COLOR = resources.getColor(R.color.hint_color)

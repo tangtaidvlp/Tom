@@ -2,16 +2,17 @@ package com.teamttdvlp.memolang.di.module
 
 import android.app.Application
 import androidx.room.Room
-import com.teamttdvlp.memolang.di.MemoLang
 import com.teamttdvlp.memolang.data.sql.MemoLangSqliteDataBase
 import com.teamttdvlp.memolang.data.sql.MemoLangSqliteDataBase.Companion.DB_NAME
+import com.teamttdvlp.memolang.di.MemoLang
+import com.teamttdvlp.memolang.model.UserInfoStatusSharedPreference
 import com.teamttdvlp.memolang.model.repository.FlashcardRepos
 import com.teamttdvlp.memolang.model.repository.FlashcardSetRepos
 import com.teamttdvlp.memolang.model.repository.UserRepos
 import com.teamttdvlp.memolang.model.repository.UserUsingHistoryRepos
-import com.teamttdvlp.memolang.model.AddFlashcardSharedPreference
-import com.teamttdvlp.memolang.model.SearchOnlineSharedPreference
-import com.teamttdvlp.memolang.model.UserInfoStatusSharedPreference
+import com.teamttdvlp.memolang.model.sharepref.AddFlashcardActivitySharePref
+import com.teamttdvlp.memolang.model.sharepref.EngVietDictionaryActivitySharePref
+import com.teamttdvlp.memolang.model.sharepref.SearchOnlineActivitySharePref
 import dagger.Module
 import dagger.Provides
 import javax.inject.Singleton
@@ -59,19 +60,25 @@ class AppModule {
 
     @Provides
     @Singleton
-    fun provideAddFlashcardSharedPreference (application: Application) : AddFlashcardSharedPreference {
-        return AddFlashcardSharedPreference(application)
+    fun provideSearchOnlineSharedPreference(application: Application): SearchOnlineActivitySharePref {
+        return SearchOnlineActivitySharePref(application)
     }
 
     @Provides
     @Singleton
-    fun provideSearchOnlineSharedPreference (application: Application) : SearchOnlineSharedPreference {
-        return SearchOnlineSharedPreference(application)
+    fun provideAddFlashcardAcitivytSharedPreference(application: Application): AddFlashcardActivitySharePref {
+        return AddFlashcardActivitySharePref(application)
     }
 
     @Provides
     @Singleton
-    fun providesApplication (application: MemoLang) : Application {
+    fun provideEngVietSharedPreference(application: Application): EngVietDictionaryActivitySharePref {
+        return EngVietDictionaryActivitySharePref(application)
+    }
+
+    @Provides
+    @Singleton
+    fun providesApplication(application: MemoLang): Application {
         return application
     }
 

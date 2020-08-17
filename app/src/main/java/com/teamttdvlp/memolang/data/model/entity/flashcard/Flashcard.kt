@@ -1,11 +1,10 @@
 package com.teamttdvlp.memolang.data.model.entity.flashcard
 
 import androidx.annotation.NonNull
-import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
+import com.teamttdvlp.memolang.view.helper.quickLog
 import java.io.Serializable
-import java.lang.Exception
 
 @Entity(tableName = "flashcard")
 data class Flashcard (
@@ -39,7 +38,7 @@ data class Flashcard (
     init {
         text = text.trim()
         setOwner = setOwner.trim()
-        if (setOwner == "") throw Exception("Set Owner can not be null. Please check and fix code properly")
+        if (setOwner == "") quickLog("Set Owner can not be null. Please check and fix code properly")
         text = text.trim()
         translation = translation.trim()
         example = example.trim()

@@ -4,25 +4,30 @@ import com.teamttdvlp.memolang.data.model.entity.flashcard.Flashcard
 import com.teamttdvlp.memolang.data.model.entity.flashcard.FlashcardSet
 import com.teamttdvlp.memolang.data.model.entity.flashcard.SetNameUtils
 import com.teamttdvlp.memolang.model.AddFlashcardExecutor
-import com.teamttdvlp.memolang.model.AddFlashcardSharedPreference
 import com.teamttdvlp.memolang.model.repository.FlashcardSetRepos
 import com.teamttdvlp.memolang.model.repository.UserRepos
 import com.teamttdvlp.memolang.model.repository.UserUsingHistoryRepos
+import com.teamttdvlp.memolang.model.sharepref.BaseAppInfoSharedPreference
 import com.teamttdvlp.memolang.view.activity.iview.AddFlashcardView
 import com.teamttdvlp.memolang.view.base.BaseViewModel
 import com.teamttdvlp.memolang.view.helper.quickLog
 
 class AddFlashCardViewModel(
-                           private var userRepos: UserRepos,
-                           private var addFlashcardExecutor: AddFlashcardExecutor,
-                           private var flashcardSetRepos: FlashcardSetRepos,
-                           private var userUsingHistoryRepos: UserUsingHistoryRepos,
-                           private var addFlashcardSharedPreference: AddFlashcardSharedPreference) : BaseViewModel<AddFlashcardView>() {
+    private var userRepos: UserRepos,
+    private var addFlashcardExecutor: AddFlashcardExecutor,
+    private var flashcardSetRepos: FlashcardSetRepos,
+    private var userUsingHistoryRepos: UserUsingHistoryRepos,
+    private var addFlashcardSharedPref: BaseAppInfoSharedPreference
+) : BaseViewModel<AddFlashcardView>() {
 
-    private lateinit var userFlashcardSetList : ArrayList<FlashcardSet>
+    private lateinit var userFlashcardSetList: ArrayList<FlashcardSet>
 
-    fun proceedAddFlashcard (newCard: Flashcard) {
-        val flashcardSet = FlashcardSet(newCard.setOwner, newCard.frontLanguage, newCard.backLanguage)
+    fun proceedAddFlashcard(newCard: Flashcard) {
+        val flashcardSet =
+            FlashcardSet(newCard.setOwner, newCard.frontLanguage, newCard.backLanguage)
+        if (newCard.setOwner == "") {
+            newCard.setOwner = flashcardSet.name
+        }
 
         if (newCard.text.isEmpty()) {
             view.showTextInputError()
@@ -89,12 +94,12 @@ class AddFlashCardViewModel(
     }
 
     private fun updateUserLastedUsedFlashcardSet (setName : String) {
-        getUser().lastest_Used_FlashcardSetName = setName
+        addFlashcardSharedPref.lastUsedFlashcardSetName = setName
         userRepos.updateUser(getUser())
     }
 
     fun getLastedUseFlashcardSetName () : String {
-        return getUser().lastest_Used_FlashcardSetName
+        return addFlashcardSharedPref.lastUsedFlashcardSetName
     }
 
     fun addToUsedLanguageList (language : String) {
@@ -102,7 +107,7 @@ class AddFlashCardViewModel(
     }
 
     fun updateCurrentFrontLang (frontLanguage : String) {
-        addFlashcardSharedPreference.currentFrontCardLanguage = frontLanguage
+        addFlashcardSharedPref.currentFrontCardLanguage = frontLanguage
         userRepos.updateUser(getUser())
     }
 
@@ -116,17 +121,17 @@ class AddFlashCardViewModel(
 
 
     fun updateCurrentBackLanguage (backLanguage : String) {
-        addFlashcardSharedPreference.currentBackCardLanguage = backLanguage
+        addFlashcardSharedPref.currentBackCardLanguage = backLanguage
         userRepos.updateUser(getUser())
     }
 
 
     fun getCurrentBackLanguage () : String {
-        return addFlashcardSharedPreference.currentBackCardLanguage
+        return addFlashcardSharedPref.currentBackCardLanguage
     }
 
     fun getCurrentFrontLanguage () : String {
-        return addFlashcardSharedPreference.currentFrontCardLanguage
+        return addFlashcardSharedPref.currentFrontCardLanguage
     }
 
 

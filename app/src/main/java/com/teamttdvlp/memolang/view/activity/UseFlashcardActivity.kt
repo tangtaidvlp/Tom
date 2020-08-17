@@ -6,6 +6,7 @@ import android.animation.ValueAnimator
 import android.annotation.SuppressLint
 import android.content.Context
 import android.content.Intent
+import android.graphics.Color
 import android.os.Build
 import android.os.Bundle
 import android.text.method.ScrollingMovementMethod
@@ -85,8 +86,12 @@ class UseFlashcardActivity : BaseActivity<ActivityUseFlashcardBinding, UseFlashc
 
     private var canGoToPreviousCard: Boolean = false
 
-    lateinit var viewModelProviderFactory : ViewModelProviderFactory
-    @Inject set
+    lateinit var viewModelProviderFactory: ViewModelProviderFactory
+        @Inject set
+
+    private val DARK_BLUE = "#182788"
+
+    private val COVERED_BY_BLACK_DARK_BLUE = "#0C1343"
 
     companion object {
         fun requestReviewFlashcard(
@@ -109,6 +114,8 @@ class UseFlashcardActivity : BaseActivity<ActivityUseFlashcardBinding, UseFlashc
         super.onCreate(savedInstanceState)
         dB.lifecycleOwner = this
         viewModel.setUpView(this)
+        // Dark blue
+        setStatusBarColor(Color.parseColor(DARK_BLUE))
         beginUsing(getIsReverseTextAndTranslation())
     }
 
@@ -152,10 +159,15 @@ class UseFlashcardActivity : BaseActivity<ActivityUseFlashcardBinding, UseFlashc
                 it.goVISIBLE()
             }
 
-            this@UseFlashcardActivity.viewModel.moveToNextCard()
-            dB.executePendingBindings()
-            if (textIsSpoken and speakerIsOn) {
-                viewModel.speakFrontCardText(dB.txtFrontCardText.text.toString())
+            if (viewModel.checkThereIsCardLefts()) {
+                this@UseFlashcardActivity.viewModel.moveToNextCard()
+                dB.executePendingBindings()
+                if (textIsSpoken and speakerIsOn) {
+                    viewModel.speakFrontCardText(dB.txtFrontCardText.text.toString())
+                }
+            } else {
+                onEndReviewing()
+                on_NEXT_CardAnimation.cancel()
             }
         })
 
@@ -242,6 +254,11 @@ class UseFlashcardActivity : BaseActivity<ActivityUseFlashcardBinding, UseFlashc
 
         dialogExit.setOnHide {
             resetBackButtonPressedTimes()
+            setStatusBarColor(Color.parseColor(DARK_BLUE))
+        }
+
+        dialogExit.setOnShow {
+            setStatusBarColor(Color.parseColor(COVERED_BY_BLACK_DARK_BLUE))
         }
 
         btnSpeakerSetting.setOnClickListener {
@@ -334,6 +351,7 @@ class UseFlashcardActivity : BaseActivity<ActivityUseFlashcardBinding, UseFlashc
             it.goINVISIBLE()
         }
         viewModel.stopAllTextSpeaker()
+        on_NEXT_CardAnimation.cancel()
         sendCardSetInfoTo_ResultReportActivity()
         finish()
     }
@@ -351,14 +369,10 @@ class UseFlashcardActivity : BaseActivity<ActivityUseFlashcardBinding, UseFlashc
     }
 
     private fun nextCard (userRememberCurrentCard : Boolean) {
-        if (viewModel.checkThereIsCardLefts()) {
-            if (userRememberCurrentCard) {
-                on_NEXT_CardAnimation.start()
-            } else {
-                on_NEXT_HARD_CardAnimation.start()
-            }
-        } else { // No card left
-            onEndReviewing()
+        if (userRememberCurrentCard) {
+            on_NEXT_CardAnimation.start()
+        } else {
+            on_NEXT_HARD_CardAnimation.start()
         }
     }
 
@@ -587,11 +601,13 @@ class UseFlashcardActivity : BaseActivity<ActivityUseFlashcardBinding, UseFlashc
                     it.goGONE()
 
             }
+
             viewgroupBackFlashcard.translationX = 0f
             viewgroupBackFlashcard.translationY = 0f
 
             txtFrontCardText.alpha = 0f
         })
+
     }}
 
 
