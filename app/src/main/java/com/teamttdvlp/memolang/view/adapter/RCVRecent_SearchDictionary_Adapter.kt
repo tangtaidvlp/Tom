@@ -7,7 +7,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.teamttdvlp.memolang.data.model.other.new_vocabulary.RawVocabulary
 import com.teamttdvlp.memolang.data.model.other.new_vocabulary.TypicalRawVocabulary
 import com.teamttdvlp.memolang.databinding.ItemSearchDictionaryBinding
-import com.teamttdvlp.memolang.view.helper.quickLog
+import com.teamttdvlp.memolang.view.helper.log
 
 class RCVRecent_SearchDictionary_Adapter(var context : Context) : RecyclerView.Adapter<RCVRecent_SearchDictionary_Adapter.ViewHolder>() {
 
@@ -82,7 +82,7 @@ class RCVRecent_SearchDictionary_Adapter(var context : Context) : RecyclerView.A
                 }
             }
 
-        quickLog("Setted")
+        log("Setted")
     }
 
     class ViewHolder(val dataBinding: ItemSearchDictionaryBinding) :

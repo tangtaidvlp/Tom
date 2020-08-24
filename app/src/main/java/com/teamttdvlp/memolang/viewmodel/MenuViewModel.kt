@@ -10,6 +10,7 @@ import com.teamttdvlp.memolang.model.sharepref.EngVietDictionaryActivitySharePre
 import com.teamttdvlp.memolang.model.sharepref.SearchOnlineActivitySharePref
 import com.teamttdvlp.memolang.view.activity.iview.MenuView
 import com.teamttdvlp.memolang.view.base.BaseViewModel
+import com.teamttdvlp.memolang.view.helper.log
 
 class MenuActivityViewModel(
     private var flashcardSetRepos: FlashcardSetRepos,
@@ -54,7 +55,7 @@ class MenuActivityViewModel(
 
     }
 
-    fun updateOtherActivitiesSharePref_Info(oldSetName: String, newSetName: String) {
+    fun update_OtherActivitiesSharePref_Info(oldSetName: String, newSetName: String) {
         if (addFlashcard_SharedPref.lastUsedFlashcardSetName == oldSetName) {
             addFlashcard_SharedPref.lastUsedFlashcardSetName = newSetName
         }
@@ -69,9 +70,32 @@ class MenuActivityViewModel(
 
     }
 
-    fun deleteFlashcard(flashcardSet: FlashcardSet) {
-        flashcardSetRepos.deleteFlashcardSet(flashcardSet)
-        flashcardRepos.deleteCards(flashcardSet.flashcards)
+    fun set_OtherActivitiesSharePref_Info(setName: String) {
+        addFlashcard_SharedPref.lastUsedFlashcardSetName = setName
+
+        searchOnline_SharedPref.lastUsedFlashcardSetName = setName
+
+        dictionaryActivity_SharedPref.lastUsedFlashcardSetName = setName
+
+    }
+
+    fun deleteFlashcardSet(flashcardSet: FlashcardSet) {
+        try {
+            flashcardSetRepos.deleteFlashcardSet(flashcardSet)
+            flashcardRepos.deleteCards(flashcardSet.flashcards)
+            userFlashcardSetList.remove(flashcardSet)
+            if (flashcardSet.name == addFlashcard_SharedPref.lastUsedFlashcardSetName) {
+                if (userFlashcardSetList.size != 0)
+                    set_OtherActivitiesSharePref_Info(userFlashcardSetList.first().name)
+                else
+                    set_OtherActivitiesSharePref_Info("")
+            }
+        } catch (ex: java.lang.Exception) {
+            log("Error happens")
+            ex.printStackTrace()
+        }
+
+
     }
 
     fun updateHistory() {

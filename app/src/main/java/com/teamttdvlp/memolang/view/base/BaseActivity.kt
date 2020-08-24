@@ -32,6 +32,8 @@ abstract class BaseActivity <T : ViewDataBinding, V : ViewModel> : FragmentActiv
         performDataBinding()
         performDependenciesInjection()
         super.onCreate(savedInstanceState)
+        window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS)
+        window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS)
         imm = getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
         overrideEnterAnim()
         performCreateViewModel()
@@ -74,8 +76,6 @@ abstract class BaseActivity <T : ViewDataBinding, V : ViewModel> : FragmentActiv
     }
 
     fun setStatusBarColor (color : Int) {
-        window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS)
-        window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS)
         window.statusBarColor = color
     }
 

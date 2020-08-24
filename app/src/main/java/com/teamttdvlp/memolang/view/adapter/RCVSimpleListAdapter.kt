@@ -10,8 +10,8 @@ import com.teamttdvlp.memolang.R
 import com.teamttdvlp.memolang.data.model.entity.flashcard.FlashcardSet
 import com.teamttdvlp.memolang.view.helper.goGONE
 import com.teamttdvlp.memolang.view.helper.goVISIBLE
+import com.teamttdvlp.memolang.view.helper.log
 import com.teamttdvlp.memolang.view.helper.notContains
-import com.teamttdvlp.memolang.view.helper.quickLog
 
 class RCVSimpleListAdapter (var context : Context) : RecyclerView.Adapter<RCVSimpleListAdapter.ViewHolder> () {
 
@@ -258,7 +258,7 @@ class RCVSimpleListChooseSetNameAdapter (var context : Context) : RecyclerView.A
     }
 
     fun addToFirst (newSet : FlashcardSet) {
-        quickLog("ADD $newSet")
+        log("ADD $newSet")
         if (flashcardSetList.notContains(newSet)) {
             this.flashcardSetList.add(0, newSet)
             notifyItemInserted(0)

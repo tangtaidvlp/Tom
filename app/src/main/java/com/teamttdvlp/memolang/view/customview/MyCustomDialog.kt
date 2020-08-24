@@ -22,37 +22,48 @@ class MyCustomDialog (context : Context, attrSet : AttributeSet) : ConstraintLay
 
     private val showAnmtrList = ArrayList<Animator>()
 
-    private val view : ConstraintLayout
+    private val view: ConstraintLayout
 
-    private var isShow = true
+    private var onHide: (() -> Unit)? = null
 
-    private var onHide : (() -> Unit)? = null
+    private var onShow: (() -> Unit)? = null
 
-    private var onShow  : (() -> Unit)? = null
+    private var onStartHide: (() -> Unit)? = null
+
+    private var onStartShow: (() -> Unit)? = null
+
+    private var ANIM_DURATION = 100L
 
     init {
-        view = inflate(context, R.layout.my_custom_dialog,this) as ConstraintLayout
+        view = inflate(context, R.layout.my_custom_dialog, this) as ConstraintLayout
         showBackgroundAnmtr = AnimatorInflater.loadAnimator(context, R.animator.appear_100_percents)
-        hideBackgroundAnmtr = AnimatorInflater.loadAnimator(context, R.animator.disappear_100_percents)
+        hideBackgroundAnmtr =
+            AnimatorInflater.loadAnimator(context, R.animator.disappear_100_percents)
         showBackgroundAnmtr.setTarget(view)
         hideBackgroundAnmtr.setTarget(view)
         visibility = View.GONE
 
         showBackgroundAnmtr.addListener(
         onStart = {
+            onStartShow?.invoke()
             goVISIBLE()
         },
-        onEnd = {
-            showAnmtrList.forEach {
-                it.start()
-                onShow?.invoke()
-            }
-        })
+            onEnd = {
+                showAnmtrList.forEach {
+                    it.start()
+                    onShow?.invoke()
+                }
+            })
 
-        hideBackgroundAnmtr.addListener (onEnd = {
-            goGONE()
-            onHide?.invoke()
-        })
+        hideBackgroundAnmtr.addListener(
+
+            onStart = {
+                onStartHide?.invoke()
+            },
+            onEnd = {
+                goGONE()
+                onHide?.invoke()
+            })
 
         view.setOnClickListener {
             dismiss()
@@ -65,15 +76,21 @@ class MyCustomDialog (context : Context, attrSet : AttributeSet) : ConstraintLay
             val isNotBlackBackground = index != 0
             if (isNotBlackBackground) {
 
-                val hideAnimator = AnimatorInflater.loadAnimator(context, R.animator.disappear_100_percents)
-                val showAnimator = AnimatorInflater.loadAnimator(context, R.animator.appear_100_percents)
+                val hideAnimator =
+                    AnimatorInflater.loadAnimator(context, R.animator.disappear_100_percents)
+                val showAnimator =
+                    AnimatorInflater.loadAnimator(context, R.animator.appear_100_percents)
+
+                hideAnimator.duration = ANIM_DURATION
+                showAnimator.duration = ANIM_DURATION
 
                 hideAnimator.setTarget(view)
-                hideAnimator.addListener (onEnd = {
+                hideAnimator.addListener(onEnd = {
                     view.goGONE()
                     if (index == children.count() - 1) {
                         hideBackgroundAnmtr.start()
-                    }})
+                    }
+                })
                 hideAnmtrList.add(hideAnimator)
 
                 showAnimator.setTarget(view)
@@ -94,15 +111,32 @@ class MyCustomDialog (context : Context, attrSet : AttributeSet) : ConstraintLay
         }
     }
 
-    fun show () {
+    fun show() {
         showBackgroundAnmtr.start()
     }
 
-    fun setOnHide (onHide : () -> Unit) {
+    fun setOnHide(onHide: () -> Unit) {
         this.onHide = onHide
     }
 
-    fun setOnShow (onShow : () -> Unit) {
+    fun setOnStartHide(onStartHide: () -> Unit) {
+        this.onStartHide = onStartHide
+    }
+
+    fun setOnStart(onStartShow: () -> Unit) {
+        this.onStartShow = onStartShow
+    }
+
+    fun setOnShow(onShow: () -> Unit) {
         this.onShow = onShow
+    }
+
+
+    fun getAnimDuration(): Long {
+        return ANIM_DURATION
+    }
+
+    fun setAnimDuration(duration: Long) {
+        this.ANIM_DURATION = duration
     }
 }

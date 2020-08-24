@@ -13,8 +13,8 @@ import com.teamttdvlp.memolang.model.TextSpeaker
 import com.teamttdvlp.memolang.model.checkCanUseExampleForTestSubject
 import com.teamttdvlp.memolang.view.activity.iview.ReviewFlashcardView
 import com.teamttdvlp.memolang.view.base.BaseViewModel
+import com.teamttdvlp.memolang.view.helper.log
 import com.teamttdvlp.memolang.view.helper.notContains
-import com.teamttdvlp.memolang.view.helper.quickLog
 import com.teamttdvlp.memolang.view.helper.replaceAt
 import com.teamttdvlp.memolang.view.helper.selfPlusOne
 import kotlin.random.Random
@@ -261,7 +261,7 @@ class ReviewFlashcardViewModel(var app : Application) : BaseViewModel<ReviewFlas
                 saveStatus(speakerStatus)
             }
         } else {
-            quickLog("ReviewFlashcardViewModel.kt:: reviewFCActivity_StatusManager is not initialized")
+            log("ReviewFlashcardViewModel.kt:: reviewFCActivity_StatusManager is not initialized")
         }
     }
 

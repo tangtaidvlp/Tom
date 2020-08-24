@@ -52,10 +52,10 @@
             android:id="@+id/vwgrp_nav_menu"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_marginStart="30dp"
+            android:layout_marginStart="40dp"
             android:layout_marginTop="0dp"
-            android:layout_marginEnd="30dp"
-            android:layout_weight="8.5"
+            android:layout_marginEnd="40dp"
+            android:layout_weight="6.03"
             android:gravity="center|top"
             android:orientation="vertical">
 
@@ -70,7 +70,6 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:paddingTop="1dp"
                     android:scaleType="center"
                     android:src="@drawable/image_moon" />
 
@@ -80,16 +79,24 @@
                     android:layout_marginStart="15dp"
                     android:layout_weight="1"
                     android:fontFamily="@font/segoeui"
+                    android:gravity="center_vertical"
                     android:includeFontPadding="false"
                     android:text="Night shift"
                     android:textColor="@color/black"
                     android:textSize="16sp" />
 
-                <Switch
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                <com.suke.widget.SwitchButton
+                    android:id="@+id/switch_night_mode"
+                    android:layout_width="36dp"
+                    android:layout_height="22dp"
+                    app:sb_border_width="0dp"
+                    app:sb_checked="false"
+                    app:sb_checked_color="#18AECC"
+                    app:sb_shadow_radius="1dp"
+                    app:sb_show_indicator="false"
+                    app:sb_uncheck_color="#E0E0E0" />
 
-                    />
+
             </LinearLayout>
 
             <LinearLayout
@@ -246,7 +253,7 @@
             layout="@layout/support_theme_color_picker"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="8.5"
+            android:layout_weight="6.03"
             android:visibility="gone" />
 
 

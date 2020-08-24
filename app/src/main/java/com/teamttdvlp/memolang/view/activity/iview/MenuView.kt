@@ -6,4 +6,5 @@ interface MenuView : View{
 
     fun showInvalidFlashcardSetError(errorMessage: String)
 
+    fun hideInvalidFlashcardSetError()
 }

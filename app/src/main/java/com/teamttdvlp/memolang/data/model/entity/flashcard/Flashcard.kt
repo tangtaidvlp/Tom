@@ -3,7 +3,7 @@ package com.teamttdvlp.memolang.data.model.entity.flashcard
 import androidx.annotation.NonNull
 import androidx.room.Entity
 import androidx.room.PrimaryKey
-import com.teamttdvlp.memolang.view.helper.quickLog
+import com.teamttdvlp.memolang.view.helper.log
 import java.io.Serializable
 
 @Entity(tableName = "flashcard")
@@ -38,7 +38,7 @@ data class Flashcard (
     init {
         text = text.trim()
         setOwner = setOwner.trim()
-        if (setOwner == "") quickLog("Set Owner can not be null. Please check and fix code properly")
+        if (setOwner == "") log("Set Owner can not be null. Please check and fix code properly")
         text = text.trim()
         translation = translation.trim()
         example = example.trim()

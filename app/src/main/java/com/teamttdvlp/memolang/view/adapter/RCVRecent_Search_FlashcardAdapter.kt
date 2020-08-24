@@ -8,7 +8,6 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.teamttdvlp.memolang.R
 import com.teamttdvlp.memolang.data.model.entity.flashcard.Flashcard
-import com.teamttdvlp.memolang.view.helper.quickLog
 
 class RCVRecent_Search_FlashcardAdapter (var context : Context) : RecyclerView.Adapter<RCVRecent_Search_FlashcardAdapter.ViewHolder> () {
 

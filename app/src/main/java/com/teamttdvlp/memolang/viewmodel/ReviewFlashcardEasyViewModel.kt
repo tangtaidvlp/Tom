@@ -8,8 +8,8 @@ import com.teamttdvlp.memolang.data.model.entity.flashcard.FlashcardSet
 import com.teamttdvlp.memolang.model.*
 import com.teamttdvlp.memolang.view.activity.iview.ReviewFlashcardEasyView
 import com.teamttdvlp.memolang.view.base.BaseViewModel
+import com.teamttdvlp.memolang.view.helper.log
 import com.teamttdvlp.memolang.view.helper.notContains
-import com.teamttdvlp.memolang.view.helper.quickLog
 import com.teamttdvlp.memolang.view.helper.selfPlusOne
 
 class ReviewFlashcardEasyViewModel(var app : Application) : BaseViewModel<ReviewFlashcardEasyView>() {
@@ -169,14 +169,14 @@ class ReviewFlashcardEasyViewModel(var app : Application) : BaseViewModel<Review
 
     private val SPECIFIED_CELL_AMOUNT = 15
     private fun getCellOfListType (card : Flashcard) : ReviewFlashcardEasyView.ListOfCellType {
-        quickLog("jkaf: " + card.text)
+        log("jkaf: " + card.text)
         if (card.text.trim().contains(" ")) {
             val clearedAllSpaceText = card.text.replace(" ", "")
             if (clearedAllSpaceText.length > SPECIFIED_CELL_AMOUNT) {
-                quickLog("Text: $clearedAllSpaceText and Length: ${clearedAllSpaceText.length}")
+                log("Text: $clearedAllSpaceText and Length: ${clearedAllSpaceText.length}")
                 return ReviewFlashcardEasyView.ListOfCellType.WORD_LIST
             } else { // Text is too short to devide it into words
-                quickLog("Too short length: ${clearedAllSpaceText.length}")
+                log("Too short length: ${clearedAllSpaceText.length}")
                 return ReviewFlashcardEasyView.ListOfCellType.CHARACTER_LIST
             }
         }
@@ -283,7 +283,7 @@ class ReviewFlashcardEasyViewModel(var app : Application) : BaseViewModel<Review
                 saveStatus(speakerStatus)
             }
         } else {
-            quickLog("ReviewFlashcardEasyViewModel.kt:: reviewFCEasyActivity_StatusManager is not initialized")
+            log("ReviewFlashcardEasyViewModel.kt:: reviewFCEasyActivity_StatusManager is not initialized")
         }
     }
 

@@ -114,7 +114,7 @@ class SearchEngVNDictionaryActivity :
             if (actionId == EditorInfo.IME_ACTION_SEARCH) {
                 val key = edtEngViDictionary.text.toString()
                 val fullContent = rcvSearchDictionaryAdapter.getVocabularyByKey(key)
-                quickLog("FULL: $fullContent")
+                log("FULL: $fullContent")
                 if (fullContent != null) {
                     onChooseVocabulary(fullContent)
                 } else {

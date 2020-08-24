@@ -19,7 +19,7 @@ import android.widget.LinearLayout
 import androidx.core.animation.addListener
 import androidx.interpolator.view.animation.FastOutSlowInInterpolator
 import com.teamttdvlp.memolang.R
-import com.teamttdvlp.memolang.view.helper.quickLog
+import com.teamttdvlp.memolang.view.helper.log
 import kotlin.math.*
 
 private const val UNVALUED = -1
@@ -37,13 +37,14 @@ class ColorfulProgressBar : LinearLayout {
         addView(progressBar, ViewGroup.LayoutParams(MATCH_PARENT, MATCH_PARENT))
     }
 
-    constructor(context: Context?, attrs : AttributeSet, deff : Int) : super(context!!, attrs, deff) {
+    constructor(context: Context?, attrs: AttributeSet, deff: Int) : super(context!!, attrs, deff)
 
-    }
-
-    constructor(context: Context?, attrs:AttributeSet, deff: Int, deffS : Int) : super (context!!, attrs, deff, deffS) {
-
-    }
+    constructor(context: Context?, attrs: AttributeSet, deff: Int, deffS: Int) : super(
+        context!!,
+        attrs,
+        deff,
+        deffS
+    )
 
     init {
         orientation = VERTICAL
@@ -55,11 +56,6 @@ class ColorfulProgressBar : LinearLayout {
         if ((radius == UNVALUED) or (radius > width)) radius = width
         progressBar.actionRadius = radius
         super.onMeasure(width, width)
-    }
-
-    override fun onLayout(changed: Boolean, l: Int, t: Int, r: Int, b: Int) {
-        super.onLayout(changed, l, t, r, b)
-
     }
 
     fun transToActionMode () {
@@ -225,24 +221,24 @@ class ColorfulImage : View {
         val specialX = haftWidth + haftWidth * sin60
         val specialY = haftWidth + haftWidth * cos60
 
-        val offsetX = (dot_width/2) * cos30
-        val offsetY = (dot_width/2) * sin30
+        val offsetX = (dot_width / 2) * cos30
+        val offsetY = (dot_width / 2) * sin30
 
         actionToEndDistance = abs(width - actionRadius)
 
-        quickLog("Radius: $width")
-        quickLog("Action Radius: $actionRadius")
-        quickLog("Distance: $actionToEndDistance")
+        log("Radius: $width")
+        log("Action Radius: $actionRadius")
+        log("Distance: $actionToEndDistance")
 
         offsetActionToEnd_x1 = 0f
         offsetActionToEnd_y1 = actionToEndDistance.toFloat()
-        offsetActionToEnd_x2 = - actionToEndDistance * sin60
-        offsetActionToEnd_y2 = - actionToEndDistance * cos60
+        offsetActionToEnd_x2 = -actionToEndDistance * sin60
+        offsetActionToEnd_y2 = -actionToEndDistance * cos60
         offsetActionToEnd_x3 = actionToEndDistance * sin60
-        offsetActionToEnd_y3 = - actionToEndDistance * cos60
+        offsetActionToEnd_y3 = -actionToEndDistance * cos60
 
-        action_x1 = (width - dot_width)/2 + offsetActionToEnd_x1
-        action_y1 = - dot_width/2 + dot_width/2 + offsetActionToEnd_y1
+        action_x1 = (width - dot_width) / 2 + offsetActionToEnd_x1
+        action_y1 = -dot_width / 2 + dot_width / 2 + offsetActionToEnd_y1
         action_x2 = specialX - dot_width/2 - offsetX + offsetActionToEnd_x2
         action_y2 = specialY - dot_width/2 - offsetY + offsetActionToEnd_y2
         action_x3 = (width - specialX) - dot_width/2 + offsetX + offsetActionToEnd_x3

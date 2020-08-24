@@ -6,9 +6,8 @@ import com.teamttdvlp.memolang.data.model.entity.user.UserUsingHistory
 import com.teamttdvlp.memolang.data.model.other.new_vocabulary.TypicalRawVocabulary
 import com.teamttdvlp.memolang.data.sql.MemoLangSqliteDataBase
 import com.teamttdvlp.memolang.data.sql.dao.UserUsingHistoryDAO
+import com.teamttdvlp.memolang.view.helper.log
 import com.teamttdvlp.memolang.view.helper.notContains
-import com.teamttdvlp.memolang.view.helper.quickLog
-import java.lang.Exception
 
 class UserUsingHistoryRepos (database : MemoLangSqliteDataBase) {
 
@@ -127,7 +126,7 @@ class UserUsingHistoryRepos (database : MemoLangSqliteDataBase) {
 
                 onFinish?.invoke()
             } else {
-                quickLog("Get UserUsingHistory has errors")
+                log("Get UserUsingHistory has errors")
             }
         }).execute()
     }
@@ -138,9 +137,9 @@ class UserUsingHistoryRepos (database : MemoLangSqliteDataBase) {
             try {
                 val userUsingHistory = params[0]
                 userUsingHistoryDAO.updateUserHistory(userUsingHistory!!)
-                quickLog("Update success")
+                log("Update success")
             } catch (ex : Exception) {
-                quickLog("UPDATE FAILED")
+                log("UPDATE FAILED")
                 ex.printStackTrace()
             }
         }
@@ -210,13 +209,13 @@ class UserUsingHistoryRepos (database : MemoLangSqliteDataBase) {
 
     }
 
-    private inner class RecentSearchedVocabularyManager () {
+    private inner class RecentSearchedVocabularyManager {
 
         private val recentSearchedVocaList = userUsingHistory.recentSearchedVocaList
 
         private val MAX_COUNT = 20
 
-        fun add (vocabulary : TypicalRawVocabulary) {
+        fun add(vocabulary: TypicalRawVocabulary) {
             if (recentSearchedVocaList.notContains(vocabulary)) {
                 recentSearchedVocaList.add(0, vocabulary)
                 if (recentSearchedVocaList.size >= MAX_COUNT) {

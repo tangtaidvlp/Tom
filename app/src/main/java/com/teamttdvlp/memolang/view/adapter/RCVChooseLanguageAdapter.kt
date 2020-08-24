@@ -8,8 +8,6 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.teamttdvlp.memolang.R
 import com.teamttdvlp.memolang.data.model.entity.language.Language
-import com.teamttdvlp.memolang.view.helper.notContains
-import kotlin.collections.ArrayList
 
 open class RCVChooseLanguageAdapter (var context : Context) : RecyclerView.Adapter<RCVChooseLanguageAdapter.ViewHolder> () {
 
@@ -30,7 +28,8 @@ open class RCVChooseLanguageAdapter (var context : Context) : RecyclerView.Adapt
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int) : ViewHolder {
-        val view = LayoutInflater.from(context).inflate(R.layout.item_simple_text, parent, false)
+        val view = LayoutInflater.from(context)
+            .inflate(R.layout.item_simple_text_3_all_white, parent, false)
         return ViewHolder(view)
     }
 

@@ -1,5 +1,6 @@
 package com.teamttdvlp.memolang.viewmodel
 
+//import com.teamttdvlp.memolang.viewmodel.reusable.OnlineFlashcardDBManager
 import androidx.databinding.ObservableField
 import com.teamttdvlp.memolang.data.model.entity.flashcard.Flashcard
 import com.teamttdvlp.memolang.data.model.entity.flashcard.FlashcardSet
@@ -7,9 +8,7 @@ import com.teamttdvlp.memolang.model.AddFlashcardExecutor
 import com.teamttdvlp.memolang.model.repository.FlashcardSetRepos
 import com.teamttdvlp.memolang.view.activity.iview.EditFlashcardView
 import com.teamttdvlp.memolang.view.base.BaseViewModel
-import com.teamttdvlp.memolang.view.helper.quickLog
-//import com.teamttdvlp.memolang.viewmodel.reusable.OnlineFlashcardDBManager
-import java.lang.Exception
+import com.teamttdvlp.memolang.view.helper.log
 
 class EditFlashcardViewModel (
     var addFlashcardExecutor: AddFlashcardExecutor,
@@ -51,7 +50,7 @@ class EditFlashcardViewModel (
                     newFlashcard.id = insertedCardId.toInt()
                     view.onUpdateFlashcardSuccess(newFlashcard)
                 } else {
-                    quickLog("Update flashcard in offline database failed. Please try again")
+                    log("Update flashcard in offline database failed. Please try again")
                 }
             }
         } else {

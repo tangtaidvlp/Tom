@@ -12,8 +12,8 @@ import androidx.core.view.doOnPreDraw
 import androidx.core.view.isVisible
 import androidx.recyclerview.widget.RecyclerView
 import com.teamttdvlp.memolang.R
-import com.teamttdvlp.memolang.databinding.ItemFlashcardRcvBinding
 import com.teamttdvlp.memolang.data.model.entity.flashcard.Flashcard
+import com.teamttdvlp.memolang.databinding.ItemFlashcardRcvBinding
 import com.teamttdvlp.memolang.view.helper.*
 
 class RCVViewFlashcardAdapter (var context : Context, var list : ArrayList<Flashcard>) : RecyclerView.Adapter<RCVViewFlashcardAdapter.ViewHolder> () {
@@ -93,15 +93,15 @@ class RCVViewFlashcardAdapter (var context : Context, var list : ArrayList<Flash
         }
 
         vHder.dB.btnSwitchDeleteState.setOnClickListener {
-            quickLog("Pos: " +vHder.adapterPosition)
+            log("Pos: " + vHder.adapterPosition)
             if (checkedCardsPosList.contains(vHder.adapterPosition)) {
-                quickLog("Contains: " +vHder.adapterPosition)
+                log("Contains: " + vHder.adapterPosition)
                 vHder.uncheck()
                 checkedCardsPosList.remove(vHder.adapterPosition)
             } else {
                 vHder.check()
                 checkedCardsPosList.add(vHder.adapterPosition)
-                quickLog("Not contains: " +vHder.adapterPosition)
+                log("Not contains: " + vHder.adapterPosition)
             }
         }
 
@@ -124,7 +124,7 @@ class RCVViewFlashcardAdapter (var context : Context, var list : ArrayList<Flash
     fun getSelectedFlashcardList () : ArrayList<Flashcard> {
         val result = ArrayList<Flashcard>()
         for (pos in checkedCardsPosList) {
-            quickLog("POS: " + pos)
+            log("POS: " + pos)
             result.add(list[pos])
         }
         return result
@@ -199,7 +199,7 @@ class RCVViewFlashcardAdapter (var context : Context, var list : ArrayList<Flash
         init {
             if (itemViewHeight == -1) dB.root.doOnPreDraw {
                 itemViewHeight = dB.root.height
-                quickLog("ItemViewHeight: $itemViewHeight")
+                log("ItemViewHeight: $itemViewHeight")
             }
 
             `28dp` = 28.dp().toFloat()

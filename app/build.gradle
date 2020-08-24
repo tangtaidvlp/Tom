@@ -94,6 +94,9 @@ dependencies {
     implementation 'androidx.navigation:navigation-fragment-ktx:2.1.0'
     implementation 'androidx.navigation:navigation-ui-ktx:2.1.0'
 
+    // Switch library
+    implementation 'com.github.zcweng:switch-button:0.0.3@aar'
+
     // room
     def room_version = "2.2.5"
     implementation "androidx.room:room-runtime:$room_version"

@@ -29,7 +29,7 @@ import javax.inject.Named
 
 
 class AddFlashcardActivity : BaseActivity<ActivityAddFlashcardBinding, AddFlashCardViewModel>()
-                            ,AddFlashcardView {
+    , AddFlashcardView {
 
     companion object {
 

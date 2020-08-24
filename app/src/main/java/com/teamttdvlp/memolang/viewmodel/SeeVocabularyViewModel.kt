@@ -17,7 +17,7 @@ import com.teamttdvlp.memolang.model.repository.UserUsingHistoryRepos
 import com.teamttdvlp.memolang.model.sharepref.EngVietDictionaryActivitySharePref
 import com.teamttdvlp.memolang.view.activity.iview.SeeVocabularyView
 import com.teamttdvlp.memolang.view.base.BaseViewModel
-import com.teamttdvlp.memolang.view.helper.quickLog
+import com.teamttdvlp.memolang.view.helper.log
 import java.util.*
 
 class EngVietDictionaryActivityViewModel(
@@ -72,7 +72,7 @@ class EngVietDictionaryActivityViewModel(
                 userUsingHistoryRepos.addToRecent_AddedFlashcardList(newCard)
                 updateUserInfo(newCard)
             } else {
-                quickLog("Storing this flashcard to local storage failed. Please check again")
+                log("Storing this flashcard to local storage failed. Please check again")
                 exception!!.printStackTrace()
             }
         }

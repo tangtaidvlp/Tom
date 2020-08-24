@@ -292,12 +292,13 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/btn_speak_front_text">
 
+            <!--            app:layout_constraintBottom_toTopOf="@id/img_swipe_right_to_save"-->
+            <!--        // Fix error later-->
             <ImageView
                 android:id="@+id/img_swipe_up_to_flip"
                 android:layout_width="20dp"
                 android:layout_height="20dp"
                 android:src="@drawable/image_swipe_up"
-                app:layout_constraintBottom_toTopOf="@id/img_swipe_right_to_save"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent" />
 

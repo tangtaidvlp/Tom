@@ -23,11 +23,12 @@ import androidx.core.view.marginStart
 import com.teamttdvlp.memolang.R
 import com.teamttdvlp.memolang.data.model.entity.flashcard.Flashcard
 import com.teamttdvlp.memolang.data.model.entity.flashcard.FlashcardSet
+import com.teamttdvlp.memolang.data.model.entity.flashcard.SetNameUtils
 import com.teamttdvlp.memolang.databinding.ActivityAddFlashcardRetroBinding
 import com.teamttdvlp.memolang.view.activity.iview.AddFlashcardView
 import com.teamttdvlp.memolang.view.adapter.RCVChooseLanguageAdapter
 import com.teamttdvlp.memolang.view.adapter.RCVRecentUsedLanguageAdapter
-import com.teamttdvlp.memolang.view.adapter.RCV_Generic_SimpleListAdapter
+import com.teamttdvlp.memolang.view.adapter.RCV_SimpleChooseFlashcardSetAdapter
 import com.teamttdvlp.memolang.view.base.BaseActivity
 import com.teamttdvlp.memolang.view.customview.MyGestureDetector
 import com.teamttdvlp.memolang.view.customview.NormalOutExtraSlowIn
@@ -93,7 +94,7 @@ class RetrofitAddFlashcardActivity : BaseActivity<ActivityAddFlashcardRetroBindi
     lateinit var rcvBackLangRecentChosenLanguageAdapter: RCVRecentUsedLanguageAdapter
         @Inject set
 
-    lateinit var rcvFlashcardSetNameAdapter: RCV_Generic_SimpleListAdapter<FlashcardSet>
+    lateinit var rcvFlashcardSetNameAdapter: RCV_SimpleChooseFlashcardSetAdapter
         @Inject set
 
     lateinit var viewModelProviderFactory: ViewModelProviderFactory
@@ -114,9 +115,9 @@ class RetrofitAddFlashcardActivity : BaseActivity<ActivityAddFlashcardRetroBindi
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setStatusBarColor(resources.getColor(R.color.app_blue))
+        setStatusBarColor(resources.getColor(R.color.app_darker_blue))
         viewModel.setUpView(this)
-
+        getRequests()
         if (requestEditFlashcard != null) {
             startEditting()
             showVirtualKeyboard()
@@ -129,7 +130,7 @@ class RetrofitAddFlashcardActivity : BaseActivity<ActivityAddFlashcardRetroBindi
         viewModel.saveUsingHistory()
     }
 
-    override fun initProperties() {
+    private fun getRequests() {
         requestAdd_FlashcardSet = getAddFlashcardRequest()
 
         val editInfo = getEditFlashcardRequest()
@@ -157,6 +158,7 @@ class RetrofitAddFlashcardActivity : BaseActivity<ActivityAddFlashcardRetroBindi
             // Choose Flashcard SET NAME Recycler View
             rcvFlashcardSetName.adapter = rcvFlashcardSetNameAdapter
             viewModel.getAllFlashcardSetWithNoCardList { flashcardSetList ->
+
                 rcvFlashcardSetNameAdapter.setData(flashcardSetList)
 
                 // Set up request
@@ -169,6 +171,8 @@ class RetrofitAddFlashcardActivity : BaseActivity<ActivityAddFlashcardRetroBindi
                         requestAdd_FlashcardSet!!.backLanguage
                     )
 
+                    viewModel.currentFocusFlashcardSet = requestAdd_FlashcardSet!!
+
                 } else if (thereIs_EditFlashcardRequest) {
                     showFlashcardSetInfoOnScreen(
                         requestEditFlashcardSet!!.name,
@@ -177,30 +181,32 @@ class RetrofitAddFlashcardActivity : BaseActivity<ActivityAddFlashcardRetroBindi
                     )
 
                     showRequestEditFlashcard_Info_OnScreen(requestEditFlashcard!!)
+                    viewModel.currentFocusFlashcardSet = requestEditFlashcardSet!!
 
                 } else {
                     val thereIsNoFlashcardSetAvailable = (flashcardSetList.size == 0)
                     if (thereIsNoFlashcardSetAvailable) {
-                        val lastUsedFrontLang = viewModel.getCurrentFrontLanguage()
-                        val lastUsedBackLang = viewModel.getCurrentBackLanguage()
-                        txtSetName.hint =
-                            viewModel.getDefaultSetName(lastUsedFrontLang, lastUsedBackLang)
+                        var defaultSet = viewModel.getDefaultFlashcardSet()
+                        txtSetName.text = defaultSet.name + " (Default)"
                         showFlashcardSetInfoOnScreen(
-                            lastSetName = "",
-                            lastFrontLang = lastUsedFrontLang,
-                            lastBackLang = lastUsedBackLang
+                            setName = defaultSet.name,
+                            frontLang = defaultSet.frontLanguage,
+                            backLang = defaultSet.backLanguage
                         )
-
+                        viewModel.currentFocusFlashcardSet = defaultSet
                     } else { // There have been some Flashcard Sets and No AddFlashcardRequest from any specified set
                         val lastUsedFrontLang = viewModel.getCurrentFrontLanguage()
                         val lastUsedBackLang = viewModel.getCurrentBackLanguage()
                         val lastUsedFlashcardSet = viewModel.getLastedUseFlashcardSetName()
 
                         showFlashcardSetInfoOnScreen(
-                            lastSetName = lastUsedFlashcardSet
-                            , lastFrontLang = lastUsedFrontLang
-                            , lastBackLang = lastUsedBackLang
+                            setName = lastUsedFlashcardSet
+                            , frontLang = lastUsedFrontLang
+                            , backLang = lastUsedBackLang
                         )
+
+                        viewModel.currentFocusFlashcardSet =
+                            FlashcardSet(lastUsedFlashcardSet, lastUsedFrontLang, lastUsedBackLang)
                     }
                 }
 
@@ -280,14 +286,13 @@ class RetrofitAddFlashcardActivity : BaseActivity<ActivityAddFlashcardRetroBindi
     }
 
     private fun showFlashcardSetInfoOnScreen(
-        lastSetName: String,
-        lastFrontLang: String,
-        lastBackLang: String
+        setName: String,
+        frontLang: String,
+        backLang: String
     ) {
         dB.apply {
-            txtSetName.text = lastSetName
-            txtFrontLang.text = lastFrontLang
-            txtBackLang.text = lastBackLang
+            txtSetName.text = setName
+            txtSetLanguages.text = SetNameUtils.getLanguagePairForm(frontLang, backLang)
         }
     }
 
@@ -351,16 +356,25 @@ class RetrofitAddFlashcardActivity : BaseActivity<ActivityAddFlashcardRetroBindi
                 return@setOnEditorActionListener true
             }
 
-            imgSwipeZone.setOnTouchListener(object : MyGestureDetector(this@RetrofitAddFlashcardActivity) {
+            btnSave.setOnClickListener {
+                proceedAddOrSaveFlashcard()
+                userEndAdding = true
+            }
+
+            btnSaveAndContinue.setOnClickListener {
+                proceedAddOrSaveFlashcard()
+                userEndAdding = false
+            }
+
+            imgSwipeZone.setOnTouchListener(object :
+                MyGestureDetector(this@RetrofitAddFlashcardActivity) {
 
                 override fun onSwipeRight() {
-                    proceedAddOrSaveFlashcard()
-                    userEndAdding = true
+                    log("???? R")
                 }
 
                 override fun onSwipeLeft() {
-                    proceedAddOrSaveFlashcard()
-                    userEndAdding = false
+                    log("???? L")
                 }
 
                 override fun onSwipeUp() {
@@ -448,16 +462,19 @@ class RetrofitAddFlashcardActivity : BaseActivity<ActivityAddFlashcardRetroBindi
             }
 
             rcvFlashcardSetNameAdapter.setOnItemClickListener { flashcardSet ->
-                txtSetName.text = flashcardSet.name
-                txtFrontLang.text = flashcardSet.frontLanguage
-                txtBackLang.text = flashcardSet.backLanguage
+                showFlashcardSetInfoOnScreen(
+                    flashcardSet.name,
+                    flashcardSet.frontLanguage,
+                    flashcardSet.backLanguage
+                )
+                viewModel.currentFocusFlashcardSet = flashcardSet
                 hideSetNameList()
             }
 
             btnStartCreateNewSet.setOnClickListener {
                 edtNewSetName.requestFocus()
-                edtNewSetFrontLanguage.setText(txtFrontLang.text)
-                edtNewSetBackLanguage.setText(txtBackLang.text)
+                edtNewSetFrontLanguage.setText(viewModel.currentFocusFlashcardSet.frontLanguage)
+                edtNewSetBackLanguage.setText(viewModel.currentFocusFlashcardSet.backLanguage)
                 if (rcvFlashcardSetName.isVisible) {
                     hideSetNameList()
                 }
@@ -485,11 +502,13 @@ class RetrofitAddFlashcardActivity : BaseActivity<ActivityAddFlashcardRetroBindi
                 val setName = edtNewSetName.text.toString()
                 val frontLang = edtNewSetFrontLanguage.text.toString()
                 val backLang = edtNewSetBackLanguage.text.toString()
-                txtSetName.text = setName
-                txtFrontLang.text = frontLang
-                txtBackLang.text = backLang
+                showFlashcardSetInfoOnScreen(setName, frontLang, backLang)
                 val newSet = viewModel.createNewFlashcardSetIfValid(setName, frontLang, backLang)
-                rcvFlashcardSetNameAdapter.addNewFlashcardSet(newSet)
+                val setIsValid = (newSet != null)
+                if (setIsValid) {
+                    viewModel.currentFocusFlashcardSet = newSet!!
+                    rcvFlashcardSetNameAdapter.addFlashcardSetAtTop(newSet)
+                }
             }
 
 
@@ -521,16 +540,15 @@ class RetrofitAddFlashcardActivity : BaseActivity<ActivityAddFlashcardRetroBindi
                 return
             }
 
-            hideIPAKeyboard()
             val text = edtText.text.toString()
             val translation = edtTranslation.text.toString()
             val example = edtExample.text.toString()
             val meanOfExample = edtExampleTranslation.text.toString()
             val type = edtType.text.toString()
             val pronunciation = edtPronunciation.text.toString()
-            val frontLanguage = txtFrontLang.text.toString()
-            val backLanguage = txtBackLang.text.toString()
-            val setName = txtSetName.text.toString()
+            val frontLanguage = viewModel.currentFocusFlashcardSet.frontLanguage
+            val backLanguage = viewModel.currentFocusFlashcardSet.backLanguage
+            val setName = viewModel.currentFocusFlashcardSet.name
 
             val isEditingFlashcard = (requestEditFlashcard != null)
             val id = if (isEditingFlashcard) {
@@ -564,7 +582,6 @@ class RetrofitAddFlashcardActivity : BaseActivity<ActivityAddFlashcardRetroBindi
         edtExample.setText("")
         edtExampleTranslation.setText("")
     }}
-
 
 
     private fun onChooseFrontLanguage (language : String) { dB.apply {
@@ -620,7 +637,7 @@ class RetrofitAddFlashcardActivity : BaseActivity<ActivityAddFlashcardRetroBindi
 
     private fun showCreateSetNamePanel () { dB.apply {
         // Blue with 50% Black color covers
-        setStatusBarColor(resources.getColor(R.color.dark_covered_blue))
+        setStatusBarColor(resources.getColor(R.color.app_darker_blue))
 
         vwgrpCreateNewSet.showByScaleUpAndFadeIn()
         imgTurnOffCreateNewSet.goVISIBLE()
@@ -768,12 +785,24 @@ class RetrofitAddFlashcardActivity : BaseActivity<ActivityAddFlashcardRetroBindi
 
 
     private fun startEditting () { dB.apply {
-        vwgrpSwipeFunctions.animate().alpha(0f).setDuration(100)
-            .setLiteListener (onEnd = {
-                txtFlipCardText.goVISIBLE()
-                txtStartCreatingText.goGONE()
-                vwgrpSwipeRightToSave.goVISIBLE()
-                vwgrpSwipeFunctions.animate().alpha(1f).duration = 100
+        vwgrpSwipeFunctions.animate().alpha(1f).setDuration(100)
+            .setLiteListener(onStart = {
+                vwgrpSwipeFunctions.goVISIBLE()
+            })
+
+        imgArrowUp.animate().alpha(0f).setDuration(100)
+            .setLiteListener(onEnd = {
+                imgArrowUp.goGONE()
+            })
+
+        txtSwipeUp.animate().alpha(0f).setDuration(100)
+            .setLiteListener(onEnd = {
+                txtSwipeUp.goGONE()
+            })
+
+        imgFlashcardsBackground.animate().alpha(0f).setDuration(100)
+            .setLiteListener(onEnd = {
+                imgFlashcardsBackground.goGONE()
             })
 
         hasStartedEdit = true

@@ -273,7 +273,7 @@ class ReviewFlashcardActivity : BaseActivity<ActivityReviewFlashcardBinding, Rev
     }
 
     override fun showSpeakTextError(error: String) {
-        quickLog(error)
+        log(error)
     }
 
     override fun showGoodAnswerAnimation() { dB.apply {

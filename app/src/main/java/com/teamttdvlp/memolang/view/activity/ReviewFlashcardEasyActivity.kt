@@ -271,7 +271,7 @@ class ReviewFlashcardEasyActivity : BaseActivity<ActivityReviewFlashcardEasyBind
 
     private fun beginUsing() {
         viewModel.setUp(getRequestedFlashcardSet(), getIsReverseTextAndTranslation())
-        quickLog(getRequestedFlashcardSet().flashcards.size)
+        log(getRequestedFlashcardSet().flashcards.size)
         setUpSpeakerStatus()
     }
 
@@ -537,7 +537,7 @@ class ReviewFlashcardEasyActivity : BaseActivity<ActivityReviewFlashcardEasyBind
 
     // UTTERANCE PROGRESS LISTENER OVERRIDE
     override fun onUtteranceCompleted(utteranceId: String?) {
-        quickLog("Complete")
+        log("Complete")
     }
     // ======================== CALCULATE FUNCTION =================================
 
@@ -564,7 +564,7 @@ class ReviewFlashcardEasyActivity : BaseActivity<ActivityReviewFlashcardEasyBind
             (expectedPanelWidth - (actualPanelWidth + addtnalCellWidth * MAX_CPR)) / 2
         InCellWidth += addtnalCellWidth
 
-        quickLog("Calculate input")
+        log("Calculate input")
     }
 
     private fun calculateOutputCellsDimens () {
@@ -692,7 +692,7 @@ class ReviewFlashcardEasyActivity : BaseActivity<ActivityReviewFlashcardEasyBind
     }
 
     private fun recalculatePanelsHeight (elementCount : Int) {
-        quickLog("recalculatePanelsHeight()")
+        log("recalculatePanelsHeight()")
         dB.apply {
             var rowCount = elementCount / MAX_CPR
             val notFullCellInLastRow = (elementCount % MAX_CPR != 0)
@@ -806,7 +806,7 @@ class ReviewFlashcardEasyActivity : BaseActivity<ActivityReviewFlashcardEasyBind
     }
 
     private fun layoutInput_WordCellsOnScreen(): Int {
-        quickLog("layoutInput_WordCellsOnScreen()")
+        log("layoutInput_WordCellsOnScreen()")
         var rowCount = 1
         for (cell in inputCellList) {
             val nextTotalCellsWidth_InLastRow = curInputWCells_MarginStart + cell.width

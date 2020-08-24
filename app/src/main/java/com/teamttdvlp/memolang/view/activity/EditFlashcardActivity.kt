@@ -10,12 +10,12 @@ import androidx.core.animation.addListener
 import androidx.core.view.isGone
 import androidx.core.view.isVisible
 import com.teamttdvlp.memolang.R
-import com.teamttdvlp.memolang.databinding.ActivityEditFlashcardBinding
-import com.teamttdvlp.memolang.view.base.BaseActivity
-import com.teamttdvlp.memolang.view.helper.*
 import com.teamttdvlp.memolang.data.model.entity.flashcard.Flashcard
+import com.teamttdvlp.memolang.databinding.ActivityEditFlashcardBinding
 import com.teamttdvlp.memolang.view.activity.iview.EditFlashcardView
 import com.teamttdvlp.memolang.view.adapter.RCV_FlashcardSetNameAdapter
+import com.teamttdvlp.memolang.view.base.BaseActivity
+import com.teamttdvlp.memolang.view.helper.*
 import com.teamttdvlp.memolang.viewmodel.EditFlashcardViewModel
 import javax.inject.Inject
 import javax.inject.Named
@@ -91,7 +91,7 @@ class EditFlashcardActivity : BaseActivity<ActivityEditFlashcardBinding, EditFla
         }
 
         layoutAddFlashcard.btnAdd.setOnClickListener {
-            quickLog("nkhjk")
+            log("nkhjk")
             hideIPAKeyboard()
             hideVirtualKeyboard()
             layoutAddFlashcard.apply {

@@ -1,8 +1,10 @@
 package com.teamttdvlp.memolang.view.activity
 
+import android.animation.ValueAnimator
 import android.annotation.SuppressLint
 import android.app.Activity
 import android.content.Intent
+import android.graphics.Color
 import android.net.Uri
 import android.os.Build
 import android.os.Bundle
@@ -13,7 +15,10 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.animation.Animation
 import android.widget.TextView
+import androidx.constraintlayout.widget.ConstraintLayout
+import androidx.core.view.doOnPreDraw
 import androidx.core.view.isVisible
+import androidx.drawerlayout.widget.DrawerLayout
 import com.teamttdvlp.memolang.R
 import com.teamttdvlp.memolang.data.model.entity.flashcard.FlashcardSet
 import com.teamttdvlp.memolang.databinding.ActivityMenuBinding
@@ -102,6 +107,29 @@ class MenuActivity : BaseActivity<ActivityMenuBinding, MenuActivityViewModel>(),
         }
     }
 
+    private var scrollViewMenuButtonsOrginalHeight = -1
+
+    private fun recalcMenuButtonsDimensions() {
+        dB.apply {
+            scrvMenuButtons.doOnPreDraw {
+                // Initialize value
+                if (scrollViewMenuButtonsOrginalHeight == -1) {
+                    scrollViewMenuButtonsOrginalHeight = scrvMenuButtons.height
+                }
+
+                if (layoutShrinkMenuButtons.root.isVisible) {
+                    (scrvMenuButtons.layoutParams as ConstraintLayout.LayoutParams).topMargin =
+                        scrollViewMenuButtonsOrginalHeight - 115.dp() - 15.dp()
+                } else {
+                    (scrvMenuButtons.layoutParams as ConstraintLayout.LayoutParams).topMargin =
+                        scrollViewMenuButtonsOrginalHeight - 225.dp() - 15.dp()
+                }
+                scrvMenuButtons.requestLayout()
+            }
+            scrvMenuButtons.isScrollContainer = false
+        }
+    }
+
     private fun setUpChooseLanguageRecyclerViews() {
         dB.apply {
             // Choose LANGUAGE RecyclerView
@@ -140,12 +168,6 @@ class MenuActivity : BaseActivity<ActivityMenuBinding, MenuActivityViewModel>(),
                 drawerContainer.openDrawer(Gravity.START)
             }
 
-            layoutNav.apply {
-                vwgrpChooseTheme.setOnClickListener {
-                    hideNavMenu_And_ShowThemePicker()
-                }
-            }
-
             layoutMenuButtons.btnButtonAdd.setOnClickListener {
                 quickStartActivity(RetrofitAddFlashcardActivity::class.java)
             }
@@ -161,6 +183,8 @@ class MenuActivity : BaseActivity<ActivityMenuBinding, MenuActivityViewModel>(),
             layoutMenuButtons.btnBubbleSearch.setOnClickListener {
                 createFloatingWidget()
             }
+
+            addShrinkButtonsMenuEvents()
 
             flashcardSetAdapter.setOnBtnViewListClickListener {
                 val intent = Intent(this@MenuActivity, ViewFlashCardListActivity::class.java)
@@ -196,33 +220,45 @@ class MenuActivity : BaseActivity<ActivityMenuBinding, MenuActivityViewModel>(),
                 )
             }
 
-            flashcardSetAdapter.setOnBtn_Edit_FlashcardClickListener { flashcardSet ->
+            dialogDeleteFlashcardSetName.setOnStartHide {
+                turnStatusBarToLighterColor(dialogDeleteFlashcardSetName.getAnimDuration())
+            }
+
+            dialogEditFlashcardSetName.setOnStartHide {
+                turnStatusBarToLighterColor(dialogEditFlashcardSetName.getAnimDuration())
+            }
+
+            flashcardSetAdapter.setOnBtn_Edit_FlashcardSetClickListener { flashcardSet ->
                 currentBeingFocusedFlashcardSet = flashcardSet
                 edtPanelEditSetName.setText(flashcardSet.name)
+                edtPanelEditSetName.setSelection(flashcardSet.name.length)
                 dialogEditFlashcardSetName.show()
+                turnStatusBarToDarkerColor(dialogEditFlashcardSetName.getAnimDuration())
                 showVirtualKeyboard()
                 edtPanelEditSetName.requestFocus()
             }
 
-            flashcardSetAdapter.setOnBtn_Delete_FlashcardClickListener { flashcardSet ->
+            flashcardSetAdapter.setOnBtn_Delete_FlashcardSetClickListener { flashcardSet ->
                 currentBeingFocusedFlashcardSet = flashcardSet
                 txtConfirmDeleteFlashcardSet.setText(
                     getConfirmText(flashcardSet.name),
                     TextView.BufferType.SPANNABLE
                 )
                 dialogDeleteFlashcardSetName.show()
+                turnStatusBarToDarkerColor(dialogDeleteFlashcardSetName.getAnimDuration())
                 viewModel.updateHistory()
             }
 
             btnPanelSaveSetName.setOnClickListener {
                 val newName = edtPanelEditSetName.text.toString()
-                viewModel.deleteFlashcard(currentBeingFocusedFlashcardSet!!)
+                viewModel.deleteFlashcardSet(currentBeingFocusedFlashcardSet!!)
                 viewModel.updateSetName(currentBeingFocusedFlashcardSet!!, newName)
-                viewModel.updateOtherActivitiesSharePref_Info(
+                viewModel.update_OtherActivitiesSharePref_Info(
                     currentBeingFocusedFlashcardSet!!.name,
                     newName
                 )
                 dialogEditFlashcardSetName.dismiss()
+                turnStatusBarToLighterColor(dialogEditFlashcardSetName.getAnimDuration())
                 hideVirtualKeyboard()
                 flashcardSetAdapter.updateFlashcardSetName(
                     currentBeingFocusedFlashcardSet!!,
@@ -231,12 +267,15 @@ class MenuActivity : BaseActivity<ActivityMenuBinding, MenuActivityViewModel>(),
             }
 
             btnPanelDeleteFlashcardSet.setOnClickListener {
-                viewModel.deleteFlashcard(currentBeingFocusedFlashcardSet!!)
-                viewModel.updateOtherActivitiesSharePref_Info(
+                viewModel.deleteFlashcardSet(currentBeingFocusedFlashcardSet!!)
+                viewModel.update_OtherActivitiesSharePref_Info(
                     currentBeingFocusedFlashcardSet!!.name,
                     ""
                 )
+
                 dialogDeleteFlashcardSetName.dismiss()
+                turnStatusBarToLighterColor(dialogDeleteFlashcardSetName.getAnimDuration())
+
                 flashcardSetAdapter.deleteFlashcardSet(currentBeingFocusedFlashcardSet!!)
                 updateButtonsMenuHeight(flashcardSetAdapter.itemCount)
             }
@@ -253,22 +292,38 @@ class MenuActivity : BaseActivity<ActivityMenuBinding, MenuActivityViewModel>(),
             }
 
             layoutMenuButtons.btnButtonNewSet.setOnClickListener {
+                edtNewSetName.setText("")
                 edtNewSetName.requestFocus()
                 edtNewSetFrontLanguage.setText(viewModel.getCurrentUse_FrontLanguage())
                 edtNewSetBackLanguage.setText(viewModel.getCurrentUse_BackLanguage())
+                updateEdtNewSetHint()
                 showCreateSetNamePanel()
+            }
+
+            btnPanelClearSetName.setOnClickListener {
+                edtPanelEditSetName.setText("")
+            }
+
+            btnPanelClearNewSetName.setOnClickListener {
+                edtNewSetName.setText("")
             }
 
             btnPanelCreateNewSet.setOnClickListener {
                 val setName = edtNewSetName.text.toString()
                 val frontLang = edtNewSetFrontLanguage.text.toString()
                 val backLang = edtNewSetBackLanguage.text.toString()
+
                 val newSet = viewModel.createNewFlashcardSetIfValid(setName, frontLang, backLang)
-                flashcardSetAdapter.addNewSet(newSet)
-                updateButtonsMenuHeight(flashcardSetAdapter.itemCount)
+                val setIsValid = newSet != null
+                if (setIsValid) {
+                    flashcardSetAdapter.addNewSet(newSet)
+                    updateButtonsMenuHeight(flashcardSetAdapter.itemCount)
+                    viewModel.set_OtherActivitiesSharePref_Info(newSet.name)
+                }
             }
 
             imgNewSetFrontLangSpinner.setOnClickListener {
+                imgNewSetFrontLangSpinner.setImageDrawable(getDrawable(R.drawable.image_button_app_spinner_blue))
                 vwgrpFrontLangChooseLanguage
                     .showByScaleUpAndFadeIn(startDelay = KEYBOARD_DISAPPEAR_INTERVAL)
                 hideChooseBackLanguageList()
@@ -276,6 +331,7 @@ class MenuActivity : BaseActivity<ActivityMenuBinding, MenuActivityViewModel>(),
             }
 
             imgNewSetBackLangSpinner.setOnClickListener {
+                imgNewSetBackLangSpinner.setImageDrawable(getDrawable(R.drawable.image_button_app_spinner_blue))
                 vwgrpBackLangChooseLanguage
                     .showByScaleUpAndFadeIn(startDelay = KEYBOARD_DISAPPEAR_INTERVAL)
                 hideChooseFrontLanguageList()
@@ -298,6 +354,25 @@ class MenuActivity : BaseActivity<ActivityMenuBinding, MenuActivityViewModel>(),
                 onChooseBackLanguage(language)
             }
 
+            onNavigationBarViewEvents()
+
+            btnInErrorPanelGotIt.setOnClickListener {
+                hideInvalidFlashcardSetError()
+            }
+
+            edtFindSet.addTextChangeListener(onTextChanged = { text, _, _, _ ->
+                if (text.length != 0) {
+                    flashcardSetAdapter.search(text)
+                } else {
+                    flashcardSetAdapter.stopSearching()
+                }
+            })
+
+        }
+    }
+
+    private fun onNavigationBarViewEvents() {
+        dB.apply {
             // Choose theme color
             val onChooseThemeColorListener = View.OnClickListener { v ->
                 layoutNav.themePicker.apply {
@@ -338,26 +413,105 @@ class MenuActivity : BaseActivity<ActivityMenuBinding, MenuActivityViewModel>(),
                 btnChoosePink.setOnClickListener(onChooseThemeColorListener)
                 btnChooseDarkViolet.setOnClickListener(onChooseThemeColorListener)
             }
+
+            val onDrawListener = object : DrawerLayout.DrawerListener {
+
+                override fun onDrawerSlide(drawerView: View, slideOffset: Float) {
+
+                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+                        turnStatusBarToDarkerColor(slideOffset)
+                    }
+                }
+
+                override fun onDrawerStateChanged(newState: Int) {
+                }
+
+                override fun onDrawerClosed(drawerView: View) {
+                }
+
+                override fun onDrawerOpened(drawerView: View) {
+                }
+
+            }
+            drawerContainer.addDrawerListener(onDrawListener)
+
+            // Night mode
+            layoutNav.switchNightMode.setOnCheckedChangeListener { v, isCheck ->
+                if (isCheck) {
+                    turnOnNightShiftMode()
+                } else {
+                    turnOffNightShiftMode()
+                }
+                drawerContainer.closeDrawer(Gravity.LEFT)
+            }
+
+            // Theme picker
+            layoutNav.vwgrpChooseTheme.setOnClickListener {
+                hideNavMenu_And_ShowThemePicker()
+            }
+
+            layoutNav.themePicker.btnChooseThemeBackToNav.setOnClickListener {
+                hideThemePicker_And_ShowNavMenu()
+            }
+
+        }
+    }
+
+    private fun updateEdtNewSetHint() {
+        dB.apply {
+            edtNewSetName.hint =
+                edtNewSetFrontLanguage.text.toString() + " - " + edtNewSetBackLanguage.text.toString()
+        }
+    }
+
+    private fun turnOnNightShiftMode() {
+        //TODO
+    }
+
+    private fun turnOffNightShiftMode() {
+        //TODO
+    }
+
+    private fun addShrinkButtonsMenuEvents() {
+        dB.apply {
+            layoutShrinkMenuButtons.btnSetting.setOnClickListener {
+                layoutMenuButtons.btnSetting.performClick()
+            }
+
+            layoutShrinkMenuButtons.btnBubbleSearch.setOnClickListener {
+                layoutMenuButtons.btnBubbleSearch.performClick()
+            }
+
+            layoutShrinkMenuButtons.btnTranslateOnline.setOnClickListener {
+                layoutMenuButtons.btnTranslateOnline.performClick()
+            }
+
+            layoutShrinkMenuButtons.btnDictionary.setOnClickListener {
+                layoutMenuButtons.btnDictionary.performClick()
+            }
+
+            layoutShrinkMenuButtons.btnButtonNewSet.setOnClickListener {
+                layoutMenuButtons.btnButtonNewSet.performClick()
+            }
+
+            layoutShrinkMenuButtons.btnButtonAdd.setOnClickListener {
+                layoutMenuButtons.btnButtonAdd.performClick()
+            }
         }
     }
 
     private fun updateButtonsMenuHeight(flashcardSetsCount: Int) {
         dB.apply {
             val flashcardSetList_IsShort = flashcardSetsCount <= 1
-            quickLog("Count: : $flashcardSetsCount")
-            quickLog("Is short: $flashcardSetList_IsShort")
 
             if (flashcardSetList_IsShort) {
-                if (layoutShrinkMenuButtons.root.isVisible()) {
-                    expandButtonsMenu()
-                }
+                expandButtonsMenu()
             } else {
-                if (layoutShrinkMenuButtons.root.isGone()) {
-                    minimizeButtonsMenu()
-                }
-
+                minimizeButtonsMenu()
             }
         }
+
+        recalcMenuButtonsDimensions()
     }
 
     private fun expandButtonsMenu() {
@@ -372,6 +526,44 @@ class MenuActivity : BaseActivity<ActivityMenuBinding, MenuActivityViewModel>(),
             layoutMenuButtons.root.goGONE()
             layoutShrinkMenuButtons.root.goVISIBLE()
         }
+    }
+
+    val redOffset = 12 - 22 // -6
+    val greenOffset = 89 - 159 // -46
+    val blueOffset = 102 - 186 // -65
+
+    private fun turnStatusBarToDarkerColor(duration: Long) {
+        val darkenAnim = ValueAnimator.ofFloat(0f, 1f)
+        darkenAnim.apply {
+            this.duration = duration
+            addUpdateListener {
+                turnStatusBarToDarkerColor(it.animatedFraction)
+            }
+            setTarget(View(this@MenuActivity))
+            start()
+        }
+    }
+
+    private fun turnStatusBarToLighterColor(duration: Long) {
+        val lighterAnim = ValueAnimator.ofFloat(0f, 1f)
+        lighterAnim.apply {
+            this.duration = duration
+            addUpdateListener {
+                log("Pro: ${it.animatedFraction}")
+                turnStatusBarToDarkerColor(1f - it.animatedFraction)
+            }
+            setTarget(View(this@MenuActivity))
+            start()
+        }
+    }
+
+    private fun turnStatusBarToDarkerColor(level: Float) {
+        val r = 22 + redOffset * level
+        val g = 159 + greenOffset * level
+        val b = 186 + blueOffset * level
+
+
+        setStatusBarColor(Color.rgb(r.toInt(), g.toInt(), b.toInt()))
     }
 
     override fun updateTheme() {
@@ -410,12 +602,14 @@ class MenuActivity : BaseActivity<ActivityMenuBinding, MenuActivityViewModel>(),
         dB.apply {
             edtNewSetFrontLanguage.setText(language)
             hideChooseFrontLanguageList()
+            updateEdtNewSetHint()
         }
     }
 
     private fun hideChooseFrontLanguageList() {
         dB.apply {
             vwgrpFrontLangChooseLanguage.hideByScaleDownAndFadeOut()
+            imgNewSetFrontLangSpinner.setImageDrawable(getDrawable(R.drawable.image_button_app_spinner_grey))
         }
     }
 
@@ -424,11 +618,13 @@ class MenuActivity : BaseActivity<ActivityMenuBinding, MenuActivityViewModel>(),
         dB.apply {
             edtNewSetBackLanguage.setText(language)
             hideChooseBackLanguageList()
+            updateEdtNewSetHint()
         }
     }
 
     private fun hideChooseBackLanguageList() {
         dB.apply {
+            imgNewSetBackLangSpinner.setImageDrawable(getDrawable(R.drawable.image_button_app_spinner_grey))
             vwgrpBackLangChooseLanguage.hideByScaleDownAndFadeOut()
         }
     }
@@ -437,6 +633,20 @@ class MenuActivity : BaseActivity<ActivityMenuBinding, MenuActivityViewModel>(),
     private val NAVIGATION_SECTION_TRANSITION_DURATION = 200L
 
     private fun hideNavMenu_And_ShowThemePicker() {
+
+        fun showThemePicker() {
+            dB.layoutNav.apply {
+                themePicker.viewContainer.goVISIBLE()
+                themePicker.viewContainer.alpha = 0f
+                themePicker.viewContainer.animate()
+                    .alpha(1f)
+                    .setDuration(NAVIGATION_SECTION_TRANSITION_DURATION).setInterpolator(
+                        NormalOutExtraSlowIn()
+                    )
+                    .setLiteListener() // Clear all listener
+            }
+        }
+
         dB.layoutNav.apply {
             vwgrpNavMenu.animate()
                 .alpha(0f)
@@ -447,18 +657,36 @@ class MenuActivity : BaseActivity<ActivityMenuBinding, MenuActivityViewModel>(),
                     showThemePicker()
                 })
         }
+
     }
 
-    private fun showThemePicker() {
+
+    private fun hideThemePicker_And_ShowNavMenu() {
+
+        fun showNavMenu() {
+            dB.layoutNav.apply {
+                vwgrpNavMenu.alpha = 0f
+                vwgrpNavMenu.goVISIBLE()
+                vwgrpNavMenu.animate()
+                    .alpha(1f)
+                    .setDuration(NAVIGATION_SECTION_TRANSITION_DURATION)
+                    .setInterpolator(NormalOutExtraSlowIn())
+                    .setLiteListener() // Clear all listener
+            }
+        }
+
         dB.layoutNav.apply {
-            themePicker.viewContainer.goVISIBLE()
-            themePicker.viewContainer.alpha = 0f
             themePicker.viewContainer.animate()
-                .alpha(1f)
-                .setDuration(NAVIGATION_SECTION_TRANSITION_DURATION).interpolator =
-                NormalOutExtraSlowIn()
+                .alpha(0f)
+                .setDuration(NAVIGATION_SECTION_TRANSITION_DURATION)
+                .setInterpolator(NormalOutExtraSlowIn())
+                .setLiteListener(onEnd = { // On hide End
+                    themePicker.viewContainer.goGONE()
+                    showNavMenu()
+                })
         }
     }
+
 
     private fun getConfirmText(setName: String): CharSequence {
         return Html.fromHtml("You want to delete <font color='#F44F11'>${setName}</font> set?")
@@ -517,37 +745,48 @@ class MenuActivity : BaseActivity<ActivityMenuBinding, MenuActivityViewModel>(),
     }
 
     private fun showCreateSetNamePanel() {
+        val DURATION = 100L
         dB.apply {
-            // Blue with 50% Black color covers
-            setStatusBarColor(resources.getColor(R.color.dark_covered_blue))
-
             vwgrpCreateNewSet.showByScaleUpAndFadeIn()
             imgTurnOffCreateNewSet.goVISIBLE()
-            imgTurnOffCreateNewSet.animate().alpha(0.5f).setDuration(100).setLiteListener(onEnd = {
-                showVirtualKeyboard()
-            })
+            imgTurnOffCreateNewSet.animate().alpha(0.5f).setDuration(DURATION)
+                .setLiteListener(onEnd = {
+                    showVirtualKeyboard()
+                })
+            turnStatusBarToDarkerColor(DURATION)
         }
     }
 
     override fun hideCreateNewFlashcardSetPanel() {
+        val DURATION = 130L
         dB.apply {
-            setStatusBarColor(resources.getColor(R.color.app_blue))
-
             vwgrpCreateNewSet.hideByScaleDownAndFadeOut()
-            imgTurnOffCreateNewSet.animate().alpha(0f).setDuration(130)
+            imgTurnOffCreateNewSet.animate().alpha(0f).setDuration(DURATION)
                 .setLiteListener(onEnd = {
                     hideVirtualKeyboard()
                     imgTurnOffCreateNewSet.goGONE()
                 })
+
+            turnStatusBarToLighterColor(DURATION)
         }
     }
 
     override fun showInvalidFlashcardSetError(errorMessage: String) {
         dB.txtCreateSetError.text = errorMessage
-        dB.vwgrpCreateSetError.goVISIBLE()
-        dB.vwgrpCreateSetError.animate().alpha(1f).duration = 200
+        dB.vwgrpCreateSetError.animate().alpha(1f)
+            .setDuration(200).setInterpolator(NormalOutExtraSlowIn())
+            .setLiteListener(onStart = {
+                dB.vwgrpCreateSetError.goVISIBLE()
+            })
     }
 
+    override fun hideInvalidFlashcardSetError() {
+        dB.vwgrpCreateSetError.animate().alpha(0f)
+            .setDuration(200).setInterpolator(NormalOutExtraSlowIn())
+            .setLiteListener(onEnd = {
+                dB.vwgrpCreateSetError.goGONE()
+            })
+    }
 
     private fun View.hideByScaleDownAndFadeOut() {
         this.animate().alpha(0f)

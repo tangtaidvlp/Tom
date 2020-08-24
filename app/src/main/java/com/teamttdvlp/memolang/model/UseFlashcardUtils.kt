@@ -1,12 +1,12 @@
 package com.teamttdvlp.memolang.model
 
 import com.teamttdvlp.memolang.data.model.entity.flashcard.Flashcard
-import com.teamttdvlp.memolang.view.helper.quickLog
+import com.teamttdvlp.memolang.view.helper.log
 
 fun findTextFormInAnother (text : String, motherText : String) : String {
     val pos = motherText.toLowerCase().indexOf(text.toLowerCase())
     if (pos == -1) {
-        quickLog("Error happened at findTextFormInAnother(String, String), ReviewFlashcardActivity.kt")
+        log("Error happened at findTextFormInAnother(String, String), ReviewFlashcardActivity.kt")
         Exception ("\"$motherText\" does not contain \"$text\"").printStackTrace()
     }
     val textFormInSource = motherText.substring(pos, pos + text.length)

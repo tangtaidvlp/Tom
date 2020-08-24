@@ -2,7 +2,6 @@ package com.teamttdvlp.memolang.view.activity
 
 import android.animation.Animator
 import android.animation.AnimatorSet
-import android.graphics.Color
 import android.os.Bundle
 import android.util.Log
 import android.view.inputmethod.EditorInfo
@@ -123,8 +122,8 @@ class EngVietDictionaryActivity :
         // SEARCH dictionary
         dB.rcvDictionary.adapter = rcvSearchDictionaryAdapter
         dB.rcvRecentSearchDic.adapter = rcvRecentSearchDicAdapter
-        rcvSearchDictionaryAdapter.textColor = Color.BLACK
-        rcvRecentSearchDicAdapter.textColor = Color.BLACK
+        rcvSearchDictionaryAdapter.textColor = resources.getColor(R.color.app_blue)
+        rcvRecentSearchDicAdapter.textColor = resources.getColor(R.color.app_blue)
 
         viewModel.getAll_RecentSearchedVocaList {
             rcvRecentSearchDicAdapter.setData(it)

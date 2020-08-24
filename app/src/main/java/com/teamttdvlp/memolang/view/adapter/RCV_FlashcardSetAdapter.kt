@@ -13,11 +13,12 @@ import com.teamttdvlp.memolang.databinding.ItemFlashcardSetBinding
 import com.teamttdvlp.memolang.databinding.ItemFlashcardSetViewHolderBinding
 import com.teamttdvlp.memolang.databinding.PopupFlashcardSetOtherEditOptionsBinding
 
-
 class RCV_FlashcardSetAdapter(
     var context: Context,
     var list: ArrayList<FlashcardSet> = ArrayList()
 ) : RecyclerView.Adapter<RCV_FlashcardSetAdapter.ViewHolder>() {
+
+    private var originalList = ArrayList<FlashcardSet>()
 
     private var onBtnViewListListener: OnItemClickListener? = null
 
@@ -124,7 +125,7 @@ class RCV_FlashcardSetAdapter(
     }
 
 
-    fun setOnBtn_Edit_FlashcardClickListener(onBtnEditFlashcardListener: (item: FlashcardSet) -> Unit) {
+    fun setOnBtn_Edit_FlashcardSetClickListener(onBtnEditFlashcardListener: (item: FlashcardSet) -> Unit) {
         this.onBtn_Edit_FlashcardSetClickListener = object : OnItemClickListener {
             override fun onClick(item: FlashcardSet) {
                 onBtnEditFlashcardListener(item)
@@ -132,7 +133,7 @@ class RCV_FlashcardSetAdapter(
         }
     }
 
-    fun setOnBtn_Delete_FlashcardClickListener(onBtnDeleteFlashcardListener: (item: FlashcardSet) -> Unit) {
+    fun setOnBtn_Delete_FlashcardSetClickListener(onBtnDeleteFlashcardListener: (item: FlashcardSet) -> Unit) {
         this.onBtn_Delete_FlashcardSetClickListener = object : OnItemClickListener {
             override fun onClick(item: FlashcardSet) {
                 onBtnDeleteFlashcardListener(item)
@@ -193,6 +194,8 @@ class RCV_FlashcardSetAdapter(
     fun setData (data : ArrayList<FlashcardSet>) {
         list.clear()
         list.addAll(data)
+        originalList.clear()
+        originalList.addAll(data)
         notifyDataSetChanged()
     }
 
@@ -205,19 +208,39 @@ class RCV_FlashcardSetAdapter(
 
     fun deleteFlashcardSet(flashcardSet: FlashcardSet) {
         val deletedPos = list.indexOf(flashcardSet)
-        list.remove(flashcardSet)
+        this.list.remove(flashcardSet)
+        this.originalList.remove(flashcardSet)
         notifyItemRemoved(deletedPos)
     }
 
+    // TODO (Process user press 2 times and then add the same 2 flashcard sets)
     fun updateFlashcardSetName(flashcardSet: FlashcardSet, newName: String) {
         val updatedPos = list.indexOf(flashcardSet)
         flashcardSet.name = newName
-        list[updatedPos] = flashcardSet
+        this.list[updatedPos] = flashcardSet
+        this.originalList[updatedPos] = flashcardSet
         notifyItemChanged(updatedPos)
     }
 
     fun addNewSet(newSet: FlashcardSet) {
         this.list.add(0, newSet)
+        this.originalList.add(0, newSet)
+        notifyDataSetChanged()
+    }
+
+    fun search(keyWord: String) {
+        list.clear()
+        for (set in originalList) {
+            if (set.name.startsWith(keyWord)) {
+                list.add(set)
+            }
+        }
+        notifyDataSetChanged()
+    }
+
+    fun stopSearching() {
+        list.clear()
+        list.addAll(originalList)
         notifyDataSetChanged()
     }
 

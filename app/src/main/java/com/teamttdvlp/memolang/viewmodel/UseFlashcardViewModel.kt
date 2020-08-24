@@ -13,7 +13,7 @@ import com.teamttdvlp.memolang.model.UseFCActivity_StatusManager.SpeakerStatus.C
 import com.teamttdvlp.memolang.model.UseFCActivity_StatusManager.SpeakerStatus.Companion.SPEAK_TEXT_ONLY
 import com.teamttdvlp.memolang.view.activity.iview.UseFlashcardView
 import com.teamttdvlp.memolang.view.base.BaseViewModel
-import com.teamttdvlp.memolang.view.helper.quickLog
+import com.teamttdvlp.memolang.view.helper.log
 import com.teamttdvlp.memolang.view.helper.selfMinusOne
 import com.teamttdvlp.memolang.view.helper.selfPlusOne
 
@@ -169,7 +169,7 @@ class UseFlashcardViewModel (private val context : Application): BaseViewModel<U
             useFCActivityStatusManager.speakerStatusManager.saveFunction(speakerFunction)
             useFCActivityStatusManager.speakerStatusManager.saveStatus(speakerStatus)
         } else {
-            quickLog("UseFlashcardViewModel.kt:: useFCActivityStatusManager is not initialized")
+            log("UseFlashcardViewModel.kt:: useFCActivityStatusManager is not initialized")
         }
     }
 

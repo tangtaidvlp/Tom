@@ -10,7 +10,7 @@ import com.teamttdvlp.memolang.model.repository.UserUsingHistoryRepos
 import com.teamttdvlp.memolang.model.sharepref.BaseAppInfoSharedPreference
 import com.teamttdvlp.memolang.view.activity.iview.AddFlashcardView
 import com.teamttdvlp.memolang.view.base.BaseViewModel
-import com.teamttdvlp.memolang.view.helper.quickLog
+import com.teamttdvlp.memolang.view.helper.log
 
 class AddFlashCardViewModel(
     private var userRepos: UserRepos,
@@ -22,11 +22,12 @@ class AddFlashCardViewModel(
 
     private lateinit var userFlashcardSetList: ArrayList<FlashcardSet>
 
+    lateinit var currentFocusFlashcardSet: FlashcardSet
+
     fun proceedAddFlashcard(newCard: Flashcard) {
-        val flashcardSet =
-            FlashcardSet(newCard.setOwner, newCard.frontLanguage, newCard.backLanguage)
+
         if (newCard.setOwner == "") {
-            newCard.setOwner = flashcardSet.name
+            newCard.setOwner = currentFocusFlashcardSet.name
         }
 
         if (newCard.text.isEmpty()) {
@@ -39,26 +40,28 @@ class AddFlashCardViewModel(
             return
         }
 
-        saveFlashcardAndUpdateUserInfo(newCard, flashcardSet)
+        saveFlashcardAndUpdateUserInfo(newCard, currentFocusFlashcardSet)
     }
 
     fun createNewFlashcardSetIfValid(
         setName: String,
         frontLanguage: String,
         backLanguage: String
-    ): FlashcardSet {
+    ): FlashcardSet? {
         val newFlashcardSet = FlashcardSet(setName, frontLanguage, backLanguage)
         val checkingInfo: Pair<Boolean, String?> = checkFlashcardSetIsValid(newFlashcardSet)
         val setIsValid = checkingInfo.first
         if (setIsValid) {
             flashcardSetRepos.insert(newFlashcardSet)
             view.hideCreateNewFlashcardSetPanel()
+            return newFlashcardSet
+
         } else {
             val errorMessage = checkingInfo.second + ""
             view.showInvalidFlashcardSetError(errorMessage)
+            return null
         }
 
-        return newFlashcardSet
     }
 
     private fun checkFlashcardSetIsValid (currentSet : FlashcardSet) : Pair<Boolean, String?> {
@@ -79,7 +82,7 @@ class AddFlashCardViewModel(
                 newCard.id = insertedCardId.toInt()
                 updateUserInfo(newCard)
             } else {
-                quickLog("Storing this flashcard to local storage failed. Please check again")
+                log("Storing this flashcard to local storage failed. Please check again")
                 exception!!.printStackTrace()
             }
         }
@@ -165,8 +168,15 @@ class AddFlashCardViewModel(
         userRepos.updateUser(getUser())
     }
 
-    fun getDefaultSetName(frontLanguage: String, backLanguage: String): String {
-        return SetNameUtils.getSetNameFromLangPair(frontLanguage, backLanguage)
+    fun getDefaultFlashcardSet(): FlashcardSet {
+        val frontLanguage = getCurrentFrontLanguage()
+        val backLanguage = getCurrentBackLanguage()
+
+        return FlashcardSet(
+            SetNameUtils.getSetNameFromLangPair(frontLanguage, backLanguage),
+            frontLanguage,
+            backLanguage
+        )
     }
 
 }

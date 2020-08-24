@@ -4,7 +4,6 @@ import com.teamttdvlp.memolang.data.model.entity.flashcard.Flashcard
 import com.teamttdvlp.memolang.data.model.entity.flashcard.FlashcardSet
 import com.teamttdvlp.memolang.model.repository.FlashcardRepos
 import com.teamttdvlp.memolang.model.repository.FlashcardSetRepos
-import com.teamttdvlp.memolang.view.helper.quickLog
 import javax.inject.Inject
 
 class AddFlashcardExecutor @Inject constructor (

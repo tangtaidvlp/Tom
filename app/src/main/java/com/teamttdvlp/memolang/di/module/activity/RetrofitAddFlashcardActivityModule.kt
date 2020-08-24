@@ -1,17 +1,13 @@
 package com.teamttdvlp.memolang.di.module.activity
 
-import android.animation.Animator
-import android.animation.AnimatorInflater
 import android.view.animation.Animation
 import android.view.animation.AnimationUtils
 import android.view.animation.DecelerateInterpolator
 import com.teamttdvlp.memolang.R
-import com.teamttdvlp.memolang.data.model.entity.flashcard.FlashcardSet
 import com.teamttdvlp.memolang.view.activity.RetrofitAddFlashcardActivity
 import com.teamttdvlp.memolang.view.adapter.RCVChooseLanguageAdapter
 import com.teamttdvlp.memolang.view.adapter.RCVRecentUsedLanguageAdapter
-import com.teamttdvlp.memolang.view.adapter.RCV_FlashcardSetNameAdapter
-import com.teamttdvlp.memolang.view.adapter.RCV_Generic_SimpleListAdapter
+import com.teamttdvlp.memolang.view.adapter.RCV_SimpleChooseFlashcardSetAdapter
 import dagger.Module
 import dagger.Provides
 import javax.inject.Named
@@ -51,10 +47,8 @@ class RetrofitAddFlashcardActivityModule {
       return RCVRecentUsedLanguageAdapter(activity)
   }
 
-  @Provides
-  fun provideRCVFlashcardSetNameAdapter (activity : RetrofitAddFlashcardActivity) : RCV_Generic_SimpleListAdapter<FlashcardSet> {
-      return RCV_Generic_SimpleListAdapter<FlashcardSet>(activity, getTextFromItem = {
-          it.name
-      })
-  }
+    @Provides
+    fun provideRCVSimpleChooseFlashcardSetAdapter(activity: RetrofitAddFlashcardActivity): RCV_SimpleChooseFlashcardSetAdapter {
+        return RCV_SimpleChooseFlashcardSetAdapter(activity)
+    }
 }

@@ -2,7 +2,4 @@
 <shape xmlns:android="http://schemas.android.com/apk/res/android">
     <corners android:radius="10dp" />
     <solid android:color="@color/app_green_theme" />
-    <stroke
-        android:width="3dp"
-        android:color="#9AFFCC" />
 </shape>

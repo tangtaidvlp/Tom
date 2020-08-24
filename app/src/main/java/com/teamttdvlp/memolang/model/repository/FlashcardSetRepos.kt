@@ -5,7 +5,7 @@ import com.teamttdvlp.memolang.data.model.entity.flashcard.Flashcard
 import com.teamttdvlp.memolang.data.model.entity.flashcard.FlashcardSet
 import com.teamttdvlp.memolang.data.model.entity.flashcard.FlashcardSetWithCardList
 import com.teamttdvlp.memolang.data.sql.MemoLangSqliteDataBase
-import com.teamttdvlp.memolang.view.helper.quickLog
+import com.teamttdvlp.memolang.view.helper.log
 
 
 private const val WITHOUT_CARD_LIST = false
@@ -51,7 +51,7 @@ class FlashcardSetRepos (database : MemoLangSqliteDataBase) {
                 }
             } catch (ex : Exception) {
                 ex.printStackTrace()
-                quickLog("Get  Flashcard Set Task failed")
+                log("Get  Flashcard Set Task failed")
                 null
             }
         }
@@ -83,7 +83,7 @@ class FlashcardSetRepos (database : MemoLangSqliteDataBase) {
             try {
                 flashcardSetDAO.deleteFlashcardSet(params[0] as FlashcardSet)
             } catch (ex : Exception) {
-                quickLog("Delete Flashcard Set Task failed")
+                log("Delete Flashcard Set Task failed")
                 ex.printStackTrace()
             }  }
 
@@ -97,7 +97,7 @@ class FlashcardSetRepos (database : MemoLangSqliteDataBase) {
             try {
                 flashcardSetDAO.insertFlashcardSet(params[0] as FlashcardSet)
             } catch (ex : Exception) {
-                quickLog("Insert Flashcard Set Task failed")
+                log("Insert Flashcard Set Task failed")
                 ex.printStackTrace()
             }
         }

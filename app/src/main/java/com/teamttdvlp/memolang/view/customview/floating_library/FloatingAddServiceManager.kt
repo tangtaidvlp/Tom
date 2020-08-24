@@ -13,7 +13,6 @@ import android.content.ClipboardManager
 import android.content.Context
 import android.content.Intent
 import android.content.res.Configuration
-import android.graphics.Color
 import android.graphics.PixelFormat
 import android.os.Build
 import android.os.IBinder
@@ -741,8 +740,8 @@ class FloatingAddServiceManager private constructor(
             // SEARCH dictionary
             rcvDictionary.adapter = rcvSearchDictionaryAdapter
             rcvRecentSearchDic.adapter = rcvRecentSearchDicAdapter
-            rcvSearchDictionaryAdapter.textColor = Color.BLACK
-            rcvRecentSearchDicAdapter.textColor = Color.BLACK
+            rcvSearchDictionaryAdapter.textColor = resources.getColor(R.color.app_blue)
+            rcvRecentSearchDicAdapter.textColor = resources.getColor(R.color.app_blue)
 
             viewModel.getAll_RecentSearchedVocaList {
                 rcvRecentSearchDicAdapter.setData(it)

@@ -6,8 +6,6 @@ import android.view.GestureDetector
 import android.view.MotionEvent
 import android.view.View
 import com.teamttdvlp.memolang.view.helper.dp
-import com.teamttdvlp.memolang.view.helper.quickLog
-import java.lang.Exception
 import kotlin.math.absoluteValue
 
 open class MyGestureDetector :  View.OnTouchListener {
@@ -48,8 +46,8 @@ open class MyGestureDetector :  View.OnTouchListener {
             var result = false
 
             try {
-                var deltaY= e2!!.y - e1!!.y
-                var deltaX= e2!!.x - e1!!.x
+                var deltaY = e2!!.y - e1!!.y
+                var deltaX = e2.x - e1.x
                 val isSwipeUp =
                     (deltaY < 0) and (velocityY.absoluteValue > STANDARD_Y_VELOCITY) and (velocityY.absoluteValue > velocityX.absoluteValue)
                 val isSwipeDown =

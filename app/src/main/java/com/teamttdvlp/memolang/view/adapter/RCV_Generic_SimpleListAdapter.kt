@@ -16,7 +16,7 @@ class RCV_Generic_SimpleListAdapter<T> (
     private var list = ArrayList<T>()
 
     class ViewHolder (item : View) : RecyclerView.ViewHolder(item) {
-        var txt_language = item.findViewById<TextView>(R.id.txt_language)
+        var txt_text = item.findViewById<TextView>(R.id.txt_text)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int) : ViewHolder {
@@ -26,7 +26,7 @@ class RCV_Generic_SimpleListAdapter<T> (
 
     override fun onBindViewHolder(holder : ViewHolder, position: Int) {
         val item = list[position]
-        holder.txt_language.text = getTextFromItem(item)
+        holder.txt_text.text = getTextFromItem(item)
         holder.itemView.setOnClickListener {
             onItemClickListener?.onClick(item)
         }
