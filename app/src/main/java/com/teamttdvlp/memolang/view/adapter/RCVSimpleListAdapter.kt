@@ -22,7 +22,7 @@ class RCVSimpleListAdapter (var context : Context) : RecyclerView.Adapter<RCVSim
     var fullListCached = ArrayList<String>()
 
     class ViewHolder (item : View) : RecyclerView.ViewHolder(item) {
-        var txt_language = item.findViewById<TextView>(R.id.txt_language)
+        var textView = item.findViewById<TextView>(R.id.txt_text)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int) : ViewHolder {
@@ -34,7 +34,7 @@ class RCVSimpleListAdapter (var context : Context) : RecyclerView.Adapter<RCVSim
 
     override fun onBindViewHolder(holder : ViewHolder, position: Int) {
         val item = list[position]
-        holder.txt_language.text = item
+        holder.textView.text = item
         holder.itemView.setOnClickListener {
             onItemClickListener?.onClick(item)
         }

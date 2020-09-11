@@ -8,22 +8,27 @@ import android.view.inputmethod.EditorInfo
 import androidx.core.animation.addListener
 import androidx.interpolator.view.animation.FastOutLinearInInterpolator
 import androidx.lifecycle.Observer
-import com.example.dictionary.model.TransAndExamp
+import com.example.dictionary.model.TranslationAndExample
 import com.example.dictionary.model.Vocabulary
 import com.teamttdvlp.memolang.R
 import com.teamttdvlp.memolang.data.model.entity.flashcard.Flashcard
 import com.teamttdvlp.memolang.data.model.entity.language.Language.Companion.ENGLISH_VALUE
 import com.teamttdvlp.memolang.data.model.entity.language.Language.Companion.VIETNAMESE_VALUE
 import com.teamttdvlp.memolang.data.model.other.new_vocabulary.*
-import com.teamttdvlp.memolang.data.model.other.vocabulary.MultiMeanExample
+import com.teamttdvlp.memolang.data.model.other.vocabulary.VocabularyOtherStructure
 import com.teamttdvlp.memolang.databinding.ActivityEngVietDictionaryBinding
 import com.teamttdvlp.memolang.view.activity.iview.SeeVocabularyView
 import com.teamttdvlp.memolang.view.adapter.*
 import com.teamttdvlp.memolang.view.base.BaseActivity
 import com.teamttdvlp.memolang.view.customview.NormalOutExtraSlowIn
-import com.teamttdvlp.memolang.view.customview.see_vocabulary.*
-import com.teamttdvlp.memolang.view.customview.see_vocabulary.sub_example.SubExampleTranslationView
-import com.teamttdvlp.memolang.view.customview.see_vocabulary.sub_example.SubExampleView
+import com.teamttdvlp.memolang.view.customview.see_vocabulary.Vocabulary_ExampleTranslation_View
+import com.teamttdvlp.memolang.view.customview.vocabulary_info.Vocabulary_Example_View
+import com.teamttdvlp.memolang.view.customview.vocabulary_info.Vocabulary_Mean_TextView
+import com.teamttdvlp.memolang.view.customview.vocabulary_info.Vocabulary_Type_TextView
+import com.teamttdvlp.memolang.view.customview.vocabulary_info.other_structure.OtherStructure_ExampleTranslation_View
+import com.teamttdvlp.memolang.view.customview.vocabulary_info.other_structure.OtherStructure_Example_View
+import com.teamttdvlp.memolang.view.customview.vocabulary_info.other_structure.OtherStructure_Mean_View
+import com.teamttdvlp.memolang.view.customview.vocabulary_info.other_structure.OtherStructure_Text_View
 import com.teamttdvlp.memolang.view.helper.*
 import com.teamttdvlp.memolang.viewmodel.EngVietDictionaryActivityViewModel
 import javax.inject.Inject
@@ -57,7 +62,7 @@ class EngVietDictionaryActivity :
 
     private lateinit var usingList : ArrayList<Using>
 
-    private lateinit var transAndExampsList : ArrayList<TransAndExamp>
+    private lateinit var translationAndExampsList: ArrayList<TranslationAndExample>
 
 
     override fun getLayoutId(): Int = R.layout.activity_eng_viet_dictionary
@@ -176,7 +181,7 @@ class EngVietDictionaryActivity :
                 if (using.type == type) {
                     corresUsing = using
                     updateRCVChooseTrans(corresUsing)
-                    updateRCVChooseExample(corresUsing.transAndExamsList.first())
+                    updateRCVChooseExample(corresUsing.translationAndExamsList.first())
                     edtPanelType.setText(corresUsing.type)
                     break
                 }
@@ -196,7 +201,7 @@ class EngVietDictionaryActivity :
         }
 
         rcvChooseTransAdapter.setOnItemClickListener { translation ->
-            for (transAndEx in transAndExampsList) {
+            for (transAndEx in translationAndExampsList) {
                 if (translation == transAndEx.translation) {
                     edtPanelTranslation.setText(translation)
                     updateRCVChooseExample(transAndEx)
@@ -307,6 +312,35 @@ class EngVietDictionaryActivity :
             rcvSearchDictionaryAdapter.search(text)
         })
 
+        rcvSearchDictionaryAdapter.setOnGetTwoFirstVocabulary { twoFirstVoca ->
+
+            if (twoFirstVoca.size == 2) {
+                txtFirstVoca.text = twoFirstVoca.get(0).key
+                txtSecondVoca.text = twoFirstVoca.get(1).key
+                vwgrpSecondVoca.goVISIBLE()
+                vwgrpFirstVoca.goVISIBLE()
+                vwgrpBottomOptions.goVISIBLE()
+                vwgrpClearAllSearchText.goGONE()
+
+            } else if (twoFirstVoca.size == 1) {
+                txtFirstVoca.text = twoFirstVoca.get(0).key
+                vwgrpFirstVoca.goVISIBLE()
+                vwgrpSecondVoca.goGONE()
+                vwgrpBottomOptions.goVISIBLE()
+                vwgrpClearAllSearchText.goGONE()
+
+            } else {
+                vwgrpSecondVoca.goGONE()
+                vwgrpFirstVoca.goGONE()
+                if (edtEngViDictionary.text.isNotEmpty())
+                    vwgrpClearAllSearchText.goVISIBLE()
+                else
+                    vwgrpBottomOptions.goGONE()
+            }
+        }
+
+        setOnBottomButtonsClick()
+
         edtEngViDictionary.setOnFocusChangeListener { v, hasFocus ->
             if (hasFocus) {
                 onNavigateToSearchBar()
@@ -320,6 +354,22 @@ class EngVietDictionaryActivity :
         }
 
     }
+    }
+
+    private fun setOnBottomButtonsClick() {
+        dB.apply {
+            vwgrpFirstVoca.setOnClickListener {
+                rcvDictionary.getChildAt(0).performClick()
+            }
+
+            vwgrpSecondVoca.setOnClickListener {
+                rcvDictionary.getChildAt(1).performClick()
+            }
+
+            vwgrpClearAllSearchText.setOnClickListener {
+                edtEngViDictionary.setText("")
+            }
+        }
     }
 
     private fun onBringTextUp(rawVocabulary: RawVocabulary) {
@@ -405,17 +455,22 @@ class EngVietDictionaryActivity :
     private fun createViewByVocabulary (vocabulary : Vocabulary) { dB.apply {
         txtPronunciation.text = vocabulary.pronunciation
         txtText.text = vocabulary.text
+        var isFirstVocabularyTypeView = true
         for (using in vocabulary.usings) {
             var isFirstMeanTextView = true
-            val newTxtPanelType = TypeVocabularyTextView(this@EngVietDictionaryActivity)
+            val newTxtPanelType = Vocabulary_Type_TextView(this@EngVietDictionaryActivity)
             newTxtPanelType.text = using.type
+            if (isFirstVocabularyTypeView) {
+                newTxtPanelType.clearMarginTop()
+                isFirstVocabularyTypeView = false
+            }
             contentParent.addView(newTxtPanelType)
 
-            for (usingTranslationAndExample in using.transAndExamsList) {
-                val newVocaMean = VocabularyMeanView(
+            for (usingTranslationAndExample in using.translationAndExamsList) {
+                val newVocaMean = Vocabulary_Mean_TextView(
                     this@EngVietDictionaryActivity, usingTranslationAndExample.translation
                 )
-
+                log("Vocabulary_Mean_TextView: ${usingTranslationAndExample.translation}")
                 newVocaMean.addButton.setOnClickListener {
                     edtPanelType.setText(using.type)
                     edtPanelText.setText(vocabulary.text)
@@ -425,7 +480,7 @@ class EngVietDictionaryActivity :
                 }
 
                 if (isFirstMeanTextView) {
-//                    newVocaMean.clearMarginTop()
+                    newVocaMean.clearMarginTop()
                     isFirstMeanTextView = false
                 }
                 contentParent.addView(newVocaMean)
@@ -433,40 +488,62 @@ class EngVietDictionaryActivity :
                 if (usingTranslationAndExample.subExampleList.size != 0) {
                     for (example in usingTranslationAndExample.subExampleList) {
                         if (example is SingleMeanExample) {
-                            val newTxtExample = SingleMeanTranslationView(
-                                this@EngVietDictionaryActivity, example.text
+                            val newTxtExample = Vocabulary_Example_View(
+                                this@EngVietDictionaryActivity,
+                                example.text
                             )
+                            log("Vocabulary_Example_View: ${example.text}")
                             contentParent.addView(newTxtExample)
                             val exHasMean = (example.mean != "")
                             if (exHasMean) {
                                 val newTxtMeanEx =
-                                    ExampleTranslationTextView(this@EngVietDictionaryActivity)
+                                    Vocabulary_ExampleTranslation_View(this@EngVietDictionaryActivity)
                                 newTxtMeanEx.text = example.mean
+                                log("Vocabulary_ExampleTranslation_View: ${example.mean}")
                                 contentParent.addView(newTxtMeanEx)
                             }
 
-                        } else if (example is MultiMeanExample) {
-                            val newTxtMultiMeanExample =
-                                MultiMeanExampleView(this@EngVietDictionaryActivity, example.text)
-                            contentParent.addView(newTxtMultiMeanExample)
-                            example.transAndSubExamp_List.forEach { transAndSubExamp ->
-                                val newSubExample =
-                                    ExampleTranslationTextView(this@EngVietDictionaryActivity)
-                                newSubExample.text = transAndSubExamp.translation
-                                contentParent.addView(newSubExample)
+                        } else if (example is VocabularyOtherStructure) {
+                            val newOtherStructureTextView = OtherStructure_Text_View(
+                                this@EngVietDictionaryActivity,
+                                example.text
+                            )
+                            log("OtherStructure_Text_View: ${example.text}")
+                            contentParent.addView(newOtherStructureTextView)
+                            example.translationAndExample_List.forEach { transAndSubExamp ->
+                                val newVocabularyExamTransView =
+                                    OtherStructure_Mean_View(
+                                        this@EngVietDictionaryActivity,
+                                        text = transAndSubExamp.translation
+                                    )
+                                log("OtherStructure_Mean_View: ${transAndSubExamp.translation}")
+                                newVocabularyExamTransView.addButton.setOnClickListener {
+                                    edtPanelType.setText("")
+                                    edtPanelText.setText(example.text)
+                                    updateTxtTrans(transAndSubExamp.translation)
+                                    updateRCVChooseExample(transAndSubExamp)
+                                    addFCPanelAppear.start()
+                                }
+
+                                contentParent.addView(newVocabularyExamTransView)
 
                                 transAndSubExamp.subExampleList.forEach { example ->
                                     example as SingleMeanExample
 
                                     val newTxtExample =
-                                        SubExampleView(this@EngVietDictionaryActivity, example.text)
+                                        OtherStructure_Example_View(
+                                            this@EngVietDictionaryActivity,
+                                            example.text
+                                        )
+                                    log("OtherStructure_Example_View: ${example.text}")
                                     contentParent.addView(newTxtExample)
 
                                     val exHasMean = (example.mean != "")
                                     if (exHasMean) {
                                         val newTxtMeanEx =
-                                            SubExampleTranslationView(this@EngVietDictionaryActivity)
+                                            OtherStructure_ExampleTranslation_View(this@EngVietDictionaryActivity)
                                         newTxtMeanEx.text = example.mean
+                                        log("SubExampleTranslationView: ${example.mean}")
                                         contentParent.addView(newTxtMeanEx)
                                     }
                                 }
@@ -497,36 +574,36 @@ class EngVietDictionaryActivity :
             rcvChooseTypeAdapter.setData(typeList)
             val firstUsing = usingList.first()
             updateRCVChooseTrans(firstUsing)
-            val firstTransAndExamp = firstUsing.transAndExamsList.first()
+            val firstTransAndExamp = firstUsing.translationAndExamsList.first()
             updateRCVChooseExample(firstTransAndExamp)
         }
     }}
 
     private fun updateRCVChooseTrans (using : Using) {
-        transAndExampsList = using.transAndExamsList
+        translationAndExampsList = using.translationAndExamsList
         val transList = ArrayList<String>()
 
-        transAndExampsList.forEach { transAndEx ->
+        translationAndExampsList.forEach { transAndEx ->
             transList.add(transAndEx.translation)
         }
 
-        if (transAndExampsList.size <= 1) {
+        if (translationAndExampsList.size <= 1) {
             dB.imgChooseTranslationSpinner.goGONE()
         } else {
             dB.imgChooseTranslationSpinner.goVISIBLE()
         }
 
-        if (transAndExampsList.size != 0) {
+        if (translationAndExampsList.size != 0) {
             updateTxtTrans(transList.first())
         }
 
         rcvChooseTransAdapter.setData(transList)
     }
 
-    private fun updateRCVChooseExample (transAndEx : TransAndExamp) {
-        if (transAndEx.subExampleList.size != 0) {
+    private fun updateRCVChooseExample(translationAndEx: TranslationAndExample) {
+        if (translationAndEx.subExampleList.size != 0) {
             val fullSingleExampleList =
-                convertExampleListTo_FullSingleExampleList(transAndEx.subExampleList)
+                convertExampleListTo_FullSingleExampleList(translationAndEx.subExampleList)
             if (fullSingleExampleList.size <= 1) {
                 dB.imgChooseExampleSpinner.goGONE()
             } else {
@@ -544,15 +621,15 @@ class EngVietDictionaryActivity :
         exampleList.forEach { example ->
             if (example is SingleMeanExample) {
                 result.add(example)
-            } else if (example is MultiMeanExample) {
-                example.transAndSubExamp_List.forEach { transAndExam ->
+            } else if (example is VocabularyOtherStructure) {
+                example.translationAndExample_List.forEach { transAndExam ->
                     result.add(SingleMeanExample(example.text, transAndExam.translation))
 
-                        transAndExam.subExampleList.forEach { example ->
-                            if (example is SingleMeanExample) {
-                                result.add(example)
-                            } else Log.e("Error", "It can not contain multi-mean")
-                        }
+                    transAndExam.subExampleList.forEach { example ->
+                        if (example is SingleMeanExample) {
+                            result.add(example)
+                        } else Log.e("Error", "It can not contain multi-mean")
+                    }
 
                 }
 

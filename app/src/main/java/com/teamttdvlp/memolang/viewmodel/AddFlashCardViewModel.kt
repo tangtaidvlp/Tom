@@ -1,9 +1,11 @@
 package com.teamttdvlp.memolang.viewmodel
 
+import android.graphics.Bitmap
 import com.teamttdvlp.memolang.data.model.entity.flashcard.Flashcard
 import com.teamttdvlp.memolang.data.model.entity.flashcard.FlashcardSet
 import com.teamttdvlp.memolang.data.model.entity.flashcard.SetNameUtils
 import com.teamttdvlp.memolang.model.AddFlashcardExecutor
+import com.teamttdvlp.memolang.model.IllustrationManager
 import com.teamttdvlp.memolang.model.repository.FlashcardSetRepos
 import com.teamttdvlp.memolang.model.repository.UserRepos
 import com.teamttdvlp.memolang.model.repository.UserUsingHistoryRepos
@@ -17,14 +19,15 @@ class AddFlashCardViewModel(
     private var addFlashcardExecutor: AddFlashcardExecutor,
     private var flashcardSetRepos: FlashcardSetRepos,
     private var userUsingHistoryRepos: UserUsingHistoryRepos,
-    private var addFlashcardSharedPref: BaseAppInfoSharedPreference
+    private var addFlashcardSharedPref: BaseAppInfoSharedPreference,
+    private var illustrationManager: IllustrationManager
 ) : BaseViewModel<AddFlashcardView>() {
 
     private lateinit var userFlashcardSetList: ArrayList<FlashcardSet>
 
     lateinit var currentFocusFlashcardSet: FlashcardSet
 
-    fun proceedAddFlashcard(newCard: Flashcard) {
+    fun proceedAddFlashcard(newCard: Flashcard, illustrationPicture: Bitmap?) {
 
         if (newCard.setOwner == "") {
             newCard.setOwner = currentFocusFlashcardSet.name
@@ -40,7 +43,11 @@ class AddFlashCardViewModel(
             return
         }
 
-        saveFlashcardAndUpdateUserInfo(newCard, currentFocusFlashcardSet)
+        saveFlashcardAndUpdateUserInfo(newCard, illustrationPicture)
+    }
+
+    fun loadIllustrationPicture(name: String, onGet: (Exception?, Bitmap?) -> Unit) {
+        illustrationManager.loadBitmap(name, onGet)
     }
 
     fun createNewFlashcardSetIfValid(
@@ -68,14 +75,20 @@ class AddFlashCardViewModel(
         for (userFCSet in userFlashcardSetList) {
             val hasANameInList = currentSet.name.trim() == userFCSet.name.trim()
             if (hasANameInList) {
-                    val errorMessage = "The set \"${currentSet.name}\" has already existed, please choose another one"
-                    return Pair(false, errorMessage)
+                val errorMessage =
+                    "The set \"${currentSet.name}\" has already existed, please choose another one"
+                return Pair(false, errorMessage)
             }
         }
         return Pair(true, null)
     }
 
-    private fun saveFlashcardAndUpdateUserInfo (newCard: Flashcard, flashcardSet : FlashcardSet) {
+    private fun saveFlashcardAndUpdateUserInfo(newCard: Flashcard, illustrationPicture: Bitmap?) {
+        if (illustrationPicture != null) {
+            //1600000000000: Sun Sep 13 2020 12:26:40 in milisecond
+            newCard.illustrationPictureName = "C${System.currentTimeMillis() - 1600000000000}"
+            illustrationManager.saveFile(illustrationPicture, newCard.illustrationPictureName)
+        }
         addFlashcardExecutor.addFlashcardAndUpdateFlashcardSet(newCard) { isSuccess, insertedCardId, exception ->
             if (isSuccess) {
                 view.onAddFlashcardSuccess()
@@ -86,6 +99,8 @@ class AddFlashCardViewModel(
                 exception!!.printStackTrace()
             }
         }
+
+
     }
 
     private fun updateUserInfo(newCard : Flashcard) {

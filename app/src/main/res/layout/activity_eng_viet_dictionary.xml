@@ -48,13 +48,17 @@
                 android:layout_marginEnd="9.5dp"
                 android:background="@android:color/transparent"
                 android:fontFamily="@font/seguisb"
-                android:hint="Sets collection"
+                android:hint="Type your text here"
+                android:imeOptions="actionSearch"
+                android:inputType="text"
                 android:textColorHint="@color/search_bar_hint"
                 android:textSize="16sp" />
 
             <ImageView
                 android:layout_width="5.2dp"
                 android:layout_height="26dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
                 android:src="@drawable/image_button_kebab" />
 
         </LinearLayout>
@@ -79,22 +83,22 @@
             android:background="@color/white"
             android:orientation="vertical"
             android:visibility="gone"
-            android:layout_marginTop="8dp"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
             app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginTop="8dp"
             app:layout_constraintLeft_toLeftOf="@+id/vwgrp_en_vi_dictionary"
             app:layout_constraintRight_toRightOf="@+id/vwgrp_en_vi_dictionary"
             app:layout_constraintTop_toBottomOf="@+id/vwgrp_en_vi_dictionary"
             app:layout_constraintVertical_bias="0.0" />
 
+
         <ScrollView
             android:id="@+id/vwgrp_voca_info"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_marginTop="18dp"
-            android:visibility="gone"
-            android:alpha="0.0"
             android:scrollbars="none"
+            android:alpha="0.0"
+            android:visibility="gone"
             android:background="@color/white"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
@@ -107,48 +111,63 @@
                 android:layout_height="wrap_content"
                 android:background="#ffffff"
                 android:orientation="vertical"
-                android:paddingBottom="150dp"
                 android:paddingStart="17dp"
-                android:paddingTop="18dp"
-                android:paddingEnd="17dp">
+                android:paddingEnd="17dp"
+                android:paddingBottom="150dp">
 
-                <TextView
-                    android:id="@+id/txt_pronunciation"
+                <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="#ffffff"
-                    android:fontFamily="@font/lucida_bright_regular"
-                    android:includeFontPadding="false"
-                    android:paddingRight="5dp"
-                    android:textColor="#6F6F6F"
-                    android:textSize="18sp" />
-
-                <androidx.appcompat.widget.LinearLayoutCompat
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
+                    android:layout_height="wrap_content">
 
                     <TextView
                         android:id="@+id/txt_text"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_marginEnd="10dp"
                         android:layout_weight="1"
                         android:background="#ffffff"
-                        android:fontFamily="@font/segoeui"
+                        android:fontFamily="@font/seguisb"
+                        android:gravity="bottom|center_vertical"
                         android:includeFontPadding="false"
-                        android:textColor="#1F1F1F"
-                        android:textSize="28sp" />
+                        android:paddingBottom="11dp"
+                        android:text="Hello"
+                        android:textColor="@color/dark_red"
+                        android:textSize="42sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/btn_speaker"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
 
                     <ImageView
                         android:id="@+id/btn_speaker"
-                        android:layout_width="20dp"
-                        android:layout_height="20dp"
-                        android:layout_marginTop="5dp"
-                        android:src="@drawable/image_speaker_black"
-                        app:layout_constraintEnd_toEndOf="@+id/img_add_fc_success"
-                        app:layout_constraintTop_toBottomOf="@id/img_add_fc_success" />
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="3dp"
+                        android:background="@drawable/round_100dp_white_background"
+                        android:elevation="3dp"
+                        android:padding="6dp"
+                        android:src="@drawable/image_speaker_grey"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
 
-                </androidx.appcompat.widget.LinearLayoutCompat>
+                    <TextView
+                        android:id="@+id/txt_pronunciation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#ffffff"
+                        android:fontFamily="@font/lucida_bright_regular"
+                        android:includeFontPadding="false"
+                        android:paddingRight="5dp"
+                        android:text="/helou/"
+                        android:textColor="#50000000"
+                        android:textSize="16sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:layout_marginTop="5dp"
+                        app:layout_constraintTop_toBottomOf="@id/btn_speaker"
+                        app:layout_goneMarginTop="2dp" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
 
                 <LinearLayout
                     android:id="@+id/content_parent"
@@ -187,20 +206,28 @@
 
         <ImageView
             android:id="@+id/btn_navigate_to_search_bar"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/round_100dp_50_alpha_extreme_dark_app_blue"
             android:elevation="10dp"
-            android:src="@drawable/image_button_white_search"
-            app:layout_constraintBottom_toTopOf="@id/btn_add"
+            android:padding="10dp"
+            android:src="@drawable/image_icon_search_white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.8"
             app:layout_constraintEnd_toEndOf="parent" />
 
         <ImageView
             android:id="@+id/btn_add"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
             android:layout_marginBottom="2dp"
+            android:background="@drawable/round_100dp_white_background"
             android:elevation="10dp"
-            android:src="@drawable/image_button_white_add"
+            android:padding="12.5dp"
+            android:src="@drawable/image_icon_add_grey"
+            android:visibility="gone"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
 
@@ -209,7 +236,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:background="@drawable/round_10dp_white_background"
+            android:background="@drawable/round_20dp_white_background"
             android:clickable="true"
             android:elevation="10dp"
             android:paddingStart="16dp"
@@ -223,362 +250,297 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.5">
 
-            <TextView
-                android:id="@+id/txt_title_set_name"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="12dp"
-                android:elevation="0dp"
-                android:fontFamily="@font/segoeui"
-                android:includeFontPadding="false"
-                android:text="Set name"
-                android:textColor="#000000"
-                android:textSize="14sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
             <EditText
                 android:id="@+id/edt_panel_set_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@null"
+                android:layout_marginTop="9dp"
+                android:background="@drawable/background_round_3dp_white_backgroud_with_light_and_fuzzy_blue_border"
                 android:elevation="0dp"
                 android:fontFamily="@font/seguisb"
                 android:gravity="center_vertical"
                 android:hint="Set name (Optional)"
                 android:includeFontPadding="false"
                 android:inputType="textPersonName"
-                android:paddingLeft="4dp"
-                android:paddingRight="16dp"
-                android:paddingBottom="1dp"
+                android:paddingStart="13dp"
+                android:paddingTop="12dp"
+                android:paddingEnd="13dp"
+                android:paddingBottom="13dp"
                 android:textColor="#000000"
                 android:textSize="16sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/txt_title_set_name" />
+                app:layout_constraintTop_toTopOf="@+id/txt_title_set_name" />
+
+            <TextView
+                android:id="@+id/txt_title_set_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:background="@color/white"
+                android:elevation="0dp"
+                android:fontFamily="@font/seguisb"
+                android:includeFontPadding="false"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:text="Set name"
+                android:textColor="#50000000"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
             <ImageView
                 android:id="@+id/img_choose_set_name_spinner"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="2dp"
+                android:layout_marginEnd="13dp"
                 android:elevation="0dp"
-                android:paddingLeft="30dp"
-                android:paddingTop="14dp"
-                android:paddingBottom="14dp"
-                android:src="@drawable/image_spinner"
+                android:src="@drawable/image_button_app_spinner_grey"
                 app:layout_constraintBottom_toBottomOf="@+id/edt_panel_set_name"
                 app:layout_constraintEnd_toEndOf="@+id/edt_panel_set_name"
                 app:layout_constraintTop_toTopOf="@+id/edt_panel_set_name" />
-
-            <TextView
-                android:id="@+id/line_under_set_name"
-                android:layout_width="0dp"
-                android:layout_height="0.5dp"
-                android:layout_marginTop="2dp"
-                android:alpha="0.5"
-                android:background="@color/black"
-                android:fontFamily="@font/seguisb"
-                android:paddingStart="4dp"
-                app:layout_constraintEnd_toEndOf="@id/edt_panel_set_name"
-                app:layout_constraintStart_toStartOf="@id/edt_panel_set_name"
-                app:layout_constraintTop_toBottomOf="@id/edt_panel_set_name" />
-
-            <TextView
-                android:id="@+id/txt_title_type"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="12dp"
-                android:elevation="0dp"
-                android:fontFamily="@font/segoeui"
-                android:includeFontPadding="false"
-                android:text="Type"
-                android:textColor="#000000"
-                android:textSize="14sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/edt_panel_translation" />
 
             <EditText
                 android:id="@+id/edt_panel_type"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@null"
+                android:layout_marginTop="9dp"
+                android:background="@drawable/background_round_3dp_white_backgroud_with_light_and_fuzzy_blue_border"
                 android:fontFamily="@font/seguisb"
                 android:gravity="center_vertical"
                 android:includeFontPadding="false"
                 android:inputType="textPersonName"
-                android:paddingStart="4dp"
-                android:paddingLeft="10dp"
-                android:paddingRight="16dp"
-                android:paddingBottom="1dp"
-                android:textColor="@color/black"
+                android:paddingStart="13dp"
+                android:paddingTop="12dp"
+                android:paddingEnd="13dp"
+                android:paddingBottom="13dp"
+                android:textColor="@color/dark_red"
                 android:textSize="16sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/txt_title_type" />
+                app:layout_constraintTop_toTopOf="@id/txt_title_type" />
 
             <TextView
-                android:id="@+id/line_under_type"
-                android:layout_width="0dp"
-                android:layout_height="0.5dp"
-                android:layout_marginTop="2dp"
-                android:alpha="0.5"
-                android:background="@color/black"
-                app:layout_constraintEnd_toEndOf="@id/edt_panel_type"
-                app:layout_constraintStart_toStartOf="@id/edt_panel_type"
-                app:layout_constraintTop_toBottomOf="@id/edt_panel_type" />
+                android:id="@+id/txt_title_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:elevation="0dp"
+                android:fontFamily="@font/seguisb"
+                android:includeFontPadding="false"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:text="Type"
+                android:textColor="#50000000"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/edt_panel_translation" />
 
             <ImageView
                 android:id="@+id/img_choose_type_spinner"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="2dp"
+                android:layout_marginEnd="13dp"
                 android:elevation="0dp"
-                android:paddingLeft="30dp"
-                android:paddingTop="14dp"
-                android:paddingBottom="14dp"
-                android:src="@drawable/image_spinner"
+                android:src="@drawable/image_button_app_spinner_grey"
                 app:layout_constraintBottom_toBottomOf="@+id/edt_panel_type"
                 app:layout_constraintEnd_toEndOf="@+id/edt_panel_type"
                 app:layout_constraintTop_toTopOf="@+id/edt_panel_type" />
-
-            <TextView
-                android:id="@+id/txt_title_text"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="12dp"
-                android:elevation="0dp"
-                android:fontFamily="@font/segoeui"
-                android:includeFontPadding="false"
-                android:text="Text"
-                android:textColor="#000000"
-                android:textSize="14sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/edt_panel_set_name" />
 
             <EditText
                 android:id="@+id/edt_panel_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@null"
+                android:layout_marginTop="9dp"
+                android:background="@drawable/background_round_3dp_white_backgroud_with_light_and_fuzzy_blue_border"
                 android:elevation="0dp"
                 android:fontFamily="@font/seguisb"
                 android:gravity="center_vertical"
                 android:includeFontPadding="false"
                 android:inputType="textPersonName"
-                android:paddingStart="4dp"
-                android:paddingLeft="10dp"
-                android:paddingRight="16dp"
-                android:paddingBottom="1dp"
-                android:textColor="#E84E16"
+                android:paddingStart="13dp"
+                android:paddingTop="12dp"
+                android:paddingEnd="13dp"
+                android:paddingBottom="13dp"
+                android:textColor="@color/dark_red"
                 android:textSize="16sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/txt_title_text" />
+                app:layout_constraintTop_toTopOf="@id/txt_title_text" />
 
             <TextView
-                android:id="@+id/line_under_text"
-                android:layout_width="0dp"
-                android:layout_height="0.5dp"
-                android:layout_marginTop="2dp"
-                android:alpha="0.5"
-                android:background="@color/black"
-                app:layout_constraintEnd_toEndOf="@id/edt_panel_text"
-                app:layout_constraintStart_toStartOf="@id/edt_panel_text"
-                app:layout_constraintTop_toBottomOf="@id/edt_panel_text" />
-
-            <TextView
-                android:id="@+id/txt_title_translation"
-                android:layout_width="match_parent"
+                android:id="@+id/txt_title_text"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
-                android:layout_marginTop="12dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
                 android:elevation="0dp"
-                android:fontFamily="@font/segoeui"
+                android:fontFamily="@font/seguisb"
                 android:includeFontPadding="false"
-                android:text="Translation"
-                android:textColor="#000000"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:text="Text"
+                android:textColor="#50000000"
                 android:textSize="14sp"
-                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/edt_panel_text" />
+                app:layout_constraintTop_toBottomOf="@id/edt_panel_set_name" />
 
             <EditText
                 android:id="@+id/edt_panel_translation"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@null"
+                android:layout_marginTop="9dp"
+                android:background="@drawable/background_round_3dp_white_backgroud_with_light_and_fuzzy_blue_border"
                 android:elevation="0dp"
                 android:fontFamily="@font/seguisb"
                 android:gravity="center_vertical"
                 android:includeFontPadding="false"
                 android:inputType="textPersonName"
-                android:paddingStart="4dp"
-                android:paddingLeft="10dp"
-                android:paddingRight="16dp"
-                android:paddingBottom="1dp"
-                android:textColor="#E84E16"
+                android:paddingStart="13dp"
+                android:paddingTop="12dp"
+                android:paddingEnd="13dp"
+                android:paddingBottom="13dp"
+                android:textColor="@color/dark_red"
                 android:textSize="16sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/txt_title_translation" />
+                app:layout_constraintTop_toTopOf="@id/txt_title_translation" />
 
             <TextView
-                android:id="@+id/line_under_translation"
-                android:layout_width="0dp"
-                android:layout_height="0.5dp"
-                android:layout_marginTop="2dp"
-                android:alpha="0.5"
-                android:background="@color/black"
-                app:layout_constraintEnd_toEndOf="@id/edt_panel_translation"
-                app:layout_constraintStart_toStartOf="@id/edt_panel_translation"
-                app:layout_constraintTop_toBottomOf="@id/edt_panel_translation" />
+                android:id="@+id/txt_title_translation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:elevation="0dp"
+                android:fontFamily="@font/seguisb"
+                android:includeFontPadding="false"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:text="Translation"
+                android:textColor="#50000000"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/edt_panel_text" />
 
             <ImageView
                 android:id="@+id/img_choose_translation_spinner"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="2dp"
+                android:layout_marginEnd="13dp"
                 android:elevation="0dp"
-                android:paddingLeft="30dp"
-                android:paddingTop="14dp"
-                android:paddingBottom="14dp"
-                android:src="@drawable/image_spinner"
+                android:src="@drawable/image_button_app_spinner_grey"
                 app:layout_constraintBottom_toBottomOf="@+id/edt_panel_translation"
                 app:layout_constraintEnd_toEndOf="@+id/edt_panel_translation"
                 app:layout_constraintTop_toTopOf="@+id/edt_panel_translation" />
-
-            <TextView
-                android:id="@+id/txt_title_example"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="12dp"
-                android:elevation="0dp"
-                android:fontFamily="@font/segoeui"
-                android:includeFontPadding="false"
-                android:text="Example"
-                android:textColor="#000000"
-                android:textSize="14sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/edt_panel_type" />
 
             <EditText
                 android:id="@+id/edt_panel_example"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@null"
+                android:layout_marginTop="9dp"
+                android:background="@drawable/background_round_3dp_white_backgroud_with_light_and_fuzzy_blue_border"
                 android:elevation="0dp"
                 android:fontFamily="@font/seguisb"
                 android:gravity="center_vertical"
                 android:includeFontPadding="false"
                 android:inputType="textPersonName"
-                android:paddingStart="4dp"
-                android:paddingLeft="10dp"
-                android:paddingRight="16dp"
-                android:paddingBottom="1dp"
-                android:textColor="#000000"
+                android:paddingStart="13dp"
+                android:paddingTop="12dp"
+                android:paddingEnd="13dp"
+                android:paddingBottom="13dp"
+                android:textColor="@color/black"
                 android:textSize="16sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/txt_title_example" />
+                app:layout_constraintTop_toTopOf="@id/txt_title_example" />
 
             <TextView
-                android:id="@+id/line_under_example"
-                android:layout_width="0dp"
-                android:layout_height="0.5dp"
-                android:layout_marginTop="2dp"
-                android:alpha="0.5"
-                android:background="@color/black"
-                app:layout_constraintEnd_toEndOf="@id/edt_panel_example"
-                app:layout_constraintStart_toStartOf="@id/edt_panel_example"
-                app:layout_constraintTop_toBottomOf="@id/edt_panel_example" />
+                android:id="@+id/txt_title_example"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:elevation="0dp"
+                android:fontFamily="@font/seguisb"
+                android:includeFontPadding="false"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:text="Example"
+                android:textColor="#50000000"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/edt_panel_type" />
 
             <ImageView
                 android:id="@+id/img_choose_example_spinner"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="2dp"
+                android:layout_marginEnd="13dp"
                 android:elevation="0dp"
-                android:paddingLeft="30dp"
-                android:paddingTop="14dp"
-                android:paddingBottom="14dp"
-                android:src="@drawable/image_spinner"
+                android:src="@drawable/image_button_app_spinner_grey"
                 app:layout_constraintBottom_toBottomOf="@+id/edt_panel_example"
                 app:layout_constraintEnd_toEndOf="@+id/edt_panel_example"
                 app:layout_constraintTop_toTopOf="@+id/edt_panel_example" />
-
-            <TextView
-                android:id="@+id/txt_title_mean_example"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="12dp"
-                android:elevation="0dp"
-                android:fontFamily="@font/segoeui"
-                android:includeFontPadding="false"
-                android:text="Mean of example"
-                android:textColor="#000000"
-                android:textSize="14sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/edt_panel_example" />
 
             <EditText
                 android:id="@+id/edt_panel_mean_example"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@null"
+                android:layout_marginTop="9dp"
+                android:background="@drawable/background_round_3dp_white_backgroud_with_light_and_fuzzy_blue_border"
                 android:elevation="0dp"
                 android:fontFamily="@font/seguisb"
                 android:gravity="center_vertical"
                 android:includeFontPadding="false"
                 android:inputType="textPersonName"
-                android:paddingStart="4dp"
-                android:paddingLeft="10dp"
-                android:paddingRight="16dp"
-                android:paddingBottom="1dp"
-                android:textColor="#000000"
+                android:paddingStart="13dp"
+                android:paddingTop="12dp"
+                android:paddingEnd="13dp"
+                android:paddingBottom="13dp"
+                android:textColor="@color/black"
                 android:textSize="16sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/txt_title_mean_example" />
-
-            <TextView
-                android:id="@+id/line_under_mean_of_example"
-                android:layout_width="0dp"
-                android:layout_height="0.5dp"
-                android:layout_marginTop="2dp"
-                android:alpha="0.5"
-                android:background="@color/black"
-                app:layout_constraintEnd_toEndOf="@id/edt_panel_mean_example"
-                app:layout_constraintStart_toStartOf="@id/edt_panel_mean_example"
-                app:layout_constraintTop_toBottomOf="@id/edt_panel_mean_example" />
+                app:layout_constraintTop_toTopOf="@id/txt_title_mean_example" />
 
 
             <TextView
+                android:id="@+id/txt_title_mean_example"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:elevation="0dp"
+                android:fontFamily="@font/seguisb"
+                android:includeFontPadding="false"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:text="Mean of example"
+                android:textColor="#50000000"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/edt_panel_example" />
+
+            <ImageView
                 android:id="@+id/btn_panel_add"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="12.5dp"
                 android:layout_marginBottom="12dp"
-                android:background="@drawable/round_3dp_blue_background"
                 android:fontFamily="@font/tw_century_regular"
-                android:paddingStart="10dp"
-                android:paddingTop="3dp"
-                android:paddingEnd="10dp"
-                android:paddingBottom="3dp"
-                android:text="Add"
-                android:textColor="#ffffff"
-                android:textSize="20sp"
+                android:src="@drawable/image_button_rectangle_blue_add"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/edt_panel_mean_example" />
 
@@ -661,7 +623,111 @@
 
             </androidx.recyclerview.widget.RecyclerView>
 
+
         </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:id="@+id/nav_option_top_border"
+            android:layout_width="0dp"
+            android:layout_height="0.5dp"
+            android:background="#30000000"
+            app:layout_constraintBottom_toTopOf="@id/vwgrp_bottom_options"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/vwgrp_bottom_options"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:background="@color/white"
+            android:elevation="100dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/vwgrp_second_voca"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/image_icon_search_grey" />
+
+                <TextView
+                    android:id="@+id/txt_second_voca"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:fontFamily="@font/seguisb"
+                    android:text="Abacist"
+                    android:textColor="@color/black"
+                    android:textSize="17sp" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/vwgrp_first_voca"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/image_icon_search_grey" />
+
+                <TextView
+                    android:id="@+id/txt_first_voca"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:fontFamily="@font/seguisb"
+                    android:text="Abacista"
+                    android:textColor="@color/black"
+                    android:textSize="17sp" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/vwgrp_clear_all_search_text"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/image_button_clear_all_grey" />
+
+                <TextView
+                    android:id="@+id/txt_clear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:fontFamily="@font/seguisb"
+                    android:text="Clear"
+                    android:textColor="@color/black"
+                    android:textSize="17sp" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
 
         <androidx.constraintlayout.widget.Group
             android:id="@+id/group_add_flashcard"

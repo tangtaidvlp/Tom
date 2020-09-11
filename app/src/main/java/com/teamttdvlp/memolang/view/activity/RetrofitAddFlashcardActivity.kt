@@ -1,25 +1,33 @@
 package com.teamttdvlp.memolang.view.activity
+
+import android.Manifest
 import android.animation.ObjectAnimator
 import android.animation.PropertyValuesHolder
 import android.annotation.SuppressLint
+import android.app.Activity
 import android.content.Context
 import android.content.Intent
+import android.content.pm.PackageManager
+import android.graphics.Bitmap
+import android.graphics.BitmapFactory
 import android.graphics.Color
+import android.graphics.drawable.BitmapDrawable
+import android.net.Uri
 import android.os.Bundle
 import android.text.InputType
 import android.text.InputType.TYPE_NULL
 import android.view.View
 import android.view.View.SCALE_X
 import android.view.View.SCALE_Y
-import android.view.animation.AccelerateDecelerateInterpolator
-import android.view.animation.Animation
-import android.view.animation.DecelerateInterpolator
-import android.view.animation.LinearInterpolator
+import android.view.ViewGroup.LayoutParams.MATCH_PARENT
+import android.view.animation.*
 import android.view.inputmethod.EditorInfo
+import androidx.constraintlayout.widget.ConstraintLayout
+import androidx.constraintlayout.widget.ConstraintSet
+import androidx.constraintlayout.widget.ConstraintSet.PARENT_ID
 import androidx.core.animation.addListener
-import androidx.core.view.isVisible
-import androidx.core.view.marginEnd
-import androidx.core.view.marginStart
+import androidx.core.app.ActivityCompat
+import androidx.core.view.*
 import com.teamttdvlp.memolang.R
 import com.teamttdvlp.memolang.data.model.entity.flashcard.Flashcard
 import com.teamttdvlp.memolang.data.model.entity.flashcard.FlashcardSet
@@ -34,8 +42,11 @@ import com.teamttdvlp.memolang.view.customview.MyGestureDetector
 import com.teamttdvlp.memolang.view.customview.NormalOutExtraSlowIn
 import com.teamttdvlp.memolang.view.helper.*
 import com.teamttdvlp.memolang.viewmodel.AddFlashCardViewModel
+import java.io.FileNotFoundException
+import java.io.InputStream
 import javax.inject.Inject
 import javax.inject.Named
+
 
 const val KEYBOARD_DISAPPEAR_INTERVAL = 50L
 
@@ -107,6 +118,8 @@ class RetrofitAddFlashcardActivity : BaseActivity<ActivityAddFlashcardRetroBindi
 
     private var requestAdd_FlashcardSet: FlashcardSet? = null
 
+    private var is_InAdjustCardProperty_Mode = false
+
     override fun getLayoutId(): Int = R.layout.activity_add_flashcard_retro
 
     override fun takeViewModel(): AddFlashCardViewModel {
@@ -123,7 +136,56 @@ class RetrofitAddFlashcardActivity : BaseActivity<ActivityAddFlashcardRetroBindi
             showVirtualKeyboard()
             dB.edtText.requestFocus()
         }
+
+        recalculate_ChooseFlashcardPropertyPanel_Dimens()
     }
+
+
+    private fun recalculateIllustrationPictureDimens(rate: Float) {
+        dB.apply {
+            imgIllustrationPicture.doOnPreDraw {
+                imgIllustrationPicture.layoutParams.width =
+                    (imgIllustrationPicture.height * rate).toInt()
+                imgIllustrationPicture.requestLayout()
+            }
+        }
+
+    }
+
+    private fun recalculate_Flashcard_Dimens(heightRate: Float) {
+        dB.apply {
+            viewgroupFrontFlashcard.doOnPreDraw {
+                viewgroupFrontFlashcard.layoutParams.height =
+                    (heightRate * (viewgroupFrontFlashcard.width / 2)).toInt()
+                log("Height: ${viewgroupFrontFlashcard.height}")
+                log("LayoutParams.Height: ${viewgroupFrontFlashcard.layoutParams.height}")
+                viewgroupFrontFlashcard.requestLayout()
+            }
+
+            viewgroupBackFlashcard.doOnPreDraw {
+                viewgroupBackFlashcard.layoutParams.height =
+                    (heightRate * (viewgroupFrontFlashcard.width / 2)).toInt()
+                viewgroupBackFlashcard.requestLayout()
+            }
+        }
+    }
+
+    private fun recalculate_ChooseFlashcardPropertyPanel_Dimens() {
+        dB.apply {
+            layoutChooseCardProperty.root.doOnPreDraw {
+                var totalMargin: Int = viewgroupFrontFlashcard.marginTop
+                log("Got Height: ${viewgroupFrontFlashcard.height}")
+                log("Got LayoutParams.Height: ${viewgroupFrontFlashcard.layoutParams.height}")
+                totalMargin += (viewgroupFrontFlashcard.height * FLASHCARD_WIDE_HEIGHT_RATE).toInt()
+
+                totalMargin += 25.dp()
+                (layoutChooseCardProperty.root.layoutParams as ConstraintLayout.LayoutParams).topMargin =
+                    totalMargin
+                layoutChooseCardProperty.root.requestLayout()
+            }
+        }
+    }
+
 
     override fun onPause() {
         super.onPause()
@@ -257,9 +319,42 @@ class RetrofitAddFlashcardActivity : BaseActivity<ActivityAddFlashcardRetroBindi
             edtTranslation.setText(requestEditFlashcard.translation)
             edtExample.setText(requestEditFlashcard.example)
             edtExampleTranslation.setText(requestEditFlashcard.meanOfExample)
+
+            if (requestEditFlashcard.illustrationPictureName != null) {
+                startWaitingLoadingImageProgress()
+                viewModel.loadIllustrationPicture(
+                    requestEditFlashcard.illustrationPictureName!!, onGet = { ex, picture ->
+                        if (ex != null) {
+                            log("Load image error happens")
+                            ex.printStackTrace()
+                        } else {
+                            if (picture == null) {
+                                log("No error happens but image is null")
+                                throw Exception("????")
+                                // TODO ()
+                            } else {
+                                setPictureToCardOnScreen(picture)
+                                endWaitingLoadingImageProgress()
+                            }
+                        }
+                    })
+            }
         }
     }
 
+    private fun startWaitingLoadingImageProgress() {
+        recalculateIllustrationPictureDimens(1f)
+        val infiniteRotate =
+            AnimationUtils.loadAnimation(this@RetrofitAddFlashcardActivity, R.anim.rotate_forever)
+        infiniteRotate.duration = 300
+        dB.imgLoadPictureProgressBar.goVISIBLE()
+        dB.imgLoadPictureProgressBar.startAnimation(infiniteRotate)
+    }
+
+    private fun endWaitingLoadingImageProgress() {
+        dB.imgLoadPictureProgressBar.animation.cancel()
+        dB.imgLoadPictureProgressBar.goGONE()
+    }
 
     private fun setUpEditTextsFeatures() {
         dB.apply {
@@ -522,14 +617,84 @@ class RetrofitAddFlashcardActivity : BaseActivity<ActivityAddFlashcardRetroBindi
                 txtSetName.requestFocus()
                 showVirtualKeyboard()
             }
+
+            btnChoosePicture.setOnClickListener {
+                startWaitingLoadingImageProgress()
+                loadImagesFromGallery()
+            }
+
+            vwgrpBtnBlueChooseCardProperty.setOnClickListener {
+                is_InAdjustCardProperty_Mode = true
+
+                layoutChooseCardProperty.root.goVisibleByFadeInAnim(1f)
+                vwgrpBtnBlueChooseCardProperty.goGoneByFadeOutAnim()
+                imgFlashcardsBackground.goGoneByFadeOutAnim()
+                imgArrowUp.goGoneByFadeOutAnim()
+                txtSwipeUp.goGoneByFadeOutAnim()
+            }
+
+            btnCardPropertiesOnTop.setOnClickListener {
+                vwgrpBtnBlueChooseCardProperty.performClick()
+            }
+
+            layoutChooseCardProperty.apply {
+                rdgrCardHeight.setOnCheckedChangeListener { view, changedId ->
+                    if (changedId == rdbtnHeightNormal.id) {
+                        recalculate_Flashcard_Dimens(1f)
+                    } else if (changedId == rdbtnHeightWide.id) {
+                        recalculate_Flashcard_Dimens(FLASHCARD_WIDE_HEIGHT_RATE)
+                    }
+                }
+
+                rdgrCardFrontSide.setOnCheckedChangeListener { view, changedId ->
+                    if (changedId == rdbtnFrontImageWithText.id) {
+                        vwgrpFrontTexts.goVISIBLE()
+                        (imgIllustrationPicture.layoutParams as ConstraintLayout.LayoutParams).endToEnd =
+                            ConstraintSet.GONE
+                        recalculateIllustrationPictureDimens(1f)
+                        imgIllustrationPicture.requestLayout()
+                    } else if (changedId == rdbtnFrontImageWithoutText.id) {
+                        vwgrpFrontTexts.goGONE()
+                        (imgIllustrationPicture.layoutParams as ConstraintLayout.LayoutParams).endToEnd =
+                            PARENT_ID
+                        (imgIllustrationPicture.layoutParams as ConstraintLayout.LayoutParams).width =
+                            MATCH_PARENT
+                        imgIllustrationPicture.requestLayout()
+                    }
+                }
+            }
+
+
         }
     }
 
-    private fun showCardTypeList () {
+    private fun View.goGoneByFadeOutAnim() {
+        animate().alpha(0.0f)
+            .setDuration(100).setInterpolator(LinearInterpolator())
+            .setLiteListener(onEnd = {
+                goGONE()
+            })
+
+        // Reset
+        animate().setLiteListener()
+    }
+
+
+    private fun View.goVisibleByFadeInAnim(targetAlpha: Float) {
+        goVISIBLE()
+        animate().alpha(targetAlpha)
+            .setDuration(100).interpolator = LinearInterpolator()
+
+        // Reset
+        animate().setLiteListener()
+    }
+
+
+    private fun showCardTypeList() {
         dB.rcvChooseCardType.showByScaleUpAndFadeIn()
     }
 
-    private fun hideCardTypeList () {
+    private fun hideCardTypeList() {
         dB.rcvChooseCardType.hideByScaleDownAndFadeOut()
     }
 
@@ -567,12 +732,15 @@ class RetrofitAddFlashcardActivity : BaseActivity<ActivityAddFlashcardRetroBindi
                 setOwner = setName
             )
 
-            viewModel.proceedAddFlashcard(newCard)
-        if (type.isNotEmpty()) {
-            rcvChooseCardType.addType(type)
-        }
-    }}
+            val illustrationPicture = if (imgIllustrationPicture.drawable != null) {
+                (imgIllustrationPicture.drawable as BitmapDrawable).bitmap
+            } else null
 
+            viewModel.proceedAddFlashcard(newCard, illustrationPicture)
+            if (type.isNotEmpty()) {
+                rcvChooseCardType.addType(type)
+            }
+    }}
 
     private fun clearAllCardInfomation () { dB.apply {
         edtText.setText("")
@@ -677,15 +845,77 @@ class RetrofitAddFlashcardActivity : BaseActivity<ActivityAddFlashcardRetroBindi
             })
     }
 
-    private fun hideSetNameList () {
+    private fun hideSetNameList() {
         dB.rcvFlashcardSetName.animate()
-                                                .alpha(0f)
-                                                .scaleX(0f).scaleY(0f)
-                                                .setDuration(150).setInterpolator(NormalOutExtraSlowIn())
-                                                .setLiteListener (onEnd = {
-                                                    dB.rcvFlashcardSetName.goGONE()
-                                                })
+            .alpha(0f)
+            .scaleX(0f).scaleY(0f)
+            .setDuration(150).setInterpolator(NormalOutExtraSlowIn())
+            .setLiteListener(onEnd = {
+                dB.rcvFlashcardSetName.goGONE()
+            })
     }
+
+    private fun loadImagesFromGallery() {
+        if (ActivityCompat.checkSelfPermission(
+                this@RetrofitAddFlashcardActivity,
+                Manifest.permission.READ_EXTERNAL_STORAGE
+            ) != PackageManager.PERMISSION_GRANTED
+        ) {
+            ActivityCompat.requestPermissions(
+                this@RetrofitAddFlashcardActivity,
+                arrayOf(Manifest.permission.READ_EXTERNAL_STORAGE),
+                100
+            )
+            return
+        }
+        val intent = Intent(Intent.ACTION_GET_CONTENT)
+        intent.putExtra(Intent.EXTRA_ALLOW_MULTIPLE, true)
+        intent.type = "image/*"
+        startActivityForResult(intent, 1)
+    }
+
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+        if (requestCode == 1 && resultCode == Activity.RESULT_OK) {
+            val clipData = data!!.clipData
+            //clip data will be null if user select one item from gallery
+            if (clipData != null) {
+                for (i in 0 until clipData.itemCount) {
+                    val imageUri: Uri = clipData.getItemAt(i).uri
+                    try {
+                        val istr: InputStream? = contentResolver.openInputStream(imageUri)
+                        val bitmap = BitmapFactory.decodeStream(istr)
+                        setPictureToCardOnScreen(bitmap)
+                        endWaitingLoadingImageProgress()
+                    } catch (e: FileNotFoundException) {
+                        e.printStackTrace()
+                    }
+                }
+            } else {
+                val imageUri: Uri? = data.data
+                try {
+                    val `is`: InputStream? = contentResolver.openInputStream(imageUri!!)
+                    val picture = BitmapFactory.decodeStream(`is`)
+                    setPictureToCardOnScreen(picture)
+                    endWaitingLoadingImageProgress()
+                } catch (e: FileNotFoundException) {
+                    e.printStackTrace()
+                }
+            }
+        }
+    }
+
+    private fun setPictureToCardOnScreen(picture: Bitmap) {
+        val rate = picture.width.toFloat() / picture.height.toFloat()
+        if (rate < 1) {
+            recalculateIllustrationPictureDimens(rate)
+        } else {
+            recalculateIllustrationPictureDimens(1f)
+        }
+
+        dB.imgIllustrationPicture.setImageBitmap(picture)
+    }
+
 
     private fun resetEditTextTranslationHintToNormal() {
         dB.edtTranslation.hint = "Translation"
@@ -805,7 +1035,12 @@ class RetrofitAddFlashcardActivity : BaseActivity<ActivityAddFlashcardRetroBindi
                 imgFlashcardsBackground.goGONE()
             })
 
+        vwgrpBtnBlueChooseCardProperty.goGONE()
+        btnCardPropertiesOnTop.goVISIBLE()
+        txtCardPropertiesOnTop.goVISIBLE()
+
         hasStartedEdit = true
+
     }}
 
     private fun onUserFlipCard() {
@@ -845,6 +1080,15 @@ class RetrofitAddFlashcardActivity : BaseActivity<ActivityAddFlashcardRetroBindi
         dB.apply {
             if (isIPAKeyboardVisible) {
                 hideIPAKeyboard()
+            } else if (is_InAdjustCardProperty_Mode) {
+                is_InAdjustCardProperty_Mode = false
+
+                layoutChooseCardProperty.root.goGoneByFadeOutAnim()
+
+                vwgrpBtnBlueChooseCardProperty.goVisibleByFadeInAnim(1f)
+                imgFlashcardsBackground.goVisibleByFadeInAnim(0.35f)
+                imgArrowUp.goVisibleByFadeInAnim(1f)
+                txtSwipeUp.goVisibleByFadeInAnim(1f)
             } else {
                 super.onBackPressed()
             }

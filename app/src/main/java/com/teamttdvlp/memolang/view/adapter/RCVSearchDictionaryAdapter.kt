@@ -30,6 +30,8 @@ class RCVSearchDictionaryAdapter(var context : Context) : RecyclerView.Adapter<R
 
     private var onBtnBringTextUpClickListener: OnItemClickListener? = null
 
+    private var onGetFiltedResult: ((ArrayList<RawVocabulary>) -> Unit)? = null
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val dataBinding =
             ItemSearchDictionaryBinding.inflate(LayoutInflater.from(context), parent, false)
@@ -67,6 +69,7 @@ class RCVSearchDictionaryAdapter(var context : Context) : RecyclerView.Adapter<R
     }
 
     fun setData(data: ArrayList<RawVocabulary>) {
+        passTwoFirstVocaToListener(data)
         vocaList.clear()
         vocaList.addAll(data)
         notifyDataSetChanged()
@@ -90,8 +93,11 @@ class RCVSearchDictionaryAdapter(var context : Context) : RecyclerView.Adapter<R
         throw Exception()
     }
 
+    fun setOnGetTwoFirstVocabulary(onGet_TwoFirstVoca: (ArrayList<RawVocabulary>) -> Unit) {
+        this.onGetFiltedResult = onGet_TwoFirstVoca
+    }
 
-    fun addData (stringVocaItem : String) {
+    fun addData(stringVocaItem: String) {
 //        vocaList.add(toRawVocabulary(stringVocaItem))
         notifyItemInserted(0)
     }
@@ -172,12 +178,11 @@ class RCVSearchDictionaryAdapter(var context : Context) : RecyclerView.Adapter<R
         isNormalSearchMode = true
     }
 
-
     fun search (text : String) {
         val cleanText = trimAllSpacesPrefix(text).toLowerCase()
         if (textChangeInLength(cleanText) or (cleanText == "w")) {
-            val resultList = getMatchedVocabularyList(cleanText)
-            setData(resultList)
+            val matchedList = getMatchedVocabularyList(cleanText)
+            setData(matchedList)
         }
 
         if (text == "") {
@@ -185,7 +190,20 @@ class RCVSearchDictionaryAdapter(var context : Context) : RecyclerView.Adapter<R
         }
     }
 
-    fun getVocabularyByKey (key : String) : TypicalRawVocabulary? {
+    private fun passTwoFirstVocaToListener(matchedList: java.util.ArrayList<RawVocabulary>) {
+        val twoFirst_VocaList = ArrayList<RawVocabulary>()
+        if (matchedList.size >= 2) {
+            twoFirst_VocaList.add(matchedList[0])
+            twoFirst_VocaList.add(matchedList[1])
+        } else { // matchedList.size is '0' or '1'
+            for (voca in matchedList) {
+                twoFirst_VocaList.add(voca)
+            }
+        }
+        onGetFiltedResult?.invoke(twoFirst_VocaList)
+    }
+
+    fun getVocabularyByKey(key: String): TypicalRawVocabulary? {
         val trueFormKey = key.toLowerCase().trim()
 
         if (vocaList.size != 0) {

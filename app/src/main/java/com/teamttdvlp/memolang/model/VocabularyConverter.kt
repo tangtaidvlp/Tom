@@ -1,11 +1,11 @@
 package com.teamttdvlp.memolang.model
 
-import com.example.dictionary.model.TransAndExamp
+import com.example.dictionary.model.TranslationAndExample
 import com.example.dictionary.model.Vocabulary
 import com.teamttdvlp.memolang.data.model.other.new_vocabulary.SingleMeanExample
 import com.teamttdvlp.memolang.data.model.other.new_vocabulary.TypicalRawVocabulary
 import com.teamttdvlp.memolang.data.model.other.new_vocabulary.Using
-import com.teamttdvlp.memolang.data.model.other.vocabulary.MultiMeanExample
+import com.teamttdvlp.memolang.data.model.other.vocabulary.VocabularyOtherStructure
 import com.teamttdvlp.memolang.view.adapter.RCVSearchDictionaryAdapter
 import com.teamttdvlp.memolang.view.helper.clearAll
 import com.teamttdvlp.memolang.view.helper.foreachFromSecondElement
@@ -76,16 +76,20 @@ class VocabularyConverter {
                         usingList.add(Using(type = ""))
                     }
                     val translation = line.clearAll(TRANSLATION_PREFIX).trim()
-                    val transAndExample = TransAndExamp(translation = translation)
-                    usingList.last().transAndExamsList.add(transAndExample)
+                    val transAndExample = TranslationAndExample(translation = translation)
+                    usingList.last().translationAndExamsList.add(transAndExample)
 
                 } else { // This is a TRANSLATION of an Multi-mean Example
                     val translation = line.clearAll(TRANSLATION_PREFIX).trim()
                     val currentUsing = usingList.last()
-                    val currentTransAndExample = currentUsing.transAndExamsList.last()
+                    val currentTransAndExample = currentUsing.translationAndExamsList.last()
                     val currentExample = currentTransAndExample.subExampleList.last()
-                    if (currentExample is MultiMeanExample) {
-                        currentExample.transAndSubExamp_List.add(TransAndExamp(translation))
+                    if (currentExample is VocabularyOtherStructure) {
+                        currentExample.translationAndExample_List.add(
+                            TranslationAndExample(
+                                translation
+                            )
+                        )
                     }
                 }
 
@@ -104,23 +108,23 @@ class VocabularyConverter {
                 if (`isBuilding_Multi-Mean_Example`.not()) {
                     val currentUsing = usingList.last()
 
-                    if (currentUsing.transAndExamsList.size == 0) {
-                        currentUsing.transAndExamsList.add(TransAndExamp(""))
+                    if (currentUsing.translationAndExamsList.size == 0) {
+                        currentUsing.translationAndExamsList.add(TranslationAndExample(""))
                     }
 
-                    val currentTransAndExample = currentUsing.transAndExamsList.last()
+                    val currentTransAndExample = currentUsing.translationAndExamsList.last()
                     currentTransAndExample.subExampleList.add(example)
 
                 } else {
                     val currentUsing = usingList.last()
-                    if (currentUsing.transAndExamsList.size == 0) {
-                        currentUsing.transAndExamsList.add(TransAndExamp(""))
+                    if (currentUsing.translationAndExamsList.size == 0) {
+                        currentUsing.translationAndExamsList.add(TranslationAndExample(""))
                     }
 
-                    val currentTransAndExample = currentUsing.transAndExamsList.last()
+                    val currentTransAndExample = currentUsing.translationAndExamsList.last()
                     val currentExample = currentTransAndExample.subExampleList.last()
-                    if (currentExample is MultiMeanExample) {
-                        currentExample.transAndSubExamp_List.last().subExampleList.add(example)
+                    if (currentExample is VocabularyOtherStructure) {
+                        currentExample.translationAndExample_List.last().subExampleList.add(example)
                     }
                 }
 
@@ -128,10 +132,10 @@ class VocabularyConverter {
             } else if (line.trim().startsWith("!")) {
                 `isBuilding_Multi-Mean_Example` = true
                 val englishExample = line.trim().clearAll("!")
-                val example = MultiMeanExample(text = englishExample)
+                val example = VocabularyOtherStructure(text = englishExample)
 
                 val currentUsing = usingList.last()
-                val currentTransAndExample = currentUsing.transAndExamsList.last()
+                val currentTransAndExample = currentUsing.translationAndExamsList.last()
                 currentTransAndExample.subExampleList.add(example)
             } else {
                 log("SOMETHING WRONG WITH THIS LINE: $line")

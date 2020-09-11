@@ -45,7 +45,7 @@ import androidx.interpolator.view.animation.FastOutLinearInInterpolator
 import androidx.interpolator.view.animation.FastOutSlowInInterpolator
 import androidx.lifecycle.LifecycleService
 import androidx.lifecycle.Observer
-import com.example.dictionary.model.TransAndExamp
+import com.example.dictionary.model.TranslationAndExample
 import com.example.dictionary.model.Vocabulary
 import com.teamttdvlp.memolang.R
 import com.teamttdvlp.memolang.data.model.entity.flashcard.Flashcard
@@ -54,7 +54,7 @@ import com.teamttdvlp.memolang.data.model.other.new_vocabulary.Example
 import com.teamttdvlp.memolang.data.model.other.new_vocabulary.SingleMeanExample
 import com.teamttdvlp.memolang.data.model.other.new_vocabulary.TypicalRawVocabulary
 import com.teamttdvlp.memolang.data.model.other.new_vocabulary.Using
-import com.teamttdvlp.memolang.data.model.other.vocabulary.MultiMeanExample
+import com.teamttdvlp.memolang.data.model.other.vocabulary.VocabularyOtherStructure
 import com.teamttdvlp.memolang.databinding.LayoutFloatAddBodyBinding
 import com.teamttdvlp.memolang.databinding.LayoutFloatAddIconBinding
 import com.teamttdvlp.memolang.view.activity.MenuActivity
@@ -64,9 +64,13 @@ import com.teamttdvlp.memolang.view.adapter.RCVRecent_SearchDictionary_Adapter
 import com.teamttdvlp.memolang.view.adapter.RCVSearchDictionaryAdapter
 import com.teamttdvlp.memolang.view.adapter.RCVSimpleListChooseSetNameAdapter
 import com.teamttdvlp.memolang.view.customview.StuckAtFirstInterpolator
-import com.teamttdvlp.memolang.view.customview.see_vocabulary.*
-import com.teamttdvlp.memolang.view.customview.see_vocabulary.sub_example.SubExampleTranslationView
-import com.teamttdvlp.memolang.view.customview.see_vocabulary.sub_example.SubExampleView
+import com.teamttdvlp.memolang.view.customview.see_vocabulary.Vocabulary_ExampleTranslation_View
+import com.teamttdvlp.memolang.view.customview.vocabulary_info.Vocabulary_Mean_TextView
+import com.teamttdvlp.memolang.view.customview.vocabulary_info.Vocabulary_Type_TextView
+import com.teamttdvlp.memolang.view.customview.vocabulary_info.other_structure.OtherStructure_ExampleTranslation_View
+import com.teamttdvlp.memolang.view.customview.vocabulary_info.other_structure.OtherStructure_Example_View
+import com.teamttdvlp.memolang.view.customview.vocabulary_info.other_structure.OtherStructure_Mean_View
+import com.teamttdvlp.memolang.view.customview.vocabulary_info.other_structure.OtherStructure_Text_View
 import com.teamttdvlp.memolang.view.helper.*
 import com.teamttdvlp.memolang.viewmodel.FloatAddServiceViewModel
 import dagger.android.AndroidInjection
@@ -206,7 +210,7 @@ class FloatingAddServiceManager private constructor(
 
         private lateinit var usingList : ArrayList<Using>
 
-        private lateinit var transAndExampsList : ArrayList<TransAndExamp>
+        private lateinit var translationAndExampsList: ArrayList<TranslationAndExample>
 
 
 
@@ -254,13 +258,14 @@ class FloatingAddServiceManager private constructor(
             txtText.text = vocabulary.text
             for (using in vocabulary.usings) {
                 var isFirstMeanTextView = true
-                val newTxtPanelType = TypeVocabularyTextView(applicationContext)
+                val newTxtPanelType = Vocabulary_Type_TextView(applicationContext)
                 newTxtPanelType.text = using.type
                 contentParent.addView(newTxtPanelType)
 
-                for (usingTranslationAndExample in using.transAndExamsList) {
-                    val newVocaMean = VocabularyMeanView(
-                        applicationContext, usingTranslationAndExample.translation)
+                for (usingTranslationAndExample in using.translationAndExamsList) {
+                    val newVocaMean = Vocabulary_Mean_TextView(
+                        applicationContext, usingTranslationAndExample.translation
+                    )
 
                     newVocaMean.addButton.setOnClickListener {
                         edtPanelType.setText(using.type)
@@ -278,33 +283,47 @@ class FloatingAddServiceManager private constructor(
                     if (usingTranslationAndExample.subExampleList.size != 0) {
                         for (example in usingTranslationAndExample.subExampleList) {
                             if (example is SingleMeanExample) {
-                                val newTxtExample = SingleMeanTranslationView(
-                                    applicationContext, example.text)
+                                val newTxtExample =
+                                    OtherStructure_Mean_View(
+                                        applicationContext, example.text
+                                    )
                                 contentParent.addView(newTxtExample)
                                 val exHasMean = (example.mean != "")
                                 if (exHasMean) {
-                                    val newTxtMeanEx = ExampleTranslationTextView(applicationContext)
+                                    val newTxtMeanEx =
+                                        Vocabulary_ExampleTranslation_View(applicationContext)
                                     newTxtMeanEx.text = example.mean
                                     contentParent.addView(newTxtMeanEx)
                                 }
 
-                            } else if (example is MultiMeanExample) {
-                                val newTxtMultiMeanExample = MultiMeanExampleView(applicationContext, example.text)
+                            } else if (example is VocabularyOtherStructure) {
+                                val newTxtMultiMeanExample =
+                                    OtherStructure_Text_View(applicationContext, example.text)
+                                log("OtherStructure_Text_View: ${example.text}")
                                 contentParent.addView(newTxtMultiMeanExample)
-                                example.transAndSubExamp_List.forEach { transAndSubExamp ->
-                                    val newSubExample = ExampleTranslationTextView(applicationContext)
-                                    newSubExample.text = transAndSubExamp.translation
+                                example.translationAndExample_List.forEach { transAndSubExamp ->
+                                    val newSubExample = OtherStructure_Mean_View(
+                                        applicationContext,
+                                        text = transAndSubExamp.translation
+                                    )
+                                    log("OtherStructure_ExampleTranslation_View: ${transAndSubExamp.translation}")
                                     contentParent.addView(newSubExample)
 
                                     transAndSubExamp.subExampleList.forEach { example ->
                                         example as SingleMeanExample
 
-                                        val newTxtExample = SubExampleView(applicationContext, example.text)
+                                        val newTxtExample = OtherStructure_Example_View(
+                                            applicationContext,
+                                            example.text
+                                        )
                                         contentParent.addView(newTxtExample)
 
                                         val exHasMean = (example.mean != "")
                                         if (exHasMean) {
-                                            val newTxtMeanEx = SubExampleTranslationView(applicationContext)
+                                            val newTxtMeanEx =
+                                                OtherStructure_ExampleTranslation_View(
+                                                    applicationContext
+                                                )
                                             newTxtMeanEx.text = example.mean
                                             contentParent.addView(newTxtMeanEx)
                                         }
@@ -318,29 +337,29 @@ class FloatingAddServiceManager private constructor(
         }}
 
         private fun updateRCVChooseTrans (using : Using) {
-            transAndExampsList = using.transAndExamsList
+            translationAndExampsList = using.translationAndExamsList
             val transList = ArrayList<String>()
 
-            transAndExampsList.forEach { transAndEx ->
+            translationAndExampsList.forEach { transAndEx ->
                 transList.add(transAndEx.translation)
             }
 
-            if (transAndExampsList.size != 0) {
+            if (translationAndExampsList.size != 0) {
                 updateTxtTrans(transList.first())
             }
         }
 
-        private fun updateChooseExampleFields(transAndEx: TransAndExamp) {
-            if (transAndEx.subExampleList.size != 0) {
+        private fun updateChooseExampleFields(translationAndEx: TranslationAndExample) {
+            if (translationAndEx.subExampleList.size != 0) {
                 val fullSingleExampleList =
-                    convertExampleListTo_FullSingleExampleList(transAndEx.subExampleList)
+                    convertExampleListTo_FullSingleExampleList(translationAndEx.subExampleList)
                 updateTxtExampleAndExampleMean(fullSingleExampleList.first())
             } else {
                 updateTxtExampleAndExampleMean(null)
             }
         }
 
-        private fun updateTxtExampleAndExampleMean (example : SingleMeanExample?) {
+        private fun updateTxtExampleAndExampleMean(example: SingleMeanExample?) {
             if (example != null) {
                 floatManager.bodyDB.edtPanelExample.setText(example.text)
                 floatManager.bodyDB.edtPanelMeanExample.setText(example.mean)
@@ -359,8 +378,8 @@ class FloatingAddServiceManager private constructor(
             exampleList.forEach { example ->
                 if (example is SingleMeanExample) {
                     result.add(example)
-                } else if (example is MultiMeanExample) {
-                    example.transAndSubExamp_List.forEach { transAndExam ->
+                } else if (example is VocabularyOtherStructure) {
+                    example.translationAndExample_List.forEach { transAndExam ->
                         result.add(SingleMeanExample(example.text, transAndExam.translation))
 
                         transAndExam.subExampleList.forEach { example ->
@@ -392,7 +411,7 @@ class FloatingAddServiceManager private constructor(
 //                rcvChooseTypeAdapter.setData(typeList)
                 val firstUsing = usingList.first()
                 updateRCVChooseTrans(firstUsing)
-                val firstTransAndExamp = firstUsing.transAndExamsList.first()
+                val firstTransAndExamp = firstUsing.translationAndExamsList.first()
                 updateChooseExampleFields(firstTransAndExamp)
             }
         }}

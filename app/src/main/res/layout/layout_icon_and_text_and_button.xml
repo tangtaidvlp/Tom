@@ -11,29 +11,32 @@
         android:layout_height="wrap_content"
         android:layout_weight="0"
         android:layout_marginTop="11dp"
+        android:layout_marginEnd="5dp"
         android:src="@drawable/image_icon_vocabulary_mean" />
 
     <TextView
         android:id="@+id/txt_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="5dp"
         android:layout_weight="3"
-        android:fontFamily="@font/segoeui"
+        android:fontFamily="@font/seguisb"
         android:gravity="center_vertical"
         android:text="Hello Hello Hello Hello "
-        android:textColor="#F54A0A"
+        android:textColor="#008FAB"
         android:textSize="19sp" />
 
     <ImageView
         android:id="@+id/img_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
         android:layout_weight="0"
-        android:paddingStart="15dp"
-        android:paddingTop="5dp"
-        android:paddingEnd="5dp"
-        android:paddingBottom="5dp"
-        android:src="@drawable/image_icon_add_vocabulary" />
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/round_3dp_blue_background"
+        android:elevation="2dp"
+        android:padding="5dp"
+        android:src="@drawable/image_icon_add_white" />
 
 </androidx.appcompat.widget.LinearLayoutCompat>

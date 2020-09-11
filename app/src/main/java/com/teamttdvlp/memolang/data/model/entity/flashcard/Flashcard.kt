@@ -35,6 +35,8 @@ data class Flashcard (
 
     var pronunciation : String = "//") : Serializable {
 
+    var illustrationPictureName: String? = null
+
     init {
         text = text.trim()
         setOwner = setOwner.trim()

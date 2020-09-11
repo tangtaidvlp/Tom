@@ -41,11 +41,15 @@
             android:fontFamily="@font/seguisb"
             android:gravity="left|center_vertical"
             android:includeFontPadding="false"
+            android:layout_marginEnd="20dp"
+            android:inputType="textNoSuggestions"
+            app:layout_constraintEnd_toStartOf="@+id/btn_card_properties_on_top"
             android:paddingTop="1dp"
             android:paddingBottom="2dp"
             android:text="Harry Potter"
             android:textColor="@color/white"
             android:textSize="23sp"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -86,6 +90,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/round_5dp_white_background"
+            android:inputType="textNoSuggestions"
             android:elevation="7dp"
             android:fontFamily="@font/seguisb"
             android:includeFontPadding="false"
@@ -116,13 +121,43 @@
             android:id="@+id/textView12"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="8dp"
             android:alpha="0.4"
             android:fontFamily="@font/seguisb"
+            android:inputType="textNoSuggestions"
             android:text="Help"
             android:textColor="@color/white"
             android:textSize="12sp"
-            app:layout_constraintEnd_toStartOf="@id/textView11"
+            app:layout_constraintEnd_toEndOf="@id/btn_help"
+            app:layout_constraintStart_toStartOf="@id/btn_help"
+            app:layout_constraintTop_toTopOf="@id/txt_set_languages"
+            tools:layout_editor_absoluteX="319dp" />
+
+        <ImageView
+            android:id="@+id/btn_card_properties_on_top"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginEnd="10dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/image_icon_choose_card_properties_white"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@id/txt_set_name"
+            app:layout_constraintEnd_toStartOf="@id/btn_help"
+            app:layout_constraintTop_toTopOf="@id/txt_set_name" />
+
+        <TextView
+            android:id="@+id/txt_card_properties_on_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="0.4"
+            android:fontFamily="@font/seguisb"
+            android:inputType="textNoSuggestions"
+            android:text="Card prop."
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="@+id/btn_card_properties_on_top"
+            app:layout_constraintStart_toStartOf="@id/btn_card_properties_on_top"
             app:layout_constraintTop_toTopOf="@id/txt_set_languages" />
 
         <ImageView
@@ -130,11 +165,11 @@
             android:layout_width="35dp"
             android:layout_height="35dp"
             android:layout_marginTop="9dp"
+            android:layout_marginEnd="10dp"
             android:scaleType="fitCenter"
             android:src="@drawable/image_button_square_help_white"
             app:layout_constraintBottom_toBottomOf="@id/txt_set_name"
-            app:layout_constraintEnd_toEndOf="@+id/textView12"
-            app:layout_constraintStart_toStartOf="@+id/textView12"
+            app:layout_constraintEnd_toStartOf="@+id/btn_start_create_new_set"
             app:layout_constraintTop_toTopOf="@id/txt_set_name" />
 
         <TextView
@@ -142,6 +177,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="@dimen/common_dialog_margin_end"
+            android:inputType="textNoSuggestions"
             android:alpha="0.4"
             android:fontFamily="@font/seguisb"
             android:text="New set"
@@ -157,6 +193,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/common_dialog_margin_start"
+            android:inputType="textNoSuggestions"
             android:fontFamily="@font/segoeui"
             android:orientation="horizontal"
             android:text="English - Vietnamese"
@@ -279,6 +316,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
+                android:inputType="textNoSuggestions"
                 android:fontFamily="@font/segoeui"
                 android:gravity="left|center_vertical"
                 android:includeFontPadding="false"
@@ -326,6 +364,7 @@
                 android:layout_width="1dp"
                 android:layout_height="0dp"
                 android:layout_marginTop="8dp"
+                android:inputType="textNoSuggestions"
                 android:layout_marginBottom="2dp"
                 android:alpha="0.15"
                 android:background="@color/black"
@@ -340,6 +379,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
+                android:inputType="textNoSuggestions"
                 android:layout_marginTop="10dp"
                 android:fontFamily="@font/segoeui"
                 android:gravity="left|center_vertical"
@@ -422,6 +462,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/segoeui"
+                    android:inputType="textNoSuggestions"
                     android:gravity="center"
                     android:text="Error"
                     android:textColor="@color/white"
@@ -435,6 +476,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
+                    android:inputType="textNoSuggestions"
                     android:background="@drawable/round_3dp_20percent_white_background"
                     android:fontFamily="@font/tw_century_regular"
                     android:gravity="center"
@@ -566,10 +608,10 @@
 
 
             <ImageView
-                android:layout_width="13dp"
-                android:layout_height="13dp"
-                android:layout_marginRight="7dp"
-                android:layout_marginBottom="7dp"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
                 android:elevation="6dp"
                 android:src="@drawable/image_circle_grey"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -642,7 +684,7 @@
                     android:layout_height="wrap_content"
                     android:alpha="1.0"
                     android:background="@android:color/transparent"
-                    android:fontFamily="@font/segoeui"
+                    android:fontFamily="@font/segoeuii"
                     android:gravity="center"
                     android:hint="Example translation"
                     android:includeFontPadding="false"
@@ -673,18 +715,8 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@id/img_white_background">
 
-
             <ImageView
-                android:layout_width="13dp"
-                android:layout_height="13dp"
-                android:layout_marginTop="7dp"
-                android:layout_marginRight="7dp"
-                android:elevation="6dp"
-                android:src="@drawable/image_circle_blue_100dp_radius"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <ImageView
+                android:id="@+id/btn_choose_picture"
                 android:layout_width="20dp"
                 android:layout_height="20dp"
                 android:layout_marginStart="9dp"
@@ -695,18 +727,56 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:elevation="6dp"
+                android:src="@drawable/image_circle_blue_100dp_radius"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/img_illustration_picture"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="#10000000"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <ImageView
+                android:id="@+id/img_load_picture_progress_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image_circle_progress_bar"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@id/img_illustration_picture"
+                app:layout_constraintEnd_toEndOf="@+id/img_illustration_picture"
+                app:layout_constraintStart_toStartOf="@id/img_illustration_picture"
+                app:layout_constraintTop_toTopOf="@id/img_illustration_picture" />
+
             <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/vwgrp_front_texts"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:elevation="5dp"
                 android:gravity="center_horizontal"
                 android:orientation="vertical"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.5"
-                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintStart_toEndOf="@id/img_illustration_picture"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.6">
+                app:layout_constraintVertical_bias="0.5">
 
                 <EditText
                     android:id="@+id/edt_text"
@@ -795,6 +865,37 @@
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/vwgrp_btn_blue_choose_card_property"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="5dp"
+            android:elevation="3dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/viewgroup_front_flashcard"
+            app:layout_constraintVertical_bias="0.0">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image_icon_choose_card_properties" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:fontFamily="@font/segoeui"
+                android:text="Card properties"
+                android:textColor="@color/app_blue"
+                android:textSize="16sp" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
         <com.teamttdvlp.memolang.view.customview.ChooseCardTypeRecyclerView
             android:id="@+id/rcv_choose_card_type"
             android:layout_width="0dp"
@@ -828,10 +929,10 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/common_dialog_margin_start"
-            android:orientation="vertical"
             android:layout_marginEnd="@dimen/common_dialog_margin_end"
             android:alpha="0"
             android:elevation="100dp"
+            android:orientation="vertical"
             android:visibility="gone"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -861,6 +962,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/seguisb"
+                    android:inputType="textNoSuggestions"
                     android:text="Save and continue"
                     android:textColor="@color/app_blue"
                     android:textSize="16sp"
@@ -931,6 +1033,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="12dp"
                     android:fontFamily="@font/seguisb"
+                    android:inputType="textNoSuggestions"
                     android:text="Save"
                     android:textColor="@color/app_blue"
                     android:textSize="16sp"
@@ -953,6 +1056,21 @@
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <include
+            android:id="@+id/layout_choose_card_property"
+            layout="@layout/support_choose_card_property"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="@dimen/common_dialog_margin_start"
+            android:layout_marginTop="230dp"
+            android:layout_marginEnd="@dimen/common_dialog_margin_start"
+            android:alpha="0.0"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/img_white_background" />
 
 
         <ImageView
@@ -987,6 +1105,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="40dp"
+            android:inputType="textNoSuggestions"
             android:elevation="10dp"
             android:fontFamily="@font/seguisb"
             android:text="Swipe up"

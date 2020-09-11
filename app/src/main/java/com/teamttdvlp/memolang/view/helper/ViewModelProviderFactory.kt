@@ -4,6 +4,7 @@ import android.app.Application
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import com.teamttdvlp.memolang.model.AddFlashcardExecutor
+import com.teamttdvlp.memolang.model.IllustrationManager
 import com.teamttdvlp.memolang.model.UserInfoStatusSharedPreference
 import com.teamttdvlp.memolang.model.repository.FlashcardRepos
 import com.teamttdvlp.memolang.model.repository.FlashcardSetRepos
@@ -29,7 +30,8 @@ constructor(
     private var userInfoStatusSharedPreference: DaggerLazy<UserInfoStatusSharedPreference>,
     private var addFlashcardSharedPreference: DaggerLazy<AddFlashcardActivitySharePref>,
     private var searchOnlineSharedPreference: DaggerLazy<SearchOnlineActivitySharePref>,
-    private var engVietOnlineSharedPreference: DaggerLazy<EngVietDictionaryActivitySharePref>
+    private var engVietOnlineSharedPreference: DaggerLazy<EngVietDictionaryActivitySharePref>,
+    private var illustrationManager: IllustrationManager
 ) : ViewModelProvider.NewInstanceFactory() {
 
     override fun <T : ViewModel?> create(modelClass: Class<T>): T {
@@ -40,7 +42,8 @@ constructor(
                 addFlashcardExecutor.get(),
                 flashcardSet_Repos.get(),
                 userUsingHistoryRepos.get(),
-                addFlashcardSharedPreference.get()
+                addFlashcardSharedPreference.get(),
+                illustrationManager
             ) as T
         }
 
@@ -113,7 +116,7 @@ constructor(
         }
 
         if (modelClass.isAssignableFrom(ViewFlashCardListViewModel::class.java)) {
-            return ViewFlashCardListViewModel(flashcardRepos.get()) as T
+            return ViewFlashCardListViewModel(application, flashcardRepos.get()) as T
         }
 
         throw Exception ("ViewModelProviderFactory (Unknown viewModel): ${modelClass.simpleName}")

@@ -82,5 +82,4 @@ class AppModule {
         return application
     }
 
-
 }
