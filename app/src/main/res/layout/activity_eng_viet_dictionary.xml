@@ -7,7 +7,7 @@
         android:id="@+id/activity"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/app_extreme_grey_background">
+        android:background="#F9F9F9">
 
         <View
             android:id="@+id/white_background"
@@ -217,6 +217,20 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.8"
             app:layout_constraintEnd_toEndOf="parent" />
+
+        <ImageView
+            android:id="@+id/btn_navigate_to_search_bar2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/round_100dp_50_alpha_extreme_dark_app_blue"
+            android:elevation="10dp"
+            android:padding="10dp"
+            android:src="@drawable/image_icon_search_white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.8" />
 
         <ImageView
             android:id="@+id/btn_add"

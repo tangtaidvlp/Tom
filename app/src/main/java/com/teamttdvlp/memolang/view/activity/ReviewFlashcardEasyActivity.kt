@@ -25,8 +25,8 @@ import androidx.core.view.marginTop
 import androidx.core.widget.addTextChangedListener
 import androidx.interpolator.view.animation.FastOutSlowInInterpolator
 import com.teamttdvlp.memolang.R
+import com.teamttdvlp.memolang.data.model.entity.flashcard.Deck
 import com.teamttdvlp.memolang.data.model.entity.flashcard.Flashcard
-import com.teamttdvlp.memolang.data.model.entity.flashcard.FlashcardSet
 import com.teamttdvlp.memolang.databinding.ActivityReviewFlashcardEasyBinding
 import com.teamttdvlp.memolang.model.ReviewActivitiesSpeakerStatusManager
 import com.teamttdvlp.memolang.model.findTextFormInAnother
@@ -153,12 +153,12 @@ class ReviewFlashcardEasyActivity : BaseActivity<ActivityReviewFlashcardEasyBind
     companion object {
         fun requestReviewFlashcard(
             requestContext: Context,
-            flashcardSet: FlashcardSet,
+            deck: Deck,
             reverseCardTextAndTranslation: Boolean
         ) {
 
             val intent = Intent(requestContext, ReviewFlashcardEasyActivity::class.java)
-            intent.putExtra(FLASHCARD_SET_KEY, flashcardSet)
+            intent.putExtra(FLASHCARD_SET_KEY, deck)
             intent.putExtra(REVERSE_CARD_TEXT_AND_TRANSLATION, reverseCardTextAndTranslation)
             requestContext.startActivity(intent)
         }
@@ -988,22 +988,31 @@ class ReviewFlashcardEasyActivity : BaseActivity<ActivityReviewFlashcardEasyBind
         }
     }
 
-    private fun disableClickingAllInputCells () {
+    private fun disableClickingAllInputCells() {
         for (cell in outputCellList) {
             cell.isClickable = false
         }
     }
 
-    private fun getRequestedFlashcardSet () : FlashcardSet {
-        return intent.extras!!.getSerializable(FLASHCARD_SET_KEY) as FlashcardSet
+    private fun getRequestedFlashcardSet(): Deck {
+        return intent.extras!!.getSerializable(FLASHCARD_SET_KEY) as Deck
     }
 
-    private fun highlightAnswerInExample (example : String, answer : String, colorCode : String) : CharSequence {
+    private fun highlightAnswerInExample(
+        example: String,
+        answer: String,
+        colorCode: String
+    ): CharSequence {
         val answerInExample = findTextFormInAnother(answer, example)
-        return Html.fromHtml(example.replace(answerInExample, "<font color='$colorCode'>$answerInExample</font>"))
+        return Html.fromHtml(
+            example.replace(
+                answerInExample,
+                "<font color='$colorCode'>$answerInExample</font>"
+            )
+        )
     }
 
-    private fun processHideAnswerInExample (example : String, answer : String) : SpannableString {
+    private fun processHideAnswerInExample(example: String, answer: String): SpannableString {
         val answerInExample = findTextFormInAnother(answer, example)
         val isAnswerAtTheEnd = example.endsWith(answerInExample, false)
         val hiddenAnswerString = if (isAnswerAtTheEnd) {

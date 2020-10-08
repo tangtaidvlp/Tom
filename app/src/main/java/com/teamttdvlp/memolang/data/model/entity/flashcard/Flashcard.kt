@@ -1,6 +1,7 @@
 package com.teamttdvlp.memolang.data.model.entity.flashcard
 
 import androidx.annotation.NonNull
+import androidx.room.Embedded
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 import com.teamttdvlp.memolang.view.helper.log
@@ -25,17 +26,23 @@ data class Flashcard (
     var frontLanguage : String,
 
     @NonNull
-    var backLanguage : String,
+    var backLanguage: String,
 
-    var example : String = "",
+    var example: String = "",
 
-    var meanOfExample : String = "",
+    var meanOfExample: String = "",
 
-    var type : String = "",
+    var type: String = "",
 
-    var pronunciation : String = "//") : Serializable {
+    var pronunciation: String = "//",
 
-    var illustrationPictureName: String? = null
+    @Embedded
+    var cardProperty: CardProperty
+) : Serializable {
+
+    var frontIllustrationPictureName: String? = null
+
+    var backIllustrationPictureName: String? = null
 
     init {
         text = text.trim()

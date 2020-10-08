@@ -3,8 +3,8 @@ package com.teamttdvlp.memolang.viewmodel
 import android.app.Application
 import androidx.databinding.ObservableField
 import androidx.databinding.ObservableInt
+import com.teamttdvlp.memolang.data.model.entity.flashcard.Deck
 import com.teamttdvlp.memolang.data.model.entity.flashcard.Flashcard
-import com.teamttdvlp.memolang.data.model.entity.flashcard.FlashcardSet
 import com.teamttdvlp.memolang.model.*
 import com.teamttdvlp.memolang.view.activity.iview.ReviewFlashcardEasyView
 import com.teamttdvlp.memolang.view.base.BaseViewModel
@@ -26,7 +26,7 @@ class ReviewFlashcardEasyViewModel(var app : Application) : BaseViewModel<Review
 
     private lateinit var currentCard: Flashcard
 
-    private lateinit var flashcardSet: FlashcardSet
+    private lateinit var deck: Deck
 
     private var cardList: ArrayList<Flashcard> = ArrayList()
 
@@ -43,34 +43,34 @@ class ReviewFlashcardEasyViewModel(var app : Application) : BaseViewModel<Review
     var reverseLanguages: Boolean = false
         private set
 
-    fun setUp(flashcardSet: FlashcardSet, reverseLanguages: Boolean) {
+    fun setUp(deck: Deck, reverseLanguages: Boolean) {
         this.reverseLanguages = reverseLanguages
-        this.flashcardSet = flashcardSet
+        this.deck = deck
 
         // Show to UI by Databinding
-        setName.set(flashcardSet.name)
-        cardLeftCount.set(flashcardSet.flashcards.size)
+        setName.set(deck.name)
+        cardLeftCount.set(deck.flashcards.size)
 
         reviewFCEasyActivity_StatusManager =
             ReviewActivitiesSpeakerStatusManager(app, "", setNameFormat = { setName ->
-            return@ReviewActivitiesSpeakerStatusManager "Easy_Review<$setName>"
-        })
+                return@ReviewActivitiesSpeakerStatusManager "Easy_Review<$setName>"
+            })
 
-        val questionLanguage : String
-        val answerLanguage : String
+        val questionLanguage: String
+        val answerLanguage: String
 
         if (reverseLanguages) {
-            questionLanguage = flashcardSet.frontLanguage
-            answerLanguage = flashcardSet.backLanguage
-            CardListLanguageReverser.reverse_LIST_Card_TextAndTranslation(flashcardSet.flashcards)
+            questionLanguage = deck.frontLanguage
+            answerLanguage = deck.backLanguage
+            CardListLanguageReverser.reverse_LIST_Card_TextAndTranslation(deck.flashcards)
         } else {
-            answerLanguage = flashcardSet.frontLanguage
-            questionLanguage = flashcardSet.backLanguage
+            answerLanguage = deck.frontLanguage
+            questionLanguage = deck.backLanguage
         }
 
         // These statements must be called after #CardListLanguageReverser.reverse_ListCard_TextAndTranslation(flashcardSet.flashcards)
         cardList.clear()
-        cardList.addAll(cardListRandomer.random(flashcardSet.flashcards))
+        cardList.addAll(cardListRandomer.random(deck.flashcards))
         currentCard = cardList.first()
 
 
@@ -226,15 +226,15 @@ class ReviewFlashcardEasyViewModel(var app : Application) : BaseViewModel<Review
         return missedCardList
     }
 
-    fun getOriginalFlashcardSet(): FlashcardSet {
+    fun getOriginalFlashcardSet(): Deck {
         if (reverseLanguages) {
-            val cloneFlashcardSet = FlashcardSet(
-                this.flashcardSet.name,
-                this.flashcardSet.frontLanguage,
-                this.flashcardSet.backLanguage
+            val cloneFlashcardSet = Deck(
+                this.deck.name,
+                this.deck.frontLanguage,
+                this.deck.backLanguage
             )
             val cloneFlashcardList = ArrayList<Flashcard>()
-            this.flashcardSet.flashcards.forEach { flashcard ->
+            this.deck.flashcards.forEach { flashcard ->
                 cloneFlashcardList.add(flashcard.copy())
             }
             CardListLanguageReverser.reverse_LIST_Card_TextAndTranslation(cloneFlashcardList)
@@ -243,7 +243,7 @@ class ReviewFlashcardEasyViewModel(var app : Application) : BaseViewModel<Review
             return cloneFlashcardSet
         } else {
             // Set is original, not reversed
-            return flashcardSet
+            return deck
         }
     }
 

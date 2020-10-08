@@ -5,6 +5,7 @@
     <dimen name="common_margin_top">15dp</dimen>
     <dimen name="common_margin_start">18dp</dimen>
     <dimen name="common_margin_end">18dp</dimen>
-    <dimen name="common_dialog_margin_start">15dp</dimen>
-    <dimen name="common_dialog_margin_end">15dp</dimen>
+    <dimen name="common_dialog_margin_start">20dp</dimen>
+    <dimen name="common_dialog_margin_end">20dp</dimen>
+    <dimen name="common_add_fc_margin_start">20dp</dimen>
 </resources>

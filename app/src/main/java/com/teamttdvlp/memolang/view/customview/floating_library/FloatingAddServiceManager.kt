@@ -48,6 +48,7 @@ import androidx.lifecycle.Observer
 import com.example.dictionary.model.TranslationAndExample
 import com.example.dictionary.model.Vocabulary
 import com.teamttdvlp.memolang.R
+import com.teamttdvlp.memolang.data.model.entity.flashcard.CardProperty
 import com.teamttdvlp.memolang.data.model.entity.flashcard.Flashcard
 import com.teamttdvlp.memolang.data.model.entity.language.Language
 import com.teamttdvlp.memolang.data.model.other.new_vocabulary.Example
@@ -803,8 +804,10 @@ class FloatingAddServiceManager private constructor(
                         translation = translation,
                         example = example,
                         meanOfExample = meanExample,
-                        pronunciation = pronunciation
+                        pronunciation = pronunciation,
+                        cardProperty = CardProperty()
                     )
+                    //TODO ( Check property)
 
                     viewModel.proceedAddFlashcard(newCard)
                 }

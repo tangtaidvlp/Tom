@@ -3,8 +3,8 @@ package com.teamttdvlp.memolang.viewmodel
 import android.app.Application
 import androidx.databinding.ObservableField
 import androidx.databinding.ObservableInt
+import com.teamttdvlp.memolang.data.model.entity.flashcard.Deck
 import com.teamttdvlp.memolang.data.model.entity.flashcard.Flashcard
-import com.teamttdvlp.memolang.data.model.entity.flashcard.FlashcardSet
 import com.teamttdvlp.memolang.model.CardListLanguageReverser.Companion.reverse_LIST_Card_TextAndTranslation
 import com.teamttdvlp.memolang.model.CardListManager
 import com.teamttdvlp.memolang.model.TextSpeaker
@@ -33,7 +33,7 @@ class UseFlashcardViewModel (private val context : Application): BaseViewModel<U
 
     val cardListManager = CardListManager()
 
-    private lateinit var flashcardSet: FlashcardSet
+    private lateinit var deck: Deck
 
     private lateinit var srcLangTextSpeaker: TextSpeaker
 
@@ -43,10 +43,10 @@ class UseFlashcardViewModel (private val context : Application): BaseViewModel<U
 
     var isReversedTextAndTranslation = false
 
-    fun setData(fcSet: FlashcardSet, reverseTextAndTrans: Boolean) {
+    fun setData(fcSet: Deck, reverseTextAndTrans: Boolean) {
         val frontLang: String
         val backLang: String
-        this.flashcardSet = fcSet
+        this.deck = fcSet
         this.isReversedTextAndTranslation = reverseTextAndTrans
         if (reverseTextAndTrans) {
             reverse_LIST_Card_TextAndTranslation(fcSet.flashcards)
@@ -182,15 +182,15 @@ class UseFlashcardViewModel (private val context : Application): BaseViewModel<U
         return useFCActivityStatusManager.speakerStatusManager.getStatus()
     }
 
-    fun getOriginalFlashcardSet(): FlashcardSet {
+    fun getOriginalFlashcardSet(): Deck {
         if (isReversedTextAndTranslation) {
-            val cloneFlashcardSet = FlashcardSet(
-                this.flashcardSet.name,
-                this.flashcardSet.frontLanguage,
-                this.flashcardSet.backLanguage
+            val cloneFlashcardSet = Deck(
+                this.deck.name,
+                this.deck.frontLanguage,
+                this.deck.backLanguage
             )
             val cloneFlashcardList = ArrayList<Flashcard>()
-            this.flashcardSet.flashcards.forEach { flashcard ->
+            this.deck.flashcards.forEach { flashcard ->
                 cloneFlashcardList.add(flashcard.copy())
             }
             reverse_LIST_Card_TextAndTranslation(cloneFlashcardList)
@@ -199,7 +199,7 @@ class UseFlashcardViewModel (private val context : Application): BaseViewModel<U
             return cloneFlashcardSet
         } else {
             // Set is original, not reversed
-            return flashcardSet
+            return deck
         }
     }
 

@@ -2,8 +2,9 @@ package com.teamttdvlp.memolang.viewmodel
 
 //import com.teamttdvlp.memolang.viewmodel.reusable.OnlineFlashcardDBManager
 import androidx.databinding.ObservableField
+import com.teamttdvlp.memolang.data.model.entity.flashcard.CardProperty
+import com.teamttdvlp.memolang.data.model.entity.flashcard.Deck
 import com.teamttdvlp.memolang.data.model.entity.flashcard.Flashcard
-import com.teamttdvlp.memolang.data.model.entity.flashcard.FlashcardSet
 import com.teamttdvlp.memolang.model.AddFlashcardExecutor
 import com.teamttdvlp.memolang.model.repository.FlashcardSetRepos
 import com.teamttdvlp.memolang.view.activity.iview.EditFlashcardView
@@ -28,11 +29,14 @@ class EditFlashcardViewModel (
                     text : String, translation : String,
                     example : String, meanOfExample : String,  pronunciation : String) {
 
-        val newFlashcard = Flashcard(id = originalCard.id,
+        val newFlashcard = Flashcard(
+            id = originalCard.id,
             text = text, translation = translation,
             frontLanguage = sourceLang, backLanguage = targetLang,
             setOwner = setName, example = example, meanOfExample = meanOfExample,
-            type = type, pronunciation = pronunciation)
+            type = type, pronunciation = pronunciation, cardProperty = CardProperty()
+        )
+        // TODO (Check card property)
 
         if (doesUserChangeInfo(newFlashcard)) {
             if (text.isEmpty()) {
@@ -67,12 +71,16 @@ class EditFlashcardViewModel (
         addFlashcardExecutor.addFlashcardAndUpdateFlashcardSet(flashcard, onInsertListener)
     }
 
-    fun getAll_SameLanguagesFCSet_WithNoCardList (frontLang : String, backLang : String, onGet : (ArrayList<FlashcardSet>) -> Unit) {
+    fun getAll_SameLanguagesFCSet_WithNoCardList(
+        frontLang: String,
+        backLang: String,
+        onGet: (ArrayList<Deck>) -> Unit
+    ) {
         flashcardSetRepos.getAll_CardSet_WithNOCardList {
             if (it != null) {
-                val result = ArrayList<FlashcardSet>()
+                val result = ArrayList<Deck>()
                 for (set in it) {
-                    if ((set.frontLanguage == frontLang) and (set.backLanguage == backLang))  {
+                    if ((set.frontLanguage == frontLang) and (set.backLanguage == backLang)) {
                         result.add(set)
                     }
                 }

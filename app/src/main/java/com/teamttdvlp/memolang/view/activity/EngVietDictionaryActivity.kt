@@ -11,6 +11,7 @@ import androidx.lifecycle.Observer
 import com.example.dictionary.model.TranslationAndExample
 import com.example.dictionary.model.Vocabulary
 import com.teamttdvlp.memolang.R
+import com.teamttdvlp.memolang.data.model.entity.flashcard.CardProperty
 import com.teamttdvlp.memolang.data.model.entity.flashcard.Flashcard
 import com.teamttdvlp.memolang.data.model.entity.language.Language.Companion.ENGLISH_VALUE
 import com.teamttdvlp.memolang.data.model.entity.language.Language.Companion.VIETNAMESE_VALUE
@@ -162,8 +163,9 @@ class EngVietDictionaryActivity :
                 id = 0, text = text, translation = translation,
                 frontLanguage = ENGLISH_VALUE, backLanguage = VIETNAMESE_VALUE,
                 setOwner = setName, type = type, example = example, meanOfExample = meanExample,
-                pronunciation = pronunciation
+                pronunciation = pronunciation, cardProperty = CardProperty()
             )
+            // TODO ( Check card property )
 
             viewModel.proceedAddFlashcard(newCard)
         }

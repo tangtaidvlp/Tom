@@ -1,7 +1,7 @@
 package com.teamttdvlp.memolang.viewmodel
 
+import com.teamttdvlp.memolang.data.model.entity.flashcard.Deck
 import com.teamttdvlp.memolang.data.model.entity.flashcard.Flashcard
-import com.teamttdvlp.memolang.data.model.entity.flashcard.FlashcardSet
 import com.teamttdvlp.memolang.view.activity.iview.UseFlashcardDoneView
 import com.teamttdvlp.memolang.view.base.BaseViewModel
 
@@ -9,15 +9,15 @@ class UseFlashcardDoneViewModel : BaseViewModel<UseFlashcardDoneView>() {
 
     private lateinit var missedCardsList: ArrayList<Flashcard>
 
-    private lateinit var fullFlashcardSet: FlashcardSet
+    private lateinit var fullDeck: Deck
 
-    fun setData(fullFlashcardSet: FlashcardSet, missedCardsList: java.util.ArrayList<Flashcard>) {
-        this.fullFlashcardSet = fullFlashcardSet
+    fun setData(fullDeck: Deck, missedCardsList: java.util.ArrayList<Flashcard>) {
+        this.fullDeck = fullDeck
         this.missedCardsList = missedCardsList
     }
 
     fun getFullCardListSize(): Int {
-        return fullFlashcardSet.flashcards.size
+        return fullDeck.flashcards.size
     }
 
     fun getMissedCardsListSize(): Int {
@@ -29,7 +29,7 @@ class UseFlashcardDoneViewModel : BaseViewModel<UseFlashcardDoneView>() {
     }
 
     fun getMissCardRatio(): Float {
-        return missedCardsList.size.toFloat() / fullFlashcardSet.flashcards.size.toFloat()
+        return missedCardsList.size.toFloat() / fullDeck.flashcards.size.toFloat()
     }
 
     fun getPassCardRatio(): Float {
@@ -40,11 +40,11 @@ class UseFlashcardDoneViewModel : BaseViewModel<UseFlashcardDoneView>() {
         return missedCardsList.size == 0
     }
 
-    fun getFlashcardSetWithMissedCardList(): FlashcardSet {
-        val cloneFlashcardSet = FlashcardSet(
-            fullFlashcardSet.name,
-            fullFlashcardSet.frontLanguage,
-            fullFlashcardSet.backLanguage
+    fun getFlashcardSetWithMissedCardList(): Deck {
+        val cloneFlashcardSet = Deck(
+            fullDeck.name,
+            fullDeck.frontLanguage,
+            fullDeck.backLanguage
         )
 
         cloneFlashcardSet.flashcards = missedCardsList
@@ -52,8 +52,8 @@ class UseFlashcardDoneViewModel : BaseViewModel<UseFlashcardDoneView>() {
         return cloneFlashcardSet
     }
 
-    fun getFlashcardSet(): FlashcardSet {
-        return fullFlashcardSet
+    fun getFlashcardSet(): Deck {
+        return fullDeck
     }
 
 

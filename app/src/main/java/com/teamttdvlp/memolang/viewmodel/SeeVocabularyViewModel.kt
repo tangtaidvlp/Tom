@@ -3,8 +3,8 @@ package com.teamttdvlp.memolang.viewmodel
 import android.app.Application
 import androidx.lifecycle.MutableLiveData
 import com.example.dictionary.model.Vocabulary
+import com.teamttdvlp.memolang.data.model.entity.flashcard.Deck
 import com.teamttdvlp.memolang.data.model.entity.flashcard.Flashcard
-import com.teamttdvlp.memolang.data.model.entity.flashcard.FlashcardSet
 import com.teamttdvlp.memolang.data.model.entity.language.Language.Companion.ENGLISH_VALUE
 import com.teamttdvlp.memolang.data.model.entity.language.Language.Companion.VIETNAMESE_VALUE
 import com.teamttdvlp.memolang.data.model.other.new_vocabulary.TypicalRawVocabulary
@@ -108,10 +108,10 @@ class EngVietDictionaryActivityViewModel(
         textSpeaker.shutDown()
     }
 
-    fun getAllEnglishVNFlashcardSets(onGet : (ArrayList<FlashcardSet>) -> Unit) {
+    fun getAllEnglishVNFlashcardSets(onGet: (ArrayList<Deck>) -> Unit) {
         flashcardSetRepos.getAll_CardSet_WithNOCardList { flashcardSetList ->
             if (flashcardSetList != null) {
-                val engVNCardSetList = ArrayList<FlashcardSet>()
+                val engVNCardSetList = ArrayList<Deck>()
                 for (set in flashcardSetList) {
                     if ((set.frontLanguage == ENGLISH_VALUE) and (set.backLanguage == VIETNAMESE_VALUE)) {
                         engVNCardSetList.add(set)

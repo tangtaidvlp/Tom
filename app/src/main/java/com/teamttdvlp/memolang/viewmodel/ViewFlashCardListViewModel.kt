@@ -2,8 +2,8 @@ package com.teamttdvlp.memolang.viewmodel
 
 import android.app.Application
 import androidx.databinding.ObservableInt
+import com.teamttdvlp.memolang.data.model.entity.flashcard.Deck
 import com.teamttdvlp.memolang.data.model.entity.flashcard.Flashcard
-import com.teamttdvlp.memolang.data.model.entity.flashcard.FlashcardSet
 import com.teamttdvlp.memolang.model.repository.FlashcardRepos
 import com.teamttdvlp.memolang.view.activity.iview.ViewFlashcardListView
 import com.teamttdvlp.memolang.view.base.BaseViewModel
@@ -17,10 +17,10 @@ class ViewFlashCardListViewModel(
 
     private var flashcardCount: ObservableInt = ObservableInt()
 
-    lateinit var beingViewedflashcardSet: FlashcardSet
+    lateinit var beingViewedflashcardSet: Deck
 
-    fun setFlashcardSet(flashcardSet: FlashcardSet) {
-        this.beingViewedflashcardSet = flashcardSet
+    fun setFlashcardSet(deck: Deck) {
+        this.beingViewedflashcardSet = deck
         flashcardCount.set(beingViewedflashcardSet.flashcards.size)
     }
 
@@ -35,7 +35,8 @@ class ViewFlashCardListViewModel(
 
     fun deleteCardsPicture(cardList: ArrayList<Flashcard>) {
         for (card in cardList) {
-            val path = app.filesDir.absolutePath + File.separator + card.illustrationPictureName
+            val path =
+                app.filesDir.absolutePath + File.separator + card.frontIllustrationPictureName
             val file = File(path)
             if (file.exists()) {
                 log("File found")

@@ -11,8 +11,8 @@ import com.google.auth.oauth2.GoogleCredentials
 import com.google.cloud.translate.Translate
 import com.google.cloud.translate.TranslateOptions
 import com.teamttdvlp.memolang.R
+import com.teamttdvlp.memolang.data.model.entity.flashcard.Deck
 import com.teamttdvlp.memolang.data.model.entity.flashcard.Flashcard
-import com.teamttdvlp.memolang.data.model.entity.flashcard.FlashcardSet
 import com.teamttdvlp.memolang.data.model.entity.language.Language
 import com.teamttdvlp.memolang.model.AddFlashcardExecutor
 import com.teamttdvlp.memolang.model.repository.FlashcardSetRepos
@@ -307,7 +307,7 @@ class SearchOnlineViewModel(
         return searchOnline_SharedPref.lastUsedFlashcardSetName
     }
 
-    fun getAllFlashcardSetWithNOCardList (onGet : (ArrayList<FlashcardSet>) -> Unit) {
+    fun getAllFlashcardSetWithNOCardList(onGet: (ArrayList<Deck>) -> Unit) {
         flashcardSetRepos.getAll_CardSet_WithNOCardList {
             if (it != null) {
                 onGet(it)

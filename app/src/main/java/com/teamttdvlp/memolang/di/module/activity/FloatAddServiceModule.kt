@@ -1,9 +1,8 @@
 package com.teamttdvlp.memolang.di.module.activity
 
-import com.teamttdvlp.memolang.data.model.entity.flashcard.FlashcardSet
+import com.teamttdvlp.memolang.data.model.entity.flashcard.Deck
 import com.teamttdvlp.memolang.data.model.other.new_vocabulary.SingleMeanExample
 import com.teamttdvlp.memolang.di.MemoLang
-import com.teamttdvlp.memolang.view.activity.ViewFlashcardSetActivity
 import com.teamttdvlp.memolang.view.adapter.*
 import dagger.Module
 import dagger.Provides
@@ -12,7 +11,7 @@ import dagger.Provides
 class FloatAddServiceModule {
 
     @Provides
-    fun provideRCV_Generic_SimpleAdapter (context : MemoLang) : RCV_Generic_SimpleListAdapter <FlashcardSet> {
+    fun provideRCV_Generic_SimpleAdapter(context: MemoLang): RCV_Generic_SimpleListAdapter<Deck> {
         return RCV_Generic_SimpleListAdapter(context) { flashcardSet ->
             flashcardSet.name
         }

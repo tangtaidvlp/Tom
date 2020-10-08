@@ -1,6 +1,8 @@
 package com.teamttdvlp.memolang.view.activity
 
 import android.Manifest
+import android.animation.Animator
+import android.animation.AnimatorSet
 import android.animation.ObjectAnimator
 import android.animation.PropertyValuesHolder
 import android.annotation.SuppressLint
@@ -12,7 +14,9 @@ import android.graphics.Bitmap
 import android.graphics.BitmapFactory
 import android.graphics.Color
 import android.graphics.drawable.BitmapDrawable
+import android.graphics.drawable.Drawable
 import android.net.Uri
+import android.os.Build
 import android.os.Bundle
 import android.text.InputType
 import android.text.InputType.TYPE_NULL
@@ -22,6 +26,7 @@ import android.view.View.SCALE_Y
 import android.view.ViewGroup.LayoutParams.MATCH_PARENT
 import android.view.animation.*
 import android.view.inputmethod.EditorInfo
+import androidx.annotation.RequiresApi
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.constraintlayout.widget.ConstraintSet
 import androidx.constraintlayout.widget.ConstraintSet.PARENT_ID
@@ -29,9 +34,7 @@ import androidx.core.animation.addListener
 import androidx.core.app.ActivityCompat
 import androidx.core.view.*
 import com.teamttdvlp.memolang.R
-import com.teamttdvlp.memolang.data.model.entity.flashcard.Flashcard
-import com.teamttdvlp.memolang.data.model.entity.flashcard.FlashcardSet
-import com.teamttdvlp.memolang.data.model.entity.flashcard.SetNameUtils
+import com.teamttdvlp.memolang.data.model.entity.flashcard.*
 import com.teamttdvlp.memolang.databinding.ActivityAddFlashcardRetroBinding
 import com.teamttdvlp.memolang.view.activity.iview.AddFlashcardView
 import com.teamttdvlp.memolang.view.adapter.RCVChooseLanguageAdapter
@@ -50,8 +53,11 @@ import javax.inject.Named
 
 const val KEYBOARD_DISAPPEAR_INTERVAL = 50L
 
-class RetrofitAddFlashcardActivity : BaseActivity<ActivityAddFlashcardRetroBinding, AddFlashCardViewModel>()
-    ,AddFlashcardView {
+const val KEYBOARD_APPEAR_INTERVAL = 150L
+
+class RetrofitAddFlashcardActivity :
+    BaseActivity<ActivityAddFlashcardRetroBinding, AddFlashCardViewModel>()
+    , AddFlashcardView {
 
     companion object {
 
@@ -61,25 +67,29 @@ class RetrofitAddFlashcardActivity : BaseActivity<ActivityAddFlashcardRetroBindi
 
         private val EDIT_REQUEST_FLASHCARD = "nef"
 
-        fun requestAddLanguage(packageContext: Context, flashcardSet: FlashcardSet) {
+        enum class FlipDirection {
+            FLIP_UP, FLIP_DOWN
+        }
+
+        fun requestAddLanguage(packageContext: Context, deck: Deck) {
             val intent = Intent(packageContext, RetrofitAddFlashcardActivity::class.java)
-            intent.putExtra(ADD_REQUEST_FLASHCARD_SET, flashcardSet)
+            intent.putExtra(ADD_REQUEST_FLASHCARD_SET, deck)
             packageContext.startActivity(intent)
         }
 
         fun requestEditFlashcard(
             packageContext: Context,
             flashcard: Flashcard,
-            flashcardSet: FlashcardSet
+            deck: Deck
         ) {
             val intent = Intent(packageContext, RetrofitAddFlashcardActivity::class.java)
             intent.putExtra(EDIT_REQUEST_FLASHCARD, flashcard)
-            intent.putExtra(EDIT_REQUEST_FLASHCARD_SET, flashcardSet)
+            intent.putExtra(EDIT_REQUEST_FLASHCARD_SET, deck)
             packageContext.startActivity(intent)
         }
     }
 
-    // The image will stay on screen for a while before disappearing
+    private val LOAD_PICTURE_REQUEST_CODE = 1
 
     private var isIPAKeyboardVisible = false
 
@@ -89,15 +99,25 @@ class RetrofitAddFlashcardActivity : BaseActivity<ActivityAddFlashcardRetroBindi
 
     private var userEndAdding = false
 
-    private lateinit var turnUpFrontCard_After_TurnDownBackCard : Animation
+    private var currentCardProperty: CardProperty = CardProperty()
 
-    private lateinit var turnUpBackCard_After_TurnDownFrontCard : Animation
+    private lateinit var turnUpFrontCard_After_TurnDownBackCard: Animation
+
+    private lateinit var turnUpBackCard_After_TurnDownFrontCard: Animation
+
+    private var front_Up_To_Back_EffectAnmtrSet: AnimatorSet = AnimatorSet()
+
+    private var front_Down_To_Back_EffectAnmtrSet: AnimatorSet = AnimatorSet()
+
+    private var back_Up_To_Front_EffectAnmtrSet: AnimatorSet = AnimatorSet()
+
+    private var back_Down_To_Front_EffectAnmtrSet: AnimatorSet = AnimatorSet()
 
     lateinit var rcvFrontLangChooseLanguageAdapter: RCVChooseLanguageAdapter
-    @Inject set
+        @Inject set
 
     lateinit var rcvFrontLangRecentChosenLanguageAdapter: RCVRecentUsedLanguageAdapter
-    @Inject set
+        @Inject set
 
     lateinit var rcvBackLangChooseLanguageAdapter: RCVChooseLanguageAdapter
         @Inject set
@@ -111,12 +131,15 @@ class RetrofitAddFlashcardActivity : BaseActivity<ActivityAddFlashcardRetroBindi
     lateinit var viewModelProviderFactory: ViewModelProviderFactory
         @Inject set
 
+    private lateinit var front_illustrationDefaultDrawable: Drawable
+
+    private lateinit var back_illustrationDefaultDrawable: Drawable
 
     private var requestEditFlashcard: Flashcard? = null
 
-    private var requestEditFlashcardSet: FlashcardSet? = null
+    private var requestEditDeck: Deck? = null
 
-    private var requestAdd_FlashcardSet: FlashcardSet? = null
+    private var requestAdd_Deck: Deck? = null
 
     private var is_InAdjustCardProperty_Mode = false
 
@@ -141,15 +164,43 @@ class RetrofitAddFlashcardActivity : BaseActivity<ActivityAddFlashcardRetroBindi
     }
 
 
-    private fun recalculateIllustrationPictureDimens(rate: Float) {
+    override fun initProperties() {
+        front_illustrationDefaultDrawable = dB.imgFrontIllustrationPicture.drawable
+        back_illustrationDefaultDrawable = dB.imgBackIllustrationPicture.drawable
+    }
+
+    private fun recalculateFront_IllustrationPictureWidth_ByHeightRate(heightToWidthRate: Float) {
         dB.apply {
-            imgIllustrationPicture.doOnPreDraw {
-                imgIllustrationPicture.layoutParams.width =
-                    (imgIllustrationPicture.height * rate).toInt()
-                imgIllustrationPicture.requestLayout()
+            imgFrontIllustrationPicture.doOnPreDraw {
+                imgFrontIllustrationPicture.layoutParams.width =
+                    (imgFrontIllustrationPicture.height * heightToWidthRate).toInt()
+                imgFrontIllustrationPicture.requestLayout()
             }
         }
+    }
 
+    private fun recalculateBack_IllustrationPictureWidth_ByHeightRate(heightToWidthRate: Float) {
+        dB.apply {
+            imgBackIllustrationPicture.doOnPreDraw {
+                imgBackIllustrationPicture.layoutParams.width =
+                    (imgBackIllustrationPicture.height * heightToWidthRate).toInt()
+                imgBackIllustrationPicture.requestLayout()
+            }
+        }
+    }
+
+    private fun setFront_IllustrationPictureWidth(width: Int) {
+        dB.apply {
+            imgFrontIllustrationPicture.layoutParams.width = width
+            imgFrontIllustrationPicture.requestLayout()
+        }
+    }
+
+    private fun setBack_IllustrationPictureWidth(width: Int) {
+        dB.apply {
+            imgBackIllustrationPicture.layoutParams.width = width
+            imgBackIllustrationPicture.requestLayout()
+        }
     }
 
     private fun recalculate_Flashcard_Dimens(heightRate: Float) {
@@ -193,15 +244,16 @@ class RetrofitAddFlashcardActivity : BaseActivity<ActivityAddFlashcardRetroBindi
     }
 
     private fun getRequests() {
-        requestAdd_FlashcardSet = getAddFlashcardRequest()
+        requestAdd_Deck = getAddFlashcardRequest()
 
         val editInfo = getEditFlashcardRequest()
         if (editInfo != null) {
             requestEditFlashcard = editInfo.first
-            requestEditFlashcardSet = editInfo.second
+            requestEditDeck = editInfo.second
         }
     }
 
+    @RequiresApi(Build.VERSION_CODES.Q)
     override fun addViewControls() {
         dB.apply {
             // imgFlashcardRightReceiver Width : 50dp
@@ -228,22 +280,22 @@ class RetrofitAddFlashcardActivity : BaseActivity<ActivityAddFlashcardRetroBindi
                 val thereIs_EditFlashcardRequest = (getEditFlashcardRequest() != null)
                 if (thereIs_AddRequest) {
                     showFlashcardSetInfoOnScreen(
-                        requestAdd_FlashcardSet!!.name,
-                        requestAdd_FlashcardSet!!.frontLanguage,
-                        requestAdd_FlashcardSet!!.backLanguage
+                        requestAdd_Deck!!.name,
+                        requestAdd_Deck!!.frontLanguage,
+                        requestAdd_Deck!!.backLanguage
                     )
 
-                    viewModel.currentFocusFlashcardSet = requestAdd_FlashcardSet!!
+                    viewModel.currentFocusDeck = requestAdd_Deck!!
 
                 } else if (thereIs_EditFlashcardRequest) {
                     showFlashcardSetInfoOnScreen(
-                        requestEditFlashcardSet!!.name,
-                        requestEditFlashcardSet!!.frontLanguage,
-                        requestEditFlashcardSet!!.backLanguage
+                        requestEditDeck!!.name,
+                        requestEditDeck!!.frontLanguage,
+                        requestEditDeck!!.backLanguage
                     )
 
                     showRequestEditFlashcard_Info_OnScreen(requestEditFlashcard!!)
-                    viewModel.currentFocusFlashcardSet = requestEditFlashcardSet!!
+                    viewModel.currentFocusDeck = requestEditDeck!!
 
                 } else {
                     val thereIsNoFlashcardSetAvailable = (flashcardSetList.size == 0)
@@ -255,7 +307,7 @@ class RetrofitAddFlashcardActivity : BaseActivity<ActivityAddFlashcardRetroBindi
                             frontLang = defaultSet.frontLanguage,
                             backLang = defaultSet.backLanguage
                         )
-                        viewModel.currentFocusFlashcardSet = defaultSet
+                        viewModel.currentFocusDeck = defaultSet
                     } else { // There have been some Flashcard Sets and No AddFlashcardRequest from any specified set
                         val lastUsedFrontLang = viewModel.getCurrentFrontLanguage()
                         val lastUsedBackLang = viewModel.getCurrentBackLanguage()
@@ -267,8 +319,8 @@ class RetrofitAddFlashcardActivity : BaseActivity<ActivityAddFlashcardRetroBindi
                             , backLang = lastUsedBackLang
                         )
 
-                        viewModel.currentFocusFlashcardSet =
-                            FlashcardSet(lastUsedFlashcardSet, lastUsedFrontLang, lastUsedBackLang)
+                        viewModel.currentFocusDeck =
+                            Deck(lastUsedFlashcardSet, lastUsedFrontLang, lastUsedBackLang)
                     }
                 }
 
@@ -320,10 +372,12 @@ class RetrofitAddFlashcardActivity : BaseActivity<ActivityAddFlashcardRetroBindi
             edtExample.setText(requestEditFlashcard.example)
             edtExampleTranslation.setText(requestEditFlashcard.meanOfExample)
 
-            if (requestEditFlashcard.illustrationPictureName != null) {
+            setCardProperty(requestEditFlashcard.cardProperty)
+            if (requestEditFlashcard.frontIllustrationPictureName != null) {
                 startWaitingLoadingImageProgress()
                 viewModel.loadIllustrationPicture(
-                    requestEditFlashcard.illustrationPictureName!!, onGet = { ex, picture ->
+                    name = requestEditFlashcard.frontIllustrationPictureName!!,
+                    onGet = { ex, picture ->
                         if (ex != null) {
                             log("Load image error happens")
                             ex.printStackTrace()
@@ -333,8 +387,34 @@ class RetrofitAddFlashcardActivity : BaseActivity<ActivityAddFlashcardRetroBindi
                                 throw Exception("????")
                                 // TODO ()
                             } else {
-                                setPictureToCardOnScreen(picture)
-                                endWaitingLoadingImageProgress()
+                                setFront_IllustrationAndAdjustRatio(picture)
+                                if (currentCardProperty.frontSideHasText.not()) {
+                                    showFrontSide_ImageOnly()
+                                }
+                                endFront_LoadImageProgressBar()
+                            }
+                        }
+                    })
+            }
+
+            if (requestEditFlashcard.backIllustrationPictureName != null) {
+                viewModel.loadIllustrationPicture(
+                    name = requestEditFlashcard.backIllustrationPictureName!!,
+                    onGet = { ex, picture ->
+                        if (ex != null) {
+                            log("Load image error happens")
+                            ex.printStackTrace()
+                        } else {
+                            if (picture == null) {
+                                log("No error happens but image is null")
+                                throw Exception("????")
+                                // TODO ()
+                            } else {
+                                setBack_IllustrationAndAdjustRatio(picture)
+                                if (currentCardProperty.backSideHasText.not()) {
+                                    showBackSide_ImageOnly()
+                                }
+                                endBack_LoadImageProgressBar()
                             }
                         }
                     })
@@ -342,18 +422,67 @@ class RetrofitAddFlashcardActivity : BaseActivity<ActivityAddFlashcardRetroBindi
         }
     }
 
+    private fun setCardProperty(cardProperty: CardProperty) {
+        dB.apply {
+            if (cardProperty.heightOption == HEIGHT_WIDE) {
+                recalculate_Flashcard_Dimens(FLASHCARD_WIDE_HEIGHT_RATE)
+            }
+
+            if (cardProperty.frontSideHasText and cardProperty.frontSideHasImage) {
+                if (requestEditFlashcard != null) {
+                    if (requestEditFlashcard!!.frontIllustrationPictureName != null) {
+                        showFrontSide_BothTextAndImage()
+                    } else {
+                        showFrontSide_TextOnly()
+                    }
+                }
+            } else if (cardProperty.frontSideHasImage.not()) {
+                showFrontSide_TextOnly()
+            } else if (cardProperty.frontSideHasText.not()) {
+                showFrontSide_ImageOnly()
+            }
+
+            if (cardProperty.backSideHasText and cardProperty.backSideHasImage) {
+                if (requestEditFlashcard != null) {
+                    if (requestEditFlashcard!!.backIllustrationPictureName != null) {
+                        showBackSide_BothTextAndImage()
+                    } else {
+                        showBackSide_TextOnly()
+                    }
+                }
+            } else if (cardProperty.backSideHasImage.not()) {
+                showBackSide_TextOnly()
+            } else if (cardProperty.backSideHasText.not()) {
+                showBackSide_ImageOnly()
+            }
+        }
+    }
+
     private fun startWaitingLoadingImageProgress() {
-        recalculateIllustrationPictureDimens(1f)
+        if (currentCardProperty.frontSideHasText) {
+            recalculateFront_IllustrationPictureWidth_ByHeightRate(1f)
+        }
         val infiniteRotate =
             AnimationUtils.loadAnimation(this@RetrofitAddFlashcardActivity, R.anim.rotate_forever)
         infiniteRotate.duration = 300
-        dB.imgLoadPictureProgressBar.goVISIBLE()
-        dB.imgLoadPictureProgressBar.startAnimation(infiniteRotate)
+        dB.imgFrontLoadPictureProgressBar.goVISIBLE()
+        dB.imgFrontLoadPictureProgressBar.startAnimation(infiniteRotate)
     }
 
-    private fun endWaitingLoadingImageProgress() {
-        dB.imgLoadPictureProgressBar.animation.cancel()
-        dB.imgLoadPictureProgressBar.goGONE()
+    private fun endFront_LoadImageProgressBar() {
+        if (dB.imgFrontLoadPictureProgressBar.animation != null) {
+            dB.imgFrontLoadPictureProgressBar.animation.cancel()
+        }
+
+        dB.imgFrontLoadPictureProgressBar.goGONE()
+    }
+
+    private fun endBack_LoadImageProgressBar() {
+        if (dB.imgBackLoadPictureProgressBar.animation != null) {
+            dB.imgBackLoadPictureProgressBar.animation.cancel()
+        }
+
+        dB.imgBackLoadPictureProgressBar.goGONE()
     }
 
     private fun setUpEditTextsFeatures() {
@@ -365,15 +494,15 @@ class RetrofitAddFlashcardActivity : BaseActivity<ActivityAddFlashcardRetroBindi
             edtType.setRawInputType(InputType.TYPE_CLASS_TEXT)
 
             edtTranslation.imeOptions = EditorInfo.IME_ACTION_NEXT
-        edtTranslation.setRawInputType(InputType.TYPE_CLASS_TEXT)
+            edtTranslation.setRawInputType(InputType.TYPE_CLASS_TEXT)
 
-        edtExample.imeOptions = EditorInfo.IME_ACTION_NEXT
-        edtExample.setRawInputType(InputType.TYPE_CLASS_TEXT)
+            edtExample.imeOptions = EditorInfo.IME_ACTION_NEXT
+            edtExample.setRawInputType(InputType.TYPE_CLASS_TEXT)
 
-        edtExampleTranslation.imeOptions = EditorInfo.IME_ACTION_DONE
-        edtExampleTranslation.setRawInputType(InputType.TYPE_CLASS_TEXT)
+            edtExampleTranslation.imeOptions = EditorInfo.IME_ACTION_DONE
+            edtExampleTranslation.setRawInputType(InputType.TYPE_CLASS_TEXT)
 
-    }
+        }
     }
 
     private fun disableEdtPronunciation() {
@@ -436,7 +565,7 @@ class RetrofitAddFlashcardActivity : BaseActivity<ActivityAddFlashcardRetroBindi
             }
 
             ipaKeyboard.setOnBtnDoneClickListener {
-                showBackCard_AndUpdateStatus()
+                flipFrontToBackCard()
                 isShowingFrontCard = false
                 edtTranslation.requestFocus()
                 showVirtualKeyboard()
@@ -451,12 +580,12 @@ class RetrofitAddFlashcardActivity : BaseActivity<ActivityAddFlashcardRetroBindi
                 return@setOnEditorActionListener true
             }
 
-            btnSave.setOnClickListener {
+            vwgrpBtnSave.setOnClickListener {
                 proceedAddOrSaveFlashcard()
                 userEndAdding = true
             }
 
-            btnSaveAndContinue.setOnClickListener {
+            vwgrpBtnSaveAndContinue.setOnClickListener {
                 proceedAddOrSaveFlashcard()
                 userEndAdding = false
             }
@@ -465,11 +594,11 @@ class RetrofitAddFlashcardActivity : BaseActivity<ActivityAddFlashcardRetroBindi
                 MyGestureDetector(this@RetrofitAddFlashcardActivity) {
 
                 override fun onSwipeRight() {
-                    log("???? R")
+
                 }
 
                 override fun onSwipeLeft() {
-                    log("???? L")
+
                 }
 
                 override fun onSwipeUp() {
@@ -489,13 +618,13 @@ class RetrofitAddFlashcardActivity : BaseActivity<ActivityAddFlashcardRetroBindi
                             return
                         }
 
-                        onUserFlipCard()
+                        onUserFlipCard(FlipDirection.FLIP_UP)
                     }
                 }
 
                 override fun onSwipeDown() {
                     if (hasStartedEdit) {
-                        onUserFlipCard()
+                        onUserFlipCard(FlipDirection.FLIP_DOWN)
                         showVirtualKeyboard()
                     }
                 }
@@ -562,14 +691,14 @@ class RetrofitAddFlashcardActivity : BaseActivity<ActivityAddFlashcardRetroBindi
                     flashcardSet.frontLanguage,
                     flashcardSet.backLanguage
                 )
-                viewModel.currentFocusFlashcardSet = flashcardSet
+                viewModel.currentFocusDeck = flashcardSet
                 hideSetNameList()
             }
 
             btnStartCreateNewSet.setOnClickListener {
                 edtNewSetName.requestFocus()
-                edtNewSetFrontLanguage.setText(viewModel.currentFocusFlashcardSet.frontLanguage)
-                edtNewSetBackLanguage.setText(viewModel.currentFocusFlashcardSet.backLanguage)
+                edtNewSetFrontLanguage.setText(viewModel.currentFocusDeck.frontLanguage)
+                edtNewSetBackLanguage.setText(viewModel.currentFocusDeck.backLanguage)
                 if (rcvFlashcardSetName.isVisible) {
                     hideSetNameList()
                 }
@@ -601,7 +730,7 @@ class RetrofitAddFlashcardActivity : BaseActivity<ActivityAddFlashcardRetroBindi
                 val newSet = viewModel.createNewFlashcardSetIfValid(setName, frontLang, backLang)
                 val setIsValid = (newSet != null)
                 if (setIsValid) {
-                    viewModel.currentFocusFlashcardSet = newSet!!
+                    viewModel.currentFocusDeck = newSet!!
                     rcvFlashcardSetNameAdapter.addFlashcardSetAtTop(newSet)
                 }
             }
@@ -618,65 +747,202 @@ class RetrofitAddFlashcardActivity : BaseActivity<ActivityAddFlashcardRetroBindi
                 showVirtualKeyboard()
             }
 
-            btnChoosePicture.setOnClickListener {
-                startWaitingLoadingImageProgress()
+            btnFrontChoosePicture.setOnClickListener {
+                imgFrontLoadPictureProgressBar.goVISIBLE()
+                btnFrontChoosePicture.goGoneByFadeOutAnim()
+                if (currentCardProperty.frontSideHasText)
+                    showFrontSide_BothTextAndImage()
                 loadImagesFromGallery()
             }
 
-            vwgrpBtnBlueChooseCardProperty.setOnClickListener {
-                is_InAdjustCardProperty_Mode = true
+            imgFrontIllustrationPicture.setOnClickListener {
+                btnFrontChoosePicture.performClick()
+            }
 
-                layoutChooseCardProperty.root.goVisibleByFadeInAnim(1f)
-                vwgrpBtnBlueChooseCardProperty.goGoneByFadeOutAnim()
-                imgFlashcardsBackground.goGoneByFadeOutAnim()
-                imgArrowUp.goGoneByFadeOutAnim()
-                txtSwipeUp.goGoneByFadeOutAnim()
+            btnBackChoosePicture.setOnClickListener {
+                dB.imgBackLoadPictureProgressBar.goVISIBLE()
+                btnBackChoosePicture.goGoneByFadeOutAnim()
+                if (currentCardProperty.backSideHasText)
+                    showBackSide_BothTextAndImage()
+                loadImagesFromGallery()
+            }
+
+            imgBackIllustrationPicture.setOnClickListener {
+                btnBackChoosePicture.performClick()
+            }
+
+            vwgrpBtnBlueChooseCardProperty.setOnClickListener {
+                btnFrontChoosePicture.goGoneByFadeOutAnim()
+                btnBackChoosePicture.goGoneByFadeOutAnim()
+                show_ChooseCardPropertyByFadeIn()
+                hide_StartEditComponentsByFadeOut()
             }
 
             btnCardPropertiesOnTop.setOnClickListener {
-                vwgrpBtnBlueChooseCardProperty.performClick()
+                btnFrontChoosePicture.goGoneByFadeOutAnim()
+                btnBackChoosePicture.goGoneByFadeOutAnim()
+                show_ChooseCardPropertyByFadeIn()
+                hide_SaveFunctionsComponentsByFadeOut()
             }
 
             layoutChooseCardProperty.apply {
                 rdgrCardHeight.setOnCheckedChangeListener { view, changedId ->
                     if (changedId == rdbtnHeightNormal.id) {
                         recalculate_Flashcard_Dimens(1f)
+                        currentCardProperty.heightOption = HEIGHT_NORMAL
+                        txtSave.goVISIBLE()
+                        txtContinue.goVISIBLE()
                     } else if (changedId == rdbtnHeightWide.id) {
                         recalculate_Flashcard_Dimens(FLASHCARD_WIDE_HEIGHT_RATE)
+                        currentCardProperty.heightOption = HEIGHT_WIDE
+                        txtSave.goGONE()
+                        txtContinue.goGONE()
                     }
                 }
 
-                rdgrCardFrontSide.setOnCheckedChangeListener { view, changedId ->
-                    if (changedId == rdbtnFrontImageWithText.id) {
-                        vwgrpFrontTexts.goVISIBLE()
-                        (imgIllustrationPicture.layoutParams as ConstraintLayout.LayoutParams).endToEnd =
-                            ConstraintSet.GONE
-                        recalculateIllustrationPictureDimens(1f)
-                        imgIllustrationPicture.requestLayout()
-                    } else if (changedId == rdbtnFrontImageWithoutText.id) {
-                        vwgrpFrontTexts.goGONE()
-                        (imgIllustrationPicture.layoutParams as ConstraintLayout.LayoutParams).endToEnd =
-                            PARENT_ID
-                        (imgIllustrationPicture.layoutParams as ConstraintLayout.LayoutParams).width =
-                            MATCH_PARENT
-                        imgIllustrationPicture.requestLayout()
+                rdgrCardFrontSide.setOnCheckedChangeListener { v, checkedId ->
+                    if (checkedId == rdbtnFrontNormalMode.id) {
+                        showFrontSide_BothTextAndImage()
+                        currentCardProperty.frontSideHasText = true
+                        currentCardProperty.frontSideHasImage = true
+                    } else if (checkedId == rdbtnFrontImageOnly.id) {
+                        showFrontSide_ImageOnly()
+                        currentCardProperty.frontSideHasText = false
+                        currentCardProperty.frontSideHasImage = true
                     }
                 }
+
+                rdgrCardBackSide.setOnCheckedChangeListener { v, checkedId ->
+                    if (checkedId == rdbtnBackNormalMode.id) {
+                        showBackSide_BothTextAndImage()
+                        currentCardProperty.backSideHasText = true
+                        currentCardProperty.backSideHasImage = true
+                    } else if (checkedId == rdbtnBackImageOnly.id) {
+                        showBackSide_ImageOnly()
+                        currentCardProperty.backSideHasText = false
+                        currentCardProperty.backSideHasImage = true
+                    }
+                }
+
             }
-
-
         }
     }
+
+    private fun show_ChooseCardPropertyByFadeIn() {
+        dB.apply {
+            is_InAdjustCardProperty_Mode = true
+            imgFrontIllustrationPicture.setBackgroundColor(Color.parseColor("#10000000"))
+            hideVirtualKeyboard()
+            showFront_DemoIllustration()
+            showBack_DemoIllustration()
+            layoutChooseCardProperty.root.goVisibleByFadeInAnim(1f)
+        }
+    }
+
+    private fun showBack_DemoIllustration() {
+        dB.apply {
+            if (currentCardProperty.backSideHasImage) {
+                if (currentCardProperty.backSideHasText) {
+                    showBackSide_BothTextAndImage()
+                } else {
+                    showBackSide_ImageOnly()
+                }
+            }
+        }
+    }
+
+    private fun showFront_DemoIllustration() {
+        dB.apply {
+            if (currentCardProperty.frontSideHasImage) {
+                if (currentCardProperty.frontSideHasText) {
+                    showFrontSide_BothTextAndImage()
+                } else {
+                    showFrontSide_ImageOnly()
+                }
+            }
+        }
+    }
+
+    private fun hide_SaveFunctionsComponentsByFadeOut() {
+        dB.apply {
+            vwgrpSwipeFunctions.goGoneByFadeOutAnim()
+        }
+    }
+
+    private fun showFrontSide_TextOnly() {
+        dB.apply {
+            (imgFrontIllustrationPicture.layoutParams as ConstraintLayout.LayoutParams).endToEnd =
+                ConstraintSet.GONE
+            setFront_IllustrationPictureWidth(0)
+            vwgrpFrontTexts.goVISIBLE()
+        }
+    }
+
+    private fun showFrontSide_ImageOnly() {
+        dB.apply {
+            vwgrpFrontTexts.goGONE()
+            (imgFrontIllustrationPicture.layoutParams as ConstraintLayout.LayoutParams).endToEnd =
+                PARENT_ID
+            (imgFrontIllustrationPicture.layoutParams as ConstraintLayout.LayoutParams).width =
+                MATCH_PARENT
+            imgFrontIllustrationPicture.requestLayout()
+        }
+    }
+
+    private fun showFrontSide_BothTextAndImage() {
+        dB.apply {
+            vwgrpFrontTexts.goVISIBLE()
+            (imgFrontIllustrationPicture.layoutParams as ConstraintLayout.LayoutParams).endToEnd =
+                ConstraintSet.GONE
+            setFront_IllustrationPictureWidth((viewgroupFrontFlashcard.width - 2 * imgFrontIllustrationPicture.marginStart) / 2)
+            imgFrontIllustrationPicture.requestLayout()
+        }
+    }
+
+
+    // Back
+
+    private fun showBackSide_TextOnly() {
+        dB.apply {
+            (imgBackIllustrationPicture.layoutParams as ConstraintLayout.LayoutParams).endToEnd =
+                ConstraintSet.GONE
+            setBack_IllustrationPictureWidth(0)
+            vwgrpBackTexts.goVISIBLE()
+        }
+    }
+
+    private fun showBackSide_ImageOnly() {
+        dB.apply {
+            vwgrpBackTexts.goGONE()
+            (imgBackIllustrationPicture.layoutParams as ConstraintLayout.LayoutParams).endToEnd =
+                PARENT_ID
+            (imgBackIllustrationPicture.layoutParams as ConstraintLayout.LayoutParams).width =
+                MATCH_PARENT
+            imgBackIllustrationPicture.requestLayout()
+        }
+    }
+
+    private fun showBackSide_BothTextAndImage() {
+        dB.apply {
+            vwgrpBackTexts.goVISIBLE()
+            (imgBackIllustrationPicture.layoutParams as ConstraintLayout.LayoutParams).endToEnd =
+                ConstraintSet.GONE
+            setBack_IllustrationPictureWidth((viewgroupFrontFlashcard.width - 2 * imgFrontIllustrationPicture.marginStart) / 2)
+            imgBackIllustrationPicture.requestLayout()
+        }
+    }
+
 
     private fun View.goGoneByFadeOutAnim() {
         animate().alpha(0.0f)
             .setDuration(100).setInterpolator(LinearInterpolator())
             .setLiteListener(onEnd = {
                 goGONE()
+
+                // Reset
+                animate().setLiteListener()
             })
 
-        // Reset
-        animate().setLiteListener()
     }
 
 
@@ -711,9 +977,9 @@ class RetrofitAddFlashcardActivity : BaseActivity<ActivityAddFlashcardRetroBindi
             val meanOfExample = edtExampleTranslation.text.toString()
             val type = edtType.text.toString()
             val pronunciation = edtPronunciation.text.toString()
-            val frontLanguage = viewModel.currentFocusFlashcardSet.frontLanguage
-            val backLanguage = viewModel.currentFocusFlashcardSet.backLanguage
-            val setName = viewModel.currentFocusFlashcardSet.name
+            val frontLanguage = viewModel.currentFocusDeck.frontLanguage
+            val backLanguage = viewModel.currentFocusDeck.backLanguage
+            val setName = viewModel.currentFocusDeck.name
 
             val isEditingFlashcard = (requestEditFlashcard != null)
             val id = if (isEditingFlashcard) {
@@ -729,18 +995,28 @@ class RetrofitAddFlashcardActivity : BaseActivity<ActivityAddFlashcardRetroBindi
                 pronunciation = pronunciation,
                 frontLanguage = frontLanguage,
                 backLanguage = backLanguage,
-                setOwner = setName
+                setOwner = setName,
+                cardProperty = currentCardProperty
             )
 
-            val illustrationPicture = if (imgIllustrationPicture.drawable != null) {
-                (imgIllustrationPicture.drawable as BitmapDrawable).bitmap
+            val front_IllustrationPicture = if (imgFrontIllustrationPicture.drawable != null) {
+                (imgFrontIllustrationPicture.drawable as BitmapDrawable).bitmap
             } else null
 
-            viewModel.proceedAddFlashcard(newCard, illustrationPicture)
+            val back_IllustrationPicture = if (imgFrontIllustrationPicture.drawable != null) {
+                (imgFrontIllustrationPicture.drawable as BitmapDrawable).bitmap
+            } else null
+
+            viewModel.proceedAddFlashcard(
+                newCard,
+                front_IllustrationPicture,
+                back_IllustrationPicture
+            )
             if (type.isNotEmpty()) {
                 rcvChooseCardType.addType(type)
             }
-    }}
+        }
+    }
 
     private fun clearAllCardInfomation () { dB.apply {
         edtText.setText("")
@@ -871,51 +1147,89 @@ class RetrofitAddFlashcardActivity : BaseActivity<ActivityAddFlashcardRetroBindi
         val intent = Intent(Intent.ACTION_GET_CONTENT)
         intent.putExtra(Intent.EXTRA_ALLOW_MULTIPLE, true)
         intent.type = "image/*"
-        startActivityForResult(intent, 1)
+        startActivityForResult(intent, LOAD_PICTURE_REQUEST_CODE)
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
-        if (requestCode == 1 && resultCode == Activity.RESULT_OK) {
-            val clipData = data!!.clipData
-            //clip data will be null if user select one item from gallery
-            if (clipData != null) {
-                for (i in 0 until clipData.itemCount) {
-                    val imageUri: Uri = clipData.getItemAt(i).uri
+        try {
+            if (requestCode == LOAD_PICTURE_REQUEST_CODE) {
+
+                if (resultCode != Activity.RESULT_OK) {
+                    endFront_LoadImageProgressBar()
+                    quickToast("Can not load picture")
+                    return
+                }
+
+                val clipData = data!!.clipData
+                //clip data will be null if user select one item from gallery
+                if (clipData != null) {
+                    for (i in 0 until clipData.itemCount) {
+                        val imageUri: Uri = clipData.getItemAt(i).uri
+                        try {
+                            val istr: InputStream? = contentResolver.openInputStream(imageUri)
+                            val bitmap = BitmapFactory.decodeStream(istr)
+                            onGetIllustration(bitmap)
+                        } catch (e: FileNotFoundException) {
+                            e.printStackTrace()
+                        }
+                    }
+                } else {
+                    val imageUri: Uri? = data.data
                     try {
-                        val istr: InputStream? = contentResolver.openInputStream(imageUri)
-                        val bitmap = BitmapFactory.decodeStream(istr)
-                        setPictureToCardOnScreen(bitmap)
-                        endWaitingLoadingImageProgress()
+                        val pictureInputStream: InputStream? =
+                            contentResolver.openInputStream(imageUri!!)
+                        val picture = BitmapFactory.decodeStream(pictureInputStream)
+                        onGetIllustration(picture)
                     } catch (e: FileNotFoundException) {
                         e.printStackTrace()
                     }
                 }
+            }
+        } catch (ex: Exception) {
+            dB.edtType.setText(ex.message)
+        }
+    }
+
+    private fun onGetIllustration(bitmap: Bitmap) {
+        if (isShowingFrontCard) {
+            setFront_IllustrationAndAdjustRatio(bitmap)
+            endFront_LoadImageProgressBar()
+        } else { // Back
+            setBack_IllustrationAndAdjustRatio(bitmap)
+            endBack_LoadImageProgressBar()
+        }
+    }
+
+    private fun setFront_IllustrationAndAdjustRatio(picture: Bitmap) {
+
+        if (currentCardProperty.frontSideHasText) {
+            val rate = picture.width.toFloat() / picture.height.toFloat()
+            if (rate < 1) {
+                recalculateFront_IllustrationPictureWidth_ByHeightRate(rate)
             } else {
-                val imageUri: Uri? = data.data
-                try {
-                    val `is`: InputStream? = contentResolver.openInputStream(imageUri!!)
-                    val picture = BitmapFactory.decodeStream(`is`)
-                    setPictureToCardOnScreen(picture)
-                    endWaitingLoadingImageProgress()
-                } catch (e: FileNotFoundException) {
-                    e.printStackTrace()
-                }
+                recalculateFront_IllustrationPictureWidth_ByHeightRate(1f)
             }
         }
+
+        dB.imgFrontIllustrationPicture.setPadding(0)
+        dB.imgFrontIllustrationPicture.setImageBitmap(picture)
     }
 
-    private fun setPictureToCardOnScreen(picture: Bitmap) {
-        val rate = picture.width.toFloat() / picture.height.toFloat()
-        if (rate < 1) {
-            recalculateIllustrationPictureDimens(rate)
-        } else {
-            recalculateIllustrationPictureDimens(1f)
+    private fun setBack_IllustrationAndAdjustRatio(picture: Bitmap) {
+
+        if (currentCardProperty.backSideHasText) {
+            val rate = picture.width.toFloat() / picture.height.toFloat()
+            if (rate < 1) {
+                recalculateBack_IllustrationPictureWidth_ByHeightRate(rate)
+            } else {
+                recalculateBack_IllustrationPictureWidth_ByHeightRate(1f)
+            }
         }
 
-        dB.imgIllustrationPicture.setImageBitmap(picture)
+        dB.imgBackIllustrationPicture.setPadding(0)
+        dB.imgBackIllustrationPicture.setImageBitmap(picture)
     }
-
 
     private fun resetEditTextTranslationHintToNormal() {
         dB.edtTranslation.hint = "Translation"
@@ -1013,9 +1327,9 @@ class RetrofitAddFlashcardActivity : BaseActivity<ActivityAddFlashcardRetroBindi
             })
     }
 
-
     private fun startEditting () { dB.apply {
         vwgrpSwipeFunctions.animate().alpha(1f).setDuration(100)
+            .setStartDelay(KEYBOARD_APPEAR_INTERVAL)
             .setLiteListener(onStart = {
                 vwgrpSwipeFunctions.goVISIBLE()
             })
@@ -1030,10 +1344,6 @@ class RetrofitAddFlashcardActivity : BaseActivity<ActivityAddFlashcardRetroBindi
                 txtSwipeUp.goGONE()
             })
 
-        imgFlashcardsBackground.animate().alpha(0f).setDuration(100)
-            .setLiteListener(onEnd = {
-                imgFlashcardsBackground.goGONE()
-            })
 
         vwgrpBtnBlueChooseCardProperty.goGONE()
         btnCardPropertiesOnTop.goVISIBLE()
@@ -1043,30 +1353,46 @@ class RetrofitAddFlashcardActivity : BaseActivity<ActivityAddFlashcardRetroBindi
 
     }}
 
-    private fun onUserFlipCard() {
+    private fun onUserFlipCard(flipDirection: FlipDirection) {
         if (isShowingFrontCard) {
-            showBackCard_AndUpdateStatus()
+            flipFrontToBackCard(flipDirection)
             isShowingFrontCard = false
             dB.edtTranslation.requestFocus()
-
         } else { // is showing back card
-            showFrontCard()
+            flipBackToFrontCard(flipDirection)
             dB.edtText.requestFocus()
         }
     }
 
 
-    private fun showFrontCard() {
+    private fun flipBackToFrontCard(flipDirection: FlipDirection = FlipDirection.FLIP_UP) {
         dB.apply {
+            if (flipDirection == FlipDirection.FLIP_UP) {
+                back_Up_To_Front_EffectAnmtrSet.start()
+                log("Back up to front")
+            } else if (flipDirection == FlipDirection.FLIP_DOWN) {
+                back_Down_To_Front_EffectAnmtrSet.start()
+                log("Back down to front")
+            }
+
             viewgroupBackFlashcard.startAnimation(turnUpFrontCard_After_TurnDownBackCard)
             isShowingFrontCard = true
         }
     }
 
-    private fun showBackCard_AndUpdateStatus () { dB.apply {
-        viewgroupFrontFlashcard.startAnimation( turnUpBackCard_After_TurnDownFrontCard )
-        isShowingFrontCard = false
-    }}
+    private fun flipFrontToBackCard(flipDirection: FlipDirection = FlipDirection.FLIP_UP) {
+        dB.apply {
+            if (flipDirection == FlipDirection.FLIP_UP) {
+                front_Up_To_Back_EffectAnmtrSet.start()
+                log("Front up to back")
+            } else if (flipDirection == FlipDirection.FLIP_DOWN) {
+                log("Front down to back")
+                front_Down_To_Back_EffectAnmtrSet.start()
+            }
+            viewgroupFrontFlashcard.startAnimation(turnUpBackCard_After_TurnDownFrontCard)
+            isShowingFrontCard = false
+        }
+    }
 
     override fun overrideEnterAnim() {
         overridePendingTransition(R.anim.appear, R.anim.nothing)
@@ -1081,32 +1407,70 @@ class RetrofitAddFlashcardActivity : BaseActivity<ActivityAddFlashcardRetroBindi
             if (isIPAKeyboardVisible) {
                 hideIPAKeyboard()
             } else if (is_InAdjustCardProperty_Mode) {
-                is_InAdjustCardProperty_Mode = false
-
-                layoutChooseCardProperty.root.goGoneByFadeOutAnim()
-
-                vwgrpBtnBlueChooseCardProperty.goVisibleByFadeInAnim(1f)
-                imgFlashcardsBackground.goVisibleByFadeInAnim(0.35f)
-                imgArrowUp.goVisibleByFadeInAnim(1f)
-                txtSwipeUp.goVisibleByFadeInAnim(1f)
+                turnOff_AdjustCardPropertyMode()
             } else {
                 super.onBackPressed()
             }
         }
     }
 
-    private fun getAddFlashcardRequest(): FlashcardSet? {
+    private fun turnOff_AdjustCardPropertyMode() {
+        dB.apply {
+            is_InAdjustCardProperty_Mode = false
+
+            val front_imgIllustration_IsEmpty =
+                imgFrontIllustrationPicture.drawable == front_illustrationDefaultDrawable
+            if (front_imgIllustration_IsEmpty and currentCardProperty.frontSideHasText) {
+                btnFrontChoosePicture.goVisibleByFadeInAnim(0.35f)
+                setFront_IllustrationPictureWidth(0)
+            }
+
+            val back_ImgIllustration_IsEmpty =
+                imgBackIllustrationPicture.drawable == back_illustrationDefaultDrawable
+            if (back_ImgIllustration_IsEmpty and currentCardProperty.backSideHasText) {
+                btnBackChoosePicture.goVisibleByFadeInAnim(0.35f)
+                setBack_IllustrationPictureWidth(0)
+            }
+
+            imgFrontIllustrationPicture.setBackgroundColor(Color.TRANSPARENT)
+            layoutChooseCardProperty.root.goGoneByFadeOutAnim()
+            if (hasStartedEdit) {
+                vwgrpSwipeFunctions.goVisibleByFadeInAnim(1f)
+            } else {
+                show_StartEditComponentsByFadeIn()
+            }
+        }
+    }
+
+    private fun show_StartEditComponentsByFadeIn() {
+        dB.apply {
+            vwgrpBtnBlueChooseCardProperty.goVisibleByFadeInAnim(1f)
+            imgArrowUp.goVisibleByFadeInAnim(1f)
+            txtSwipeUp.goVisibleByFadeInAnim(1f)
+        }
+    }
+
+    private fun hide_StartEditComponentsByFadeOut() {
+        dB.apply {
+            btnFrontChoosePicture.goGoneByFadeOutAnim()
+            vwgrpBtnBlueChooseCardProperty.goGoneByFadeOutAnim()
+            imgArrowUp.goGoneByFadeOutAnim()
+            txtSwipeUp.goGoneByFadeOutAnim()
+        }
+    }
+
+    private fun getAddFlashcardRequest(): Deck? {
         val bundle = intent.extras
 
         if (bundle == null) {
             return null
         }
 
-        val flashcardSet = bundle.getSerializable(ADD_REQUEST_FLASHCARD_SET) as FlashcardSet?
+        val flashcardSet = bundle.getSerializable(ADD_REQUEST_FLASHCARD_SET) as Deck?
         return flashcardSet
     }
 
-    private fun getEditFlashcardRequest(): Pair<Flashcard, FlashcardSet>? {
+    private fun getEditFlashcardRequest(): Pair<Flashcard, Deck>? {
         val bundle = intent.extras
 
         if (bundle == null) {
@@ -1114,7 +1478,7 @@ class RetrofitAddFlashcardActivity : BaseActivity<ActivityAddFlashcardRetroBindi
         }
 
         val flashcard = bundle.getSerializable(EDIT_REQUEST_FLASHCARD) as Flashcard?
-        val flashcardSet = bundle.getSerializable(EDIT_REQUEST_FLASHCARD_SET) as FlashcardSet?
+        val flashcardSet = bundle.getSerializable(EDIT_REQUEST_FLASHCARD_SET) as Deck?
 
         if ((flashcard == null) || (flashcardSet == null)) {
             return null
@@ -1158,7 +1522,7 @@ class RetrofitAddFlashcardActivity : BaseActivity<ActivityAddFlashcardRetroBindi
 
     override fun showTextInputError() {
         if (isShowingFrontCard.not()) {
-            showFrontCard()
+            flipBackToFrontCard()
         }
         dB.edtText.requestFocus()
         dB.edtText.hint = "Text can not be empty"
@@ -1167,11 +1531,26 @@ class RetrofitAddFlashcardActivity : BaseActivity<ActivityAddFlashcardRetroBindi
 
     override fun showTranslationInputError() {
         if (isShowingFrontCard) {
-            showBackCard_AndUpdateStatus()
+            flipFrontToBackCard()
         }
         dB.edtTranslation.requestFocus()
         dB.edtTranslation.hint = "Translation can not be empty"
         dB.edtTranslation.setHintTextColor(Color.parseColor("#EC4444"))
+    }
+
+    override fun showFrontEmptyImageError() {
+        if (isShowingFrontCard.not()) {
+            flipBackToFrontCard()
+        }
+
+        quickToast("Front image can not be empty")
+    }
+
+    override fun showBackEmptyImageError() {
+        if (isShowingFrontCard) {
+            flipFrontToBackCard()
+        }
+        quickToast("Front image can not be empty")
     }
 
     override fun showInvalidFlashcardSetError(errorMessage: String) {
@@ -1180,8 +1559,8 @@ class RetrofitAddFlashcardActivity : BaseActivity<ActivityAddFlashcardRetroBindi
         dB.vwgrpCreateSetError.animate().alpha(1f).duration = 200
     }
 
-    fun hideInvalidFlashcardSetError () {
-        dB.vwgrpCreateSetError.animate().alpha(0f).setDuration(200).setLiteListener (onEnd = {
+    fun hideInvalidFlashcardSetError() {
+        dB.vwgrpCreateSetError.animate().alpha(0f).setDuration(200).setLiteListener(onEnd = {
             dB.vwgrpCreateSetError.goGONE()
         })
     }
@@ -1268,25 +1647,26 @@ class RetrofitAddFlashcardActivity : BaseActivity<ActivityAddFlashcardRetroBindi
         viewModel.addToUsedLanguageList(language)
     }
 
-    private val COMMON_FLIP_CARD_DURATION = 250L
+    private val COMMON_FLIP_CARD_DURATION = 300L
     private val COMMON_FLIP_CARD_INTERPOLATOR = DecelerateInterpolator()
 
     @Inject
-    fun initShow_FRONT_CardAnimators (
-                                             @Named("FlipOpen") turnUpFront : Animation,
-                                             @Named("FlipClose") turnDownBack : Animation) { dB.apply {
+    fun initShow_FRONT_CardAnimators(
+        @Named("FlipOpen") turnUpFront: Animation,
+        @Named("FlipClose") turnDownBack: Animation
+    ) {
+        dB.apply {
+            turnUpFront.apply {
+                duration = COMMON_FLIP_CARD_DURATION
+                interpolator = COMMON_FLIP_CARD_INTERPOLATOR
+                setAnimationListener(onStart = {
+                    viewgroupFrontFlashcard.goVISIBLE()
+                })
+            }
 
-        turnUpFront.apply {
-            duration = COMMON_FLIP_CARD_DURATION
-            interpolator = COMMON_FLIP_CARD_INTERPOLATOR
-            setAnimationListener(onStart = {
-                viewgroupFrontFlashcard.goVISIBLE()
-            })
-        }
-
-        turnUpFrontCard_After_TurnDownBackCard = turnDownBack.apply {
-            duration = COMMON_FLIP_CARD_DURATION
-            interpolator = COMMON_FLIP_CARD_INTERPOLATOR
+            turnUpFrontCard_After_TurnDownBackCard = turnDownBack.apply {
+                duration = COMMON_FLIP_CARD_DURATION
+                interpolator = COMMON_FLIP_CARD_INTERPOLATOR
             setAnimationListener(onEnd = {
                 viewgroupBackFlashcard.goINVISIBLE()
                 viewgroupFrontFlashcard.startAnimation(turnUpFront)
@@ -1296,27 +1676,112 @@ class RetrofitAddFlashcardActivity : BaseActivity<ActivityAddFlashcardRetroBindi
     }}
 
     @Inject
-    fun initShow_BACK_CardAnimators (
-                                    @Named("FlipOpen") turnUpBack : Animation,
-                                    @Named("FlipClose") turnDownFront : Animation) { dB.apply {
+    fun initShow_BACK_CardAnimators(
+        @Named("FlipOpen") turnUpBack: Animation,
+        @Named("FlipClose") turnDownFront: Animation
+    ) {
+        dB.apply {
 
-        turnUpBackCard_After_TurnDownFrontCard = turnDownFront.apply {
-            duration = COMMON_FLIP_CARD_DURATION
-            interpolator = COMMON_FLIP_CARD_INTERPOLATOR
-            setAnimationListener(onEnd = {
-                viewgroupFrontFlashcard.goINVISIBLE()
-                viewgroupBackFlashcard.startAnimation(turnUpBack)
-            })
+            turnUpBackCard_After_TurnDownFrontCard = turnDownFront.apply {
+                duration = COMMON_FLIP_CARD_DURATION
+                interpolator = COMMON_FLIP_CARD_INTERPOLATOR
+                setAnimationListener(onEnd = {
+                    viewgroupFrontFlashcard.goINVISIBLE()
+                    viewgroupBackFlashcard.startAnimation(turnUpBack)
+                })
+            }
+
+            turnUpBack.apply {
+                duration = COMMON_FLIP_CARD_DURATION
+                interpolator = COMMON_FLIP_CARD_INTERPOLATOR
+                setAnimationListener(onStart = {
+                    viewgroupBackFlashcard.goVISIBLE()
+                })
+            }
         }
+    }
 
-        turnUpBack.apply {
-            duration = COMMON_FLIP_CARD_DURATION
-            interpolator = COMMON_FLIP_CARD_INTERPOLATOR
-            setAnimationListener(onStart = {
-                viewgroupBackFlashcard.goVISIBLE()
-            })
-        }
+    @Inject
+    fun initFlipCardEffect(
+        @Named("Appear100Percents") front_ShadowAppear: Animator,
+        @Named("Disappear100Percents") front_ShadowDisappear: Animator,
+        @Named("Appear100Percents") front_LightAppear: Animator,
+        @Named("Disappear100Percents") front_LightDisappear: Animator,
 
-    }}
+        @Named("Appear100Percents") back_ShadowAppear: Animator,
+        @Named("Disappear100Percents") back_ShadowDisappear: Animator,
+        @Named("Appear100Percents") back_LightAppear: Animator,
+        @Named("Disappear100Percents") back_LightDisappear: Animator
+    ) {
+        dB.apply {
+
+            front_LightAppear.apply {
+                duration = COMMON_FLIP_CARD_DURATION
+                interpolator = COMMON_FLIP_CARD_INTERPOLATOR
+                setTarget(imgFrontLight)
+                addListener(onEnd = {
+                    imgFrontLight.alpha = 0f
+                })
+            }
+
+            back_ShadowDisappear.apply {
+                duration = COMMON_FLIP_CARD_DURATION
+                interpolator = COMMON_FLIP_CARD_INTERPOLATOR
+                setTarget(imgBackShadow)
+            }
+
+            front_Up_To_Back_EffectAnmtrSet.play(front_LightAppear).before(back_ShadowDisappear)
+
+            front_ShadowAppear.apply {
+                duration = COMMON_FLIP_CARD_DURATION
+                interpolator = COMMON_FLIP_CARD_INTERPOLATOR
+                setTarget(imgFrontShadow)
+                addListener(onEnd = {
+                    imgFrontShadow.alpha = 0f
+                })
+            }
+
+            back_LightDisappear.apply {
+                duration = COMMON_FLIP_CARD_DURATION
+                interpolator = COMMON_FLIP_CARD_INTERPOLATOR
+                setTarget(imgBackLight)
+            }
+
+            front_Down_To_Back_EffectAnmtrSet.play(front_ShadowAppear).before(back_LightDisappear)
+
+            back_LightAppear.apply {
+                duration = COMMON_FLIP_CARD_DURATION
+                interpolator = COMMON_FLIP_CARD_INTERPOLATOR
+                setTarget(imgBackLight)
+                addListener(onEnd = {
+                    imgBackLight.alpha = 0f
+                })
+            }
+
+            front_ShadowDisappear.apply {
+                duration = COMMON_FLIP_CARD_DURATION
+                interpolator = COMMON_FLIP_CARD_INTERPOLATOR
+                setTarget(imgFrontShadow)
+            }
+
+            back_Up_To_Front_EffectAnmtrSet.play(back_LightAppear).before(front_ShadowDisappear)
+
+
+            back_ShadowAppear.apply {
+                duration = COMMON_FLIP_CARD_DURATION
+                interpolator = COMMON_FLIP_CARD_INTERPOLATOR
+                setTarget(imgBackShadow)
+                addListener(onEnd = {
+                    imgBackShadow.alpha = 0f
+                })
+            }
+
+            front_LightDisappear.apply {
+                duration = COMMON_FLIP_CARD_DURATION
+                interpolator = COMMON_FLIP_CARD_INTERPOLATOR
+                setTarget(imgFrontLight)
+            }
+            back_Down_To_Front_EffectAnmtrSet.play(back_ShadowAppear).before(front_LightDisappear)
+        }}
 }
 

@@ -1,7 +1,7 @@
 package com.teamttdvlp.memolang.viewmodel
 
 import com.teamttdvlp.memolang.data.model.entity.flashcard.DEFAULT_SET_NAME
-import com.teamttdvlp.memolang.data.model.entity.flashcard.FlashcardSet
+import com.teamttdvlp.memolang.data.model.entity.flashcard.Deck
 import com.teamttdvlp.memolang.data.model.entity.user.User
 import com.teamttdvlp.memolang.model.UserInfoStatusSharedPreference
 import com.teamttdvlp.memolang.model.repository.FlashcardSetRepos
@@ -63,7 +63,7 @@ class SetUpAccountViewModel(
     }
 
     private fun createUserDefaultSetName(frontLang: String, backLang: String) {
-        val defaultFlashcardSet = FlashcardSet(DEFAULT_SET_NAME, frontLang, backLang)
+        val defaultFlashcardSet = Deck(DEFAULT_SET_NAME, frontLang, backLang)
         setDefaultUsedSetName(defaultFlashcardSet.name)
         flashcardSetRepos.insert(defaultFlashcardSet)
     }

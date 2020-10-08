@@ -10,12 +10,12 @@
         android:orientation="vertical"
         android:weightSum="3">
 
-        <RadioGroup
-            android:id="@+id/rdgr_card_height"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/background_round_8dp_white_backgroud_with_light_and_fuzzy_blue_border"
+            android:padding="13dp"
             android:orientation="vertical">
 
             <TextView
@@ -26,137 +26,178 @@
                 android:textColor="@color/black"
                 android:textSize="18sp" />
 
-            <RadioButton
-                android:id="@+id/rdbtn_height_normal"
+            <RadioGroup
+                android:id="@+id/rdgr_card_height"
                 android:layout_width="match_parent"
-                android:layout_height="30dp"
-                android:layout_marginEnd="15dp"
-                android:button="@null"
-                android:checked="true"
-                android:drawableLeft="@drawable/background_normal_flashcard_height_checkbox"
-                android:drawablePadding="15dp"
-                android:fontFamily="@font/seguisb"
-                android:layoutDirection="rtl"
-                android:text="Normal"
-                android:textColor="@color/checkbox_text_color"
-                android:textSize="16sp" />
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
 
-            <RadioButton
-                android:id="@+id/rdbtn_height_wide"
-                android:layout_width="match_parent"
-                android:layout_height="30dp"
-                android:layout_marginEnd="15dp"
-                android:button="@null"
-                android:drawableLeft="@drawable/background_wide_flashcard_height_checkbox"
-                android:drawablePadding="15dp"
-                android:fontFamily="@font/seguisb"
-                android:layoutDirection="rtl"
-                android:text="Wide"
-                android:textColor="@color/checkbox_text_color"
-                android:textSize="16sp" />
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/rdbtn_height_normal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:background="@android:color/transparent"
+                    android:button="@null"
+                    android:checked="true"
+                    android:drawableLeft="@drawable/background_round_square_checkbox"
+                    android:drawablePadding="8dp"
+                    android:fontFamily="@font/seguisb"
+                    android:layoutDirection="rtl"
+                    android:text="Normal"
+                    android:textColor="@color/checkbox_text_color"
+                    android:textSize="16sp" />
 
-        </RadioGroup>
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/rdbtn_height_wide"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginEnd="15dp"
+                    android:background="@android:color/transparent"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/background_round_square_checkbox"
+                    android:drawablePadding="8dp"
+                    android:fontFamily="@font/seguisb"
+                    android:layoutDirection="rtl"
+                    android:text="Wide"
+                    android:textColor="@color/checkbox_text_color"
+                    android:textSize="16sp" />
+
+            </RadioGroup>
+        </LinearLayout>
+
 
         <!--    Front-->
 
-        <RadioGroup
-            android:id="@+id/rdgr_card_front_side"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/background_round_8dp_white_backgroud_with_light_and_fuzzy_blue_border"
+            android:padding="13dp"
             android:orientation="vertical">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
                 android:fontFamily="@font/seguisb"
                 android:text="Front side"
+                android:includeFontPadding="false"
                 android:textColor="@color/black"
                 android:textSize="18sp" />
 
-            <RadioButton
-                android:id="@+id/rdbtn_front_image_with_text"
+            <RadioGroup
+                android:id="@+id/rdgr_card_front_side"
                 android:layout_width="match_parent"
-                android:layout_height="30dp"
-                android:layout_marginEnd="15dp"
-                android:button="@null"
-                android:checked="true"
-                android:drawableLeft="@drawable/background_has_text_flashcard_checkbox"
-                android:drawablePadding="15dp"
-                android:fontFamily="@font/seguisb"
-                android:layoutDirection="rtl"
-                android:text="Image with text"
-                android:textColor="@color/checkbox_text_color"
-                android:textSize="16sp" />
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
 
-            <RadioButton
-                android:id="@+id/rdbtn_front_image_without_text"
-                android:layout_width="match_parent"
-                android:layout_height="30dp"
-                android:layout_marginEnd="15dp"
-                android:button="@null"
-                android:drawableLeft="@drawable/background_no_text_flashcard_checkbox"
-                android:drawablePadding="15dp"
-                android:fontFamily="@font/seguisb"
-                android:layoutDirection="rtl"
-                android:text="Image without text"
-                android:textColor="@color/checkbox_text_color"
-                android:textSize="16sp" />
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/rdbtn_front_normal_mode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="3dp"
+                    android:background="@android:color/transparent"
+                    android:button="@null"
+                    android:checked="true"
+                    android:drawableLeft="@drawable/background_round_square_checkbox"
+                    android:drawablePadding="8dp"
+                    android:fontFamily="@font/seguisb"
+                    android:gravity="center_vertical"
+                    android:includeFontPadding="false"
+                    android:layoutDirection="rtl"
+                    android:text="Normal"
+                    android:textColor="@color/checkbox_text_color"
+                    android:textSize="16sp" />
 
-        </RadioGroup>
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/rdbtn_front_image_only"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginEnd="15dp"
+                    android:background="@android:color/transparent"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/background_round_square_checkbox"
+                    android:drawablePadding="8dp"
+                    android:fontFamily="@font/seguisb"
+                    android:includeFontPadding="false"
+                    android:layoutDirection="rtl"
+                    android:text="Image only"
+                    android:textColor="@color/checkbox_text_color"
+                    android:textSize="16sp" />
+
+            </RadioGroup>
+
+        </LinearLayout>
 
 
         <!--    Back-->
 
-        <RadioGroup
-            android:id="@+id/rdgr_card_back_side"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/background_round_8dp_white_backgroud_with_light_and_fuzzy_blue_border"
+            android:padding="13dp"
             android:orientation="vertical">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
                 android:fontFamily="@font/seguisb"
                 android:text="Back side"
+                android:includeFontPadding="false"
                 android:textColor="@color/black"
                 android:textSize="18sp" />
 
-            <RadioButton
-                android:id="@+id/rdbtn_back_image_with_text"
+            <RadioGroup
+                android:id="@+id/rdgr_card_back_side"
                 android:layout_width="match_parent"
-                android:layout_height="30dp"
-                android:layout_marginEnd="15dp"
-                android:button="@null"
-                android:checked="true"
-                android:drawableLeft="@drawable/background_has_text_flashcard_checkbox"
-                android:drawablePadding="15dp"
-                android:fontFamily="@font/seguisb"
-                android:layoutDirection="rtl"
-                android:text="Image with text"
-                android:textColor="@color/checkbox_text_color"
-                android:textSize="16sp" />
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
 
-            <RadioButton
-                android:id="@+id/rdbtn_back_image_without_text"
-                android:layout_width="match_parent"
-                android:layout_height="30dp"
-                android:layout_marginEnd="15dp"
-                android:button="@null"
-                android:drawableLeft="@drawable/background_no_text_flashcard_checkbox"
-                android:drawablePadding="15dp"
-                android:fontFamily="@font/seguisb"
-                android:layoutDirection="rtl"
-                android:text="Image without text"
-                android:textColor="@color/checkbox_text_color"
-                android:textSize="16sp" />
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/rdbtn_back_normal_mode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="3dp"
+                    android:background="@android:color/transparent"
+                    android:button="@null"
+                    android:checked="true"
+                    android:drawableLeft="@drawable/background_round_square_checkbox"
+                    android:drawablePadding="8dp"
+                    android:fontFamily="@font/seguisb"
+                    android:gravity="center_vertical"
+                    android:includeFontPadding="false"
+                    android:layoutDirection="rtl"
+                    android:text="Normal
+"
+                    android:textColor="@color/checkbox_text_color"
+                    android:textSize="16sp" />
 
-        </RadioGroup>
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/rdbtn_back_image_only"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginEnd="15dp"
+                    android:background="@android:color/transparent"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/background_round_square_checkbox"
+                    android:drawablePadding="8dp"
+                    android:fontFamily="@font/seguisb"
+                    android:includeFontPadding="false"
+                    android:layoutDirection="rtl"
+                    android:text="Image only"
+                    android:textColor="@color/checkbox_text_color"
+                    android:textSize="16sp" />
+
+            </RadioGroup>
+
+        </LinearLayout>
 
     </androidx.appcompat.widget.LinearLayoutCompat>
 

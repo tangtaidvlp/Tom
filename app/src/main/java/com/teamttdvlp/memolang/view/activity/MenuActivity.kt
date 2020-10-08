@@ -20,7 +20,7 @@ import androidx.core.view.doOnPreDraw
 import androidx.core.view.isVisible
 import androidx.drawerlayout.widget.DrawerLayout
 import com.teamttdvlp.memolang.R
-import com.teamttdvlp.memolang.data.model.entity.flashcard.FlashcardSet
+import com.teamttdvlp.memolang.data.model.entity.flashcard.Deck
 import com.teamttdvlp.memolang.databinding.ActivityMenuBinding
 import com.teamttdvlp.memolang.databinding.LayoutFloatAddBodyBinding
 import com.teamttdvlp.memolang.databinding.LayoutFloatAddIconBinding
@@ -158,7 +158,7 @@ class MenuActivity : BaseActivity<ActivityMenuBinding, MenuActivityViewModel>(),
         }
     }
 
-    private var currentBeingFocusedFlashcardSet: FlashcardSet? = null
+    private var currentBeingFocusedDeck: Deck? = null
 
     @SuppressLint("WrongConstant")
     override fun addViewEvents() {
@@ -229,7 +229,7 @@ class MenuActivity : BaseActivity<ActivityMenuBinding, MenuActivityViewModel>(),
             }
 
             flashcardSetAdapter.setOnBtn_Edit_FlashcardSetClickListener { flashcardSet ->
-                currentBeingFocusedFlashcardSet = flashcardSet
+                currentBeingFocusedDeck = flashcardSet
                 edtPanelEditSetName.setText(flashcardSet.name)
                 edtPanelEditSetName.setSelection(flashcardSet.name.length)
                 dialogEditFlashcardSetName.show()
@@ -239,7 +239,7 @@ class MenuActivity : BaseActivity<ActivityMenuBinding, MenuActivityViewModel>(),
             }
 
             flashcardSetAdapter.setOnBtn_Delete_FlashcardSetClickListener { flashcardSet ->
-                currentBeingFocusedFlashcardSet = flashcardSet
+                currentBeingFocusedDeck = flashcardSet
                 txtConfirmDeleteFlashcardSet.setText(
                     getConfirmText(flashcardSet.name),
                     TextView.BufferType.SPANNABLE
@@ -251,32 +251,32 @@ class MenuActivity : BaseActivity<ActivityMenuBinding, MenuActivityViewModel>(),
 
             btnPanelSaveSetName.setOnClickListener {
                 val newName = edtPanelEditSetName.text.toString()
-                viewModel.deleteFlashcardSet(currentBeingFocusedFlashcardSet!!)
-                viewModel.updateSetName(currentBeingFocusedFlashcardSet!!, newName)
+                viewModel.deleteFlashcardSet(currentBeingFocusedDeck!!)
+                viewModel.updateSetName(currentBeingFocusedDeck!!, newName)
                 viewModel.update_OtherActivitiesSharePref_Info(
-                    currentBeingFocusedFlashcardSet!!.name,
+                    currentBeingFocusedDeck!!.name,
                     newName
                 )
                 dialogEditFlashcardSetName.dismiss()
                 turnStatusBarToLighterColor(dialogEditFlashcardSetName.getAnimDuration())
                 hideVirtualKeyboard()
                 flashcardSetAdapter.updateFlashcardSetName(
-                    currentBeingFocusedFlashcardSet!!,
+                    currentBeingFocusedDeck!!,
                     newName
                 )
             }
 
             btnPanelDeleteFlashcardSet.setOnClickListener {
-                viewModel.deleteFlashcardSet(currentBeingFocusedFlashcardSet!!)
+                viewModel.deleteFlashcardSet(currentBeingFocusedDeck!!)
                 viewModel.update_OtherActivitiesSharePref_Info(
-                    currentBeingFocusedFlashcardSet!!.name,
+                    currentBeingFocusedDeck!!.name,
                     ""
                 )
 
                 dialogDeleteFlashcardSetName.dismiss()
                 turnStatusBarToLighterColor(dialogDeleteFlashcardSetName.getAnimDuration())
 
-                flashcardSetAdapter.deleteFlashcardSet(currentBeingFocusedFlashcardSet!!)
+                flashcardSetAdapter.deleteFlashcardSet(currentBeingFocusedDeck!!)
                 updateButtonsMenuHeight(flashcardSetAdapter.itemCount)
             }
 

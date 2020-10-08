@@ -8,8 +8,8 @@ import androidx.core.animation.addListener
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.teamttdvlp.memolang.R
+import com.teamttdvlp.memolang.data.model.entity.flashcard.Deck
 import com.teamttdvlp.memolang.data.model.entity.flashcard.Flashcard
-import com.teamttdvlp.memolang.data.model.entity.flashcard.FlashcardSet
 import com.teamttdvlp.memolang.databinding.ActivityViewFlashCardListBinding
 import com.teamttdvlp.memolang.view.activity.iview.ViewFlashcardListView
 import com.teamttdvlp.memolang.view.adapter.RCVViewFlashcardAdapter
@@ -44,7 +44,7 @@ class ViewFlashCardListActivity : BaseActivity<ActivityViewFlashCardListBinding,
 
     private var hasAChangeInList = false
 
-    private lateinit var currentViewedFlashcardSet: FlashcardSet
+    private lateinit var currentViewedDeck: Deck
 
     override fun getLayoutId(): Int = R.layout.activity_view_flash_card_list
 
@@ -66,17 +66,18 @@ class ViewFlashCardListActivity : BaseActivity<ActivityViewFlashCardListBinding,
 
     override fun addViewControls() { dB.apply {
         try {
-            currentViewedFlashcardSet = getViewedFlashcardSet()
+            currentViewedDeck = getViewedFlashcardSet()
         } catch (ex : Exception) {
             ex.printStackTrace()
-            currentViewedFlashcardSet = FlashcardSet("", "", "")
+            currentViewedDeck = Deck("", "", "")
         }
 
         // Reverse here to make flashcard last in first out
-        viewFlashcardAdapter = RCVViewFlashcardAdapter(this@ViewFlashCardListActivity, currentViewedFlashcardSet.flashcards)
+        viewFlashcardAdapter =
+            RCVViewFlashcardAdapter(this@ViewFlashCardListActivity, currentViewedDeck.flashcards)
         rcvFlashcardList.adapter = viewFlashcardAdapter
         rcvFlashcardList.layoutManager = LinearLayoutManager(this@ViewFlashCardListActivity, RecyclerView.VERTICAL, false)
-        viewModel.setFlashcardSet(currentViewedFlashcardSet)
+        viewModel.setFlashcardSet(currentViewedDeck)
     }}
 
 
@@ -86,7 +87,7 @@ class ViewFlashCardListActivity : BaseActivity<ActivityViewFlashCardListBinding,
             RetrofitAddFlashcardActivity.requestEditFlashcard(
                 this@ViewFlashCardListActivity,
                 card,
-                currentViewedFlashcardSet
+                currentViewedDeck
             )
         }
 
@@ -136,8 +137,8 @@ class ViewFlashCardListActivity : BaseActivity<ActivityViewFlashCardListBinding,
         viewFlashcardAdapter.notifyItemChanged(updatedPosition)
     }
 
-    private fun getViewedFlashcardSet () : FlashcardSet {
-        return intent.getSerializableExtra(FLASHCARD_SET_KEY) as FlashcardSet
+    private fun getViewedFlashcardSet(): Deck {
+        return intent.getSerializableExtra(FLASHCARD_SET_KEY) as Deck
     }
 
 
@@ -155,8 +156,8 @@ class ViewFlashCardListActivity : BaseActivity<ActivityViewFlashCardListBinding,
 
     private fun returnUpdatedFlashcardSet() {
         val intent = Intent()
-        currentViewedFlashcardSet.flashcards = viewFlashcardAdapter.list
-        intent.putExtra(UPDATED_FLASHCARD_SET, currentViewedFlashcardSet)
+        currentViewedDeck.flashcards = viewFlashcardAdapter.list
+        intent.putExtra(UPDATED_FLASHCARD_SET, currentViewedDeck)
         setResult(Activity.RESULT_OK, intent)
     }
 

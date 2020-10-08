@@ -35,7 +35,8 @@ class AnimationModule {
     @Provides
     @Named("AppearThenDisappearAnimation")
     fun provideAppearAnim (context: MemoLang) : Animation {
-        return AnimationUtils.loadAnimation(context, R.anim.appear_then_disappear).apply {            interpolator = FastOutLinearInInterpolator()
+        return AnimationUtils.loadAnimation(context, R.anim.appear_then_disappear).apply {
+            interpolator = FastOutLinearInInterpolator()
         }
     }
 

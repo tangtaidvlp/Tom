@@ -1,8 +1,8 @@
 package com.teamttdvlp.memolang.viewmodel
 
 import android.graphics.Bitmap
+import com.teamttdvlp.memolang.data.model.entity.flashcard.Deck
 import com.teamttdvlp.memolang.data.model.entity.flashcard.Flashcard
-import com.teamttdvlp.memolang.data.model.entity.flashcard.FlashcardSet
 import com.teamttdvlp.memolang.data.model.entity.flashcard.SetNameUtils
 import com.teamttdvlp.memolang.model.AddFlashcardExecutor
 import com.teamttdvlp.memolang.model.IllustrationManager
@@ -12,6 +12,7 @@ import com.teamttdvlp.memolang.model.repository.UserUsingHistoryRepos
 import com.teamttdvlp.memolang.model.sharepref.BaseAppInfoSharedPreference
 import com.teamttdvlp.memolang.view.activity.iview.AddFlashcardView
 import com.teamttdvlp.memolang.view.base.BaseViewModel
+import com.teamttdvlp.memolang.view.helper.but
 import com.teamttdvlp.memolang.view.helper.log
 
 class AddFlashCardViewModel(
@@ -23,27 +24,45 @@ class AddFlashCardViewModel(
     private var illustrationManager: IllustrationManager
 ) : BaseViewModel<AddFlashcardView>() {
 
-    private lateinit var userFlashcardSetList: ArrayList<FlashcardSet>
+    private lateinit var userDeckList: ArrayList<Deck>
 
-    lateinit var currentFocusFlashcardSet: FlashcardSet
+    lateinit var currentFocusDeck: Deck
 
-    fun proceedAddFlashcard(newCard: Flashcard, illustrationPicture: Bitmap?) {
+    fun proceedAddFlashcard(
+        newCard: Flashcard,
+        front_IllustrationPicture: Bitmap? = null,
+        back_IllustrationPicture: Bitmap? = null
+    ) {
+
+        val cardProp = newCard.cardProperty
 
         if (newCard.setOwner == "") {
-            newCard.setOwner = currentFocusFlashcardSet.name
+            newCard.setOwner = currentFocusDeck.name
         }
 
-        if (newCard.text.isEmpty()) {
+        if (cardProp.frontSideHasText and newCard.text.isEmpty()) {
             view.showTextInputError()
             return
         }
 
-        if (newCard.translation.isEmpty()) {
+        if (cardProp.backSideHasText and newCard.translation.isEmpty()) {
             view.showTranslationInputError()
             return
         }
 
-        saveFlashcardAndUpdateUserInfo(newCard, illustrationPicture)
+        val frontSideHasImageOnly = cardProp.frontSideHasImage and cardProp.frontSideHasText.not()
+        if (frontSideHasImageOnly but (front_IllustrationPicture == null)) {
+            view.showFrontEmptyImageError()
+            return
+        }
+
+        val backSideHasImageOnly = cardProp.backSideHasImage and cardProp.backSideHasText.not()
+        if (backSideHasImageOnly but (back_IllustrationPicture == null)) {
+            view.showBackEmptyImageError()
+            return
+        }
+
+        saveFlashcardAndUpdateUserInfo(newCard, front_IllustrationPicture, back_IllustrationPicture)
     }
 
     fun loadIllustrationPicture(name: String, onGet: (Exception?, Bitmap?) -> Unit) {
@@ -54,8 +73,8 @@ class AddFlashCardViewModel(
         setName: String,
         frontLanguage: String,
         backLanguage: String
-    ): FlashcardSet? {
-        val newFlashcardSet = FlashcardSet(setName, frontLanguage, backLanguage)
+    ): Deck? {
+        val newFlashcardSet = Deck(setName, frontLanguage, backLanguage)
         val checkingInfo: Pair<Boolean, String?> = checkFlashcardSetIsValid(newFlashcardSet)
         val setIsValid = checkingInfo.first
         if (setIsValid) {
@@ -71,8 +90,8 @@ class AddFlashCardViewModel(
 
     }
 
-    private fun checkFlashcardSetIsValid (currentSet : FlashcardSet) : Pair<Boolean, String?> {
-        for (userFCSet in userFlashcardSetList) {
+    private fun checkFlashcardSetIsValid(currentSet: Deck): Pair<Boolean, String?> {
+        for (userFCSet in userDeckList) {
             val hasANameInList = currentSet.name.trim() == userFCSet.name.trim()
             if (hasANameInList) {
                 val errorMessage =
@@ -83,12 +102,28 @@ class AddFlashCardViewModel(
         return Pair(true, null)
     }
 
-    private fun saveFlashcardAndUpdateUserInfo(newCard: Flashcard, illustrationPicture: Bitmap?) {
-        if (illustrationPicture != null) {
+    private fun saveFlashcardAndUpdateUserInfo(
+        newCard: Flashcard,
+        front_IllustrationPicture: Bitmap?,
+        back_IllustrationPicture: Bitmap?
+    ) {
+        if (front_IllustrationPicture != null) {
             //1600000000000: Sun Sep 13 2020 12:26:40 in milisecond
-            newCard.illustrationPictureName = "C${System.currentTimeMillis() - 1600000000000}"
-            illustrationManager.saveFile(illustrationPicture, newCard.illustrationPictureName)
+            newCard.frontIllustrationPictureName = "FR${System.currentTimeMillis() - 1600000000000}"
+            illustrationManager.saveFile(
+                front_IllustrationPicture,
+                newCard.frontIllustrationPictureName
+            )
         }
+
+        if (back_IllustrationPicture != null) {
+            newCard.backIllustrationPictureName = "BA${System.currentTimeMillis() - 1600000000000}"
+            illustrationManager.saveFile(
+                back_IllustrationPicture,
+                newCard.backIllustrationPictureName
+            )
+        }
+
         addFlashcardExecutor.addFlashcardAndUpdateFlashcardSet(newCard) { isSuccess, insertedCardId, exception ->
             if (isSuccess) {
                 view.onAddFlashcardSuccess()
@@ -99,8 +134,6 @@ class AddFlashCardViewModel(
                 exception!!.printStackTrace()
             }
         }
-
-
     }
 
     private fun updateUserInfo(newCard : Flashcard) {
@@ -158,7 +191,7 @@ class AddFlashCardViewModel(
     }
 
 
-    fun getAllFlashcardSetWithNoCardList (onGet : (ArrayList<FlashcardSet>) -> Unit) {
+    fun getAllFlashcardSetWithNoCardList(onGet: (ArrayList<Deck>) -> Unit) {
         flashcardSetRepos.getAll_CardSet_WithNOCardList {
             if (it != null) {
                 onGet.invoke(it)
@@ -167,13 +200,13 @@ class AddFlashCardViewModel(
         }
     }
 
-    fun getFlashcardSetByName (setName : String, onGetListener : (FlashcardSet?, Exception?) -> Unit) {
+    fun getFlashcardSetByName(setName: String, onGetListener: (Deck?, Exception?) -> Unit) {
         flashcardSetRepos.getFlashcardSetByName(setName, onGetListener)
     }
 
-    private fun cachedFlashcardSetList (flashcardSetList : ArrayList<FlashcardSet>) {
-        if (this::userFlashcardSetList.isInitialized.not()) {
-            this.userFlashcardSetList = flashcardSetList
+    private fun cachedFlashcardSetList(deckList: ArrayList<Deck>) {
+        if (this::userDeckList.isInitialized.not()) {
+            this.userDeckList = deckList
         }
     }
 
@@ -183,11 +216,11 @@ class AddFlashCardViewModel(
         userRepos.updateUser(getUser())
     }
 
-    fun getDefaultFlashcardSet(): FlashcardSet {
+    fun getDefaultFlashcardSet(): Deck {
         val frontLanguage = getCurrentFrontLanguage()
         val backLanguage = getCurrentBackLanguage()
 
-        return FlashcardSet(
+        return Deck(
             SetNameUtils.getSetNameFromLangPair(frontLanguage, backLanguage),
             frontLanguage,
             backLanguage

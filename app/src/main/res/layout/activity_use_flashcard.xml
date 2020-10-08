@@ -480,7 +480,7 @@
                 app:layout_constraintTop_toTopOf="parent">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
-                    android:id="@+id/scrv_viewgroup_back_translation"
+                    android:id="@+id/vwgrp_back_texts"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 

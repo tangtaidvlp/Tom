@@ -4,7 +4,6 @@
     <color name="dark_blue_text">#4B4D63</color>
     <color name="quite_black_text">#3B3B3B</color>
     <color name="dark_orange_text">#E84E16</color>
-    <color name="example_text_blue">#0056E9</color>
     <color name="app_red">#F65546</color>
     <color name="dark_red">#CD3030</color>
     <color name="dark_green">#0CB500</color>
@@ -16,7 +15,6 @@
     <color name="text_error_color">#CD0C00</color>
     <color name="border_color">#AEAFB9</color>
     <color name="black">#000000</color>
-    <color name="dark_covered_blue">#09145B</color>
     <color name="orange_highlight_text">#F44F11</color>
     <color name="use_flashcard_done_green">#19DC60</color>
     <color name="use_flashcard_done_red">#FB5654</color>
@@ -32,18 +30,13 @@
     <color name="app_yellow_theme">#F7980D</color>
     <color name="app_violet_theme">#92009C</color>
     <color name="app_dark_violet_theme">#510057</color>
-    <color name="app_light_violet_theme">#C7009B</color>
-    <color name="app_pink_theme">#E95285</color>
     <color name="app_theme_dark_red">#E54949</color>
-    <color name="app_theme_quite_light_red">#FF5353</color>
     <color name="app_theme_dark_green">#2AAB6A</color>
-    <color name="app_theme_quite_light_green">#0AC467</color>
     <color name="app_theme_hard_yellow">#F7980D</color>
-    <color name="app_theme_quite_light_yellow">#F5A839</color>
     <color name="app_theme_pink">#E95285</color>
     <color name="search_bar_hint">#686868</color>
     <color name="light_grey">#7F7F7F</color>
-    <color name="unchecked_blue">#E0ECEE</color>
+    <color name="app_brown">#6E3300</color>
 
 
 </resources>

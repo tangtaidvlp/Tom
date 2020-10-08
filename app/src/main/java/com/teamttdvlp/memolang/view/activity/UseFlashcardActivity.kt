@@ -13,7 +13,7 @@ import android.text.method.ScrollingMovementMethod
 import android.view.View
 import androidx.core.animation.addListener
 import com.teamttdvlp.memolang.R
-import com.teamttdvlp.memolang.data.model.entity.flashcard.FlashcardSet
+import com.teamttdvlp.memolang.data.model.entity.flashcard.Deck
 import com.teamttdvlp.memolang.databinding.ActivityUseFlashcardBinding
 import com.teamttdvlp.memolang.model.UseFCActivity_StatusManager.SpeakerStatus.Companion.SPEAK_TEXT_AND_TRANSLATION
 import com.teamttdvlp.memolang.model.UseFCActivity_StatusManager.SpeakerStatus.Companion.SPEAK_TEXT_ONLY
@@ -96,11 +96,11 @@ class UseFlashcardActivity : BaseActivity<ActivityUseFlashcardBinding, UseFlashc
     companion object {
         fun requestReviewFlashcard(
             requestContext: Context,
-            flashcardSet: FlashcardSet,
+            deck: Deck,
             reverseCardTextAndTranslation: Boolean
         ) {
             val intent = Intent(requestContext, UseFlashcardActivity::class.java)
-            intent.putExtra(FLASHCARD_SET_KEY, flashcardSet)
+            intent.putExtra(FLASHCARD_SET_KEY, deck)
             intent.putExtra(REVERSE_CARD_TEXT_AND_TRANSLATION, reverseCardTextAndTranslation)
             requestContext.startActivity(intent)
         }
@@ -389,8 +389,8 @@ class UseFlashcardActivity : BaseActivity<ActivityUseFlashcardBinding, UseFlashc
         )
     }
 
-    private fun getRequestedFlashcardSet () : FlashcardSet {
-        return intent.extras!!.getSerializable(FLASHCARD_SET_KEY) as FlashcardSet
+    private fun getRequestedFlashcardSet(): Deck {
+        return intent.extras!!.getSerializable(FLASHCARD_SET_KEY) as Deck
     }
 
     private fun getIsReverseTextAndTranslation(): Boolean {
@@ -398,7 +398,7 @@ class UseFlashcardActivity : BaseActivity<ActivityUseFlashcardBinding, UseFlashc
     }
 
 
-    private fun setUpSpeakerStatus () {
+    private fun setUpSpeakerStatus() {
         speakerIsOn = viewModel.getSpeakerStatus()
         dB.switchSpeaker.isChecked = speakerIsOn
         when (viewModel.getSpeakerFunction()) {

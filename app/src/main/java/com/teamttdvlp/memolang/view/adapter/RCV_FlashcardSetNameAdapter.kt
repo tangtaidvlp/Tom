@@ -4,23 +4,23 @@ import android.content.Context
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.teamttdvlp.memolang.data.model.entity.flashcard.FlashcardSet
+import com.teamttdvlp.memolang.data.model.entity.flashcard.Deck
 import com.teamttdvlp.memolang.databinding.ItemFlashcardSetNameBinding
 import com.teamttdvlp.memolang.view.helper.goGONE
 
 class RCV_FlashcardSetNameAdapter (private var context : Context): RecyclerView.Adapter<RCV_FlashcardSetNameAdapter.DataViewHolder>() {
 
-    var list : ArrayList<FlashcardSet> = ArrayList()
+    var list: ArrayList<Deck> = ArrayList()
 
-    private var onItemClickListener : ((FlashcardSet) -> Unit)? = null
+    private var onItemClickListener: ((Deck) -> Unit)? = null
 
     class DataViewHolder (var dB : ItemFlashcardSetNameBinding): RecyclerView.ViewHolder(dB.root) {
-        fun bind (set : FlashcardSet) {
+        fun bind(set: Deck) {
             dB.txtText.text = set.name
         }
     }
 
-    fun setData (data : ArrayList<FlashcardSet>) {
+    fun setData(data: ArrayList<Deck>) {
         this.list.clear()
         this.list.addAll(data)
         notifyDataSetChanged()
@@ -45,7 +45,7 @@ class RCV_FlashcardSetNameAdapter (private var context : Context): RecyclerView.
         }
     }
 
-    fun setOnItemClickListener (onClick : (FlashcardSet) -> Unit) {
+    fun setOnItemClickListener(onClick: (Deck) -> Unit) {
         this.onItemClickListener = onClick
     }
 

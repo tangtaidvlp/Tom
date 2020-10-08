@@ -1,17 +1,19 @@
 package com.teamttdvlp.memolang.view.activity.iview
 
-import com.teamttdvlp.memolang.data.model.entity.flashcard.FlashcardSet
-
 interface AddFlashcardView : View {
 
-    fun showTextInputError ()
+    fun showTextInputError()
 
-    fun showTranslationInputError ()
+    fun showTranslationInputError()
 
-    fun onAddFlashcardSuccess ()
+    fun onAddFlashcardSuccess()
 
-    fun showInvalidFlashcardSetError (errorMessage : String)
+    fun showInvalidFlashcardSetError(errorMessage: String)
 
     fun hideCreateNewFlashcardSetPanel()
+
+    fun showFrontEmptyImageError()
+
+    fun showBackEmptyImageError()
 
 }

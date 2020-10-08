@@ -4,7 +4,7 @@ import android.content.Context
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.teamttdvlp.memolang.data.model.entity.flashcard.FlashcardSet
+import com.teamttdvlp.memolang.data.model.entity.flashcard.Deck
 import com.teamttdvlp.memolang.data.model.entity.flashcard.SetNameUtils
 import com.teamttdvlp.memolang.databinding.ItemSimpleFlashcardSetBinding
 import com.teamttdvlp.memolang.view.helper.goGONE
@@ -13,8 +13,8 @@ import com.teamttdvlp.memolang.view.helper.goGONE
 class RCV_SimpleChooseFlashcardSetAdapter(var context: Context) :
     RecyclerView.Adapter<RCV_SimpleChooseFlashcardSetAdapter.DataViewHolder>() {
 
-    private var onItemClickListener: ((FlashcardSet) -> Unit)? = null
-    var flashcardSetList = ArrayList<FlashcardSet>()
+    private var onItemClickListener: ((Deck) -> Unit)? = null
+    var flashcardSetList = ArrayList<Deck>()
 
     class DataViewHolder(var dB: ItemSimpleFlashcardSetBinding) : RecyclerView.ViewHolder(dB.root)
 
@@ -42,18 +42,18 @@ class RCV_SimpleChooseFlashcardSetAdapter(var context: Context) :
         }
     }
 
-    fun setOnItemClickListener(onItemClick: (FlashcardSet) -> Unit) {
+    fun setOnItemClickListener(onItemClick: (Deck) -> Unit) {
         this.onItemClickListener = onItemClick
     }
 
-    fun setData(data: ArrayList<FlashcardSet>) {
+    fun setData(data: ArrayList<Deck>) {
         flashcardSetList.clear()
         flashcardSetList.addAll(data)
         notifyDataSetChanged()
     }
 
-    fun addFlashcardSetAtTop(flashcardSet: FlashcardSet) {
-        flashcardSetList.add(0, flashcardSet)
+    fun addFlashcardSetAtTop(deck: Deck) {
+        flashcardSetList.add(0, deck)
         notifyItemInserted(0)
     }
 }

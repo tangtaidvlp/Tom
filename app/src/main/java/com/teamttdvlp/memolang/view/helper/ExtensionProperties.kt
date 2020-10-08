@@ -77,8 +77,6 @@ fun View.isInvisible() : Boolean{
     return visibility == View.INVISIBLE
 }
 
-fun Any.but (expression: Boolean, statement : () -> Unit) {
-    if (expression) {
-        statement
-    }
+infix fun Boolean.but(expression: Boolean): Boolean {
+    return this && expression
 }

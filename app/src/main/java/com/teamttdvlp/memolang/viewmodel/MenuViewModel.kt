@@ -1,7 +1,7 @@
 package com.teamttdvlp.memolang.viewmodel
 
+import com.teamttdvlp.memolang.data.model.entity.flashcard.Deck
 import com.teamttdvlp.memolang.data.model.entity.flashcard.Flashcard
-import com.teamttdvlp.memolang.data.model.entity.flashcard.FlashcardSet
 import com.teamttdvlp.memolang.model.repository.FlashcardRepos
 import com.teamttdvlp.memolang.model.repository.FlashcardSetRepos
 import com.teamttdvlp.memolang.model.repository.UserUsingHistoryRepos
@@ -21,25 +21,25 @@ class MenuActivityViewModel(
     private var dictionaryActivity_SharedPref: EngVietDictionaryActivitySharePref
 ) : BaseViewModel<MenuView>() {
 
-    private var userFlashcardSetList: ArrayList<FlashcardSet> = ArrayList()
+    private var userDeckList: ArrayList<Deck> = ArrayList()
 
-    fun getAllFlashcardSets_And_CacheIt(onGetSuccess: (ArrayList<FlashcardSet>?) -> Unit) {
+    fun getAllFlashcardSets_And_CacheIt(onGetSuccess: (ArrayList<Deck>?) -> Unit) {
         flashcardSetRepos.getAllFlashcardWithCardList {
             onGetSuccess.invoke(it)
             if (it != null) {
-                userFlashcardSetList = it
+                userDeckList = it
             }
         }
     }
 
-    fun updateSetName(OLDName_FlashcardSet: FlashcardSet, newSetName: String) {
-        val NEWName_flashcardSet = FlashcardSet(
+    fun updateSetName(OLDName_Deck: Deck, newSetName: String) {
+        val NEWName_flashcardSet = Deck(
             newSetName,
-            OLDName_FlashcardSet.frontLanguage,
-            OLDName_FlashcardSet.backLanguage
+            OLDName_Deck.frontLanguage,
+            OLDName_Deck.backLanguage
         )
         val newFlashcardSet = ArrayList<Flashcard>()
-        for (flashcard in OLDName_FlashcardSet.flashcards) {
+        for (flashcard in OLDName_Deck.flashcards) {
             val newFlashcard = flashcard.copy()
             newFlashcard.setOwner = newSetName
             newFlashcardSet.add(newFlashcard)
@@ -79,14 +79,14 @@ class MenuActivityViewModel(
 
     }
 
-    fun deleteFlashcardSet(flashcardSet: FlashcardSet) {
+    fun deleteFlashcardSet(deck: Deck) {
         try {
-            flashcardSetRepos.deleteFlashcardSet(flashcardSet)
-            flashcardRepos.deleteCards(flashcardSet.flashcards)
-            userFlashcardSetList.remove(flashcardSet)
-            if (flashcardSet.name == addFlashcard_SharedPref.lastUsedFlashcardSetName) {
-                if (userFlashcardSetList.size != 0)
-                    set_OtherActivitiesSharePref_Info(userFlashcardSetList.first().name)
+            flashcardSetRepos.deleteFlashcardSet(deck)
+            flashcardRepos.deleteCards(deck.flashcards)
+            userDeckList.remove(deck)
+            if (deck.name == addFlashcard_SharedPref.lastUsedFlashcardSetName) {
+                if (userDeckList.size != 0)
+                    set_OtherActivitiesSharePref_Info(userDeckList.first().name)
                 else
                     set_OtherActivitiesSharePref_Info("")
             }
@@ -113,8 +113,8 @@ class MenuActivityViewModel(
     fun createNewFlashcardSetIfValid(
         setName: String,
         frontLanguage: String, backLanguage: String
-    ): FlashcardSet {
-        val newFlashcardSet = FlashcardSet(setName, frontLanguage, backLanguage)
+    ): Deck {
+        val newFlashcardSet = Deck(setName, frontLanguage, backLanguage)
         val checkingInfo: Pair<Boolean, String?> = checkFlashcardSetIsValid(newFlashcardSet)
         val setIsValid = checkingInfo.first
         if (setIsValid) {
@@ -128,8 +128,8 @@ class MenuActivityViewModel(
         return newFlashcardSet
     }
 
-    private fun checkFlashcardSetIsValid(currentSet: FlashcardSet): Pair<Boolean, String?> {
-        for (userFCSet in userFlashcardSetList) {
+    private fun checkFlashcardSetIsValid(currentSet: Deck): Pair<Boolean, String?> {
+        for (userFCSet in userDeckList) {
             val hasANameInList = currentSet.name.trim() == userFCSet.name.trim()
             if (hasANameInList) {
                 val errorMessage =

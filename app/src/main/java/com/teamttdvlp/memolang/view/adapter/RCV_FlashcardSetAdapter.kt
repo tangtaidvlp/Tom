@@ -8,17 +8,17 @@ import android.widget.PopupWindow
 import androidx.databinding.ViewDataBinding
 import androidx.recyclerview.widget.RecyclerView
 import com.facebook.FacebookSdk.getApplicationContext
-import com.teamttdvlp.memolang.data.model.entity.flashcard.FlashcardSet
+import com.teamttdvlp.memolang.data.model.entity.flashcard.Deck
 import com.teamttdvlp.memolang.databinding.ItemFlashcardSetBinding
 import com.teamttdvlp.memolang.databinding.ItemFlashcardSetViewHolderBinding
 import com.teamttdvlp.memolang.databinding.PopupFlashcardSetOtherEditOptionsBinding
 
 class RCV_FlashcardSetAdapter(
     var context: Context,
-    var list: ArrayList<FlashcardSet> = ArrayList()
+    var list: ArrayList<Deck> = ArrayList()
 ) : RecyclerView.Adapter<RCV_FlashcardSetAdapter.ViewHolder>() {
 
-    private var originalList = ArrayList<FlashcardSet>()
+    private var originalList = ArrayList<Deck>()
 
     private var onBtnViewListListener: OnItemClickListener? = null
 
@@ -125,73 +125,73 @@ class RCV_FlashcardSetAdapter(
     }
 
 
-    fun setOnBtn_Edit_FlashcardSetClickListener(onBtnEditFlashcardListener: (item: FlashcardSet) -> Unit) {
+    fun setOnBtn_Edit_FlashcardSetClickListener(onBtnEditFlashcardListener: (item: Deck) -> Unit) {
         this.onBtn_Edit_FlashcardSetClickListener = object : OnItemClickListener {
-            override fun onClick(item: FlashcardSet) {
+            override fun onClick(item: Deck) {
                 onBtnEditFlashcardListener(item)
             }
         }
     }
 
-    fun setOnBtn_Delete_FlashcardSetClickListener(onBtnDeleteFlashcardListener: (item: FlashcardSet) -> Unit) {
+    fun setOnBtn_Delete_FlashcardSetClickListener(onBtnDeleteFlashcardListener: (item: Deck) -> Unit) {
         this.onBtn_Delete_FlashcardSetClickListener = object : OnItemClickListener {
-            override fun onClick(item: FlashcardSet) {
+            override fun onClick(item: Deck) {
                 onBtnDeleteFlashcardListener(item)
             }
         }
     }
 
-    fun setOnBtnViewListClickListener(onBtnViewListListener: (item: FlashcardSet) -> Unit) {
+    fun setOnBtnViewListClickListener(onBtnViewListListener: (item: Deck) -> Unit) {
         this.onBtnViewListListener = object : OnItemClickListener {
-            override fun onClick(item: FlashcardSet) {
+            override fun onClick(item: Deck) {
                 onBtnViewListListener(item)
             }
         }
     }
 
-    fun setOnBtnAddClickListener(onBtnAddListener: (item: FlashcardSet) -> Unit) {
+    fun setOnBtnAddClickListener(onBtnAddListener: (item: Deck) -> Unit) {
         this.onBtnAddListener = object : OnItemClickListener {
-            override fun onClick(item: FlashcardSet) {
+            override fun onClick(item: Deck) {
                 onBtnAddListener(item)
             }
         }
     }
 
-    fun setOnItemClickListener (onClick : (FlashcardSet) -> Unit) {
+    fun setOnItemClickListener(onClick: (Deck) -> Unit) {
         this.onItemClickListener = object : OnItemClickListener {
-            override fun onClick(item: FlashcardSet) {
+            override fun onClick(item: Deck) {
                 onClick(item)
             }
         }
     }
 
-    fun setOnBtnUseFlashcardClickListener (onClick: (FlashcardSet) -> Unit) {
+    fun setOnBtnUseFlashcardClickListener(onClick: (Deck) -> Unit) {
         onBtnUseFlashcardClickListener = object : OnItemClickListener {
-            override fun onClick(item: FlashcardSet) {
+            override fun onClick(item: Deck) {
                 onClick.invoke(item)
             }
         }
     }
 
 
-    fun setOnBtn_GoToPuzzleActivity_ClickListener(onClick: (FlashcardSet) -> Unit) {
+    fun setOnBtn_GoToPuzzleActivity_ClickListener(onClick: (Deck) -> Unit) {
         onBtnReviewFlashcardEasyClickListener = object : OnItemClickListener {
-            override fun onClick(item: FlashcardSet) {
+            override fun onClick(item: Deck) {
                 onClick.invoke(item)
             }
         }
     }
 
 
-    fun setOnBtn_GoToWritingActivity_ClickListener(onClick: (FlashcardSet) -> Unit) {
+    fun setOnBtn_GoToWritingActivity_ClickListener(onClick: (Deck) -> Unit) {
         onBtnReviewFlashcardHardClickListener = object : OnItemClickListener {
-            override fun onClick(item: FlashcardSet) {
+            override fun onClick(item: Deck) {
                 onClick.invoke(item)
             }
         }
     }
 
-    fun setData (data : ArrayList<FlashcardSet>) {
+    fun setData(data: ArrayList<Deck>) {
         list.clear()
         list.addAll(data)
         originalList.clear()
@@ -206,23 +206,23 @@ class RCV_FlashcardSetAdapter(
         return list.size
     }
 
-    fun deleteFlashcardSet(flashcardSet: FlashcardSet) {
-        val deletedPos = list.indexOf(flashcardSet)
-        this.list.remove(flashcardSet)
-        this.originalList.remove(flashcardSet)
+    fun deleteFlashcardSet(deck: Deck) {
+        val deletedPos = list.indexOf(deck)
+        this.list.remove(deck)
+        this.originalList.remove(deck)
         notifyItemRemoved(deletedPos)
     }
 
     // TODO (Process user press 2 times and then add the same 2 flashcard sets)
-    fun updateFlashcardSetName(flashcardSet: FlashcardSet, newName: String) {
-        val updatedPos = list.indexOf(flashcardSet)
-        flashcardSet.name = newName
-        this.list[updatedPos] = flashcardSet
-        this.originalList[updatedPos] = flashcardSet
+    fun updateFlashcardSetName(deck: Deck, newName: String) {
+        val updatedPos = list.indexOf(deck)
+        deck.name = newName
+        this.list[updatedPos] = deck
+        this.originalList[updatedPos] = deck
         notifyItemChanged(updatedPos)
     }
 
-    fun addNewSet(newSet: FlashcardSet) {
+    fun addNewSet(newSet: Deck) {
         this.list.add(0, newSet)
         this.originalList.add(0, newSet)
         notifyDataSetChanged()
@@ -245,7 +245,7 @@ class RCV_FlashcardSetAdapter(
     }
 
     interface OnItemClickListener {
-        fun onClick(item: FlashcardSet)
+        fun onClick(item: Deck)
     }
 
     class ViewHolder(var dB: ViewDataBinding) : RecyclerView.ViewHolder(dB.root)

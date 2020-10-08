@@ -5,7 +5,7 @@ import androidx.room.Delete
 import androidx.room.Insert
 import androidx.room.OnConflictStrategy.REPLACE
 import androidx.room.Query
-import com.teamttdvlp.memolang.data.model.entity.flashcard.FlashcardSet
+import com.teamttdvlp.memolang.data.model.entity.flashcard.Deck
 import com.teamttdvlp.memolang.data.model.entity.flashcard.FlashcardSetWithCardList
 
 @Dao
@@ -15,15 +15,15 @@ interface FlashcardSetDAO {
     fun getAllFlashcardSetWithCardList () : List<FlashcardSetWithCardList>
 
     @Query("SELECT * FROM flashcard_set")
-    fun getAllFlashcardSetWithNOCardList () : List<FlashcardSet>
+    fun getAllFlashcardSetWithNOCardList(): List<Deck>
 
     @Query("SELECT * FROM flashcard_set WHERE setName == :setName")
     fun getFlashcardSetByName (setName : String) : FlashcardSetWithCardList?
 
     @Delete
-    fun deleteFlashcardSet (flashcardSet : FlashcardSet)
+    fun deleteFlashcardSet(deck: Deck)
 
     @Insert(onConflict = REPLACE)
-    fun insertFlashcardSet (flashcardSet: FlashcardSet)
+    fun insertFlashcardSet(deck: Deck)
 
 }

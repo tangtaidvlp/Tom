@@ -10,6 +10,7 @@ import androidx.core.animation.addListener
 import androidx.core.view.isGone
 import androidx.core.view.isVisible
 import com.teamttdvlp.memolang.R
+import com.teamttdvlp.memolang.data.model.entity.flashcard.CardProperty
 import com.teamttdvlp.memolang.data.model.entity.flashcard.Flashcard
 import com.teamttdvlp.memolang.databinding.ActivityEditFlashcardBinding
 import com.teamttdvlp.memolang.view.activity.iview.EditFlashcardView
@@ -203,11 +204,14 @@ class EditFlashcardActivity : BaseActivity<ActivityEditFlashcardBinding, EditFla
                     val pronunciation = edtPronunciation.text.toString()
                     val sourceLang = txtFrontLang.text.toString()
                     val targetLang = txtBackLang.text.toString()
-                    newFlashcard = Flashcard(frontLanguage = sourceLang, backLanguage = targetLang,
-                                                                    text = text, translation = translation,
-                                                                    type = type, setOwner = setName,
-                                                                    example = example, meanOfExample = exampleMean,
-                                                                    pronunciation = pronunciation)
+                    newFlashcard = Flashcard(
+                        frontLanguage = sourceLang, backLanguage = targetLang,
+                        text = text, translation = translation,
+                        type = type, setOwner = setName,
+                        example = example, meanOfExample = exampleMean,
+                        pronunciation = pronunciation,
+                        cardProperty = CardProperty()
+                    )
                 }
                 if (viewModel.doesUserChangeInfo(newFlashcard)) {
                     animatorSetCancelSavingAppear.start()

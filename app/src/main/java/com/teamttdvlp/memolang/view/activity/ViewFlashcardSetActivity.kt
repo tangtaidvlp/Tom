@@ -6,7 +6,7 @@ import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.teamttdvlp.memolang.R
-import com.teamttdvlp.memolang.data.model.entity.flashcard.FlashcardSet
+import com.teamttdvlp.memolang.data.model.entity.flashcard.Deck
 import com.teamttdvlp.memolang.databinding.ActivityViewFlashcardSetBinding
 import com.teamttdvlp.memolang.view.activity.iview.ViewFlashcardSetView
 import com.teamttdvlp.memolang.view.adapter.RCV_FlashcardSetAdapter
@@ -123,7 +123,7 @@ class ViewFlashcardSetActivity : BaseActivity<ActivityViewFlashcardSetBinding, V
 
         if ((requestCode == VIEW_LIST_REQUEST_CODE) and (resultCode == Activity.RESULT_OK)) {
             val dataBundle = data!!.extras!!
-            val updatedFlashcardSet = dataBundle.getSerializable(UPDATED_FLASHCARD_SET) as FlashcardSet
+            val updatedFlashcardSet = dataBundle.getSerializable(UPDATED_FLASHCARD_SET) as Deck
             val listIsAllCleared = (updatedFlashcardSet.flashcards.size == 0)
             if (listIsAllCleared) {
                 for ((pos, set) in flashcardSetAdapter.list.withIndex()) {

@@ -6,7 +6,7 @@ import android.content.Intent
 import android.view.animation.Animation
 import android.widget.TextView
 import com.teamttdvlp.memolang.R
-import com.teamttdvlp.memolang.data.model.entity.flashcard.FlashcardSet
+import com.teamttdvlp.memolang.data.model.entity.flashcard.Deck
 import com.teamttdvlp.memolang.databinding.ActivityAddFlashcardBinding
 import com.teamttdvlp.memolang.view.activity.iview.AddFlashcardView
 import com.teamttdvlp.memolang.view.adapter.RCVChooseLanguageAdapter
@@ -26,9 +26,9 @@ class AddFlashcardActivity : BaseActivity<ActivityAddFlashcardBinding, AddFlashC
 
         private val SET_NAME = "set_name"
 
-        fun requestAddLanguage(packageContext: Context, flashcardSet: FlashcardSet) {
+        fun requestAddLanguage(packageContext: Context, deck: Deck) {
             val intent = Intent(packageContext, AddFlashcardActivity::class.java)
-            intent.putExtra(SET_NAME, flashcardSet)
+            intent.putExtra(SET_NAME, deck)
             packageContext.startActivity(intent)
         }
     }
@@ -85,6 +85,14 @@ class AddFlashcardActivity : BaseActivity<ActivityAddFlashcardBinding, AddFlashC
     }
 
     override fun hideCreateNewFlashcardSetPanel() {
+        TODO("Not yet implemented")
+    }
+
+    override fun showFrontEmptyImageError() {
+        TODO("Not yet implemented")
+    }
+
+    override fun showBackEmptyImageError() {
         TODO("Not yet implemented")
     }
 //

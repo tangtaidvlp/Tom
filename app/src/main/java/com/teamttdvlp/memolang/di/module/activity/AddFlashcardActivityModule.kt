@@ -15,7 +15,7 @@ import javax.inject.Named
 class AddFlashcardActivityModule {
 
   @Provides
-  @Named("HighlightTextAnim")
+  @Named("  HighlightTextAnim")
   fun provideHighlightTextAnim(activity: AddFlashcardActivity): Animation {
     return AnimationUtils.loadAnimation(activity, R.anim.hightlight_text)
   }

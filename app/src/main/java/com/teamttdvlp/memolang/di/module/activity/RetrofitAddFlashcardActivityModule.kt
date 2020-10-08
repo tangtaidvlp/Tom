@@ -15,31 +15,31 @@ import javax.inject.Named
 @Module
 class RetrofitAddFlashcardActivityModule {
 
-  val animDuration = 200L
+    val animDuration = 200L
 
-  val animInterpolator = DecelerateInterpolator()
+    val animInterpolator = DecelerateInterpolator()
 
-  @Provides
-  @Named("FlipClose")
-  fun provideFlipCloseAnimator (activity: RetrofitAddFlashcardActivity) : Animation {
-      return AnimationUtils.loadAnimation(activity, R.anim.from_1_to_0_y)
-  }
+    @Provides
+    @Named("FlipClose")
+    fun provideFlipCloseAnimator(activity: RetrofitAddFlashcardActivity): Animation {
+        return AnimationUtils.loadAnimation(activity, R.anim.from_1_to_0_y)
+    }
 
-  @Provides
-  @Named("FlipOpen")
-  fun provideFlipOpenAnimator (activity: RetrofitAddFlashcardActivity) : Animation {
-      return AnimationUtils.loadAnimation(activity, R.anim.from_0_to_1_y)
-  }
+    @Provides
+    @Named("FlipOpen")
+    fun provideFlipOpenAnimator(activity: RetrofitAddFlashcardActivity): Animation {
+        return AnimationUtils.loadAnimation(activity, R.anim.from_0_to_1_y)
+    }
 
-  @Provides
-  @Named("HighlightTextAnim")
-  fun provideHighlightTextAnim(activity: RetrofitAddFlashcardActivity): Animation {
-      return AnimationUtils.loadAnimation(activity, R.anim.hightlight_text)
-  }
+    @Provides
+    @Named("HighlightTextAnim")
+    fun provideHighlightTextAnim(activity: RetrofitAddFlashcardActivity): Animation {
+        return AnimationUtils.loadAnimation(activity, R.anim.hightlight_text)
+    }
 
-  @Provides
-  fun provideChooseLanguageAdapter (activity : RetrofitAddFlashcardActivity) : RCVChooseLanguageAdapter{
-      return RCVChooseLanguageAdapter(activity)
+    @Provides
+    fun provideChooseLanguageAdapter(activity: RetrofitAddFlashcardActivity): RCVChooseLanguageAdapter {
+        return RCVChooseLanguageAdapter(activity)
   }
 
   @Provides

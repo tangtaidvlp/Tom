@@ -9,8 +9,8 @@ import androidx.interpolator.view.animation.FastOutSlowInInterpolator
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.teamttdvlp.memolang.R
+import com.teamttdvlp.memolang.data.model.entity.flashcard.Deck
 import com.teamttdvlp.memolang.data.model.entity.flashcard.Flashcard
-import com.teamttdvlp.memolang.data.model.entity.flashcard.FlashcardSet
 import com.teamttdvlp.memolang.databinding.ActivityUseFlashcardDoneBinding
 import com.teamttdvlp.memolang.view.activity.iview.UseFlashcardDoneView
 import com.teamttdvlp.memolang.view.adapter.RCVRecent_Search_FlashcardAdapter
@@ -53,13 +53,13 @@ class ResultReportActivity :
     companion object {
         fun requestFinishUsingFlashcard(
             requestContext: Context,
-            flashcardSet: FlashcardSet,
+            deck: Deck,
             forgottenCardList: ArrayList<Flashcard>,
             senderCode: Int
         ) {
             val intent = Intent(requestContext, ResultReportActivity::class.java)
             intent.putExtra(FORGOTTEN_FLASHCARDS_LIST, forgottenCardList)
-            intent.putExtra(FULL_FLASHCARD_SET, flashcardSet)
+            intent.putExtra(FULL_FLASHCARD_SET, deck)
             intent.putExtra(SENDER_CODE, senderCode)
             requestContext.startActivity(intent)
         }
@@ -267,18 +267,18 @@ class ResultReportActivity :
 
     private fun handleRestart() {
 
-        var flashcardSet: FlashcardSet
+        var deck: Deck
         if (viewModel.getMissedCardsListSize() > 0) {
-            flashcardSet = viewModel.getFlashcardSetWithMissedCardList()
+            deck = viewModel.getFlashcardSetWithMissedCardList()
         } else {
-            flashcardSet = viewModel.getFlashcardSet()
+            deck = viewModel.getFlashcardSet()
         }
 
         when (activitySender) {
             FlashcardSendableActivity.USE_FLASHCARD_ACTIVITY -> {
                 UseFlashcardActivity.requestReviewFlashcard(
                     this@ResultReportActivity,
-                    flashcardSet,
+                    deck,
                     reverseCardTextAndTranslation = false
                 )
             }
@@ -286,7 +286,7 @@ class ResultReportActivity :
             FlashcardSendableActivity.REVIEW_FLASHCARD_ACTIVITY -> {
                 ReviewFlashcardActivity.requestReviewFlashcard(
                     this@ResultReportActivity,
-                    flashcardSet,
+                    deck,
                     reverseCardTextAndTranslation = false
                 )
             }
@@ -294,7 +294,7 @@ class ResultReportActivity :
             FlashcardSendableActivity.REVIEW_FLASHCARD_EASY_ACTIVITY -> {
                 ReviewFlashcardEasyActivity.requestReviewFlashcard(
                     this@ResultReportActivity,
-                    flashcardSet,
+                    deck,
                     reverseCardTextAndTranslation = false
                 )
             }
@@ -338,7 +338,7 @@ class ResultReportActivity :
         return FlashcardSendableActivity.getTypeByCode(intent.extras!!.getInt(SENDER_CODE))
     }
 
-    private fun getFullFlashcardSet(): FlashcardSet {
-        return intent.extras!!.getSerializable(FULL_FLASHCARD_SET) as FlashcardSet
+    private fun getFullFlashcardSet(): Deck {
+        return intent.extras!!.getSerializable(FULL_FLASHCARD_SET) as Deck
     }
 }

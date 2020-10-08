@@ -3,8 +3,8 @@ package com.teamttdvlp.memolang.viewmodel
 import android.app.Application
 import androidx.lifecycle.MutableLiveData
 import com.example.dictionary.model.Vocabulary
+import com.teamttdvlp.memolang.data.model.entity.flashcard.Deck
 import com.teamttdvlp.memolang.data.model.entity.flashcard.Flashcard
-import com.teamttdvlp.memolang.data.model.entity.flashcard.FlashcardSet
 import com.teamttdvlp.memolang.data.model.entity.flashcard.SetNameUtils
 import com.teamttdvlp.memolang.data.model.entity.language.Language
 import com.teamttdvlp.memolang.data.model.entity.user.User
@@ -33,7 +33,7 @@ constructor(
 ) : BaseViewModel<FloatAddServiceView>() {
 
 
-    private lateinit var userFlashcardSetList: ArrayList<FlashcardSet>
+    private lateinit var userDeckList: ArrayList<Deck>
 
     private val vocabularyConverter: VocabularyConverter = VocabularyConverter()
 
@@ -48,11 +48,11 @@ constructor(
 
     init {
         flashcardSetRepos.getAll_CardSet_WithNOCardList { cardSetList ->
-            userFlashcardSetList = if (cardSetList != null) {
+            userDeckList = if (cardSetList != null) {
                 cardSetList
             } else {
-                                                     ArrayList<FlashcardSet>()
-                                                 }
+                ArrayList<Deck>()
+            }
         }
         userRepos.triggerGetUser {
             user = it
@@ -78,18 +78,19 @@ constructor(
         sendVocabularyToObserver(vocabulary)
     }
 
-    private fun sendVocabularyToObserver (vocabulary : Vocabulary) {
+    private fun sendVocabularyToObserver(vocabulary: Vocabulary) {
         this.vocabulary.value = vocabulary
     }
 
 
     // ADD FLASHCARD FUNCTIONS
 
-    private fun checkFlashcardSetIsValid (currentSet : FlashcardSet) : Boolean {
-        for (userFCSet in userFlashcardSetList) {
+    private fun checkFlashcardSetIsValid(currentSet: Deck): Boolean {
+        for (userFCSet in userDeckList) {
             val hasANameInList = currentSet.name.trim() == userFCSet.name.trim()
             if (hasANameInList) {
-                val hasDifferentLanguages = (currentSet.frontLanguage != userFCSet.frontLanguage) or (currentSet.backLanguage != userFCSet.backLanguage)
+                val hasDifferentLanguages =
+                    (currentSet.frontLanguage != userFCSet.frontLanguage) or (currentSet.backLanguage != userFCSet.backLanguage)
                 if (hasDifferentLanguages) {
                     val invalidLangPair = SetNameUtils.getLanguagePairForm(
                         currentSet.frontLanguage,
@@ -110,7 +111,7 @@ constructor(
 
     fun proceedAddFlashcard(newCard: Flashcard) {
         val flashcardSet =
-            FlashcardSet(newCard.setOwner, newCard.frontLanguage, newCard.backLanguage)
+            Deck(newCard.setOwner, newCard.frontLanguage, newCard.backLanguage)
         val setIsValid = checkFlashcardSetIsValid(flashcardSet)
         if (setIsValid.not()) {
             return
@@ -189,7 +190,7 @@ constructor(
         }
     }
 
-    fun getAllFlashcardSetWithNoCardList (onGet : (ArrayList<FlashcardSet>) -> Unit) {
+    fun getAllFlashcardSetWithNoCardList(onGet: (ArrayList<Deck>) -> Unit) {
         flashcardSetRepos.getAll_CardSet_WithNOCardList {
             if (it != null) {
                 onGet.invoke(it)
@@ -198,9 +199,9 @@ constructor(
         }
     }
 
-    private fun cachedFlashcardSetList(flashcardSetList: ArrayList<FlashcardSet>) {
-        if (this::userFlashcardSetList.isInitialized.not()) {
-            this.userFlashcardSetList = flashcardSetList
+    private fun cachedFlashcardSetList(deckList: ArrayList<Deck>) {
+        if (this::userDeckList.isInitialized.not()) {
+            this.userDeckList = deckList
         }
     }
 

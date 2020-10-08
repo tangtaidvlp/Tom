@@ -13,8 +13,9 @@ import android.view.animation.Animation
 import android.widget.TextView
 import androidx.core.animation.addListener
 import com.teamttdvlp.memolang.R
+import com.teamttdvlp.memolang.data.model.entity.flashcard.CardProperty
+import com.teamttdvlp.memolang.data.model.entity.flashcard.Deck
 import com.teamttdvlp.memolang.data.model.entity.flashcard.Flashcard
-import com.teamttdvlp.memolang.data.model.entity.flashcard.FlashcardSet
 import com.teamttdvlp.memolang.data.model.entity.flashcard.SetNameUtils
 import com.teamttdvlp.memolang.databinding.ActivitySearchOnlineBinding
 import com.teamttdvlp.memolang.model.CardType
@@ -313,9 +314,19 @@ class SearchOnlineActivity : BaseActivity<ActivitySearchOnlineBinding, SearchOnl
             val example = edtPanelExample.text.toString()
             val meanOfExample = edtPanelMeanExample.text.toString()
 
-            val newCard = Flashcard(0, setOwner = setName,
-                text = text, translation = translation, frontLanguage = sourceLang, backLanguage = targetLang,
-                example = example,meanOfExample = meanOfExample, type = type)
+            val newCard = Flashcard(
+                0,
+                setOwner = setName,
+                text = text,
+                translation = translation,
+                frontLanguage = sourceLang,
+                backLanguage = targetLang,
+                example = example,
+                meanOfExample = meanOfExample,
+                type = type,
+                cardProperty = CardProperty()
+            )
+            // TODO (Check property)
 
             viewModel.addFlashcard_And_UpdateUserInfo(newCard, onAddSuccess = { newFlashcard ->
                 rcvRecentSearchedFlashcardAdapter.addFlashcardAtTheFirstPosition(newFlashcard)
@@ -323,7 +334,7 @@ class SearchOnlineActivity : BaseActivity<ActivitySearchOnlineBinding, SearchOnl
 
             imgBlackBgAddFlashcardPanel.performClick()
             btnNavigateToSearchZone.goVISIBLE()
-            rcvChooseSetNameAdapter.addToFirst(FlashcardSet(setName, sourceLang, targetLang))
+            rcvChooseSetNameAdapter.addToFirst(Deck(setName, sourceLang, targetLang))
         }
 
         btnSwapLanguage.setOnClickListener {

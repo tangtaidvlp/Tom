@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.teamttdvlp.memolang.R
-import com.teamttdvlp.memolang.data.model.entity.flashcard.FlashcardSet
+import com.teamttdvlp.memolang.data.model.entity.flashcard.Deck
 import com.teamttdvlp.memolang.view.helper.goGONE
 import com.teamttdvlp.memolang.view.helper.goVISIBLE
 import com.teamttdvlp.memolang.view.helper.log
@@ -224,9 +224,9 @@ class RCVSimpleListChooseSetNameAdapter (var context : Context) : RecyclerView.A
 
     private var onItemClickListener : OnItemClickListener? = null
 
-    private var flashcardSetList = ArrayList<FlashcardSet>()
+    private var flashcardSetList = ArrayList<Deck>()
 
-    private var filtedFlashcardSetList = ArrayList<FlashcardSet>()
+    private var filtedFlashcardSetList = ArrayList<Deck>()
 
     class ViewHolder (item : View) : RecyclerView.ViewHolder(item) {
         var txtLanguage : TextView = item.findViewById<TextView>(R.id.txt_language)
@@ -251,13 +251,13 @@ class RCVSimpleListChooseSetNameAdapter (var context : Context) : RecyclerView.A
         }
     }
 
-    fun setData (data : ArrayList<FlashcardSet>) {
+    fun setData(data: ArrayList<Deck>) {
         this.flashcardSetList.clear()
         this.flashcardSetList.addAll(data)
         notifyDataSetChanged()
     }
 
-    fun addToFirst (newSet : FlashcardSet) {
+    fun addToFirst(newSet: Deck) {
         log("ADD $newSet")
         if (flashcardSetList.notContains(newSet)) {
             this.flashcardSetList.add(0, newSet)
@@ -265,7 +265,7 @@ class RCVSimpleListChooseSetNameAdapter (var context : Context) : RecyclerView.A
         }
     }
 
-    fun add (newSet : FlashcardSet) {
+    fun add(newSet: Deck) {
         if (flashcardSetList.notContains(newSet)) {
             this.flashcardSetList.add(newSet)
             notifyItemInserted(flashcardSetList.size - 1)
@@ -273,7 +273,7 @@ class RCVSimpleListChooseSetNameAdapter (var context : Context) : RecyclerView.A
     }
 
     fun filtFlashcardSetByLanguagePair (frontLanguage : String, backLanguage : String) {
-        filtedFlashcardSetList = ArrayList<FlashcardSet>()
+        filtedFlashcardSetList = ArrayList<Deck>()
         for (set in flashcardSetList) {
             if ((set.frontLanguage == frontLanguage) and (set.backLanguage == backLanguage)) {
                 filtedFlashcardSetList.add(set)
@@ -282,10 +282,10 @@ class RCVSimpleListChooseSetNameAdapter (var context : Context) : RecyclerView.A
         setData(filtedFlashcardSetList)
     }
 
-    fun setOnItemClickListener (onItemClickListener: (item: FlashcardSet) -> Unit) {
+    fun setOnItemClickListener(onItemClickListener: (item: Deck) -> Unit) {
         this.onItemClickListener = object :
             OnItemClickListener {
-            override fun onClick(item: FlashcardSet) {
+            override fun onClick(item: Deck) {
                 onItemClickListener(item)
             }
         }
@@ -296,7 +296,7 @@ class RCVSimpleListChooseSetNameAdapter (var context : Context) : RecyclerView.A
     }
 
     interface OnItemClickListener {
-        fun onClick (item : FlashcardSet)
+        fun onClick(item: Deck)
     }
 
 }

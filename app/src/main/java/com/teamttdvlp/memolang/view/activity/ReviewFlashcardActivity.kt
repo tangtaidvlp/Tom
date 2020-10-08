@@ -17,8 +17,8 @@ import android.widget.TextView
 import androidx.core.animation.addListener
 import androidx.interpolator.view.animation.FastOutSlowInInterpolator
 import com.teamttdvlp.memolang.R
+import com.teamttdvlp.memolang.data.model.entity.flashcard.Deck
 import com.teamttdvlp.memolang.data.model.entity.flashcard.Flashcard
-import com.teamttdvlp.memolang.data.model.entity.flashcard.FlashcardSet
 import com.teamttdvlp.memolang.databinding.ActivityReviewFlashcardBinding
 import com.teamttdvlp.memolang.model.ReviewActivitiesSpeakerStatusManager
 import com.teamttdvlp.memolang.model.findTextFormInAnother
@@ -87,11 +87,11 @@ class ReviewFlashcardActivity : BaseActivity<ActivityReviewFlashcardBinding, Rev
     companion object {
         fun requestReviewFlashcard(
             requestContext: Context,
-            flashcardSet: FlashcardSet,
+            deck: Deck,
             reverseCardTextAndTranslation: Boolean
         ) {
             val intent = Intent(requestContext, ReviewFlashcardActivity::class.java)
-            intent.putExtra(FLASHCARD_SET_KEY, flashcardSet)
+            intent.putExtra(FLASHCARD_SET_KEY, deck)
             intent.putExtra(REVERSE_CARD_TEXT_AND_TRANSLATION, reverseCardTextAndTranslation)
             requestContext.startActivity(intent)
         }
@@ -441,7 +441,7 @@ class ReviewFlashcardActivity : BaseActivity<ActivityReviewFlashcardBinding, Rev
             } else { // Speaker is off
                 txtTextAnswer.animate().alpha(1f)
                     .setDuration(200).setInterpolator(FastOutSlowInInterpolator())
-                    .setLiteListener (onEnd = {
+                    .setLiteListener(onEnd = {
                         nextCard(500)
                     })
             }
@@ -449,8 +449,8 @@ class ReviewFlashcardActivity : BaseActivity<ActivityReviewFlashcardBinding, Rev
     }
     }
 
-    private fun getRequestedFlashcardSet(): FlashcardSet {
-        return intent.extras!!.getSerializable(FLASHCARD_SET_KEY) as FlashcardSet
+    private fun getRequestedFlashcardSet(): Deck {
+        return intent.extras!!.getSerializable(FLASHCARD_SET_KEY) as Deck
     }
 
     private fun getIsReverseTextAndTranslation(): Boolean {
