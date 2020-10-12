@@ -660,6 +660,53 @@
 
             </androidx.appcompat.widget.LinearLayoutCompat>
 
+            <LinearLayout
+                android:id="@+id/vwgrp_exit_dialog"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round_top_15dp_app_blue_background"
+                android:elevation="15dp"
+                android:orientation="vertical"
+                android:paddingStart="30dp"
+                android:paddingTop="28dp"
+                android:paddingEnd="30dp"
+                android:paddingBottom="25dp"
+                android:translationY="300dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/seguisb"
+                    android:text="Press here to exit !!!"
+                    android:textColor="@color/white"
+                    android:textSize="22sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/segoeui"
+                    android:includeFontPadding="false"
+                    android:text="or press back again"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/btn_cancel_exit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:fontFamily="@font/seguisb"
+                    android:gravity="center"
+                    android:paddingTop="20dp"
+                    android:text="Cancel"
+                    android:textColor="@color/black"
+                    android:textSize="22sp" />
+
+            </LinearLayout>
+
         </androidx.constraintlayout.widget.ConstraintLayout>
 
 

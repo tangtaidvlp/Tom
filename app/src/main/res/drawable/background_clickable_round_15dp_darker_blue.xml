@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" android:enterFadeDuration="100" android:exitFadeDuration="100">
+
+    <item android:drawable="@drawable/round_15dp_15_alpha_app_blue" android:state_pressed="false" />
+
+    <item android:drawable="@drawable/round_15dp_app_blue" android:state_pressed="true" />
+
+</selector>

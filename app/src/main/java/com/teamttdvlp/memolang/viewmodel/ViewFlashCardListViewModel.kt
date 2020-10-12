@@ -7,7 +7,7 @@ import com.teamttdvlp.memolang.data.model.entity.flashcard.Flashcard
 import com.teamttdvlp.memolang.model.repository.FlashcardRepos
 import com.teamttdvlp.memolang.view.activity.iview.ViewFlashcardListView
 import com.teamttdvlp.memolang.view.base.BaseViewModel
-import com.teamttdvlp.memolang.view.helper.log
+import com.teamttdvlp.memolang.view.helper.systemOutLogging
 import java.io.File
 
 class ViewFlashCardListViewModel(
@@ -39,15 +39,15 @@ class ViewFlashCardListViewModel(
                 app.filesDir.absolutePath + File.separator + card.frontIllustrationPictureName
             val file = File(path)
             if (file.exists()) {
-                log("File found")
+                systemOutLogging("File found")
                 val hasSuccess = file.delete()
                 if (hasSuccess) {
-                    log("Delete success")
+                    systemOutLogging("Delete success")
                 } else {
-                    log("Nhu con caặc")
+                    systemOutLogging("Nhu con caặc")
                 }
             } else {
-                log("FIle not found")
+                systemOutLogging("FIle not found")
             }
         }
     }

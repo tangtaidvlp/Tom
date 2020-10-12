@@ -4,7 +4,7 @@ import androidx.annotation.NonNull
 import androidx.room.Embedded
 import androidx.room.Entity
 import androidx.room.PrimaryKey
-import com.teamttdvlp.memolang.view.helper.log
+import com.teamttdvlp.memolang.view.helper.systemOutLogging
 import java.io.Serializable
 
 @Entity(tableName = "flashcard")
@@ -47,7 +47,7 @@ data class Flashcard (
     init {
         text = text.trim()
         setOwner = setOwner.trim()
-        if (setOwner == "") log("Set Owner can not be null. Please check and fix code properly")
+        if (setOwner == "") systemOutLogging("Set Owner can not be null. Please check and fix code properly")
         text = text.trim()
         translation = translation.trim()
         example = example.trim()

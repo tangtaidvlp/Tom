@@ -10,7 +10,7 @@ import com.teamttdvlp.memolang.model.sharepref.EngVietDictionaryActivitySharePre
 import com.teamttdvlp.memolang.model.sharepref.SearchOnlineActivitySharePref
 import com.teamttdvlp.memolang.view.activity.iview.MenuView
 import com.teamttdvlp.memolang.view.base.BaseViewModel
-import com.teamttdvlp.memolang.view.helper.log
+import com.teamttdvlp.memolang.view.helper.systemOutLogging
 
 class MenuActivityViewModel(
     private var flashcardSetRepos: FlashcardSetRepos,
@@ -91,7 +91,7 @@ class MenuActivityViewModel(
                     set_OtherActivitiesSharePref_Info("")
             }
         } catch (ex: java.lang.Exception) {
-            log("Error happens")
+            systemOutLogging("Error happens")
             ex.printStackTrace()
         }
 

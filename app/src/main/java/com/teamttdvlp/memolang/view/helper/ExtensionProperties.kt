@@ -7,8 +7,8 @@ import android.view.View
 import android.view.animation.Animation
 import android.widget.EditText
 
-fun log(message: Any) {
-    Log.e("QuickLog: ", message.toString())
+fun systemOutLogging(message: Any) {
+    Log.e("Log: ", message.toString())
 }
 
 fun not (expression : Boolean) : Boolean = !expression

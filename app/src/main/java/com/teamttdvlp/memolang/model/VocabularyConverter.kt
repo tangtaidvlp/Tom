@@ -9,7 +9,7 @@ import com.teamttdvlp.memolang.data.model.other.vocabulary.VocabularyOtherStruct
 import com.teamttdvlp.memolang.view.adapter.RCVSearchDictionaryAdapter
 import com.teamttdvlp.memolang.view.helper.clearAll
 import com.teamttdvlp.memolang.view.helper.foreachFromSecondElement
-import com.teamttdvlp.memolang.view.helper.log
+import com.teamttdvlp.memolang.view.helper.systemOutLogging
 import java.util.*
 
 class VocabularyConverter {
@@ -30,7 +30,7 @@ class VocabularyConverter {
         val cond_3 = (linesList.first().length > 1) and (linesList.first()[1] == VOCABULARY_PREFIX[0])
 
         if (cond_1.not() and (cond_2 or cond_3).not()) {
-            log("ERR: ${linesList.first()}")
+            systemOutLogging("ERR: ${linesList.first()}")
             throw Exception("STOP")
         }
 
@@ -138,7 +138,7 @@ class VocabularyConverter {
                 val currentTransAndExample = currentUsing.translationAndExamsList.last()
                 currentTransAndExample.subExampleList.add(example)
             } else {
-                log("SOMETHING WRONG WITH THIS LINE: $line")
+                systemOutLogging("SOMETHING WRONG WITH THIS LINE: $line")
             }
         }
 
@@ -162,7 +162,7 @@ class VocabularyConverter {
             return try {
                 RCVSearchDictionaryAdapter.TextAndPronun(textAndPronunPair[0], "/" + textAndPronunPair[1])
             } catch (ex : Exception) {
-                log("ERROR PAIR: $text")
+                systemOutLogging("ERROR PAIR: $text")
                 RCVSearchDictionaryAdapter.TextAndPronun("Err", "Err")
             }
         }

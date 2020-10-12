@@ -421,7 +421,7 @@ class SearchOnlineActivity : BaseActivity<ActivitySearchOnlineBinding, SearchOnl
             }
 
             override fun onFailed(ex: Exception) {
-                log("ERROR: ${ex.message}")
+                systemOutLogging("ERROR: ${ex.message}")
                 ex.printStackTrace()
                 translatingTextAnimator.end()
                 hideTranslatingProgressBar()

@@ -92,7 +92,7 @@ class EditFlashcardActivity : BaseActivity<ActivityEditFlashcardBinding, EditFla
         }
 
         layoutAddFlashcard.btnAdd.setOnClickListener {
-            log("nkhjk")
+            systemOutLogging("nkhjk")
             hideIPAKeyboard()
             hideVirtualKeyboard()
             layoutAddFlashcard.apply {

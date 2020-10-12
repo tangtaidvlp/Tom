@@ -472,7 +472,7 @@ class EngVietDictionaryActivity :
                 val newVocaMean = Vocabulary_Mean_TextView(
                     this@EngVietDictionaryActivity, usingTranslationAndExample.translation
                 )
-                log("Vocabulary_Mean_TextView: ${usingTranslationAndExample.translation}")
+                systemOutLogging("Vocabulary_Mean_TextView: ${usingTranslationAndExample.translation}")
                 newVocaMean.addButton.setOnClickListener {
                     edtPanelType.setText(using.type)
                     edtPanelText.setText(vocabulary.text)
@@ -494,14 +494,14 @@ class EngVietDictionaryActivity :
                                 this@EngVietDictionaryActivity,
                                 example.text
                             )
-                            log("Vocabulary_Example_View: ${example.text}")
+                            systemOutLogging("Vocabulary_Example_View: ${example.text}")
                             contentParent.addView(newTxtExample)
                             val exHasMean = (example.mean != "")
                             if (exHasMean) {
                                 val newTxtMeanEx =
                                     Vocabulary_ExampleTranslation_View(this@EngVietDictionaryActivity)
                                 newTxtMeanEx.text = example.mean
-                                log("Vocabulary_ExampleTranslation_View: ${example.mean}")
+                                systemOutLogging("Vocabulary_ExampleTranslation_View: ${example.mean}")
                                 contentParent.addView(newTxtMeanEx)
                             }
 
@@ -510,7 +510,7 @@ class EngVietDictionaryActivity :
                                 this@EngVietDictionaryActivity,
                                 example.text
                             )
-                            log("OtherStructure_Text_View: ${example.text}")
+                            systemOutLogging("OtherStructure_Text_View: ${example.text}")
                             contentParent.addView(newOtherStructureTextView)
                             example.translationAndExample_List.forEach { transAndSubExamp ->
                                 val newVocabularyExamTransView =
@@ -518,7 +518,7 @@ class EngVietDictionaryActivity :
                                         this@EngVietDictionaryActivity,
                                         text = transAndSubExamp.translation
                                     )
-                                log("OtherStructure_Mean_View: ${transAndSubExamp.translation}")
+                                systemOutLogging("OtherStructure_Mean_View: ${transAndSubExamp.translation}")
                                 newVocabularyExamTransView.addButton.setOnClickListener {
                                     edtPanelType.setText("")
                                     edtPanelText.setText(example.text)
@@ -537,7 +537,7 @@ class EngVietDictionaryActivity :
                                             this@EngVietDictionaryActivity,
                                             example.text
                                         )
-                                    log("OtherStructure_Example_View: ${example.text}")
+                                    systemOutLogging("OtherStructure_Example_View: ${example.text}")
                                     contentParent.addView(newTxtExample)
 
                                     val exHasMean = (example.mean != "")
@@ -545,7 +545,7 @@ class EngVietDictionaryActivity :
                                         val newTxtMeanEx =
                                             OtherStructure_ExampleTranslation_View(this@EngVietDictionaryActivity)
                                         newTxtMeanEx.text = example.mean
-                                        log("SubExampleTranslationView: ${example.mean}")
+                                        systemOutLogging("SubExampleTranslationView: ${example.mean}")
                                         contentParent.addView(newTxtMeanEx)
                                     }
                                 }

@@ -1,6 +1,7 @@
 package com.teamttdvlp.memolang.view.helper
 
 import android.content.res.Resources
+import android.util.TypedValue
 
 object UnitConverter {
 
@@ -20,7 +21,6 @@ object UnitConverter {
 
     val `100dp`: Int
 
-
     init { 
         density = Resources.getSystem().displayMetrics.density
         `1dp` = DpToPixel(1)
@@ -37,7 +37,11 @@ object UnitConverter {
     }
 
     fun DpToPixel(dp: Double): Int {
-        return Math.round(dp * density).toInt()
+        return TypedValue.applyDimension(
+            TypedValue.COMPLEX_UNIT_DIP,
+            dp.toFloat(),
+            Resources.getSystem().displayMetrics
+        ) as Int
     }
 
     fun DpToPixel(dp: Float): Int {
@@ -47,6 +51,18 @@ object UnitConverter {
     fun PixelToDp(pixel: Int): Int {
         val dp = Math.round(pixel / density)
         return pixel
+    }
+
+    fun SpToPixel(sp: Int): Int {
+        return TypedValue.applyDimension(
+            TypedValue.COMPLEX_UNIT_SP,
+            sp.toFloat(),
+            Resources.getSystem().displayMetrics
+        ).toInt()
+    }
+
+    fun DpToSp(dp: Int): Int {
+        return (DpToPixel(dp) / Resources.getSystem().displayMetrics.scaledDensity).toInt()
     }
 
 }

@@ -1,8 +1,7 @@
 package com.teamttdvlp.memolang.viewmodel
 
 import android.app.Application
-import androidx.databinding.ObservableField
-import androidx.databinding.ObservableInt
+import androidx.lifecycle.MutableLiveData
 import com.teamttdvlp.memolang.data.model.entity.flashcard.Deck
 import com.teamttdvlp.memolang.data.model.entity.flashcard.Flashcard
 import com.teamttdvlp.memolang.model.CardListLanguageReverser.Companion.reverse_LIST_Card_TextAndTranslation
@@ -13,21 +12,21 @@ import com.teamttdvlp.memolang.model.UseFCActivity_StatusManager.SpeakerStatus.C
 import com.teamttdvlp.memolang.model.UseFCActivity_StatusManager.SpeakerStatus.Companion.SPEAK_TEXT_ONLY
 import com.teamttdvlp.memolang.view.activity.iview.UseFlashcardView
 import com.teamttdvlp.memolang.view.base.BaseViewModel
-import com.teamttdvlp.memolang.view.helper.log
 import com.teamttdvlp.memolang.view.helper.selfMinusOne
 import com.teamttdvlp.memolang.view.helper.selfPlusOne
+import com.teamttdvlp.memolang.view.helper.systemOutLogging
 
 class UseFlashcardViewModel (private val context : Application): BaseViewModel<UseFlashcardView>() {
 
-    val currentCard = ObservableField<Flashcard>()
+    val currentCard = MutableLiveData<Flashcard>()
 
-    val cardLeftCount = ObservableInt()
+    val cardLeftCount = MutableLiveData<Int>()
 
-    val forgottenCardsCount = ObservableInt()
+    val forgottenCardsCount = MutableLiveData<Int>()
 
-    val currentCardOrder = ObservableInt()
+    val currentCardOrder = MutableLiveData<Int>()
 
-    val setName = ObservableField<String>()
+    val deckName = MutableLiveData<String>()
 
     private val hardCardList = ArrayList<Flashcard>()
 
@@ -58,7 +57,7 @@ class UseFlashcardViewModel (private val context : Application): BaseViewModel<U
         }
 
         cardListManager.setData(fcSet.flashcards)
-        setName.set(fcSet.name)
+        deckName.value = fcSet.name
 
         useFCActivityStatusManager = UseFCActivity_StatusManager(context, fcSet.name)
 
@@ -98,7 +97,7 @@ class UseFlashcardViewModel (private val context : Application): BaseViewModel<U
         }
     }
 
-    fun moveToNextCard () {
+    fun moveToNextCard() {
         val nextCard = cardListManager.focusOnNextCardAndGetIt()
         updateCurrentCard(nextCard)
         updateCardOrder()
@@ -106,12 +105,16 @@ class UseFlashcardViewModel (private val context : Application): BaseViewModel<U
 
     fun beginUsing() {
         val firstCard = cardListManager.getFirstOne()
-        currentCard.set(firstCard)
-        currentCardOrder.set(1)
-        cardLeftCount.set(cardListManager.getSize())
+        currentCard.value = firstCard
+        currentCardOrder.value = 1
+        cardLeftCount.value = getCardListSize()
     }
 
-    fun moveToPreviousCard () {
+    fun getCardListSize(): Int {
+        return cardListManager.getSize()
+    }
+
+    fun moveToPreviousCard() {
         if (hasPrevious()) {
             val thePreviousCard = cardListManager.focusOnPrevCardAndGetIt()
             updateCurrentCard(thePreviousCard)
@@ -133,7 +136,7 @@ class UseFlashcardViewModel (private val context : Application): BaseViewModel<U
     }
 
     private fun updateCurrentCard (card : Flashcard) {
-        currentCard.set(card)
+        currentCard.value = card
     }
 
     private fun hasPrevious () : Boolean {
@@ -157,7 +160,7 @@ class UseFlashcardViewModel (private val context : Application): BaseViewModel<U
     }
 
     private fun updateCardOrder () {
-        currentCardOrder.set(cardListManager.currentIndex + 1)
+        currentCardOrder.value = cardListManager.currentIndex + 1
     }
 
     fun getSpeakerFunction () : Int {
@@ -169,7 +172,7 @@ class UseFlashcardViewModel (private val context : Application): BaseViewModel<U
             useFCActivityStatusManager.speakerStatusManager.saveFunction(speakerFunction)
             useFCActivityStatusManager.speakerStatusManager.saveStatus(speakerStatus)
         } else {
-            log("UseFlashcardViewModel.kt:: useFCActivityStatusManager is not initialized")
+            systemOutLogging("UseFlashcardViewModel.kt:: useFCActivityStatusManager is not initialized")
         }
     }
 

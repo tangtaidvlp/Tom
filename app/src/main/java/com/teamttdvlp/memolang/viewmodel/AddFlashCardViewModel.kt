@@ -13,7 +13,7 @@ import com.teamttdvlp.memolang.model.sharepref.BaseAppInfoSharedPreference
 import com.teamttdvlp.memolang.view.activity.iview.AddFlashcardView
 import com.teamttdvlp.memolang.view.base.BaseViewModel
 import com.teamttdvlp.memolang.view.helper.but
-import com.teamttdvlp.memolang.view.helper.log
+import com.teamttdvlp.memolang.view.helper.systemOutLogging
 
 class AddFlashCardViewModel(
     private var userRepos: UserRepos,
@@ -130,7 +130,7 @@ class AddFlashCardViewModel(
                 newCard.id = insertedCardId.toInt()
                 updateUserInfo(newCard)
             } else {
-                log("Storing this flashcard to local storage failed. Please check again")
+                systemOutLogging("Storing this flashcard to local storage failed. Please check again")
                 exception!!.printStackTrace()
             }
         }

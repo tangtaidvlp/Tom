@@ -8,11 +8,13 @@ import com.teamttdvlp.memolang.data.model.entity.flashcard.Flashcard
 import com.teamttdvlp.memolang.model.*
 import com.teamttdvlp.memolang.view.activity.iview.ReviewFlashcardEasyView
 import com.teamttdvlp.memolang.view.base.BaseViewModel
-import com.teamttdvlp.memolang.view.helper.log
 import com.teamttdvlp.memolang.view.helper.notContains
-import com.teamttdvlp.memolang.view.helper.selfPlusOne
+import com.teamttdvlp.memolang.view.helper.systemOutLogging
 
-class ReviewFlashcardEasyViewModel(var app : Application) : BaseViewModel<ReviewFlashcardEasyView>() {
+//import com.teamttdvlp.memolang.view.helper.selfPlusOne
+
+class ReviewFlashcardEasyViewModel(var app: Application) :
+    BaseViewModel<ReviewFlashcardEasyView>() {
 
     val currentPos = ObservableInt()
 
@@ -124,7 +126,7 @@ class ReviewFlashcardEasyViewModel(var app : Application) : BaseViewModel<Review
             if (userAnswer == cardAnswer) {
                 view.performPassBehaviours()
                 cardLeftCount.set(cardList.size - (currentPos.get() + 1))
-                passedCardCount.selfPlusOne()
+//                passedCardCount.selfPlusOne()
             } else {
                 view.perform_INcorrectAnsElemtsOrderAnims()
             }
@@ -156,7 +158,7 @@ class ReviewFlashcardEasyViewModel(var app : Application) : BaseViewModel<Review
     }
 
     fun nextCard () {
-        currentPos.selfPlusOne()
+//        currentPos.selfPlusOne()
         currentCard = cardList[currentPos.get()]
         useCard(currentCard)
     }
@@ -169,14 +171,14 @@ class ReviewFlashcardEasyViewModel(var app : Application) : BaseViewModel<Review
 
     private val SPECIFIED_CELL_AMOUNT = 15
     private fun getCellOfListType (card : Flashcard) : ReviewFlashcardEasyView.ListOfCellType {
-        log("jkaf: " + card.text)
+        systemOutLogging("jkaf: " + card.text)
         if (card.text.trim().contains(" ")) {
             val clearedAllSpaceText = card.text.replace(" ", "")
             if (clearedAllSpaceText.length > SPECIFIED_CELL_AMOUNT) {
-                log("Text: $clearedAllSpaceText and Length: ${clearedAllSpaceText.length}")
+                systemOutLogging("Text: $clearedAllSpaceText and Length: ${clearedAllSpaceText.length}")
                 return ReviewFlashcardEasyView.ListOfCellType.WORD_LIST
             } else { // Text is too short to devide it into words
-                log("Too short length: ${clearedAllSpaceText.length}")
+                systemOutLogging("Too short length: ${clearedAllSpaceText.length}")
                 return ReviewFlashcardEasyView.ListOfCellType.CHARACTER_LIST
             }
         }
@@ -283,7 +285,7 @@ class ReviewFlashcardEasyViewModel(var app : Application) : BaseViewModel<Review
                 saveStatus(speakerStatus)
             }
         } else {
-            log("ReviewFlashcardEasyViewModel.kt:: reviewFCEasyActivity_StatusManager is not initialized")
+            systemOutLogging("ReviewFlashcardEasyViewModel.kt:: reviewFCEasyActivity_StatusManager is not initialized")
         }
     }
 

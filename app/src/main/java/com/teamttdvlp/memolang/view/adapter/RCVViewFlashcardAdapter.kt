@@ -93,15 +93,15 @@ class RCVViewFlashcardAdapter (var context : Context, var list : ArrayList<Flash
         }
 
         vHder.dB.btnSwitchDeleteState.setOnClickListener {
-            log("Pos: " + vHder.adapterPosition)
+            systemOutLogging("Pos: " + vHder.adapterPosition)
             if (checkedCardsPosList.contains(vHder.adapterPosition)) {
-                log("Contains: " + vHder.adapterPosition)
+                systemOutLogging("Contains: " + vHder.adapterPosition)
                 vHder.uncheck()
                 checkedCardsPosList.remove(vHder.adapterPosition)
             } else {
                 vHder.check()
                 checkedCardsPosList.add(vHder.adapterPosition)
-                log("Not contains: " + vHder.adapterPosition)
+                systemOutLogging("Not contains: " + vHder.adapterPosition)
             }
         }
 
@@ -124,7 +124,7 @@ class RCVViewFlashcardAdapter (var context : Context, var list : ArrayList<Flash
     fun getSelectedFlashcardList () : ArrayList<Flashcard> {
         val result = ArrayList<Flashcard>()
         for (pos in checkedCardsPosList) {
-            log("POS: " + pos)
+            systemOutLogging("POS: " + pos)
             result.add(list[pos])
         }
         return result
@@ -199,7 +199,7 @@ class RCVViewFlashcardAdapter (var context : Context, var list : ArrayList<Flash
         init {
             if (itemViewHeight == -1) dB.root.doOnPreDraw {
                 itemViewHeight = dB.root.height
-                log("ItemViewHeight: $itemViewHeight")
+                systemOutLogging("ItemViewHeight: $itemViewHeight")
             }
 
             `28dp` = 28.dp().toFloat()

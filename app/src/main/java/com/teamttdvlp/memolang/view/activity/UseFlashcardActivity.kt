@@ -9,9 +9,12 @@ import android.content.Intent
 import android.graphics.Color
 import android.os.Build
 import android.os.Bundle
-import android.text.method.ScrollingMovementMethod
 import android.view.View
+import android.view.animation.OvershootInterpolator
+import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.animation.addListener
+import androidx.core.view.doOnPreDraw
+import androidx.lifecycle.Observer
 import com.teamttdvlp.memolang.R
 import com.teamttdvlp.memolang.data.model.entity.flashcard.Deck
 import com.teamttdvlp.memolang.databinding.ActivityUseFlashcardBinding
@@ -89,7 +92,7 @@ class UseFlashcardActivity : BaseActivity<ActivityUseFlashcardBinding, UseFlashc
     lateinit var viewModelProviderFactory: ViewModelProviderFactory
         @Inject set
 
-    private val DARK_BLUE = "#182788"
+    private val DARK_BLUE = "#176E80"
 
     private val COVERED_BY_BLACK_DARK_BLUE = "#0C1343"
 
@@ -117,7 +120,97 @@ class UseFlashcardActivity : BaseActivity<ActivityUseFlashcardBinding, UseFlashc
         // Dark blue
         setStatusBarColor(Color.parseColor(DARK_BLUE))
         beginUsing(getIsReverseTextAndTranslation())
+
+        recalculate_Flashcard_Dimens(1f)
+
+        dB.txtTotalCardCount.text = viewModel.getCardListSize().toString()
+        viewModel.cardLeftCount.observe(this, Observer { cardLeftCount ->
+            if (cardLeftCount != viewModel.getCardListSize()) {
+                onPassingACard(viewModel.getCardListSize() - cardLeftCount)
+            }
+        })
+
+        viewModel.forgottenCardsCount.observe(this, Observer { count ->
+            onForgettingACard(count, viewModel.currentCardOrder.value!!)
+        })
+
     }
+
+    private fun onForgettingACard(count: Int, currentCardOder: Int) {
+        dB.apply {
+            txtForgottenCardCount.text = count.toString()
+            val aPartWidth = txtTotalCardProgressBar.width / viewModel.getCardListSize()
+
+            if (txtForgottenCardProgressBar.alpha == 0f) {
+                txtForgottenCardProgressBar.animate().alpha(1f).duration = 100
+                txtForgottenCardCount.animate().alpha(1f).duration = 100
+            }
+
+            (txtForgottenCardProgressBar.layoutParams
+                    as ConstraintLayout.LayoutParams).marginStart = aPartWidth * currentCardOder
+            txtForgottenCardProgressBar.requestLayout()
+
+            val progrBarCurrentWidth = txtForgottenCardProgressBar.width
+            val progrBarTargetWidth = aPartWidth * count
+            val increaseAnim =
+                ValueAnimator.ofInt(progrBarCurrentWidth, progrBarTargetWidth).apply {
+                    duration = 500
+                    interpolator = OvershootInterpolator(2f)
+                    addUpdateListener {
+                        txtForgottenCardProgressBar.layoutParams.width = it.animatedValue as Int
+                        txtForgottenCardProgressBar.requestLayout()
+                    }
+                    setTarget(txtForgottenCardProgressBar)
+                }
+
+            increaseAnim.start()
+        }
+    }
+
+    private fun onPassingACard(currentPosition: Int) {
+        dB.apply {
+            txtPassedCardCount.text = currentPosition.toString()
+
+            val progrBarCurrentWidth = txtPassedCardProgressBar.width
+            val aPartWidth = txtTotalCardProgressBar.width / viewModel.getCardListSize()
+            val progrBarTargetWidth = aPartWidth * currentPosition
+            val increaseAnim =
+                ValueAnimator.ofInt(progrBarCurrentWidth, progrBarTargetWidth).apply {
+                    duration = 500
+                    interpolator = OvershootInterpolator(2f)
+                    addUpdateListener {
+                        txtPassedCardProgressBar.layoutParams.width = it.animatedValue as Int
+                        txtPassedCardProgressBar.requestLayout()
+                    }
+                    setTarget(txtPassedCardProgressBar)
+                }
+
+            increaseAnim.start()
+        }
+    }
+
+    private fun recalculate_Flashcard_Dimens(heightRate: Float) {
+        dB.apply {
+            viewgroupFrontFlashcard.doOnPreDraw {
+                viewgroupFrontFlashcard.layoutParams.height =
+                    (heightRate * (viewgroupFrontFlashcard.width / 2)).toInt()
+                viewgroupFrontFlashcard.requestLayout()
+            }
+
+            viewgroupBackReplicaFrontFlashcard.doOnPreDraw {
+                viewgroupBackReplicaFrontFlashcard.layoutParams.height =
+                    (heightRate * (viewgroupBackReplicaFrontFlashcard.width / 2)).toInt()
+                viewgroupBackReplicaFrontFlashcard.requestLayout()
+            }
+
+            viewgroupBackFlashcard.doOnPreDraw {
+                viewgroupBackFlashcard.layoutParams.height =
+                    (heightRate * (viewgroupFrontFlashcard.width / 2)).toInt()
+                viewgroupBackFlashcard.requestLayout()
+            }
+        }
+    }
+
 
     override fun onDestroy() {
         val speakerFunction = if (textIsSpoken and translationIsSpoken) {
@@ -126,7 +219,7 @@ class UseFlashcardActivity : BaseActivity<ActivityUseFlashcardBinding, UseFlashc
             SPEAK_TEXT_ONLY
         } else if (not(textIsSpoken) and translationIsSpoken) {
             SPEAK_TRANSLATION_ONLY
-        } else throw Exception ("Speaker status unknown")
+        } else throw Exception("Speaker status unknown")
 
         viewModel.saveAllStatus(speakerFunction, speakerIsOn)
         super.onDestroy()
@@ -144,10 +237,84 @@ class UseFlashcardActivity : BaseActivity<ActivityUseFlashcardBinding, UseFlashc
         dB.vwModel = viewModel
     }
 
-    override fun addViewControls() { dB.apply {
+    private var UNINITIAL_VALUE = -5
+    private var previousTxtFrontTextHeightReference_Height = UNINITIAL_VALUE
+    private var previousTxtBackTranslationHeightReference_Height = UNINITIAL_VALUE
 
-        txtFrontCardText.movementMethod = ScrollingMovementMethod()
-    }}
+    override fun addViewControls() {
+        dB.apply {
+
+            txtFrontTextHeightReference.viewTreeObserver.addOnGlobalLayoutListener {
+
+                var totalHeight = txtFrontTextHeightReference.height
+
+                var otherInformationsTotalHeight = 0
+
+                if (txtFrontCardType.isGone().not()) {
+                    otherInformationsTotalHeight += txtFrontCardType.height
+                }
+
+                if (txtFrontCardPronunciation.isGone().not()) {
+                    otherInformationsTotalHeight += txtFrontCardPronunciation.height
+                }
+
+                totalHeight += otherInformationsTotalHeight
+
+                val currentCalculatedHeight: Int
+
+                if (totalHeight > vwgrpFrontTexts.height) {
+                    currentCalculatedHeight = vwgrpFrontTexts.height - otherInformationsTotalHeight
+                } else {
+                    currentCalculatedHeight = txtFrontTextHeightReference.height
+                }
+
+                if (txtFrontTextHeightReference.height != previousTxtFrontTextHeightReference_Height) {
+                    previousTxtFrontTextHeightReference_Height = txtFrontTextHeightReference.height
+                    txtFrontCardText.layoutParams.height = currentCalculatedHeight
+                    txtFrontCardText.requestLayout()
+                }
+
+            }
+
+            txtBackTranslationHeightReference.viewTreeObserver.addOnGlobalLayoutListener {
+
+                var totalHeight = txtBackTranslationHeightReference.height
+                systemOutLogging("before height: " + txtBackTranslationHeightReference.height)
+                var otherInformationsTotalHeight = 0
+
+                if (txtBackCardExample.isGone().not()) {
+                    otherInformationsTotalHeight += txtBackCardExample.height
+                }
+
+                if (txtBackCardMeanOfExample.isGone().not()) {
+                    otherInformationsTotalHeight += txtBackCardMeanOfExample.height
+                }
+
+                totalHeight += otherInformationsTotalHeight
+
+                val currentCalculatedHeight: Int
+
+                if (totalHeight > vwgrpBackTexts.height) {
+                    currentCalculatedHeight = vwgrpBackTexts.height - otherInformationsTotalHeight
+                } else {
+                    currentCalculatedHeight = txtBackTranslationHeightReference.height
+                }
+
+                systemOutLogging("Height: " + currentCalculatedHeight)
+
+                // Because at the beginning vwgrpBackTexts.height = 0 due to its GONE visibility
+                // So we have to check if the condition (txtBackCardTranslation.height == 0)
+                // The condition (txtBackTranslationHeightReference.height != previousTxtBackTranslationHeightReference_Height) would be true
+                // because of ViewTreeObserver runs many times caused by changes inside Activity
+                // but txtBackCardTranslation.height is not set to the real height, it still keeps the 0 height
+                if ((txtBackCardTranslation.height == 0) or (txtBackTranslationHeightReference.height != previousTxtBackTranslationHeightReference_Height)) {
+                    previousTxtBackTranslationHeightReference_Height =
+                        txtBackTranslationHeightReference.height
+                    txtBackCardTranslation.layoutParams.height = currentCalculatedHeight
+                    txtBackCardTranslation.requestLayout()
+                }
+            }
+        }}
 
     override fun addAnimationEvents() { dB.apply {
 
@@ -628,7 +795,6 @@ class UseFlashcardActivity : BaseActivity<ActivityUseFlashcardBinding, UseFlashc
 
         buttonHardDisappear.setTarget(btnHard)
 
-        translationHighlight.setTarget(txtBackHightlightCardTranslation)
         backCardClose.apply {
             startDelay = 300
             setTarget(viewgroupBackFlashcard)
@@ -789,3 +955,5 @@ class UseFlashcardActivity : BaseActivity<ActivityUseFlashcardBinding, UseFlashc
     }
 
 }
+
+

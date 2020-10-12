@@ -21,7 +21,7 @@ import com.teamttdvlp.memolang.model.repository.UserUsingHistoryRepos
 import com.teamttdvlp.memolang.model.sharepref.SearchOnlineActivitySharePref
 import com.teamttdvlp.memolang.view.activity.iview.SearchVocabularyView
 import com.teamttdvlp.memolang.view.base.BaseViewModel
-import com.teamttdvlp.memolang.view.helper.log
+import com.teamttdvlp.memolang.view.helper.systemOutLogging
 import java.io.IOException
 import java.util.*
 
@@ -62,7 +62,7 @@ class SearchOnlineViewModel(
                 onAddSuccess.invoke(newCard)
                 view.onAddFlashcardSuccess()
             } else {
-                log("Add Failed To Offline DB")
+                systemOutLogging("Add Failed To Offline DB")
                 exception?.printStackTrace()
             }
         }

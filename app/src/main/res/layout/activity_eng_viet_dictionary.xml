@@ -653,7 +653,7 @@
             android:id="@+id/vwgrp_bottom_options"
             android:layout_width="0dp"
             android:layout_height="45dp"
-            android:background="@color/white"
+            android:background="#F6F6F6"
             android:elevation="100dp"
             android:gravity="center"
             android:orientation="horizontal"

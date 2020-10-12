@@ -33,6 +33,7 @@ import androidx.constraintlayout.widget.ConstraintSet.PARENT_ID
 import androidx.core.animation.addListener
 import androidx.core.app.ActivityCompat
 import androidx.core.view.*
+import androidx.interpolator.view.animation.FastOutLinearInInterpolator
 import com.teamttdvlp.memolang.R
 import com.teamttdvlp.memolang.data.model.entity.flashcard.*
 import com.teamttdvlp.memolang.databinding.ActivityAddFlashcardRetroBinding
@@ -41,7 +42,6 @@ import com.teamttdvlp.memolang.view.adapter.RCVChooseLanguageAdapter
 import com.teamttdvlp.memolang.view.adapter.RCVRecentUsedLanguageAdapter
 import com.teamttdvlp.memolang.view.adapter.RCV_SimpleChooseFlashcardSetAdapter
 import com.teamttdvlp.memolang.view.base.BaseActivity
-import com.teamttdvlp.memolang.view.customview.MyGestureDetector
 import com.teamttdvlp.memolang.view.customview.NormalOutExtraSlowIn
 import com.teamttdvlp.memolang.view.helper.*
 import com.teamttdvlp.memolang.viewmodel.AddFlashCardViewModel
@@ -95,9 +95,9 @@ class RetrofitAddFlashcardActivity :
 
     private var isShowingFrontCard = true
 
-    private var hasStartedEdit = false
-
     private var userEndAdding = false
+
+    private var setEdtTypeCausedByEdit = false
 
     private var currentCardProperty: CardProperty = CardProperty()
 
@@ -151,16 +151,67 @@ class RetrofitAddFlashcardActivity :
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setStatusBarColor(resources.getColor(R.color.app_darker_blue))
+        setStatusBarColor(resources.getColor(R.color.extreme_dark_blue))
         viewModel.setUpView(this)
         getRequests()
         if (requestEditFlashcard != null) {
-            startEditting()
             showVirtualKeyboard()
             dB.edtText.requestFocus()
         }
 
+        recalculate_Flashcard_Dimens(1f)
         recalculate_ChooseFlashcardPropertyPanel_Dimens()
+        recalculate_FunctionsPanel_Dimens()
+        performStartUpAnimation()
+    }
+
+    private val COMMON_START_UP_ANIM_DURATION = 300L
+    private val COMMON_START_UP_ANIM_DELAY = 300L
+
+    private fun performStartUpAnimation() {
+        dB.layoutFunctionsPanel.apply {
+            val goUpButtonPopUp =
+                AnimationUtils.loadAnimation(this@RetrofitAddFlashcardActivity, R.anim.scale_up)
+            goUpButtonPopUp.interpolator = OvershootInterpolator(3f)
+            goUpButtonPopUp.duration = COMMON_START_UP_ANIM_DURATION
+            goUpButtonPopUp.startOffset = COMMON_START_UP_ANIM_DELAY
+            vwgrpBtnGoUp.startAnimation(goUpButtonPopUp)
+
+            val flipButtonPopUp =
+                AnimationUtils.loadAnimation(this@RetrofitAddFlashcardActivity, R.anim.scale_up)
+            flipButtonPopUp.interpolator = OvershootInterpolator(3f)
+            flipButtonPopUp.duration = COMMON_START_UP_ANIM_DURATION
+            flipButtonPopUp.startOffset = COMMON_START_UP_ANIM_DELAY + 60
+            vwgrpBtnFlip.startAnimation(flipButtonPopUp)
+
+            val saveButtonPopUp =
+                AnimationUtils.loadAnimation(this@RetrofitAddFlashcardActivity, R.anim.scale_up)
+            saveButtonPopUp.interpolator = OvershootInterpolator(3f)
+            saveButtonPopUp.duration = COMMON_START_UP_ANIM_DURATION
+            saveButtonPopUp.startOffset = COMMON_START_UP_ANIM_DELAY + 160
+            vwgrpBtnSave.startAnimation(saveButtonPopUp)
+
+            val continueButtonPopUp =
+                AnimationUtils.loadAnimation(this@RetrofitAddFlashcardActivity, R.anim.scale_up)
+            continueButtonPopUp.interpolator = OvershootInterpolator(3f)
+            continueButtonPopUp.duration = COMMON_START_UP_ANIM_DURATION
+            continueButtonPopUp.startOffset = COMMON_START_UP_ANIM_DELAY + 140
+            vwgrpBtnContinue.startAnimation(continueButtonPopUp)
+
+            val cardPropButtonPopUp =
+                AnimationUtils.loadAnimation(this@RetrofitAddFlashcardActivity, R.anim.scale_up)
+            cardPropButtonPopUp.interpolator = OvershootInterpolator(3f)
+            cardPropButtonPopUp.duration = COMMON_START_UP_ANIM_DURATION
+            cardPropButtonPopUp.startOffset = COMMON_START_UP_ANIM_DELAY + 200
+            vwgrpBtnCardProperties.startAnimation(cardPropButtonPopUp)
+
+            val newDeckButtonPopUp =
+                AnimationUtils.loadAnimation(this@RetrofitAddFlashcardActivity, R.anim.scale_up)
+            newDeckButtonPopUp.interpolator = OvershootInterpolator(3f)
+            newDeckButtonPopUp.duration = COMMON_START_UP_ANIM_DURATION
+            newDeckButtonPopUp.startOffset = COMMON_START_UP_ANIM_DELAY + 230
+            vwgrpBtnNewDeck.startAnimation(newDeckButtonPopUp)
+        }
     }
 
 
@@ -204,12 +255,11 @@ class RetrofitAddFlashcardActivity :
     }
 
     private fun recalculate_Flashcard_Dimens(heightRate: Float) {
+        systemOutLogging("Recalculation flashcard dimens")
         dB.apply {
             viewgroupFrontFlashcard.doOnPreDraw {
                 viewgroupFrontFlashcard.layoutParams.height =
                     (heightRate * (viewgroupFrontFlashcard.width / 2)).toInt()
-                log("Height: ${viewgroupFrontFlashcard.height}")
-                log("LayoutParams.Height: ${viewgroupFrontFlashcard.layoutParams.height}")
                 viewgroupFrontFlashcard.requestLayout()
             }
 
@@ -225,8 +275,8 @@ class RetrofitAddFlashcardActivity :
         dB.apply {
             layoutChooseCardProperty.root.doOnPreDraw {
                 var totalMargin: Int = viewgroupFrontFlashcard.marginTop
-                log("Got Height: ${viewgroupFrontFlashcard.height}")
-                log("Got LayoutParams.Height: ${viewgroupFrontFlashcard.layoutParams.height}")
+                systemOutLogging("Got Height: ${viewgroupFrontFlashcard.height}")
+                systemOutLogging("Got LayoutParams.Height: ${viewgroupFrontFlashcard.layoutParams.height}")
                 totalMargin += (viewgroupFrontFlashcard.height * FLASHCARD_WIDE_HEIGHT_RATE).toInt()
 
                 totalMargin += 25.dp()
@@ -237,6 +287,14 @@ class RetrofitAddFlashcardActivity :
         }
     }
 
+    private fun recalculate_FunctionsPanel_Dimens() {
+        dB.layoutFunctionsPanel.apply {
+            root.doOnPreDraw {
+                root.layoutParams.height = root.width
+                root.requestLayout()
+            }
+        }
+    }
 
     override fun onPause() {
         super.onPause()
@@ -293,10 +351,9 @@ class RetrofitAddFlashcardActivity :
                         requestEditDeck!!.frontLanguage,
                         requestEditDeck!!.backLanguage
                     )
-
+                    setEdtTypeCausedByEdit = true
                     showRequestEditFlashcard_Info_OnScreen(requestEditFlashcard!!)
                     viewModel.currentFocusDeck = requestEditDeck!!
-
                 } else {
                     val thereIsNoFlashcardSetAvailable = (flashcardSetList.size == 0)
                     if (thereIsNoFlashcardSetAvailable) {
@@ -379,11 +436,11 @@ class RetrofitAddFlashcardActivity :
                     name = requestEditFlashcard.frontIllustrationPictureName!!,
                     onGet = { ex, picture ->
                         if (ex != null) {
-                            log("Load image error happens")
+                            systemOutLogging("Load image error happens")
                             ex.printStackTrace()
                         } else {
                             if (picture == null) {
-                                log("No error happens but image is null")
+                                systemOutLogging("No error happens but image is null")
                                 throw Exception("????")
                                 // TODO ()
                             } else {
@@ -402,11 +459,11 @@ class RetrofitAddFlashcardActivity :
                     name = requestEditFlashcard.backIllustrationPictureName!!,
                     onGet = { ex, picture ->
                         if (ex != null) {
-                            log("Load image error happens")
+                            systemOutLogging("Load image error happens")
                             ex.printStackTrace()
                         } else {
                             if (picture == null) {
-                                log("No error happens but image is null")
+                                systemOutLogging("No error happens but image is null")
                                 throw Exception("????")
                                 // TODO ()
                             } else {
@@ -524,25 +581,9 @@ class RetrofitAddFlashcardActivity :
     override fun addViewEvents() {
         dB.apply {
 
-            edtText.setOnFocusChangeListener { v, hasFocus ->
-                if (hasFocus && hasStartedEdit.not()) {
-                    showVirtualKeyboard()
-                    edtText.requestFocus()
-                    startEditting()
-                }
-            }
-
             edtText.addTextChangeListener { text, i, i2, i3 ->
                 if (text.isNotEmpty()) {
                     resetTextEditTextHintToNormal()
-                }
-            }
-
-            edtType.setOnFocusChangeListener { v, hasFocus ->
-                if (hasFocus && hasStartedEdit.not()) {
-                    showVirtualKeyboard()
-                    edtType.requestFocus()
-                    startEditting()
                 }
             }
 
@@ -553,9 +594,6 @@ class RetrofitAddFlashcardActivity :
             }
 
             edtPronunciation.setOnClickListener {
-                if (hasStartedEdit.not()) {
-                    startEditting()
-                }
                 showIPAKeyboard()
                 hideScreenFocusToTranslationEditText()
             }
@@ -580,55 +618,119 @@ class RetrofitAddFlashcardActivity :
                 return@setOnEditorActionListener true
             }
 
-            vwgrpBtnSave.setOnClickListener {
-                proceedAddOrSaveFlashcard()
-                userEndAdding = true
-            }
+            val mashmallowAnim = AnimationUtils.loadAnimation(
+                this@RetrofitAddFlashcardActivity,
+                R.anim.mashmallow_effect
+            )
+            mashmallowAnim.interpolator = FastOutLinearInInterpolator()
+            layoutFunctionsPanel.apply {
 
-            vwgrpBtnSaveAndContinue.setOnClickListener {
-                proceedAddOrSaveFlashcard()
-                userEndAdding = false
-            }
-
-            imgSwipeZone.setOnTouchListener(object :
-                MyGestureDetector(this@RetrofitAddFlashcardActivity) {
-
-                override fun onSwipeRight() {
-
+                vwgrpBtnSave.setOnClickListener {
+                    imgSave.startAnimation(mashmallowAnim)
+                    proceedAddOrSaveFlashcard()
+                    userEndAdding = true
                 }
 
-                override fun onSwipeLeft() {
-
+                vwgrpBtnContinue.setOnClickListener {
+                    imgContinue.startAnimation(mashmallowAnim)
+                    proceedAddOrSaveFlashcard()
+                    userEndAdding = false
                 }
 
-                override fun onSwipeUp() {
-                    if (hasStartedEdit.not()) {
-                        showVirtualKeyboard()
-                        edtText.requestFocus()
-                        startEditting()
+                vwgrpBtnFlip.setOnClickListener {
+                    imgFlip.startAnimation(mashmallowAnim)
+                    if (isShowingFrontCard) {
+                        flipFrontToBackCard(FlipDirection.FLIP_UP)
+                        isShowingFrontCard = false
+                        edtTranslation.requestFocus()
                     } else {
-                        showVirtualKeyboard()
-                        if (isShowingFrontCard and edtText.text.isEmpty()) {
-                            edtText.requestFocus()
-                            return
-                        }
-
-                        if (isShowingFrontCard.not() and edtTranslation.text.isEmpty()) {
-                            edtTranslation.requestFocus()
-                            return
-                        }
-
-                        onUserFlipCard(FlipDirection.FLIP_UP)
+                        flipBackToFrontCard(FlipDirection.FLIP_DOWN)
+                        isShowingFrontCard = true
+                        edtText.requestFocus()
                     }
                 }
 
-                override fun onSwipeDown() {
-                    if (hasStartedEdit) {
-                        onUserFlipCard(FlipDirection.FLIP_DOWN)
-                        showVirtualKeyboard()
+                vwgrpBtnGoUp.setOnClickListener {
+                    imgGoUp.startAnimation(mashmallowAnim)
+                    showVirtualKeyboard()
+                    if (isShowingFrontCard) {
+                        edtText.requestFocus()
+                    } else {
+                        edtTranslation.requestFocus()
                     }
                 }
-            })
+
+                vwgrpBtnNewDeck.setOnClickListener {
+                    imgNewDeck.startAnimation(mashmallowAnim)
+                    edtNewSetName.requestFocus()
+                    edtNewSetFrontLanguage.setText(viewModel.currentFocusDeck.frontLanguage)
+                    edtNewSetBackLanguage.setText(viewModel.currentFocusDeck.backLanguage)
+                    if (rcvFlashcardSetName.isVisible) {
+                        hideSetNameList()
+                    }
+
+                    if (btnCreateNewSetSuggestion.isVisible) {
+                        hideButton_CreateNewSetSuggesstion()
+                    }
+
+                    showCreateSetNamePanel()
+                }
+
+                vwgrpBtnCardProperties.setOnClickListener {
+                    imgCardProps.startAnimation(mashmallowAnim)
+                    btnFrontChoosePicture.goGoneByFadeOutAnim()
+                    btnBackChoosePicture.goGoneByFadeOutAnim()
+                    show_ChooseCardPropertyByFadeIn()
+                    hide_SaveFunctionsComponentsByFadeOut()
+                }
+            }
+
+//            vwgrpBtnSave.setOnClickListener {
+//                proceedAddOrSaveFlashcard()
+//                userEndAdding = true
+//            }
+//
+//            vwgrpBtnSaveAndContinue.
+//
+//            imgSwipeZone.setOnTouchListener(object :
+//                MyGestureDetector(this@RetrofitAddFlashcardActivity) {
+//
+//                override fun onSwipeRight() {
+//
+//                }
+//
+//                override fun onSwipeLeft() {
+//
+//                }
+//
+//                override fun onSwipeUp() {
+//                    if (hasStartedEdit.not()) {
+//                        showVirtualKeyboard()
+//                        edtText.requestFocus()
+//                        startEditting()
+//                    } else {
+//                        showVirtualKeyboard()
+//                        if (isShowingFrontCard and edtText.text.isEmpty()) {
+//                            edtText.requestFocus()
+//                            return
+//                        }
+//
+//                        if (isShowingFrontCard.not() and edtTranslation.text.isEmpty()) {
+//                            edtTranslation.requestFocus()
+//                            return
+//                        }
+//
+//                        onUserFlipCard(FlipDirection.FLIP_UP)
+//                    }
+//                }
+//
+//                override fun onSwipeDown() {
+//                    if (hasStartedEdit) {
+//                        onUserFlipCard(FlipDirection.FLIP_DOWN)
+//                        showVirtualKeyboard()
+//                    }
+//                }
+//            })
 
             imgSetNameSpinner.setOnClickListener {
                 txtSetName.performClick()
@@ -645,7 +747,7 @@ class RetrofitAddFlashcardActivity :
 
             btnCreateNewSetSuggestion.setOnClickListener {
                 hideButton_CreateNewSetSuggesstion()
-                btnStartCreateNewSet.performClick()
+//                btnStartCreateNewSet.performClick()
             }
 
             rcvFrontLangChooseLanguageAdapter.setOnItemClickListener { language ->
@@ -665,6 +767,14 @@ class RetrofitAddFlashcardActivity :
             }
 
             edtType.addTextChangeListener (onTextChanged = { text, start, beforeTextLength, count ->
+                // Because when edit a card
+                // We call edtType.setText in showRequestEditFlashcard_Info_OnScreen()
+                // this trigger TextChangeListener too
+                // Create setTextCausedByEdit to solve this problem
+                if (setEdtTypeCausedByEdit) {
+                    setEdtTypeCausedByEdit = false
+                    return@addTextChangeListener
+                }
                 if (text.length == beforeTextLength) {
                     hideCardTypeList()
                     return@addTextChangeListener
@@ -695,20 +805,20 @@ class RetrofitAddFlashcardActivity :
                 hideSetNameList()
             }
 
-            btnStartCreateNewSet.setOnClickListener {
-                edtNewSetName.requestFocus()
-                edtNewSetFrontLanguage.setText(viewModel.currentFocusDeck.frontLanguage)
-                edtNewSetBackLanguage.setText(viewModel.currentFocusDeck.backLanguage)
-                if (rcvFlashcardSetName.isVisible) {
-                    hideSetNameList()
-                }
-
-                if (btnCreateNewSetSuggestion.isVisible) {
-                    hideButton_CreateNewSetSuggesstion()
-                }
-
-                showCreateSetNamePanel()
-            }
+//            btnStartCreateNewSet.setOnClickListener {
+//                edtNewSetName.requestFocus()
+//                edtNewSetFrontLanguage.setText(viewModel.currentFocusDeck.frontLanguage)
+//                edtNewSetBackLanguage.setText(viewModel.currentFocusDeck.backLanguage)
+//                if (rcvFlashcardSetName.isVisible) {
+//                    hideSetNameList()
+//                }
+//
+//                if (btnCreateNewSetSuggestion.isVisible) {
+//                    hideButton_CreateNewSetSuggesstion()
+//                }
+//
+//                showCreateSetNamePanel()
+//            }
 
             imgNewSetFrontLangSpinner.setOnClickListener {
                 showChooseFrontLanguageLists()
@@ -771,32 +881,32 @@ class RetrofitAddFlashcardActivity :
                 btnBackChoosePicture.performClick()
             }
 
-            vwgrpBtnBlueChooseCardProperty.setOnClickListener {
-                btnFrontChoosePicture.goGoneByFadeOutAnim()
-                btnBackChoosePicture.goGoneByFadeOutAnim()
-                show_ChooseCardPropertyByFadeIn()
-                hide_StartEditComponentsByFadeOut()
-            }
-
-            btnCardPropertiesOnTop.setOnClickListener {
-                btnFrontChoosePicture.goGoneByFadeOutAnim()
-                btnBackChoosePicture.goGoneByFadeOutAnim()
-                show_ChooseCardPropertyByFadeIn()
-                hide_SaveFunctionsComponentsByFadeOut()
-            }
+//            vwgrpBtnBlueChooseCardProperty.setOnClickListener {
+//                btnFrontChoosePicture.goGoneByFadeOutAnim()
+//                btnBackChoosePicture.goGoneByFadeOutAnim()
+//                show_ChooseCardPropertyByFadeIn()
+//                hide_StartEditComponentsByFadeOut()
+//            }
+//
+//            btnCardPropertiesOnTop.setOnClickListener {
+//                btnFrontChoosePicture.goGoneByFadeOutAnim()
+//                btnBackChoosePicture.goGoneByFadeOutAnim()
+//                show_ChooseCardPropertyByFadeIn()
+//                hide_SaveFunctionsComponentsByFadeOut()
+//            }
 
             layoutChooseCardProperty.apply {
                 rdgrCardHeight.setOnCheckedChangeListener { view, changedId ->
                     if (changedId == rdbtnHeightNormal.id) {
                         recalculate_Flashcard_Dimens(1f)
                         currentCardProperty.heightOption = HEIGHT_NORMAL
-                        txtSave.goVISIBLE()
-                        txtContinue.goVISIBLE()
+//                        txtSave.goVISIBLE()
+//                        txtContinue.goVISIBLE()
                     } else if (changedId == rdbtnHeightWide.id) {
                         recalculate_Flashcard_Dimens(FLASHCARD_WIDE_HEIGHT_RATE)
                         currentCardProperty.heightOption = HEIGHT_WIDE
-                        txtSave.goGONE()
-                        txtContinue.goGONE()
+//                        txtSave.goGONE()
+//                        txtContinue.goGONE()
                     }
                 }
 
@@ -865,7 +975,7 @@ class RetrofitAddFlashcardActivity :
 
     private fun hide_SaveFunctionsComponentsByFadeOut() {
         dB.apply {
-            vwgrpSwipeFunctions.goGoneByFadeOutAnim()
+            layoutFunctionsPanel.root.goGoneByFadeOutAnim()
         }
     }
 
@@ -967,10 +1077,6 @@ class RetrofitAddFlashcardActivity :
     private fun proceedAddOrSaveFlashcard() {
         dB.apply {
 
-            if (hasStartedEdit.not()) {
-                return
-            }
-
             val text = edtText.text.toString()
             val translation = edtTranslation.text.toString()
             val example = edtExample.text.toString()
@@ -999,13 +1105,15 @@ class RetrofitAddFlashcardActivity :
                 cardProperty = currentCardProperty
             )
 
-            val front_IllustrationPicture = if (imgFrontIllustrationPicture.drawable != null) {
-                (imgFrontIllustrationPicture.drawable as BitmapDrawable).bitmap
-            } else null
+            val front_IllustrationPicture =
+                if (imgFrontIllustrationPicture.drawable != front_illustrationDefaultDrawable) {
+                    (imgFrontIllustrationPicture.drawable as BitmapDrawable).bitmap
+                } else null
 
-            val back_IllustrationPicture = if (imgFrontIllustrationPicture.drawable != null) {
-                (imgFrontIllustrationPicture.drawable as BitmapDrawable).bitmap
-            } else null
+            val back_IllustrationPicture =
+                if (imgBackIllustrationPicture.drawable != back_illustrationDefaultDrawable) {
+                    (imgBackIllustrationPicture.drawable as BitmapDrawable).bitmap
+                } else null
 
             viewModel.proceedAddFlashcard(
                 newCard,
@@ -1327,32 +1435,6 @@ class RetrofitAddFlashcardActivity :
             })
     }
 
-    private fun startEditting () { dB.apply {
-        vwgrpSwipeFunctions.animate().alpha(1f).setDuration(100)
-            .setStartDelay(KEYBOARD_APPEAR_INTERVAL)
-            .setLiteListener(onStart = {
-                vwgrpSwipeFunctions.goVISIBLE()
-            })
-
-        imgArrowUp.animate().alpha(0f).setDuration(100)
-            .setLiteListener(onEnd = {
-                imgArrowUp.goGONE()
-            })
-
-        txtSwipeUp.animate().alpha(0f).setDuration(100)
-            .setLiteListener(onEnd = {
-                txtSwipeUp.goGONE()
-            })
-
-
-        vwgrpBtnBlueChooseCardProperty.goGONE()
-        btnCardPropertiesOnTop.goVISIBLE()
-        txtCardPropertiesOnTop.goVISIBLE()
-
-        hasStartedEdit = true
-
-    }}
-
     private fun onUserFlipCard(flipDirection: FlipDirection) {
         if (isShowingFrontCard) {
             flipFrontToBackCard(flipDirection)
@@ -1369,10 +1451,10 @@ class RetrofitAddFlashcardActivity :
         dB.apply {
             if (flipDirection == FlipDirection.FLIP_UP) {
                 back_Up_To_Front_EffectAnmtrSet.start()
-                log("Back up to front")
+                systemOutLogging("Back up to front")
             } else if (flipDirection == FlipDirection.FLIP_DOWN) {
                 back_Down_To_Front_EffectAnmtrSet.start()
-                log("Back down to front")
+                systemOutLogging("Back down to front")
             }
 
             viewgroupBackFlashcard.startAnimation(turnUpFrontCard_After_TurnDownBackCard)
@@ -1384,9 +1466,9 @@ class RetrofitAddFlashcardActivity :
         dB.apply {
             if (flipDirection == FlipDirection.FLIP_UP) {
                 front_Up_To_Back_EffectAnmtrSet.start()
-                log("Front up to back")
+                systemOutLogging("Front up to back")
             } else if (flipDirection == FlipDirection.FLIP_DOWN) {
-                log("Front down to back")
+                systemOutLogging("Front down to back")
                 front_Down_To_Back_EffectAnmtrSet.start()
             }
             viewgroupFrontFlashcard.startAnimation(turnUpBackCard_After_TurnDownFrontCard)
@@ -1432,30 +1514,10 @@ class RetrofitAddFlashcardActivity :
                 setBack_IllustrationPictureWidth(0)
             }
 
+
             imgFrontIllustrationPicture.setBackgroundColor(Color.TRANSPARENT)
             layoutChooseCardProperty.root.goGoneByFadeOutAnim()
-            if (hasStartedEdit) {
-                vwgrpSwipeFunctions.goVisibleByFadeInAnim(1f)
-            } else {
-                show_StartEditComponentsByFadeIn()
-            }
-        }
-    }
-
-    private fun show_StartEditComponentsByFadeIn() {
-        dB.apply {
-            vwgrpBtnBlueChooseCardProperty.goVisibleByFadeInAnim(1f)
-            imgArrowUp.goVisibleByFadeInAnim(1f)
-            txtSwipeUp.goVisibleByFadeInAnim(1f)
-        }
-    }
-
-    private fun hide_StartEditComponentsByFadeOut() {
-        dB.apply {
-            btnFrontChoosePicture.goGoneByFadeOutAnim()
-            vwgrpBtnBlueChooseCardProperty.goGoneByFadeOutAnim()
-            imgArrowUp.goGoneByFadeOutAnim()
-            txtSwipeUp.goGoneByFadeOutAnim()
+            layoutFunctionsPanel.root.goVisibleByFadeInAnim(1f)
         }
     }
 

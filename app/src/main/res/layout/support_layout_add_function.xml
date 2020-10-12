@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:elevation="10dp"
+        android:orientation="vertical"
+        android:weightSum="3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/vwgrp_btn_continue"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/background_clickable_round_15dp_darker_blue"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/img_continue"
+                    android:layout_width="34.3dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/image_button_continue" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/seguisb"
+                    android:text="Continue"
+                    android:textColor="@color/app_darker_blue"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/vwgrp_btn_flip"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/round_15dp_15_alpha_app_blue"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/img_flip"
+                    android:layout_width="51dp"
+                    android:layout_height="51dp"
+                    android:src="@drawable/image_button_square" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/vwgrp_btn_save"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/background_clickable_round_15dp_darker_blue"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/img_save"
+                    android:layout_width="33.68dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/image_button_save" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/seguisb"
+                    android:text="Save"
+                    android:textColor="@color/app_darker_blue"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="2"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:id="@+id/vwgrp_btn_go_up"
+                android:layout_width="10dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="2"
+                android:background="@drawable/background_clickable_round_15dp_darker_blue"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/img_go_up"
+                    android:layout_width="41dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/image_button_swipe_up" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:id="@+id/vwgrp_btn_card_properties"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/background_clickable_round_15dp_darker_blue"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+
+                    <ImageView
+                        android:id="@+id/img_card_props"
+                        android:layout_width="39dp"
+                        android:layout_height="39dp"
+                        android:src="@drawable/image_button_card_properties" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/seguisb"
+                        android:text="Card properties"
+                        android:textColor="@color/app_darker_blue"
+                        android:textSize="12sp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/vwgrp_btn_new_deck"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/background_clickable_round_15dp_darker_blue"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/img_new_deck"
+                        android:layout_width="39dp"
+                        android:layout_height="39dp"
+                        android:src="@drawable/image_button_big_add_new_set" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/seguisb"
+                        android:text="New deck"
+                        android:textColor="@color/app_darker_blue"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</layout>

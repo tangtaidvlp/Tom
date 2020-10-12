@@ -21,8 +21,8 @@
     <color name="writing_flashcard_red">#E94F4D</color>
     <color name="grey_background_color">#F8F8F8</color>
     <color name="app_blue">#17A1BB</color>
-    <color name="app_darker_blue">#24667E</color>
-    <color name="extreme_dark_blue">#19353B</color>
+    <color name="app_darker_blue">#118398</color>
+    <color name="extreme_dark_blue">#24667E</color>
     <color name="unchecked_grey">#AFAFAF</color>
     <color name="app_light_and_fuzzle_blue">#BED2D9</color>
     <color name="app_extreme_grey_background">#F9F9F9</color>
@@ -37,6 +37,9 @@
     <color name="search_bar_hint">#686868</color>
     <color name="light_grey">#7F7F7F</color>
     <color name="app_brown">#6E3300</color>
+    <color name="brown_red">#BA3A20</color>
+    <color name="text_color_a_little_bit_more_dark_blue">#048FAA</color>
+    <color name="dark_blue">#24667E</color>
 
 
 </resources>

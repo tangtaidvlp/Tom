@@ -18,7 +18,7 @@ import com.teamttdvlp.memolang.model.repository.UserUsingHistoryRepos
 import com.teamttdvlp.memolang.model.sharepref.EngVietDictionaryActivitySharePref
 import com.teamttdvlp.memolang.view.activity.iview.FloatAddServiceView
 import com.teamttdvlp.memolang.view.base.BaseViewModel
-import com.teamttdvlp.memolang.view.helper.log
+import com.teamttdvlp.memolang.view.helper.systemOutLogging
 import javax.inject.Inject
 
 class FloatAddServiceViewModel
@@ -137,7 +137,7 @@ constructor(
                 newCard.id = insertedCardId.toInt()
                 updateUserInfo(newCard)
             } else {
-                log("Storing this flashcard to local storage failed. Please check again")
+                systemOutLogging("Storing this flashcard to local storage failed. Please check again")
                 exception!!.printStackTrace()
             }
         }

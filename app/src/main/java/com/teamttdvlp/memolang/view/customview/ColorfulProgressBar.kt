@@ -19,7 +19,7 @@ import android.widget.LinearLayout
 import androidx.core.animation.addListener
 import androidx.interpolator.view.animation.FastOutSlowInInterpolator
 import com.teamttdvlp.memolang.R
-import com.teamttdvlp.memolang.view.helper.log
+import com.teamttdvlp.memolang.view.helper.systemOutLogging
 import kotlin.math.*
 
 private const val UNVALUED = -1
@@ -226,9 +226,9 @@ class ColorfulImage : View {
 
         actionToEndDistance = abs(width - actionRadius)
 
-        log("Radius: $width")
-        log("Action Radius: $actionRadius")
-        log("Distance: $actionToEndDistance")
+        systemOutLogging("Radius: $width")
+        systemOutLogging("Action Radius: $actionRadius")
+        systemOutLogging("Distance: $actionToEndDistance")
 
         offsetActionToEnd_x1 = 0f
         offsetActionToEnd_y1 = actionToEndDistance.toFloat()

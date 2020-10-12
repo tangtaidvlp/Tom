@@ -7,7 +7,7 @@ import android.view.View
 import android.widget.LinearLayout
 import android.widget.TextView
 import com.teamttdvlp.memolang.databinding.SupportIpaKeyboardBinding
-import com.teamttdvlp.memolang.view.helper.log
+import com.teamttdvlp.memolang.view.helper.systemOutLogging
 
 class IpaKeyboard (context : Context, attrSet: AttributeSet): LinearLayout(context, attrSet) {
 
@@ -306,10 +306,10 @@ class IpaKeyboard (context : Context, attrSet: AttributeSet): LinearLayout(conte
         }
 
         if (-y > -lowestPosition) {
-            log("Android Virtual Keyboard is being showed y: $y and lowestPos: $lowestPosition")
+            systemOutLogging("Android Virtual Keyboard is being showed y: $y and lowestPos: $lowestPosition")
             onDeviceVirtualKeyboardShow?.invoke()
         } else {
-            log("Android Virtual Keyboard is being hiddenk")
+            systemOutLogging("Android Virtual Keyboard is being hiddenk")
         }
 
     }

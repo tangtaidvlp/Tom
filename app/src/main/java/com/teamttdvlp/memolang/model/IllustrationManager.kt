@@ -5,7 +5,7 @@ import android.content.Context
 import android.graphics.Bitmap
 import android.graphics.BitmapFactory
 import android.os.AsyncTask
-import com.teamttdvlp.memolang.view.helper.log
+import com.teamttdvlp.memolang.view.helper.systemOutLogging
 import java.io.FileInputStream
 import java.io.FileNotFoundException
 import java.io.FileOutputStream
@@ -24,13 +24,13 @@ constructor
                 fos = app.openFileOutput(picName, Context.MODE_PRIVATE)
                 b.compress(Bitmap.CompressFormat.PNG, 100, fos)
             } catch (e: FileNotFoundException) {
-                log("file not found")
+                systemOutLogging("file not found")
                 e.printStackTrace()
             } catch (e: IOException) {
-                log("io exception")
+                systemOutLogging("io exception")
                 e.printStackTrace()
             } catch (e: Exception) {
-                log("Other exception")
+                systemOutLogging("Other exception")
                 e.printStackTrace()
             } finally {
                 fos?.close()
@@ -55,15 +55,15 @@ constructor
                 fileInputStream = app.openFileInput(picName)
                 bitmap = BitmapFactory.decodeStream(fileInputStream)
             } catch (e: FileNotFoundException) {
-                log("file not found")
+                systemOutLogging("file not found")
                 exception = e
                 e.printStackTrace()
             } catch (e: IOException) {
-                log("io exception")
+                systemOutLogging("io exception")
                 exception = e
                 e.printStackTrace()
             } catch (e: Exception) {
-                log("Another error")
+                systemOutLogging("Another error")
                 exception = e
                 e.printStackTrace()
             } finally {

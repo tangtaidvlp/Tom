@@ -41,15 +41,12 @@
             android:fontFamily="@font/seguisb"
             android:gravity="left|center_vertical"
             android:includeFontPadding="false"
-            android:layout_marginEnd="20dp"
             android:inputType="textNoSuggestions"
-            app:layout_constraintEnd_toStartOf="@+id/btn_card_properties_on_top"
             android:paddingTop="1dp"
             android:paddingBottom="2dp"
             android:text="Harry Potter"
             android:textColor="@color/white"
             android:textSize="23sp"
-            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -62,6 +59,15 @@
             android:src="@drawable/image_button_triangle_spinner"
             app:layout_constraintBottom_toBottomOf="@id/txt_set_name"
             app:layout_constraintStart_toEndOf="@id/txt_set_name"
+            app:layout_constraintTop_toTopOf="@id/txt_set_name" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/common_margin_end"
+            android:src="@drawable/image_kebab_button"
+            app:layout_constraintBottom_toBottomOf="@id/txt_set_languages"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="@id/txt_set_name" />
 
         <androidx.recyclerview.widget.RecyclerView
@@ -105,87 +111,6 @@
             app:layout_constraintStart_toStartOf="@id/txt_set_name"
             app:layout_constraintTop_toBottomOf="@id/txt_set_name" />
 
-        <ImageView
-            android:id="@+id/btn_start_create_new_set"
-            android:layout_width="35dp"
-            android:layout_height="35dp"
-            android:layout_marginTop="9dp"
-            android:scaleType="fitCenter"
-            android:src="@drawable/image_button_square_create_new_set_white_set"
-            app:layout_constraintBottom_toBottomOf="@id/txt_set_name"
-            app:layout_constraintEnd_toEndOf="@+id/textView11"
-            app:layout_constraintStart_toStartOf="@+id/textView11"
-            app:layout_constraintTop_toTopOf="@id/txt_set_name" />
-
-        <TextView
-            android:id="@+id/textView12"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:alpha="0.4"
-            android:fontFamily="@font/seguisb"
-            android:inputType="textNoSuggestions"
-            android:text="Help"
-            android:textColor="@color/white"
-            android:textSize="12sp"
-            app:layout_constraintEnd_toEndOf="@id/btn_help"
-            app:layout_constraintStart_toStartOf="@id/btn_help"
-            app:layout_constraintTop_toTopOf="@id/txt_set_languages"
-            tools:layout_editor_absoluteX="319dp" />
-
-        <ImageView
-            android:id="@+id/btn_card_properties_on_top"
-            android:layout_width="35dp"
-            android:layout_height="35dp"
-            android:layout_marginTop="9dp"
-            android:layout_marginEnd="10dp"
-            android:scaleType="fitCenter"
-            android:src="@drawable/image_icon_choose_card_properties_white"
-            android:visibility="gone"
-            app:layout_constraintBottom_toBottomOf="@id/txt_set_name"
-            app:layout_constraintEnd_toStartOf="@id/btn_help"
-            app:layout_constraintTop_toTopOf="@id/txt_set_name" />
-
-        <TextView
-            android:id="@+id/txt_card_properties_on_top"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:alpha="0.4"
-            android:fontFamily="@font/seguisb"
-            android:inputType="textNoSuggestions"
-            android:text="Card prop."
-            android:textColor="@color/white"
-            android:textSize="12sp"
-            android:visibility="gone"
-            app:layout_constraintEnd_toEndOf="@+id/btn_card_properties_on_top"
-            app:layout_constraintStart_toStartOf="@id/btn_card_properties_on_top"
-            app:layout_constraintTop_toTopOf="@id/txt_set_languages" />
-
-        <ImageView
-            android:id="@+id/btn_help"
-            android:layout_width="35dp"
-            android:layout_height="35dp"
-            android:layout_marginTop="9dp"
-            android:layout_marginEnd="10dp"
-            android:scaleType="fitCenter"
-            android:src="@drawable/image_button_square_help_white"
-            app:layout_constraintBottom_toBottomOf="@id/txt_set_name"
-            app:layout_constraintEnd_toStartOf="@+id/btn_start_create_new_set"
-            app:layout_constraintTop_toTopOf="@id/txt_set_name" />
-
-        <TextView
-            android:id="@+id/textView11"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="@dimen/common_dialog_margin_end"
-            android:inputType="textNoSuggestions"
-            android:alpha="0.4"
-            android:fontFamily="@font/seguisb"
-            android:text="New set"
-            android:textColor="@color/white"
-            android:textSize="12sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="@id/txt_set_languages" />
-
         <!--        Ngôn ngữ của set name-->
 
         <TextView
@@ -198,7 +123,7 @@
             android:orientation="horizontal"
             android:text="English - Vietnamese"
             android:textColor="@color/white"
-            android:textSize="12sp"
+            android:textSize="14sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/txt_set_name" />
 
@@ -216,9 +141,6 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/txt_set_languages" />
 
-
-        <!--        Tạo set mới-->
-
         <!--            Create new set-->
 
         <ImageView
@@ -229,6 +151,22 @@
             android:background="@color/black"
             android:translationZ="15dp"
             android:visibility="gone" />
+
+
+        <include
+            android:id="@+id/layout_functions_panel"
+            layout="@layout/support_layout_add_function"
+            android:layout_width="0dp"
+            android:layout_height="400dp"
+            android:layout_marginStart="@dimen/common_margin_start"
+            android:layout_marginTop="22dp"
+            android:layout_marginEnd="@dimen/common_margin_end"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/viewgroup_front_flashcard"
+            app:layout_constraintVertical_bias="0.0" />
+
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/vwgrp_create_new_set"
@@ -324,7 +262,7 @@
                 android:paddingBottom="2dp"
                 android:text="Front"
                 android:textColor="#CBCBCB"
-                android:textSize="12sp"
+                android:textSize="14sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/vwgrp_edt_new_set_name" />
 
@@ -388,7 +326,7 @@
                 android:paddingBottom="2dp"
                 android:text="Back"
                 android:textColor="#CBCBCB"
-                android:textSize="12sp"
+                android:textSize="14sp"
                 app:layout_constraintStart_toStartOf="@id/sub_vertical_center_guideline"
                 app:layout_constraintTop_toBottomOf="@id/vwgrp_edt_new_set_name" />
 
@@ -831,7 +769,7 @@
                     android:paddingBottom="2dp"
                     android:text="Harry Potter"
                     android:textColor="@color/app_blue"
-                    android:textSize="12sp" />
+                    android:textSize="14sp" />
 
                 <ImageView
                     android:layout_width="16dp"
@@ -974,36 +912,6 @@
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
-        <androidx.appcompat.widget.LinearLayoutCompat
-            android:id="@+id/vwgrp_btn_blue_choose_card_property"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
-            android:elevation="3dp"
-            android:gravity="center_vertical"
-            android:orientation="horizontal"
-            app:layout_constraintBottom_toTopOf="@+id/img_arrow_up"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/viewgroup_front_flashcard"
-            app:layout_constraintVertical_bias="0.5">
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/image_icon_choose_card_properties" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="2dp"
-                android:fontFamily="@font/segoeui"
-                android:text="Card properties"
-                android:textColor="@color/app_blue"
-                android:textSize="16sp" />
-
-        </androidx.appcompat.widget.LinearLayoutCompat>
-
         <com.teamttdvlp.memolang.view.customview.ChooseCardTypeRecyclerView
             android:id="@+id/rcv_choose_card_type"
             android:layout_width="0dp"
@@ -1032,82 +940,6 @@
         <!--       nắp hộp -->
 
 
-        <androidx.appcompat.widget.LinearLayoutCompat
-            android:id="@+id/vwgrp_swipe_functions"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_marginStart="@dimen/common_dialog_margin_start"
-            android:layout_marginTop="20dp"
-            android:layout_marginEnd="@dimen/common_dialog_margin_end"
-            android:layout_marginBottom="20dp"
-            android:elevation="100dp"
-            android:alpha="0.0"
-            android:orientation="horizontal"
-            android:visibility="gone"
-            android:weightSum="3"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHeight_max="200dp"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/viewgroup_back_flashcard"
-            app:layout_constraintVertical_bias="0.474">
-
-            <androidx.appcompat.widget.LinearLayoutCompat
-                android:id="@+id/vwgrp_btn_save_and_continue"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_marginEnd="10dp"
-                android:layout_weight="1"
-                android:background="@drawable/round_5dp_alpha_06_app_blue_background"
-                android:gravity="center"
-                android:orientation="vertical">
-
-                <ImageView
-                    android:id="@+id/btn_save_and_continue"
-                    android:layout_width="40dp"
-                    android:layout_height="48dp"
-                    android:src="@drawable/image_button_save_and_continue" />
-
-                <TextView
-                    android:id="@+id/txt_continue"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/seguisb"
-                    android:text="Continue"
-                    android:textColor="@color/app_blue"
-                    android:textSize="12sp" />
-
-            </androidx.appcompat.widget.LinearLayoutCompat>
-
-            <androidx.appcompat.widget.LinearLayoutCompat
-                android:id="@+id/vwgrp_btn_save"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="2"
-                android:background="@drawable/round_5dp_alpha_06_app_blue_background"
-                android:gravity="center"
-                android:orientation="vertical">
-
-                <ImageView
-                    android:id="@+id/btn_save"
-                    android:layout_width="40dp"
-                    android:layout_height="48dp"
-                    android:src="@drawable/image_button_save" />
-
-                <TextView
-                    android:id="@+id/txt_save"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/seguisb"
-                    android:text="Save"
-                    android:textColor="@color/app_blue"
-                    android:textSize="12sp" />
-
-            </androidx.appcompat.widget.LinearLayoutCompat>
-
-        </androidx.appcompat.widget.LinearLayoutCompat>
-
         <include
             android:id="@+id/layout_choose_card_property"
             layout="@layout/support_choose_card_property"
@@ -1122,69 +954,6 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@id/img_white_background" />
-
-        <ImageView
-            android:id="@+id/img_arrow_up"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="60dp"
-            android:elevation="10dp"
-            android:padding="1dp"
-            android:src="@drawable/image_icon_arrow_up"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
-
-        <TextView
-            android:id="@+id/background_line_left"
-            android:layout_width="0dp"
-            android:layout_height="0.5dp"
-            android:layout_marginStart="@dimen/common_margin_start"
-            android:layout_marginEnd="15dp"
-            android:alpha="0.151"
-            android:background="@color/app_blue"
-            android:elevation="5dp"
-            android:outlineSpotShadowColor="@android:color/transparent"
-            app:layout_constraintBottom_toBottomOf="@id/img_arrow_up"
-            app:layout_constraintEnd_toStartOf="@id/img_arrow_up"
-            app:layout_constraintStart_toStartOf="parent" />
-
-        <TextView
-            android:id="@+id/background_line_right"
-            android:layout_width="0dp"
-            android:layout_height="0.5dp"
-            android:layout_marginStart="15dp"
-            android:layout_marginEnd="@dimen/common_margin_end"
-            android:alpha="0.151"
-            android:background="@color/app_blue"
-            android:elevation="5dp"
-            android:outlineSpotShadowColor="@android:color/transparent"
-            app:layout_constraintBottom_toBottomOf="@id/img_arrow_up"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@id/img_arrow_up" />
-
-        <TextView
-            android:id="@+id/txt_swipe_up"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="2dp"
-            android:elevation="10dp"
-            android:inputType="textNoSuggestions"
-            android:text="Swipe up"
-            android:textColor="@color/app_blue"
-            android:fontFamily="@font/segoeui"
-            android:textSize="14sp"
-            app:layout_constraintBottom_toBottomOf="@id/background_line_right"
-            app:layout_constraintEnd_toEndOf="@id/background_line_right" />
-
-        <ImageView
-            android:id="@+id/img_swipe_zone"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/viewgroup_back_flashcard" />
 
         <ImageView
             android:id="@+id/img_flashcard_right_receiver"

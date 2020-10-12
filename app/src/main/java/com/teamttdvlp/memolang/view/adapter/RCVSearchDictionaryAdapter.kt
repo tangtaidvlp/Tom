@@ -11,7 +11,7 @@ import com.teamttdvlp.memolang.data.model.other.new_vocabulary.RawVocabulary
 import com.teamttdvlp.memolang.data.model.other.new_vocabulary.TypicalRawVocabulary
 import com.teamttdvlp.memolang.databinding.ItemSearchDictionaryBinding
 import com.teamttdvlp.memolang.view.helper.clearAll
-import com.teamttdvlp.memolang.view.helper.log
+import com.teamttdvlp.memolang.view.helper.systemOutLogging
 import java.io.BufferedReader
 import java.io.InputStreamReader
 import kotlin.math.abs
@@ -88,7 +88,7 @@ class RCVSearchDictionaryAdapter(var context : Context) : RecyclerView.Adapter<R
             return targetRawVocabulary
         } catch (ex: Exception) {
             ex.printStackTrace()
-            log("Error Word: $targetKey")
+            systemOutLogging("Error Word: $targetKey")
         }
         throw Exception()
     }
@@ -111,7 +111,7 @@ class RCVSearchDictionaryAdapter(var context : Context) : RecyclerView.Adapter<R
     }
 
     fun setOnBtnBringTextUpClickListener(onBtnBringTextUpClickListener: (item: RawVocabulary) -> Unit) {
-        log("Setted")
+        systemOutLogging("Setted")
         this.onBtnBringTextUpClickListener = object : OnItemClickListener {
             override fun onClick(item: RawVocabulary) {
                 onBtnBringTextUpClickListener.invoke(item)
@@ -161,9 +161,9 @@ class RCVSearchDictionaryAdapter(var context : Context) : RecyclerView.Adapter<R
     while Searching Algothrim listens for text change in length listener
      **/
     private fun textChangeInLength(text: String): Boolean {
-        log("----------------------------------------------")
-        log("Prev: ${previousText}")
-        log("Current: $text")
+        systemOutLogging("----------------------------------------------")
+        systemOutLogging("Prev: ${previousText}")
+        systemOutLogging("Current: $text")
         return (text.length != previousText.length)
     }
 
@@ -257,7 +257,7 @@ class RCVSearchDictionaryAdapter(var context : Context) : RecyclerView.Adapter<R
                 if (textIsFirstChar(text)) {
                     val prefix = text
                     val corresPrefixList : ArrayList<RawVocabulary> = getCorresPrefixVocaList_AndCacheIt(prefix)
-                    log(corresPrefixList.first().key)
+                    systemOutLogging(corresPrefixList.first().key)
                     proceedCacheSearchingLists_List(corresPrefixList)
                     return corresPrefixList
                 } else { // Text is not first character
@@ -441,7 +441,7 @@ class RCVSearchDictionaryAdapter(var context : Context) : RecyclerView.Adapter<R
             "z"  -> R.raw.z_prefix_vocabulary
             "Z"  -> R.raw.z_prefix_vocabulary
             else -> {
-                log("Unknown prefix $prefixChar")
+                systemOutLogging("Unknown prefix $prefixChar")
                 null
             }
         }

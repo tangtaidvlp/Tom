@@ -6,8 +6,8 @@ import com.teamttdvlp.memolang.data.model.entity.user.UserUsingHistory
 import com.teamttdvlp.memolang.data.model.other.new_vocabulary.TypicalRawVocabulary
 import com.teamttdvlp.memolang.data.sql.MemoLangSqliteDataBase
 import com.teamttdvlp.memolang.data.sql.dao.UserUsingHistoryDAO
-import com.teamttdvlp.memolang.view.helper.log
 import com.teamttdvlp.memolang.view.helper.notContains
+import com.teamttdvlp.memolang.view.helper.systemOutLogging
 
 class UserUsingHistoryRepos (database : MemoLangSqliteDataBase) {
 
@@ -126,7 +126,7 @@ class UserUsingHistoryRepos (database : MemoLangSqliteDataBase) {
 
                 onFinish?.invoke()
             } else {
-                log("Get UserUsingHistory has errors")
+                systemOutLogging("Get UserUsingHistory has errors")
             }
         }).execute()
     }
@@ -137,9 +137,9 @@ class UserUsingHistoryRepos (database : MemoLangSqliteDataBase) {
             try {
                 val userUsingHistory = params[0]
                 userUsingHistoryDAO.updateUserHistory(userUsingHistory!!)
-                log("Update success")
+                systemOutLogging("Update success")
             } catch (ex : Exception) {
-                log("UPDATE FAILED")
+                systemOutLogging("UPDATE FAILED")
                 ex.printStackTrace()
             }
         }

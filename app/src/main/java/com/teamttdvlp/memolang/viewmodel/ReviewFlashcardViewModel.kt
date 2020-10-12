@@ -1,5 +1,6 @@
 package com.teamttdvlp.memolang.viewmodel
 
+//import com.teamttdvlp.memolang.view.helper.selfPlusOne
 import android.app.Application
 import androidx.databinding.ObservableField
 import androidx.databinding.ObservableInt
@@ -13,10 +14,9 @@ import com.teamttdvlp.memolang.model.TextSpeaker
 import com.teamttdvlp.memolang.model.checkCanUseExampleForTestSubject
 import com.teamttdvlp.memolang.view.activity.iview.ReviewFlashcardView
 import com.teamttdvlp.memolang.view.base.BaseViewModel
-import com.teamttdvlp.memolang.view.helper.log
 import com.teamttdvlp.memolang.view.helper.notContains
 import com.teamttdvlp.memolang.view.helper.replaceAt
-import com.teamttdvlp.memolang.view.helper.selfPlusOne
+import com.teamttdvlp.memolang.view.helper.systemOutLogging
 import kotlin.random.Random
 
 class ReviewFlashcardViewModel(var app : Application) : BaseViewModel<ReviewFlashcardView>() {
@@ -96,7 +96,7 @@ class ReviewFlashcardViewModel(var app : Application) : BaseViewModel<ReviewFlas
     }
 
     fun nextCard () {
-        currentPos.selfPlusOne()
+//        currentPos.selfPlusOne()
         val currentPosVal = currentPos.get()
         currentCard = cardList.get(currentPosVal)
         useCard(currentCard)
@@ -262,7 +262,7 @@ class ReviewFlashcardViewModel(var app : Application) : BaseViewModel<ReviewFlas
                 saveStatus(speakerStatus)
             }
         } else {
-            log("ReviewFlashcardViewModel.kt:: reviewFCActivity_StatusManager is not initialized")
+            systemOutLogging("ReviewFlashcardViewModel.kt:: reviewFCActivity_StatusManager is not initialized")
         }
     }
 

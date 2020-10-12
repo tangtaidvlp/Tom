@@ -368,6 +368,41 @@ class MenuActivity : BaseActivity<ActivityMenuBinding, MenuActivityViewModel>(),
                 }
             })
 
+            vwgrpExitDialog.setOnClickListener {
+                finish()
+            }
+
+            btnCancelExit.setOnClickListener {
+                backPressedTimes = 0
+                hideExitDialog()
+            }
+        }
+    }
+
+    private var backPressedTimes = 0
+
+    override fun onBackPressed() {
+        if (dB.drawerContainer.isDrawerOpen(Gravity.LEFT)) {
+            dB.drawerContainer.closeDrawer(Gravity.LEFT)
+        } else if (backPressedTimes == 0) {
+            backPressedTimes = 1
+            showExitDialog()
+        } else {
+            super.onBackPressed()
+        }
+    }
+
+    private fun showExitDialog() {
+        dB.apply {
+            vwgrpExitDialog.animate().translationY(0f)
+                .setDuration(230).interpolator = NormalOutExtraSlowIn()
+        }
+    }
+
+    private fun hideExitDialog() {
+        dB.apply {
+            vwgrpExitDialog.animate().translationY(vwgrpExitDialog.height.toFloat() + 5.dp())
+                .setDuration(230).interpolator = NormalOutExtraSlowIn()
         }
     }
 
@@ -549,7 +584,7 @@ class MenuActivity : BaseActivity<ActivityMenuBinding, MenuActivityViewModel>(),
         lighterAnim.apply {
             this.duration = duration
             addUpdateListener {
-                log("Pro: ${it.animatedFraction}")
+                systemOutLogging("Pro: ${it.animatedFraction}")
                 turnStatusBarToDarkerColor(1f - it.animatedFraction)
             }
             setTarget(View(this@MenuActivity))

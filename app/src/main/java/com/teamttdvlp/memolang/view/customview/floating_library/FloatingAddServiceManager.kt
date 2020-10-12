@@ -300,14 +300,14 @@ class FloatingAddServiceManager private constructor(
                             } else if (example is VocabularyOtherStructure) {
                                 val newTxtMultiMeanExample =
                                     OtherStructure_Text_View(applicationContext, example.text)
-                                log("OtherStructure_Text_View: ${example.text}")
+                                systemOutLogging("OtherStructure_Text_View: ${example.text}")
                                 contentParent.addView(newTxtMultiMeanExample)
                                 example.translationAndExample_List.forEach { transAndSubExamp ->
                                     val newSubExample = OtherStructure_Mean_View(
                                         applicationContext,
                                         text = transAndSubExamp.translation
                                     )
-                                    log("OtherStructure_ExampleTranslation_View: ${transAndSubExamp.translation}")
+                                    systemOutLogging("OtherStructure_ExampleTranslation_View: ${transAndSubExamp.translation}")
                                     contentParent.addView(newSubExample)
 
                                     transAndSubExamp.subExampleList.forEach { example ->
