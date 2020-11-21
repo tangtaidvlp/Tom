@@ -13,7 +13,6 @@ import android.view.animation.Animation
 import android.widget.TextView
 import androidx.core.animation.addListener
 import com.teamttdvlp.memolang.R
-import com.teamttdvlp.memolang.data.model.entity.flashcard.CardProperty
 import com.teamttdvlp.memolang.data.model.entity.flashcard.Deck
 import com.teamttdvlp.memolang.data.model.entity.flashcard.Flashcard
 import com.teamttdvlp.memolang.data.model.entity.flashcard.SetNameUtils
@@ -161,17 +160,18 @@ class SearchOnlineActivity : BaseActivity<ActivitySearchOnlineBinding, SearchOnl
         HINT_COLOR = resources.getColor(R.color.hint_color)
     }}
 
-    override fun addViewControls() { dB.apply {
+    override fun addViewSettings() {
+        dB.apply {
 
-        // RECENT USED LANGUAGES
-        txtSourceLang.text = viewModel.getCurrentSourceLanguage()
-        txtTargetLang.text = viewModel.getCurrentTargetLanguage()
+            // RECENT USED LANGUAGES
+            txtSourceLang.text = viewModel.getCurrentSourceLanguage()
+            txtTargetLang.text = viewModel.getCurrentTargetLanguage()
 
-        // LASTED USED FLASHCARD SET
-        updateTxtTranslationHintHolder(txtTargetLang.text.toString())
-        txtTranslation.hint = txtTranslationHintHolder
-        val lastedUsedFlashcardSet = viewModel.getLastedUsedFlashcardSet()
-        edtPanelSetName.setText(lastedUsedFlashcardSet)
+            // LASTED USED FLASHCARD SET
+            updateTxtTranslationHintHolder(txtTargetLang.text.toString())
+            txtTranslation.hint = txtTranslationHintHolder
+            val lastedUsedFlashcardSet = viewModel.getLastedUsedFlashcardSet()
+            edtPanelSetName.setText(lastedUsedFlashcardSet)
 
         // RECENT SEARCH FLASHCARDS
         rcvRecentSearchedFlashcards.adapter = rcvRecentSearchedFlashcardAdapter
@@ -323,8 +323,7 @@ class SearchOnlineActivity : BaseActivity<ActivitySearchOnlineBinding, SearchOnl
                 backLanguage = targetLang,
                 example = example,
                 meanOfExample = meanOfExample,
-                type = type,
-                cardProperty = CardProperty()
+                type = type
             )
             // TODO (Check property)
 
@@ -400,9 +399,9 @@ class SearchOnlineActivity : BaseActivity<ActivitySearchOnlineBinding, SearchOnl
         }
 
         layoutCardInfo.btnEdit.setOnClickListener {
-            val intent = Intent(this@SearchOnlineActivity, EditFlashcardActivity::class.java)
-            intent.putExtra(FLASHCARD_KEY, dB.layoutCardInfo.beingViewedCard)
-            startActivity(intent)
+//            val intent = Intent(this@SearchOnlineActivity, EditFlashcardActivity::class.java)
+//            intent.putExtra(FLASHCARD_KEY, dB.layoutCardInfo.beingViewedCard)
+//            startActivity(intent)
         }
 
     }}

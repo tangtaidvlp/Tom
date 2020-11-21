@@ -200,10 +200,12 @@ class ReviewFlashcardEasyActivity : BaseActivity<ActivityReviewFlashcardEasyBind
         GREY_TEXT_COLOR = resources.getColor(R.color.use_flashcard_grey_text_color)
     }
 
-    override fun addViewControls() { dB.apply {
+    override fun addViewSettings() {
+        dB.apply {
 //        layoutChooseLangFlow.txtQuestionLanguage.text = getRequestedFlashcardSet().backLanguage
 //        layoutChooseLangFlow.txtAnswerLanguage.text = getRequestedFlashcardSet().frontLanguage
-    }}
+        }
+    }
 
     override fun addViewEvents() { dB.apply {
         txtInputAnswer.addTextChangedListener(onTextChanged = { text,_,_,_ ->

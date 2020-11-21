@@ -104,17 +104,18 @@ class EngVietDictionaryActivity :
         viewModel.saveSearchingHistory()
     }
 
-    override fun addViewControls() { dB.apply {
-        // Choose TRANSLATION
-        rcvChooseTranslation.adapter = rcvChooseTransAdapter
+    override fun addViewSettings() {
+        dB.apply {
+            // Choose TRANSLATION
+            rcvChooseTranslation.adapter = rcvChooseTransAdapter
 
-        // Choose TYPE
-        rcvChooseCardType.adapter = rcvChooseTypeAdapter
+            // Choose TYPE
+            rcvChooseCardType.adapter = rcvChooseTypeAdapter
 
-        // Choose EXAMPLE
-        rcvChooseExample.adapter = rcvChooseExampleAdapter
+            // Choose EXAMPLE
+            rcvChooseExample.adapter = rcvChooseExampleAdapter
 
-        // Choose SET NAME
+            // Choose SET NAME
         rcvChooseSetName.adapter = rcvChooseSetNameAdapter
         viewModel.getAllEnglishVNFlashcardSets { engVNFlashcardSetList ->
             rcvChooseSetNameAdapter.setData(engVNFlashcardSetList)

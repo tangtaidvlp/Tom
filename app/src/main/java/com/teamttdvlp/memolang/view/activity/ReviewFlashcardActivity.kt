@@ -143,9 +143,11 @@ class ReviewFlashcardActivity : BaseActivity<ActivityReviewFlashcardBinding, Rev
         viewModel.nextCard()
     }
 
-    override fun addViewControls() { dB.apply {
-        txtHint.movementMethod = ScrollingMovementMethod()
-    }}
+    override fun addViewSettings() {
+        dB.apply {
+            txtHint.movementMethod = ScrollingMovementMethod()
+        }
+    }
 
     override fun addViewEvents() { dB.apply {
 

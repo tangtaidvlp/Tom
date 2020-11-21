@@ -4,7 +4,7 @@ import android.app.Application
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import com.teamttdvlp.memolang.model.AddFlashcardExecutor
-import com.teamttdvlp.memolang.model.IllustrationManager
+import com.teamttdvlp.memolang.model.IllustrationLoader
 import com.teamttdvlp.memolang.model.UserInfoStatusSharedPreference
 import com.teamttdvlp.memolang.model.repository.FlashcardRepos
 import com.teamttdvlp.memolang.model.repository.FlashcardSetRepos
@@ -31,7 +31,7 @@ constructor(
     private var addFlashcardSharedPreference: DaggerLazy<AddFlashcardActivitySharePref>,
     private var searchOnlineSharedPreference: DaggerLazy<SearchOnlineActivitySharePref>,
     private var engVietOnlineSharedPreference: DaggerLazy<EngVietDictionaryActivitySharePref>,
-    private var illustrationManager: IllustrationManager
+    private var illustrationLoader: IllustrationLoader
 ) : ViewModelProvider.NewInstanceFactory() {
 
     override fun <T : ViewModel?> create(modelClass: Class<T>): T {
@@ -43,7 +43,7 @@ constructor(
                 flashcardSet_Repos.get(),
                 userUsingHistoryRepos.get(),
                 addFlashcardSharedPreference.get(),
-                illustrationManager
+                illustrationLoader
             ) as T
         }
 
@@ -108,7 +108,7 @@ constructor(
         }
 
         if (modelClass.isAssignableFrom(UseFlashcardViewModel::class.java)) {
-            return UseFlashcardViewModel(application) as T
+            return UseFlashcardViewModel(application, illustrationLoader) as T
         }
 
         if (modelClass.isAssignableFrom(ViewFlashcardSetViewModel::class.java)) {

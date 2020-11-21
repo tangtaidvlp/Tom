@@ -14,10 +14,7 @@ import com.teamttdvlp.memolang.databinding.ActivityViewFlashCardListBinding
 import com.teamttdvlp.memolang.view.activity.iview.ViewFlashcardListView
 import com.teamttdvlp.memolang.view.adapter.RCVViewFlashcardAdapter
 import com.teamttdvlp.memolang.view.base.BaseActivity
-import com.teamttdvlp.memolang.view.helper.ViewModelProviderFactory
-import com.teamttdvlp.memolang.view.helper.getActivityViewModel
-import com.teamttdvlp.memolang.view.helper.goGONE
-import com.teamttdvlp.memolang.view.helper.goVISIBLE
+import com.teamttdvlp.memolang.view.helper.*
 import com.teamttdvlp.memolang.viewmodel.ViewFlashCardListViewModel
 import javax.inject.Inject
 import javax.inject.Named
@@ -64,17 +61,21 @@ class ViewFlashCardListActivity : BaseActivity<ActivityViewFlashCardListBinding,
         stopPreventUserFromClickingItem()
     }
 
-    override fun addViewControls() { dB.apply {
-        try {
-            currentViewedDeck = getViewedFlashcardSet()
-        } catch (ex : Exception) {
-            ex.printStackTrace()
-            currentViewedDeck = Deck("", "", "")
-        }
+    override fun addViewSettings() {
+        dB.apply {
+            try {
+                currentViewedDeck = getViewedFlashcardSet()
+            } catch (ex: Exception) {
+                ex.printStackTrace()
+                currentViewedDeck = Deck("", "", "")
+            }
 
-        // Reverse here to make flashcard last in first out
-        viewFlashcardAdapter =
-            RCVViewFlashcardAdapter(this@ViewFlashCardListActivity, currentViewedDeck.flashcards)
+            // Reverse here to make flashcard last in first out
+            viewFlashcardAdapter =
+                RCVViewFlashcardAdapter(
+                    this@ViewFlashCardListActivity,
+                    currentViewedDeck.flashcards
+                )
         rcvFlashcardList.adapter = viewFlashcardAdapter
         rcvFlashcardList.layoutManager = LinearLayoutManager(this@ViewFlashCardListActivity, RecyclerView.VERTICAL, false)
         viewModel.setFlashcardSet(currentViewedDeck)
@@ -84,6 +85,7 @@ class ViewFlashCardListActivity : BaseActivity<ActivityViewFlashCardListBinding,
     override fun addViewEvents() { dB.apply {
         viewFlashcardAdapter.setOnItemClickListener { card ->
             preventUserFromClickingOtherItem()
+            systemOutLogging("Chosen card: ${card.cardProperty}")
             RetrofitAddFlashcardActivity.requestEditFlashcard(
                 this@ViewFlashCardListActivity,
                 card,
@@ -119,9 +121,10 @@ class ViewFlashCardListActivity : BaseActivity<ActivityViewFlashCardListBinding,
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
         if ((requestCode == EDIT_FLASHCARD_REQUEST_CODE) and (resultCode == Activity.RESULT_OK)) {
-            hasAChangeInList = true
-            val newUpdatedFlashcard = data!!.getSerializableExtra(UPDATED_FLASHCARD) as Flashcard
-            updateCurrentViewedFlashcardList(newUpdatedFlashcard)
+//            hasAChangeInList = true
+//            val newUpdatedFlashcard = data!!.getSerializableExtra(UPDATED_FLASHCARD) as Flashcard
+//            updateCurrentViewedFlashcardList(newUpdatedFlashcard)
+            // TODO(Do some update thing)
         }
     }
 

@@ -89,7 +89,7 @@ class MenuActivity : BaseActivity<ActivityMenuBinding, MenuActivityViewModel>(),
         loadFlashcardSet()
     }
 
-    override fun addViewControls() {
+    override fun addViewSettings() {
         dB.apply {
             val headDB = LayoutFloatAddIconBinding.inflate(LayoutInflater.from(this@MenuActivity))
             val bodyDB = LayoutFloatAddBodyBinding.inflate(LayoutInflater.from(this@MenuActivity))
@@ -563,9 +563,6 @@ class MenuActivity : BaseActivity<ActivityMenuBinding, MenuActivityViewModel>(),
         }
     }
 
-    val redOffset = 12 - 22 // -6
-    val greenOffset = 89 - 159 // -46
-    val blueOffset = 102 - 186 // -65
 
     private fun turnStatusBarToDarkerColor(duration: Long) {
         val darkenAnim = ValueAnimator.ofFloat(0f, 1f)
@@ -592,11 +589,15 @@ class MenuActivity : BaseActivity<ActivityMenuBinding, MenuActivityViewModel>(),
         }
     }
 
+
+    val redOffset = 12 - 22 // -6
+    val greenOffset = 89 - 159 // -46
+    val blueOffset = 102 - 186 // -65
+
     private fun turnStatusBarToDarkerColor(level: Float) {
         val r = 22 + redOffset * level
         val g = 159 + greenOffset * level
         val b = 186 + blueOffset * level
-
 
         setStatusBarColor(Color.rgb(r.toInt(), g.toInt(), b.toInt()))
     }

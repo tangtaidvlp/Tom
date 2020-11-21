@@ -1,7 +1,8 @@
 package com.teamttdvlp.memolang.di.module.activity
 
-import android.animation.*
-import android.view.animation.Animation
+import android.animation.Animator
+import android.animation.AnimatorInflater
+import android.animation.ValueAnimator
 import android.view.animation.DecelerateInterpolator
 import com.teamttdvlp.memolang.R
 import com.teamttdvlp.memolang.view.activity.UseFlashcardActivity
@@ -49,8 +50,14 @@ class UseFlashcardActivityModule {
 
     @Provides
     @Named("ScaleBiggerAndFadeOut")
-    fun provideScaleBiggerAndFadeOut (activity: UseFlashcardActivity) : Animator{
+    fun provideScaleBiggerAndFadeOut(activity: UseFlashcardActivity): Animator {
         return AnimatorInflater.loadAnimator(activity, R.animator.zoom_bigger_and_fade_out)
+    }
+
+    @Provides
+    @Named("ZoomFrom1xto3x")
+    fun provideZoomFrom1xTo3x(activity: UseFlashcardActivity): Animator {
+        return AnimatorInflater.loadAnimator(activity, R.animator.zoom_from_1x_to_3x)
     }
 
 }

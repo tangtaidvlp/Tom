@@ -37,7 +37,7 @@ data class Flashcard (
     var pronunciation: String = "//",
 
     @Embedded
-    var cardProperty: CardProperty
+    var cardProperty: CardProperty = CardProperty()
 ) : Serializable {
 
     var frontIllustrationPictureName: String? = null

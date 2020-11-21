@@ -72,7 +72,8 @@ class ReviewFlashcardEasyViewModel(var app: Application) :
 
         // These statements must be called after #CardListLanguageReverser.reverse_ListCard_TextAndTranslation(flashcardSet.flashcards)
         cardList.clear()
-        cardList.addAll(cardListRandomer.random(deck.flashcards))
+        deck.flashcards.shuffle()
+        cardList.addAll(deck.flashcards)
         currentCard = cardList.first()
 
 

@@ -44,11 +44,15 @@ class ViewFlashcardSetActivity : BaseActivity<ActivityViewFlashcardSetBinding, V
         loadFlashcard()
     }
 
-    override fun addViewControls() { dB.apply {
-        rcvLanguageList.adapter = flashcardSetAdapter
-        rcvLanguageList.layoutManager = LinearLayoutManager(this@ViewFlashcardSetActivity, RecyclerView.VERTICAL, false)
-        rcvBackground.adapter = RCV_FlashcardSetsBackground_Adapter(this@ViewFlashcardSetActivity)
-    }}
+    override fun addViewSettings() {
+        dB.apply {
+            rcvLanguageList.adapter = flashcardSetAdapter
+            rcvLanguageList.layoutManager =
+                LinearLayoutManager(this@ViewFlashcardSetActivity, RecyclerView.VERTICAL, false)
+            rcvBackground.adapter =
+                RCV_FlashcardSetsBackground_Adapter(this@ViewFlashcardSetActivity)
+        }
+    }
 
     private fun loadFlashcard () {
 //        viewModel.getAllFlashcardSets {

@@ -35,7 +35,7 @@ class CardListManager {
     }
 
     private fun randomData () {
-        cardList = CardListRandomer().random(cardList)
+        cardList.shuffle()
     }
 
     fun getFirstOne () : Flashcard {

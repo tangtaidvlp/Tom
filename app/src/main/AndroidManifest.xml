@@ -54,7 +54,6 @@
         <activity
             android:name=".view.activity.RetrofitAddFlashcardActivity"
             android:windowSoftInputMode="adjustResize" />
-        <activity android:name=".view.activity.EditFlashcardActivity" />
         <activity
             android:name=".view.activity.MenuActivity"
             android:windowSoftInputMode="adjustResize" />

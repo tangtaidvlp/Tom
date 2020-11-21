@@ -9,7 +9,6 @@ import android.view.animation.Interpolator
 import androidx.interpolator.view.animation.FastOutSlowInInterpolator
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import androidx.vectordrawable.graphics.drawable.AnimatorInflaterCompat
 import com.teamttdvlp.memolang.R
 import com.teamttdvlp.memolang.view.activity.SearchOnlineActivity
 import com.teamttdvlp.memolang.view.adapter.*
@@ -32,7 +31,6 @@ class SearchOnlineActivityModule  {
         return AnimatorInflater.loadAnimator(activity
             , R.animator.move_up_and_fade_in)
     }
-
 
     @Provides
     @Named("ViewGroupLanguageOptionShowAnimator")
@@ -60,7 +58,7 @@ class SearchOnlineActivityModule  {
     @Provides
     @Named("AppearAnimator")
     fun provideAppearAnimator (activity: SearchOnlineActivity, duration : Long, interpolator: Interpolator) : Animator {
-        return AnimatorInflaterCompat.loadAnimator(activity, R.animator.appear_100_percents).apply {
+        return AnimatorInflater.loadAnimator(activity, R.animator.appear_100_percents).apply {
             this.duration = duration
             this.interpolator = interpolator
         }
@@ -70,7 +68,7 @@ class SearchOnlineActivityModule  {
     @Provides
     @Named("DisappearAnimator")
     fun provideDisappearAnimator (activity: SearchOnlineActivity, duration : Long, interpolator: Interpolator) : Animator{
-        return AnimatorInflaterCompat.loadAnimator(activity, R.animator.disappear_100_percents).apply {
+        return AnimatorInflater.loadAnimator(activity, R.animator.disappear_100_percents).apply {
             this.duration = duration
             this.interpolator = interpolator
         }
@@ -107,10 +105,11 @@ class SearchOnlineActivityModule  {
         @Named("AddButtonAnimationsDuration") duration: Long,
         interpolator: Interpolator,
         activity: SearchOnlineActivity) : Animator {
-        return AnimatorInflaterCompat.loadAnimator(activity, R.animator.zoom_from_nothing_to_normal_size).apply {
-            this.duration = duration
-            this.interpolator = interpolator
-        }
+        return AnimatorInflater.loadAnimator(activity, R.animator.zoom_from_nothing_to_normal_size)
+            .apply {
+                this.duration = duration
+                this.interpolator = interpolator
+            }
     }
 
 
@@ -120,10 +119,11 @@ class SearchOnlineActivityModule  {
         @Named("AddButtonAnimationsDuration") duration: Long,
         interpolator: Interpolator,
         activity: SearchOnlineActivity) : Animator {
-        return AnimatorInflaterCompat.loadAnimator(activity, R.animator.zoom_from_normal_size_to_nothing).apply {
-            this.duration = duration
-            this.interpolator = interpolator
-        }
+        return AnimatorInflater.loadAnimator(activity, R.animator.zoom_from_normal_size_to_nothing)
+            .apply {
+                this.duration = duration
+                this.interpolator = interpolator
+            }
     }
 
 
@@ -193,11 +193,6 @@ class SearchOnlineActivityModule  {
         return ValueAnimator.ofFloat(0f, 1f)
     }
 
-    @Provides
-    @Named("RotateForever")
-    fun provideRotateForeverAnimation (context : SearchOnlineActivity) : Animation {
-        return AnimationUtils.loadAnimation(context, R.anim.rotate_forever)
-    }
 
     /**
      * Provides Stuffs

@@ -38,7 +38,7 @@ abstract class BaseActivity <T : ViewDataBinding, V : ViewModel> : FragmentActiv
         overrideEnterAnim()
         performCreateViewModel()
         initProperties()
-        addViewControls()
+        addViewSettings()
         addViewEvents()
         addEventsListener()
         addAnimationEvents()
@@ -81,7 +81,7 @@ abstract class BaseActivity <T : ViewDataBinding, V : ViewModel> : FragmentActiv
 
     open fun addViewEvents() {}
 
-    open fun addViewControls() {}
+    open fun addViewSettings() {}
 
     open fun addEventsListener() {}
 

@@ -6,17 +6,24 @@ import android.animation.ValueAnimator
 import android.annotation.SuppressLint
 import android.content.Context
 import android.content.Intent
+import android.graphics.Bitmap
 import android.graphics.Color
 import android.os.Build
 import android.os.Bundle
 import android.view.View
+import android.view.ViewGroup
+import android.view.animation.Animation
+import android.view.animation.LinearInterpolator
 import android.view.animation.OvershootInterpolator
 import androidx.constraintlayout.widget.ConstraintLayout
+import androidx.constraintlayout.widget.ConstraintSet
 import androidx.core.animation.addListener
 import androidx.core.view.doOnPreDraw
+import androidx.core.view.marginStart
+import androidx.core.view.setPadding
 import androidx.lifecycle.Observer
 import com.teamttdvlp.memolang.R
-import com.teamttdvlp.memolang.data.model.entity.flashcard.Deck
+import com.teamttdvlp.memolang.data.model.entity.flashcard.*
 import com.teamttdvlp.memolang.databinding.ActivityUseFlashcardBinding
 import com.teamttdvlp.memolang.model.UseFCActivity_StatusManager.SpeakerStatus.Companion.SPEAK_TEXT_AND_TRANSLATION
 import com.teamttdvlp.memolang.model.UseFCActivity_StatusManager.SpeakerStatus.Companion.SPEAK_TEXT_ONLY
@@ -24,6 +31,7 @@ import com.teamttdvlp.memolang.model.UseFCActivity_StatusManager.SpeakerStatus.C
 import com.teamttdvlp.memolang.view.activity.iview.UseFlashcardView
 import com.teamttdvlp.memolang.view.base.BaseActivity
 import com.teamttdvlp.memolang.view.customview.MyGestureDetector
+import com.teamttdvlp.memolang.view.customview.NormalOutExtraSlowIn
 import com.teamttdvlp.memolang.view.helper.*
 import com.teamttdvlp.memolang.viewmodel.UseFlashcardViewModel
 import javax.inject.Inject
@@ -33,37 +41,46 @@ import javax.inject.Named
 class UseFlashcardActivity : BaseActivity<ActivityUseFlashcardBinding, UseFlashcardViewModel>()
                             ,UseFlashcardView {
 
-    private var RED_TEXT_COLOR : Int = 0
+    private var RED_TEXT_COLOR: Int = 0
 
-    private var NORMAL_TEXT_COLOR : Int = 0
+    private var NORMAL_TEXT_COLOR: Int = 0
+
+    private val COMMON_PROGRESS_BAR_VIEW_DURATION: Long = 100
+
+    private val DARK_BLUE = "#176E80"
+
+    private val COVERED_BY_BLACK_DARK_BLUE = "#0C1343"
+
+    @field: Named("RotateForever")
+    @Inject
+    lateinit var rotateForeverAnimation: Animation
+
+    private val on_REFLIP_FrontCardAppearAnimation = AnimatorSet()
+
+    private val on_REFLIP_BackCardDisappearAnimation = AnimatorSet()
+
+    private val on_REFLIP_Anim = AnimatorSet()
 
 
-    private val on_REFLIP_FrontCardAppearAnimation = AnimatorSet ()
-
-    private val on_REFLIP_BackCardDisappearAnimation = AnimatorSet ()
-
-    private val on_REFLIP_Animation = AnimatorSet()
-
-
-    private val on_OPEN_FrontCardDisappearAnimation = AnimatorSet ()
+    private val on_OPEN_FrontCardDisappearAnimation = AnimatorSet()
 
     private val on_OPEN_BackCardAppearAnimation = AnimatorSet ()
 
-    private val on_OPEN_Animation = AnimatorSet()
+    private val on_OPEN_Anim = AnimatorSet()
 
 
-    private val on_NEXT_CardAnimation = AnimatorSet()
+    private val on_NEXT_REMEMBER_CARD_Anim = AnimatorSet()
 
-    private val on_NEXT_CardBackCardDisappearAnimation = AnimatorSet()
+    private val on_NEXT_REMEMBER_CARD_BackCard_DisappearAnim = AnimatorSet()
 
-    private val on_NEXT_CardFrontCardAppearAnimation = AnimatorSet()
+    private val on_NEXT_REMEMBER_CARD_FrontCard_AppearAnim = AnimatorSet()
 
 
-    private val on_NEXT_HARD_CardAnimation = AnimatorSet()
+    private val on_NEXT_FORGET_CARD_Anim = AnimatorSet()
 
-    private val on_NEXT_HARD_BackCardDisappearAnimation = AnimatorSet()
+    private val on_NEXT_FORGET_CARD_FrontCard_AppearAnim = AnimatorSet()
 
-    private val on_NEXT_HARD_FrontCardAppearThenDisappear = AnimatorSet()
+    private val on_NEXT_FORGET_CARD_BackCard_DisappearAnim = AnimatorSet()
 
 
     private val on_PREV_from_FRONT_SIDE_CardAnimation = AnimatorSet()
@@ -75,11 +92,15 @@ class UseFlashcardActivity : BaseActivity<ActivityUseFlashcardBinding, UseFlashc
 
     private val on_PREV_from_BACK_SIDE_CardAnimation = AnimatorSet()
 
-    private val on_PREV_from_BACK_SIDE_CardBackCardDisappearAnimation = AnimatorSet()
+    private val on_PREV_from_BACK_SIDE_Card_BackCardDisappearAnimation = AnimatorSet()
 
     private val on_PREV_from_BACK_SIDE_CardFrontCardAppearAnimation = AnimatorSet()
 
     private var backButtonPressedTimes = 0
+
+    private var prevForgottenCardCount = 0
+
+    private var prevPassedCardCount = 0
 
     private var textIsSpoken = true
 
@@ -92,9 +113,7 @@ class UseFlashcardActivity : BaseActivity<ActivityUseFlashcardBinding, UseFlashc
     lateinit var viewModelProviderFactory: ViewModelProviderFactory
         @Inject set
 
-    private val DARK_BLUE = "#176E80"
-
-    private val COVERED_BY_BLACK_DARK_BLUE = "#0C1343"
+    var CARD_WIDTH: Int = 0
 
     companion object {
         fun requestReviewFlashcard(
@@ -115,102 +134,23 @@ class UseFlashcardActivity : BaseActivity<ActivityUseFlashcardBinding, UseFlashc
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        dB.lifecycleOwner = this
-        viewModel.setUpView(this)
-        // Dark blue
-        setStatusBarColor(Color.parseColor(DARK_BLUE))
-        beginUsing(getIsReverseTextAndTranslation())
 
-        recalculate_Flashcard_Dimens(1f)
+        dB.lifecycleOwner = this
+
+        viewModel.setUpView(this)
+
+        setStatusBarColor(Color.parseColor(DARK_BLUE))
+
+        loadAll_CardIllustrations()
+
+        setData()
 
         dB.txtTotalCardCount.text = viewModel.getCardListSize().toString()
-        viewModel.cardLeftCount.observe(this, Observer { cardLeftCount ->
-            if (cardLeftCount != viewModel.getCardListSize()) {
-                onPassingACard(viewModel.getCardListSize() - cardLeftCount)
-            }
+
+        viewModel.currentCard.observe(this, Observer { currentFlashcard ->
+            recalculateFlashcard_DimensAndProperty(currentFlashcard)
         })
-
-        viewModel.forgottenCardsCount.observe(this, Observer { count ->
-            onForgettingACard(count, viewModel.currentCardOrder.value!!)
-        })
-
     }
-
-    private fun onForgettingACard(count: Int, currentCardOder: Int) {
-        dB.apply {
-            txtForgottenCardCount.text = count.toString()
-            val aPartWidth = txtTotalCardProgressBar.width / viewModel.getCardListSize()
-
-            if (txtForgottenCardProgressBar.alpha == 0f) {
-                txtForgottenCardProgressBar.animate().alpha(1f).duration = 100
-                txtForgottenCardCount.animate().alpha(1f).duration = 100
-            }
-
-            (txtForgottenCardProgressBar.layoutParams
-                    as ConstraintLayout.LayoutParams).marginStart = aPartWidth * currentCardOder
-            txtForgottenCardProgressBar.requestLayout()
-
-            val progrBarCurrentWidth = txtForgottenCardProgressBar.width
-            val progrBarTargetWidth = aPartWidth * count
-            val increaseAnim =
-                ValueAnimator.ofInt(progrBarCurrentWidth, progrBarTargetWidth).apply {
-                    duration = 500
-                    interpolator = OvershootInterpolator(2f)
-                    addUpdateListener {
-                        txtForgottenCardProgressBar.layoutParams.width = it.animatedValue as Int
-                        txtForgottenCardProgressBar.requestLayout()
-                    }
-                    setTarget(txtForgottenCardProgressBar)
-                }
-
-            increaseAnim.start()
-        }
-    }
-
-    private fun onPassingACard(currentPosition: Int) {
-        dB.apply {
-            txtPassedCardCount.text = currentPosition.toString()
-
-            val progrBarCurrentWidth = txtPassedCardProgressBar.width
-            val aPartWidth = txtTotalCardProgressBar.width / viewModel.getCardListSize()
-            val progrBarTargetWidth = aPartWidth * currentPosition
-            val increaseAnim =
-                ValueAnimator.ofInt(progrBarCurrentWidth, progrBarTargetWidth).apply {
-                    duration = 500
-                    interpolator = OvershootInterpolator(2f)
-                    addUpdateListener {
-                        txtPassedCardProgressBar.layoutParams.width = it.animatedValue as Int
-                        txtPassedCardProgressBar.requestLayout()
-                    }
-                    setTarget(txtPassedCardProgressBar)
-                }
-
-            increaseAnim.start()
-        }
-    }
-
-    private fun recalculate_Flashcard_Dimens(heightRate: Float) {
-        dB.apply {
-            viewgroupFrontFlashcard.doOnPreDraw {
-                viewgroupFrontFlashcard.layoutParams.height =
-                    (heightRate * (viewgroupFrontFlashcard.width / 2)).toInt()
-                viewgroupFrontFlashcard.requestLayout()
-            }
-
-            viewgroupBackReplicaFrontFlashcard.doOnPreDraw {
-                viewgroupBackReplicaFrontFlashcard.layoutParams.height =
-                    (heightRate * (viewgroupBackReplicaFrontFlashcard.width / 2)).toInt()
-                viewgroupBackReplicaFrontFlashcard.requestLayout()
-            }
-
-            viewgroupBackFlashcard.doOnPreDraw {
-                viewgroupBackFlashcard.layoutParams.height =
-                    (heightRate * (viewgroupFrontFlashcard.width / 2)).toInt()
-                viewgroupBackFlashcard.requestLayout()
-            }
-        }
-    }
-
 
     override fun onDestroy() {
         val speakerFunction = if (textIsSpoken and translationIsSpoken) {
@@ -235,13 +175,17 @@ class UseFlashcardActivity : BaseActivity<ActivityUseFlashcardBinding, UseFlashc
         }
 
         dB.vwModel = viewModel
+
+        CARD_WIDTH =
+            ScreenDimension.screenWidth -
+                    (dB.viewgroupFrontFlashcard.layoutParams as ConstraintLayout.LayoutParams).marginStart * 2
     }
 
     private var UNINITIAL_VALUE = -5
     private var previousTxtFrontTextHeightReference_Height = UNINITIAL_VALUE
     private var previousTxtBackTranslationHeightReference_Height = UNINITIAL_VALUE
 
-    override fun addViewControls() {
+    override fun addViewSettings() {
         dB.apply {
 
             txtFrontTextHeightReference.viewTreeObserver.addOnGlobalLayoutListener {
@@ -279,7 +223,6 @@ class UseFlashcardActivity : BaseActivity<ActivityUseFlashcardBinding, UseFlashc
             txtBackTranslationHeightReference.viewTreeObserver.addOnGlobalLayoutListener {
 
                 var totalHeight = txtBackTranslationHeightReference.height
-                systemOutLogging("before height: " + txtBackTranslationHeightReference.height)
                 var otherInformationsTotalHeight = 0
 
                 if (txtBackCardExample.isGone().not()) {
@@ -300,7 +243,6 @@ class UseFlashcardActivity : BaseActivity<ActivityUseFlashcardBinding, UseFlashc
                     currentCalculatedHeight = txtBackTranslationHeightReference.height
                 }
 
-                systemOutLogging("Height: " + currentCalculatedHeight)
 
                 // Because at the beginning vwgrpBackTexts.height = 0 due to its GONE visibility
                 // So we have to check if the condition (txtBackCardTranslation.height == 0)
@@ -318,12 +260,31 @@ class UseFlashcardActivity : BaseActivity<ActivityUseFlashcardBinding, UseFlashc
 
     override fun addAnimationEvents() { dB.apply {
 
-        on_NEXT_CardFrontCardAppearAnimation.addListener( onStart = {
+        on_NEXT_REMEMBER_CARD_FrontCard_AppearAnim.addListener(onStart = {
             viewgroupFrontFlashcard.scaleX = 1.0f
             viewgroupFrontFlashcard.scaleY = 1.0f
-            viewgroupFrontFlashcard.alpha = 1.0f
-            doActionOnGroup_FRONT_Card { it ->
-                it.goVISIBLE()
+            doActionOnGroup_FRONT_Card { view ->
+                view.goVISIBLE()
+            }
+
+            if (viewModel.checkThereIsCardLefts()) {
+                this@UseFlashcardActivity.viewModel.moveToNextCard()
+
+                dB.executePendingBindings()
+                if (textIsSpoken and speakerIsOn) {
+                    viewModel.speakFrontCardText(dB.txtFrontCardText.text.toString())
+                }
+            } else {
+                onEndReviewing()
+                on_NEXT_REMEMBER_CARD_Anim.cancel()
+            }
+        })
+
+        on_NEXT_FORGET_CARD_FrontCard_AppearAnim.addListener(onStart = {
+            viewgroupFrontFlashcard.scaleX = 1.0f
+            viewgroupFrontFlashcard.scaleY = 1.0f
+            doActionOnGroup_FRONT_Card { frontView ->
+                frontView.goVISIBLE()
             }
 
             if (viewModel.checkThereIsCardLefts()) {
@@ -334,9 +295,10 @@ class UseFlashcardActivity : BaseActivity<ActivityUseFlashcardBinding, UseFlashc
                 }
             } else {
                 onEndReviewing()
-                on_NEXT_CardAnimation.cancel()
+                on_NEXT_FORGET_CARD_Anim.cancel()
             }
         })
+
 
         on_PREV_from_FRONT_SIDE_CurrentFrontCardDisappearAnimation.addListener(onEnd = {
             this@UseFlashcardActivity.viewModel.moveToPreviousCard()
@@ -346,24 +308,24 @@ class UseFlashcardActivity : BaseActivity<ActivityUseFlashcardBinding, UseFlashc
             }
         })
 
-        on_PREV_from_BACK_SIDE_CardBackCardDisappearAnimation.addListener(onEnd = {
-            doActionOnGroup_BACK_Card { it ->
-                it.goGONE()
+        on_PREV_from_BACK_SIDE_Card_BackCardDisappearAnimation.addListener(onEnd = {
+            doActionOnGroup_BACK_Card { view ->
+                view.goGONE()
 
             }
-            doActionOnGroup_BACK_Card { it ->
-                it.elevation = 5.dp().toFloat()
+            doActionOnGroup_BACK_Card { view ->
+                view.elevation = 5.dp().toFloat()
             }
             viewgroupBackFlashcard.translationX = 0f
             viewgroupBackFlashcard.translationY = 0f
 
-            doActionOnGroup_FRONT_Card { it ->
-                it.goVISIBLE()
+            doActionOnGroup_FRONT_Card { view ->
+                view.goVISIBLE()
             }
             viewgroupFrontFlashcard.scaleX = 1.0f
-            viewgroupFrontFlashcard.scaleY= 1.0f
+            viewgroupFrontFlashcard.scaleY = 1.0f
             viewgroupFrontFlashcard.alpha = 1.0f
-            viewgroupFrontFlashcard.translationX = viewgroupFrontFlashcard.width.toFloat()
+            viewgroupFrontFlashcard.translationX = CARD_WIDTH.toFloat()
             this@UseFlashcardActivity.viewModel.checkIfThereIsPreviousCard()
             this@UseFlashcardActivity.viewModel.moveToPreviousCard()
             dB.executePendingBindings()
@@ -373,8 +335,8 @@ class UseFlashcardActivity : BaseActivity<ActivityUseFlashcardBinding, UseFlashc
         })
 
         on_OPEN_BackCardAppearAnimation.addListener(onStart = {
-            doActionOnGroup_BACK_Card { it ->
-                    it.goVISIBLE()
+            doActionOnGroup_BACK_Card { view ->
+                view.goVISIBLE()
 
             }
             viewgroupFrontFlashcard.elevation = 0f
@@ -382,17 +344,157 @@ class UseFlashcardActivity : BaseActivity<ActivityUseFlashcardBinding, UseFlashc
                 viewModel.speakBackCardText(txtBackCardTranslation.text.toString())
             }
         })
-    }}
+    }
+    }
+
+    private fun recalculate_Flashcard_Dimens(heightRate: Float) {
+        dB.apply {
+            viewgroupFrontFlashcard.apply {
+                layoutParams.height = (heightRate * CARD_WIDTH / 2).toInt()
+                requestLayout()
+            }
+
+            viewgroupBackFlashcard.apply {
+                layoutParams.height = (heightRate * CARD_WIDTH / 2).toInt()
+                requestLayout()
+            }
+        }
+    }
+
+    private fun recalculateFlashcard_DimensAndProperty(currentCard: Flashcard) {
+
+        if (currentCard.cardProperty.heightOption == HEIGHT_NORMAL) {
+            recalculate_Flashcard_Dimens(1f)
+
+        } else if (currentCard.cardProperty.heightOption == HEIGHT_WIDE) {
+            recalculate_Flashcard_Dimens(FLASHCARD_WIDE_HEIGHT_RATE)
+        }
+
+        if (currentCard.frontIllustrationPictureName != null) {
+            systemOutLogging("Not null")
+            showFront_DemoIllustration(currentCard.cardProperty)
+        } else {
+            showFrontSide_TextOnly()
+        }
+
+        if (currentCard.backIllustrationPictureName != null) {
+            showBack_DemoIllustration(currentCard.cardProperty)
+        } else {
+            showBackSide_TextOnly()
+        }
+    }
+
+    private fun showFront_DemoIllustration(currentCardProperty: CardProperty) {
+        dB.apply {
+            if (currentCardProperty.frontSideHasImage) {
+                if (currentCardProperty.frontSideHasText) {
+                    showFrontSide_BothTextAndImage()
+                } else {
+                    showFrontSide_ImageOnly()
+                }
+            }
+        }
+    }
+
+    private fun showFrontSide_TextOnly() {
+        dB.apply {
+            (imgFrontIllustrationPicture.layoutParams as ConstraintLayout.LayoutParams).endToEnd =
+                ConstraintSet.GONE
+            setFront_IllustrationPictureWidth(0)
+            vwgrpFrontTexts.goVISIBLE()
+        }
+    }
+
+    private fun setFront_IllustrationPictureWidth(width: Int) {
+        dB.apply {
+            imgFrontIllustrationPicture.layoutParams.width = width
+            imgFrontIllustrationPicture.requestLayout()
+        }
+    }
+
+    private fun showFrontSide_ImageOnly() {
+        dB.apply {
+            vwgrpFrontTexts.goGONE()
+            (imgFrontIllustrationPicture.layoutParams as ConstraintLayout.LayoutParams).apply {
+                endToEnd = ConstraintSet.PARENT_ID
+                width = ViewGroup.LayoutParams.MATCH_PARENT
+            }
+            imgFrontIllustrationPicture.requestLayout()
+        }
+    }
+
+    private fun showFrontSide_BothTextAndImage() {
+        dB.apply {
+            vwgrpFrontTexts.goVISIBLE()
+            (imgFrontIllustrationPicture.layoutParams as ConstraintLayout.LayoutParams).endToEnd =
+                ConstraintSet.GONE
+            setFront_IllustrationPictureWidth((CARD_WIDTH - 2 * imgFrontIllustrationPicture.marginStart) / 2)
+            imgFrontIllustrationPicture.requestLayout()
+        }
+    }
+
+    // Back
+
+    private fun showBack_DemoIllustration(currentCardProperty: CardProperty) {
+        dB.apply {
+            if (currentCardProperty.backSideHasImage) {
+                if (currentCardProperty.backSideHasText) {
+                    showBackSide_BothTextAndImage()
+                } else {
+                    showBackSide_ImageOnly()
+                }
+            }
+        }
+    }
+
+    private fun showBackSide_TextOnly() {
+        dB.apply {
+            (imgBackIllustrationPicture.layoutParams as ConstraintLayout.LayoutParams).endToEnd =
+                ConstraintSet.GONE
+            setBack_IllustrationPictureWidth(0)
+            vwgrpBackTexts.goVISIBLE()
+        }
+    }
+
+    private fun showBackSide_ImageOnly() {
+        dB.apply {
+            vwgrpBackTexts.goGONE()
+            (imgBackIllustrationPicture.layoutParams as ConstraintLayout.LayoutParams).endToEnd =
+                ConstraintSet.PARENT_ID
+            (imgBackIllustrationPicture.layoutParams as ConstraintLayout.LayoutParams).width =
+                ViewGroup.LayoutParams.MATCH_PARENT
+            imgBackIllustrationPicture.requestLayout()
+        }
+    }
+
+    private fun showBackSide_BothTextAndImage() {
+        dB.apply {
+            vwgrpBackTexts.goVISIBLE()
+            (imgBackIllustrationPicture.layoutParams as ConstraintLayout.LayoutParams).endToEnd =
+                ConstraintSet.GONE
+            setBack_IllustrationPictureWidth((CARD_WIDTH - 2 * imgFrontIllustrationPicture.marginStart) / 2)
+            imgBackIllustrationPicture.requestLayout()
+        }
+    }
+
+    private fun setBack_IllustrationPictureWidth(width: Int) {
+        dB.apply {
+            imgBackIllustrationPicture.layoutParams.width = width
+            imgBackIllustrationPicture.requestLayout()
+        }
+    }
 
     private fun flipBackCardUp() {
-        on_OPEN_Animation.start()
+        on_OPEN_Anim.start()
     }
 
     @SuppressLint("ClickableViewAccessibility")
-    override fun addViewEvents() { dB.apply {
+    override fun addViewEvents() {
+        dB.apply {
 
-        imgFrontSwipeZone.setOnTouchListener(object : MyGestureDetector(this@UseFlashcardActivity) {
-            override fun onSwipeDown() {
+            imgFrontSwipeZone.setOnTouchListener(object :
+                MyGestureDetector(this@UseFlashcardActivity) {
+                override fun onSwipeDown() {
                 flipBackCardUp()
             }
 
@@ -495,7 +597,7 @@ class UseFlashcardActivity : BaseActivity<ActivityUseFlashcardBinding, UseFlashc
     }}
 
     private fun flipFrontCardUp() {
-        on_REFLIP_Animation.start()
+        on_REFLIP_Anim.start()
     }
 
     private fun showCanNotGoToPreviousCardNotification() {
@@ -503,7 +605,7 @@ class UseFlashcardActivity : BaseActivity<ActivityUseFlashcardBinding, UseFlashc
     }
 
     override fun onBackPressed() {
-        backButtonPressedTimes ++
+        backButtonPressedTimes++
         if (backButtonPressedTimes == 1) {
             dB.dialogExit.show()
         } else if (backButtonPressedTimes == 2) {
@@ -513,12 +615,179 @@ class UseFlashcardActivity : BaseActivity<ActivityUseFlashcardBinding, UseFlashc
 
     // VIEW PROCESSING
 
+    override fun onPassACard(passedCardCount: Int, forgottenCardCount: Int) {
+        dB.txtPassedCardCount.text = passedCardCount.toString()
+        dB.txtForgottenCardCount.text = forgottenCardCount.toString()
+
+        if ((passedCardCount + forgottenCardCount) == viewModel.getCardListSize()) {
+            dB.txtForgottenCardCount.animate().alpha(0f).duration =
+                COMMON_PROGRESS_BAR_VIEW_DURATION
+        }
+
+        val userRememberCard = passedCardCount > prevPassedCardCount
+
+        val userForgetCard = userRememberCard.not() &&
+                (forgottenCardCount > prevForgottenCardCount)
+
+        val userRelearnCard = (userRememberCard) &&
+                (forgottenCardCount < prevForgottenCardCount)
+
+        if (userRememberCard) {
+            increasePassedCardProgressBar(passedCardCount)
+            if (forgottenCardCount > 0) {
+                updateForgottenCardProgressBar(passedCardCount, forgottenCardCount)
+            }
+
+        } else if (userForgetCard) {
+            updateForgottenCardProgressBar(passedCardCount, forgottenCardCount)
+
+        } else if (userRelearnCard) {
+            increasePassedCardProgressBar(passedCardCount)
+        }
+
+        prevPassedCardCount = passedCardCount
+        prevForgottenCardCount = forgottenCardCount
+    }
+
+    override fun onGetFrontIllustration(illustration: Bitmap) {
+        systemOutLogging("Front Illustration: $illustration")
+        setFront_IllustrationAndAdjustRatio(illustration)
+    }
+
+    override fun onGetBackIllustration(illustration: Bitmap) {
+        systemOutLogging("Back Illustration: $illustration")
+        setBack_IllustrationAndAdjustRatio(illustration)
+    }
+
+    override fun onLoadAllIllustrationFinish() {
+        dB.apply {
+            vwgrpLoadImageProgressBar.animate().alpha(0f)
+                .setDuration(100).setInterpolator(NormalOutExtraSlowIn())
+                .setLiteListener(onEnd = {
+                    vwgrpLoadImageProgressBar.goGONE()
+                    progressBarLoadingImage.animation.cancel()
+                })
+        }
+    }
+
+    private fun setFront_IllustrationAndAdjustRatio(picture: Bitmap) {
+
+        if (isFrontTextEmpty().not()) {
+            val rate = picture.width.toFloat() / picture.height.toFloat()
+            if (rate < 1) {
+                recalculateFront_IllustrationPictureWidth_ByHeightRate(rate)
+            } else {
+                recalculateFront_IllustrationPictureWidth_ByHeightRate(1f)
+            }
+        }
+
+        dB.imgFrontIllustrationPicture.setPadding(0)
+        dB.imgFrontIllustrationPicture.setImageBitmap(picture)
+    }
+
+    private fun isFrontTextEmpty(): Boolean {
+        dB.apply {
+            return viewModel.currentCard.value!!.text.isEmpty()
+                    && viewModel.currentCard.value!!.type.isEmpty()
+                    && viewModel.currentCard.value!!.pronunciation.isEmpty()
+        }
+    }
+
+    private fun recalculateFront_IllustrationPictureWidth_ByHeightRate(heightToWidthRate: Float) {
+        dB.apply {
+            imgFrontIllustrationPicture.doOnPreDraw {
+                imgFrontIllustrationPicture.layoutParams.width =
+                    (imgFrontIllustrationPicture.height * heightToWidthRate).toInt()
+                imgFrontIllustrationPicture.requestLayout()
+            }
+        }
+    }
+
+    private fun setBack_IllustrationAndAdjustRatio(picture: Bitmap) {
+
+        if (isBackTextEmpty().not()) {
+            val rate = picture.width.toFloat() / picture.height.toFloat()
+            if (rate < 1) {
+                recalculateBack_IllustrationPictureWidth_ByHeightRate(rate)
+            } else {
+                recalculateBack_IllustrationPictureWidth_ByHeightRate(1f)
+            }
+        }
+
+        dB.imgBackIllustrationPicture.setPadding(0)
+        dB.imgBackIllustrationPicture.setImageBitmap(picture)
+    }
+
+    private fun recalculateBack_IllustrationPictureWidth_ByHeightRate(heightToWidthRate: Float) {
+        dB.apply {
+            imgBackIllustrationPicture.doOnPreDraw {
+                imgBackIllustrationPicture.layoutParams.width =
+                    (imgBackIllustrationPicture.height * heightToWidthRate).toInt()
+                imgBackIllustrationPicture.requestLayout()
+            }
+        }
+    }
+
+    private fun isBackTextEmpty(): Boolean {
+        dB.apply {
+            return viewModel.currentCard.value!!.translation.isEmpty()
+                    && viewModel.currentCard.value!!.example.isEmpty()
+                    && viewModel.currentCard.value!!.meanOfExample.isEmpty()
+        }
+    }
+
+    private fun updateForgottenCardProgressBar(passedCardCount: Int, forgottenCardCount: Int) {
+        dB.apply {
+            if (txtForgottenCardProgressBar.alpha == 0f) {
+                txtForgottenCardProgressBar.animate().alpha(1f).duration =
+                    COMMON_PROGRESS_BAR_VIEW_DURATION
+                txtForgottenCardCount.animate().alpha(1f).duration =
+                    COMMON_PROGRESS_BAR_VIEW_DURATION
+            }
+
+            val aPartWidth = txtTotalCardProgressBar.width / viewModel.getCardListSize()
+
+            val progrBarCurrentWidth = txtForgottenCardProgressBar.width
+            val progrBarTargetWidth = (passedCardCount + forgottenCardCount) * aPartWidth
+            val increaseAnim =
+                ValueAnimator.ofInt(progrBarCurrentWidth, progrBarTargetWidth).apply {
+                    duration = 500
+                    interpolator = OvershootInterpolator(1f)
+                    addUpdateListener {
+                        txtForgottenCardProgressBar.layoutParams.width = it.animatedValue as Int
+                        txtForgottenCardProgressBar.requestLayout()
+                    }
+                    setTarget(txtForgottenCardProgressBar)
+                }
+            increaseAnim.start()
+        }
+    }
+
+    private fun increasePassedCardProgressBar(currentCount: Int) {
+        dB.apply {
+            val progrBarCurrentWidth = txtPassedCardProgressBar.width
+            val aPartWidth = txtTotalCardProgressBar.width / viewModel.getCardListSize()
+            val progrBarTargetWidth = aPartWidth * currentCount
+            val increaseAnim = ValueAnimator.ofInt(progrBarCurrentWidth, progrBarTargetWidth)
+            increaseAnim.duration = 500
+            increaseAnim.interpolator = OvershootInterpolator(2f)
+            increaseAnim.setTarget(txtPassedCardProgressBar)
+
+            increaseAnim.addUpdateListener {
+                txtPassedCardProgressBar.layoutParams.width = it.animatedValue as Int
+                txtPassedCardProgressBar.requestLayout()
+            }
+            increaseAnim.start()
+        }
+    }
+
+
     override fun onEndReviewing() {
         doActionOnGroup_FRONT_Card { it ->
             it.goINVISIBLE()
         }
         viewModel.stopAllTextSpeaker()
-        on_NEXT_CardAnimation.cancel()
+        on_NEXT_REMEMBER_CARD_Anim.cancel()
         sendCardSetInfoTo_ResultReportActivity()
         finish()
     }
@@ -537,9 +806,9 @@ class UseFlashcardActivity : BaseActivity<ActivityUseFlashcardBinding, UseFlashc
 
     private fun nextCard (userRememberCurrentCard : Boolean) {
         if (userRememberCurrentCard) {
-            on_NEXT_CardAnimation.start()
+            on_NEXT_REMEMBER_CARD_Anim.start()
         } else {
-            on_NEXT_HARD_CardAnimation.start()
+            on_NEXT_FORGET_CARD_Anim.start()
         }
     }
 
@@ -589,11 +858,16 @@ class UseFlashcardActivity : BaseActivity<ActivityUseFlashcardBinding, UseFlashc
         }
     }
 
-    private fun beginUsing (reverseLanguage : Boolean) {
-        viewModel.setData(getRequestedFlashcardSet(), reverseLanguage)
-        viewModel.beginUsing()
+    private fun setData() {
+        viewModel.setData(getRequestedFlashcardSet(), getIsReverseTextAndTranslation())
         dB.executePendingBindings()
         setUpSpeakerStatus()
+    }
+
+    private fun loadAll_CardIllustrations() {
+        rotateForeverAnimation.duration = 1000
+        dB.progressBarLoadingImage.startAnimation(rotateForeverAnimation)
+        viewModel.loadAllCardIllustrations(getRequestedFlashcardSet().flashcards)
     }
 
     override fun overrideEnterAnim() {
@@ -617,12 +891,12 @@ class UseFlashcardActivity : BaseActivity<ActivityUseFlashcardBinding, UseFlashc
         on_OPEN_FrontCardDisappearAnimation.playTogether(txtSwipeFunctionDisappear, flashcardFlipAnimator)
         on_OPEN_FrontCardDisappearAnimation.addListener (
             onStart = {
-                doActionOnGroup_FRONT_Card { it ->
-                    it.goVISIBLE()
+                doActionOnGroup_FRONT_Card { view ->
+                    view.goVISIBLE()
                 }
             }, onEnd = {
-                doActionOnGroup_FRONT_Card { it ->
-                    it.goINVISIBLE()
+                doActionOnGroup_FRONT_Card { view ->
+                    view.goINVISIBLE()
                 }
             })
     }}
@@ -642,7 +916,8 @@ class UseFlashcardActivity : BaseActivity<ActivityUseFlashcardBinding, UseFlashc
         }
 
         on_OPEN_BackCardAppearAnimation.playSequentially(flashcardOPENAnimator, navigateAppearSet)
-        on_OPEN_Animation.play(on_OPEN_FrontCardDisappearAnimation).before(on_OPEN_BackCardAppearAnimation)
+        on_OPEN_Anim.play(on_OPEN_FrontCardDisappearAnimation)
+            .before(on_OPEN_BackCardAppearAnimation)
     }}
 
     private fun doActionOnGroup_FRONT_Card(action: (View) -> Unit) {
@@ -699,27 +974,28 @@ class UseFlashcardActivity : BaseActivity<ActivityUseFlashcardBinding, UseFlashc
                 it.goINVISIBLE()
             }
         })
-        on_REFLIP_Animation.play(on_REFLIP_BackCardDisappearAnimation).before(on_REFLIP_FrontCardAppearAnimation)
+        on_REFLIP_Anim.play(on_REFLIP_BackCardDisappearAnimation)
+            .before(on_REFLIP_FrontCardAppearAnimation)
     }}
 
-    // ON NEXT
-
+    // ON NEXT REMEMBER
 
     @Inject
-    fun init_ON_NEXT_CardFrontCardAppearAnimation (
-        @Named("Float") flashcardFloatAnimator : Animator,
-        @Named("Appear50Percents") txtSwipeFunctionAppear : Animator,
-        @Named("Appear100Percents") txtTextAppearAnimator : Animator
-    ) {dB.apply {
+    fun init_ON_NEXT_REMEBER_CardFrontCardAppearAnimation(
+        @Named("Float") flashcardFloatAnimator: Animator,
+        @Named("Appear50Percents") txtSwipeFunctionAppear: Animator,
+        @Named("Appear100Percents") frontCardAppearAnimator: Animator
+    ) {
+        dB.apply {
 
-        (flashcardFloatAnimator as ValueAnimator)
+            (flashcardFloatAnimator as ValueAnimator)
 
-        flashcardFloatAnimator.apply {
-            duration = 150
-            startDelay = 100
-            addUpdateListener {
-                viewgroupFrontFlashcard.elevation = it.animatedValue as Float
-            }
+            flashcardFloatAnimator.apply {
+                duration = 150
+                startDelay = 100
+                addUpdateListener {
+                    viewgroupFrontFlashcard.elevation = it.animatedValue as Float
+                }
 
             addListener(
                 onEnd = {
@@ -727,135 +1003,184 @@ class UseFlashcardActivity : BaseActivity<ActivityUseFlashcardBinding, UseFlashc
                 })
         }
 
-        txtTextAppearAnimator.apply {
-            startDelay = 30
-            duration = 100
-        }
-
-        txtTextAppearAnimator.setTarget(dB.txtFrontCardText)
-
-        flashcardFloatAnimator.setTarget(dB.viewgroupFrontFlashcard)
-
-        txtSwipeFunctionAppear.setTarget(vwgrpSwipeFunctions)
-
-        on_NEXT_CardFrontCardAppearAnimation.play(flashcardFloatAnimator).with(txtSwipeFunctionAppear).after(AnimatorSet().apply {
-            play(txtTextAppearAnimator)
-        })
-
-        on_NEXT_CardAnimation.play(on_NEXT_CardBackCardDisappearAnimation).before(on_NEXT_CardFrontCardAppearAnimation)
-        on_NEXT_CardAnimation.addListener (onStart = {
-            txtFrontCardText.scrollY = 0
-        })
-    }}
-
-
-    @Inject
-    fun init_ON_NEXT_EASY_CardBackCardDisappearAnimation (
-        @Named("MoveRightAndFadeOutAnimtr") flashcardMoveOutAnimator : Animator,
-        @Named("Disappear100Percents") buttonEasyDisappear : Animator,
-        @Named("Disappear100Percents") buttonHardDisappear : Animator
-    ) { dB.apply {
-        flashcardMoveOutAnimator.setTarget(viewgroupBackFlashcard)
-        buttonHardDisappear.setTarget(btnHard)
-
-        val navigateDisappearSet = AnimatorSet().apply {
-            play(buttonEasyDisappear).with(buttonHardDisappear)
-        }
-
-        on_NEXT_CardBackCardDisappearAnimation.playSequentially(flashcardMoveOutAnimator, navigateDisappearSet)
-        on_NEXT_CardBackCardDisappearAnimation.addListener(onEnd = {
-            doActionOnGroup_BACK_Card { it ->
-                    it.goGONE()
-
+            frontCardAppearAnimator.apply {
+                startDelay = 30
+                duration = 100
             }
 
-            viewgroupBackFlashcard.translationX = 0f
-            viewgroupBackFlashcard.translationY = 0f
+            frontCardAppearAnimator.setTarget(dB.viewgroupFrontFlashcard)
 
-            txtFrontCardText.alpha = 0f
-        })
+            flashcardFloatAnimator.setTarget(dB.viewgroupFrontFlashcard)
 
-    }}
+            txtSwipeFunctionAppear.setTarget(vwgrpSwipeFunctions)
 
+            on_NEXT_REMEMBER_CARD_FrontCard_AppearAnim
+                .play(flashcardFloatAnimator).with(txtSwipeFunctionAppear)
+                .after(frontCardAppearAnimator)
+
+            on_NEXT_REMEMBER_CARD_Anim.play(on_NEXT_REMEMBER_CARD_BackCard_DisappearAnim)
+                .before(on_NEXT_REMEMBER_CARD_FrontCard_AppearAnim)
+
+        }}
 
 
     @Inject
-    fun init_ON_NEXT_HARD_CardBackCardDisappearAnimation (
-        @Named("Disappear100Percents") buttonEasyDisappear : Animator,
-        @Named("Disappear100Percents") buttonHardDisappear : Animator,
+    fun init_ON_NEXT_REMEBER_Card_BackCardDisappearAnimation(
+        @Named("MoveRightAndFadeOutAnimtr") flashcardMoveOutAnimator: Animator,
+        @Named("Disappear100Percents") buttonEasyDisappear: Animator,
+        @Named("Disappear100Percents") buttonHardDisappear: Animator
+    ) {
+        dB.apply {
+            flashcardMoveOutAnimator.setTarget(viewgroupBackFlashcard)
+            buttonHardDisappear.setTarget(btnHard)
 
-        @Named("ScaleBiggerAndFadeOut") textHighlight : Animator,
-        @Named("FlipClose") backCardClose : Animator,
+            val navigateDisappearSet = AnimatorSet().apply {
+                play(buttonEasyDisappear).with(buttonHardDisappear)
+            }
 
-        @Named("FlipOpen") frontCardOpen : Animator,
-        @Named("ScaleBiggerAndFadeOut") translationHighlight: Animator,
-        @Named("MoveRightAndFadeOutAnimtr") frontCardMoveOut : Animator
-
-    ) { dB.apply {
-
-        buttonHardDisappear.setTarget(btnHard)
-
-        backCardClose.apply {
-            startDelay = 300
-            setTarget(viewgroupBackFlashcard)
-        }
-
-        frontCardOpen.setTarget(viewgroupBackReplicaFrontFlashcard)
-        textHighlight.setTarget(txtBackReplicaHighlightFrontCardText)
-
-        frontCardMoveOut.apply {
-            startDelay = 350
-            setTarget(viewgroupBackReplicaFrontFlashcard)
-        }
-
-        val navigateDisappearSet = AnimatorSet().apply {
-            play(buttonEasyDisappear).with(buttonHardDisappear)
-        }
-
-        
-        on_NEXT_HARD_BackCardDisappearAnimation.playSequentially(navigateDisappearSet,
-            translationHighlight, backCardClose)
-        on_NEXT_HARD_BackCardDisappearAnimation.addListener(
-            onStart = {
-                txtBackCardTranslation.setTextColor(RED_TEXT_COLOR)
-            },
-            onEnd = {
+            on_NEXT_REMEMBER_CARD_BackCard_DisappearAnim.playSequentially(
+                flashcardMoveOutAnimator,
+                navigateDisappearSet
+            )
+            on_NEXT_REMEMBER_CARD_BackCard_DisappearAnim.addListener(onEnd = {
                 doActionOnGroup_BACK_Card { it ->
                     it.goGONE()
                 }
-                viewgroupBackReplicaFrontFlashcard.goVISIBLE()
-                txtBackCardTranslation.setTextColor(NORMAL_TEXT_COLOR)
+
+                viewgroupBackFlashcard.translationX = 0f
+                viewgroupBackFlashcard.translationY = 0f
+
+                viewgroupFrontFlashcard.alpha = 0f
             })
 
-            on_NEXT_HARD_FrontCardAppearThenDisappear.playSequentially(frontCardOpen, textHighlight, frontCardMoveOut)
-            on_NEXT_HARD_FrontCardAppearThenDisappear.addListener(onEnd = {
-                viewgroupBackReplicaFrontFlashcard.goGONE()
-                viewgroupBackReplicaFrontFlashcard.translationX = 0f
-                viewgroupBackReplicaFrontFlashcard.translationY = 0f
-                txtFrontCardText.alpha = 0f
+    }}
+
+
+    // ON FORGET A CARD
+
+    @Inject
+    fun init_ON_NEXT_FORGET_CardFrontCardAppearAnimation(
+        @Named("Float") flashcardFloatAnimator: Animator,
+        @Named("Appear50Percents") txtSwipeFunctionAppear: Animator,
+        @Named("Appear100Percents") frontCardAppearAnimator: Animator
+    ) {
+        dB.apply {
+
+            (flashcardFloatAnimator as ValueAnimator)
+
+            flashcardFloatAnimator.apply {
+                startDelay = 100
+                duration = 150
+                addUpdateListener {
+                    viewgroupFrontFlashcard.elevation = it.animatedValue as Float
+                }
+
+                addListener(
+                    onEnd = {
+                        viewgroupBackFlashcard.alpha = 1.0f
+                    })
+            }
+
+            frontCardAppearAnimator.apply {
+                startDelay = 100
+                duration = 150
+            }
+
+            frontCardAppearAnimator.setTarget(dB.viewgroupFrontFlashcard)
+
+            flashcardFloatAnimator.setTarget(dB.viewgroupFrontFlashcard)
+
+            txtSwipeFunctionAppear.setTarget(vwgrpSwipeFunctions)
+
+            on_NEXT_FORGET_CARD_FrontCard_AppearAnim
+                .play(flashcardFloatAnimator).with(txtSwipeFunctionAppear)
+                .after(frontCardAppearAnimator)
+
+            on_NEXT_FORGET_CARD_Anim
+                .play(on_NEXT_FORGET_CARD_BackCard_DisappearAnim)
+                .before(on_NEXT_FORGET_CARD_FrontCard_AppearAnim)
+
+            on_NEXT_FORGET_CARD_Anim.addListener(onEnd = {
+                viewgroupBackFlashcard.scaleX = 1f
+                viewgroupBackFlashcard.scaleY = 1f
+            })
+        }
+    }
+
+    @Inject
+    fun init_ON_NEXT_FORGET_Card_BackCardDisappearAnimation(
+        @Named("Disappear100Percents") backCardDisappear: Animator
+        , @Named("ZoomFrom1xto3x") backCardScaleUp: Animator
+//        ,@Named("Disappear100Percents") buttonHardDisappear : Animator
+    ) {
+        dB.apply {
+
+            val textColorChangeAnim: ValueAnimator = ValueAnimator.ofFloat(0f, 1f)
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+                textColorChangeAnim.duration = 1000
+                textColorChangeAnim.interpolator = LinearInterpolator()
+                textColorChangeAnim.setTarget(txtBackCardTranslation)
+                textColorChangeAnim.addUpdateListener { valueAnim ->
+                    systemOutLogging(valueAnim.animatedFraction * 255f)
+                    txtBackCardTranslation.setTextColor(
+                        Color.rgb((valueAnim.animatedFraction * 255).toInt(), 3, 0)
+                    )
+                }
+            }
+
+            backCardDisappear.apply {
+                duration = 300
+                startDelay = 500
+                interpolator = NormalOutExtraSlowIn()
+                setTarget(viewgroupBackFlashcard)
+            }
+
+            backCardScaleUp.apply {
+                duration = 300
+                startDelay = 500
+                interpolator = NormalOutExtraSlowIn()
+                setTarget(viewgroupBackFlashcard)
+            }
+
+            on_NEXT_FORGET_CARD_BackCard_DisappearAnim
+                .play(textColorChangeAnim)
+                .before(AnimatorSet().apply {
+                    playTogether(backCardScaleUp, backCardDisappear)
+                })
+
+            on_NEXT_FORGET_CARD_BackCard_DisappearAnim.addListener(onEnd = {
+                doActionOnGroup_BACK_Card { backView ->
+                    backView.goGONE()
+                }
+                txtBackCardTranslation.setTextColor(Color.BLACK)
+                viewgroupBackFlashcard.translationX = 0f
+                viewgroupBackFlashcard.translationY = 0f
+
+                viewgroupFrontFlashcard.alpha = 0f
             })
 
-            on_NEXT_HARD_CardAnimation.playSequentially(
-                on_NEXT_HARD_BackCardDisappearAnimation,
-                on_NEXT_HARD_FrontCardAppearThenDisappear,
-                on_NEXT_CardFrontCardAppearAnimation)
+            on_NEXT_FORGET_CARD_Anim
+                .play(on_NEXT_FORGET_CARD_BackCard_DisappearAnim)
+                .before(on_NEXT_FORGET_CARD_FrontCard_AppearAnim)
         }
     }
 
 
     // ON PREV FROM BACK
     @Inject
-    fun init_ON_PREV_CardFrontCardAppearAnimation (
+    fun init_ON_PREV_FROM_BACK_CardFrontCardAppearAnimation(
         @Named("FromRightToCentreAndFadeIn") flashcardMoveFromRightToCentre: Animator,
         @Named("Appear50Percents") txtSwipeFunctionAppear: Animator
-    ) {dB.apply {
+    ) {
+        dB.apply {
 
-        flashcardMoveFromRightToCentre.startDelay = 150
+            flashcardMoveFromRightToCentre.startDelay = 150
 
-        flashcardMoveFromRightToCentre.addListener(onStart = {
-            viewgroupFrontFlashcard.elevation = 5.dp().toFloat()
-        },
-            onEnd = {
+            flashcardMoveFromRightToCentre.addListener(
+                onStart = {
+                    viewgroupFrontFlashcard.elevation = 5.dp().toFloat()
+                },
+                onEnd = {
                 viewgroupBackFlashcard.alpha = 1.0f
             })
 
@@ -870,17 +1195,18 @@ class UseFlashcardActivity : BaseActivity<ActivityUseFlashcardBinding, UseFlashc
 
 
     @Inject
-    fun init_ON_PREV_CardBackCardDisappearAnimation (
-        @Named("Sink") flashcardSink : Animator,
+    fun init_ON_PREV_FROM_BACK_Card_BackCardDisappearAnimation(
+        @Named("Sink") flashcardSink: Animator,
         @Named("Disappear100Percents") flashcardDisappear: Animator,
-        @Named("Disappear100Percents") buttonEasyDisappear : Animator,
-        @Named("Disappear100Percents") buttonHardDisappear : Animator
-    ) { dB.apply {
+        @Named("Disappear100Percents") buttonEasyDisappear: Animator,
+        @Named("Disappear100Percents") buttonHardDisappear: Animator
+    ) {
+        dB.apply {
 
-        (flashcardSink as ValueAnimator).addUpdateListener {
-            viewgroupBackFlashcard.elevation = it.animatedValue as Float
-        }
-        flashcardSink.setTarget(viewgroupBackFlashcard)
+            (flashcardSink as ValueAnimator).addUpdateListener {
+                viewgroupBackFlashcard.elevation = it.animatedValue as Float
+            }
+            flashcardSink.setTarget(viewgroupBackFlashcard)
         flashcardDisappear.setTarget(viewgroupBackFlashcard)
         buttonHardDisappear.setTarget(btnHard)
 
@@ -892,17 +1218,20 @@ class UseFlashcardActivity : BaseActivity<ActivityUseFlashcardBinding, UseFlashc
             play(flashcardSink).before(flashcardDisappear)
         }
 
-        on_PREV_from_BACK_SIDE_CardBackCardDisappearAnimation.playSequentially(
-            navigateDisappearSet,
-            flashcardDisappearSet
-        )
+            on_PREV_from_BACK_SIDE_Card_BackCardDisappearAnimation.playSequentially(
+                navigateDisappearSet,
+                flashcardDisappearSet
+            )
 
-        on_PREV_from_BACK_SIDE_CardAnimation.play(
-            on_PREV_from_BACK_SIDE_CardBackCardDisappearAnimation
-        )
-            .before(on_PREV_from_BACK_SIDE_CardFrontCardAppearAnimation)
+            on_PREV_from_BACK_SIDE_CardAnimation.play(
+                on_PREV_from_BACK_SIDE_Card_BackCardDisappearAnimation
+            )
+                .before(on_PREV_from_BACK_SIDE_CardFrontCardAppearAnimation)
+        }
     }
-    }
+
+
+    // ON PREV FROM BACK
 
     @Inject
     fun init_ON_PREV_FROM_FRONT_CardFrontPreviousCardAppearAnimation(

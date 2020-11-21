@@ -210,14 +210,16 @@ class ResultReportActivity :
         dB.txtUserScore.setTextColor(resources.getColor(R.color.use_flashcard_done_green))
     }
 
-    override fun addViewControls() { dB.apply {
-        rcvForgottenCardAdapter = RCVRecent_Search_FlashcardAdapter(this@ResultReportActivity)
-        rcvForgottenCardAdapter.setData(getMissedCardsList())
+    override fun addViewSettings() {
+        dB.apply {
+            rcvForgottenCardAdapter = RCVRecent_Search_FlashcardAdapter(this@ResultReportActivity)
+            rcvForgottenCardAdapter.setData(getMissedCardsList())
 
-        rcvForgottenCardsList.adapter = rcvForgottenCardAdapter
-        rcvForgottenCardsList.layoutManager =
-            LinearLayoutManager(this@ResultReportActivity, RecyclerView.VERTICAL, false)
-    }}
+            rcvForgottenCardsList.adapter = rcvForgottenCardAdapter
+            rcvForgottenCardsList.layoutManager =
+                LinearLayoutManager(this@ResultReportActivity, RecyclerView.VERTICAL, false)
+        }
+    }
 
     override fun addViewEvents() { dB.apply {
 

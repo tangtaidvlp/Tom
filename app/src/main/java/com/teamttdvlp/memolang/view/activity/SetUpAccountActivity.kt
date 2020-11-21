@@ -12,8 +12,8 @@ import com.teamttdvlp.memolang.view.activity.iview.SetUpAccountView
 import com.teamttdvlp.memolang.view.adapter.RCVChooseLanguageAdapter
 import com.teamttdvlp.memolang.view.base.BaseActivity
 import com.teamttdvlp.memolang.view.helper.ViewModelProviderFactory
-import com.teamttdvlp.memolang.view.helper.goVISIBLE
 import com.teamttdvlp.memolang.view.helper.getActivityViewModel
+import com.teamttdvlp.memolang.view.helper.goVISIBLE
 import com.teamttdvlp.memolang.view.helper.quickStartActivity
 import com.teamttdvlp.memolang.viewmodel.SetUpAccountViewModel
 import javax.inject.Inject
@@ -47,9 +47,11 @@ class SetUpAccountActivity : BaseActivity<ActivitySetUpAccountBinding, SetUpAcco
         viewModel.checkUserInfoSetUpStatus()
     }
 
-    override fun addViewControls() { dB.apply {
-        layoutChooseLang.rcvChooseLanguage.adapter = rcvChooseLanguageAdapter
-    }}
+    override fun addViewSettings() {
+        dB.apply {
+            layoutChooseLang.rcvChooseLanguage.adapter = rcvChooseLanguageAdapter
+        }
+    }
 
     override fun addViewEvents() { dB.apply {
 

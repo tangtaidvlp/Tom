@@ -68,11 +68,11 @@ class AddFlashcardActivity : BaseActivity<ActivityAddFlashcardBinding, AddFlashC
         return getActivityViewModel(viewModelProviderFactory)
     }
 
-    override fun showTextInputError() {
+    override fun showFrontCardInputError() {
         TODO("Not yet implemented")
     }
 
-    override fun showTranslationInputError() {
+    override fun showBackCardInputError() {
         TODO("Not yet implemented")
     }
 
@@ -88,13 +88,6 @@ class AddFlashcardActivity : BaseActivity<ActivityAddFlashcardBinding, AddFlashC
         TODO("Not yet implemented")
     }
 
-    override fun showFrontEmptyImageError() {
-        TODO("Not yet implemented")
-    }
-
-    override fun showBackEmptyImageError() {
-        TODO("Not yet implemented")
-    }
 //
 //    override fun onCreate(savedInstanceState: Bundle?) {
 //        super.onCreate(savedInstanceState)

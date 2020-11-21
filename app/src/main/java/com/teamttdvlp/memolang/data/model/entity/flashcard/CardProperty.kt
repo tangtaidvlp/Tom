@@ -9,6 +9,7 @@ import java.lang.annotation.RetentionPolicy
 const val FLASHCARD_WIDE_HEIGHT_RATE: Float = 32f / 23f
 const val HEIGHT_NORMAL = 0
 const val HEIGHT_WIDE = 1
+const val CARD_DEFAULT_RATIO_OF_HEIGHT_TO_LENGTH = 1 / 2f
 
 @Entity
 class CardProperty : Serializable {
@@ -29,7 +30,8 @@ class CardProperty : Serializable {
     var backSideHasText = true
 
     override fun toString(): String {
-        return """Front 
+        return """Height: ${if (heightOption == HEIGHT_NORMAL) "Normal" else "Wide"} 
+            | Front 
             | - Text: $frontSideHasText
             | - Image: $frontSideHasImage
             | Back:

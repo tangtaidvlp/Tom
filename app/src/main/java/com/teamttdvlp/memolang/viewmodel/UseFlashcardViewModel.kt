@@ -1,36 +1,44 @@
 package com.teamttdvlp.memolang.viewmodel
 
 import android.app.Application
+import android.graphics.Bitmap
 import androidx.lifecycle.MutableLiveData
 import com.teamttdvlp.memolang.data.model.entity.flashcard.Deck
 import com.teamttdvlp.memolang.data.model.entity.flashcard.Flashcard
 import com.teamttdvlp.memolang.model.CardListLanguageReverser.Companion.reverse_LIST_Card_TextAndTranslation
 import com.teamttdvlp.memolang.model.CardListManager
+import com.teamttdvlp.memolang.model.IllustrationLoader
 import com.teamttdvlp.memolang.model.TextSpeaker
 import com.teamttdvlp.memolang.model.UseFCActivity_StatusManager
 import com.teamttdvlp.memolang.model.UseFCActivity_StatusManager.SpeakerStatus.Companion.SPEAK_TEXT_AND_TRANSLATION
 import com.teamttdvlp.memolang.model.UseFCActivity_StatusManager.SpeakerStatus.Companion.SPEAK_TEXT_ONLY
 import com.teamttdvlp.memolang.view.activity.iview.UseFlashcardView
 import com.teamttdvlp.memolang.view.base.BaseViewModel
-import com.teamttdvlp.memolang.view.helper.selfMinusOne
-import com.teamttdvlp.memolang.view.helper.selfPlusOne
 import com.teamttdvlp.memolang.view.helper.systemOutLogging
 
-class UseFlashcardViewModel (private val context : Application): BaseViewModel<UseFlashcardView>() {
+class UseFlashcardViewModel(
+    private val context: Application,
+    private val illustrationLoader: IllustrationLoader
+) : BaseViewModel<UseFlashcardView>() {
 
     val currentCard = MutableLiveData<Flashcard>()
 
-    val cardLeftCount = MutableLiveData<Int>()
+    var passedCardCount: Int = 0
 
-    val forgottenCardsCount = MutableLiveData<Int>()
+    var forgottenCardCount: Int = 0
 
     val currentCardOrder = MutableLiveData<Int>()
 
     val deckName = MutableLiveData<String>()
 
-    private val hardCardList = ArrayList<Flashcard>()
+    var isReversedTextAndTranslation = false
 
-    val cardListManager = CardListManager()
+
+    private val cardListManager = CardListManager()
+
+    private val allForgottenCardList = ArrayList<Flashcard>()
+
+    private val hardCardList = ArrayList<Flashcard>()
 
     private lateinit var deck: Deck
 
@@ -40,26 +48,27 @@ class UseFlashcardViewModel (private val context : Application): BaseViewModel<U
 
     private lateinit var useFCActivityStatusManager: UseFCActivity_StatusManager
 
-    var isReversedTextAndTranslation = false
+    // <Picture Name, Bitmap>
+    private var cardIllustrationMap = HashMap<String, Bitmap?>()
 
-    fun setData(fcSet: Deck, reverseTextAndTrans: Boolean) {
+    fun setData(fcDeck: Deck, reverseTextAndTrans: Boolean) {
         val frontLang: String
         val backLang: String
-        this.deck = fcSet
+        this.deck = fcDeck
         this.isReversedTextAndTranslation = reverseTextAndTrans
         if (reverseTextAndTrans) {
-            reverse_LIST_Card_TextAndTranslation(fcSet.flashcards)
-            frontLang = fcSet.backLanguage.trim()
-            backLang = fcSet.frontLanguage.trim()
+            reverse_LIST_Card_TextAndTranslation(fcDeck.flashcards)
+            frontLang = fcDeck.backLanguage.trim()
+            backLang = fcDeck.frontLanguage.trim()
         } else {
-            frontLang = fcSet.frontLanguage.trim()
-            backLang = fcSet.backLanguage.trim()
+            frontLang = fcDeck.frontLanguage.trim()
+            backLang = fcDeck.backLanguage.trim()
         }
 
-        cardListManager.setData(fcSet.flashcards)
-        deckName.value = fcSet.name
+        cardListManager.setData(fcDeck.flashcards)
+        deckName.value = fcDeck.name
 
-        useFCActivityStatusManager = UseFCActivity_StatusManager(context, fcSet.name)
+        useFCActivityStatusManager = UseFCActivity_StatusManager(context, fcDeck.name)
 
         val textSpokenFirst = if (doesTextNeedSpeakingAtStart()) {
             cardListManager.getFirstOne().text
@@ -70,31 +79,30 @@ class UseFlashcardViewModel (private val context : Application): BaseViewModel<U
 
     }
 
-    private fun doesTextNeedSpeakingAtStart () : Boolean {
-        val speakerFunc = useFCActivityStatusManager.speakerStatusManager.getFunction()
-        val speakerIsOn = useFCActivityStatusManager.speakerStatusManager.getStatus()
-        return ((speakerFunc == SPEAK_TEXT_ONLY) or (speakerFunc == SPEAK_TEXT_AND_TRANSLATION)) and speakerIsOn
+    private fun beginUsing() {
+        val firstCard = cardListManager.getFirstOne()
+        updateCurrentCard(firstCard)
+        currentCardOrder.value = 1
+        passedCardCount = 0
+        forgottenCardCount = 0
     }
 
-    fun speakFrontCardText (text : String) {
-        srcLangTextSpeaker.speak(text)
-        if (srcLangTextSpeaker.error != null) {
-            // We just want to show this error only once
-            // because although there is error, but text speaker still work
-            // I also don't know exactly how it work
-            view.showSpeakTextError(srcLangTextSpeaker.error + "")
-            srcLangTextSpeaker.error = null
-        }
-    }
+    fun loadAllCardIllustrations(flashcardList: ArrayList<Flashcard>) {
+        val allPictureList = ArrayList<String>()
+        flashcardList.forEach { card ->
+            if (card.frontIllustrationPictureName != null) {
+                allPictureList.add(card.frontIllustrationPictureName!!)
+            }
 
-    fun speakBackCardText (text : String) {
-        tgtLangTextSpeaker.speak(text)
-        if (tgtLangTextSpeaker.error != null) {
-            // We just want to show this error only once
-            // because although there is error, but text speaker still work
-            // I also don't know exactly how it work
-            view.showSpeakTextError(tgtLangTextSpeaker.error + "")
+            if (card.backIllustrationPictureName != null) {
+                allPictureList.add(card.backIllustrationPictureName!!)
+            }
         }
+        illustrationLoader.loadListOfBitmap(allPictureList, onGetResult = { data, exceptionMap ->
+            cardIllustrationMap = data
+            beginUsing()
+            view.onLoadAllIllustrationFinish()
+        })
     }
 
     fun moveToNextCard() {
@@ -103,22 +111,10 @@ class UseFlashcardViewModel (private val context : Application): BaseViewModel<U
         updateCardOrder()
     }
 
-    fun beginUsing() {
-        val firstCard = cardListManager.getFirstOne()
-        currentCard.value = firstCard
-        currentCardOrder.value = 1
-        cardLeftCount.value = getCardListSize()
-    }
-
-    fun getCardListSize(): Int {
-        return cardListManager.getSize()
-    }
-
     fun moveToPreviousCard() {
         if (hasPrevious()) {
             val thePreviousCard = cardListManager.focusOnPrevCardAndGetIt()
             updateCurrentCard(thePreviousCard)
-            cardLeftCount.selfPlusOne()
             updateCardOrder()
         }
     }
@@ -137,6 +133,23 @@ class UseFlashcardViewModel (private val context : Application): BaseViewModel<U
 
     private fun updateCurrentCard (card : Flashcard) {
         currentCard.value = card
+        if (card.frontIllustrationPictureName != null) {
+            val frontImage = cardIllustrationMap.get(card.frontIllustrationPictureName!!)
+            if (frontImage != null) {
+                view.onGetFrontIllustration(frontImage)
+            } else {
+                systemOutLogging("Error happen when get this image: ")
+            }
+        }
+
+        if (card.backIllustrationPictureName != null) {
+            val backImage = cardIllustrationMap.get(card.backIllustrationPictureName!!)
+            if (backImage != null) {
+                view.onGetBackIllustration(backImage)
+            } else {
+                systemOutLogging("Error happen when get this image: ")
+            }
+        }
     }
 
     private fun hasPrevious () : Boolean {
@@ -144,30 +157,68 @@ class UseFlashcardViewModel (private val context : Application): BaseViewModel<U
     }
 
     fun handleEasyCard () {
-        cardLeftCount.selfMinusOne()
+        passedCardCount++
+        if (hardCardList.contains(currentCard.value)) {
+            forgottenCardCount--
+            hardCardList.remove(currentCard.value)
+        }
+        view.onPassACard(passedCardCount, forgottenCardCount)
     }
 
-    fun handleHardCard () {
-        if (!hardCardList.contains(cardListManager.getCurrentCard())) {
-            forgottenCardsCount.selfPlusOne()
+    fun handleHardCard() {
+        if (hardCardList.contains(cardListManager.getCurrentCard()).not()) {
+            forgottenCardCount++
             hardCardList.add(cardListManager.getCurrentCard())
         }
         cardListManager.handleHardCard()
+        view.onPassACard(passedCardCount, forgottenCardCount)
     }
 
-    fun getForgottenCardList () : ArrayList<Flashcard> {
-        return hardCardList
-    }
-
-    private fun updateCardOrder () {
+    private fun updateCardOrder() {
         currentCardOrder.value = cardListManager.currentIndex + 1
     }
 
-    fun getSpeakerFunction () : Int {
+    fun getForgottenCardList(): ArrayList<Flashcard> {
+        return hardCardList
+    }
+
+    fun getCardListSize(): Int {
+        return cardListManager.getSize()
+    }
+
+
+    private fun doesTextNeedSpeakingAtStart(): Boolean {
+        val speakerFunc = useFCActivityStatusManager.speakerStatusManager.getFunction()
+        val speakerIsOn = useFCActivityStatusManager.speakerStatusManager.getStatus()
+        return ((speakerFunc == SPEAK_TEXT_ONLY) or (speakerFunc == SPEAK_TEXT_AND_TRANSLATION)) and speakerIsOn
+    }
+
+    fun speakFrontCardText(text: String) {
+        srcLangTextSpeaker.speak(text)
+        if (srcLangTextSpeaker.error != null) {
+            // We just want to show this error only once
+            // because although there is error, but text speaker still work
+            // I also don't know exactly how it work
+            view.showSpeakTextError(srcLangTextSpeaker.error + "")
+            srcLangTextSpeaker.error = null
+        }
+    }
+
+    fun speakBackCardText(text: String) {
+        tgtLangTextSpeaker.speak(text)
+        if (tgtLangTextSpeaker.error != null) {
+            // We just want to show this error only once
+            // because although there is error, but text speaker still work
+            // I also don't know exactly how it work
+            view.showSpeakTextError(tgtLangTextSpeaker.error + "")
+        }
+    }
+
+    fun getSpeakerFunction(): Int {
         return useFCActivityStatusManager.speakerStatusManager.getFunction()
     }
 
-    fun saveAllStatus (speakerFunction : Int, speakerStatus : Boolean) {
+    fun saveAllStatus(speakerFunction: Int, speakerStatus: Boolean) {
         if (::useFCActivityStatusManager.isInitialized) {
             useFCActivityStatusManager.speakerStatusManager.saveFunction(speakerFunction)
             useFCActivityStatusManager.speakerStatusManager.saveStatus(speakerStatus)

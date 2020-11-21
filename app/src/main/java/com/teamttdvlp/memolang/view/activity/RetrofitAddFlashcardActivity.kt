@@ -99,8 +99,6 @@ class RetrofitAddFlashcardActivity :
 
     private var setEdtTypeCausedByEdit = false
 
-    private var currentCardProperty: CardProperty = CardProperty()
-
     private lateinit var turnUpFrontCard_After_TurnDownBackCard: Animation
 
     private lateinit var turnUpBackCard_After_TurnDownFrontCard: Animation
@@ -112,6 +110,12 @@ class RetrofitAddFlashcardActivity :
     private var back_Up_To_Front_EffectAnmtrSet: AnimatorSet = AnimatorSet()
 
     private var back_Down_To_Front_EffectAnmtrSet: AnimatorSet = AnimatorSet()
+
+    private lateinit var DRAWABLE_ENLARGE_HEIGHT_BUTTON: Drawable
+
+    private lateinit var DRAWABLE_SHRINK_HEIGHT_BUTTON: Drawable
+
+    private var currentHeightOption: Int = HEIGHT_NORMAL
 
     lateinit var rcvFrontLangChooseLanguageAdapter: RCVChooseLanguageAdapter
         @Inject set
@@ -131,17 +135,17 @@ class RetrofitAddFlashcardActivity :
     lateinit var viewModelProviderFactory: ViewModelProviderFactory
         @Inject set
 
-    private lateinit var front_illustrationDefaultDrawable: Drawable
+    private lateinit var FRONT_ILLUSTRATION_DEFAULT_DRAWABLE: Drawable
 
-    private lateinit var back_illustrationDefaultDrawable: Drawable
+    private lateinit var BACK_ILLUSTRATION_DEFAULT_DRAWABLE: Drawable
+
+    private var CARD_WIDTH: Int = 0
 
     private var requestEditFlashcard: Flashcard? = null
 
     private var requestEditDeck: Deck? = null
 
     private var requestAdd_Deck: Deck? = null
-
-    private var is_InAdjustCardProperty_Mode = false
 
     override fun getLayoutId(): Int = R.layout.activity_add_flashcard_retro
 
@@ -153,19 +157,21 @@ class RetrofitAddFlashcardActivity :
         super.onCreate(savedInstanceState)
         setStatusBarColor(resources.getColor(R.color.extreme_dark_blue))
         viewModel.setUpView(this)
+
         getRequests()
+
         if (requestEditFlashcard != null) {
             showVirtualKeyboard()
             dB.edtText.requestFocus()
         }
 
         recalculate_Flashcard_Dimens(1f)
-        recalculate_ChooseFlashcardPropertyPanel_Dimens()
         recalculate_FunctionsPanel_Dimens()
         performStartUpAnimation()
     }
 
     private val COMMON_START_UP_ANIM_DURATION = 300L
+
     private val COMMON_START_UP_ANIM_DELAY = 300L
 
     private fun performStartUpAnimation() {
@@ -203,7 +209,7 @@ class RetrofitAddFlashcardActivity :
             cardPropButtonPopUp.interpolator = OvershootInterpolator(3f)
             cardPropButtonPopUp.duration = COMMON_START_UP_ANIM_DURATION
             cardPropButtonPopUp.startOffset = COMMON_START_UP_ANIM_DELAY + 200
-            vwgrpBtnCardProperties.startAnimation(cardPropButtonPopUp)
+            btnCardHeightAdjust.startAnimation(cardPropButtonPopUp)
 
             val newDeckButtonPopUp =
                 AnimationUtils.loadAnimation(this@RetrofitAddFlashcardActivity, R.anim.scale_up)
@@ -216,8 +222,16 @@ class RetrofitAddFlashcardActivity :
 
 
     override fun initProperties() {
-        front_illustrationDefaultDrawable = dB.imgFrontIllustrationPicture.drawable
-        back_illustrationDefaultDrawable = dB.imgBackIllustrationPicture.drawable
+        FRONT_ILLUSTRATION_DEFAULT_DRAWABLE = dB.imgFrontIllustrationPicture.drawable
+        BACK_ILLUSTRATION_DEFAULT_DRAWABLE = dB.imgBackIllustrationPicture.drawable
+
+        DRAWABLE_ENLARGE_HEIGHT_BUTTON =
+            resources.getDrawable(R.drawable.image_button_enlarge_height)
+        DRAWABLE_SHRINK_HEIGHT_BUTTON = resources.getDrawable(R.drawable.image_button_shrink_height)
+
+        CARD_WIDTH =
+            ScreenDimension.screenWidth -
+                    (dB.viewgroupFrontFlashcard.layoutParams as ConstraintLayout.LayoutParams).marginStart * 2
     }
 
     private fun recalculateFront_IllustrationPictureWidth_ByHeightRate(heightToWidthRate: Float) {
@@ -255,34 +269,19 @@ class RetrofitAddFlashcardActivity :
     }
 
     private fun recalculate_Flashcard_Dimens(heightRate: Float) {
-        systemOutLogging("Recalculation flashcard dimens")
         dB.apply {
-            viewgroupFrontFlashcard.doOnPreDraw {
-                viewgroupFrontFlashcard.layoutParams.height =
-                    (heightRate * (viewgroupFrontFlashcard.width / 2)).toInt()
-                viewgroupFrontFlashcard.requestLayout()
+            val defaultExpectedHeight = CARD_WIDTH * CARD_DEFAULT_RATIO_OF_HEIGHT_TO_LENGTH
+
+            viewgroupFrontFlashcard.apply {
+                layoutParams.height = (heightRate * defaultExpectedHeight).toInt()
+                systemOutLogging("height rate: ${heightRate}")
+                systemOutLogging("$defaultExpectedHeight * $heightRate = ${defaultExpectedHeight * heightRate} >< ${layoutParams.height}")
+                requestLayout()
             }
 
-            viewgroupBackFlashcard.doOnPreDraw {
-                viewgroupBackFlashcard.layoutParams.height =
-                    (heightRate * (viewgroupFrontFlashcard.width / 2)).toInt()
-                viewgroupBackFlashcard.requestLayout()
-            }
-        }
-    }
-
-    private fun recalculate_ChooseFlashcardPropertyPanel_Dimens() {
-        dB.apply {
-            layoutChooseCardProperty.root.doOnPreDraw {
-                var totalMargin: Int = viewgroupFrontFlashcard.marginTop
-                systemOutLogging("Got Height: ${viewgroupFrontFlashcard.height}")
-                systemOutLogging("Got LayoutParams.Height: ${viewgroupFrontFlashcard.layoutParams.height}")
-                totalMargin += (viewgroupFrontFlashcard.height * FLASHCARD_WIDE_HEIGHT_RATE).toInt()
-
-                totalMargin += 25.dp()
-                (layoutChooseCardProperty.root.layoutParams as ConstraintLayout.LayoutParams).topMargin =
-                    totalMargin
-                layoutChooseCardProperty.root.requestLayout()
+            viewgroupBackFlashcard.apply {
+                layoutParams.height = (heightRate * defaultExpectedHeight).toInt()
+                requestLayout()
             }
         }
     }
@@ -303,8 +302,7 @@ class RetrofitAddFlashcardActivity :
 
     private fun getRequests() {
         requestAdd_Deck = getAddFlashcardRequest()
-
-        val editInfo = getEditFlashcardRequest()
+        val editInfo: Pair<Flashcard, Deck>? = getEditFlashcardRequest()
         if (editInfo != null) {
             requestEditFlashcard = editInfo.first
             requestEditDeck = editInfo.second
@@ -312,7 +310,7 @@ class RetrofitAddFlashcardActivity :
     }
 
     @RequiresApi(Build.VERSION_CODES.Q)
-    override fun addViewControls() {
+    override fun addViewSettings() {
         dB.apply {
             // imgFlashcardRightReceiver Width : 50dp
             // imgFlashcardRightReceiver Height : 50dp
@@ -428,8 +426,8 @@ class RetrofitAddFlashcardActivity :
             edtTranslation.setText(requestEditFlashcard.translation)
             edtExample.setText(requestEditFlashcard.example)
             edtExampleTranslation.setText(requestEditFlashcard.meanOfExample)
-
             setCardProperty(requestEditFlashcard.cardProperty)
+
             if (requestEditFlashcard.frontIllustrationPictureName != null) {
                 startWaitingLoadingImageProgress()
                 viewModel.loadIllustrationPicture(
@@ -444,11 +442,7 @@ class RetrofitAddFlashcardActivity :
                                 throw Exception("????")
                                 // TODO ()
                             } else {
-                                setFront_IllustrationAndAdjustRatio(picture)
-                                if (currentCardProperty.frontSideHasText.not()) {
-                                    showFrontSide_ImageOnly()
-                                }
-                                endFront_LoadImageProgressBar()
+                                onGetFrontIllustration(picture)
                             }
                         }
                     })
@@ -467,11 +461,7 @@ class RetrofitAddFlashcardActivity :
                                 throw Exception("????")
                                 // TODO ()
                             } else {
-                                setBack_IllustrationAndAdjustRatio(picture)
-                                if (currentCardProperty.backSideHasText.not()) {
-                                    showBackSide_ImageOnly()
-                                }
-                                endBack_LoadImageProgressBar()
+                                onGetBackIllustration(picture)
                             }
                         }
                     })
@@ -480,6 +470,8 @@ class RetrofitAddFlashcardActivity :
     }
 
     private fun setCardProperty(cardProperty: CardProperty) {
+        systemOutLogging(cardProperty)
+        currentHeightOption = cardProperty.heightOption
         dB.apply {
             if (cardProperty.heightOption == HEIGHT_WIDE) {
                 recalculate_Flashcard_Dimens(FLASHCARD_WIDE_HEIGHT_RATE)
@@ -516,7 +508,7 @@ class RetrofitAddFlashcardActivity :
     }
 
     private fun startWaitingLoadingImageProgress() {
-        if (currentCardProperty.frontSideHasText) {
+        if (isFrontTextEmpty().not()) {
             recalculateFront_IllustrationPictureWidth_ByHeightRate(1f)
         }
         val infiniteRotate =
@@ -676,61 +668,25 @@ class RetrofitAddFlashcardActivity :
                     showCreateSetNamePanel()
                 }
 
-                vwgrpBtnCardProperties.setOnClickListener {
-                    imgCardProps.startAnimation(mashmallowAnim)
-                    btnFrontChoosePicture.goGoneByFadeOutAnim()
-                    btnBackChoosePicture.goGoneByFadeOutAnim()
-                    show_ChooseCardPropertyByFadeIn()
-                    hide_SaveFunctionsComponentsByFadeOut()
+                btnCardHeightAdjust.setOnClickListener {
+
+                    if (currentHeightOption == HEIGHT_NORMAL) {
+                        txtHeightOption.text = "Shrink height"
+                        imgCardHeightAdjust.setImageDrawable(DRAWABLE_SHRINK_HEIGHT_BUTTON)
+                        recalculate_Flashcard_Dimens(FLASHCARD_WIDE_HEIGHT_RATE)
+
+                        currentHeightOption = HEIGHT_WIDE
+
+                    } else if (currentHeightOption == HEIGHT_WIDE) {
+                        txtHeightOption.text = "Enlarge height"
+                        imgCardHeightAdjust.setImageDrawable(DRAWABLE_ENLARGE_HEIGHT_BUTTON)
+                        recalculate_Flashcard_Dimens(1f)
+                        currentHeightOption = HEIGHT_NORMAL
+                    }
+
+                    imgCardHeightAdjust.startAnimation(mashmallowAnim)
                 }
             }
-
-//            vwgrpBtnSave.setOnClickListener {
-//                proceedAddOrSaveFlashcard()
-//                userEndAdding = true
-//            }
-//
-//            vwgrpBtnSaveAndContinue.
-//
-//            imgSwipeZone.setOnTouchListener(object :
-//                MyGestureDetector(this@RetrofitAddFlashcardActivity) {
-//
-//                override fun onSwipeRight() {
-//
-//                }
-//
-//                override fun onSwipeLeft() {
-//
-//                }
-//
-//                override fun onSwipeUp() {
-//                    if (hasStartedEdit.not()) {
-//                        showVirtualKeyboard()
-//                        edtText.requestFocus()
-//                        startEditting()
-//                    } else {
-//                        showVirtualKeyboard()
-//                        if (isShowingFrontCard and edtText.text.isEmpty()) {
-//                            edtText.requestFocus()
-//                            return
-//                        }
-//
-//                        if (isShowingFrontCard.not() and edtTranslation.text.isEmpty()) {
-//                            edtTranslation.requestFocus()
-//                            return
-//                        }
-//
-//                        onUserFlipCard(FlipDirection.FLIP_UP)
-//                    }
-//                }
-//
-//                override fun onSwipeDown() {
-//                    if (hasStartedEdit) {
-//                        onUserFlipCard(FlipDirection.FLIP_DOWN)
-//                        showVirtualKeyboard()
-//                    }
-//                }
-//            })
 
             imgSetNameSpinner.setOnClickListener {
                 txtSetName.performClick()
@@ -747,7 +703,6 @@ class RetrofitAddFlashcardActivity :
 
             btnCreateNewSetSuggestion.setOnClickListener {
                 hideButton_CreateNewSetSuggesstion()
-//                btnStartCreateNewSet.performClick()
             }
 
             rcvFrontLangChooseLanguageAdapter.setOnItemClickListener { language ->
@@ -805,21 +760,6 @@ class RetrofitAddFlashcardActivity :
                 hideSetNameList()
             }
 
-//            btnStartCreateNewSet.setOnClickListener {
-//                edtNewSetName.requestFocus()
-//                edtNewSetFrontLanguage.setText(viewModel.currentFocusDeck.frontLanguage)
-//                edtNewSetBackLanguage.setText(viewModel.currentFocusDeck.backLanguage)
-//                if (rcvFlashcardSetName.isVisible) {
-//                    hideSetNameList()
-//                }
-//
-//                if (btnCreateNewSetSuggestion.isVisible) {
-//                    hideButton_CreateNewSetSuggesstion()
-//                }
-//
-//                showCreateSetNamePanel()
-//            }
-
             imgNewSetFrontLangSpinner.setOnClickListener {
                 showChooseFrontLanguageLists()
                 hideChooseBackLanguageList()
@@ -845,7 +785,6 @@ class RetrofitAddFlashcardActivity :
                 }
             }
 
-
             imgTurnOffCreateNewSet.setOnClickListener {
                 hideCreateNewFlashcardSetPanel()
             }
@@ -860,8 +799,11 @@ class RetrofitAddFlashcardActivity :
             btnFrontChoosePicture.setOnClickListener {
                 imgFrontLoadPictureProgressBar.goVISIBLE()
                 btnFrontChoosePicture.goGoneByFadeOutAnim()
-                if (currentCardProperty.frontSideHasText)
+
+                if (isFrontTextEmpty()) {
                     showFrontSide_BothTextAndImage()
+                }
+
                 loadImagesFromGallery()
             }
 
@@ -872,7 +814,7 @@ class RetrofitAddFlashcardActivity :
             btnBackChoosePicture.setOnClickListener {
                 dB.imgBackLoadPictureProgressBar.goVISIBLE()
                 btnBackChoosePicture.goGoneByFadeOutAnim()
-                if (currentCardProperty.backSideHasText)
+                if (isBackTextEmpty())
                     showBackSide_BothTextAndImage()
                 loadImagesFromGallery()
             }
@@ -881,101 +823,56 @@ class RetrofitAddFlashcardActivity :
                 btnBackChoosePicture.performClick()
             }
 
-//            vwgrpBtnBlueChooseCardProperty.setOnClickListener {
-//                btnFrontChoosePicture.goGoneByFadeOutAnim()
-//                btnBackChoosePicture.goGoneByFadeOutAnim()
-//                show_ChooseCardPropertyByFadeIn()
-//                hide_StartEditComponentsByFadeOut()
-//            }
+            btnFrontAddText.setOnClickListener {
+                showFrontSide_BothTextAndImage()
+                edtText.requestFocus()
+                showVirtualKeyboard()
+                btnFrontAddText.goGoneByFadeOutAnim()
+            }
+
+            btnBackAddText.setOnClickListener {
+                showBackSide_BothTextAndImage()
+                edtTranslation.requestFocus()
+                showVirtualKeyboard()
+                btnBackAddText.goGoneByFadeOutAnim()
+            }
 //
-//            btnCardPropertiesOnTop.setOnClickListener {
-//                btnFrontChoosePicture.goGoneByFadeOutAnim()
-//                btnBackChoosePicture.goGoneByFadeOutAnim()
-//                show_ChooseCardPropertyByFadeIn()
-//                hide_SaveFunctionsComponentsByFadeOut()
+//            layoutChooseCardProperty.apply {
+//
+//                rdgrCardFrontSide.setOnCheckedChangeListener { v, checkedId ->
+//                    if (checkedId == rdbtnFrontNormalMode.id) {
+//                        showFrontSide_BothTextAndImage()
+//                        currentCardProperty.frontSideHasText = true
+//                        currentCardProperty.frontSideHasImage = true
+//                    } else if (checkedId == rdbtnFrontImageOnly.id) {
+//                        showFrontSide_ImageOnly()
+//                        currentCardProperty.frontSideHasText = false
+//                        currentCardProperty.frontSideHasImage = true
+//                    }
+//                }
+//
+//                rdgrCardBackSide.setOnCheckedChangeListener { v, checkedId ->
+//                    if (checkedId == rdbtnBackNormalMode.id) {
+//                        showBackSide_BothTextAndImage()
+//                        currentCardProperty.backSideHasText = true
+//                        currentCardProperty.backSideHasImage = true
+//                    } else if (checkedId == rdbtnBackImageOnly.id) {
+//                        showBackSide_ImageOnly()
+//                        currentCardProperty.backSideHasText = false
+//                        currentCardProperty.backSideHasImage = true
+//                    }
+//                }
 //            }
-
-            layoutChooseCardProperty.apply {
-                rdgrCardHeight.setOnCheckedChangeListener { view, changedId ->
-                    if (changedId == rdbtnHeightNormal.id) {
-                        recalculate_Flashcard_Dimens(1f)
-                        currentCardProperty.heightOption = HEIGHT_NORMAL
-//                        txtSave.goVISIBLE()
-//                        txtContinue.goVISIBLE()
-                    } else if (changedId == rdbtnHeightWide.id) {
-                        recalculate_Flashcard_Dimens(FLASHCARD_WIDE_HEIGHT_RATE)
-                        currentCardProperty.heightOption = HEIGHT_WIDE
-//                        txtSave.goGONE()
-//                        txtContinue.goGONE()
-                    }
-                }
-
-                rdgrCardFrontSide.setOnCheckedChangeListener { v, checkedId ->
-                    if (checkedId == rdbtnFrontNormalMode.id) {
-                        showFrontSide_BothTextAndImage()
-                        currentCardProperty.frontSideHasText = true
-                        currentCardProperty.frontSideHasImage = true
-                    } else if (checkedId == rdbtnFrontImageOnly.id) {
-                        showFrontSide_ImageOnly()
-                        currentCardProperty.frontSideHasText = false
-                        currentCardProperty.frontSideHasImage = true
-                    }
-                }
-
-                rdgrCardBackSide.setOnCheckedChangeListener { v, checkedId ->
-                    if (checkedId == rdbtnBackNormalMode.id) {
-                        showBackSide_BothTextAndImage()
-                        currentCardProperty.backSideHasText = true
-                        currentCardProperty.backSideHasImage = true
-                    } else if (checkedId == rdbtnBackImageOnly.id) {
-                        showBackSide_ImageOnly()
-                        currentCardProperty.backSideHasText = false
-                        currentCardProperty.backSideHasImage = true
-                    }
-                }
-
-            }
-        }
-    }
-
-    private fun show_ChooseCardPropertyByFadeIn() {
-        dB.apply {
-            is_InAdjustCardProperty_Mode = true
-            imgFrontIllustrationPicture.setBackgroundColor(Color.parseColor("#10000000"))
-            hideVirtualKeyboard()
-            showFront_DemoIllustration()
-            showBack_DemoIllustration()
-            layoutChooseCardProperty.root.goVisibleByFadeInAnim(1f)
-        }
-    }
-
-    private fun showBack_DemoIllustration() {
-        dB.apply {
-            if (currentCardProperty.backSideHasImage) {
-                if (currentCardProperty.backSideHasText) {
-                    showBackSide_BothTextAndImage()
-                } else {
-                    showBackSide_ImageOnly()
-                }
-            }
         }
     }
 
     private fun showFront_DemoIllustration() {
         dB.apply {
-            if (currentCardProperty.frontSideHasImage) {
-                if (currentCardProperty.frontSideHasText) {
-                    showFrontSide_BothTextAndImage()
-                } else {
-                    showFrontSide_ImageOnly()
-                }
+            if (isFrontTextEmpty().not()) {
+                showFrontSide_BothTextAndImage()
+            } else {
+                showFrontSide_ImageOnly()
             }
-        }
-    }
-
-    private fun hide_SaveFunctionsComponentsByFadeOut() {
-        dB.apply {
-            layoutFunctionsPanel.root.goGoneByFadeOutAnim()
         }
     }
 
@@ -991,6 +888,7 @@ class RetrofitAddFlashcardActivity :
     private fun showFrontSide_ImageOnly() {
         dB.apply {
             vwgrpFrontTexts.goGONE()
+            btnFrontChoosePicture.goGoneByFadeOutAnim()
             (imgFrontIllustrationPicture.layoutParams as ConstraintLayout.LayoutParams).endToEnd =
                 PARENT_ID
             (imgFrontIllustrationPicture.layoutParams as ConstraintLayout.LayoutParams).width =
@@ -1001,16 +899,34 @@ class RetrofitAddFlashcardActivity :
 
     private fun showFrontSide_BothTextAndImage() {
         dB.apply {
+            btnFrontChoosePicture.goVISIBLE()
             vwgrpFrontTexts.goVISIBLE()
             (imgFrontIllustrationPicture.layoutParams as ConstraintLayout.LayoutParams).endToEnd =
                 ConstraintSet.GONE
-            setFront_IllustrationPictureWidth((viewgroupFrontFlashcard.width - 2 * imgFrontIllustrationPicture.marginStart) / 2)
-            imgFrontIllustrationPicture.requestLayout()
+
+
+            if (imgFrontIllustrationPicture == FRONT_ILLUSTRATION_DEFAULT_DRAWABLE) {
+                setFront_IllustrationPictureWidth((CARD_WIDTH - 2 * imgFrontIllustrationPicture.marginStart) / 2)
+            } else {
+                val bitmap = (imgFrontIllustrationPicture.drawable as BitmapDrawable).bitmap
+                val bitmapRate = (bitmap.width.toFloat() / bitmap.height.toFloat())
+                val width = (imgFrontIllustrationPicture.height * bitmapRate).toInt()
+                setFront_IllustrationPictureWidth(width)
+            }
         }
     }
 
-
     // Back
+
+    private fun showBack_DemoIllustration() {
+        dB.apply {
+            if (isBackTextEmpty().not()) {
+                showBackSide_BothTextAndImage()
+            } else {
+                showBackSide_ImageOnly()
+            }
+        }
+    }
 
     private fun showBackSide_TextOnly() {
         dB.apply {
@@ -1023,6 +939,7 @@ class RetrofitAddFlashcardActivity :
 
     private fun showBackSide_ImageOnly() {
         dB.apply {
+            btnBackChoosePicture.goGoneByFadeOutAnim()
             vwgrpBackTexts.goGONE()
             (imgBackIllustrationPicture.layoutParams as ConstraintLayout.LayoutParams).endToEnd =
                 PARENT_ID
@@ -1034,11 +951,19 @@ class RetrofitAddFlashcardActivity :
 
     private fun showBackSide_BothTextAndImage() {
         dB.apply {
+            btnBackChoosePicture.goVISIBLE()
             vwgrpBackTexts.goVISIBLE()
             (imgBackIllustrationPicture.layoutParams as ConstraintLayout.LayoutParams).endToEnd =
                 ConstraintSet.GONE
-            setBack_IllustrationPictureWidth((viewgroupFrontFlashcard.width - 2 * imgFrontIllustrationPicture.marginStart) / 2)
-            imgBackIllustrationPicture.requestLayout()
+
+            if (imgBackIllustrationPicture == BACK_ILLUSTRATION_DEFAULT_DRAWABLE) {
+                setBack_IllustrationPictureWidth((CARD_WIDTH - 2 * imgBackIllustrationPicture.marginStart) / 2)
+            } else {
+                val bitmap = (imgBackIllustrationPicture.drawable as BitmapDrawable).bitmap
+                val bitmapRate = (bitmap.width.toFloat() / bitmap.height.toFloat())
+                val width = (imgBackIllustrationPicture.height * bitmapRate).toInt()
+                setBack_IllustrationPictureWidth(width)
+            }
         }
     }
 
@@ -1056,7 +981,7 @@ class RetrofitAddFlashcardActivity :
     }
 
 
-    private fun View.goVisibleByFadeInAnim(targetAlpha: Float) {
+    private fun View.goVisibleByFadeInAnim(targetAlpha: Float = 1f) {
         goVISIBLE()
         animate().alpha(targetAlpha)
             .setDuration(100).interpolator = LinearInterpolator()
@@ -1101,17 +1026,18 @@ class RetrofitAddFlashcardActivity :
                 pronunciation = pronunciation,
                 frontLanguage = frontLanguage,
                 backLanguage = backLanguage,
-                setOwner = setName,
-                cardProperty = currentCardProperty
+                setOwner = setName
             )
 
+            newCard.cardProperty.heightOption = currentHeightOption
+
             val front_IllustrationPicture =
-                if (imgFrontIllustrationPicture.drawable != front_illustrationDefaultDrawable) {
+                if (imgFrontIllustrationPicture.drawable != FRONT_ILLUSTRATION_DEFAULT_DRAWABLE) {
                     (imgFrontIllustrationPicture.drawable as BitmapDrawable).bitmap
                 } else null
 
             val back_IllustrationPicture =
-                if (imgBackIllustrationPicture.drawable != back_illustrationDefaultDrawable) {
+                if (imgBackIllustrationPicture.drawable != BACK_ILLUSTRATION_DEFAULT_DRAWABLE) {
                     (imgBackIllustrationPicture.drawable as BitmapDrawable).bitmap
                 } else null
 
@@ -1139,6 +1065,7 @@ class RetrofitAddFlashcardActivity :
     private fun onChooseFrontLanguage (language : String) { dB.apply {
         edtNewSetFrontLanguage.setText(language)
         hideChooseFrontLanguageList()
+        addToUsedLanguageList(language)
     }}
 
     private fun showChooseFrontLanguageLists () { dB.apply {
@@ -1153,6 +1080,7 @@ class RetrofitAddFlashcardActivity :
     private fun onChooseBackLanguage (language : String) { dB.apply {
         edtNewSetBackLanguage.setText(language)
         hideChooseBackLanguageList()
+        addToUsedLanguageList(language)
     }}
 
     private fun showChooseBackLanguageLists () { dB.apply {
@@ -1262,7 +1190,6 @@ class RetrofitAddFlashcardActivity :
         super.onActivityResult(requestCode, resultCode, data)
         try {
             if (requestCode == LOAD_PICTURE_REQUEST_CODE) {
-
                 if (resultCode != Activity.RESULT_OK) {
                     endFront_LoadImageProgressBar()
                     quickToast("Can not load picture")
@@ -1301,17 +1228,33 @@ class RetrofitAddFlashcardActivity :
 
     private fun onGetIllustration(bitmap: Bitmap) {
         if (isShowingFrontCard) {
-            setFront_IllustrationAndAdjustRatio(bitmap)
-            endFront_LoadImageProgressBar()
+            onGetFrontIllustration(bitmap)
         } else { // Back
-            setBack_IllustrationAndAdjustRatio(bitmap)
-            endBack_LoadImageProgressBar()
+            onGetBackIllustration(bitmap)
         }
+    }
+
+    private fun onGetFrontIllustration(bitmap: Bitmap) {
+        if (isFrontTextEmpty()) {
+            showFrontSide_ImageOnly()
+            dB.btnFrontAddText.goVisibleByFadeInAnim()
+        }
+        setFront_IllustrationAndAdjustRatio(bitmap)
+        endFront_LoadImageProgressBar()
+    }
+
+    private fun onGetBackIllustration(bitmap: Bitmap) {
+        if (isBackTextEmpty()) {
+            showBackSide_ImageOnly()
+            dB.btnBackAddText.goVisibleByFadeInAnim()
+        }
+        setBack_IllustrationAndAdjustRatio(bitmap)
+        endBack_LoadImageProgressBar()
     }
 
     private fun setFront_IllustrationAndAdjustRatio(picture: Bitmap) {
 
-        if (currentCardProperty.frontSideHasText) {
+        if (isFrontTextEmpty().not()) {
             val rate = picture.width.toFloat() / picture.height.toFloat()
             if (rate < 1) {
                 recalculateFront_IllustrationPictureWidth_ByHeightRate(rate)
@@ -1324,9 +1267,17 @@ class RetrofitAddFlashcardActivity :
         dB.imgFrontIllustrationPicture.setImageBitmap(picture)
     }
 
+    private fun isFrontTextEmpty(): Boolean {
+        return dB.edtText.text.isEmpty() && dB.edtType.text.isEmpty() && dB.edtPronunciation.text.isEmpty()
+    }
+
+    private fun isBackTextEmpty(): Boolean {
+        return dB.edtTranslation.text.isEmpty() && dB.edtExample.text.isEmpty() && dB.edtExampleTranslation.text.isEmpty()
+    }
+
     private fun setBack_IllustrationAndAdjustRatio(picture: Bitmap) {
 
-        if (currentCardProperty.backSideHasText) {
+        if (isBackTextEmpty().not()) {
             val rate = picture.width.toFloat() / picture.height.toFloat()
             if (rate < 1) {
                 recalculateBack_IllustrationPictureWidth_ByHeightRate(rate)
@@ -1451,10 +1402,8 @@ class RetrofitAddFlashcardActivity :
         dB.apply {
             if (flipDirection == FlipDirection.FLIP_UP) {
                 back_Up_To_Front_EffectAnmtrSet.start()
-                systemOutLogging("Back up to front")
             } else if (flipDirection == FlipDirection.FLIP_DOWN) {
                 back_Down_To_Front_EffectAnmtrSet.start()
-                systemOutLogging("Back down to front")
             }
 
             viewgroupBackFlashcard.startAnimation(turnUpFrontCard_After_TurnDownBackCard)
@@ -1466,9 +1415,7 @@ class RetrofitAddFlashcardActivity :
         dB.apply {
             if (flipDirection == FlipDirection.FLIP_UP) {
                 front_Up_To_Back_EffectAnmtrSet.start()
-                systemOutLogging("Front up to back")
             } else if (flipDirection == FlipDirection.FLIP_DOWN) {
-                systemOutLogging("Front down to back")
                 front_Down_To_Back_EffectAnmtrSet.start()
             }
             viewgroupFrontFlashcard.startAnimation(turnUpBackCard_After_TurnDownFrontCard)
@@ -1488,36 +1435,9 @@ class RetrofitAddFlashcardActivity :
         dB.apply {
             if (isIPAKeyboardVisible) {
                 hideIPAKeyboard()
-            } else if (is_InAdjustCardProperty_Mode) {
-                turnOff_AdjustCardPropertyMode()
             } else {
                 super.onBackPressed()
             }
-        }
-    }
-
-    private fun turnOff_AdjustCardPropertyMode() {
-        dB.apply {
-            is_InAdjustCardProperty_Mode = false
-
-            val front_imgIllustration_IsEmpty =
-                imgFrontIllustrationPicture.drawable == front_illustrationDefaultDrawable
-            if (front_imgIllustration_IsEmpty and currentCardProperty.frontSideHasText) {
-                btnFrontChoosePicture.goVisibleByFadeInAnim(0.35f)
-                setFront_IllustrationPictureWidth(0)
-            }
-
-            val back_ImgIllustration_IsEmpty =
-                imgBackIllustrationPicture.drawable == back_illustrationDefaultDrawable
-            if (back_ImgIllustration_IsEmpty and currentCardProperty.backSideHasText) {
-                btnBackChoosePicture.goVisibleByFadeInAnim(0.35f)
-                setBack_IllustrationPictureWidth(0)
-            }
-
-
-            imgFrontIllustrationPicture.setBackgroundColor(Color.TRANSPARENT)
-            layoutChooseCardProperty.root.goGoneByFadeOutAnim()
-            layoutFunctionsPanel.root.goVisibleByFadeInAnim(1f)
         }
     }
 
@@ -1582,37 +1502,31 @@ class RetrofitAddFlashcardActivity :
     }
 
 
-    override fun showTextInputError() {
+    override fun showFrontCardInputError() {
         if (isShowingFrontCard.not()) {
             flipBackToFrontCard()
         }
-        dB.edtText.requestFocus()
-        dB.edtText.hint = "Text can not be empty"
-        dB.edtText.setHintTextColor(Color.parseColor("#EC4444"))
+        if (dB.vwgrpFrontTexts.isVisible) {
+            dB.edtText.requestFocus()
+            dB.edtText.hint = "Front card must not be empty"
+            dB.edtText.setHintTextColor(Color.parseColor("#EC4444"))
+        } else {
+            quickToast("Please fill the front image. It must not be empty")
+        }
     }
 
-    override fun showTranslationInputError() {
+    override fun showBackCardInputError() {
         if (isShowingFrontCard) {
             flipFrontToBackCard()
         }
-        dB.edtTranslation.requestFocus()
-        dB.edtTranslation.hint = "Translation can not be empty"
-        dB.edtTranslation.setHintTextColor(Color.parseColor("#EC4444"))
-    }
 
-    override fun showFrontEmptyImageError() {
-        if (isShowingFrontCard.not()) {
-            flipBackToFrontCard()
+        if (dB.vwgrpBackTexts.isVisible) {
+            dB.edtTranslation.requestFocus()
+            dB.edtTranslation.hint = "Back card must not be empty"
+            dB.edtTranslation.setHintTextColor(Color.parseColor("#EC4444"))
+        } else {
+            quickToast("Please fill the back image. It must not be empty")
         }
-
-        quickToast("Front image can not be empty")
-    }
-
-    override fun showBackEmptyImageError() {
-        if (isShowingFrontCard) {
-            flipFrontToBackCard()
-        }
-        quickToast("Front image can not be empty")
     }
 
     override fun showInvalidFlashcardSetError(errorMessage: String) {
@@ -1845,5 +1759,6 @@ class RetrofitAddFlashcardActivity :
             }
             back_Down_To_Front_EffectAnmtrSet.play(back_ShadowAppear).before(front_LightDisappear)
         }}
+
 }
 

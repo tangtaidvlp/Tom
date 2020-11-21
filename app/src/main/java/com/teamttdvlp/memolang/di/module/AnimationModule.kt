@@ -92,13 +92,20 @@ class AnimationModule {
 
     @Provides
     @Named("MoveRightAndFadeOutAnimtr")
-    fun provideMoveRightAndFadeOut (context : MemoLang) : Animator {
+    fun provideMoveRightAndFadeOut(context: MemoLang): Animator {
         return AnimatorInflater.loadAnimator(context, R.animator.move_right_and_fade_out)
     }
 
     @Provides
     @Named("ZoomToNothingAndRotate")
-    fun provideZoomToNothingAndRotate(context : MemoLang) : Animator {
+    fun provideZoomToNothingAndRotate(context: MemoLang): Animator {
         return AnimatorInflater.loadAnimator(context, R.animator.zoom_to_nothing_and_rotate)
+    }
+
+
+    @Provides
+    @Named("RotateForever")
+    fun provideRotateForeverAnimation(context: MemoLang): Animation {
+        return AnimationUtils.loadAnimation(context, R.anim.rotate_forever)
     }
 }

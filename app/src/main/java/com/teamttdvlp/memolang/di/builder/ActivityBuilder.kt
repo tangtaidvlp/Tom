@@ -18,15 +18,11 @@ abstract class ActivityBuilder {
     @ContributesAndroidInjector(modules = [ViewFlashcardSetActivityModule::class])
     abstract fun injectLanguageActivity() : ViewFlashcardSetActivity
 
-    @ContributesAndroidInjector(modules = [EditFlashcardActivityModule::class])
-    abstract fun injectEditFlashcardActivity() : EditFlashcardActivity
-
     @ContributesAndroidInjector(modules = [MenuActivityModule::class])
     abstract fun injectMenuActivity() : MenuActivity
 
     @ContributesAndroidInjector(modules = [ViewFlashcardListActivityModule::class])
     abstract fun injectViewFlashCardListActivity() : ViewFlashCardListActivity
-
 
     @ContributesAndroidInjector(modules = [SetUpAccountActivityModule::class])
     abstract fun ịnjectSetUpAccountActivity() : SetUpAccountActivity

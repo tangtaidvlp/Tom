@@ -56,7 +56,7 @@ class SearchEngVNDictionaryActivity :
         viewModel.saveSearchingHistory()
     }
 
-    override fun addViewControls() {
+    override fun addViewSettings() {
         dB.rcvDictionary.adapter = rcvSearchDictionaryAdapter
         dB.rcvDictionary.layoutManager = LinearLayoutManager(this, RecyclerView.VERTICAL, false)
 

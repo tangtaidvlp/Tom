@@ -5,14 +5,13 @@ import com.teamttdvlp.memolang.data.model.entity.flashcard.Deck
 import com.teamttdvlp.memolang.data.model.entity.flashcard.Flashcard
 import com.teamttdvlp.memolang.data.model.entity.flashcard.SetNameUtils
 import com.teamttdvlp.memolang.model.AddFlashcardExecutor
-import com.teamttdvlp.memolang.model.IllustrationManager
+import com.teamttdvlp.memolang.model.IllustrationLoader
 import com.teamttdvlp.memolang.model.repository.FlashcardSetRepos
 import com.teamttdvlp.memolang.model.repository.UserRepos
 import com.teamttdvlp.memolang.model.repository.UserUsingHistoryRepos
 import com.teamttdvlp.memolang.model.sharepref.BaseAppInfoSharedPreference
 import com.teamttdvlp.memolang.view.activity.iview.AddFlashcardView
 import com.teamttdvlp.memolang.view.base.BaseViewModel
-import com.teamttdvlp.memolang.view.helper.but
 import com.teamttdvlp.memolang.view.helper.systemOutLogging
 
 class AddFlashCardViewModel(
@@ -21,7 +20,7 @@ class AddFlashCardViewModel(
     private var flashcardSetRepos: FlashcardSetRepos,
     private var userUsingHistoryRepos: UserUsingHistoryRepos,
     private var addFlashcardSharedPref: BaseAppInfoSharedPreference,
-    private var illustrationManager: IllustrationManager
+    private var illustrationLoader: IllustrationLoader
 ) : BaseViewModel<AddFlashcardView>() {
 
     private lateinit var userDeckList: ArrayList<Deck>
@@ -34,31 +33,17 @@ class AddFlashCardViewModel(
         back_IllustrationPicture: Bitmap? = null
     ) {
 
-        val cardProp = newCard.cardProperty
-
         if (newCard.setOwner == "") {
             newCard.setOwner = currentFocusDeck.name
         }
 
-        if (cardProp.frontSideHasText and newCard.text.isEmpty()) {
-            view.showTextInputError()
+        if ((front_IllustrationPicture == null) and newCard.text.isEmpty()) {
+            view.showFrontCardInputError()
             return
         }
 
-        if (cardProp.backSideHasText and newCard.translation.isEmpty()) {
-            view.showTranslationInputError()
-            return
-        }
-
-        val frontSideHasImageOnly = cardProp.frontSideHasImage and cardProp.frontSideHasText.not()
-        if (frontSideHasImageOnly but (front_IllustrationPicture == null)) {
-            view.showFrontEmptyImageError()
-            return
-        }
-
-        val backSideHasImageOnly = cardProp.backSideHasImage and cardProp.backSideHasText.not()
-        if (backSideHasImageOnly but (back_IllustrationPicture == null)) {
-            view.showBackEmptyImageError()
+        if ((back_IllustrationPicture == null) and newCard.translation.isEmpty()) {
+            view.showBackCardInputError()
             return
         }
 
@@ -66,7 +51,7 @@ class AddFlashCardViewModel(
     }
 
     fun loadIllustrationPicture(name: String, onGet: (Exception?, Bitmap?) -> Unit) {
-        illustrationManager.loadBitmap(name, onGet)
+        illustrationLoader.loadBitmap(name, onGet)
     }
 
     fun createNewFlashcardSetIfValid(
@@ -107,10 +92,20 @@ class AddFlashCardViewModel(
         front_IllustrationPicture: Bitmap?,
         back_IllustrationPicture: Bitmap?
     ) {
+
+        newCard.cardProperty.apply {
+            frontSideHasImage = front_IllustrationPicture != null
+            backSideHasImage = back_IllustrationPicture != null
+            frontSideHasText =
+                newCard.text.isNotEmpty() || newCard.type.isNotEmpty() || newCard.pronunciation.isNotEmpty()
+            backSideHasText =
+                newCard.translation.isNotEmpty() || newCard.example.isNotEmpty() || newCard.meanOfExample.isNotEmpty()
+        }
+
         if (front_IllustrationPicture != null) {
             //1600000000000: Sun Sep 13 2020 12:26:40 in milisecond
             newCard.frontIllustrationPictureName = "FR${System.currentTimeMillis() - 1600000000000}"
-            illustrationManager.saveFile(
+            illustrationLoader.saveFile(
                 front_IllustrationPicture,
                 newCard.frontIllustrationPictureName
             )
@@ -118,7 +113,7 @@ class AddFlashCardViewModel(
 
         if (back_IllustrationPicture != null) {
             newCard.backIllustrationPictureName = "BA${System.currentTimeMillis() - 1600000000000}"
-            illustrationManager.saveFile(
+            illustrationLoader.saveFile(
                 back_IllustrationPicture,
                 newCard.backIllustrationPictureName
             )
