@@ -6,12 +6,9 @@ import android.animation.ValueAnimator
 import android.view.animation.Animation
 import android.view.animation.AnimationUtils
 import android.view.animation.Interpolator
-import androidx.interpolator.view.animation.FastOutSlowInInterpolator
-import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
 import com.teamttdvlp.memolang.R
 import com.teamttdvlp.memolang.view.activity.SearchOnlineActivity
-import com.teamttdvlp.memolang.view.adapter.*
+import com.teamttdvlp.memolang.view.adapter.RCVRecentUsedLanguageAdapter
 import com.teamttdvlp.memolang.view.helper.dp
 import dagger.Module
 import dagger.Provides
@@ -196,8 +193,7 @@ class SearchOnlineActivityModule  {
 
     /**
      * Provides Stuffs
-     */
-
+     *
     @Provides
     fun provideRecentSearchFlashcardAdapter (activity: SearchOnlineActivity) : RCVRecent_Search_FlashcardAdapter {
         return RCVRecent_Search_FlashcardAdapter(activity)
@@ -255,6 +251,5 @@ class SearchOnlineActivityModule  {
     fun provideAddButtonAnimations () : Long {
         return 125
     }
-
-
+     **/
 }
