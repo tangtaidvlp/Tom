@@ -309,7 +309,7 @@ class IpaKeyboard (context : Context, attrSet: AttributeSet): LinearLayout(conte
             systemOutLogging("Android Virtual Keyboard is being showed y: $y and lowestPos: $lowestPosition")
             onDeviceVirtualKeyboardShow?.invoke()
         } else {
-            systemOutLogging("Android Virtual Keyboard is being hiddenk")
+            systemOutLogging("Android Virtual Keyboard is being hidden")
         }
 
     }

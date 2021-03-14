@@ -84,7 +84,7 @@
             android:layout_height="50dp"
             android:layout_marginTop="25dp"
             android:background="@drawable/image_button_dictionary"
-            app:layout_constraintEnd_toStartOf="@+id/btn_button_new_set"
+            app:layout_constraintEnd_toStartOf="@+id/btn_create_new_deck"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toEndOf="@+id/btn_translate_online"
             app:layout_constraintTop_toTopOf="parent" />
@@ -102,7 +102,7 @@
             app:layout_constraintTop_toBottomOf="@+id/btn_dictionary" />
 
         <ImageView
-            android:id="@+id/btn_button_new_set"
+            android:id="@+id/btn_create_new_deck"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_marginTop="25dp"
@@ -120,9 +120,9 @@
             android:fontFamily="@font/segoeui"
             android:text="New set"
             android:textSize="12sp"
-            app:layout_constraintEnd_toEndOf="@+id/btn_button_new_set"
-            app:layout_constraintStart_toStartOf="@+id/btn_button_new_set"
-            app:layout_constraintTop_toBottomOf="@+id/btn_button_new_set" />
+            app:layout_constraintEnd_toEndOf="@+id/btn_create_new_deck"
+            app:layout_constraintStart_toStartOf="@+id/btn_create_new_deck"
+            app:layout_constraintTop_toBottomOf="@+id/btn_create_new_deck" />
 
         <ImageView
             android:id="@+id/btn_button_add"
@@ -133,7 +133,7 @@
             android:background="@drawable/image_button_add_blue_small"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/btn_button_new_set"
+            app:layout_constraintStart_toEndOf="@+id/btn_create_new_deck"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView

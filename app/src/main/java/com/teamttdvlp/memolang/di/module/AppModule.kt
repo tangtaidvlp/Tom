@@ -5,11 +5,9 @@ import androidx.room.Room
 import com.teamttdvlp.memolang.data.sql.MemoLangSqliteDataBase
 import com.teamttdvlp.memolang.data.sql.MemoLangSqliteDataBase.Companion.DB_NAME
 import com.teamttdvlp.memolang.di.MemoLang
+import com.teamttdvlp.memolang.model.EngVietVocabularyLoader
 import com.teamttdvlp.memolang.model.UserInfoStatusSharedPreference
-import com.teamttdvlp.memolang.model.repository.FlashcardRepos
-import com.teamttdvlp.memolang.model.repository.FlashcardSetRepos
-import com.teamttdvlp.memolang.model.repository.UserRepos
-import com.teamttdvlp.memolang.model.repository.UserUsingHistoryRepos
+import com.teamttdvlp.memolang.model.repository.*
 import com.teamttdvlp.memolang.model.sharepref.AddFlashcardActivitySharePref
 import com.teamttdvlp.memolang.model.sharepref.EngVietDictionaryActivitySharePref
 import com.teamttdvlp.memolang.model.sharepref.SearchOnlineActivitySharePref
@@ -19,6 +17,11 @@ import javax.inject.Singleton
 
 @Module
 class AppModule {
+
+    @Provides
+    fun provideEngVietVocabularyLoader (context : MemoLang) : EngVietVocabularyLoader{
+        return EngVietVocabularyLoader(context)
+    }
 
      @Provides
     @Singleton
@@ -30,6 +33,12 @@ class AppModule {
     @Singleton
     fun providesFlashcardRepository (dataBase: MemoLangSqliteDataBase) : FlashcardRepos{
         return FlashcardRepos(dataBase)
+    }
+
+    @Provides
+    @Singleton
+    fun providesCardQuizInforRepository (dataBase: MemoLangSqliteDataBase) : CardQuizInforRepos{
+        return CardQuizInforRepos(dataBase)
     }
 
     @Provides

@@ -5,123 +5,122 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@color/white"
+            android:background="@drawable/background_app_gradient_mint_blue_green"
             tools:context=".view.activity.SetUpAccountActivity">
 
-        <TextView
-            android:id="@+id/txt_choose_your_mother_language"
-            android:layout_width="match_parent"
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image_tom"
+                app:layout_constraintVertical_bias="0.55"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/vwgrp_set_up_widgets"/>
+
+        <LinearLayout
+            android:id="@+id/vwgrp_set_up_widgets"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="31dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginBottom="8dp"
-            android:fontFamily="@font/segoeui"
-            android:text="Select your mother language"
-            android:textColor="#5F5F70"
-            android:textSize="16sp"
+            android:gravity="center"
+            android:orientation="vertical"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.3" />
+            app:layout_constraintVertical_bias="0.55">
 
-        <TextView
-                android:id="@+id/txt_current_used_language"
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:layout_marginStart="24dp"
-                android:layout_marginTop="6dp"
-                android:layout_marginEnd="24dp"
-                android:background="@drawable/round_white_background_with_border"
-                android:elevation="4dp"
-                android:ems="10"
-                android:fontFamily="@font/segoeui"
-                android:paddingStart="14dp"
-                android:paddingBottom="1dp"
-                android:textSize="14sp"
-                android:gravity="center_vertical"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/txt_choose_your_mother_language"
-                android:text="Arabic" android:textColor="#000000"/>
-        <TextView
-                android:id="@+id/txt_error_id"
+            <TextView
+                android:id="@+id/txt_choose_your_mother_language"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="45dp"
-                android:layout_marginTop="2dp"
-                android:text="Please enter your id"
-                android:textColor="@color/input_alert_color"
-                android:visibility="invisible"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/txt_current_used_language"
-                app:layout_constraintTop_toBottomOf="@id/txt_current_used_language"/>
-
-        <TextView
-            android:id="@+id/txt_choose_your_target_language"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="31dp"
-            android:layout_marginTop="26dp"
-            android:fontFamily="@font/segoeui"
-            android:text="Select your target language"
-            android:textColor="#5F5F70"
-            android:textSize="16sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/txt_current_used_language" />
-        <TextView
-                android:id="@+id/txt_current_learned_language"
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:layout_marginStart="24dp"
-                android:layout_marginTop="6dp"
-                android:layout_marginEnd="24dp"
-                android:gravity="center_vertical"
-                android:textColor="#000000"
-                android:background="@drawable/round_white_background_with_border"
-                android:elevation="4dp"
-                android:ems="10"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="8dp"
+                android:alpha="0.3"
                 android:fontFamily="@font/segoeui"
-                android:paddingStart="14dp"
-                android:paddingBottom="1dp"
-                android:textSize="14sp"
-                app:layout_constraintEnd_toStartOf="@+id/txt_current_used_language"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/txt_choose_your_target_language" android:text="English"/>
-        <TextView
-                android:id="@+id/txt_error_password"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="45dp"
-                android:layout_marginTop="2dp"
-                android:text="Please enter your password"
-                android:textColor="@color/input_alert_color"
-                android:visibility="invisible"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/txt_current_learned_language"/>
-
-        <Button
-                android:id="@+id/btn_done"
-                android:layout_width="115dp"
-                android:layout_height="40dp"
-                android:layout_marginTop="15dp"
-                android:layout_marginBottom="28dp"
-                android:background="@drawable/round_yellow_background"
-                android:fontFamily="@font/seguisb"
-                android:gravity="center"
-                android:maxWidth="10dp"
-                android:text="Done"
-                android:textAllCaps="false"
-                android:textColor="#ffffff"
+                android:text="Select your mother language"
+                android:textColor="@color/white"
                 android:textSize="16sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/txt_error_password"
-                app:layout_constraintVertical_bias="0.0"
-        />
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.3" />
+
+            <TextView
+                android:id="@+id/txt_current_used_language"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="24dp"
+                android:background="@drawable/background_round_8dp_alpha_20_white_border_background"
+                android:elevation="4dp"
+                android:ems="10"
+                android:fontFamily="@font/segoeui"
+                android:gravity="center_vertical"
+                android:paddingStart="14dp"
+                android:paddingBottom="1dp"
+                android:text="Arabic"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txt_choose_your_mother_language" />
+
+            <TextView
+                android:id="@+id/txt_choose_your_target_language"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="40dp"
+                android:alpha="0.3"
+                android:fontFamily="@font/segoeui"
+                android:text="Select your target language"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txt_current_used_language" />
+
+            <TextView
+                android:id="@+id/txt_current_learned_language"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="24dp"
+                android:background="@drawable/background_round_8dp_alpha_20_white_border_background"
+                android:elevation="4dp"
+                android:ems="10"
+                android:fontFamily="@font/segoeui"
+                android:gravity="center_vertical"
+                android:paddingStart="14dp"
+                android:paddingBottom="1dp"
+                android:text="English"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toStartOf="@+id/txt_current_used_language"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txt_choose_your_target_language" />
+
+            <Button
+                android:id="@+id/btn_done"
+                android:layout_width="115dp"
+                android:layout_height="42dp"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/round_5dp_alpha_30_white_background"
+                android:elevation="2dp"
+                android:fontFamily="@font/seguisb"
+                android:gravity="center"
+                android:maxWidth="10dp"
+                android:paddingBottom="1dp"
+                android:text="Finish"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+
+        </LinearLayout>
 
         <include
             android:id="@+id/layout_choose_lang"
@@ -129,9 +128,11 @@
             android:layout_width="0dp"
             android:layout_height="0dp"
             app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

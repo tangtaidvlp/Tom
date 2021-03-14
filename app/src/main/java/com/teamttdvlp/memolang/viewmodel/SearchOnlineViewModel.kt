@@ -96,7 +96,7 @@ class SearchOnlineViewModel(
     }
 
     fun addToUsedLanguageList(language: String) {
-        userUsingHistoryRepos.addToUsedLanguageList(language)
+        userUsingHistoryRepos.addToRecent_UsedLanguageList(language)
     }
 
     fun updateUserRecentTargetLang (targetLang : String) {

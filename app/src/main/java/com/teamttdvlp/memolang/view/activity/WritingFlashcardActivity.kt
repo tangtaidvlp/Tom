@@ -5,14 +5,17 @@ import android.animation.AnimatorSet
 import android.animation.ValueAnimator
 import android.content.Context
 import android.content.Intent
+import android.graphics.Bitmap
 import android.graphics.Color
 import android.os.Bundle
 import android.text.Html
 import android.text.Spannable
 import android.text.SpannableString
-import android.text.method.ScrollingMovementMethod
 import android.text.style.ForegroundColorSpan
 import android.view.animation.Animation
+import android.view.animation.AnimationUtils
+import android.view.animation.OvershootInterpolator
+import android.view.inputmethod.EditorInfo
 import android.widget.TextView
 import androidx.core.animation.addListener
 import androidx.interpolator.view.animation.FastOutSlowInInterpolator
@@ -22,10 +25,11 @@ import com.teamttdvlp.memolang.data.model.entity.flashcard.Flashcard
 import com.teamttdvlp.memolang.databinding.ActivityReviewFlashcardBinding
 import com.teamttdvlp.memolang.model.ReviewActivitiesSpeakerStatusManager
 import com.teamttdvlp.memolang.model.findTextFormInAnother
-import com.teamttdvlp.memolang.view.activity.iview.ReviewFlashcardView
+import com.teamttdvlp.memolang.view.activity.iview.WritingFlashcardView
 import com.teamttdvlp.memolang.view.base.BaseActivity
+import com.teamttdvlp.memolang.view.customview.interpolator.NormalOutExtraSlowIn
 import com.teamttdvlp.memolang.view.helper.*
-import com.teamttdvlp.memolang.viewmodel.ReviewFlashcardViewModel
+import com.teamttdvlp.memolang.viewmodel.WritingFlashcardViewModel
 import javax.inject.Inject
 import javax.inject.Named
 
@@ -36,14 +40,22 @@ const val REVERSE_CARD_TEXT_AND_TRANSLATION = "reverse"
 
 const val VIEW_LIST_REQUEST_CODE = 118
 
-class ReviewFlashcardActivity : BaseActivity<ActivityReviewFlashcardBinding, ReviewFlashcardViewModel>(),
-                                                ReviewFlashcardView {
+class WritingFlashcardActivity : BaseActivity<ActivityReviewFlashcardBinding, WritingFlashcardViewModel>(),
+                                                WritingFlashcardView {
+
+    private val MAX_SHOW_HINT_TIMES: Int = 2
 
     private val APP_RED = "#F65546"
 
     private val LITTLE_DARK_GREEN = "#01A40C"
 
     private val NEXT_CARD_ANIMS_DURATION = 400L
+
+    private val COMMON_PROGRESS_BAR_VIEW_DURATION = 100L
+
+    @field: Named("RotateForever")
+    @Inject
+    lateinit var rotateForeverAnimation: Animation
 
     @field: Named("QuickAppearThenDisappearAnimation")
     @Inject
@@ -77,6 +89,11 @@ class ReviewFlashcardActivity : BaseActivity<ActivityReviewFlashcardBinding, Rev
 
     private var speakerIsOn = true
 
+    private var prevForgottenCardCount = 0
+
+    private var prevPassedCardCount = 0
+
+    private var currentPressShowHintButtonTime = 0
 
     var nextCardAnimtrSet: AnimatorSet = AnimatorSet()
 
@@ -90,7 +107,7 @@ class ReviewFlashcardActivity : BaseActivity<ActivityReviewFlashcardBinding, Rev
             deck: Deck,
             reverseCardTextAndTranslation: Boolean
         ) {
-            val intent = Intent(requestContext, ReviewFlashcardActivity::class.java)
+            val intent = Intent(requestContext, WritingFlashcardActivity::class.java)
             intent.putExtra(FLASHCARD_SET_KEY, deck)
             intent.putExtra(REVERSE_CARD_TEXT_AND_TRANSLATION, reverseCardTextAndTranslation)
             requestContext.startActivity(intent)
@@ -99,21 +116,18 @@ class ReviewFlashcardActivity : BaseActivity<ActivityReviewFlashcardBinding, Rev
 
     override fun getLayoutId(): Int = R.layout.activity_review_flashcard
 
-    override fun takeViewModel(): ReviewFlashcardViewModel {
+    override fun takeViewModel(): WritingFlashcardViewModel {
         return getActivityViewModel(viewModelProviderFactory)
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setStatusBarColor(Color.parseColor("#AC2523"))
+        setStatusBarColor(resources.getColor(R.color.app_writing_dark_pink))
         viewModel.setUpView(this)
         dB.vwModel = viewModel
-        beginUsing()
+        setUpData()
+        dB.txtTotalCardCount.text = viewModel.getDeckSize().toString()
     }
-
-    override fun onStart() { dB.apply {
-        super.onStart()
-    }}
 
     override fun onDestroy() {
         val speakerFunction = if (answerIsSpoken and questionIsSpoken) {
@@ -129,7 +143,7 @@ class ReviewFlashcardActivity : BaseActivity<ActivityReviewFlashcardBinding, Rev
     }
 
     override fun addAnimationEvents() {
-        nextCardAnimtor.addListener(onEnd = {
+        nextCardAnimtor.addListener (onEnd = {
             dB.vwgrpTestSubject.translationX = 0f
             dB.vwgrpTestSubject.alpha = 1f
             nextCardAnimtrSet.start()
@@ -145,39 +159,61 @@ class ReviewFlashcardActivity : BaseActivity<ActivityReviewFlashcardBinding, Rev
 
     override fun addViewSettings() {
         dB.apply {
-            txtHint.movementMethod = ScrollingMovementMethod()
+
         }
     }
 
     override fun addViewEvents() { dB.apply {
 
+        val mashmallowAnim = AnimationUtils.loadAnimation(
+            this@WritingFlashcardActivity,
+            R.anim.mashmallow_effect
+        ).apply {
+            interpolator =
+                NormalOutExtraSlowIn()
+        }
+
         btnClearAnswer.setOnClickListener {
             edtInputAnswer.setText("")
+            btnClearAnswer.startAnimation(mashmallowAnim)
         }
 
         btnSubmit.setOnClickListener {
             viewModel.submitAnswer(edtInputAnswer.text.toString())
+            btnSubmit.startAnimation(mashmallowAnim)
         }
 
         edtInputAnswer.addTextChangeListener { userAnswer, _ , _ , _ ->
             viewModel.checkAnswer(userAnswer)
         }
 
-        imgLightedLight.setOnClickListener {
-            imgGreyLight.goGONE()
-            imgLightedLight.animate().alpha(0f).setDuration(300).setLiteListener {
-                imgLightedLight.goGONE()
+        edtInputAnswer.setOnEditorActionListener { v, actionId, event ->
+
+            if (actionId == EditorInfo.IME_ACTION_GO) {
+                viewModel.submitAnswer(edtInputAnswer.text.toString())
             }
-            txtHint.animate().alpha(1f).apply {
-                duration = 300
+
+            return@setOnEditorActionListener true
+        }
+
+        vwgrpBtnShowHint.setOnClickListener {
+            if (currentPressShowHintButtonTime < MAX_SHOW_HINT_TIMES) {
+                performShowAnswerHintAnimations()
+                currentPressShowHintButtonTime++
+
+                vwgrpBtnShowHint.startAnimation(mashmallowAnim)
+
+                if (currentPressShowHintButtonTime == MAX_SHOW_HINT_TIMES) {
+                    performHintOverAnimations()
+                }
             }
         }
 
-        btnFlipFlashcardSet.setOnClickListener {
+        btnFlipDeck.setOnClickListener {
             flipWholeFlashcardSet()
         }
 
-        btnSpeakerSetting.setOnClickListener {
+        btnSetting.setOnClickListener {
             dialogSetting.show()
         }
 
@@ -206,9 +242,67 @@ class ReviewFlashcardActivity : BaseActivity<ActivityReviewFlashcardBinding, Rev
     }
     }
 
-    private fun beginUsing() {
-        viewModel.setUpInfo(getRequestedFlashcardSet(), getIsReverseTextAndTranslation())
-        this.reverseCardTextAndTrans = viewModel.isReverseTextAndTrans
+    private fun performHintOverAnimations() {
+        dB.imgShowHint.animate().alpha(0.3f).setDuration(100).setInterpolator(NormalOutExtraSlowIn())
+        dB.imgShowHint.isClickable = false
+    }
+
+    private fun performResetHintButtonsAnimations() {
+        dB.imgShowHint.animate().alpha(1f).setDuration(100).setInterpolator(NormalOutExtraSlowIn())
+        dB.imgShowHint.isClickable = true
+    }
+
+    private fun performShowAnswerHintAnimations() { dB.apply {
+
+        edtInputAnswer.setText("")
+        val currentAnswerHint = viewModel.getCurrentAnswerHint()
+        val showHintAnimation = ValueAnimator.ofInt(0, 100).apply {
+            duration = 150
+            interpolator = FastOutSlowInInterpolator()
+            addUpdateListener (object : ValueAnimator.AnimatorUpdateListener {
+                var currentPos = -1
+                var interval = 1f/currentAnswerHint.length.toFloat()
+                override fun onAnimationUpdate(animation: ValueAnimator?) {
+                    val currentProgress = animation!!.animatedFraction
+                    val currentProgressPos = (currentProgress/interval).toInt()
+                    if (currentProgressPos > currentPos) {
+                        currentPos = currentProgressPos
+                        val currentShowedHint = currentAnswerHint.substring(0, currentPos)
+                        edtInputAnswer.hint = currentShowedHint
+                    }
+                }
+            })
+            setTarget(edtInputAnswer)
+        }
+
+        showHintAnimation.start()
+    }}
+
+    private fun playMinimizeTitleBarAnimations (startDelay: Long) { dB.apply {
+        val DURATION = 150L
+        vwgrpTitle.animate().setStartDelay(startDelay).alpha(0f).setDuration(DURATION).setInterpolator(FastOutSlowInInterpolator())
+        imgLowerLayerMinimumTitleBackground.animate().setStartDelay(startDelay).alpha(1f).setDuration(DURATION).setInterpolator(FastOutSlowInInterpolator())
+        vwgrpMinimumTitle.animate().setStartDelay(startDelay).alpha(1f).setDuration(DURATION).setInterpolator(FastOutSlowInInterpolator())
+
+        val minimizeAnim = ValueAnimator.ofInt(vwgrpTitle.height, 30.dp())
+        minimizeAnim.apply {
+            duration = DURATION
+            interpolator = NormalOutExtraSlowIn()
+            addUpdateListener { anim ->
+                val height = anim.animatedValue
+                vwgrpTitle.layoutParams.height = height as Int
+                vwgrpTitle.requestLayout()
+            }
+            setTarget(vwgrpTitle)
+            setStartDelay(startDelay)
+            start()
+        }
+
+    }}
+
+    private fun setUpData() {
+        viewModel.setUpData(getRequestedFlashcardSet(), getIsReverseTextAndTranslation())
+        this.reverseCardTextAndTrans = viewModel.isDeckReversed
         setUpSpeakerStatus()
         dB.edtInputAnswer.requestFocus()
         showVirtualKeyboard()
@@ -216,8 +310,8 @@ class ReviewFlashcardActivity : BaseActivity<ActivityReviewFlashcardBinding, Rev
 
     private fun flipWholeFlashcardSet() {
         requestReviewFlashcard(
-            this@ReviewFlashcardActivity, viewModel.getOriginalFlashcardSet(),
-            viewModel.isReverseTextAndTrans.not()
+            this@WritingFlashcardActivity, viewModel.getOriginalFlashcardSet(),
+            viewModel.isDeckReversed.not()
         )
         finish()
     }
@@ -269,7 +363,7 @@ class ReviewFlashcardActivity : BaseActivity<ActivityReviewFlashcardBinding, Rev
         }
     }
 
-    override fun endReviewing() {
+    override fun onEndReviewing() {
         sendHardCardListToEndActivity()
         finish()
     }
@@ -278,30 +372,125 @@ class ReviewFlashcardActivity : BaseActivity<ActivityReviewFlashcardBinding, Rev
         systemOutLogging(error)
     }
 
+    override fun onLoadAllIllustrationStart() {
+        rotateForeverAnimation.duration = 1000
+        dB.progressBarLoadingImage.startAnimation(rotateForeverAnimation)
+    }
+
+    override fun onLoadAllIllustrationFinish() {
+        hideLoadIllustrationProgressBar()
+        playMinimizeTitleBarAnimations(4000)
+    }
+
+    private fun hideLoadIllustrationProgressBar () {
+        dB.apply {
+            vwgrpLoadImageProgressBar.animate().alpha(0f)
+                .setDuration(100).setInterpolator(NormalOutExtraSlowIn())
+                .setLiteListener(onEnd = {
+                    vwgrpLoadImageProgressBar.goGONE()
+                    progressBarLoadingImage.animation.cancel()
+                })
+        }
+    }
+
+    private fun updateForgottenCardProgressBar(passedCardCount: Int, forgottenCardCount: Int) {
+        dB.apply {
+            if (txtForgottenCardProgressBar.alpha == 0f) {
+                txtForgottenCardProgressBar.animate().alpha(1f).duration =
+                    COMMON_PROGRESS_BAR_VIEW_DURATION
+//                txtForgottenCardCount.animate().alpha(1f).duration = COMMON_PROGRESS_BAR_VIEW_DURATION
+            }
+            systemOutLogging("Update forgotten: " + forgottenCardCount)
+            val aPartWidth = txtTotalCardProgressBar.width / viewModel.getDeckSize()
+            val progrBarCurrentWidth = txtForgottenCardProgressBar.width
+            val progrBarTargetWidth = (passedCardCount + forgottenCardCount) * aPartWidth
+            val increaseAnim =
+                ValueAnimator.ofInt(progrBarCurrentWidth, progrBarTargetWidth).apply {
+                    duration = 500
+                    interpolator = OvershootInterpolator(1f)
+                    addUpdateListener {
+                        txtForgottenCardProgressBar.layoutParams.width = it.animatedValue as Int
+                        txtForgottenCardProgressBar.requestLayout()
+                    }
+                    setTarget(txtForgottenCardProgressBar)
+                }
+            increaseAnim.start()
+        }
+    }
+
+    private fun increasePassedCardProgressBar(currentCount: Int) {
+        dB.apply {
+            val progrBarCurrentWidth = txtPassedCardProgressBar.width
+            val aPartWidth = txtTotalCardProgressBar.width / viewModel.getDeckSize()
+            val progrBarTargetWidth = aPartWidth * currentCount
+            val increaseAnim = ValueAnimator.ofInt(progrBarCurrentWidth, progrBarTargetWidth)
+            increaseAnim.duration = 500
+            increaseAnim.interpolator = OvershootInterpolator(2f)
+            increaseAnim.setTarget(txtPassedCardProgressBar)
+
+            increaseAnim.addUpdateListener {
+                txtPassedCardProgressBar.layoutParams.width = it.animatedValue as Int
+                txtPassedCardProgressBar.requestLayout()
+            }
+            increaseAnim.start()
+        }
+    }
+
     override fun showGoodAnswerAnimation() { dB.apply {
-        imgCorrectAnswer.goVISIBLE()
-        imgCorrectAnswer.startAnimation(imgCorAnsAppearAnim)
+//        imgCorrectAnswer.goVISIBLE()
+//        imgCorrectAnswer.startAnimation(imgCorAnsAppearAnim)
         performShowAnswerAnimations(true)
     }}
 
-    override fun showExcelentAnswerAnimation() { dB.apply {
-        imgVeryGoodAnswer.goVISIBLE()
-        imgVeryGoodAnswer.startAnimation(imgVeryGoodAnsAppearAnim)
+    override fun showExcellentAnswerAnimation() { dB.apply {
+//        imgVeryGoodAnswer.goVISIBLE()
+//        imgVeryGoodAnswer.startAnimation(imgVeryGoodAnsAppearAnim)
         performShowAnswerAnimations(true)
     }}
 
     override fun showWrongAnswerAnimation() { dB.apply {
-        imgIncorrectAnswer.goVISIBLE()
-        imgIncorrectAnswer.startAnimation(imgIncorAnsAppearAnim)
+//        imgIncorrectAnswer.goVISIBLE()
+//        imgIncorrectAnswer.startAnimation(imgIncorAnsAppearAnim)
         vwgrpTestSubject.startAnimation(vwgrpVibrateAnim)
     }}
 
     override fun showNotPassAnswerAnimation() { dB.apply {
-        imgBadAnswers.goVISIBLE()
-        imgBadAnswers.startAnimation(imgBadAnswersAppearAnim)
+//        imgBadAnswers.goVISIBLE()
+//        imgBadAnswers.startAnimation(imgBadAnswersAppearAnim)
         performShowAnswerAnimations(false)
-        viewModel.processMissedCard()
     }}
+
+    override fun onPassACard(passedCardCount: Int, forgottenCardCount: Int) {
+        dB.txtPassedCardCount.text = passedCardCount.toString()
+
+        val userFinishTest = (passedCardCount + forgottenCardCount) == viewModel.getDeckSize()
+        if (userFinishTest) {
+            dB.txtTotalCardCount.animate().alpha(0f).duration = 100
+        }
+
+        val userRememberCard = passedCardCount > prevPassedCardCount
+
+        val userForgetCard = userRememberCard.not() &&
+                (forgottenCardCount > prevForgottenCardCount)
+
+        val userRelearnCard = (userRememberCard) && (forgottenCardCount < prevForgottenCardCount)
+
+        if (userRememberCard) {
+            increasePassedCardProgressBar(passedCardCount)
+            if (forgottenCardCount > 0) {
+                updateForgottenCardProgressBar(passedCardCount, forgottenCardCount)
+            }
+
+        } else if (userForgetCard) {
+            updateForgottenCardProgressBar(passedCardCount, forgottenCardCount)
+
+        } else if (userRelearnCard) {
+            increasePassedCardProgressBar(passedCardCount)
+        }
+
+        prevPassedCardCount = passedCardCount
+        prevForgottenCardCount = forgottenCardCount
+    }
 
     private fun speakAnswer(text: String, onSpeakDone: () -> Unit) {
         viewModel.speakAnswer(text, onSpeakDone)
@@ -320,22 +509,26 @@ class ReviewFlashcardActivity : BaseActivity<ActivityReviewFlashcardBinding, Rev
     }
 
     override fun highlightHintOption() {
-        dB.imgLightedLight.alpha = 1f
-        dB.imgLightedLight.goVISIBLE()
-        dB.imgGreyLight.goGONE()
+//        dB.imgLightedLight.alpha = 1f
+//        dB.imgLightedLight.goVISIBLE()
+//        dB.imgGreyLight.goGONE()
     }
 
     override fun resetHintOptionState() {
-        dB.imgGreyLight.goVISIBLE()
-        dB.imgLightedLight.goGONE()
-        dB.txtHint.alpha = 0f
+//        dB.imgGreyLight.goVISIBLE()
+//        dB.imgLightedLight.goGONE()
+//        dB.txtHint.alpha = 0f
     }
 
     override fun nextCard (startDelay : Long) {
-        if (viewModel.checkThereIs_NO_CardLeft()) {
-            endReviewing()
+        if (viewModel.hasNext().not()) {
+            onEndReviewing()
             return
         }
+
+        performResetHintButtonsAnimations()
+        dB.edtInputAnswer.hint = ""
+        currentPressShowHintButtonTime = 0
 
         nextCardAnimtor.startDelay = startDelay
         nextCardAnimtor.start()
@@ -344,9 +537,23 @@ class ReviewFlashcardActivity : BaseActivity<ActivityReviewFlashcardBinding, Rev
         dB.edtInputAnswer.setText("")
     }
 
-    override fun showTestSubjectOnScreen(card: Flashcard, useExampleForTestSubject : Boolean) { dB.apply {
+    override fun onGetTestSubject(card: Flashcard, illustration : Bitmap?, load_illustrationException: Exception?, useExampleForTestSubject : Boolean) { dB.apply {
         val answer = card.text
         txtTextAnswer.text = answer
+
+        if (illustration != null) {
+            imgTestSubjectIllustration.goVISIBLE()
+            imgTestSubjectIllustration.setImageBitmap(illustration)
+            systemOutLogging("Got illustration: " + imgTestSubjectIllustration)
+        } else { // empty illustration
+            if (load_illustrationException != null) {
+                quickToast("Error happens. Can not load illustration for this card")
+                load_illustrationException.printStackTrace()
+            }
+            systemOutLogging("Not get illustration")
+            imgTestSubjectIllustration.goGONE()
+        }
+
         if (useExampleForTestSubject) {
             setUpExampleTestSubject(card)
             if (allowSpeakQuestion())
@@ -451,15 +658,15 @@ class ReviewFlashcardActivity : BaseActivity<ActivityReviewFlashcardBinding, Rev
     }
     }
 
-    private fun getRequestedFlashcardSet(): Deck {
+    override fun getRequestedFlashcardSet(): Deck {
         return intent.extras!!.getSerializable(FLASHCARD_SET_KEY) as Deck
     }
 
-    private fun getIsReverseTextAndTranslation(): Boolean {
+    override fun getIsReverseTextAndTranslation(): Boolean {
         return intent.extras!!.getBoolean(REVERSE_CARD_TEXT_AND_TRANSLATION, false)
     }
 
-    fun sendHardCardListToEndActivity() {
+    private fun sendHardCardListToEndActivity() {
         val forgottenCardList = viewModel.getForgottenCardList()
         val fullCardList = viewModel.getOriginalFlashcardSet()
         ResultReportActivity.requestFinishUsingFlashcard(
@@ -467,6 +674,8 @@ class ReviewFlashcardActivity : BaseActivity<ActivityReviewFlashcardBinding, Rev
             ResultReportActivity.FlashcardSendableActivity.REVIEW_FLASHCARD_ACTIVITY.code
         )
     }
+
+
 
     // INJECTED FUNCTION ==================================================================
 
@@ -522,11 +731,11 @@ class ReviewFlashcardActivity : BaseActivity<ActivityReviewFlashcardBinding, Rev
     fun initResetHintAnimations (
         @Named("ZoomTo0.5XAndFadeOut") zoomSmallerAndFadeOut : Animator,
         @Named("ZoomFrom0.5XTo1XAndFadeIn") zoomToNormalSizeAndFadeIn : Animator) { dB.apply {
-        zoomSmallerAndFadeOut.setTarget(vwgrpHint)
+//        zoomSmallerAndFadeOut.setTarget(vwgrpHint)
         zoomSmallerAndFadeOut.duration = NEXT_CARD_ANIMS_DURATION
         zoomSmallerAndFadeOut.interpolator = FastOutSlowInInterpolator()
 
-        zoomToNormalSizeAndFadeIn.setTarget(vwgrpHint)
+//        zoomToNormalSizeAndFadeIn.setTarget(vwgrpHint)
         zoomToNormalSizeAndFadeIn.duration = NEXT_CARD_ANIMS_DURATION
         zoomToNormalSizeAndFadeIn.interpolator = FastOutSlowInInterpolator()
         zoomToNormalSizeAndFadeIn.addListener (onStart = {

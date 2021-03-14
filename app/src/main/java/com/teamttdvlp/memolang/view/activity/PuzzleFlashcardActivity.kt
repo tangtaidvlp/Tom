@@ -6,6 +6,7 @@ import android.animation.ValueAnimator
 import android.content.Context
 import android.content.Intent
 import android.content.res.ColorStateList
+import android.graphics.Bitmap
 import android.graphics.Color
 import android.graphics.drawable.Drawable
 import android.os.Bundle
@@ -16,6 +17,8 @@ import android.text.SpannableString
 import android.text.style.ForegroundColorSpan
 import android.view.View
 import android.view.ViewGroup.LayoutParams.WRAP_CONTENT
+import android.view.animation.Animation
+import android.view.animation.OvershootInterpolator
 import android.widget.TextView
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.animation.addListener
@@ -39,21 +42,30 @@ import com.teamttdvlp.memolang.view.customview.Cell.Companion.DIRECTION_DOWN
 import com.teamttdvlp.memolang.view.customview.Cell.Companion.DIRECTION_UP
 import com.teamttdvlp.memolang.view.customview.Cell.Companion.INPUT_CELL
 import com.teamttdvlp.memolang.view.customview.Cell.Companion.OUTPUT_CELL
+import com.teamttdvlp.memolang.view.customview.interpolator.NormalOutExtraSlowIn
 import com.teamttdvlp.memolang.view.helper.*
-import com.teamttdvlp.memolang.viewmodel.ReviewFlashcardEasyViewModel
+import com.teamttdvlp.memolang.viewmodel.PuzzleFlashcardViewModel
 import javax.inject.Inject
 import javax.inject.Named
 
-class ReviewFlashcardEasyActivity : BaseActivity<ActivityReviewFlashcardEasyBinding, ReviewFlashcardEasyViewModel>(),
+class PuzzleFlashcardActivity : BaseActivity<ActivityReviewFlashcardEasyBinding, PuzzleFlashcardViewModel>(),
     ReviewFlashcardEasyView, TextToSpeech.OnUtteranceCompletedListener {
 
     private val MIN_INPUT_ROW_COUNT: Int = 3
 
     private val NEXT_CARD_ANIMS_DURATION = 400L
 
+    private val COMMON_PROGRESS_BAR_VIEW_DURATION = 100L
+
 
     // MAX_CELL_PER_ROW
-    private val MAX_CPR = 6
+    private val DEFAULT_MAX_CELL_PER_ROW = 4
+
+    private var MAX_CELL_PER_ROW = DEFAULT_MAX_CELL_PER_ROW
+
+    private val DEFAULT_MAX_ROW = 3
+
+    private var MAX_ROW = DEFAULT_MAX_ROW
 
     private val DARK_RED = "#FF2C00"
 
@@ -70,6 +82,11 @@ class ReviewFlashcardEasyActivity : BaseActivity<ActivityReviewFlashcardEasyBind
     private val INTERVAL_BETWEEN_TWO_DISAPPEAR = 50L
 
     private val STAY_BEFORE_NEXT_CARD_INTERVAL = 800L
+
+    // The gradient part of Input and Output panels.
+    // Go to see them in .xml file, you will see each panel
+    // has 2 matte layer cover on them create gradient effect
+    val IO_Gradient_Part_Size = 6.dp()
 
     private lateinit var RED_BORDER_BACKGROUND : Drawable
 
@@ -95,24 +112,33 @@ class ReviewFlashcardEasyActivity : BaseActivity<ActivityReviewFlashcardEasyBind
 
     private var inCellHeight = 0
 
-    private var spaceBetInputCells = 0
+    private var inputSpaceBetweenCells = 0
 
-    private var InTopMargin = 0
+    private var inTopMargin = 0
 
-    private var InStartMargin = 0
+    private var inBottomMargin = 0
 
-    private var InAddtnalMarginStart = 0
+    private var inStartMargin = 0
+
+    private var inEndMargin = 0
+
+    private var inAddtnalMarginStart = 0
 
     // OUTPUT
     private var outCellWidth = 0
 
     private var outCellHeight = 0
 
-    private var outSpaceBetCells = 0
+    private var outputSpaceBetweenCells = 0
 
     private var outTopMargin= 0
 
     private var outStartMargin= 0
+
+    private var outBottomMargin= 0
+
+    private var outEndMargin= 0
+
 
     private var outAddtnalMarginStart = 0
 
@@ -120,6 +146,8 @@ class ReviewFlashcardEasyActivity : BaseActivity<ActivityReviewFlashcardEasyBind
     // WORD VARIALBLES
     // INPUT
     var curInputWCells_MarginStart = 0
+
+    var curInputWCells_MarginEnd = 0
 
     var curInputWCells_MarginTop = 0
 
@@ -129,6 +157,12 @@ class ReviewFlashcardEasyActivity : BaseActivity<ActivityReviewFlashcardEasyBind
     var curOutWCells_MarginTop = 0
 
     var curOutWCells_RowOrder = 0
+
+    // Panel dimensions
+
+    var testSubjectPanelHeight = 0
+
+    var maxIOPanelHeight = 0
 
 
     private lateinit var inputPanel : View
@@ -142,6 +176,14 @@ class ReviewFlashcardEasyActivity : BaseActivity<ActivityReviewFlashcardEasyBind
     private var inputCellList = ArrayList<Cell>()
 
     private var backButtonPressedTimes = 0
+
+    private var prevForgottenCardCount = 0
+
+    private var prevPassedCardCount = 0
+
+    @field: Named("RotateForever")
+    @Inject
+    lateinit var rotateForeverAnimation: Animation
 
     lateinit var viewModelProviderFactory : ViewModelProviderFactory
     @Inject set
@@ -157,7 +199,7 @@ class ReviewFlashcardEasyActivity : BaseActivity<ActivityReviewFlashcardEasyBind
             reverseCardTextAndTranslation: Boolean
         ) {
 
-            val intent = Intent(requestContext, ReviewFlashcardEasyActivity::class.java)
+            val intent = Intent(requestContext, PuzzleFlashcardActivity::class.java)
             intent.putExtra(FLASHCARD_SET_KEY, deck)
             intent.putExtra(REVERSE_CARD_TEXT_AND_TRANSLATION, reverseCardTextAndTranslation)
             requestContext.startActivity(intent)
@@ -166,31 +208,57 @@ class ReviewFlashcardEasyActivity : BaseActivity<ActivityReviewFlashcardEasyBind
 
     override fun getLayoutId(): Int = R.layout.activity_review_flashcard_easy
 
-    override fun takeViewModel(): ReviewFlashcardEasyViewModel {
+    override fun takeViewModel(): PuzzleFlashcardViewModel {
         return getActivityViewModel(viewModelProviderFactory)
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setStatusBarColor(Color.parseColor("#44004B"))
+        setStatusBarColor(Color.parseColor("#716235"))
         viewModel.setUpView(this)
         dB.vwModel = viewModel
-
-        inputPanel = dB.vwgrpInputCells
-        outputPanel = dB.vwgrpOutputCells
-        cellParent = dB.root as ConstraintLayout
-
-        dB.vwgrpInputCells.doOnPreDraw {
-            dB.vwgrpOutputCells.doOnPreDraw {
-                calculatelInputCellsDimens()
-                calculateOutputCellsDimens()
-                // Only can be used after dimensions are set up
-                beginUsing()
-            }
-        }
+        calculateWidgetsDimensions (onCalculationsFinish = {
+            setUpData()
+        })
     }
 
-    override fun initProperties() {
+    private fun setUpData() {
+        viewModel.setUpData(getRequestedFlashcardSet(), getIsReverseTextAndTranslation())
+        dB.executePendingBindings()
+        setUpSpeakerStatus()
+    }
+
+    private fun calculateWidgetsDimensions (onCalculationsFinish : (() -> Unit)? = null) { dB.apply {
+        inputPanel = vwgrpInputCells
+        outputPanel = vwgrpOutputCells
+        cellParent = vwgrpPuzzlePart
+
+        root.doOnPreDraw {
+            testSubjectPanelHeight = root.height / 4
+            txtInputAnswer.doOnPreDraw {
+                val outputPanelParams : ConstraintLayout.LayoutParams = vwgrpOutputCells.layoutParams as ConstraintLayout.LayoutParams
+                val inputPanelParams : ConstraintLayout.LayoutParams = vwgrpInputCells.layoutParams as ConstraintLayout.LayoutParams
+                val txtInputAnswerParams : ConstraintLayout.LayoutParams = txtInputAnswer.layoutParams as ConstraintLayout.LayoutParams
+                val testSubjectParams : ConstraintLayout.LayoutParams = vwgrpTestSubject.layoutParams as ConstraintLayout.LayoutParams
+                val outputPanelPositionY = vwgrpPuzzlePart.y + vwgrpTestSubject.y + testSubjectPanelHeight
+                val dimensionsThatIsNot_IO_Panel_Height =  outputPanelParams.topMargin + txtInputAnswerParams.topMargin + txtInputAnswer.height + inputPanelParams.topMargin + inputPanelParams.bottomMargin
+                maxIOPanelHeight = (((root.height - outputPanelPositionY) - dimensionsThatIsNot_IO_Panel_Height) / 2).toInt()
+                vwgrpInputCells.layoutParams.height = maxIOPanelHeight
+                vwgrpInputCells.requestLayout()
+                vwgrpOutputCells.layoutParams.height = maxIOPanelHeight
+                vwgrpInputCells.requestLayout()
+                vwgrpTestSubject.layoutParams.height = testSubjectPanelHeight
+                vwgrpTestSubject.requestLayout()
+                calculateInputCellsDimens()
+                calculateOutputCellsDimens()
+                txtTotalCardCount.text = getRequestedFlashcardSet().flashcards.size.toString()
+                onCalculationsFinish?.invoke()
+            }
+        }
+    }}
+
+    override fun initProperties () {
+
         HIGHLIGHTED_BACKGROUND = resources.getDrawable(R.drawable.round_3dp_white_background_with_dark_brown_border)
         RED_BORDER_BACKGROUND = resources.getDrawable(R.drawable.round_3dp_white_background_with_red_border)
         NORMAL_BORDER_BACKGROUND = resources.getDrawable(R.drawable.round_3dp_review_answer_bar_background_review_easy_activity)
@@ -198,31 +266,36 @@ class ReviewFlashcardEasyActivity : BaseActivity<ActivityReviewFlashcardEasyBind
         DARK_RED_COLOR = resources.getColor(R.color.dark_red)
         LITTLE_DARD_GREEN_COLOR = resources.getColor(R.color.dark_green)
         GREY_TEXT_COLOR = resources.getColor(R.color.use_flashcard_grey_text_color)
+
     }
 
-    override fun addViewSettings() {
-        dB.apply {
-//        layoutChooseLangFlow.txtQuestionLanguage.text = getRequestedFlashcardSet().backLanguage
-//        layoutChooseLangFlow.txtAnswerLanguage.text = getRequestedFlashcardSet().frontLanguage
-        }
-    }
+    override fun addViewSettings() { dB.apply {
+//        layoutChooseLangFlow.txtQuestionLanguage.text = getRequestedDeck().backLanguage
+//        layoutChooseLangFlow.txtAnswerLanguage.text = getRequestedDeck().frontLanguage
+    }}
 
     override fun addViewEvents() { dB.apply {
+
         txtInputAnswer.addTextChangedListener(onTextChanged = { text,_,_,_ ->
-            viewModel.checkAnswer(text.toString().trim())
+            viewModel.submitAnswer(text.toString().trim())
         })
 
         btnGiveUp.setOnClickListener {
-            viewModel.processForgottenCard()
-            performNotPassBehaviours()
+            viewModel.handleUserForgetCard()
         }
 
         dialogExit.setOnHide {
             resetBackButtonPressedTimes()
         }
 
-        btnSpeakerSetting.setOnClickListener {
+        btnSetting.setOnClickListener {
             dialogSetting.show()
+        }
+
+        btnDeleteACell.setOnClickListener {
+            val cell = outputCellList.lastOrNull()
+            if (cell == null) return@setOnClickListener
+            cell.performClick()
         }
 
         switchSpeaker.setOnCheckedChangeListener { view, isChecked ->
@@ -246,17 +319,17 @@ class ReviewFlashcardEasyActivity : BaseActivity<ActivityReviewFlashcardEasyBind
             }
         }
 
-        btnFlipFlashcardSet.setOnClickListener {
-            flipWholeFlashcardSet()
+        btnFlipDeck.setOnClickListener {
+            flipWholeDeck()
         }
-    }
-    }
 
-    private fun flipWholeFlashcardSet() {
+    }}
+
+    private fun flipWholeDeck() {
         requestReviewFlashcard(
             this,
-            viewModel.getOriginalFlashcardSet(),
-            viewModel.reverseLanguages.not()
+            viewModel.getOriginalDeck(),
+            viewModel.isDeckReversed.not()
         )
         finish()
     }
@@ -271,13 +344,113 @@ class ReviewFlashcardEasyActivity : BaseActivity<ActivityReviewFlashcardEasyBind
         })
     }
 
-    private fun beginUsing() {
-        viewModel.setUp(getRequestedFlashcardSet(), getIsReverseTextAndTranslation())
-        systemOutLogging(getRequestedFlashcardSet().flashcards.size)
-        setUpSpeakerStatus()
+
+    override fun onPassACard(passedCardCount: Int, forgottenCardCount: Int) {
+        dB.txtPassedCardCount.text = passedCardCount.toString()
+//        dB.txtForgottenCardCount.text = forgottenCardCount.toString()
+
+//        if ((passedCardCount + forgottenCardCount) == viewModel.getCardListSize()) {
+//            dB.txtForgottenCardCount.animate().alpha(0f).duration = COMMON_PROGRESS_BAR_VIEW_DURATION
+//        }
+
+        val userFinishTest = (passedCardCount + forgottenCardCount) == viewModel.getDeckSize()
+        if (userFinishTest) {
+            dB.txtTotalCardCount.animate().alpha(0f).duration = 100
+        }
+
+        val userRememberCard = passedCardCount > prevPassedCardCount
+        systemOutLogging("User remember card: " + passedCardCount + " and " + prevPassedCardCount)
+        systemOutLogging("* User forget card: " + forgottenCardCount + " and " + prevForgottenCardCount)
+        val userForgetCard = userRememberCard.not() &&
+                (forgottenCardCount > prevForgottenCardCount)
+
+        val userRelearnCard = (userRememberCard) && (forgottenCardCount < prevForgottenCardCount)
+
+        systemOutLogging("User for get: " + userForgetCard)
+
+        if (userRememberCard) {
+            increasePassedCardProgressBar(passedCardCount)
+            if (forgottenCardCount > 0) {
+                updateForgottenCardProgressBar(passedCardCount, forgottenCardCount)
+            }
+
+        } else if (userForgetCard) {
+            updateForgottenCardProgressBar(passedCardCount, forgottenCardCount)
+
+        } else if (userRelearnCard) {
+            increasePassedCardProgressBar(passedCardCount)
+        }
+
+        prevPassedCardCount = passedCardCount
+        prevForgottenCardCount = forgottenCardCount
     }
 
-    private fun getIsReverseTextAndTranslation(): Boolean {
+
+    override  fun onLoadAllIllustrationStart() {
+        rotateForeverAnimation.duration = 1000
+        dB.progressBarLoadingImage.startAnimation(rotateForeverAnimation)
+    }
+
+    override fun onLoadAllIllustrationFinish() {
+        hideLoadIllustrationProgressBar()
+    }
+
+    private fun hideLoadIllustrationProgressBar () {
+        dB.apply {
+            vwgrpLoadImageProgressBar.animate().alpha(0f)
+                .setDuration(100).setInterpolator(NormalOutExtraSlowIn())
+                .setLiteListener(onEnd = {
+                    vwgrpLoadImageProgressBar.goGONE()
+                    progressBarLoadingImage.animation.cancel()
+                })
+        }
+    }
+
+    private fun updateForgottenCardProgressBar(passedCardCount: Int, forgottenCardCount: Int) {
+        dB.apply {
+            if (txtForgottenCardProgressBar.alpha == 0f) {
+                txtForgottenCardProgressBar.animate().alpha(1f).duration =
+                    COMMON_PROGRESS_BAR_VIEW_DURATION
+//                txtForgottenCardCount.animate().alpha(1f).duration = COMMON_PROGRESS_BAR_VIEW_DURATION
+            }
+            systemOutLogging("Update forgotten: " + forgottenCardCount)
+            val aPartWidth = txtTotalCardProgressBar.width / viewModel.getDeckSize()
+            val progrBarCurrentWidth = txtForgottenCardProgressBar.width
+            val progrBarTargetWidth = (passedCardCount + forgottenCardCount) * aPartWidth
+            val increaseAnim =
+                ValueAnimator.ofInt(progrBarCurrentWidth, progrBarTargetWidth).apply {
+                    duration = 500
+                    interpolator = OvershootInterpolator(1f)
+                    addUpdateListener {
+                        txtForgottenCardProgressBar.layoutParams.width = it.animatedValue as Int
+                        txtForgottenCardProgressBar.requestLayout()
+                    }
+                    setTarget(txtForgottenCardProgressBar)
+                }
+            increaseAnim.start()
+        }
+    }
+
+    private fun increasePassedCardProgressBar(currentCount: Int) {
+        dB.apply {
+            val progrBarCurrentWidth = txtPassedCardProgressBar.width
+            val aPartWidth = txtTotalCardProgressBar.width / viewModel.getDeckSize()
+            val progrBarTargetWidth = aPartWidth * currentCount
+            val increaseAnim = ValueAnimator.ofInt(progrBarCurrentWidth, progrBarTargetWidth)
+            increaseAnim.duration = 500
+            increaseAnim.interpolator = OvershootInterpolator(2f)
+            increaseAnim.setTarget(txtPassedCardProgressBar)
+
+            increaseAnim.addUpdateListener {
+                txtPassedCardProgressBar.layoutParams.width = it.animatedValue as Int
+                txtPassedCardProgressBar.requestLayout()
+            }
+            increaseAnim.start()
+        }
+    }
+
+
+    override fun getIsReverseTextAndTranslation(): Boolean {
         return intent.extras!!.getBoolean(REVERSE_CARD_TEXT_AND_TRANSLATION, false)
     }
 
@@ -337,8 +510,6 @@ class ReviewFlashcardEasyActivity : BaseActivity<ActivityReviewFlashcardEasyBind
         viewModel.saveAllStatus(speakerFunction, speakerIsOn)
     }
 
-
-
     private fun showExampleTestSubjectComponents () { dB.apply {
         txtExampleNegativeHighlight.alpha = 0f
         txtExamplePositiveHighlight.alpha = 0f
@@ -394,35 +565,45 @@ class ReviewFlashcardEasyActivity : BaseActivity<ActivityReviewFlashcardEasyBind
     // ======================== VIEW OVERRIDE FUNCTION =================================
 
     override fun nextCard () {
-        if (viewModel.checkIsThereCardLeft()) {
+        if (viewModel.hasNext()) {
             oldSubjectDisaprAnim_RunNextCardOnFinish.start()
             resetHintAnimtrSet.start()
             setAnswer("")
         } else {
-            endReviewing()
+            onEndReviewing()
         }
     }
 
-    override fun endReviewing() {
+    override fun onEndReviewing() {
         sendHardCardListToEndActivity()
         finish()
     }
-
-
 
     override fun showSpeakTextError(error: String) {
         quickToast(error)
     }
 
 
-    override fun onGetTestSubject (testSubject: Flashcard,
-                                  useExampleForTestSubject: Boolean,
-                                  ansElements: Array<String>,
-                                  listType : ReviewFlashcardEasyView.ListOfCellType) { dB.apply {
-
+    override fun onGetTestSubject (testSubject: Flashcard, illustration : Bitmap?, load_illustrationException : Exception?,
+                                   useExampleForTestSubject: Boolean,
+                                   answerElements: Array<String>,
+                                   listType : ReviewFlashcardEasyView.ListOfCellType) { dB.apply {
 
         val answer = testSubject.text
         txtTextAnswer.text = answer
+
+        if (illustration != null) {
+            imgTestSubjectIllustration.goVISIBLE()
+            imgTestSubjectIllustration.setImageBitmap(illustration)
+            systemOutLogging("Got illustration: " + imgTestSubjectIllustration)
+        } else { // empty illustration
+            if (load_illustrationException != null) {
+                quickToast("Error happens. Can not load illustration for this card")
+                load_illustrationException.printStackTrace()
+            }
+            systemOutLogging("Not get illustration")
+            imgTestSubjectIllustration.goGONE()
+        }
 
         if (useExampleForTestSubject) {
             setUpExampleTestSubject(testSubject)
@@ -433,15 +614,39 @@ class ReviewFlashcardEasyActivity : BaseActivity<ActivityReviewFlashcardEasyBind
         }
 
         if (listType == CHARACTER_LIST) {
-            createChar_InputCell_LIST(ansElements)
-            recalculatePanelsHeight(ansElements.size)
+            systemOutLogging("Clgt")
+            recalculate_CellDimens_AdaptingScreen(answerElements)
+            answerElements.forEach {
+                systemOutLogging(it)
+            }
+            createChar_InputCell_LIST(answerElements)
+            recalculatePanelsHeight(answerElements.size)
         } else if (listType == WORD_LIST) {
-            createWord_InputCell_LIST(ansElements, onLayoutInputCell_Finishing = { rowCount ->
+            systemOutLogging("What the fuck")
+            createWord_InputCell_LIST(answerElements, onLayoutInputCell_Finishing = { rowCount ->
                 recalculatePanelsHeight_BasedOnRowCount(rowCount)
             })
         }
 
     }}
+
+    private fun recalculate_CellDimens_AdaptingScreen(answerElements: Array<String>) {
+        val maxCellOnPanel = DEFAULT_MAX_CELL_PER_ROW * DEFAULT_MAX_ROW
+        val cellCountIs_BiggerThan_MaxCellCount = answerElements.size > maxCellOnPanel
+        if (cellCountIs_BiggerThan_MaxCellCount) {
+            val elementCount_Is_Nice = (answerElements.size % DEFAULT_MAX_ROW) == 0
+            if (elementCount_Is_Nice) {
+                MAX_CELL_PER_ROW = answerElements.size / DEFAULT_MAX_ROW
+            } else {
+                MAX_CELL_PER_ROW = (answerElements.size / DEFAULT_MAX_ROW) + 1
+            }
+        } else { // cell count is less or equal than max cell count
+            MAX_CELL_PER_ROW = DEFAULT_MAX_CELL_PER_ROW
+        }
+
+        calculateInputCellsDimens()
+        calculateOutputCellsDimens()
+    }
 
     private fun setUpTranslationTestSubject (card : Flashcard) { dB.apply {
         txtTranslation.text = card.translation
@@ -544,51 +749,58 @@ class ReviewFlashcardEasyActivity : BaseActivity<ActivityReviewFlashcardEasyBind
     // ======================== CALCULATE FUNCTION =================================
 
 
-    private fun calculatelInputCellsDimens () {
-        InStartMargin = inputPanel.paddingStart
-        InTopMargin = inputPanel.paddingTop
+    private fun calculateInputCellsDimens () {
+        inStartMargin = inputPanel.paddingStart
+        inTopMargin = inputPanel.paddingTop + IO_Gradient_Part_Size
+        inEndMargin = inputPanel.paddingEnd
+        inBottomMargin = inputPanel.paddingBottom
 
-        curInputWCells_MarginStart = InStartMargin
-        curInputWCells_MarginTop = InTopMargin
+        curInputWCells_MarginStart = inStartMargin
+        curInputWCells_MarginEnd = inEndMargin
+        curInputWCells_MarginTop = inTopMargin
 
-        val expectedPanelWidth = (inputPanel.width - InStartMargin * 2)
-        spaceBetInputCells = expectedPanelWidth / 41
-        InCellWidth = expectedPanelWidth * MAX_CPR / 41
+        val expectedPanelWidth = (inputPanel.width - inStartMargin * 2)
+        inputSpaceBetweenCells = inStartMargin
+
+        InCellWidth = (expectedPanelWidth - (MAX_CELL_PER_ROW - 1) * inputSpaceBetweenCells) / MAX_CELL_PER_ROW
 //         * 2 / 3 <=> / 1.5
-        inCellHeight = InCellWidth * 2 / 3
+        inCellHeight = (maxIOPanelHeight - (MAX_ROW - 1) * inputSpaceBetweenCells - inTopMargin - inBottomMargin) / MAX_ROW
 //         Try to layout cells in the middle of panel
 //         Because there is calcError when convert from float to integer
 //         Sometimes there is a little space at the right of panel
-        val actualPanelWidth = (InCellWidth * MAX_CPR + spaceBetInputCells * (MAX_CPR - 1))
+        val actualPanelWidth = (InCellWidth * MAX_CELL_PER_ROW + inputSpaceBetweenCells * (MAX_CELL_PER_ROW - 1))
         val calcError = expectedPanelWidth - actualPanelWidth
-        val addtnalCellWidth = calcError / MAX_CPR
-        InAddtnalMarginStart =
-            (expectedPanelWidth - (actualPanelWidth + addtnalCellWidth * MAX_CPR)) / 2
+        val addtnalCellWidth = calcError / MAX_CELL_PER_ROW
+        inAddtnalMarginStart =
+            (expectedPanelWidth - (actualPanelWidth + addtnalCellWidth * MAX_CELL_PER_ROW)) / 2
         InCellWidth += addtnalCellWidth
 
         systemOutLogging("Calculate input")
     }
 
     private fun calculateOutputCellsDimens () {
-        outStartMargin= outputPanel.paddingStart
-        outTopMargin= outputPanel.paddingTop
+        outStartMargin = outputPanel.paddingStart
+        outTopMargin = outputPanel.paddingTop
+        outEndMargin = outputPanel.paddingEnd
+        outBottomMargin = outputPanel.paddingBottom + IO_Gradient_Part_Size
+
         curOutWCells_MarginStart = outStartMargin
         curOutWCells_MarginTop = outTopMargin
 
-        val expectedPanelWidth = (outputPanel.width - outStartMargin* 2)
-        outSpaceBetCells = expectedPanelWidth / 41
-        outCellWidth = expectedPanelWidth * MAX_CPR / 41
+        val expectedPanelWidth = (outputPanel.width - outStartMargin * 2)
+        outputSpaceBetweenCells = outStartMargin
 
+        outCellWidth = (expectedPanelWidth - (MAX_CELL_PER_ROW - 1) * outputSpaceBetweenCells) / MAX_CELL_PER_ROW
 //         * 2 / 3 <=> / 1.5
-//            I want its width synchronize with Input Cell
-        outCellHeight = inCellHeight
+        outCellHeight = (maxIOPanelHeight - (MAX_ROW - 1) * outputSpaceBetweenCells - outTopMargin - outBottomMargin) / MAX_ROW
 //         Try to layout cells in the middle of panel
 //         Because there is calcError when convert from float to integer
 //         Sometimes there is a little space at the right of panel
-        val actualPanelWidth = (outCellWidth * MAX_CPR + outSpaceBetCells * (MAX_CPR - 1))
+        val actualPanelWidth = (outCellWidth * MAX_CELL_PER_ROW + outputSpaceBetweenCells * (MAX_CELL_PER_ROW - 1))
         val calcError = expectedPanelWidth - actualPanelWidth
-        val addtnalCellWidth = calcError / MAX_CPR
-        outAddtnalMarginStart = (expectedPanelWidth - (actualPanelWidth + addtnalCellWidth * MAX_CPR))/2
+        val addtnalCellWidth = calcError / MAX_CELL_PER_ROW
+        outAddtnalMarginStart =
+            (expectedPanelWidth - (actualPanelWidth + addtnalCellWidth * MAX_CELL_PER_ROW)) / 2
         outCellWidth += addtnalCellWidth
     }
 
@@ -599,6 +811,7 @@ class ReviewFlashcardEasyActivity : BaseActivity<ActivityReviewFlashcardEasyBind
     private fun createChar_InputCell_LIST(ansElements: Array<String>) {
         dB.apply {
             for ((position, element) in ansElements.withIndex()) {
+                systemOutLogging("Create input cells: " + element)
                 createChar_InputCell(element, position, true)
             }
         }
@@ -612,11 +825,11 @@ class ReviewFlashcardEasyActivity : BaseActivity<ActivityReviewFlashcardEasyBind
         val constraint = ConstraintLayout.LayoutParams(InCellWidth, inCellHeight)
         constraint.topToTop = inputPanel.id
         constraint.startToStart = inputPanel.id
-        val positionInRow = position % MAX_CPR
-        constraint.marginStart = (positionInRow) * (InCellWidth + spaceBetInputCells) + InStartMargin
-        constraint.topMargin = (position / MAX_CPR) * (inCellHeight + spaceBetInputCells) + InTopMargin
-        if ((positionInRow == 0) or (positionInRow == MAX_CPR - 1)) {
-            constraint.marginStart += InAddtnalMarginStart
+        val positionInRow = position % MAX_CELL_PER_ROW
+        constraint.marginStart = (positionInRow) * (InCellWidth + inputSpaceBetweenCells) + inStartMargin
+        constraint.topMargin = (position / MAX_CELL_PER_ROW) * (inCellHeight + inputSpaceBetweenCells) + inTopMargin
+        if ((positionInRow == 0) or (positionInRow == MAX_CELL_PER_ROW - 1)) {
+            constraint.marginStart += inAddtnalMarginStart
         }
         inCharCell.layoutParams = constraint
         cellParent.addView(inCharCell)
@@ -645,13 +858,13 @@ class ReviewFlashcardEasyActivity : BaseActivity<ActivityReviewFlashcardEasyBind
     }
 
     private fun createChar_OutputCell (cellContent : String, inputCellPos : Int) { dB.apply {
-        val cell = Cell(this@ReviewFlashcardEasyActivity, OUTPUT_CELL)
+        val cell = Cell(this@PuzzleFlashcardActivity, OUTPUT_CELL)
         cell.text = cellContent
         val constraint = ConstraintLayout.LayoutParams(outCellWidth, outCellHeight)
         constraint.topToTop = outputPanel.id
         constraint.leftToLeft = outputPanel.id
-        constraint.marginStart = (outCellWidth +  outSpaceBetCells) * (curOutChCellPos % MAX_CPR) + outStartMargin
-        constraint.topMargin = vwgrpOutputCells.paddingTop + (curOutChCellRowOrder) * (outCellHeight + outSpaceBetCells)
+        constraint.marginStart = (outCellWidth +  outputSpaceBetweenCells) * (curOutChCellPos % MAX_CELL_PER_ROW) + outStartMargin
+        constraint.topMargin = vwgrpOutputCells.paddingTop + (curOutChCellRowOrder) * (outCellHeight + outputSpaceBetweenCells)
         cell.layoutParams = constraint
         cellParent.addView(cell)
 
@@ -674,7 +887,7 @@ class ReviewFlashcardEasyActivity : BaseActivity<ActivityReviewFlashcardEasyBind
             curOutChCellPos -= (outputCellList.size - currentOutputCellPosition)
             restoreOtherRightSideOutputCells(currentOutputCellPosition)
             removeOtherRightSideOutputCells(currentOutputCellPosition)
-            curOutChCellRowOrder = curOutChCellPos / MAX_CPR
+            curOutChCellRowOrder = curOutChCellPos / MAX_CELL_PER_ROW
         }
 
         outputCellList.add(cell)
@@ -686,7 +899,7 @@ class ReviewFlashcardEasyActivity : BaseActivity<ActivityReviewFlashcardEasyBind
 
         // Process row and position status
         curOutChCellPos++
-        curOutChCellRowOrder = curOutChCellPos / MAX_CPR
+        curOutChCellRowOrder = curOutChCellPos / MAX_CELL_PER_ROW
     }}
 
     private fun setAnswer (answer : String) {
@@ -694,39 +907,39 @@ class ReviewFlashcardEasyActivity : BaseActivity<ActivityReviewFlashcardEasyBind
     }
 
     private fun recalculatePanelsHeight (elementCount : Int) {
-        systemOutLogging("recalculatePanelsHeight()")
-        dB.apply {
-            var rowCount = elementCount / MAX_CPR
-            val notFullCellInLastRow = (elementCount % MAX_CPR != 0)
-            if (notFullCellInLastRow) rowCount++
-
-            recalculatePanelsHeight_BasedOnRowCount(rowCount)
-        }
+//        systemOutLogging("recalculatePanelsHeight()")
+//        dB.apply {
+//            var rowCount = elementCount / MAX_CELL_PER_ROW
+//            val notFullCellInLastRow = (elementCount % MAX_CELL_PER_ROW != 0)
+//            if (notFullCellInLastRow) rowCount++
+//
+//            recalculatePanelsHeight_BasedOnRowCount(rowCount)
+//        }
     }
 
     private fun recalculatePanelsHeight_BasedOnRowCount(rowCount: Int) {
-        dB.apply {
-            val expectedInputGroupHeight: Int
-            if (rowCount > MIN_INPUT_ROW_COUNT) {
-                expectedInputGroupHeight =
-                    rowCount * (inCellHeight + spaceBetInputCells) + InTopMargin * 2
-            } else {
-                expectedInputGroupHeight =
-                    MIN_INPUT_ROW_COUNT * (inCellHeight + spaceBetInputCells) + InTopMargin * 2
-            }
-            val expectedOutputGroupHeight =
-                rowCount * (outCellHeight + outSpaceBetCells) + outTopMargin * 2
-
-            if (vwgrpInputCells.layoutParams.height != expectedInputGroupHeight) {
-                vwgrpInputCells.layoutParams.height = expectedInputGroupHeight
-                vwgrpInputCells.requestLayout()
-            }
-
-            if (vwgrpOutputCells.layoutParams.height != expectedOutputGroupHeight) {
-                vwgrpOutputCells.layoutParams.height = expectedOutputGroupHeight
-                vwgrpOutputCells.requestLayout()
-            }
-        }
+//        dB.apply {
+//            val expectedInputGroupHeight: Int
+//            if (rowCount > MIN_INPUT_ROW_COUNT) {
+//                expectedInputGroupHeight =
+//                    rowCount * (inCellHeight + spaceBetInputCells) + InTopMargin * 2
+//            } else {
+//                expectedInputGroupHeight =
+//                    MIN_INPUT_ROW_COUNT * (inCellHeight + spaceBetInputCells) + InTopMargin * 2
+//            }
+//            val expectedOutputGroupHeight =
+//                rowCount * (outCellHeight + outSpaceBetCells) + outTopMargin * 2
+//
+//            if (vwgrpInputCells.layoutParams.height != expectedInputGroupHeight) {
+//                vwgrpInputCells.layoutParams.height = expectedInputGroupHeight
+//                vwgrpInputCells.requestLayout()
+//            }
+//
+//            if (vwgrpOutputCells.layoutParams.height != expectedOutputGroupHeight) {
+//                vwgrpOutputCells.layoutParams.height = expectedOutputGroupHeight
+//                vwgrpOutputCells.requestLayout()
+//            }
+//        }
     }
 
 // ======================== WORDS FUNCTION =================================
@@ -813,19 +1026,19 @@ class ReviewFlashcardEasyActivity : BaseActivity<ActivityReviewFlashcardEasyBind
         for (cell in inputCellList) {
             val nextTotalCellsWidth_InLastRow = curInputWCells_MarginStart + cell.width
 
-            val goToNextRow = nextTotalCellsWidth_InLastRow > inputPanel.width
+            val goToNextRow = nextTotalCellsWidth_InLastRow + curInputWCells_MarginEnd > inputPanel.width
             var cellMarginStart: Int
             val cellMarginTop: Int
 
             if (goToNextRow) {
-                cellMarginStart = InStartMargin
+                cellMarginStart = inStartMargin
                 // Reset Start Margin to the left of Input Panel
-                curInputWCells_MarginStart = InStartMargin + cell.width + spaceBetInputCells
-                curInputWCells_MarginTop += (cell.height + spaceBetInputCells)
+                curInputWCells_MarginStart = inStartMargin + cell.width + inputSpaceBetweenCells
+                curInputWCells_MarginTop += (cell.height + inputSpaceBetweenCells)
                 rowCount++
             } else {
                 cellMarginStart = curInputWCells_MarginStart
-                curInputWCells_MarginStart = nextTotalCellsWidth_InLastRow + spaceBetInputCells
+                curInputWCells_MarginStart = nextTotalCellsWidth_InLastRow + inputSpaceBetweenCells
             }
 
             cellMarginTop = curInputWCells_MarginTop
@@ -854,11 +1067,11 @@ class ReviewFlashcardEasyActivity : BaseActivity<ActivityReviewFlashcardEasyBind
         if (cellNotFitInRow) {
             cellMarginStart = outStartMargin
             // Reset Start Margin to the left of Input Panel
-            curOutWCells_MarginStart = outStartMargin + cellWidth + outSpaceBetCells
-            curOutWCells_MarginTop += (cellHeight + outSpaceBetCells)
+            curOutWCells_MarginStart = outStartMargin + cellWidth + outputSpaceBetweenCells
+            curOutWCells_MarginTop += (cellHeight + outputSpaceBetweenCells)
         } else {
             cellMarginStart = curOutWCells_MarginStart
-            curOutWCells_MarginStart = nextTotalCellsWidth_InLastRow + outSpaceBetCells
+            curOutWCells_MarginStart = nextTotalCellsWidth_InLastRow + outputSpaceBetweenCells
         }
 
         val cellMarginTop = curOutWCells_MarginTop
@@ -895,17 +1108,17 @@ class ReviewFlashcardEasyActivity : BaseActivity<ActivityReviewFlashcardEasyBind
 
             if (outputCellList.size > 0) {
                 // Reset to last cell position curOutWCells_MarginStart
-                curOutWCells_MarginStart -= (cellWidth + outSpaceBetCells)
+                curOutWCells_MarginStart -= (cellWidth + outputSpaceBetweenCells)
                 val noCellInLastRow = curOutWCells_MarginStart == outStartMargin
                 if (noCellInLastRow) {
                     if (curOutWCells_RowOrder > 0) {
                         val lastCell = outputCellList.last()
-                        curOutWCells_MarginStart = lastCell.marginStart + lastCell.width + outSpaceBetCells
+                        curOutWCells_MarginStart = lastCell.marginStart + lastCell.width + outputSpaceBetweenCells
                         curOutWCells_RowOrder -= 1
                     }
                 } else {
                     val lastCell = outputCellList.last()
-                    curOutWCells_MarginStart = lastCell.marginStart + lastCell.width + outSpaceBetCells
+                    curOutWCells_MarginStart = lastCell.marginStart + lastCell.width + outputSpaceBetweenCells
                     curOutWCells_MarginTop = lastCell.marginTop
                 }
             } else {
@@ -970,8 +1183,8 @@ class ReviewFlashcardEasyActivity : BaseActivity<ActivityReviewFlashcardEasyBind
         curOutChCellPos = 0
         curOutChCellRowOrder = 0
 
-        curInputWCells_MarginTop  = InTopMargin
-        curInputWCells_MarginStart = InStartMargin
+        curInputWCells_MarginTop  = inTopMargin
+        curInputWCells_MarginStart = inStartMargin
 
         curOutWCells_MarginTop  = outTopMargin
         curOutWCells_MarginStart = outStartMargin
@@ -991,12 +1204,12 @@ class ReviewFlashcardEasyActivity : BaseActivity<ActivityReviewFlashcardEasyBind
     }
 
     private fun disableClickingAllInputCells() {
-        for (cell in outputCellList) {
+        for (cell in inputCellList) {
             cell.isClickable = false
         }
     }
 
-    private fun getRequestedFlashcardSet(): Deck {
+    override fun getRequestedFlashcardSet(): Deck {
         return intent.extras!!.getSerializable(FLASHCARD_SET_KEY) as Deck
     }
 
@@ -1031,9 +1244,9 @@ class ReviewFlashcardEasyActivity : BaseActivity<ActivityReviewFlashcardEasyBind
 
     fun sendHardCardListToEndActivity() {
         val missedCardList = viewModel.getMissedCardsList()
-        val flashcardSet = viewModel.getOriginalFlashcardSet()
+        val deck = viewModel.getOriginalDeck()
         ResultReportActivity.requestFinishUsingFlashcard(
-            this, flashcardSet, missedCardList,
+            this, deck, missedCardList,
             ResultReportActivity.FlashcardSendableActivity.REVIEW_FLASHCARD_EASY_ACTIVITY.code
         )
     }

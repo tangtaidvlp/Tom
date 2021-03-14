@@ -1,16 +1,24 @@
 package com.teamttdvlp.memolang.view.activity.iview
 
+import android.graphics.Bitmap
 import com.teamttdvlp.memolang.data.model.entity.flashcard.Flashcard
+import java.lang.Exception
 
 
-interface ReviewFlashcardEasyView : View {
+interface ReviewFlashcardEasyView : View, CardPlayableView {
 
     enum class ListOfCellType {
         WORD_LIST, CHARACTER_LIST
     }
 
-    fun onGetTestSubject (testSubject : Flashcard, useExampleForTestSubject : Boolean,
-                          ansElements : Array<String>, listType : ListOfCellType)
+    fun onGetTestSubject (
+        testSubject: Flashcard,
+        illustration: Bitmap?,
+        load_illustrationException: Exception?,
+        useExampleForTestSubject: Boolean,
+        ansElements: Array<String>,
+        listType: ListOfCellType
+    )
 
     fun perform_CorrectAnswerElementsOrderBehaviours()
 
@@ -20,9 +28,8 @@ interface ReviewFlashcardEasyView : View {
 
     fun performNotPassBehaviours ()
 
-    fun endReviewing()
-
     fun nextCard()
 
     fun showSpeakTextError(error: String)
+
 }

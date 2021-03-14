@@ -22,6 +22,7 @@ class CardListLanguageReverser {
             for (card in flashcardList)
                 reverse_Card_ExampleAndMeanExample(card)
         }
+
         fun reverse_Card_ExampleAndMeanExample (card : Flashcard) {
             val exampleHolder = card.example
             card.example = card.meanOfExample

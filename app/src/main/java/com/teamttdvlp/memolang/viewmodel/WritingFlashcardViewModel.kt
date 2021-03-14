@@ -2,28 +2,30 @@ package com.teamttdvlp.memolang.viewmodel
 
 //import com.teamttdvlp.memolang.view.helper.selfPlusOne
 import android.app.Application
+import android.graphics.Bitmap
 import androidx.databinding.ObservableField
 import androidx.databinding.ObservableInt
 import com.teamttdvlp.memolang.data.model.entity.flashcard.Deck
 import com.teamttdvlp.memolang.data.model.entity.flashcard.Flashcard
 import com.teamttdvlp.memolang.model.CardListLanguageReverser.Companion.reverse_LIST_Card_TextAndTranslation
+import com.teamttdvlp.memolang.model.IllustrationLoader
 import com.teamttdvlp.memolang.model.ReviewActivitiesSpeakerStatusManager
 import com.teamttdvlp.memolang.model.ReviewActivitiesSpeakerStatusManager.SpeakerStatus.Companion.SPEAK_ANSWER_ONLY
 import com.teamttdvlp.memolang.model.ReviewActivitiesSpeakerStatusManager.SpeakerStatus.Companion.SPEAK_QUESTION_AND_ANSWER
 import com.teamttdvlp.memolang.model.TextSpeaker
 import com.teamttdvlp.memolang.model.checkCanUseExampleForTestSubject
-import com.teamttdvlp.memolang.view.activity.iview.ReviewFlashcardView
+import com.teamttdvlp.memolang.view.activity.iview.WritingFlashcardView
 import com.teamttdvlp.memolang.view.base.BaseViewModel
 import com.teamttdvlp.memolang.view.helper.notContains
 import com.teamttdvlp.memolang.view.helper.replaceAt
 import com.teamttdvlp.memolang.view.helper.systemOutLogging
+import com.teamttdvlp.memolang.viewmodel.abstraction.CardPlayableViewModel
+import java.lang.Exception
 import kotlin.random.Random
 
-class ReviewFlashcardViewModel(var app : Application) : BaseViewModel<ReviewFlashcardView>() {
+class WritingFlashcardViewModel (var app : Application, private val illustrationLoader : IllustrationLoader) : BaseViewModel<WritingFlashcardView>()
+    , CardPlayableViewModel {
 
-    val currentPos = ObservableInt()
-
-    val missedCardCount = ObservableInt()
 
     private lateinit var currentCard: Flashcard
 
@@ -51,14 +53,36 @@ class ReviewFlashcardViewModel(var app : Application) : BaseViewModel<ReviewFlas
 
     private lateinit var reviewFCActivity_StatusManager: ReviewActivitiesSpeakerStatusManager
 
-    var isReverseTextAndTrans = false
+    /**
+     * String: picture name
+     * Bitmap?: illustrstion content
+     */
+    private val illustrationMap = HashMap<String, Bitmap?>()
 
-    fun setUpInfo(deck: Deck, reverseTextAndTranslation: Boolean) {
+    /**
+     * String: picture name
+     * Exception?: load illustration exception
+     */
+    private val load_illustrationExceptionMap = HashMap<String, Exception?>()
+
+
+    var isDeckReversed = false
+
+    private var passedCardCount = 0
+
+    private var currentPos = 0
+
+    private var missedCardCount = 0
+
+    override fun setUpData(deck: Deck, reverseTextAndTranslation: Boolean) {
+        this.deck = deck
+        this.isDeckReversed = reverseTextAndTranslation
+
+        loadAllCardIllustrations(deck.flashcards)
+        view.onLoadAllIllustrationStart()
+
         val questionLanguage: String
         val answerLanguage: String
-        this.deck = deck
-        this.isReverseTextAndTrans = reverseTextAndTranslation
-
         if (reverseTextAndTranslation) {
             questionLanguage = deck.frontLanguage
             answerLanguage = deck.backLanguage
@@ -70,11 +94,11 @@ class ReviewFlashcardViewModel(var app : Application) : BaseViewModel<ReviewFlas
 
         this.cardList.clear()
         this.cardList.addAll(deck.flashcards)
-        currentCard = deck.flashcards.first()
+        val firstCard = cardList.first()
 
-        currentPos.set(0)
+        currentPos = 0
 
-        setName.set(currentCard.setOwner)
+        setName.set(firstCard.setOwner)
         cardLeftCount.set(deck.flashcards.size)
 
         reviewFCActivity_StatusManager =
@@ -83,7 +107,7 @@ class ReviewFlashcardViewModel(var app : Application) : BaseViewModel<ReviewFlas
             })
 
         val textSpokenFirst = if (doesTextNeedSpeakingAtStart()) {
-            if (checkCanUseExampleForTestSubject(currentCard)) {
+            if (checkCanUseExampleForTestSubject(firstCard)) {
                 this.cardList.first().meanOfExample
             } else {
                 this.cardList.first().translation
@@ -92,22 +116,25 @@ class ReviewFlashcardViewModel(var app : Application) : BaseViewModel<ReviewFlas
 
         answerTextSpeaker = TextSpeaker(app, answerLanguage.trim())
         questionTextSpeaker = TextSpeaker(app, questionLanguage.trim(), textSpokenFirst)
+    }
+
+    override fun beginUsing () {
+        currentCard = deck.flashcards.first()
         useCard(currentCard)
     }
 
-    fun nextCard () {
-//        currentPos.selfPlusOne()
-        val currentPosVal = currentPos.get()
-        currentCard = cardList.get(currentPosVal)
+    override fun nextCard () {
+        currentPos++
+        currentCard = cardList.get(currentPos)
         useCard(currentCard)
-        cardLeftCount.set(cardList.size - currentPosVal)
+        cardLeftCount.set(cardList.size - currentPos)
 
         resetAnswerWrongTimes()
     }
 
-    fun checkThereIs_NO_CardLeft () : Boolean {
-        val nextPosition = currentPos.get() + 1
-        return (nextPosition >= cardList.size)
+    override fun hasNext () : Boolean {
+        val nextPosition = currentPos + 1
+        return (nextPosition < cardList.size)
     }
 
     fun speakAnswer (text : String, onSpeakDone : () -> Unit) {
@@ -136,35 +163,109 @@ class ReviewFlashcardViewModel(var app : Application) : BaseViewModel<ReviewFlas
     private fun useCard (card : Flashcard) {
         answerLength = card.text.length
         hint.set(convertToHint(card.text))
-        view.showTestSubjectOnScreen(card, checkCanUseExampleForTestSubject(card))
+
+        val illustration : Bitmap?
+        val loadIllustrationException : Exception?
+        if (isDeckReversed) {
+            illustration = illustrationMap.get(card.frontIllustrationPictureName)
+            loadIllustrationException = load_illustrationExceptionMap.get(card.frontIllustrationPictureName)
+        } else {
+            illustration = illustrationMap.get(card.backIllustrationPictureName)
+            loadIllustrationException = load_illustrationExceptionMap.get(card.backIllustrationPictureName)
+        }
+
+        view.onGetTestSubject(card, illustration, loadIllustrationException, checkCanUseExampleForTestSubject(card))
     }
 
-    fun submitAnswer (answer : String) {
-        val isCorrect = (answer.toLowerCase().trim() == currentCard.text.toLowerCase().trim())
-        if (isCorrect) {
-            if (answerWrongTimes == 0) {
-                view.showExcelentAnswerAnimation()
-            } else if ((answerWrongTimes > 0) and (answerWrongTimes < MAX_ANSWER_WRONG_TIMES)) {
-                view.showGoodAnswerAnimation()
+    override fun loadAllCardIllustrations(flashcardList: ArrayList<Flashcard>) {
+        val illustrationsNameList = ArrayList<String>()
+        if (isDeckReversed.not()) {
+            deck.flashcards.forEach { flashcard ->
+                if (isCardValid_In_This_Mode(flashcard)) {
+                    if (flashcard.backIllustrationPictureName != null) {
+                        illustrationsNameList.add(flashcard.backIllustrationPictureName!!)
+                    }
+                }
             }
         } else {
-            answerWrongTimes++
-            if (answerWrongTimes < MAX_ANSWER_WRONG_TIMES) {
-                view.showWrongAnswerAnimation()
-                if (answerWrongTimes == MAX_ANSWER_WRONG_TIMES - 1) {
-                    view.highlightHintOption()
+            deck.flashcards.forEach { flashcard ->
+                if (isCardValid_In_This_Mode(flashcard)) {
+                    if (flashcard.frontIllustrationPictureName != null) {
+                        illustrationsNameList.add(flashcard.frontIllustrationPictureName!!)
+                    }
                 }
-            } else if (answerWrongTimes == MAX_ANSWER_WRONG_TIMES) {
-                view.showNotPassAnswerAnimation()
             }
+        }
+
+        illustrationLoader.loadListOfBitmap(illustrationsNameList, onGetResult =  { dataMap, exMap ->
+            this.illustrationMap.putAll(dataMap)
+            beginUsing()
+            view.onLoadAllIllustrationFinish()
+        })
+    }
+
+    private fun isCardValid_In_This_Mode (card : Flashcard) : Boolean {
+
+        val notReverse_But_FrontCard_EmptyText = isDeckReversed.not() && card.text.isEmpty()
+        val reverse_But_BackCard_TextEmpty = isDeckReversed && card.translation.isEmpty()
+
+        if (notReverse_But_FrontCard_EmptyText) {
+            return false
+        } else if (reverse_But_BackCard_TextEmpty) {
+            return false
+        }
+
+        return true
+    }
+
+    override fun submitAnswer (answer : String) : Boolean{
+        val isCorrect = (answer.toLowerCase().trim() == currentCard.text.toLowerCase().trim())
+        if (isCorrect) {
+            handleUserRememberCard()
+            return true
+        } else {
+            handleUserForgetCard()
+            return false
         }
     }
 
-    fun resetAnswerWrongTimes () {
+
+    override fun handleUserRememberCard() {
+
+        if (answerWrongTimes == 0) {
+            view.showExcellentAnswerAnimation()
+        } else if ((answerWrongTimes > 0) and (answerWrongTimes < MAX_ANSWER_WRONG_TIMES)) {
+            view.showGoodAnswerAnimation()
+        }
+        processPassedCard()
+        view.onPassACard(passedCardCount, missedCardCount)
+    }
+
+    override fun handleUserForgetCard() {
+        answerWrongTimes++
+        if (answerWrongTimes < MAX_ANSWER_WRONG_TIMES) {
+            view.showWrongAnswerAnimation()
+            if (answerWrongTimes == MAX_ANSWER_WRONG_TIMES - 1) {
+                view.highlightHintOption()
+            }
+        } else if (answerWrongTimes == MAX_ANSWER_WRONG_TIMES) {
+            view.showNotPassAnswerAnimation()
+            processMissedCard()
+            view.onPassACard(passedCardCount, missedCardCount)
+        }
+    }
+
+    fun giveUpCard () {
+        view.showNotPassAnswerAnimation()
+        processMissedCard()
+        view.onPassACard(passedCardCount, missedCardCount)
+    }
+
+    private fun resetAnswerWrongTimes () {
         answerWrongTimes = 0
     }
 
-    fun convertToHint (answer : String) : String {
+    private fun convertToHint (answer : String) : String {
 
         if (answerLength == 1) {
 
@@ -195,7 +296,6 @@ class ReviewFlashcardViewModel(var app : Application) : BaseViewModel<ReviewFlas
             }
 
             return result.replace(" ", "   ")
-
         }
     }
 
@@ -208,11 +308,21 @@ class ReviewFlashcardViewModel(var app : Application) : BaseViewModel<ReviewFlas
         }
     }
 
-    fun processMissedCard() {
+    private fun processMissedCard() {
+        if (missedCardList.notContains(currentCard)) {
+            missedCardCount++
+        }
         addCurrentCardTo_ListOfForgottenCards()
         moveCurrentCardToEndOfCardList()
-        missedCardCount.set(missedCardList.size)
+     }
+
+    private fun processPassedCard() {
+        passedCardCount++
+        if (missedCardList.contains(currentCard)) {
+            missedCardCount--
+        }
     }
+
 
     private fun addCurrentCardTo_ListOfForgottenCards() {
         if (missedCardList.notContains(currentCard)) {
@@ -224,14 +334,12 @@ class ReviewFlashcardViewModel(var app : Application) : BaseViewModel<ReviewFlas
         cardList.add(currentCard)
     }
 
-    fun getForgottenCardList(): ArrayList<Flashcard> {
+    override fun getForgottenCardList(): ArrayList<Flashcard> {
         return missedCardList
     }
 
-    fun getFlashcardListSize(): Int = deck.flashcards.size
-
     fun getOriginalFlashcardSet(): Deck {
-        if (isReverseTextAndTrans) {
+        if (isDeckReversed) {
             val cloneFlashcardSet = Deck(
                 this.deck.name,
                 this.deck.frontLanguage,
@@ -274,6 +382,14 @@ class ReviewFlashcardViewModel(var app : Application) : BaseViewModel<ReviewFlas
         val speakerFunc = reviewFCActivity_StatusManager.speakerStatusManager.getFunction()
         val speakerIsOn = reviewFCActivity_StatusManager.speakerStatusManager.getStatus()
         return ((speakerFunc == SPEAK_ANSWER_ONLY) or (speakerFunc == SPEAK_QUESTION_AND_ANSWER)) and speakerIsOn
+    }
+
+    override fun getDeckSize(): Int {
+        return deck.flashcards.size
+    }
+
+    fun getCurrentAnswerHint(): String {
+        return convertToHint(currentCard.text)
     }
 }
 

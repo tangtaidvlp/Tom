@@ -4,6 +4,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.VERTICAL
 import com.teamttdvlp.memolang.data.model.other.new_vocabulary.SingleMeanExample
+import com.teamttdvlp.memolang.model.EngVietVocabularyLoader
 import com.teamttdvlp.memolang.view.activity.EngVietDictionaryActivity
 import com.teamttdvlp.memolang.view.adapter.*
 import dagger.Module
@@ -35,8 +36,8 @@ class SeeVocabularyActivityModule {
     }
 
     @Provides
-    fun provideRCVDictionaryAdapter(context: EngVietDictionaryActivity): RCVSearchDictionaryAdapter {
-        return RCVSearchDictionaryAdapter(context)
+    fun provideRCVDictionaryAdapter(context: EngVietDictionaryActivity, engVietVocabularyLoader: EngVietVocabularyLoader): RCVSearchDictionaryAdapter {
+        return RCVSearchDictionaryAdapter(context, engVietVocabularyLoader)
     }
 
     @Provides

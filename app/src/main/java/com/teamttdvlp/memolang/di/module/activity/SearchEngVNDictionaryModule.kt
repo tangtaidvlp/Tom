@@ -2,6 +2,7 @@ package com.teamttdvlp.memolang.di.module.activity
 
 import com.teamttdvlp.memolang.data.model.other.new_vocabulary.Example
 import com.teamttdvlp.memolang.data.model.other.new_vocabulary.SingleMeanExample
+import com.teamttdvlp.memolang.model.EngVietVocabularyLoader
 import com.teamttdvlp.memolang.view.activity.SearchEngVNDictionaryActivity
 import com.teamttdvlp.memolang.view.adapter.RCVRecent_SearchDictionary_Adapter
 import com.teamttdvlp.memolang.view.adapter.RCVSearchDictionaryAdapter
@@ -13,8 +14,8 @@ import dagger.Provides
 class SearchEngVNDictionaryModule {
 
     @Provides
-    fun provideRCVDictionaryAdapter (context : SearchEngVNDictionaryActivity) : RCVSearchDictionaryAdapter {
-        return RCVSearchDictionaryAdapter(context)
+    fun provideRCVDictionaryAdapter (context : SearchEngVNDictionaryActivity, engVietVocabularyLoader: EngVietVocabularyLoader) : RCVSearchDictionaryAdapter {
+        return RCVSearchDictionaryAdapter(context, engVietVocabularyLoader)
     }
 
     @Provides

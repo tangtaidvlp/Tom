@@ -43,9 +43,12 @@ abstract class ActivityBuilder {
     abstract fun injectSeeVocabularyAcitivty(): EngVietDictionaryActivity
 
     @ContributesAndroidInjector(modules = [ReviewFlashcardActivityModule::class])
-    abstract fun injectReviewFlashcardActivity() : ReviewFlashcardActivity
+    abstract fun injectReviewFlashcardActivity() : WritingFlashcardActivity
 
     @ContributesAndroidInjector(modules = [ReviewFlashcardEasyActivityModule::class])
-    abstract fun injectReviewFlashcardEasyActivity() : ReviewFlashcardEasyActivity
+    abstract fun injectReviewFlashcardEasyActivity() : PuzzleFlashcardActivity
+
+    @ContributesAndroidInjector()
+    abstract  fun injectQuizFlashcardActivity () : QuizActivity
 
 }

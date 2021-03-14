@@ -17,7 +17,7 @@ class TypicalRawVocabulary (key : String, var fullContent: ArrayList<String> = A
 
     override fun equals(other: Any?): Boolean {
         if (other is TypicalRawVocabulary) {
-            return (other.key == this.key) && (other.fullContent.containsAll(this.fullContent))
+            return (other.key == this.key) && (other.fullContent.containsAll(this.fullContent) && (other.fullContent.size == this.fullContent.size))
         }
         return super.equals(other)
     }

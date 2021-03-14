@@ -1,0 +1,923 @@
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="vwModel"
+            type="com.teamttdvlp.memolang.viewmodel.QuizActivityViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        tools:context=".view.activity.QuizActivity">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/center_guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5" />
+
+        <TextView
+            android:id="@+id/txt_vwgrp_bottom_barrier"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:visibility="invisible"
+            app:layout_constraintTop_toTopOf="@id/vwgrp_puzzle_part"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="30dp"/>
+
+        <ImageView
+            android:id="@+id/img_lower_layer_title_background"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:alpha="0.2"
+            android:background="@drawable/background_gradient_quiz_title_mint_blue"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/txt_vwgrp_bottom_barrier"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/vwgrp_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/txt_deck_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/segoeui"
+                android:gravity="center_vertical"
+                android:hint="Set name here"
+                android:includeFontPadding="false"
+                android:inputType="textNoSuggestions|text"
+                android:paddingBottom="1dp"
+                android:textColor="@color/app_quiz_dark_green"
+                android:textColorHint="@color/app_quiz_dark_green"
+                android:textSize="22sp"
+                android:translationZ="5dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txt_deck_language"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginBottom="13dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/segoeui"
+                android:gravity="center_vertical"
+                android:text="English - Vietnamese"
+                android:includeFontPadding="false"
+                android:inputType="textNoSuggestions|text"
+                android:paddingEnd="16dp"
+                android:paddingBottom="1dp"
+                android:textColor="@color/app_quiz_dark_green"
+                android:textSize="11sp"
+                android:translationZ="5dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txt_deck_name" />
+
+            <ImageView
+                android:id="@+id/btn_setting"
+                android:layout_width="35.5dp"
+                android:layout_height="23dp"
+                app:layout_constraintTop_toTopOf="@id/txt_deck_name"
+                app:layout_constraintBottom_toBottomOf="@id/txt_deck_name"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/round_5dp_dark_green_background"
+                android:elevation="5dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:src="@drawable/image_button_setting_dark_green"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/segoeui"
+                android:gravity="center_vertical"
+                android:includeFontPadding="false"
+                android:inputType="textNoSuggestions|text"
+                android:paddingBottom="1dp"
+                android:text="Settings"
+                android:textColor="@color/app_quiz_dark_green"
+                android:textSize="11sp"
+                android:translationZ="5dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@id/btn_setting"
+                app:layout_constraintStart_toStartOf="@id/btn_setting"
+                app:layout_constraintTop_toBottomOf="@id/btn_setting"
+                app:layout_constraintVertical_bias="0.3" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <ImageView
+            android:id="@+id/img_higher_layer_title_background"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:alpha="0.2"
+            android:background="@drawable/background_gradient_quiz_title_mint_blue"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/txt_vwgrp_bottom_barrier"/>
+
+        <ImageView
+            android:id="@+id/img_lower_layer_minimum_title_background"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:alpha="0"
+            android:background="@color/app_quiz_dark_green"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="@id/img_lower_layer_title_background">
+
+        </ImageView>
+
+        <LinearLayout
+            android:id="@+id/vwgrp_minimum_title"
+            android:alpha="0"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="13sp"
+                android:gravity="center_vertical"
+                android:layout_marginStart="@dimen/common_margin_start"
+                android:layout_marginEnd="5dp"
+                android:includeFontPadding="false"
+                android:textColor="@color/white"
+                android:text="Language pairs"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/common_margin_end"
+                android:src="@drawable/image_icon_button_setting_white"/>
+
+        </LinearLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/vwgrp_puzzle_part"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/round_top_20dp_white_background"
+            android:elevation="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/vwgrp_title"
+            app:layout_constraintVertical_bias="0.0">
+
+            <TextView
+                android:id="@+id/txt_total_card_progress_bar"
+                android:layout_width="0dp"
+                android:layout_height="8dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/round_3dp_light_blur_mint_background"
+                app:layout_constraintEnd_toEndOf="@id/txt_total_card_count"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txt_total_card_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/common_margin_end"
+                android:background="@drawable/round_10dp_light_mint_with_white_stroke_background"
+                android:fontFamily="@font/seguisb"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:paddingBottom="1dp"
+                android:text="5"
+                android:textColor="#518680"
+                android:textSize="11sp"
+                app:layout_constraintBottom_toBottomOf="@id/txt_total_card_progress_bar"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/txt_total_card_progress_bar" />
+
+
+            <TextView
+                android:id="@+id/txt_forgotten_card_progress_bar"
+                android:layout_width="9dp"
+                android:layout_height="8dp"
+                android:layout_marginRight="@dimen/common_margin_end"
+                android:background="@drawable/round_3dp_quiz_dark_green_background"
+                app:layout_constraintBottom_toBottomOf="@id/txt_total_card_progress_bar"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@id/txt_total_card_progress_bar"
+                app:layout_constraintTop_toTopOf="@id/txt_total_card_progress_bar" />
+
+            <TextView
+                android:id="@+id/txt_familiar_card_progress_bar"
+                android:layout_width="9dp"
+                android:layout_height="8dp"
+                android:layout_marginStart="@dimen/common_margin_start"
+                android:layout_marginEnd="@dimen/common_margin_end"
+                android:background="@drawable/round_3dp_quiz_light_red_brown_background"
+                app:layout_constraintBottom_toBottomOf="@id/txt_total_card_progress_bar"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/txt_total_card_progress_bar" />
+
+            <TextView
+                android:id="@+id/txt_familar_card_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round_20dp_app_puzzle_quiz_brown"
+                android:elevation="3dp"
+                android:fontFamily="@font/seguisb"
+                android:includeFontPadding="false"
+                android:paddingStart="7dp"
+                android:paddingEnd="7dp"
+                android:paddingBottom="1dp"
+                android:text="0"
+                android:textColor="#E6DAC0"
+                android:textSize="11sp"
+                app:flow_horizontalBias="1"
+                app:layout_constraintBottom_toBottomOf="@id/txt_total_card_progress_bar"
+                app:layout_constraintEnd_toEndOf="@id/txt_passed_card_progress_bar"
+                app:layout_constraintHorizontal_bias="0.45"
+                app:layout_constraintStart_toEndOf="@id/txt_passed_card_progress_bar"
+                app:layout_constraintTop_toTopOf="@id/txt_total_card_progress_bar"
+                app:layout_constraintVertical_bias="0.555" />
+
+            <TextView
+                android:id="@+id/txt_passed_card_progress_bar"
+                android:layout_width="9dp"
+                android:layout_height="8dp"
+                android:layout_marginStart="@dimen/common_margin_start"
+                android:layout_marginEnd="@dimen/common_margin_end"
+                android:background="@drawable/round_3dp_little_dark_red_brown_background"
+                app:layout_constraintBottom_toBottomOf="@id/txt_total_card_progress_bar"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/txt_total_card_progress_bar" />
+
+            <TextView
+                android:id="@+id/txt_passed_card_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round_20dp_app_puzzle_quiz_brown"
+                android:elevation="3dp"
+                android:fontFamily="@font/seguisb"
+                android:includeFontPadding="false"
+                android:paddingStart="7dp"
+                android:paddingEnd="7dp"
+                android:paddingBottom="1dp"
+                android:text="0"
+                android:textColor="#E6DAC0"
+                android:textSize="11sp"
+                app:flow_horizontalBias="1"
+                app:layout_constraintBottom_toBottomOf="@id/txt_total_card_progress_bar"
+                app:layout_constraintEnd_toEndOf="@id/txt_passed_card_progress_bar"
+                app:layout_constraintHorizontal_bias="0.45"
+                app:layout_constraintStart_toEndOf="@id/txt_passed_card_progress_bar"
+                app:layout_constraintTop_toTopOf="@id/txt_total_card_progress_bar"
+                app:layout_constraintVertical_bias="0.555" />
+
+            <View
+                android:id="@+id/view_holder_vwgrp_test_subject"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/round_10dp_quiz_view_holder_dark_green_background"
+                android:alpha="0.04"
+                app:layout_constraintTop_toTopOf="@id/vwgrp_test_subject"
+                app:layout_constraintStart_toStartOf="@id/vwgrp_test_subject"
+                app:layout_constraintEnd_toEndOf="@id/vwgrp_test_subject"
+                app:layout_constraintBottom_toBottomOf="@id/vwgrp_test_subject"/>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/vwgrp_test_subject"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="@dimen/common_margin_start"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="@dimen/common_margin_start"
+                android:layout_marginBottom="18dp"
+                android:background="@drawable/round_10dp_white_background"
+                android:elevation="4dp"
+                app:layout_constraintBottom_toTopOf="@+id/vwgrp_input_answer"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txt_total_card_progress_bar"
+                app:layout_constraintVertical_bias="0">
+
+                <ImageView
+                    android:id="@+id/img_bubble_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="13dp"
+                    android:layout_marginEnd="13dp"
+                    android:src="@drawable/image_bubble_icons_red_brown"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingStart="15dp"
+                    android:paddingTop="12dp"
+                    android:paddingEnd="15dp"
+                    android:paddingBottom="12dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:id="@+id/txt_text_answer"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:autoSizeMaxTextSize="24sp"
+                        android:autoSizeMinTextSize="14sp"
+                        android:autoSizeTextType="uniform"
+                        android:fontFamily="@font/seguisb"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:paddingEnd="6dp"
+                        android:text="Answer"
+                        android:textColor="@color/black"
+                        android:textSize="24sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0" />
+
+                    <TextView
+                        android:id="@+id/txt_translation"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:autoSizeMaxTextSize="24sp"
+                        android:autoSizeMinTextSize="14sp"
+                        android:autoSizeTextType="uniform"
+                        android:fontFamily="@font/seguisb"
+                        android:gravity="center"
+                        android:paddingStart="6dp"
+                        android:paddingEnd="6dp"
+                        android:paddingBottom="1dp"
+                        android:text="Translation"
+                        android:textColor="@color/black"
+                        android:textSize="24sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0" />
+
+                    <TextView
+                        android:id="@+id/txt_example_negative_highlight"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:autoSizeMaxTextSize="20sp"
+                        android:autoSizeMinTextSize="14sp"
+                        android:autoSizeTextType="uniform"
+                        android:fontFamily="@font/segoeui"
+                        android:gravity="bottom"
+                        android:text="Negative"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        app:layout_constraintBottom_toBottomOf="@id/txt_test_subject_example"
+                        app:layout_constraintEnd_toEndOf="@id/txt_test_subject_example"
+                        app:layout_constraintStart_toStartOf="@id/txt_test_subject_example"
+                        app:layout_constraintTop_toTopOf="@id/txt_test_subject_example" />
+
+                    <TextView
+                        android:id="@+id/txt_example_positive_highlight"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:autoSizeMaxTextSize="20sp"
+                        android:autoSizeMinTextSize="14sp"
+                        android:autoSizeTextType="uniform"
+                        android:fontFamily="@font/segoeui"
+                        android:gravity="bottom"
+                        android:textSize="20sp"
+                        app:layout_constraintBottom_toBottomOf="@id/txt_test_subject_example"
+                        app:layout_constraintEnd_toEndOf="@id/txt_test_subject_example"
+                        app:layout_constraintStart_toStartOf="@id/txt_test_subject_example"
+                        app:layout_constraintTop_toTopOf="@id/txt_test_subject_example" />
+
+                    <TextView
+                        android:id="@+id/txt_test_subject_example"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginBottom="5dp"
+                        android:autoSizeMaxTextSize="20sp"
+                        android:autoSizeMinTextSize="14sp"
+                        android:autoSizeTextType="uniform"
+                        android:fontFamily="@font/segoeui"
+                        android:gravity="bottom"
+                        android:text="Example"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        app:layout_constraintBottom_toTopOf="@id/horizontal_line"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/horizontal_line"
+                        android:layout_width="0dp"
+                        android:layout_height="0.5dp"
+                        android:layout_marginTop="12dp"
+                        android:background="#464646"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/txt_example_translation"
+                        android:layout_width="338dp"
+                        android:layout_height="121dp"
+                        android:fontFamily="@font/segoeui"
+                        android:text="Example translation"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/horizontal_line" />
+
+                    <ImageView
+                        android:id="@+id/img_test_subject_illustration"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:background="@drawable/round_10dp_white_background"
+                        android:paddingStart="10dp"
+                        android:paddingTop="10dp"
+                        android:paddingEnd="10dp"
+                        android:paddingBottom="10dp"
+                        android:visibility="gone"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:layout_editor_absoluteX="1dp" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/vwgrp_input_answer"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <!--                Writing components-->
+
+                <ImageView
+                    android:id="@+id/btn_clear_answer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:elevation="3dp"
+                    android:scaleX="0.0"
+                    android:scaleY="0.0"
+                    android:src="@drawable/image_button_delete_all_text_blue"
+                    app:layout_constraintBottom_toBottomOf="@+id/edt_input_answer"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/edt_input_answer" />
+
+                <EditText
+                    android:id="@+id/edt_input_answer"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:imeOptions="actionGo"
+                    android:inputType="textNoSuggestions"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="5dp"
+                    android:textColor="@color/black"
+                    android:textCursorDrawable="@drawable/cursor_color"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toStartOf="@id/btn_submit"
+                    app:layout_constraintStart_toEndOf="@id/btn_clear_answer"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <View
+                    android:id="@+id/view_line_under_edt_input"
+                    android:layout_width="0dp"
+                    android:layout_height="0.5dp"
+                    android:alpha="0.07"
+                    android:background="@color/black"
+                    android:scaleX="0.0"
+                   app:layout_constraintStart_toStartOf="@id/edt_input_answer"
+                    app:layout_constraintEnd_toEndOf="@id/edt_input_answer"
+                    app:layout_constraintTop_toBottomOf="@id/edt_input_answer"
+                    />
+
+                <ImageView
+                    android:id="@+id/btn_submit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="14dp"
+                    android:layout_marginBottom="12dp"
+                    android:scaleX="0.0"
+                    android:scaleY="0.0"
+                    android:src="@drawable/image_button_btn_submit_blue"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <androidx.constraintlayout.widget.Group
+                    android:id="@+id/grp_writing_components"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:constraint_referenced_ids="btn_clear_answer,edt_input_answer, btn_submit" />
+
+
+                <!--                Quizes components -->
+
+                <ImageView
+                    android:id="@+id/img_quiz_components_pad_layer"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:alpha="0.2"
+                    android:background="@drawable/background_round_top_47dp_gradient_quiz_title_mint_blue"
+                    app:layout_constraintBottom_toBottomOf="@id/vwgrp_quiz_options"
+                    app:layout_constraintEnd_toEndOf="@id/vwgrp_quiz_options"
+                    app:layout_constraintStart_toStartOf="@id/vwgrp_quiz_options"
+                    app:layout_constraintTop_toTopOf="@id/vwgrp_quiz_options" />
+
+                <LinearLayout
+                    android:id="@+id/vwgrp_quiz_options"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="3dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+
+                    <RelativeLayout
+                        android:id="@+id/vwgrp_answer_a"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/common_margin_start"
+                        android:layout_marginTop="60dp"
+                        android:layout_marginEnd="@dimen/common_margin_end"
+                        android:background="@drawable/background_round_8dp_fresh_mint_blue"
+                        android:elevation="2dp"
+                        android:fontFamily="@font/helvetica_regular">
+
+                        <TextView
+                            android:id="@+id/txt_answer_a"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/helvetica_regular"
+                            android:gravity="center"
+                            android:includeFontPadding="false"
+                            android:paddingTop="13dp"
+                            android:paddingBottom="10dp"
+                            android:textColor="@color/white"
+                            android:textSize="18sp" />
+
+                        <ImageView
+                            android:id="@+id/img_light_answer_a"
+                            android:layout_width="8dp"
+                            android:layout_height="8dp"
+                            android:layout_marginLeft="6dp"
+                            android:layout_marginTop="6dp"
+                            android:background="@drawable/round_15dp_quiz_normal_white"
+                            android:foregroundGravity="top|left" />
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:id="@+id/vwgrp_answer_b"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/common_margin_start"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="@dimen/common_margin_end"
+                        android:background="@drawable/background_round_8dp_fresh_mint_blue"
+                        android:elevation="2dp"
+                        android:fontFamily="@font/helvetica_regular">
+
+                        <TextView
+                            android:id="@+id/txt_answer_b"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/helvetica_regular"
+                            android:gravity="center"
+                            android:includeFontPadding="false"
+                            android:paddingTop="13dp"
+                            android:paddingBottom="10dp"
+                            android:textColor="@color/white"
+                            android:textSize="18sp" />
+
+                        <ImageView
+                            android:id="@+id/img_light_answer_b"
+                            android:layout_width="8dp"
+                            android:layout_height="8dp"
+                            android:layout_marginLeft="6dp"
+                            android:layout_marginTop="6dp"
+                            android:background="@drawable/round_15dp_quiz_normal_white"
+                            android:foregroundGravity="top|left" />
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:id="@+id/vwgrp_answer_c"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/common_margin_start"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="@dimen/common_margin_end"
+                        android:background="@drawable/background_round_8dp_fresh_mint_blue"
+                        android:elevation="2dp"
+                        android:fontFamily="@font/helvetica_regular">
+
+                        <TextView
+                            android:id="@+id/txt_answer_c"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/helvetica_regular"
+                            android:gravity="center"
+                            android:includeFontPadding="false"
+                            android:paddingTop="13dp"
+                            android:paddingBottom="10dp"
+                            android:textColor="@color/white"
+                            android:textSize="18sp" />
+
+                        <ImageView
+                            android:id="@+id/img_light_answer_c"
+                            android:layout_width="8dp"
+                            android:layout_height="8dp"
+                            android:layout_marginLeft="6dp"
+                            android:layout_marginTop="6dp"
+                            android:background="@drawable/round_15dp_quiz_normal_white"
+                            android:foregroundGravity="top|left" />
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:id="@+id/vwgrp_answer_d"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/common_margin_start"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="@dimen/common_margin_end"
+                        android:layout_marginBottom="60dp"
+                        android:background="@drawable/background_round_8dp_fresh_mint_blue"
+                        android:elevation="2dp">
+
+                        <TextView
+                            android:id="@+id/txt_answer_d"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/helvetica_regular"
+                            android:gravity="center"
+                            android:includeFontPadding="false"
+                            android:paddingTop="13dp"
+                            android:paddingBottom="10dp"
+                            android:textColor="@color/white"
+                            android:textSize="18sp" />
+
+                        <ImageView
+                            android:id="@+id/img_light_answer_d"
+                            android:layout_width="8dp"
+                            android:layout_height="8dp"
+                            android:layout_marginLeft="6dp"
+                            android:layout_marginTop="6dp"
+                            android:background="@drawable/round_15dp_quiz_normal_white"
+                            android:foregroundGravity="top|left" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/img_quiz_components_cover_layer"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:alpha="0.2"
+                    android:background="@drawable/background_round_top_47dp_gradient_quiz_title_mint_blue"
+                    app:layout_constraintBottom_toBottomOf="@id/vwgrp_quiz_options"
+                    app:layout_constraintEnd_toEndOf="@id/vwgrp_quiz_options"
+                    app:layout_constraintStart_toStartOf="@id/vwgrp_quiz_options"
+                    app:layout_constraintTop_toTopOf="@id/vwgrp_quiz_options" />
+
+                <androidx.constraintlayout.widget.Group
+                    android:id="@+id/grp_quiz_options"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:constraint_referenced_ids="vwgrp_quiz_options, img_quiz_components_pad_layer, img_quiz_components_cover_layer"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <com.teamttdvlp.memolang.view.customview.MyCustomDialog
+            android:id="@+id/dialog_exit"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:elevation="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <include layout="@layout/support_exit_dialog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+        </com.teamttdvlp.memolang.view.customview.MyCustomDialog>
+
+        <com.teamttdvlp.memolang.view.customview.MyCustomDialog
+            android:id="@+id/dialog_setting"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:elevation="10dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:padding="20dp"
+                android:gravity="center_vertical"
+                android:background="@drawable/round_5dp_white_background"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/image_speaker_black" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/seguisb"
+                        android:text="Speaker"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <Switch
+                        android:id="@+id/switch_speaker"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true" />
+
+                </LinearLayout>
+
+                <RadioGroup
+                    android:id="@+id/radio_grp_speaker_setting"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/checkbox_speak_answer_only"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textSize="16sp"
+                        android:fontFamily="@font/segoeui"
+                        android:textColor="@color/black"
+                        android:gravity="center_vertical"
+                        android:button="@drawable/check_box_circle_background"
+                        android:layoutDirection="rtl"
+                        android:text="Speak answer only"/>
+
+                    <RadioButton
+                        android:id="@+id/checkbox_speak_question_only"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textSize="16sp"
+                        android:fontFamily="@font/segoeui"
+                        android:textColor="@color/black"
+                        android:gravity="center_vertical"
+                        android:button="@drawable/check_box_circle_background"
+                        android:layoutDirection="rtl"
+                        android:text="Speak question only"/>
+
+                    <RadioButton
+                        android:id="@+id/checkbox_speak_both_question_and_answer"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textSize="16sp"
+                        android:fontFamily="@font/segoeui"
+                        android:textColor="@color/black"
+                        android:gravity="center_vertical"
+                        android:button="@drawable/check_box_circle_background"
+                        android:layoutDirection="rtl"
+                        android:text="Speak both question and answer"/>
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+        </com.teamttdvlp.memolang.view.customview.MyCustomDialog>
+
+           ` <LinearLayout
+                android:id="@+id/vwgrp_load_image_progress_bar"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/background_gradient_vertical_app_mint_quiz_flashcard"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:translationZ="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/progress_bar_loading_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:alpha="0.9"
+                    android:src="@drawable/image_load_picture_progress_bar" />
+
+                <TextView
+                    android:id="@+id/txt_loading_illustration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/segoeui"
+                    android:text="Loading illustrations"
+                    android:textColor="#90FFFFFF"
+                    android:textSize="16sp" />
+            </LinearLayout>`
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

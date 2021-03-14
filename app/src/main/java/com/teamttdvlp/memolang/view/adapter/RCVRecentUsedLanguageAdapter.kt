@@ -13,7 +13,7 @@ import kotlin.collections.ArrayList
 
 class RCVRecentUsedLanguageAdapter (context : Context) : RCVChooseLanguageAdapter (context) {
 
-    private val MAX_ROW = 5
+    private val MAX_ROW = 4
 
     fun addLanguage (language : String) {
         if (list.notContains(language)) {

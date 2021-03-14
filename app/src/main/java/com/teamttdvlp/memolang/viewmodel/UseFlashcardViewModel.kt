@@ -6,7 +6,7 @@ import androidx.lifecycle.MutableLiveData
 import com.teamttdvlp.memolang.data.model.entity.flashcard.Deck
 import com.teamttdvlp.memolang.data.model.entity.flashcard.Flashcard
 import com.teamttdvlp.memolang.model.CardListLanguageReverser.Companion.reverse_LIST_Card_TextAndTranslation
-import com.teamttdvlp.memolang.model.CardListManager
+import com.teamttdvlp.memolang.model.CardListPlayer
 import com.teamttdvlp.memolang.model.IllustrationLoader
 import com.teamttdvlp.memolang.model.TextSpeaker
 import com.teamttdvlp.memolang.model.UseFCActivity_StatusManager
@@ -15,30 +15,33 @@ import com.teamttdvlp.memolang.model.UseFCActivity_StatusManager.SpeakerStatus.C
 import com.teamttdvlp.memolang.view.activity.iview.UseFlashcardView
 import com.teamttdvlp.memolang.view.base.BaseViewModel
 import com.teamttdvlp.memolang.view.helper.systemOutLogging
+import com.teamttdvlp.memolang.viewmodel.abstraction.CardPlayableViewModel
+import com.teamttdvlp.memolang.viewmodel.abstraction.CardRelearnableViewModel
+import java.lang.Exception
 
+const val I_REMEMBER_IT = "I rememeber it"
+const val I_FORGET_IT = "I forget it"
 class UseFlashcardViewModel(
     private val context: Application,
     private val illustrationLoader: IllustrationLoader
-) : BaseViewModel<UseFlashcardView>() {
+) : BaseViewModel<UseFlashcardView>(), CardPlayableViewModel, CardRelearnableViewModel {
 
     val currentCard = MutableLiveData<Flashcard>()
 
-    var passedCardCount: Int = 0
-
-    var forgottenCardCount: Int = 0
-
-    val currentCardOrder = MutableLiveData<Int>()
+    private var currentCardOrder : Int = 0
 
     val deckName = MutableLiveData<String>()
 
     var isReversedTextAndTranslation = false
+    private set
 
+    private val cardListPlayer = CardListPlayer()
 
-    private val cardListManager = CardListManager()
+    private val passedCardList = ArrayList<Flashcard>()
 
-    private val allForgottenCardList = ArrayList<Flashcard>()
+    private val forgottenCardList = ArrayList<Flashcard>()
 
-    private val hardCardList = ArrayList<Flashcard>()
+    private val userForgottenCards = ArrayList<Flashcard> ()
 
     private lateinit var deck: Deck
 
@@ -51,11 +54,15 @@ class UseFlashcardViewModel(
     // <Picture Name, Bitmap>
     private var cardIllustrationMap = HashMap<String, Bitmap?>()
 
-    fun setData(fcDeck: Deck, reverseTextAndTrans: Boolean) {
-        val frontLang: String
-        val backLang: String
+    override fun setUpData(fcDeck: Deck, reverseTextAndTrans: Boolean) {
         this.deck = fcDeck
         this.isReversedTextAndTranslation = reverseTextAndTrans
+
+        loadAllCardIllustrations(fcDeck.flashcards)
+        view.onLoadAllIllustrationStart()
+
+        val frontLang: String
+        val backLang: String
         if (reverseTextAndTrans) {
             reverse_LIST_Card_TextAndTranslation(fcDeck.flashcards)
             frontLang = fcDeck.backLanguage.trim()
@@ -65,13 +72,13 @@ class UseFlashcardViewModel(
             backLang = fcDeck.backLanguage.trim()
         }
 
-        cardListManager.setData(fcDeck.flashcards)
+        cardListPlayer.setData(fcDeck.flashcards)
         deckName.value = fcDeck.name
 
         useFCActivityStatusManager = UseFCActivity_StatusManager(context, fcDeck.name)
 
         val textSpokenFirst = if (doesTextNeedSpeakingAtStart()) {
-            cardListManager.getFirstOne().text
+            cardListPlayer.getFirstOne().text
         } else ""
 
         srcLangTextSpeaker = TextSpeaker(context, frontLang, textSpokenFirst)
@@ -79,15 +86,13 @@ class UseFlashcardViewModel(
 
     }
 
-    private fun beginUsing() {
-        val firstCard = cardListManager.getFirstOne()
+    override fun beginUsing() {
+        val firstCard = cardListPlayer.getFirstOne()
         updateCurrentCard(firstCard)
-        currentCardOrder.value = 1
-        passedCardCount = 0
-        forgottenCardCount = 0
+        currentCardOrder = 1
     }
 
-    fun loadAllCardIllustrations(flashcardList: ArrayList<Flashcard>) {
+    override fun loadAllCardIllustrations (flashcardList: ArrayList<Flashcard>) {
         val allPictureList = ArrayList<String>()
         flashcardList.forEach { card ->
             if (card.frontIllustrationPictureName != null) {
@@ -105,22 +110,61 @@ class UseFlashcardViewModel(
         })
     }
 
-    fun moveToNextCard() {
-        val nextCard = cardListManager.focusOnNextCardAndGetIt()
+    override fun submitAnswer (answer : String): Boolean {
+       if (answer == I_REMEMBER_IT)
+            return true
+       else if (answer == I_FORGET_IT){
+           return false
+       }
+        throw Exception ("Must return Remember or Forget")
+    }
+
+    override fun handleUserRememberCard () {
+
+        val userRelearnACard = forgottenCardList.contains(currentCard.value)
+
+        passedCardList.add(currentCard.value!!)
+
+        if (userRelearnACard) {
+            handleUserRelearnCard()
+        }
+
+        view.onPassACard(passedCardList.size, forgottenCardList.size)
+    }
+
+    override fun handleUserForgetCard() {
+        if (forgottenCardList.contains(currentCard.value).not()) {
+            forgottenCardList.add(currentCard.value!!)
+            userForgottenCards.add(currentCard.value!!)
+        }
+        cardListPlayer.handleHardCard()
+        view.onPassACard(passedCardList.size, forgottenCardList.size)
+    }
+
+    override fun handleUserRelearnCard() {
+        forgottenCardList.remove(currentCard.value)
+    }
+
+    override fun nextCard() {
+        val nextCard = cardListPlayer.focusOnNextCardAndGetIt()
         updateCurrentCard(nextCard)
         updateCardOrder()
     }
 
-    fun moveToPreviousCard() {
+    fun previousCard() {
         if (hasPrevious()) {
-            val thePreviousCard = cardListManager.focusOnPrevCardAndGetIt()
+            val thePreviousCard = cardListPlayer.focusOnPrevCardAndGetIt()
             updateCurrentCard(thePreviousCard)
             updateCardOrder()
         }
     }
 
-    fun checkThereIsCardLefts () : Boolean {
-        return cardListManager.hasNext()
+    override fun hasNext () : Boolean {
+        return cardListPlayer.hasNext()
+    }
+
+    private fun hasPrevious () : Boolean {
+        return cardListPlayer.hasPrevious()
     }
 
     fun checkIfThereIsPreviousCard () {
@@ -152,38 +196,16 @@ class UseFlashcardViewModel(
         }
     }
 
-    private fun hasPrevious () : Boolean {
-        return cardListManager.hasPrevious()
-    }
-
-    fun handleEasyCard () {
-        passedCardCount++
-        if (hardCardList.contains(currentCard.value)) {
-            forgottenCardCount--
-            hardCardList.remove(currentCard.value)
-        }
-        view.onPassACard(passedCardCount, forgottenCardCount)
-    }
-
-    fun handleHardCard() {
-        if (hardCardList.contains(cardListManager.getCurrentCard()).not()) {
-            forgottenCardCount++
-            hardCardList.add(cardListManager.getCurrentCard())
-        }
-        cardListManager.handleHardCard()
-        view.onPassACard(passedCardCount, forgottenCardCount)
-    }
-
     private fun updateCardOrder() {
-        currentCardOrder.value = cardListManager.currentIndex + 1
+        currentCardOrder = cardListPlayer.currentIndex + 1
     }
 
-    fun getForgottenCardList(): ArrayList<Flashcard> {
-        return hardCardList
+    override fun getForgottenCardList(): ArrayList<Flashcard> {
+        return userForgottenCards
     }
 
-    fun getCardListSize(): Int {
-        return cardListManager.getSize()
+    override fun getDeckSize(): Int {
+        return cardListPlayer.getSize()
     }
 
 

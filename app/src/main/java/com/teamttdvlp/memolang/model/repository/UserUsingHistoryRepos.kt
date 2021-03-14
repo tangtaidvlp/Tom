@@ -83,7 +83,7 @@ class UserUsingHistoryRepos (database : MemoLangSqliteDataBase) {
         }
     }
 
-    fun addToUsedLanguageList(newLang: String) {
+    fun addToRecent_UsedLanguageList(newLang: String) {
         doOn_UsingHistoryInitialized {
             usedLanguages_Manager.add(newLang)
         }
@@ -95,7 +95,6 @@ class UserUsingHistoryRepos (database : MemoLangSqliteDataBase) {
             UpdateHistoryTask(userUsingHistoryDAO).update(userUsingHistory)
         }
     }
-
 
 
     private fun doOn_UsingHistoryInitialized  (statement: () -> Unit) {

@@ -12,6 +12,10 @@ fun Animator.infiniteRepeat() {
     })
 }
 
+fun ViewPropertyAnimator.reset() : ViewPropertyAnimator{
+    return this.setDuration(0).setStartDelay(0).setInterpolator(null)
+}
+
 fun ViewPropertyAnimator.setLiteListener (
         onRepeat : (animation : Animator?) -> Unit = {},
         onEnd2 : (animation: Animator?, isReverse: Boolean) -> Unit = {_,_ -> },
@@ -47,4 +51,8 @@ fun ViewPropertyAnimator.setLiteListener (
     })
 
     return this
+}
+
+fun ViewPropertyAnimator.clearListeners () {
+    setLiteListener()
 }

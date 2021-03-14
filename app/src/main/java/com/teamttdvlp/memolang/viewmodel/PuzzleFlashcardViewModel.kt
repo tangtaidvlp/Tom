@@ -1,6 +1,7 @@
 package com.teamttdvlp.memolang.viewmodel
 
 import android.app.Application
+import android.graphics.Bitmap
 import androidx.databinding.ObservableField
 import androidx.databinding.ObservableInt
 import com.teamttdvlp.memolang.data.model.entity.flashcard.Deck
@@ -10,11 +11,15 @@ import com.teamttdvlp.memolang.view.activity.iview.ReviewFlashcardEasyView
 import com.teamttdvlp.memolang.view.base.BaseViewModel
 import com.teamttdvlp.memolang.view.helper.notContains
 import com.teamttdvlp.memolang.view.helper.systemOutLogging
+import com.teamttdvlp.memolang.viewmodel.abstraction.CardPlayableViewModel
+import java.lang.Exception
 
 //import com.teamttdvlp.memolang.view.helper.selfPlusOne
 
-class ReviewFlashcardEasyViewModel(var app: Application) :
-    BaseViewModel<ReviewFlashcardEasyView>() {
+class PuzzleFlashcardViewModel (
+    private var app: Application,
+    private val illustrationLoader: IllustrationLoader
+) : BaseViewModel<ReviewFlashcardEasyView>(), CardPlayableViewModel {
 
     val currentPos = ObservableInt()
 
@@ -32,8 +37,6 @@ class ReviewFlashcardEasyViewModel(var app: Application) :
 
     private var cardList: ArrayList<Flashcard> = ArrayList()
 
-    private var cardListRandomer: CardListRandomer = CardListRandomer()
-
     private var missedCardList = ArrayList<Flashcard>()
 
     private lateinit var reviewFCEasyActivity_StatusManager: ReviewActivitiesSpeakerStatusManager
@@ -42,26 +45,45 @@ class ReviewFlashcardEasyViewModel(var app: Application) :
 
     private lateinit var questionTextSpeaker: TextSpeaker
 
-    var reverseLanguages: Boolean = false
+    private val userForgottenCards = ArrayList<Flashcard> ()
+
+
+    /**
+     * String: picture name
+     * Bitmap?: illustrstion content
+     */
+    private val illustrationMap = HashMap<String, Bitmap?>()
+
+    /**
+     * String: picture name
+     * Exception?: load illustration exception
+     */
+    private val load_illustrationExceptionMap = HashMap<String, Exception?>()
+
+
+    var isDeckReversed: Boolean = false
         private set
 
-    fun setUp(deck: Deck, reverseLanguages: Boolean) {
-        this.reverseLanguages = reverseLanguages
+    override fun setUpData (deck: Deck, isDeckReversed: Boolean) {
+        this.isDeckReversed = isDeckReversed
         this.deck = deck
+
+        loadAllCardIllustrations(deck.flashcards)
+        view.onLoadAllIllustrationStart()
 
         // Show to UI by Databinding
         setName.set(deck.name)
         cardLeftCount.set(deck.flashcards.size)
 
         reviewFCEasyActivity_StatusManager =
-            ReviewActivitiesSpeakerStatusManager(app, "", setNameFormat = { setName ->
-                return@ReviewActivitiesSpeakerStatusManager "Easy_Review<$setName>"
+            ReviewActivitiesSpeakerStatusManager(app, "", setNameFormat = { deckName ->
+                return@ReviewActivitiesSpeakerStatusManager "Easy_Review<$deckName>"
             })
 
         val questionLanguage: String
         val answerLanguage: String
 
-        if (reverseLanguages) {
+        if (isDeckReversed) {
             questionLanguage = deck.frontLanguage
             answerLanguage = deck.backLanguage
             CardListLanguageReverser.reverse_LIST_Card_TextAndTranslation(deck.flashcards)
@@ -70,7 +92,7 @@ class ReviewFlashcardEasyViewModel(var app: Application) :
             questionLanguage = deck.backLanguage
         }
 
-        // These statements must be called after #CardListLanguageReverser.reverse_ListCard_TextAndTranslation(flashcardSet.flashcards)
+        // These statements must be called after #CardListLanguageReverser.reverse_ListCard_TextAndTranslation(Deck.flashcards)
         cardList.clear()
         deck.flashcards.shuffle()
         cardList.addAll(deck.flashcards)
@@ -88,19 +110,72 @@ class ReviewFlashcardEasyViewModel(var app: Application) :
         answerTextSpeaker = TextSpeaker(app, answerLanguage.trim())
         questionTextSpeaker = TextSpeaker(app, questionLanguage.trim(), textWhichIsSpokenFirst)
 
-        currentPos.set(0)
-        useCard(currentCard)
-
     }
 
-    fun useCard (card : Flashcard) {
+    override fun beginUsing () {
+        currentPos.set(0)
+        useCard(currentCard)
+    }
+
+    override fun loadAllCardIllustrations(flashcardList: ArrayList<Flashcard>) {
+        val illustrationsNameList = ArrayList<String>()
+        if (isDeckReversed.not()) {
+            flashcardList.forEach { flashcard ->
+                if (isCardValid_In_This_Mode(flashcard)) {
+                    if (flashcard.backIllustrationPictureName != null) {
+                        illustrationsNameList.add(flashcard.backIllustrationPictureName!!)
+                    }
+                }
+            }
+        } else {
+            flashcardList.forEach { flashcard ->
+                if (isCardValid_In_This_Mode(flashcard)) {
+                    if (flashcard.frontIllustrationPictureName != null) {
+                        illustrationsNameList.add(flashcard.frontIllustrationPictureName!!)
+                    }
+                }
+            }
+        }
+
+        illustrationLoader.loadListOfBitmap(illustrationsNameList, onGetResult =  { dataMap, exMap ->
+            this.illustrationMap.putAll(dataMap)
+            systemOutLogging("Map size: " + illustrationMap.size)
+            illustrationMap.forEach {
+                systemOutLogging("Name: " + it.key)
+                systemOutLogging("Value: " + it.value)
+            }
+            beginUsing()
+            view.onLoadAllIllustrationFinish()
+        })
+    }
+
+    private fun isCardValid_In_This_Mode (card : Flashcard) : Boolean {
+
+        val notReverse_But_FrontCard_EmptyText = isDeckReversed.not() && card.text.isEmpty()
+        val reverse_But_BackCard_TextEmpty = isDeckReversed && card.translation.isEmpty()
+
+        if (notReverse_But_FrontCard_EmptyText) {
+            return false
+        } else if (reverse_But_BackCard_TextEmpty) {
+            return false
+        }
+
+        return true
+    }
+
+    private fun useCard (card : Flashcard) {
         val cellOfListType = getCellOfListType(card)
 
         val answerElement = convertAnswerToElements(card.text, cellOfListType)
         val completeAnswerElement = getShuffledElementsAnswer(answerElement)
+        var illustration : Bitmap?
+        var load_illustrationException : Exception?
 
         val useExampleForTestSubject :  Boolean
-        if (reverseLanguages) {
+        if (isDeckReversed) {
+            illustration = illustrationMap.get(card.frontIllustrationPictureName)
+            load_illustrationException = load_illustrationExceptionMap.get(card.frontIllustrationPictureName)
+
             // Reverse for #checkCanUseExampleForTestSubject(card)
             CardListLanguageReverser.reverse_Card_ExampleAndMeanExample(card)
             useExampleForTestSubject = checkCanUseExampleForTestSubject(card)
@@ -108,45 +183,71 @@ class ReviewFlashcardEasyViewModel(var app: Application) :
                 // Reverse again, get it back to normal because example can't be used
                 CardListLanguageReverser.reverse_Card_ExampleAndMeanExample(card)
             }
-        } else {
+        } else { // Normal, not reverse
+            illustration = illustrationMap.get(card.backIllustrationPictureName)
+            load_illustrationException = load_illustrationExceptionMap.get(card.backIllustrationPictureName)
             useExampleForTestSubject = checkCanUseExampleForTestSubject(card)
         }
 
         view.onGetTestSubject(
             testSubject = card,
+            illustration = illustration,
+            load_illustrationException = load_illustrationException,
             ansElements = completeAnswerElement,
             useExampleForTestSubject = useExampleForTestSubject,
             listType = cellOfListType
         )
     }
 
-    fun checkAnswer (userAnswer : String) {
+
+    override fun submitAnswer (userAnswer : String) : Boolean{
         val cardAnswer = currentCard.text
         val answerIsComplete = (userAnswer.length == cardAnswer.length)
         if (answerIsComplete) {
-            if (userAnswer == cardAnswer) {
-                view.performPassBehaviours()
-                cardLeftCount.set(cardList.size - (currentPos.get() + 1))
-//                passedCardCount.selfPlusOne()
+            val CORRECT_ANSWER = (userAnswer == cardAnswer)
+            if (CORRECT_ANSWER) {
+                handleUserRememberCard()
+                return true
             } else {
                 view.perform_INcorrectAnsElemtsOrderAnims()
+                return false
             }
         } else {
             if (cardAnswer.startsWith(userAnswer)) {
                 view.perform_CorrectAnswerElementsOrderBehaviours()
+                return true
             } else {
                 view.perform_INcorrectAnsElemtsOrderAnims()
+                return false
             }
         }
     }
 
-    fun processForgottenCard() {
-        addCurrentCardTo_ListOfForgottenCards()
-        moveCurrentCardToEndOfCardList()
-        missedCardCount.set(missedCardList.size)
+    override fun handleUserRememberCard() {
+        val userRelearnAcard = missedCardList.contains(currentCard)
+        if (userRelearnAcard) {
+            missedCardCount.set(missedCardCount.get() - 1)
+        }
+        passedCardCount.set(passedCardCount.get() + 1)
+        view.onPassACard(passedCardCount.get(), missedCardCount.get())
+        view.performPassBehaviours()
+        cardLeftCount.set(cardList.size - (currentPos.get() + 1))
     }
 
-    fun getFlashcardSize() = cardList.size
+    override fun handleUserForgetCard() {
+        addCurrentCardTo_ListOfForgottenCards()
+        missedCardCount.set(missedCardList.size)
+        view.onPassACard(passedCardCount.get(), missedCardCount.get())
+        view.performNotPassBehaviours()
+    }
+
+    override fun getDeckSize() = deck.flashcards.size
+
+    override fun getForgottenCardList(): ArrayList<Flashcard> {
+
+        return userForgottenCards
+
+    }
 
     private fun addCurrentCardTo_ListOfForgottenCards() {
         if (missedCardList.notContains(currentCard)) {
@@ -154,32 +255,23 @@ class ReviewFlashcardEasyViewModel(var app: Application) :
         }
     }
 
-    private fun moveCurrentCardToEndOfCardList() {
-        cardList.add(currentCard)
-    }
-
-    fun nextCard () {
-//        currentPos.selfPlusOne()
+    override fun nextCard () {
+        currentPos.set(currentPos.get() + 1)
         currentCard = cardList[currentPos.get()]
         useCard(currentCard)
     }
 
-    fun checkIsThereCardLeft () : Boolean {
-        val thereIsCardLeft = currentPos.get() + 1 <= cardList.size - 1
+    override fun hasNext () : Boolean {
+        val thereIsCardLeft = passedCardCount.get() + missedCardCount.get() < cardList.size
         return thereIsCardLeft
     }
 
-
     private val SPECIFIED_CELL_AMOUNT = 15
     private fun getCellOfListType (card : Flashcard) : ReviewFlashcardEasyView.ListOfCellType {
-        systemOutLogging("jkaf: " + card.text)
         if (card.text.trim().contains(" ")) {
-            val clearedAllSpaceText = card.text.replace(" ", "")
-            if (clearedAllSpaceText.length > SPECIFIED_CELL_AMOUNT) {
-                systemOutLogging("Text: $clearedAllSpaceText and Length: ${clearedAllSpaceText.length}")
+            if (card.text.length > SPECIFIED_CELL_AMOUNT) {
                 return ReviewFlashcardEasyView.ListOfCellType.WORD_LIST
             } else { // Text is too short to devide it into words
-                systemOutLogging("Too short length: ${clearedAllSpaceText.length}")
                 return ReviewFlashcardEasyView.ListOfCellType.CHARACTER_LIST
             }
         }
@@ -229,9 +321,9 @@ class ReviewFlashcardEasyViewModel(var app: Application) :
         return missedCardList
     }
 
-    fun getOriginalFlashcardSet(): Deck {
-        if (reverseLanguages) {
-            val cloneFlashcardSet = Deck(
+    fun getOriginalDeck(): Deck {
+        if (isDeckReversed) {
+            val cloneDeck = Deck(
                 this.deck.name,
                 this.deck.frontLanguage,
                 this.deck.backLanguage
@@ -241,9 +333,9 @@ class ReviewFlashcardEasyViewModel(var app: Application) :
                 cloneFlashcardList.add(flashcard.copy())
             }
             CardListLanguageReverser.reverse_LIST_Card_TextAndTranslation(cloneFlashcardList)
-            cloneFlashcardSet.flashcards = cloneFlashcardList
+            cloneDeck.flashcards = cloneFlashcardList
 
-            return cloneFlashcardSet
+            return cloneDeck
         } else {
             // Set is original, not reversed
             return deck
@@ -299,5 +391,6 @@ class ReviewFlashcardEasyViewModel(var app: Application) :
         val speakerIsOn = reviewFCEasyActivity_StatusManager.speakerStatusManager.getStatus()
         return ((speakerFunc == ReviewActivitiesSpeakerStatusManager.SpeakerStatus.SPEAK_ANSWER_ONLY) or (speakerFunc == ReviewActivitiesSpeakerStatusManager.SpeakerStatus.SPEAK_QUESTION_AND_ANSWER)) and speakerIsOn
     }
+
 
 }

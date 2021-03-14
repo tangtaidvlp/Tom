@@ -2,9 +2,7 @@ package com.teamttdvlp.memolang.view.activity.iview
 
 import android.graphics.Bitmap
 
-interface UseFlashcardView : View {
-
-    fun onEndReviewing()
+interface UseFlashcardView : View, CardPlayableView {
 
     fun showSpeakTextError(error: String)
 
@@ -12,11 +10,8 @@ interface UseFlashcardView : View {
 
     fun unlock_ShowPreviousCard_Function()
 
-    fun onPassACard(passedCardCount: Int, forgottenCardCount: Int)
-
     fun onGetFrontIllustration(illustration: Bitmap)
 
     fun onGetBackIllustration(illustration: Bitmap)
 
-    fun onLoadAllIllustrationFinish()
 }

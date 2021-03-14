@@ -4,8 +4,7 @@ import android.content.Context
 import android.os.Bundle
 import android.view.WindowManager
 import android.view.inputmethod.InputMethodManager
-import android.view.inputmethod.InputMethodManager.RESULT_UNCHANGED_SHOWN
-import android.view.inputmethod.InputMethodManager.SHOW_IMPLICIT
+import android.view.inputmethod.InputMethodManager.*
 import androidx.databinding.DataBindingUtil
 import androidx.databinding.ViewDataBinding
 import androidx.fragment.app.FragmentActivity
@@ -22,7 +21,7 @@ abstract class BaseActivity <T : ViewDataBinding, V : ViewModel> : FragmentActiv
     lateinit var viewModel : V
         private set
 
-    private lateinit var imm : InputMethodManager
+    lateinit var imm : InputMethodManager
 
     abstract fun getLayoutId () : Int
 
@@ -67,11 +66,11 @@ abstract class BaseActivity <T : ViewDataBinding, V : ViewModel> : FragmentActiv
         AndroidInjection.inject(this)
     }
 
-    fun hideVirtualKeyboard () {
+    open fun hideVirtualKeyboard () {
         imm.hideSoftInputFromWindow(currentFocus?.windowToken, 0)
     }
 
-    fun showVirtualKeyboard () {
+    open fun showVirtualKeyboard () {
         imm.toggleSoftInput(RESULT_UNCHANGED_SHOWN, SHOW_IMPLICIT)
     }
 

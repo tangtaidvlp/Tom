@@ -4,7 +4,6 @@ import android.animation.ValueAnimator
 import android.annotation.SuppressLint
 import android.app.Activity
 import android.content.Intent
-import android.graphics.Color
 import android.net.Uri
 import android.os.Build
 import android.os.Bundle
@@ -17,7 +16,6 @@ import android.view.animation.Animation
 import android.widget.TextView
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.view.doOnPreDraw
-import androidx.core.view.isVisible
 import androidx.drawerlayout.widget.DrawerLayout
 import com.teamttdvlp.memolang.R
 import com.teamttdvlp.memolang.data.model.entity.flashcard.Deck
@@ -30,7 +28,7 @@ import com.teamttdvlp.memolang.view.adapter.RCVRecentUsedLanguageAdapter
 import com.teamttdvlp.memolang.view.adapter.RCV_FlashcardSetAdapter
 import com.teamttdvlp.memolang.view.base.BaseActivity
 import com.teamttdvlp.memolang.view.customview.AppThemeManager
-import com.teamttdvlp.memolang.view.customview.NormalOutExtraSlowIn
+import com.teamttdvlp.memolang.view.customview.interpolator.NormalOutExtraSlowIn
 import com.teamttdvlp.memolang.view.customview.Theme
 import com.teamttdvlp.memolang.view.customview.floating_library.FloatingAddServiceManager
 import com.teamttdvlp.memolang.view.helper.*
@@ -63,10 +61,11 @@ class MenuActivity : BaseActivity<ActivityMenuBinding, MenuActivityViewModel>(),
     lateinit var rcvBackLangRecentChosenLanguageAdapter: RCVRecentUsedLanguageAdapter
         @Inject set
 
-
-    private var orginalBurgerWidth: Int? = null
-
     private lateinit var floatingQuickAddService: FloatingAddServiceManager
+
+    var BLUE_STATUS_BAR_COLOR : Int = 0
+
+    var DARK_BLUE_STATUS_BAR_COLOR : Int = 0
 
     override fun getLayoutId(): Int {
         return R.layout.activity_menu
@@ -78,16 +77,24 @@ class MenuActivity : BaseActivity<ActivityMenuBinding, MenuActivityViewModel>(),
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        BLUE_STATUS_BAR_COLOR = resources.getColor(R.color.app_blue)
+        DARK_BLUE_STATUS_BAR_COLOR = resources.getColor(R.color.app_blue_with_50_percent_black_cover)
         setStatusBarColor(resources.getColor(R.color.app_blue))
         window.callback.onWindowFocusChanged(true)
         viewModel.setUpView(this)
-        loadFlashcardSet()
+        viewModel.calculateScreenSize()
     }
 
     override fun onStart() {
         super.onStart()
         loadFlashcardSet()
     }
+
+    override fun onStop() {
+        super.onStop()
+        viewModel.saveUserUsingHistoryInfor()
+    }
+
 
     override fun addViewSettings() {
         dB.apply {
@@ -117,14 +124,25 @@ class MenuActivity : BaseActivity<ActivityMenuBinding, MenuActivityViewModel>(),
                     scrollViewMenuButtonsOrginalHeight = scrvMenuButtons.height
                 }
 
-                if (layoutShrinkMenuButtons.root.isVisible) {
-                    (scrvMenuButtons.layoutParams as ConstraintLayout.LayoutParams).topMargin =
-                        scrollViewMenuButtonsOrginalHeight - 115.dp() - 15.dp()
-                } else {
-                    (scrvMenuButtons.layoutParams as ConstraintLayout.LayoutParams).topMargin =
-                        scrollViewMenuButtonsOrginalHeight - 225.dp() - 15.dp()
+                val rcvDeckBottomMargin : Int
+                val menuButtonTopMargin : Int
+                val isMenuShrink = layoutShrinkMenuButtons.root.isVisible()
+
+                if (isMenuShrink) {
+                    val shrinkMenuHeight = 115.dp()
+                    menuButtonTopMargin =  scrollViewMenuButtonsOrginalHeight - shrinkMenuHeight - 15.dp()
+                    rcvDeckBottomMargin = shrinkMenuHeight
                 }
+                else {
+                    val expandedMenuHeight = 225.dp()
+                    menuButtonTopMargin =  scrollViewMenuButtonsOrginalHeight - expandedMenuHeight - 15.dp()
+                    rcvDeckBottomMargin = expandedMenuHeight
+                }
+                (scrvMenuButtons.layoutParams as ConstraintLayout.LayoutParams).topMargin = menuButtonTopMargin
                 scrvMenuButtons.requestLayout()
+
+                (rcvFlashcardSetList.layoutParams as ConstraintLayout.LayoutParams).bottomMargin = rcvDeckBottomMargin
+                rcvFlashcardSetList.requestLayout()
             }
             scrvMenuButtons.isScrollContainer = false
         }
@@ -186,38 +204,80 @@ class MenuActivity : BaseActivity<ActivityMenuBinding, MenuActivityViewModel>(),
 
             addShrinkButtonsMenuEvents()
 
-            flashcardSetAdapter.setOnBtnViewListClickListener {
+            flashcardSetAdapter.setOnBtnViewListClickListener { deck ->
+                if (deck.flashcards.size == 0) {
+                    currentBeingFocusedDeck = deck
+                    showEmptyDeckNotification()
+                    return@setOnBtnViewListClickListener
+                }
                 val intent = Intent(this@MenuActivity, ViewFlashCardListActivity::class.java)
-                intent.putExtra(FLASHCARD_SET_KEY, it)
+                intent.putExtra(FLASHCARD_SET_KEY, deck)
                 startActivityForResult(intent, VIEW_LIST_REQUEST_CODE)
             }
 
-            flashcardSetAdapter.setOnBtnAddClickListener { flashcardSet ->
-                RetrofitAddFlashcardActivity.requestAddLanguage(this@MenuActivity, flashcardSet)
+            flashcardSetAdapter.setOnBtnAddClickListener { deck ->
+                RetrofitAddFlashcardActivity.requestAddLanguage(this@MenuActivity, deck)
             }
 
-            flashcardSetAdapter.setOnBtnUseFlashcardClickListener { flashcardSet ->
+            flashcardSetAdapter.setOnBtnUseFlashcardClickListener { deck ->
+                if (deck.flashcards.size == 0) {
+                    currentBeingFocusedDeck = deck
+                    showEmptyDeckNotification()
+                    return@setOnBtnUseFlashcardClickListener
+                }
                 UseFlashcardActivity.requestReviewFlashcard(
                     this@MenuActivity,
-                    flashcardSet,
+                    deck,
                     reverseCardTextAndTranslation = false
                 )
             }
 
-            flashcardSetAdapter.setOnBtn_GoToWritingActivity_ClickListener { flashcardSet ->
-                ReviewFlashcardActivity.requestReviewFlashcard(
+            flashcardSetAdapter.setOnBtn_GoToWritingActivity_ClickListener { deck ->
+                if (deck.flashcards.size == 0) {
+                    currentBeingFocusedDeck = deck
+                    showEmptyDeckNotification()
+                    return@setOnBtn_GoToWritingActivity_ClickListener
+                }
+                WritingFlashcardActivity.requestReviewFlashcard(
                     this@MenuActivity,
-                    flashcardSet,
+                    deck,
                     reverseCardTextAndTranslation = false
                 )
             }
 
-            flashcardSetAdapter.setOnBtn_GoToPuzzleActivity_ClickListener { flashcardSet ->
-                ReviewFlashcardEasyActivity.requestReviewFlashcard(
+            flashcardSetAdapter.setOnBtn_GoToPuzzleActivity_ClickListener { deck ->
+                if (deck.flashcards.size == 0) {
+                    currentBeingFocusedDeck = deck
+                    showEmptyDeckNotification()
+                    return@setOnBtn_GoToPuzzleActivity_ClickListener
+                }
+                PuzzleFlashcardActivity.requestReviewFlashcard(
                     this@MenuActivity,
-                    flashcardSet,
+                    deck,
                     false
                 )
+            }
+
+            flashcardSetAdapter.setOnBtn_GoToQuizActivity_ClickListener { deck ->
+                if (deck.flashcards.size == 0) {
+                    currentBeingFocusedDeck = deck
+                    showEmptyDeckNotification()
+                    return@setOnBtn_GoToQuizActivity_ClickListener
+                }
+                QuizActivity.requestReviewFlashcard(
+                    this@MenuActivity,
+                    deck,
+                    false
+                )
+            }
+
+            btnEmptyDeckAdd.setOnClickListener {
+                hideEmptyDeckNotification()
+                RetrofitAddFlashcardActivity.requestAddLanguage(this@MenuActivity, currentBeingFocusedDeck!!)
+            }
+
+            imgTurnOffEmptyDeckNotification.setOnClickListener {
+                hideEmptyDeckNotification()
             }
 
             dialogDeleteFlashcardSetName.setOnStartHide {
@@ -226,22 +286,23 @@ class MenuActivity : BaseActivity<ActivityMenuBinding, MenuActivityViewModel>(),
 
             dialogEditFlashcardSetName.setOnStartHide {
                 turnStatusBarToLighterColor(dialogEditFlashcardSetName.getAnimDuration())
+                hideVirtualKeyboard()
             }
 
-            flashcardSetAdapter.setOnBtn_Edit_FlashcardSetClickListener { flashcardSet ->
-                currentBeingFocusedDeck = flashcardSet
-                edtPanelEditSetName.setText(flashcardSet.name)
-                edtPanelEditSetName.setSelection(flashcardSet.name.length)
+            flashcardSetAdapter.setOnBtnEdit_FlashcardSetClickListener { deck ->
+                currentBeingFocusedDeck = deck
+                edtPanelEditSetName.setText(deck.name)
+                edtPanelEditSetName.setSelection(deck.name.length)
                 dialogEditFlashcardSetName.show()
                 turnStatusBarToDarkerColor(dialogEditFlashcardSetName.getAnimDuration())
                 showVirtualKeyboard()
                 edtPanelEditSetName.requestFocus()
             }
 
-            flashcardSetAdapter.setOnBtn_Delete_FlashcardSetClickListener { flashcardSet ->
-                currentBeingFocusedDeck = flashcardSet
+            flashcardSetAdapter.setOnBtnDelete_FlashcardSetClickListener { deck ->
+                currentBeingFocusedDeck = deck
                 txtConfirmDeleteFlashcardSet.setText(
-                    getConfirmText(flashcardSet.name),
+                    getConfirmText(deck.name),
                     TextView.BufferType.SPANNABLE
                 )
                 dialogDeleteFlashcardSetName.show()
@@ -283,15 +344,15 @@ class MenuActivity : BaseActivity<ActivityMenuBinding, MenuActivityViewModel>(),
             // Create new flashcard set
             imgTurnOffCreateNewSet.setOnClickListener {
                 hideCreateNewFlashcardSetPanel()
-                if (vwgrpFrontLangChooseLanguage.isVisible) {
+                if (vwgrpFrontLangChooseLanguage.isVisible()) {
                     hideChooseFrontLanguageList()
                 }
-                if (vwgrpBackLangChooseLanguage.isVisible) {
+                if (vwgrpBackLangChooseLanguage.isVisible()) {
                     hideChooseBackLanguageList()
                 }
             }
 
-            layoutMenuButtons.btnButtonNewSet.setOnClickListener {
+            layoutMenuButtons.btnCreateNewDeck.setOnClickListener {
                 edtNewSetName.setText("")
                 edtNewSetName.requestFocus()
                 edtNewSetFrontLanguage.setText(viewModel.getCurrentUse_FrontLanguage())
@@ -376,8 +437,27 @@ class MenuActivity : BaseActivity<ActivityMenuBinding, MenuActivityViewModel>(),
                 backPressedTimes = 0
                 hideExitDialog()
             }
+
+            invisibleViewStopExitDialog.setOnClickListener {
+                btnCancelExit.performClick()
+            }
         }
     }
+
+    private fun showEmptyDeckNotification() { dB.apply {
+        imgTurnOffEmptyDeckNotification.goVISIBLE()
+        txtDeckEmptyNotification.text = "The deck ${currentBeingFocusedDeck!!.name} is empty"
+        vwgrpUsingEmptyDeckNotification.goVISIBLE()
+        vwgrpUsingEmptyDeckNotification.animate()
+            .scaleX(1f).scaleY(1f)
+            .setDuration(150).setInterpolator(NormalOutExtraSlowIn())
+    }}
+
+    private fun hideEmptyDeckNotification() { dB.apply {
+        imgTurnOffEmptyDeckNotification.goGONE()
+        vwgrpUsingEmptyDeckNotification.scaleX = 0f
+        vwgrpUsingEmptyDeckNotification.scaleY = 0f
+    }}
 
     private var backPressedTimes = 0
 
@@ -395,14 +475,20 @@ class MenuActivity : BaseActivity<ActivityMenuBinding, MenuActivityViewModel>(),
     private fun showExitDialog() {
         dB.apply {
             vwgrpExitDialog.animate().translationY(0f)
-                .setDuration(230).interpolator = NormalOutExtraSlowIn()
+                .setDuration(230).interpolator =
+                NormalOutExtraSlowIn()
+
+            invisibleViewStopExitDialog.goVISIBLE()
         }
     }
 
     private fun hideExitDialog() {
         dB.apply {
             vwgrpExitDialog.animate().translationY(vwgrpExitDialog.height.toFloat() + 5.dp())
-                .setDuration(230).interpolator = NormalOutExtraSlowIn()
+                .setDuration(230).interpolator =
+                NormalOutExtraSlowIn()
+
+            invisibleViewStopExitDialog.goGONE()
         }
     }
 
@@ -525,8 +611,8 @@ class MenuActivity : BaseActivity<ActivityMenuBinding, MenuActivityViewModel>(),
                 layoutMenuButtons.btnDictionary.performClick()
             }
 
-            layoutShrinkMenuButtons.btnButtonNewSet.setOnClickListener {
-                layoutMenuButtons.btnButtonNewSet.performClick()
+            layoutShrinkMenuButtons.btnCreateNewDeck.setOnClickListener {
+                layoutMenuButtons.btnCreateNewDeck.performClick()
             }
 
             layoutShrinkMenuButtons.btnButtonAdd.setOnClickListener {
@@ -581,7 +667,6 @@ class MenuActivity : BaseActivity<ActivityMenuBinding, MenuActivityViewModel>(),
         lighterAnim.apply {
             this.duration = duration
             addUpdateListener {
-                systemOutLogging("Pro: ${it.animatedFraction}")
                 turnStatusBarToDarkerColor(1f - it.animatedFraction)
             }
             setTarget(View(this@MenuActivity))
@@ -589,18 +674,11 @@ class MenuActivity : BaseActivity<ActivityMenuBinding, MenuActivityViewModel>(),
         }
     }
 
-
-    val redOffset = 12 - 22 // -6
-    val greenOffset = 89 - 159 // -46
-    val blueOffset = 102 - 186 // -65
-
     private fun turnStatusBarToDarkerColor(level: Float) {
-        val r = 22 + redOffset * level
-        val g = 159 + greenOffset * level
-        val b = 186 + blueOffset * level
-
-        setStatusBarColor(Color.rgb(r.toInt(), g.toInt(), b.toInt()))
+        val color = getMixedColor(BLUE_STATUS_BAR_COLOR, DARK_BLUE_STATUS_BAR_COLOR, level)
+        setStatusBarColor(color)
     }
+
 
     override fun updateTheme() {
         dB.apply {
@@ -639,6 +717,9 @@ class MenuActivity : BaseActivity<ActivityMenuBinding, MenuActivityViewModel>(),
             edtNewSetFrontLanguage.setText(language)
             hideChooseFrontLanguageList()
             updateEdtNewSetHint()
+            viewModel.addToRecentUsedLanguageList(language)
+            rcvFrontLangRecentChosenLanguageAdapter.addLanguage(language)
+            rcvBackLangRecentChosenLanguageAdapter.addLanguage(language)
         }
     }
 
@@ -649,12 +730,14 @@ class MenuActivity : BaseActivity<ActivityMenuBinding, MenuActivityViewModel>(),
         }
     }
 
-
     private fun onChooseBackLanguage(language: String) {
         dB.apply {
             edtNewSetBackLanguage.setText(language)
             hideChooseBackLanguageList()
             updateEdtNewSetHint()
+            viewModel.addToRecentUsedLanguageList(language)
+            rcvBackLangRecentChosenLanguageAdapter.addLanguage(language)
+            rcvFrontLangRecentChosenLanguageAdapter.addLanguage(language)
         }
     }
 
@@ -748,7 +831,7 @@ class MenuActivity : BaseActivity<ActivityMenuBinding, MenuActivityViewModel>(),
             startFloatingWidgetService()
     }
 
-    private fun loadFlashcardSet () {
+    private fun loadFlashcardSet() {
         viewModel.getAllFlashcardSets_And_CacheIt {
             flashcardSetAdapter.setData(it!!)
             var totalCardCount = 0

@@ -31,7 +31,7 @@ import com.teamttdvlp.memolang.model.UseFCActivity_StatusManager.SpeakerStatus.C
 import com.teamttdvlp.memolang.view.activity.iview.UseFlashcardView
 import com.teamttdvlp.memolang.view.base.BaseActivity
 import com.teamttdvlp.memolang.view.customview.MyGestureDetector
-import com.teamttdvlp.memolang.view.customview.NormalOutExtraSlowIn
+import com.teamttdvlp.memolang.view.customview.interpolator.NormalOutExtraSlowIn
 import com.teamttdvlp.memolang.view.helper.*
 import com.teamttdvlp.memolang.viewmodel.UseFlashcardViewModel
 import javax.inject.Inject
@@ -111,7 +111,7 @@ class UseFlashcardActivity : BaseActivity<ActivityUseFlashcardBinding, UseFlashc
     private var canGoToPreviousCard: Boolean = false
 
     lateinit var viewModelProviderFactory: ViewModelProviderFactory
-        @Inject set
+    @Inject set
 
     var CARD_WIDTH: Int = 0
 
@@ -134,22 +134,25 @@ class UseFlashcardActivity : BaseActivity<ActivityUseFlashcardBinding, UseFlashc
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        setStatusBarColor(Color.parseColor(DARK_BLUE))
 
         dB.lifecycleOwner = this
 
         viewModel.setUpView(this)
 
-        setStatusBarColor(Color.parseColor(DARK_BLUE))
+        setUpData()
 
-        loadAll_CardIllustrations()
-
-        setData()
-
-        dB.txtTotalCardCount.text = viewModel.getCardListSize().toString()
+        dB.txtTotalCardCount.text = viewModel.getDeckSize().toString()
 
         viewModel.currentCard.observe(this, Observer { currentFlashcard ->
             recalculateFlashcard_DimensAndProperty(currentFlashcard)
         })
+    }
+
+    private fun setUpData() {
+        viewModel.setUpData(getRequestedFlashcardSet(), getIsReverseTextAndTranslation())
+        dB.executePendingBindings()
+        setUpSpeakerStatus()
     }
 
     override fun onDestroy() {
@@ -267,8 +270,8 @@ class UseFlashcardActivity : BaseActivity<ActivityUseFlashcardBinding, UseFlashc
                 view.goVISIBLE()
             }
 
-            if (viewModel.checkThereIsCardLefts()) {
-                this@UseFlashcardActivity.viewModel.moveToNextCard()
+            if (viewModel.hasNext()) {
+                this@UseFlashcardActivity.viewModel.nextCard()
 
                 dB.executePendingBindings()
                 if (textIsSpoken and speakerIsOn) {
@@ -287,8 +290,8 @@ class UseFlashcardActivity : BaseActivity<ActivityUseFlashcardBinding, UseFlashc
                 frontView.goVISIBLE()
             }
 
-            if (viewModel.checkThereIsCardLefts()) {
-                this@UseFlashcardActivity.viewModel.moveToNextCard()
+            if (viewModel.hasNext()) {
+                this@UseFlashcardActivity.viewModel.nextCard()
                 dB.executePendingBindings()
                 if (textIsSpoken and speakerIsOn) {
                     viewModel.speakFrontCardText(dB.txtFrontCardText.text.toString())
@@ -301,7 +304,7 @@ class UseFlashcardActivity : BaseActivity<ActivityUseFlashcardBinding, UseFlashc
 
 
         on_PREV_from_FRONT_SIDE_CurrentFrontCardDisappearAnimation.addListener(onEnd = {
-            this@UseFlashcardActivity.viewModel.moveToPreviousCard()
+            this@UseFlashcardActivity.viewModel.previousCard()
             dB.executePendingBindings()
             if (textIsSpoken and speakerIsOn) {
                 viewModel.speakFrontCardText(dB.txtFrontCardText.text.toString())
@@ -327,7 +330,7 @@ class UseFlashcardActivity : BaseActivity<ActivityUseFlashcardBinding, UseFlashc
             viewgroupFrontFlashcard.alpha = 1.0f
             viewgroupFrontFlashcard.translationX = CARD_WIDTH.toFloat()
             this@UseFlashcardActivity.viewModel.checkIfThereIsPreviousCard()
-            this@UseFlashcardActivity.viewModel.moveToPreviousCard()
+            this@UseFlashcardActivity.viewModel.previousCard()
             dB.executePendingBindings()
             if (textIsSpoken and speakerIsOn) {
                 viewModel.speakFrontCardText(dB.txtFrontCardText.text.toString())
@@ -517,13 +520,17 @@ class UseFlashcardActivity : BaseActivity<ActivityUseFlashcardBinding, UseFlashc
         })
 
         btnHard.setOnClickListener {
-            this@UseFlashcardActivity.viewModel.handleHardCard()
+            this@UseFlashcardActivity.viewModel.handleUserForgetCard()
             nextCard(false)
         }
 
         dialogExit.setOnHide {
             resetBackButtonPressedTimes()
             setStatusBarColor(Color.parseColor(DARK_BLUE))
+        }
+
+        dialogExit.setOnStartHide {
+            turnStatusBarToLighterColor(dialogExit.getAnimDuration())
         }
 
         dialogExit.setOnShow {
@@ -581,7 +588,7 @@ class UseFlashcardActivity : BaseActivity<ActivityUseFlashcardBinding, UseFlashc
             }
 
             override fun onSwipeRight() {
-                this@UseFlashcardActivity.viewModel.handleEasyCard()
+                this@UseFlashcardActivity.viewModel.handleUserRememberCard()
                 nextCard(true)
             }
 
@@ -607,11 +614,54 @@ class UseFlashcardActivity : BaseActivity<ActivityUseFlashcardBinding, UseFlashc
     override fun onBackPressed() {
         backButtonPressedTimes++
         if (backButtonPressedTimes == 1) {
-            dB.dialogExit.show()
+            showExitDialog()
         } else if (backButtonPressedTimes == 2) {
             finish()
         }
     }
+
+    private fun showExitDialog() {
+        dB.dialogExit.show()
+        turnStatusBarToDarkerColor(dB.dialogExit.getAnimDuration())
+    }
+
+    private fun turnStatusBarToDarkerColor(duration: Long) {
+        val darkenAnim = ValueAnimator.ofFloat(0f, 1f)
+        darkenAnim.apply {
+            this.duration = duration
+            addUpdateListener {
+                turnStatusBarToDarkerColor(it.animatedFraction)
+            }
+            setTarget(View(this@UseFlashcardActivity))
+            start()
+        }
+    }
+
+    private fun turnStatusBarToLighterColor(duration: Long) {
+        val lighterAnim = ValueAnimator.ofFloat(0f, 1f)
+        lighterAnim.apply {
+            this.duration = duration
+            addUpdateListener {
+                turnStatusBarToDarkerColor(1f - it.animatedFraction)
+            }
+            setTarget(View(this@UseFlashcardActivity))
+            start()
+        }
+    }
+
+
+    val redOffset = 12 - 22 // -6
+    val greenOffset = 89 - 159 // -46
+    val blueOffset = 102 - 186 // -65
+
+    private fun turnStatusBarToDarkerColor(level: Float) {
+        val r = 22 + redOffset * level
+        val g = 159 + greenOffset * level
+        val b = 186 + blueOffset * level
+
+        setStatusBarColor(Color.rgb(r.toInt(), g.toInt(), b.toInt()))
+    }
+
 
     // VIEW PROCESSING
 
@@ -619,7 +669,12 @@ class UseFlashcardActivity : BaseActivity<ActivityUseFlashcardBinding, UseFlashc
         dB.txtPassedCardCount.text = passedCardCount.toString()
         dB.txtForgottenCardCount.text = forgottenCardCount.toString()
 
-        if ((passedCardCount + forgottenCardCount) == viewModel.getCardListSize()) {
+        val userFinishTest = (passedCardCount + forgottenCardCount) == viewModel.getDeckSize()
+        if (userFinishTest) {
+            dB.txtTotalCardCount.animate().alpha(0f).duration = 100
+        }
+
+        if ((passedCardCount + forgottenCardCount) == viewModel.getDeckSize()) {
             dB.txtForgottenCardCount.animate().alpha(0f).duration =
                 COMMON_PROGRESS_BAR_VIEW_DURATION
         }
@@ -629,8 +684,7 @@ class UseFlashcardActivity : BaseActivity<ActivityUseFlashcardBinding, UseFlashc
         val userForgetCard = userRememberCard.not() &&
                 (forgottenCardCount > prevForgottenCardCount)
 
-        val userRelearnCard = (userRememberCard) &&
-                (forgottenCardCount < prevForgottenCardCount)
+        val userRelearnCard = (userRememberCard) && (forgottenCardCount < prevForgottenCardCount)
 
         if (userRememberCard) {
             increasePassedCardProgressBar(passedCardCount)
@@ -650,16 +704,23 @@ class UseFlashcardActivity : BaseActivity<ActivityUseFlashcardBinding, UseFlashc
     }
 
     override fun onGetFrontIllustration(illustration: Bitmap) {
-        systemOutLogging("Front Illustration: $illustration")
         setFront_IllustrationAndAdjustRatio(illustration)
     }
 
     override fun onGetBackIllustration(illustration: Bitmap) {
-        systemOutLogging("Back Illustration: $illustration")
         setBack_IllustrationAndAdjustRatio(illustration)
     }
 
+    override fun onLoadAllIllustrationStart() {
+        rotateForeverAnimation.duration = 1000
+        dB.progressBarLoadingImage.startAnimation(rotateForeverAnimation)
+    }
+
     override fun onLoadAllIllustrationFinish() {
+        hideLoadIllustrationProgressBar()
+    }
+
+    private fun hideLoadIllustrationProgressBar () {
         dB.apply {
             vwgrpLoadImageProgressBar.animate().alpha(0f)
                 .setDuration(100).setInterpolator(NormalOutExtraSlowIn())
@@ -745,7 +806,7 @@ class UseFlashcardActivity : BaseActivity<ActivityUseFlashcardBinding, UseFlashc
                     COMMON_PROGRESS_BAR_VIEW_DURATION
             }
 
-            val aPartWidth = txtTotalCardProgressBar.width / viewModel.getCardListSize()
+            val aPartWidth = txtTotalCardProgressBar.width / viewModel.getDeckSize()
 
             val progrBarCurrentWidth = txtForgottenCardProgressBar.width
             val progrBarTargetWidth = (passedCardCount + forgottenCardCount) * aPartWidth
@@ -766,7 +827,7 @@ class UseFlashcardActivity : BaseActivity<ActivityUseFlashcardBinding, UseFlashc
     private fun increasePassedCardProgressBar(currentCount: Int) {
         dB.apply {
             val progrBarCurrentWidth = txtPassedCardProgressBar.width
-            val aPartWidth = txtTotalCardProgressBar.width / viewModel.getCardListSize()
+            val aPartWidth = txtTotalCardProgressBar.width / viewModel.getDeckSize()
             val progrBarTargetWidth = aPartWidth * currentCount
             val increaseAnim = ValueAnimator.ofInt(progrBarCurrentWidth, progrBarTargetWidth)
             increaseAnim.duration = 500
@@ -825,11 +886,11 @@ class UseFlashcardActivity : BaseActivity<ActivityUseFlashcardBinding, UseFlashc
         )
     }
 
-    private fun getRequestedFlashcardSet(): Deck {
+    override fun getRequestedFlashcardSet(): Deck {
         return intent.extras!!.getSerializable(FLASHCARD_SET_KEY) as Deck
     }
 
-    private fun getIsReverseTextAndTranslation(): Boolean {
+    override  fun getIsReverseTextAndTranslation(): Boolean {
         return intent.extras!!.getBoolean(REVERSE_CARD_TEXT_AND_TRANSLATION, false)
     }
 
@@ -856,18 +917,6 @@ class UseFlashcardActivity : BaseActivity<ActivityUseFlashcardBinding, UseFlashc
                 dB.checkboxSpeakBothTextAndTrans.isChecked = true
             }
         }
-    }
-
-    private fun setData() {
-        viewModel.setData(getRequestedFlashcardSet(), getIsReverseTextAndTranslation())
-        dB.executePendingBindings()
-        setUpSpeakerStatus()
-    }
-
-    private fun loadAll_CardIllustrations() {
-        rotateForeverAnimation.duration = 1000
-        dB.progressBarLoadingImage.startAnimation(rotateForeverAnimation)
-        viewModel.loadAllCardIllustrations(getRequestedFlashcardSet().flashcards)
     }
 
     override fun overrideEnterAnim() {
@@ -1121,7 +1170,6 @@ class UseFlashcardActivity : BaseActivity<ActivityUseFlashcardBinding, UseFlashc
                 textColorChangeAnim.interpolator = LinearInterpolator()
                 textColorChangeAnim.setTarget(txtBackCardTranslation)
                 textColorChangeAnim.addUpdateListener { valueAnim ->
-                    systemOutLogging(valueAnim.animatedFraction * 255f)
                     txtBackCardTranslation.setTextColor(
                         Color.rgb((valueAnim.animatedFraction * 255).toInt(), 3, 0)
                     )
@@ -1131,14 +1179,16 @@ class UseFlashcardActivity : BaseActivity<ActivityUseFlashcardBinding, UseFlashc
             backCardDisappear.apply {
                 duration = 300
                 startDelay = 500
-                interpolator = NormalOutExtraSlowIn()
+                interpolator =
+                    NormalOutExtraSlowIn()
                 setTarget(viewgroupBackFlashcard)
             }
 
             backCardScaleUp.apply {
                 duration = 300
                 startDelay = 500
-                interpolator = NormalOutExtraSlowIn()
+                interpolator =
+                    NormalOutExtraSlowIn()
                 setTarget(viewgroupBackFlashcard)
             }
 

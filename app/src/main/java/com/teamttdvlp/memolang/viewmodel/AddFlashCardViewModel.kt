@@ -21,6 +21,7 @@ class AddFlashCardViewModel(
     private var userUsingHistoryRepos: UserUsingHistoryRepos,
     private var addFlashcardSharedPref: BaseAppInfoSharedPreference,
     private var illustrationLoader: IllustrationLoader
+
 ) : BaseViewModel<AddFlashcardView>() {
 
     private lateinit var userDeckList: ArrayList<Deck>
@@ -149,7 +150,7 @@ class AddFlashCardViewModel(
     }
 
     fun addToUsedLanguageList (language : String) {
-        userUsingHistoryRepos.addToUsedLanguageList(language)
+        userUsingHistoryRepos.addToRecent_UsedLanguageList(language)
     }
 
     fun updateCurrentFrontLang (frontLanguage : String) {

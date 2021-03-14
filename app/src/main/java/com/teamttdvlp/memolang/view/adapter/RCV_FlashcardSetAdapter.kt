@@ -32,6 +32,8 @@ class RCV_FlashcardSetAdapter(
 
     private var onBtnReviewFlashcardHardClickListener: OnItemClickListener? = null
 
+    private var onBtn_QuizFlashcard_ClickListener: OnItemClickListener? = null
+
     private var onBtn_Edit_FlashcardSetClickListener: OnItemClickListener? = null
 
     private var onBtn_Delete_FlashcardSetClickListener: OnItemClickListener? = null
@@ -97,6 +99,10 @@ class RCV_FlashcardSetAdapter(
                     onBtnUseFlashcardClickListener?.onClick(item)
                 }
 
+                dataBinding.vwgrpLearning.setOnClickListener {
+                    onBtn_QuizFlashcard_ClickListener?.onClick(item)
+                }
+
                 // Popups's Events
                 val inflater =
                     getApplicationContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
@@ -125,7 +131,7 @@ class RCV_FlashcardSetAdapter(
     }
 
 
-    fun setOnBtn_Edit_FlashcardSetClickListener(onBtnEditFlashcardListener: (item: Deck) -> Unit) {
+    fun setOnBtnEdit_FlashcardSetClickListener(onBtnEditFlashcardListener: (item: Deck) -> Unit) {
         this.onBtn_Edit_FlashcardSetClickListener = object : OnItemClickListener {
             override fun onClick(item: Deck) {
                 onBtnEditFlashcardListener(item)
@@ -133,7 +139,7 @@ class RCV_FlashcardSetAdapter(
         }
     }
 
-    fun setOnBtn_Delete_FlashcardSetClickListener(onBtnDeleteFlashcardListener: (item: Deck) -> Unit) {
+    fun setOnBtnDelete_FlashcardSetClickListener(onBtnDeleteFlashcardListener: (item: Deck) -> Unit) {
         this.onBtn_Delete_FlashcardSetClickListener = object : OnItemClickListener {
             override fun onClick(item: Deck) {
                 onBtnDeleteFlashcardListener(item)
@@ -145,6 +151,15 @@ class RCV_FlashcardSetAdapter(
         this.onBtnViewListListener = object : OnItemClickListener {
             override fun onClick(item: Deck) {
                 onBtnViewListListener(item)
+            }
+        }
+    }
+
+
+    fun setOnBtn_GoToQuizActivity_ClickListener(onBtnGoToQuizActivityClickListener: (item: Deck) -> Unit) {
+        this.onBtn_QuizFlashcard_ClickListener = object : OnItemClickListener {
+            override fun onClick(item: Deck) {
+                onBtnGoToQuizActivityClickListener(item)
             }
         }
     }
@@ -243,6 +258,7 @@ class RCV_FlashcardSetAdapter(
         list.addAll(originalList)
         notifyDataSetChanged()
     }
+
 
     interface OnItemClickListener {
         fun onClick(item: Deck)

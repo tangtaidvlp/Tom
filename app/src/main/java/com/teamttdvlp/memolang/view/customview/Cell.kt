@@ -28,13 +28,8 @@ class Cell  : AppCompatTextView {
     private var onRestore : ((delayTime : Long) -> Unit)? = null
 
     constructor(context: Context, cellType : Int) : super(context) {
-        if (cellType == INPUT_CELL) {
-            background = context.getDrawable(R.drawable.background_app_round_3dp_gradient_violet)
-            setTextColor(Color.WHITE)
-        } else if (cellType == OUTPUT_CELL) {
-            background = context.getDrawable(R.drawable.round_3dp_white_background)
-            setTextColor(Color.parseColor("#583500"))
-        }
+            background = context.getDrawable(R.drawable.background_app_round_1dp_app_puzzle_yellow)
+            setTextColor(Color.BLACK)
     }
 
     constructor(context: Context, attrSet: AttributeSet?) : super(context, attrSet)
@@ -48,10 +43,11 @@ class Cell  : AppCompatTextView {
     }
 
     fun performDestroyAnimate(appearDirection: Int): ViewPropertyAnimator {
-        val destinationY = if (appearDirection == DIRECTION_UP) {
-            layoutParams.height * -1f
+        val destinationY : Float
+        if (appearDirection == DIRECTION_UP) {
+            destinationY = layoutParams.height * -1f
         } else if (appearDirection == DIRECTION_DOWN) {
-            layoutParams.height * 1f
+            destinationY = layoutParams.height * 1f
         } else throw Exception("DIRECTION NOT FOUND $appearDirection")
 
         return animate().translationY(destinationY).alpha(0f)
@@ -75,8 +71,8 @@ class Cell  : AppCompatTextView {
     }
 
     init {
-        elevation = 3.dp().toFloat()
-        setTextSize(SP, 20f)
+        elevation = 1.dp().toFloat()
+        setTextSize(SP, 17f)
         gravity = Gravity.CENTER
     }
 

@@ -8,7 +8,6 @@
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
-
     <application
         android:name=".di.MemoLang"
         android:allowBackup="true"
@@ -22,7 +21,6 @@
             android:name=".view.customview.floating_library.FloatingAddServiceManager$FloatAddService"
             android:enabled="true"
             android:exported="true" />
-
 
         <meta-data
             android:name="com.facebook.sdk.ApplicationId"
@@ -44,9 +42,11 @@
                 <data android:scheme="@string/fb_login_protocol_scheme" />
             </intent-filter>
         </activity>
+        <activity android:name=".view.activity.QuizActivity"
+            android:windowSoftInputMode="adjustResize"/>
         <activity
-            android:name=".view.activity.ReviewFlashcardActivity"
-            android:windowSoftInputMode="stateAlwaysVisible" />
+            android:name=".view.activity.WritingFlashcardActivity"
+            android:windowSoftInputMode="adjustResize" />
         <activity android:name=".view.activity.EngVietDictionaryActivity" />
         <activity android:name=".view.activity.SearchEngVNDictionaryActivity" />
         <activity android:name=".view.activity.ViewFlashcardSetActivity" />
@@ -61,7 +61,7 @@
         <activity android:name=".view.activity.SearchOnlineActivity" />
         <activity android:name=".view.activity.ResultReportActivity" />
         <activity android:name=".view.activity.UseFlashcardActivity" />
-        <activity android:name=".view.activity.ReviewFlashcardEasyActivity" />
+        <activity android:name=".view.activity.PuzzleFlashcardActivity" />
         <activity android:name=".view.activity.SetUpAccountActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

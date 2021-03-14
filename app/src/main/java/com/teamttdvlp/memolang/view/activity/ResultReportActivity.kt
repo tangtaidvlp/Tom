@@ -15,7 +15,7 @@ import com.teamttdvlp.memolang.databinding.ActivityUseFlashcardDoneBinding
 import com.teamttdvlp.memolang.view.activity.iview.UseFlashcardDoneView
 import com.teamttdvlp.memolang.view.adapter.RCVRecent_Search_FlashcardAdapter
 import com.teamttdvlp.memolang.view.base.BaseActivity
-import com.teamttdvlp.memolang.view.customview.NormalOutExtraSlowIn
+import com.teamttdvlp.memolang.view.customview.interpolator.NormalOutExtraSlowIn
 import com.teamttdvlp.memolang.view.helper.*
 import com.teamttdvlp.memolang.viewmodel.UseFlashcardDoneViewModel
 import kotlin.math.roundToInt
@@ -179,7 +179,8 @@ class ResultReportActivity :
 
     private fun playGetMaxScoreAnimation(startDelay: Long = 0, duration: Long = 150) {
         dB.imageCircleGreenBehindCircleScoreReport.animate().alpha(0f).scaleX(1.32f).scaleY(1.32f)
-            .setDuration(duration).setStartDelay(startDelay).interpolator = NormalOutExtraSlowIn()
+            .setDuration(duration).setStartDelay(startDelay).interpolator =
+            NormalOutExtraSlowIn()
     }
 
     private fun showCenterButtons(startDelay: Long = 0) {
@@ -286,7 +287,7 @@ class ResultReportActivity :
             }
 
             FlashcardSendableActivity.REVIEW_FLASHCARD_ACTIVITY -> {
-                ReviewFlashcardActivity.requestReviewFlashcard(
+                WritingFlashcardActivity.requestReviewFlashcard(
                     this@ResultReportActivity,
                     deck,
                     reverseCardTextAndTranslation = false
@@ -294,7 +295,7 @@ class ResultReportActivity :
             }
 
             FlashcardSendableActivity.REVIEW_FLASHCARD_EASY_ACTIVITY -> {
-                ReviewFlashcardEasyActivity.requestReviewFlashcard(
+                PuzzleFlashcardActivity.requestReviewFlashcard(
                     this@ResultReportActivity,
                     deck,
                     reverseCardTextAndTranslation = false
@@ -305,7 +306,7 @@ class ResultReportActivity :
     }
 
     private fun goToPuzzleActivity() {
-        ReviewFlashcardEasyActivity.requestReviewFlashcard(
+        PuzzleFlashcardActivity.requestReviewFlashcard(
             this@ResultReportActivity,
             getFullFlashcardSet(),
             reverseCardTextAndTranslation = false
@@ -314,7 +315,7 @@ class ResultReportActivity :
     }
 
     private fun goToWritingFlashcardActivity() {
-        ReviewFlashcardActivity.requestReviewFlashcard(
+        WritingFlashcardActivity.requestReviewFlashcard(
             this@ResultReportActivity,
             getFullFlashcardSet(),
             reverseCardTextAndTranslation = false

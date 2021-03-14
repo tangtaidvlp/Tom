@@ -75,7 +75,7 @@ class SetUpAccountViewModel(
     }
 
     private fun addToUser_UsedLanguageList(language: String) {
-        userUsingHistoryRepos.addToUsedLanguageList(language)
+        userUsingHistoryRepos.addToRecent_UsedLanguageList(language)
     }
 
     private fun saveAll_Information() {

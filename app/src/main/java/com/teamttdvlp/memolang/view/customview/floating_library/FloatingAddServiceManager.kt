@@ -64,7 +64,7 @@ import com.teamttdvlp.memolang.view.activity.iview.FloatAddServiceView
 import com.teamttdvlp.memolang.view.adapter.RCVRecent_SearchDictionary_Adapter
 import com.teamttdvlp.memolang.view.adapter.RCVSearchDictionaryAdapter
 import com.teamttdvlp.memolang.view.adapter.RCVSimpleListChooseSetNameAdapter
-import com.teamttdvlp.memolang.view.customview.StuckAtFirstInterpolator
+import com.teamttdvlp.memolang.view.customview.interpolator.StuckAtFirstInterpolator
 import com.teamttdvlp.memolang.view.customview.see_vocabulary.Vocabulary_ExampleTranslation_View
 import com.teamttdvlp.memolang.view.customview.vocabulary_info.Vocabulary_Mean_TextView
 import com.teamttdvlp.memolang.view.customview.vocabulary_info.Vocabulary_Type_TextView
@@ -1142,7 +1142,8 @@ class FloatingAddServiceManager private constructor(
                 }
             }
             anim.duration = DELETE_MOVE_ANIM_DURATION * 3
-            anim.interpolator = StuckAtFirstInterpolator()
+            anim.interpolator =
+                StuckAtFirstInterpolator()
             anim.addListener (onStart = {
                 iconIsBeingMovedByAnimator = true
             }, onEnd = {

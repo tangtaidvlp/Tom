@@ -5,7 +5,7 @@ import androidx.room.OnConflictStrategy.REPLACE
 import com.teamttdvlp.memolang.data.model.entity.flashcard.Flashcard
 
 @Dao
-abstract class FlashcardDAO {
+abstract class  FlashcardDAO {
 
     @Insert(onConflict = REPLACE)
     abstract fun insertNewCard(card: Flashcard): Long

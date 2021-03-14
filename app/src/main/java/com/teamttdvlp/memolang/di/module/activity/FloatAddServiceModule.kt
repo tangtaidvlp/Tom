@@ -3,6 +3,7 @@ package com.teamttdvlp.memolang.di.module.activity
 import com.teamttdvlp.memolang.data.model.entity.flashcard.Deck
 import com.teamttdvlp.memolang.data.model.other.new_vocabulary.SingleMeanExample
 import com.teamttdvlp.memolang.di.MemoLang
+import com.teamttdvlp.memolang.model.EngVietVocabularyLoader
 import com.teamttdvlp.memolang.view.adapter.*
 import dagger.Module
 import dagger.Provides
@@ -28,8 +29,8 @@ class FloatAddServiceModule {
     }
 
     @Provides
-    fun provideRCVDictionaryAdapter (context : MemoLang) : RCVSearchDictionaryAdapter {
-        return RCVSearchDictionaryAdapter(context)
+    fun provideRCVDictionaryAdapter (context : MemoLang, engVietVocabularyLoader: EngVietVocabularyLoader) : RCVSearchDictionaryAdapter {
+        return RCVSearchDictionaryAdapter(context, engVietVocabularyLoader)
     }
 
     @Provides

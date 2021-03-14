@@ -99,7 +99,7 @@
             app:layout_constraintStart_toStartOf="@+id/btn_dictionary" />
 
         <ImageView
-            android:id="@+id/btn_button_new_set"
+            android:id="@+id/btn_create_new_deck"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:background="@drawable/image_button_new_set"
@@ -118,8 +118,8 @@
             android:text="New set"
             android:textSize="12sp"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="@+id/btn_button_new_set"
-            app:layout_constraintStart_toStartOf="@+id/btn_button_new_set" />
+            app:layout_constraintEnd_toEndOf="@+id/btn_create_new_deck"
+            app:layout_constraintStart_toStartOf="@+id/btn_create_new_deck" />
 
         <ImageView
             android:id="@+id/btn_button_add"
@@ -129,7 +129,7 @@
             android:background="@drawable/image_button_blue_add"
             app:layout_constraintBottom_toBottomOf="@+id/txt_add_new_set"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/btn_button_new_set" />
+            app:layout_constraintTop_toTopOf="@+id/btn_create_new_deck" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

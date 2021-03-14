@@ -1,4 +1,4 @@
-package com.teamttdvlp.memolang.view.customview
+package com.teamttdvlp.memolang.view.customview.interpolator
 
 import android.view.animation.DecelerateInterpolator
 import android.view.animation.Interpolator

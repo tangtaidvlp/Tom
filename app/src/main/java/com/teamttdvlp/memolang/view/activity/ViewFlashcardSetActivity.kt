@@ -93,7 +93,7 @@ class ViewFlashcardSetActivity : BaseActivity<ActivityViewFlashcardSetBinding, V
         }
 
         flashcardSetAdapter.setOnBtn_GoToWritingActivity_ClickListener { flashcardSet ->
-            ReviewFlashcardActivity.requestReviewFlashcard(
+            WritingFlashcardActivity.requestReviewFlashcard(
                 this@ViewFlashcardSetActivity,
                 flashcardSet,
                 reverseCardTextAndTranslation = false
@@ -101,7 +101,7 @@ class ViewFlashcardSetActivity : BaseActivity<ActivityViewFlashcardSetBinding, V
         }
 
         flashcardSetAdapter.setOnBtn_GoToPuzzleActivity_ClickListener { flashcardSet ->
-            ReviewFlashcardEasyActivity.requestReviewFlashcard(
+            PuzzleFlashcardActivity.requestReviewFlashcard(
                 this@ViewFlashcardSetActivity,
                 flashcardSet,
                 false

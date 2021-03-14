@@ -7,7 +7,6 @@ import android.view.MotionEvent
 import android.view.View
 import com.teamttdvlp.memolang.view.helper.dp
 import kotlin.math.absoluteValue
-
 open class MyGestureDetector :  View.OnTouchListener {
 
     val gestureDetector : GestureDetector
@@ -68,7 +67,8 @@ open class MyGestureDetector :  View.OnTouchListener {
                     onSwipeLeft()
                 }
             } catch (ex : Exception) {
-                Log.e("Error", ex.message)
+//                Log.e("Error", ex.message)
+                ex.printStackTrace()
             }
 
             return result

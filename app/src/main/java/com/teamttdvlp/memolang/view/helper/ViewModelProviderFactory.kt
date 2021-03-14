@@ -4,12 +4,10 @@ import android.app.Application
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import com.teamttdvlp.memolang.model.AddFlashcardExecutor
+import com.teamttdvlp.memolang.model.EngVietVocabularyLoader
 import com.teamttdvlp.memolang.model.IllustrationLoader
 import com.teamttdvlp.memolang.model.UserInfoStatusSharedPreference
-import com.teamttdvlp.memolang.model.repository.FlashcardRepos
-import com.teamttdvlp.memolang.model.repository.FlashcardSetRepos
-import com.teamttdvlp.memolang.model.repository.UserRepos
-import com.teamttdvlp.memolang.model.repository.UserUsingHistoryRepos
+import com.teamttdvlp.memolang.model.repository.*
 import com.teamttdvlp.memolang.model.sharepref.AddFlashcardActivitySharePref
 import com.teamttdvlp.memolang.model.sharepref.EngVietDictionaryActivitySharePref
 import com.teamttdvlp.memolang.model.sharepref.SearchOnlineActivitySharePref
@@ -24,6 +22,7 @@ constructor(
     private var application: Application,
     private var userRepos: DaggerLazy<UserRepos>,
     private var flashcardRepos: DaggerLazy<FlashcardRepos>,
+    private var cardQuizInforRepos: DaggerLazy<CardQuizInforRepos>,
     private var flashcardSet_Repos: DaggerLazy<FlashcardSetRepos>,
     private var addFlashcardExecutor: DaggerLazy<AddFlashcardExecutor>,
     private val userUsingHistoryRepos: DaggerLazy<UserUsingHistoryRepos>,
@@ -31,6 +30,7 @@ constructor(
     private var addFlashcardSharedPreference: DaggerLazy<AddFlashcardActivitySharePref>,
     private var searchOnlineSharedPreference: DaggerLazy<SearchOnlineActivitySharePref>,
     private var engVietOnlineSharedPreference: DaggerLazy<EngVietDictionaryActivitySharePref>,
+    private var engVietVocabularyLoader: DaggerLazy<EngVietVocabularyLoader>,
     private var illustrationLoader: IllustrationLoader
 ) : ViewModelProvider.NewInstanceFactory() {
 
@@ -62,12 +62,12 @@ constructor(
             ) as T
         }
 
-        if (modelClass.isAssignableFrom(ReviewFlashcardEasyViewModel::class.java)) {
-            return ReviewFlashcardEasyViewModel(application) as T
+        if (modelClass.isAssignableFrom(PuzzleFlashcardViewModel::class.java)) {
+            return PuzzleFlashcardViewModel(application, illustrationLoader) as T
         }
 
-        if (modelClass.isAssignableFrom(ReviewFlashcardViewModel::class.java)) {
-            return ReviewFlashcardViewModel(application) as T
+        if (modelClass.isAssignableFrom(WritingFlashcardViewModel::class.java)) {
+            return WritingFlashcardViewModel(application, illustrationLoader) as T
         }
 
         if (modelClass.isAssignableFrom(SearchEngVNDictionaryViewModel::class.java)) {
@@ -117,6 +117,10 @@ constructor(
 
         if (modelClass.isAssignableFrom(ViewFlashCardListViewModel::class.java)) {
             return ViewFlashCardListViewModel(application, flashcardRepos.get()) as T
+        }
+
+        if (modelClass.isAssignableFrom(QuizActivityViewModel::class.java)) {
+            return QuizActivityViewModel(illustrationLoader, cardQuizInforRepos.get(), engVietVocabularyLoader.get()) as T
         }
 
         throw Exception ("ViewModelProviderFactory (Unknown viewModel): ${modelClass.simpleName}")

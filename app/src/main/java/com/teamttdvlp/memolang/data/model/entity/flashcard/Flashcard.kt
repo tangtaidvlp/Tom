@@ -1,13 +1,11 @@
 package com.teamttdvlp.memolang.data.model.entity.flashcard
 
 import androidx.annotation.NonNull
-import androidx.room.Embedded
-import androidx.room.Entity
-import androidx.room.PrimaryKey
+import androidx.room.*
 import com.teamttdvlp.memolang.view.helper.systemOutLogging
 import java.io.Serializable
 
-@Entity(tableName = "flashcard")
+@Entity(tableName = "flashcard", foreignKeys = arrayOf(ForeignKey(entity = Deck::class, parentColumns = arrayOf("setName"), childColumns = arrayOf("setOwner"))))
 data class Flashcard (
 
     @PrimaryKey(autoGenerate = true)
@@ -43,6 +41,14 @@ data class Flashcard (
     var frontIllustrationPictureName: String? = null
 
     var backIllustrationPictureName: String? = null
+
+    override fun equals(other: Any?): Boolean {
+        if ((other is Flashcard).not() || other == null) {
+            return false
+        }
+
+        return (other as Flashcard).id.equals(id)
+    }
 
     init {
         text = text.trim()

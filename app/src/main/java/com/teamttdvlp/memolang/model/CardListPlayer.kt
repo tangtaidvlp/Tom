@@ -2,7 +2,7 @@ package com.teamttdvlp.memolang.model
 
 import com.teamttdvlp.memolang.data.model.entity.flashcard.Flashcard
 
-class CardListManager {
+class CardListPlayer {
 
     var cardList : ArrayList<Flashcard> = ArrayList()
 

@@ -2,11 +2,14 @@ package com.teamttdvlp.memolang.view.activity
 
 import android.animation.Animator
 import android.animation.AnimatorSet
+import android.graphics.Color
 import android.os.Bundle
 import android.view.View
+import android.view.WindowManager
 import android.widget.TextView
 import androidx.core.animation.addListener
 import com.teamttdvlp.memolang.R
+import com.teamttdvlp.memolang.data.model.entity.language.Language
 import com.teamttdvlp.memolang.databinding.ActivitySetUpAccountBinding
 import com.teamttdvlp.memolang.view.activity.iview.SetUpAccountView
 import com.teamttdvlp.memolang.view.adapter.RCVChooseLanguageAdapter
@@ -20,7 +23,7 @@ import javax.inject.Inject
 import javax.inject.Named
 
 class SetUpAccountActivity : BaseActivity<ActivitySetUpAccountBinding, SetUpAccountViewModel>()
-                            ,SetUpAccountView{
+                            ,SetUpAccountView {
 
     lateinit var viewModelProviderFactory: ViewModelProviderFactory
     @Inject set
@@ -43,13 +46,17 @@ class SetUpAccountActivity : BaseActivity<ActivitySetUpAccountBinding, SetUpAcco
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        window.addFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS)
         viewModel.setUpView(this)
         viewModel.checkUserInfoSetUpStatus()
+        setStatusBarColor(Color.parseColor("#301F889B"))
+
     }
 
     override fun addViewSettings() {
         dB.apply {
             layoutChooseLang.rcvChooseLanguage.adapter = rcvChooseLanguageAdapter
+            rcvChooseLanguageAdapter.setData(Language.languageList)
         }
     }
 

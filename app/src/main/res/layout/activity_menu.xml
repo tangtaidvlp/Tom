@@ -54,6 +54,7 @@
                 android:contextClickable="false"
                 android:longClickable="false"
                 android:orientation="vertical"
+                android:background="@android:color/transparent"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -111,6 +112,7 @@
                     android:background="@android:color/transparent"
                     android:fontFamily="@font/seguisb"
                     android:hint="Sets collection"
+                    android:text="Helllo"
                     android:textColorHint="@color/search_bar_hint"
                     android:textSize="16sp" />
 
@@ -436,7 +438,7 @@
 
                 <TextView
                     android:id="@+id/txt_background_center_language_devider_line"
-                    android:layout_width="1dp"
+                    android:layout_width="0.5dp"
                     android:layout_height="0dp"
                     android:layout_marginTop="8dp"
                     android:layout_marginBottom="2dp"
@@ -660,6 +662,84 @@
 
             </androidx.appcompat.widget.LinearLayoutCompat>
 
+            <View
+                android:id="@+id/img_turn_off_empty_deck_notification"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:visibility="gone"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <LinearLayout
+                android:id="@+id/vwgrp_using_empty_deck_notification"
+                android:layout_width="0dp"
+                android:layout_height="200dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:visibility="gone"
+                android:scaleX="0"
+                android:scaleY="0"
+                android:gravity="right"
+                android:background="@drawable/round_15dp_app_blue_background"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="200dp"
+                    android:layout_weight="1"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_marginEnd="20dp"
+                    android:gravity="right"
+                    android:background="@drawable/round_15dp_app_blue_background"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_deck_empty_notification"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="The deck is empty"
+                        android:textSize="22sp"
+                        android:layout_weight="1"
+                        android:textColor="@color/white"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="21dp"
+                        android:layout_marginStart="22dp"/>
+
+                    <ImageView
+                        android:id="@+id/btn_empty_deck_add"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:src="@drawable/image_button_white_add"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="35dp"
+                    android:layout_marginBottom="20dp"
+                    android:alpha="0.6"
+                    android:background="@color/white"/>
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/invisible_view_stop_exit_dialog"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"/>
+
             <LinearLayout
                 android:id="@+id/vwgrp_exit_dialog"
                 android:layout_width="0dp"
@@ -708,7 +788,6 @@
             </LinearLayout>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
-
 
         <com.google.android.material.navigation.NavigationView
             android:id="@+id/nav_view"

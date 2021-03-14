@@ -2,6 +2,7 @@ package com.teamttdvlp.memolang.view.activity
 
 import android.animation.Animator
 import android.animation.AnimatorSet
+import android.graphics.Color
 import android.os.Bundle
 import android.util.Log
 import android.view.inputmethod.EditorInfo
@@ -21,7 +22,7 @@ import com.teamttdvlp.memolang.databinding.ActivityEngVietDictionaryBinding
 import com.teamttdvlp.memolang.view.activity.iview.SeeVocabularyView
 import com.teamttdvlp.memolang.view.adapter.*
 import com.teamttdvlp.memolang.view.base.BaseActivity
-import com.teamttdvlp.memolang.view.customview.NormalOutExtraSlowIn
+import com.teamttdvlp.memolang.view.customview.interpolator.NormalOutExtraSlowIn
 import com.teamttdvlp.memolang.view.customview.see_vocabulary.Vocabulary_ExampleTranslation_View
 import com.teamttdvlp.memolang.view.customview.vocabulary_info.Vocabulary_Example_View
 import com.teamttdvlp.memolang.view.customview.vocabulary_info.Vocabulary_Mean_TextView
@@ -94,7 +95,8 @@ class EngVietDictionaryActivity :
             dB.rcvDictionary.goVISIBLE()
             dB.rcvDictionary.alpha = 0f
             dB.rcvDictionary.animate().alpha(1f)
-                .setDuration(100).interpolator = NormalOutExtraSlowIn()
+                .setDuration(100).interpolator =
+                NormalOutExtraSlowIn()
         }
     }
 
@@ -129,8 +131,8 @@ class EngVietDictionaryActivity :
         // SEARCH dictionary
         dB.rcvDictionary.adapter = rcvSearchDictionaryAdapter
         dB.rcvRecentSearchDic.adapter = rcvRecentSearchDicAdapter
-        rcvSearchDictionaryAdapter.textColor = resources.getColor(R.color.app_blue)
-        rcvRecentSearchDicAdapter.textColor = resources.getColor(R.color.app_blue)
+        rcvSearchDictionaryAdapter.textColor = Color.parseColor("#108FA7")
+        rcvRecentSearchDicAdapter.textColor = Color.parseColor("#108FA7")
 
         viewModel.getAll_RecentSearchedVocaList {
             rcvRecentSearchDicAdapter.setData(it)

@@ -1,5 +1,10 @@
 package com.teamttdvlp.memolang.viewmodel
 
+import android.R
+import android.content.res.Resources
+import android.util.DisplayMetrics
+import android.util.FloatMath
+import android.widget.TextView
 import com.teamttdvlp.memolang.data.model.entity.flashcard.Deck
 import com.teamttdvlp.memolang.data.model.entity.flashcard.Flashcard
 import com.teamttdvlp.memolang.model.repository.FlashcardRepos
@@ -11,6 +16,8 @@ import com.teamttdvlp.memolang.model.sharepref.SearchOnlineActivitySharePref
 import com.teamttdvlp.memolang.view.activity.iview.MenuView
 import com.teamttdvlp.memolang.view.base.BaseViewModel
 import com.teamttdvlp.memolang.view.helper.systemOutLogging
+import java.lang.Math.sqrt
+
 
 class MenuActivityViewModel(
     private var flashcardSetRepos: FlashcardSetRepos,
@@ -142,6 +149,23 @@ class MenuActivityViewModel(
 
     fun getUsedLanguageList(onGet: (ArrayList<String>) -> Unit) {
         userUsingHistoryRepos.getUsedLanguage(onGet)
+    }
+
+    fun addToRecentUsedLanguageList (language : String) {
+        userUsingHistoryRepos.addToRecent_UsedLanguageList(language)
+    }
+
+    fun saveUserUsingHistoryInfor () {
+        userUsingHistoryRepos.saveUsingHistoryInfo()
+    }
+
+    fun calculateScreenSize() {
+        val metrics = Resources.getSystem().displayMetrics
+
+        val height = metrics.heightPixels / metrics.xdpi
+        val width = metrics.widthPixels / metrics.ydpi
+
+        systemOutLogging("Diagonal line: " + Math.sqrt((height.toDouble() * height.toDouble() + width.toDouble() * width.toDouble())))
     }
 
 }
