@@ -4,17 +4,18 @@ import android.graphics.Bitmap
 import com.teamttdvlp.memolang.data.model.entity.flashcard.CardQuizInfor
 import com.teamttdvlp.memolang.data.model.entity.flashcard.Deck
 import com.teamttdvlp.memolang.data.model.entity.flashcard.Flashcard
+import com.teamttdvlp.memolang.data.model.other.new_vocabulary.RawVocabulary
 import com.teamttdvlp.memolang.model.*
 import com.teamttdvlp.memolang.model.repository.CardQuizInforRepos
 import com.teamttdvlp.memolang.view.activity.iview.QuizView
 import com.teamttdvlp.memolang.view.base.BaseViewModel
-import com.teamttdvlp.memolang.view.helper.systemOutLogging
 import com.teamttdvlp.memolang.viewmodel.abstraction.CardPlayableViewModel
 import com.teamttdvlp.memolang.viewmodel.abstraction.CardRelearnableViewModel
 import java.lang.Exception
 import java.util.*
 import kotlin.collections.ArrayList
 import kotlin.collections.HashMap
+import kotlin.collections.HashSet
 
 class QuizActivityViewModel (
     private val illustrationLoader: IllustrationLoader,
@@ -32,8 +33,6 @@ class QuizActivityViewModel (
     private var passedCardCount = 0
 
     private var currentPos = 0
-
-    private var missedCardCount = 0
 
     private lateinit var deck : Deck
 
@@ -62,8 +61,9 @@ class QuizActivityViewModel (
     override fun setUpData(deck: Deck, isReverseCards: Boolean) {
         this.deck = deck
         this.isDeckReversed = isReverseCards
+        deck.flashcards.shuffle()
 
-        view.onLoadAllIllustrationStart()
+        view.onLoadDataStart()
         loadCardQuizInforFromDatabase (onEnd = {
             loadAllCardIllustrations(deck.flashcards)
         })
@@ -101,7 +101,7 @@ class QuizActivityViewModel (
         illustrationLoader.loadListOfBitmap(illustrationsNameList, onGetResult =  { dataMap, exMap ->
             this.illustrationMap.putAll(dataMap)
             beginUsing()
-            view.onLoadAllIllustrationFinish()
+            view.onLoadDataFinish()
         })
     }
 
@@ -122,21 +122,19 @@ class QuizActivityViewModel (
 
     override fun beginUsing() {
         currentPos = 1
-        passedCardCount = 0
         nextCard()
     }
 
     override fun submitAnswer(answer: String): Boolean {
         val matched = answer.equals(currentCard.text, true)
         if (matched) {
+            view.perform_CorrectAnswerAnimations()
             handleUserRememberCard()
-            nextCard()
-
         } else {
+            val correctAnswer = currentCard.text
+            view.perform_WrongAnswerAnimations(correctAnswer)
             handleUserForgetCard()
-            nextCard()
         }
-
 
         view.extendedOnPassACard (quizCardListPlayer.passedCardCount,
                                                           quizCardListPlayer.familiarCardCount,
@@ -162,7 +160,7 @@ class QuizActivityViewModel (
     private fun useCard (cardData : QuizCardListPlayer.CardData) {
         val flashcard = cardData.flashcard
 
-        val answerMode : AnswerMode
+        var answerMode : AnswerMode = AnswerMode.WRITING
         var answerSet : ArrayList<String>? = null
         val illustration : Bitmap?
         val load_illustrationException : Exception?
@@ -189,13 +187,17 @@ class QuizActivityViewModel (
             is QuizCardListPlayer.QuizCardData -> {
                 if (cardData.cardQuizInfor != null) {
                     answerSet = createAnswerSet(theCorrectAnswer = flashcard.text, cardQuizInfor = cardData.cardQuizInfor)
+
                 } else {
-                    val prefix = flashcard.text.get(0).toString()
-                    answerSet = createRandomAnswerSet(prefix)
-                    answerSet.add(flashcard.text)
-                    answerSet.shuffle()
+                    answerSet = createRandomAnswerSet (flashcard)
+                    if (answerSet != null) { // Create success
+                        answerMode  = AnswerMode.QUIZ
+
+                    } else {
+                        // Failed to create answer set, then set it to writing
+                        answerMode = AnswerMode.WRITING
+                    }
                 }
-                answerMode  = AnswerMode.QUIZ
             }
 
             is QuizCardListPlayer.WritingCardData -> {
@@ -217,14 +219,13 @@ class QuizActivityViewModel (
         )
     }
 
-
     private fun createAnswerSet (theCorrectAnswer : String, cardQuizInfor : CardQuizInfor) : ArrayList<String> {
         val answerSet = ArrayList<String>()
         answerSet.add(theCorrectAnswer)
 
-        var answer1 = cardQuizInfor.getAnswer1()
-        var answer2 = cardQuizInfor.getAnswer2()
-        var answer3 = cardQuizInfor.getAnswer3()
+        val answer1 = cardQuizInfor.getAnswer1()
+        val answer2 = cardQuizInfor.getAnswer2()
+        val answer3 = cardQuizInfor.getAnswer3()
 
         answerSet.add(answer1)
         answerSet.add(answer2)
@@ -234,13 +235,61 @@ class QuizActivityViewModel (
         return answerSet
     }
 
-    private fun createRandomAnswerSet(prefix : String) : ArrayList<String> {
-        val answerSource = engVietVocabularyLoader.getOfflineVocaFromRawFile_ByPrefix(prefix)
+    private fun createRandomAnswerSet (flashcard : Flashcard) : ArrayList<String>? {
+        val answerSetFromDictionary = createRandomAnswerSet_FromEnglishDictionary(flashcard.text)
+        if (answerSetFromDictionary != null) {
+            return answerSetFromDictionary
+        }
+
+        val answerSetFromOtherCards = createRandomAnswerSet_FromOtherCards(flashcard)
+        if (answerSetFromOtherCards != null) {
+            return answerSetFromOtherCards
+        }
+
+        return null
+    }
+
+    private fun createRandomAnswerSet_FromOtherCards (originalCard: Flashcard): ArrayList<String>? {
+        if (getDeckSize() > 4) {
+            val positionList = HashSet<Int>(4)
+            val originalCardPos = deck.flashcards.indexOf(originalCard)
+            if (originalCardPos == -1) {
+                throw Exception ("What ? Unknown card exception")
+            }
+            positionList.add (deck.flashcards.indexOf(originalCard))
+
+            val randomer = Random()
+            while (positionList.size < 4) {
+                val randomPos = randomer.nextInt(getDeckSize())
+                positionList.add(randomPos)
+            }
+
+            val result = ArrayList<String>()
+            for (pos in positionList) {
+                result.add(deck.flashcards.get(pos).text)
+            }
+
+            return result
+        }
+
+        return null
+    }
+
+    private fun createRandomAnswerSet_FromEnglishDictionary (originalAnswer : String) : ArrayList<String>?{
+        val prefix = originalAnswer.get(0).toString()
+        val answerSource : ArrayList<RawVocabulary>? = engVietVocabularyLoader.getOfflineVocaFromRawFile_ByPrefix(prefix)
+        if (answerSource == null) {
+            return null
+        }
+
         val randomer = Random()
 
-        val answer1 = answerSource.get(randomer.nextInt(answerSource.size - 1))
-        val answer2 = answerSource.get(randomer.nextInt(answerSource.size - 1))
-        val answer3 = answerSource.get(randomer.nextInt(answerSource.size - 1))
+        var answer1 = answerSource.get(randomer.nextInt(answerSource.size - 1))
+        var answer2 = answerSource.get(randomer.nextInt(answerSource.size - 1))
+        var answer3 = answerSource.get(randomer.nextInt(answerSource.size - 1))
+
+        // TODO
+        // Process uppercase, lowercase
 
         return ArrayList<String>().apply {
             add(answer1.key)

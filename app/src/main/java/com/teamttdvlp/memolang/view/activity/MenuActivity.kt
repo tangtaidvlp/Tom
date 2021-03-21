@@ -22,6 +22,7 @@ import com.teamttdvlp.memolang.data.model.entity.flashcard.Deck
 import com.teamttdvlp.memolang.databinding.ActivityMenuBinding
 import com.teamttdvlp.memolang.databinding.LayoutFloatAddBodyBinding
 import com.teamttdvlp.memolang.databinding.LayoutFloatAddIconBinding
+import com.teamttdvlp.memolang.model.StringCompare
 import com.teamttdvlp.memolang.view.activity.iview.MenuView
 import com.teamttdvlp.memolang.view.adapter.RCVChooseLanguageAdapter
 import com.teamttdvlp.memolang.view.adapter.RCVRecentUsedLanguageAdapter
@@ -83,6 +84,7 @@ class MenuActivity : BaseActivity<ActivityMenuBinding, MenuActivityViewModel>(),
         window.callback.onWindowFocusChanged(true)
         viewModel.setUpView(this)
         viewModel.calculateScreenSize()
+
     }
 
     override fun onStart() {

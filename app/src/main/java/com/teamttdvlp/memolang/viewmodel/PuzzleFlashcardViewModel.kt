@@ -69,7 +69,7 @@ class PuzzleFlashcardViewModel (
         this.deck = deck
 
         loadAllCardIllustrations(deck.flashcards)
-        view.onLoadAllIllustrationStart()
+        view.onLoadDataStart()
 
         // Show to UI by Databinding
         setName.set(deck.name)
@@ -145,7 +145,7 @@ class PuzzleFlashcardViewModel (
                 systemOutLogging("Value: " + it.value)
             }
             beginUsing()
-            view.onLoadAllIllustrationFinish()
+            view.onLoadDataFinish()
         })
     }
 

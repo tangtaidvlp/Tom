@@ -36,7 +36,6 @@ class NavigableRawVocabulary (key : String, targetVocaKey : String) : RawVocabul
 abstract class RawVocabulary (key : String) : Object(), Serializable {
     var key : String = key
     private set
-
 }
 
 class ChangeObjectStructureWithoutModifyingCloneMethod () : Exception()

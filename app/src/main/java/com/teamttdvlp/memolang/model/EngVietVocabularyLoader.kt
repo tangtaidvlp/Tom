@@ -68,6 +68,7 @@ class EngVietVocabularyLoader (private var context : Context) {
             "Z"  -> R.raw.z_prefix_vocabulary
             else -> {
                 systemOutLogging("Unknown prefix $prefixChar")
+                ArrayList<String>().sort()
                 null
             }
         }
@@ -76,7 +77,12 @@ class EngVietVocabularyLoader (private var context : Context) {
     private val NAVIGABLE_KEY = 0
     private val TARGET_VOCA = 1
 
-    fun getOfflineVocaFromRawFile_ByPrefix (prefix : String) : ArrayList<RawVocabulary> {
+    fun getKeys_FromRawFile_ByPrefix (prefix : String) : ArrayList<String>? {
+        //TODO
+        return null
+    }
+
+    fun getOfflineVocaFromRawFile_ByPrefix (prefix : String) : ArrayList<RawVocabulary>? {
         try {
             val inputStream = context.resources.openRawResource(getResourceFileBaseOnPrefix(prefix)!!)
             val inputStreamReader = InputStreamReader(inputStream)
@@ -122,7 +128,7 @@ class EngVietVocabularyLoader (private var context : Context) {
             return result
         } catch (ex : Exception) {
             ex.printStackTrace()
-            return ArrayList()
+            return null
         }
 
     }

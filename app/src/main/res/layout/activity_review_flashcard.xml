@@ -304,7 +304,7 @@
                 android:layout_marginStart="@dimen/common_margin_start"
                 app:layout_constraintStart_toStartOf="parent"
                 android:layout_marginEnd="@dimen/common_margin_end"
-                android:background="@drawable/round_3dp_little_dark_red_brown_background"
+                android:background="@drawable/round_3dp_little_quiz_green_background"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintTop_toTopOf="@id/txt_total_card_progress_bar"
@@ -357,7 +357,7 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     android:layout_marginEnd="13dp"
                     android:layout_marginTop="13dp"
-                    android:src="@drawable/image_bubble_icons_red_brown"/>
+                    android:src="@drawable/image_bubble_icons_red"/>
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"

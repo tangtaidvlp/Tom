@@ -5,6 +5,7 @@ import android.content.Context
 import android.content.Intent
 import android.graphics.Bitmap
 import android.graphics.Color
+import android.graphics.drawable.Drawable
 import android.os.Bundle
 import android.text.Html
 import android.text.Spannable
@@ -12,9 +13,11 @@ import android.text.SpannableString
 import android.text.style.ForegroundColorSpan
 import android.view.animation.Animation
 import android.view.animation.OvershootInterpolator
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.core.view.doOnNextLayout
 import androidx.core.view.doOnPreDraw
+import androidx.interpolator.view.animation.FastOutLinearInInterpolator
 import androidx.interpolator.view.animation.FastOutSlowInInterpolator
 import com.teamttdvlp.memolang.R
 import com.teamttdvlp.memolang.data.model.entity.flashcard.Deck
@@ -33,7 +36,15 @@ import javax.inject.Named
 
 class QuizActivity : BaseActivity<ActivityQuizBinding, QuizActivityViewModel>(), QuizView {
 
+    private lateinit var GREEN_LIGHT_DRAWABLE: Drawable
+
+    private lateinit var RED_LIGHT_DRAWABLE: Drawable
+
+    private lateinit var WHITE_LIGHT_DRAWABLE: Drawable
+
     private val COMMON_PROGRESS_BAR_VIEW_DURATION: Long = 100L
+
+    private val COMMON_BUTTON_ANIMATION_DURATION: Long = 100L
 
     private var prevForgottenCardCount: Int = 0
 
@@ -63,7 +74,9 @@ class QuizActivity : BaseActivity<ActivityQuizBinding, QuizActivityViewModel>(),
 
     private lateinit var currentChosenAnswerTextView : TextView
 
-    private val btnQuizAnswersList : ArrayList<TextView> = ArrayList(4)
+    private lateinit var currentShowedNextButton : TextView
+
+    private val txtAnswersAndLightsMap: HashMap<TextView, ImageView> = HashMap(4)
 
     companion object {
         fun requestReviewFlashcard(
@@ -89,7 +102,7 @@ class QuizActivity : BaseActivity<ActivityQuizBinding, QuizActivityViewModel>(),
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setStatusBarColor(resources.getColor(R.color.app_quiz_dark_green))
+        setStatusBarColor(resources.getColor(R.color.app_quiz_green))
         viewModel.setUpView(this)
         setUpData()
     }
@@ -105,10 +118,11 @@ class QuizActivity : BaseActivity<ActivityQuizBinding, QuizActivityViewModel>(),
     }
 
     override fun addViewSettings() { dB.apply {
-        btnQuizAnswersList.add(txtAnswerA)
-        btnQuizAnswersList.add(txtAnswerB)
-        btnQuizAnswersList.add(txtAnswerC)
-        btnQuizAnswersList.add(txtAnswerD)
+
+        txtAnswersAndLightsMap [txtAnswerA] = imgLightAnswerA
+        txtAnswersAndLightsMap [txtAnswerB] = imgLightAnswerB
+        txtAnswersAndLightsMap [txtAnswerC] = imgLightAnswerC
+        txtAnswersAndLightsMap [txtAnswerD] = imgLightAnswerD
 
         btnClearAnswer.doOnPreDraw {
             btnClearAnswer.pivotX = btnClearAnswer.width / 2f
@@ -125,53 +139,147 @@ class QuizActivity : BaseActivity<ActivityQuizBinding, QuizActivityViewModel>(),
         }
     }}
 
+
     override fun addViewEvents() { dB.apply {
+
+        btnAnswerANext.setOnClickListener {
+            viewModel.nextCard()
+        }
+
+        btnAnswerBNext.setOnClickListener {
+            viewModel.nextCard()
+        }
+
+        btnAnswerCNext.setOnClickListener {
+            viewModel.nextCard()
+        }
+
+        btnAnswerDNext.setOnClickListener {
+            viewModel.nextCard()
+        }
+
 
         txtAnswerA.setOnClickListener {
             playMinimizeTitleBarAnimations_If_HasNot()
+            currentChosenAnswerTextView = txtAnswerA
             viewModel.submitAnswer(txtAnswerA.text.toString())
         }
 
         txtAnswerB.setOnClickListener {
             playMinimizeTitleBarAnimations_If_HasNot()
+            currentChosenAnswerTextView = txtAnswerB
             viewModel.submitAnswer(txtAnswerB.text.toString())
         }
 
         txtAnswerC.setOnClickListener {
             playMinimizeTitleBarAnimations_If_HasNot()
+            currentChosenAnswerTextView = txtAnswerC
             viewModel.submitAnswer(txtAnswerC.text.toString())
         }
 
         txtAnswerD.setOnClickListener {
             playMinimizeTitleBarAnimations_If_HasNot()
+            currentChosenAnswerTextView = txtAnswerD
             viewModel.submitAnswer(txtAnswerD.text.toString())
         }
 
-        btnSubmit.setOnClickListener {
+        btnClearAnswer.setOnClickListener {
+            edtInputAnswer.setText("")
+        }
+
+        btnSubmit.setOnClickListener (preventDoubleClick = true) {
             playMinimizeTitleBarAnimations_If_HasNot()
             viewModel.submitAnswer(edtInputAnswer.text.toString())
+            hideSubmitButton()
+            showWritingNextButton()
+        }
+
+        btnWritingNext.setOnClickListener {
+            systemOutLogging("Fuck")
+            viewModel.nextCard()
         }
 
     }}
+
+    private fun hideSubmitButton () {
+        dB.btnSubmit.alpha = 0f
+    }
+
+    private fun showSubmitButton () {
+        dB.btnSubmit.animate().reset().alpha(1f).setDuration(COMMON_BUTTON_ANIMATION_DURATION)
+    }
+
+    private fun showWritingNextButton () {
+        systemOutLogging("Show Writing Next Option ?")
+        dB.btnWritingNext.goVISIBLE()
+        dB.btnWritingNext.scaleX = 1f
+        dB.btnWritingNext.scaleY = 1f
+        dB.btnWritingNext.animate().reset().alpha(1f).setDuration(COMMON_BUTTON_ANIMATION_DURATION).clearListeners()
+    }
+
+    private fun hideWritingNextButton () { dB.apply {
+        btnWritingNext.animate().reset()
+            .alpha(0f)
+            .setDuration(COMMON_BUTTON_ANIMATION_DURATION)
+            .setLiteListener {
+                btnWritingNext.goGONE()
+            }
+    }}
+
+    override fun initProperties() {
+        GREEN_LIGHT_DRAWABLE = resources.getDrawable(R.drawable.round_15dp_quiz_right_light)
+        RED_LIGHT_DRAWABLE = resources.getDrawable(R.drawable.round_15dp_quiz_wrong_answer)
+        WHITE_LIGHT_DRAWABLE = resources.getDrawable(R.drawable.round_15dp_quiz_normal_white)
+    }
 
     override fun hideVirtualKeyboard () {
         imm.hideSoftInputFromWindow(dB.edtInputAnswer.windowToken, 0)
     }
 
-    override fun extendedOnPassACard (
-        passedCardCount: Int,
-        familiarCardCount: Int,
-        forgottenCardCount: Int
-    ) {
-        if (passedCardCount != prevPassedCardCount && passedCardCount != 0)
+    override fun extendedOnPassACard (passedCardCount: Int, familiarCardCount: Int, forgottenCardCount: Int) {
+
+        systemOutLogging("passedCardCount: " + passedCardCount)
+        systemOutLogging("familiarCardCount: " + familiarCardCount)
+        systemOutLogging("forgottenCardCount: " + forgottenCardCount)
+
+        setIndicators (passedCardCount, familiarCardCount, forgottenCardCount)
+
+        if (passedCardCount != prevPassedCardCount && passedCardCount != 0) {
             updatePassedCardProgressBar(passedCardCount)
+        }
 
         // We have to pass the familiarCardCount instead of passedCardCount
         // because in this mode (QuizActivity). A card can be only passed after
         // user get familiar to it. So, familiarCardCount is always >= passedCardCount
         // So the forgottenCardProgressBar better constraint to it than passedCardCount
-        onPassACard (familiarCardCount, forgottenCardCount)
-    }
+        onPassACard (familiarCardCount, forgottenCardCount)}
+
+    private fun setIndicators(
+        passedCardCount: Int,
+        familiarCardCount: Int,
+        forgottenCardCount: Int
+    ) { dB.apply {
+
+        dB.txtPassedCardCount.text = passedCardCount.toString()
+        dB.txtFamilarCardCount.text = familiarCardCount.toString()
+        dB.txtMissedCardCount.text = forgottenCardCount.toString()
+
+        if (familiarCardCount == passedCardCount) {
+            txtFamilarCardCount.animate().reset().alpha(0f).setDuration(100)
+            txtTextFamiliar.animate().reset().alpha(0f).setDuration(100)
+        } else {
+            txtFamilarCardCount.animate().reset().alpha(1f).setDuration(100)
+            txtTextFamiliar.animate().reset().alpha(1f).setDuration(100)
+        }
+
+        if (forgottenCardCount == 0) {
+            txtMissedCardCount.animate().reset().alpha(0f).setDuration(100)
+            txtTextMissed.animate().reset().alpha(0f).setDuration(100)
+        } else {
+            txtMissedCardCount.animate().reset().alpha(1f).setDuration(100)
+            txtTextMissed.animate().reset().alpha(1f).setDuration(100)
+        }
+    }}
 
 
     /**
@@ -179,7 +287,6 @@ class QuizActivity : BaseActivity<ActivityQuizBinding, QuizActivityViewModel>(),
      * the original intent
      */
     override fun onPassACard (familiarCardCount: Int, forgottenCardCount: Int) {
-        dB.txtFamilarCardCount.text = familiarCardCount.toString()
 
         val userFinishTest = (familiarCardCount + forgottenCardCount) == viewModel.getDeckSize()
 
@@ -191,6 +298,9 @@ class QuizActivity : BaseActivity<ActivityQuizBinding, QuizActivityViewModel>(),
             updateFamiliarCardProgressBar (familiarCardCount)
         }
 
+        systemOutLogging("Previous: " + prevFamiliarCardCount + " - " + forgottenCardCount)
+        systemOutLogging("Current: " + familiarCardCount + " - " + forgottenCardCount)
+        systemOutLogging("Con đĩ mẹ mày con chó đẻ lồn óc cặc: " + ((familiarCardCount != prevFamiliarCardCount)  or  (forgottenCardCount != prevForgottenCardCount)))
         if ((familiarCardCount != prevFamiliarCardCount)  or  (forgottenCardCount != prevForgottenCardCount)) {
             updateForgottenCardProgressBar(familiarCardCount, forgottenCardCount)
         }
@@ -207,11 +317,9 @@ class QuizActivity : BaseActivity<ActivityQuizBinding, QuizActivityViewModel>(),
 //                txtForgottenCardCount.animate().alpha(1f).duration = COMMON_PROGRESS_BAR_VIEW_DURATION
             }
 
-
             val totalPart = familarCardCount + forgottenCardCount
             val progrBarTargetWidth : Int
             val progrBarCurrentWidth = txtForgottenCardProgressBar.width
-
             if (totalPart < viewModel.getDeckSize()) {
                 val aPartWidth = txtTotalCardProgressBar.width / viewModel.getDeckSize()
                 progrBarTargetWidth = totalPart * aPartWidth
@@ -244,6 +352,7 @@ class QuizActivity : BaseActivity<ActivityQuizBinding, QuizActivityViewModel>(),
 
     private fun updatePassedCardProgressBar(currentCount: Int) {
         dB.apply {
+
             val progrBarCurrentWidth = txtPassedCardProgressBar.width
             val aPartWidth = txtTotalCardProgressBar.width / viewModel.getDeckSize()
             val progrBarTargetWidth = aPartWidth * currentCount
@@ -262,6 +371,7 @@ class QuizActivity : BaseActivity<ActivityQuizBinding, QuizActivityViewModel>(),
 
     private fun updateFamiliarCardProgressBar(familiarCardCount: Int) {
         dB.apply {
+
             val progrBarCurrentWidth = txtFamiliarCardProgressBar.width
 
             val progrBarTargetWidth = if (familiarCardCount < viewModel.getDeckSize())  {
@@ -282,7 +392,6 @@ class QuizActivity : BaseActivity<ActivityQuizBinding, QuizActivityViewModel>(),
                 txtFamiliarCardProgressBar.requestLayout()
             }
             updateAnimation.start()
-            prevFamiliarCardCount = familiarCardCount
         }
     }
 
@@ -315,12 +424,13 @@ class QuizActivity : BaseActivity<ActivityQuizBinding, QuizActivityViewModel>(),
 
     }}
 
-    override fun onLoadAllIllustrationStart() {
+    override fun onLoadDataStart() {
         rotateForeverAnimation.duration = 1000
         dB.progressBarLoadingImage.startAnimation(rotateForeverAnimation)
     }
 
-    override fun onLoadAllIllustrationFinish() {
+    override fun onLoadDataFinish() {
+        dB.txtTotalCardCount.text = viewModel.getDeckSize().toString()
         hideLoadIllustrationProgressBar()
     }
 
@@ -347,8 +457,15 @@ class QuizActivity : BaseActivity<ActivityQuizBinding, QuizActivityViewModel>(),
 
         if (firstCardPlayed) {
             setUpTestSubject(testSubject, illustration, load_illustrationException, useExampleForTestSubject)
-            playRefreshQuizOptionsAnims(answerSet!!, 100)
+
+            if (answerMode == QuizActivityViewModel.AnswerMode.QUIZ) {
+                playRefreshQuizOptionsAnims(answerSet!!, 100)
+            } else {
+                handleQuizToWriting (testSubject, illustration, load_illustrationException, useExampleForTestSubject)
+            }
+
             firstCardPlayed = false
+            currentMode = answerMode
             return
         }
 
@@ -370,7 +487,170 @@ class QuizActivity : BaseActivity<ActivityQuizBinding, QuizActivityViewModel>(),
         }
     }
 
+    override fun perform_CorrectAnswerAnimations() {
+        if (currentMode == QuizActivityViewModel.AnswerMode.QUIZ) {
+            val imgCurrentChosenLight = getCorrespondLight(currentChosenAnswerTextView)
+            imgCurrentChosenLight.setImageDrawable (GREEN_LIGHT_DRAWABLE)
+
+            blur_UNRelated_Answers(currentChosenAnswerTextView)
+            showNextButton(currentChosenAnswerTextView)
+        } else if (currentMode == QuizActivityViewModel.AnswerMode.WRITING) {
+            // DO SOMETHING ELSE
+        }
+        playMatchedAnswer()
+    }
+
+    private fun playMatchedAnswer (startDelay: Long = 0) {
+        dB.apply {
+            imgGreenTick.animate().alpha(1f).setDuration(250)
+                .setInterpolator(FastOutLinearInInterpolator()).setStartDelay(startDelay)
+                .setLiteListener(
+                    onEnd = {
+                        imgGreenTick.animate().alpha(0f)
+                            .setStartDelay(0) // Reset startDelay
+                            .clearListeners()
+                    })
+        }
+    }
+
+    override fun perform_WrongAnswerAnimations(correctAnswer: String) {
+        if  (currentMode == QuizActivityViewModel.AnswerMode.QUIZ) {
+            val imgCurrentChosenLight = getCorrespondLight(currentChosenAnswerTextView)
+            imgCurrentChosenLight.setImageDrawable (RED_LIGHT_DRAWABLE)
+
+            val correctAnswerTxtAnswer = getCorrespondBtnAnswer_ByText (correctAnswer)
+            val correctAnswerLight = getCorrespondLight (correctAnswerTxtAnswer)
+            correctAnswerLight.setImageDrawable(GREEN_LIGHT_DRAWABLE)
+
+            blur_UNRelated_Answers(currentChosenAnswerTextView, correctAnswerTxtAnswer)
+            currentChosenAnswerTextView.animate().reset().alpha(0.5f).setDuration(120).clearListeners()
+            showNextButton(correctAnswerTxtAnswer)
+
+        }   else if (currentMode == QuizActivityViewModel.AnswerMode.WRITING) { dB.apply {
+            txtWritingCorrectAnswer.goVISIBLE()
+            txtWritingCorrectAnswer.text = "Correct answers: " + correctAnswer
+        }}
+        playWrongAnswerAnim()
+    }
+
+    private fun playWrongAnswerAnim (startDelay: Long = 0) {
+        dB.apply {
+            imgRedX.animate().alpha(1f).setDuration(250)
+                .setInterpolator(FastOutLinearInInterpolator()).setStartDelay(startDelay)
+                .setLiteListener(
+                    onEnd = {
+                        imgRedX.animate().alpha(0f)
+                            .setStartDelay(0) // Reset startDelay
+                            .clearListeners()
+                    })
+        }
+    }
+
+    private fun blur_UNRelated_Answers (vararg relatedAnswers : TextView) {
+
+        for (answerTextView in txtAnswersAndLightsMap.keys) {
+            val unrelated = relatedAnswers.contains(answerTextView).not()
+            if (unrelated) {
+                answerTextView.animate().reset().alpha(0.25f).setDuration(120)
+            }
+        }
+
+    }
+
+    private fun getCorrespondLight (txtAnswer: TextView): ImageView {
+        return txtAnswersAndLightsMap.get(txtAnswer)!!
+    }
+
+    private fun getCorrespondBtnAnswer_ByText (text : String): TextView {
+
+        txtAnswersAndLightsMap.keys.forEach { txtAnswer ->
+            if (text == txtAnswer.text) {
+                return txtAnswer
+            }
+        }
+
+        throw Exception ("Button answer not found ?")
+    }
+
+    private fun showNextButton (answerTextView : TextView) { dB.apply {
+        when (answerTextView) {
+            txtAnswerA -> {
+                playShowNextButtonAnims(btnAnswerANext, imgAnswerAArrow)
+                currentShowedNextButton = btnAnswerANext
+            }
+
+            txtAnswerB -> {
+                playShowNextButtonAnims(btnAnswerBNext, imgAnswerBArrow)
+                currentShowedNextButton = btnAnswerBNext
+            }
+
+            txtAnswerC -> {
+                playShowNextButtonAnims(btnAnswerCNext, imgAnswerCArrow)
+                currentShowedNextButton = btnAnswerCNext
+            }
+
+            txtAnswerD -> {
+                playShowNextButtonAnims(btnAnswerDNext, imgAnswerDArrow)
+                currentShowedNextButton = btnAnswerDNext
+            }
+
+            else -> {
+                throw Exception ("Unknown button exception")
+            }
+        }
+    }}
+
+    private fun playShowNextButtonAnims (btnNext: TextView, imgArrow: ImageView) {
+        btnNext.alpha = 0f
+        btnNext.goVISIBLE()
+        btnNext.animate().reset().alpha(1f).setStartDelay(300).setDuration(200).setLiteListener(onEnd = {
+            btnNext.isClickable =  true
+        })
+
+        imgArrow.isClickable = false
+        imgArrow.alpha = 0f
+        imgArrow.goVISIBLE()
+        imgArrow.animate().reset().alpha(1f).setStartDelay(300).setDuration(200).clearListeners()
+    }
+
+    private fun hideNextButton () { dB.apply {
+        when (currentShowedNextButton) {
+            btnAnswerANext -> {
+                playHideNextButtonAnims(btnAnswerANext, imgAnswerAArrow)
+            }
+
+            btnAnswerBNext -> {
+                playHideNextButtonAnims(btnAnswerBNext, imgAnswerBArrow)
+            }
+
+            btnAnswerCNext -> {
+                playHideNextButtonAnims(btnAnswerCNext, imgAnswerCArrow)
+            }
+
+            btnAnswerDNext -> {
+                playHideNextButtonAnims(btnAnswerDNext, imgAnswerDArrow)
+            }
+        }
+    }}
+
+    private fun playHideNextButtonAnims (btnNext: TextView, imgArrow: ImageView) {
+        btnNext.isClickable = false
+        btnNext.animate().reset().alpha(0f).setDuration(500).setLiteListener (onEnd = {
+            btnNext.goGONE()
+        })
+
+        imgArrow.isClickable = false
+        imgArrow.animate().reset().alpha(0f).setDuration(500).setLiteListener (onEnd = {
+            imgArrow.goGONE()
+        })
+    }
+
     private fun handleNextWriting (testSubject: Flashcard, illustration: Bitmap?, load_Illustrationexception: Exception?, useExampleForTestSubject: Boolean) { dB.apply {
+
+        txtWritingCorrectAnswer.goGONE()
+        hideWritingNextButton()
+        showSubmitButton()
+
         vwgrpTestSubject.animate().reset().translationX(ScreenDimension.screenWidth.toFloat() * -1).setDuration(ANIM_DURATION * 3).setInterpolator(FastOutSlowInInterpolator())
             .setLiteListener(onEnd = {
                 // Set up test subject
@@ -391,6 +671,7 @@ class QuizActivity : BaseActivity<ActivityQuizBinding, QuizActivityViewModel>(),
     private fun handleNextQuiz (testSubject: Flashcard, illustration: Bitmap?, load_Illustrationexception: Exception?, useExampleForTestSubject: Boolean,
                                                    answerSet: java.util.ArrayList<String>?) { dB.apply {
 
+        hideNextButton()
         vwgrpTestSubject.animate().reset().translationX(ScreenDimension.screenWidth.toFloat() * -1).setDuration(ANIM_DURATION * 3).setInterpolator(FastOutSlowInInterpolator())
             .setLiteListener(onEnd = {
                 // Set up test subject
@@ -434,6 +715,8 @@ class QuizActivity : BaseActivity<ActivityQuizBinding, QuizActivityViewModel>(),
     private fun handleWritingToQuiz (testSubject: Flashcard, illustration: Bitmap?,
                                                               load_Illustrationexception: Exception?, useExampleForTestSubject: Boolean, answerSet: java.util.ArrayList<String>?) { dB.apply {
 
+        txtWritingCorrectAnswer.goGONE()
+
         vwgrpTestSubject.animate().reset().alpha(0f).translationX(ScreenDimension.screenWidth.toFloat() * -1).setDuration(ANIM_DURATION * 3).setInterpolator(FastOutSlowInInterpolator())
             .setLiteListener(onEnd = {
                 // Set up quiz data
@@ -447,6 +730,10 @@ class QuizActivity : BaseActivity<ActivityQuizBinding, QuizActivityViewModel>(),
                     .setInterpolator(FastOutSlowInInterpolator()).clearListeners()
             })
 
+        if (::currentShowedNextButton.isInitialized) {
+            systemOutLogging("???: " + ::currentShowedNextButton.isInitialized)
+            hideNextButton()
+        }
         hideWritingOptions(startDelay = 200, onFinish = {
             showQuizOptions()
         })
@@ -461,13 +748,9 @@ class QuizActivity : BaseActivity<ActivityQuizBinding, QuizActivityViewModel>(),
         }
     }
 
-    private fun playNextCardAnims (flashcard: Flashcard, illustration: Bitmap?, load_illustrationException: Exception?, useExampleForTestSubject: Boolean) { dB.apply {
-
-
-
-    }}
 
     private fun playRefreshQuizOptionsAnims (answerSet: ArrayList<String>, startDelay: Long = 0) { dB.apply {
+
         val text1 = answerSet.get(0)
         val text2 = answerSet.get(1)
         val text3 = answerSet.get(2)
@@ -476,6 +759,8 @@ class QuizActivity : BaseActivity<ActivityQuizBinding, QuizActivityViewModel>(),
             .setStartDelay (startDelay + DELAY_DURATION * 0)
             .setLiteListener(onEnd = {
                 txtAnswerA.text = text1
+                txtAnswerA.alpha = 1f
+                imgLightAnswerA.setImageDrawable(WHITE_LIGHT_DRAWABLE)
                 vwgrpAnswerA.animate().reset().setStartDelay(0).scaleX(1f).scaleY(1f).alpha(1f).setDuration(ANIM_DURATION).setInterpolator(NormalOutExtraSlowIn()).clearListeners()
             })
 
@@ -483,6 +768,8 @@ class QuizActivity : BaseActivity<ActivityQuizBinding, QuizActivityViewModel>(),
             .setStartDelay (startDelay + DELAY_DURATION * 1)
             .setLiteListener(onEnd = {
                 txtAnswerB.text = text2
+                txtAnswerB.alpha = 1f
+                imgLightAnswerB.setImageDrawable(WHITE_LIGHT_DRAWABLE)
                 vwgrpAnswerB.animate().reset().setStartDelay(0).scaleX(1f).scaleY(1f).alpha(1f).setDuration(ANIM_DURATION).setInterpolator(NormalOutExtraSlowIn()).clearListeners()
             })
 
@@ -490,6 +777,8 @@ class QuizActivity : BaseActivity<ActivityQuizBinding, QuizActivityViewModel>(),
             .setStartDelay (startDelay + DELAY_DURATION * 2)
             .setLiteListener(onEnd = {
                 txtAnswerC.text = text3
+                txtAnswerC.alpha = 1f
+                imgLightAnswerC.setImageDrawable(WHITE_LIGHT_DRAWABLE)
                 vwgrpAnswerC.animate().reset().setStartDelay(0).scaleX(1f).scaleY(1f).alpha(1f).setDuration(ANIM_DURATION).setInterpolator(NormalOutExtraSlowIn()).clearListeners()
             })
 
@@ -497,6 +786,8 @@ class QuizActivity : BaseActivity<ActivityQuizBinding, QuizActivityViewModel>(),
             .setStartDelay(startDelay + DELAY_DURATION * 3)
             .setLiteListener(onEnd = {
                 txtAnswerD.text = text4
+                txtAnswerD.alpha = 1f
+                imgLightAnswerD.setImageDrawable(WHITE_LIGHT_DRAWABLE)
                 vwgrpAnswerD.animate().reset().setStartDelay(0).scaleX(1f).scaleY(1f).alpha(1f).setDuration(ANIM_DURATION + ANIM_DURATION / 2).clearListeners()
             })
     }}
@@ -652,6 +943,19 @@ class QuizActivity : BaseActivity<ActivityQuizBinding, QuizActivityViewModel>(),
     private fun showQuizOptions(startDelay : Long = 0, onFinish: (() -> Unit)? = null ) { dB.apply {
         grpQuizOptions.goVISIBLE()
         imgQuizComponentsPadLayer.goVISIBLE()
+
+        txtAnswerA.alpha = 1f
+        imgLightAnswerA.setImageDrawable(WHITE_LIGHT_DRAWABLE)
+
+        txtAnswerB.alpha = 1f
+        imgLightAnswerB.setImageDrawable(WHITE_LIGHT_DRAWABLE)
+
+        txtAnswerC.alpha = 1f
+        imgLightAnswerC.setImageDrawable(WHITE_LIGHT_DRAWABLE)
+
+        txtAnswerD.alpha = 1f
+        imgLightAnswerD.setImageDrawable(WHITE_LIGHT_DRAWABLE)
+
         val animDuration = ANIM_DURATION * 3
         imgQuizComponentsPadLayer.animate().reset().alpha(0.2f).setDuration(animDuration)
             .startDelay = startDelay + DELAY_DURATION * 0
@@ -713,7 +1017,9 @@ class QuizActivity : BaseActivity<ActivityQuizBinding, QuizActivityViewModel>(),
 
     private fun showWritingOptions (startDelay : Long = 0, onFinish: (() -> Unit)? = null) { dB.apply {
         grpWritingComponents.goVISIBLE()
+
         val animDuration = ANIM_DURATION * 2
+        btnSubmit.alpha = 1f
         btnSubmit.animate().reset().scaleY(1f).scaleX(1f).setDuration(animDuration).setInterpolator(OvershootInterpolator(0.7f))
             .startDelay = startDelay + DELAY_DURATION * 0
 
@@ -732,7 +1038,13 @@ class QuizActivity : BaseActivity<ActivityQuizBinding, QuizActivityViewModel>(),
     private fun hideWritingOptions (startDelay : Long = 0, onFinish: (() -> Unit)? = null) { dB.apply {
         val animDuration = ANIM_DURATION * 2
 
-        btnSubmit.animate().reset().scaleY(0f).scaleX(0f).setDuration(animDuration).setInterpolator(OvershootInterpolator(0.7f))
+        btnSubmit.scaleX = 0f
+        btnSubmit.scaleY = 0f
+
+        btnWritingNext.animate().reset().scaleY(0f).scaleX(0f).setDuration(animDuration).setInterpolator(OvershootInterpolator(0.7f))
+            .setLiteListener(onEnd = {
+                btnWritingNext.goGONE()
+            })
 
         viewLineUnderEdtInput.animate().reset().scaleX(0f).setDuration(animDuration).setInterpolator(OvershootInterpolator(0.7f))
             .startDelay = startDelay + DELAY_DURATION

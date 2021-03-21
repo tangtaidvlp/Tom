@@ -7,7 +7,6 @@ import java.lang.Exception
 
 interface QuizView : View, CardPlayableView {
 
-
     fun onGetTestSubject (
         testSubject: Flashcard,
         illustration: Bitmap?,
@@ -16,6 +15,10 @@ interface QuizView : View, CardPlayableView {
         answerMode: QuizActivityViewModel.AnswerMode,
         answerSet: ArrayList<String>?
     )
+
+    fun perform_CorrectAnswerAnimations ()
+
+    fun perform_WrongAnswerAnimations(correctAnswer : String)
 
     fun showSpeakTextError(s: String)
 

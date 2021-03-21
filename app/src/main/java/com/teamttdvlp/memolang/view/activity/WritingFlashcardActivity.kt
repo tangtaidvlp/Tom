@@ -372,12 +372,12 @@ class WritingFlashcardActivity : BaseActivity<ActivityReviewFlashcardBinding, Wr
         systemOutLogging(error)
     }
 
-    override fun onLoadAllIllustrationStart() {
+    override fun onLoadDataStart() {
         rotateForeverAnimation.duration = 1000
         dB.progressBarLoadingImage.startAnimation(rotateForeverAnimation)
     }
 
-    override fun onLoadAllIllustrationFinish() {
+    override fun onLoadDataFinish() {
         hideLoadIllustrationProgressBar()
         playMinimizeTitleBarAnimations(4000)
     }

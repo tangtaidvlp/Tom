@@ -8,9 +8,9 @@ interface CardPlayableView {
 
     fun onEndReviewing()
 
-    fun onLoadAllIllustrationFinish()
+    fun onLoadDataFinish()
 
-    fun onLoadAllIllustrationStart()
+    fun onLoadDataStart()
 
     fun onPassACard(passedCardCount: Int, forgottenCardCount: Int)
 

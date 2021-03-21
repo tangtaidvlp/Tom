@@ -67,8 +67,8 @@
                 android:includeFontPadding="false"
                 android:inputType="textNoSuggestions|text"
                 android:paddingBottom="1dp"
-                android:textColor="@color/app_quiz_dark_green"
-                android:textColorHint="@color/app_quiz_dark_green"
+                android:textColor="@color/app_quiz_green"
+                android:textColorHint="@color/app_quiz_green"
                 android:textSize="22sp"
                 android:translationZ="5dp"
                 app:layout_constraintStart_toStartOf="parent"
@@ -88,7 +88,7 @@
                 android:inputType="textNoSuggestions|text"
                 android:paddingEnd="16dp"
                 android:paddingBottom="1dp"
-                android:textColor="@color/app_quiz_dark_green"
+                android:textColor="@color/app_quiz_green"
                 android:textSize="11sp"
                 android:translationZ="5dp"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -107,8 +107,7 @@
                 android:elevation="5dp"
                 android:paddingTop="4dp"
                 android:paddingBottom="4dp"
-                android:src="@drawable/image_button_setting_dark_green"
-                />
+                android:src="@drawable/image_icon_white_setting" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -120,7 +119,7 @@
                 android:inputType="textNoSuggestions|text"
                 android:paddingBottom="1dp"
                 android:text="Settings"
-                android:textColor="@color/app_quiz_dark_green"
+                android:textColor="@color/app_quiz_green"
                 android:textSize="11sp"
                 android:translationZ="5dp"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -149,7 +148,7 @@
             android:layout_height="0dp"
             android:orientation="horizontal"
             android:alpha="0"
-            android:background="@color/app_quiz_dark_green"
+            android:background="@color/app_quiz_green"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -218,7 +217,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="@dimen/common_margin_end"
-                android:background="@drawable/round_10dp_light_mint_with_white_stroke_background"
+                android:background="@drawable/round_10dp_light_mint_background"
                 android:fontFamily="@font/seguisb"
                 android:paddingStart="8dp"
                 android:paddingEnd="8dp"
@@ -233,10 +232,10 @@
 
             <TextView
                 android:id="@+id/txt_forgotten_card_progress_bar"
-                android:layout_width="9dp"
+                android:layout_width="19dp"
                 android:layout_height="8dp"
                 android:layout_marginRight="@dimen/common_margin_end"
-                android:background="@drawable/round_3dp_quiz_dark_green_background"
+                android:background="@drawable/round_3dp_quiz_red"
                 app:layout_constraintBottom_toBottomOf="@id/txt_total_card_progress_bar"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
@@ -244,12 +243,45 @@
                 app:layout_constraintTop_toTopOf="@id/txt_total_card_progress_bar" />
 
             <TextView
+                android:id="@+id/txt_missed_card_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round_20dp_app_puzzle_quiz_red"
+                android:fontFamily="@font/seguisb"
+                android:includeFontPadding="false"
+                android:paddingStart="7dp"
+                android:paddingEnd="7dp"
+                android:paddingBottom="1dp"
+                android:text="0"
+                android:textColor="@color/white"
+                android:textSize="11sp"
+                android:alpha="0"
+                app:flow_horizontalBias="1"
+                app:layout_constraintHorizontal_bias="0.45"
+                app:layout_constraintBottom_toBottomOf="@id/txt_forgotten_card_progress_bar"
+                app:layout_constraintEnd_toEndOf="@id/txt_forgotten_card_progress_bar"
+                app:layout_constraintTop_toTopOf="@id/txt_forgotten_card_progress_bar"
+                app:layout_constraintVertical_bias="0.555" />
+
+            <TextView
+                android:id="@+id/txt_text_missed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Missed"
+                android:textSize="8sp"
+                android:alpha="0"
+                android:textColor="@color/app_quiz_red"
+                app:layout_constraintTop_toBottomOf="@id/txt_missed_card_count"
+                app:layout_constraintStart_toStartOf="@id/txt_missed_card_count"
+                app:layout_constraintEnd_toEndOf="@id/txt_missed_card_count"/>
+
+            <TextView
                 android:id="@+id/txt_familiar_card_progress_bar"
-                android:layout_width="9dp"
+                android:layout_width="19dp"
                 android:layout_height="8dp"
                 android:layout_marginStart="@dimen/common_margin_start"
                 android:layout_marginEnd="@dimen/common_margin_end"
-                android:background="@drawable/round_3dp_quiz_light_red_brown_background"
+                android:background="@drawable/round_3dp_quiz_grey_green_background"
                 app:layout_constraintBottom_toBottomOf="@id/txt_total_card_progress_bar"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
@@ -260,31 +292,42 @@
                 android:id="@+id/txt_familar_card_count"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/round_20dp_app_puzzle_quiz_brown"
-                android:elevation="3dp"
+                android:background="@drawable/round_20dp_quiz_grey_green_background"
                 android:fontFamily="@font/seguisb"
                 android:includeFontPadding="false"
                 android:paddingStart="7dp"
                 android:paddingEnd="7dp"
                 android:paddingBottom="1dp"
                 android:text="0"
-                android:textColor="#E6DAC0"
+                android:textColor="@color/white"
                 android:textSize="11sp"
+                android:alpha="0"
                 app:flow_horizontalBias="1"
-                app:layout_constraintBottom_toBottomOf="@id/txt_total_card_progress_bar"
-                app:layout_constraintEnd_toEndOf="@id/txt_passed_card_progress_bar"
                 app:layout_constraintHorizontal_bias="0.45"
-                app:layout_constraintStart_toEndOf="@id/txt_passed_card_progress_bar"
-                app:layout_constraintTop_toTopOf="@id/txt_total_card_progress_bar"
+                app:layout_constraintBottom_toBottomOf="@id/txt_familiar_card_progress_bar"
+                app:layout_constraintEnd_toEndOf="@id/txt_familiar_card_progress_bar"
+                app:layout_constraintTop_toTopOf="@id/txt_familiar_card_progress_bar"
                 app:layout_constraintVertical_bias="0.555" />
 
             <TextView
+                android:id="@+id/txt_text_familiar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Familiar"
+                android:textSize="8sp"
+                android:alpha="0"
+                android:textColor="@color/quiz_grey_green"
+                app:layout_constraintTop_toBottomOf="@id/txt_familar_card_count"
+                app:layout_constraintStart_toStartOf="@id/txt_familar_card_count"
+                app:layout_constraintEnd_toEndOf="@id/txt_familar_card_count"/>
+
+            <TextView
                 android:id="@+id/txt_passed_card_progress_bar"
-                android:layout_width="9dp"
+                android:layout_width="19dp"
                 android:layout_height="8dp"
                 android:layout_marginStart="@dimen/common_margin_start"
                 android:layout_marginEnd="@dimen/common_margin_end"
-                android:background="@drawable/round_3dp_little_dark_red_brown_background"
+                android:background="@drawable/round_3dp_little_quiz_green_background"
                 app:layout_constraintBottom_toBottomOf="@id/txt_total_card_progress_bar"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
@@ -295,7 +338,7 @@
                 android:id="@+id/txt_passed_card_count"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/round_20dp_app_puzzle_quiz_brown"
+                android:background="@drawable/round_20dp_app_puzzle_quiz_green"
                 android:elevation="3dp"
                 android:fontFamily="@font/seguisb"
                 android:includeFontPadding="false"
@@ -303,15 +346,25 @@
                 android:paddingEnd="7dp"
                 android:paddingBottom="1dp"
                 android:text="0"
-                android:textColor="#E6DAC0"
+                android:textColor="@color/white"
                 android:textSize="11sp"
                 app:flow_horizontalBias="1"
+                app:layout_constraintHorizontal_bias="0.45"
                 app:layout_constraintBottom_toBottomOf="@id/txt_total_card_progress_bar"
                 app:layout_constraintEnd_toEndOf="@id/txt_passed_card_progress_bar"
-                app:layout_constraintHorizontal_bias="0.45"
-                app:layout_constraintStart_toEndOf="@id/txt_passed_card_progress_bar"
                 app:layout_constraintTop_toTopOf="@id/txt_total_card_progress_bar"
                 app:layout_constraintVertical_bias="0.555" />
+
+            <TextView
+                android:id="@+id/txt_text_passed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Passed"
+                android:textSize="8sp"
+                android:textColor="@color/app_quiz_green"
+                app:layout_constraintTop_toBottomOf="@id/txt_passed_card_count"
+                app:layout_constraintStart_toStartOf="@id/txt_passed_card_count"
+                app:layout_constraintEnd_toEndOf="@id/txt_passed_card_count"/>
 
             <View
                 android:id="@+id/view_holder_vwgrp_test_subject"
@@ -335,7 +388,7 @@
                 android:layout_marginBottom="18dp"
                 android:background="@drawable/round_10dp_white_background"
                 android:elevation="4dp"
-                app:layout_constraintBottom_toTopOf="@+id/vwgrp_input_answer"
+                app:layout_constraintBottom_toTopOf="@+id/txt_writing_correct_answer"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/txt_total_card_progress_bar"
@@ -347,7 +400,7 @@
                     android:layout_height="20dp"
                     android:layout_marginTop="13dp"
                     android:layout_marginEnd="13dp"
-                    android:src="@drawable/image_bubble_icons_red_brown"
+                    android:src="@drawable/image_bubble_icons_red"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
@@ -498,7 +551,46 @@
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
+                <ImageView
+                    android:id="@+id/img_green_tick"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/image_green_tick"
+                    android:alpha="0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"/>
+
+                <ImageView
+                    android:id="@+id/img_red_x"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/image_red_x"
+                    android:alpha="0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"/>
+
             </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <TextView
+                android:id="@+id/txt_writing_correct_answer"
+                android:layout_width="0dp"
+                android:layout_height="18dp"
+                android:textSize="16sp"
+                android:layout_marginTop="15dp"
+                android:includeFontPadding="false"
+                android:text="Correct answer: Gatsuyoubi"
+                android:visibility="gone"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="@dimen/common_margin_start"
+                app:layout_constraintBottom_toTopOf="@id/vwgrp_input_answer"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:textColor="#C42424"/>
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/vwgrp_input_answer"
@@ -573,6 +665,19 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent"/>
 
+                <ImageView
+                    android:id="@+id/btn_writing_next"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:scaleX="0.0"
+                    android:scaleY="0.0"
+                    android:visibility="gone"
+                    android:src="@drawable/image_button_next_red"
+                    app:layout_constraintTop_toTopOf="@id/btn_submit"
+                    app:layout_constraintStart_toStartOf="@id/btn_submit"
+                    app:layout_constraintEnd_toEndOf="@id/btn_submit"
+                    app:layout_constraintBottom_toBottomOf="@id/btn_submit"/>
+
                 <androidx.constraintlayout.widget.Group
                     android:id="@+id/grp_writing_components"
                     android:layout_width="match_parent"
@@ -637,6 +742,37 @@
                             android:background="@drawable/round_15dp_quiz_normal_white"
                             android:foregroundGravity="top|left" />
 
+                        <TextView
+                            android:id="@+id/btn_answer_a_next"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/helvetica_regular"
+                            android:gravity="center_vertical|right"
+                            android:text="Next"
+                            android:visibility="gone"
+                            android:includeFontPadding="false"
+                            android:layout_marginEnd="11dp"
+                            android:paddingTop="12dp"
+                            android:paddingBottom="10dp"
+                            android:textColor="#95FFFFFF"
+                            android:layout_alignTop="@id/txt_answer_a"
+                            android:layout_alignBottom="@id/txt_answer_a"
+                            android:layout_alignEnd="@id/img_answer_a_arrow"
+                            android:layout_marginTop="2dp"
+                            android:textSize="14sp" />
+
+                        <ImageView
+                            android:id="@+id/img_answer_a_arrow"
+                            android:layout_width="wrap_content"
+                            android:layout_height="15dp"
+                            android:layout_alignParentEnd="true"
+                            android:maxHeight="15dp"
+                            android:visibility="gone"
+                            android:layout_marginEnd="10dp"
+                            android:layout_alignTop="@id/btn_answer_a_next"
+                            android:layout_alignBottom="@id/btn_answer_a_next"
+                            android:src="@drawable/image_icon_white_next_right_triangle"/>
+
                     </RelativeLayout>
 
 
@@ -671,6 +807,37 @@
                             android:layout_marginTop="6dp"
                             android:background="@drawable/round_15dp_quiz_normal_white"
                             android:foregroundGravity="top|left" />
+
+                        <TextView
+                            android:id="@+id/btn_answer_b_next"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/helvetica_regular"
+                            android:gravity="center_vertical|right"
+                            android:text="Next"
+                            android:visibility="gone"
+                            android:includeFontPadding="false"
+                            android:layout_marginEnd="11dp"
+                            android:paddingTop="12dp"
+                            android:paddingBottom="10dp"
+                            android:textColor="#95FFFFFF"
+                            android:layout_alignTop="@id/txt_answer_b"
+                            android:layout_alignBottom="@id/txt_answer_b"
+                            android:layout_alignEnd="@id/img_answer_b_arrow"
+                            android:layout_marginTop="2dp"
+                            android:textSize="14sp" />
+
+                        <ImageView
+                            android:id="@+id/img_answer_b_arrow"
+                            android:layout_width="wrap_content"
+                            android:layout_height="15dp"
+                            android:layout_alignParentEnd="true"
+                            android:maxHeight="15dp"
+                            android:visibility="gone"
+                            android:layout_marginEnd="10dp"
+                            android:layout_alignTop="@id/btn_answer_b_next"
+                            android:layout_alignBottom="@id/btn_answer_b_next"
+                            android:src="@drawable/image_icon_white_next_right_triangle"/>
 
                     </RelativeLayout>
 
@@ -707,6 +874,37 @@
                             android:background="@drawable/round_15dp_quiz_normal_white"
                             android:foregroundGravity="top|left" />
 
+                        <TextView
+                            android:id="@+id/btn_answer_c_next"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/helvetica_regular"
+                            android:gravity="center_vertical|right"
+                            android:text="Next"
+                            android:visibility="gone"
+                            android:includeFontPadding="false"
+                            android:layout_marginEnd="11dp"
+                            android:paddingTop="12dp"
+                            android:paddingBottom="10dp"
+                            android:textColor="#95FFFFFF"
+                            android:layout_alignTop="@id/txt_answer_c"
+                            android:layout_alignBottom="@id/txt_answer_c"
+                            android:layout_alignEnd="@id/img_answer_c_arrow"
+                            android:layout_marginTop="2dp"
+                            android:textSize="14sp" />
+
+                        <ImageView
+                            android:id="@+id/img_answer_c_arrow"
+                            android:layout_width="wrap_content"
+                            android:layout_height="15dp"
+                            android:layout_alignParentEnd="true"
+                            android:maxHeight="15dp"
+                            android:visibility="gone"
+                            android:layout_marginEnd="10dp"
+                            android:layout_alignTop="@id/btn_answer_c_next"
+                            android:layout_alignBottom="@id/btn_answer_c_next"
+                            android:src="@drawable/image_icon_white_next_right_triangle"/>
+
                     </RelativeLayout>
 
 
@@ -741,6 +939,37 @@
                             android:layout_marginTop="6dp"
                             android:background="@drawable/round_15dp_quiz_normal_white"
                             android:foregroundGravity="top|left" />
+
+                        <TextView
+                            android:id="@+id/btn_answer_d_next"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/helvetica_regular"
+                            android:gravity="center_vertical|right"
+                            android:text="Next"
+                            android:visibility="gone"
+                            android:includeFontPadding="false"
+                            android:layout_marginEnd="11dp"
+                            android:paddingTop="12dp"
+                            android:paddingBottom="10dp"
+                            android:textColor="#95FFFFFF"
+                            android:layout_alignTop="@id/txt_answer_d"
+                            android:layout_alignBottom="@id/txt_answer_d"
+                            android:layout_alignEnd="@id/img_answer_d_arrow"
+                            android:layout_marginTop="2dp"
+                            android:textSize="14sp" />
+
+                        <ImageView
+                            android:id="@+id/img_answer_d_arrow"
+                            android:layout_width="wrap_content"
+                            android:layout_height="15dp"
+                            android:layout_alignParentEnd="true"
+                            android:maxHeight="15dp"
+                            android:visibility="gone"
+                            android:layout_marginEnd="10dp"
+                            android:layout_alignTop="@id/btn_answer_d_next"
+                            android:layout_alignBottom="@id/btn_answer_d_next"
+                            android:src="@drawable/image_icon_white_next_right_triangle"/>
 
                     </RelativeLayout>
 
@@ -888,7 +1117,7 @@
 
         </com.teamttdvlp.memolang.view.customview.MyCustomDialog>
 
-           ` <LinearLayout
+        <LinearLayout
                 android:id="@+id/vwgrp_load_image_progress_bar"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
@@ -917,7 +1146,7 @@
                     android:text="Loading illustrations"
                     android:textColor="#90FFFFFF"
                     android:textSize="16sp" />
-            </LinearLayout>`
+            </LinearLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

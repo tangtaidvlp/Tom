@@ -20,6 +20,8 @@ class QuizCardListPlayer {
 
     private val originalCardList = ArrayList<Flashcard>()
 
+    private val missedCardList = ArrayList<Flashcard>()
+
     private val allForgottenCardList = ArrayList<Flashcard>()
 
     private lateinit var currentCard : Flashcard
@@ -130,9 +132,14 @@ class QuizCardListPlayer {
             originalCardList.add(randomPosition, forgottenCard)
         }
 
+        if (missedCardList.notContains(forgottenCard)) {
+            missedCardList.add(forgottenCard)
+            missedCardCount++
+        }
+
+
         if (allForgottenCardList.notContains(forgottenCard)) {
             allForgottenCardList.add(forgottenCard)
-            missedCardCount++
         }
     }
 
@@ -154,7 +161,8 @@ class QuizCardListPlayer {
             familiarCardCount++
         }
 
-        if (allForgottenCardList.contains(passedCard)) {
+        if (missedCardList.contains(passedCard)) {
+            missedCardList.remove(passedCard)
             missedCardCount--
         }
     }

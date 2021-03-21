@@ -6,11 +6,11 @@ import android.util.Log
 import android.view.View
 import android.view.animation.Animation
 import android.widget.EditText
+import com.teamttdvlp.memolang.view.customview.OnSingleClickListener
 
 fun systemOutLogging(message: Any) {
     Log.e("Log: ", message.toString())
 }
-
 fun not (expression : Boolean) : Boolean = !expression
 
 fun Animation.addAnimationLister (onStart : ((Animation?) -> Unit)? = null, onEnd : ((Animation?) -> Unit)? = null, onRepeat: ((Animation?) -> Unit)? = null) {
@@ -49,7 +49,6 @@ fun EditText.addTextChangeListener (
     })
 }
 
-
 fun View.goGONE() {
     if (visibility != View.GONE)
     visibility = View.GONE
@@ -75,6 +74,14 @@ fun View.isGone () : Boolean{
 
 fun View.isInvisible() : Boolean{
     return visibility == View.INVISIBLE
+}
+
+fun View.setOnClickListener (preventDoubleClick: Boolean, onClickEvent: (v: View?) -> Unit) {
+    if (preventDoubleClick) {
+        setOnClickListener( OnSingleClickListener(onClickEvent = onClickEvent) )
+    } else {
+        setOnClickListener(onClickEvent)
+    }
 }
 
 infix fun Boolean.but(expression: Boolean): Boolean {

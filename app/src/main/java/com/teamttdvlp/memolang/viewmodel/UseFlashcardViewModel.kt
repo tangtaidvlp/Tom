@@ -59,7 +59,7 @@ class UseFlashcardViewModel(
         this.isReversedTextAndTranslation = reverseTextAndTrans
 
         loadAllCardIllustrations(fcDeck.flashcards)
-        view.onLoadAllIllustrationStart()
+        view.onLoadDataStart()
 
         val frontLang: String
         val backLang: String
@@ -106,7 +106,7 @@ class UseFlashcardViewModel(
         illustrationLoader.loadListOfBitmap(allPictureList, onGetResult = { data, exceptionMap ->
             cardIllustrationMap = data
             beginUsing()
-            view.onLoadAllIllustrationFinish()
+            view.onLoadDataFinish()
         })
     }
 

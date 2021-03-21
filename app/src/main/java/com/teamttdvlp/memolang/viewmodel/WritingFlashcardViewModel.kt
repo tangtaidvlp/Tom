@@ -79,7 +79,7 @@ class WritingFlashcardViewModel (var app : Application, private val illustration
         this.isDeckReversed = reverseTextAndTranslation
 
         loadAllCardIllustrations(deck.flashcards)
-        view.onLoadAllIllustrationStart()
+        view.onLoadDataStart()
 
         val questionLanguage: String
         val answerLanguage: String
@@ -200,7 +200,7 @@ class WritingFlashcardViewModel (var app : Application, private val illustration
         illustrationLoader.loadListOfBitmap(illustrationsNameList, onGetResult =  { dataMap, exMap ->
             this.illustrationMap.putAll(dataMap)
             beginUsing()
-            view.onLoadAllIllustrationFinish()
+            view.onLoadDataFinish()
         })
     }
 

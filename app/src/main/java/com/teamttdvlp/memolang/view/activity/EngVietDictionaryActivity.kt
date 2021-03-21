@@ -168,6 +168,7 @@ class EngVietDictionaryActivity :
                 setOwner = setName, type = type, example = example, meanOfExample = meanExample,
                 pronunciation = pronunciation, cardProperty = CardProperty()
             )
+
             // TODO ( Check card property )
 
             viewModel.proceedAddFlashcard(newCard)
@@ -686,9 +687,7 @@ class EngVietDictionaryActivity :
                     onEnd = {
                         imgAddFcSuccess.animate().alpha(0f)
                             .setStartDelay(0) // Reset startDelay
-                            .setLiteListener(onEnd = {
-                                // Do nothing, Reset the above setLiteListener()
-                    })
+                            .clearListeners()
                 })
     }}
 

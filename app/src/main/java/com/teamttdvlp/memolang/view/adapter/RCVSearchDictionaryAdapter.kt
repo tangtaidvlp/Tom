@@ -343,7 +343,12 @@ class RCVSearchDictionaryAdapter(var context : Context, var engVietVocabularyLoa
     private fun getCorresPrefixVocaList_AndCacheIt (prefix : String) : ArrayList<RawVocabulary> {
         val corresPrefix_RawVocaList : ArrayList<RawVocabulary>
         if (check_corresPrefixList_WasNotLoadedBefore(prefix)) {
-            corresPrefix_RawVocaList = engVietVocabularyLoader.getOfflineVocaFromRawFile_ByPrefix(prefix)
+            val result = engVietVocabularyLoader.getOfflineVocaFromRawFile_ByPrefix(prefix)
+            if (result != null) {
+                corresPrefix_RawVocaList = result
+            } else {
+                corresPrefix_RawVocaList = ArrayList()
+            }
             proceedCache_LoadedRawList(prefix, corresPrefix_RawVocaList)
         } else {
             corresPrefix_RawVocaList = cached_LoadedList_Map.get(prefix)!!
