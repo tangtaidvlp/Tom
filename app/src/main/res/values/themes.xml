@@ -3,8 +3,10 @@
 
     <style name="AppTheme_WithSplashScreen" parent="Theme.AppCompat.Light.NoActionBar">
 
-    <item name="android:windowBackground">@drawable/splash_screen_drawable</item>
+        <item name="android:windowBackground">@drawable/splash_screen_drawable</item>
         <item name="android:windowContentTransitions">true</item>
+        <item name="statusBarBackground">@color/white</item>
+        <item name="android:statusBarColor">@color/white</item>
 
     </style>
 

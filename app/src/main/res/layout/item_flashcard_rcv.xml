@@ -3,7 +3,6 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <data>
-
         <variable
             name="flashcard"
             type="com.teamttdvlp.memolang.data.model.entity.flashcard.Flashcard" />
@@ -11,6 +10,8 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:background="@color/white"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="5dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
@@ -20,9 +21,8 @@
             android:layout_height="wrap_content"
             android:layout_marginEnd="8dp"
             android:orientation="vertical"
-            android:layout_marginTop="14dp"
+            android:layout_marginTop="10dp"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/btn_delete"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
@@ -61,20 +61,36 @@
         </LinearLayout>
 
 
-        <ImageView
-            android:id="@+id/btn_delete"
+        <LinearLayout
+            android:id="@+id/vwgrp_edit_answers_quiz"
             android:layout_width="wrap_content"
-            android:layout_height="0dp"
-            android:paddingStart="16dp"
-            android:paddingTop="10dp"
-            android:paddingBottom="10dp"
-            android:paddingEnd="17dp"
-            android:src="@drawable/image_clear_all_text_black"
+            android:layout_height="wrap_content"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"/>
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginEnd="17dp"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/btn_edit_answers_quiz"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:src="@drawable/image_icon_answers_default" />
+
+            <TextView
+                android:id="@+id/txt_answers_quiz_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/segoeui"
+                android:textColor="@color/answer_quiz_default_grey"
+                android:text="Default"
+                android:textSize="10sp" />
+
+        </LinearLayout>
 
 
         <TextView
@@ -110,7 +126,7 @@
             android:id="@+id/txt_text_for_delete"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="46dp"
+            android:layout_marginStart="56dp"
             android:clickable="false"
             android:fontFamily="@font/seguisb"
             android:linksClickable="false"
@@ -129,6 +145,17 @@
 
         <Button
             android:id="@+id/btn_switch_delete_state"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:alpha="0.0"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btn_switch_move_state"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:alpha="0.0"

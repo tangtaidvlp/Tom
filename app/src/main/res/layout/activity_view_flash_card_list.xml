@@ -12,57 +12,84 @@
     <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@color/white"
+            android:background="@color/grey_background_color"
             tools:context=".view.activity.ViewFlashCardListActivity">
 
 
         <androidx.appcompat.widget.LinearLayoutCompat
             android:id="@+id/vwgrp_title"
             android:layout_width="0dp"
-            android:layout_height="45dp"
-            android:orientation="horizontal"
-            android:gravity="center_vertical"
+            android:layout_height="50dp"
+            android:background="@color/app_blue"
             android:elevation="3dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
             android:translationZ="0.5dp"
-            android:background="@drawable/background_app_gradient_theme_blue"
-            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent">
+            app:layout_constraintTop_toTopOf="parent">
 
             <TextView
                 android:id="@+id/txt_set_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:elevation="10dp"
-                android:translationZ="5dp"
+                android:layout_marginStart="@dimen/common_margin_start"
                 android:layout_weight="1"
+                android:elevation="10dp"
                 android:fontFamily="@font/segoeui"
                 android:gravity="center_vertical"
-                android:layout_marginStart="12dp"
                 android:inputType="textNoSuggestions|text"
                 android:paddingEnd="16dp"
                 android:paddingBottom="1dp"
                 android:text="@{vwModel.beingViewedflashcardSet.name}"
                 android:textColor="@color/white"
-                android:textSize="16sp"/>
+                android:textSize="16sp"
+                android:translationZ="5dp" />
 
-            <TextView
+            <LinearLayout
+                android:id="@+id/vwgrp_meetball"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:elevation="10dp"
-                android:translationZ="5dp"
-                android:fontFamily="@font/segoeui"
-                android:gravity="center_vertical"
-                android:layout_marginEnd="@dimen/common_margin_end"
-                android:inputType="textNoSuggestions|text"
                 android:layout_marginStart="10dp"
-                android:paddingBottom="1dp"
-                android:text="@{String.valueOf(vwModel.flashcardCount)}"
-                android:textColor="@color/white"
-                android:textSize="16sp"/>
+                android:layout_marginBottom="2dp"
+                android:layout_marginEnd="12dp"
+                android:orientation="vertical"
+                android:padding="8dp"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:id="@+id/txt_flashcard_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:elevation="10dp"
+                    android:fontFamily="@font/segoeui"
+                    android:inputType="textNoSuggestions|text"
+                    android:hint="5"
+                    android:includeFontPadding="false"
+                    android:textColorHint="@color/white"
+                    android:text="@{String.valueOf(vwModel.flashcardCount)}"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:clickable="false"
+                    android:longClickable="false"
+                    android:contextClickable="false"
+                    android:translationZ="5dp" />
+
+                <ImageView
+                    android:id="@+id/btn_meetball"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/image_meatball_button"
+                    android:clickable="false"
+                    android:longClickable="false"
+                    android:contextClickable="false"
+                    android:layout_marginTop="4dp"/>
+
+            </LinearLayout>
+
 
         </androidx.appcompat.widget.LinearLayoutCompat>
-
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rcv_flashcard_list"
@@ -70,6 +97,7 @@
             android:layout_height="0dp"
             android:background="@color/white"
             android:layout_marginBottom="10dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -92,6 +120,19 @@
             android:layout_height="wrap_content"
             android:src="@drawable/button_bin_delete"
             android:translationZ="4dp"
+            android:layout_marginBottom="6dp"
+            android:layout_marginRight="6dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+
+        <ImageView
+            android:id="@+id/btn_edit_answer_quiz_done"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/image_button_edit_answer_quiz_done_green"
+            android:translationZ="4dp"
             android:visibility="gone"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
@@ -108,6 +149,123 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
             />
+
+        <ImageView
+            android:id="@+id/btn_start_edit_answers_quiz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="8dp"
+            android:src="@drawable/image_button_custom_quizzes"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <ImageView
+            android:id="@+id/btn_btn_add_new_quiz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/image_button_add_new_quiz"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/btn_finish_edit_answer_quiz"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="2dp"/>
+
+        <ImageView
+            android:id="@+id/btn_finish_edit_answer_quiz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:src="@drawable/image_button_finish_edit_answers_quiz"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_margin="10dp"/>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/vwgrp_move_card_option"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Move to set"
+                android:fontFamily="@font/segoeui"
+                android:layout_marginBottom="5dp"
+                android:includeFontPadding="false"
+                android:textColor="@color/black"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/txt_move_target_set"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcv_choose_move_set_target"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="6dp"
+                app:layout_constraintHeight_max="260dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                android:background="@drawable/round_3dp_white_background_with_border"
+                app:layout_constraintBottom_toTopOf="@id/txt_move_target_set"
+                app:layout_constraintStart_toStartOf="parent"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="@id/txt_move_target_set"/>
+
+            <TextView
+                android:id="@+id/txt_move_target_set"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/round_5dp_alpha_15_blue_background"
+                android:includeFontPadding="false"
+                android:paddingLeft="10dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:text="Learning English Set"
+                android:textColor="#08839A"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/btn_move"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <ImageView
+                android:id="@+id/img_spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image_button_app_down_triangle_blue"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintTop_toTopOf="@id/txt_move_target_set"
+                app:layout_constraintEnd_toEndOf="@id/txt_move_target_set"
+                app:layout_constraintBottom_toBottomOf="@id/txt_move_target_set"/>
+
+            <TextView
+                android:id="@+id/btn_move"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:text="Move"
+                android:textColor="@color/white"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:background="@drawable/round_5dp_app_blue_background"
+                app:layout_constraintTop_toTopOf="@id/txt_move_target_set"
+                app:layout_constraintBottom_toBottomOf="@id/txt_move_target_set"
+                app:layout_constraintEnd_toEndOf="parent"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

@@ -3,7 +3,7 @@ package com.teamttdvlp.memolang.data.model.entity.flashcard
 import androidx.room.Embedded
 import androidx.room.Relation
 
-data class FlashcardSetWithCardList(
+data class  FlashcardSetWithCardList(
     @Embedded
     val deck: Deck,
 

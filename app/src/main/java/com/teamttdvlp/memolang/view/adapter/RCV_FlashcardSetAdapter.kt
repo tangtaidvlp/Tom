@@ -104,8 +104,7 @@ class RCV_FlashcardSetAdapter(
                 }
 
                 // Popups's Events
-                val inflater =
-                    getApplicationContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
+                val inflater = getApplicationContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
                 val popUpBinding = PopupFlashcardSetOtherEditOptionsBinding.inflate(inflater)
                 val popupWindow = PopupWindow(popUpBinding.root, WRAP_CONTENT, WRAP_CONTENT, true)
 

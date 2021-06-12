@@ -214,6 +214,13 @@ class MenuActivity : BaseActivity<ActivityMenuBinding, MenuActivityViewModel>(),
                 }
                 val intent = Intent(this@MenuActivity, ViewFlashCardListActivity::class.java)
                 intent.putExtra(FLASHCARD_SET_KEY, deck)
+
+                val allSetNameList = ArrayList<String>()
+                for (flashcardSet in flashcardSetAdapter.list) {
+                    allSetNameList.add(flashcardSet.name)
+                }
+
+                intent.putExtra(ALL_FLASHCARD_SET_NAME,  allSetNameList)
                 startActivityForResult(intent, VIEW_LIST_REQUEST_CODE)
             }
 

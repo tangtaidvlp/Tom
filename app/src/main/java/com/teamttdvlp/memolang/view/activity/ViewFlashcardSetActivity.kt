@@ -16,7 +16,8 @@ import com.teamttdvlp.memolang.view.helper.*
 import com.teamttdvlp.memolang.viewmodel.ViewFlashcardSetViewModel
 import javax.inject.Inject
 
-class ViewFlashcardSetActivity : BaseActivity<ActivityViewFlashcardSetBinding, ViewFlashcardSetViewModel>()
+class
+ViewFlashcardSetActivity : BaseActivity<ActivityViewFlashcardSetBinding, ViewFlashcardSetViewModel>()
                         ,ViewFlashcardSetView {
 
     lateinit var flashcardSetAdapter : RCV_FlashcardSetAdapter

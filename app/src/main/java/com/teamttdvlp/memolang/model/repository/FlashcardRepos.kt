@@ -25,6 +25,10 @@ class FlashcardRepos  (database : MemoLangSqliteDataBase) {
         insertFlashcard(cardEntity, onInsertListener)
     }
 
+    fun updateFlashcards (cardEntities: ArrayList<Flashcard>, onUpDateListener : (isSuccess: Boolean, ex : Exception?) -> Unit) {
+        insertFlashcards(cardEntities, onUpDateListener)
+    }
+
     fun deleteCards (flashcard : ArrayList<Flashcard>) {
         val flashcardEntityArray = Array(flashcard.size) { index ->
             return@Array flashcard[index]

@@ -4,6 +4,8 @@ import android.app.Application
 import androidx.databinding.ObservableInt
 import com.teamttdvlp.memolang.data.model.entity.flashcard.Deck
 import com.teamttdvlp.memolang.data.model.entity.flashcard.Flashcard
+import com.teamttdvlp.memolang.model.QuizCardListPlayer
+import com.teamttdvlp.memolang.model.repository.CardQuizInforRepos
 import com.teamttdvlp.memolang.model.repository.FlashcardRepos
 import com.teamttdvlp.memolang.view.activity.iview.ViewFlashcardListView
 import com.teamttdvlp.memolang.view.base.BaseViewModel
@@ -12,6 +14,7 @@ import java.io.File
 
 class ViewFlashCardListViewModel(
     var app: Application,
+    private val cardQuizInforRepos: CardQuizInforRepos,
     var flashcardRepos: FlashcardRepos
 ) : BaseViewModel<ViewFlashcardListView>() {
 
@@ -19,9 +22,10 @@ class ViewFlashCardListViewModel(
 
     lateinit var beingViewedflashcardSet: Deck
 
-    fun setFlashcardSet(deck: Deck) {
+    fun setUpData(deck: Deck) {
         this.beingViewedflashcardSet = deck
         flashcardCount.set(beingViewedflashcardSet.flashcards.size)
+        loadCardQuizInforFromDatabase()
     }
 
     fun getFlashcardCount(): ObservableInt {
@@ -33,7 +37,16 @@ class ViewFlashCardListViewModel(
         flashcardRepos.deleteCards(cardList)
     }
 
-    fun deleteCardsPicture(cardList: ArrayList<Flashcard>) {
+
+    private fun loadCardQuizInforFromDatabase () {
+
+        cardQuizInforRepos.getQuizInfors_ByDeckId(deckId = beingViewedflashcardSet.name, onGetCardQuizInfors = { cardQuizInforList ->
+             view.onLoadDataSuccess(cardQuizInforList)
+        })
+
+    }
+
+    private fun deleteCardsPicture(cardList: ArrayList<Flashcard>) {
         for (card in cardList) {
             val path =
                 app.filesDir.absolutePath + File.separator + card.frontIllustrationPictureName
@@ -44,11 +57,31 @@ class ViewFlashCardListViewModel(
                 if (hasSuccess) {
                     systemOutLogging("Delete success")
                 } else {
-                    systemOutLogging("Nhu con caặc")
+                    systemOutLogging("Delete failed")
                 }
             } else {
                 systemOutLogging("FIle not found")
             }
         }
+    }
+
+    fun moveSelectedCardToTargetSet(
+        selectedFlashcardList: java.util.ArrayList<Flashcard>,
+        targetSet: String
+    ) {
+
+        for (card in selectedFlashcardList) {
+            card.setOwner = targetSet
+        }
+
+        flashcardRepos.updateFlashcards(selectedFlashcardList) { isSuccess, ex ->
+            if (isSuccess) {
+                systemOutLogging("Move to target succesfully")
+            } else {
+                systemOutLogging("Move to target failed")
+                ex?.printStackTrace()
+            }
+        }
+
     }
 }

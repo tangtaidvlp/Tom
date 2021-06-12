@@ -11,7 +11,7 @@
                        android:gravity="center" /></item>
 
     <item android:bottom="80dp">
-        <bitmap android:src="@drawable/team_name"
+        <bitmap android:src="@drawable/developer_name"
                        android:gravity="bottom|center_horizontal"/>
     </item>
 </layer-list>

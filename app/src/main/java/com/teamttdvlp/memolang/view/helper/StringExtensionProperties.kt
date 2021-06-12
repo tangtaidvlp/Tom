@@ -3,8 +3,16 @@ package com.teamttdvlp.memolang.view.helper
 import java.lang.IndexOutOfBoundsException
 
 fun String.capitalizeFirstLetter() : String {
-    return if (this.isNotEmpty()) {
+    return if (this.isNotEmpty() and (this.length > 1)) {
         this[0].toUpperCase() + this.substring(1)
+    } else {
+        this
+    }
+}
+
+fun String.decapitalizeFirstLetter() : String {
+    return if (this.isNotEmpty() and (this.length > 1)) {
+        this[0].toLowerCase() + this.substring(1)
     } else {
         this
     }

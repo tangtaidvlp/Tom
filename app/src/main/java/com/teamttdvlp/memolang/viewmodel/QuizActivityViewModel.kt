@@ -9,6 +9,9 @@ import com.teamttdvlp.memolang.model.*
 import com.teamttdvlp.memolang.model.repository.CardQuizInforRepos
 import com.teamttdvlp.memolang.view.activity.iview.QuizView
 import com.teamttdvlp.memolang.view.base.BaseViewModel
+import com.teamttdvlp.memolang.view.helper.capitalizeFirstLetter
+import com.teamttdvlp.memolang.view.helper.decapitalizeFirstLetter
+import com.teamttdvlp.memolang.view.helper.systemOutLogging
 import com.teamttdvlp.memolang.viewmodel.abstraction.CardPlayableViewModel
 import com.teamttdvlp.memolang.viewmodel.abstraction.CardRelearnableViewModel
 import java.lang.Exception
@@ -62,7 +65,6 @@ class QuizActivityViewModel (
         this.deck = deck
         this.isDeckReversed = isReverseCards
         deck.flashcards.shuffle()
-
         view.onLoadDataStart()
         loadCardQuizInforFromDatabase (onEnd = {
             loadAllCardIllustrations(deck.flashcards)
@@ -231,7 +233,6 @@ class QuizActivityViewModel (
         answerSet.add(answer2)
         answerSet.add(answer3)
 
-        answerSet.shuffle()
         return answerSet
     }
 
@@ -245,6 +246,8 @@ class QuizActivityViewModel (
         if (answerSetFromOtherCards != null) {
             return answerSetFromOtherCards
         }
+
+
 
         return null
     }
@@ -284,18 +287,26 @@ class QuizActivityViewModel (
 
         val randomer = Random()
 
-        var answer1 = answerSource.get(randomer.nextInt(answerSource.size - 1))
-        var answer2 = answerSource.get(randomer.nextInt(answerSource.size - 1))
-        var answer3 = answerSource.get(randomer.nextInt(answerSource.size - 1))
+        var answer1 = answerSource.get(randomer.nextInt(answerSource.size - 1)).key
+        var answer2 = answerSource.get(randomer.nextInt(answerSource.size - 1)).key
+        var answer3 = answerSource.get(randomer.nextInt(answerSource.size - 1)).key
 
-        // TODO
-        // Process uppercase, lowercase
-
-        return ArrayList<String>().apply {
-            add(answer1.key)
-            add(answer2.key)
-            add(answer3.key)
+        if (originalAnswer.get(0).isUpperCase()) {
+            answer1 = answer1.capitalizeFirstLetter()
+            answer2 = answer2.capitalizeFirstLetter()
+            answer3 = answer3.capitalizeFirstLetter()
+        } else {
+            answer1 = answer1.decapitalizeFirstLetter()
+            answer2 = answer2.decapitalizeFirstLetter()
+            answer3 = answer3.decapitalizeFirstLetter()
         }
+
+        var result = ArrayList<String>()
+        result.add(answer1)
+        result.add(answer2)
+        result.add(answer3)
+        result.add(originalAnswer)
+        return result
     }
 
     override fun handleUserRememberCard() {

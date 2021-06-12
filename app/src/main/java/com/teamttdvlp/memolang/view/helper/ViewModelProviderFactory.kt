@@ -116,7 +116,7 @@ constructor(
         }
 
         if (modelClass.isAssignableFrom(ViewFlashCardListViewModel::class.java)) {
-            return ViewFlashCardListViewModel(application, flashcardRepos.get()) as T
+            return ViewFlashCardListViewModel(application, cardQuizInforRepos.get(), flashcardRepos.get()) as T
         }
 
         if (modelClass.isAssignableFrom(QuizActivityViewModel::class.java)) {

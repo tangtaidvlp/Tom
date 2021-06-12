@@ -39,6 +39,8 @@
     <color name="app_puzzle_little_dark_brown">#7D6C3B</color>
     <color name="app_puzzle_total_progress_bar_yellow">#E6DAC0</color>
     <color name="app_writing_light_red_brown">#F0DFDE</color>
+    <color name="answer_quiz_edited_hard_green">#03796A</color>
+    <color name="answer_quiz_default_grey">#CBCBCB</color>
     <color name="app_quiz_green">#0D9A88</color>
     <color name="quiz_grey_green">#7CAFA2</color>
     <color name="quiz_light_blur_mint">#CEE7E4</color>

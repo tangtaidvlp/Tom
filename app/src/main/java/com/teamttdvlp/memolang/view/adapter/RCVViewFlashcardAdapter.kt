@@ -12,15 +12,22 @@ import androidx.core.view.doOnPreDraw
 import androidx.core.view.isVisible
 import androidx.recyclerview.widget.RecyclerView
 import com.teamttdvlp.memolang.R
+import com.teamttdvlp.memolang.data.model.entity.flashcard.CardQuizInfor
 import com.teamttdvlp.memolang.data.model.entity.flashcard.Flashcard
 import com.teamttdvlp.memolang.databinding.ItemFlashcardRcvBinding
+import com.teamttdvlp.memolang.view.customview.interpolator.NormalOutExtraSlowIn
 import com.teamttdvlp.memolang.view.helper.*
 
-class RCVViewFlashcardAdapter (var context : Context, var list : ArrayList<Flashcard>) : RecyclerView.Adapter<RCVViewFlashcardAdapter.ViewHolder> () {
+class RCVViewFlashcardAdapter (var context : Context, var list : ArrayList<Flashcard>, var flashcardQuizList : ArrayList<CardQuizInfor>) : RecyclerView.Adapter<RCVViewFlashcardAdapter.ViewHolder> () {
 
-    var isInDeleteMode : Boolean = false
+    var isInEditAnswer_Quiz_Mode: Boolean = false
+    private set
 
-    private var onDeleteButtonClickListener : OnItemClickListener? = null
+    var isIn_Delete_Mode : Boolean = false
+    private set
+
+    var isIn_MoveCard_Mode : Boolean = false
+        private set
 
     private var onItemClickListener : OnItemClickListener? = null
 
@@ -50,27 +57,37 @@ class RCVViewFlashcardAdapter (var context : Context, var list : ArrayList<Flash
             // on Normal Item. That's a big bug
             vHder.dB.root.goVISIBLE()
         }
-
-        if (position == list.size - 1) {
-            vHder.dB.line.goINVISIBLE()
-            vHder.dB.root.elevation = 3.dp().toFloat()
-            (vHder.dB.root.layoutParams as RecyclerView.LayoutParams).bottomMargin = 3.dp()
-            vHder.dB.root.requestLayout()
-        } else {
-            // Reset it
-            vHder.dB.line.goVISIBLE()
-            vHder.dB.root.elevation = 0.dp().toFloat()
-            (vHder.dB.root.layoutParams as RecyclerView.LayoutParams).bottomMargin = 0.dp()
-            vHder.dB.root.requestLayout()
-        }
+//
+//        if (position == list.size - 1) {
+////            vHder.dB.line.goINVISIBLE()
+////            vHder.dB.root.elevation = 3.dp().toFloat()
+//////            (vHder.dB.root.layoutParams as RecyclerView.LayoutParams).bottomMargin = 3.dp()
+////            vHder.dB.root.requestLayout()
+//        }
+////        else {
+////            // Reset it
+////            vHder.dB.line.goVISIBLE()
+////            vHder.dB.root.elevation = 0.dp().toFloat()
+////            (vHder.dB.root.layoutParams as RecyclerView.LayoutParams).bottomMargin = 0.dp()
+////            vHder.dB.root.requestLayout()
+////        }
 
         val flashcard = list[position]
         vHder.bind(flashcard)
 
-        val isItemChecked = checkedCardsPosList.contains(position)
+        vHder.itemView.setOnClickListener {
+            onItemClickListener?.onClick(flashcard)
+        }
 
-        if (isInDeleteMode) {
+        if (isIn_Delete_Mode) {
+            val isItemChecked = checkedCardsPosList.contains(position)
             vHder.showDeleteModeState(isItemChecked)
+
+        } else if (isInEditAnswer_Quiz_Mode) {
+            val is_QuizInfor_EditedByUser = checkQuizInforStatus (flashcard.id)
+            if (is_QuizInfor_EditedByUser) {
+                vHder.showEditQuizModeState (is_QuizInfor_EditedByUser)
+            }
         } else {
             vHder.showNormalState()
         }
@@ -79,40 +96,57 @@ class RCVViewFlashcardAdapter (var context : Context, var list : ArrayList<Flash
             viewHolderList.add(vHder)
         }
 
-        viewHolderList.add(vHder)
+//        viewHolderList.add(vHder)
 
-        vHder.itemView.setOnClickListener {
-            onItemClickListener?.onClick(flashcard)
-        }
-
-        vHder.dB.btnDelete.setOnClickListener {
-            if (not(isInDeleteMode)) {
-                turnOnDeleteMode()
-            }
-            onDeleteButtonClickListener?.onClick(flashcard)
-        }
-
+        /**
+         * Delete mode set up
+         */
         vHder.dB.btnSwitchDeleteState.setOnClickListener {
-            systemOutLogging("Pos: " + vHder.adapterPosition)
             if (checkedCardsPosList.contains(vHder.adapterPosition)) {
-                systemOutLogging("Contains: " + vHder.adapterPosition)
-                vHder.uncheck()
+                vHder.uncheckDeleted()
                 checkedCardsPosList.remove(vHder.adapterPosition)
             } else {
-                vHder.check()
+                vHder.checkDeleted()
                 checkedCardsPosList.add(vHder.adapterPosition)
-                systemOutLogging("Not contains: " + vHder.adapterPosition)
             }
         }
 
-        if (position == 0) {
+        val is_OnEndDeleteMode_NOT_SetUp = (position == 0)
+        if (is_OnEndDeleteMode_NOT_SetUp) {
             vHder.itemOnEndDeleteModeListener = {
                 this@RCVViewFlashcardAdapter.onEndDeleteModeListener?.invoke()
             }
         }
+
+        /**
+         * Move card mode set up
+         */
+
+        vHder.dB.btnSwitchMoveState.setOnClickListener {
+            if (checkedCardsPosList.contains(vHder.adapterPosition)) {
+                vHder.uncheckSelectedMove()
+                checkedCardsPosList.remove(vHder.adapterPosition)
+            } else {
+                vHder.checkSelectedMove()
+                checkedCardsPosList.add(vHder.adapterPosition)
+            }
+        }
+
+    }
+
+    private fun checkQuizInforStatus(flashcardID: Int): Boolean {
+        for (cardQuizInfor in flashcardQuizList) {
+            if (cardQuizInfor.cardId == flashcardID) {
+                flashcardQuizList.remove(cardQuizInfor)
+                return true
+            }
+        }
+
+        return false
     }
 
     override fun getItemCount(): Int = list.size + EXTRA_COUNT
+
 
     fun setOnEndDeleteModeListener (onEnd : () -> Unit) {
         this.onEndDeleteModeListener = {
@@ -124,7 +158,6 @@ class RCVViewFlashcardAdapter (var context : Context, var list : ArrayList<Flash
     fun getSelectedFlashcardList () : ArrayList<Flashcard> {
         val result = ArrayList<Flashcard>()
         for (pos in checkedCardsPosList) {
-            systemOutLogging("POS: " + pos)
             result.add(list[pos])
         }
         return result
@@ -142,13 +175,6 @@ class RCVViewFlashcardAdapter (var context : Context, var list : ArrayList<Flash
         checkedCardsPosList.clear()
     }
 
-    fun setOnDeleteButtonClickListener (onDeleteButtonClickListener: (item: Flashcard) -> Unit) {
-        this.onDeleteButtonClickListener = object : OnItemClickListener {
-            override fun onClick(item: Flashcard) {
-                onDeleteButtonClickListener(item)
-            }
-        }
-    }
 
     fun setOnItemClickListener (onItemClickListener: (item: Flashcard) -> Unit) {
         this.onItemClickListener = object : OnItemClickListener {
@@ -158,18 +184,48 @@ class RCVViewFlashcardAdapter (var context : Context, var list : ArrayList<Flash
         }
     }
 
+    fun turnOnEditAnswerQuizMode () {
+        isInEditAnswer_Quiz_Mode = true
+        for (vh in viewHolderList) {
+            vh.turnOnEditAnswerQuizMode()
+        }
+    }
+
+    fun turnOffEditAnswerQuizMode () {
+        isInEditAnswer_Quiz_Mode = false
+        for (vh in viewHolderList) {
+            vh.turnOffEditAnswerQuizMode()
+        }
+    }
+
     fun turnOnDeleteMode () {
-        isInDeleteMode = true
+        isIn_Delete_Mode = true
         for (vh in viewHolderList) {
             vh.turnOnDeleteMode()
         }
     }
 
     fun turnOffDeleteMode () {
-        isInDeleteMode = false
+        isIn_Delete_Mode = false
         for (vh in viewHolderList) {
             vh.turnOffDeleteMode()
-            vh.uncheck()
+            vh.uncheckDeleted()
+        }
+        checkedCardsPosList.clear()
+    }
+
+    fun turnOnMoveCardsMode() {
+        isIn_MoveCard_Mode = true
+        for (vh in viewHolderList) {
+            vh.turnOnMoveCardMode()
+        }
+    }
+
+    fun turnOffMoveCardMode () {
+        isIn_MoveCard_Mode = false
+        for (vh in viewHolderList) {
+            vh.turnOffMoveCardMode()
+            vh.uncheckSelectedMove()
         }
         checkedCardsPosList.clear()
     }
@@ -190,9 +246,19 @@ class RCVViewFlashcardAdapter (var context : Context, var list : ArrayList<Flash
 
         private var turnOffDeleteModeAnimator : AnimatorSet = AnimatorSet()
 
-        val CHECKED_DELETE_IMAGE : Drawable
+        private var turnOnMoveCardModeAnimator : AnimatorSet = AnimatorSet()
 
-        val UNCHECKED_DELETE_IMAGE : Drawable
+        private var turnOffMoveCardModeAnimator : AnimatorSet = AnimatorSet()
+
+        private val CHECKED_MOVED_IMAGE : Drawable
+
+        private val CHECKED_DELETE_IMAGE : Drawable
+
+        private val UNCHECKED_DELETE_IMAGE : Drawable
+
+        private val CREATED_QUIZ_INFOR_IMAGE : Drawable
+
+        private val DEFAULT_QUIZ_INFOR_IMAGE : Drawable
 
         val `28dp` : Float
 
@@ -205,6 +271,12 @@ class RCVViewFlashcardAdapter (var context : Context, var list : ArrayList<Flash
             `28dp` = 28.dp().toFloat()
             CHECKED_DELETE_IMAGE = context.getDrawable(R.drawable.image_checked_delete)!!
             UNCHECKED_DELETE_IMAGE = context.getDrawable(R.drawable.image_unchecked_delete)!!
+
+            CHECKED_MOVED_IMAGE = context.getDrawable(R.drawable.image_checked_moved)!!
+
+            CREATED_QUIZ_INFOR_IMAGE = context.getDrawable(R.drawable.image_icon_answers_created)!!
+            DEFAULT_QUIZ_INFOR_IMAGE = context.getDrawable(R.drawable.image_icon_answers_default)!!
+
             initAnimations()
         }
 
@@ -220,11 +292,19 @@ class RCVViewFlashcardAdapter (var context : Context, var list : ArrayList<Flash
             turnOffDeleteModeAnimator.start()
         }
 
+        fun turnOnMoveCardMode () {
+            turnOnMoveCardModeAnimator.start()
+        }
+
+        fun turnOffMoveCardMode () {
+            turnOffMoveCardModeAnimator.start()
+        }
+
+
         fun showNormalState () {
             val isStill_InDeleteMode = dB.btnSwitchDeleteState.isVisible
             if (isStill_InDeleteMode) {
                 dB.viewgroupText.alpha = 1f
-                dB.btnDelete.alpha = 1f
 
                 dB.viewgroupText.translationX = 0f
                 dB.txtTextForDelete.alpha = 0f
@@ -240,7 +320,6 @@ class RCVViewFlashcardAdapter (var context : Context, var list : ArrayList<Flash
             if (isNot_InDeleteMode) {
                 viewgroupText.translationX = `28dp`
                 imgDeleteStatus.alpha = 1.0f
-                btnDelete.alpha = 0.0f
                 btnSwitchDeleteState.goVISIBLE()
                 viewgroupText.alpha = 0f
                 txtTextForDelete.alpha = 1f
@@ -253,28 +332,33 @@ class RCVViewFlashcardAdapter (var context : Context, var list : ArrayList<Flash
             }
         } }
 
-        fun uncheck () {
+        fun uncheckDeleted () {
             dB.imgDeleteStatus.setImageDrawable(UNCHECKED_DELETE_IMAGE)
         }
 
-        fun check () {
+        fun checkDeleted () {
             dB.imgDeleteStatus.setImageDrawable(CHECKED_DELETE_IMAGE)
         }
 
-        fun initAnimations () {
-            initTurnOnDeleteModeAnimations()
-            initTurnOffDeleteModeAnimations()
+        fun checkSelectedMove () {
+            dB.imgDeleteStatus.setImageDrawable(CHECKED_MOVED_IMAGE)
         }
 
-        fun initTurnOnDeleteModeAnimations () {
+        fun uncheckSelectedMove () {
+            dB.imgDeleteStatus.setImageDrawable(UNCHECKED_DELETE_IMAGE)
+        }
+
+        private fun initAnimations () {
+            init_TurnOn_Mode_Animations()
+            init_TurnOff_Mode_Animations()
+        }
+
+        private fun init_TurnOn_Mode_Animations () {
             val showStatusDelete_Alpha = ObjectAnimator.ofFloat(dB.imgDeleteStatus, View.ALPHA, 0f, 1f)
             showStatusDelete_Alpha.duration = 100
 
             val textMoveLeftToRight = ObjectAnimator.ofFloat(dB.viewgroupText, View.TRANSLATION_X, 0f, `28dp`)
             textMoveLeftToRight.duration = 100
-
-            val hideButtonDelete_Alpha = ObjectAnimator.ofFloat(dB.btnDelete, View.ALPHA, 1f, 0f)
-            hideButtonDelete_Alpha.duration = 100
 
             val hideTranslationAndText = ObjectAnimator.ofFloat(dB.viewgroupText, View.ALPHA, 1f, 0f)
 
@@ -285,7 +369,8 @@ class RCVViewFlashcardAdapter (var context : Context, var list : ArrayList<Flash
                 duration = 100
             }
 
-            turnOnDeleteModeAnimator.playSequentially(hideButtonDelete_Alpha, textMoveLeftToRight, showTextForDeleteSet, showStatusDelete_Alpha)
+            // Delete mode
+            turnOnDeleteModeAnimator.playSequentially(textMoveLeftToRight, showTextForDeleteSet, showStatusDelete_Alpha)
             turnOnDeleteModeAnimator.addListener (
                 onStart = {
                     this@ViewHolder.itemView.isClickable = false
@@ -293,14 +378,22 @@ class RCVViewFlashcardAdapter (var context : Context, var list : ArrayList<Flash
                 onEnd =  {
                     dB.btnSwitchDeleteState.goVISIBLE()
                 })
+
+
+            // Move card mode
+            turnOnMoveCardModeAnimator.playSequentially(textMoveLeftToRight, showTextForDeleteSet, showStatusDelete_Alpha)
+            turnOnMoveCardModeAnimator.addListener (
+                onStart = {
+                    this@ViewHolder.itemView.isClickable = false
+                },
+                onEnd =  {
+                    dB.btnSwitchMoveState.goVISIBLE()
+                })
         }
 
-        fun initTurnOffDeleteModeAnimations () {
+        private fun init_TurnOff_Mode_Animations () {
             val hideStatusDelete_Alpha = ObjectAnimator.ofFloat(dB.imgDeleteStatus, View.ALPHA, 1f, 0f)
             hideStatusDelete_Alpha.duration = 100
-
-            val showButtonDelete_Alpha = ObjectAnimator.ofFloat(dB.btnDelete, View.ALPHA, 0f, 1f)
-            showButtonDelete_Alpha.duration = 100
 
             val textMoveRightToLeft = ObjectAnimator.ofFloat(dB.viewgroupText, View.TRANSLATION_X, `28dp`, 0f)
             textMoveRightToLeft.duration = 100
@@ -314,13 +407,24 @@ class RCVViewFlashcardAdapter (var context : Context, var list : ArrayList<Flash
                 duration = 100
             }
 
-            turnOffDeleteModeAnimator.playSequentially(hideTextForDeleteSet, hideStatusDelete_Alpha, textMoveRightToLeft, showButtonDelete_Alpha)
+            // Delete
+            turnOffDeleteModeAnimator.playSequentially(hideStatusDelete_Alpha, hideTextForDeleteSet, textMoveRightToLeft)
             turnOffDeleteModeAnimator.startDelay = 300
             turnOffDeleteModeAnimator.addListener (
                 onEnd =  {
                     this@ViewHolder.itemView.isClickable = true
                     dB.btnSwitchDeleteState.goGONE()
                     itemOnEndDeleteModeListener?.invoke()
+                })
+
+
+            // Move card mode
+            turnOffMoveCardModeAnimator.playSequentially(hideStatusDelete_Alpha, hideTextForDeleteSet, textMoveRightToLeft)
+            turnOffMoveCardModeAnimator.addListener (
+                onEnd =  {
+                    this@ViewHolder.itemView.isClickable = true
+                    dB.btnSwitchMoveState.goGONE()
+                    // TODO (on End move mode)
                 })
         }
 
@@ -331,6 +435,28 @@ class RCVViewFlashcardAdapter (var context : Context, var list : ArrayList<Flash
             return super.equals(other)
         }
 
+        fun turnOnEditAnswerQuizMode() { dB.apply {
+            vwgrpEditAnswersQuiz.goVISIBLE()
+            vwgrpEditAnswersQuiz.scaleX = 0f
+            vwgrpEditAnswersQuiz.scaleY = 0f
+            vwgrpEditAnswersQuiz.animate().scaleY(1f).scaleX(1f).setDuration(100).setInterpolator(NormalOutExtraSlowIn()).clearListeners()
+        }}
+
+
+        fun turnOffEditAnswerQuizMode() { dB.apply {
+            vwgrpEditAnswersQuiz.animate().scaleY(0f).scaleX(0f)
+                .setDuration(100).setInterpolator(NormalOutExtraSlowIn()).setLiteListener(onEnd = {
+                    vwgrpEditAnswersQuiz.goGONE()
+                })
+        }}
+
+        fun showEditQuizModeState(is_QuizInfor_Edited_ByUser: Boolean) { dB.apply {
+            if (is_QuizInfor_Edited_ByUser == true)  {
+                btnEditAnswersQuiz.setImageDrawable(CREATED_QUIZ_INFOR_IMAGE)
+            } else {
+                btnEditAnswersQuiz.setImageDrawable(DEFAULT_QUIZ_INFOR_IMAGE)
+            }
+        }}
 
     }
 }

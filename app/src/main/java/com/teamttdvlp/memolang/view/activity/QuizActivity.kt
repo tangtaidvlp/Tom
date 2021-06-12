@@ -158,26 +158,25 @@ class QuizActivity : BaseActivity<ActivityQuizBinding, QuizActivityViewModel>(),
             viewModel.nextCard()
         }
 
-
-        txtAnswerA.setOnClickListener {
+        txtAnswerA.setOnClickListener (preventDoubleClick = true) {
             playMinimizeTitleBarAnimations_If_HasNot()
             currentChosenAnswerTextView = txtAnswerA
             viewModel.submitAnswer(txtAnswerA.text.toString())
         }
 
-        txtAnswerB.setOnClickListener {
+        txtAnswerB.setOnClickListener (preventDoubleClick = true) {
             playMinimizeTitleBarAnimations_If_HasNot()
             currentChosenAnswerTextView = txtAnswerB
             viewModel.submitAnswer(txtAnswerB.text.toString())
         }
 
-        txtAnswerC.setOnClickListener {
+        txtAnswerC.setOnClickListener (preventDoubleClick = true) {
             playMinimizeTitleBarAnimations_If_HasNot()
             currentChosenAnswerTextView = txtAnswerC
             viewModel.submitAnswer(txtAnswerC.text.toString())
         }
 
-        txtAnswerD.setOnClickListener {
+        txtAnswerD.setOnClickListener (preventDoubleClick = true) {
             playMinimizeTitleBarAnimations_If_HasNot()
             currentChosenAnswerTextView = txtAnswerD
             viewModel.submitAnswer(txtAnswerD.text.toString())
