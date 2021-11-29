@@ -2,11 +2,11 @@
 # TOM
 An Android application with main features are Flashcard management and English-Vietnamese Dictionary
 
-# Featurers
+# Features
 - Create flashcards and group them into customizable sets
 - Playing flashcards with 4 playing modes
 - English-Vietnamese dictionary (with a real dictionary source)
-- Using Google translate directly into the app (intergrate Google Translate API, but it is now disabled)
+- Using Google translate directly into the app (integrate Google Translate API, but it is now disabled)
 - Floating dictionary (like TFlat or Messenger Bubble Chat)
 
 # Technology
@@ -16,7 +16,7 @@ An Android application with main features are Flashcard management and English-V
 - Language: Kotlin for Coding & XML for UI
 
 # Appearance
-*This is real appearance on Android deviced (VSmart), designed all by myself in Adobe XD*
+*This is the real appearance on Android device (VSmart), designed all by myself in Adobe XD*
 
 ## Basic features
 
